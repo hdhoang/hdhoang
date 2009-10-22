@@ -1,0 +1,14 @@
+<svg width="96" height="96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+text { font-family: "Tengwar Annatar"; font-style: italic }
+path { stroke: none; fill: none }
+</style>
+<circle id="path1" cx="50%" cy="50%" r="2" stroke="black" fill="none"/>
+<circle id="path2" cx="50%" cy="50%" r="40" stroke="blue" fill="none"/>
+<text>
+<textPath xlink:href="#lazni-je" spacing="auto">j#k5% f$</textPath>
+<textPath xlink:href="#nahe-rorci">5#~V 7Y7dT</textPath>
+</text>
+<path id="lazni-je" d="M18,48 c28,48 48,18 78,48"/>
+<path id="nahe-rorci" transform="translate(0,15)" d="M18,48 C28,48 48,68 78,48"/>
+</svg>
