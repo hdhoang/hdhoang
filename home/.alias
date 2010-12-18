@@ -1,0 +1,23 @@
+alias ls='ls --color=auto --classify' # -U'
+alias df='df -hT --total -x tmpfs -x devtmpfs'
+alias du='du -h --total'
+
+alias cp='cp --reflink=auto'
+
+alias ln='ln -i'
+alias mkdir='mkdir -p'
+
+alias rmdir='rmdir -p --ignore-fail-on-non-empty'
+alias rm='rm --interactive=once --one-file-system'
+
+alias pr='perl-rename -i'
+alias e="emacsclient -n"
+alias g=ack
+alias p='pgrep -f'
+alias who='who -aH'
+alias s=sensors
+alias pa='rlwrap pacmd'
+alias whois='whois -H'
+
+alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
+alias c="sdlhack crawl-tiles&"

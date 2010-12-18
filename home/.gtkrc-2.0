@@ -1,0 +1,14 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/QtCurve/gtk-2.0/gtkrc"
+
+style "user-font" {
+	font_name = "Linux Biolinum O 12"
+}
+
+widget_class "*" style "user-font"
+
+gtk-font-name="Linux Biolinum O 12"
+
+include "/home/hdhoang/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT

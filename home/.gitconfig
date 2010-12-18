@@ -1,0 +1,13 @@
+[user]
+	name = Hoàng Đức Hiếu
+#	email = hdh@lazny.tang.la
+[color]
+	ui = auto
+[pack]
+	threads = 0
+[diff]
+	renamelimit = 0
+[alias]
+	p = push
+	ci = commit -m
+	d = diff --word-diff

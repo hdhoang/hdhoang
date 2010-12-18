@@ -1,0 +1,58 @@
+# -*- mode: sh; sh-shell: zsh -*-
+source /etc/profile
+source ~/.profile
+
+# assuming grml-zsh-config is used
+setopt inc_append_history HIST_VERIFY noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
+setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
+unsetopt AUTO_NAME_DIRS bash_auto_list numeric_glob_sort
+
+WORDCHARS=''
+
+EXITCODE="%(?..${fg[red]}%? )"
+PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w %T ${EXITCODE}
+%# ${NO_COLOUR}"
+
+f=~/Public/fav
+pool=/media/marbi
+alias favdup='ls ~f |cut -d \[ -f 1 -s | uniq -d'
+alias favname='perl-rename -iv "s/ /_/g" ~f/*" "*(.)'
+alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
+alias m='rename "_[]" "" ~/Music/*.*; mv -iv ~/Music/*.* ~f'
+
+alias i='sudo bauerbill'
+compdef _pacman bauerbill
+ap=~/Public/mirror/archlinux/
+function aurmakepkg {
+    cd ~ap
+    wget https://aur.archlinux.org/packages/$1/$1.tar.gz -O $1.tar.gz || return 1
+    tar xvf $1.tar.gz
+    cd $1
+    makepkg -sif
+}
+
+t=~/t
+dl=~/Public/mirror/downloads/
+
+alias def='COLUMNS=$COLUMNS jbo define'
+fd() { jbo filter "$@" | JBO_ESCAPES=always def | $PAGER; }
+
+setopt dvorak
+# bindkey    "^[[3;2~"         delete-char
+### ErgoEmacs
+bindkey -N ergoemacs emacs
+bindkey -A ergoemacs main
+bindkey "^[." backward-kill-word
+bindkey "^[p" kill-word
+bindkey "^[g" backward-word
+bindkey "^[r" forward-word
+bindkey "^[C" up-line-or-history
+bindkey "^[T" down-line-or-history
+bindkey "^z" undo
+bindkey "^Z" redo
+bindkey "^q" quoted-insert
+bindkey "\eq" push-line-or-edit
+bindkey "^[S" history-incremental-search-backward
+bindkey "^[s" history-incremental-search-forward
+bindkey "^[a" execute-named-cmd
+bindkey "^o" accept-and-hold

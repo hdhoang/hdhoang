@@ -1,0 +1,6 @@
+keycode 133 = BackSpace Delete
+keycode 108 = Escape
+
+! unicode
+keycode  61 = z Z slash question ellipsis U203D ellipsis U203D
+keycode  34 = slash question bracketleft braceleft NoSymbol U0309 NoSymbol U0309
