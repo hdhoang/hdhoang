@@ -18,6 +18,7 @@ alias who='who -aH'
 alias s=sensors
 alias pa='rlwrap pacmd'
 alias whois='whois -H'
+alias f='free -m'
 
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="sdlhack crawl-tiles&"
