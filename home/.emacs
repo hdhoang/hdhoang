@@ -37,7 +37,7 @@
 	     (global-set-key (kbd "C-e") 'move-end-of-line)
 	     (global-set-key (kbd "C-t") 'transpose-chars)
 	     (global-set-key (kbd "C-y") 'cua-paste)
-	     (global-set-key (kbd "C-d") 'delete-forward-char)
+	     (global-set-key (kbd "C-d") 'delete-char)
 	     (global-set-key (kbd "M-;") 'comment-dwim))
 (add-hook 'ergoemacs-mode-hook 'hdh/revert-some-ergoemacs)
 (hdh/load-file-in-el-dir "ergoemacs.svn/site-lisp/site-start.el")
@@ -87,7 +87,7 @@
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify)))
 
 ;; Major modes
-(add-to-list 'auto-mode-alist '("^PKGBUILD" . sh-mode))
+(add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
 
 ;(load "auctex.el" nil t t)
 ;(load "preview-latex.el" nil t t)
