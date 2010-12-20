@@ -1,4 +1,4 @@
-#export PAGER=most
+export PAGER=most
 export LESS='FiX'
 export MOST_SWITCHES="-w"
 export GREP_OPTIONS='--color -D skip --binary-files=without-match --ignore-case' 
