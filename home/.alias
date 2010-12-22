@@ -22,3 +22,5 @@ alias f='free -m'
 
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="sdlhack crawl-tiles&"
+
+alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
