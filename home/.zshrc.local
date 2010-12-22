@@ -18,9 +18,9 @@ h=~/Public/hdh-misc.git/
 f=~/Public/fav
 pool=/media/marbi
 alias favdup='ls ~f |cut -d \[ -f 1 -s | uniq -d'
-alias favname='perl-rename -iv "s/ /_/g" ~f/*" "*(.)'
+alias favname="perl-rename -iv 's/ /_/g' ~f/*' '*(.)"
+alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f'
 alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
-alias m='rename "_[]" "" ~/Music/*.*; mv -iv ~/Music/*.* ~f'
 
 alias mp='nice -n 19 makepkg -isf'
 alias i='sudo bauerbill'
