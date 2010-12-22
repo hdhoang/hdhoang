@@ -9,6 +9,6 @@ export PATH=/sbin:/usr/sbin/:$HOME/"@s":$PATH
 
 export PURPLE_YAHOO_DEBUG=1
 
-export EMAIL=hdh@lazny.tang.la
+export EMAIL=hdhoang@zahe.me
 
 source ~/.alias
