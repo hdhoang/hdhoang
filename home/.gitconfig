@@ -11,3 +11,8 @@
 	p = push
 	ci = commit -m
 	d = diff --word-diff
+
+[url "git://git.kde.org/"]
+    insteadOf = kde:
+[url "ssh://git@git.kde.org/"]
+    pushInsteadOf = kde:
