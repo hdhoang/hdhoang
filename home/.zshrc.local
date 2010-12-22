@@ -26,7 +26,7 @@ alias mp='nice -n 19 makepkg -isf'
 alias i='sudo bauerbill'
 compdef _pacman bauerbill
 ap=~/Public/mirror/archlinux/
-function aurmakepkg {
+function aur {
     cd ~ap
     wget https://aur.archlinux.org/packages/$1/$1.tar.gz -O $1.tar.gz || return 1
     tar xvf $1.tar.gz
