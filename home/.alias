@@ -1,4 +1,4 @@
-alias ls='ls --color=auto --classify' # -U'
+alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs'
 alias du='du -h --total'
 
