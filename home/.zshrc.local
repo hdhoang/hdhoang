@@ -23,8 +23,8 @@ alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f'
 alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
 
 alias mp='nice -n 19 makepkg -isf'
-alias i='sudo bauerbill'
-compdef _pacman bauerbill
+alias i='sudo powerpill'
+compdef _pacman powerpill
 ap=~/Public/mirror/archlinux/
 function aur {
     cd ~ap
