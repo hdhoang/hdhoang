@@ -1,0 +1,13 @@
+# -*- mode: sh -*-
+h=~/Public/hdh-misc.git/
+
+f=~/Public/fav
+pool=/media/marbi
+alias favdup='ls ~f |cut -d \[ -f 1 -s | uniq -d'
+alias favname="perl-rename -iv 's/ /_/g' ~f/*' '*(.)"
+alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f'
+alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
+
+alias -s pdf=okular
+alias -s html=firefox
+alias -s htm=firefox

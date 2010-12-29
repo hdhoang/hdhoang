@@ -1,6 +1,7 @@
 # -*- mode: sh; sh-shell: zsh -*-
 source /etc/profile
 source ~/.profile
+source ~/.alias_zsh
 
 # assuming grml-zsh-config is used
 setopt inc_append_history HIST_VERIFY noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
@@ -12,15 +13,6 @@ WORDCHARS=''
 EXITCODE="%(?..${fg[red]}%? )"
 PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w %T ${EXITCODE}
 %# ${NO_COLOUR}"
-
-h=~/Public/hdh-misc.git/
-
-f=~/Public/fav
-pool=/media/marbi
-alias favdup='ls ~f |cut -d \[ -f 1 -s | uniq -d'
-alias favname="perl-rename -iv 's/ /_/g' ~f/*' '*(.)"
-alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f'
-alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
 
 alias mp='nice -n 19 makepkg -isf'
 alias i='sudo powerpill'
@@ -34,8 +26,6 @@ function aur {
     mp
 }
 
-t=~/t
-dl=~/Public/mirror/downloads/
 
 alias def='COLUMNS=$COLUMNS jbo define'
 fd() { jbo filter "$@" | JBO_ESCAPES=always def | $PAGER; }
