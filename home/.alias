@@ -1,6 +1,7 @@
 alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs'
 alias du='du -h --total'
+alias dumx='dumx -h -xdev'
 
 alias cp='cp --reflink=auto'
 
