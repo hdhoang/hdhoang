@@ -4,10 +4,10 @@ t=~/t
 dl=~/Public/mirror/downloads/
 
 f=~/Public/fav
-pool=/media/marbi
-alias favdup='ls ~f |cut -d \[ -f 1 -s | uniq -d'
-alias favname="perl-rename -iv 's/ /_/g' ~f/*' '*(.)"
-alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f'
+pool=/mnt/marbi
+alias favdup='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
+alias favname="perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
+alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music'
 alias favsync='ionice -c 3 rsync -avhP --delete ~f ~pool'
 
 alias -s pdf=okular
