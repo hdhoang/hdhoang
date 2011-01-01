@@ -1,5 +1,7 @@
 # -*- mode: sh -*-
 h=~/Public/hdh-misc.git/
+t=~/t
+dl=~/Public/mirror/downloads/
 
 f=~/Public/fav
 pool=/media/marbi
