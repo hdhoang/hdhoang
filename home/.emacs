@@ -95,3 +95,12 @@
 
 ;; Minor modes
 (add-to-list 'yas/root-directory "/home/hdhoang/Public/public-domain/code/snippets/")
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(completions-common-part ((t (:inherit default :foreground "red"))))
+ '(diredp-ignored-file-name ((t (:foreground "#bebebe"))))
+ '(isearch ((((class color) (min-colors 88) (background light)) (:background "black" :foreground "white"))))
+ '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
