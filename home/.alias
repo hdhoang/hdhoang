@@ -20,6 +20,8 @@ alias s=sensors
 alias pa='rlwrap pacmd'
 alias whois='whois -H'
 alias f='free -m'
+alias sc='systemctl'
+alias psc='ps xawf -eo pid,user,cgroup,args'
 
 alias bit="nice bitcoind"
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
