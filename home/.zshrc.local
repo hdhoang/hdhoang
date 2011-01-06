@@ -19,10 +19,9 @@ alias i='sudo powerpill'
 compdef _pacman powerpill
 ap=~/Public/mirror/archlinux/
 function aur {
-    cd ~ap
-    wget https://aur.archlinux.org/packages/$1/$1.tar.gz -O $1.tar.gz || return 1
-    tar xvf $1.tar.gz
-    cd $1
+    # trap 'return 1' ZERR
+    cower -fddt ~ap $1
+    cd ~ap/$1
     mp
 }
 
