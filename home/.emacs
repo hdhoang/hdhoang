@@ -79,6 +79,7 @@
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
+ '(read-quoted-char-radix 16)
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/places")
  '(show-paren-mode t)
