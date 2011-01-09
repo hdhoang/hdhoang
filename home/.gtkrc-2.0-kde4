@@ -1,0 +1,14 @@
+# This file was written by KDE
+# You can edit it in the KDE control center, under "GTK Styles and Fonts"
+
+include "/usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc"
+include "/etc/gtk-2.0/gtkrc"
+
+style "user-font"
+{
+	font_name="Linux Biolinum O"
+}
+widget_class "*" style "user-font"
+
+gtk-theme-name="oxygen-gtk"
+gtk-font-name="Linux Biolinum O 11"
