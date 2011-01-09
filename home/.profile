@@ -1,3 +1,5 @@
+source /etc/profile
+
 export PAGER=most
 export LESS='FiX'
 export MOST_SWITCHES="-w"

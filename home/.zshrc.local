@@ -1,5 +1,4 @@
 # -*- mode: sh; sh-shell: zsh -*-
-source /etc/profile
 source ~/.profile
 source ~/.alias_zsh
 
