@@ -1,5 +1,6 @@
 keycode 133 = BackSpace Delete
 keycode 108 = Escape
+keycode 37  = Return
 
 ! unicode
 keycode  61 = z Z slash question ellipsis U203D ellipsis U203D
