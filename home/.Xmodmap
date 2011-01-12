@@ -4,3 +4,10 @@ keycode 108 = Escape
 keycode 37  = Return
 
 keycode 26  = period greater ellipsis U203D ellipsis U203D
+
+!dvp
+keycode 24  = apostrophe quotedbl
+ keycode 52 = semicolon colon
+
+keycode 35  = asciitilde at
+ keycode 49 = dollar asciicircum
