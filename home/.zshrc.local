@@ -10,7 +10,7 @@ unsetopt AUTO_NAME_DIRS bash_auto_list numeric_glob_sort
 WORDCHARS=''
 
 EXITCODE="%(?..${fg[red]}%? )"
-PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w %T ${EXITCODE}
+PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
 alias mp='nice -n 19 makepkg -isf'
