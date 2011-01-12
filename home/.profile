@@ -7,8 +7,6 @@ export GREP_OPTIONS='--color -D skip --binary-files=without-match --ignore-case'
 export EDITOR=emacsclient
 export ALTERNATE_EDITOR=""
 
-export PATH=/sbin:/usr/sbin/:$HOME/"@s":$PATH
-
 export PURPLE_YAHOO_DEBUG=1
 unset MALLOC_CHECK_
 
