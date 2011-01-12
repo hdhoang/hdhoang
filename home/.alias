@@ -19,6 +19,7 @@ alias who='who -aH'
 alias s=sensors
 alias pa='rlwrap pacmd'
 alias whois='whois -H'
+alias nh='sudo nethogs'
 alias f='free -m'
 alias sc='systemctl'
 alias psc='ps xawf -eo pid,user,cgroup,args'
