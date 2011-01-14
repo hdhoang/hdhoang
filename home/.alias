@@ -20,7 +20,6 @@ alias s=sensors
 alias pa='rlwrap pacmd'
 alias whois='whois -H'
 alias nh='sudo nethogs'
-alias f='free -m'
 alias sc='systemctl'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
@@ -28,4 +27,5 @@ alias bit="nice bitcoind"
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="gd && sdlhack crawl-tiles&"
 
+alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"

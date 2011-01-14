@@ -18,5 +18,3 @@ alias -s htm=firefox
 alias -s torrent=ktorrent
 alias -s avi=vlc
 alias -s mp4=vlc
-
-unfunction fir
