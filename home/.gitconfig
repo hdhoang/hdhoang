@@ -9,7 +9,7 @@
 [alias]
 	p = !git pull && git log ORIG_HEAD..
 	l = log -p --word-diff
-	ci = commit -m
+	c = commit
 	d = diff --word-diff
 
 [url "git://git.kde.org/"]
