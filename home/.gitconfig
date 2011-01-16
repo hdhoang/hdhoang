@@ -8,6 +8,7 @@
 	renamelimit = 0
 [alias]
 	p = !git pull && git log ORIG_HEAD..
+	l = log -p --word-diff
 	ci = commit -m
 	d = diff --word-diff
 
