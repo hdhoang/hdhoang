@@ -1,7 +1,11 @@
+# local info
 alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
 alias du='du -h --total'
 alias dumx='dumx -h -xdev'
+alias p='pgrep -f'
+alias who='who -aH'
+alias s=sensors
 
 # network info
 alias dm='dig +search +noall +answer +multiline'
@@ -21,9 +25,6 @@ alias rm='rm --interactive=once --one-file-system'
 alias pr='perl-rename -i'
 alias e="emacsclient -n"
 alias g=ack
-alias p='pgrep -f'
-alias who='who -aH'
-alias s=sensors
 alias pa='rlwrap pacmd'
 
 alias sc='systemctl'
@@ -36,3 +37,4 @@ alias c="gd && sdlhack crawl-tiles&"
 
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
+
