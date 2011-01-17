@@ -21,6 +21,7 @@ alias pa='rlwrap pacmd'
 alias whois='whois -H'
 alias nh='sudo nethogs'
 alias sc='systemctl'
+alias ssc='sudo systemctl --system'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
 alias bit="nice bitcoind"
