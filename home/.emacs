@@ -18,7 +18,6 @@
 (setenv "ERGOEMACS_KEYBOARD_LAYOUT" "dv")
 (defun hdh/revert-some-ergoemacs ()
 	     (tool-bar-mode t)
-	     (tabbar-mode 0)
 
 	     (global-set-key (kbd "C-p") 'previous-line)
 	     (global-set-key (kbd "C-n") 'next-line)
