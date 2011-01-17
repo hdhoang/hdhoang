@@ -35,6 +35,7 @@
 	     (global-set-key (kbd "M-;") 'comment-dwim))
 (add-hook 'ergoemacs-mode-hook 'hdh/revert-some-ergoemacs)
 (hdh/load-file-in-el-dir "ergoemacs.svn/site-lisp/site-start.el")
+(eval-after-load "ergoemacs.svn/site-lisp/site-start.el" (tabbar-mode 0))
 (defun hdh/ergoemacs-minibuffer-keys ()
   (local-set-key ergoemacs-previous-line-key 'previous-history-element)
   (local-set-key ergoemacs-next-line-key 'next-history-element))
