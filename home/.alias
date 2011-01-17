@@ -14,15 +14,14 @@ alias dx='dig +search +short -x'
 alias whois='whois -H'
 alias nh='sudo nethogs'
 
-alias cp='cp --reflink=auto'
-
-alias ln='ln -i'
+# file ops
 alias mkdir='mkdir -p'
-
-alias rmdir='rmdir -p --ignore-fail-on-non-empty'
+alias cp='cp -r --reflink=auto'
+alias ln='ln -i'
+alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
-
 alias pr='perl-rename -i'
+
 alias e="emacsclient -n"
 alias g=ack
 alias pa='rlwrap pacmd'
