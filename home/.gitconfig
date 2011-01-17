@@ -9,6 +9,7 @@
 [alias]
 	p = !git pull && git log ORIG_HEAD..
 	l = log -p --word-diff
+	ai = add -i
 	c = commit
 	d = diff --word-diff
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
