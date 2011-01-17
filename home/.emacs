@@ -81,14 +81,6 @@
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify)))
 
-;; Major modes
-(add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
-
-;(load "auctex.el" nil t t)
-;(load "preview-latex.el" nil t t)
-
-;; Minor modes
-(add-to-list 'yas/root-directory "/home/hdhoang/Public/public-domain/code/snippets/")
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -98,3 +90,12 @@
  '(diredp-ignored-file-name ((t (:foreground "#bebebe"))))
  '(isearch ((((class color) (min-colors 88) (background light)) (:background "black" :foreground "white"))))
  '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
+
+;; Major modes
+(add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
+
+;(load "auctex.el" nil t t)
+;(load "preview-latex.el" nil t t)
+
+;; Minor modes
+(add-to-list 'yas/root-directory "/home/hdhoang/Public/public-domain/code/snippets/")
