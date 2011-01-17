@@ -7,12 +7,6 @@
 ;(add-to-list 'load-path (concat hdh/el-dir "ergoemacs.svn/packages/"))
 ;(add-to-list 'load-path (concat hdh/el-dir "ergoemacs.svn/packages/bookmarkplus/"))
 
-;(require 'magpie)
-;(global-set-key (kbd "M-/") 'magpie-expand)
-;(global-set-key (kbd "M-?") 'magpie-complete-expand)
-;(global-set-key (kbd "C-h v") 'magpie-describe-variable)
-;(global-set-key (kbd "C-h f") 'magpie-describe-function)
-
 ;(hdh/load-file-in-el-dir "undo-tree.git/undo-tree.el")
 
 ;(hdh/load-file-in-el-dir "ibus-el-0.2.0/ibus.el")
