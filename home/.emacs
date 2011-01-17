@@ -72,7 +72,7 @@
  '(make-pointer-invisible nil)
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
+ '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
  '(read-quoted-char-radix 16)
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/places")
