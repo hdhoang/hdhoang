@@ -94,6 +94,9 @@
 
 ;; Major modes
 (add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
+(mapcar (lambda (ext)
+	   (add-to-list 'auto-mode-alist (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
+	 '("service" "socket" "desktop" "directory"))
 
 ;(load "auctex.el" nil t t)
 ;(load "preview-latex.el" nil t t)
