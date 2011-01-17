@@ -22,18 +22,18 @@ alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
 alias pr='perl-rename -i'
 
-alias e="emacsclient -n"
-alias g=ack
+# system
 alias pa='rlwrap pacmd'
-
 alias sc='systemctl'
 alias ssc='sudo systemctl --system'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
-alias bit="nice bitcoind"
+# fun
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="gd && sdlhack crawl-tiles&"
 
+# utils
+alias e="emacsclient -n"
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
-
+alias bit="nice bitcoind"
