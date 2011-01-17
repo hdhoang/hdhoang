@@ -3,6 +3,13 @@ alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
 alias du='du -h --total'
 alias dumx='dumx -h -xdev'
 
+# network info
+alias dm='dig +search +noall +answer +multiline'
+alias ds='dig +search +short'
+alias dx='dig +search +short -x'
+alias whois='whois -H'
+alias nh='sudo nethogs'
+
 alias cp='cp --reflink=auto'
 
 alias ln='ln -i'
@@ -18,8 +25,7 @@ alias p='pgrep -f'
 alias who='who -aH'
 alias s=sensors
 alias pa='rlwrap pacmd'
-alias whois='whois -H'
-alias nh='sudo nethogs'
+
 alias sc='systemctl'
 alias ssc='sudo systemctl --system'
 alias psc='ps xawf -eo pid,user,cgroup,args'
