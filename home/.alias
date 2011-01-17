@@ -35,5 +35,6 @@ alias c="gd && sdlhack crawl-tiles&"
 # utils
 alias e="emacsclient -n"
 alias f='firefox'
+function .g() {f http://google.com/search?q="$*" }
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 alias bit="nice bitcoind"
