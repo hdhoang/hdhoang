@@ -1,6 +1,7 @@
 # -*- mode: sh; sh-shell: zsh -*-
 source ~/.profile
 source ~/.alias.zsh
+source ~h/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # assuming grml-zsh-config is used
 setopt inc_append_history HIST_VERIFY noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
