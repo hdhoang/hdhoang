@@ -103,3 +103,5 @@
 
 ;; Minor modes
 (add-to-list 'yas/root-directory "/home/hdhoang/Public/public-domain/code/snippets/")
+
+(add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
