@@ -16,7 +16,7 @@ alias nh='sudo nethogs'
 
 # file ops
 alias mkdir='mkdir -p'
-alias cp='cp -r --reflink=auto --preserve=context,xattr'
+alias cp='cp -r --reflink=auto --preserve=xattr'
 alias ln='ln -i'
 alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
