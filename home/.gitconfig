@@ -7,7 +7,7 @@
 [diff]
 	renamelimit = 0
 [alias]
-	p = !git pull && git log ORIG_HEAD..
+	p = !git pull && git log --reverse --topo-order ORIG_HEAD..
 	l = log -p --word-diff
 	ai = add -i
 	c = commit
