@@ -6,9 +6,14 @@ pkg=/var/cache/pacman/pkg/
 
 f=~/Public/fav
 pool=/mnt/marbi
+function xattr() {
+	local label="$1"
+	shift
+	setfattr -n user.$USER.$label $*
+}
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-alias favm='rename "_[]" "" ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music'
-alias favn="perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
+alias favm="rename '_[Unknown_Album]' '' ~/Music/*(.); xattr fav ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music"
+alias favn="xattr fav ~f/Music/*' '*(.); perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
 alias favs='rs --delete ~f ~pool'
 
 alias -s cbr=okular
