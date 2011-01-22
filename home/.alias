@@ -3,6 +3,7 @@ alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
 alias du='du -h --total'
 alias dumx='dumx -h -xdev'
+alias locate='locate -ie'
 alias p='pgrep -f'
 alias who='who -aH'
 alias s=sensors
