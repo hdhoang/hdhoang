@@ -9,6 +9,7 @@
 [alias]
 	p = !git pull && git log --reverse --topo-order ORIG_HEAD..
 	l = log -p --word-diff
+	s = status -s
 	ai = add -i
 	c = commit
 	d = diff --word-diff
