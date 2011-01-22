@@ -2,6 +2,7 @@
 h=~/Public/hdh-misc.git/
 t=~/t
 dl=~/Public/mirror/downloads/
+pkg=/var/cache/pacman/pkg/
 
 f=~/Public/fav
 pool=/mnt/marbi
