@@ -9,11 +9,13 @@ pool=/mnt/marbi
 function xattr() {
 	local label="$1"
 	shift
-	setfattr -n user.$USER.$label $*
+	local value="$1"
+	shift
+	setfattr -n "user.$USER.$label" -v "$value" $*
 }
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-alias favm="rename '_[Unknown_Album]' '' ~/Music/*(.); xattr fav ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music"
-alias favn="xattr fav ~f/Music/*' '*(.); perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
+alias favm="rename '_[Unknown_Album]' '' ~/Music/*(.); xattr fav 'fav' ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music"
+alias favn="xattr fav 'fav' ~f/Music/*' '*(.); perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
 alias favs='rs --delete ~f ~pool'
 
 alias -s cbr=okular
