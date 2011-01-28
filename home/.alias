@@ -13,7 +13,7 @@ alias dm='dig +search +noall +answer +multiline'
 alias ds='dig +search +short'
 alias dx='dig +search +short -x'
 alias whois='whois -H'
-alias nh='sudo nethogs'
+alias nh='sudo nethogs br0'
 
 # file ops
 alias mkdir='mkdir -p'
