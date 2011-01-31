@@ -7,7 +7,8 @@
 [diff]
 	renamelimit = 0
 [alias]
-	p = !git pull && git log --reverse --topo-order ORIG_HEAD..
+	p = !git pull && git ml
+	ml = log --reverse --topo-order ORIG_HEAD..
 	l = log -p --word-diff
 	s = status -s
 	ai = add -i
