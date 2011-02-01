@@ -14,6 +14,7 @@
 
 (global-set-key (kbd "C-x M-f") 'find-file-at-point)
 (global-set-key (kbd "C-.") 'other-window)
+(defalias 'rb 'revert-buffer)
 
 (setenv "ERGOEMACS_KEYBOARD_LAYOUT" "dv")
 (defun hdh/revert-some-ergoemacs ()
