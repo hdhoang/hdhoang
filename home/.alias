@@ -33,7 +33,7 @@ alias psc='ps xawf -eo pid,user,cgroup,args'
 
 # fun
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
-alias c="gd && sdlhack crawl-tiles&"
+alias c="crawl-tiles&"
 
 # utils
 alias e="emacsclient -n"
