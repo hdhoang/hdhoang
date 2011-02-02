@@ -36,6 +36,7 @@ alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="crawl-tiles&"
 
 # utils
+alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
 function .g() {f http://google.com/search?q="$*" }
