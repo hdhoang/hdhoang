@@ -7,6 +7,7 @@ alias locate='locate -ie'
 alias p='pgrep -f'
 alias who='who -aH'
 alias s=sensors
+alias t='inotail -f'
 
 # network info
 alias dm='dig +search +noall +answer +multiline'
