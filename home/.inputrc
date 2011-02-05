@@ -19,22 +19,22 @@
 
 set editing-mode emacs
 
-"\M-h": backward-char
-"\M-n": forward-char
-"\M-c": previous-history
-"\M-t": next-history
-"\M-d": beginning-of-line
-"\M-D": end-of-line
-"\M-g": backward-word
-"\M-r": forward-word
-"\M-i": kill-line
-"\M-.": backward-kill-word
-"\M-p": kill-word
-"\M-e": backward-delete-char
-"\M-u": delete-char
-"\M-;": undo
-"\M-q": kill-region
-"\M-j": copy-region-as-kill
-"\M-k": yank
-"\M-s": forward-search-history
-"\M-S": reverse-search-history
+"\eh": backward-char
+"\en": forward-char
+"\ec": previous-history
+"\et": next-history
+"\ed": beginning-of-line
+"\eD": end-of-line
+"\eg": backward-word
+"\er": forward-word
+"\ei": kill-line
+"\e.": backward-kill-word
+"\ep": kill-word
+"\ee": backward-delete-char
+"\eu": delete-char
+"\e;": undo
+"\eq": kill-region
+"\ej": copy-region-as-kill
+"\ek": yank
+"\es": forward-search-history
+"\eS": reverse-search-history
