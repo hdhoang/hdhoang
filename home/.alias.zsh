@@ -3,6 +3,7 @@ h=~/Public/hdh-misc.git/
 t=~/t
 dl=~/Public/mirror/downloads/
 pkg=/var/cache/pacman/pkg/
+el=/var/log/everything.log
 
 f=~/Public/fav
 pool=/mnt/marbi
