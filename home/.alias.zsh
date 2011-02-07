@@ -27,3 +27,5 @@ alias -s htm=firefox
 alias -s torrent=ktorrent
 alias -s avi=vlc
 alias -s mp4=vlc
+alias -s mpg=vlc
+alias -s wmv=vlc
