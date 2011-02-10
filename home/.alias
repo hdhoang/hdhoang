@@ -35,6 +35,7 @@ alias psc='ps xawf -eo pid,user,cgroup,args'
 # fun
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="crawl-tiles&"
+alias m='mplayer'
 
 # utils
 alias x=parallel
