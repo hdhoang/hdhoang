@@ -1,1 +1,2 @@
 foxyproxy.xml	 filter=xmllint
+stylish.sqlite	 filter=stylish

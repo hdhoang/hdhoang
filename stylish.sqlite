@@ -1,0 +1,49 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE styles (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, url TEXT, updateUrl TEXT, md5Url TEXT, name TEXT NOT NULL, code TEXT NOT NULL, enabled INTEGER NOT NULL, originalCode TEXT NULL, idUrl TEXT NULL);
+INSERT INTO "styles" VALUES(1,NULL,'',NULL,'listing','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("isohunt.com") {
+.listing{margin-right:0!important;background-color:white!important}
+}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(2,NULL,'',NULL,'move sidebar','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("crawl.develz.org") {
+#sidebar-wrapper{position:static!important}
+}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(3,NULL,'',NULL,'link decor',':visited{color:teal!important}
+:link[href^="#"]{color:grey!important}
+
+:link[href*=".onion/"]{color:green!important}
+
+:link[href*="wikipedia"]:after{content: "/w";vertical-align:super}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("www.google.com"){
+.entry-actions{display:block!important;text-align:right!important}
+#chrome-fullscreen-top-toggle,.star,.broadcast-with-note,.email,.tag{display:none!important}
+.fullscreen #viewer-container{top:0!important}
+.dislike{float:left}
+}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(5,NULL,'',NULL,'cracked bottom','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("cracked.com"){#fb_sliver{display:none!important}}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt box','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {#fadein{display:none!important}}',1,NULL,NULL);
+INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"],:link[href*="filesmonster.com/"],:link[href*="sickporn.in/"]{text-decoration:line-through!important}
+
+:link[href*="mediafire.com/"]{text-decoration:overline!important}
+',1,NULL,NULL);
+CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
+INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
+INSERT INTO "style_meta" VALUES(4,2,'type','site');
+INSERT INTO "style_meta" VALUES(6,1,'domain','isohunt.com');
+INSERT INTO "style_meta" VALUES(7,1,'type','site');
+INSERT INTO "style_meta" VALUES(10,5,'domain','cracked.com');
+INSERT INTO "style_meta" VALUES(11,5,'type','site');
+INSERT INTO "style_meta" VALUES(12,6,'domain','coithienthai.com');
+INSERT INTO "style_meta" VALUES(13,6,'type','site');
+INSERT INTO "style_meta" VALUES(20,3,'type','global');
+INSERT INTO "style_meta" VALUES(23,7,'type','global');
+INSERT INTO "style_meta" VALUES(34,4,'domain','www.google.com');
+INSERT INTO "style_meta" VALUES(35,4,'type','site');
+DELETE FROM sqlite_sequence;
+INSERT INTO "sqlite_sequence" VALUES('styles',7);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',35);
+CREATE INDEX style_meta_style_id ON style_meta (style_id);
+COMMIT;

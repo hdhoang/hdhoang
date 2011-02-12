@@ -27,3 +27,7 @@
 
 [filter "xmllint"]
 	clean = xmllint --pretty 2 %f
+
+[filter "stylish"]
+	clean = cat > /dev/null && sqlite3 %f .dump
+	smudge = sqlite3 %f 'pragma user_version=3'
