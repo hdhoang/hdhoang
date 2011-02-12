@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <foxyproxy
     mode="patterns"
-    selectedTabIndex="1"
+    selectedTabIndex="0"
     toolsMenu="false"
     contextMenu="true"
     advancedMenus="false"
@@ -125,7 +125,7 @@
           disableOnBadPAC="true"
       /><manualconf
           host="127.0.0.1"
-          port="8123"
+          port="8118"
           socksversion="4"
           isSocks="false"
       /></proxy
