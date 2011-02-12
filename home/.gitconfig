@@ -6,6 +6,8 @@
 	threads = 0
 [diff]
 	renamelimit = 0
+[branch]
+	autosetuprebase = always
 [alias]
 	pr = pull --rebase
 	p = !git pr && git ml
@@ -22,5 +24,3 @@
     insteadOf = kde:
 [url "ssh://git@git.kde.org/"]
     pushInsteadOf = kde:
-[branch]
-	autosetuprebase = always
