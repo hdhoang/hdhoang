@@ -30,4 +30,5 @@
 
 [filter "stylish"]
 	clean = cat > /dev/null && sqlite3 %f .dump
-	smudge = sqlite3 %f 'pragma user_version=3'
+	# HARDCODED: Stylish's user_version as of 1.1
+	smudge = sqlite3 %f && sqlite3 %f 'pragma user_version=3' && cat %f && rm %f
