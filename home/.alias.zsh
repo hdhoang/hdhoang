@@ -15,9 +15,14 @@ function xattr() {
 	setfattr -n "user.$USER.$label" -v "$value" $*
 }
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-alias favm="rename '_[Unknown_Album]' '' ~/Music/*(.); xattr fav 'fav' ~/Music/*(.); mv -iv ~/Music/*(.) ~f/Music"
-alias favn="xattr fav 'fav' ~f/Music/*' '*(.); perl-rename -iv 's/ /_/g' ~f/Music/*' '*(.)"
-alias favs='rs --delete ~f ~pool'
+alias favm="mv -iv ~/Music/*(.) ~f/Music"
+favn() {
+    rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
+    prv 's/ /_/g' ~f/Music/*' '*
+    prv 's/([^_])-_/\1__/g' ~f/Music/*
+    prv "s/''/\"/g" ~f/Music/*
+}
+alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
 
 alias -s cbr=okular
 alias -s cbz=okular
