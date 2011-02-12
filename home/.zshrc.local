@@ -16,11 +16,12 @@ PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 
 alias mp='nice -n 19 makepkg -isf'
 alias i='sudo powerpill'
+alias cower='cower -fddt ~ap'
 compdef _pacman powerpill
 ap=~/Public/mirror/archlinux/
 function aur {
     # trap 'return 1' ZERR
-    cower -fddt ~ap $1
+    cower $1
     cd ~ap/$1
     mp
 }
