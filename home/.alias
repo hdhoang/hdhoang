@@ -1,3 +1,5 @@
+# -*- mode: sh; sh-shell: sh -*-
+
 # local info
 alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
