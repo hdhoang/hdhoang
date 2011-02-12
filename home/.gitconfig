@@ -24,3 +24,6 @@
     insteadOf = kde:
 [url "ssh://git@git.kde.org/"]
     pushInsteadOf = kde:
+
+[filter "xmllint"]
+	clean = xmllint --pretty 2 %f
