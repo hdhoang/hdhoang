@@ -25,9 +25,15 @@ INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(5,NULL,'',NULL,'cracked bottom','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("cracked.com"){#fb_sliver{display:none!important}}',1,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt box','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {#fadein{display:none!important}}',1,NULL,NULL);
-INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"],:link[href*="filesmonster.com/"],:link[href*="sickporn.in/"]{text-decoration:line-through!important}
+INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"]
+, :link[href*="filesmonster.com/"]
+, :link[href*="sickporn.in/"]
+, :link[href*="rapidshare.com/"]
+{text-decoration:line-through!important}
 
-:link[href*="mediafire.com/"]{text-decoration:overline!important}
+:link[href*="mediafire.com/"]
+, :link[href*="megashare.com/"]
+{text-decoration:overline!important}
 ',1,NULL,NULL);
 INSERT INTO "styles" VALUES(8,NULL,'',NULL,'img margin','@namespace url(http://www.w3.org/1999/xhtml);
 
@@ -49,8 +55,11 @@ INSERT INTO "style_meta" VALUES(34,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(35,4,'type','site');
 INSERT INTO "style_meta" VALUES(40,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(41,8,'type','site');
+INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
+INSERT INTO "style_meta" VALUES(43,9,'type','site');
+INSERT INTO "style_meta" VALUES(44,7,'type','global');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',8);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',41);
+INSERT INTO "sqlite_sequence" VALUES('styles',9);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',44);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
