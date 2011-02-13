@@ -25,7 +25,6 @@ INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.
 ,.star
 ,.broadcast-with-note
 ,.email
-,.tag
 {display:none!important}
 
 .fullscreen #viewer-container
@@ -66,15 +65,15 @@ INSERT INTO "style_meta" VALUES(13,6,'type','site');
 INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
 INSERT INTO "style_meta" VALUES(43,9,'type','site');
 INSERT INTO "style_meta" VALUES(44,7,'type','global');
-INSERT INTO "style_meta" VALUES(45,4,'domain','www.google.com');
-INSERT INTO "style_meta" VALUES(46,4,'type','site');
 INSERT INTO "style_meta" VALUES(51,3,'type','global');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
 INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(55,8,'type','site');
+INSERT INTO "style_meta" VALUES(56,4,'domain','www.google.com');
+INSERT INTO "style_meta" VALUES(57,4,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',9);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',55);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',57);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
