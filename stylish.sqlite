@@ -32,6 +32,9 @@ INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.
 
 .dislike
 {float:left}
+.like
+,.broadcast
+{float:right}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(5,NULL,'',NULL,'cracked bottom','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("cracked.com"){#fb_sliver{display:none!important}}',1,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt box','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {#fadein{display:none!important}}',1,NULL,NULL);
@@ -70,10 +73,10 @@ INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
 INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(55,8,'type','site');
-INSERT INTO "style_meta" VALUES(56,4,'domain','www.google.com');
-INSERT INTO "style_meta" VALUES(57,4,'type','site');
+INSERT INTO "style_meta" VALUES(58,4,'domain','www.google.com');
+INSERT INTO "style_meta" VALUES(59,4,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',9);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',57);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',59);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
