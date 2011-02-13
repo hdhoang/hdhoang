@@ -40,6 +40,11 @@ INSERT INTO "styles" VALUES(8,NULL,'',NULL,'img margin','@namespace url(http://w
 @-moz-document domain("hb4pm4eznzhd6mts.onion") {
 img{margin-right:300px}
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(9,NULL,'',NULL,'wowwiki','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("wowwiki.com") {
+body{min-width:0!important}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
 INSERT INTO "style_meta" VALUES(4,2,'type','site');
@@ -50,7 +55,6 @@ INSERT INTO "style_meta" VALUES(11,5,'type','site');
 INSERT INTO "style_meta" VALUES(12,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(13,6,'type','site');
 INSERT INTO "style_meta" VALUES(20,3,'type','global');
-INSERT INTO "style_meta" VALUES(23,7,'type','global');
 INSERT INTO "style_meta" VALUES(34,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(35,4,'type','site');
 INSERT INTO "style_meta" VALUES(40,8,'domain','hb4pm4eznzhd6mts.onion');
