@@ -16,7 +16,15 @@ INSERT INTO "styles" VALUES(3,NULL,'',NULL,'link decor',':visited{color:teal!imp
 
 :link[href*=".onion/"]{color:green!important}
 
-:link[href*="wikipedia"]:after{content: "/w";vertical-align:super}',1,NULL,NULL);
+:link[href*="wikipedia"]::before
+{
+content: url(https://secure.wikimedia.org/favicon.ico);
+base-line:
+}
+@-moz-document domain("wikimedia.org") {
+:link[href*="wikipedia"]::before
+{content: none}
+}',1,NULL,NULL);
 INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("www.google.com"){
 .entry-actions
 {display:block!important;text-align:right!important}
@@ -68,15 +76,17 @@ INSERT INTO "style_meta" VALUES(13,6,'type','site');
 INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
 INSERT INTO "style_meta" VALUES(43,9,'type','site');
 INSERT INTO "style_meta" VALUES(44,7,'type','global');
-INSERT INTO "style_meta" VALUES(51,3,'type','global');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
 INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(55,8,'type','site');
 INSERT INTO "style_meta" VALUES(58,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(59,4,'type','site');
+INSERT INTO "style_meta" VALUES(60,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(61,3,'type','global');
+INSERT INTO "style_meta" VALUES(62,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',9);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',59);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',62);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
