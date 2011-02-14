@@ -30,6 +30,11 @@
 [url "ssh://git.freedesktop.org/git/"]
     pushInsteadOf = fdo:
 
+[url "git://github.com/dag/"]
+     insteadOf = cll:
+[url "git@github.com:hdhoang/"]
+     pushInsteadOf = cll:
+
 [filter "xmllint"]
 	clean = xmllint --pretty 2 %f
 
