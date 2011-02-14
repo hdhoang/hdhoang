@@ -60,11 +60,13 @@ center
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"]
 , :link[href*="filesmonster.com/"]
+, :link[href*="filesonic.com/"]
 , :link[href*="sickporn.in/"]
 , :link[href*="rapidshare.com/"]
 {text-decoration:line-through!important}
 
 :link[href*="mediafire.com/"]
+, :link[href*="mfi.re/"]
 , :link[href*="megashare.com/"]
 {text-decoration:overline!important}
 ',1,NULL,NULL);
@@ -85,7 +87,6 @@ INSERT INTO "style_meta" VALUES(10,5,'domain','cracked.com');
 INSERT INTO "style_meta" VALUES(11,5,'type','site');
 INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
 INSERT INTO "style_meta" VALUES(43,9,'type','site');
-INSERT INTO "style_meta" VALUES(44,7,'type','global');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
 INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
@@ -97,8 +98,9 @@ INSERT INTO "style_meta" VALUES(61,3,'type','global');
 INSERT INTO "style_meta" VALUES(62,3,'type','site');
 INSERT INTO "style_meta" VALUES(65,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(66,6,'type','site');
+INSERT INTO "style_meta" VALUES(68,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',9);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',66);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',68);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
