@@ -25,6 +25,11 @@
 [url "ssh://git@git.kde.org/"]
     pushInsteadOf = kde:
 
+[url "git://anongit.freedesktop.org/"]
+    insteadOf = fdo:
+[url "ssh://git.freedesktop.org/git/"]
+    pushInsteadOf = fdo:
+
 [filter "xmllint"]
 	clean = xmllint --pretty 2 %f
 
