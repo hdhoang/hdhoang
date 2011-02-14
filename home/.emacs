@@ -20,6 +20,7 @@
 (defun hdh/revert-some-ergoemacs ()
 	     (tool-bar-mode t)
 
+	     (global-set-key (kbd "C-x d") 'dired)
 	     (global-set-key (kbd "C-p") 'previous-line)
 	     (global-set-key (kbd "C-n") 'next-line)
 	     (global-set-key (kbd "C-f") 'forward-char)
