@@ -3,7 +3,7 @@
     mode="patterns"
     selectedTabIndex="0"
     toolsMenu="false"
-    contextMenu="true"
+    contextMenu="false"
     advancedMenus="false"
     previousMode="disabled"
     resetIconColors="true"
@@ -15,7 +15,7 @@
       includeDirect="false"
       includeDisabled="false"
   /><statusbar
-      icon="true"
+      icon="false"
       text="false"
       left="contextmenu"
       middle="cycle"
