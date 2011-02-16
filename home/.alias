@@ -25,7 +25,7 @@ alias ln='ln -i'
 alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
 alias pr='perl-rename -i'
-function prv(){ pr -v $@ | column -t } # misaligned if separated by -s '>'}
+function prv(){ pr -v $@ | column -t -s '>' }
 alias rs='nice -n 19 ionice -c 3 rsync --human-readable --verbose --progress --partial --archive --xattrs --no-perms'
 
 # system
