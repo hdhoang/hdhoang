@@ -20,7 +20,7 @@ favn() {
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     prv 's/ /_/g' ~f/Music/*' '*
     prv 's/([^_])-_/\1__/g' ~f/Music/*
-    prv "s/''/_/g" ~f/Music/*
+    prv "s/''/_/g" ~f/Music/*\'\'*
 }
 alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
 
