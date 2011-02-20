@@ -1,0 +1,6 @@
+if_name=sin
+server_ipv4=216.218.221.42
+client_ipv4=any
+client_ipv6=2001:470:ec10:63:6d:61:6c:75/48
+link_mtu=1472
+tunnel_ttl=255

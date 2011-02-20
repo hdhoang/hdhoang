@@ -1,5 +1,6 @@
 # -*- mode: sh -*-
 h=~/Public/hdh-misc.git/
+c=~h/system-config/$(hostname -s)
 t=~/t
 dl=~/Public/mirror/downloads/
 pkg=/var/cache/pacman/pkg/
