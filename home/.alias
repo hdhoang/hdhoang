@@ -15,7 +15,7 @@ alias t='inotail -f'
 alias dm='dig +search +noall +answer +multiline'
 alias ds='dig +search +short'
 alias dx='dig +search +short -x'
-alias whois='whois -H'
+alias whois='gwhois'
 alias nh='sudo nethogs br0'
 
 # file ops
