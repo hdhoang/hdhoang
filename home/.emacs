@@ -40,13 +40,14 @@
 (ergoemacs-add-hook 'ido-minibuffer-setup-hook 'hdh/ergoemacs-ido-keys)
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(TeX-PDF-mode t)
  '(TeX-engine (quote xetex))
  '(backup-directory-alist (quote (("." . "~/.emacs.d/backups"))))
+ '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(current-language-environment "UTF-8")
@@ -71,13 +72,14 @@
  '(size-indication-mode t)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify))
- '(vc-follow-symlinks t))
+ '(vc-follow-symlinks t)
+ '(x-select-enable-clipboard t))
 
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
  '(completions-common-part ((t (:inherit default :foreground "red"))))
  '(diredp-ignored-file-name ((t (:foreground "#bebebe"))))
  '(isearch ((((class color) (min-colors 88) (background light)) (:background "black" :foreground "white"))))
@@ -88,11 +90,8 @@
 (mapcar (lambda (ext)
 	   (add-to-list 'auto-mode-alist (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
 	 '("service" "socket" "desktop" "directory"))
-
-;(load "auctex.el" nil t t)
-;(load "preview-latex.el" nil t t)
+(add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
 
 ;; Minor modes
-(add-to-list 'yas/root-directory "/home/hdhoang/Public/public-domain/code/snippets/")
+(add-to-list 'yas/root-directory "/home/hdhoang/Public/code/snippets/")
 
-(add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
