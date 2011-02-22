@@ -16,7 +16,7 @@ function xattr() {
 	setfattr -n "user.$USER.$label" -v "$value" $*
 }
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-alias favm="mv -iv ~/Music/*(.) ~f/Music"
+alias favm="mv -iv ~/Music/^desktop.ini(.) ~f/Music"
 favn() {
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     prv 's/ /_/g' ~f/Music/*' '*

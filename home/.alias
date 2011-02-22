@@ -27,6 +27,7 @@ alias rm='rm --interactive=once --one-file-system'
 alias pr='perl-rename -i'
 function prv(){ pr -v $@ | column -t -s '>' }
 alias rs='nice -n 19 ionice -c 3 rsync --human-readable --verbose --progress --partial --archive --xattrs'
+alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/pic ~/Public/mirror/book ~pool'
 
 # system
 alias pa='rlwrap pacmd'
