@@ -82,6 +82,11 @@ INSERT INTO "styles" VALUES(9,NULL,'',NULL,'wowwiki','@namespace url(http://www.
 @-moz-document domain("wowwiki.com") {
 body{min-width:0!important}
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(10,NULL,'',NULL,'lparchive','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("lparchive.org") {
+body{width:auto!important}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
 INSERT INTO "style_meta" VALUES(4,2,'type','site');
@@ -101,8 +106,10 @@ INSERT INTO "style_meta" VALUES(62,3,'type','site');
 INSERT INTO "style_meta" VALUES(68,7,'type','global');
 INSERT INTO "style_meta" VALUES(71,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(72,6,'type','site');
+INSERT INTO "style_meta" VALUES(73,10,'domain','lparchive.org');
+INSERT INTO "style_meta" VALUES(74,10,'type','site');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',9);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',72);
+INSERT INTO "sqlite_sequence" VALUES('styles',10);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',74);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
