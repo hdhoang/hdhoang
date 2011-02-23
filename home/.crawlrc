@@ -1,4 +1,4 @@
-# -*- mode: conf-unix -*-
+# -*- mode: text -*-
 force_more_message = You are starting to lose your buoyancy
 force_more_message = You hear a distant snort
 force_more_message = You hear coins being counted
