@@ -41,7 +41,7 @@ alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/pic ~/Pu
 alias pa='rlwrap pacmd'
 alias sc='systemctl'
 alias ssc='sudo systemctl --system'
-alias po='cat ~/shutdown-todo - && ssc'
+alias po='cat ~/shutdown-todo.txt - && ssc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
 # fun
