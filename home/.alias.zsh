@@ -8,13 +8,13 @@ el=/var/log/everything.log
 
 f=~/Public/fav
 pool=/mnt/marbi
-alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
 function favm() {
     prv 's/ /_/g;s/([^_])-_/\1__/g' ~f/Music/*' '*
     prv "s/''/_/g" ~f/Music/*\'\'*
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
+alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
 alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
 
 alias -s cbr=okular
