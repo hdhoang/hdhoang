@@ -8,15 +8,8 @@ el=/var/log/everything.log
 
 f=~/Public/fav
 pool=/mnt/marbi
-function xattr() {
-	local label="$1"
-	shift
-	local value="$1"
-	shift
-	setfattr -n "user.$USER.$label" -v "$value" $*
-}
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-favm() {
+function favm() {
     prv 's/ /_/g' ~f/Music/*' '*
     prv 's/([^_])-_/\1__/g' ~f/Music/*
     prv "s/''/_/g" ~f/Music/*\'\'*
