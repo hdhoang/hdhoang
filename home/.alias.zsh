@@ -10,8 +10,7 @@ f=~/Public/fav
 pool=/mnt/marbi
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
 function favm() {
-    prv 's/ /_/g' ~f/Music/*' '*
-    prv 's/([^_])-_/\1__/g' ~f/Music/*
+    prv 's/ /_/g;s/([^_])-_/\1__/g' ~f/Music/*' '*
     prv "s/''/_/g" ~f/Music/*\'\'*
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
