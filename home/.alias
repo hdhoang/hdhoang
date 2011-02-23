@@ -33,7 +33,8 @@ function xattr() {
 	shift
 	setfattr -n "user.$USER.$label" -v "$value" $*
 }
-alias rs='nice -n 19 ionice -c 3 rsync --human-readable --verbose --progress --partial --archive --xattrs'
+alias nn='nice -n 19 ionice -c 3 '
+alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
 alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/pic ~/Public/mirror/book ~pool'
 
 # system
