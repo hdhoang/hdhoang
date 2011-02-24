@@ -14,7 +14,7 @@ EXITCODE="%(?..${fg[red]}%? )"
 PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
-alias mp='nice -n 19 makepkg -isf'
+alias mp='nn makepkg -isf'
 alias i='sudo powerpill'
 alias cower='cower -fddt ~ap'
 compdef _pacman powerpill
@@ -25,10 +25,6 @@ function aur {
     cd ~ap/$1
     mp
 }
-
-
-alias def='COLUMNS=$COLUMNS jbo define'
-fd() { jbo filter "$@" | JBO_ESCAPES=always def | $PAGER; }
 
 setopt dvorak
 # bindkey    "^[[3;2~"         delete-char

@@ -3,7 +3,7 @@ source /etc/profile
 export PAGER=most
 export LESS='FiX'
 export MOST_SWITCHES="-w"
-export GREP_OPTIONS='--color -D skip --binary-files=without-match --ignore-case' 
+export GREP_OPTIONS='--color -D skip --binary-files=without-match --ignore-case'
 export EDITOR=emacsclient
 export ALTERNATE_EDITOR=""
 export ERGOEMACS_KEYBOARD_LAYOUT=dv
