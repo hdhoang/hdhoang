@@ -19,7 +19,6 @@ INSERT INTO "styles" VALUES(3,NULL,'',NULL,'link decor',':visited{color:teal!imp
 :link[href*="wikipedia"]::before
 {
 content: url(https://secure.wikimedia.org/favicon.ico);
-base-line:
 }
 @-moz-document domain("wikimedia.org") {
 :link[href*="wikipedia"]::before
@@ -87,6 +86,12 @@ INSERT INTO "styles" VALUES(10,NULL,'',NULL,'lparchive','@namespace url(http://w
 @-moz-document domain("lparchive.org") {
 body{width:auto!important}
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(11,NULL,'',NULL,'playdota','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("playdota.com") {
+#website,.content{width:auto!important}
+a [color] {color:inherit!important}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
 INSERT INTO "style_meta" VALUES(4,2,'type','site');
@@ -100,16 +105,18 @@ INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(55,8,'type','site');
 INSERT INTO "style_meta" VALUES(58,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(59,4,'type','site');
-INSERT INTO "style_meta" VALUES(60,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(61,3,'type','global');
-INSERT INTO "style_meta" VALUES(62,3,'type','site');
 INSERT INTO "style_meta" VALUES(68,7,'type','global');
 INSERT INTO "style_meta" VALUES(71,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(72,6,'type','site');
 INSERT INTO "style_meta" VALUES(73,10,'domain','lparchive.org');
 INSERT INTO "style_meta" VALUES(74,10,'type','site');
+INSERT INTO "style_meta" VALUES(81,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(82,3,'type','global');
+INSERT INTO "style_meta" VALUES(83,3,'type','site');
+INSERT INTO "style_meta" VALUES(84,11,'domain','playdota.com');
+INSERT INTO "style_meta" VALUES(85,11,'type','site');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',10);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',74);
+INSERT INTO "sqlite_sequence" VALUES('styles',11);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',85);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
