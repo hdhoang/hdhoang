@@ -28,3 +28,5 @@ alias -s avi=vlc
 alias -s mp4=vlc
 alias -s mpg=vlc
 alias -s wmv=vlc
+
+alias -g today='grep $(date --rfc-3339=date)'
