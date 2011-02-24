@@ -4,7 +4,6 @@
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
 
-(setenv "ERGOEMACS_KEYBOARD_LAYOUT" "dv")
 (defun hdh/revert-some-ergoemacs ()
 	     (tool-bar-mode t)
 
