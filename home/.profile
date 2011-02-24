@@ -12,5 +12,3 @@ export PURPLE_YAHOO_DEBUG=1
 unset MALLOC_CHECK_
 
 export EMAIL=hdhoang@zahe.me
-
-source ~/.alias

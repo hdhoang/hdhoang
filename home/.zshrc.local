@@ -1,5 +1,6 @@
 # -*- mode: sh; sh-shell: zsh -*-
 source ~/.profile
+source ~/.alias
 source ~/.alias.zsh
 
 # assuming grml-zsh-config is used
