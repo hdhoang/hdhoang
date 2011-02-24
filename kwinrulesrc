@@ -33,8 +33,8 @@ size=900,950
 sizerule=2
 skipswitcher=true
 skipswitcherrule=2
-title=
-titlematch=0
+title[$d]
+titlematch[$d]
 types=1
 windowrole=browser
 windowrolematch=1
@@ -54,8 +54,8 @@ shortcut=Alt+Shift+F2
 shortcutrule=2
 skipswitcher=true
 skipswitcherrule=2
-title=
-titlematch=0
+title[$d]
+titlematch[$d]
 types=1
 windowrole=mainwindow#1
 windowrolematch=1
@@ -71,8 +71,8 @@ maximizevert=true
 maximizevertrule=2
 noborder=true
 noborderrule=2
-title=
-titlematch=0
+title[$d]
+titlematch[$d]
 types=1
 windowrole=okular::shell
 windowrolematch=1
@@ -96,8 +96,8 @@ size=345,970
 sizerule=2
 skipswitcher=true
 skipswitcherrule=2
-title=
-titlematch=0
+title[$d]
+titlematch[$d]
 types=1
 windowrole=conversation
 windowrolematch=1
