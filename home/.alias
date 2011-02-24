@@ -50,6 +50,7 @@ alias c="crawl-tiles&"
 alias m='mplayer'
 
 # utils
+alias today='grep $(date --rfc-3339=date)'
 alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
