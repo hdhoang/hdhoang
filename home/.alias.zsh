@@ -15,6 +15,7 @@ function favm() {
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
+alias fava='ls ~f/Music |cut -d - -f 1 -s | uniq -c | sort -n'
 alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
 
 alias -s cbr=okular
