@@ -9,8 +9,7 @@ el=/var/log/everything.log
 f=~/Public/fav
 pool=/mnt/marbi
 function favm() {
-    prv 's/- /__/g;s/ /_/g' ~f/Music/*' '*
-    prv "s/''/_/g" ~f/Music/*\'\'*
+    prv "s/- /__/g;s/ /_/g;s/''/_/g" ~f/Music/*' '*
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
