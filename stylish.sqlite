@@ -71,10 +71,14 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , :link[href*="megashare.com/"]
 {text-decoration:overline!important}
 ',1,NULL,NULL);
-INSERT INTO "styles" VALUES(8,NULL,'',NULL,'img margin','@namespace url(http://www.w3.org/1999/xhtml);
+INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("hb4pm4eznzhd6mts.onion") {
 img{margin-right:300px}
+body{margin:0}
+td{padding:0}
+[name=width], [name=height], #settings td>:not(select)
+{display:none}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(9,NULL,'',NULL,'wowwiki','@namespace url(http://www.w3.org/1999/xhtml);
 
@@ -106,8 +110,6 @@ INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
 INSERT INTO "style_meta" VALUES(43,9,'type','site');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
-INSERT INTO "style_meta" VALUES(54,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(55,8,'type','site');
 INSERT INTO "style_meta" VALUES(58,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(59,4,'type','site');
 INSERT INTO "style_meta" VALUES(68,7,'type','global');
@@ -122,8 +124,10 @@ INSERT INTO "style_meta" VALUES(87,12,'type','site');
 INSERT INTO "style_meta" VALUES(88,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(89,3,'type','global');
 INSERT INTO "style_meta" VALUES(90,3,'type','site');
+INSERT INTO "style_meta" VALUES(97,8,'domain','hb4pm4eznzhd6mts.onion');
+INSERT INTO "style_meta" VALUES(98,8,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',12);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',90);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',98);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
