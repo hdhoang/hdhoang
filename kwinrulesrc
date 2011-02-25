@@ -2,7 +2,7 @@
 Description=video
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
-position=620,21
+position=630,20
 positionrule=3
 types=1
 windowrole=vlc-main|^$
