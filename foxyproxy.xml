@@ -123,6 +123,14 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+        /><match
+            enabled="true"
+            name="imageshack"
+            pattern="http://img*.imageshack.us/img*"
+            isRegEx="false"
+            isBlackList="false"
+            isMultiLine="false"
+            caseSensitive="false"
         /></matches
       ><autoconf
           url=""
