@@ -2,6 +2,8 @@
 Description=video
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
+moveresizemode[$d]
+moveresizemoderule[$d]
 position=630,20
 positionrule=3
 types=1
@@ -86,13 +88,15 @@ clientmachine=cmalu.zahe.me
 clientmachinematch=0
 closeable=false
 closeablerule=2
+maximizevert[$d]
+maximizevertrule[$d]
 noborder=true
 noborderrule=2
 position=950,-20
 positionrule=2
 shortcut=Alt+Shift+F1
 shortcutrule=2
-size=345,970
+size=345,1055
 sizerule=2
 skipswitcher=true
 skipswitcherrule=2
