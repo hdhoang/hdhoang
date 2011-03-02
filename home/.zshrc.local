@@ -18,7 +18,7 @@ alias mp='nn makepkg -isf'
 alias i='sudo powerpill'
 alias cower='cower -fddt ~ap'
 compdef _pacman powerpill
-ap=~/Public/mirror/archlinux/
+ap=~/archlinux/
 function aur {
     # trap 'return 1' ZERR
     cower $1
