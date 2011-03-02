@@ -8,6 +8,7 @@
 	whitespace = trailing-space,space-before-tab
 [diff]
 	renamelimit = 0
+	renames = copies
 [branch]
 	autosetuprebase = always
 [alias]
