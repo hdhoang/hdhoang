@@ -9,6 +9,7 @@
 [diff]
 	renamelimit = 0
 	renames = copies
+	mnemonicprefix = true
 [branch]
 	autosetuprebase = always
 [alias]
