@@ -62,6 +62,7 @@ background:white
 INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"]
 , :link[href*="filesmonster.com/"]
 , :link[href*="filesonic.com/"]
+, :link[href*="fileserve.com/"] /* slow UI */
 , :link[href*="sickporn.in/"]
 , :link[href*="megaupload.com/"]
 , :link[href*="rapidshare.com/"]
@@ -126,9 +127,9 @@ INSERT INTO "style_meta" VALUES(89,3,'type','global');
 INSERT INTO "style_meta" VALUES(90,3,'type','site');
 INSERT INTO "style_meta" VALUES(97,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(98,8,'type','site');
-INSERT INTO "style_meta" VALUES(99,7,'type','global');
+INSERT INTO "style_meta" VALUES(100,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',12);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',99);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',100);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
