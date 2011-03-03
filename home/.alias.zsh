@@ -2,7 +2,7 @@
 h=~/Public/hdh-misc.git/
 c=~h/system-config/$(hostname -s)
 t=~/t
-dl=~/Public/mirror/downloads/
+dl=~/Downloads/
 pkg=/var/cache/pacman/pkg/
 el=/var/log/everything.log
 
