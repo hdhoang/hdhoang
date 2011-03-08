@@ -13,6 +13,10 @@ function favm() {
     rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
+function com() {
+    prv 's/rar$/cbr/;s/zip$/cbz/' {~dl,/mnt/cmaluz/@d}/*(.)
+    mv {~dl,/mnt/cmaluz/@d}/*cb? ~/Public/mirror/
+}
 alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
 alias fava='ls ~f/Music |cut -d - -f 1 -s | uniq -c | sort -n'
 alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
