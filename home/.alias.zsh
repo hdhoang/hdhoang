@@ -4,7 +4,7 @@ c=~h/system-config/$(hostname -s)
 t=~/t
 dl=~/Downloads/
 pkg=/var/cache/pacman/pkg/
-el=/var/log/everything.log
+el=/var/log/messages
 
 f=~/Public/fav
 pool=/mnt/marbi
