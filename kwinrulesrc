@@ -13,10 +13,31 @@ wmclass=vlc|mplayer
 wmclasscomplete=true
 wmclassmatch=3
 
+[10]
+Description=emacs
+clientmachine=cmalu.zahe.me
+clientmachinematch=0
+shortcut=Alt+Shift+F4
+shortcutrule=2
+skiptaskbar[$d]
+skiptaskbarrule[$d]
+title=emacs@cmalu.zahe.me
+titlematch=0
+types[$d]
+wmclass=emacs
+wmclasscomplete=false
+wmclassmatch=1
+
 [2]
 Description=(Default) Disable focus stealing prevention for XV
+clientmachine[$d]
+clientmachinematch[$d]
 fsplevel=0
 fsplevelrule=2
+shortcut[$d]
+shortcutrule[$d]
+title[$d]
+titlematch[$d]
 wmclass=^xv .*
 wmclasscomplete=true
 wmclassmatch=3
@@ -25,6 +46,8 @@ wmclassmatch=3
 Description=fx
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
+fsplevel[$d]
+fsplevelrule[$d]
 noborder=true
 noborderrule=3
 position=0,-6
@@ -54,6 +77,8 @@ position=0,300
 positionrule=3
 shortcut=Alt+Shift+F2
 shortcutrule=2
+size[$d]
+sizerule[$d]
 skipswitcher=true
 skipswitcherrule=2
 title[$d]
@@ -73,6 +98,12 @@ maximizevert=true
 maximizevertrule=2
 noborder=true
 noborderrule=2
+position[$d]
+positionrule[$d]
+shortcut[$d]
+shortcutrule[$d]
+skipswitcher[$d]
+skipswitcherrule[$d]
 title[$d]
 titlematch[$d]
 types=1
@@ -115,27 +146,45 @@ above=true
 aboverule=2
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
+closeable[$d]
+closeablerule[$d]
+noborder[$d]
+noborderrule[$d]
 position=946,965
 positionrule=2
+shortcut[$d]
+shortcutrule[$d]
 size=236,28
 sizerule=2
+skipswitcher[$d]
+skipswitcherrule[$d]
 title=Slim Toolbar
 titlematch=1
 types=8
+windowrole[$d]
+windowrolematch[$d]
 wmclass=amarok amarok
 wmclasscomplete=true
 wmclassmatch=1
 
 [8]
 Description=amarok
+above[$d]
+aboverule[$d]
+clientmachine[$d]
+clientmachinematch[$d]
 maximizevert=true
 maximizevertrule=2
 noborder=true
 noborderrule=2
 position=644,0
 positionrule=2
+size[$d]
+sizerule[$d]
 skiptaskbar=false
 skiptaskbarrule=2
+title[$d]
+titlematch[$d]
 types=1
 wmclass=amarok
 wmclasscomplete=false
@@ -143,6 +192,12 @@ wmclassmatch=1
 
 [9]
 Description=skip taskbar
+maximizevert[$d]
+maximizevertrule[$d]
+noborder[$d]
+noborderrule[$d]
+position[$d]
+positionrule[$d]
 skiptaskbar=true
 skiptaskbarrule=2
 types=1
@@ -151,4 +206,4 @@ wmclasscomplete=false
 wmclassmatch=0
 
 [General]
-count=9
+count=10
