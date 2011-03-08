@@ -91,5 +91,9 @@
 	'("service" "socket" "desktop" "directory"))
 (add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
 
+(add-to-list 'load-path "/home/hdhoang/Public/mirror/magit/")
+(autoload 'magit-status "magit.el" "" t nil)
+(global-set-key (kbd "C-x S") 'magit-status)
+
 ;; Minor modes
 (add-to-list 'yas/root-directory "/home/hdhoang/Public/code/snippets/")
