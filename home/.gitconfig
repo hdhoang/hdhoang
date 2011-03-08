@@ -20,7 +20,7 @@
 	s = status -s
 	ap = add -p
 	c = commit
-	d = diff --word-diff
+	d = diff --word-diff=porcelain
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --all
 
