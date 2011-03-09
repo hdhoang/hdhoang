@@ -94,7 +94,9 @@
 (add-to-list 'load-path "/home/hdhoang/Public/mirror/magit/")
 (autoload 'magit-status "magit.el" "" t nil)
 (global-set-key (kbd "C-x S") 'magit-status)
-(add-to-list 'magit-diff-options "--word-diff=porcelain")
+(add-hook 'magit-mode-hook
+	  (lambda ()
+	    (add-to-list 'magit-diff-options "--word-diff=porcelain")))
 
 ;; Minor modes
 (add-to-list 'yas/root-directory "/home/hdhoang/Public/code/snippets/")
