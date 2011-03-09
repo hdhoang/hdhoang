@@ -102,8 +102,8 @@
         /><match
             enabled="true"
             name="ctt"
-            pattern="*coithienthai.com/*"
-            isRegEx="false"
+            pattern=".*coithienthai\..../.*"
+            isRegEx="true"
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
