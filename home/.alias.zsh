@@ -3,6 +3,7 @@ h=~/Public/hdh-misc.git/
 c=~h/system-config/$(hostname -s)
 t=~/t
 dl=~/Downloads/
+g=/mnt/cmaluz/@g/
 pkg=/var/cache/pacman/pkg/
 el=/var/log/messages
 
