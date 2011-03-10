@@ -1,2 +1,3 @@
 foxyproxy.xml	 filter=xmllint
+gm_scripts/config.xml	 filter=xmllint
 stylish.sqlite	 filter=stylish
