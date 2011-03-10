@@ -1,5 +1,5 @@
 <UserScriptConfig>
-	<Script filename="disable_video_autoplay.user.js" name="Disable video autoplay" namespace="http://diveintomark.org/projects/greasemonkey/" description="Ensures that HTML5 video elements do not autoplay" version="" enabled="true" basedir="disable_video_autoplay" modified="1299668255000" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" installurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js">
+	<Script filename="disable_video_autoplay.user.js" name="Disable audio/video autoplay" namespace="http://diveintomark.org/projects/greasemonkey/" description="Ensures that HTML5 audio/video elements do not autoplay" version="" enabled="true" basedir="disable_video_autoplay" modified="1299670768000" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" installurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js">
 		<Include>*</Include>
 	</Script>
 </UserScriptConfig>
