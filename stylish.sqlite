@@ -23,6 +23,12 @@ content: url(https://secure.wikimedia.org/favicon.ico);
 @-moz-document domain("wikimedia.org") {
 :link[href*="/wikipedia/"]::before
 {content: none}
+}
+
+
+:link[href*="cracked.com/"]::before
+{
+content: url(http:/www.cracked.com/favicon.ico);
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("www.google.com"){
 .entry-actions
@@ -66,6 +72,7 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , :link[href*="fileserve.com/"] /* slow UI */
 , :link[href*="megaupload.com/"]
 , :link[href*="oron.com/"] /* 60s */
+, :link[href*="uploading.com/"] /* 60s */
 {text-decoration:line-through!important}
 
 :link[href*="mediafire.com/"]
@@ -124,14 +131,14 @@ INSERT INTO "style_meta" VALUES(84,11,'domain','playdota.com');
 INSERT INTO "style_meta" VALUES(85,11,'type','site');
 INSERT INTO "style_meta" VALUES(86,12,'domain','ipv6-test.com');
 INSERT INTO "style_meta" VALUES(87,12,'type','site');
-INSERT INTO "style_meta" VALUES(88,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(89,3,'type','global');
-INSERT INTO "style_meta" VALUES(90,3,'type','site');
 INSERT INTO "style_meta" VALUES(97,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(98,8,'type','site');
-INSERT INTO "style_meta" VALUES(107,7,'type','global');
+INSERT INTO "style_meta" VALUES(108,7,'type','global');
+INSERT INTO "style_meta" VALUES(109,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(110,3,'type','global');
+INSERT INTO "style_meta" VALUES(111,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',12);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',107);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',111);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
