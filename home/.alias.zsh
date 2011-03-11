@@ -10,8 +10,7 @@ el=/var/log/messages
 f=~/Public/fav
 pool=/mnt/marbi
 function favm() {
-    prv "s/- /__/g;s/ /_/g;s/''/_/g" ~f/Music/*' '*
-    rename '_[Unknown_Album]' '' ~/Music/*Unknown_Album*
+    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//" ~/Music/*(.)
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
 function com() {
