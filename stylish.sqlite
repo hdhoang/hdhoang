@@ -112,6 +112,11 @@ INSERT INTO "styles" VALUES(12,NULL,'',NULL,'hide search box','@namespace url(ht
 @-moz-document domain("ipv6-test.com") {
 #cse-search-box{display:none!important}
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(13,NULL,'',NULL,'cmdfu','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("commandlinefu.com") {
+#right-block{width:200px!important}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
 INSERT INTO "style_meta" VALUES(4,2,'type','site');
@@ -137,8 +142,10 @@ INSERT INTO "style_meta" VALUES(108,7,'type','global');
 INSERT INTO "style_meta" VALUES(109,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(110,3,'type','global');
 INSERT INTO "style_meta" VALUES(111,3,'type','site');
+INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
+INSERT INTO "style_meta" VALUES(113,13,'type','site');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',12);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',111);
+INSERT INTO "sqlite_sequence" VALUES('styles',13);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',113);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
