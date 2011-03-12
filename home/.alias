@@ -35,7 +35,7 @@ function xattr() {
 }
 alias nn='nice -n 19 ionice -c 3 '
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/pic ~/Public/mirror/book ~pool'
+alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/{openid,pic} ~/Public/mirror/book ~pool'
 
 # system
 alias pa='rlwrap pacmd'
