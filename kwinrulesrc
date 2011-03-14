@@ -96,8 +96,8 @@ clientmachine=cmalu.zahe.me
 clientmachinematch=0
 maximizevert=true
 maximizevertrule=2
-noborder=true
-noborderrule=2
+noborder[$d]
+noborderrule[$d]
 position[$d]
 positionrule[$d]
 shortcut[$d]
