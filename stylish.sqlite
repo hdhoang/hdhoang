@@ -75,6 +75,7 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , :link[href*="filesmonster.com/"] /* bad UI and splits big files */
 , :link[href*="filesonic.com/"] /* 60s */
 , :link[href*="fileserve.com/"] /* slow UI */
+, :link[href*="rapidshare.com/"] /* slow #! */
 , :link[href*="megaupload.com/"]
 , :link[href*="oron.com/"] /* 60s */
 , :link[href*="uploading.com/"] /* 60s */
@@ -143,14 +144,14 @@ INSERT INTO "style_meta" VALUES(86,12,'domain','ipv6-test.com');
 INSERT INTO "style_meta" VALUES(87,12,'type','site');
 INSERT INTO "style_meta" VALUES(97,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(98,8,'type','site');
-INSERT INTO "style_meta" VALUES(108,7,'type','global');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(114,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(115,3,'type','global');
 INSERT INTO "style_meta" VALUES(116,3,'type','site');
+INSERT INTO "style_meta" VALUES(117,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',13);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',116);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',117);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
