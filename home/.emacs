@@ -86,6 +86,7 @@
 
 ;; Major modes
 (add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.do\\'" . sh-mode))
 (mapcar (lambda (ext)
 	  (add-to-list 'auto-mode-alist (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
 	'("service" "socket" "desktop" "directory"))
