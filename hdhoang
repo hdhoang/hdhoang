@@ -1,0 +1,22 @@
+<!doctype html><html><head>
+
+<title>OpenID endpoint (google)</title>
+<link rel="openid2.provider"
+      href="https://www.google.com/accounts/o8/ud?source=profiles" >
+<link rel="openid2.local_id"
+      href="http://www.google.com/profiles/hieu.d.hoang" >
+
+<!-- <title>OpenID endpoint (myopenid)</title> -->
+<!-- <link rel="openid.server" href="http://www.myopenid.com/server" /> -->
+<!-- <link rel="openid.delegate" href="http://lazni.myopenid.com/" /> -->
+
+<!-- <title>OpenID endpoint (ownopenidserver)</title> -->
+<!-- <link rel="openid.server" -->
+<!--       href="https://id.zahe.me/server.py/endpoint"> -->
+
+<!-- <title>OpenID endpoint (poit)</title> -->
+<!-- <link rel="openid2.provider" -->
+<!--       href="https://id.zahe.me/poit.py"> -->
+
+<p>Feel free to browse around my
+<a href=https://cmalu.zahe.me/ >public machine</a>.
