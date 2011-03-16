@@ -8,7 +8,7 @@ shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
 # DEVICE DETAILS: /dev/sda5 UUID=28ef7381-c89d-47ef-b0b4-da7fc7e80fdd LABEL=cmalu
 # DEVICE DETAILS: /dev/sda6 UUID=d8cb2d2a-bbf0-49ce-98c1-3b125ec79c35 LABEL=hdhoang
 LABEL=cmalu / ext4 relatime 0 1
-LABEL=hdhoang /home/hdhoang ext4 user_xattr,nosuid,nodev,noatime 0 1
+LABEL=hdhoang /home/hdhoang ext4 user_xattr,nosuid,noatime 0 1
 
 LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,exec,hide_hid_files,windows_names,uid=1000,gid=100,fmask=133,dmask=022 0 0
 LABEL=marbi /mnt/marbi ntfs-3g users,noauto,noatime,compress,hide_hid_files,uid=1000,gid=100,fmask=133,dmask=022 0 0
