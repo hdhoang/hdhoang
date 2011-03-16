@@ -21,8 +21,9 @@ compdef _pacman powerpill
 ap=~/archlinux/
 function aur {
     # trap 'return 1' ZERR
+    cd ~ap
     cower $1
-    cd ~ap/$1
+    cd $1
     mp
 }
 
