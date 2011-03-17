@@ -25,6 +25,15 @@ content: url(https://secure.wikimedia.org/favicon.ico);
 {content: none}
 }
 
+:link[href*="archive.org/"]::before
+{
+content: url(http://web.archive.org/favicon.ico);
+}
+@-moz-document domain("archive.org") {
+:link[href*="archive.org/"]::before
+{content: none}
+}
+
 :link[href*="apenwarr.ca/"]::after
 {
 content: "[AP]";
@@ -156,13 +165,14 @@ INSERT INTO "style_meta" VALUES(98,8,'type','site');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(118,7,'type','global');
-INSERT INTO "style_meta" VALUES(128,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(129,3,'type','global');
-INSERT INTO "style_meta" VALUES(130,3,'type','site');
 INSERT INTO "style_meta" VALUES(135,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(136,4,'type','site');
+INSERT INTO "style_meta" VALUES(137,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(138,3,'domain','archive.org');
+INSERT INTO "style_meta" VALUES(139,3,'type','global');
+INSERT INTO "style_meta" VALUES(140,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',13);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',136);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',140);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
