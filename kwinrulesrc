@@ -28,8 +28,27 @@ wmclass=emacs
 wmclasscomplete=false
 wmclassmatch=1
 
+[11]
+Description=fx download
+above=true
+aboverule=2
+clientmachine[$d]
+clientmachinematch[$d]
+shortcut[$d]
+shortcutrule[$d]
+title[$d]
+titlematch[$d]
+types=1
+windowrole=manager
+windowrolematch=1
+wmclass=minefield
+wmclasscomplete=false
+wmclassmatch=1
+
 [2]
 Description=(Default) Disable focus stealing prevention for XV
+above[$d]
+aboverule[$d]
 clientmachine[$d]
 clientmachinematch[$d]
 fsplevel=0
@@ -38,6 +57,9 @@ shortcut[$d]
 shortcutrule[$d]
 title[$d]
 titlematch[$d]
+types[$d]
+windowrole[$d]
+windowrolematch[$d]
 wmclass=^xv .*
 wmclasscomplete=true
 wmclassmatch=3
@@ -69,6 +91,8 @@ wmclassmatch=1
 
 [4]
 Description=konsole
+above[$d]
+aboverule[$d]
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 noborder=true
@@ -206,4 +230,4 @@ wmclasscomplete=false
 wmclassmatch=0
 
 [General]
-count=10
+count=11
