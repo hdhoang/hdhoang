@@ -1,0 +1,48 @@
+--- etc/pacman.conf	2011-01-23 03:56:40.000000000 +0700
++++ /etc/pacman.conf	2011-03-17 19:33:23.949707630 +0700
+@@ -29,9 +29,9 @@
+ #NoExtract   =
+ 
+ # Misc options (all disabled by default)
+-#UseSyslog
+-#ShowSize
+-#UseDelta
++UseSyslog
++ShowSize
++UseDelta
+ #TotalDownload
+ 
+ #
+@@ -57,8 +57,19 @@
+ # repo name header and Include lines. You can add preferred servers immediately
+ # after the header, and they will be used before the default mirrors.
+ 
+-#[testing]
+-#Include = /etc/pacman.d/mirrorlist
++[kde-snapshots]
++Server = http://arch.morrigan.ch/kde-snapshots/os/i686
++[kde-snapshots-extra]
++Server = http://arch.morrigan.ch/kde-snapshots-extra/os/i686
++
++[radeon]
++Server = http://spiralinear.org/perry3d/i686/
++
++[gnome-unstable]
++Include = /etc/pacman.d/mirrorlist
++
++[testing]
++Include = /etc/pacman.d/mirrorlist
+ 
+ [core]
+ Include = /etc/pacman.d/mirrorlist
+@@ -66,8 +77,8 @@
+ [extra]
+ Include = /etc/pacman.d/mirrorlist
+ 
+-#[community-testing]
+-#Include = /etc/pacman.d/mirrorlist
++[community-testing]
++Include = /etc/pacman.d/mirrorlist
+ 
+ [community]
+ Include = /etc/pacman.d/mirrorlist
