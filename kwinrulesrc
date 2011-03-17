@@ -14,7 +14,24 @@ wmclasscomplete=true
 wmclassmatch=3
 
 [10]
+Description=skip taskbar
+clientmachine[$d]
+clientmachinematch[$d]
+shortcut[$d]
+shortcutrule[$d]
+skiptaskbar=true
+skiptaskbarrule=2
+title[$d]
+titlematch[$d]
+types=1
+wmclass=
+wmclasscomplete=false
+wmclassmatch=0
+
+[11]
 Description=emacs
+above[$d]
+aboverule[$d]
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 shortcut=Alt+Shift+F4
@@ -24,24 +41,9 @@ skiptaskbarrule[$d]
 title=emacs@cmalu.zahe.me
 titlematch=0
 types[$d]
+windowrole[$d]
+windowrolematch[$d]
 wmclass=emacs
-wmclasscomplete=false
-wmclassmatch=1
-
-[11]
-Description=fx download
-above=true
-aboverule=2
-clientmachine[$d]
-clientmachinematch[$d]
-shortcut[$d]
-shortcutrule[$d]
-title[$d]
-titlematch[$d]
-types=1
-windowrole=manager
-windowrolematch=1
-wmclass=minefield
 wmclasscomplete=false
 wmclassmatch=1
 
@@ -215,19 +217,23 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [9]
-Description=skip taskbar
+Description=fx download
+above=true
+aboverule=2
 maximizevert[$d]
 maximizevertrule[$d]
 noborder[$d]
 noborderrule[$d]
 position[$d]
 positionrule[$d]
-skiptaskbar=true
+skiptaskbar=false
 skiptaskbarrule=2
 types=1
-wmclass=
+windowrole=manager
+windowrolematch=1
+wmclass=minefield
 wmclasscomplete=false
-wmclassmatch=0
+wmclassmatch=1
 
 [General]
 count=11
