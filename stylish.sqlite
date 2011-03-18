@@ -57,7 +57,7 @@ INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.
 .fullscreen #viewer-container
 {top:0!important}
 #main
-,.card-commond
+,.card-common
 {
 margin:0!important
 }
@@ -165,14 +165,14 @@ INSERT INTO "style_meta" VALUES(98,8,'type','site');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(118,7,'type','global');
-INSERT INTO "style_meta" VALUES(135,4,'domain','www.google.com');
-INSERT INTO "style_meta" VALUES(136,4,'type','site');
 INSERT INTO "style_meta" VALUES(137,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(138,3,'domain','archive.org');
 INSERT INTO "style_meta" VALUES(139,3,'type','global');
 INSERT INTO "style_meta" VALUES(140,3,'type','site');
+INSERT INTO "style_meta" VALUES(141,4,'domain','www.google.com');
+INSERT INTO "style_meta" VALUES(142,4,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',13);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',140);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',142);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
