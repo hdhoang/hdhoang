@@ -1,25 +1,7 @@
 # -*- mode: sh -*-
-h=~/Public/hdh-misc.git/
-c=~h/system-config/$(hostname -s)
-t=~/t
-dl=~/Downloads/
-g=/mnt/cmaluz/@g/
-pkg=/var/cache/pacman/pkg/
-el=/var/log/messages
-
-f=~/Public/fav
-pool=/mnt/marbi
 function favm() {
     prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//" ~/Music/*(.)
     mv -iv ~/Music/^desktop.ini(.) ~f/Music
-}
-alias favd='ls ~f/Music |cut -d \[ -f 1 -s | uniq -d'
-alias fava='ls ~f/Music |cut -d  - -f 1 -s | uniq -c | sort -n'
-alias favs='xattr fav fav ~f/**/*; rs --delete ~f ~pool'
-
-function com() {
-    prv 's/rar$/cbr/;s/zip$/cbz/' {~dl,/mnt/cmaluz/@d}/*(.)
-    mv {~dl,/mnt/cmaluz/@d}/*cb? ~/Public/mirror/
 }
 
 alias -s cbr=okular
