@@ -15,7 +15,7 @@ PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
 alias mp='nn makepkg -isf'
-alias i='sudo powerpill'
+alias i='sudo pacman'
 alias cower='cower -fddt ~ap'
 compdef _pacman powerpill
 ap=~/archlinux/

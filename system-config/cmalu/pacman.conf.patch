@@ -1,6 +1,6 @@
---- etc/pacman.conf	2011-01-23 03:56:40.000000000 +0700
-+++ /etc/pacman.conf	2011-03-17 19:33:23.949707630 +0700
-@@ -29,9 +29,9 @@
+--- pacman.conf.pacnew	2011-03-17 01:40:11.000000000 +0700
++++ pacman.conf	2011-03-18 11:11:58.710310432 +0700
+@@ -29,11 +29,11 @@
  #NoExtract   =
  
  # Misc options (all disabled by default)
@@ -11,9 +11,12 @@
 +ShowSize
 +UseDelta
  #TotalDownload
+-#CheckSpace
++CheckSpace
  
  #
-@@ -57,8 +57,19 @@
+ # REPOSITORIES
+@@ -58,8 +58,19 @@
  # repo name header and Include lines. You can add preferred servers immediately
  # after the header, and they will be used before the default mirrors.
  
@@ -35,7 +38,7 @@
  
  [core]
  Include = /etc/pacman.d/mirrorlist
-@@ -66,8 +77,8 @@
+@@ -67,8 +78,8 @@
  [extra]
  Include = /etc/pacman.d/mirrorlist
  

@@ -1,0 +1,37 @@
+--- makepkg.conf.pacnew	2011-03-17 01:40:11.000000000 +0700
++++ makepkg.conf	2011-03-18 11:10:34.073642333 +0700
+@@ -33,7 +33,7 @@
+ CXXFLAGS="-march=i686 -mtune=generic -O2 -pipe"
+ LDFLAGS="-Wl,--hash-style=gnu -Wl,--as-needed"
+ #-- Make Flags: change this for DistCC/SMP systems
+-#MAKEFLAGS="-j2"
++MAKEFLAGS="-j2"
+ 
+ #########################################################################
+ # BUILD ENVIRONMENT
+@@ -48,7 +48,7 @@
+ #-- ccache:   Use ccache to cache compilation
+ #-- check:    Run the check() function if present in the PKGBUILD
+ #
+-BUILDENV=(fakeroot !distcc color !ccache check)
++BUILDENV=(fakeroot !distcc color ccache check)
+ #
+ #-- If using DistCC, your MAKEFLAGS will also need modification. In addition,
+ #-- specify a space-delimited list of hosts running in the DistCC cluster.
+@@ -93,13 +93,13 @@
+ # Default: put built package and cached source in build directory
+ #
+ #-- Destination: specify a fixed directory where all packages will be placed
+-#PKGDEST=/home/packages
++PKGDEST=/home/hdhoang/archlinux/
+ #-- Source cache: specify a fixed directory where source files will be cached
+ #SRCDEST=/home/sources
+ #-- Source packages: specify a fixed directory where all src packages will be placed
+-#SRCPKGDEST=/home/srcpackages
++SRCPKGDEST=/home/hdhoang/archlinux/
+ #-- Packager: name/email of the person or organization building packages
+-#PACKAGER="John Doe <john@doe.com>"
++PACKAGER="Hoang Duc Hieu <arch@zahe.me>"
+ 
+ #########################################################################
+ # EXTENSION DEFAULTS
