@@ -95,7 +95,7 @@
 (add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
 
 (add-to-list 'load-path "/home/hdhoang/Public/mirror/magit/")
-(autoload 'magit-status "magit.el" "" t nil)
+(autoload 'magit-status "magit" "" t)
 (global-set-key (kbd "C-x S") 'magit-status)
 (add-hook 'magit-mode-hook
 	  (lambda ()
