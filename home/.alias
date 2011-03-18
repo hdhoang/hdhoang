@@ -35,7 +35,10 @@ function xattr() {
 	shift
 	setfattr -n "user.$USER.$label" -v "$value" $*
 }
-alias nn='nice -n 19 ionice -c 3 '
+function com() {
+    prv 's/rar$/cbr/;s/zip$/cbz/' {$dl,/mnt/cmaluz/@d}/*
+    mv {$dl,/mnt/cmaluz/@d}/*cb? ~/Public/mirror/
+}
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
 alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/{openid,pic} ~/Public/mirror/book ~pool'
 
@@ -72,6 +75,7 @@ alias e="emacsclient -n"
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 alias bit="nice bitcoind"
+alias nn='nice -n 19 ionice -c 3 '
 
 # places
 h=~/Public/hdh-misc.git/
@@ -85,7 +89,3 @@ el=/var/log/messages
 f=~/Public/fav
 pool=/mnt/marbi
 
-function com() {
-    prv 's/rar$/cbr/;s/zip$/cbz/' {$dl,/mnt/cmaluz/@d}/*
-    mv {$dl,/mnt/cmaluz/@d}/*cb? ~/Public/mirror/
-}
