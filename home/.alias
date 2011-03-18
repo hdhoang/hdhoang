@@ -52,7 +52,7 @@ alias psc='ps xawf -eo pid,user,cgroup,args'
 alias mp='nn makepkg -isf'
 alias i='sudo pacman'
 alias cower='cower -fddt $ap'
-ap=~/archlinux/
+ap=~/archlinux
 function aur {
     cd $ap
     cower $1
@@ -78,14 +78,13 @@ alias bit="nice bitcoind"
 alias nn='nice -n 19 ionice -c 3 '
 
 # places
-h=~/Public/hdh-misc.git/
+h=~/Public/hdh-misc.git
 c=$h/system-config/$(hostname -s)
 t=~/t
-dl=~/Downloads/
-g=/mnt/cmaluz/@g/
-pkg=/var/cache/pacman/pkg/
+dl=~/Downloads
+g=/mnt/cmaluz/@g
+pkg=/var/cache/pacman/pkg
 el=/var/log/messages
 
 f=~/Public/fav
 pool=/mnt/marbi
-
