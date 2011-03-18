@@ -88,6 +88,11 @@ background:white
 ;width:100%!important
 ;padding-right:300px!important
 }
+
+a font
+{
+color: inherit!important;
+}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"] /* 60s wait, country slot */
 , :link[href*="sickporn.in/"] /* always links to filesmonster */
@@ -152,8 +157,6 @@ INSERT INTO "style_meta" VALUES(42,9,'domain','wowwiki.com');
 INSERT INTO "style_meta" VALUES(43,9,'type','site');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
-INSERT INTO "style_meta" VALUES(71,6,'domain','coithienthai.com');
-INSERT INTO "style_meta" VALUES(72,6,'type','site');
 INSERT INTO "style_meta" VALUES(73,10,'domain','lparchive.org');
 INSERT INTO "style_meta" VALUES(74,10,'type','site');
 INSERT INTO "style_meta" VALUES(84,11,'domain','playdota.com');
@@ -171,8 +174,10 @@ INSERT INTO "style_meta" VALUES(143,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(144,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(145,3,'type','global');
 INSERT INTO "style_meta" VALUES(146,3,'type','site');
+INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
+INSERT INTO "style_meta" VALUES(148,6,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',13);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',146);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',148);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
