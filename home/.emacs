@@ -1,6 +1,6 @@
 ; -*- mode: lisp -*-
 
-(global-set-key (kbd "C-x M-f") 'find-file-at-point)
+(global-set-key (kbd "C-x o") 'find-file-at-point)
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
 
