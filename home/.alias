@@ -44,6 +44,17 @@ alias ssc='sudo systemctl --system'
 alias po='cat ~/shutdown-todo.txt - && ssc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 
+alias mp='nn makepkg -isf'
+alias i='sudo pacman'
+alias cower='cower -fddt $ap'
+ap=~/archlinux/
+function aur {
+    cd $ap
+    cower $1
+    cd $1
+    mp
+}
+
 # fun
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="crawl-tiles&"

@@ -14,18 +14,7 @@ EXITCODE="%(?..${fg[red]}%? )"
 PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
-alias mp='nn makepkg -isf'
-alias i='sudo pacman'
-alias cower='cower -fddt ~ap'
 compdef _pacman powerpill
-ap=~/archlinux/
-function aur {
-    # trap 'return 1' ZERR
-    cd ~ap
-    cower $1
-    cd $1
-    mp
-}
 
 setopt dvorak
 # bindkey    "^[[3;2~"         delete-char
