@@ -12,9 +12,6 @@ alias s=sensors
 alias t='inotail -f'
 
 # network info
-alias dm='dig +search +noall +answer +multiline'
-alias ds='dig +search +short'
-alias dx='dig +search +short -x'
 alias whois='gwhois'
 alias nh='sudo nethogs br0'
 
@@ -43,7 +40,6 @@ alias rs='nn rsync --human-readable --verbose --progress --partial --archive --x
 alias bu='rs --delete /mnt/cmaluz/@{s,g} ~/{Music,Pictures} ~h ~/Public/{openid,pic} ~/Public/mirror/book ~pool'
 
 # system
-alias pa='rlwrap pacmd'
 alias sc='systemctl'
 alias ssc='sudo systemctl --system'
 alias po='cat ~/shutdown-todo.txt - && ssc'
@@ -74,7 +70,6 @@ alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
-alias bit="nice bitcoind"
 alias nn='nice -n 19 ionice -c 3 '
 
 # places
