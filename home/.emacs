@@ -60,6 +60,7 @@
  '(ido-mode (quote both) nil (ido))
  '(indent-tabs-mode t)
  '(inhibit-startup-screen t)
+ '(initial-scratch-message nil)
  '(make-pointer-invisible nil)
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
