@@ -86,7 +86,8 @@
  '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
 
 ;; Major modes
-(add-to-list 'auto-mode-alist '("PKGBUILD" . sh-mode))
+(autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
+(add-to-list 'auto-mode-alist '("PKGBUILD" . pkgbuild-mode))
 (add-to-list 'auto-mode-alist '("\\.do\\'" . sh-mode))
 (mapcar (lambda (ext)
 	  (add-to-list 'auto-mode-alist (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
