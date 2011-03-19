@@ -1,4 +1,24 @@
-# -*- mode: sh; sh-shell: sh -*-
+#!/bin/bash
+
+# utils
+alias today='grep $(date --rfc-3339=date)'
+alias x=parallel
+alias e="emacsclient -n"
+alias f='firefox'
+alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
+alias nn='nice -n 19 ionice -c 3 '
+
+# places
+h=~/Public/hdh-misc.git
+c=$h/system-config/$(hostname -s)
+t=~/t
+dl=~/Downloads
+g=/mnt/cmaluz/@g
+pkg=/var/cache/pacman/pkg
+el=/var/log/messages
+
+f=~/Public/fav
+pool=/mnt/marbi
 
 # local info
 alias ls='ls --color=auto --file-type --group-directories-first'
@@ -64,22 +84,3 @@ alias favd='ls $f/Music |cut -d \[ -f 1 -s | uniq -d'
 alias fava='ls $f/Music |cut -d  - -f 1 -s | uniq -c | sort -n'
 alias favs='xattr fav fav $f/**/*; rs --delete $f $pool'
 
-# utils
-alias today='grep $(date --rfc-3339=date)'
-alias x=parallel
-alias e="emacsclient -n"
-alias f='firefox'
-alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
-alias nn='nice -n 19 ionice -c 3 '
-
-# places
-h=~/Public/hdh-misc.git
-c=$h/system-config/$(hostname -s)
-t=~/t
-dl=~/Downloads
-g=/mnt/cmaluz/@g
-pkg=/var/cache/pacman/pkg
-el=/var/log/messages
-
-f=~/Public/fav
-pool=/mnt/marbi
