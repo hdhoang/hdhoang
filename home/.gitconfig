@@ -12,6 +12,9 @@
 	mnemonicprefix = true
 [branch]
 	autosetuprebase = always
+[push]
+	default = nothing
+
 [alias]
 	pr = pull --rebase
 	p = !git pr && git ml
