@@ -131,6 +131,14 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+        /><match
+            enabled="true"
+            name="lx"
+            pattern="*lauxanh*"
+            isRegEx="false"
+            isBlackList="false"
+            isMultiLine="false"
+            caseSensitive="false"
         /></matches
       ><autoconf
           url=""
