@@ -18,5 +18,22 @@
     >
 	</Script
   >
+	<Script
+      filename="youtube_autopause.user.js"
+      name="Youtube Autopause"
+      namespace="userscripts.org"
+      description="Quick hack to try and prevent youtubes new 2010 layout from auto-playing"
+      version=""
+      enabled="true"
+      basedir="youtube_autopause"
+      modified="1300531399000"
+      dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      installurl="http://userscripts.org/scripts/source/73105.user.js"
+    >
+		<Include
+      >http://www.youtube.com/watch?*</Include
+    >
+	</Script
+  >
 </UserScriptConfig
 >
