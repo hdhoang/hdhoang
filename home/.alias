@@ -10,7 +10,7 @@ alias nn='nice -n 19 ionice -c 3 '
 
 # places
 h=~/Public/hdh-misc.git
-c=$h/system-config/$(hostname -s)
+conf=$h/system-config/$(hostname -s)
 t=~/t
 dl=~/Downloads
 g=/mnt/cmaluz/@g
