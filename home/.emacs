@@ -53,6 +53,7 @@
  '(current-language-environment "UTF-8")
  '(default-buffer-file-coding-system (quote utf-8-unix) t)
  '(default-input-method "vietnamese-telex")
+ '(describe-char-unidata-list (quote (name old-name general-category canonical-combining-class bidi-class decomposition decimal-digit-value digit-value numeric-value mirrored iso-10646-comment uppercase lowercase titlecase)))
  '(doc-view-continuous t)
  '(font-use-system-font t)
  '(ibus-python-shell-command-name "python2")
