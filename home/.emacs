@@ -1,5 +1,6 @@
 ; -*- mode: lisp -*-
 
+(global-set-key [mouse-2] 'mouse-yank-primary)
 (global-set-key (kbd "C-x o") 'find-file-at-point)
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
@@ -70,12 +71,14 @@
  '(read-quoted-char-radix 16)
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/places")
+ '(select-active-regions t)
  '(show-paren-mode t)
  '(size-indication-mode t)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify))
  '(vc-follow-symlinks t)
- '(x-select-enable-clipboard t))
+ '(x-select-enable-clipboard t)
+ '(x-select-enable-primary nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
