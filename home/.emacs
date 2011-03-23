@@ -100,6 +100,3 @@
 (add-to-list 'load-path "/home/hdhoang/Public/mirror/magit/")
 (autoload 'magit-status "magit" "" t)
 (global-set-key (kbd "C-x S") 'magit-status)
-
-;; Minor modes
-(add-to-list 'yas/root-directory "/home/hdhoang/Public/code/snippets/")
