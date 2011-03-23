@@ -2,6 +2,26 @@
 <UserScriptConfig
   >
 	<Script
+      filename="un-utm_location_bar.user.js"
+      name="Un-UTM Location Bar"
+      namespace="userscripts.org"
+      description="Strip UTM parameters from the location bar"
+      version="1.02"
+      enabled="true"
+      basedir="un-utm_location_bar"
+      modified="1300890038000"
+      dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      installurl="http://userscripts.org/scripts/version/93825/287984.user.js"
+    >
+		<Include
+      >http://*utm_*</Include
+    >
+		<Include
+      >https://*utm_*</Include
+    >
+	</Script
+  >
+	<Script
       filename="disable_video_autoplay.user.js"
       name="Disable audio/video autoplay"
       namespace="http://diveintomark.org/projects/greasemonkey/"
