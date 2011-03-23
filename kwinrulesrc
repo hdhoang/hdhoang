@@ -79,7 +79,7 @@ positionrule=3
 shortcut=Alt+Shift+F3
 shortcutrule=2
 size=900,950
-sizerule=2
+sizerule=3
 skipswitcher=true
 skipswitcherrule=2
 title[$d]
