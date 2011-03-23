@@ -1,4 +1,4 @@
---- /home/hdhoang/t/etc/tor/torrc	2011-03-23 14:17:58.000000000 +0700
+--- /etc/tor/torrc	2011-03-23 14:17:58.000000000 +0700
 +++ /etc/tor/torrc	2011-03-23 14:32:18.929545622 +0700
 @@ -1,82 +1,72 @@
 -## CONFIGURED FOR ARCHLINUX

@@ -1,5 +1,5 @@
---- makepkg.conf.pacnew	2011-03-17 01:40:11.000000000 +0700
-+++ makepkg.conf	2011-03-18 11:10:34.073642333 +0700
+--- /etc/makepkg.conf	2011-03-17 01:40:11.000000000 +0700
++++ /etc/makepkg.conf	2011-03-18 11:10:34.073642333 +0700
 @@ -33,7 +33,7 @@
  CXXFLAGS="-march=i686 -mtune=generic -O2 -pipe"
  LDFLAGS="-Wl,--hash-style=gnu -Wl,--as-needed"
