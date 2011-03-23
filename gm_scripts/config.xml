@@ -6,12 +6,12 @@
       name="Un-UTM Location Bar"
       namespace="userscripts.org"
       description="Strip UTM parameters from the location bar"
-      version="1.02"
+      version="1.03"
       enabled="true"
       basedir="un-utm_location_bar"
-      modified="1300890038000"
+      modified="1300890610000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
-      installurl="http://userscripts.org/scripts/version/93825/287984.user.js"
+      installurl="http://userscripts.org/scripts/source/93825.user.js"
     >
 		<Include
       >http://*utm_*</Include
