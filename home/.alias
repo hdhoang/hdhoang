@@ -41,10 +41,7 @@ alias cp='cp -r --reflink=auto --preserve=xattr'
 alias ln='ln -i'
 alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
-alias pr='perl-rename -i'
-function prv(){
-    pr -v "$@" | column -t -s '>'
-}
+alias prv='perl-rename -iv'
 function xattr() {
 	local label="$1"
 	shift
