@@ -256,5 +256,5 @@
 +#ExitPolicy reject *:*
 +
 +ExitPolicy reject *:*
-+BandwidthRate 20KB
++BandwidthRate 30KB
 +BandwidthBurst 60KB
