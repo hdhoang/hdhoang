@@ -3,7 +3,7 @@
 // @description    Strip UTM parameters from the location bar
 // @include        http://*utm_*
 // @include        https://*utm_*
-// @version        1.03
+// @version        1.04
 // ==/UserScript==
 
 (function() {
