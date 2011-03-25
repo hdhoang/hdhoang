@@ -194,27 +194,27 @@ wmclasscomplete=true
 wmclassmatch=1
 
 [8]
-Description=amarok
+Description=music players
 above[$d]
 aboverule[$d]
 clientmachine[$d]
 clientmachinematch[$d]
 maximizevert=true
-maximizevertrule=2
+maximizevertrule=3
 noborder=true
-noborderrule=2
+noborderrule=3
 position=657,0
 positionrule=2
-size[$d]
-sizerule[$d]
+size=604,1024
+sizerule=2
 skiptaskbar=false
 skiptaskbarrule=2
 title[$d]
 titlematch[$d]
 types=1
-wmclass=amarok
-wmclasscomplete=false
-wmclassmatch=1
+wmclass=amarok|tomahawk
+wmclasscomplete=true
+wmclassmatch=3
 
 [9]
 Description=fx download
