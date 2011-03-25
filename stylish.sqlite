@@ -154,6 +154,13 @@ INSERT INTO "styles" VALUES(13,NULL,'',NULL,'cmdfu','@namespace url(http://www.w
 @-moz-document domain("commandlinefu.com") {
 #right-block{width:200px!important}
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(14,NULL,'',NULL,'thinkstats margin','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("www.greenteapress.com") {
+td[width="100"] {
+display:none
+}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(3,2,'domain','crawl.develz.org');
 INSERT INTO "style_meta" VALUES(4,2,'type','site');
@@ -182,8 +189,10 @@ INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(148,6,'type','site');
 INSERT INTO "style_meta" VALUES(149,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(150,4,'type','site');
+INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
+INSERT INTO "style_meta" VALUES(152,14,'type','site');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',13);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',150);
+INSERT INTO "sqlite_sequence" VALUES('styles',14);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',152);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
