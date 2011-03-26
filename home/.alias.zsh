@@ -1,6 +1,6 @@
 # -*- mode: sh -*-
 function favm() {
-    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//" ~/Music/*(.)
+    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" ~/Music/*(.)
     mv -i ~/Music/^desktop.ini(.) ~f/Music
 }
 
