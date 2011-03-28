@@ -36,6 +36,12 @@ alias t='inotail -f'
 # network info
 alias whois='gwhois'
 alias nh='sudo nethogs br0'
+port_mapping=(
+20 tcp 21 tcp # tor
+25 tcp # exim
+80 tcp 443 tcp # lighttpd
+)
+alias op='upnpc -r ${port_mapping[*]}'
 
 # file ops
 alias mkdir='mkdir -p'
