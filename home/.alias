@@ -35,7 +35,7 @@ alias t='inotail -f'
 
 # network info
 alias whois='gwhois'
-alias nh='sudo nethogs br0'
+alias nh='sudo nethogs'
 port_mapping=(
 20 tcp 21 tcp # tor
 25 tcp # exim
