@@ -12,6 +12,8 @@
 	mnemonicprefix = true
 [branch]
 	autosetuprebase = always
+[rebase]
+	autosquash = true
 [push]
 	default = nothing
 
