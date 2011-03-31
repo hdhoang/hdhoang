@@ -69,6 +69,9 @@ alias sc='systemctl'
 alias ssc='sudo systemctl --system'
 alias po='cat ~/shutdown-todo.txt - && ssc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
+function sls() {
+    x -X systemd-cgls systemd:/system/{}.service ::: $*
+}
 
 alias mp='nn makepkg -isf'
 alias i='sudo pacman'
