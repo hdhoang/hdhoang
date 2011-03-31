@@ -19,7 +19,6 @@
 
 [alias]
 	pr = pull --rebase
-	p = !git pr && git ml
 	ml = log --reverse --topo-order ORIG_HEAD..
 	l = log -p --word-diff
 	s = status -s

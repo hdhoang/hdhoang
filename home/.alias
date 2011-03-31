@@ -3,6 +3,7 @@
 # utils
 PATH=$PATH:~/Public/mirror/git-achievements
 alias g='git-achievements'
+alias gp='g pr && g ml'
 alias today='grep $(date --rfc-3339=date)'
 alias x=parallel
 alias e="emacsclient -n"
