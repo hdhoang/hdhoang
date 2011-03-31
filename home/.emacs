@@ -101,6 +101,5 @@
 	'("service" "socket" "desktop" "directory"))
 (add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
 
-(add-to-list 'load-path "/home/hdhoang/Public/mirror/magit/")
-(autoload 'magit-status "magit" "" t)
+(autoload 'magit-status "magit" nil t)
 (global-set-key (kbd "C-x S") 'magit-status)
