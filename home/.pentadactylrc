@@ -1,8 +1,8 @@
-"hg6099 (created: 2011/03/28 00:00:05)
+"hg6102 (created: 2011/03/31 00:00:04)
 
 loadplugins '\.(js|penta)$'
 group user
 set defsearch=duckduckgo-ssl
-set passkeys=google.com/reader:npSlcm/fgated?UNPXO
+set passkeys=google.com/reader:npSlcmfgaeUNPXO
 
 " vim: set ft=pentadactyl:
