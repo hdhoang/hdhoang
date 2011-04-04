@@ -1,7 +1,7 @@
 # -*- mode: sh -*-
 function favm() {
-    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" ~/Music/*(.)
-    mv -i ~/Music/^desktop.ini(.) ~f/Music
+    perl-rename "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" ~/Music/*(.)
+    mv -iv ~/Music/^desktop.ini(.) ~f/Music
 }
 
 alias -s cbr=okular
