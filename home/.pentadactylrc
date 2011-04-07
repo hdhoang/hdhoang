@@ -1,8 +1,9 @@
-"hg6120 (created: 2011/04/05 00:00:05)
+"hg6121-null (2011-04-06 17:47 -0400)
 
 loadplugins '\.(js|penta)$'
 group user
 set defsearch=duckduckgo-ssl
+set editor='emacsclient +<line> <file>'
 set guioptions=bCrsT
 set hintkeys=aoeuidhtns,.pmwvz
 set passkeys=google.com/reader:npSlcmfgaeUNPXO
