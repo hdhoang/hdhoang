@@ -89,6 +89,7 @@ function aur {
 alias gd="export LIBGL_DRIVERS_PATH=/usr/lib/xorg/modules/dri_g/"
 alias c="crawl-tiles&"
 alias m='mplayer'
+alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && unzip ~/Public/mirror/rockbox-ipodnano1g.zip -d /mnt/roxer'
 alias dum=' dumx -v ~/Music -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls $f/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -d'
 alias fava='ls $f/Music |awk "{FS=\"_-_\"; print \$1}" | uniq -c | sort -n'
