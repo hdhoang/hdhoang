@@ -8,5 +8,5 @@ menubar > menu { color: #141312 !important; } menubar > menu[_moz-menuactive="tr
   display: none !important;
 }
 
-.buttonContainer,.dialog-button-box { -moz-box-direction: reverse; -moz-box-pack: right; }
+.buttonContainer,.dialog-button-box { -moz-box-direction: reverse; }
 .buttonContainer spacer,.dialog-button-box spacer { display: none !important; }
