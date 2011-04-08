@@ -1,4 +1,4 @@
-"hg6121-null (2011-04-06 17:47 -0400)
+"hg6124 (created: 2011/04/08 00:00:08)
 
 loadplugins '\.(js|penta)$'
 group user
@@ -6,6 +6,10 @@ set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions=bCrsT
 set hintkeys=aoeuidhtns,.pmwvz
-set passkeys=google.com/reader:npSlcmfgaeUNPXO
+set hlfind
+set maxitems=5
+set newtab=help
+set passkeys=google.com/reader:npSlcmfgaeUNPXO,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php:gb
+set showstatuslinks=command
 
 " vim: set ft=pentadactyl:
