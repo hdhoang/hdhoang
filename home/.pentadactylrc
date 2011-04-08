@@ -9,7 +9,9 @@ set hintkeys=aoeuidhtns,.pmwvz
 set hlfind
 set maxitems=5
 set newtab=help
-set passkeys=google.com/reader:npSlcmfgaeUNPXO,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php:gb
+set passkeys=google.com/reader:npSlcmfgaeUNPXO
 set showstatuslinks=command
+
+autocmd LocationChange hb4pm4eznzhd6mts.onion/pe/async/asynctrain\.php :normal <pass-all-keys>
 
 " vim: set ft=pentadactyl:
