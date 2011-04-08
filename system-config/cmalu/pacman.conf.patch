@@ -30,9 +30,6 @@
 +[radeon]
 +Server = http://spiralinear.org/perry3d/i686/
 +
-+[gnome-unstable]
-+Include = /etc/pacman.d/mirrorlist
-+
 +[testing]
 +Include = /etc/pacman.d/mirrorlist
  
