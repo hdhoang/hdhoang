@@ -27,9 +27,6 @@
 +[kde-snapshots-extra]
 +Server = http://arch.morrigan.ch/kde-snapshots-extra/os/i686
 +
-+[radeon]
-+Server = http://spiralinear.org/perry3d/i686/
-+
 +[testing]
 +Include = /etc/pacman.d/mirrorlist
  
