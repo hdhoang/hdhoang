@@ -82,7 +82,8 @@ function aur {
     cd $ap
     cower $1
     cd $1
-    mp
+    shift
+    mp $*
 }
 
 # fun
