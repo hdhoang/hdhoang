@@ -1,0 +1,16 @@
+--- /etc/default/grub	2011-01-29 21:18:27.000000000 +0700
++++ /etc/default/grub	2011-04-12 09:16:31.376248595 +0700
+@@ -1,10 +1,10 @@
+ # If you change this file, run 'update-grub' afterwards to update
+ # /boot/grub/grub.cfg.
+ 
+-GRUB_DEFAULT=0
+-GRUB_TIMEOUT=5
++GRUB_DEFAULT=saved
++GRUB_TIMEOUT=2
+ GRUB_DISTRIBUTOR="Arch Linux"
+-GRUB_CMDLINE_LINUX_DEFAULT="quiet"
++GRUB_CMDLINE_LINUX_DEFAULT="printk.time=1 quiet init=/bin/systemd"
+ GRUB_CMDLINE_LINUX=""
+ 
+ # Uncomment to enable Hidden Menu, and optionally hide the timeout count
