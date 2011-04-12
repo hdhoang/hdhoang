@@ -66,8 +66,8 @@ alias rs='nn rsync --human-readable --verbose --progress --partial --archive --x
 alias bu='rs --delete --exclude="FirefoxPortableNightly/Data/profile/Cache" /mnt/cmaluz/@{s,g} ~/{Music,Pictures} $h ~/Public/{openid,pic} ~/Public/mirror/book $pool'
 
 # system
-alias sc='systemctl'
 alias ssc='sudo systemctl --system'
+alias usc='systemctl --user'
 alias po='cat ~/shutdown-todo.txt - && ssc'
 alias psc='ps xawf -eo pid,user,cgroup,args'
 function sls() {
