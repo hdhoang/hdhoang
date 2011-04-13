@@ -55,21 +55,5 @@
     >
 	</Script
   >
-	<Script
-      filename="good_bad_access_key.user.js"
-      name="Good Bad access key"
-      namespace="zahe.me/hdhoang"
-      description="add accesskey to (y)ape normal training page"
-      version=""
-      enabled="true"
-      basedir="good_bad_access_key"
-      modified="1302103075000"
-      dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
-    >
-		<Include
-      >http://hb4pm4eznzhd6mts.onion/pe/train.php</Include
-    >
-	</Script
-  >
 </UserScriptConfig
 >

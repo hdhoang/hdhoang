@@ -12,6 +12,9 @@ set newtab=help
 set passkeys=google.com/reader:npSlcmfgaeUNPXO
 set showstatuslinks=command
 
-autocmd LocationChange hb4pm4eznzhd6mts.onion/pe/async/asynctrain\.php :normal <pass-all-keys>
+" trigger on PageLoad in async to ensure the elements exist
+autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript doc.querySelector('#good button').accessKey='k'; doc.querySelector('#bad  button').accessKey='j'
+" trigger on DOMLoad to judge with extreme prejudice
+autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript doc.querySelector('[value="Good"]').accessKey='k'; doc.querySelector('[value="Bad"]').accessKey='j'
 
 " vim: set ft=pentadactyl:
