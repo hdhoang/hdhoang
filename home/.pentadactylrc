@@ -17,4 +17,6 @@ autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascri
 " trigger on DOMLoad to judge with extreme prejudice
 autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','
 
+autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'
+
 " vim: set ft=pentadactyl:
