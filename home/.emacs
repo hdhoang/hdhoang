@@ -19,7 +19,7 @@
   (global-set-key (kbd "M-b") 'backward-word)
   (global-set-key (kbd "M-<") 'beginning-of-buffer)
   (global-set-key (kbd "M->") 'end-of-buffer)
-  (global-set-key (kbd "C-a") 'move-beginning-of-line)
+  (global-set-key (kbd "C-a") 'back-to-indentation)
   (global-set-key (kbd "C-e") 'move-end-of-line)
   (global-set-key (kbd "C-t") 'transpose-chars)
   (global-set-key (kbd "C-y") 'cua-paste)
