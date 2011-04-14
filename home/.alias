@@ -13,7 +13,7 @@ alias getc="wget -ci ~/get-queue -P $dl"
 alias nn='nice -n 19 ionice -c 3 '
 
 # places
-h=~/Public/hdh-misc.git
+h=~/Public/hdhoang-misc
 conf=$h/system-config/$(hostname -s)
 t=~/t
 dl=~/Downloads
