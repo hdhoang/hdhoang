@@ -38,7 +38,7 @@ alias t='inotail -f'
 alias whois='gwhois'
 alias nh='sudo nethogs'
 port_mapping=(
-20 tcp 21 tcp # tor
+587 tcp 465 tcp # tor
 25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
