@@ -2,6 +2,7 @@
 keycode 133 = BackSpace Delete
 keycode 108 = Escape
 keycode 37  = Return
+keycode 135 = Tab
 
 keycode 26  = period greater ellipsis U203D ellipsis U203D
 
