@@ -128,7 +128,7 @@ max-width: 900px !important;
 }
 body{margin:0}
 td{padding:0}
-[name=width], [name=height], #settings td>:not(select)
+[name=width], [name=height], #settings td>:not(select), [type=''text'']
 {display:none}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(9,NULL,'',NULL,'wowwiki','@namespace url(http://www.w3.org/1999/xhtml);
@@ -192,10 +192,10 @@ INSERT INTO "style_meta" VALUES(149,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(150,4,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(155,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(156,8,'type','site');
+INSERT INTO "style_meta" VALUES(157,8,'domain','hb4pm4eznzhd6mts.onion');
+INSERT INTO "style_meta" VALUES(158,8,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',156);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',158);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
