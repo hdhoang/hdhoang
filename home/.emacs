@@ -1,6 +1,7 @@
 ; -*- mode: lisp -*-
 
 (global-set-key [mouse-2] 'mouse-yank-primary)
+(global-set-key (kbd "RET") 'reindent-then-newline-and-indent)
 (global-set-key (kbd "C-x o") 'find-file-at-point)
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
@@ -28,6 +29,7 @@
 (load-file "~/.emacs.d/ergoemacs/site-lisp/site-start.el")
 (eval-after-load "ergoemacs/site-lisp/site-start.el" (tabbar-mode 0))
 (defun hdh/ergoemacs-minibuffer-keys ()
+  (local-set-key (kbd "RET") 'minibuffer-complete-and-exit)
   (local-set-key ergoemacs-previous-line-key 'previous-history-element)
   (local-set-key ergoemacs-next-line-key 'next-history-element))
 (ergoemacs-add-hook 'minibuffer-setup-hook 'hdh/ergoemacs-minibuffer-keys)
