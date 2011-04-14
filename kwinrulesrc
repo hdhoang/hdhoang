@@ -87,9 +87,9 @@ titlematch[$d]
 types=1
 windowrole=browser
 windowrolematch=1
-wmclass=minefield
+wmclass=minefield|firefox|nightly
 wmclasscomplete=false
-wmclassmatch=1
+wmclassmatch=3
 
 [4]
 Description=konsole
