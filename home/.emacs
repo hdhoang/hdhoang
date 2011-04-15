@@ -84,6 +84,7 @@
  '(size-indication-mode t)
  '(tab-width 4)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
+ '(truncate-partial-width-windows nil)
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify))
  '(vc-follow-symlinks t)
  '(x-select-enable-clipboard t))
