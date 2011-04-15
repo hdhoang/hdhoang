@@ -80,6 +80,7 @@
  '(save-place-file "~/.emacs.d/places")
  '(select-active-regions t)
  '(show-paren-mode t)
+ '(show-paren-style (quote mixed))
  '(size-indication-mode t)
  '(tab-width 4)
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
