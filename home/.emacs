@@ -2,6 +2,7 @@
 
 (global-set-key [mouse-2] 'mouse-yank-primary)
 (global-set-key (kbd "C-x o") 'find-file-at-point)
+(global-set-key (kbd "C-x C-o") 'ido-find-alternate-file)
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
 
