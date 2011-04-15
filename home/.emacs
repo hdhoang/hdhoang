@@ -73,6 +73,7 @@
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
+ '(ps-paper-type (quote a4))
  '(read-quoted-char-radix 16)
  '(reb-re-syntax (quote string))
  '(require-final-newline t)
