@@ -6,7 +6,7 @@ devpts                 /dev/pts      devpts    defaults            0      0
 shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
 
 LABEL=cmalu / ext4 relatime 0 1
-LABEL=hdhoang /home/hdhoang ext4 user_xattr,noatime 0 1
+LABEL=hdhoang /home/hdhoang ext4 user_xattr,noatime,comment=systemd.automount 0 1
 
 LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,exec,hide_hid_files,windows_names,uid=1000,gid=100,fmask=133,dmask=022 0 0
 LABEL=marbi /mnt/marbi ntfs-3g users,noauto,noatime,compress,hide_hid_files,uid=1000,gid=100,fmask=133,dmask=022 0 0
