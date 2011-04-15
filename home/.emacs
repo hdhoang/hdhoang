@@ -41,6 +41,7 @@
   (local-set-key ergoemacs-scroll-up-key 'ido-magic-forward-char))
 (ergoemacs-add-hook 'ido-minibuffer-setup-hook 'hdh/ergoemacs-ido-keys)
 
+(setq frame-title-format "%b")
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
