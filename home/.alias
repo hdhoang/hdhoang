@@ -9,7 +9,7 @@ alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
-alias getc="wget -ci ~/get-queue -P $dl"
+alias getc='wget -ci ~/get-queue -P $dl'
 alias nn='nice -n 19 ionice -c 3 '
 
 # places
