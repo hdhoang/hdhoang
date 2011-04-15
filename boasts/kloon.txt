@@ -5,18 +5,18 @@ Mail to: job@kloon.vn
 * English
   I have taken the IELTS twice as part of applications for Monash
 College (Victoria, Australia) in 2005 and RMIT Ha Noi in 2009. My
-scores was 7.0 (listening 8.0, reading 7.5, writing 6, speaking 6) and
-7.5 (9.0, 9.0, 5.5, 5.5), respectively. I read and listen to English
-most of all after spending one year at Monash. However, I rarely speak
-or write (in any language, not just English).
+scores were 7.0 (listening 8.0, reading 7.5, writing 6, speaking 6)
+and 7.5 (9.0, 9.0, 5.5, 5.5), respectively. I read and listen to
+English most of all after spending one year at Monash.
 
 * Education
-Near the end of my K12 education in 2006, I got so scared of failing
-the graduation that I opted to go to Monash for a Bachelor of
+Near the end of my K12 education in 2006, I got so bored of studying
+for just graduation that I opted to go to Monash for a Bachelor of
 Computing. I caught some emotional trouble early 2007, and moved back
 to Vietnam. Since then, I took up 3 trainee programmer positions, and
-attended RMIT Ha Noi for half a semester. Thus I haven't attained any
-qualification above middle school.
+attended RMIT Ha Noi for half a semester. I figured that formal
+education does not suit me well, thus I picked up learning on my own
+volition. I have no formal qualification beyond middel school.
 
 * Linux configuration
 I have extensive experience working in Linux environment. I used to
@@ -24,7 +24,7 @@ run daily Ubuntu, then unstable and experimental Debian, finally
 switched to Arch Linux to enjoy the easy package creation, and still
 maintain some packages on the Arch User Repository
 <https://aur.archlinux.org/packages.php?SeB=m&K=hdhoang>. I also
-contributed to some packages
+contributed to some personally useful packages
 <https://github.com/Daenyth/pkgtools/commit/96a91961808fc1d618bc16fd416a5bd0126644de>,
 <https://github.com/hdhoang/systemd-arch-units>.
 
@@ -46,15 +46,14 @@ OpenID altogether. Neither have I used any dynamic web framework. The
 closest I had tried was a no-comment blog with PyBlosxom.
 
 My only experience with SQL so far is grafting some misplaced rows in
-my second employer's MS SQL db. I have lost the email explaining how Ι
-did that to my superior. The process was simple and foolproof, but
-required manual editing at each step. Back then I hadn't developed the
-principle of DRY3: "Don't repeat yourself for the third time".
+my second employer's MS SQL db. The process was simple and foolproof,
+but required manual editing at each step. Back then I hadn't developed
+the principle of DRY3: "Don't repeat yourself for the third time".
 
 My coding-related skills include the git VCS (mostly with github-style
 independent cooperation), the emacs editor, text encoding, some unix
 shells, and digging through documentations, bug reports, source code
-for answers
+for answers.
 
 I find the email obfuscation on kloon.vn quite baffling: the salt is
 sprinkled on a variable name, while the email address is in the same
@@ -76,17 +75,13 @@ me. I dropped out of my first job training because of a coworker's
 music taste and the company's futile goal. I stopped with RMIT after a
 disappointment in a teacher.
 
-I do little outside computers. I play no sport, picked up guitar to no
-proficiency, touched a drum set once. I enjoyed a Wing Chun class, but
-left it last year during a downer phase. I dabbled at the constructed
-language Lojban, and even though I glaze over other users' messages, I
-can understand most constructs without a dictionary.
+I dabbled at the constructed language Lojban, and even though I glaze
+over other users' messages, I can understand most constructs without a
+dictionary.
 
 I was born on 1988-10-30, named Hoàng Đức Hiếu, and is single. You can
-call me at +84-166-241-9526, or home number +84-4-3827-2235 when my
-mobile is charging (it can't get signal when plugged in (hm, this
-might get higher priority than a new computer)). My primary email
-address is <hdhoang@zahe.me>. I currently live at:
+call me at +84-166-241-9526, or home number +84-4-3827-2235. My
+primary email address is <hdhoang@zahe.me>. I currently live at:
 
    14 ngo 117 duong Nguyen Son, Gia Thuy, Long Bien, Ha Noi, Vietnam
 
