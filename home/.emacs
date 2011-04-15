@@ -50,6 +50,8 @@
  '(TeX-engine (quote xetex))
  '(backup-directory-alist (quote (("." . "~/.emacs.d/backups"))))
  '(blink-cursor-mode nil)
+ '(calendar-date-style (quote iso))
+ '(calendar-week-start-day 1)
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(current-language-environment "UTF-8")
