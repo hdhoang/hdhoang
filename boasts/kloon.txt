@@ -32,7 +32,7 @@ I spent much time on various web sites, and have customized them for
 efficient browsing using Stylish, Greasemonkey, Firebug, and
 Pentadactyl. My desktop environment is similarly streamlined for agile
 keyboard-or-mouse navigation. The config files are tracked in a git
-repository <http://gitorious.org/hdh-misc/>
+repository <http://gitorious.org/hdhoang-misc/>
 
 * PHP & MySQL
 
