@@ -1,0 +1,95 @@
+-*- mode: org -*-
+
+Mail to: job@kloon.vn
+
+* English
+  I have taken the IELTS twice as part of applications for Monash
+College (Victoria, Australia) in 2005 and RMIT Ha Noi in 2009. My
+scores was 7.0 (listening 8.0, reading 7.5, writing 6, speaking 6) and
+7.5 (9.0, 9.0, 5.5, 5.5), respectively. I read and listen to English
+most of all after spending one year at Monash. However, I rarely speak
+or write (in any language, not just English).
+
+* Education
+Near the end of my K12 education in 2006, I got so scared of failing
+the graduation that I opted to go to Monash for a Bachelor of
+Computing. I caught some emotional trouble early 2007, and moved back
+to Vietnam. Since then, I took up 3 trainee programmer positions, and
+attended RMIT Ha Noi for half a semester. Thus I haven't attained any
+qualification above middle school.
+
+* Linux configuration
+I have extensive experience working in Linux environment. I used to
+run daily Ubuntu, then unstable and experimental Debian, finally
+switched to Arch Linux to enjoy the easy package creation, and still
+maintain some packages on the Arch User Repository
+<https://aur.archlinux.org/packages.php?SeB=m&K=hdhoang>. I also
+contributed to some packages
+<https://github.com/Daenyth/pkgtools/commit/96a91961808fc1d618bc16fd416a5bd0126644de>,
+<https://github.com/hdhoang/systemd-arch-units>.
+
+I spent much time on various web sites, and have customized them for
+efficient browsing using Stylish, Greasemonkey, Firebug, and
+Pentadactyl. My desktop environment is similarly streamlined for agile
+keyboard-or-mouse navigation. The config files are tracked in a git
+repository <http://gitorious.org/hdh-misc/>
+
+* PHP & MySQL
+
+I run a personal web server at <https://cmalu.zahe.me/> with a dual
+stack ipv4-ipv6 and enforced HTTPS configuration
+<http://gitorious.org/hdhoang-misc/main/blobs/master/system-config/cmalu/lighttpd.conf>.
+
+My PHP experience is limited to setting up PHPMyID on that server. I
+have since switched to delegated OpenID, and then forgotten about
+OpenID altogether. Neither have I used any dynamic web framework. The
+closest I had tried was a no-comment blog with PyBlosxom.
+
+My only experience with SQL so far is grafting some misplaced rows in
+my second employer's MS SQL db. I have lost the email explaining how Ι
+did that to my superior. The process was simple and foolproof, but
+required manual editing at each step. Back then I hadn't developed the
+principle of DRY3: "Don't repeat yourself for the third time".
+
+My coding-related skills include the git VCS (mostly with github-style
+independent cooperation), the emacs editor, text encoding, some unix
+shells, and digging through documentations, bug reports, source code
+for answers
+
+I find the email obfuscation on kloon.vn quite baffling: the salt is
+sprinkled on a variable name, while the email address is in the same
+plain text format every time. I suggest encoding the salted address in
+base64, and replacing the <span>-writing fallback with <noscript>.
+
+* Persona
+My biggest motivation to change a software is a clear and present
+interest as an user. Next to that is when an acquaintance asks for a
+favor. At previous jobs, I didn't work for income, rather to stretch
+my leg some. This time I have a pressing monetary issue at hand: my
+computer is complaining about the raising heat of the coming summer.
+
+My greatest strength is a deliberate tendency to look at things I
+think few others notice.
+
+My great personality failing is being very picky on people around
+me. I dropped out of my first job training because of a coworker's
+music taste and the company's futile goal. I stopped with RMIT after a
+disappointment in a teacher.
+
+I do little outside computers. I play no sport, picked up guitar to no
+proficiency, touched a drum set once. I enjoyed a Wing Chun class, but
+left it last year during a downer phase. I dabbled at the constructed
+language Lojban, and even though I glaze over other users' messages, I
+can understand most constructs without a dictionary.
+
+I was born on 1988-10-30, named Hoàng Đức Hiếu, and is single. You can
+call me at +84-166-241-9526, or home number +84-4-3827-2235 when my
+mobile is charging (it can't get signal when plugged in (hm, this
+might get higher priority than a new computer)). My primary email
+address is <hdhoang@zahe.me>. I currently live at:
+
+   14 ngo 117 duong Nguyen Son, Gia Thuy, Long Bien, Ha Noi, Vietnam
+
+My friend who helped me wrote this letter took the attached photo. I
+like the disdainful look captured, an antithesis of Che's passionate
+still.
