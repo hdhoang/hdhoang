@@ -15,7 +15,7 @@ set showstatuslinks=command
 " trigger on PageLoad in async to ensure the elements exist
 autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u'
 " trigger on DOMLoad to judge with extreme prejudice
-autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','
+autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','; doc.querySelector('select').accessKey='u'
 
 autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'
 
