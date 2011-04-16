@@ -23,7 +23,7 @@
 	l = log -p --word-diff
 	s = status -s
 	ap = add -p
-	c = commit
+	c = commit -v
 	d = diff --word-diff=porcelain
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --all
