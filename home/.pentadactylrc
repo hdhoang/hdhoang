@@ -1,7 +1,3 @@
-"hg6124 (created: 2011/04/08 00:00:08)
-
-loadplugins '\.(js|penta)$'
-group user
 set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions=bCrsT
