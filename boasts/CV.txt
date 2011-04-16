@@ -1,0 +1,28 @@
+Hoàng Đức Hiếu
+1988-10-30
+single
+
+* 2003 to 2006-02
+  English major at Chu Van An highschool
+* 2006-02 to 2007-03
+  Freshman for Diploma of Information Technology at Monash College, Victoria,
+  Australia
+* 2007-03 to 2009-09
+  Home, contributing to KDE, Ubuntu
+  Trainee Java programmer at monava.vn
+* 2009-09 to 2010-03
+  Trainee MS SQL programmer at thuoc.vn
+* 2010-04 to 2010-06
+  Freshman for Diploma of Commerce at RMIT Ha Noi, Vietnam
+  Trainee Asianux programmer at VietSoftware
+* 2010-06 up to now
+  Home, contributing to ArchLinux, providing support on IRC
+
+http://quickgit.kde.org/index.php?p=ksnapshot.git&a=commit&h=0e0a9de1aaed6cf156ffeba9b6c5fdcd5e341076
+https://launchpad.net/~hdhoang
+https://github.com/hdhoang/systemd-arch-units
+
+Achievements
+* English team of CVA at city level contest
+* BC Ha Noi 1-year scholarship
+* HD and D at 7 courses at Monash
