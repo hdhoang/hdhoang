@@ -67,7 +67,12 @@ my leg some. This time I have a pressing monetary issue at hand: my
 computer is complaining about the raising heat of the coming summer.
 
 My greatest strength is a deliberate tendency to look at things I
-think few others notice.
+think few others notice. I frequently use development versions of
+software, and these experiences often aids me in providing support on
+IRC channels such
+as #archlinux, #tomahawk, #systemd, #jbopre, #vnluser, and the
+ArchLinux forum and wiki. I dabbled at various languages of different
+paradigms, e.g. Haskell, Python, Erlang.
 
 My great personality failing is being very picky on people around
 me. I dropped out of my first job training because of a coworker's
