@@ -48,9 +48,9 @@ but required manual editing at each step. Back then I hadn't developed
 the principle of DRY3: "Don't repeat yourself for the third time".
 
 My coding-related skills include the git VCS (mostly with github-style
-independent cooperation), the emacs editor, text encoding, some unix
-shells, and digging through documentations, bug reports, source code
-for answers.
+independent cooperation), the emacs editor, text encoding, Unix
+utilities, and digging through documentations, bug reports, source
+code for answers.
 
 I find the email obfuscation on kloon.vn quite baffling: the salt is
 sprinkled on a variable name, while the email address is in the same
