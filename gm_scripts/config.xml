@@ -9,7 +9,7 @@
       version="1.05"
       enabled="true"
       basedir="un-utm_location_bar"
-      modified="1301322790000"
+      modified="1302968505000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
       installurl="http://userscripts.org/scripts/source/93825.user.js"
     >
@@ -22,23 +22,6 @@
 	</Script
   >
 	<Script
-      filename="disable_video_autoplay.user.js"
-      name="Disable audio/video autoplay"
-      namespace="http://diveintomark.org/projects/greasemonkey/"
-      description="Ensures that HTML5 audio/video elements do not autoplay"
-      version=""
-      enabled="true"
-      basedir="disable_video_autoplay"
-      modified="1299670768000"
-      dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
-      installurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js"
-    >
-		<Include
-      >*</Include
-    >
-	</Script
-  >
-	<Script
       filename="youtube_autopause.user.js"
       name="Youtube Autopause"
       namespace="userscripts.org"
@@ -46,7 +29,7 @@
       version=""
       enabled="true"
       basedir="youtube_autopause"
-      modified="1300531399000"
+      modified="1302968592000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
       installurl="http://userscripts.org/scripts/source/73105.user.js"
     >
