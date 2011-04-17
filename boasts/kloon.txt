@@ -22,17 +22,14 @@ volition. I have no formal qualification beyond middle school.
 I have extensive experience working in Linux environment. I used to
 run daily Ubuntu, then unstable and experimental Debian, finally
 switched to Arch Linux to enjoy the easy package creation, and still
-maintain some packages on the Arch User Repository
-<https://aur.archlinux.org/packages.php?SeB=m&K=hdhoang>. I also
-contributed to some personally useful packages
-<https://github.com/Daenyth/pkgtools/commit/96a91961808fc1d618bc16fd416a5bd0126644de>,
-<https://github.com/hdhoang/systemd-arch-units>.
+maintain some packages on the Arch User Repository. I also
+contributed to some personally useful packages.
 
 I spent much time on various web sites, and have customized them for
 efficient browsing using Stylish, Greasemonkey, Firebug, and
 Pentadactyl. My desktop environment is similarly streamlined for agile
 keyboard-or-mouse navigation. The config files are tracked in a git
-repository <http://gitorious.org/hdhoang-misc/>
+repository at <http://gitorious.org/hdhoang-misc/>.
 
 * PHP & MySQL
 

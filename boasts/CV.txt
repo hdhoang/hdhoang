@@ -21,6 +21,9 @@ single
 http://quickgit.kde.org/index.php?p=ksnapshot.git&a=commit&h=0e0a9de1aaed6cf156ffeba9b6c5fdcd5e341076
 https://launchpad.net/~hdhoang
 https://github.com/hdhoang/systemd-arch-units
+https://aur.archlinux.org/packages.php?SeB=m&K=hdhoang
+https://bbs.archlinux.org/search.php?action=show_user_posts&user_id=41983
+https://github.com/Daenyth/pkgtools/commit/96a91961808fc1d618bc16fd416a5bd0126644de
 
 Achievements
 * English team of CVA at city level contest
