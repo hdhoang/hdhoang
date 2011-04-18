@@ -16,3 +16,6 @@ alias -s mpeg=m
 alias -s mpg=m
 alias -s wmv=m
 alias -s mov=m
+alias -s m4v=m
+alias -s flv=m
+
