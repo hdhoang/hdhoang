@@ -7,6 +7,7 @@ ExitPolicy accept *:80,accept *:443,accept *:110,accept *:143,accept *:993,accep
 
 RelayBandwidthBurst 131072
 RelayBandwidthRate 65536
+SocksListenAddress 0.0.0.0:9050
 
 User tor
 DataDirectory /var/lib/tor
