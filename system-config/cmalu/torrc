@@ -5,7 +5,7 @@ DirPort 465
 ORPort 587
 RelayBandwidthBurst 131072
 RelayBandwidthRate 65536
-ExitPolicy accept *:80,accept *:443,accept *:110,accept *:143,accept *:993,accept *:995,accept *:706,accept *:1863,accept *:5050,accept *:5190,accept *:5222,accept *:5223,accept *:8300,accept *:8888,reject *:*
+ExitPolicy reject *:*
 
 SocksListenAddress 0.0.0.0:9050
 
