@@ -1,7 +1,7 @@
 set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions=bCrsT
-set hintkeys=aoeuidhtns,.pmwvz
+set hintkeys=aoeui,pdhtnsmwvz
 set hlfind
 set maxitems=5
 set newtab=help
