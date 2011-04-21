@@ -56,11 +56,7 @@ alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 function xattr() {
-	local label="$1"
-	shift
-	local value="$1"
-	shift
-	setfattr -n "user.$USER.$label" -v "$value" "$@"
+	setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
 }
 function com() {
     prv 's/rar$/cbr/;s/zip$/cbz/' {$dl,/mnt/cmaluz/@d}/*
@@ -86,8 +82,7 @@ function aur {
     cd $ap
     cower $1
     cd $1
-    shift
-    mp $*
+    mp ${*:2}
 }
 
 # fun
