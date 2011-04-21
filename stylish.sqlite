@@ -118,7 +118,7 @@ INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://w
 
 @-moz-document domain("hb4pm4eznzhd6mts.onion") {
 img{
-margin:0 300px 500px 0;
+margin:0 500px 500px 0;
 max-width: 900px !important;
 }
 body{margin:0}
@@ -171,10 +171,10 @@ INSERT INTO "style_meta" VALUES(149,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(150,4,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(157,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(158,8,'type','site');
+INSERT INTO "style_meta" VALUES(165,8,'domain','hb4pm4eznzhd6mts.onion');
+INSERT INTO "style_meta" VALUES(166,8,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',164);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',166);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
