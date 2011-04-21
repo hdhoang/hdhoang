@@ -5,7 +5,7 @@ PATH=$PATH:~/Public/mirror/git-achievements
 alias g='git-achievements'
 alias gp='g pr && g ml'
 function day() {
-    grep $(date --rfc-3339=date -d "${1:-0} days ago")
+    grep $(date --rfc-3339=date -d "${1:-0} days ago") ${*:2}
 }
 alias x=parallel
 alias e="emacsclient -n"
