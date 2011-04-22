@@ -1,3 +1,12 @@
+=== Note ===
+I sent this mail to job@kloon.vn on the night of Sunday 2011-04-17
+from <hdhoang@zahe.me>. Probably some funky delivery issue dropped it,
+as I haven't received your reception confirm email yet (I have shouted
+"kloon in:anywhere", and GMail whispered "No"). I'm sending it again
+from this address. Please continue further discussion with this
+address.
+======
+
 I would like to apply for a coder-supporter position in your
 out-sourcing company. I can pick up any language and environment, and
 would like to start out with the current opening on your website for PHP/MySQL.
@@ -87,7 +96,7 @@ dictionary.
 
   I was born on 1988-10-30, named Hoàng Đức Hiếu, and is single. You can
 call me at +84-166-241-9526, or home number +84-4-3827-2235. My
-primary email address is <hdhoang@zahe.me>. I currently live at:
+primary email address is <hieu.d.hoang@gmail.com>. I currently live at:
 
    14 ngo 117 duong Nguyen Son, Gia Thuy, Long Bien, Ha Noi, Vietnam
 
