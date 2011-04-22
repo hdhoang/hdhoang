@@ -19,6 +19,7 @@ single
   Home, contributing to ArchLinux, providing support on IRC
 
 http://quickgit.kde.org/index.php?p=ksnapshot.git&a=commit&h=0e0a9de1aaed6cf156ffeba9b6c5fdcd5e341076
+http://quickgit.kde.org/index.php?p=konsole.git&a=commit&h=4ff466f4f88b29a64e5efc8fb5b6112b62750674
 https://launchpad.net/~hdhoang
 https://github.com/hdhoang/systemd-arch-units
 https://aur.archlinux.org/packages.php?SeB=m&K=hdhoang
