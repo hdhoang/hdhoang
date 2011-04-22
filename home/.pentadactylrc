@@ -5,7 +5,7 @@ set hintkeys=aoeui,pdhtnsmwvz
 set hlfind
 set maxitems=5
 set newtab=help
-set passkeys=google.com/reader:npSlcmgaeUNPXO
+set passkeys=google.com/reader:npSlcmrgaeUNPXO
 set showstatuslinks=command
 
 " trigger on PageLoad so that the password is filled in
