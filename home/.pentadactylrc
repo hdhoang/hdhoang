@@ -11,7 +11,7 @@ set showstatuslinks=command
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
 " trigger on PageLoad in async to ensure the elements exist
-autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u'
+autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
 " trigger on DOMLoad to judge with extreme prejudice
 autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
 
