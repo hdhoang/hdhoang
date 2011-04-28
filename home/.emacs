@@ -16,6 +16,7 @@
   (global-set-key (kbd "M->") 'end-of-buffer)
   (global-set-key (kbd "C-a") 'back-to-indentation)
   (global-set-key (kbd "C-t") 'transpose-chars)
+  (global-set-key (kbd "M-q") 'fill-paragraph)
   (global-set-key (kbd "M-;") 'comment-dwim))
 (add-hook 'ergoemacs-mode-hook 'hdh/revert-some-ergoemacs)
 (load-file "~/.emacs.d/ergoemacs/site-lisp/site-start.el")
