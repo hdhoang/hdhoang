@@ -10,6 +10,7 @@
 (defun hdh/revert-some-ergoemacs ()
   (tool-bar-mode t)
 
+  (global-set-key (kbd "C-l") 'redraw-display)
   (global-set-key (kbd "C-x d") 'dired)
   (global-set-key (kbd "C-x h") 'mark-whole-buffer)
   (global-set-key (kbd "M-<") 'beginning-of-buffer)
