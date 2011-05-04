@@ -6,7 +6,7 @@ INSERT INTO "styles" VALUES(1,NULL,'',NULL,'listing','@namespace url(http://www.
 @-moz-document domain("isohunt.com") {
 .listing{margin-right:0!important;background-color:white!important}
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(3,NULL,'',NULL,'link decor',':visited{color:teal!important}
+INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:teal!important}
 :link[href^="#"]{color:grey!important}
 
 :link[href*=".onion/"]{color:green!important}
@@ -38,6 +38,11 @@ vertical-align: super;
 :link[href*="cracked.com/"]::before
 {
 content: url(http:/www.cracked.com/favicon.ico);
+}
+
+:-moz-any([src*="fukung"], [src*="tumblr"])[src$=".gif"]
+{
+border-right: 2px dotted teal !important;
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("www.google.com"){
 .entry-actions
@@ -62,11 +67,6 @@ margin:0!important
 .like
 ,.broadcast
 {float:right}
-
-[src$=".gif"]
-{
-border-right: 2px dotted teal !important;
-}
 
 img[src^="http://www.explosm.net/"]+div
 {
@@ -117,7 +117,7 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("hb4pm4eznzhd6mts.onion") {
-img{
+td img{
 margin:0 500px 500px 0;
 max-width: 900px !important;
 }
@@ -161,20 +161,20 @@ INSERT INTO "style_meta" VALUES(85,11,'type','site');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(118,7,'type','global');
-INSERT INTO "style_meta" VALUES(143,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(144,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(145,3,'type','global');
-INSERT INTO "style_meta" VALUES(146,3,'type','site');
 INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(148,6,'type','site');
-INSERT INTO "style_meta" VALUES(149,4,'domain','www.google.com');
-INSERT INTO "style_meta" VALUES(150,4,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(165,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(166,8,'type','site');
+INSERT INTO "style_meta" VALUES(167,4,'domain','www.google.com');
+INSERT INTO "style_meta" VALUES(168,4,'type','site');
+INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
+INSERT INTO "style_meta" VALUES(174,8,'type','site');
+INSERT INTO "style_meta" VALUES(175,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(176,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(177,3,'type','global');
+INSERT INTO "style_meta" VALUES(178,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',166);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',178);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
