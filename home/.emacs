@@ -1,7 +1,6 @@
 ; -*- mode: lisp -*-
 
 (global-set-key [mouse-2] 'mouse-yank-primary)
-(global-set-key (kbd "C-x o") 'find-file-at-point)
 (global-set-key (kbd "C-x C-o") 'ido-find-alternate-file)
 (global-set-key (kbd "C-.") 'other-window)
 (defalias 'rb 'revert-buffer)
@@ -10,6 +9,7 @@
 (defun hdh/revert-some-ergoemacs ()
   (tool-bar-mode t)
 
+  (global-set-key (kbd "C-x o") 'find-file-at-point)
   (global-set-key (kbd "C-l") 'redraw-display)
   (global-set-key (kbd "C-x d") 'dired)
   (global-set-key (kbd "C-x h") 'mark-whole-buffer)
