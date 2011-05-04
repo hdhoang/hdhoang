@@ -11,11 +11,8 @@
 +ShowSize
 +UseDelta
  #TotalDownload
--#CheckSpace
-+CheckSpace
- 
- #
- # REPOSITORIES
+ #CheckSpace
+
 @@ -58,8 +58,19 @@
  # repo name header and Include lines. You can add preferred servers immediately
  # after the header, and they will be used before the default mirrors.
