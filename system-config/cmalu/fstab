@@ -4,6 +4,6 @@ shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
 LABEL=cmalu / ext4 relatime 0 1
 LABEL=hdhoang /home/hdhoang ext4 user_xattr,noatime,comment=systemd.automount 0 1
 
-LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,windows_names,gid=100,fmask=113,dmask=002,x-systemd-automount
+LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,windows_names,gid=100,fmask=113,dmask=002,comment=systemd.automount
 LABEL=marbi /mnt/marbi ntfs-3g users,noatime,compress,gid=100,fmask=113,dmask=002,noauto
 LABEL=ROXER /mnt/roxer vfat users,noatime,utf8,gid=100,fmask=113,dmask=002,noauto
