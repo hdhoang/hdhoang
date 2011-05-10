@@ -95,7 +95,7 @@ alias favd='ls -1 $f/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -d'
 alias fava='ls -1 $f/Music |awk "{FS=\"_-_\"; print \$1}" | uniq -c | sort -n'
 alias favl='ls -1 $f/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $f/**/*; rs --delete $f $pool'
-alias favf='mkdir /mnt/roxer/m; ls -1 $f/Music/ | shuf -n 110 | x -X cp -v $f/Music/{} /mnt/roxer/m/'
+alias favf='rm /mnt/roxer/m/*; ls -1 $f/Music/ | shuf -n 110 | rs --files-from=- --delete $f/Music /mnt/roxer/m/'
 function favm() {
     perl-rename "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" ~/Music/*.*
     mv -iv ~/Music/*.* $f/Music
