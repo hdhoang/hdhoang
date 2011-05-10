@@ -111,6 +111,7 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , :link[href*="hotfile.com/"]
 , :link[href*="megashare.com/"]
 , :link[href*="blip.tv/"]
+, [href*="polsy.org.uk/"]
 , :link[href*="tinyogg.com/"]
 {text-decoration:overline!important}
 ',1,NULL,NULL);
@@ -160,7 +161,6 @@ INSERT INTO "style_meta" VALUES(84,11,'domain','playdota.com');
 INSERT INTO "style_meta" VALUES(85,11,'type','site');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
-INSERT INTO "style_meta" VALUES(118,7,'type','global');
 INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(148,6,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
@@ -173,8 +173,9 @@ INSERT INTO "style_meta" VALUES(175,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(176,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(177,3,'type','global');
 INSERT INTO "style_meta" VALUES(178,3,'type','site');
+INSERT INTO "style_meta" VALUES(179,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',178);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',179);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
