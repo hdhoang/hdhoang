@@ -73,6 +73,7 @@
  '(save-place t nil (saveplace))
  '(save-place-file "~/.emacs.d/places")
  '(select-active-regions t)
+ '(selection-coding-system (quote utf-8))
  '(show-paren-mode t)
  '(show-paren-style (quote mixed))
  '(size-indication-mode t)
