@@ -2,6 +2,7 @@ set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions+=T
 set hintkeys=?,aoeupykxidhtnmvz
+set hinttags+=[alt]:not([alt=\'\']),[title]
 set hlfind
 set maxitems=5
 set newtab=help
