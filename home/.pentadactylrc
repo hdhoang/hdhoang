@@ -1,3 +1,4 @@
+set activate-=diverted,links,tabopen
 set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions+=T
