@@ -5,6 +5,7 @@ set editor='emacsclient +<line> <file>'
 set guioptions+=T
 set hintkeys=?,aoeupykxidhtnmvz
 set hinttags+=[alt]:not([alt=\'\']),[title]
+set hinttimeout=500
 set hlfind
 set maxitems=5
 set newtab=help
