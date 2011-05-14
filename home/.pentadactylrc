@@ -6,6 +6,7 @@ set hinttags+=[alt]:not([alt=\'\']),[title]
 set hlfind
 set maxitems=5
 set newtab=help
+set pageinfo=fgmse
 set passkeys=google.com/reader:npSlcmrgaeUNPXO
 set showstatuslinks=command
 
