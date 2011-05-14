@@ -1,6 +1,6 @@
 LABEL=cmalu / ext4 relatime 0 1
 LABEL=hdhoang /home/hdhoang ext4 user_xattr,noatime,comment=systemd.automount,auto 0 1
 
-LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,windows_names,gid=100,fmask=113,dmask=002,comment=systemd.automount
+LABEL=cmaluz /mnt/cmaluz ntfs-3g noatime,compress,windows_names,gid=100,fmask=113,dmask=002,comment=systemd.automount,noauto
 LABEL=marbi /mnt/marbi ntfs-3g users,noatime,compress,uid=1000,gid=100,fmask=113,dmask=002,comment=systemd.automount,noauto
 LABEL=ROXER /mnt/roxer vfat users,noatime,utf8,gid=100,fmask=113,dmask=002,comment=systemd.automount,noauto
