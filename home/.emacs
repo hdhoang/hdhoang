@@ -107,3 +107,7 @@
 
 (autoload 'magit-status "magit" nil t)
 (global-set-key (kbd "C-x m") 'magit-status)
+
+(add-to-list 'load-path "~/Public/hdhoang-misc/emacs-color-theme-solarized/")
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
