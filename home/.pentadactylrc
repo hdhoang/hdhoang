@@ -1,4 +1,4 @@
-set activate-=diverted,links,tabopen
+set activate-=diverted,links
 set complete=ls
 set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
