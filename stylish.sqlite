@@ -16,7 +16,7 @@ INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:teal!importan
 content: url(https://secure.wikimedia.org/favicon.ico);
 }
 @-moz-document domain("wikimedia.org") {
-:link[href*="/wikipedia/"]::before
+:link[href*=".wikipedia.org/"]::before
 {content: none}
 }
 
@@ -169,13 +169,13 @@ INSERT INTO "style_meta" VALUES(167,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(168,4,'type','site');
 INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(174,8,'type','site');
-INSERT INTO "style_meta" VALUES(175,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(176,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(177,3,'type','global');
-INSERT INTO "style_meta" VALUES(178,3,'type','site');
 INSERT INTO "style_meta" VALUES(179,7,'type','global');
+INSERT INTO "style_meta" VALUES(180,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(181,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(182,3,'type','global');
+INSERT INTO "style_meta" VALUES(183,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',179);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',183);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
