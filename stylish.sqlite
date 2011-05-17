@@ -20,6 +20,17 @@ content: url(https://secure.wikimedia.org/favicon.ico);
 {content: none}
 }
 
+:link[href*="tvtropes.org/"]::before
+{
+content: url(http://tvtropes.org/favicon.ico);
+}
+@-moz-document domain("tvtropes.org") {
+:link[href*="tvtropes.org/"]::before
+{content: none}
+:link:not([href*="tvtropes.org/"])::before
+{content: url(http://static.mediatropes.info/pmwiki/pub/external_link.gif)}
+}
+
 :link[href*=".archive.org/"]::before
 {
 content: url(http://web.archive.org/favicon.ico);
@@ -170,12 +181,13 @@ INSERT INTO "style_meta" VALUES(168,4,'type','site');
 INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(174,8,'type','site');
 INSERT INTO "style_meta" VALUES(179,7,'type','global');
-INSERT INTO "style_meta" VALUES(180,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(181,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(182,3,'type','global');
-INSERT INTO "style_meta" VALUES(183,3,'type','site');
+INSERT INTO "style_meta" VALUES(184,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(185,3,'domain','tvtropes.org');
+INSERT INTO "style_meta" VALUES(186,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(187,3,'type','global');
+INSERT INTO "style_meta" VALUES(188,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',183);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',188);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
