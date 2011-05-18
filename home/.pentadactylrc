@@ -15,7 +15,7 @@ set passkeys=google.com/reader:npSlcmrgaeUNPXO
 
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
-autocmd LocationChange hb4pm4eznzhd6mts.onion/.+train\.php -js doc.querySelector('#good button').focus()
+autocmd LocationChange http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -js try { doc.querySelector('#good button').focus() } catch (e){}
 " trigger on PageLoad in async to ensure the elements exist
 autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
 " trigger on DOMLoad to judge with extreme prejudice
