@@ -85,7 +85,6 @@ display:none
 }
 
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(5,NULL,'',NULL,'cracked bottom','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("cracked.com"){#fb_sliver{display:none!important}}',1,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {
 #fadein{display:none!important}
 
@@ -162,8 +161,6 @@ display:none
 }
 }',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
-INSERT INTO "style_meta" VALUES(10,5,'domain','cracked.com');
-INSERT INTO "style_meta" VALUES(11,5,'type','site');
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
 INSERT INTO "style_meta" VALUES(73,10,'domain','lparchive.org');
@@ -188,6 +185,6 @@ INSERT INTO "style_meta" VALUES(187,3,'type','global');
 INSERT INTO "style_meta" VALUES(188,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',188);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',192);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
