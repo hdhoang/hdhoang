@@ -1,4 +1,3 @@
-# Write your default config options here!
 ao=pulse
 ontop=true
 osdlevel=3
