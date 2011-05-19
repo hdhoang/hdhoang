@@ -2,3 +2,4 @@
 ao=pulse
 ontop=true
 osdlevel=3
+use-filename-title=true
