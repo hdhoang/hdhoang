@@ -6,10 +6,10 @@ INSERT INTO "styles" VALUES(1,NULL,'',NULL,'listing','@namespace url(http://www.
 @-moz-document domain("isohunt.com") {
 .listing{margin-right:0!important;background-color:white!important}
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:teal!important}
-:link[href^="#"]{color:grey!important}
+INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:#d33682!important}
+:link[href^="#"]{color:#268bd2!important}
 
-:link[href*=".onion/"]{color:green!important}
+:link[href*=".onion/"]{color:#859900!important}
 
 :link[href*=".wikipedia.org/"]::before
 {
@@ -176,14 +176,14 @@ INSERT INTO "style_meta" VALUES(167,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(168,4,'type','site');
 INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(174,8,'type','site');
-INSERT INTO "style_meta" VALUES(184,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(185,3,'domain','tvtropes.org');
-INSERT INTO "style_meta" VALUES(186,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(187,3,'type','global');
-INSERT INTO "style_meta" VALUES(188,3,'type','site');
 INSERT INTO "style_meta" VALUES(193,7,'type','global');
+INSERT INTO "style_meta" VALUES(194,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(195,3,'domain','tvtropes.org');
+INSERT INTO "style_meta" VALUES(196,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(197,3,'type','global');
+INSERT INTO "style_meta" VALUES(198,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',193);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',198);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
