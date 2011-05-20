@@ -66,6 +66,7 @@
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
+ '(pkgbuild-user-mail-address "arch@zahe.me")
  '(ps-paper-type (quote a4))
  '(read-quoted-char-radix 16)
  '(reb-re-syntax (quote string))
@@ -81,6 +82,7 @@
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(truncate-partial-width-windows nil)
  '(uniquify-buffer-name-style (quote post-forward-angle-brackets) nil (uniquify))
+ '(user-full-name "Hoàng Đức Hiếu")
  '(vc-follow-symlinks t)
  '(x-select-enable-clipboard t))
 
