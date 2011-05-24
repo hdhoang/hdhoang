@@ -21,16 +21,16 @@ wmclasscomplete=false
 wmclassmatch=0
 
 [11]
-Description=emacs
-clientmachine=cmalu.zahe.me
-clientmachinematch=0
+Description[$d]
+clientmachine[$d]
+clientmachinematch[$d]
 shortcut[$d]
 shortcutrule[$d]
-title=emacs@cmalu.zahe.me
-titlematch=0
-wmclass=emacs
-wmclasscomplete=false
-wmclassmatch=1
+title[$d]
+titlematch[$d]
+wmclass[$d]
+wmclasscomplete[$d]
+wmclassmatch[$d]
 
 [2]
 Description=(Default) Disable focus stealing prevention for XV
@@ -166,4 +166,4 @@ wmclasscomplete=false
 wmclassmatch=3
 
 [General]
-count=11
+count=10
