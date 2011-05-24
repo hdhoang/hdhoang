@@ -6,7 +6,7 @@ set guioptions+=Tc
 set ssli=command
 set hintkeys=$,aoeupykxidhtnmz
 set hinttags+=[alt]:not([alt=\'\']),[title]
-set hinttimeout=500
+set hinttimeout=1000
 set history=5
 set hlfind
 set maxitems=5
