@@ -24,8 +24,8 @@ wmclassmatch=0
 Description=emacs
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
-shortcut=Alt+Shift+F4
-shortcutrule=2
+shortcut[$d]
+shortcutrule[$d]
 title=emacs@cmalu.zahe.me
 titlematch=0
 wmclass=emacs
