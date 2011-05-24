@@ -147,6 +147,14 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+        /><match
+            enabled="true"
+            name="v6 fb"
+            pattern="*.v6.facebook.com/*"
+            isRegEx="false"
+            isBlackList="true"
+            isMultiLine="false"
+            caseSensitive="false"
         /></matches
       ><autoconf
           url=""
