@@ -15,3 +15,6 @@ alias -s m4v=m
 alias -s flv=m
 alias -s webm=m
 alias -s mkv=m
+alias -s ogv=m
+alias -s ogg=m
+alias -s mp3=m
