@@ -4,7 +4,7 @@ set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
 set guioptions+=Tc
 set ssli=command
-set hintkeys=$,aoeupykxidhtnmz
+set hintkeys=$.aoeupykxidhtnmz
 set hinttags+=[alt]:not([alt=\'\']),[title]
 set hinttimeout=1000
 set history=5
