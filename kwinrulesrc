@@ -20,18 +20,6 @@ wmclass=
 wmclasscomplete=false
 wmclassmatch=0
 
-[11]
-Description[$d]
-clientmachine[$d]
-clientmachinematch[$d]
-shortcut[$d]
-shortcutrule[$d]
-title[$d]
-titlematch[$d]
-wmclass[$d]
-wmclasscomplete[$d]
-wmclassmatch[$d]
-
 [2]
 Description=(Default) Disable focus stealing prevention for XV
 fsplevel=0
