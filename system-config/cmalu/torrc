@@ -9,6 +9,7 @@ ExitPolicy reject *:*
 
 SocksListenAddress 0.0.0.0:9050
 
+RunAsDaemon 1
 User tor
 DataDirectory /var/lib/tor
 ControlPort 9051
