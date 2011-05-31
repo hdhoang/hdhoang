@@ -114,7 +114,10 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , :link[href*="megaupload.com/"]
 , :link[href*="oron.com/"] /* 60s */
 , :link[href*="uploading.com/"] /* 60s */
-{text-decoration:line-through!important}
+{
+text-decoration:line-through!important;
+-moz-text-decoration-style:wavy!important;
+}
 
 :link[href*="mediafire.com/"]
 , :link[href*="mfi.re/"]
@@ -123,7 +126,10 @@ INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfil
 , [href*="polsy.org.uk/"]
 , [href*="xvideos.com/"] /* nice previews */
 , :link[href*="tinyogg.com/"]
-{text-decoration:overline!important}
+{
+text-decoration:overline!important;
+-moz-text-decoration-style:wavy!important;
+}
 ',1,NULL,NULL);
 INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://www.w3.org/1999/xhtml);
 
@@ -177,14 +183,14 @@ INSERT INTO "style_meta" VALUES(167,4,'domain','www.google.com');
 INSERT INTO "style_meta" VALUES(168,4,'type','site');
 INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(174,8,'type','site');
-INSERT INTO "style_meta" VALUES(204,7,'type','global');
 INSERT INTO "style_meta" VALUES(205,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(206,3,'domain','tvtropes.org');
 INSERT INTO "style_meta" VALUES(207,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(208,3,'type','global');
 INSERT INTO "style_meta" VALUES(209,3,'type','site');
+INSERT INTO "style_meta" VALUES(210,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',209);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',210);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
