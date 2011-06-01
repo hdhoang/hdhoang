@@ -97,6 +97,6 @@ alias favl='ls -1 $f/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c
 alias favs='xattr fav fav $f/**/*; rs --delete $f $pool'
 alias favf='rm /mnt/roxer/m/*; ls -1 $f/Music/ | shuf -n 110 | rs --files-from=- --no-xattrs $f/Music /mnt/roxer/m/'
 function favm() {
-    mv ~/Music/*.* $f/Music
+    # not using alias to keep emacs hili sane
     prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" $f/Music/*
 }
