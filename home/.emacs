@@ -54,6 +54,7 @@
  '(describe-char-unidata-list (quote (name old-name general-category canonical-combining-class bidi-class decomposition decimal-digit-value digit-value numeric-value mirrored iso-10646-comment uppercase lowercase titlecase)))
  '(doc-view-continuous t)
  '(font-use-system-font t)
+ '(global-hl-line-mode t)
  '(ibus-python-shell-command-name "python2")
  '(ido-create-new-buffer (quote always))
  '(ido-enable-flex-matching t)
