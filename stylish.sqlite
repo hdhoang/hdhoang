@@ -166,6 +166,11 @@ td[width="100"] {
 display:none
 }
 }',1,NULL,NULL);
+INSERT INTO "styles" VALUES(15,NULL,'',NULL,'ignco','@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("ignorethecode.net") {
+:link {text-decoration:underline!important}
+}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
@@ -189,8 +194,10 @@ INSERT INTO "style_meta" VALUES(207,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(208,3,'type','global');
 INSERT INTO "style_meta" VALUES(209,3,'type','site');
 INSERT INTO "style_meta" VALUES(210,7,'type','global');
+INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
+INSERT INTO "style_meta" VALUES(212,15,'type','site');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('styles',14);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',210);
+INSERT INTO "sqlite_sequence" VALUES('styles',15);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',212);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
