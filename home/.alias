@@ -98,5 +98,6 @@ alias favs='xattr fav fav $f/**/*; rs --delete $f $pool'
 alias favf='rm /mnt/roxer/m/*; ls -1 $f/Music/ | shuf -n 110 | rs --files-from=- --no-xattrs $f/Music /mnt/roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
-    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" $f/Music/*
+    cd $f/Music/
+    prv "s/- /__/g;s/ /_/g;s/''/_/g;s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/" *
 }
