@@ -1,0 +1,72 @@
+-*- mode: org -*-
+
+* Biography
+** Last Words
+** Surely You're Joking, Mr. Feynman
+** The World as I See It
+
+* Fiction
+** Animorphs
+** Everworld
+** Harry Potter and the Methods of Rational
+** Ishmael
+** Lost Girls
+** Red Storm Rising
+** The Deer and the Cauldron
+** The Last Ringbearer
+** tvtropes.orgcracked.com
+
+* Movie
+** Dogma (1999)
+** Duplicity (2009)
+
+* Music
+** "Weird Al" Yankovic
+** ABBA
+** Avenged Sevenfold
+** Black Sabbath
+** Bon Jovi
+** Buckethead
+** Bức Tường
+** Charon
+** Children Of Bodom
+** Céline Dion
+** D12
+** Elias Viljanen
+** Eminem
+** Frédéric Chopin
+** Guns N' Roses
+** Gạt Tàn Đầy
+** Hanoi Rocks
+** HIM
+** Iron Maiden
+** JT Bruce
+** Korpiklaani
+** Kylähullut
+** Lake of Tears
+** Linkin Park
+** MANOWAR
+** Megadeth
+** Metal Gear Solid
+** Metallica
+** Mỹ Linh
+** Nightwish
+** Oleg Serkov
+** Powerglove
+** Rhapsody
+** Scorpions
+** Simon & Garfunkel
+** Sixpence None the Richer
+** Sonata Arctica
+** Stratovarius
+** Tarot
+** Thanh Tùng
+** The Beatles
+** The Ink Spots
+** To/Die/For
+** Tom Lehrer
+** Trịnh Công Sơn
+** Yngwie J. Malmsteen
+
+* Technical
+** CSS: Design for the Web
