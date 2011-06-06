@@ -4,7 +4,6 @@
 ** Last Words
 ** Surely You're Joking, Mr. Feynman
 ** The World as I See It
-
 * Fiction
 ** Animorphs
 ** Everworld
@@ -14,12 +13,11 @@
 ** Red Storm Rising
 ** The Deer and the Cauldron
 ** The Last Ringbearer
-** tvtropes.orgcracked.com
-
+** tvtropes.org
+** cracked.com
 * Movie
 ** Dogma (1999)
 ** Duplicity (2009)
-
 * Music
 ** "Weird Al" Yankovic
 ** ABBA
@@ -67,6 +65,5 @@
 ** Tom Lehrer
 ** Trịnh Công Sơn
 ** Yngwie J. Malmsteen
-
 * Technical
 ** CSS: Design for the Web
