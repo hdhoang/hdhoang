@@ -24,6 +24,14 @@
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
    :END:
 ** Dinosaur Comics                                                    :title:
+** DOGHOUSE                                                           :title:
+   :PROPERTIES:
+   :url:      http://thedoghousediaries.com
+   :END:
+** Mimi and Eunice
+   :PROPERTIES:
+   :url:      http://mimiandeunice.com
+   :END:
 ** Fake Science
 ** Hipster Hitler
 ** Married To The Sea
@@ -173,7 +181,10 @@
 ** Jason Kottke
 ** Jason Scott
 ** Mark Pilgrim
-** Shamus Young
+** Shamus Young                                                   :game:code:
+   :PROPERTIES:
+   :url:      http://shamusyoung.com
+   :END:
 ** xorl %eax, %eax
 * Technical
 ** cks
