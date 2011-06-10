@@ -6,20 +6,68 @@
 ** The World as I See It
 * Comic
 ** @Peanuttweeter
-** Abstruse Goose
+   :PROPERTIES:
+   :url:      http://peanutweeter.com
+   :END:
+** Abstruse Goose                                                     :title:
 ** Bug
+   :PROPERTIES:
+   :url:      http://bugcomic.com
+   :END:
+** Buttersafe                                                           :3rd:
+   :PROPERTIES:
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
+   :END:
 ** Calamities of Nature
-** Dinosaur Comics
-** Saturday Morning Breakfast Cereal
+** Cyanide and Happiness                                                :3rd:
+   :PROPERTIES:
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
+   :END:
+** Dinosaur Comics                                                    :title:
+** Fake Science
+** Hipster Hitler
+** Married To The Sea
+** Optipess
+** Saturday Morning Breakfast Cereal                              :extra:3rd:
+** Savage Chickens
+   :PROPERTIES:
+   :url:      http://savagechickens.com
+   :END:
 ** Shoebox
+** Sinfest
+** Something of that Ilk
+   :PROPERTIES:
+   :url:      http://somethingofthatilk.com
+   :END:
+** The Book of Biff
+   :PROPERTIES:
+   :url:      http://thebookofbiff.com
+   :END:
+** theWAREHOUSE
+** Wondermark                                                         :title:
+   :PROPERTIES:
+   :url:      http://wondermark.com
+   :END:
 ** Wulffmorgenthaler
-** xkcd
+** xkcd                                                               :title:
+   :PROPERTIES:
+   :url:      https://xkcd.com
+   :END:
 * Fiction
 ** Animorphs
+   :PROPERTIES:
+   :btih:     04f439a9eac3b86636beff502590484945b57d74
+   :END:
 ** Everworld
 ** Harry Potter and the Methods of Rationality
 ** Ishmael
+   :PROPERTIES:
+   :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
+   :END:
 ** Lost Girls
+   :PROPERTIES:
+   :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
+   :END:
 ** Red Storm Rising
 ** Slaughterhouse-Five
 ** The Deer and the Cauldron
@@ -48,8 +96,20 @@
 ** Stoya
 ** the waitress
 * Lulz
+** Cracked
+   :PROPERTIES:
+   :url:      http://cracked.com
+   :END:
 ** Design Crush
 ** Fukung
+   :PROPERTIES:
+   :url:      http://fukung.net
+   :END:
+** Imgur
+** Let's Play Archive
+** Misconception Junction
+** Neatorama
+** Today I Found Out
 * Movie
 ** Dogma (1999)
 ** Duplicity (2009)
@@ -101,14 +161,29 @@
 ** Trịnh Công Sơn
 ** Yngwie J. Malmsteen
 * Person
+** Aaron Toponce
+   :PROPERTIES:
+   :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
+   :END:
 ** Charlie Stross
 ** Dan Kaminsky
 ** Dave Winer
 ** Eliezer Yudkowsky
 ** Ian Hickson
+** Jason Kottke
+** Jason Scott
 ** Mark Pilgrim
+** Shamus Young
+** xorl %eax, %eax
 * Technical
+** cks
+   :PROPERTIES:
+   :url:      http://utcc.utoronto.ca/~cks/
+   :END:
 ** CSS: Design for the Web
+** Little Big Details
+** Planet Emacsen
 ** Planet GNOME
 ** Planet KDE
+** Planet Kernel
 ** Planet Mozilla
