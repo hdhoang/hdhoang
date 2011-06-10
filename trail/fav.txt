@@ -90,5 +90,15 @@
 ** Tom Lehrer
 ** Trịnh Công Sơn
 ** Yngwie J. Malmsteen
+* Person
+** Charlie Stross
+** Dan Kaminsky
+** Dave Winer
+** Eliezer Yudkowsky
+** Ian Hickson
+** Mark Pilgrim
 * Technical
 ** CSS: Design for the Web
+** Planet GNOME
+** Planet KDE
+** Planet Mozilla
