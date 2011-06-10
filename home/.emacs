@@ -63,6 +63,7 @@
  '(indicate-empty-lines t)
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
+ '(magit-remote-ref-format (quote remote-slash-branch))
  '(make-pointer-invisible nil)
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
