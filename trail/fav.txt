@@ -20,10 +20,12 @@
 ** DotA
 ** Dungeon Crawl: Stone Soup
 * Girl
+** (y)ape
 ** Ariel Rebel
 ** Elyssa
 ** Erica Campbell
 ** Felicia
+** Francesca Dani
 ** Iris
 ** Jordan Capri
 ** Josie
@@ -35,7 +37,9 @@
 ** Regina
 ** Stoya
 ** the waitress
-** Francesca Dani
+* Lulz
+** Design Crush
+** Fukung
 * Movie
 ** Dogma (1999)
 ** Duplicity (2009)
