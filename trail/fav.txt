@@ -10,6 +10,17 @@
    :url:      http://peanutweeter.com
    :END:
 ** Abstruse Goose                                                     :title:
+   :PROPERTIES:
+   :url:      http://abstrusegoose.com
+   :END:
+** AmazingSuperPowers                                                 :title:
+   :PROPERTIES:
+   :url:      http://amazingsuperpowers.com
+   :END:
+** A Softer World                                                     :title:
+   :PROPERTIES:
+   :url:      http://asofterworld.com
+   :END:
 ** Bug
    :PROPERTIES:
    :url:      http://bugcomic.com
@@ -24,6 +35,9 @@
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
    :END:
 ** Dinosaur Comics                                                    :title:
+   :PROPERTIES:
+   :url:      http://qwantz.com
+   :END:
 ** DOGHOUSE                                                           :title:
    :PROPERTIES:
    :url:      http://thedoghousediaries.com
@@ -35,6 +49,10 @@
 ** Fake Science
 ** Hipster Hitler
 ** Married To The Sea
+** Nedroid Picture Diary 2                                             :title:
+   :PROPERTIES:
+   :url:     http://nedroid.com
+   :END:
 ** Optipess
 ** Saturday Morning Breakfast Cereal                              :extra:3rd:
 ** Savage Chickens
@@ -114,7 +132,13 @@
    :url:      http://fukung.net
    :END:
 ** Imgur
+   :PROPERTIES:
+   :url:      http://imgur.com
+   :END:
 ** Let's Play Archive
+   :PROPERTIES:
+   :url:      http://lparchive.org
+   :END:
 ** Misconception Junction
 ** Neatorama
 ** Today I Found Out
@@ -177,13 +201,20 @@
 ** Dan Kaminsky
 ** Dave Winer
 ** Eliezer Yudkowsky
-** Ian Hickson
+** Ian Hickson                                                          :net:
 ** Jason Kottke
-** Jason Scott
-** Mark Pilgrim
+** Jason Scott                                                     :free:net:
+** Mark Pilgrim                                               :free:code:net:
+   :PROPERTIES:
+   :url:     http://firehose.diveintomark.org
+   :END:
 ** Shamus Young                                                   :game:code:
    :PROPERTIES:
    :url:      http://shamusyoung.com
+   :END:
+** Terminally Incoherent                                              :movie:
+   :PROPERTIES:
+   :url:      http://terminally-incoherent.com
    :END:
 ** xorl %eax, %eax
 * Technical
@@ -192,9 +223,9 @@
    :url:      http://utcc.utoronto.ca/~cks/
    :END:
 ** CSS: Design for the Web
+** Kernel Planet
 ** Little Big Details
 ** Planet Emacsen
 ** Planet GNOME
 ** Planet KDE
-** Planet Kernel
 ** Planet Mozilla
