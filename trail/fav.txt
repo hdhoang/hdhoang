@@ -245,3 +245,7 @@
 ** Planet GNOME
 ** Planet KDE
 ** Planet Mozilla
+* Trinket
+** Garter belt
+** High stocking
+** Plaid skirt
