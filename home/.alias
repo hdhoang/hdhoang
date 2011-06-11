@@ -90,8 +90,8 @@ function aur {
 alias c="crawl-tiles&"
 alias m='mplayer'
 alias mi=mediainfo
-alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && unzip ~/Public/mirror/rockbox-ipodnano1g.zip -d /mnt/roxer'
 alias dum=' dumx -v ~/Music -type d|cut -c 9-|x -kX ls -1'
+alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && 7z -o/mnt/roxer x ~/Public/mirror/rockbox-ipodnano1g.zip'
 alias favd='ls -1 $f/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -di'
 alias fava='ls -1 $f/Music |awk "{FS=\"_-_\"; print \$1}" | uniq -c | sort -n'
 alias favl='ls -1 $f/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c | sort -n'
