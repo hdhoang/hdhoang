@@ -54,6 +54,10 @@
    :url:     http://nedroid.com
    :END:
 ** Optipess
+** Pie Comic
+   :PROPERTIES:
+   :url:      http://piecomic.com
+   :END:
 ** Saturday Morning Breakfast Cereal                              :extra:3rd:
 ** Savage Chickens
    :PROPERTIES:
@@ -102,9 +106,15 @@
 ** cracked.com
 * Game
 ** DotA
-** Dungeon Crawl: Stone Soup
+** Dungeon Crawl: Stone Soup                                      :roguelike:
+   :PROPERTIES:
+   :url:      http://crawl.develz.org
+   :END:
 * Girl
 ** (y)ape
+   :PROPERTIES:
+   :url:      http://hb4pm4eznzhd6mts.onion
+   :END:
 ** Ariel Rebel
 ** Elyssa
 ** Erica Campbell
@@ -112,8 +122,14 @@
 ** Francesca Dani
 ** Iris
 ** Jordan Capri
+   :PROPERTIES:
+   :btih:     7b9cbccb0cb50ef6e0aba414ce9c3bea0f55abda
+   :END:
 ** Josie
 ** Katie Fey/Jenya D
+   :PROPERTIES:
+   :url:      http://katiefey.com
+   :END:
 ** Kristina Fey
 ** lambda
 ** Nikki
