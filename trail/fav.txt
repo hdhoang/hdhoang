@@ -58,7 +58,10 @@
    :PROPERTIES:
    :url:      http://piecomic.com
    :END:
-** Saturday Morning Breakfast Cereal                              :extra:3rd:
+** Saturday Morning Breakfast Cereal                        :extra:3rd:daily:
+   :PROPERTIES:
+   :url:      http://smbc-comics.com
+   :END:
 ** Savage Chickens
    :PROPERTIES:
    :url:      http://savagechickens.com
