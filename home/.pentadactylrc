@@ -12,7 +12,7 @@ set hlfind
 set maxitems=5
 set newtab=help
 set pageinfo=fgmse
-set passkeys=google.com/reader:npSlcmrgaeUNPXO
+set passkeys=google.com/reader:' npSlcmrgaeUNPXO'
 
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
