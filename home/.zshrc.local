@@ -7,6 +7,7 @@ source ~/.alias.zsh
 setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
 setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
 unsetopt AUTO_NAME_DIRS bash_auto_list numeric_glob_sort
+zstyle ':vcs_info:*' enable git
 
 WORDCHARS=''
 
