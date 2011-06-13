@@ -30,7 +30,7 @@
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
    :END:
 ** Calamities of Nature
-** Cyanide and Happiness                                                :3rd:
+** Cyanide and Happiness                                             :3rd:ns:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
    :END:
@@ -58,7 +58,7 @@
    :PROPERTIES:
    :url:      http://piecomic.com
    :END:
-** Saturday Morning Breakfast Cereal                        :extra:3rd:daily:
+** Saturday Morning Breakfast Cereal                     :extra:3rd:daily:ns:
    :PROPERTIES:
    :url:      http://smbc-comics.com
    :END:
@@ -68,6 +68,9 @@
    :END:
 ** Shoebox
 ** Sinfest
+   :PROPERTIES:
+   :url:      http://sinfest.net
+   :END:
 ** Something of that Ilk
    :PROPERTIES:
    :url:      http://somethingofthatilk.com
@@ -81,7 +84,7 @@
    :PROPERTIES:
    :url:      http://wondermark.com
    :END:
-** Wulffmorgenthaler
+** Wulffmorgenthaler                                                     :ns:
 ** xkcd                                                               :title:
    :PROPERTIES:
    :url:      https://xkcd.com
@@ -113,7 +116,7 @@
    :PROPERTIES:
    :url:      http://crawl.develz.org
    :END:
-* Girl
+* Girl                                                                   :ns:
 ** (y)ape
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
@@ -146,7 +149,7 @@
    :url:      http://cracked.com
    :END:
 ** Design Crush
-** Fukung
+** Fukung                                                                :ns:
    :PROPERTIES:
    :url:      http://fukung.net
    :END:
@@ -212,15 +215,25 @@
 ** Trịnh Công Sơn
 ** Yngwie J. Malmsteen
 * Person
-** Aaron Toponce
+** Aaron Toponce                                                       :free:
    :PROPERTIES:
    :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
    :END:
+** Bradley M. Kuhn                                              :free:pgnome:
 ** Charlie Stross
 ** Dan Kaminsky
 ** Dave Winer
+   :PROPERTIES:
+   :url:      http://scripting.com
+   :END:
 ** Eliezer Yudkowsky
+   :PROPERTIES:
+   :url:      http://yudkowsky.net
+   :END:
 ** Ian Hickson                                                          :net:
+   :PROPERTIES:
+   :url:      http://hixie.ch
+   :END:
 ** Jason Kottke
 ** Jason Scott                                                     :free:net:
 ** Mark Pilgrim                                               :free:code:net:
@@ -237,7 +250,7 @@
    :END:
 ** xorl %eax, %eax
 * Technical
-** cks
+** cks                                                               :psysad:
    :PROPERTIES:
    :url:      http://utcc.utoronto.ca/~cks/
    :END:
@@ -248,6 +261,10 @@
 ** Planet GNOME
 ** Planet KDE
 ** Planet Mozilla
+** Planet SysAdmin
+   :PROPERTIES:
+   :url:      http://planetsysadmin.com
+   :END:
 * Trinket
 ** Garter belt
 ** High stocking
