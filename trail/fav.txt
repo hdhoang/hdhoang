@@ -5,51 +5,90 @@
 ** Surely You're Joking, Mr. Feynman
 ** The World as I See It
 * Comic
-** @Peanuttweeter
+** @Peanuttweeter                                                      :cute:
    :PROPERTIES:
    :url:      http://peanutweeter.com
    :END:
-** Abstruse Goose                                                     :title:
-   :PROPERTIES:
-   :url:      http://abstrusegoose.com
-   :END:
-** AmazingSuperPowers                                                 :title:
-   :PROPERTIES:
-   :url:      http://amazingsuperpowers.com
-   :END:
-** A Softer World                                                     :title:
+** A Softer World                                                :title:cute:
    :PROPERTIES:
    :url:      http://asofterworld.com
    :END:
-** Bug
+** Abstruse Goose                                                 :title:sci:
+   :PROPERTIES:
+   :url:      http://abstrusegoose.com
+   :END:
+** AmazingSuperPowers                                            :title:sick:
+   :PROPERTIES:
+   :url:      http://amazingsuperpowers.com
+   :END:
+** Bent Objects                                                        :cute:
+   :PROPERTIES:
+   :url:      http://bentobjects.blogspot.com
+   :END:
+** Bug                                                                 :sick:
    :PROPERTIES:
    :url:      http://bugcomic.com
    :END:
-** Buttersafe                                                           :3rd:
+** Buttersafe                                                      :3rd:cute:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
+   :url:      http://buttersafe.com
    :END:
-** Calamities of Nature
-** Cyanide and Happiness                                             :3rd:ns:
+** Calamities of Nature                                                 :sci:
+** ChannelATE                                                          :sick:
+   :PROPERTIES:
+   :url:      http://channelate.com
+   :END:
+** Cowbirds in Love                                                    :cute:
+   :PROPERTIES:
+   :url:      http://cowbirdsinlove.com
+   :END:
+** Ctrl+Alt+Del                                                    :game:3rd:
+   :PROPERTIES:
+   :url:      http://cad-comic.com
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=a70e4f717481286c6388365cc079742c&_render=rss
+   :END:
+** Cyanide and Happiness                                        :3rd:ns:sick:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
    :END:
-** Dinosaur Comics                                                    :title:
+** Dinosaur Comics                                           :title:cute:phi:
    :PROPERTIES:
    :url:      http://qwantz.com
    :END:
-** DOGHOUSE                                                           :title:
+** DOGHOUSE                                                      :title:cute:
    :PROPERTIES:
    :url:      http://thedoghousediaries.com
    :END:
-** Mimi and Eunice
+** Extra Ordinary                                                :cute:title:
+   :PROPERTIES:
+   :url:      http://exocomics.com
+   :END:
+** Fake Science                                                        :cute:
+** Fredo and Pid'jin                                                   :blas:
+   :PROPERTIES:
+   :url:      http://pidjin.net
+   :END:
+** Hejibits                                                      :game:title:
+   :PROPERTIES:
+   :url:      http://hejibits.com
+   :END:
+** Hipster Hitler                                                      :cute:
+** Hyperbole and a Half
+** INCIDENTAL COMICS                                                   :cute:
+   :PROPERTIES:
+   :url:      http://thoughtballoonhelium.blogspot.com
+   :END:
+** Liz Prince Power                                                    :cute:
+   :PROPERTIES:
+   :url:      http://lizprincepower.com
+   :END:
+** Married To The Sea                                                  :cute:
+** Mimi and Eunice                                                 :phi:free:
    :PROPERTIES:
    :url:      http://mimiandeunice.com
    :END:
-** Fake Science
-** Hipster Hitler
-** Married To The Sea
-** Nedroid Picture Diary 2                                             :title:
+** Nedroid Picture Diary 2                                            :title:
    :PROPERTIES:
    :url:     http://nedroid.com
    :END:
@@ -57,25 +96,41 @@
    :PROPERTIES:
    :url:      http://oglaf.com
    :END:
-** Optipess
+** Optipess                                                            :sick:
+** Penny Arcarde Comics                                            :game:3rd:
+   :PROPERTIES:
+   :url:      http://penny-arcade.com
+   :3rd:      ttp://pipes.yahoo.com/pipes/pipe.run?_id=IjjUcuSa3RGmgXqp1L3fcQ&_render=rss
+   :END:
 ** Pie Comic
    :PROPERTIES:
    :url:      http://piecomic.com
    :END:
-** Saturday Morning Breakfast Cereal                     :extra:3rd:daily:ns:
+** POPSTRIP                                                   :title:sci:phi:
+   :PROPERTIES:
+   :url:      http://popstrip.com
+   :END:
+** Rock, Paper, Cynic                                                  :cute:
+   :PROPERTIES:
+   :url:      http://rockpapercynic.com
+   :END:
+** Saturday Morning Breakfast Cereal                 :extra:3rd:daily:ns:sci:
    :PROPERTIES:
    :url:      http://smbc-comics.com
    :END:
-** Savage Chickens
+** Savage Chickens                                                     :cute:
    :PROPERTIES:
    :url:      http://savagechickens.com
    :END:
-** Sexy Losers                                                       :ns:end:
+** Sexy Losers                                             :ns:end:cute:sick:
    :PROPERTIES:
    :url:      http://sexylosers.com
    :cont:     the thin H line
    :END:
-** Shoebox
+** Shoebox                                                       :movie:cute:
+   :PROPERTIES:
+   :url:      http://shoeboxblog.com
+   :END:
 ** Sinfest
    :PROPERTIES:
    :url:      http://sinfest.net
@@ -84,15 +139,34 @@
    :PROPERTIES:
    :url:      http://somethingofthatilk.com
    :END:
+** Spud Comics                                                         :cute:
+   :PROPERTIES:
+   :url:      http://spudcomics.com
+   :END:
 ** The Book of Biff
    :PROPERTIES:
    :url:      http://thebookofbiff.com
+   :END:
+** The Gutterpunch Confessional
+   :PROPERTIES:
+   :url:      http://gutterpunch.com
+   :END:
+** The Oatmeal                                                    :cute:sick:
+   :PROPERTIES:
+   :url:      http://theoatmeal.com
    :END:
 ** the thin H line                                                       :ns:
    :PROPERTIES:
    :url:     http://thinhline.tumblr.com
    :END:
 ** theWAREHOUSE
+   :PROPERTIES:
+   :url:      http://warehousecomic.com
+   :END: 
+** Tree Lobsters!                                                     :title:
+   :PROPERTIES:
+   :url:      http://treelobsters.com
+   :END:
 ** Wondermark                                                         :title:
    :PROPERTIES:
    :url:      http://wondermark.com
@@ -122,7 +196,6 @@
 ** The Deer and the Cauldron
 ** The Last Ringbearer
 ** tvtropes.org
-** cracked.com
 * Game
 ** DotA
 ** Dungeon Crawl: Stone Soup                                      :roguelike:
@@ -179,10 +252,17 @@
    :END:
 ** Misconception Junction
 ** Neatorama
+   :PROPERTIES:
+   :url:      http://neatorama.com
+   :END:
 ** Today I Found Out
 * Movie
 ** Dogma (1999)
 ** Duplicity (2009)
+** Outrageous Fortune (1987)
+   :PROPERTIES:
+   :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
+   :END:
 * Music
 ** "Weird Al" Yankovic
 ** ABBA
@@ -260,7 +340,7 @@
    :PROPERTIES:
    :url:      http://shamusyoung.com
    :END:
-** Terminally Incoherent                                              :movie:
+** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
@@ -281,6 +361,7 @@
    :PROPERTIES:
    :url:      http://web.meson.org
    :END:
+** Planet Debian
 ** Planet Emacsen                                                    :pemacs:
 ** Planet GNOME                                                      :pgnome:
 ** Planet KDE                                                          :pkde:
@@ -288,6 +369,10 @@
 ** Planet SysAdmin                                                   :psysad:
    :PROPERTIES:
    :url:      http://planetsysadmin.com
+   :END:
+** The Endeavour
+   :PROPERTIES:
+   :url:      http://johndcook.com
    :END:
 * Trinket                                                                :ns:
 ** Garter belt
