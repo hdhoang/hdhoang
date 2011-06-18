@@ -29,6 +29,10 @@
    :PROPERTIES:
    :url:      http://bugcomic.com
    :END:
+** Buni                                                                :sick:
+   :PROPERTIES:
+   :url:      http://bunicomic.com
+   :END:
 ** Buttersafe                                                      :3rd:cute:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
@@ -97,6 +101,10 @@
    :url:      http://oglaf.com
    :END:
 ** Optipess                                                            :sick:
+** Pants Are Overrated                                                 :game:
+   :PROPERTIES:
+   :url:      http://pantsareoverrated.com
+   :END:
 ** Penny Arcarde Comics                                            :game:3rd:
    :PROPERTIES:
    :url:      http://penny-arcade.com
@@ -131,6 +139,7 @@
    :PROPERTIES:
    :url:      http://shoeboxblog.com
    :END:
+*** Chuck & Beans
 ** Sinfest
    :PROPERTIES:
    :url:      http://sinfest.net
