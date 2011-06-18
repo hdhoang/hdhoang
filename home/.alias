@@ -94,7 +94,7 @@ alias ti=gtorrentviewer
 alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && 7z -o/mnt/roxer x ~/Public/mirror/rockbox-ipodnano1g.zip'
 alias dum='dumx -v ~/Music -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls -1 $f/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -di'
-alias fava='ls -1 $f/Music |awk "{FS=\"_-_\"; print \$1}" | uniq -c | sort -n'
+alias fava='ls -1 $f/Music | cut -d @ -f 1 | uniq -c | sort -n'
 alias favl='ls -1 $f/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $f/**/*; rs --delete $f $pool'
 alias favf='rm /mnt/roxer/m/*; ls -1 $f/Music/ | shuf -n 110 | rs --files-from=- --no-xattrs $f/Music /mnt/roxer/m/'
