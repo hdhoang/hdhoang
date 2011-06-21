@@ -225,6 +225,7 @@
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
 ** Ariel Rebel
+** Bailey Kline
 ** Elyssa
 ** Erica Campbell
 ** Felicia
@@ -343,13 +344,13 @@
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
-** Ian Hickson                                                          :net:
+** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
    :url:      http://hixie.ch
    :END:
 ** Jason Kottke
 ** Jason Scott                                                     :free:net:
-** Mark Pilgrim                                               :free:code:net:
+** Mark Pilgrim                                        :free:code:net:whatwg:
    :PROPERTIES:
    :url:     http://firehose.diveintomark.org
    :END:
