@@ -87,6 +87,10 @@
    :PROPERTIES:
    :url:      http://lizprincepower.com
    :END:
+** LOLDWELL.com
+   :PROPERTIES:
+   :url:      http://loldwell.com
+   :END:
 ** Married To The Sea                                                  :cute:
 ** Mimi and Eunice                                                 :phi:free:
    :PROPERTIES:
@@ -159,6 +163,10 @@
 ** The Gutterpunch Confessional
    :PROPERTIES:
    :url:      http://gutterpunch.com
+   :END:
+** The Non-Adventures of Wonderella
+   :PROPERTIES:
+   :url:      http://nonadventures.com
    :END:
 ** The Oatmeal                                                    :cute:sick:
    :PROPERTIES:
@@ -355,6 +363,10 @@
    :END:
 ** xorl %eax, %eax
 * Technical
+** #jbopre
+   :PROPERTIES:
+   :url:      irc://chat.freenode.net/#jbopre
+   :END:
 ** cks                                                               :psysad:
    :PROPERTIES:
    :url:      http://utcc.utoronto.ca/~cks/

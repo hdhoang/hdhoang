@@ -1,1 +1,13 @@
-Savatage
+-*- mode: org -*-
+
+* Music
+** ABBA
+** Annihilator
+** Anthrax
+** Bethzaida
+** Diablo Swing Orchestra
+** Dry Kill Logic
+** M2M
+** Savatage
+** Warmen
+** Wintersun
