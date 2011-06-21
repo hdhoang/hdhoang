@@ -66,6 +66,7 @@
  '(make-pointer-invisible nil)
  '(mouse-avoidance-mode nil nil (avoid))
  '(mouse-avoidance-nudge-dist 30)
+ '(org-M-RET-may-split-line (quote ((default))))
  '(org-startup-folded nil)
  '(package-archives (quote (("marmalade" . "http://marmalade-repo.org/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("tromey" . "http://tromey.com/elpa/"))))
  '(pkgbuild-user-mail-address "arch@zahe.me")
