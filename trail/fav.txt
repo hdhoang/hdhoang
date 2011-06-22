@@ -122,7 +122,7 @@
    :PROPERTIES:
    :url:      http://popstrip.com
    :END:
-** Rock, Paper, Cynic                                                  :cute:
+** Rock, Paper, Cynic                                              :cute:sad:
    :PROPERTIES:
    :url:      http://rockpapercynic.com
    :END:
@@ -144,6 +144,7 @@
    :url:      http://shoeboxblog.com
    :END:
 *** Chuck & Beans
+*** Jana’s Thinkings
 ** Sinfest
    :PROPERTIES:
    :url:      http://sinfest.net
@@ -223,6 +224,14 @@
 ** (y)ape
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
+   :END:
+** Amy
+   :PROPERTIES:
+   :url:      http://amyamyamy.com
+   :END:
+** Anne
+   :PROPERTIES:
+   :url:      http://anneteenmodel.com
    :END:
 ** Ariel Rebel
 ** Bailey Kline
@@ -373,13 +382,13 @@
    :url:      http://utcc.utoronto.ca/~cks/
    :END:
 ** CSS: Design for the Web
-** John Cowan                                                      :pint:jbo:
+** John Cowan                                                   :pint:jbopre:
    :PROPERTIES:
    :url:      http://home.ccil.org/~cowan/
    :END:
 ** Kernel Planet
 ** Little Big Details
-** Mark Shoulson                                                     :jbo:py:
+** Mark Shoulson                                                  :jbopre:py:
    :PROPERTIES:
    :url:      http://web.meson.org
    :END:
