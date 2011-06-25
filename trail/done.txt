@@ -1,8 +1,11 @@
 -*- mode: org -*-
 
 * Girl
+** Alison Angel
 ** Anja.de
 ** Halle
+** Kari Sweets
+** Paris
 ** Score Group
 ** Tawnee Stone
 ** Tila
@@ -16,6 +19,7 @@
 ** M2M
 ** Muse
 ** Savatage
+** System of a Down
 ** Tokyo Jihen/Ringo Shiina
 ** Warmen
 ** Wintersun
