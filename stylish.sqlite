@@ -63,7 +63,7 @@ content: url(http:/www.cracked.com/favicon.ico);
 {
 border-right: 2px dotted teal !important;
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("www.google.com"){
+INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document url-prefix("https://www.google.com/reader/"){
 .entry-actions
 {display:block!important;text-align:right!important}
 
@@ -192,8 +192,6 @@ INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
 INSERT INTO "style_meta" VALUES(148,6,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(167,4,'domain','www.google.com');
-INSERT INTO "style_meta" VALUES(168,4,'type','site');
 INSERT INTO "style_meta" VALUES(173,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(174,8,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
@@ -205,8 +203,10 @@ INSERT INTO "style_meta" VALUES(240,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(241,3,'domain','cracked.com');
 INSERT INTO "style_meta" VALUES(242,3,'type','global');
 INSERT INTO "style_meta" VALUES(243,3,'type','site');
+INSERT INTO "style_meta" VALUES(244,4,'url-prefix','https://www.google.com/reader/');
+INSERT INTO "style_meta" VALUES(245,4,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',243);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',245);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
