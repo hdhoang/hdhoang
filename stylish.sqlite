@@ -11,12 +11,12 @@ INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:#d33682!impor
 
 :link[href*=".onion/"]{color:#859900!important}
 
-:link[href*=".wikipedia.org/"]::before
+:-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before
 {
 content: url(https://secure.wikimedia.org/favicon.ico);
 }
 @-moz-document domain("wikimedia.org") {
-:link[href*=".wikipedia.org/"]::before
+:-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before
 {content: none}
 }
 
@@ -197,16 +197,16 @@ INSERT INTO "style_meta" VALUES(174,8,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
 INSERT INTO "style_meta" VALUES(212,15,'type','site');
 INSERT INTO "style_meta" VALUES(231,7,'type','global');
-INSERT INTO "style_meta" VALUES(238,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(239,3,'domain','tvtropes.org');
-INSERT INTO "style_meta" VALUES(240,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(241,3,'domain','cracked.com');
-INSERT INTO "style_meta" VALUES(242,3,'type','global');
-INSERT INTO "style_meta" VALUES(243,3,'type','site');
 INSERT INTO "style_meta" VALUES(244,4,'url-prefix','https://www.google.com/reader/');
 INSERT INTO "style_meta" VALUES(245,4,'type','site');
+INSERT INTO "style_meta" VALUES(246,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(247,3,'domain','tvtropes.org');
+INSERT INTO "style_meta" VALUES(248,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(249,3,'domain','cracked.com');
+INSERT INTO "style_meta" VALUES(250,3,'type','global');
+INSERT INTO "style_meta" VALUES(251,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',245);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',251);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
