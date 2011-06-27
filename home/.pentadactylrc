@@ -22,6 +22,7 @@ autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascri
 " trigger on DOMLoad to judge with extreme prejudice
 autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey='.'; doc.querySelector('select').accessKey='u' } catch (e){}
 
-autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'
+autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'; doc.getElementById('entries').focus()
+autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getElementById('entries').focus() } catch (e){}
 
 " vim: set ft=pentadactyl:
