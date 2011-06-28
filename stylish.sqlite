@@ -92,6 +92,8 @@ img[src^="http://www.explosm.net/"]+div
 display:none
 }
 
+html,body
+{height: 100% !important}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {
 #fadein{display:none!important}
@@ -195,8 +197,6 @@ INSERT INTO "style_meta" VALUES(152,14,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
 INSERT INTO "style_meta" VALUES(212,15,'type','site');
 INSERT INTO "style_meta" VALUES(231,7,'type','global');
-INSERT INTO "style_meta" VALUES(244,4,'url-prefix','https://www.google.com/reader/');
-INSERT INTO "style_meta" VALUES(245,4,'type','site');
 INSERT INTO "style_meta" VALUES(246,3,'domain','wikimedia.org');
 INSERT INTO "style_meta" VALUES(247,3,'domain','tvtropes.org');
 INSERT INTO "style_meta" VALUES(248,3,'domain','.archive.org');
@@ -205,8 +205,10 @@ INSERT INTO "style_meta" VALUES(250,3,'type','global');
 INSERT INTO "style_meta" VALUES(251,3,'type','site');
 INSERT INTO "style_meta" VALUES(252,8,'domain','hb4pm4eznzhd6mts.onion');
 INSERT INTO "style_meta" VALUES(253,8,'type','site');
+INSERT INTO "style_meta" VALUES(254,4,'url-prefix','https://www.google.com/reader/');
+INSERT INTO "style_meta" VALUES(255,4,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',253);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',255);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
