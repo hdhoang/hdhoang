@@ -63,38 +63,6 @@ content: url(http:/www.cracked.com/favicon.ico);
 {
 border-right: 2px dotted teal !important;
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(4,NULL,'',NULL,'greader','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document url-prefix("https://www.google.com/reader/"){
-.entry-actions
-{display:block!important;text-align:right!important}
-
-#chrome-fullscreen-top-toggle
-,.star
-,.broadcast-with-note
-,.email
-{display:none!important}
-
-.fullscreen #viewer-container
-{top:0!important}
-#main
-,.card-common
-{
-margin:0!important
-}
-
-.dislike
-{float:left}
-.like
-,.broadcast
-{float:right}
-
-img[src^="http://www.explosm.net/"]+div
-{
-display:none
-}
-
-html,body
-{height: 100% !important}
-}',0,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {
 #fadein{display:none!important}
 
@@ -141,18 +109,6 @@ text-decoration:overline!important;
 -moz-text-decoration-style:wavy!important;
 }
 ',1,NULL,NULL);
-INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document domain("hb4pm4eznzhd6mts.onion") {
-td img{
-margin:0 500px 500px 0;
-max-width: 900px !important;
-}
-body{margin:0}
-td{padding:0!important}
-[name=width], [name=height], #settings td>:not(select), [type=''text'']
-{display:none}
-}',0,NULL,NULL);
 INSERT INTO "styles" VALUES(10,NULL,'',NULL,'lparchive','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("lparchive.org") {
@@ -202,13 +158,9 @@ INSERT INTO "style_meta" VALUES(248,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(249,3,'domain','cracked.com');
 INSERT INTO "style_meta" VALUES(250,3,'type','global');
 INSERT INTO "style_meta" VALUES(251,3,'type','site');
-INSERT INTO "style_meta" VALUES(257,4,'url-prefix','https://www.google.com/reader/');
-INSERT INTO "style_meta" VALUES(258,4,'type','site');
-INSERT INTO "style_meta" VALUES(259,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(260,8,'type','site');
 INSERT INTO "style_meta" VALUES(261,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',261);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',265);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
