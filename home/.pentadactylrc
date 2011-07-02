@@ -31,6 +31,9 @@ style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { d
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
 
+style -n "link decor: good hosts" * [href*="mediafire.com/"], [href*="mfi.re/"], [href*="hotfile.com/"], [href*="megashare.com/"], [href*="megaupload.com/"], [href*="polsy.org.uk/"], [href*="xvideos.com/"] /* nice previews */, [href*="tinyogg.com/"] { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
+style -n "link decor: bad hosts" * [href*="depositfiles.com/"] /* 60s wait, country slot */, [href*="sickporn.in/"] /* always links to filesmonster */, [href*="filesmonster.com/"] /* bad UI and splits big files */, [href*="filesonic.com/"] /* 60s */, [href*="fileserve.com/"] /* slow UI */, [href*="rapidshare.com/"] /* slow #! */, [href*="oron.com/"] /* 60s */, [href*="uploading.com/"] /* 60s */ { text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
+
 style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
 style -n "link decor: WP" * :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: url(https://secure.wikimedia.org/favicon.ico) } @-moz-document domain("wikimedia.org") { :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: none } }
 style -n "link decor: cracked" * [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } @-moz-document domain("cracked.com") { [href*="cracked.com/"]::before { content: none } [role="main"] .body section [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } }

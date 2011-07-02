@@ -26,32 +26,6 @@ content: url(http://web.archive.org/favicon.ico);
 content: "[AP]";
 vertical-align: super;
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"] /* 60s wait, country slot */
-, :link[href*="sickporn.in/"] /* always links to filesmonster */
-, :link[href*="filesmonster.com/"] /* bad UI and splits big files */
-, :link[href*="filesonic.com/"] /* 60s */
-, :link[href*="fileserve.com/"] /* slow UI */
-, :link[href*="rapidshare.com/"] /* slow #! */
-, :link[href*="oron.com/"] /* 60s */
-, :link[href*="uploading.com/"] /* 60s */
-{
-text-decoration:line-through!important;
--moz-text-decoration-style:wavy!important;
-}
-
-:link[href*="mediafire.com/"]
-, :link[href*="mfi.re/"]
-, :link[href*="hotfile.com/"]
-, :link[href*="megashare.com/"]
-, [href*="megaupload.com/"]
-, [href*="polsy.org.uk/"]
-, [href*="xvideos.com/"] /* nice previews */
-, :link[href*="tinyogg.com/"]
-{
-text-decoration:overline!important;
--moz-text-decoration-style:wavy!important;
-}
-',1,NULL,NULL);
 INSERT INTO "styles" VALUES(11,NULL,'',NULL,'playdota','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("playdota.com") {
@@ -77,13 +51,12 @@ INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(261,7,'type','global');
 INSERT INTO "style_meta" VALUES(283,3,'domain','tvtropes.org');
 INSERT INTO "style_meta" VALUES(284,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(285,3,'type','global');
 INSERT INTO "style_meta" VALUES(286,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',294);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',295);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
