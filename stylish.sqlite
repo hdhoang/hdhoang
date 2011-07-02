@@ -30,19 +30,6 @@ content: url(http://web.archive.org/favicon.ico);
 {
 content: "[AP]";
 vertical-align: super;
-}
-
-:link[href*="cracked.com/"]::before
-{
-content: url(http:/www.cracked.com/favicon.ico);
-}
-@-moz-document domain("cracked.com") {
-:link[href*="cracked.com/"]::before {
-  content: none;
-}
-[role="main"] .body section [href*="cracked.com/"]::before {
-  content: url(http:/www.cracked.com/favicon.ico);
-}
 }',1,NULL,NULL);
 INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {
 #fadein{display:none!important}
@@ -134,13 +121,12 @@ INSERT INTO "style_meta" VALUES(152,14,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
 INSERT INTO "style_meta" VALUES(212,15,'type','site');
 INSERT INTO "style_meta" VALUES(261,7,'type','global');
-INSERT INTO "style_meta" VALUES(278,3,'domain','tvtropes.org');
-INSERT INTO "style_meta" VALUES(279,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(280,3,'domain','cracked.com');
-INSERT INTO "style_meta" VALUES(281,3,'type','global');
-INSERT INTO "style_meta" VALUES(282,3,'type','site');
+INSERT INTO "style_meta" VALUES(283,3,'domain','tvtropes.org');
+INSERT INTO "style_meta" VALUES(284,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(285,3,'type','global');
+INSERT INTO "style_meta" VALUES(286,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',282);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',286);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
