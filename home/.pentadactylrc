@@ -36,4 +36,6 @@ style -n "link decor: WP" * :-moz-any([href*=".wikimedia.org/wikipedia/"], [href
 style -n "link decor: cracked" * [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } @-moz-document domain("cracked.com") { [href*="cracked.com/"]::before { content: none } [role="main"] .body section [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } }
 
 style -n "ctt" coithienthai.com #fadein { display: none !important } body { margin: 0 !important } center { text-align: left } #AutoNumber3 { background: white; position: absolute; top: 0; left: 0; width: 100% !important; padding-right: 300px !important }
+
+style -n "lparchive" lparchive.org body { width: auto !important }
 " vim: set ft=pentadactyl:
