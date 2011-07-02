@@ -21,15 +21,15 @@ autocmd LocationChange http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -js
 autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey='.'; doc.querySelector('select').accessKey='u' } catch (e){}
 " trigger on DOMLoad to judge with extreme prejudice
 autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey='.'; doc.querySelector('select').accessKey='u' } catch (e){}
-style hb4pm4eznzhd6mts.onion/.+train\.php -n "yape space" td img { margin:0 500px 500px 0; max-width: 900px !important } body { margin: 0 } td { padding: 0 !important } [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
+style -n "yape space" hb4pm4eznzhd6mts.onion/.+train\.php td img { margin:0 500px 500px 0; max-width: 900px !important } body { margin: 0 } td { padding: 0 !important } [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
 
 autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'; doc.getElementById('entries').focus()
 autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getElementById('entries').focus() } catch (e){}
-style https://www.google.com/reader/view/* -n "greader space" html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important }
+style -n "greader space" https://www.google.com/reader/view/* html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important }
 style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
-style * -n "link colors" :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
-style * -n "gif decor" :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
+style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
+style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
 
 style -n "link decor: WP" * :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: url(https://secure.wikimedia.org/favicon.ico) } @-moz-document domain("wikimedia.org") { :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: none } }
 " vim: set ft=pentadactyl:
