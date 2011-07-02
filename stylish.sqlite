@@ -80,11 +80,6 @@ td[width="100"] {
 display:none
 }
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(15,NULL,'',NULL,'ignco','@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document domain("ignorethecode.net") {
-:link {text-decoration:underline!important}
-}',1,NULL,NULL);
 CREATE TABLE style_meta (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, style_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL);
 INSERT INTO "style_meta" VALUES(52,1,'domain','isohunt.com');
 INSERT INTO "style_meta" VALUES(53,1,'type','site');
@@ -96,8 +91,6 @@ INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
-INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
-INSERT INTO "style_meta" VALUES(212,15,'type','site');
 INSERT INTO "style_meta" VALUES(261,7,'type','global');
 INSERT INTO "style_meta" VALUES(283,3,'domain','tvtropes.org');
 INSERT INTO "style_meta" VALUES(284,3,'domain','.archive.org');
@@ -105,6 +98,6 @@ INSERT INTO "style_meta" VALUES(285,3,'type','global');
 INSERT INTO "style_meta" VALUES(286,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',288);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',290);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
