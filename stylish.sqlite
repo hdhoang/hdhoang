@@ -6,12 +6,7 @@ INSERT INTO "styles" VALUES(1,NULL,'',NULL,'listing','@namespace url(http://www.
 @-moz-document domain("isohunt.com") {
 .listing{margin-right:0!important;background-color:white!important}
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':visited{color:#d33682!important}
-:link[href^="#"]{color:#268bd2!important}
-
-:link[href*=".onion/"]{color:#859900!important}
-
-:-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before
+INSERT INTO "styles" VALUES(3,NULL,'',NULL,'decor',':-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before
 {
 content: url(https://secure.wikimedia.org/favicon.ico);
 }
@@ -152,15 +147,15 @@ INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
 INSERT INTO "style_meta" VALUES(212,15,'type','site');
-INSERT INTO "style_meta" VALUES(246,3,'domain','wikimedia.org');
-INSERT INTO "style_meta" VALUES(247,3,'domain','tvtropes.org');
-INSERT INTO "style_meta" VALUES(248,3,'domain','.archive.org');
-INSERT INTO "style_meta" VALUES(249,3,'domain','cracked.com');
-INSERT INTO "style_meta" VALUES(250,3,'type','global');
-INSERT INTO "style_meta" VALUES(251,3,'type','site');
 INSERT INTO "style_meta" VALUES(261,7,'type','global');
+INSERT INTO "style_meta" VALUES(266,3,'domain','wikimedia.org');
+INSERT INTO "style_meta" VALUES(267,3,'domain','tvtropes.org');
+INSERT INTO "style_meta" VALUES(268,3,'domain','.archive.org');
+INSERT INTO "style_meta" VALUES(269,3,'domain','cracked.com');
+INSERT INTO "style_meta" VALUES(270,3,'type','global');
+INSERT INTO "style_meta" VALUES(271,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',265);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',271);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;

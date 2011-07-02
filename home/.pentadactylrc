@@ -28,4 +28,5 @@ autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getEle
 style https://www.google.com/reader/view/* -n "greader space" html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important }
 style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
+style * -n "link colors" :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 " vim: set ft=pentadactyl:
