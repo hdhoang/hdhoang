@@ -30,4 +30,6 @@ style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { d
 
 style * -n "link colors" :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style * -n "gif decor" :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
+
+style -n "link decor: WP" * :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: url(https://secure.wikimedia.org/favicon.ico) } @-moz-document domain("wikimedia.org") { :-moz-any([href*=".wikimedia.org/wikipedia/"], [href*=".wikipedia.org/"])::before { content: none } }
 " vim: set ft=pentadactyl:
