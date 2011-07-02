@@ -64,7 +64,7 @@
    :PROPERTIES:
    :url:      http://thedoghousediaries.com
    :END:
-** Extra Ordinary                                                :cute:title:
+** Extra Ordinary                                           :cute:title:site:
    :PROPERTIES:
    :url:      http://exocomics.com
    :END:
@@ -114,7 +114,11 @@
    :url:      http://penny-arcade.com
    :3rd:      ttp://pipes.yahoo.com/pipes/pipe.run?_id=IjjUcuSa3RGmgXqp1L3fcQ&_render=rss
    :END:
-** Pie Comic
+** Pictures for sad children                                       :cute:sad:
+   :PROPERTIES:
+   :url:      http://picturesforsadchildren.com
+   :END:
+** Pie Comic                                                           :site:
    :PROPERTIES:
    :url:      http://piecomic.com
    :END:
@@ -145,7 +149,7 @@
    :END:
 *** Chuck & Beans
 *** Jana’s Thinkings
-** Sinfest
+** Sinfest                                                             :cute:
    :PROPERTIES:
    :url:      http://sinfest.net
    :END:
@@ -289,6 +293,10 @@
 ** Outrageous Fortune (1987)
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
+   :END:
+** Strange Days (1995)
+   :PROPERTIES:
+   :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
 * Music
 ** "Weird Al" Yankovic
