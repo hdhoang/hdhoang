@@ -38,4 +38,6 @@ style -n "link decor: cracked" * [href*="cracked.com/"]::before { content: url(h
 style -n "ctt" coithienthai.com #fadein { display: none !important } body { margin: 0 !important } center { text-align: left } #AutoNumber3 { background: white; position: absolute; top: 0; left: 0; width: 100% !important; padding-right: 300px !important }
 
 style -n "lparchive" lparchive.org body { width: auto !important }
+
+style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
 " vim: set ft=pentadactyl:
