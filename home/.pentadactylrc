@@ -29,4 +29,5 @@ style https://www.google.com/reader/view/* -n "greader space" html, body { heigh
 style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
 style * -n "link colors" :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
+style * -n "gif decor" :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
 " vim: set ft=pentadactyl:
