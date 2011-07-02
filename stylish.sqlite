@@ -31,26 +31,6 @@ content: url(http://web.archive.org/favicon.ico);
 content: "[AP]";
 vertical-align: super;
 }',1,NULL,NULL);
-INSERT INTO "styles" VALUES(6,NULL,'',NULL,'ctt','@namespace url(http://www.w3.org/1999/xhtml);@-moz-document domain("coithienthai.com") {
-#fadein{display:none!important}
-
-body
-{margin:0!important}
-center
-{text-align:left}
-#AutoNumber3
-{
-background:white
-;position:absolute;top:0;left:0
-;width:100%!important
-;padding-right:300px!important
-}
-
-a font
-{
-color: inherit!important;
-}
-}',1,NULL,NULL);
 INSERT INTO "styles" VALUES(7,NULL,'',NULL,'file hosts',':link[href*="depositfiles.com/"] /* 60s wait, country slot */
 , :link[href*="sickporn.in/"] /* always links to filesmonster */
 , :link[href*="filesmonster.com/"] /* bad UI and splits big files */
@@ -114,8 +94,6 @@ INSERT INTO "style_meta" VALUES(84,11,'domain','playdota.com');
 INSERT INTO "style_meta" VALUES(85,11,'type','site');
 INSERT INTO "style_meta" VALUES(112,13,'domain','commandlinefu.com');
 INSERT INTO "style_meta" VALUES(113,13,'type','site');
-INSERT INTO "style_meta" VALUES(147,6,'domain','coithienthai.com');
-INSERT INTO "style_meta" VALUES(148,6,'type','site');
 INSERT INTO "style_meta" VALUES(151,14,'domain','www.greenteapress.com');
 INSERT INTO "style_meta" VALUES(152,14,'type','site');
 INSERT INTO "style_meta" VALUES(211,15,'domain','ignorethecode.net');
@@ -127,6 +105,6 @@ INSERT INTO "style_meta" VALUES(285,3,'type','global');
 INSERT INTO "style_meta" VALUES(286,3,'type','site');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',286);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',288);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;
