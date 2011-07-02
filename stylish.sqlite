@@ -140,7 +140,7 @@ text-decoration:line-through!important;
 text-decoration:overline!important;
 -moz-text-decoration-style:wavy!important;
 }
-',0,NULL,NULL);
+',1,NULL,NULL);
 INSERT INTO "styles" VALUES(8,NULL,'',NULL,'yape space','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("hb4pm4eznzhd6mts.onion") {
@@ -152,7 +152,7 @@ body{margin:0}
 td{padding:0!important}
 [name=width], [name=height], #settings td>:not(select), [type=''text'']
 {display:none}
-}',1,NULL,NULL);
+}',0,NULL,NULL);
 INSERT INTO "styles" VALUES(10,NULL,'',NULL,'lparchive','@namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("lparchive.org") {
@@ -202,13 +202,13 @@ INSERT INTO "style_meta" VALUES(248,3,'domain','.archive.org');
 INSERT INTO "style_meta" VALUES(249,3,'domain','cracked.com');
 INSERT INTO "style_meta" VALUES(250,3,'type','global');
 INSERT INTO "style_meta" VALUES(251,3,'type','site');
-INSERT INTO "style_meta" VALUES(252,8,'domain','hb4pm4eznzhd6mts.onion');
-INSERT INTO "style_meta" VALUES(253,8,'type','site');
-INSERT INTO "style_meta" VALUES(256,7,'type','global');
 INSERT INTO "style_meta" VALUES(257,4,'url-prefix','https://www.google.com/reader/');
 INSERT INTO "style_meta" VALUES(258,4,'type','site');
+INSERT INTO "style_meta" VALUES(259,8,'domain','hb4pm4eznzhd6mts.onion');
+INSERT INTO "style_meta" VALUES(260,8,'type','site');
+INSERT INTO "style_meta" VALUES(261,7,'type','global');
 DELETE FROM sqlite_sequence;
 INSERT INTO "sqlite_sequence" VALUES('styles',15);
-INSERT INTO "sqlite_sequence" VALUES('style_meta',258);
+INSERT INTO "sqlite_sequence" VALUES('style_meta',261);
 CREATE INDEX style_meta_style_id ON style_meta (style_id);
 COMMIT;

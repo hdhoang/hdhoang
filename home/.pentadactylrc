@@ -28,4 +28,5 @@ autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getEle
 style https://www.google.com/reader/view/* -n "greader space" html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important }
 style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
+style hb4pm4eznzhd6mts.onion/.+train\.php -n "yape space" td img { margin:0 500px 500px 0; max-width: 900px !important } body { margin: 0 } td { padding: 0 !important } [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
 " vim: set ft=pentadactyl:
