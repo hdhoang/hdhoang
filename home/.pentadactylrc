@@ -25,4 +25,7 @@ autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc
 autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'; doc.getElementById('entries').focus()
 autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getElementById('entries').focus() } catch (e){}
 
+style https://www.google.com/reader/view/* -n "greader space" html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important }
+style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
+
 " vim: set ft=pentadactyl:
