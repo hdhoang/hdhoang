@@ -6,7 +6,9 @@
 ** (Bliss)This
 ** Blind Guardian
 ** Bobaflex
+** Bon Jovi
 ** Cinderella
+** Chumbawamba
 ** Dire Strait
 ** Dream Theater
 ** Eminem
@@ -17,13 +19,15 @@
 ** Kamelot
 ** Life of Agony
 ** Maroon 5
+** Michael Bublé
+** Nirvana
 ** Pink Floyd
 ** Scorpions
 ** Sentenced
 ** Six Pence None the Richer
 ** Slayer
-** StarCraft campaign sound
 ** The Beatles
+** They Might Be Giants
 ** Turisas
 ** White Lion
 ** Within Temptation
