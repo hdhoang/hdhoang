@@ -50,6 +50,7 @@
         isBlackList="false"
         isMultiLine="false"
         caseSensitive="false"
+        fromSubscription="false"
     /><match
         enabled="true"
         name=""
@@ -58,6 +59,7 @@
         isBlackList="false"
         isMultiLine="true"
         caseSensitive="false"
+        fromSubscription="false"
     /></autoadd
   ><quickadd
       enabled="false"
@@ -74,6 +76,7 @@
         isBlackList="false"
         isMultiLine="false"
         caseSensitive="false"
+        fromSubscription="false"
     /></quickadd
   ><defaultPrefs
       origPrefetch="18"
@@ -99,6 +102,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="ctt"
@@ -107,6 +111,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="tor check"
@@ -115,6 +120,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="fb"
@@ -123,6 +129,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="imageshack"
@@ -131,6 +138,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="lx"
@@ -139,6 +147,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="fbme"
@@ -147,6 +156,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /><match
             enabled="true"
             name="v6 fb"
@@ -155,6 +165,7 @@
             isBlackList="true"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /></matches
       ><autoconf
           url=""
@@ -190,6 +201,7 @@
             isBlackList="false"
             isMultiLine="false"
             caseSensitive="false"
+            fromSubscription="false"
         /></matches
       ><autoconf
           url=""
