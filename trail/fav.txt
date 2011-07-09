@@ -261,6 +261,7 @@
 ** Petchara
 ** Regina
 ** Stoya
+** Stefan Soell
 ** the waitress
 ** TV girl
 * Lulz
@@ -306,6 +307,9 @@
 ** Black Sabbath
 ** Bon Jovi
 ** Buckethead
+   :PROPERTIES:
+   :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
+   :END:
 ** Bức Tường
 ** Charon
 ** Children Of Bodom
