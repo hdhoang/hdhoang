@@ -12,7 +12,7 @@ set hlfind
 set maxitems=5
 set newtab=help
 set pageinfo=fgmse
-set passkeys=google.com/reader:' npSlDcmrgFaeUNPXO'
+set passkeys=google.com/reader:' npSlsDcmrgFaeUNPXO'
 set urlseparator=' , '
 
 " trigger on PageLoad so that the password is filled in
