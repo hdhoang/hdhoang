@@ -149,6 +149,7 @@
    :END:
 *** Chuck & Beans
 *** Jana’s Thinkings
+*** Random Russ
 ** Sinfest                                                             :cute:
    :PROPERTIES:
    :url:      http://sinfest.net
