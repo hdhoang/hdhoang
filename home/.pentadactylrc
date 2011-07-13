@@ -11,6 +11,7 @@ set history=5
 set hlfind
 set maxitems=5
 set newtab=help
+set nextpattern^=>>
 set pageinfo=fgmse
 set passkeys=google.com/reader:' npSlsDcmrgFaeUNPXO'
 set urlseparator=' , '
