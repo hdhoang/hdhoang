@@ -55,5 +55,31 @@
     >
 	</Script
   >
+	<Script
+      filename="everysub.user.js"
+      name="everySub"
+      namespace="http://erinsparling.com/everySub/"
+      description="everySub style for Google Reader"
+      version=""
+      enabled="true"
+      basedir="everysub"
+      modified="1310547839000"
+      dependhash="95a11b6a8d6c02f322809f02244cd4c75e4dbbfb"
+      installurl="http://erinsparling.com/everySub/everySub.user.js"
+    >
+		<Include
+      >https://*.google.com/reader/view/*</Include
+    >
+		<Include
+      >http://*.google.com/reader/view/*</Include
+    >
+		<Include
+      >htt*://*.google.*/reader/view*</Include
+    >
+		<Require
+        filename="jquerymin.js"
+    />
+	</Script
+  >
 </UserScriptConfig
 >
