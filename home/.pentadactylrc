@@ -31,6 +31,8 @@ style -n "greader space" https://www.google.com/reader/view/* html, body { heigh
 style -n "greader space" https://www.google.com/reader/view/* -a #main { top: 0 !important } #viewer-container { padding: 0 !important }
 style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
+style -n "bug comic" https://www.google.com/reader/view/* img[src*="bugcomic.com"] { position: relative; left: -29px }
+
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
 
