@@ -11,6 +11,7 @@ export ERGOEMACS_KEYBOARD_LAYOUT=dv
 export PURPLE_YAHOO_DEBUG=1
 unset MALLOC_CHECK_
 export CCACHE_BASEDIR=${HOME}
+export VDPAU_DRIVER=r600
 
 export EMAIL=hdhoang@zahe.me
 
