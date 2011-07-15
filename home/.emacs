@@ -112,7 +112,7 @@
 (add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
 
 (autoload 'magit-status "magit" nil t)
-(global-set-key (kbd "C-x m") 'magit-status)
+(global-set-key (kbd "C-c m") 'magit-status)
 
 (add-to-list 'load-path "~/Public/hdhoang-misc/emacs-color-theme-solarized/")
 (require 'color-theme-solarized)
