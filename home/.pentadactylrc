@@ -27,11 +27,12 @@ style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4ez
 
 autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById('search-input').accessKey='/'; doc.getElementById('entries').focus()
 autocmd LocationChange https://www.google.com/reader/view/* -js try { doc.getElementById('entries').focus() } catch (e){}
-style -n "greader space" https://www.google.com/reader/view/* html, body { height: 100% } #main, .card-common { margin: 0 !important } #viewer-container { top: 0 !important } #chrome-fullscreen-top-toggle, img[src^="http://www.explosm.net/"]+div { display: none !important } .entry-main { margin-left: 0 !important } .entry-title, p+p { text-indent: 1em !important } .entry-title-go-to { background: none !important }
-style -n "greader space" https://www.google.com/reader/view/* -a #main { top: 0 !important } #viewer-container { padding: 0 !important } .card-content { padding: 9px 0 5px 5px !important } .entry-conversation { padding-left: 24px !important } .card-actions { padding: 0 1px 1px 0 !important; border-top: none !important }
-style https://www.google.com/reader/view/* -n "entry actions" .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
+style -n "greader space" https://www.google.com/reader/view/* html, body { height: 100% } #main, #viewer-container, .card-common, .entry-main { margin: 0 !important; top: 0 !important; padding: 0 !important } #chrome-fullscreen-top-toggle { display: none !important } .entry-title, p+p { text-indent: 1em !important } .entry-title-go-to { background: none !important }
+style -n "greader popping" https://www.google.com/reader/view/* .card-content { padding: 9px 0 5px 5px !important } .entry-conversation { padding-left: 24px !important } .card-actions { padding: 0 1px 1px 0 !important; border-top: none !important }
+style -n "entry actions" https://www.google.com/reader/view/* .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
 style -n "bug comic" https://www.google.com/reader/view/* img[src*="bugcomic.com"] { position: relative; left: -29px }
+style -n "explosm ad" https://www.google.com/reader/view/* img[src^="http://www.explosm.net/"]+div { display: none !important }
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"])[src$=".gif"] { border-right: 2px dotted teal !important }
