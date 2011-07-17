@@ -1,6 +1,6 @@
 # -*- mode: conf-space -*-
 ContactInfo tor at zahe dot me
-Nickname cmalu
+Nickname cenba
 DirPort 465
 ORPort 587
 RelayBandwidthBurst 131072
@@ -10,6 +10,7 @@ ExitPolicy reject *:*
 SocksListenAddress 0.0.0.0:9050
 
 RunAsDaemon 1
+PidFile /var/run/tor.pid
 User tor
 DataDirectory /var/lib/tor
 ControlPort 9051
