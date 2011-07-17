@@ -21,7 +21,7 @@ h=~/Public/hdhoang-misc
 conf=$h/system-config/$(hostname)
 t=~/t
 dl=~/Downloads
-g=/mnt/cmaluz/@g
+g=/mnt/cenbaz/@g
 pkg=/var/cache/pacman/pkg
 el=/var/log/messages
 
@@ -60,11 +60,11 @@ function xattr() {
 	setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
 }
 function com() {
-    prv 's/rar$/cbr/;s/zip$/cbz/' {$dl,/mnt/cmaluz/@d}/*
-    mv {$dl,/mnt/cmaluz/@d}/*cb? ~/Public/mirror/
+    prv 's/rar$/cbr/;s/zip$/cbz/' {$dl,/mnt/cenbaz/@d}/*
+    mv {$dl,/mnt/cenbaz/@d}/*cb? ~/Public/mirror/
 }
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete --exclude="FirefoxPortableNightly/Data/profile/Cache" /mnt/cmaluz/@{s,g} ~/{queue.txt,queuev.txt,Music,Pictures} $h ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units,scs} $pool'
+alias bu='rs --delete --exclude="FirefoxPortableNightly/Data/profile/Cache" /mnt/cenbaz/@{s,g} ~/{queue.txt,queuev.txt,Music,Pictures} $h ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units,scs} $pool'
 
 # system
 alias ssc='sudo systemctl --system'
