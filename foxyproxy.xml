@@ -166,6 +166,15 @@
             isMultiLine="false"
             caseSensitive="false"
             fromSubscription="false"
+        /><match
+            enabled="true"
+            name="zm"
+            pattern="http*://*zahe.me/*"
+            isRegEx="false"
+            isBlackList="false"
+            isMultiLine="false"
+            caseSensitive="false"
+            fromSubscription="false"
         /></matches
       ><autoconf
           url=""
