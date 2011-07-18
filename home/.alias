@@ -36,7 +36,7 @@ alias dumx='dumx -h -xdev'
 alias locate='locate -ie'
 alias p='pgrep -f'
 alias who='who -aH'
-alias s='watch "cpufreq-info|grep current - /sys/kernel/debug/dri/0/radeon_pm_info; sensors"'
+alias s='watch "cpufreq-info -fmc0; cpufreq-info -fmc1; grep current /sys/kernel/debug/dri/0/radeon_pm_info; sensors"'
 alias t='inotail -f'
 
 # network info
