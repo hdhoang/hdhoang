@@ -64,7 +64,7 @@ function com() {
     mv {$dl,/mnt/cenbaz/@d}/*cb? ~/Public/mirror/
 }
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete --exclude="FirefoxPortableNightly/Data/profile/Cache" /mnt/cenbaz/@{s,g} ~/{queue.txt,queuev.txt,Music,Pictures,Videos,s} $h ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units,scs} $pool'
+alias bu='rs --delete --exclude="FirefoxPortableNightly/Data/profile/Cache" /mnt/cenbaz/@{s,g} ~/{queue.txt,queuev.txt,Music,Pictures,Videos,s} $h ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units} $pool'
 
 # system
 alias ssc='sudo systemctl --system'
