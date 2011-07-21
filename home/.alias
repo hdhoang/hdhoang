@@ -22,7 +22,7 @@ t=~/t
 dl=~/Downloads
 g=/mnt/cenbaz/@g
 pkg=/var/cache/pacman/pkg
-el=/var/log/messages
+el=/var/log/everything.log
 
 fav=~/Public/fav
 pool=/mnt/marbi
