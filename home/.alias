@@ -76,7 +76,6 @@ function sls() {
 
 alias mp='nn makepkg -isf'
 alias i='sudo pacman'
-alias syu='sudo powerpill-light -yu'
 alias cower='cower -fddt $ap'
 ap=~/archlinux
 function aur {
