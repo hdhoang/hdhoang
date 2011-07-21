@@ -12,26 +12,31 @@ wmclasscomplete=true
 wmclassmatch=3
 
 [10]
-Description=skip taskbar
-skiptaskbar=true
-skiptaskbarrule=2
-types=1
-wmclass=
-wmclasscomplete=false
-wmclassmatch=0
-
-[2]
 Description=(Default) Disable focus stealing prevention for XV
 fsplevel=0
 fsplevelrule=2
+skiptaskbar[$d]
+skiptaskbarrule[$d]
+types=4294967295
 wmclass=^xv .*
 wmclasscomplete=true
 wmclassmatch=3
 
-[3]
+[11]
+Description[$d]
+fsplevel[$d]
+fsplevelrule[$d]
+types[$d]
+wmclass[$d]
+wmclasscomplete[$d]
+wmclassmatch[$d]
+
+[2]
 Description=fx
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
+fsplevel[$d]
+fsplevelrule[$d]
 noborder=true
 noborderrule=2
 position=0,0
@@ -49,7 +54,7 @@ wmclass=minefield|firefox|nightly
 wmclasscomplete=false
 wmclassmatch=3
 
-[4]
+[3]
 Description=konsole
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
@@ -59,6 +64,8 @@ position=0,300
 positionrule=3
 shortcut=Alt+Shift+F2
 shortcutrule=2
+size[$d]
+sizerule[$d]
 skipswitcher=true
 skipswitcherrule=2
 types=1
@@ -68,12 +75,20 @@ wmclass=konsole
 wmclasscomplete=false
 wmclassmatch=1
 
-[5]
+[4]
 Description=okular
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 maximizevert=true
 maximizevertrule=2
+noborder[$d]
+noborderrule[$d]
+position[$d]
+positionrule[$d]
+shortcut[$d]
+shortcutrule[$d]
+skipswitcher[$d]
+skipswitcherrule[$d]
 types=1
 windowrole=okular::shell
 windowrolematch=1
@@ -81,12 +96,14 @@ wmclass=okular
 wmclasscomplete=false
 wmclassmatch=1
 
-[6]
+[5]
 Description=chat
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 closeable=false
 closeablerule=2
+maximizevert[$d]
+maximizevertrule[$d]
 noborder=true
 noborderrule=2
 position=950,-20
@@ -104,25 +121,39 @@ wmclass=pidgin
 wmclasscomplete=false
 wmclassmatch=1
 
-[7]
+[6]
 Description=amarok control
 above=true
 aboverule=2
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
+closeable[$d]
+closeablerule[$d]
+noborder[$d]
+noborderrule[$d]
 position=946,965
 positionrule=2
+shortcut[$d]
+shortcutrule[$d]
 size=236,28
 sizerule=2
+skipswitcher[$d]
+skipswitcherrule[$d]
 title=Slim Toolbar
 titlematch=1
 types=8
+windowrole[$d]
+windowrolematch[$d]
 wmclass=amarok amarok
 wmclasscomplete=true
 wmclassmatch=1
 
-[8]
+[7]
 Description=music players
+above[$d]
+aboverule[$d]
+clientmachine[$d]
+clientmachinematch[$d]
 maximizevert=true
 maximizevertrule=3
 noborder=true
@@ -137,6 +168,8 @@ skipswitcher=true
 skipswitcherrule=2
 skiptaskbar=false
 skiptaskbarrule=2
+title[$d]
+titlematch[$d]
 types=1
 windowrole=mainwindow
 windowrolematch=1
@@ -144,10 +177,22 @@ wmclass=amarok|tomahawk
 wmclasscomplete=true
 wmclassmatch=3
 
-[9]
+[8]
 Description=fx download
 above=true
 aboverule=2
+maximizevert[$d]
+maximizevertrule[$d]
+noborder[$d]
+noborderrule[$d]
+position[$d]
+positionrule[$d]
+shortcut[$d]
+shortcutrule[$d]
+size[$d]
+sizerule[$d]
+skipswitcher[$d]
+skipswitcherrule[$d]
 skiptaskbar=false
 skiptaskbarrule=2
 types=1
@@ -156,6 +201,19 @@ windowrolematch=1
 wmclass=minefield|nightly|firefox
 wmclasscomplete=false
 wmclassmatch=3
+
+[9]
+Description=skip taskbar
+above[$d]
+aboverule[$d]
+skiptaskbar=true
+skiptaskbarrule=2
+types=1
+windowrole[$d]
+windowrolematch[$d]
+wmclass=
+wmclasscomplete=false
+wmclassmatch=0
 
 [General]
 count=10

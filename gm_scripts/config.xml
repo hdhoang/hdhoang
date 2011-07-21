@@ -9,7 +9,7 @@
       version="1.05"
       enabled="true"
       basedir="un-utm_location_bar"
-      modified="1302968505000"
+      modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
       installurl="http://userscripts.org/scripts/source/93825.user.js"
     >
@@ -29,7 +29,7 @@
       version=""
       enabled="true"
       basedir="youtube_autopause"
-      modified="1302968592000"
+      modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
       installurl="http://userscripts.org/scripts/source/73105.user.js"
     >
@@ -46,7 +46,7 @@
       version=""
       enabled="true"
       basedir="disable_video_autoplay"
-      modified="1308542574000"
+      modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
       installurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js"
     >
@@ -63,7 +63,7 @@
       version=""
       enabled="true"
       basedir="everysub"
-      modified="1310547839000"
+      modified="1311227931000"
       dependhash="95a11b6a8d6c02f322809f02244cd4c75e4dbbfb"
       installurl="http://erinsparling.com/everySub/everySub.user.js"
     >
