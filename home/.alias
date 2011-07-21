@@ -36,7 +36,7 @@ alias locate='locate -ie'
 alias p='pgrep -f'
 alias who='who -aH'
 alias s='watch "cpufreq-info -fmc0; cpufreq-info -smc0; cpufreq-info -fmc1; cpufreq-info -smc1; grep current /sys/kernel/debug/dri/0/radeon_pm_info; sensors"'
-alias t='inotail -f'
+alias t='tail -f'
 
 # network info
 alias whois='gwhois'
