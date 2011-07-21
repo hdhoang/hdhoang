@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # utils
-PATH=$PATH:~/Public/mirror/git-achievements
-alias g='git-achievements'
+alias g='git'
 alias gp='g pr && g ml'
 function day() {
     grep $(date --rfc-3339=date -d "${1:-0} days ago") ${*:2}
