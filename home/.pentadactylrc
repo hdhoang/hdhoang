@@ -2,7 +2,7 @@ set activate-=diverted,links,tabopen
 set complete=ls
 set defsearch=duckduckgo-ssl
 set editor='emacsclient +<line> <file>'
-set guioptions+=Tc
+set guioptions+=c
 set ssli=command
 set hintkeys=$.aoeupykxidhtnmz
 set hinttags+=[alt]:not([alt=\'\']),[title]
