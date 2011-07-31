@@ -38,7 +38,7 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [2]
-Description=fx
+Description=browser
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 fsplevel[$d]
@@ -61,7 +61,7 @@ wmclasscomplete=false
 wmclassmatch=3
 
 [3]
-Description=konsole
+Description=files
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 noborder=true
@@ -82,7 +82,7 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [4]
-Description=okular
+Description=docs
 clientmachine=cmalu.zahe.me
 clientmachinematch=0
 maximizevert=true
@@ -155,7 +155,7 @@ wmclasscomplete=true
 wmclassmatch=1
 
 [7]
-Description=music players
+Description=music
 above[$d]
 aboverule[$d]
 clientmachine[$d]
