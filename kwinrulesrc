@@ -23,13 +23,19 @@ wmclasscomplete=true
 wmclassmatch=3
 
 [11]
-Description[$d]
+Description=editor
+clientmachine=cenba.zahe.me
+clientmachinematch=0
 fsplevel[$d]
 fsplevelrule[$d]
-types[$d]
-wmclass[$d]
-wmclasscomplete[$d]
-wmclassmatch[$d]
+shortcut=Alt+Shift+F5
+shortcutrule=2
+title=*magit: hdhoang-misc*
+titlematch=0
+types=1
+wmclass=emacs
+wmclasscomplete=false
+wmclassmatch=1
 
 [2]
 Description=fx
@@ -41,7 +47,7 @@ noborder=true
 noborderrule=2
 position=0,0
 positionrule=3
-shortcut=Alt+Shift+F3
+shortcut=Alt+Shift+F1
 shortcutrule=2
 size=930,950
 sizerule=3
@@ -108,7 +114,7 @@ noborder=true
 noborderrule=2
 position=950,-20
 positionrule=2
-shortcut=Alt+Shift+F1
+shortcut=Alt+Shift+F4
 shortcutrule=2
 size=345,1058
 sizerule=2
@@ -160,7 +166,7 @@ noborder=true
 noborderrule=2
 position=657,0
 positionrule=2
-shortcut=Alt+Shift+F4
+shortcut=Alt+Shift+F3
 shortcutrule=2
 size=604,1024
 sizerule=2
@@ -181,6 +187,8 @@ wmclassmatch=3
 Description=fx download
 above=true
 aboverule=2
+clientmachine[$d]
+clientmachinematch[$d]
 maximizevert[$d]
 maximizevertrule[$d]
 noborder[$d]
@@ -195,6 +203,8 @@ skipswitcher[$d]
 skipswitcherrule[$d]
 skiptaskbar=false
 skiptaskbarrule=2
+title[$d]
+titlematch[$d]
 types=1
 windowrole=manager
 windowrolematch=1
@@ -216,4 +226,4 @@ wmclasscomplete=false
 wmclassmatch=0
 
 [General]
-count=10
+count=11
