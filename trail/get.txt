@@ -1,6 +1,9 @@
 -*- mode: org -*-
 
 * Movie
+** Blade
+** Donnie Darko
+** Ghostbusters
 ** Limitless (2011)                                                  :jbopre:
 * Music
 ** (Bliss)This
@@ -19,6 +22,7 @@
 ** Faerghail
 ** Fear Factory
 ** Flowing Tears
+** Gorillaz
 ** Helloween
 ** Jimi Hendrix
 ** Kamelot
@@ -33,6 +37,7 @@
 ** Scorpions
 ** Sentenced
 ** Six Pence None the Richer
+** Sirenia
 ** Slayer
 ** The Beatles
 ** They Might Be Giants
