@@ -1,5 +1,12 @@
 -*- mode: org -*-
 
+* LP
+** FreeSpace
+** FreeSpace 2
+** Nexus
+   :PROPERTIES:
+   :url:      https://www.youtube.com/watch?v=lototgZSUwk
+   :END:
 * Movie
 ** Blade
 ** Donnie Darko
@@ -31,13 +38,14 @@
 ** MGS
 ** Michael Bublé
 ** Michael Learns to Rock
+** Mozart Requiem
 ** Nat King Cole
 ** Nirvana
 ** Pink Floyd
 ** Scorpions
 ** Sentenced
-** Six Pence None the Richer
 ** Sirenia
+** Six Pence None the Richer
 ** Slayer
 ** The Beatles
 ** They Might Be Giants
