@@ -1,2 +1,0 @@
-@volatile,first(1) 24h upnpc -r 587 tcp 465 tcp 25 tcp 80 tcp 443 tcp
-@volatile,first(1) 24h curl --insecure --silent --show-error '*scrubbed*'
