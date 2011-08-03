@@ -116,4 +116,5 @@
 
 (add-to-list 'load-path "~/Public/hdhoang-misc/emacs-color-theme-solarized/")
 (require 'color-theme-solarized)
-(color-theme-solarized-light)
+(let ((window-system t))
+  (color-theme-solarized-light))
