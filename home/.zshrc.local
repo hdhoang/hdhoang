@@ -27,8 +27,8 @@ bindkey -N ergoemacs emacs
 bindkey -A ergoemacs main
 bindkey "\eh" backward-char
 bindkey "\en" forward-char
-bindkey "\ec" up-line-or-history
-bindkey "\et" down-line-or-history
+bindkey "\ec" up-line-or-search
+bindkey "\et" down-line-or-search
 bindkey "\ed" beginning-of-line
 bindkey "\eD" end-of-line
 bindkey "\eg" backward-word
