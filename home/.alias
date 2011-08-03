@@ -13,7 +13,7 @@ alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 alias getc='wget -ci ~/queue.txt -P $dl && truncate -s0 ~/queue.txt'
 alias gete='e ~/queue.txt'
-alias getv='cd $dl && youtube-dl -f 18 -c -t -a ~/queuev.txt && truncate -s0 ~/queuev.txt'
+alias getv='cd $dl && youtube-dl -f 44 -c -t -a ~/queuev.txt && truncate -s0 ~/queuev.txt'
 alias nn='chrt -i 0 ionice -c 3 '
 
 # places
