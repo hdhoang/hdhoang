@@ -148,6 +148,9 @@
    :url:      http://shoeboxblog.com
    :END:
 *** Chuck & Beans
+    :PROPERTIES:
+    :feed:     http://www.shoeboxblog.com/?feed=rss2&cat=1279
+    :END:
 *** Jana’s Thinkings
 *** Random Russ
 ** Sinfest                                                             :cute:
@@ -225,7 +228,24 @@
    :PROPERTIES:
    :url:      http://crawl.develz.org
    :END:
-** Nexus: The Jupiter Incident
+** FreeSpace                                                      :space:sim:
+   :PROPERTIES:
+   :lp:       http://lparchive.org/Descent-Freespace/
+   :END:
+** FreeSpace 2                                                    :space:sim:
+   :PROPERTIES:
+   :lp:       http://lparchive.org/FreeSpace-2-Open/
+   :END:
+** Grim Fandango
+   :PROPERTIES:
+   :lp:       http://lparchive.org/Grim-Fandango-(Video)/
+   :END:
+** Homeworld                                                      :space:rts:
+** Homeworld 2                                                    :space:rts:
+** Nexus: The Jupiter Incident                                    :space:rts:
+   :PROPERTIES:
+   :lp:       https://www.youtube.com/watch?v=lototgZSUwk
+   :END:
 * Girl                                                                   :ns:
 ** (y)ape
    :PROPERTIES:

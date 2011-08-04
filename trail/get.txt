@@ -3,7 +3,6 @@
 * Game
 ** FF VI
 * LP
-** FreeSpace
 ** FreeSpace 2
 ** Nexus
    :PROPERTIES:
