@@ -3,6 +3,8 @@
 (global-set-key [mouse-2] 'mouse-yank-primary)
 (global-set-key (kbd "C-x C-o") 'ido-find-alternate-file)
 (global-set-key (kbd "C-,") 'other-window)
+(global-set-key (kbd "C-<tab>") 'tabbar-forward)
+(global-set-key (kbd "C-S-<iso-lefttab>") 'tabbar-backward)
 (defalias 'rb 'revert-buffer)
 (defalias 'dabbrev-expand 'hippie-expand)
 
