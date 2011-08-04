@@ -1,0 +1,24 @@
+--- commands - Copy.xml	2011-04-13 15:03:38.000000000 +0700
++++ commands.xml	2011-08-04 15:23:06.401237000 +0700
+@@ -2114,8 +2114,8 @@
+ 			<C101 Type="5" KeySeq="alt rightarrow" />
+ 			<C103 Type="5" KeySeq="escape" />
+ 			<C300 Type="5" KeySeq="enter" />
+-			<C319 Type="6" Activator="ZoomIn" />
+-			<C320 Type="6" Activator="ZoomOut" />			
++			<C319 Type="6" Activator="ScrollUp" />
++			<C320 Type="6" Activator="ScrollDown" />			
+ 			<C1003 Type="7" Subtype="0" />
+ 		</Application>
+ 		<Application UniqueName="GenericDialog" AppName="Generic Dialogs">
+@@ -2961,8 +2961,8 @@
+ 			<C320 Type="5" KeySeq="alt p | o" />
+ 		</Application>
+ 		<Application UniqueName="MozillaWindowClass" AppName="Netscape">
+-			<C319 Type="5" KeySeq="ctrl add" />
+-			<C320 Type="5" KeySeq="ctrl subtract" />			
++			<C319 Type="6" Activator="ScrollUp" />
++			<C320 Type="6" Activator="ScrollDown" />
+ 		</Application>
+ 		<Application UniqueName="PIP7 Frame" AppName="Microsoft Digital Image Pro">
+ 			<C319 Type="5" KeySeq="ctrl add" />
