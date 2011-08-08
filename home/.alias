@@ -18,7 +18,7 @@ function getv() {
     if [[ "$2" == "-e" ]]; then
         e q.txt
     else
-        youtube-dl -a q.txt -c -t -f 35
+        youtube-dl -a q.txt -c -t -f 34
     fi
 }
 alias nn='chrt -i 0 ionice -c 3 '
