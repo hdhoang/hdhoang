@@ -3,23 +3,16 @@
 * Game
 ** FF VI
 * LP
-** FreeSpace 2
-** Nexus
-   :PROPERTIES:
-   :url:      https://www.youtube.com/watch?v=lototgZSUwk
-   :END:
 * Movie
 ** Blade
 ** Donnie Darko
 ** Ghostbusters
-** Limitless (2011)                                                  :jbopre:
 * Music
 ** (Bliss)This
 ** Amorphis
 ** Aqua
 ** Benjamin Zander
 ** Blind Guardian
-** Bobaflex
 ** Bon Jovi
 ** Bullet for My Valentine
 ** Chumbawamba
