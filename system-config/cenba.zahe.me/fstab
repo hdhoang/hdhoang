@@ -6,3 +6,4 @@ LABEL=marbi /mnt/marbi ntfs-3g defaults,users,noatime,compress,windows_names,uid
 LABEL=ROXER /mnt/roxer vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
 
 /swapfile none swap defaults
+tmpfs /tmp tmpfs nodev,nosuid
