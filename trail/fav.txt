@@ -208,6 +208,11 @@
    :btih:     04f439a9eac3b86636beff502590484945b57d74
    :END:
 ** Everworld
+** Armageddon??? / The Salvation War                                   :blas:
+   :PROPERTIES:
+   :url:      http://bbs.stardestroyer.net/viewtopic.php?f=35&t=118771
+   :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
+   :END:
 ** Harry Potter and the Methods of Rationality
 ** Ishmael
    :PROPERTIES:
