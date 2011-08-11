@@ -29,6 +29,7 @@ conf=$h/system-config/$(hostname)
 t=~/t
 dl=~/Downloads
 g=/mnt/cenbaz/@g
+s=/mnt/cenbaz/@s
 pkg=/var/cache/pacman/pkg
 el=/var/log/everything.log
 
