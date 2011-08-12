@@ -103,11 +103,11 @@ maximizevert[$d]
 maximizevertrule[$d]
 noborder=true
 noborderrule=2
-position=950,-20
+position=950,0
 positionrule=2
 shortcut=Alt+Shift+F4
 shortcutrule=2
-size=345,1058
+size=345,1038
 sizerule=2
 skipswitcher=true
 skipswitcherrule=2
