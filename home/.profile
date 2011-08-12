@@ -15,11 +15,3 @@ export CCACHE_BASEDIR=${HOME}
 export VDPAU_DRIVER=r600
 
 export EMAIL=hdhoang@zahe.me
-
-
-
-
-
-
-
-
