@@ -208,10 +208,11 @@
    :btih:     04f439a9eac3b86636beff502590484945b57d74
    :END:
 ** Everworld
-** Armageddon??? / The Salvation War                                   :blas:
+** The Salvation War                                                   :blas:
    :PROPERTIES:
-   :url:      http://bbs.stardestroyer.net/viewtopic.php?f=35&t=118771
    :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
+   :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
+   :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
    :END:
 ** Harry Potter and the Methods of Rationality
 ** Ishmael
@@ -381,6 +382,11 @@
 ** Sixpence None the Richer
 ** Sonata Arctica
 ** Stratovarius
+** String Quartet tributes
+*** Evanescene
+*** Lady Gaga
+*** Senses Fail
+*** Shinedown
 ** Tarot
 ** Thanh Tùng
 ** The Beatles

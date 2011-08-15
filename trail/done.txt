@@ -36,17 +36,26 @@
 ** Tricia
 * Music
 ** ABBA
+** Amorphis
 ** Annihilator
 ** Anthrax
+** Antonín Dvorák
+*** The Masterworks
 ** Apocalyptica
+** Ayreon
 ** Bethzaida
+** Bliss(This)
 ** Bobaflex
+** Carpenters
 ** Deep Purple
 ** Diablo Swing Orchestra
 ** Dry Kill Logic
 ** Ensiferum
+** Epica
 ** Evanescene
 ** FreeSpace 2 (official)
+** Frédéric Chopin
+*** Complete Piano Music feat. Idil Biret
 ** Homeworld (official)
 ** Il Divo
 ** Incubus
@@ -55,15 +64,31 @@
 ** Kalmah
 ** Led Zeppelin
 ** M2M
+** Michael Hoenig
+*** Baldur's Gate
+*** Baldur's Gate II
 ** Muse
 ** Nevermore
 ** Norther
+** Nobuo Uematsu
+*** FF VIII
+**** Soundtrack
+**** Piano Collection
+*** FF IX
+**** Piano Collection
+**** Soundtrack
+**** Soundtrack Plus
 ** OneRepublic
 ** Pantera
+** Peter McConnell
+*** Grim Fandango
+*** Grim Fandango Additional
 ** Red October soundtrack
 ** Regina Spektor
+** Richard Clayderman
 ** Santana
 ** Savatage
+** Shinedown
 ** Simon & Garfunkel
 ** Sonata Arctica
 ** Spice Girls
@@ -75,4 +100,6 @@
 ** Tool
 ** Warmen
 ** Wintersun
+** Wolfgang Amadeus Mozart
+*** Requiem in D minor K626, Karajan 1962
 ** X/X JAPAN
