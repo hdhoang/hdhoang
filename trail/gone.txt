@@ -1,0 +1,12 @@
+-*- mode: org -*-
+
+* z [0/4]
+- [ ] bottom taskbar
+- [ ] fx [0/2]
+ - [ ] channel
+ - [ ] profile
+- [ ] qwerty
+- [ ] unikey
+* syslinux [0/2]
+- [ ] default z
+- [ ] hide prompt

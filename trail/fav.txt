@@ -329,6 +329,7 @@
 ** Dogma (1999)
 ** Duplicity (2009)
 ** Limitless (2011)                                                  :jbopre:
+** Mr. Nobody                                                        :jbopre:
 ** Outrageous Fortune (1987)
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
@@ -401,6 +402,10 @@
    :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
    :END:
 ** Bradley M. Kuhn                                              :free:pgnome:
+** Luminous                                                 :game:commentary:
+   :PROPERTIES:
+   :url:      https://youtube.com/user/LuminousStudio
+   :END:
 ** Charlie Stross
 ** Dan Kaminsky
 ** Dave Winer
@@ -420,6 +425,10 @@
 ** Mark Pilgrim                                        :free:code:net:whatwg:
    :PROPERTIES:
    :url:     http://firehose.diveintomark.org
+   :END:
+** Nebu1a                                                   :game:commentary:
+   :PROPERTIES:
+   :url:      http://blip.tv/nebu1a
    :END:
 ** Shamus Young                                                   :game:code:
    :PROPERTIES:

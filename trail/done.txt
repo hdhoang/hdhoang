@@ -39,26 +39,34 @@
 ** Amorphis
 ** Annihilator
 ** Anthrax
-** AntonÌn Dvor·k
+** Anton√≠n Dvor√°k
 *** The Masterworks
 ** Apocalyptica
 ** Ayreon
 ** Bethzaida
+** Black Sabbath
 ** Bliss(This)
 ** Bobaflex
+** Buckethead
 ** Carpenters
+** C√©line Dion
 ** Deep Purple
 ** Diablo Swing Orchestra
 ** Dry Kill Logic
 ** Ensiferum
 ** Epica
 ** Evanescene
+** Faerghail
 ** FreeSpace 2 (official)
-** FrÈdÈric Chopin
+** Fr√©d√©ric Chopin
 *** Complete Piano Music feat. Idil Biret
+** Gorillaz
+** Hanoi Rocks
 ** Homeworld (official)
 ** Il Divo
 ** Incubus
+** Johann Sebastian Bach
+*** The Well-Tempered Clavier feat. Angela Hewitt
 ** Josh Groban
 ** Judas Priest
 ** Kalmah
@@ -88,6 +96,7 @@
 ** Richard Clayderman
 ** Santana
 ** Savatage
+** Senses Fail
 ** Shinedown
 ** Simon & Garfunkel
 ** Sonata Arctica
@@ -98,6 +107,7 @@
 ** System of a Down
 ** Tokyo Jihen/Ringo Shiina
 ** Tool
+** Turisas
 ** Warmen
 ** Wintersun
 ** Wolfgang Amadeus Mozart
