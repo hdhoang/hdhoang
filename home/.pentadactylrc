@@ -16,6 +16,31 @@ set pageinfo=fgmse
 set passkeys=google.com/reader:' npSlsDcmrgFaeUNPXO'
 set urlseparator=' , '
 
+set! browser.anchor_color="#6c71c4"
+set! browser.backspace_action=0
+set! browser.display.background_color="#fdf6e3"
+set! browser.display.foreground_color="#839496"
+set! browser.sessionstore.restore_on_demand=true
+set! browser.startup.page=3
+set! browser.tabs.closeButtons=2
+set! browser.tabs.loadDivertedInBackground=true
+set! downbar.display.clearButton=false
+set! downbar.display.mainButton=false
+set! downbar.display.speed=false
+set! downbar.display.toMiniButton=true
+set! downbar.function.ignoreFiletypes="torrent"
+set! downbar.function.removeOnOpen=false
+set! downbar.function.soundOnComplete=1
+set! downbar.style.useGradients=false
+set! extensions.checkCompatibility.nightly=false
+set! extensions.firebug.openInWindow=true
+set! font.default.x-western="sans-serif"
+set! keyword.URL="https://duckduckgo.com/?q="
+set! middlemouse.contentLoadURL=false
+set! noscript.sync.enabled=true
+set! toolkit.telemetry.enabled=true
+set! ui.key.chromeAccess=0
+
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
 autocmd LocationChange http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -js try { doc.querySelector('#good button').focus() } catch (e){}
