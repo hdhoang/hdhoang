@@ -1,53 +1,403 @@
 -*- mode: org -*-
+#+TODO: TODO(t) NOT(n) | DONE(d)
+#+TAGS: FAV(f)
 
+* Biography
+** Last Words                                                           :FAV:
+** Surely You're Joking, Mr. Feynman                                    :FAV:
+** The World as I See It                                                :FAV:
+* Comic
+** @Peanuttweeter                                                  :cute:FAV:
+   :PROPERTIES:
+   :url:      http://peanutweeter.com
+   :END:
+** A Softer World                                            :title:cute:FAV:
+   :PROPERTIES:
+   :url:      http://asofterworld.com
+   :END:
+** Abstruse Goose                                             :title:sci:FAV:
+   :PROPERTIES:
+   :url:      http://abstrusegoose.com
+   :END:
+** AmazingSuperPowers                                        :title:sick:FAV:
+   :PROPERTIES:
+   :url:      http://amazingsuperpowers.com
+   :END:
+** Bent Objects                                                    :cute:FAV:
+   :PROPERTIES:
+   :url:      http://bentobjects.blogspot.com
+   :END:
+** Bug                                                             :sick:FAV:
+   :PROPERTIES:
+   :url:      http://bugcomic.com
+   :END:
+** Buni                                                            :sick:FAV:
+   :PROPERTIES:
+   :url:      http://bunicomic.com
+   :END:
+** Buttersafe                                                  :3rd:cute:FAV:
+   :PROPERTIES:
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
+   :url:      http://buttersafe.com
+   :END:
+** Calamities of Nature                                             :sci:FAV:
+** ChannelATE                                                      :sick:FAV:
+   :PROPERTIES:
+   :url:      http://channelate.com
+   :END:
+** Cowbirds in Love                                                :cute:FAV:
+   :PROPERTIES:
+   :url:      http://cowbirdsinlove.com
+   :END:
+** Ctrl+Alt+Del                                                :game:3rd:FAV:
+   :PROPERTIES:
+   :url:      http://cad-comic.com
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=a70e4f717481286c6388365cc079742c&_render=rss
+   :END:
+** Cyanide and Happiness                                    :3rd:ns:sick:FAV:
+   :PROPERTIES:
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
+   :END:
+** Dinosaur Comics                                       :title:cute:phi:FAV:
+   :PROPERTIES:
+   :url:      http://qwantz.com
+   :END:
+** DOGHOUSE                                                  :title:cute:FAV:
+   :PROPERTIES:
+   :url:      http://thedoghousediaries.com
+   :END:
+** Extra Ordinary                                       :cute:title:site:FAV:
+   :PROPERTIES:
+   :url:      http://exocomics.com
+   :END:
+** Fake Science                                                    :cute:FAV:
+** Fredo and Pid'jin                                               :blas:FAV:
+   :PROPERTIES:
+   :url:      http://pidjin.net
+   :END:
+** Hejibits                                                  :game:title:FAV:
+   :PROPERTIES:
+   :url:      http://hejibits.com
+   :END:
+** Hipster Hitler                                                  :cute:FAV:
+** Hyperbole and a Half:FAV:
+** INCIDENTAL COMICS                                               :cute:FAV:
+   :PROPERTIES:
+   :url:      http://thoughtballoonhelium.blogspot.com
+   :END:
+** Liz Prince Power                                                :cute:FAV:
+   :PROPERTIES:
+   :url:      http://lizprincepower.com
+   :END:
+** LOLDWELL.com:FAV:
+   :PROPERTIES:
+   :url:      http://loldwell.com
+   :END:
+** Married To The Sea                                              :cute:FAV:
+** Mimi and Eunice                                             :phi:free:FAV:
+   :PROPERTIES:
+   :url:      http://mimiandeunice.com
+   :END:
+** Nedroid Picture Diary 2                                        :title:FAV:
+   :PROPERTIES:
+   :url:     http://nedroid.com
+   :END:
+** Oglaf                                                 :ns:extra:title:FAV:
+   :PROPERTIES:
+   :url:      http://oglaf.com
+   :END:
+** Optipess                                                        :sick:FAV:
+** Pants Are Overrated                                             :game:FAV:
+   :PROPERTIES:
+   :url:      http://pantsareoverrated.com
+   :END:
+** Penny Arcarde Comics                                        :game:3rd:FAV:
+   :PROPERTIES:
+   :url:      http://penny-arcade.com
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=IjjUcuSa3RGmgXqp1L3fcQ&_render=rss
+   :END:
+** Pictures for sad children                                   :cute:sad:FAV:
+   :PROPERTIES:
+   :url:      http://picturesforsadchildren.com
+   :END:
+** Pie Comic                                                       :site:FAV:
+   :PROPERTIES:
+   :url:      http://piecomic.com
+   :END:
+** POPSTRIP                                               :title:sci:phi:FAV:
+   :PROPERTIES:
+   :url:      http://popstrip.com
+   :END:
+** Rock, Paper, Cynic                                          :cute:sad:FAV:
+   :PROPERTIES:
+   :url:      http://rockpapercynic.com
+   :END:
+** Saturday Morning Breakfast Cereal             :extra:3rd:daily:ns:sci:FAV:
+   :PROPERTIES:
+   :url:      http://smbc-comics.com
+   :END:
+** Savage Chickens                                                 :cute:FAV:
+   :PROPERTIES:
+   :url:      http://savagechickens.com
+   :END:
+** Sexy Losers                                         :ns:end:cute:sick:FAV:
+   :PROPERTIES:
+   :url:      http://sexylosers.com
+   :cont:     [[the thin H line]]
+   :END:
+** Shoebox                                                   :movie:cute:FAV:
+   :PROPERTIES:
+   :url:      http://shoeboxblog.com
+   :END:
+** Chuck & Beans:FAV:
+    :PROPERTIES:
+    :feed:     http://www.shoeboxblog.com/?feed=rss2&cat=1279
+    :END:
+** Jana’s Thinkings:FAV:
+** Random Russ:FAV:
+** Sinfest                                                         :cute:FAV:
+   :PROPERTIES:
+   :url:      http://sinfest.net
+   :END:
+** Something of that Ilk:FAV:
+   :PROPERTIES:
+   :url:      http://somethingofthatilk.com
+   :END:
+** Spud Comics                                                     :cute:FAV:
+   :PROPERTIES:
+   :url:      http://spudcomics.com
+   :END:
+** The Book of Biff:FAV:
+   :PROPERTIES:
+   :url:      http://thebookofbiff.com
+   :END:
+** The Gutterpunch Confessional:FAV:
+   :PROPERTIES:
+   :url:      http://gutterpunch.com
+   :END:
+** The Non-Adventures of Wonderella:FAV:
+   :PROPERTIES:
+   :url:      http://nonadventures.com
+   :END:
+** The Oatmeal                                                :cute:sick:FAV:
+   :PROPERTIES:
+   :url:      http://theoatmeal.com
+   :END:
+** the thin H line                                                   :ns:FAV:
+   :PROPERTIES:
+   :url:     http://thinhline.tumblr.com
+   :END:
+** theWAREHOUSE:FAV:
+   :PROPERTIES:
+   :url:      http://warehousecomic.com
+   :END: 
+** Tree Lobsters!                                                 :title:FAV:
+   :PROPERTIES:
+   :url:      http://treelobsters.com
+   :END:
+** Wondermark                                                     :title:FAV:
+   :PROPERTIES:
+   :url:      http://wondermark.com
+   :END:
+** Wulffmorgenthaler                                                 :ns:FAV:
+** xkcd                                                           :title:FAV:
+   :PROPERTIES:
+   :url:      https://xkcd.com
+   :END:
+* Fiction
+** Animorphs:FAV:
+   :PROPERTIES:
+   :btih:     04f439a9eac3b86636beff502590484945b57d74
+   :END:
+** Everworld:FAV:
+** The Salvation War                                               :blas:FAV:
+   :PROPERTIES:
+   :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
+   :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
+   :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
+   :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewtopic.php?f=29
+   :END:
+** Harry Potter and the Methods of Rationality:FAV:
+** Ishmael:FAV:
+   :PROPERTIES:
+   :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
+   :END:
+** Lost Girls:FAV:
+   :PROPERTIES:
+   :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
+   :END:
+** Red Storm Rising:FAV:
+** Slaughterhouse-Five:FAV:
+** The Deer and the Cauldron:FAV:
+** The Last Ring-bearer:FAV:
+   :PROPERTIES:
+   :url:      http://ymarkov.livejournal.com/270570.html
+   :background: http://ymarkov.livejournal.com/273409.html
+   :END:
+** tvtropes.org:FAV:
 * Game
+** DotA:FAV:
+** Dungeon Crawl: Stone Soup                                  :roguelike:FAV:
+   :PROPERTIES:
+   :url:      http://crawl.develz.org
+   :END:
 ** TODO FF VI
-* Girl
-** DONE Alison Angel
-** DONE Amara
-** DONE Anissa
-** DONE Anja.de
-** DONE Ann Angel
-** DONE Aria Giovanni
-** DONE Becky Jang
-** DONE Claudia
-** DONE DDD Brandy
-** DONE Halle
-** DONE Jamie
-** DONE Jennifer Lee
-** DONE Kaila Wang
-** DONE Kari Sweets
-** DONE Kelly
-** DONE Kesara
-** DONE Kristina Fey
-** DONE Lincy Leaw
-** DONE Marlina
-** DONE Misha
-** DONE Missy Model
-** DONE Nancy Ho
-** DONE Nicole
-** DONE Paris
-** DONE Reina
-** DONE Salina
-** DONE Sandra Mar
-** DONE Sasha Grey
-** DONE Score Group
-** DONE Sydney
-** DONE Tawnee Stone
-** DONE Tila
-** DONE Tricia
+** FreeSpace                                                  :space:sim:FAV:
+   :PROPERTIES:
+   :lp:       http://lparchive.org/Descent-Freespace/
+   :END:
+** FreeSpace 2                                                :space:sim:FAV:
+   :PROPERTIES:
+   :lp:       http://lparchive.org/FreeSpace-2-Open/
+   :END:
+** Grim Fandango                                              :adventure:FAV:
+   :PROPERTIES:
+   :lp:       http://lparchive.org/Grim-Fandango-%28Video%29/
+   :END:
+** Homeworld                                                  :space:rts:FAV:
+** Homeworld 2                                                :space:rts:FAV:
+** nethack                                                    :roguelike:FAV:
+** Nexus: The Jupiter Incident                                :space:rts:FAV:
+   :PROPERTIES:
+   :lp:       https://www.youtube.com/watch?v=lototgZSUwk
+   :END:
+* Girl                                                                   :ns:
+** (y)ape                                                               :FAV:
+   :PROPERTIES:
+   :url:      http://hb4pm4eznzhd6mts.onion
+   :END:
+** NOT Alison Angel
+** NOT Amara
+** Amy                                                                  :FAV:
+   :PROPERTIES:
+   :url:      http://amyamyamy.com
+   :END:
+** NOT Anja.de
+** NOT Ann Angel
+** Anne                                                                 :FAV:
+   :PROPERTIES:
+   :url:      http://anneteenmodel.com
+   :END:
+** NOT Aria Giovanni
+** Ariel Rebel                                                          :FAV:
+** Asians4You
+*** Alesha                                                              :FAV:
+*** NOT Anissa
+*** NOT Becky Jang
+*** Carolyn                                                             :FAV:
+*** NOT Claudia
+*** Elyssa                                                              :FAV:
+*** Felicia                                                             :FAV:
+*** NOT Halle
+*** Iris                                                                :FAV:
+*** NOT Jennifer Lee
+*** NOT Kaila Wang
+*** NOT Kelly
+*** NOT Kesara
+*** NOT Lincy Leaw
+*** NOT Misha
+*** Monica                                                              :FAV:
+*** NOT Nancy Ho
+*** NOT Paris
+*** Petchara                                                            :FAV:
+*** Regina                                                              :FAV:
+*** NOT Reina
+*** NOT Salina
+*** NOT Sandra Mar
+*** NOT Sydney
+*** NOT Tricia
+** Bailey Kline                                                         :FAV:
+** NOT DDD Brandy
+** Erica Campbell                                                       :FAV:
+** FemJoy                                                               :FAV:
+** Francesca Dani                                                       :FAV:
+** Hegre                                                                :FAV:
+** NOT Jamie
+** Jayden                                                               :FAV:
+** Jordan Capri                                                         :FAV:
+   :PROPERTIES:
+   :btih:     7b9cbccb0cb50ef6e0aba414ce9c3bea0f55abda
+   :END:
+** Josie                                                                :FAV:
+   :PROPERTIES:
+   :url:      http://josiemodel.ca
+   :END:
+** NOT Kari Sweets
+** Katie Fey/Jenya D                                                    :FAV:
+   :PROPERTIES:
+   :url:      http://katiefey.com
+   :END:
+** Kirsten Dunst                                                        :FAV:
+** NOT Kristina Fey
+** lambda                                                               :FAV:
+** NOT Marlina
+** NOT Missy Model
+** NOT Nicole
+** Nikki                                                                :FAV:
+** NOT Sasha Grey
+** NOT Score Group
+** Stanislava                                                           :FAV:
+** Stoya                                                                :FAV:
+** NOT Tawnee Stone
+** the waitress                                                         :FAV:
+** NOT Tila Nguyen
+** TV girl                                                              :FAV:
+** Victoria                                                             :FAV:
+** Watch 4 Beauty                                                       :FAV:
+** X-Art                                                                :FAV:
 * LP
+* Lulz
+** Cracked:FAV:
+   :PROPERTIES:
+   :url:      http://cracked.com
+   :END:
+** Design Crush                                                         :FAV:
+** Fukung                                                            :ns:FAV:
+   :PROPERTIES:
+   :url:      http://fukung.net
+   :END:
+** Imgur                                                                :FAV:
+   :PROPERTIES:
+   :url:      http://imgur.com
+   :END:
+** Let's Play Archive                                                   :FAV:
+   :PROPERTIES:
+   :url:      http://lparchive.org
+   :END:
+** Misconception Junction                                               :FAV:
+** Neatorama:FAV:
+   :PROPERTIES:
+   :url:      http://neatorama.com
+   :END:
+** Today I Found Out                                                    :FAV:
 * Movie
 ** TODO Blade
+** Dogma (1999)                                                         :FAV:
 ** TODO Donnie Darko
+** Duplicity (2009)                                                     :FAV:
+** Eternal Sunshine of the Spotless Mind (2004)                         :FAV:
+** Kirsten Dunst                                                        :FAV:
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
+** Limitless (2011)                                              :jbopre:FAV:
+** Mr. Nobody                                                    :jbopre:FAV:
+** Outrageous Fortune (1987)                                            :FAV:
+   :PROPERTIES:
+   :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
+   :END:
+** Strange Days (1995)                                                  :FAV:
+   :PROPERTIES:
+   :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
+   :END:
+** The Iron Giant (1999)                                                :FAV:
 ** TODO The Man With No Name trilogy
 *** TODO A Fistful of Dollars (1964)
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
+** Zardoz (1974)                                                        :FAV:
 * Music
-** DONE ABBA
+** "Weird Al" Yankovic                                                  :FAV:
+** DONE ABBA                                                            :FAV:
 ** DONE Amorphis
 ** DONE Annihilator
 ** DONE Anthrax
@@ -55,66 +405,90 @@
 *** DONE The Masterworks
 ** DONE Apocalyptica
 ** TODO Aqua
+** DONE Avenged Sevenfold                                               :FAV:
 ** DONE Ayreon
 ** TODO Benjamin Zander
 ** DONE Bethzaida
-** DONE Black Sabbath
+** DONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** DONE Bobaflex
 ** TODO Bon Jovi
-** DONE Buckethead
+** Buckethead                                                           :FAV:
+   :PROPERTIES:
+   :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
+   :END:
+*** Thanatopsis                                                         :FAV:
 ** TODO Bullet for My Valentine
+** DONE Bức Tường                                                       :FAV:
 ** DONE Carpenters
+** DONE Charon                                                          :FAV:
+** DONE Children Of Bodom                                               :FAV:
 ** TODO Chumbawamba
 ** TODO Cinderella
-** DONE Céline Dion
+** DONE Céline Dion                                                     :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
 ** TODO Dream Theater
 ** DONE Dry Kill Logic
+** Elias Viljanen                                                       :FAV:
 ** TODO Elvis Presley
 ** TODO Eminem
+*** TODO D12
 ** TODO Ennio Morricone
 ** DONE Ensiferum
 ** DONE Epica
-** DONE Evanescene
+** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
 ** TODO Fear Factory
 ** DONE Flowing Tears
-** TODO Flowing Tears
 ** DONE FreeSpace 2 (official)
-** DONE Frédéric Chopin
+** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
 ** TODO Gorillaz
+** Guns N' Roses                                                        :FAV:
+** Gạt Tàn Đầy                                                          :FAV:
+** Hanoi Rocks                                                          :FAV:
 ** DONE Hanoi Rocks
 ** TODO Helloween
+** HIM                                                                  :FAV:
 ** DONE Homeworld (official)
 ** DONE Il Divo
 ** DONE Incubus
+** Iron Maiden                                                          :FAV:
 ** TODO Jimi Hendrix
 ** DONE Johann Sebastian Bach
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 ** DONE Josh Groban
+** JT Bruce                                                             :FAV:
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
+** Korpiklaani                                                          :FAV:
+** Kylähullut                                                           :FAV:
+** Lake of Tears                                                        :FAV:
 ** DONE Led Zeppelin
 ** TODO Life of Agony
+** Linkin Park                                                          :FAV:
 ** DONE M2M
+** MANOWAR                                                              :FAV:
 ** TODO Maroon 5
+** Megadeth                                                             :FAV:
+** Metal Gear Solid                                                     :FAV:
+** DONE Metallica                                                       :FAV:
 ** TODO MGS
 ** TODO Michael Bublé
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock
-** TODO Michael Learns to Rock
 ** DONE Muse
+** Mỹ Linh                                                              :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
+** DONE Nightwish                                                       :FAV:
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
 *** DONE FF VIII
@@ -125,37 +499,54 @@
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
 ** DONE Norther
+** Oleg Serkov                                                          :FAV:
 ** DONE OneRepublic
 ** DONE Pantera
 ** DONE Peter McConnell
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Pink Floyd
+** Powerglove                                                           :FAV:
 ** DONE Red October soundtrack
 ** DONE Regina Spektor
+** Rhapsody                                                             :FAV:
 ** DONE Richard Clayderman
 ** DONE Santana
 ** DONE Savatage
+** Scorpions                                                            :FAV:
 ** TODO Scorpions
 ** DONE Senses Fail
 ** TODO Sentenced
 ** DONE Shinedown
+** Simon & Garfunkel                                                    :FAV:
 ** DONE Simon & Garfunkel
 ** TODO Sirenia
-** TODO Six Pence None the Richer
+** Sixpence None the Richer                                             :FAV:
 ** TODO Slayer
-** DONE Sonata Arctica
+** DONE Sonata Arctica                                                  :FAV:
 ** DONE Spice Girls
 ** DONE Starcraft sound
+** DONE Stratovarius                                                    :FAV:
+** DONE String Quartet tributes                                         :FAV:
+*** DONE Evanescene                                                     :FAV:
+*** DONE Lady Gaga                                                      :FAV:
+*** DONE Senses Fail                                                    :FAV:
+*** DONE Shinedown                                                      :FAV:
 ** DONE String Quartet tributes
 ** DONE Symphony X
 ** DONE System of a Down
+** Tarot                                                                :FAV:
+** Thanh Tùng                                                           :FAV:
+** The Beatles                                                          :FAV:
 ** TODO The Beatles
+** The Ink Spots                                                        :FAV:
 ** TODO They Might Be Giants
 ** DONE Thy Serpent
-** TODO Thy Serpent
+** To/Die/For                                                           :FAV:
 ** DONE Tokyo Jihen/Ringo Shiina
-** DONE Tool
+** Tom Lehrer                                                           :FAV:
+** NOT Tool
+** Trịnh Công Sơn                                                       :FAV:
 ** DONE Turisas
 ** DONE Warmen
 ** TODO White Lion
@@ -165,3 +556,79 @@
 *** DONE Requiem in D minor K626, Karajan 1962
 ** DONE X/X JAPAN
 ** TODO Yngwie J. Malmsteen
+* Person
+** Aaron Toponce                                                   :free:FAV:
+   :PROPERTIES:
+   :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
+   :END:
+** Bradley M. Kuhn                                          :free:pgnome:FAV:
+** Luminous                                             :game:commentary:FAV:
+   :PROPERTIES:
+   :url:      https://youtube.com/user/LuminousStudio
+   :END:
+** Charlie Stross                                                       :FAV:
+** Dan Kaminsky                                                         :FAV:
+** Dave Winer                                                           :FAV:
+   :PROPERTIES:
+   :url:      http://scripting.com
+   :END:
+** Eliezer Yudkowsky                                                    :FAV:
+   :PROPERTIES:
+   :url:      http://yudkowsky.net
+   :END:
+** Ian Hickson                                               :net:whatwg:FAV:
+   :PROPERTIES:
+   :url:      http://hixie.ch
+   :END:
+** Jason Kottke                                                         :FAV:
+** Jason Scott                                                 :free:net:FAV:
+** Mark Pilgrim                                    :free:code:net:whatwg:FAV:
+   :PROPERTIES:
+   :url:     http://firehose.diveintomark.org
+   :END:
+** Nebu1a                                               :game:commentary:FAV:
+   :PROPERTIES:
+   :url:      http://blip.tv/nebu1a
+   :END:
+** Shamus Young                                               :game:code:FAV:
+   :PROPERTIES:
+   :url:      http://shamusyoung.com
+   :END:
+** Terminally Incoherent                                     :movie:fdim:FAV:
+   :PROPERTIES:
+   :url:      http://terminally-incoherent.com
+   :END:
+** xorl %eax, %eax                                                      :FAV:
+* Technical
+** #jbopre                                                              :FAV:
+   :PROPERTIES:
+   :url:      irc://chat.freenode.net/#jbopre
+   :END:
+** cks                                                      :psysad:herd:FAV:
+   :PROPERTIES:
+   :url:      http://utcc.utoronto.ca/~cks/
+   :END:
+** CSS: Design for the Web                                              :FAV:
+** John Cowan                                               :pint:jbopre:FAV:
+   :PROPERTIES:
+   :url:      http://home.ccil.org/~cowan/
+   :END:
+** Kernel Planet                                                        :FAV:
+** Little Big Details                                                   :FAV:
+** Mark Shoulson                                              :jbopre:py:FAV:
+   :PROPERTIES:
+   :url:      http://web.meson.org
+   :END:
+** Planet Debian                                                        :FAV:
+** Planet Emacsen                                                :pemacs:FAV:
+** Planet GNOME                                                  :pgnome:FAV:
+** Planet KDE                                                      :pkde:FAV:
+** Planet Mozilla                                                  :pmoz:FAV:
+** Planet SysAdmin                                               :psysad:FAV:
+   :PROPERTIES:
+   :url:      http://planetsysadmin.com
+   :END:
+** The Endeavour                                                        :FAV:
+   :PROPERTIES:
+   :url:      http://johndcook.com
+   :END:
