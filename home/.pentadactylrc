@@ -20,6 +20,7 @@ set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
 set! browser.display.background_color="#fdf6e3"
 set! browser.display.foreground_color="#839496"
+set! browser.sessionstore.max_concurrent_tabs=0
 set! browser.sessionstore.restore_on_demand=true
 set! browser.startup.page=3
 set! browser.tabs.closeButtons=2
