@@ -45,7 +45,7 @@ set! keyword.URL="https://duckduckgo.com/?q="
 set! middlemouse.contentLoadURL=false
 set! noscript.sync.enabled=true
 set! toolkit.telemetry.enabled=true
-set! ui.key.chromeAccess=0
+set! ui.key.menuAccessKey=0
 
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
