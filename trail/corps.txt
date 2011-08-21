@@ -1,0 +1,52 @@
+-*- mode: org -*-
+
+* Game
+** TODO FF VI
+* LP
+* Movie
+** TODO Blade
+** TODO Donnie Darko
+** TODO Ghostbusters
+** TODO Kiss Me Deadly
+** TODO The Man With No Name trilogy
+*** TODO A Fistful of Dollars (1964)
+*** TODO For A Few Dollars More (1965)
+*** TODO The Good, The Bad, The Ugly (1966)
+* Music
+** TODO Aqua
+** TODO Benjamin Zander
+** TODO Blind Guardian
+** TODO Bon Jovi
+** TODO Bullet for My Valentine
+** TODO Chumbawamba
+** TODO Cinderella
+** TODO Dire Strait
+** TODO Dream Theater
+** TODO Elvis Presley
+** TODO Eminem
+** TODO Ennio Morricone
+** TODO Fear Factory
+** TODO Flowing Tears
+** TODO Gorillaz
+** TODO Helloween
+** TODO Jimi Hendrix
+** TODO Kamelot
+** TODO Life of Agony
+** TODO Maroon 5
+** TODO MGS
+** TODO Michael Bublé
+** TODO Michael Learns to Rock
+** TODO Nat King Cole
+** TODO Nirvana
+** TODO Pink Floyd
+** TODO Scorpions
+** TODO Sentenced
+** TODO Sirenia
+** TODO Six Pence None the Richer
+** TODO Slayer
+** TODO The Beatles
+** TODO They Might Be Giants
+** TODO Thy Serpent
+** TODO White Lion
+** TODO Within Temptation
+** TODO Yngwie J. Malmsteen
