@@ -2,6 +2,40 @@
 
 * Game
 ** TODO FF VI
+* Girl
+** DONE Alison Angel
+** DONE Amara
+** DONE Anissa
+** DONE Anja.de
+** DONE Ann Angel
+** DONE Aria Giovanni
+** DONE Becky Jang
+** DONE Claudia
+** DONE DDD Brandy
+** DONE Halle
+** DONE Jamie
+** DONE Jennifer Lee
+** DONE Kaila Wang
+** DONE Kari Sweets
+** DONE Kelly
+** DONE Kesara
+** DONE Kristina Fey
+** DONE Lincy Leaw
+** DONE Marlina
+** DONE Misha
+** DONE Missy Model
+** DONE Nancy Ho
+** DONE Nicole
+** DONE Paris
+** DONE Reina
+** DONE Salina
+** DONE Sandra Mar
+** DONE Sasha Grey
+** DONE Score Group
+** DONE Sydney
+** DONE Tawnee Stone
+** DONE Tila
+** DONE Tricia
 * LP
 * Movie
 ** TODO Blade
@@ -13,40 +47,121 @@
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
 * Music
+** DONE ABBA
+** DONE Amorphis
+** DONE Annihilator
+** DONE Anthrax
+** DONE Antonín Dvorák
+*** DONE The Masterworks
+** DONE Apocalyptica
 ** TODO Aqua
+** DONE Ayreon
 ** TODO Benjamin Zander
+** DONE Bethzaida
+** DONE Black Sabbath
 ** TODO Blind Guardian
+** DONE Bliss(This)
+** DONE Bobaflex
 ** TODO Bon Jovi
+** DONE Buckethead
 ** TODO Bullet for My Valentine
+** DONE Carpenters
 ** TODO Chumbawamba
 ** TODO Cinderella
+** DONE Céline Dion
+** DONE Deep Purple
+** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
 ** TODO Dream Theater
+** DONE Dry Kill Logic
 ** TODO Elvis Presley
 ** TODO Eminem
 ** TODO Ennio Morricone
+** DONE Ensiferum
+** DONE Epica
+** DONE Evanescene
+** DONE Faerghail
 ** TODO Fear Factory
+** DONE Flowing Tears
 ** TODO Flowing Tears
+** DONE FreeSpace 2 (official)
+** DONE Frédéric Chopin
+*** DONE Complete Piano Music feat. Idil Biret
+** DONE Gorillaz
 ** TODO Gorillaz
+** DONE Hanoi Rocks
 ** TODO Helloween
+** DONE Homeworld (official)
+** DONE Il Divo
+** DONE Incubus
 ** TODO Jimi Hendrix
+** DONE Johann Sebastian Bach
+*** DONE The Well-Tempered Clavier feat. Angela Hewitt
+** DONE Josh Groban
+** DONE Judas Priest
+** DONE Kalmah
 ** TODO Kamelot
+** DONE Led Zeppelin
 ** TODO Life of Agony
+** DONE M2M
 ** TODO Maroon 5
 ** TODO MGS
 ** TODO Michael Bublé
+** DONE Michael Hoenig
+*** DONE Baldur's Gate
+*** DONE Baldur's Gate II
+** DONE Michael Learns to Rock
 ** TODO Michael Learns to Rock
+** DONE Muse
 ** TODO Nat King Cole
+** DONE Nevermore
 ** TODO Nirvana
+** DONE Nobuo Uematsu
+*** DONE FF VIII
+**** DONE Soundtrack
+**** DONE Piano Collection
+*** DONE FF IX
+**** DONE Piano Collection
+**** DONE Soundtrack
+**** DONE Soundtrack Plus
+** DONE Norther
+** DONE OneRepublic
+** DONE Pantera
+** DONE Peter McConnell
+*** DONE Grim Fandango
+*** DONE Grim Fandango Additional
 ** TODO Pink Floyd
+** DONE Red October soundtrack
+** DONE Regina Spektor
+** DONE Richard Clayderman
+** DONE Santana
+** DONE Savatage
 ** TODO Scorpions
+** DONE Senses Fail
 ** TODO Sentenced
+** DONE Shinedown
+** DONE Simon & Garfunkel
 ** TODO Sirenia
 ** TODO Six Pence None the Richer
 ** TODO Slayer
+** DONE Sonata Arctica
+** DONE Spice Girls
+** DONE Starcraft sound
+** DONE String Quartet tributes
+** DONE Symphony X
+** DONE System of a Down
 ** TODO The Beatles
 ** TODO They Might Be Giants
+** DONE Thy Serpent
 ** TODO Thy Serpent
+** DONE Tokyo Jihen/Ringo Shiina
+** DONE Tool
+** DONE Turisas
+** DONE Warmen
 ** TODO White Lion
+** DONE Wintersun
 ** TODO Within Temptation
+** DONE Wolfgang Amadeus Mozart
+*** DONE Requiem in D minor K626, Karajan 1962
+** DONE X/X JAPAN
 ** TODO Yngwie J. Malmsteen
