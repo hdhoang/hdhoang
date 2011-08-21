@@ -44,6 +44,7 @@ set! font.default.x-western="sans-serif"
 set! keyword.URL="https://duckduckgo.com/?q="
 set! middlemouse.contentLoadURL=false
 set! noscript.sync.enabled=true
+set! security.warn_viewing_mixed=false
 set! toolkit.telemetry.enabled=true
 set! ui.key.menuAccessKey=0
 
