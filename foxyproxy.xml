@@ -93,6 +93,7 @@
         includeInCycle="true"
         color="green"
         proxyDNS="true"
+        noInternalIPs="false"
       ><matches
         ><match
             enabled="true"
@@ -183,6 +184,13 @@
           autoReload="false"
           reloadFreqMins="60"
           disableOnBadPAC="true"
+      /><autoconf
+          url="http://wpad/wpad.dat"
+          loadNotification="true"
+          errorNotification="true"
+          autoReload="false"
+          reloadFreqMins="60"
+          disableOnBadPAC="true"
       /><manualconf
           host="127.0.0.1"
           port="9050"
@@ -201,6 +209,7 @@
         includeInCycle="false"
         color="#0055E5"
         proxyDNS="true"
+        noInternalIPs="false"
       ><matches
         ><match
             enabled="true"
@@ -214,6 +223,13 @@
         /></matches
       ><autoconf
           url=""
+          loadNotification="true"
+          errorNotification="true"
+          autoReload="false"
+          reloadFreqMins="60"
+          disableOnBadPAC="true"
+      /><autoconf
+          url="http://wpad/wpad.dat"
           loadNotification="true"
           errorNotification="true"
           autoReload="false"
