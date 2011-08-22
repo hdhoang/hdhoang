@@ -1,16 +1,21 @@
 -*- mode: org -*-
 
-* z [2/6]
-- [ ] bottom taskbar
+* z [3/8]
+- [X] bottom taskbar
 - [ ] ext
 - [X] fx [2/2]
  - [X] channel
  - [X] profile [2/2]
   - [X] ad block
   - [X] vi
+- [ ] office
 - [X] tor
 - [ ] qwerty
 - [ ] unikey
+- [ ] utorrent bandwidth
 * syslinux [1/2]
 - [X] default z
 - [ ] hide prompt
+* c [1/2]
+- [ ] bu
+- [X] aur

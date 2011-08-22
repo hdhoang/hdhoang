@@ -80,7 +80,7 @@
    :url:      http://hejibits.com
    :END:
 ** Hipster Hitler                                                  :cute:FAV:
-** Hyperbole and a Half:FAV:
+** Hyperbole and a Half                                                 :FAV:
 ** INCIDENTAL COMICS                                               :cute:FAV:
    :PROPERTIES:
    :url:      http://thoughtballoonhelium.blogspot.com
@@ -89,7 +89,7 @@
    :PROPERTIES:
    :url:      http://lizprincepower.com
    :END:
-** LOLDWELL.com:FAV:
+** LOLDWELL.com                                                         :FAV:
    :PROPERTIES:
    :url:      http://loldwell.com
    :END:
@@ -149,17 +149,17 @@
    :PROPERTIES:
    :url:      http://shoeboxblog.com
    :END:
-** Chuck & Beans:FAV:
+** Chuck & Beans                                                        :FAV:
     :PROPERTIES:
     :feed:     http://www.shoeboxblog.com/?feed=rss2&cat=1279
     :END:
-** Jana’s Thinkings:FAV:
-** Random Russ:FAV:
+** Jana’s Thinkings                                                     :FAV:
+** Random Russ                                                          :FAV:
 ** Sinfest                                                         :cute:FAV:
    :PROPERTIES:
    :url:      http://sinfest.net
    :END:
-** Something of that Ilk:FAV:
+** Something of that Ilk                                                :FAV:
    :PROPERTIES:
    :url:      http://somethingofthatilk.com
    :END:
@@ -167,15 +167,15 @@
    :PROPERTIES:
    :url:      http://spudcomics.com
    :END:
-** The Book of Biff:FAV:
+** The Book of Biff                                                     :FAV:
    :PROPERTIES:
    :url:      http://thebookofbiff.com
    :END:
-** The Gutterpunch Confessional:FAV:
+** The Gutterpunch Confessional                                         :FAV:
    :PROPERTIES:
    :url:      http://gutterpunch.com
    :END:
-** The Non-Adventures of Wonderella:FAV:
+** The Non-Adventures of Wonderella                                     :FAV:
    :PROPERTIES:
    :url:      http://nonadventures.com
    :END:
@@ -187,7 +187,7 @@
    :PROPERTIES:
    :url:     http://thinhline.tumblr.com
    :END:
-** theWAREHOUSE:FAV:
+** theWAREHOUSE                                                         :FAV:
    :PROPERTIES:
    :url:      http://warehousecomic.com
    :END: 
@@ -205,11 +205,11 @@
    :url:      https://xkcd.com
    :END:
 * Fiction
-** Animorphs:FAV:
+** Animorphs                                                            :FAV:
    :PROPERTIES:
    :btih:     04f439a9eac3b86636beff502590484945b57d74
    :END:
-** Everworld:FAV:
+** Everworld                                                            :FAV:
 ** The Salvation War                                               :blas:FAV:
    :PROPERTIES:
    :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
@@ -217,26 +217,27 @@
    :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
    :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewtopic.php?f=29
    :END:
-** Harry Potter and the Methods of Rationality:FAV:
-** Ishmael:FAV:
+** Harry Potter and the Methods of Rationality                          :FAV:
+** Ishmael                                                              :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
-** Lost Girls:FAV:
+** Lost Girls                                                           :FAV:
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
-** Red Storm Rising:FAV:
-** Slaughterhouse-Five:FAV:
-** The Deer and the Cauldron:FAV:
-** The Last Ring-bearer:FAV:
+** Tom Clancy
+*** Red Storm Rising                                                    :FAV:
+** Slaughterhouse-Five                                                  :FAV:
+** Lộc Đỉnh Ký                                                          :FAV:
+** The Last Ring-bearer                                                 :FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
    :background: http://ymarkov.livejournal.com/273409.html
    :END:
-** tvtropes.org:FAV:
+** tvtropes.org                                                         :FAV:
 * Game
-** DotA:FAV:
+** DotA                                                                 :FAV:
 ** Dungeon Crawl: Stone Soup                                  :roguelike:FAV:
    :PROPERTIES:
    :url:      http://crawl.develz.org
@@ -312,6 +313,8 @@
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
 ** Francesca Dani                                                       :FAV:
+** Front
+*** Mellisa Clarke                                                      :FAV:
 ** Hegre                                                                :FAV:
 ** Jayden                                                               :FAV:
 ** Jordan Capri                                                         :FAV:
@@ -338,6 +341,7 @@
 ** NOT Score Group
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
+** Suicide Girls                                                        :FAV:
 ** NOT Tawnee Stone
 ** the waitress                                                         :FAV:
 ** NOT Tila Nguyen
@@ -347,7 +351,7 @@
 ** X-Art                                                                :FAV:
 * LP
 * Lulz
-** Cracked:FAV:
+** Cracked                                                              :FAV:
    :PROPERTIES:
    :url:      http://cracked.com
    :END:
@@ -365,7 +369,7 @@
    :url:      http://lparchive.org
    :END:
 ** Misconception Junction                                               :FAV:
-** Neatorama:FAV:
+** Neatorama                                                            :FAV:
    :PROPERTIES:
    :url:      http://neatorama.com
    :END:
@@ -373,10 +377,10 @@
 * Movie
 ** TODO Blade
 ** Dogma (1999)                                                         :FAV:
-** TODO Donnie Darko
+** TODO Donnie Darko (2001)
 ** Duplicity (2009)                                                     :FAV:
 ** Eternal Sunshine of the Spotless Mind (2004)                         :FAV:
-** Kirsten Dunst                                                        :FAV:
+*** Kirsten Dunst
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** Limitless (2011)                                              :jbopre:FAV:
@@ -396,7 +400,7 @@
 *** TODO The Good, The Bad, The Ugly (1966)
 ** Zardoz (1974)                                                        :FAV:
 * Music
-** "Weird Al" Yankovic                                                  :FAV:
+** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE ABBA                                                            :FAV:
 ** DONE Amorphis
 ** DONE Annihilator
@@ -406,6 +410,7 @@
 ** DONE Apocalyptica
 ** TODO Aqua
 ** DONE Avenged Sevenfold                                               :FAV:
+** TODO Avril Lavigne
 ** DONE Ayreon
 ** TODO Benjamin Zander
 ** DONE Bethzaida
@@ -413,12 +418,12 @@
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** DONE Bobaflex
-** TODO Bon Jovi
-** Buckethead                                                           :FAV:
+** DONE Bon Jovi
+** DONE Buckethead                                                      :FAV:
    :PROPERTIES:
    :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
    :END:
-*** Thanatopsis                                                         :FAV:
+*** Thanatopsis
 ** TODO Bullet for My Valentine
 ** DONE Bức Tường                                                       :FAV:
 ** DONE Carpenters
@@ -430,9 +435,9 @@
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
-** TODO Dream Theater
+** DONE Dream Theater
 ** DONE Dry Kill Logic
-** Elias Viljanen                                                       :FAV:
+** TODO Elias Viljanen                                                  :FAV:
 ** TODO Elvis Presley
 ** TODO Eminem
 *** TODO D12
@@ -448,44 +453,43 @@
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
 ** TODO Gorillaz
-** Guns N' Roses                                                        :FAV:
+** TODO Guns N' Roses                                                   :FAV:
 ** Gạt Tàn Đầy                                                          :FAV:
-** Hanoi Rocks                                                          :FAV:
-** DONE Hanoi Rocks
+** DONE Hanoi Rocks                                                     :FAV:
 ** TODO Helloween
-** HIM                                                                  :FAV:
+** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
 ** DONE Il Divo
 ** DONE Incubus
-** Iron Maiden                                                          :FAV:
+** DONE Iron Maiden                                                     :FAV:
 ** TODO Jimi Hendrix
 ** DONE Johann Sebastian Bach
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
+*** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
-** JT Bruce                                                             :FAV:
+** DONE JT Bruce                                                        :FAV:
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
-** Korpiklaani                                                          :FAV:
-** Kylähullut                                                           :FAV:
-** Lake of Tears                                                        :FAV:
+** DONE Korpiklaani                                                     :FAV:
+** DONE Kylähullut                                                      :FAV:
+** DONE Lake of Tears                                                   :FAV:
 ** DONE Led Zeppelin
 ** TODO Life of Agony
-** Linkin Park                                                          :FAV:
+** DONE Linkin Park                                                     :FAV:
 ** DONE M2M
-** MANOWAR                                                              :FAV:
+** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
-** Megadeth                                                             :FAV:
-** Metal Gear Solid                                                     :FAV:
+** DONE Megadeth                                                        :FAV:
+** TODO Metal Gear Solid
 ** DONE Metallica                                                       :FAV:
-** TODO MGS
 ** TODO Michael Bublé
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock
 ** DONE Muse
-** Mỹ Linh                                                              :FAV:
+** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
 ** DONE Nightwish                                                       :FAV:
@@ -499,29 +503,27 @@
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
 ** DONE Norther
-** Oleg Serkov                                                          :FAV:
+** DONE Oleg Serkov                                                     :FAV:
 ** DONE OneRepublic
 ** DONE Pantera
 ** DONE Peter McConnell
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Pink Floyd
-** Powerglove                                                           :FAV:
+** DONE Powerglove                                                      :FAV:
 ** DONE Red October soundtrack
 ** DONE Regina Spektor
-** Rhapsody                                                             :FAV:
+** DONE Rhapsody                                                        :FAV:
 ** DONE Richard Clayderman
 ** DONE Santana
 ** DONE Savatage
-** Scorpions                                                            :FAV:
-** TODO Scorpions
-** DONE Senses Fail
+** TODO Scorpions                                                       :FAV:
+** NOT Senses Fail
 ** TODO Sentenced
 ** DONE Shinedown
-** Simon & Garfunkel                                                    :FAV:
-** DONE Simon & Garfunkel
+** DONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia
-** Sixpence None the Richer                                             :FAV:
+** TODO Sixpence None the Richer                                        :FAV:
 ** TODO Slayer
 ** DONE Sonata Arctica                                                  :FAV:
 ** DONE Spice Girls
@@ -535,16 +537,15 @@
 ** DONE String Quartet tributes
 ** DONE Symphony X
 ** DONE System of a Down
-** Tarot                                                                :FAV:
-** Thanh Tùng                                                           :FAV:
-** The Beatles                                                          :FAV:
-** TODO The Beatles
+** DONE Tarot                                                           :FAV:
+** DONE Thanh Tùng                                                      :FAV:
+** TODO The Beatles                                                     :FAV:
 ** The Ink Spots                                                        :FAV:
 ** TODO They Might Be Giants
 ** DONE Thy Serpent
-** To/Die/For                                                           :FAV:
+** DONE To/Die/For                                                      :FAV:
 ** DONE Tokyo Jihen/Ringo Shiina
-** Tom Lehrer                                                           :FAV:
+** DONE Tom Lehrer                                                      :FAV:
 ** NOT Tool
 ** Trịnh Công Sơn                                                       :FAV:
 ** DONE Turisas
