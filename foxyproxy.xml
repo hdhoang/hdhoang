@@ -123,7 +123,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="true"
+            enabled="false"
             name="fb"
             pattern="*.facebook.com/*"
             isRegEx="false"
@@ -150,7 +150,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="true"
+            enabled="false"
             name="fbme"
             pattern="http://fb.me/*"
             isRegEx="false"
