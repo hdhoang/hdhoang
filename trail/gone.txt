@@ -1,21 +1,36 @@
 -*- mode: org -*-
 
-* z [3/8]
-- [X] bottom taskbar
-- [ ] ext
+* z [3/11]
+- [X] taskbar
+ - [X] bottom
+ - [X] large
+ - [X] pin
+- [X] game
+- [X] ext
 - [X] fx [2/2]
  - [X] channel
  - [X] profile [2/2]
   - [X] ad block
   - [X] vi
-- [ ] office
+- [X] office
+- [ ] recent
+- [X] startup
+ - [X] xmouse
+ - [X] pidgin
 - [X] tor
-- [ ] qwerty
-- [ ] unikey
-- [ ] utorrent bandwidth
+- [X] keyb
+ - [X] dvp
+ - [X] remapkey
+- [X] unikey
+- [X] utorrent bandwidth
+- [X] wifi
+ - [X] install
+ - [X] enable
+- [X] ym
 * syslinux [1/2]
 - [X] default z
 - [ ] hide prompt
 * c [1/2]
-- [ ] bu
+- [ ] bu [0/1]
+ - [ ] fsck
 - [X] aur
