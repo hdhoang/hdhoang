@@ -155,7 +155,7 @@ closeable[$d]
 closeablerule[$d]
 noborder[$d]
 noborderrule[$d]
-position=630,20
+position=430,300
 positionrule=3
 shortcut[$d]
 shortcutrule[$d]
