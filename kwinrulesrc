@@ -6,7 +6,7 @@ noborder=true
 noborderrule=2
 position=0,0
 positionrule=3
-shortcut=Alt+Shift+F1
+shortcut=Alt+Shift+F2
 shortcutrule=2
 size=930,950
 sizerule=3
@@ -55,7 +55,7 @@ noborder=true
 noborderrule=2
 position=0,300
 positionrule=3
-shortcut=Alt+Shift+F2
+shortcut=Alt+Shift+F1
 shortcutrule=2
 size[$d]
 sizerule[$d]
@@ -105,7 +105,7 @@ noborder=true
 noborderrule=2
 position=950,0
 positionrule=2
-shortcut=Alt+Shift+F4
+shortcut=Alt+Shift+F5
 shortcutrule=2
 size=345,1038
 sizerule=2
@@ -130,7 +130,7 @@ noborder[$d]
 noborderrule[$d]
 position[$d]
 positionrule[$d]
-shortcut=Alt+Shift+F5
+shortcut=Alt+Shift+F4
 shortcutrule=2
 size[$d]
 sizerule[$d]
