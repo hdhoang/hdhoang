@@ -1,10 +1,10 @@
 -*- mode: org -*-
-#+TODO: TODO(t) NOT(n) | DONE(d)
-#+TAGS: FAV(f)
+#+TODO: TODO(t) | DONE(d)
+#+TAGS: FAV(f) 1fav(1) not(n)
 
 * Biography
 ** Last Words                                                           :FAV:
-** Surely You're Joking, Mr. Feynman                                    :FAV:
+** Surely You're Joking, Mr. Feynman                                :sci:FAV:
 ** The World as I See It                                                :FAV:
 * Comic
 ** @Peanuttweeter                                                  :cute:FAV:
@@ -267,49 +267,49 @@
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
-** NOT Alison Angel
-** NOT Amara
+** Alison Angel                                                         :not:
+** Amara                                                                :not:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
-** NOT Anja.de
-** NOT Ann Angel
+** Anja.de                                                              :not:
+** Ann Angel                                                            :not:
 ** Anne                                                                 :FAV:
    :PROPERTIES:
    :url:      http://anneteenmodel.com
    :END:
-** NOT Aria Giovanni
+** Aria Giovanni                                                        :not:
 ** Ariel Rebel                                                          :FAV:
 ** Asians4You
 *** Alesha                                                              :FAV:
-*** NOT Anissa
-*** NOT Becky Jang
+*** Anissa                                                              :not:
+*** Becky Jang                                                          :not:
 *** Carolyn                                                             :FAV:
-*** NOT Claudia
+*** Claudia                                                             :not:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
-*** NOT Halle
+*** Halle                                                               :not:
 *** Iris                                                                :FAV:
-*** NOT Jamie
-*** NOT Jennifer Lee
-*** NOT Kaila Wang
-*** NOT Kelly
-*** NOT Kesara
-*** NOT Lincy Leaw
-*** NOT Misha
+*** Jamie                                                               :not:
+*** Jennifer Lee                                                        :not:
+*** Kaila Wang                                                          :not:
+*** Kelly                                                               :not:
+*** Kesara                                                              :not:
+*** Lincy Leaw                                                          :not:
+*** Misha                                                               :not:
 *** Monica                                                              :FAV:
-*** NOT Nancy Ho
-*** NOT Paris
+*** Nancy Ho                                                            :not:
+*** Paris                                                               :not:
 *** Petchara                                                            :FAV:
 *** Regina                                                              :FAV:
-*** NOT Reina
-*** NOT Salina
-*** NOT Sandra Mar
-*** NOT Sydney
-*** NOT Tricia
+*** Reina                                                               :not:
+*** Salina                                                              :not:
+*** Sandra Mar                                                          :not:
+*** Sydney                                                              :not:
+*** Tricia                                                              :not:
 ** Bailey Kline                                                         :FAV:
-** NOT DDD Brandy
+** DDD Brandy                                                           :not:
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
 ** Francesca Dani                                                       :FAV:
@@ -325,26 +325,26 @@
    :PROPERTIES:
    :url:      http://josiemodel.ca
    :END:
-** NOT Kari Sweets
+** Kari Sweets                                                          :not:
 ** Katie Fey/Jenya D                                                    :FAV:
    :PROPERTIES:
    :url:      http://katiefey.com
    :END:
 ** Kirsten Dunst                                                        :FAV:
-** NOT Kristina Fey
+** Kristina Fey                                                         :not:
 ** lambda                                                               :FAV:
-** NOT Marlina
-** NOT Missy Model
-** NOT Nicole
+** Marlina                                                              :not:
+** Missy Model                                                          :not:
+** Nicole                                                               :not:
 ** Nikki                                                                :FAV:
-** NOT Sasha Grey
-** NOT Score Group
+** Sasha Grey                                                           :not:
+** Score Group                                                          :not:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
-** NOT Tawnee Stone
+** Tawnee Stone                                                         :not:
 ** the waitress                                                         :FAV:
-** NOT Tila Nguyen
+** Tila Nguyen                                                          :not:
 ** TV girl                                                              :FAV:
 ** Victoria                                                             :FAV:
 ** Watch 4 Beauty                                                       :FAV:
@@ -381,7 +381,8 @@
 * Movie
 ** TODO Blade
 ** DONE Dogma (1999)                                                    :FAV:
-** TODO Donnie Darko (2001)
+** DONE Donnie Darko (2001)                                             :FAV:
+*** Gretchen
 ** DONE Duplicity (2009)                                                :FAV:
 ** DONE Eternal Sunshine of the Spotless Mind (2004)                    :FAV:
 *** Kirsten Dunst
@@ -417,12 +418,12 @@
 ** DONE Apocalyptica
 ** DONE Aqua
 ** DONE Avenged Sevenfold                                               :FAV:
-** TODO Avril Lavigne
-** DONE Ayreon
+** DONE Avril Lavigne                                                   :FAV:
+** DONE Ayreon :1fav:
 ** TODO Benjamin Zander
 ** DONE Bethzaida
-** TODO Bionic Commando
-*** TODO Rearmed
+** DONE Bionic Commando :FAV:
+*** Rearmed                                                             :not:
 ** DONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
 ** DONE Bliss(This)
@@ -439,7 +440,7 @@
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                               :FAV:
 ** TODO Chumbawamba
-** TODO Cinderella
+** DONE Cinderella :1fav:
 ** DONE Céline Dion                                                     :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
@@ -485,22 +486,22 @@
 ** DONE Led Zeppelin
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
-** DONE M2M
+** DONE M2M :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
 ** DONE Megadeth                                                        :FAV:
-** TODO Metal Gear Solid
-*** DONE MGS                                                            :FAV:
-**** NOT Twin Snakes
-*** TODO MGS2
-*** TODO MGS3
-*** TODO MGS4
+** DONE Metal Gear Solid                                                :FAV:
+*** DONE MGS
+**** Twin Snakes                                                        :not:
+*** DONE MGS2
+*** DONE MGS3
+*** DONE MGS4
 ** DONE Metallica                                                       :FAV:
 ** TODO Michael Bublé
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
-** DONE Michael Learns to Rock
+** DONE Michael Learns to Rock :1fav:
 ** DONE Muse
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
@@ -516,7 +517,7 @@
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
 ** DONE Norther
-** TODO Nuclear Assault
+** DONE Nuclear Assault
 ** DONE Oleg Serkov                                                     :FAV:
 ** DONE OneRepublic
 ** DONE Pantera
@@ -532,7 +533,7 @@
 ** DONE Santana
 ** DONE Savatage
 ** TODO Scorpions                                                       :FAV:
-** NOT Senses Fail
+** Senses Fail                                                          :not:
 ** TODO Sentenced
 ** DONE Shinedown
 ** DONE Simon & Garfunkel                                               :FAV:
@@ -554,14 +555,14 @@
 ** DONE Tarot                                                           :FAV:
 ** DONE Thanh Tùng                                                      :FAV:
 ** TODO The Beatles                                                     :FAV:
-** The Corrs                                                            :FAV:
+** DONE The Corrs                                                       :FAV:
 ** The Ink Spots                                                        :FAV:
 ** TODO They Might Be Giants
-** DONE Thy Serpent
+** DONE Thy Serpent                                                    :1fav:
 ** DONE To/Die/For                                                      :FAV:
-** DONE Tokyo Jihen/Ringo Shiina
+** DONE Tokyo Jihen/Ringo Shiina                                        :FAV:
 ** DONE Tom Lehrer                                                      :FAV:
-** NOT Tool
+** Tool                                                                 :not:
 ** Trịnh Công Sơn                                                       :FAV:
 ** DONE Turisas
 ** DONE Warmen
@@ -569,9 +570,10 @@
 ** DONE Wintersun
 ** TODO Within Temptation
 ** DONE Wolfgang Amadeus Mozart
-*** DONE Requiem in D minor K626, Karajan 1962
-** DONE X/X JAPAN
+*** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
+** DONE X/X JAPAN                                                      :1fav:
 ** TODO Yngwie J. Malmsteen
+** TODO Zero-Project                                                    :FAV:
 * Person
 ** Aaron Toponce                                                   :free:FAV:
    :PROPERTIES:
