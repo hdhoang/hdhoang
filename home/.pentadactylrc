@@ -5,7 +5,6 @@ set editor='emacsclient +<line> <file>'
 set guioptions+=c
 set ssli=command
 set hintkeys=$.aoeupykxidhtnmz
-set hinttags+=[alt]:not([alt=\'\']),[title]
 set hinttimeout=1000
 set history=5
 set hlfind
