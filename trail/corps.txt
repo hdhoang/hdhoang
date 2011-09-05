@@ -263,6 +263,8 @@
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
 * Girl                                                                   :ns:
+** Latexotica.com                                                       :not:
+** BiancaBeauchamp                                                      :FAV:
 ** (y)ape                                                               :FAV:
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
@@ -312,6 +314,7 @@
 ** DDD Brandy                                                           :not:
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
+*** Mona
 ** Francesca Dani                                                       :FAV:
 ** Front
 *** Mellisa Clarke                                                      :FAV:
@@ -379,6 +382,7 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
+** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Blade
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
@@ -419,10 +423,10 @@
 ** DONE Aqua
 ** DONE Avenged Sevenfold                                               :FAV:
 ** DONE Avril Lavigne                                                   :FAV:
-** DONE Ayreon :1fav:
+** DONE Ayreon                                                         :1fav:
 ** TODO Benjamin Zander
 ** DONE Bethzaida
-** DONE Bionic Commando :FAV:
+** DONE Bionic Commando                                                 :FAV:
 *** Rearmed                                                             :not:
 ** DONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
@@ -440,7 +444,7 @@
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                               :FAV:
 ** TODO Chumbawamba
-** DONE Cinderella :1fav:
+** DONE Cinderella                                                     :1fav:
 ** DONE Céline Dion                                                     :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
@@ -486,7 +490,7 @@
 ** DONE Led Zeppelin
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
-** DONE M2M :1fav:
+** DONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
 ** DONE Megadeth                                                        :FAV:
@@ -501,12 +505,13 @@
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
-** DONE Michael Learns to Rock :1fav:
+** DONE Michael Learns to Rock                                         :1fav:
 ** DONE Muse
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
 ** DONE Nightwish                                                       :FAV:
+*** DONE Tarja Turunen
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
 *** DONE FF VIII
@@ -529,13 +534,14 @@
 ** DONE Red October soundtrack
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                        :FAV:
+*** TODO Luca Turilli
 ** DONE Richard Clayderman
 ** DONE Santana
 ** DONE Savatage
-** TODO Scorpions                                                       :FAV:
-** Senses Fail                                                          :not:
+** DONE Scorpions                                                       :FAV:
+** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
-** DONE Shinedown
+** DONE Shinedown                                                      :1fav:
 ** DONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia
 ** TODO Sixpence None the Richer                                        :FAV:
@@ -544,6 +550,7 @@
 ** DONE Spice Girls
 ** DONE Starcraft sound
 ** DONE Stratovarius                                                    :FAV:
+*** DONE Timo Tolkki
 ** DONE String Quartet tributes                                         :FAV:
 *** DONE Evanescene                                                     :FAV:
 *** DONE Lady Gaga                                                      :FAV:
