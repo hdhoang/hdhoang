@@ -2,6 +2,7 @@
 <foxyproxy
     mode="patterns"
     selectedTabIndex="0"
+    toolbaricon="true"
     toolsMenu="false"
     contextMenu="false"
     advancedMenus="false"
@@ -93,7 +94,7 @@
         includeInCycle="true"
         color="green"
         proxyDNS="true"
-        noInternalIPs="false"
+        noInternalIPs="true"
       ><matches
         ><match
             enabled="true"
@@ -123,7 +124,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="false"
+            enabled="true"
             name="fb"
             pattern="*.facebook.com/*"
             isRegEx="false"
@@ -150,7 +151,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="false"
+            enabled="true"
             name="fbme"
             pattern="http://fb.me/*"
             isRegEx="false"
