@@ -263,8 +263,6 @@
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
 * Girl                                                                   :ns:
-** Latexotica.com                                                       :not:
-** BiancaBeauchamp                                                      :FAV:
 ** (y)ape                                                               :FAV:
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
@@ -311,6 +309,13 @@
 *** Sydney                                                              :not:
 *** Tricia                                                              :not:
 ** Bailey Kline                                                         :FAV:
+** BiancaBeauchamp                                                      :FAV:
+** Czech-Babes.com
+*** Marie                                                               :not:
+*** Olivia                                                              :FAV:
+*** Petra                                                               :FAV:
+*** Stanislava                                                          :not:
+*** Zuzana                                                              :not:
 ** DDD Brandy                                                           :not:
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
@@ -336,8 +341,12 @@
 ** Kirsten Dunst                                                        :FAV:
 ** Kristina Fey                                                         :not:
 ** lambda                                                               :FAV:
+** Latexotica.com                                                       :FAV:
 ** Marlina                                                              :not:
+** Met-Art.com                                                          :FAV:
+*** Anna
 ** Missy Model                                                          :not:
+** MPLstudios.com
 ** Nicole                                                               :not:
 ** Nikki                                                                :FAV:
 ** Sasha Grey                                                           :not:
@@ -348,7 +357,9 @@
 ** Tawnee Stone                                                         :not:
 ** the waitress                                                         :FAV:
 ** Tila Nguyen                                                          :not:
+** Trang
 ** TV girl                                                              :FAV:
+** Twistys.com
 ** Victoria                                                             :FAV:
 ** Watch 4 Beauty                                                       :FAV:
 ** X-Art                                                                :FAV:
@@ -466,7 +477,7 @@
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
-** TODO Guns N' Roses                                                   :FAV:
+** DONE Guns N' Roses                                                   :FAV:
 ** Gạt Tàn Đầy                                                          :FAV:
 ** DONE Hanoi Rocks                                                     :FAV:
 ** TODO Helloween
@@ -476,7 +487,7 @@
 ** DONE Incubus
 ** DONE Iron Maiden                                                     :FAV:
 ** TODO Jimi Hendrix
-** DONE Johann Sebastian Bach
+** TODO Johann Sebastian Bach
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
@@ -502,6 +513,9 @@
 *** DONE MGS4
 ** DONE Metallica                                                       :FAV:
 ** TODO Michael Bublé
+** Nhạc đỏ
+*** Tuổi trẻ thế hệ Bác Hồ
+** TODO Train
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
@@ -574,6 +588,7 @@
 ** DONE Turisas
 ** DONE Warmen
 ** TODO White Lion
+** TODO Whitesnake
 ** DONE Wintersun
 ** TODO Within Temptation
 ** DONE Wolfgang Amadeus Mozart
