@@ -12,7 +12,10 @@
       basedir="un-utm_location_bar"
       modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      updateAvailable="false"
+      lastUpdateCheck="1311227931000"
       installurl="http://userscripts.org/scripts/source/93825.user.js"
+      updateurl="http://userscripts.org/scripts/source/93825.meta.js"
     >
 		<Include
       >http://*utm_*</Include
@@ -33,7 +36,10 @@
       basedir="youtube_autopause"
       modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      updateAvailable="false"
+      lastUpdateCheck="1311227931000"
       installurl="http://userscripts.org/scripts/source/73105.user.js"
+      updateurl="http://userscripts.org/scripts/source/73105.meta.js"
     >
 		<Include
       >http://www.youtube.com/watch?*</Include
@@ -51,7 +57,10 @@
       basedir="disable_video_autoplay"
       modified="1311227931000"
       dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      updateAvailable="false"
+      lastUpdateCheck="1311227931000"
       installurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js"
+      updateurl="http://diveintohtml5.org/examples/disable_video_autoplay.user.js"
     >
 		<Include
       >*</Include
