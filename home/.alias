@@ -112,5 +112,8 @@ function favm() {
     # not using alias to keep emacs hili sane
     cd $fav/Music/
     rm *jpg
-    prv "tr/ /_/; s/^''/_/;s/''/-/g;tr/\"*:<>/-/;s/\?//g; s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/;s/\[dialogue\]/(dialogue)/;s/\[untitled\]/(untitled)/" *
+    prv "tr/ /_/;
+         s/^''/_/;s/''/-/g;
+         tr/\"*:<>/-/;s/\?//g;
+         s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/;s/\[dialogue\]/(dialogue)/;s/\[untitled\]/(untitled)/" *
 }
