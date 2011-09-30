@@ -103,11 +103,11 @@ alias mi=mediainfo
 alias ti=gtorrentviewer
 alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && 7z -y -o/mnt/roxer x ~/Public/mirror/rockbox-ipodnano1g.zip'
 alias dum='dumx -v ~/Music -type d|cut -c 9-|x -kX ls -1'
-alias favd='ls -1 $fav/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -di'
-alias fava='ls -1 $fav/Music | cut -d @ -f 1 | uniq -c | sort -n'
-alias favl='ls -1 $fav/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c | sort -n'
+alias favd='ls $fav/Music |awk "{FS=\"_\\\[\"; print \$1}" | uniq -di'
+alias fava='ls $fav/Music | cut -d @ -f 1 | uniq -c | sort -n'
+alias favl='ls $fav/Music |awk "{FS=\"\\\[|\\\]\"; print \$2}" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $fav/**/*; rs --delete $fav $pool'
-alias favf='rm /mnt/roxer/m/*; ls -1 $fav/Music/ | shuf -n 200 | rs --files-from=- --no-xattrs $fav/Music /mnt/roxer/m/'
+alias favf='rm /mnt/roxer/m/*; ls $fav/Music/ | shuf -n 200 | rs --files-from=- --no-xattrs $fav/Music /mnt/roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
     cd $fav/Music/
