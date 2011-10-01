@@ -393,15 +393,15 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
-** TODO Europe Trip
-** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Blade
+** TODO Colossus: The Forbin Project                                 :jbopre:
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
 ** DONE Duplicity (2009)                                                :FAV:
 ** DONE Eternal Sunshine of the Spotless Mind (2004)                    :FAV:
 *** Kirsten Dunst
+** TODO Europe Trip
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
@@ -514,9 +514,6 @@
 *** DONE MGS4
 ** DONE Metallica                                                       :FAV:
 ** TODO Michael Bublé
-** Nhạc đỏ
-*** Tuổi trẻ thế hệ Bác Hồ
-** TODO Train
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
@@ -525,6 +522,8 @@
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
+** Nhạc đỏ
+*** Tuổi trẻ thế hệ Bác Hồ
 ** DONE Nightwish                                                       :FAV:
 *** DONE Tarja Turunen
 ** TODO Nirvana
@@ -564,6 +563,7 @@
 ** DONE Sonata Arctica                                                  :FAV:
 ** DONE Spice Girls
 ** DONE Starcraft sound
+** TODO Steve Vai
 ** DONE Stratovarius                                                    :FAV:
 *** DONE Timo Tolkki
 ** DONE String Quartet tributes                                         :FAV:
@@ -585,6 +585,7 @@
 ** DONE Tokyo Jihen/Ringo Shiina                                        :FAV:
 ** DONE Tom Lehrer                                                      :FAV:
 ** Tool                                                                 :not:
+** TODO Train
 ** Trịnh Công Sơn                                                       :FAV:
 ** DONE Turisas
 ** DONE Warmen
@@ -603,10 +604,6 @@
    :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
    :END:
 ** Bradley M. Kuhn                                          :free:pgnome:FAV:
-** Luminous                                             :game:commentary:FAV:
-   :PROPERTIES:
-   :url:      https://youtube.com/user/LuminousStudio
-   :END:
 ** Charlie Stross                                                       :FAV:
 ** Dan Kaminsky                                                         :FAV:
 ** Dave Winer                                                           :FAV:
@@ -623,6 +620,10 @@
    :END:
 ** Jason Kottke                                                         :FAV:
 ** Jason Scott                                                 :free:net:FAV:
+** Luminous                                             :game:commentary:FAV:
+   :PROPERTIES:
+   :url:      https://youtube.com/user/LuminousStudio
+   :END:
 ** Mark Pilgrim                                    :free:code:net:whatwg:FAV:
    :PROPERTIES:
    :url:     http://firehose.diveintomark.org
