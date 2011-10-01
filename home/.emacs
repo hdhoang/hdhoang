@@ -104,7 +104,8 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#fcf4dc" :foreground "#52676f" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
  '(completions-common-part ((t (:inherit default :foreground "red"))))
- '(diredp-ignored-file-name ((t (:foreground "#bebebe"))))
+ '(diredp-compressed-file-suffix ((t (:foreground "#7b68ee"))))
+ '(diredp-ignored-file-name ((t (:foreground "#aaaaaa"))))
  '(isearch ((((class color) (min-colors 88) (background light)) (:background "black" :foreground "white"))))
  '(show-paren-match ((((class color) (background light)) (:background "azure2")))))
 
