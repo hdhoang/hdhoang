@@ -3,7 +3,8 @@ keycode 133 = BackSpace Delete
 keycode 108 = Escape
 keycode 37  = Return
 keycode 135 = Tab
-
+keycode 166 = XF86AudioPlay
+keycode 167 = XF86AudioNext
 keycode 26  = period greater ellipsis U203D ellipsis U203D
 
 !dvp
