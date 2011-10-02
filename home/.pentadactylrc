@@ -84,4 +84,6 @@ style -n "lparchive" lparchive.org body { width: auto !important }
 style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
 
 style -n "cracked" cracked.com .Body, .body { padding-left: 0 !important }
+
+style -n "lastfm popover" last.fm iframe {height: 100px !important}
 " vim: set ft=pentadactyl:
