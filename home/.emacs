@@ -61,7 +61,6 @@
  '(electric-layout-mode t)
  '(electric-pair-mode t)
  '(font-use-system-font t)
- '(global-linum-mode t)
  '(ibus-python-shell-command-name "python2")
  '(ido-create-new-buffer (quote always))
  '(ido-enable-flex-matching t)
