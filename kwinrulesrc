@@ -15,7 +15,7 @@ skipswitcherrule=2
 types=1
 windowrole=browser
 windowrolematch=1
-wmclass=minefield|firefox|nightly
+wmclass=minefield|firefox|nightly|ux
 wmclasscomplete=false
 wmclassmatch=3
 
