@@ -22,28 +22,3 @@ setopt dvorak
 # bindkey    "^[[3;2~"         delete-char
 bindkey -r ',.'
 bindkey '^ ' globalias
-### ErgoEmacs
-bindkey -N ergoemacs emacs
-bindkey -A ergoemacs main
-bindkey "\eh" backward-char
-bindkey "\en" forward-char
-bindkey "\ec" up-line-or-search
-bindkey "\et" down-line-or-search
-bindkey "\ed" beginning-of-line
-bindkey "\eD" end-of-line
-bindkey "\eg" backward-word
-bindkey "\er" forward-word
-bindkey "\ei" kill-line
-bindkey "\e." backward-kill-word
-bindkey "\ep" kill-word
-bindkey "\ee" backward-delete-char
-bindkey "\eu" delete-char
-bindkey "^z" undo
-bindkey "\eq" kill-region
-bindkey "\ej" copy-region-as-kill
-bindkey "\ek" yank
-bindkey "\eS" history-incremental-search-backward
-bindkey "\es" history-incremental-search-forward
-bindkey "^q" quoted-insert
-bindkey "\ea" execute-named-cmd
-bindkey "^o" accept-and-hold
