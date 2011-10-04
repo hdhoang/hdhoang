@@ -4,6 +4,3 @@
 [submodule "emacs-dev-kit"]
 	path = emacs-dev-kit
 	url = https://github.com/bbatsov/emacs-dev-kit.git
-[submodule "ergoemacs"]
-	path = ergoemacs
-	url = https://github.com/emacsmirror/ergoemacs.git
