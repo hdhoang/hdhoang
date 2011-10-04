@@ -1,9 +1,6 @@
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
 	url = git://github.com/nicoulaj/zsh-syntax-highlighting.git
-[submodule "emacs-color-theme-solarized"]
-	path = emacs-color-theme-solarized
-	url = https://github.com/sellout/emacs-color-theme-solarized.git
 [submodule "emacs-dev-kit"]
 	path = emacs-dev-kit
 	url = https://github.com/bbatsov/emacs-dev-kit.git
