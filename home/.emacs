@@ -8,7 +8,10 @@
 (defalias 'rb 'revert-buffer)
 (defalias 'dabbrev-expand 'hippie-expand)
 
+(load "~/.emacs.d/init")
+
 (defun hdh/revert-some-ergoemacs ()
+  (menu-bar-mode t)
   (tool-bar-mode t)
 
   (global-set-key (kbd "C-x o") 'find-file-at-point)
