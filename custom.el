@@ -19,6 +19,7 @@
 (autoload 'magit-status "magit" nil t)
 (global-set-key (kbd "C-c m") 'magit-status)
 
+(remove-hook 'text-mode-hook 'turn-on-flyspell)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
