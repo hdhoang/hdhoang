@@ -27,7 +27,7 @@
   (global-set-key (kbd "M-q") 'fill-paragraph)
   (global-set-key (kbd "M-;") 'comment-dwim))
 (add-hook 'ergoemacs-mode-hook 'hdh/revert-some-ergoemacs)
-(load "~/.emacs.d/ergoemacs/site-lisp/site-start")
+(load "~/Public/hdhoang-misc/ergoemacs/site-lisp/site-start")
 (defun hdh/ergoemacs-minibuffer-keys ()
   (local-set-key ergoemacs-previous-line-key 'previous-history-element)
   (local-set-key ergoemacs-next-line-key 'next-history-element))
