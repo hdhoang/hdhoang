@@ -2,6 +2,7 @@
 
 (defalias 'rb 'revert-buffer)
 (defalias 'dabbrev-expand 'hippie-expand)
+(global-set-key (kbd "C-\\") 'toggle-input-method)
 
 (setq frame-title-format "%b")
 
@@ -23,8 +24,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default-input-method "vietnamese-telex")
+ '(indicate-empty-lines t)
+ '(magit-remote-ref-format (quote remote-slash-branch))
  '(pkgbuild-user-mail-address "arch@zahe.me")
- '(user-full-name "Hоàng Đức Hiếu"))
+ '(user-full-name "Hоàng Đức Hiếu")
+ '(vc-follow-symlinks t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
