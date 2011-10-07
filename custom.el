@@ -26,6 +26,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default-input-method "vietnamese-telex")
+ '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
  '(magit-remote-ref-format (quote remote-slash-branch))
  '(pkgbuild-user-mail-address "arch@zahe.me")
