@@ -6,7 +6,7 @@
 ** Last Words                                                           :FAV:
 ** Surely You're Joking, Mr. Feynman                                :sci:FAV:
 ** The World as I See It                                                :FAV:
-* Comic
+* Comic
 ** @Peanuttweeter                                                  :cute:FAV:
    :PROPERTIES:
    :url:      http://peanutweeter.com
@@ -35,7 +35,7 @@
    :PROPERTIES:
    :url:      http://bunicomic.com
    :END:
-** Buttersafe                                                  :3rd:cute:FAV:
+** Buttersafe                                              :sad:3rd:cute:FAV:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
    :url:      http://buttersafe.com
@@ -58,10 +58,7 @@
    :url:      http://cad-comic.com
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=a70e4f717481286c6388365cc079742c&_render=rss
    :END:
-** Cyanide and Happiness                                    :3rd:ns:sick:FAV:
-   :PROPERTIES:
-   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=9b91d1900e14d1caff163aa6fa1b24bd&_render=rss
-   :END:
+** Cyanide and Happiness                                        :ns:sick:FAV:
 ** Dinosaur Comics                                       :title:cute:phi:FAV:
    :PROPERTIES:
    :url:      http://qwantz.com
@@ -393,6 +390,7 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
+** TODO Big Trouble in Little China
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** DONE Dogma (1999)                                                    :FAV:
@@ -403,9 +401,11 @@
 *** Kirsten Dunst
 ** TODO Europe Trip
 ** TODO Ghostbusters
+** TODO Hot Shots, Part Deux!                                            :tv:
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
 ** TODO Malna (2000)
+** TODO Melancholia
 ** DONE Mr. Nobody                                               :jbopre:FAV:
 ** DONE Outrageous Fortune (1987)                                       :FAV:
    :PROPERTIES:
@@ -420,19 +420,20 @@
 *** TODO A Fistful of Dollars (1964)
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
+** TODO The Men Who Stare at Goats                                       :tv:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE ABBA                                                            :FAV:
-** DONE Aerosmith
+** DONE Aerosmith                                                      :1fav:
 ** DONE Amon Amarth
 ** DONE Amorphis
 ** DONE Annihilator
 ** DONE Anthrax
 ** DONE Antonín Dvorák
 *** DONE The Masterworks
-** DONE Apocalyptica
-** DONE Aqua
+** DONE Apocalyptica                                                    :FAV:
+** DONE Aqua                                                           :1fav:
 ** DONE Avenged Sevenfold                                               :FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
@@ -450,17 +451,19 @@
    :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
    :END:
 *** Thanatopsis
-** DONE Bullet for My Valentine
+** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
-** DONE Carpenters
+** DONE Carpenters                                                      :FAV:
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                               :FAV:
 ** TODO Chumbawamba
 ** DONE Cinderella                                                     :1fav:
+** TODO Crowded House
 ** DONE Céline Dion                                                     :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
+** TODO Dr. Dre
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
 ** DONE Elias Viljanen                                                  :FAV:
@@ -478,9 +481,11 @@
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
+** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** Gạt Tàn Đầy                                                          :FAV:
 ** DONE Hanoi Rocks                                                     :FAV:
+** TODO Harvey Danger                                                   :FAV:
 ** TODO Helloween
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
@@ -519,6 +524,7 @@
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock                                         :1fav:
 ** DONE Muse
+** TODO My Chemical Romance
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
@@ -545,6 +551,7 @@
 *** DONE Grim Fandango Additional
 ** TODO Pink Floyd
 ** DONE Powerglove                                                      :FAV:
+** TODO Rage Against the Machine
 ** DONE Red October soundtrack
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                        :FAV:
