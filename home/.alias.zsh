@@ -1,4 +1,6 @@
 # -*- mode: sh -*-
+alias -s jpg=gwenview
+alias -s jpeg=gwenview
 alias -s cbr=okular
 alias -s cbz=okular
 alias -s pdf=okular
