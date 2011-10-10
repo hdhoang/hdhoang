@@ -177,6 +177,15 @@
             isMultiLine="false"
             caseSensitive="false"
             fromSubscription="false"
+        /><match
+            enabled="true"
+            name="blogspot"
+            pattern="http://*.blogspot.com/*"
+            isRegEx="false"
+            isBlackList="false"
+            isMultiLine="false"
+            caseSensitive="false"
+            fromSubscription="false"
         /></matches
       ><autoconf
           url=""
