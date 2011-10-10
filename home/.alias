@@ -49,7 +49,6 @@ alias fr='free -m'
 alias t='tail -f'
 
 # network info
-alias whois='gwhois'
 alias nh='sudo nethogs'
 port_mapping=(
 587 tcp 465 tcp # tor
