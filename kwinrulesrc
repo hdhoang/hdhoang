@@ -109,8 +109,8 @@ shortcut[$d]
 shortcutrule[$d]
 size=345,1038
 sizerule=2
-skipswitcher=true
-skipswitcherrule=2
+skipswitcher[$d]
+skipswitcherrule[$d]
 types=1
 windowrole=conversation
 windowrolematch=1
