@@ -105,8 +105,8 @@ noborder=true
 noborderrule=2
 position=950,0
 positionrule=2
-shortcut=Alt+Shift+F5
-shortcutrule=2
+shortcut[$d]
+shortcutrule[$d]
 size=345,1038
 sizerule=2
 skipswitcher=true
@@ -157,8 +157,8 @@ noborder[$d]
 noborderrule[$d]
 position=640,405
 positionrule=3
-shortcut[$d]
-shortcutrule[$d]
+shortcut=Alt+Shift+F5
+shortcutrule=2
 size[$d]
 sizerule[$d]
 skipswitcher[$d]
