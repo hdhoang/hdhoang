@@ -1,12 +1,12 @@
 -*- mode: org -*-
-#+TODO: TODO(t) | DONE(d)
+#+TODO: TODO(t) | DONE(d) GONE(g)
 #+TAGS: FAV(f) 1fav(1) not(n)
 
 * Biography
 ** Last Words                                                           :FAV:
 ** Surely You're Joking, Mr. Feynman                                :sci:FAV:
 ** The World as I See It                                                :FAV:
-* Comic
+* Comic
 ** @Peanuttweeter                                                  :cute:FAV:
    :PROPERTIES:
    :url:      http://peanutweeter.com
@@ -109,7 +109,7 @@
    :url:      http://oglaf.com
    :END:
 ** Optipess                                                        :sick:FAV:
-** Pants Are Overrated                                             :game:FAV:
+** GONE Pants Are Overrated                                        :game:FAV:
    :PROPERTIES:
    :url:      http://pantsareoverrated.com
    :END:
@@ -143,7 +143,7 @@
    :PROPERTIES:
    :url:      http://savagechickens.com
    :END:
-** Sexy Losers                                         :ns:end:cute:sick:FAV:
+** GONE Sexy Losers                                    :ns:end:cute:sick:FAV:
    :PROPERTIES:
    :url:      http://sexylosers.com
    :cont:     [[the thin H line]]
@@ -202,23 +202,23 @@
    :url:      https://xkcd.com
    :END:
 * Fiction
-** Animorphs                                                            :FAV:
+** DONE Animorphs                                                       :FAV:
    :PROPERTIES:
    :btih:     04f439a9eac3b86636beff502590484945b57d74
    :END:
-** Everworld                                                            :FAV:
+** DONE Everworld                                                       :FAV:
 ** Harry Potter and the Methods of Rationality                          :FAV:
 ** Ishmael                                                              :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
-** Lost Girls                                                           :FAV:
+** DONE Lost Girls                                                      :FAV:
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
-** Lộc Đỉnh Ký                                                          :FAV:
-** Slaughterhouse-Five                                                  :FAV:
-** The Last Ring-bearer                                                 :FAV:
+** DONE Lộc Đỉnh Ký                                                     :FAV:
+** DONE Slaughterhouse-Five                                             :FAV:
+** DONE The Last Ring-bearer                                            :FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
    :background: http://ymarkov.livejournal.com/273409.html
@@ -230,7 +230,7 @@
    :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
    :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewtopic.php?f=29
    :END:
-** Tom Clancy
+** DONE Tom Clancy
 *** Red Storm Rising                                                    :FAV:
 ** tvtropes.org                                                         :FAV:
 * Game
@@ -239,7 +239,7 @@
    :PROPERTIES:
    :url:      http://crawl.develz.org
    :END:
-** TODO FF VI
+** FF VI
 ** FreeSpace                                                  :space:sim:FAV:
    :PROPERTIES:
    :lp:       http://lparchive.org/Descent-Freespace/
@@ -248,14 +248,14 @@
    :PROPERTIES:
    :lp:       http://lparchive.org/FreeSpace-2-Open/
    :END:
-** Grim Fandango                                              :adventure:FAV:
+** DONE Grim Fandango                                         :adventure:FAV:
    :PROPERTIES:
    :lp:       http://lparchive.org/Grim-Fandango-%28Video%29/
    :END:
 ** Homeworld                                                  :space:rts:FAV:
 ** Homeworld 2                                                :space:rts:FAV:
 ** nethack                                                    :roguelike:FAV:
-** Nexus: The Jupiter Incident                                :space:rts:FAV:
+** DONE Nexus: The Jupiter Incident                           :space:rts:FAV:
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
@@ -401,7 +401,6 @@
 *** Kirsten Dunst
 ** TODO Europe Trip
 ** TODO Ghostbusters
-** TODO Hot Shots, Part Deux!                                            :tv:
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
 ** TODO Malna (2000)
@@ -424,8 +423,9 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
-** DONE ABBA                                                            :FAV:
+** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
+** TODO Alice Cooper
 ** DONE Amon Amarth
 ** DONE Amorphis
 ** DONE Annihilator
@@ -441,7 +441,7 @@
 ** DONE Bethzaida
 ** DONE Bionic Commando                                                 :FAV:
 *** Rearmed                                                             :not:
-** DONE Black Sabbath                                                   :FAV:
+** GONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** DONE Bobaflex
@@ -453,7 +453,7 @@
 *** Thanatopsis
 ** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
-** DONE Carpenters                                                      :FAV:
+** GONE Carpenters                                                      :FAV:
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                               :FAV:
 ** TODO Chumbawamba
@@ -484,7 +484,7 @@
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** Gạt Tàn Đầy                                                          :FAV:
-** DONE Hanoi Rocks                                                     :FAV:
+** GONE Hanoi Rocks                                                     :FAV:
 ** TODO Harvey Danger                                                   :FAV:
 ** TODO Helloween
 ** DONE HIM                                                             :FAV:
@@ -502,16 +502,16 @@
 ** DONE Kalmah
 ** TODO Kamelot
 ** DONE Korpiklaani                                                     :FAV:
-** DONE Kylähullut                                                      :FAV:
+** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
 ** DONE Led Zeppelin
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
-** DONE M2M                                                            :1fav:
+** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
 ** DONE Megadeth                                                        :FAV:
-** DONE Metal Gear Solid                                                :FAV:
+** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
 *** DONE MGS2
@@ -522,7 +522,7 @@
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
-** DONE Michael Learns to Rock                                         :1fav:
+** GONE Michael Learns to Rock                                         :1fav:
 ** DONE Muse
 ** TODO My Chemical Romance
 ** DONE Mỹ Linh                                                         :FAV:
@@ -551,19 +551,22 @@
 *** DONE Grim Fandango Additional
 ** TODO Pink Floyd
 ** DONE Powerglove                                                      :FAV:
+   :PROPERTIES:
+   :url:      http://vgmetal.com
+   :END:
 ** TODO Rage Against the Machine
-** DONE Red October soundtrack
+** GONE Red October soundtrack
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                        :FAV:
 *** TODO Luca Turilli
 ** DONE Richard Clayderman
 ** DONE Santana
-** DONE Savatage
+** GONE Savatage
 ** DONE Scorpions                                                       :FAV:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
-** DONE Simon & Garfunkel                                               :FAV:
+** GONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia
 ** TODO Sixpence None the Richer                                        :FAV:
 ** TODO Slayer
@@ -578,11 +581,10 @@
 *** DONE Lady Gaga                                                      :FAV:
 *** DONE Senses Fail                                                    :FAV:
 *** DONE Shinedown                                                      :FAV:
-** DONE String Quartet tributes
 ** DONE Symphony X
 ** DONE System of a Down
 ** DONE Tarot                                                           :FAV:
-** DONE Thanh Tùng                                                      :FAV:
+** GONE Thanh Tùng                                                      :FAV:
 ** TODO The Beatles                                                     :FAV:
 ** DONE The Corrs                                                       :FAV:
 ** The Ink Spots                                                        :FAV:
@@ -590,7 +592,7 @@
 ** DONE Thy Serpent                                                    :1fav:
 ** DONE To/Die/For                                                      :FAV:
 ** DONE Tokyo Jihen/Ringo Shiina                                        :FAV:
-** DONE Tom Lehrer                                                      :FAV:
+** GONE Tom Lehrer                                                      :FAV:
 ** Tool                                                                 :not:
 ** TODO Train
 ** Trịnh Công Sơn                                                       :FAV:
@@ -621,6 +623,7 @@
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
+** GONE George Carlin
 ** Ian Hickson                                               :net:whatwg:FAV:
    :PROPERTIES:
    :url:      http://hixie.ch
@@ -631,7 +634,7 @@
    :PROPERTIES:
    :url:      https://youtube.com/user/LuminousStudio
    :END:
-** Mark Pilgrim                                    :free:code:net:whatwg:FAV:
+** GONE Mark Pilgrim                               :free:code:net:whatwg:FAV:
    :PROPERTIES:
    :url:     http://firehose.diveintomark.org
    :END:
@@ -647,7 +650,6 @@
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
-** xorl %eax, %eax                                                      :FAV:
 * Technical
 ** #jbopre                                                              :FAV:
    :PROPERTIES:
@@ -681,3 +683,4 @@
    :PROPERTIES:
    :url:      http://johndcook.com
    :END:
+** xorl %eax, %eax                                                      :FAV:
