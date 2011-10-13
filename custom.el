@@ -30,6 +30,7 @@
  '(indicate-empty-lines t)
  '(magit-remote-ref-format (quote remote-slash-branch))
  '(pkgbuild-user-mail-address "arch@zahe.me")
+ '(sentence-end-double-space nil)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t))
 (custom-set-faces
