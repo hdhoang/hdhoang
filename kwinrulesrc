@@ -76,11 +76,11 @@ maximizevert=true
 maximizevertrule=3
 noborder=true
 noborderrule=2
-position=657,0
+position=640,0
 positionrule=2
 shortcut=Alt+Shift+F3
 shortcutrule=2
-size=604,1024
+size=621,1024
 sizerule=2
 skipswitcher=true
 skipswitcherrule=2
@@ -155,7 +155,7 @@ closeable[$d]
 closeablerule[$d]
 noborder[$d]
 noborderrule[$d]
-position=430,300
+position=640,405
 positionrule=3
 shortcut[$d]
 shortcutrule[$d]
