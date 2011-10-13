@@ -12,9 +12,11 @@
 (add-to-list 'auto-mode-alist '("\\.install\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\.do\\'" . sh-mode))
 (mapcar (lambda (ext)
-	  (add-to-list 'auto-mode-alist (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
-	'("service" "socket" "desktop" "directory"))
-(add-hook 'conf-windows-mode-hook '(lambda () (setq comment-start "#") (glasses-mode t)))
+          (add-to-list 'auto-mode-alist
+                       (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
+        '("service" "socket" "desktop" "directory"))
+(add-hook 'conf-windows-mode-hook
+          '(lambda () (setq comment-start "#") (glasses-mode t)))
 
 (autoload 'magit-status "magit" nil t)
 (global-set-key (kbd "C-c m") 'magit-status)
