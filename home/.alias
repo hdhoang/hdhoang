@@ -11,8 +11,14 @@ alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
-alias getc='wget -ci ~/queue.txt -P $dl && truncate -s0 ~/queue.txt'
-alias gete='e ~/queue.txt'
+function getc() {
+    cd $1
+    if [[ "$2" == "-e" ]]; then
+        e queue.txt
+    else
+        wget -ci queue.txt
+    fi
+}
 function getv() {
     cd ~/Videos/$1/
     if [[ "$2" == "-e" ]]; then
