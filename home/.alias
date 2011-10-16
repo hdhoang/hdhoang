@@ -16,7 +16,7 @@ function getc() {
     if [[ "$2" == "-e" ]]; then
         e queue.txt
     else
-        wget -ci queue.txt
+        wget --content-disposition -ci queue.txt
     fi
 }
 function getv() {
