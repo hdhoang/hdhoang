@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # utils
 alias g='git'
 alias gp='g pr && g ml'
