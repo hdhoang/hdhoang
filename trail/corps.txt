@@ -1,6 +1,6 @@
 -*- mode: org -*-
 #+TODO: TODO(t) | DONE(d) GONE(g)
-#+TAGS: FAV(f) 1fav(1) not(n)
+#+TAGS: FAV(f) 1fav(1) not(n) vi(v) fi ja(j) string(s) guitar(g) piano(p)
 
 * Biography
 ** Last Words                                                           :FAV:
@@ -188,7 +188,7 @@
    :PROPERTIES:
    :url:      http://warehousecomic.com
    :END: 
-** Tree Lobsters!                                                 :title:FAV:
+** Tree Lobsters!                                             :sci:title:FAV:
    :PROPERTIES:
    :url:      http://treelobsters.com
    :END:
@@ -337,7 +337,7 @@
    :END:
 ** Kirsten Dunst                                                        :FAV:
 ** Kristina Fey                                                         :not:
-** lambda                                                               :FAV:
+** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
@@ -352,10 +352,10 @@
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
 ** Tawnee Stone                                                         :not:
-** the waitress                                                         :FAV:
+** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
-** Trang
-** TV girl                                                              :FAV:
+** Trang                                                             :FAV:vi:
+** TV girl                                                           :FAV:vi:
 ** Twistys.com
 ** Victoria                                                             :FAV:
 ** Watch 4 Beauty                                                       :FAV:
@@ -422,6 +422,7 @@
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
+** TODO Boris                                                            :ja:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
@@ -455,11 +456,11 @@
 ** DONE Bức Tường                                                       :FAV:
 ** GONE Carpenters                                                      :FAV:
 ** DONE Charon                                                          :FAV:
-** DONE Children Of Bodom                                               :FAV:
+** DONE Children Of Bodom                                            :FAV:fi:
 ** TODO Chumbawamba
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
-** DONE Céline Dion                                                     :FAV:
+** DONE Céline Dion                                                  :FAV:fr:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
@@ -543,10 +544,10 @@
 **** DONE Soundtrack Plus
 ** DONE Norther
 ** DONE Nuclear Assault
-** DONE Oleg Serkov                                                     :FAV:
+** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
 ** DONE Pantera
-** DONE Peter McConnell
+** DONE Peter McConnell                                               :g:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Pink Floyd
@@ -555,58 +556,59 @@
    :url:      http://vgmetal.com
    :END:
 ** TODO Rage Against the Machine
-** GONE Red October soundtrack
+** GONE Red October soundtrack                                         :inst:
 ** DONE Regina Spektor
-** DONE Rhapsody                                                        :FAV:
+** DONE Rhapsody                                                     :FAV:it:
 *** TODO Luca Turilli
-** DONE Richard Clayderman
+** DONE Richard Clayderman                                       :inst:piano:
 ** DONE Santana
-** GONE Savatage
+** GONE Savatage                                                   :epic:FAV:
+*** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
 ** GONE Simon & Garfunkel                                               :FAV:
-** TODO Sirenia
-** TODO Sixpence None the Richer                                        :FAV:
+** TODO Sirenia                                                           :f:
+** TODO Sixpence None the Richer                                      :FAV:f:
 ** TODO Slayer
-** DONE Sonata Arctica                                                  :FAV:
-** DONE Spice Girls
-** DONE Starcraft sound
-** TODO Steve Vai
-** DONE Stratovarius                                                    :FAV:
+** DONE Sonata Arctica                                               :FAV:fi:
+** DONE Spice Girls                                                       :f:
+** DONE Starcraft sound                                                   :g:
+** TODO Steve Vai                                                      :inst:
+** DONE Stratovarius                                                 :FAV:fi:
 *** DONE Timo Tolkki
-** DONE String Quartet tributes                                         :FAV:
+** DONE String Quartet tributes                                 :FAV::string:
 *** DONE Evanescene                                                     :FAV:
 *** DONE Lady Gaga                                                      :FAV:
 *** DONE Senses Fail                                                    :FAV:
 *** DONE Shinedown                                                      :FAV:
-** DONE Symphony X
+** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
-** DONE Tarot                                                           :FAV:
-** GONE Thanh Tùng                                                      :FAV:
+** DONE Tarot                                                        :FAV:fi:
+** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
-** DONE The Corrs                                                       :FAV:
-** The Ink Spots                                                        :FAV:
-** TODO They Might Be Giants
+** DONE The Corrs                                              :FAV:f:string:
+** The Ink Spots                                                   :FAV:blue:
+** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
-** DONE To/Die/For                                                      :FAV:
-** DONE Tokyo Jihen/Ringo Shiina                                        :FAV:
-** GONE Tom Lehrer                                                      :FAV:
+** DONE To/Die/For                                                 :FAV:wail:
+** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
+** GONE Tom Lehrer                                                 :FAV:mock:
 ** Tool                                                                 :not:
-** TODO Train
-** Trịnh Công Sơn                                                       :FAV:
-** DONE Turisas
+** TODO Train :tunx
+** Trịnh Công Sơn                                                    :FAV:vi:
+** DONE Turisas                                                          :fi:
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
 ** DONE Wintersun
-** TODO Within Temptation
+** TODO Within Temptation                                                 :f:
 ** DONE Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
-** DONE X/X JAPAN                                                      :1fav:
-** TODO Yngwie J. Malmsteen
-** TODO Zero-Project                                                    :FAV:
+** DONE X/X JAPAN                                                   :1fav:ja:
+** TODO Yngwie J. Malmsteen                                     :inst:guitar:
+** TODO Zero-Project                                               :FAV:inst:
 * Person
 ** Aaron Toponce                                                   :free:FAV:
    :PROPERTIES:
