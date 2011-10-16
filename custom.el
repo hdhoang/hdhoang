@@ -1,7 +1,6 @@
 ; -*- mode: lisp -*-
 
 (defalias 'rb 'revert-buffer)
-(defalias 'dabbrev-expand 'hippie-expand)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
 (setq frame-title-format "%b")
@@ -17,9 +16,6 @@
         '("service" "socket" "desktop" "directory"))
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
-
-(autoload 'magit-status "magit" nil t)
-(global-set-key (kbd "C-c m") 'magit-status)
 
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 (custom-set-variables
