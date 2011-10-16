@@ -14,17 +14,11 @@ alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 function getc() {
     cd $1
     if [[ "$2" == "-e" ]]; then
-        e queue.txt
-    else
-        wget --content-disposition -ci queue.txt
-    fi
-}
-function getv() {
-    cd ~/Videos/$1/
-    if [[ "$2" == "-e" ]]; then
         e q.txt
+    elif [[ "$PWD" == */Videos* ]]; then
+        python2 ~/Videos/youtube-dl/youtube-dl -c -R 10 -t -f 18 -a q.txt
     else
-        python2 ~/Videos/youtube-dl/youtube-dl -a q.txt -c -R -t -f 18
+        wget -c --content-disposition -i q.txt
     fi
 }
 alias nn='chrt -i 0 ionice -c 3 '
