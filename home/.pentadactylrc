@@ -71,7 +71,7 @@ style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"
 
 style -n "link decor: good hosts" * [href*="mediafire.com/"], [href*="mfi.re/"], [href*="hotfile.com/"], [href*="megashare.com/"], [href*="polsy.org.uk/"], [href*="xvideos.com/"] /* nice previews */, [href*="tinyogg.com/"], [href*="ifile.it"] { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
 style -n "link decor: bad hosts" * [href*="filesmonster.com/"] /* bad UI and splits big files */, [href*="filesonic.com/"] /* 60s, captcha */, [href*="fileserve.com/"] /* slow UI */, [href*="rapidshare.com/"] /* slow #! */, [href*="oron.com/"] /* 60s */, [href*="uploading.com/"] /* 60s */, [href*="megaupload.com/"] { text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
-style -n "link decor: video" * :-moz-any([href*="vimeo.com/"], [href*="youtu.be/"],[href*="youtube.com/watch?"], [href*="xvideos.com/video"], [href*="collegehumor.com/video/"], [href*="dailymotion."][href*="/video/"], [href*="escapistmagazine.com/videos/view/"]")::after { content: "\21af" }
+style -n "link decor: video" * :-moz-any([href*="vimeo.com/"], [href*="youtu.be/"],[href*="youtube.com/watch?"], [href*="xvideos.com/video"], [href*="collegehumor.com/video/"], [href*="dailymotion."][href*="/video/"], [href*="escapistmagazine.com/videos/view/"])::after { content: "\21af" }
 
 style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
 style -n "link decor: people" * :-moz-any([href*="/~cks/"], [href*="apenwarr.ca"])::after { content: "\22c6" }
