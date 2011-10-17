@@ -7,6 +7,12 @@ keycode 166 = XF86AudioPlay
 keycode 167 = XF86AudioNext
 keycode 26  = period greater ellipsis U203D ellipsis U203D
 
+keycode 192 = NoSymbol
+keycode 193 = NoSymbol
+keycode 194 = NoSymbol
+keycode 195 = NoSymbol
+keycode 196 = NoSymbol
+
 !dvp
 keycode 24  = apostrophe quotedbl
  keycode 52 = semicolon colon
