@@ -17,8 +17,10 @@ function getc() {
         e q.txt
     elif [[ "$PWD" == */Videos* ]]; then
         python2 ~/Videos/youtube-dl/youtube-dl -c -R 10 -t -f 18 -a q.txt
-    else
+    elif [[ "$PWD" == */lastfm ]]; then
         wget -c --content-disposition -i q.txt
+    else
+        wget -c -i q.txt
     fi
 }
 alias nn='chrt -i 0 ionice -c 3 '
