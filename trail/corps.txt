@@ -187,7 +187,7 @@
 ** theWAREHOUSE                                                         :FAV:
    :PROPERTIES:
    :url:      http://warehousecomic.com
-   :END: 
+   :END:
 ** Tree Lobsters!                                             :sci:title:FAV:
    :PROPERTIES:
    :url:      http://treelobsters.com
@@ -422,7 +422,6 @@
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
-** TODO Boris                                                            :ja:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
@@ -438,6 +437,8 @@
 ** DONE Avenged Sevenfold                                               :FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
+** Basil Poledouris
+*** GONE Red October soundtrack                                    :FAV:inst:
 ** TODO Benjamin Zander
 ** DONE Bethzaida
 ** DONE Bionic Commando                                                 :FAV:
@@ -447,6 +448,7 @@
 ** DONE Bliss(This)
 ** DONE Bobaflex
 ** DONE Bon Jovi
+** TODO Boris                                                            :ja:
 ** DONE Buckethead                                                      :FAV:
    :PROPERTIES:
    :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
@@ -461,6 +463,7 @@
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
 ** DONE Céline Dion                                                  :FAV:fr:
+** TODO Daniel Bautista                                                 :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
 ** TODO Dire Strait
@@ -529,8 +532,11 @@
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
-** Nhạc đỏ
+** Nhạc cách mạng
+*** Một mùa xuân nho nhỏ
+*** Nguời Hà Nội
 *** Tuổi trẻ thế hệ Bác Hồ
+*** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
 *** DONE Tarja Turunen
 ** TODO Nirvana
@@ -556,7 +562,6 @@
    :url:      http://vgmetal.com
    :END:
 ** TODO Rage Against the Machine
-** GONE Red October soundtrack                                         :inst:
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                     :FAV:it:
 *** TODO Luca Turilli
