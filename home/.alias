@@ -31,6 +31,7 @@ conf=$h/system-config/$(hostname)
 t=~/t
 dl=~/Downloads
 m=~/Music
+p=~/Pictures
 v=~/Videos
 g=/mnt/cenbaz/@g
 s=/mnt/cenbaz/@s
@@ -38,6 +39,7 @@ pkg=/var/cache/pacman/pkg
 el=/var/log/everything.log
 
 fav=~/Public/fav
+fm=$fav/Music
 pool=/mnt/marbi
 
 # local info
@@ -73,7 +75,7 @@ function xattr() {
 }
 alias com='x 7z -o$HOME/Public/mirror/ x {} ::: {$dl,/mnt/cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete --exclude=sumatrapdfcache/ /mnt/cenbaz/@{s,g} ~/{queue.txt,Music,Pictures,Videos,s} $h ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units} $pool'
+alias bu='rs --delete --exclude=sumatrapdfcache/ /mnt/cenbaz/@{s,g} ~/s $h $m $p $v ~/Public/{openid,pic} ~/Public/mirror/{book,systemd-arch-units} $pool'
 
 # system
 alias ssc='sudo systemctl --system'
@@ -102,15 +104,15 @@ alias m='mplayer'
 alias mi=mediainfo
 alias ti=gtorrentviewer
 alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && 7z -y -o/mnt/roxer x ~/Public/mirror/rockbox-ipodnano1g.zip'
-alias dum='dumx -v ~/Music -type d|cut -c 9-|x -kX ls -1'
-alias favd='ls $fav/Music/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
-alias fava='ls $fav/Music/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
-alias favl='ls $fav/Music/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
+alias dum='dumx -v $m -type d|cut -c 9-|x -kX ls -1'
+alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
+alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
+alias favl='ls $fm/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $fav/**/*; rs --delete $fav $pool'
-alias favf='rm /mnt/roxer/m/*; ls $fav/Music/*/* | shuf -n 200 | rs --files-from=- --no-xattrs $fav/Music /mnt/roxer/m/'
+alias favf='rm /mnt/roxer/m/*; ls $fm/*/* | shuf -n 200 | rs --files-from=- --no-xattrs $fm /mnt/roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
-    cd $fav/Music/
+    cd $fm
     rm -f **/*jpg
     prv "tr/ /_/;
          s/^''/_/;s/''/-/g;
