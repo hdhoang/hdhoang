@@ -15,7 +15,7 @@ EXITCODE="%(?..${fg[red]}%? )"
 PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
-compdef powerpill=pacman
+compdef pacmatic=pacman
 compdef git-achievements=git
 
 setopt dvorak
