@@ -27,6 +27,7 @@
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
+ '(prelude-disable-arrow-navigation nil)
  '(sentence-end-double-space nil)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t))
