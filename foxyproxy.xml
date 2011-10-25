@@ -169,7 +169,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="true"
+            enabled="false"
             name="zm"
             pattern="http*://*zahe.me/*"
             isRegEx="false"
