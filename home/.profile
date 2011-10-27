@@ -1,5 +1,4 @@
 source /etc/profile
-export $(< /etc/locale.conf)
 
 export PAGER=most
 export LESS='--quit-if-one-screen --ignore-case'
