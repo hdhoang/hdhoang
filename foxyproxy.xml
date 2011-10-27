@@ -2,7 +2,7 @@
 <foxyproxy
     mode="patterns"
     selectedTabIndex="0"
-    toolbaricon="true"
+    toolbaricon="false"
     toolsMenu="false"
     contextMenu="false"
     advancedMenus="false"
