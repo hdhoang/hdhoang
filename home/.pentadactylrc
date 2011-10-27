@@ -63,7 +63,6 @@ style -n "greader space" https://www.google.com/reader/view/* html, body { heigh
 style -n "greader popping" https://www.google.com/reader/view/* .card-common { border-width: 1px !important } .card-content { padding: 9px 0 5px 5px !important } .entry-conversation { padding-left: 24px !important } .card-actions { padding: 0 1px 1px 0 !important; border-top: none !important }
 style -n "entry actions" https://www.google.com/reader/view/* .entry-actions { display: block !important } .like, .broadcast, .read-state, .tag { float: right }
 
-style -n "bug comic" https://www.google.com/reader/view/* img[src*="bugcomic.com"] { position: relative; left: -29px }
 style -n "explosm ad" https://www.google.com/reader/view/* img[src^="http://www.explosm.net/"]+div { display: none !important }
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
