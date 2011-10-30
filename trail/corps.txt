@@ -1,15 +1,12 @@
 -*- mode: org -*-
 #+TODO: TODO(t) | DONE(d) GONE(g)
-#+TAGS: FAV(F) 1fav(1) not(n)
-#+TAGS: vi(v) fi(f) ja(j)
-#+TAGS: string(s) riff(r) guitar(G) piano(p)
-#+TAGS: group video voice shot speed comp info narrative humor
-#+TAGS: game(g) jbopre(jp)
 
-* Biography
-** Last Words                                                           :FAV:
-** Surely You're Joking, Mr. Feynman                                :sci:FAV:
-** The World as I See It                                                :FAV:
+#+TAGS: FAV(f) 1fav(1) not(N)
+#+TAGS: vi(V) fi(F) ja(J) ru(R)
+#+TAGS: string(s) riff(r) guitar(g) piano(p)
+#+TAGS: group video(v) voice(a) shot speed comp info(i) narrative humor(h)
+#+TAGS: game(G) jbopre(j) net(n)
+
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
    :PROPERTIES:
@@ -27,20 +24,13 @@
    :PROPERTIES:
    :url:      http://bentobjects.blogspot.com
    :END:
-** Bug                                                                 :sick:
-   :PROPERTIES:
-   :url:      http://bugcomic.com
-   :END:
-** Buni                                                                :sick:
-   :PROPERTIES:
-   :url:      http://bunicomic.com
-   :END:
 ** Buttersafe                                                  :sad:3rd:cute:
    :PROPERTIES:
    :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
    :url:      http://buttersafe.com
    :END:
 ** Calamities of Nature                                                 :sci:
+** Calm Blue Oceans
 ** ChannelATE                                                          :sick:
    :PROPERTIES:
    :url:      http://channelate.com
@@ -189,30 +179,31 @@
    :url:      https://xkcd.com
    :END:
 * Fiction
-** J.K. Rowling
-*** DONE Animorphs                                                      :FAV:
-   :PROPERTIES:
-   :btih:     04f439a9eac3b86636beff502590484945b57d74
-   :END:
-*** DONE Everworld                                                      :FAV:
 ** Harry Potter and the Methods of Rationality                          :FAV:
 ** TODO Ishmael                                                         :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
+** J.K. Rowling                                                         :FAV:
+*** DONE Animorphs
+   :PROPERTIES:
+   :btih:     04f439a9eac3b86636beff502590484945b57d74
+   :END:
+*** DONE Everworld
+** Kim Dung
+*** DONE Lộc Đỉnh Ký                                                    :FAV:
+** Kurt Vonnegut
+*** DONE Slaughterhouse-Five                                            :FAV:
 ** DONE Lost Girls                                                      :FAV:
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
-** Kim Dung
-*** DONE Lộc Đỉnh Ký                                                    :FAV:
-** DONE Slaughterhouse-Five                                             :FAV:
-** DONE The Last Ring-bearer                                            :FAV:
+** DONE The Last Ring-bearer                                       :blas:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
    :background: http://ymarkov.livejournal.com/273409.html
    :END:
-** The Salvation War                                               :blas:FAV:
+** DONE The Salvation War                                          :blas:FAV:
    :PROPERTIES:
    :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
    :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
@@ -388,7 +379,7 @@
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
 ** Vexation
 *** DONE Grim Fandango: The Move                                :video:humor:
-* Lulz
+* Lulz                                                                :humor:
 ** GONE 4chanarchive.org                                             :FAV:ns:
    :PROPERTIES:
    :cont:     [[chanarchive.org]]
@@ -444,6 +435,10 @@
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
+** TODO Singing Science Records
+** TODO FireLake
+*** Dirge for the Planet                                                :FAV:
+** TODO Alsou                                                        :ru:FAV:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
@@ -566,6 +561,7 @@
 *** Tuổi trẻ thế hệ Bác Hồ
 *** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
+*** TODO Imaginaerum
 *** DONE Tarja Turunen
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
@@ -623,6 +619,7 @@
 ** TODO The Beatles                                                     :FAV:
 ** DONE The Corrs                                              :FAV:f:string:
 ** The Ink Spots                                                   :FAV:blue:
+** TODO Milkmen
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** DONE To/Die/For                                                 :FAV:wail:
@@ -642,80 +639,85 @@
 ** DONE X/X JAPAN                                                   :1fav:ja:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
 ** TODO Zero-Project                                               :FAV:inst:
-* Person
-** Aaron Toponce                                                   :free:FAV:
+* Person                                                                :FAV:
+** Aaron Toponce                                                       :free:
    :PROPERTIES:
    :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
    :END:
-** Bradley M. Kuhn                                          :free:pgnome:FAV:
-** Charlie Stross                                                       :FAV:
-** Dan Kaminsky                                                         :FAV:
-** Dave Winer                                                           :FAV:
+** Bradley M. Kuhn                                              :free:pgnome:
+** Charlie Stross
+** Dan Kaminsky
+** Dave Winer
    :PROPERTIES:
    :url:      http://scripting.com
    :END:
-** Eliezer Yudkowsky                                                    :FAV:
+** Eliezer Yudkowsky
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
-** GONE George Carlin
-** Ian Hickson                                               :net:whatwg:FAV:
+** Richard Feynman                                                :humor:sci:
+*** Surely You're Joking, Mr. Feynman
+*** What Do You Care What Other People Think? Further Adventures of a Curious Character
+** GONE George Carlin                                           :voice:humor:
+*** Last Words                                                          :bio:
+** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
    :url:      http://hixie.ch
    :END:
-** Jason Kottke                                                         :FAV:
-** Jason Scott                                                 :free:net:FAV:
-** Luminous                                             :game:commentary:FAV:
+** Jason Kottke
+** Jason Scott                                                     :free:net:
+** Luminous                                                 :game:commentary:
    :PROPERTIES:
    :url:      https://youtube.com/user/LuminousStudio
    :END:
-** GONE Mark Pilgrim                               :free:code:net:whatwg:FAV:
+** GONE Mark Pilgrim                                   :free:code:net:whatwg:
    :PROPERTIES:
    :url:     http://firehose.diveintomark.org
    :END:
-** Nebu1a                                               :game:commentary:FAV:
+** Nebu1a                                                   :game:commentary:
    :PROPERTIES:
    :url:      http://blip.tv/nebu1a
    :END:
-** Shamus Young                                               :game:code:FAV:
+** Shamus Young                                                   :game:code:
    :PROPERTIES:
    :url:      http://shamusyoung.com
    :END:
-** Terminally Incoherent                                     :movie:fdim:FAV:
+** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
-* Technical
-** #jbopre                                                              :FAV:
+* Technical                                                             :FAV:
+** #jbopre
    :PROPERTIES:
    :url:      irc://chat.freenode.net/#jbopre
    :END:
-** cks                                                      :psysad:herd:FAV:
-   :PROPERTIES:
-   :url:      http://utcc.utoronto.ca/~cks/
-   :END:
-** CSS: Design for the Web                                              :FAV:
-** John Cowan                                               :pint:jbopre:FAV:
-   :PROPERTIES:
-   :url:      http://home.ccil.org/~cowan/
-   :END:
-** Kernel Planet                                                        :FAV:
-** Little Big Details                                                   :FAV:
-** Mark Shoulson                                              :jbopre:py:FAV:
+*** Broca
+*** clsn                                                                 :py:
    :PROPERTIES:
    :url:      http://web.meson.org
    :END:
-** Planet Debian                                                        :FAV:
-** Planet Emacsen                                                :pemacs:FAV:
-** Planet GNOME                                                  :pgnome:FAV:
-** Planet KDE                                                      :pkde:FAV:
-** Planet Mozilla                                                  :pmoz:FAV:
-** Planet SysAdmin                                               :psysad:FAV:
+*** jcowan                                                             :pint:
    :PROPERTIES:
-   :url:      http://planetsysadmin.com
+   :url:      http://home.ccil.org/~cowan/
    :END:
-** The Endeavour                                                        :FAV:
+*** rlpowell
+*** Tene
+*** treed
+** cks                                                          :psysad:herd:
+   :PROPERTIES:
+   :url:      http://utcc.utoronto.ca/~cks/
+   :END:
+** Håkon Wium Lie                                                       :net:
+*** CSS: Design for the Web
+** Kernel Planet                                                         :pk:
+** Little Big Details
+** Planet Debian                                                       :pdeb:
+** Planet Emacsen                                                    :pemacs:
+** Planet GNOME                                                      :pgnome:
+** Planet KDE                                                          :pkde:
+** Planet Mozilla                                                      :pmoz:
+** The Endeavour
    :PROPERTIES:
    :url:      http://johndcook.com
    :END:
-** xorl %eax, %eax                                                      :FAV:
+** xorl %eax, %eax
