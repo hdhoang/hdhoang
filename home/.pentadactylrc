@@ -49,7 +49,7 @@ set! toolkit.telemetry.enabled=true
 set! ui.key.menuAccessKey=0
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825 for the code
-autocmd DOMLoad utm_ -js win.history.replaceState("Removed UTM Parameters", '', win.location.toString().replace(/utm_.*?(&|$)/g,'').replace(/(&|\?)$/,'')
+autocmd DOMLoad utm_ -js win.history.replaceState("Removed UTM Parameters", '', win.location.toString().replace(/utm_.*?(&|$)/g,'').replace(/(&|\?)$/,''))
 
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
