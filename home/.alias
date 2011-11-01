@@ -110,7 +110,7 @@ alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
 alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
 alias favl='ls $fm/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $fav/**/*; rs --delete $fav $pool'
-alias favf='rm /mnt/roxer/m/*; ls $fm/*/* | shuf -n 200 | rs --files-from=- --no-xattrs $fm /mnt/roxer/m/'
+alias favf='rm -rf /mnt/roxer/m/ && cd $fm && ls */* | shuf -n 100 | rs --files-from=- --no-xattrs $fm /mnt/roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
     cd $fm
