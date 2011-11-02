@@ -95,6 +95,7 @@
         color="green"
         proxyDNS="true"
         noInternalIPs="true"
+        autoconfMode="pac"
       ><matches
         ><match
             enabled="true"
@@ -220,6 +221,7 @@
         color="#0055E5"
         proxyDNS="true"
         noInternalIPs="false"
+        autoconfMode="pac"
       ><matches
         ><match
             enabled="true"
