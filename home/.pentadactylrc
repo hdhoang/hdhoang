@@ -13,6 +13,7 @@ set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
 set passkeys=google.com/reader:'vf/ npsmrgaeUNPXO'
+set passkeys+=mail.google.com/mail/:'jkpnu#'
 set urlseparator=' , '
 
 set! browser.anchor_color="#6c71c4"
