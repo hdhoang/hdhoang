@@ -118,5 +118,5 @@ function favm() {
     prv "tr/ /_/;
          s/^''/_/;s/''/-/g;
          tr/\"*:<>/-/;s/\?//g;
-         s/_\[Unknown_Album\]//;s/\[unknown\]/(unknown)/;s/\[dialogue\]/(dialogue)/;s/\[untitled\]/(untitled)/" *
+         s/_\[Unknown_Album\]//i;s/\[unknown\]/(unknown)/;s/\[dialogue\]/(dialogue)/;s/\[untitled\]/(untitled)/" *
 }
