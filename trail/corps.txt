@@ -5,7 +5,7 @@
 #+TAGS: vi(V) fi(F) ja(J) ru(R)
 #+TAGS: string(s) riff(r) guitar(g) piano(p)
 #+TAGS: group video(v) voice(a) shot speed comp info(i) narrative humor(h)
-#+TAGS: game(G) jbopre(j) net(n)
+#+TAGS: game(G) jbopre(j) net(n) jo
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -61,7 +61,7 @@
    :PROPERTIES:
    :url:      http://hejibits.com
    :END:
-** Hipster Hitler                                                      :cute:
+** Hipster Hitler                                                 :blas:cute:
 ** Hyperbole and a Half
 ** INCIDENTAL COMICS                                                   :cute:
    :PROPERTIES:
@@ -179,7 +179,10 @@
    :url:      https://xkcd.com
    :END:
 * Fiction
-** Harry Potter and the Methods of Rationality                          :FAV:
+** Eliezer Yudkowsky                                                    :FAV:
+*** Harry Potter and the Methods of Rationality
+** Roger Williams
+*** The Metamorphosis of Prime Intellect                                :FAV:
 ** TODO Ishmael                                                         :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
@@ -190,6 +193,9 @@
    :btih:     04f439a9eac3b86636beff502590484945b57d74
    :END:
 *** DONE Everworld
+    :PROPERTIES:
+    :url:      http://www.mediafire.com/?dbwbk05tackx2l
+    :END:
 ** Kim Dung
 *** DONE Lộc Đỉnh Ký                                                    :FAV:
 ** Kurt Vonnegut
@@ -287,6 +293,8 @@
 ** DDD Brandy                                                           :not:
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
+*** Arev
+*** Jadi
 *** Mona
 ** Francesca Dani                                                       :FAV:
 ** Front
@@ -313,6 +321,7 @@
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
 *** Anna
+*** Vera H.
 ** Missy Model                                                          :not:
 ** MPLstudios.com
 ** Nicole                                                               :not:
@@ -331,17 +340,23 @@
 ** Victoria                                                             :FAV:
 ** Watch 4 Beauty                                                       :FAV:
 ** X-Art                                                                :FAV:
+** xcity.jp
+*** Leon Kadena                                                         :FAV:
 * LP                                                               :FAV:game:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
 ** Blastinus
-*** TODO Final Fantasy VI                                    :shot:info:comp:
+*** DONE Final Fantasy VI                                    :shot:info:comp:
+** Bobbin Threadbare                                            :video:voice:
+*** TODO Thief I: The Dark Project
+*** TODO Thief II: The Metal Age
+*** TODO Thief III: Deadly Shadows
 ** BOrangeFury
 *** DONE Fallout                                       :shot:humor:narrative:
 ** Breetai
 *** DONE Fallout 2                                     :shot:humor:narrative:
-** CannibalK9
-*** DONE Grand Theft Auto: San Andreas                    :video:voice:speed:
+** CannibalK9                                                         :speed:
+*** DONE Grand Theft Auto: San Andreas                          :video:voice:
 ** Chip Cheezum, General Ironicus                         :video:voice:group:
 *** DONE Metal Gear Solid 2: Substance                                :humor:
 *** DONE Metal Gear Solid 3: Snake Eater                         :humor:comp:
@@ -364,7 +379,7 @@
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
 *** DONE Fahrenheit                                    :video:sub:humor:comp:
-*** TODO Heavy Rain                                         :video:sub:humor:
+*** DONE Heavy Rain                                    :comp:video:sub:humor:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
@@ -403,7 +418,7 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
-** TODO Big Trouble in Little China
+** DONE Big Trouble in Little China
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** DONE Dogma (1999)                                                    :FAV:
@@ -433,16 +448,14 @@
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
+** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
-** TODO Singing Science Records
-** TODO FireLake
-*** Dirge for the Planet                                                :FAV:
-** TODO Alsou                                                        :ru:FAV:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alice Cooper
+** TODO Alsou                                                        :ru:FAV:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
 ** DONE Annihilator                                                     :FAV:
@@ -466,13 +479,15 @@
 ** DONE Bobaflex
 ** DONE Bon Jovi
 ** Boris                                                             :ja:not:
-** DONE Buckethead                                                      :FAV:
+** TODO Breaking Benjamin
+** Buckethead                                                           :FAV:
    :PROPERTIES:
-   :btih:     a29be6b34fe410b7a3e49fd622d8d4f0d0d63dd9
+   :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
 *** Thanatopsis
 ** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
+*** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                            :FAV:fi:
@@ -480,6 +495,8 @@
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
 ** DONE Céline Dion                                                  :FAV:fr:
+** Dan Wentz
+*** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                                 :FAV:
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra
@@ -497,9 +514,9 @@
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
 ** TODO Fear Factory
+** TODO FireLake                                                       :1fav:
+*** Dirge for the Planet                                                :FAV:
 ** DONE Flowing Tears
-** Dan Wentz
-*** DONE FreeSpace 2 (official)
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
@@ -511,6 +528,7 @@
 ** TODO Helloween
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
+** TODO Iced Earth
 ** DONE Il Divo
 ** DONE Incubus
 ** DONE Iron Maiden                                                     :FAV:
@@ -549,6 +567,7 @@
 *** DONE Baldur's Gate II
 ** TODO Michael Land                                                   :game:
 ** GONE Michael Learns to Rock                                         :1fav:
+** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
 ** TODO Muse                                                           :1fav:
 ** TODO My Chemical Romance
@@ -580,11 +599,13 @@
 ** DONE Peter McConnell                                               :g:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
+** TODO Phil Collins
 ** TODO Pink Floyd
 ** DONE Powerglove                                                      :FAV:
    :PROPERTIES:
    :url:      http://vgmetal.com
    :END:
+** TODO Puddle of Mudd
 ** TODO Rage Against the Machine
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                     :FAV:it:
@@ -598,12 +619,20 @@
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
 ** GONE Simon & Garfunkel                                               :FAV:
+** TODO Singing Science Records
+   :PROPERTIES:
+   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
+   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
+   :END:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
 ** TODO Slayer
 ** DONE Sonata Arctica                                               :FAV:fi:
 ** DONE Spice Girls                                                       :f:
-** DONE Starcraft sound DDD749C72C859C80CB2648207909B3A447FCD582          :g:
+** DONE Starcraft sound                                                   :g:
+   :PROPERTIES:
+   :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
+   :END:
 ** TODO Steve Vai                                                      :inst:
 ** DONE Stratovarius                                                 :FAV:fi:
 *** DONE Timo Tolkki
@@ -618,16 +647,18 @@
 ** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
 ** DONE The Corrs                                              :FAV:f:string:
+** TODO The Cranberries
 ** The Ink Spots                                                   :FAV:blue:
-** TODO Milkmen
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
+** TODO Thủy Triều Đỏ                                                    :vi:
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** GONE Tom Lehrer                                                 :FAV:mock:
 ** Tool                                                                 :not:
 ** TODO Train :tunx
 ** Trịnh Công Sơn                                                    :FAV:vi:
+** TODO Tuoni
 ** DONE Turisas                                                          :fi:
 ** DONE Warmen
 ** TODO White Lion
@@ -642,7 +673,7 @@
 * Person                                                                :FAV:
 ** Aaron Toponce                                                       :free:
    :PROPERTIES:
-   :reader:   https://www.google.com/reader/view/#stream/user%2F10817437382488879508%2Fstate%2Fcom.google%2Fbroadcast
+   :url:      http://pthree.org
    :END:
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Charlie Stross
@@ -658,6 +689,9 @@
 ** Richard Feynman                                                :humor:sci:
 *** Surely You're Joking, Mr. Feynman
 *** What Do You Care What Other People Think? Further Adventures of a Curious Character
+    :PROPERTIES:
+    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
+    :END:
 ** GONE George Carlin                                           :voice:humor:
 *** Last Words                                                          :bio:
 ** Ian Hickson                                                   :net:whatwg:
