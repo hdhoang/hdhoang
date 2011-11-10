@@ -47,6 +47,7 @@ set! middlemouse.contentLoadURL=false
 set! noscript.sync.enabled=true
 set! security.warn_viewing_mixed=false
 set! toolkit.telemetry.enabled=true
+set! ui.key.contentAccess=6
 set! ui.key.menuAccessKey=0
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825 for the code
@@ -56,9 +57,9 @@ autocmd DOMLoad utm_ -js win.history.replaceState("Removed UTM Parameters", '', 
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
 autocmd LocationChange http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -js try { doc.querySelector('#good button').focus() } catch (e){}
 " trigger on PageLoad in async to ensure the elements exist
-autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey='.'; doc.querySelector('select').accessKey='u' } catch (e){}
+autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
 " trigger on DOMLoad to judge with extreme prejudice
-autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey='.'; doc.querySelector('select').accessKey='u' } catch (e){}
+autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
 style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php td img { margin:0 500px 500px 0; max-width: 900px !important } body { margin: 0 } td { padding: 0 !important } [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
 
 style -n "greader popping" https://www.google.com/reader/view/* .entry-actions { display: block !important } .read-state, .tag { float: right } #chrome-fullscreen-top-toggle { display: none !important }
