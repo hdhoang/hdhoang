@@ -195,11 +195,11 @@ skiptaskbarrule[$d]
 title[$d]
 titlematch[$d]
 types=1
-windowrole=okular::shell
-windowrolematch=1
-wmclass=okular
+windowrole=okular::shell|mainwindow
+windowrolematch=3
+wmclass=okular|gwenview
 wmclasscomplete=false
-wmclassmatch=1
+wmclassmatch=3
 
 [8]
 Description=amarok control
