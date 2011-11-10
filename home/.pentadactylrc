@@ -58,24 +58,91 @@ autocmd DOMLoad utm_ -js win.history.replaceState("Removed UTM Parameters", '', 
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
 autocmd LocationChange http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -js try { doc.querySelector('#good button').focus() } catch (e){}
 " trigger on PageLoad in async to ensure the elements exist
-autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript try { doc.querySelector('#good button').accessKey='e'; doc.querySelector('#bad  button').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
+autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript <<EOS
+try {
+    doc.querySelector('#good button').accessKey='e';
+    doc.querySelector('#bad  button').accessKey=',';
+    doc.querySelector('select').accessKey='u'
+} catch (e){}
+EOS
 " trigger on DOMLoad to judge with extreme prejudice
-autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript try { doc.querySelector('[value="Good"]').accessKey='e'; doc.querySelector('[value="Bad"]').accessKey=','; doc.querySelector('select').accessKey='u' } catch (e){}
-style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php td img { margin:0 500px 500px 0; max-width: 900px !important } body { margin: 0 } td { padding: 0 !important } [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
+autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript <<EOS
+try {
+    doc.querySelector('[value="Good"]').accessKey='e';
+    doc.querySelector('[value="Bad"]').accessKey=',';
+    doc.querySelector('select').accessKey='u'
+} catch (e){}
+EOS
+style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php << EOS
+d img { margin:0 500px 500px 0; max-width: 900px !important }
+body { margin: 0 }
+td { padding: 0 !important }
+[name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
+EOS
 
-style -n "greader popping" https://www.google.com/reader/view/* .entry-actions { display: block !important } .read-state, .tag { float: right } #chrome-fullscreen-top-toggle { display: none !important }
+style -n "greader popping" https://www.google.com/reader/view/* <<EOS
+.entry-actions { display: block !important }
+.read-state, .tag { float: right }
+#chrome-fullscreen-top-toggle { display: none !important }
+EOS
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
-style -n "gif decor" * :-moz-any([src*="fukung"], [src*="imgur"], [src*="tumblr"], [src*="myconfinedspace"], [src*="forgifs"], [src*="kuvaton"])[src$=".gif"] { border-right: 2px dotted teal !important }
+style -n "gif decor" * <<EOS
+:-moz-any(
+  [src*="fukung"]
+, [src*="imgur"]
+, [src*="tumblr"]
+, [src*="myconfinedspace"]
+, [src*="forgifs"]
+, [src*="kuvaton"]
+)[src$=".gif"] { border-right: 2px dotted teal !important }
+EOS
 
-style -n "link decor: good hosts" * [href*="mediafire.com/"],[href*="mfi.re/"], [href*="rapidshare.com/"], [href*="hotfile.com/"], [href*="megashare.com/"], [href*="polsy.org.uk/"], [href*="ifile.it"] { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
-style -n "link decor: bad hosts" * [href*="filesmonster.com/"] /* bad UI and splits big files */, [href*="filesonic.com/"] /* 60s, captcha */, [href*="fileserve.com/"] /* slow UI */, [href*="oron.com/"] /* 60s */, [href*="uploading.com/"] /* 60s */, [href*="megaupload.com/"] { text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
-style -n "link decor: video" * :-moz-any([href*="vimeo.com/"], [href*="youtu.be/"],[href*="youtube.com/watch?"], [href*="xvideos.com/video"], [href*="collegehumor.com/video/"], [href*="dailymotion."][href*="/video/"], [href*="escapistmagazine.com/videos/view/"], [href*="blip.tv/"])::after { content: "\21af" }
+style -n "link decor: good hosts" * <<EOS
+  [href*="mediafire.com/"],[href*="mfi.re/"]
+, [href*="rapidshare.com/"]
+, [href*="hotfile.com/"]
+, [href*="megashare.com/"]
+, [href*="polsy.org.uk/"]
+, [href*="ifile.it"]
+{ text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
+EOS
+style -n "link decor: bad hosts" * <<EOS
+  [href*="filesmonster.com/"] /* bad UI and splits big files */
+, [href*="filesonic.com/"] /* 60s, captcha */
+, [href*="fileserve.com/"] /* slow UI */
+, [href*="oron.com/"] /* 60s */
+, [href*="uploading.com/"] /* 60s */
+, [href*="megaupload.com/"]
+{ text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
+EOS
+style -n "link decor: video" * <<EOS
+:-moz-any(
+  [href*="vimeo.com/"]
+, [href*="youtu.be/"],[href*="youtube.com/watch?"]
+, [href*="xvideos.com/video"]
+, [href*="collegehumor.com/video/"]
+, [href*="dailymotion."][href*="/video/"]
+, [href*="escapistmagazine.com/videos/view/"]
+, [href*="blip.tv/"]
+)::after { content: "\21af" }
+EOS
 
 style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
-style -n "link decor: people" * :-moz-any([href*="/~cks/"], [href*="apenwarr.ca"])::after { content: "\22c6" }
+style -n "link decor: people" * <<EOS
+:-moz-any(
+  [href*="/~cks/"]
+, [href*="apenwarr.ca"]
+)::after { content: "\22c6" }
+EOS
 style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
-style -n "link decor: cracked" * [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } @-moz-document domain("cracked.com") { [href*="cracked.com/"]::before { content: none } [role="main"] .body section [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) } }
+style -n "link decor: cracked" * <<EOS
+[href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) }
+@-moz-document domain("cracked.com") {
+               [href*="cracked.com/"]::before { content: none }
+               [role="main"] .body section [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) }
+}
+EOS
 
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
 
