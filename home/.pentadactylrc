@@ -16,6 +16,8 @@ set passkeys=google.com/reader:'vf/ npSsmrgaeUNPXO'
 set passkeys+=mail.google.com/mail/:'jkpnu#'
 set urlseparator=' , '
 
+map s <C-c>
+
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
 set! browser.display.background_color="#fdf6e3"
