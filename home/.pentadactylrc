@@ -76,7 +76,7 @@ try {
 } catch (e){}
 EOS
 style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php << EOS
-td img { max-width: 940px; max-height: 840px }
+td img { margin-right: 500px; max-width: 930px; max-height: 830px }
 body { margin: 0 }
 td { padding: 0 !important }
 [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
