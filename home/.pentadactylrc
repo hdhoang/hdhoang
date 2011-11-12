@@ -12,7 +12,7 @@ set maxitems=5
 set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
-set passkeys=google.com/reader:'vf/ npsmrgaeUNPXO'
+set passkeys=google.com/reader:'vf/ npSsmrgaeUNPXO'
 set passkeys+=mail.google.com/mail/:'jkpnu#'
 set urlseparator=' , '
 
