@@ -296,6 +296,7 @@
 *** Arev
 *** Jadi
 *** Mona
+** foxes.com                                                            :not:
 ** Francesca Dani                                                       :FAV:
 ** Front
 *** Mellisa Clarke                                                      :FAV:
@@ -383,7 +384,7 @@
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
-*** TODO Sam & Max Hit the Road                           :voice:video:group:
+*** DONE Sam & Max Hit the Road                           :voice:video:group:
 ** Research Indicates
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
 ** Scorchy
@@ -710,7 +711,7 @@
    :END:
 ** Nebu1a                                                   :game:commentary:
    :PROPERTIES:
-   :url:      http://blip.tv/nebu1a
+   :url:      https://blip.tv/show/latest_episode/756280
    :END:
 ** Shamus Young                                                   :game:code:
    :PROPERTIES:
