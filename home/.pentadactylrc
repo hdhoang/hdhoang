@@ -146,6 +146,11 @@ style -n "link decor: cracked" * <<EOS
 }
 EOS
 
+style -n "link decor: tvtropes" * <<EOS
+[href*="tvtropes.org/"]::before { content: url(http://tvtropes.org/favicon.ico) }
+@-moz-document domain("tvtropes.org") {
+               [href*="tvtropes.org/"]::before { content: none }
+EOS
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
 
 style -n "lparchive" lparchive.org body { width: auto !important }
