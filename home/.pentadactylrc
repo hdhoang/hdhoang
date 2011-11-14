@@ -91,42 +91,42 @@ EOS
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
-  [src*="fukung"]
+  [src*="forgifs"]
+, [src*="fukung"]
 , [src*="imgur"]
-, [src*="tumblr"]
-, [src*="myconfinedspace"]
-, [src*="forgifs"]
 , [src*="kuvaton"]
+, [src*="myconfinedspace"]
+, [src*="tumblr"]
 )[src$=".gif"] { border-right: 2px dotted teal !important }
 EOS
 
 style -n "link decor: good hosts" * <<EOS
-  [href*="mediafire.com/"],[href*="mfi.re/"]
-, [href*="rapidshare.com/"]
+  [href*="depositfiles.com/"] /* clean UI, reasonable waiting */
 , [href*="hotfile.com/"]
-, [href*="megashare.com/"]
-, [href*="polsy.org.uk/"]
 , [href*="ifile.it"]
+, [href*="mediafire.com/"],[href*="mfi.re/"]
+, [href*="megashare.com/"]
+, [href*="rapidshare.com/"]
 { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
 EOS
 style -n "link decor: bad hosts" * <<EOS
-  [href*="filesmonster.com/"] /* bad UI and splits big files */
-, [href*="filesonic.com/"] /* 60s, captcha */
-, [href*="fileserve.com/"] /* slow UI */
+  [href*="fileserve.com/"] /* slow UI */
+, [href*="filesmonster.com/"] /* bad UI and splits big files */
+, [href*="filesonic.com/"] /* horrid UI */
+, [href*="megaupload.com/"]
 , [href*="oron.com/"] /* 60s */
 , [href*="uploading.com/"] /* 60s */
-, [href*="megaupload.com/"]
 { text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
 EOS
 style -n "link decor: video" * <<EOS
 :-moz-any(
-  [href*="vimeo.com/"]
-, [href*="youtu.be/"],[href*="youtube.com/watch?"]
-, [href*="xvideos.com/video"]
+  [href*="blip.tv/"]
 , [href*="collegehumor.com/video/"]
 , [href*="dailymotion."][href*="/video/"]
 , [href*="escapistmagazine.com/videos/view/"]
-, [href*="blip.tv/"]
+, [href*="vimeo.com/"]
+, [href*="xvideos.com/video"]
+, [href*="youtu.be/"],[href*="youtube.com/watch?"]
 )::after { content: "\21af" }
 EOS
 
