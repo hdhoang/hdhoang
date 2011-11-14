@@ -82,6 +82,8 @@ td { padding: 0 !important }
 [name=width], [name=height], #settings td>:not(select), [type='text'] { display: none }
 EOS
 
+autocmd PageLoad https://www.google.com/reader/view/* -js doc.getElementById("viewer-entries-container").focus()
+autocmd LocationChange https://www.google.com/reader/view/* -js doc.getElementById("viewer-entries-container").focus()
 style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 .entry-actions { display: block !important }
 .read-state, .tag { float: right }
