@@ -2,7 +2,7 @@
 
 # utils
 alias g='git'
-alias gp='g pr && g ml'
+alias gp='g pr | grep "up to date" || g ml'
 alias mg='magit -e'
 function day() {
     grep $(date --rfc-3339=date -d "${1:-0} days ago") ${*:2}
