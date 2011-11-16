@@ -4,8 +4,8 @@
 #+TAGS: FAV(f) 1fav(1) not(N)
 #+TAGS: vi(V) fi(F) ja(J) ru(R)
 #+TAGS: string(s) riff(r) guitar(g) piano(p)
-#+TAGS: group video(v) voice(a) shot speed comp info(i) narrative humor(h)
-#+TAGS: game(G) jbopre(j) net(n) jo
+#+TAGS: group video(v) voice(a) shot chal speed comp info(i) narrative humor(h)
+#+TAGS: game(G) jbopre(j) net(n) jo jamendo
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -348,9 +348,9 @@
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
 ** Blastinus
 *** DONE Final Fantasy VI                                    :shot:info:comp:
-** Bobbin Threadbare                                            :video:voice:
-*** TODO Thief I: The Dark Project
-*** TODO Thief II: The Metal Age
+** Bobbin Threadbare                             :comp:info:chal:video:voice:
+*** DONE Thief I: The Dark Project
+*** DONE Thief II: The Metal Age                                      :humor:
 *** TODO Thief III: Deadly Shadows
 ** BOrangeFury
 *** DONE Fallout                                       :shot:humor:narrative:
@@ -420,6 +420,7 @@
 ** Today I Found Out                                                    :FAV:
 * Movie
 ** DONE Big Trouble in Little China
+** TODO Blackadder
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** DONE Dogma (1999)                                                    :FAV:
@@ -428,7 +429,7 @@
 ** DONE Duplicity (2009)                                                :FAV:
 ** DONE Eternal Sunshine of the Spotless Mind (2004)                    :FAV:
 *** Kirsten Dunst
-** TODO Europe Trip
+** TODO Europe Trip                                                      :jo:
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
@@ -455,6 +456,7 @@
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
+** TODO Alestorm
 ** TODO Alice Cooper
 ** TODO Alsou                                                        :ru:FAV:
 ** DONE Amon Amarth                                                     :FAV:
@@ -471,7 +473,8 @@
 ** Basil Poledouris
 *** DONE Red October soundtrack                                    :FAV:inst:
 ** TODO Benjamin Zander
-** DONE Bethzaida
+** DONE Bethzaida                                                      :1fav:
+*** 1349                                                                :FAV:
 ** DONE Bionic Commando                                                 :FAV:
 *** Rearmed                                                             :not:
 ** GONE Black Sabbath                                                   :FAV:
@@ -541,7 +544,7 @@
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
-** DONE JT Bruce                                                        :FAV:
+** DONE JT Bruce                                                :FAV:jamendo:
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
@@ -647,6 +650,7 @@
 ** DONE Tarot                                                        :FAV:fi:
 ** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
+** TODO The Charlie Daniels Band
 ** DONE The Corrs                                              :FAV:f:string:
 ** TODO The Cranberries
 ** The Ink Spots                                                   :FAV:blue:
