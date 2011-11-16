@@ -135,7 +135,8 @@ style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underlin
 style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
-, [href*="apenwarr.ca"]
+, [href*="apenwarr.ca/"]
+, [href*="pixelbeat.org/"]
 )::after { content: "\22c6" }
 EOS
 style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
