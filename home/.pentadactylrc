@@ -125,6 +125,8 @@ style -n "link decor: youtube-dl" * <<EOS
 , [href*="collegehumor.com/video/"]
 , [href*="dailymotion."][href*="/video/"]
 , [href*="escapistmagazine.com/videos/view/"]
+, [href*="infoq.com/"]
+, [href*="soundcloud.com/"]
 , [href*="vimeo.com/"]
 , [href*="xvideos.com/video"]
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
