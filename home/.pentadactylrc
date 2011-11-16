@@ -119,7 +119,7 @@ style -n "link decor: bad hosts" * <<EOS
 , [href*="uploading.com/"] /* 60s */
 { text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
 EOS
-style -n "link decor: video" * <<EOS
+style -n "link decor: youtube-dl" * <<EOS
 :-moz-any(
   [href*="blip.tv/"]
 , [href*="collegehumor.com/video/"]
