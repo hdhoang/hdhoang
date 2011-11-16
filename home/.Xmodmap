@@ -1,5 +1,5 @@
 ! -*- mode: conf-xdefaults -*-
-keycode 133 = BackSpace Delete
+keycode 133 = BackSpace
 keycode 108 = Escape
 keycode 37  = Return
 keycode 135 = Tab
