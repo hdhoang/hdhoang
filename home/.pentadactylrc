@@ -139,6 +139,7 @@ style -n "link decor: people" * <<EOS
   [href*="/~cks/"]
 , [href*="apenwarr.ca/"]
 , [href*="pixelbeat.org/"]
+, [href*="plover.com/"]
 )::after { content: "\22c6" }
 EOS
 style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
