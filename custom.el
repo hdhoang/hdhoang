@@ -17,6 +17,7 @@
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
 
+(remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
