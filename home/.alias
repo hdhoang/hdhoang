@@ -50,7 +50,7 @@ alias dumx='dumx -h -xdev'
 alias locate='locate -ie'
 alias p='pgrep -f'
 alias who='who -aH'
-alias s='watch "cpupower -c all frequency-info -mf; cpupower -c all frequency-info -ms; grep current /sys/kernel/debug/dri/0/radeon_pm_info; sensors"'
+alias s='watch "cpupower -c all frequency-info -mf; cpupower -c all frequency-info -ms; grep current /sys/kernel/debug/dri/0/radeon_pm_info; sensors | grep -v fan"'
 alias fr='free -m'
 alias t='tail -f'
 
