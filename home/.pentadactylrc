@@ -45,6 +45,7 @@ set! extensions.checkCompatibility.nightly=false
 set! extensions.firebug.openInWindow=true
 set! font.default.x-unicode="sans-serif"
 set! font.default.x-western="sans-serif"
+set! general.smoothScroll=false
 set! keyword.URL="https://duckduckgo.com/?q="
 set! middlemouse.contentLoadURL=false
 set! noscript.sync.enabled=true
