@@ -86,8 +86,7 @@ EOS
 map <m-f> javascript document.getElementById("viewer-entries-container").focus()
 style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 .entry-actions { display: block !important }
-.read-state, .tag { float: right }
-#chrome-fullscreen-top-toggle { display: none !important }
+#chrome-fullscreen-top-toggle, .sharebox, .email, .read-state { display: none !important }
 EOS
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
