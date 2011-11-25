@@ -187,7 +187,10 @@
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
-** J.K. Rowling                                                         :FAV:
+** K. A. Applegate                                                      :FAV:
+   :PROPERTIES:
+   :btih:     E34975D39BE058E38C1D03EA8EF838102BB320D2
+   :END:
 *** DONE Animorphs
    :PROPERTIES:
    :btih:     04f439a9eac3b86636beff502590484945b57d74
@@ -196,6 +199,7 @@
     :PROPERTIES:
     :url:      http://www.mediafire.com/?dbwbk05tackx2l
     :END:
+*** TODO Remnants
 ** Kim Dung
 *** DONE Lộc Đỉnh Ký                                                    :FAV:
 ** Kurt Vonnegut
@@ -351,7 +355,7 @@
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
 *** DONE Thief I: The Dark Project
 *** DONE Thief II: The Metal Age                                      :humor:
-*** TODO Thief III: Deadly Shadows
+*** DONE Thief III: Deadly Shadows
 ** BOrangeFury
 *** DONE Fallout                                       :shot:humor:narrative:
 ** Breetai
@@ -423,6 +427,7 @@
 ** TODO Blackadder
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
+** TODO Comedian
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -595,6 +600,7 @@
 **** DONE Piano Collection
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
+** TODO nocreeps                                                    :jamendo:
 ** DONE Norther
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
@@ -749,7 +755,15 @@
 ** Håkon Wium Lie                                                       :net:
 *** CSS: Design for the Web
 ** Kernel Planet                                                         :pk:
+** Lennart Poettering
+   :PROPERTIES:
+   :url:      http://0pointer.de
+   :END:
 ** Little Big Details
+** mjd
+   :PROPERTIES:
+   :url:      http://blog.plover.com
+   :END:
 ** Planet Debian                                                       :pdeb:
 ** Planet Emacsen                                                    :pemacs:
 ** Planet GNOME                                                      :pgnome:
@@ -760,3 +774,8 @@
    :url:      http://johndcook.com
    :END:
 ** xorl %eax, %eax
+* Tool
+** QtScrobbler
+   :PROPERTIES:
+   :url:      http://qtscrob.sourceforge.net
+   :END:
