@@ -18,5 +18,11 @@
 <!-- <link rel="openid2.provider" -->
 <!--       href="https://id.zahe.me/poit.py"> -->
 
+<!-- <title>OpenID endpoint (startssl)</title> -->
+<!-- <link rel="openid2.provider openid.server" -->
+<!--      href="https://www.startssl.com/id.ssl" /> -->
+<!-- <link rel="openid2.local_id openid.delegate" -->
+<!--      href="https://hdhoang.startssl.com/" /> -->
+
 <p>Feel free to browse around my
 <a href=https://cenba.zahe.me>public machine</a>.
