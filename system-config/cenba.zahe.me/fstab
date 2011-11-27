@@ -4,6 +4,7 @@ LABEL=hdhoang /home/hdhoang ext4 defaults,user_xattr,noatime,comment=systemd.aut
 LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,noatime,compress,windows_names,uid=1000,gid=100,fmask=133,dmask=022,comment=systemd.automount,noauto
 LABEL=marbi /mnt/marbi ntfs-3g defaults,users,noatime,compress,windows_names,uid=1000,gid=100,fmask=133,dmask=022,noauto
 LABEL=ROXER /mnt/roxer vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
+LABEL=SELSORMENLI /mnt/selsormen vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
 
 /swapfile none swap defaults
 tmpfs /tmp tmpfs nodev,nosuid
