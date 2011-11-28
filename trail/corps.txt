@@ -563,6 +563,10 @@
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
 ** DONE Megadeth                                                        :FAV:
+** TODO MegaDriver                                                :game:riff:
+   :PROPERTIES:
+   :url:      http://megadriver.com.br
+   :END:
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -663,6 +667,7 @@
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
+** TODO Tim Minchin
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** GONE Tom Lehrer                                                 :FAV:mock:
