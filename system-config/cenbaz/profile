@@ -20,6 +20,8 @@ function getc(){
 }
 
 port_mapping=(
+587 tcp 465 tcp # tor
+25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
 alias op='upnpc -r ${port_mapping[*]}'
