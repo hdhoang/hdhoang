@@ -72,7 +72,7 @@ alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 function xattr() {
-	setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
+        setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
 }
 alias com='x 7z -o$HOME/Public/mirror/ x {} ::: {$dl,/mnt/cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
