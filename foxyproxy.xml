@@ -134,7 +134,7 @@
             caseSensitive="false"
             fromSubscription="false"
         /><match
-            enabled="false"
+            enabled="true"
             name="imageshack"
             pattern="http://img*.imageshack.us/img*"
             isRegEx="false"
