@@ -11,7 +11,7 @@ v=$home/Videos
 function getc(){
         cd $1
         if [[ "$PWD" == */Videos* ]]; then
-                python $v/youtube-dl/youtube-dl -c -R 10 -t -f 18 -a q.txt
+                python $v/youtube-dl/youtube-dl
         elif [[ "$PWD" == */lastfm ]]; then
                 wget -c --content-disposition -i q.txt
         else
