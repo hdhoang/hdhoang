@@ -26,19 +26,24 @@ function getc() {
 alias nn='chrt -i 0 ionice -c 3 '
 
 # places
-h=~/Public/hdhoang-misc
+if [[ $(hostname) == cenbaz ]]; then
+    mount=/cygdrive/h
+else
+    mount=~
+fi
+h=$mount/Public/hdhoang
 conf=$h/system-config/$(hostname)
-t=~/t
-dl=~/Downloads
-m=~/Music
-p=~/Pictures
-v=~/Videos
+t=$mount/t
+dl=$mount/Downloads
+m=$mount/Music
+p=$mount/Pictures
+v=$mount/Videos
 g=/mnt/cenbaz/@g
 s=/mnt/cenbaz/@s
 pkg=/var/cache/pacman/pkg
 el=/var/log/everything.log
 
-fav=~/Public/fav
+fav=$mount/Public/fav
 fm=$fav/Music
 pool=/mnt/marbi
 
