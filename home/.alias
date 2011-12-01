@@ -15,8 +15,8 @@ function getc() {
     cd $1
     if [[ "$2" == "-e" ]]; then
         e q.txt
-    elif [[ "$PWD" == */Videos* ]]; then
         python2 ~/Videos/youtube-dl/youtube-dl
+    elif [[ "$PWD" == */Videos* || "$PWD" == */p ]]; then
     elif [[ "$PWD" == */lastfm ]]; then
         wget -c --content-disposition -i q.txt
     else
