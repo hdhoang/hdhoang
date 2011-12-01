@@ -503,6 +503,7 @@
 ** TODO Chumbawamba
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
+** TODO Cryhavoc
 ** DONE Céline Dion                                                  :FAV:fr:
 ** Dan Wentz
 *** DONE FreeSpace 2 (official)
@@ -578,8 +579,7 @@
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
-** TODO Michael Land                                                   :game:
-** GONE Michael Learns to Rock                                         :1fav:
+** DONE Michael Learns to Rock                                         :1fav:
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
 ** TODO Muse                                                           :1fav:
@@ -672,7 +672,7 @@
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** GONE Tom Lehrer                                                 :FAV:mock:
 ** Tool                                                                 :not:
-** TODO Train :tunx
+** DONE Train                                                          :tunx:
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** TODO Tuoni
 ** DONE Turisas                                                          :fi:
@@ -702,12 +702,6 @@
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
-** Richard Feynman                                                :humor:sci:
-*** Surely You're Joking, Mr. Feynman
-*** What Do You Care What Other People Think? Further Adventures of a Curious Character
-    :PROPERTIES:
-    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
-    :END:
 ** GONE George Carlin                                           :voice:humor:
 *** Last Words                                                          :bio:
 ** Ian Hickson                                                   :net:whatwg:
@@ -728,6 +722,12 @@
    :PROPERTIES:
    :url:      https://blip.tv/show/latest_episode/756280
    :END:
+** Richard Feynman                                                :humor:sci:
+*** Surely You're Joking, Mr. Feynman
+*** What Do You Care What Other People Think? Further Adventures of a Curious Character
+    :PROPERTIES:
+    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
+    :END:
 ** Shamus Young                                                   :game:code:
    :PROPERTIES:
    :url:      http://shamusyoung.com
@@ -764,6 +764,10 @@
    :PROPERTIES:
    :url:      http://0pointer.de
    :END:
+** Leon Bambrick
+   :PROPERTIES:
+   :url:      http://secretgeek.net
+   :END:
 ** Little Big Details
 ** mjd
    :PROPERTIES:
@@ -780,6 +784,37 @@
    :END:
 ** xorl %eax, %eax
 * Tool
+** CygWin 
+cd \cygwin\bin
+dash
+PATH=.
+rebaseall
+** Emacs
+*** Prelude
+    :PROPERTIES:
+    :url:      https://github.com/bbatsov/emacs-prelude
+    :END:
+** Firefox Nightly
+   :PROPERTIES:
+   :url:      https://nightly.mozilla.org
+   :END:
+*** Pentadactyl
+    :PROPERTIES:
+    :url:      http://dactyl.sf.net/nightlies
+    :END:
+*** Foxyproxy
+extensions.foxyproxy.settings;file:///H:/Public/hdhoang-misc/foxyproxy.xml
+*** HTTPS-Everywhere
+    :PROPERTIES:
+    :url:      https://eff.org/https-everywhere
+    :END:
+*** NoScript
+    :PROPERTIES:
+    :url:      https://noscript.net
+    :END:
+*** Adblock Plus
+**** Easylist
+*** Download Statusbar
 ** QtScrobbler
    :PROPERTIES:
    :url:      http://qtscrob.sourceforge.net
