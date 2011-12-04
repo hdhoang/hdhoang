@@ -27,8 +27,10 @@ alias nn='chrt -i 0 ionice -c 3 '
 
 # places
 if [[ $(hostname) == cenbaz ]]; then
+    cenbaz=/cygdrive/c
     mount=/cygdrive/h
 else
+    cenbaz=/mnt/cenbaz
     mount=~
 fi
 h=$mount/Public/hdhoang
@@ -38,8 +40,9 @@ dl=$mount/Downloads
 m=$mount/Music
 p=$mount/Pictures
 v=$mount/Videos
-g=/mnt/cenbaz/@g
-s=/mnt/cenbaz/@s
+mi=$mount/Public/mirror
+g=$cenbaz/@g
+s=$cenbaz/@s
 pkg=/var/cache/pacman/pkg
 el=/var/log/everything.log
 
@@ -79,9 +82,9 @@ alias prv='perl-rename -iv'
 function xattr() {
         setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
 }
-alias com='x 7z -o$HOME/Public/mirror/ x {} ::: {$dl,/mnt/cenbaz/@d}/*{rar,zip}'
+alias com='x 7z -o$mi/ x {} ::: {$dl,$cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete --exclude=sumatrapdfcache/ /mnt/cenbaz/@{s,g} ~/s $h $p ~/Public/pic ~/Public/mirror/{book,systemd-arch-units} $m $v $pool'
+alias bu='rs --delete --exclude=sumatrapdfcache/ $cenbaz/@{s,g} $mount/s $h $p $mount/Public/pic $mi/{book,systemd-arch-units} $m $v $pool'
 
 # system
 alias ssc='sudo systemctl --system'
@@ -109,7 +112,7 @@ alias c="crawl-tiles&"
 alias m='mplayer'
 alias mi=mediainfo
 alias ti=gtorrentviewer
-alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P ~/Public/mirror && 7z -y -o/mnt/roxer x ~/Public/mirror/rockbox-ipodnano1g.zip'
+alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P $mi && 7z -y -o/mnt/roxer x $mi/rockbox-ipodnano1g.zip'
 alias dum='dumx -v $m -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
 alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
