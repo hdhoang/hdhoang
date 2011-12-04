@@ -137,6 +137,7 @@
     :feed:     http://www.shoeboxblog.com/?feed=rss2&cat=1279
     :END:
 *** Jana’s Thinkings
+*** Random Russ
 ** Sinfest                                                             :cute:
    :PROPERTIES:
    :url:      http://sinfest.net
@@ -333,6 +334,7 @@
 ** Nikki                                                                :FAV:
 ** Sasha Grey                                                           :not:
 ** Score Group                                                          :not:
+** Sophie                                                               :FAV:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
@@ -629,6 +631,7 @@
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
+** TODO Secret Garden                                                   :FAV:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
@@ -671,6 +674,7 @@
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** GONE Tom Lehrer                                                 :FAV:mock:
+** TODO Tony Cicoria
 ** Tool                                                                 :not:
 ** DONE Train                                                          :tunx:
 ** Trịnh Công Sơn                                                    :FAV:vi:
@@ -693,6 +697,9 @@
    :END:
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Charlie Stross
+   :PROPERTIES:
+   :url:      http://www.antipope.org
+   :END: 
 ** Dan Kaminsky
 ** Dave Winer
    :PROPERTIES:
