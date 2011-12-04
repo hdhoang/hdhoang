@@ -10,6 +10,7 @@ function day() {
 alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox'
+function yb() { f https:youtu.be/$1 }
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 function getc() {
     cd $1
