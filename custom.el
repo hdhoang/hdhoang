@@ -39,3 +39,4 @@
 
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 
+(load-theme 'solarized-dark)
