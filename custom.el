@@ -5,7 +5,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("485737acc3bedc0318a567f1c0f5e7ed2dfde3fb" default)))
+ '(custom-safe-themes (quote ("1440d751f5ef51f9245f8910113daee99848e2c0" "485737acc3bedc0318a567f1c0f5e7ed2dfde3fb" default)))
  '(default-input-method "vietnamese-telex")
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
@@ -39,4 +39,4 @@
 
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 
-(load-theme 'solarized-dark)
+(load-theme 'solarized-light)
