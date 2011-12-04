@@ -79,6 +79,7 @@ try {
 EOS
 style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php << EOS
 td img { margin-right: 500px; max-width: 930px; max-height: 830px }
+[value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
 a+p
