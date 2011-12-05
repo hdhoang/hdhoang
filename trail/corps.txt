@@ -810,7 +810,6 @@ rebaseall
     :url:      http://dactyl.sf.net/nightlies
     :END:
 *** Foxyproxy
-extensions.foxyproxy.settings;file:///H:/Public/hdhoang-misc/foxyproxy.xml
 *** HTTPS-Everywhere
     :PROPERTIES:
     :url:      https://eff.org/https-everywhere

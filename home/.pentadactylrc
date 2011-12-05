@@ -55,6 +55,10 @@ set! toolkit.telemetry.enabled=true
 set! ui.key.contentAccess=6
 set! ui.key.menuAccessKey=0
 
+if /Win/.test(navigator.platform)
+    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/foxyproxy.xml
+fi
+
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
 autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location.href.replace(/&?utm_[^&]+/g,'').replace(/\?$/,''))
