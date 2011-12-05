@@ -76,7 +76,7 @@ try {
     doc.querySelector('select').accessKey='u'
 } catch (e){}
 EOS
-style -n "yape space" http://hb4pm4eznzhd6mts.onion/pe/train.php,http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php << EOS
+style -n "yape space" hb4pm4eznzhd6mts.onion/.+train\.php <<EOS
 td img { margin-right: 500px; max-width: 930px; max-height: 820px }
 [value="Good"] { float: left }
 body { margin: 0 }
