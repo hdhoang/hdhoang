@@ -32,9 +32,13 @@ alias nn='chrt -i 0 ionice -c 3 '
 if [[ $(hostname) == cenbaz ]]; then
     cenbaz=/cygdrive/c
     mount=/cygdrive/h
+    roxer=/cygdrive/x
+    pool=/cygdrive/m
 else
     cenbaz=/mnt/cenbaz
     mount=~
+    roxer=/mnt/roxer
+    pool=/mnt/marbi
 fi
 h=$mount/Public/hdhoang
 conf=$h/system-config/$(hostname)
@@ -51,7 +55,6 @@ el=/var/log/everything.log
 
 fav=$mount/Public/fav
 fm=$fav/Music
-pool=/mnt/marbi
 
 # local info
 alias ls='ls --color=auto --file-type --group-directories-first'
@@ -115,13 +118,13 @@ alias c="crawl-tiles&"
 alias m='mplayer'
 alias mi=mediainfo
 alias ti=gtorrentviewer
-alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P $mi && 7z -y -o/mnt/roxer x $mi/rockbox-ipodnano1g.zip'
+alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P $mi && 7z -y -o$roxer x $mi/rockbox-ipodnano1g.zip'
 alias dum='dumx -v $m -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
 alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
 alias favl='ls $fm/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
 alias favs='xattr fav fav $fav/**/*; rs --delete $fav $pool'
-alias favf='rm -rf /mnt/roxer/m/ && cd $fm && ls */* | shuf -n 100 | rs --files-from=- --no-xattrs $fm /mnt/roxer/m/'
+alias favf='rm -rf $roxer/m/ && cd $fm && ls */* | shuf -n 100 | rs --files-from=- --no-xattrs $fm $roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
     cd $fm
