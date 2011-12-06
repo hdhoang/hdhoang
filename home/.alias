@@ -91,7 +91,7 @@ function xattr() {
 }
 alias com='x 7z -o$mi/ x {} ::: {$dl,$cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --xattrs'
-alias bu='rs --delete --exclude=sumatrapdfcache/ $cenbaz/@{s,g} $mount/s $h $p $mount/Public/pic $mi/{book,systemd-arch-units} $m $v $pool'
+alias bu='rs --delete --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $cenbaz/@{s,g} $mount/s $h $p $mount/Public/pic $mi/{book,systemd-arch-units} $m $v $pool'
 
 # system
 alias ssc='sudo systemctl --system'
