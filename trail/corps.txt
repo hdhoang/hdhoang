@@ -180,10 +180,10 @@
    :url:      https://xkcd.com
    :END:
 * Fiction
+** China Miéville
+*** TODO Embassytown
 ** Eliezer Yudkowsky                                                    :FAV:
 *** Harry Potter and the Methods of Rationality
-** Roger Williams
-*** The Metamorphosis of Prime Intellect                                :FAV:
 ** TODO Ishmael                                                         :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
@@ -209,6 +209,13 @@
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
+** Peter Watts
+   :PROPERTIES:
+   :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
+   :END:
+*** TODO Blindsight
+** Roger Williams
+*** The Metamorphosis of Prime Intellect                                :FAV:
 ** DONE The Last Ring-bearer                                       :blas:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
@@ -339,6 +346,20 @@
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
 ** Tawnee Stone                                                         :not:
+** ThaiCuties / iThaiTeens
+*** Anny Wadee :FAV:
+*** Benze Pharda :FAV:
+*** Cake :not:
+*** Felicia :FAV:
+*** Garfield Jantra :not:
+*** Hana :FAV:
+*** June Piya :not:
+*** June Tharita :not:
+*** Matt P :not:
+*** Mo :FAV:
+*** Ploy Sirinda :not:
+*** So :not:
+*** Yu :FAV:
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
 ** Trang                                                             :FAV:vi:
@@ -556,6 +577,7 @@
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
+** TODO Korn
 ** DONE Korpiklaani                                                     :FAV:
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
@@ -644,6 +666,7 @@
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
 ** TODO Slayer
+** TODO Snow Patrol
 ** DONE Sonata Arctica                                               :FAV:fi:
 ** DONE Spice Girls                                                       :f:
 ** DONE Starcraft sound                                                   :g:
@@ -699,7 +722,7 @@
 ** Charlie Stross
    :PROPERTIES:
    :url:      http://www.antipope.org
-   :END: 
+   :END:
 ** Dan Kaminsky
 ** Dave Winer
    :PROPERTIES:
@@ -791,11 +814,12 @@
    :END:
 ** xorl %eax, %eax
 * Tool
-** CygWin 
+** CygWin
 cd \cygwin\bin
 dash
 PATH=.
 rebaseall
+*** .bash_login
 ** Emacs
 *** Prelude
     :PROPERTIES:
@@ -805,10 +829,13 @@ rebaseall
    :PROPERTIES:
    :url:      https://nightly.mozilla.org
    :END:
-*** Pentadactyl
+*** Adblock Plus
+*** Download Statusbar
+*** DuckDuckGo
     :PROPERTIES:
-    :url:      http://dactyl.sf.net/nightlies
+    :url:      https://addons.mozilla.org/en-US/firefox/addon/duck-duck-go-ssl-search-plugin/
     :END:
+**** Easylist
 *** Foxyproxy
 *** HTTPS-Everywhere
     :PROPERTIES:
@@ -818,9 +845,19 @@ rebaseall
     :PROPERTIES:
     :url:      https://noscript.net
     :END:
-*** Adblock Plus
-**** Easylist
-*** Download Statusbar
+*** Pentadactyl
+    :PROPERTIES:
+    :url:      http://dactyl.sf.net/nightlies
+    :END:
+** perl-rename
+   :PROPERTIES:
+   :url:      http://search.cpan.org/~pederst/rename/
+   :END:
+** Pidgin
+*** Music Tracker
+*** Pidgin Advanced Sound Notification
+*** Purple Plugins Pack
+**** difftopic
 ** QtScrobbler
    :PROPERTIES:
    :url:      http://qtscrob.sourceforge.net
