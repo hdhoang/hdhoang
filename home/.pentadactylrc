@@ -43,7 +43,6 @@ set! downbar.style.speedColor2="200;#859900"
 set! downbar.style.speedColor3="400;#2aa198"
 set! downbar.style.speedColorsEnabled=true
 set! downbar.style.useGradients=false
-set! extensions.checkCompatibility.nightly=false
 set! font.default.x-western="sans-serif"
 set! general.smoothScroll=false
 set! intl.charset.default=UTF-8
