@@ -124,7 +124,7 @@ alias dum='dumx -v $m -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
 alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
 alias favl='ls $fm/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
-alias favs='xattr fav fav $fav/**/*; rs --delete $fav $pool'
+alias favs='rs --delete $fav $pool'
 alias favf='rm -rf $roxer/m/ && cd $fm && ls */* | shuf -n 100 | rs --files-from=- --no-xattrs $fm $roxer/m/'
 function favm() {
     # not using alias to keep emacs hili sane
