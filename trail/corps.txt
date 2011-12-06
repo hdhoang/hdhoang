@@ -510,6 +510,7 @@
 ** DONE Bliss(This)
 ** DONE Bobaflex
 ** DONE Bon Jovi
+** DONE BOND
 ** Boris                                                             :ja:not:
 ** TODO Breaking Benjamin
 ** Buckethead                                                           :FAV:
@@ -604,10 +605,11 @@
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock                                         :1fav:
+** DONE Mike Oldfield                                     :FAV:string:guitar:
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
-** TODO Muse                                                           :1fav:
-** TODO My Chemical Romance
+** DONE Muse                                                           :1fav:
+** DONE My Chemical Romance                                            :1fav:
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
@@ -856,6 +858,7 @@ rebaseall
 ** Pidgin
 *** Music Tracker
 *** Pidgin Advanced Sound Notification
+*** pidgin-libnotify
 *** Purple Plugins Pack
 **** difftopic
 ** QtScrobbler
