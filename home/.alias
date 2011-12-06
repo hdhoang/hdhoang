@@ -128,9 +128,11 @@ alias favf='rm -rf $roxer/m/ && cd $fm && ls */* | shuf -n 100 | rs --files-from
 function favm() {
     # not using alias to keep emacs hili sane
     cd $fm
-    rm -f **/*jpg
     prv "tr/ /_/;
-         s/^''/_/;s/''/-/g;
-         tr/\"*:<>/-/;s/\?//g;
-         s/_\[Unknown_Album\]//i;s/\[unknown\]/(unknown)/;s/\[dialogue\]/(dialogue)/;s/\[untitled\]/(untitled)/" *
+         s/^''/_/; s/''/-/g;
+         tr/\"*:<>/-/; s/\?//g;
+         s/_\[Unknown_Album\]//i;
+         s/\[unknown\]/(unknown)/;
+         s/\[dialogue\]/(dialogue)/;
+         s/\[untitled\]/(untitled)/" *
 }
