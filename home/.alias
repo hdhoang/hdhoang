@@ -19,7 +19,7 @@ function getc() {
     elif [[ "$PWD" == */dota ]]; then
         python2 $v/youtube-dl/youtube-dl --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s"
     elif [[ "$PWD" == */Videos* || "$PWD" == */p ]]; then
-        python2 $v/youtube-dl/youtube-dl --output "%(stitle)s-%(id)s.%(ext)s"
+        python2 $v/youtube-dl/youtube-dl
     elif [[ "$PWD" == */lastfm ]]; then
         wget -c --content-disposition -i q.txt
     else
