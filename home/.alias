@@ -16,8 +16,10 @@ function getc() {
     cd $1
     if [[ "$2" == "-e" ]]; then
         e q.txt
+    elif [[ "$PWD" == */dota ]]; then
+        python2 $v/youtube-dl/youtube-dl --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s"
     elif [[ "$PWD" == */Videos* || "$PWD" == */p ]]; then
-        python2 $v/youtube-dl/youtube-dl
+        python2 $v/youtube-dl/youtube-dl --output "%(stitle)s-%(id)s.%(ext)s"
     elif [[ "$PWD" == */lastfm ]]; then
         wget -c --content-disposition -i q.txt
     else
