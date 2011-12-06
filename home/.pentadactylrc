@@ -47,6 +47,7 @@ set! general.smoothScroll=false
 set! intl.charset.default=UTF-8
 set! keyword.URL="https://duckduckgo.com/?q="
 set! middlemouse.contentLoadURL=false
+set! nglayout.enable_drag_images=false
 set! noscript.sync.enabled=true
 set! security.warn_viewing_mixed=false
 set! toolkit.telemetry.enabled=true
