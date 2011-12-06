@@ -16,7 +16,6 @@ PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
 compdef pacmatic=pacman
-compdef git-achievements=git
 
 setopt dvorak
 bindkey -r "3~"
