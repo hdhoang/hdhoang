@@ -57,7 +57,6 @@ fav=$mount/Public/fav
 fm=$fav/Music
 
 # local info
-alias which=type
 alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
 alias du='du -h --total'
