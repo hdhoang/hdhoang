@@ -19,6 +19,6 @@ compdef pacmatic=pacman
 compdef git-achievements=git
 
 setopt dvorak
-# bindkey    "^[[3;2~"         delete-char
+bindkey -r "3~"
 bindkey -r ',.'
 bindkey '^ ' globalias
