@@ -2,4 +2,5 @@
 source ~/.profile
 source ~/.alias
 
-shopt -s histverify
+shopt -s autocd histverify mailwarn
+shopt -s extglob failglob globstar
