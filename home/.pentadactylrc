@@ -17,6 +17,7 @@ set passkeys+=mail.google.com/mail/:'jkpnu#'
 set urlseparator=' , '
 
 map s <C-c>
+map + -ex execute "tabopen https://plusone.google.com/_/+1/confirm?url=" + content.location.href
 
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
