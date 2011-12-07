@@ -5,7 +5,7 @@
 #+TAGS: vi(V) fi(F) ja(J) ru(R)
 #+TAGS: string(s) riff(r) guitar(g) piano(p)
 #+TAGS: group video(v) voice(a) shot chal speed comp info(i) narrative humor(h)
-#+TAGS: game(G) jbopre(j) net(n) jo jamendo
+#+TAGS: game(G) jbopre(j) net(n) jo jamendo lastfm(l)
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -138,6 +138,10 @@
     :END:
 *** Jana’s Thinkings
 *** Random Russ
+** Subnormality                                                        :cute:
+   :PROPERTIES:
+   :url:      http://viruscomix.com
+   :END:
 ** Sinfest                                                             :cute:
    :PROPERTIES:
    :url:      http://sinfest.net
@@ -161,6 +165,10 @@
 ** the thin H line                                                       :ns:
    :PROPERTIES:
    :url:     http://thinhline.tumblr.com
+   :END:
+** Endless Origami
+   :PROPERTIES:
+   :url:      http://endlessorigami.com
    :END:
 ** theWAREHOUSE
    :PROPERTIES:
@@ -472,6 +480,7 @@
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
+** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Iron Giant (1999)                                           :FAV:
 ** TODO The Man With No Name trilogy
 *** TODO A Fistful of Dollars (1964)
@@ -482,10 +491,12 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
+** TODO 8 Bit Instrumental                                      :game:lastfm:
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alestorm
 ** TODO Alice Cooper
+** ALONE IN THE CHAOS                                            :not:lastfm:
 ** TODO Alsou                                                        :ru:FAV:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
@@ -525,6 +536,9 @@
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                            :FAV:fi:
 ** TODO Chumbawamba
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
+   :END:
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
 ** TODO Cryhavoc
@@ -558,7 +572,7 @@
 ** DONE Guns N' Roses                                                   :FAV:
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
-** TODO Harvey Danger                                                   :FAV:
+** DONE Harvey Danger                                                   :FAV:
 ** TODO Helloween
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
@@ -569,6 +583,26 @@
 ** James Hannigan                                                       :FAV:
 *** Evil Genius
 *** Republic: The Revolution
+** TODO Jesper Kyd                                                     :game:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
+   :END:
+*** Hitman: Codename 47
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/6d71dc61-2f26-406a-9815-f9bb8a6087e6
+    :END:
+*** Hitman 2: Silent Assassin
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19
+    :END:
+*** Hitman: Contracts
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
+    :END:
+*** Hitman: Blood Money
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/5042140e-f13e-4b1b-b507-7345ec0eb13f
+    :END:
 ** TODO Jimi Hendrix
 ** TODO Johann Sebastian Bach
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
@@ -582,14 +616,14 @@
 ** DONE Korpiklaani                                                     :FAV:
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
-** DONE Led Zeppelin
+** DONE Led Zeppelin                                                   :1fav:
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
 ** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
-** DONE Megadeth                                                        :FAV:
-** TODO MegaDriver                                                :game:riff:
+** DONE Megadeth                                                   :FAV:riff:
+** TODO MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
    :END:
@@ -610,6 +644,7 @@
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
 ** DONE My Chemical Romance                                            :1fav:
+** TODO Månegarm                                              :guitar:lastfm:
 ** DONE Mỹ Linh                                                         :FAV:
 ** TODO Nat King Cole
 ** DONE Nevermore
@@ -620,7 +655,7 @@
 *** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
 *** TODO Imaginaerum
-*** DONE Tarja Turunen
+*** DONE Tarja
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
 *** DONE FF VIII
@@ -631,6 +666,14 @@
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
 ** TODO nocreeps                                                    :jamendo:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8
+   :END:
+** Normand Corbeil
+*** Heavy Rain                                                     :FAV:game:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/44108976-6221-46c0-9902-b9c0330a3670
+    :END:
 ** DONE Norther
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
@@ -692,10 +735,12 @@
 ** DONE The Corrs                                              :FAV:f:string:
 ** TODO The Cranberries
 ** The Ink Spots                                                   :FAV:blue:
+** TODO The Plasmas                                        :riff:game:lastfm:
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
-** TODO Tim Minchin
+** TODO Tim Minchin                                                     :FAV:
+*** Timmy the Dog
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** GONE Tom Lehrer                                                 :FAV:mock:
@@ -713,6 +758,7 @@
 ** DONE Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
+** Xihilisk                                                      :not:lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
 ** TODO Zero-Project                                               :FAV:inst:
 * Person                                                                :FAV:
