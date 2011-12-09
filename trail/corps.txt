@@ -48,6 +48,10 @@
    :PROPERTIES:
    :url:      http://thedoghousediaries.com
    :END:
+** Endless Origami
+   :PROPERTIES:
+   :url:      http://endlessorigami.com
+   :END:
 ** Extra Ordinary                                           :cute:title:site:
    :PROPERTIES:
    :url:      http://exocomics.com
@@ -56,6 +60,10 @@
 ** Fredo and Pid'jin                                                   :blas:
    :PROPERTIES:
    :url:      http://pidjin.net
+   :END:
+** Happle Tea                                                           :phi:
+   :PROPERTIES:
+   :url:      http://happletea.com
    :END:
 ** Hejibits                                                      :game:title:
    :PROPERTIES:
@@ -138,10 +146,6 @@
     :END:
 *** Jana’s Thinkings
 *** Random Russ
-** Subnormality                                                        :cute:
-   :PROPERTIES:
-   :url:      http://viruscomix.com
-   :END:
 ** Sinfest                                                             :cute:
    :PROPERTIES:
    :url:      http://sinfest.net
@@ -154,6 +158,10 @@
    :PROPERTIES:
    :url:      http://spudcomics.com
    :END:
+** Subnormality                                                        :cute:
+   :PROPERTIES:
+   :url:      http://viruscomix.com
+   :END:
 ** The Non-Adventures of Wonderella
    :PROPERTIES:
    :url:      http://nonadventures.com
@@ -165,10 +173,6 @@
 ** the thin H line                                                       :ns:
    :PROPERTIES:
    :url:     http://thinhline.tumblr.com
-   :END:
-** Endless Origami
-   :PROPERTIES:
-   :url:      http://endlessorigami.com
    :END:
 ** theWAREHOUSE
    :PROPERTIES:
@@ -234,7 +238,7 @@
    :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
    :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
    :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
-   :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewtopic.php?f=29
+   :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewforum.php?f=29
    :END:
 ** DONE Tom Clancy
 *** Red Storm Rising                                                    :FAV:
@@ -276,6 +280,7 @@
 ** Aria Giovanni                                                        :not:
 ** Ariel Rebel                                                          :FAV:
 ** Asians4You
+*** Aggie                                                               :not:
 *** Alesha                                                              :FAV:
 *** Anissa                                                              :not:
 *** Becky Jang                                                          :not:
@@ -355,19 +360,19 @@
 ** Suicide Girls                                                        :FAV:
 ** Tawnee Stone                                                         :not:
 ** ThaiCuties / iThaiTeens
-*** Anny Wadee :FAV:
-*** Benze Pharda :FAV:
-*** Cake :not:
-*** Felicia :FAV:
-*** Garfield Jantra :not:
-*** Hana :FAV:
-*** June Piya :not:
-*** June Tharita :not:
-*** Matt P :not:
-*** Mo :FAV:
-*** Ploy Sirinda :not:
-*** So :not:
-*** Yu :FAV:
+*** Anny Wadee                                                          :FAV:
+*** Benze Pharda                                                        :FAV:
+*** Cake                                                                :not:
+*** Felicia                                                             :FAV:
+*** Garfield Jantra                                                     :not:
+*** Hana                                                                :FAV:
+*** June Piya                                                           :not:
+*** June Tharita                                                        :not:
+*** Matt P                                                              :not:
+*** Mo                                                                  :FAV:
+*** Ploy Sirinda                                                        :not:
+*** So                                                                  :not:
+*** Yu                                                                  :FAV:
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
 ** Trang                                                             :FAV:vi:
@@ -506,7 +511,7 @@
 *** DONE The Masterworks
 ** DONE Apocalyptica                                             :FAV:string:
 ** DONE Aqua                                                           :1fav:
-** DONE Avenged Sevenfold                                               :FAV:
+** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
 ** Basil Poledouris
@@ -678,12 +683,13 @@
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
+** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
 ** DONE Peter McConnell                                               :g:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Phil Collins
-** TODO Pink Floyd
+** DONE Pink Floyd
 ** DONE Powerglove                                                      :FAV:
    :PROPERTIES:
    :url:      http://vgmetal.com
