@@ -1,6 +1,6 @@
 source /etc/profile
 
-export LESS='--quit-if-one-screen --ignore-case'
+export LESS='--no-init --quit-if-one-screen --ignore-case'
 export MOST_SWITCHES="-w"
 export GREP_OPTIONS='--color --devices=skip --binary-files=without-match --ignore-case'
 export EDITOR=emacsclient
