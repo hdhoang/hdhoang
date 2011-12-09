@@ -18,6 +18,5 @@ PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 compdef pacmatic=pacman
 
 setopt dvorak
-bindkey -r "3~"
-bindkey -r ',.'
-bindkey '^ ' globalias
+bindkey -r ",."
+
