@@ -1,6 +1,10 @@
 set activate-=diverted,links,tabopen
 set complete=ls
-set defsearch=duckduckgo-ssl
+if services.browserSearch.currentEngine.name != "DuckDuckGo (SSL)"
+    tabopen https://addons.mozilla.org/en-US/firefox/addon/duck-duck-go-ssl-search-plugin/
+else
+    set defsearch=duckduckgo-ssl
+fi
 set editor='emacsclient +<line> <file>'
 set guioptions+=c
 set ssli=command
