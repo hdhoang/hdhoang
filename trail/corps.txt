@@ -75,6 +75,10 @@
    :PROPERTIES:
    :url:      http://thoughtballoonhelium.blogspot.com
    :END:
+** Johnny Wander                                                       :cute:
+   :PROPERTIES:
+   :url:      http://johnnywander.com
+   :END:
 ** Liz Prince Power                                                    :cute:
    :PROPERTIES:
    :url:      http://lizprincepower.com
@@ -552,7 +556,11 @@
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                                 :FAV:
 ** DONE Deep Purple
-** DONE Diablo Swing Orchestra
+** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
+   :jamendo:  http://www.jamendo.com/artist/Diablo_Swing_Orchestra_(2)
+   :END:
 ** TODO Dire Strait
 ** TODO Dr. Dre
 ** DONE Dream Theater
@@ -621,6 +629,14 @@
 ** DONE Korpiklaani                                                     :FAV:
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
+** TODO Lamb of God
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/298909e4-ebcb-47b8-95e9-cc53b087fc65
+   :END:
+*** TODO Resolution
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99
+    :END:
 ** DONE Led Zeppelin                                                   :1fav:
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
@@ -644,6 +660,10 @@
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock                                         :1fav:
+** DONE Microwave                                               :vi:riff:FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
+   :END:
 ** DONE Mike Oldfield                                     :FAV:string:guitar:
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
@@ -704,7 +724,7 @@
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
-** TODO Secret Garden                                                   :FAV:
+** TODO Secret Garden                                            :FAV:string:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
@@ -739,7 +759,7 @@
 ** TODO The Beatles                                                     :FAV:
 ** TODO The Charlie Daniels Band
 ** DONE The Corrs                                              :FAV:f:string:
-** TODO The Cranberries
+** TODO The Cranberries                                              :FAV:jo:
 ** The Ink Spots                                                   :FAV:blue:
 ** TODO The Plasmas                                        :riff:game:lastfm:
 ** TODO They Might Be Giants                                         :jbopre:
@@ -756,6 +776,19 @@
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** TODO Tuoni
 ** DONE Turisas                                                          :fi:
+** Various Artists
+*** Juno                                                                :FAV:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
+    :END:
+*** Juno B-Sides: Almost Adopted Songs                                  :FAV:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/9de09c3a-7609-34f3-9e84-4f37fc5c4df6
+    :END:
+*** Rock The Nation: Tìm đến nhau                               :FAV:vi:riff:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0
+    :END:
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
