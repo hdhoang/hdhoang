@@ -69,6 +69,9 @@ set! ui.key.menuAccessKey=0
 
 if /Win/.test(navigator.platform)
     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/foxyproxy.xml
+    set! font.name.monospace.x-western=Consolas
+    set! font.name.sans-serif.x-western=Calibri
+    set! font.name.serif.x-western=Cambria
 fi
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
