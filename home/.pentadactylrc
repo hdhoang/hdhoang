@@ -27,6 +27,8 @@ set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
 set! browser.display.background_color="#fdf6e3"
 set! browser.display.foreground_color="#839496"
+set! browser.download.manager.alertOnEXEOpen=false
+set! browser.download.manager.scanWhenDone=false
 set! browser.feeds.handler.default=web
 set! browser.feeds.handlers.webservice="http://fusion.google.com/add?feedurl=%s"
 set! browser.newtab.enabled=false
