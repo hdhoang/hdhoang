@@ -57,6 +57,8 @@ set! general.smoothScroll=false
 set! intl.charset.default=UTF-8
 set! keyword.URL="https://duckduckgo.com/?q="
 set! middlemouse.contentLoadURL=false
+set! network.http.pipelining=true
+set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
 set! nglayout.enable_drag_images=false
 set! noscript.sync.enabled=true
