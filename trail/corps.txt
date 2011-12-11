@@ -135,6 +135,10 @@
    :PROPERTIES:
    :url:      http://savagechickens.com
    :END:
+** Sent From The Moon :cute:title:
+   :PROPERTIES:
+   :url:      http://sentfromthemoon.com
+   :END:
 ** GONE Sexy Losers                                        :ns:end:cute:sick:
    :PROPERTIES:
    :url:      http://sexylosers.com
@@ -185,6 +189,10 @@
 ** Tree Lobsters!                                                 :sci:title:
    :PROPERTIES:
    :url:      http://treelobsters.com
+   :END:
+** Up Up Down Down                                                :site:game:
+   :PROPERTIES:
+   :url:      http://upup-downdown.com
    :END:
 ** Wondermark                                                         :title:
    :PROPERTIES:
@@ -643,6 +651,22 @@
 ** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
+** TODO Matt Uelmen :game:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
+   :END:
+*** TODO (1996) Diablo
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
+    :END:
+*** TODO (2000) Diablo II
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
+    :END:
+*** TODO (2007) Diablo II: Lord of Destruction
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
+    :END:
 ** DONE Megadeth                                                   :FAV:riff:
 ** TODO MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
@@ -870,6 +894,10 @@
 *** rlpowell
 *** Tene
 *** treed
+** Better Explained
+   :PROPERTIES:
+   :url:      http://betterexplained.com
+   :END:
 ** cks                                                          :psysad:herd:
    :PROPERTIES:
    :url:      http://utcc.utoronto.ca/~cks/
