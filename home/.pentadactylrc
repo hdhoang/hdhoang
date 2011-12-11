@@ -31,6 +31,7 @@ set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
 set! browser.feeds.handler.default=web
 set! browser.feeds.handlers.webservice="http://fusion.google.com/add?feedurl=%s"
+set! browser.fullscreen.autohide=false
 set! browser.newtab.enabled=false
 set! browser.sessionstore.max_concurrent_tabs=0
 set! browser.sessionstore.restore_on_demand=true
