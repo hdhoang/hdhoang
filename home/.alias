@@ -14,16 +14,15 @@ function yb() { f https:youtu.be/$1; }
 alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 function getc() {
     cd $1
-    if [[ "$2" == "-e" ]]; then
-        e q.txt
-    elif [[ "$PWD" == */dota ]]; then
+    if [[ "$PWD" == */dota ]]; then
         python2 $v/youtube-dl/youtube-dl --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s"
-    elif [[ "$PWD" == */Videos* || "$PWD" == */p ]]; then
-        python2 $v/youtube-dl/youtube-dl
-    elif [[ "$PWD" == */lastfm ]]; then
-        wget -c --content-disposition -i q.txt
     else
-        wget -c -i q.txt
+        python2 $v/youtube-dl/youtube-dl
+    fi
+    if [[ "$PWD" == */lastfm ]]; then
+        wget -c --content-disposition -i wq.txt
+    else
+        wget -c -i wq.txt
     fi
 }
 alias nn='chrt -i 0 ionice -c 3 '
