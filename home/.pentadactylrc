@@ -119,6 +119,22 @@ style -n "gif decor" * <<EOS
 , [src*="tumblr"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
 EOS
+style -n "titled image decor" * <<EOS
+img[title]:not(:-moz-any(
+  [src*='chainsawsuit.com/']
+, [src*='e-merl.com']
+, [src*='endlessorigami.com/']
+, [src*='lastplacecomics.com/']
+, [src*='neatorama.com/']
+, [src*='ribbonfarm.com/']
+, [src*='savagechickens.com/']
+, [src*='shoeboxblog.com/']
+, [src*='tedmccagg.typepad.com/']
+, [src*='thebadchemicals.com/']
+, [src*='todayifoundout.com/']
+))
+{ outline: dashed #6c71c4 }
+EOS
 
 style -n "link decor: good hosts" * <<EOS
   [href*="depositfiles.com/"] /* clean UI, reasonable waiting */
