@@ -117,7 +117,7 @@ style -n "gif decor" * <<EOS
 , [src*="kuvaton"]
 , [src*="myconfinedspace"]
 , [src*="tumblr"]
-)[src$=".gif"] { border-right: 2px dotted teal !important }
+)[src$=".gif"] { border-right: 2px dotted #d33682 !important}
 EOS
 
 style -n "link decor: good hosts" * <<EOS
