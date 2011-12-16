@@ -78,20 +78,11 @@ fi
 autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location.href.replace(/&?utm_[^&]+/g,'').replace(/\?$/,''))
 
 " trigger on PageLoad so that the password is filled in
-autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -js let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
-" trigger on PageLoad in async to ensure the elements exist
-autocmd PageLoad http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php -javascript <<EOS
+autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -javascript <<EOS
+let b = doc.querySelector('[value="Login"]'); if(b) b.form.submit()
 try {
-    doc.querySelector('#good button').accessKey='e';
-    doc.querySelector('#bad  button').accessKey=',';
-    doc.querySelector('select').accessKey='u'
-} catch (e){}
-EOS
-" trigger on DOMLoad to judge with extreme prejudice
-autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript <<EOS
-try {
-    doc.querySelector('[value="Good"]').accessKey='e';
-    doc.querySelector('[value="Bad"]').accessKey=',';
+    doc.querySelector('#good button, [value="Good"]').accessKey='e';
+    doc.querySelector('#bad  button, [value="Bad"]').accessKey=',';
     doc.querySelector('select').accessKey='u'
 } catch (e){}
 EOS
