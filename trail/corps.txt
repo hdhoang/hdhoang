@@ -1,4 +1,5 @@
 -*- mode: org -*-
+#+STARTUP: showall
 #+TODO: TODO(t) | DONE(d) GONE(g)
 
 #+TAGS: FAV(f) 1fav(1) not(N)
@@ -576,6 +577,17 @@
 ** DONE Cinderella                                                     :1fav:
 ** TODO Crowded House
 ** TODO Cryhavoc
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/9e4a0fe6-1c4f-4abd-aea8-0d21a1d13f55
+   :END:
+*** DONE (1998) Sweetbriers
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/0fd8cd40-6782-3b70-9687-88d385edc122
+    :END:
+*** TODO (1999) Pitch-Black Blues
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998
+    :END:
 ** DONE Céline Dion                                                  :FAV:fr:
 ** Dan Wentz
 *** DONE FreeSpace 2 (official)
@@ -592,6 +604,9 @@
     :END:
 ** TODO Dire Strait
 ** TODO Dr. Dre
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
+   :END:
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
 ** DONE Elias Viljanen                                                  :FAV:
@@ -690,6 +705,13 @@
     :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
 ** DONE Megadeth                                                   :FAV:riff:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e
+   :END:
+*** DONE (2009) Endgame
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
+    :END:
 ** TODO MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
@@ -780,6 +802,10 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6
    :END:
+*** DONE (2007) Humanity: Hour I
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286
+    :END:
 ** TODO Secret Garden                                            :FAV:string:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
