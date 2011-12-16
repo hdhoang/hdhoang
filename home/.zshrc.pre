@@ -1,2 +1,2 @@
 source ~/Public/hdhoang/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-setopt histverify
+setopt histverify numeric_glob_sort

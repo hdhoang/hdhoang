@@ -5,7 +5,7 @@ source ~/.alias.zsh
 
 # assuming grml-zsh-config is used
 setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
-setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS numeric_glob_sort
+setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
 unsetopt AUTO_NAME_DIRS bash_auto_list
 zstyle ':vcs_info:*' enable git
 
