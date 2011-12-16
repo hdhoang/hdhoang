@@ -135,7 +135,7 @@
    :PROPERTIES:
    :url:      http://savagechickens.com
    :END:
-** Sent From The Moon :cute:title:
+** Sent From The Moon                                            :cute:title:
    :PROPERTIES:
    :url:      http://sentfromthemoon.com
    :END:
@@ -410,9 +410,16 @@
 *** DONE Fallout 2                                     :shot:humor:narrative:
 ** CannibalK9                                                         :speed:
 *** DONE Grand Theft Auto: San Andreas                          :video:voice:
-** Chip Cheezum, General Ironicus                         :video:voice:group:
-*** DONE Metal Gear Solid 2: Substance                                :humor:
-*** DONE Metal Gear Solid 3: Snake Eater                         :humor:comp:
+** Chip Cheezum
+*** DONE Zone of the Enders                                      :humor:mock:
+** Chip Cheezum, General Ironicus         :group:video:voice:comp:info:humor:
+*** DONE Metal Gear Solid 2: Substance
+*** DONE Metal Gear Solid 3: Snake Eater
+*** TODO Metal Gear Solid 4: Guns of the Patriot
+** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
+*** DONE Metal Gear Solid
+** CrookedB
+*** TODO Escape from Hell
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Goldom
@@ -441,6 +448,8 @@
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
 ** Scorchy
 *** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
+** Shadow Catboy
+*** Planescape: Torment
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 ** The White Dragon
@@ -507,6 +516,14 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
+** TODO Blondie
+   :PROPERTIES:
+   :mbid: http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
+   :END:
+*** TODO (2011) Panic of Girls
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
+    :END:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** TODO 8 Bit Instrumental                                      :game:lastfm:
 ** GONE ABBA                                                            :FAV:
@@ -569,6 +586,10 @@
    :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
    :jamendo:  http://www.jamendo.com/artist/Diablo_Swing_Orchestra_(2)
    :END:
+*** DONE (2006) The Butcher's Ballroom
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
+    :END:
 ** TODO Dire Strait
 ** TODO Dr. Dre
 ** DONE Dream Theater
@@ -588,6 +609,7 @@
 ** DONE Flowing Tears
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
+** TODO Electric Light Orchestra
 ** DONE Gorillaz
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
@@ -651,7 +673,7 @@
 ** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
 ** TODO Maroon 5
-** TODO Matt Uelmen :game:
+** TODO Matt Uelmen                                                    :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
    :END:
@@ -695,6 +717,13 @@
 ** DONE My Chemical Romance                                            :1fav:
 ** TODO Månegarm                                              :guitar:lastfm:
 ** DONE Mỹ Linh                                                         :FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79
+   :END:
+*** DONE (2005) Chat với Mozart                                         :not:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa
+    :END:
 ** TODO Nat King Cole
 ** DONE Nevermore
 ** Nhạc cách mạng
@@ -748,6 +777,9 @@
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6
+   :END:
 ** TODO Secret Garden                                            :FAV:string:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
