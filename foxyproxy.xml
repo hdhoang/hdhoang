@@ -69,6 +69,7 @@
       notify="true"
       notifyWhenCanceled="true"
       prompt="true"
+      proxy-id="3856060272"
     ><match
         enabled="true"
         name="Dynamic QuickAdd Pattern"
