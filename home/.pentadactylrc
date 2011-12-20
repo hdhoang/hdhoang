@@ -121,12 +121,16 @@ style -n "gif decor" * <<EOS
 EOS
 style -n "titled image decor" * <<EOS
 img[title]:not(:-moz-any(
-  [src*='chainsawsuit.com/']
+  [src*='buttersafe.com/']
+, [src*='chainsawsuit.com/']
+, [src*='channelate.com/']
 , [src*='e-merl.com']
 , [src*='endlessorigami.com/']
+, [src*='johnnywander.com/']
 , [src*='lastplacecomics.com/']
 , [src*='neatorama.com/']
 , [src*='ribbonfarm.com/']
+, [src*='satwcomic.com/']
 , [src*='savagechickens.com/']
 , [src*='shoeboxblog.com/']
 , [src*='tedmccagg.typepad.com/']
