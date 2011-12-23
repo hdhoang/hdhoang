@@ -1,0 +1,10 @@
+[Unit]
+Description=Freenet6 tunnel client
+
+[Service]
+ExecStart=/opt/gogoc/bin/gogoc -y -f /opt/gogoc/bin/gogoc.conf
+KillSignal=SIGHUP
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

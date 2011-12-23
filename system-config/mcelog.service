@@ -1,0 +1,10 @@
+[Unit]
+Description=Machine check event logging daemon
+
+[Service]
+ExecStartPre=-/usr/sbin/mcelog
+ExecStart=/usr/sbin/mcelog --daemon --foreground
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

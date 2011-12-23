@@ -1,0 +1,11 @@
+[Unit]
+Description=Lighttpd Web Server
+
+[Service]
+StandardOutput=syslog
+ExecStartPre=/usr/sbin/lighttpd -t -f /etc/lighttpd/lighttpd.conf
+ExecStart=/usr/sbin/lighttpd-angel -D -f /etc/lighttpd/lighttpd.conf
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
