@@ -1,0 +1,5 @@
+Host github.com
+IdentityFile ~/secrets/git
+
+Host gitorious.org
+IdentityFile ~/secrets/git
