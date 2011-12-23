@@ -38,6 +38,7 @@ set! browser.startup.homepage=about:blank
 set! browser.startup.page=3
 set! browser.tabs.closeButtons=2
 set! browser.tabs.loadDivertedInBackground=true
+set! devtools.gcli.enable=true
 set! downbar.display.clearButton=true
 set! downbar.display.mainButton=false
 set! downbar.display.speed=false
