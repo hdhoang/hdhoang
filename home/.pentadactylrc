@@ -160,7 +160,7 @@ img[title]:not(:-moz-any(
 , [src*='todayifoundout.com/']
 , [src*='upup-downdown.com/']
 ))
-{ outline: dashed #6c71c4 }
+{ outline: 2px dashed #6c71c4; outline-offset: 1px }
 img[title=""] { outline: none !important }
 EOS
 
