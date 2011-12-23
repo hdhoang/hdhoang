@@ -30,6 +30,7 @@ set! browser.display.foreground_color="#839496"
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
 set! browser.fullscreen.autohide=false
+set! browser.preferences.instantApply=true
 set! browser.sessionstore.max_concurrent_tabs=0
 set! browser.sessionstore.restore_on_demand=true
 set! browser.shell.checkDefaultBrowser=false
