@@ -161,6 +161,7 @@ img[title]:not(:-moz-any(
 , [src*='upup-downdown.com/']
 ))
 { outline: dashed #6c71c4 }
+img[title=""] { outline: none !important }
 EOS
 
 style -n "link decor: good hosts" * <<EOS
