@@ -29,8 +29,6 @@ set! browser.display.background_color="#fdf6e3"
 set! browser.display.foreground_color="#839496"
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
-set! browser.feeds.handler.default=web
-set! browser.feeds.handlers.webservice="http://fusion.google.com/add?feedurl=%s"
 set! browser.fullscreen.autohide=false
 set! browser.newtab.enabled=false
 set! browser.sessionstore.max_concurrent_tabs=0
@@ -95,6 +93,15 @@ a+p
 , [name=width], [name=height]
 , #settings td>:not(select), [type='text']
 { display: none }
+EOS
+
+set! browser.contentHandlers.auto.application/vnd.mozilla.maybe.feed=http://fusion.google.com/add?feedurl=%s
+set! browser.feeds.handler=reader
+set! browser.feeds.handler.default=web
+set! browser.feeds.handlers.webservice=http://fusion.google.com/add?feedurl=%s
+autocmd PageLoadPre http://www.google.com/ig/add?feedurl=* -js <<EOS
+doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
+     '/reader/view/#stream/feed/'))
 EOS
 
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
