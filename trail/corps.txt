@@ -517,14 +517,6 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
-** TODO Blondie
-   :PROPERTIES:
-   :mbid: http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
-   :END:
-*** TODO (2011) Panic of Girls
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
-    :END:
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** TODO 8 Bit Instrumental                                      :game:lastfm:
 ** GONE ABBA                                                            :FAV:
@@ -554,6 +546,14 @@
 ** GONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
 ** DONE Bliss(This)
+** TODO Blondie
+   :PROPERTIES:
+   :mbid: http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
+   :END:
+*** TODO (2011) Panic of Girls
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
+    :END:
 ** DONE Bobaflex
 ** DONE Bon Jovi
 ** DONE BOND
@@ -589,6 +589,15 @@
     :mbid:     http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998
     :END:
 ** DONE Céline Dion                                                  :FAV:fr:
+** TODO Dan Bull
+*** TODO (2009) Safe
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/e7ef5790-57b7-41cd-a1ae-58ec4e60520d
+    :END:
+*** TODO (2011) Face
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
+    :END:
 ** Dan Wentz
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                                 :FAV:
@@ -609,6 +618,7 @@
    :END:
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
+** TODO Electric Light Orchestra
 ** DONE Elias Viljanen                                                  :FAV:
 ** TODO Elvis Presley
 ** DONE Eminem                                                          :FAV:
@@ -624,7 +634,6 @@
 ** DONE Flowing Tears
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
-** TODO Electric Light Orchestra
 ** DONE Gorillaz
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
@@ -635,8 +644,13 @@
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
 ** TODO Iced Earth
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
+   :END:
 ** DONE Il Divo
 ** DONE Incubus
+** TODO Insomnium
+*** DONE (2011) One for Sorrow
 ** DONE Iron Maiden                                                     :FAV:
 ** James Hannigan                                                       :FAV:
 *** Evil Genius
@@ -875,6 +889,13 @@
 ** TODO White Lion
 ** TODO Whitesnake
 ** DONE Wintersun
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c054ea6b-c585-41eb-ae7e-4b0ca43308ff
+   :END:
+*** DONE (2004) Wintersun
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
+    :END:
 ** TODO Within Temptation                                                 :f:
 ** DONE Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
@@ -952,6 +973,10 @@
 *** rlpowell
 *** Tene
 *** treed
+** GONE Alastair Rankine
+   :PROPERTIES:
+   :url:      http://girtby.net
+   :END:
 ** Better Explained
    :PROPERTIES:
    :url:      http://betterexplained.com
@@ -993,6 +1018,10 @@ dash
 PATH=.
 rebaseall
 *** .bash_login
+*** bind
+*** git
+*** openssh
+*** rsync
 ** Emacs
 *** Prelude
     :PROPERTIES:
