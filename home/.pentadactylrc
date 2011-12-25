@@ -21,7 +21,6 @@ set passkeys+=mail.google.com/mail/:'#/? jknpu'
 set urlseparator=' , '
 
 map s <C-c>
-map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
 
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
@@ -112,6 +111,16 @@ set! browser.feeds.handlers.webservice=http://fusion.google.com/add?feedurl=%s
 autocmd PageLoadPre http://www.google.com/ig/add?feedurl=* -js <<EOS
 doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
      '/reader/view/#stream/feed/'))
+EOS
+
+map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
+autocmd PageLoad https://plusone.google.com/_/+1/fastbutton?* -js <<EOS
+try {
+    doc.querySelector('#button.Uu').click()
+} catch (e if e instanceof TypeError) {}
+EOS
+autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
+doc.querySelector('.f-xe').click()
 EOS
 
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
