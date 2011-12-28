@@ -159,6 +159,7 @@ img[title]:not(:-moz-any(
 , [src*='lastplacecomics.com/']
 , [src*='neatorama.com/']
 , [src*='pbfcomics.com/']
+, [src*='pidjin.net/']
 , [src*='ribbonfarm.com/']
 , [src*='robbieandbobby.com/']
 , [src*='satwcomic.com/']
