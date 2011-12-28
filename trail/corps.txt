@@ -9,6 +9,7 @@
 #+TAGS: game(G) jbopre(j) net(n) jo jamendo lastfm(l)
 
 * Comic                                                                 :FAV:
+** Walking in Squares :site:game:
 ** A Softer World                                                :title:cute:
    :PROPERTIES:
    :url:      http://asofterworld.com
@@ -386,9 +387,11 @@
 *** Ploy Sirinda                                                        :not:
 *** So                                                                  :not:
 *** Yu                                                                  :FAV:
+** Thainee :not:
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
 ** Trang                                                             :FAV:vi:
+** Tussinee :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
 ** Victoria                                                             :FAV:
@@ -590,7 +593,11 @@
     :END:
 ** DONE Céline Dion                                                  :FAV:fr:
 ** TODO Dan Bull
-*** TODO (2009) Safe
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/f1597ac6-6cc6-4769-9751-69f681f015da
+   :END:
+*** DONE (2009) Safe
+    CLOSED: [2011-12-28 Wed 16:44]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e7ef5790-57b7-41cd-a1ae-58ec4e60520d
     :END:
@@ -770,6 +777,13 @@
 ** DONE Nightwish                                                       :FAV:
 *** TODO Imaginaerum
 *** DONE Tarja
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4
+    :END:
+**** DONE (2006) Henkäys ikuisuudesta
+     :PROPERTIES:
+     :mbid:     http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5
+     :END:
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
 *** DONE FF VIII
@@ -804,6 +818,8 @@
    :url:      http://vgmetal.com
    :END:
 ** TODO Puddle of Mudd
+** TODO Quốc Bảo                                                     :FAV:vi:
+*** DONE (2003) Bình yên
 ** TODO Rage Against the Machine
 ** DONE Regina Spektor
 ** DONE Rhapsody                                                     :FAV:it:
@@ -858,6 +874,14 @@
 ** TODO The Cranberries                                              :FAV:jo:
 ** The Ink Spots                                                   :FAV:blue:
 ** TODO The Plasmas                                        :riff:game:lastfm:
+** DONE Theory of a Deadman                                       :game:wail:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b
+   :END:
+*** DONE (2011) The Truth Is...
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/3d667c9b-133a-4f33-a7ba-dc3a92c21dd2
+    :END:
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
