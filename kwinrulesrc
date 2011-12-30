@@ -12,7 +12,7 @@ wmclassmatch=1
 [2]
 Description=browser
 position=0,0
-positionrule=3
+positionrule=2
 shortcut=Alt+Shift+F2
 shortcutrule=2
 types=4294967295
