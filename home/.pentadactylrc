@@ -63,7 +63,7 @@ set! noscript.sync.enabled=true
 set! security.warn_viewing_mixed=false
 set! services.sync.engine.adblockplus=true
 set! toolkit.telemetry.enabled=true
-set! ui.key.contentAccess=6
+set! ui.key.contentAccess=4
 set! ui.key.menuAccessKey=0
 
 if /Win/.test(navigator.platform)
