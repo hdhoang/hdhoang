@@ -1,5 +1,9 @@
 [1]
 Description=file
+maximizevert=true
+maximizevertrule=2
+noborder=true
+noborderrule=2
 shortcut=Alt+Shift+F1
 shortcutrule=2
 types=4294967295
