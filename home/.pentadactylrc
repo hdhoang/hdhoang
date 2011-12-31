@@ -129,6 +129,9 @@ style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #chrome-fullscreen-top-toggle, .email, .read-state { display: none !important }
 EOS
 
+autocmd PageLoadPre plusone.google.com/_/.+\.onion/ -js <<EOS
+doc.location.replace(doc.location.href.replace('onion','tor2web.org'))
+EOS
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
