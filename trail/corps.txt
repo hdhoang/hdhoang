@@ -9,7 +9,7 @@
 #+TAGS: game(G) jbopre(j) net(n) jo jamendo lastfm(l)
 
 * Comic                                                                 :FAV:
-** Walking in Squares :site:game:
+** Walking in Squares                                             :site:game:
 ** A Softer World                                                :title:cute:
    :PROPERTIES:
    :url:      http://asofterworld.com
@@ -279,12 +279,14 @@
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
+** Alisa Kiss                                                           :FAV:
 ** Alison Angel                                                         :not:
 ** Amara                                                                :not:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
+** andreea-b.com                                                        :not:
 ** Anja.de                                                              :not:
 ** Ann Angel                                                            :not:
 ** Anne                                                                 :FAV:
@@ -308,11 +310,11 @@
 *** Jennifer Lee                                                        :not:
 *** Kaila Wang                                                          :not:
 *** Kelly                                                               :not:
-*** Kesara                                                              :not:
+*** Kesara                                                              :FAV:
 *** Lincy Leaw                                                          :not:
 *** Misha                                                               :not:
 *** Monica                                                              :FAV:
-*** Nancy Ho                                                            :not:
+*** Nancy Ho                                                            :FAV:
 *** Paris                                                               :not:
 *** Petchara                                                            :FAV:
 *** Regina                                                              :FAV:
@@ -358,20 +360,25 @@
 ** Kristina Fey                                                         :not:
 ** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
+** Lovable Kitty
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
 *** Anna
 *** Vera H.
+** Miss Luana                                                           :FAV:
 ** Missy Model                                                          :not:
 ** MPLstudios.com
-** Nicole                                                               :not:
+** Nicole                                                               :FAV:
 ** Nikki                                                                :FAV:
+** PiER999
+*** Angel Dark
 ** Sasha Grey                                                           :not:
 ** Score Group                                                          :not:
 ** Sophie                                                               :FAV:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
+** Sweet Natural Girl                                                   :FAV:
 ** Tawnee Stone                                                         :not:
 ** ThaiCuties / iThaiTeens
 *** Anny Wadee                                                          :FAV:
@@ -387,11 +394,11 @@
 *** Ploy Sirinda                                                        :not:
 *** So                                                                  :not:
 *** Yu                                                                  :FAV:
-** Thainee :not:
+** Thainee                                                              :not:
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
 ** Trang                                                             :FAV:vi:
-** Tussinee :not:
+** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
 ** Victoria                                                             :FAV:
@@ -608,6 +615,7 @@
 ** Dan Wentz
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                                 :FAV:
+** TODO Danzig                                                         :game:
 ** DONE Deep Purple
 ** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
    :PROPERTIES:
@@ -647,7 +655,8 @@
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
 ** DONE Harvey Danger                                                   :FAV:
-** TODO Helloween
+** DONE Helloween
+   CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
 ** TODO Iced Earth
@@ -797,6 +806,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8
    :END:
+*** DONE (2006) Time to Differ
 ** Normand Corbeil
 *** Heavy Rain                                                     :FAV:game:
     :PROPERTIES:
@@ -857,6 +867,7 @@
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
 ** TODO Steve Vai                                                      :inst:
+** DONE Stone Sour                                                 :wail:FAV:
 ** DONE Stratovarius                                                 :FAV:fi:
 *** DONE Timo Tolkki
 ** DONE String Quartet tributes                                 :FAV::string:
@@ -980,6 +991,23 @@
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
+* Steps
+** Music
+# chromaprint
+# picard
+*** naming
+$if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) -
+%title%
+$if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) - %artist% - %title%
+# fb2k
+*** sort by title, dedup
+*** replay gain
+*** favm
+[%artist%_@_]%title%[_'['%album%']']
+[%artist%_@_]%title%_%track%[_'['%album%']']
+# amarok
+*** favm
+%artist%_@_%title%_[[%album%]]
 * Technical                                                             :FAV:
 ** #jbopre
    :PROPERTIES:
@@ -1044,6 +1072,22 @@ rebaseall
 *** .bash_login
 *** bind
 *** git
+*** minidlna
+**** autoconf
+**** automake
+**** gcc4-g++
+**** gettext-devel
+**** make
+**** libexif-devel
+**** libjpeg-devel
+**** libsqlite3-devel
+**** libogg-devel
+**** libvorbis-devel
+**** flac-devel
+**** libiconv-devel
+**** libavhttp://libav.org/releases/libav-0.7.3.tar.gz
+./configure --disable-yasm --disable-shared --enable-static --extra-cflags=-fno-reorder-functions --extra-ldflags=-static-libgcc --extra-ldflags=-static
+**** libid3tagftp://ftp.mars.org/pub/mpeg/libid3tag-0.15.1b.tar.gz
 *** openssh
 *** rsync
 ** Emacs
