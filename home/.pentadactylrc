@@ -16,7 +16,6 @@ set maxitems=5
 set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
-set passkeys=google.com/reader:'vf/? npSsmrgaeUNPXO'
 set passkeys+=mail.google.com/mail/:'#/? jknpu'
 set urlseparator=' , '
 
@@ -113,11 +112,7 @@ doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
      '/reader/view/#stream/feed/'))
 EOS
 
-map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
-autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
-doc.querySelector('.f-xe').click()
-EOS
-
+set passkeys+=google.com/reader:'vf/? npSsmrgaeUNPXO'
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
@@ -129,9 +124,14 @@ style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #chrome-fullscreen-top-toggle, .email, .read-state { display: none !important }
 EOS
 
+map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
 autocmd PageLoadPre plusone.google.com/_/.+\.onion/ -js <<EOS
 doc.location.replace(doc.location.href.replace('onion','tor2web.org'))
 EOS
+autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
+doc.querySelector('.f-xe').click()
+EOS
+
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
