@@ -55,5 +55,18 @@ wmclass=mplayer
 wmclasscomplete=false
 wmclassmatch=1
 
+[6]
+Description=conversation
+position=950,0
+positionrule=2
+size=345,1040
+sizerule=2
+types=1
+windowrole=conversation
+windowrolematch=1
+wmclass=pidgin
+wmclasscomplete=false
+wmclassmatch=1
+
 [General]
-count=5
+count=6
