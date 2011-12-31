@@ -114,11 +114,6 @@ doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
 EOS
 
 map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
-autocmd PageLoad https://plusone.google.com/_/+1/fastbutton?* -js <<EOS
-try {
-    doc.querySelector('#button.Uu').click()
-} catch (e if e instanceof TypeError) {}
-EOS
 autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
 doc.querySelector('.f-xe').click()
 EOS
