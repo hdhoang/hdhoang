@@ -23,7 +23,7 @@
       right="contextmenu"
       width="0"
   /><toolbar
-      left="contextmenu"
+      left="cycle"
       middle="cycle"
       right="contextmenu"
   /><logg
