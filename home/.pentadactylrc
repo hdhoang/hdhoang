@@ -210,7 +210,9 @@ style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
 , [href*="apenwarr.ca/"]
+, [href*="//girtby.net/"]
 , [href*="pixelbeat.org/"]
+, [href*="//plasmasturm.org/"]
 , [href*="plover.com/"]
 )::after { content: "\22c6" }
 EOS
@@ -238,4 +240,6 @@ style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background
 style -n "cracked" cracked.com .Body, .body { padding-left: 0 !important }
 
 style -n "lastfm popover" last.fm iframe {height: 100px !important}
+
+style -n "girtby" girtby.net a { text-decoration: underline !important }
 " vim: set ft=pentadactyl:
