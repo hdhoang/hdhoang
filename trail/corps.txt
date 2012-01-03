@@ -294,6 +294,7 @@
    :url:      http://anneteenmodel.com
    :END:
 ** Aria Giovanni                                                        :not:
+** Angela Melini                                                        :not:
 ** Ariel Rebel                                                          :FAV:
 ** Asians4You
 *** Aggie                                                               :not:
@@ -301,6 +302,7 @@
 *** Anissa                                                              :not:
 *** Becky Jang                                                          :not:
 *** Carolyn                                                             :FAV:
+*** Cho Hye Eun                                                         :FAV:
 *** Claudia                                                             :not:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
@@ -311,6 +313,7 @@
 *** Kaila Wang                                                          :not:
 *** Kelly                                                               :not:
 *** Kesara                                                              :FAV:
+*** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :not:
 *** Misha                                                               :not:
 *** Monica                                                              :FAV:
@@ -701,6 +704,7 @@
 ** DONE Kalmah
 ** TODO Kamelot
 ** TODO Korn
+*** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                                     :FAV:
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
@@ -858,6 +862,7 @@
    :END:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
+** TODO Skrillex
 ** TODO Slayer
 ** TODO Snow Patrol
 ** DONE Sonata Arctica                                               :FAV:fi:
@@ -900,10 +905,11 @@
 *** Timmy the Dog
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
-** GONE Tom Lehrer                                                 :FAV:mock:
+** TODO Tom Lehrer                                                 :FAV:mock:
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
 ** DONE Train                                                          :tunx:
+** DONE Tryad                                                  :1fav:jamendo:
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** TODO Tuoni
 ** DONE Turisas                                                          :fi:
