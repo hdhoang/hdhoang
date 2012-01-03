@@ -73,7 +73,7 @@ port_mapping=(
 25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
-alias op='upnpc -r ${port_mapping[*]}'
+alias op='upnpc -r ${port_mapping[*]} && upnpc -a 192.168.0.56 22 2222 tcp'
 
 # file ops
 alias mkdir='mkdir -p'
