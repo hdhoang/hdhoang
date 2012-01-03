@@ -2,7 +2,7 @@
 <foxyproxy
     mode="patterns"
     selectedTabIndex="0"
-    toolbaricon="true"
+    toolbaricon="false"
     toolsMenu="false"
     contextMenu="false"
     advancedMenus="false"
@@ -16,9 +16,9 @@
       includeDirect="false"
       includeDisabled="false"
   /><statusbar
-      icon="false"
+      icon="true"
       text="false"
-      left="contextmenu"
+      left="cycle"
       middle="cycle"
       right="contextmenu"
       width="0"
