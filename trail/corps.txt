@@ -746,10 +746,12 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
     :END:
+*** DONE (2011) Th1rt3en
 ** TODO MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
    :END:
+*** DONE (2003) Push Start Button
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -788,7 +790,7 @@
 *** Tuổi trẻ thế hệ Bác Hồ
 *** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
-*** TODO Imaginaerum
+*** DONE (2011) Imaginaerum
 *** DONE Tarja
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4
@@ -850,6 +852,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286
     :END:
+*** DONE (2011) Comeblack
 ** TODO Secret Garden                                            :FAV:string:
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
@@ -865,6 +868,7 @@
 ** TODO Skrillex
 ** TODO Slayer
 ** TODO Snow Patrol
+*** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                               :FAV:fi:
 ** DONE Spice Girls                                                       :f:
 ** DONE Starcraft sound                                                   :g:
@@ -902,6 +906,7 @@
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** TODO Tim Minchin                                                     :FAV:
+*** DONE (2008) Ready for This?
 *** Timmy the Dog
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
@@ -913,7 +918,14 @@
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** TODO Tuoni
 ** DONE Turisas                                                          :fi:
+** DONE Turmion Kätilöt
+** DONE Van Canto
 ** Various Artists
+*** (2003) Warcraft III: The Frozen Throne
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
+    :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
+    :END:
 *** Juno                                                                :FAV:
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
