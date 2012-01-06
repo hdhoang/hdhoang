@@ -126,6 +126,7 @@ style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #chrome-fullscreen-top-toggle, .email, .read-state { display: none !important }
 EOS
 
+set passkeys+=plus.google.com:'jk'
 map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + content.location.href + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + content.location.href
 autocmd PageLoadPre plusone.google.com/_/.+\.onion/ -js <<EOS
 doc.location.search = doc.location.search.replace('onion','tor2web.org')
