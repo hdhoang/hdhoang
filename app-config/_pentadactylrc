@@ -132,9 +132,6 @@ doc.location.search = doc.location.search.replace('onion','tor2web.org')
 EOS
 autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
 doc.querySelector('.f-xe').click()
-win.setTimeout(function() {
-    doc.querySelector('.e-b').focus()
-}, 2000)
 EOS
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
