@@ -7,9 +7,6 @@ RelayBandwidthBurst 131072
 RelayBandwidthRate 65536
 ExitPolicy reject *:*
 
-SocksListenAddress 0.0.0.0:9050
-
 User tor
 DataDirectory /var/lib/tor
-ControlPort 9051
 Log notice stdout
