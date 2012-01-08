@@ -70,6 +70,7 @@ alias nh='sudo nethogs'
 alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 port_mapping=(
 587 tcp 465 tcp # tor
+588 tcp 466 tcp # tor
 25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
