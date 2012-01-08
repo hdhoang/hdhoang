@@ -344,7 +344,8 @@
 ** Francesca Dani                                                       :FAV:
 ** Front
 *** Mellisa Clarke                                                      :FAV:
-** Hegre                                                                :FAV:
+** Hegre-Archives.com                                                   :FAV:
+*** Luba
 ** Jayden                                                               :FAV:
 ** Jordan Capri                                                         :FAV:
    :PROPERTIES:
@@ -671,6 +672,8 @@
 ** TODO Insomnium
 *** DONE (2011) One for Sorrow
 ** DONE Iron Maiden                                                     :FAV:
+** Jack Wall
+*** DONE Jade Empire
 ** James Hannigan                                                       :FAV:
 *** Evil Genius
 *** Republic: The Revolution
@@ -858,11 +861,6 @@
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
 ** GONE Simon & Garfunkel                                               :FAV:
-** TODO Singing Science Records
-   :PROPERTIES:
-   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
-   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
-   :END:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
 ** TODO Skrillex
@@ -910,7 +908,10 @@
 *** Timmy the Dog
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
-** TODO Tom Lehrer                                                 :FAV:mock:
+** DONE Tom Lehrer                                                 :FAV:mock:
+   :PROPERTIES:
+   :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
+   :END:
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
 ** DONE Train                                                          :tunx:
@@ -921,6 +922,18 @@
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
+*** DONE Singing Science Records                                        :FAV:
+   CLOSED: [2012-01-07 Sat 20:05]
+   :PROPERTIES:
+   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
+   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
+   :END:
+**** Energy & Motion Songs
+**** Experiment Songs
+**** More Nature Songs
+**** Nature Songs
+**** Space Songs
+**** Weather Songs
 *** (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
