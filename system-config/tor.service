@@ -1,0 +1,10 @@
+[Unit]
+Description=Anonymizing Overlay Network
+
+[Service]
+ExecStart=/usr/bin/tor
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
