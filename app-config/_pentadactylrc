@@ -16,7 +16,6 @@ set maxitems=5
 set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
-set passkeys+=mail.google.com/mail/:'#/? jknpu'
 set urlseparator=' , '
 
 map s <C-c>
@@ -113,6 +112,9 @@ autocmd PageLoadPre http://www.google.com/ig/add?feedurl=* -js <<EOS
 doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
      '/reader/view/#stream/feed/'))
 EOS
+
+bmark -keyword gm https://mail.google.com/mail/#inbox -tags n
+set passkeys+=mail.google.com/mail/:'#/? jknpu'
 
 set passkeys+=google.com/reader:'vf/? npSsmrgaeUNPXO'
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
