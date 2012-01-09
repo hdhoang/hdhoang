@@ -631,7 +631,8 @@
     :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
     :END:
 ** TODO Dire Strait
-** TODO Dr. Dre
+** DONE Dr. Dre
+   CLOSED: [2012-01-09 Mon 16:20]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
    :END:
@@ -755,6 +756,8 @@
    :url:      http://megadriver.com.br
    :END:
 *** DONE (2003) Push Start Button
+*** DONE (2004) Metal Beast
+*** DONE (2007) Sword, Shurikins & Fists
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -889,7 +892,8 @@
 ** TODO The Beatles                                                     :FAV:
 ** TODO The Charlie Daniels Band
 ** DONE The Corrs                                              :FAV:f:string:
-** TODO The Cranberries                                              :FAV:jo:
+** DONE The Cranberries                                              :FAV:jo:
+   CLOSED: [2012-01-09 Mon 14:35]
 ** The Ink Spots                                                   :FAV:blue:
 ** TODO The Plasmas                                        :riff:game:lastfm:
 ** DONE Theory of a Deadman                                       :game:wail:
@@ -905,7 +909,8 @@
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** TODO Tim Minchin                                                     :FAV:
 *** DONE (2008) Ready for This?
-*** Timmy the Dog
+*** DONE Timmy the Dog
+    CLOSED: [2012-01-09 Mon 14:35]
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** DONE Tom Lehrer                                                 :FAV:mock:
