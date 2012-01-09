@@ -73,6 +73,19 @@ else
     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
 fi
 
+bmark -keyword ac about:config
+bmark -keyword st about:sync-tabs
+bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
+bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive
+
+bmark -keyword i https://ca.isohunt.com/lite/#s=seeds&q=%s
+bmark -keyword b http://btdigg.org/search?q=%s
+bmark -keyword d http://beta.demonoid.me/files/?query=%s
+bmark -keyword m http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
+bmark -keyword ma http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
+bmark -keyword mg http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
+bmark -keyword mr http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
+
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
 autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location.href.replace(/&?utm_[^&]+/g,'').replace(/\?$/,''))
