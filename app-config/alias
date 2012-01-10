@@ -12,11 +12,8 @@ function getc() {
     python2 $v/youtube-dl/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s"
     python2 $v/youtube-dl/youtube-dl
 
-    if [[ "$PWD" == */lastfm ]]; then
-        wget -c --content-disposition -i wq.txt
-    else
-        wget -c -i wq.txt
-    fi
+    curl $(<wq.txt)
+    curl --proxy socks4a://127.0.0.1:9050 $(<tq.txt)
 }
 alias nn='chrt -i 0 ionice -c 3 '
 
