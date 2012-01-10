@@ -3,15 +3,10 @@
 # utils
 alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
-alias mg='magit -e'
-function day() {
-    grep $(date --rfc-3339=date -d "${1:-0} days ago") ${*:2}
-}
 alias x=parallel
 alias e="emacsclient -n"
 alias f='firefox-nightly'
 function yb() { f https:youtu.be/$1; }
-alias rcmd="wget -qO - http://www.commandlinefu.com/commands/random/plaintext"
 function getc() {
     cd $1
     python2 $v/youtube-dl/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s"
@@ -48,7 +43,6 @@ mi=$mount/Public/mirror
 g=$z/@g
 s=$z/@s
 pkg=/var/cache/pacman/pkg
-el=/var/log/everything.log
 
 fav=$mount/Public/fav
 fm=$fav/Music
@@ -60,7 +54,6 @@ alias du='du -h --total'
 alias dumx='dumx -h -xdev'
 alias locate='locate -ie'
 alias p='pgrep -f'
-alias who='who -aH'
 alias s='watch "cpupower -c all frequency-info -mf; cpupower -c all frequency-info -ms; grep current /sys/kernel/debug/dri/0/radeon_pm_info; sensors | grep -v fan"'
 alias fr='free -m'
 alias t='tail -f'
@@ -81,24 +74,14 @@ alias mkdir='mkdir -p'
 alias cp='cp -r --reflink=auto --preserve=xattr'
 alias ln='ln -i'
 alias mv='mv -i'
-alias rmdir='rmdir -p'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
-function xattr() {
-        setfattr -n "user.$USER.$1" -v "$2" "${@:3}"
-}
-alias com='x 7z -o$mi/ x {} ::: {$dl,$cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive'
 alias bu='rs --delete --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $z/@{s,g} $mount/s $h $mount/secrets $p $mount/Public/pic $mi/book $m $v $pool'
 
 # system
 alias ssc='sudo systemctl --system'
 alias usc='systemctl --user'
-alias po='cat ~/shutdown-todo.txt - && ssc'
-alias psc='ps xawf -eo pid,user,cgroup,args'
-function sls() {
-    x -X systemd-cgls systemd:/system/{}.service ::: $*
-}
 
 alias mp='nn makepkg -isf'
 alias i='sudo pacmatic'
