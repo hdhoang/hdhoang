@@ -1168,6 +1168,11 @@ rebaseall
     :PROPERTIES:
     :url:      http://dactyl.sf.net/nightlies
     :END:
+** gogo6
+   :PROPERTIES:
+   :32bit:    http://api.ning.com/files/eTQek6oePnyKxo4A4xnjAqlL--jue7OrZTywOyNFUEkGLmLsqQLT7dmVedGNEPUmRvEyVbcm-Bq0T1Q-fyLhWi-ctbx52DSn/gogoc1.2RELEASEwin32.exe
+   :64bit:    http://api.ning.com/files/eTQek6oePnyf09jlLkAAW4a-kmGIPcck3HM13gtCQib3eoGx9KaoLLlm5DuufWnrx5b1irL5pXkT0feqbBiA2aPjgUwoSrUS/gogoc1.2RELEASEwin64.exe
+   :END:
 ** perl-rename
    :PROPERTIES:
    :url:      http://search.cpan.org/~pederst/rename/
