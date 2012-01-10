@@ -467,6 +467,10 @@
 *** Planescape: Torment
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
+*** TODO Xenogears                                                     :shot:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Xenogears-(by-The-Dark-Id)/
+    :END:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
 ** Vexation
@@ -682,21 +686,22 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
    :END:
-*** Hitman: Codename 47
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release/6d71dc61-2f26-406a-9815-f9bb8a6087e6
-    :END:
+*** (2011) Assassin's Creed Revelations
 *** Hitman 2: Silent Assassin
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19
     :END:
-*** Hitman: Contracts
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
-    :END:
 *** Hitman: Blood Money
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/5042140e-f13e-4b1b-b507-7345ec0eb13f
+    :END:
+*** Hitman: Codename 47
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/6d71dc61-2f26-406a-9815-f9bb8a6087e6
+    :END:
+*** Hitman: Contracts
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
     :END:
 ** TODO Jimi Hendrix
 ** TODO Johann Sebastian Bach
@@ -1121,9 +1126,15 @@ rebaseall
 **** libvorbis-devel
 **** flac-devel
 **** libiconv-devel
-**** libavhttp://libav.org/releases/libav-0.7.3.tar.gz
+**** libav
+     :PROPERTIES:
+     :url:      http://libav.org/releases/libav-0.7.3.tar.gz
+     :END:
 ./configure --disable-yasm --disable-shared --enable-static --extra-cflags=-fno-reorder-functions --extra-ldflags=-static-libgcc --extra-ldflags=-static
-**** libid3tagftp://ftp.mars.org/pub/mpeg/libid3tag-0.15.1b.tar.gz
+**** libid3tag
+     :PROPERTIES:
+     :url:      ftp://ftp.mars.org/pub/mpeg/libid3tag-0.15.1b.tar.gz
+     :END:
 *** openssh
 *** rsync
 ** Emacs
@@ -1131,6 +1142,8 @@ rebaseall
     :PROPERTIES:
     :url:      https://github.com/bbatsov/emacs-prelude
     :END:
+** Ext2Fsd
+*** dir_index,flex_bg,sparse_super,uninit_bg
 ** Firefox Nightly
    :PROPERTIES:
    :url:      https://nightly.mozilla.org
