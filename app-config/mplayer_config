@@ -1,7 +1,5 @@
+ao=pulse,
 ontop=true
 osdlevel=3
 use-filename-title=true
 subfont-text-scale=6
-
-[pulse]
-ao=pulse

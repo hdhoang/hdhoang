@@ -94,7 +94,7 @@ function aur {
 
 # fun
 alias c="crawl-tiles&"
-alias m='mplayer -profile pulse'
+alias m='mplayer'
 alias mi=mediainfo
 alias ti=gtorrentviewer
 alias rb='wget -N http://build.rockbox.org/data/rockbox-ipodnano1g.zip -P $mi && 7z -y -o$roxer x $mi/rockbox-ipodnano1g.zip'
