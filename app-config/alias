@@ -27,12 +27,12 @@ alias nn='chrt -i 0 ionice -c 3 '
 
 # places
 if [[ $(hostname) == cenbaz ]]; then
-    cenbaz=/cygdrive/c
+    z=/cygdrive/c
     mount=/cygdrive/h
     roxer=/cygdrive/x
     pool=/cygdrive/m
 else
-    cenbaz=/mnt/cenbaz
+    z=/mnt/cenbaz
     mount=~
     roxer=/mnt/roxer
     pool=/mnt/marbi
@@ -45,8 +45,8 @@ m=$mount/Music
 p=$mount/Pictures
 v=$mount/Videos
 mi=$mount/Public/mirror
-g=$cenbaz/@g
-s=$cenbaz/@s
+g=$z/@g
+s=$z/@s
 pkg=/var/cache/pacman/pkg
 el=/var/log/everything.log
 
@@ -89,7 +89,7 @@ function xattr() {
 }
 alias com='x 7z -o$mi/ x {} ::: {$dl,$cenbaz/@d}/*{rar,zip}'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive'
-alias bu='rs --delete --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $cenbaz/@{s,g} $mount/s $h $mount/secrets $p $mount/Public/pic $mi/book $m $v $pool'
+alias bu='rs --delete --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $z/@{s,g} $mount/s $h $mount/secrets $p $mount/Public/pic $mi/book $m $v $pool'
 
 # system
 alias ssc='sudo systemctl --system'
