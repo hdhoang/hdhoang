@@ -24,7 +24,7 @@
 (defalias 'rb 'revert-buffer)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
-(setq frame-title-format "%b")
+(setq frame-title-format "%f")
 
 ;; Major modes
 (autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
