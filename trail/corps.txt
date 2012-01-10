@@ -708,6 +708,7 @@
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
+** TODO Josh Woodward                                        :jamendo:lastfm:
 ** DONE JT Bruce                                                :FAV:jamendo:
 ** DONE Judas Priest
 ** DONE Kalmah
@@ -1173,6 +1174,9 @@ rebaseall
    :32bit:    http://api.ning.com/files/eTQek6oePnyKxo4A4xnjAqlL--jue7OrZTywOyNFUEkGLmLsqQLT7dmVedGNEPUmRvEyVbcm-Bq0T1Q-fyLhWi-ctbx52DSn/gogoc1.2RELEASEwin32.exe
    :64bit:    http://api.ning.com/files/eTQek6oePnyf09jlLkAAW4a-kmGIPcck3HM13gtCQib3eoGx9KaoLLlm5DuufWnrx5b1irL5pXkT0feqbBiA2aPjgUwoSrUS/gogoc1.2RELEASEwin64.exe
    :END:
+** grub2
+*** GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
+*** os-prober
 ** perl-rename
    :PROPERTIES:
    :url:      http://search.cpan.org/~pederst/rename/
