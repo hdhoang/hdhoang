@@ -622,7 +622,7 @@
     :END:
 ** Dan Wentz
 *** DONE FreeSpace 2 (official)
-** TODO Daniel Bautista                                                 :FAV:
+** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
 ** TODO Danzig                                                         :game:
 ** DONE Deep Purple
 ** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
