@@ -62,6 +62,7 @@ set! noscript.sync.enabled=true
 set! security.warn_viewing_mixed=false
 set! services.sync.engine.adblockplus=true
 set! toolkit.telemetry.enabled=true
+set! toolkit.telemetry.prompted=2
 set! ui.key.contentAccess=4
 set! ui.key.menuAccessKey=0
 
