@@ -211,6 +211,7 @@ style -n "link decor: good hosts" * <<EOS
 , [href*="mediafire.com/"],[href*="mfi.re/"]
 , [href*="megashare.com/"]
 , [href*="rapidshare.com/"]
+, [href*="youporn.com/"] /* download links */
 { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
 EOS
 style -n "link decor: bad hosts" * <<EOS
