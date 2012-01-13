@@ -620,7 +620,6 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
     :END:
-** TODO Pain Confessor                                                 :wail:
 ** Dan Wentz                                                           :game:
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
@@ -692,6 +691,9 @@
 ** James Hannigan                                                       :FAV:
 *** Evil Genius
 *** Republic: The Revolution
+** Jan Morgenstern
+*** DONE Big Buck Bunny
+    CLOSED: [2012-01-13 Fri 14:51]
 ** TODO Jesper Kyd                                                     :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
@@ -839,11 +841,13 @@
 **** DONE Piano Collection
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
-** TODO nocreeps                                                    :jamendo:
+** DONE nocreeps                                                :FAV:jamendo:
+   CLOSED: [2012-01-13 Fri 14:50]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8
    :END:
 *** DONE (2006) Time to Differ
+*** DONE (2008-11-19) Nice Noise
 ** Normand Corbeil
 *** Heavy Rain                                                     :FAV:game:
     :PROPERTIES:
@@ -853,6 +857,10 @@
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
+** TODO Pain Confessor                                                 :wail:
+*** TODO (2004-09-08) Turmoil
+*** TODO (2006-03-01) Fearrage
+*** TODO (2007-03-14) Purgatory of the Second Sun
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
 ** DONE Peter McConnell                                               :g:FAV:
