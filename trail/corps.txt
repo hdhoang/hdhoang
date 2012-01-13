@@ -620,9 +620,19 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
     :END:
-** Dan Wentz
+** TODO Pain Confessor                                                 :wail:
+** Dan Wentz                                                           :game:
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
+*** TODO (2007-09-03) Music for a Film
+*** TODO (2008-02-19) Recycle Bin
+*** TODO (2008-04-18) 15
+*** TODO (2008-05-09) Classics and Soundtracks
+*** TODO (2008-06-26) Beethoven
+*** TODO (2009-02-06) Madera Y Bronce
+*** TODO (2011-06-10) Cocktail Eleven
+*** TODO (2012-01-09) Symphony No. 1 in A minor, Op. 12
+*** TODO Weirdos And Classics
 ** TODO Danzig                                                         :game:
 ** DONE Deep Purple
 ** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
@@ -709,6 +719,15 @@
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
 ** TODO Josh Woodward                                        :jamendo:lastfm:
+*** TODO (2004-04-17) Here Today
+*** TODO (2005-02-05) Crawford Street
+*** TODO (2005) Sunny Side of the Street
+*** TODO (2006-05-06) Only Whispering
+*** TODO (2007-08-11) Not Quite Connected
+*** TODO (2007-08-16) Dirty Wings
+*** TODO (2008-04-24) The Simple Life
+*** TODO (2009-10-21) Breadcrumbs
+*** TODO (2010) Ashes
 ** DONE JT Bruce                                                :FAV:jamendo:
 ** DONE Judas Priest
 ** DONE Kalmah
@@ -980,6 +999,7 @@
 ** Xihilisk                                                      :not:lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
 ** TODO Zero-Project                                               :FAV:inst:
+*** TODO (2012-01-06) Untold Stories of a Dying Moon
 * Person                                                                :FAV:
 ** Aaron Toponce                                                       :free:
    :PROPERTIES:
