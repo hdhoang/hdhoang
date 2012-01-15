@@ -96,7 +96,7 @@ bmark -keyword mr http://musicbrainz.org/search?advanced=1&type=recording&tport=
 autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location.href.replace(/&?utm_[^&]+/g,'').replace(/\?$/,''))
 
 bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
-bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/asynctrain.php
+bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -javascript <<EOS
 try {
