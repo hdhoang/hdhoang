@@ -63,7 +63,7 @@ shortcutrule=2
 types=4294967295
 wmclass=mplayer
 wmclasscomplete=false
-wmclassmatch=1
+wmclassmatch=2
 
 [6]
 Description=conversation
