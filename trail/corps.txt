@@ -430,9 +430,11 @@
 ** Chip Cheezum, General Ironicus         :group:video:voice:comp:info:humor:
 *** DONE Metal Gear Solid 2: Substance
 *** DONE Metal Gear Solid 3: Snake Eater
-*** TODO Metal Gear Solid 4: Guns of the Patriot
+*** DONE Metal Gear Solid 4: Guns of the Patriot
 ** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
 *** DONE Metal Gear Solid
+** Coulis
+*** TODO Prince of Persia: The Two Thrones
 ** CrookedB
 *** TODO Escape from Hell
 ** Geop
@@ -459,12 +461,18 @@
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
 *** DONE Sam & Max Hit the Road                           :voice:video:group:
+** Psychedelic Eyeball :FAV:video:humor:voice:
+*** DONE Prince of Persia 1
+    CLOSED: [2012-01-16 Mon 14:56]
+*** DONE Prince of Persia 2
 ** Research Indicates
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
 ** Scorchy
 *** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
+** Sethur
+*** TODO Prince of Persia: Sands of Time
 ** Shadow Catboy
-*** Planescape: Torment
+*** TODO Planescape: Torment
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Xenogears                                                     :shot:
@@ -542,7 +550,8 @@
 ** TODO Alestorm
 ** TODO Alice Cooper
 ** ALONE IN THE CHAOS                                            :not:lastfm:
-** TODO Alsou                                                        :ru:FAV:
+** DONE Alsou                                                        :ru:FAV:
+   CLOSED: [2012-01-15 Sun 20:50]
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
 ** DONE Annihilator                                                     :FAV:
@@ -872,6 +881,7 @@
    :PROPERTIES:
    :url:      http://vgmetal.com
    :END:
+** TODO Prince of Persia
 ** TODO Puddle of Mudd
 ** TODO Quốc Bảo                                                     :FAV:vi:
 *** DONE (2003) Bình yên
@@ -1203,7 +1213,8 @@ rebaseall
    :64bit:    http://api.ning.com/files/eTQek6oePnyf09jlLkAAW4a-kmGIPcck3HM13gtCQib3eoGx9KaoLLlm5DuufWnrx5b1irL5pXkT0feqbBiA2aPjgUwoSrUS/gogoc1.2RELEASEwin64.exe
    :END:
 ** grub2
-*** GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
+GRUB_DEFAULT=saved
+GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
 *** os-prober
 ** perl-rename
    :PROPERTIES:
