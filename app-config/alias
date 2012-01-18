@@ -12,7 +12,7 @@ function getc() {
     python2 $v/youtube-dl/youtube-dl || \
     python2 $v/youtube-dl/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s" || \
     curl --proxy socks4a://127.0.0.1:9050 $(cat tq.txt) || \
-    wget
+    wget --continue
 }
 alias nn='chrt -i 0 ionice -c 3 '
 
