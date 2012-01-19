@@ -470,7 +470,7 @@
 ** Scorchy
 *** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
 ** Sethur
-*** TODO Prince of Persia: Sands of Time
+*** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
 *** TODO Planescape: Torment
 ** The Dark Id
@@ -590,6 +590,7 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
+*** TODO (2012) Electric Sea
 *** Thanatopsis
 ** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
@@ -792,6 +793,7 @@
    :url:      http://megadriver.com.br
    :END:
 *** DONE (2003) Push Start Button
+*** DONE (2004) Action Metal
 *** DONE (2004) Metal Beast
 *** DONE (2007) Sword, Shurikins & Fists
 ** GONE Metal Gear Solid                                                :FAV:
