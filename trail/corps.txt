@@ -367,6 +367,7 @@
 ** Lovable Kitty
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
+*** Alea
 *** Anna
 *** Vera H.
 ** Miss Luana                                                           :FAV:
@@ -544,10 +545,11 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
-** TODO 8 Bit Instrumental                                      :game:lastfm:
+** DONE 8 Bit Instrumental                                      :game:lastfm:
+   CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
 ** DONE Aerosmith                                                      :1fav:
-** TODO Alestorm
+** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
@@ -1218,6 +1220,10 @@ rebaseall
 GRUB_DEFAULT=saved
 GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
 *** os-prober
+** ix
+   :PROPERTIES:
+   :url:      http://ix.io
+   :END:
 ** perl-rename
    :PROPERTIES:
    :url:      http://search.cpan.org/~pederst/rename/
@@ -1232,3 +1238,6 @@ GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
    :PROPERTIES:
    :url:      http://qtscrob.sourceforge.net
    :END:
+** Tor
+*** curl
+*** torsocks
