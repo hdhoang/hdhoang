@@ -80,7 +80,7 @@ alias ssc='sudo systemctl --system'
 alias usc='systemctl --user'
 
 alias mp='nn makepkg -isf'
-alias i='sudo pacmatic'
+alias i='sudo pacman'
 alias pc='pacman -Qdt && i -R $(pacman -Qdtq)'
 alias cower='cower -fddt $ap'
 ap=~/archlinux

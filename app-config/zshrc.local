@@ -15,8 +15,5 @@ EXITCODE="%(?..${fg[red]}%? )"
 PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
 
-compdef pacmatic=pacman
-
 setopt dvorak
 bindkey -r ",."
-
