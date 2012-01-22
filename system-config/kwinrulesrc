@@ -78,5 +78,18 @@ wmclass=pidgin
 wmclasscomplete=false
 wmclassmatch=1
 
+[7]
+Description=comic
+position=346,28
+positionrule=3
+size=589,996
+sizerule=3
+types=4294967295
+windowrole=mainwindow#1
+windowrolematch=1
+wmclass=gwenview
+wmclasscomplete=false
+wmclassmatch=1
+
 [General]
-count=6
+count=7
