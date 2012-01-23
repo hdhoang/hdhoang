@@ -6,3 +6,6 @@ export ALTERNATE_EDITOR=""
 export CCACHE_BASEDIR=${HOME}
 
 export EMAIL=hdhoang@zahe.me
+
+source /etc/locale.conf
+export LANG
