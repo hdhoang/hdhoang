@@ -1,4 +1,3 @@
-af=channels=2
 vo=gl,
 ontop=true
 osdlevel=3
