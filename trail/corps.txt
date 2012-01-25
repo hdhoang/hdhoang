@@ -374,6 +374,8 @@
 *** Anna
 *** Elena
 *** Emma A.                                                             :not:
+*** Kristina
+*** Mima A.
 *** Vera H.
 ** Miss Luana                                                           :FAV:
 ** Missy Model                                                          :not:
@@ -1161,6 +1163,8 @@ $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%
    :END:
 ** xorl %eax, %eax
 * Tool
+** PulseAudio
+flat-volume = no
 ** CygWin
 cd \cygwin\bin
 dash
