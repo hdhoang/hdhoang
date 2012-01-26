@@ -9,4 +9,4 @@ ExitPolicy reject *:*
 
 User tor
 DataDirectory /var/lib/tor
-Log notice stdout
+Log notice syslog
