@@ -6,5 +6,9 @@ ExecStartPre=-/usr/sbin/mcelog
 ExecStart=/usr/sbin/mcelog --daemon --foreground
 KillSignal=SIGINT
 
+PrivateNetwork=yes
+PrivateTmp=yes
+InaccessibleDirectories=/home/hdhoang /mnt/cenbaz
+
 [Install]
 WantedBy=multi-user.target
