@@ -6,5 +6,9 @@ ExecStart=/opt/gogoc/bin/gogoc -y -f /opt/gogoc/bin/gogoc.conf
 KillSignal=SIGHUP
 KillMode=process
 
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_RAW
+PrivateTmp=yes
+InaccessibleDirectories=/home/hdhoang /mnt/cenbaz
+
 [Install]
 WantedBy=multi-user.target
