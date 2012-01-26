@@ -36,7 +36,7 @@ position=935,520
 positionrule=2
 shade=true
 shaderule=3
-shortcut=Alt+Shift+F3
+shortcut=Alt+Shift+F5
 shortcutrule=2
 size=373,270
 sizerule=2
@@ -58,7 +58,7 @@ wmclassmatch=1
 
 [5]
 Description=movie
-shortcut=Alt+Shift+F5
+shortcut=Alt+Shift+F3
 shortcutrule=2
 types=4294967295
 wmclass=mplayer
