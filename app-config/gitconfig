@@ -54,4 +54,5 @@
 	smudge = sqlite3 %f && sqlite3 %f 'pragma user_version=3' && cat %f && rm %f
 
 [filter "registry"]
-        clean = recode utf16..utf8
+        clean = recode utf16le..utf8
+        smudge = recode utf8..utf16le
