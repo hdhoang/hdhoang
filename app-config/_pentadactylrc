@@ -102,17 +102,17 @@ bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -javascript <<EOS
 try {
-    doc.querySelector('#good button, [value="Good"]').accessKey='e d';
-    doc.querySelector('#bad button,   [value="Bad"]').accessKey=', w';
-    doc.querySelector('select').accessKey='u f'
+    doc.querySelector('#good button, [value="Good"]').accessKey='e';
+    doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
+    doc.querySelector('select').accessKey='u'
 } catch (e if e instanceof TypeError) {
     doc.querySelector('[value="Login"]').form.submit()
 }
 EOS
 autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript <<EOS
 try {
-    doc.querySelector('[value="Good"]').accessKey='e d';
-    doc.querySelector('[value="Bad"]').accessKey=', w';
+    doc.querySelector('[value="Good"]').accessKey='e';
+    doc.querySelector('[value="Bad"]').accessKey=',';
 } catch (e){}
 EOS
 style -n "yape space" hb4pm4eznzhd6mts.onion/.+train\.php <<EOS
@@ -147,7 +147,7 @@ set passkeys+=google.com/reader:'vf/? npSsmrgaeUNPXO'
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
-container.accessKey = "o s";
+container.accessKey = "o";
 container.focus();
 EOS
 style -n "greader popping" https://www.google.com/reader/view/* <<EOS
