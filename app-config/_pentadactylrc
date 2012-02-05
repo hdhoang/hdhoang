@@ -85,6 +85,7 @@ bmark -keyword st about:sync-tabs
 bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
 bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive
 bmark -keyword ix -post f:1=%s http://ix.io/
+bmark -keyword io http://ix.io/%s/
 
 bmark -keyword i https://ca.isohunt.com/lite/#s=seeds&q=%s
 bmark -keyword b http://btdigg.org/search?q=%s
