@@ -102,7 +102,7 @@ autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location
 bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
 bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
 " trigger on PageLoad so that the password is filled in
-autocmd PageLoad hb4pm4eznzhd6mts.onion/.+train\.php -javascript <<EOS
+autocmd PageLoad (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php -javascript <<EOS
 try {
     doc.querySelector('#good button, [value="Good"]').accessKey='e';
     doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
@@ -111,13 +111,13 @@ try {
     doc.querySelector('[value="Login"]').form.submit()
 }
 EOS
-autocmd DOMLoad http://hb4pm4eznzhd6mts.onion/pe/train.php -javascript <<EOS
+autocmd DOMLoad (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/pe/train.php -javascript <<EOS
 try {
     doc.querySelector('[value="Good"]').accessKey='e';
     doc.querySelector('[value="Bad"]').accessKey=',';
 } catch (e){}
 EOS
-style -n "yape space" hb4pm4eznzhd6mts.onion/.+train\.php <<EOS
+style -n "yape space" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
 td img { margin-right: 500px; max-width: 930px; max-height: 810px }
 [value="Good"] { float: left }
 body { margin: 0 }
