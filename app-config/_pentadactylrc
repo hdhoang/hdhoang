@@ -59,6 +59,7 @@ set! font.default.x-western="sans-serif"
 set! general.smoothScroll=false
 set! general.warnOnAboutConfig=false
 set! intl.charset.default=UTF-8
+set! layout.spellcheckDefault=0
 set! middlemouse.contentLoadURL=false
 set! network.http.pipelining=true
 set! network.http.pipelining.ssl=true
