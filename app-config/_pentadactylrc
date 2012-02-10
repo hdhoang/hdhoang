@@ -118,7 +118,8 @@ try {
 } catch (e){}
 EOS
 style -n "yape space" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
-td img { margin-right: 500px; max-width: 930px; max-height: 810px }
+html { position: relative; height: 100%;}
+:-moz-any(table,script)+table img { margin-right: 500px; position: absolute; max-width: 100%; max-height: 92% }
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
