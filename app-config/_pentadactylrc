@@ -117,9 +117,12 @@ try {
     doc.querySelector('[value="Bad"]').accessKey=',';
 } catch (e){}
 EOS
+autocmd PageLoad (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/pe/async/asynctrain.php -js <<EOS
+doc.body.insertAdjacentHTML('afterbegin', '<a href="train.php">Train/view</a> <a href="feedback.php">FAQ</a> <a href="stat.php">Stats</a>')
+EOS
 style -n "yape space" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
 html { position: relative; height: 100%;}
-:-moz-any(table,script)+table img { margin-right: 500px; position: absolute; max-width: 100%; max-height: 92% }
+:-moz-any(table,script)+table img { margin-right: 500px; position: absolute; max-width: 100%; max-height: 90% }
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
