@@ -79,8 +79,12 @@ if /Win/.test(navigator.platform)
     set! font.name.monospace.x-western=Consolas
     set! font.name.sans-serif.x-western=Calibri
     set! font.name.serif.x-western=Cambria
+
+    map <C-r> -ex rehash +u profile/_pentadactylrc
 else
     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
+
+    map <C-r> -ex rehash
 fi
 
 bmark -keyword ac about:config
