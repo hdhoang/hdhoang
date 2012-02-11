@@ -67,7 +67,6 @@ set! middlemouse.contentLoadURL=false
 set! network.http.pipelining=true
 set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
-set! noscript.sync.enabled=true
 set! security.warn_viewing_mixed=false
 set! services.sync.engine.adblockplus=true
 set! toolkit.telemetry.enabled=true
