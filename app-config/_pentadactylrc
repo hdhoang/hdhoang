@@ -23,7 +23,7 @@ map s <C-c>
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
 set! browser.display.background_color="#fdf6e3"
-set! browser.display.foreground_color="#839496"
+set! browser.display.foreground_color="#657b83"
 set! browser.display.use_system_colors=false
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
