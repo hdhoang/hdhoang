@@ -75,13 +75,10 @@ set! toolkit.telemetry.prompted=2
 set! ui.key.contentAccess=4
 set! ui.key.menuAccessKey=0
 
-if /Win/.test(navigator.platform)
-    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
+if /NT 6\.1/.test(navigator.oscpu)
     set! font.name.monospace.x-western=Consolas
     set! font.name.sans-serif.x-western=Calibri
     set! font.name.serif.x-western=Cambria
-else
-    set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
 fi
 
 bmark -keyword ac about:config
