@@ -70,6 +70,7 @@ set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
 set! security.warn_viewing_mixed=false
 set! services.sync.engine.adblockplus=true
+set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 set! toolkit.telemetry.prompted=2
 set! ui.key.contentAccess=4
