@@ -8,9 +8,7 @@ fi
 set guioptions+=c
 set ssli=command
 set hintkeys=$.aoeupykxidhtnmz
-set history=5
 set hlfind
-set maxitems=5
 set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
