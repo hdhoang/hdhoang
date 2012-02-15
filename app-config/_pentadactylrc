@@ -86,6 +86,12 @@ if /Win/.test(navigator.platform)
     fi
 fi
 
+if prefs.get('services.sync.client.name') == 'cenbaz'
+    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
+elif prefs.get('services.sync.client.name') == 'cenba'
+    set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
+fi
+
 bmark -keyword ac about:config
 bmark -keyword st about:sync-tabs
 bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
