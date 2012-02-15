@@ -8,7 +8,6 @@ fi
 set guioptions+=c
 set ssli=command
 set hintkeys=$.aoeupykxidhtnmz
-set hinttimeout=1000
 set history=5
 set hlfind
 set maxitems=5
