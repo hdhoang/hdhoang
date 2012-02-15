@@ -53,6 +53,7 @@ set! downbar.style.speedColor2="100;#859900"
 set! downbar.style.speedColor3="200;#2aa198"
 set! downbar.style.speedColorsEnabled=true
 set! downbar.style.useGradients=false
+set! extensions.checkCompatibility.nightly=false
 set! extensions.https_everywhere._observatory.alt_roots=true
 set! extensions.https_everywhere._observatory.enabled=true
 set! extensions.https_everywhere._observatory.priv_dns=true
