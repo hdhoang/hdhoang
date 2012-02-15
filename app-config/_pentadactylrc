@@ -5,7 +5,6 @@ if services.browserSearch.currentEngine.name != "DuckDuckGo (SSL)"
 else
     set defsearch=duckduckgo-ssl
 fi
-set editor='emacsclient +<line> <file>'
 set guioptions+=c
 set ssli=command
 set hintkeys=$.aoeupykxidhtnmz
@@ -91,6 +90,7 @@ if prefs.get('services.sync.client.name') == 'cenbaz'
     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
 elif prefs.get('services.sync.client.name') == 'cenba'
     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
+    set editor='emacsclient +<line> <file>'
 fi
 
 bmark -keyword ac about:config
