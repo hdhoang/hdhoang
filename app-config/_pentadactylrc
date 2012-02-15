@@ -76,7 +76,7 @@ set! ui.key.menuAccessKey=0
 
 if /Win/.test(navigator.platform)
     set! font.name.monospace.x-western="Lucida Console"
-    set! font.name.sans-serif.x-westtern="Lucida Sans Unicode"
+    set! font.name.sans-serif.x-western="Lucida Sans Unicode"
     if /NT 6\.1/.test(navigator.oscpu)
         set! font.name.monospace.x-western=Consolas
         set! font.name.sans-serif.x-western=Calibri
