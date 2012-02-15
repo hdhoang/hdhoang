@@ -27,7 +27,6 @@ set! browser.download.manager.scanWhenDone=false
 set! browser.fullscreen.autohide=false
 set! browser.preferences.instantApply=true
 set! browser.privatebrowsing.dont_prompt_on_enter=true
-set! browser.sessionstore.max_concurrent_tabs=0
 set! browser.sessionstore.restore_on_demand=true
 set! browser.sessionstore.restore_pinned_tabs_on_demand=true
 set! browser.shell.checkDefaultBrowser=false
