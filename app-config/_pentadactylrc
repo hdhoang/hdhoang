@@ -19,6 +19,7 @@ set pageinfo=fgmse
 set urlseparator=' , '
 
 map s <C-c>
+map <C-r> -ex rehash
 
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
@@ -79,12 +80,8 @@ if /Win/.test(navigator.platform)
     set! font.name.monospace.x-western=Consolas
     set! font.name.sans-serif.x-western=Calibri
     set! font.name.serif.x-western=Cambria
-
-    map <C-r> -ex rehash +u _pentadactylrc
 else
     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
-
-    map <C-r> -ex rehash
 fi
 
 bmark -keyword ac about:config
