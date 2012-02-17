@@ -60,7 +60,7 @@ if services.browserSearch.currentEngine.name != "DuckDuckGo (SSL)"
 else
     set defsearch=duckduckgo-ssl
 fi
-set! capability.policy.yesscript.sites="http://www.bluescreenofawesome.com http://www.cracked.com"
+set! capability.policy.yesscript.sites="http://www.bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com"
 set! downbar.display.clearButton=true
 set! downbar.display.mainButton=false
 set! downbar.display.speed=false
