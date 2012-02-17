@@ -15,8 +15,15 @@ set pageinfo=fgmse
 set urlseparator=' , '
 
 map s <C-c>
+
+""" Start up
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
+
+set! downbar.function.firstRun=false
+set! extensions.dactyl.first-run=false
+set! extensions.firebug.showFirstRunPage=false
+set! extensions.foxyproxy.firstrun=false
 
 set! browser.anchor_color="#6c71c4"
 set! browser.backspace_action=0
