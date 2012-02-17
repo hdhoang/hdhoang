@@ -182,7 +182,11 @@ style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 EOS
 
 set passkeys+=plus.google.com:'jk'
-map + -ex execute "tabopen https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href) + options.urlseparator + "https://plusone.google.com/_/+1/confirm?url=" + encodeURIComponent(content.location.href)
+map + -js <<EOS
+dactyl.open(["https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
+            ,"https://plusone.google.com/_/+1/confirm?url=" + encodeURIComponent(content.location.href)]
+           ,{ from: 'links', where: dactyl.NEW_TAB })
+EOS
 autocmd PageLoadPre plusone.google.com/_/.+\.onion%2F -js <<EOS
 doc.location.search = doc.location.search.replace('onion','tor2web.org')
 EOS
