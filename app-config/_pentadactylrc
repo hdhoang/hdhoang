@@ -47,7 +47,6 @@ set! general.smoothScroll=false
 set! font.default.x-western="sans-serif"
 if /Win/.test(navigator.platform)
     set! font.name.monospace.x-western="Lucida Console"
-    set! font.name.sans-serif.x-western="Lucida Sans Unicode"
     if /NT 6\.1/.test(navigator.oscpu)
         set! font.name.monospace.x-western=Consolas
         set! font.name.sans-serif.x-western=Calibri
