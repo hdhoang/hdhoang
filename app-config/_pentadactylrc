@@ -7,14 +7,11 @@ else
 fi
 set guioptions+=c
 set ssli=command
-set hintkeys=$.aoeupykxidhtnmz
 set hlfind
 set newtab=help
 set nextpattern^=›
 set pageinfo=fgmse
-set urlseparator=' , '
 
-map s <C-c>
 
 """ Start up
 map <C-r> -ex rehash
@@ -33,6 +30,17 @@ set! extensions.foxyproxy.firstrun=false
 set! general.warnOnAboutConfig=false
 set! security.warn_viewing_mixed=false
 set! toolkit.telemetry.prompted=2
+
+""" Input
+map s <C-c>
+set hintkeys=$.aoeupykxidhtnmz
+set urlseparator=' , '
+set! browser.backspace_action=0
+set! devtools.gcli.enable=true
+set! layout.spellcheckDefault=0
+set! middlemouse.contentLoadURL=false
+set! ui.key.contentAccess=4
+set! ui.key.menuAccessKey=0
 
 """ Extension
 set! capability.policy.yesscript.sites="http://www.bluescreenofawesome.com http://www.cracked.com"
@@ -60,7 +68,6 @@ set! extensions.testpilot.popup.showOnNewStudy=true
 set! services.sync.engine.adblockplus=true
 
 set! browser.anchor_color="#6c71c4"
-set! browser.backspace_action=0
 set! browser.display.background_color="#fdf6e3"
 set! browser.display.foreground_color="#657b83"
 set! browser.display.use_system_colors=false
@@ -70,19 +77,14 @@ set! browser.fullscreen.autohide=false
 set! browser.preferences.instantApply=true
 set! browser.tabs.closeButtons=2
 set! browser.tabs.loadDivertedInBackground=true
-set! devtools.gcli.enable=true
 set! font.default.x-western="sans-serif"
 set! general.smoothScroll=false
 set! intl.charset.default=UTF-8
-set! layout.spellcheckDefault=0
-set! middlemouse.contentLoadURL=false
 set! network.http.pipelining=true
 set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
 set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
-set! ui.key.contentAccess=4
-set! ui.key.menuAccessKey=0
 
 if /Win/.test(navigator.platform)
     set! font.name.monospace.x-western="Lucida Console"
