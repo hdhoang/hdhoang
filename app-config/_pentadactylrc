@@ -110,7 +110,7 @@ bmark -keyword mr http://musicbrainz.org/search?advanced=1&type=recording&tport=
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
-autocmd DOMLoad utm_ -js win.history.replaceState("Remove UTM", '', doc.location.href.replace(/&?utm_[^&]+/g,'').replace(/\?$/,''))
+autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
 
 bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
 bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
