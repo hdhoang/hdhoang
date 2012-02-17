@@ -84,8 +84,14 @@ set! extensions.testpilot.alwaysSubmitData=true
 set! extensions.testpilot.popup.showOnNewResults=true
 set! extensions.testpilot.popup.showOnNewStudy=true
 set! services.sync.engine.adblockplus=true
+if prefs.get('services.sync.client.name') == 'cenbaz'
+    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
+elif prefs.get('services.sync.client.name') == 'cenba'
+    set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
+fi
 
 """ Core
+set editor='emacsclient +<line> <file>'
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
 set! browser.preferences.instantApply=true
@@ -95,13 +101,6 @@ set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
 set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
-
-if prefs.get('services.sync.client.name') == 'cenbaz'
-    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
-elif prefs.get('services.sync.client.name') == 'cenba'
-    set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
-    set editor='emacsclient +<line> <file>'
-fi
 
 bmark -keyword ac about:config
 bmark -keyword st about:sync-tabs
