@@ -168,6 +168,7 @@ bmark -keyword gt https://www.google.com/reader/view/#stream/user/-/label/%s
 bmark -keyword ge https://www.google.com/reader/view/#stream/user/-/state/com.google/itemrecs/en
 bmark -keyword gs https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
 set passkeys+=google.com/reader:'vf/? npSsmrgaeUNPXO'
+js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
