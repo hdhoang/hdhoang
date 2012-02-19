@@ -105,6 +105,7 @@ bmark -keyword ac about:config
 bmark -keyword st about:sync-tabs
 bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
 bmark -keyword bgp http://bgp.he.net/search?search[search]=%s
+bmark -keyword v http://vlasisku.lojban.org/?query=%s
 bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive
 bmark -keyword ix -post f:1=%s http://ix.io/
 bmark -keyword io http://ix.io/%s/
