@@ -182,6 +182,7 @@ style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #chrome-fullscreen-top-toggle, .email, .read-state { display: none !important }
 EOS
 
+bmark -keyword gp https://plus.google.com/
 set passkeys+=plus.google.com:'jk'
 map + -js <<EOS
 dactyl.open(["https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
