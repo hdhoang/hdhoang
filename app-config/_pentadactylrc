@@ -162,7 +162,7 @@ doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
 EOS
 
 bmark -keyword gm https://mail.google.com/mail/#inbox -tags n
-set passkeys+=mail.google.com/mail/:'#/? jknpu'
+set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
 bmark -keyword gr https://www.google.com/reader/view/ -tags n
 bmark -keyword g/ https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
