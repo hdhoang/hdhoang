@@ -25,6 +25,7 @@ set hintkeys=$.aoeupykxidhtnmz
 set nextpattern^=›
 set urlseparator=' , '
 set! browser.backspace_action=0
+set! browser.link.open_newwindow=3
 set! browser.tabs.loadDivertedInBackground=true
 set! devtools.gcli.enable=true
 set! layout.spellcheckDefault=0
