@@ -18,7 +18,7 @@ set! toolkit.telemetry.prompted=2
 
 """ Input
 map s <C-c>
-set activate-=links,tabopen,paste
+set activate-=diverted,links,tabopen,paste
 set complete=location,search
 set newtab=help
 set hintkeys=$.aoeupykxidhtnmz
@@ -26,7 +26,6 @@ set nextpattern^=›
 set urlseparator=' , '
 set! browser.backspace_action=0
 set! browser.link.open_newwindow=3
-set! browser.tabs.loadDivertedInBackground=true
 set! devtools.gcli.enable=true
 set! layout.spellcheckDefault=0
 set! middlemouse.contentLoadURL=false
