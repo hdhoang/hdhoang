@@ -18,7 +18,7 @@ set! toolkit.telemetry.prompted=2
 
 """ Input
 map s <C-c>
-set activate-=diverted,tabopen,paste
+set activate-=links,tabopen,paste
 set complete=location,search
 set newtab=help
 set hintkeys=$.aoeupykxidhtnmz
