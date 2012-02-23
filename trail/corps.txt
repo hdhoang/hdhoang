@@ -466,6 +466,8 @@
 ** LordMune
 *** DONE Fahrenheit                                    :video:sub:humor:comp:
 *** DONE Heavy Rain                                    :comp:video:sub:humor:
+** Magnetic North
+*** TODO Silent Steel                                                :hybrid:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
@@ -569,6 +571,7 @@
 ** DONE Antonín Dvorák
 *** DONE The Masterworks
 ** TODO Aoife Ní Fhearraigh
+*** DONE (2003) The Turning of the Tide
 *** DONE (2006) If I Told You
 ** DONE Apocalyptica                                             :FAV:string:
 ** DONE Aqua                                                           :1fav:
@@ -801,6 +804,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e
    :END:
+*** DONE (2007) United Abominations
 *** DONE (2009) Endgame
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
@@ -990,23 +994,13 @@
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
-*** DONE Singing Science Records                                        :FAV:
-   CLOSED: [2012-01-07 Sat 20:05]
-   :PROPERTIES:
-   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
-   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
-   :END:
-**** Energy & Motion Songs
-**** Experiment Songs
-**** More Nature Songs
-**** Nature Songs
-**** Space Songs
-**** Weather Songs
-*** (2003) Warcraft III: The Frozen Throne
+*** DONE (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
+*** DONE (2010) World of Warcraft: Cataclysm
+    CLOSED: [2012-01-29 Sun 14:15]
 *** Juno                                                                :FAV:
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
@@ -1019,6 +1013,18 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0
     :END:
+*** DONE Singing Science Records                                        :FAV:
+   CLOSED: [2012-01-07 Sat 20:05]
+   :PROPERTIES:
+   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
+   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
+   :END:
+**** Energy & Motion Songs
+**** Experiment Songs
+**** More Nature Songs
+**** Nature Songs
+**** Space Songs
+**** Weather Songs
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
