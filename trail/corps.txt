@@ -1,8 +1,8 @@
 -*- mode: org -*-
 #+STARTUP: showall
-#+TODO: TODO(t) | DONE(d) GONE(g)
+#+TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
 
-#+TAGS: FAV(f) 1fav(1) not(N)
+#+TAGS: FAV(f) 1fav(1)
 #+TAGS: vi(V) fi(F) ja(J) ru(R)
 #+TAGS: string(s) riff(r) guitar(g) piano(p)
 #+TAGS: group video(v) voice(a) shot chal speed comp info(i) narrative humor(h)
@@ -446,6 +446,12 @@
 *** TODO Prince of Persia: The Two Thrones
 ** CrookedB
 *** TODO Escape from Hell
+** Elephantgun
+*** DONE Breaking Final Fantasy VI                                      :FAV:
+    CLOSED: [2012-02-24 Fri 08:19]
+    :PROPERTIES:
+    :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
+    :END:
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Goldom
@@ -467,7 +473,8 @@
 *** DONE Fahrenheit                                    :video:sub:humor:comp:
 *** DONE Heavy Rain                                    :comp:video:sub:humor:
 ** Magnetic North
-*** TODO Silent Steel                                                :hybrid:
+*** DONE Silent Steel                                          :humor:hybrid:
+    CLOSED: [2012-02-24 Fri 09:10]
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
@@ -483,7 +490,7 @@
 ** Sethur
 *** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
-*** TODO Planescape: Torment
+*** TODO Planescape: Torment                                 :shot:narrative:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Xenogears                                                     :shot:
@@ -533,6 +540,7 @@
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
+** TODO MacGyver                                                        :FAV:
 ** TODO Malna (2000)
 ** TODO Melancholia
 ** DONE Mr. Nobody                                               :jbopre:FAV:
@@ -1215,21 +1223,13 @@ rebaseall
    :PROPERTIES:
    :url:      https://nightly.mozilla.org
    :END:
-*** Adblock Plus
-*** Download Statusbar
-*** DuckDuckGo
+*** Firebug
     :PROPERTIES:
-    :url:      https://addons.mozilla.org/en-US/firefox/addon/duck-duck-go-ssl-search-plugin/
+    :url:      https://getfirebug.com/releases/firebug/
     :END:
-**** Easylist
-*** Foxyproxy
 *** HTTPS-Everywhere
     :PROPERTIES:
     :url:      https://eff.org/https-everywhere
-    :END:
-*** NoScript
-    :PROPERTIES:
-    :url:      https://noscript.net
     :END:
 *** Pentadactyl
     :PROPERTIES:
@@ -1242,7 +1242,6 @@ rebaseall
    :END:
 ** grub2
 GRUB_DEFAULT=saved
-GRUB_CMDLINE_LINUX_DEFAULT="init=/bin/systemd console=tty8 quiet"
 *** os-prober
 ** ix
    :PROPERTIES:
