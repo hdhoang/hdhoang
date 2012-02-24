@@ -121,6 +121,7 @@ autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', do
 
 bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
 bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
+bmark -keyword sp http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
 " trigger on PageLoad so that the password is filled in
 autocmd PageLoad (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php -javascript <<EOS
 try {
