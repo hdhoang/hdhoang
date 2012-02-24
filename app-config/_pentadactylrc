@@ -277,6 +277,7 @@ style -n "link decor: people" * <<EOS
   [href*="/~cks/"]
 , [href*="apenwarr.ca/"]
 , [href*="//girtby.net/"]
+, [href*="ignorethecode.net/"]
 , [href*="pixelbeat.org/"]
 , [href*="//plasmasturm.org/"]
 , [href*="plover.com/"]
