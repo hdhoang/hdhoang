@@ -422,9 +422,19 @@
 * LP                                                               :FAV:game:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
+** baldurk
+*** TODO Left 4 Dead
+    :PROPERTIES:
+    :url:      http://lparchive.org/Left-4-Dead/
+    :END:
 ** Blastinus
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
+*** TODO Fallout 3
+*** TODO Temple of Elemental Evil
+    :PROPERTIES:
+    :url:      http://lparchive.org/Temple-of-Elemental-Evil/
+    :END:
 *** DONE Thief I: The Dark Project
 *** DONE Thief II: The Metal Age                                      :humor:
 *** DONE Thief III: Deadly Shadows
@@ -434,6 +444,11 @@
 *** DONE Fallout 2                                     :shot:humor:narrative:
 ** CannibalK9                                                         :speed:
 *** DONE Grand Theft Auto: San Andreas                          :video:voice:
+** CapitanGarlic
+*** TODO Icewind Dale
+    :PROPERTIES:
+    :url:      http://lparchive.org/Icewind-Dale-2/
+    :END:
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
 ** Chip Cheezum, General Ironicus         :group:video:voice:comp:info:humor:
@@ -452,6 +467,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
     :END:
+** fleshweasel
+*** TODO Diablo
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Goldom
@@ -465,6 +482,13 @@
     :END:
 ** Haller
 *** DONE InFamous                                    :video:comp:voice:humor:
+** Hammer Floyd
+*** TODO Baldur's Gate
+    :PROPERTIES:
+    :url:      http://lparchive.org/Baldurs-Gate/
+    :END:
+** Karach
+*** TODO Jagged Alliance 2
 ** kefkafloyd
 *** DONE Bionic Commando (2009)                            :comp:video:voice:
 ** Leovinus
@@ -491,6 +515,11 @@
 *** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
 *** TODO Planescape: Torment                                 :shot:narrative:
+** Shugojin
+*** TODO Baldur's Gate 2 and Throne of Bhaal
+    :PROPERTIES:
+    :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
+    :END:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Xenogears                                                     :shot:
