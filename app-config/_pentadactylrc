@@ -227,6 +227,7 @@ img[title]:not(:-moz-any(
 , [src*='savagechickens.com/']
 , [src*='shoeboxblog.com/']
 , [src*='tedmccagg.typepad.com/']
+, [src*='terminally-incoherent.com/']
 , [src*='thebadchemicals.com/']
 , [src*='todayifoundout.com/']
 , [src*='upup-downdown.com/']
