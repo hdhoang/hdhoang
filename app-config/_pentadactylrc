@@ -166,7 +166,7 @@ bmark -keyword g/ https://www.google.com/reader/view/#search/%22%s%22//user%2F-%
 bmark -keyword gt https://www.google.com/reader/view/#stream/user/-/label/%s
 bmark -keyword ge https://www.google.com/reader/view/#stream/user/-/state/com.google/itemrecs/en
 bmark -keyword gs https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
-set passkeys+='https://www.google.com/reader/view/*':'vf/? npSsmrgaeUNPXO'
+set passkeys+='https://www.google.com/reader/view/*':'vf/? npSsmrgeUNPXO'
 js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
