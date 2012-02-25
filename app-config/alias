@@ -20,12 +20,12 @@ alias nn='chrt -i 0 ionice -c 3 '
 if [[ $(hostname) == cenbaz ]]; then
     z=/cygdrive/c
     mount=/cygdrive/h
-    roxer=/cygdrive/x
+    selsormenli=/cygdrive/s
     pool=/cygdrive/m
 else
     z=/mnt/cenbaz
     mount=~
-    roxer=/mnt/roxer
+    selsormenli=/mnt/selsormenli
     pool=/mnt/marbi
 fi
 h=$mount/Public/hdhoang
