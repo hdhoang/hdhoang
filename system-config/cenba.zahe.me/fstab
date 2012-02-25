@@ -5,5 +5,6 @@ LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,noatime,compress,windows_names,uid=100
 LABEL=marbi /mnt/marbi ntfs-3g defaults,users,noatime,compress,windows_names,uid=1000,gid=100,fmask=133,dmask=022,noauto
 LABEL=SELSORMENLI /mnt/selsormenli vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
 
-/swapfile none swap defaults
+
+LABEL=swap swap swap defaults,nofail
 tmpfs /tmp tmpfs nodev,nosuid
