@@ -17,6 +17,7 @@ set! security.warn_viewing_mixed=false
 set! toolkit.telemetry.prompted=2
 
 """ Input
+map A -ex dialog about
 map s <C-c>
 map <C-space> <C-d>
 map <C-S-space> <C-u>
