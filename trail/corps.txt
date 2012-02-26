@@ -458,7 +458,8 @@
 ** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
 *** DONE Metal Gear Solid
 ** Coulis
-*** TODO Prince of Persia: The Two Thrones
+*** DONE Prince of Persia: The Two Thrones                 :video:voice:info:
+    CLOSED: [2012-02-26 Sun 09:58]
 ** CrookedB
 *** TODO Escape from Hell
 ** Elephantgun
@@ -528,8 +529,12 @@
     :END:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
+** UnknownMercenary
+*** TODO John Woo presents Stranglehold
 ** Vexation
 *** DONE Grim Fandango: The Move                                :video:humor:
+** WeX Majors
+*** Spider-Man 2                                                      :video:
 * Lulz                                                                :humor:
 ** GONE 4chanarchive.org                                             :FAV:ns:
    :PROPERTIES:
