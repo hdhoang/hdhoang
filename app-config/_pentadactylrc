@@ -91,6 +91,7 @@ fi
 
 """ Core
 set editor='emacsclient +<line> <file>'
+set! app.update.enabled=false
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
 set! browser.preferences.instantApply=true
