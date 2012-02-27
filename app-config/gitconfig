@@ -1,58 +1,38 @@
 [user]
-	name = Hoàng Đức Hiếu
-	email = hdhoang@zahe.me
+    name = Hoàng Đức Hiếu
+    email = hdhoang@zahe.me
 [color]
-	ui = auto
+    ui = auto
 [pack]
-	threads = 0
+    threads = 0
 [core]
     eol = lf
-	whitespace = trailing-space,space-before-tab
+    whitespace = trailing-space,space-before-tab
 [diff]
-	renamelimit = 0
-	renames = copies
-	mnemonicprefix = true
+    renamelimit = 0
+    renames = copies
+    mnemonicprefix = true
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [rebase]
-	autosquash = true
+    autosquash = true
 [push]
-	default = nothing
+    default = nothing
 
 [alias]
-	pr = pull --rebase
-	ml = log --reverse --topo-order ORIG_HEAD..
-	l = log -p --word-diff
-	s = status -s
-	ap = add -p
-	c = commit -v
-	d = diff --word-diff=porcelain
-        lol = log --graph --decorate --pretty=oneline --abbrev-commit
-        lola = log --graph --decorate --pretty=oneline --all
-
-[url "git://anongit.kde.org/"]
-    insteadOf = kde:
-[url "ssh://git@git.kde.org/"]
-    pushInsteadOf = kde:
-
-[url "git://anongit.freedesktop.org/"]
-    insteadOf = fdo:
-[url "ssh://git.freedesktop.org/git/"]
-    pushInsteadOf = fdo:
-
-[url "git://github.com/dag/"]
-     insteadOf = cll:
-[url "git@github.com:hdhoang/"]
-     pushInsteadOf = cll:
+    pr = pull --rebase
+    ml = log --reverse --topo-order ORIG_HEAD..
+    l = log -p --word-diff
+    s = status -s
+    ap = add -p
+    c = commit -v
+    d = diff --word-diff=porcelain
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --all
 
 [filter "xmllint"]
-	clean = xmllint --pretty 2 %f
-
-[filter "stylish"]
-	clean = cat > /dev/null && sqlite3 %f .dump
-	# HARDCODED: Stylish's user_version as of 1.1
-	smudge = sqlite3 %f && sqlite3 %f 'pragma user_version=3' && cat %f && rm %f
+    clean = xmllint --pretty 2 %f
 
 [filter "registry"]
-        clean  = iconv -f utf-16le -t utf-8
-        smudge = iconv -f utf-8 -t utf-16le
+    clean  = iconv -f utf-16le -t utf-8
+    smudge = iconv -f utf-8 -t utf-16le
