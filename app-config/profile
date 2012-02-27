@@ -7,5 +7,4 @@ export CCACHE_BASEDIR=${HOME}
 
 export EMAIL=hdhoang@zahe.me
 
-source /etc/locale.conf
-export LANG
+[ -r /etc/locale.conf ] && source /etc/locale.conf && export LANG
