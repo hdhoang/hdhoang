@@ -1,9 +1,11 @@
 ! -*- mode: conf-xdefaults -*-
 keycode 133 = BackSpace
 keycode 108 = Escape
+remove mod1 = Escape
 keycode 37  = Return
 keysym  KP_Decimal = Delete
 keysym  KP_Enter   = Return
+remove control = Return
 keycode 135 = Tab
 keycode 26  = period greater ellipsis U203D ellipsis U203D
 
