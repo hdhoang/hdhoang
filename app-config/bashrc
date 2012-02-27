@@ -2,8 +2,9 @@
 source ~/.profile
 source ~/.alias
 
-shopt -s histverify mailwarn
-shopt -s extglob failglob
+shopt -s histverify histappend
+shopt -s mailwarn
+shopt -s extglob failglob nocaseglob
 ((${BASH_VERSINFO[0]} >= 4)) && shopt -s autocd globstar
 
 alias which=type
