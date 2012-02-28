@@ -31,7 +31,7 @@
     lola = log --graph --decorate --pretty=oneline --all
 
 [filter "xmllint"]
-    clean = xmllint --pretty 2 %f
+    clean = xmllint --format %f
 
 [filter "registry"]
     clean  = iconv -f utf-16le -t utf-8
