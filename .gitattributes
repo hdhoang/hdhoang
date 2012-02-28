@@ -1,2 +1,3 @@
 *.xml   filter=xmllint
+*.keylayout filter=xmllint
 *.reg   filter=registry
