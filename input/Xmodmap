@@ -1,7 +1,9 @@
 ! -*- mode: conf-xdefaults -*-
 keycode 133 = BackSpace
+
+remove mod1 = Alt_R
 keycode 108 = Escape
-remove mod1 = Escape
+
 keycode 37  = Return
 remove control = Return
 keycode 91  = Delete
