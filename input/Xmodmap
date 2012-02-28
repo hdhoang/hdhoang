@@ -4,8 +4,12 @@ keycode 133 = BackSpace
 remove mod1 = Alt_R
 keycode 108 = Escape
 
+remove control = Control_L
 keycode 37  = Return
-remove control = Return
+clear lock
+add control = Caps_Lock
+keycode 66  = Control_L
+
 keycode 91  = Delete
 keycode 104 = Return
 keycode 135 = Tab
