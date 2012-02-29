@@ -43,6 +43,9 @@ pkg=/var/cache/pacman/pkg
 fav=$mount/Public/fav
 fm=$fav/Music
 
+if [[ $(uname) == Darwin ]]; then
+    export PATH=$PATH:~/brew/bin:~/Github.app/Contents/Resources/git/bin:~/Github.app/Contents/Resources/git/libexec/git-core
+fi
 # local info
 alias ls='ls --color=auto --file-type --group-directories-first'
 alias df='df -hT --total -x tmpfs -x devtmpfs -x rootfs'
