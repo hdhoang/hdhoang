@@ -86,7 +86,7 @@ alias mp='nn makepkg -isf'
 alias i='sudo pacman'
 alias pc='pacman -Qdt && i -R $(pacman -Qdtq)'
 alias cower='cower -fddt $ap'
-ap=~/archlinux
+ap=$mount/archlinux
 function aur {
     cd $ap
     cower $1 || curl -o- https://aur.archlinux.org/packages/$1/$1.tar.gz | tar zxv
