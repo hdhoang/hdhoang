@@ -99,6 +99,7 @@ set! intl.charset.default=UTF-8
 set! network.http.pipelining=true
 set! network.http.pipelining.ssl=true
 set! network.http.spdy.enabled=true
+set! network.protocol-handler.expose.magnet=false
 set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 
