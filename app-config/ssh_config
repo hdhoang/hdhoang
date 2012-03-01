@@ -3,3 +3,9 @@ IdentityFile ~/secrets/git
 
 Host gitorious.org
 IdentityFile ~/secrets/git
+
+Host czm
+HostName cenba.zahe.me
+CheckHostIP no
+Port 2222
+IdentityFile ~/secrets/czm
