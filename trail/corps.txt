@@ -472,6 +472,9 @@
 *** TODO Diablo
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
+** Giragast
+*** DONE Project IGI                            :video:voice:comp:info:humor:
+    CLOSED: [2012-03-01 Thu 23:10]
 ** Goldom
 *** DONE Descent: Freespace                                 :hybrid:info:sub:
     :PROPERTIES:
@@ -532,9 +535,10 @@
 ** UnknownMercenary
 *** TODO John Woo presents Stranglehold
 ** Vexation
-*** DONE Grim Fandango: The Move                                :video:humor:
+*** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
-*** Spider-Man 2                                                      :video:
+*** DONE Spider-Man 2                                                 :video:
+    CLOSED: [2012-02-27 Mon 10:50]
 * Lulz                                                                :humor:
 ** GONE 4chanarchive.org                                             :FAV:ns:
    :PROPERTIES:
@@ -649,6 +653,7 @@
    :END:
 *** TODO (2012) Electric Sea
 *** Thanatopsis
+**** DONE (2003) Axiology
 ** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
