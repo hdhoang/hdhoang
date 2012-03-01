@@ -1,7 +1,6 @@
 # -*- mode: sh; sh-shell: zsh -*-
-source ~/.profile
 source ~/.alias
-source ~/.alias.zsh
+source $h/app-config/alias.zsh
 
 # assuming grml-zsh-config is used
 setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
