@@ -1,0 +1,5 @@
+# -*- mode: sh -*-
+export PATH=$PATH:~/brew/bin:~/Github.app/Contents/Resources/git/bin:~/Github.app/Contents/Resources/git/libexec/git-core
+
+export CLICOLOR
+alias ls='ls -GT'
