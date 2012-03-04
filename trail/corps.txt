@@ -457,6 +457,8 @@
 *** DONE Metal Gear Solid 4: Guns of the Patriot
 ** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
 *** DONE Metal Gear Solid
+** Coolguye and TheLastRoboKy
+*** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
 *** DONE Prince of Persia: The Two Thrones                 :video:voice:info:
     CLOSED: [2012-02-26 Sun 09:58]
@@ -503,6 +505,8 @@
 ** Magnetic North
 *** DONE Silent Steel                                          :humor:hybrid:
     CLOSED: [2012-02-24 Fri 09:10]
+** Mega64
+*** TODO Final Fantasy IV                                              :shot:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** Piss-Ant
@@ -839,7 +843,8 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
     :END:
-*** TODO (2000) Diablo II
+*** DONE (2000) Diablo II
+    CLOSED: [2012-03-02 Fri 08:50]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
     :END:
@@ -1023,6 +1028,7 @@
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** TODO Tim Minchin                                                     :FAV:
 *** DONE (2008) Ready for This?
+*** DONE (2011) Tim Minchin and the Heritage Orchestra
 *** DONE Timmy the Dog
     CLOSED: [2012-01-09 Mon 14:35]
 ** DONE To/Die/For                                                 :FAV:wail:
@@ -1036,7 +1042,9 @@
 ** DONE Train                                                          :tunx:
 ** DONE Tryad                                                  :1fav:jamendo:
 ** Trịnh Công Sơn                                                    :FAV:vi:
-** TODO Tuoni
+** DONE Tuoni
+   CLOSED: [2012-03-02 Fri 08:51]
+*** DONE (2005) Elävät & kuolleet
 ** DONE Turisas                                                          :fi:
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
