@@ -113,6 +113,58 @@ function favm() {
 
 source $h/app-config/env
 
+if [ -n "$BASH" ]; then
+    shopt -s histverify histappend
+    shopt -s mailwarn
+    shopt -s extglob failglob nocaseglob
+    ((${BASH_VERSINFO[0]} >= 4)) && shopt -s autocd globstar
+
+    alias which=type
+fi
+
+if [ -n "$ZSH_NAME" ]; then
+# assuming grml-zsh-config is used
+    setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
+    setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
+    unsetopt AUTO_NAME_DIRS bash_auto_list
+    zstyle ':vcs_info:*' enable git
+
+    WORDCHARS=''
+
+    EXITCODE="%(?..${fg[red]}%? )"
+    PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
+%# ${NO_COLOUR}"
+
+    setopt dvorak
+    bindkey -r ",."
+
+    alias -s jpg=gwenview
+    alias -s jpeg=gwenview
+    alias -s cbr=okular
+    alias -s cbz=okular
+    alias -s pdf=okular
+    alias -s html=firefox
+    alias -s htm=firefox
+    alias -s torrent=ti
+    alias -s avi=m
+    alias -s mp4=m
+    alias -s mpeg=m
+    alias -s mpg=m
+    alias -s wmv=m
+    alias -s mov=m
+    alias -s m4v=m
+    alias -s flv=m
+    alias -s webm=m
+    alias -s mkv=m
+    alias -s ogv=m
+    alias -s part=m
+    alias -s ogg=m
+    alias -s mp3=m
+fi
+
 if [[ $(uname) == Darwin ]]; then
-    source $h/app-config/alias.darwin
+    export PATH=$PATH:~/brew/bin:~/Github.app/Contents/Resources/git/bin:~/Github.app/Contents/Resources/git/libexec/git-core
+
+    export CLICOLOR
+    alias ls='ls -GT'
 fi
