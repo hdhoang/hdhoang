@@ -1,7 +1,7 @@
 # -*- mode: sh -*-
 
 export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS'
-export GREP_OPTIONS='--color --devices=skip --binary-files=without-match --ignore-case'
+export GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
 export EDITOR=emacsclient
 export ALTERNATE_EDITOR=""
 
