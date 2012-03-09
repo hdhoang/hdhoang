@@ -471,7 +471,8 @@
     :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
     :END:
 ** fleshweasel
-*** TODO Diablo
+*** DONE Diablo                                            :video:voice:info:
+    CLOSED: [2012-03-09 Fri 13:55]
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Giragast
