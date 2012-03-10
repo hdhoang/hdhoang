@@ -580,6 +580,7 @@
 ** DONE Eternal Sunshine of the Spotless Mind (2004)                    :FAV:
 *** Kirsten Dunst
 ** TODO Europe Trip                                                      :jo:
+** DONE Flypaper (2011)                                                 :FAV:
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
@@ -670,6 +671,8 @@
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
    :END:
 ** DONE Cinderella                                                     :1fav:
+** DONE Coldplay
+*** NOT (2011) Mylo Xyloto
 ** TODO Crowded House
 ** TODO Cryhavoc
    :PROPERTIES:
@@ -808,6 +811,7 @@
 *** TODO (2009-10-21) Breadcrumbs
 *** TODO (2010) Ashes
 ** DONE JT Bruce                                                :FAV:jamendo:
+*** DONE (2011) Ruined Subjects
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
@@ -849,7 +853,8 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
     :END:
-*** TODO (2007) Diablo II: Lord of Destruction
+*** DONE (2007) Diablo II: Lord of Destruction
+    CLOSED: [2012-03-10 Sat 12:42]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
@@ -871,6 +876,7 @@
 *** DONE (2004) Action Metal
 *** DONE (2004) Metal Beast
 *** DONE (2007) Sword, Shurikins & Fists
+*** DONE (2008) MetalHog
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -1028,6 +1034,7 @@
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** TODO Tim Minchin                                                     :FAV:
+*** DONE (2006) So Rock
 *** DONE (2008) Ready for This?
 *** DONE (2011) Tim Minchin and the Heritage Orchestra
 *** DONE Timmy the Dog
