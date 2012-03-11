@@ -573,6 +573,17 @@
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
+** TODO Dansk erotisk komedie collection
+   :PROPERTIES:
+   :btih:     c99519791e88fdd3076ade1c386de878d2e5b122
+   :END:
+*** DONE Der må være en sengekant (1975)
+*** DONE I Jomfruens tegn (1973)
+*** TODO I løvens tegn (1976)
+*** TODO I Tvillingernes Tegn (1975)
+*** TODO I Tyrens Tegn (1974)
+*** TODO Romantik på sengekanten (1973)
+*** TODO Tandlæge på sengekanten (1971)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -580,7 +591,7 @@
 ** DONE Eternal Sunshine of the Spotless Mind (2004)                    :FAV:
 *** Kirsten Dunst
 ** TODO Europe Trip                                                      :jo:
-** DONE Flypaper (2011)                                                 :FAV:
+** DONE Flypaper (2011)                                              :FAV:jo:
 ** TODO Ghostbusters
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
@@ -839,6 +850,8 @@
     :END:
 ** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
+** Mark Morgan                                                     :FAV:game:
+*** DONE (1999) Planescape: Torment
 ** TODO Maroon 5
 ** TODO Matt Uelmen                                                    :game:
    :PROPERTIES:
