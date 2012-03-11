@@ -116,7 +116,7 @@ source $h/app-config/env
 if [ -n "$BASH" ]; then
     shopt -s histverify histappend
     shopt -s mailwarn
-    shopt -s extglob failglob nocaseglob
+    shopt -s extglob nocaseglob
     ((${BASH_VERSINFO[0]} >= 4)) && shopt -s autocd globstar
 
     alias which=type
