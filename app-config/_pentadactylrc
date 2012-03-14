@@ -306,7 +306,7 @@ style -n "link decor: tvtropes" * <<EOS
 EOS
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
 
-style -n "lparchive" lparchive.org body { width: auto !important }
+style -n "lparchive" lparchive.org body { width: auto !important } [src$=".gif"] { border-right: 2px dotted #d33682 !important}
 
 style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
 
