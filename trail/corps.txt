@@ -579,7 +579,8 @@
    :END:
 *** DONE Der må være en sengekant (1975)
 *** DONE I Jomfruens tegn (1973)
-*** TODO I løvens tegn (1976)
+*** DONE I løvens tegn (1976)
+    CLOSED: [2012-03-14 Wed 14:40]
 *** TODO I Tvillingernes Tegn (1975)
 *** TODO I Tyrens Tegn (1974)
 *** TODO Romantik på sengekanten (1973)
@@ -633,7 +634,9 @@
 ** DONE Anthrax                                                        :1fav:
 ** DONE Antonín Dvorák
 *** DONE The Masterworks
-** TODO Aoife Ní Fhearraigh
+** DONE Aoife Ní Fhearraigh
+   CLOSED: [2012-03-13 Tue 20:00]
+*** DONE (1997) Aoife
 *** DONE (2003) The Turning of the Tide
 *** DONE (2006) If I Told You
 ** DONE Apocalyptica                                             :FAV:string:
@@ -671,6 +674,7 @@
 *** TODO (2012) Electric Sea
 *** Thanatopsis
 **** DONE (2003) Axiology
+**** DONE (2006) Anatomize
 ** DONE Bullet for My Valentine                                        :1fav:
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
@@ -698,7 +702,8 @@
     :mbid:     http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998
     :END:
 ** DONE Céline Dion                                                  :FAV:fr:
-** TODO Dan Bull
+** DONE Dan Bull
+   CLOSED: [2012-03-13 Tue 19:57]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/f1597ac6-6cc6-4769-9751-69f681f015da
    :END:
@@ -707,7 +712,8 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e7ef5790-57b7-41cd-a1ae-58ec4e60520d
     :END:
-*** TODO (2011) Face
+*** DONE (2011) Face
+    CLOSED: [2012-03-13 Tue 19:57]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
     :END:
@@ -772,6 +778,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
+*** DONE (2011) Dystopia
 ** DONE Il Divo
 ** DONE Incubus
 ** TODO Insomnium
@@ -887,6 +894,7 @@
    :END:
 *** DONE (2003) Push Start Button
 *** DONE (2004) Action Metal
+*** DONE (2004) Metal Axe
 *** DONE (2004) Metal Beast
 *** DONE (2007) Sword, Shurikins & Fists
 *** DONE (2008) MetalHog
@@ -999,6 +1007,7 @@
     :END:
 *** DONE (2011) Comeblack
 ** TODO Secret Garden                                            :FAV:string:
+*** DONE (2011) Winter Poem
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** DONE Shinedown                                                      :1fav:
@@ -1052,6 +1061,7 @@
 *** DONE (2011) Tim Minchin and the Heritage Orchestra
 *** DONE Timmy the Dog
     CLOSED: [2012-01-09 Mon 14:35]
+** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** DONE Tom Lehrer                                                 :FAV:mock:
@@ -1118,6 +1128,8 @@
 ** DONE X/X JAPAN                                                   :1fav:ja:
 ** Xihilisk                                                      :not:lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
+** Zak Belica
+*** DONE (2005) SiN                                                    :game:
 ** TODO Zero-Project                                               :FAV:inst:
 *** TODO (2012-01-06) Untold Stories of a Dying Moon
 * Person                                                                :FAV:
