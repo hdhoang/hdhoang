@@ -163,7 +163,7 @@ if [ -n "$ZSH_NAME" ]; then
 fi
 
 if [[ $(uname) == Darwin ]]; then
-    export PATH=$PATH:~/brew/bin:~/Github.app/Contents/Resources/git/bin:~/Github.app/Contents/Resources/git/libexec/git-core
+    export PATH=$PATH:~/brew/bin
 
     export CLICOLOR
     alias ls='ls -GT'
