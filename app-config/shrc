@@ -167,4 +167,5 @@ if [[ $(uname) == Darwin ]]; then
 
     export CLICOLOR
     alias ls='ls -GT'
+    unalias rm
 fi
