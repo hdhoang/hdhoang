@@ -1,11 +1,11 @@
-LABEL=boot /boot ext2 defaults,x-systemd-automount,noauto 0 1
+LABEL=boot /boot ext2 defaults,comment=systemd.automount,noauto 0 1
 LABEL=cenba / ext4 defaults,relatime 0 1
 
 LABEL=SELSORMENLI /mnt/selsormenli vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
-LABEL=hdhoang /home/hdhoang ext4 defaults,noatime,x-systemd-automount 0 2
+LABEL=hdhoang /home/hdhoang ext4 defaults,noatime 0 2
 
-LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,x-systemd-automount,noauto
-LABEL=marbi /mnt/marbi ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,x-systemd-automount,noauto
+LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto
+LABEL=marbi /mnt/marbi ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto
 
 LABEL=swap swap swap defaults,nofail
 tmpfs /tmp tmpfs nodev,nosuid
