@@ -208,8 +208,6 @@
 * Fiction
 ** China Miéville
 *** TODO Embassytown
-** Eliezer Yudkowsky                                                    :FAV:
-*** Harry Potter and the Methods of Rationality
 ** TODO Ishmael                                                         :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
@@ -367,7 +365,8 @@
 ** Kristina Fey                                                         :not:
 ** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
-** Lovable Kitty                                                        :FAV:
+** NOT Lovable Kitty
+   CLOSED: [2012-03-16 Fri 15:11]
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
 *** Alea
@@ -516,6 +515,11 @@
 *** DONE Prince of Persia 1
     CLOSED: [2012-01-16 Mon 14:56]
 *** DONE Prince of Persia 2
+** Raar_Im_A_Dinosaur
+*** TODO System Shock 2                                         :video:voice:
+    :PROPERTIES:
+    :url:      http://lparchive.org/System-Shock-2/
+    :END:
 ** Research Indicates
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
 ** Scorchy
@@ -523,7 +527,8 @@
 ** Sethur
 *** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
-*** TODO Planescape: Torment                                 :shot:narrative:
+*** DONE Planescape: Torment                                 :shot:narrative:
+    CLOSED: [2012-03-16 Fri 21:37]
 ** Shugojin
 *** TODO Baldur's Gate 2 and Throne of Bhaal
     :PROPERTIES:
@@ -537,8 +542,6 @@
     :END:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
-** UnknownMercenary
-*** TODO John Woo presents Stranglehold
 ** Vexation
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
@@ -615,6 +618,11 @@
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
+** TODO Trilogy of life
+*** DONE Il Decameron (1971)
+    CLOSED: [2012-03-16 Fri 16:08]
+*** TODO I racconti di Canterbury (1972)
+*** TODO Il fiore delle mille e una notte (1974)
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
@@ -1151,6 +1159,7 @@
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
+*** TODO Harry Potter and the Methods of Rationality
 ** GONE George Carlin                                           :voice:humor:
 *** Last Words                                                          :bio:
 ** Ian Hickson                                                   :net:whatwg:
@@ -1181,6 +1190,7 @@
    :PROPERTIES:
    :url:      http://shamusyoung.com
    :END:
+*** TODO Free Radical
 ** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
@@ -1258,8 +1268,6 @@ $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%
    :END:
 ** xorl %eax, %eax
 * Tool
-** PulseAudio
-flat-volume = no
 ** CygWin
 cd \cygwin\bin
 dash
@@ -1323,6 +1331,10 @@ rebaseall
 ** grub2
 GRUB_DEFAULT=saved
 *** os-prober
+** Homebrew
+   :PROPERTIES:
+   :url:      https://github.com/mxcl/homebrew
+   :END:
 ** ix
    :PROPERTIES:
    :url:      http://ix.io
@@ -1337,6 +1349,8 @@ GRUB_DEFAULT=saved
 *** pidgin-libnotify
 *** Purple Plugins Pack
 **** difftopic
+** PulseAudio
+flat-volume = no
 ** QtScrobbler
    :PROPERTIES:
    :url:      http://qtscrob.sourceforge.net
