@@ -486,6 +486,11 @@
     :PROPERTIES:
     :url:      http://lparchive.org/FreeSpace-2-Open/
     :END:
+** GuavaMoment
+*** TODO X-COM: Apocalypse
+*** TODO X-COM: Interceptor
+*** TODO X-COM: Terror from the Deep
+*** TODO X-COM: UFO Defense
 ** Haller
 *** DONE InFamous                                    :video:comp:voice:humor:
 ** Hammer Floyd
@@ -509,6 +514,8 @@
 *** TODO Final Fantasy IV                                              :shot:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
+** Pesmerga
+*** TODO Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
 *** DONE Sam & Max Hit the Road                           :voice:video:group:
 ** Psychedelic Eyeball                                :FAV:video:humor:voice:
