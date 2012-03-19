@@ -3,7 +3,6 @@ map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
 set! browser.newtabpage.enabled=false
 set! browser.privatebrowsing.dont_prompt_on_enter=true
-set! browser.sessionstore.restore_on_demand=true
 set! browser.sessionstore.restore_pinned_tabs_on_demand=true
 set! browser.shell.checkDefaultBrowser=false
 set! browser.startup.homepage=about:blank
