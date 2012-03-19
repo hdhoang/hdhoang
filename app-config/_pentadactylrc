@@ -114,7 +114,7 @@ bmark -keyword lp http://lparchive.org/search/%s#results
 bmark -keyword ix -post f:1=%s http://ix.io/
 bmark -keyword io http://ix.io/%s/
 
-bmark -keyword i https://ca.isohunt.com/lite/#s=seeds&q=%s
+bmark -keyword i https://ca.isohunt.com/lite/#p=1&s=seeds&q=%s
 bmark -keyword b http://btdigg.org/search?q=%s
 bmark -keyword d http://beta.demonoid.me/files/?query=%s
 bmark -keyword m http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
