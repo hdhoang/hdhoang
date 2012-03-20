@@ -739,10 +739,12 @@
 *** TODO (2008-02-19) Recycle Bin
 *** TODO (2008-04-18) 15
 *** TODO (2008-05-09) Classics and Soundtracks
-*** TODO (2008-06-26) Beethoven
+*** DONE (2008-06-26) Beethoven
+    CLOSED: [2012-03-20 Tue 17:56]
 *** TODO (2009-02-06) Madera Y Bronce
 *** TODO (2011-06-10) Cocktail Eleven
-*** TODO (2012-01-09) Symphony No. 1 in A minor, Op. 12
+*** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
+    CLOSED: [2012-03-20 Tue 17:56]
 *** TODO Weirdos And Classics
 ** TODO Danzig                                                         :game:
 ** DONE Deep Purple
@@ -793,6 +795,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
+*** DONE (2001-01-08) The Melancholy E.P.
 *** DONE (2011) Dystopia
 ** DONE Il Divo
 ** DONE Incubus
@@ -1129,6 +1132,7 @@
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
+** TODO Whitney Houston
 ** DONE Wintersun
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/c054ea6b-c585-41eb-ae7e-4b0ca43308ff
@@ -1167,6 +1171,9 @@
    :url:      http://yudkowsky.net
    :END:
 *** TODO Harry Potter and the Methods of Rationality
+    :PROPERTIES:
+    :url:      http://hpmor.com/
+    :END:
 ** GONE George Carlin                                           :voice:humor:
 *** Last Words                                                          :bio:
 ** Ian Hickson                                                   :net:whatwg:
@@ -1197,7 +1204,8 @@
    :PROPERTIES:
    :url:      http://shamusyoung.com
    :END:
-*** TODO Free Radical
+*** DONE Free Radical                                             :narrative:
+    CLOSED: [2012-03-20 Tue 13:27]
 ** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
