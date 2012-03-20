@@ -8,5 +8,5 @@ LABEL=hdhoang /home/hdhoang ext4 defaults,noatime 0 2
 LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto
 LABEL=marbi /mnt/marbi ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto
 
-LABEL=swap swap swap defaults,nofail
+LABEL=swap none swap defaults,nofail
 tmpfs /tmp tmpfs nodev,nosuid
