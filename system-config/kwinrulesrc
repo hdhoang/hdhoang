@@ -58,7 +58,7 @@ wmclassmatch=1
 
 [5]
 Description=movie
-position=10,55
+position=0,500
 positionrule=3
 shortcut=Alt+Shift+F3
 shortcutrule=2
