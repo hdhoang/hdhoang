@@ -591,9 +591,9 @@
 *** DONE I Jomfruens tegn (1973)
 *** DONE I løvens tegn (1976)
     CLOSED: [2012-03-14 Wed 14:40]
-*** TODO I Tvillingernes Tegn (1975)
-*** TODO I Tyrens Tegn (1974)
-*** TODO Romantik på sengekanten (1973)
+*** DONE I Tvillingernes Tegn (1975)
+*** DONE I Tyrens Tegn (1974)
+*** DONE Romantik på sengekanten (1973)
 *** TODO Tandlæge på sengekanten (1971)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
@@ -694,6 +694,7 @@
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
+** TODO Celldweller                                                 :game:jo:
 ** DONE Charon                                                          :FAV:
 ** DONE Children Of Bodom                                            :FAV:fi:
 ** TODO Chumbawamba
