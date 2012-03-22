@@ -20,6 +20,7 @@ map A -ex dialog about
 map s <C-c>
 map <C-space> <C-d>
 map <C-S-space> <C-u>
+map <C-$> -ex tabmove $
 set activate-=diverted,links,tabopen,paste
 set complete=location,search
 set newtab=help
