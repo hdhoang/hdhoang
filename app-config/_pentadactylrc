@@ -55,11 +55,12 @@ if /NT 6\.1/.test(navigator.oscpu)
 fi
 
 """ Extension
-if services.browserSearch.currentEngine.name != "DuckDuckGo (SSL)"
-    tabopen https://addons.mozilla.org/en-US/firefox/addon/duck-duck-go-ssl-search-plugin/
+if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
+    tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
     tabopen https://duckduckgo.com/settings.html?kp=-1&kl=wt-wt&kh=1&#load
 else
-    set defsearch=duckduckgo-ssl
+    set defsearch=duckduckgo
+    set! browser.search.defaultenginename="DuckDuckGo"
 fi
 set! capability.policy.yesscript.sites="http://www.bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com"
 set! downbar.display.clearButton=true
