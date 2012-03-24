@@ -24,11 +24,13 @@ s=$z/@s
 fav=$mount/Public/fav
 fm=$fav/Music
 
+source $h/app-config/env
+
 # utils
 alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
 alias x=parallel
-alias e="emacsclient -n"
+alias e='"$EDITOR" -n'
 alias f='firefox-nightly'
 function yb() { f https:youtu.be/$1; }
 function getc() {
@@ -110,8 +112,6 @@ function favm() {
          s/\[dialogue\]/(dialogue)/;
          s/\[untitled\]/(untitled)/" *
 }
-
-source $h/app-config/env
 
 if [ -n "$BASH" ]; then
     shopt -s histverify histappend

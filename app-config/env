@@ -2,10 +2,14 @@
 
 export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS'
 export GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
-export EDITOR=emacsclient
-export ALTERNATE_EDITOR=""
-
 export CCACHE_BASEDIR=${HOME}
+
+if [[ $(hostname) == cenbaz ]]; then
+    export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
+else
+    export EDITOR=emacsclient
+    export ALTERNATE_EDITOR=""
+fi
 
 export EMAIL=hdhoang@zahe.me
 
