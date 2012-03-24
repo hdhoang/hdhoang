@@ -57,6 +57,7 @@ fi
 """ Extension
 if services.browserSearch.currentEngine.name != "DuckDuckGo (SSL)"
     tabopen https://addons.mozilla.org/en-US/firefox/addon/duck-duck-go-ssl-search-plugin/
+    tabopen https://duckduckgo.com/settings.html?kp=-1&kl=wt-wt&kh=1&#load
 else
     set defsearch=duckduckgo-ssl
 fi
