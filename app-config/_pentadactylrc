@@ -24,7 +24,7 @@ map <C-$> -ex tabmove $
 set activate-=diverted,links,tabopen,paste
 set complete=location,search
 set newtab=help
-set hintkeys=$.aoeupjyxidhtnmz
+set hintkeys=$.aoeupjxyidhtnmz
 set nextpattern^=›
 set urlseparator=' , '
 set! browser.backspace_action=0
