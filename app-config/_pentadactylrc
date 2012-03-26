@@ -84,7 +84,7 @@ set! extensions.https_everywhere._observatory.priv_dns=true
 set! extensions.testpilot.alwaysSubmitData=true
 set! extensions.testpilot.popup.showOnNewResults=true
 set! extensions.testpilot.popup.showOnNewStudy=true
-set! flashblock.whitelist="youtube.com,s.ytimg.com/yt,oglaf.com"
+set! flashblock.whitelist="youtube.com,s.ytimg.com/yt,oglaf.com,a.vimeocdn.com,b.vimeocdn.com"
 set! services.sync.engine.adblockplus=true
 if prefs.get('services.sync.client.name') == 'cenbaz'
     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
