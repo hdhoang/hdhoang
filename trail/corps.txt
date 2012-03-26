@@ -523,7 +523,7 @@
     CLOSED: [2012-01-16 Mon 14:56]
 *** DONE Prince of Persia 2
 ** Raar_Im_A_Dinosaur
-*** TODO System Shock 2                                         :video:voice:
+*** DONE System Shock 2                                         :video:voice:
     :PROPERTIES:
     :url:      http://lparchive.org/System-Shock-2/
     :END:
@@ -541,6 +541,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
     :END:
+** Static_Fiend
+*** TODO Prey                                             :video:voice:humor:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Xenogears                                                     :shot:
@@ -1077,6 +1079,7 @@
 ** TODO Tim Minchin                                                     :FAV:
 *** DONE (2006) So Rock
 *** DONE (2008) Ready for This?
+*** DONE (2010-12-14) Live at the O2
 *** DONE (2011) Tim Minchin and the Heritage Orchestra
 *** DONE Timmy the Dog
     CLOSED: [2012-01-09 Mon 14:35]
@@ -1104,6 +1107,7 @@
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
+*** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
 *** Juno                                                                :FAV:
@@ -1163,6 +1167,9 @@
    :url:      http://www.antipope.org
    :END:
 ** Dan Kaminsky
+** TODO Daniel Tosh                                             :voice:humor:
+*** TODO (2005-11-08) True Stories I Made Up
+*** TODO (2011-03-08) Happy Thoughts
 ** Dave Winer
    :PROPERTIES:
    :url:      http://scripting.com
@@ -1195,7 +1202,7 @@
    :PROPERTIES:
    :url:      https://blip.tv/show/latest_episode/756280
    :END:
-** Richard Feynman                                                :humor:sci:
+** GONE Richard Feynman                                           :humor:sci:
 *** Surely You're Joking, Mr. Feynman
 *** What Do You Care What Other People Think? Further Adventures of a Curious Character
     :PROPERTIES:
