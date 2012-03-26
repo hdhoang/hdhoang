@@ -17,7 +17,7 @@ wmclassmatch=1
 
 [2]
 Description=browser
-position=344,0
+position=0,0
 positionrule=2
 shortcut=Alt+Shift+F2
 shortcutrule=2
@@ -71,7 +71,7 @@ wmclassmatch=2
 
 [6]
 Description=conversation
-position=-16,0
+position=935,0
 positionrule=2
 size=360,1040
 sizerule=2
@@ -84,10 +84,10 @@ wmclassmatch=1
 
 [7]
 Description=comic
-position=690,0
-positionrule=2
-size=590,1024
-sizerule=2
+position=346,28
+positionrule=3
+size=589,996
+sizerule=3
 types=4294967295
 windowrole=mainwindow#1
 windowrolematch=1
