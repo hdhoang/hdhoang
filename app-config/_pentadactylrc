@@ -281,7 +281,7 @@ style -n "link decor: youtube-dl" * <<EOS
 EOS
 
 style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
-style -n "link decor: dansdata" www.dansdata.com a:not([href*="/"])::after { content: "\22c6" }
+style -n "link decor: dansdata" www.dansdata.com a:not([href^="http"])::after { content: "\22c6" }
 style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
