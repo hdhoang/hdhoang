@@ -225,6 +225,7 @@ img[title]:not(:-moz-any(
 , [src*='happletea.com/']
 , [src*='johnnywander.com/']
 , [src*='lastplacecomics.com/']
+, [src*='mimiandeunice.com/']
 , [src*='neatorama.com/']
 , [src*='pbfcomics.com/']
 , [src*='pidjin.net/']
@@ -286,6 +287,7 @@ style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
 , [href*="apenwarr.ca/"]
+, [href*="aaronland.info/"]
 , [href*="//girtby.net/"]
 , [href*="ignorethecode.net/"]
 , [href*="pixelbeat.org/"]
