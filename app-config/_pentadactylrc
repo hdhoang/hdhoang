@@ -198,8 +198,8 @@ dactyl.open(["https://plusone.google.com/_/+1/fastbutton?url=" + encodeURICompon
             ,"https://plusone.google.com/_/+1/confirm?url=" + encodeURIComponent(content.location.href)]
            ,{ from: 'links', where: dactyl.NEW_TAB })
 EOS
-autocmd PageLoadPre plusone.google.com/_/.+\.onion%2F -js <<EOS
-doc.location.search = doc.location.search.replace('onion','tor2web.org')
+autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
+doc.querySelector('.b-a').accessKey = 'e'
 EOS
 
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
