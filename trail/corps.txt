@@ -542,7 +542,7 @@
     :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
     :END:
 ** Static_Fiend
-*** TODO Prey                                             :video:voice:humor:
+*** DONE Prey                                             :video:voice:humor:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Xenogears                                                     :shot:
@@ -596,7 +596,8 @@
 *** DONE I Tvillingernes Tegn (1975)
 *** DONE I Tyrens Tegn (1974)
 *** DONE Romantik på sengekanten (1973)
-*** TODO Tandlæge på sengekanten (1971)
+*** DONE Tandlæge på sengekanten (1971)
+    CLOSED: [2012-03-28 Wed 15:23]
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -627,6 +628,7 @@
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
+** TODO The Simpsons
 ** TODO Trilogy of life
 *** DONE Il Decameron (1971)
     CLOSED: [2012-03-16 Fri 16:08]
@@ -635,6 +637,8 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
+** Kazuma Jinnouchi
+*** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
@@ -738,9 +742,11 @@
 ** Dan Wentz                                                           :game:
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
-*** TODO (2007-09-03) Music for a Film
+*** DONE (2007-09-03) Music for a Film
+    CLOSED: [2012-03-30 Fri 13:55]
 *** TODO (2008-02-19) Recycle Bin
-*** TODO (2008-04-18) 15
+*** DONE (2008-04-18) 15
+    CLOSED: [2012-03-28 Wed 17:31]
 *** TODO (2008-05-09) Classics and Soundtracks
 *** DONE (2008-06-26) Beethoven
     CLOSED: [2012-03-20 Tue 17:56]
@@ -761,6 +767,7 @@
     :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
     :END:
 ** TODO Dire Strait
+** DONE DJ Fab
 ** DONE Dr. Dre
    CLOSED: [2012-01-09 Mon 16:20]
    :PROPERTIES:
@@ -776,6 +783,9 @@
 ** DONE Ennio Morricone
 ** DONE Ensiferum
 ** DONE Epica
+** Eric Brosius                                                    :FAV:game:
+*** TODO System Shock 2
+*** DONE (2006) Thief: Deadly Shadow
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
 ** TODO Fear Factory
@@ -1102,11 +1112,16 @@
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
+*** TODO (2003) Need for Speed Underground
 *** DONE (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
+*** TODO (2004) Need for Speed Underground 2
+*** TODO (2005-11) Need for Speed Most Wanted
+*** TODO (2006-11) Need for Speed Carbon
+*** TODO (2007) Need for Speed ProStreet
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
@@ -1150,7 +1165,7 @@
 ** DONE Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
-** Xihilisk                                                      :not:lastfm:
+** NOT Xihilisk                                                      :lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
 ** Zak Belica
 *** DONE (2005) SiN                                                    :game:
