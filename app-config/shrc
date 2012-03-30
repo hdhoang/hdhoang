@@ -72,7 +72,7 @@ alias mv='mv -i'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive'
-alias bu='rs --delete --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $z/@{s,g} $mount/s $h $mount/secrets $p $mount/Public/pic $mi/{book,p} $m $v $pool'
+alias bu='rs --delete --exclude=Cache/ --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $z/@{s,g} $mount/s $h $mount/secrets $p $mount/Public/pic $mi/{book,p} $m $v $pool'
 
 # system
 alias ssc='sudo systemctl --system'
