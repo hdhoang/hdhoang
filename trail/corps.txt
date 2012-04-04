@@ -296,19 +296,20 @@
 ** Ariel Rebel                                                          :FAV:
 ** Asians4You
 *** Aggie                                                               :not:
-*** Alesha                                                              :FAV:
+*** NOT Alesha
+*** NOT Amara
 *** Anissa                                                              :not:
 *** Anna Song                                                           :not:
 *** Becky Jang                                                          :not:
 *** Carolyn                                                             :FAV:
 *** Cho Hye Eun                                                         :FAV:
-*** Claudia                                                             :not:
+*** NOT Claudia
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
 *** Halle                                                               :not:
 *** Iris                                                                :FAV:
 *** Jamie                                                               :not:
-*** Jennifer Lee                                                        :not:
+*** Jennifer Lee                                                        :FAV:
 *** Kaila Wang                                                          :not:
 *** Kelly                                                               :not:
 *** Kesara                                                              :FAV:
@@ -317,14 +318,17 @@
 *** Misha                                                               :not:
 *** Monica                                                              :FAV:
 *** Nancy Ho                                                            :FAV:
-*** Paris                                                               :not:
+*** NOT Nicole
+*** NOT Nina
+*** NOT Paris
 *** Petchara                                                            :FAV:
 *** Regina                                                              :FAV:
-*** Reina                                                               :not:
-*** Salina                                                              :not:
-*** Sandra Mar                                                          :not:
-*** Sydney                                                              :not:
-*** Tricia                                                              :not:
+*** NOT Reina
+*** NOT Salina
+*** NOT Sandra Mar
+*** NOT Sydney
+*** NOT Tricia
+*** Victoria                                                            :FAV:
 ** Bailey Kline                                                         :FAV:
 ** BiancaBeauchamp                                                      :FAV:
 ** Brandy                                                               :FAV:
@@ -419,6 +423,8 @@
 ** xcity.jp
 *** Leon Kadena                                                         :FAV:
 * LP                                                               :FAV:game:
+** Azure_Horizon
+*** DONE Koudelka                                                  :f:hybrid:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
 ** baldurk
@@ -511,6 +517,10 @@
 *** DONE Silent Steel                                          :humor:hybrid:
     CLOSED: [2012-02-24 Fri 09:10]
 ** Mega64
+*** TODO Final Fantasy III                                   :shot:challenge:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Final-Fantasy-III-(by-Mega64)/
+    :END:
 *** TODO Final Fantasy IV                                              :shot:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
@@ -637,8 +647,6 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
-** Kazuma Jinnouchi
-*** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
@@ -744,10 +752,12 @@
 ** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
 *** DONE (2007-09-03) Music for a Film
     CLOSED: [2012-03-30 Fri 13:55]
-*** TODO (2008-02-19) Recycle Bin
+*** DONE (2008-02-19) Recycle Bin
+    CLOSED: [2012-04-04 Wed 15:00]
 *** DONE (2008-04-18) 15
     CLOSED: [2012-03-28 Wed 17:31]
-*** TODO (2008-05-09) Classics and Soundtracks
+*** DONE (2008-05-09) Classics and Soundtracks
+    CLOSED: [2012-04-04 Wed 15:01]
 *** DONE (2008-06-26) Beethoven
     CLOSED: [2012-03-20 Tue 17:56]
 *** TODO (2009-02-06) Madera Y Bronce
@@ -777,6 +787,7 @@
 ** DONE Dry Kill Logic
 ** TODO Electric Light Orchestra
 ** DONE Elias Viljanen                                                  :FAV:
+** TODO Eluveitie
 ** TODO Elvis Presley
 ** DONE Eminem                                                          :FAV:
 *** DONE D12
@@ -864,6 +875,8 @@
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
+** Kazuma Jinnouchi
+*** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                                     :FAV:
@@ -891,11 +904,12 @@
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5
-** TODO Matt Uelmen                                                    :game:
+** Matt Uelmen                                                         :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
    :END:
-*** TODO (1996) Diablo
+*** DONE (1996) Diablo
+    CLOSED: [2012-04-04 Wed 14:59]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
     :END:
@@ -1037,6 +1051,7 @@
     :mbid:     http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286
     :END:
 *** DONE (2011) Comeblack
+** TODO Sean Wright                                                  :lastfm:
 ** TODO Secret Garden                                            :FAV:string:
 *** DONE (2011) Winter Poem
 ** DONE Senses Fail                                                     :not:
@@ -1074,7 +1089,8 @@
 ** DONE The Cranberries                                              :FAV:jo:
    CLOSED: [2012-01-09 Mon 14:35]
 ** The Ink Spots                                                   :FAV:blue:
-** TODO The Plasmas                                        :riff:game:lastfm:
+** DONE The Plasmas                                        :riff:game:lastfm:
+   CLOSED: [2012-04-04 Wed 15:00]
 ** DONE Theory of a Deadman                                       :game:wail:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b
@@ -1086,7 +1102,9 @@
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
-** TODO Tim Minchin                                                     :FAV:
+** DONE Tim Minchin                                                     :FAV:
+   CLOSED: [2012-04-04 Wed 15:01]
+*** DONE (2005) Darkside
 *** DONE (2006) So Rock
 *** DONE (2008) Ready for This?
 *** DONE (2010-12-14) Live at the O2
@@ -1161,7 +1179,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
-** TODO Within Temptation                                                 :f:
+** TODO Within Temptation                                              :jo:f:
 ** DONE Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
@@ -1172,6 +1190,10 @@
 ** TODO Zero-Project                                               :FAV:inst:
 *** TODO (2012-01-06) Untold Stories of a Dying Moon
 * Person                                                                :FAV:
+** Aaron Straup Cope                                                    :net:
+   :PROPERTIES:
+   :url:      http://www.aaronland.info
+   :END:
 ** Aaron Toponce                                                       :free:
    :PROPERTIES:
    :url:      http://pthree.org
