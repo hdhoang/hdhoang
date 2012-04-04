@@ -1,4 +1,7 @@
 """ Start up
+map S -ex tabopen https://www.youtube.com/html5
+   \ tabopen https://www.youtube.com/feather_beta
+   \ tabopen https://duckduckgo.com/settings.html
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
 set! browser.newtabpage.enabled=false
@@ -57,7 +60,6 @@ fi
 """ Extension
 if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
     tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
-    tabopen https://duckduckgo.com/settings.html?kp=-1&kl=wt-wt&kh=1&#load
 else
     set defsearch=duckduckgo
     set! browser.search.defaultenginename="DuckDuckGo"
