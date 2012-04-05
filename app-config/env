@@ -1,16 +1,8 @@
-# -*- mode: sh -*-
+LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS'
+GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
+CCACHE_BASEDIR=${HOME}
 
-export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS'
-export GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
-export CCACHE_BASEDIR=${HOME}
+EDITOR=emacsclient
+ALTERNATE_EDITOR=""
 
-if [[ $(hostname) == cenbaz ]]; then
-    export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
-else
-    export EDITOR=emacsclient
-    export ALTERNATE_EDITOR=""
-fi
-
-export EMAIL=hdhoang@zahe.me
-
-[ -r /etc/locale.conf ] && source /etc/locale.conf && export LANG
+EMAIL=hdhoang@zahe.me
