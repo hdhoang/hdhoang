@@ -820,6 +820,7 @@
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
 *** DONE (2001-01-08) The Melancholy E.P.
+*** DONE (2001-11-26) Tribute to the Gods
 *** DONE (2011) Dystopia
 ** DONE Il Divo
 ** DONE Incubus
@@ -893,6 +894,7 @@
 ** DONE Led Zeppelin                                                   :1fav:
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
+** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** TODO The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
     :PROPERTIES:
@@ -1056,6 +1058,7 @@
 *** DONE (2011) Winter Poem
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
+** TODO Sepultura                                                        :jo:
 ** DONE Shinedown                                                      :1fav:
 ** GONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia                                                           :f:
@@ -1130,6 +1133,7 @@
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
+*** TODO (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
 *** TODO (2003) Need for Speed Underground
 *** DONE (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
