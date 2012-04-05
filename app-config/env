@@ -12,5 +12,3 @@ else
 fi
 
 export EMAIL=hdhoang@zahe.me
-
-[ -r /etc/locale.conf ] && source /etc/locale.conf && export LANG
