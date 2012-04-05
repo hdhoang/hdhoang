@@ -24,6 +24,8 @@ s=$z/@s
 fav=$mount/Public/fav
 fm=$fav/Music
 
+source $h/app-config/env
+
 # utils
 alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
@@ -160,13 +162,7 @@ if [ -n "$ZSH_NAME" ]; then
     alias -s mp3=m
 fi
 
-if [[ $(hostname) == cenbaz ]]; then
-    eval "$(<$h/app-config/env)"
-    EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
-fi
-
 if [[ $(uname) == Darwin ]]; then
-    eval "$(<$h/app-config/env)"
     export PATH=$PATH:~/brew/bin
 
     export CLICOLOR
