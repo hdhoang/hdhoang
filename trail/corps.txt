@@ -532,6 +532,8 @@
 *** DONE Prince of Persia 1
     CLOSED: [2012-01-16 Mon 14:56]
 *** DONE Prince of Persia 2
+** python862
+*** TODO Metal Gear Solid: Portable Ops
 ** Raar_Im_A_Dinosaur
 *** DONE System Shock 2                                         :video:voice:
     :PROPERTIES:
@@ -835,24 +837,25 @@
 ** Jan Morgenstern
 *** DONE Big Buck Bunny
     CLOSED: [2012-01-13 Fri 14:51]
-** TODO Jesper Kyd                                                     :game:
+** DONE Jesper Kyd                                                     :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
    :END:
-*** (2011) Assassin's Creed Revelations
-*** Hitman 2: Silent Assassin
+*** DONE (2011) Assassin's Creed Revelations
+    CLOSED: [2012-04-06 Fri 15:01]
+*** DONE Hitman 2: Silent Assassin
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19
     :END:
-*** Hitman: Blood Money
+*** DONE Hitman: Blood Money
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/5042140e-f13e-4b1b-b507-7345ec0eb13f
     :END:
-*** Hitman: Codename 47
+*** DONE Hitman: Codename 47
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/6d71dc61-2f26-406a-9815-f9bb8a6087e6
     :END:
-*** Hitman: Contracts
+*** DONE Hitman: Contracts
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
     :END:
@@ -1147,6 +1150,7 @@
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
+*** TODO (2010-03-16) God of War III
 *** Juno                                                                :FAV:
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
