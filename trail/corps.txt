@@ -96,7 +96,7 @@
    :END:
 ** Nedroid Picture Diary 2                                            :title:
    :PROPERTIES:
-   :url:     http://nedroid.com
+   :url:      http://nedroid.com
    :END:
 ** Oglaf                                                     :ns:extra:title:
    :PROPERTIES:
@@ -182,7 +182,7 @@
    :END:
 ** the thin H line                                                       :ns:
    :PROPERTIES:
-   :url:     http://thinhline.tumblr.com
+   :url:      http://thinhline.tumblr.com
    :END:
 ** theWAREHOUSE
    :PROPERTIES:
@@ -217,9 +217,9 @@
    :btih:     E34975D39BE058E38C1D03EA8EF838102BB320D2
    :END:
 *** DONE Animorphs
-   :PROPERTIES:
-   :btih:     04f439a9eac3b86636beff502590484945b57d74
-   :END:
+    :PROPERTIES:
+    :btih:     04f439a9eac3b86636beff502590484945b57d74
+    :END:
 *** DONE Everworld
     :PROPERTIES:
     :url:      http://www.mediafire.com/?dbwbk05tackx2l
@@ -236,10 +236,15 @@
 ** Peter Watts
    :PROPERTIES:
    :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
+   :url:      http://rifters.com
    :END:
+*** TODO Rifters trilogy
+**** TODO Starfish
+**** TODO Maelstorm
+**** TODO Behemoth
 *** TODO Blindsight
 ** Roger Williams
-*** The Metamorphosis of Prime Intellect                                :FAV:
+*** DONE The Metamorphosis of Prime Intellect                           :FAV:
 ** DONE The Last Ring-bearer                                       :blas:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
@@ -423,6 +428,10 @@
 ** xcity.jp
 *** Leon Kadena                                                         :FAV:
 * LP                                                               :FAV:game:
+** TODO
+*** Hitman series
+*** Homeworld series
+*** Tenchu series
 ** Azure_Horizon
 *** DONE Koudelka                                                  :f:hybrid:
 ** Azzur
@@ -649,6 +658,15 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
+** TODO Burzum
+*** TODO (2012) Umskiptar
+** TODO Babes in Toyland                                                :jwz:
+*** TODO (1990) To Mother
+*** TODO (1990-04-16) Spanking Machine
+*** TODO (1992) Fontanelle
+*** TODO (1993) Painkillers
+*** TODO (1995) Nemesisters
+*** TODO (2001-11-27) The BBC John Peel Sessions 1990-92
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
@@ -687,7 +705,7 @@
 ** DONE Bliss(This)
 ** TODO Blondie
    :PROPERTIES:
-   :mbid: http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
+   :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
    :END:
 *** TODO (2011) Panic of Girls
     :PROPERTIES:
@@ -867,7 +885,8 @@
 ** TODO Josh Woodward                                        :jamendo:lastfm:
 *** TODO (2004-04-17) Here Today
 *** TODO (2005-02-05) Crawford Street
-*** TODO (2005) Sunny Side of the Street
+*** DONE (2005) Sunny Side of the Street
+    CLOSED: [2012-04-07 Sat 15:09]
 *** TODO (2006-05-06) Only Whispering
 *** TODO (2007-08-11) Not Quite Connected
 *** TODO (2007-08-16) Dirty Wings
@@ -947,6 +966,7 @@
 *** DONE (2004) Metal Axe
 *** DONE (2004) Metal Beast
 *** DONE (2007) Sword, Shurikins & Fists
+*** DONE (2007) Top Gear
 *** DONE (2008) MetalHog
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
@@ -1119,6 +1139,7 @@
     CLOSED: [2012-01-09 Mon 14:35]
 ** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
+*** DONE (2011) Samsara
 ** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
@@ -1164,11 +1185,11 @@
     :mbid:     http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0
     :END:
 *** DONE Singing Science Records                                        :FAV:
-   CLOSED: [2012-01-07 Sat 20:05]
-   :PROPERTIES:
-   :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
-   :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
-   :END:
+    CLOSED: [2012-01-07 Sat 20:05]
+    :PROPERTIES:
+    :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
+    :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
+    :END:
 **** Energy & Motion Songs
 **** Experiment Songs
 **** More Nature Songs
@@ -1241,7 +1262,7 @@
    :END:
 ** GONE Mark Pilgrim                                   :free:code:net:whatwg:
    :PROPERTIES:
-   :url:     http://firehose.diveintomark.org
+   :url:      http://firehose.diveintomark.org
    :END:
 ** Nebu1a                                                   :game:commentary:
    :PROPERTIES:
@@ -1263,23 +1284,33 @@
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
+** Đỗ Huân                                                     :FAV:vi:humor:
+   :PROPERTIES:
+   :url:      http://www.educons.net/
+   :END:
+*** DONE Tào lao gà
+    :PROPERTIES:
+    :url:      http://taolaoga.blogspot.com/
+    :END:
+*** TODO Vẹo rồng
+*** TODO Ông ve chai
 * Steps
 ** Music
 # chromaprint
 # picard
 *** naming
-$if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) -
-%title%
-$if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) - %artist% - %title%
+    $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) -
+    %title%
+    $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%,1),%discnumber%-,)$num(%tracknumber%,2) - %artist% - %title%
 # fb2k
 *** sort by title, dedup
 *** replay gain
 *** favm
-[%artist%_@_]%title%[_'['%album%']']
-[%artist%_@_]%title%_%track%[_'['%album%']']
+    [%artist%_@_]%title%[_'['%album%']']
+    [%artist%_@_]%title%_%track%[_'['%album%']']
 # amarok
 *** favm
-%artist%_@_%title%_[[%album%]]
+    %artist%_@_%title%_[[%album%]]
 * Technical                                                             :FAV:
 ** #jbopre
    :PROPERTIES:
@@ -1287,13 +1318,13 @@ $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%
    :END:
 *** Broca
 *** clsn                                                                 :py:
-   :PROPERTIES:
-   :url:      http://web.meson.org
-   :END:
+    :PROPERTIES:
+    :url:      http://web.meson.org
+    :END:
 *** jcowan                                                             :pint:
-   :PROPERTIES:
-   :url:      http://home.ccil.org/~cowan/
-   :END:
+    :PROPERTIES:
+    :url:      http://home.ccil.org/~cowan/
+    :END:
 *** rlpowell
 *** Tene
 *** treed
@@ -1337,10 +1368,10 @@ $if2(%albumartist%,%artist%)/$if(%date%,\(%date%\) )%album%/$if($gt(%totaldiscs%
 ** xorl %eax, %eax
 * Tool
 ** CygWin
-cd \cygwin\bin
-dash
-PATH=.
-rebaseall
+   cd \cygwin\bin
+   dash
+   PATH=.
+   rebaseall
 *** .bash_login
 *** bind
 *** git
@@ -1361,7 +1392,7 @@ rebaseall
      :PROPERTIES:
      :url:      http://libav.org/releases/libav-0.7.3.tar.gz
      :END:
-./configure --disable-yasm --disable-shared --enable-static --extra-cflags=-fno-reorder-functions --extra-ldflags=-static-libgcc --extra-ldflags=-static
+     ./configure --disable-yasm --disable-shared --enable-static --extra-cflags=-fno-reorder-functions --extra-ldflags=-static-libgcc --extra-ldflags=-static
 **** libid3tag
      :PROPERTIES:
      :url:      ftp://ftp.mars.org/pub/mpeg/libid3tag-0.15.1b.tar.gz
@@ -1397,7 +1428,7 @@ rebaseall
    :64bit:    http://api.ning.com/files/eTQek6oePnyf09jlLkAAW4a-kmGIPcck3HM13gtCQib3eoGx9KaoLLlm5DuufWnrx5b1irL5pXkT0feqbBiA2aPjgUwoSrUS/gogoc1.2RELEASEwin64.exe
    :END:
 ** grub2
-GRUB_DEFAULT=saved
+   GRUB_DEFAULT=saved
 *** os-prober
 ** Homebrew
    :PROPERTIES:
@@ -1418,7 +1449,7 @@ GRUB_DEFAULT=saved
 *** Purple Plugins Pack
 **** difftopic
 ** PulseAudio
-flat-volume = no
+   flat-volume = no
 ** QtScrobbler
    :PROPERTIES:
    :url:      http://qtscrob.sourceforge.net
