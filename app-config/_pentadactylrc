@@ -108,6 +108,9 @@ set! network.protocol-handler.expose.magnet=false
 set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 
+""" Sites
+set pk+=smbc-comics.com:x
+
 bmark -keyword ac about:config
 bmark -keyword st about:sync-tabs
 bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
