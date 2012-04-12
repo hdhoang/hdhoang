@@ -106,9 +106,12 @@ set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 
 """ Sites
-map S -ex tabopen https://www.youtube.com/html5
+map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ tabopen https://www.youtube.com/feather_beta
    \ tabopen https://duckduckgo.com/settings.html
+map S -js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
+   \ services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
+   \ services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
 set pk+=smbc-comics.com:x
 
 bmark -keyword ac about:config
@@ -183,7 +186,6 @@ bmark -keyword ge https://www.google.com/reader/view/#stream/user/-/state/com.go
 bmark -keyword gs https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
 bmark -keyword ga https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
 set passkeys+='https://www.google.com/reader/view/*':'vf/? npSsmrgeUNPXO'
-js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
