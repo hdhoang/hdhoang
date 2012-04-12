@@ -283,8 +283,7 @@
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
 ** Alisa Kiss                                                           :FAV:
-** Alison Angel                                                         :not:
-** Amara                                                                :not:
+** NOT Alison Angel
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
@@ -300,10 +299,10 @@
 ** Aria Giovanni                                                        :not:
 ** Ariel Rebel                                                          :FAV:
 ** Asians4You
-*** Aggie                                                               :not:
+*** NOT Aggie
 *** NOT Alesha
 *** NOT Amara
-*** Anissa                                                              :not:
+*** NOT Anissa
 *** Anna Song                                                           :not:
 *** Becky Jang                                                          :not:
 *** Carolyn                                                             :FAV:
@@ -386,7 +385,7 @@
 *** Mima A.
 *** Vera H.
 ** Miss Luana                                                           :FAV:
-** Missy Model                                                          :not:
+** NOT Missy Model
 ** MPLstudios.com
 ** Nicole                                                               :FAV:
 ** Nikki                                                                :FAV:
@@ -428,7 +427,7 @@
 ** xcity.jp
 *** Leon Kadena                                                         :FAV:
 * LP                                                               :FAV:game:
-** TODO
+** TODO ??
 *** Hitman series
 *** Homeworld series
 *** Tenchu series
@@ -577,6 +576,11 @@
 ** WeX Majors
 *** DONE Spider-Man 2                                                 :video:
     CLOSED: [2012-02-27 Mon 10:50]
+** Yahtzee Croshaw
+*** TODO Dreamweb                                   :group:voice:video:humor:
+    :PROPERTIES:
+    :url:      https://www.youtube.com/watch?v=RgU-KA46THc
+    :END:
 * Lulz                                                                :humor:
 ** GONE 4chanarchive.org                                             :FAV:ns:
    :PROPERTIES:
@@ -658,19 +662,24 @@
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
-** TODO Burzum
-*** TODO (2012) Umskiptar
-** TODO Babes in Toyland                                                :jwz:
-*** TODO (1990) To Mother
-*** TODO (1990-04-16) Spanking Machine
-*** TODO (1992) Fontanelle
-*** TODO (1993) Painkillers
-*** TODO (1995) Nemesisters
-*** TODO (2001-11-27) The BBC John Peel Sessions 1990-92
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
+** TODO Accept
+*** TODO (1979) Accept
+*** TODO (1980) I'm a Rebel
+*** TODO (1981) Breaker
+*** TODO (1982) Restless and Wild
+*** TODO (1983) Balls to the Wall
+*** TODO (1985-05-24) Metal Heart
+*** TODO (1986-07-01) Russian Roulette
+*** TODO (1993-02-01) Objection Overruled
+*** TODO (1993-06-07) Eat the Heat
+*** TODO (1994-10-04) Death Row
+*** TODO (1996) Predator
+*** TODO (2010-08-20) Blood of the Nations
+*** TODO (2012-04-06) Stalingrad
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
@@ -693,6 +702,13 @@
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
+** TODO Babes in Toyland                                                :jwz:
+*** TODO (1990) To Mother
+*** TODO (1990-04-16) Spanking Machine
+*** TODO (1992) Fontanelle
+*** TODO (1993) Painkillers
+*** TODO (1995) Nemesisters
+*** TODO (2001-11-27) The BBC John Peel Sessions 1990-92
 ** Basil Poledouris
 *** DONE Red October soundtrack                                    :FAV:inst:
 ** TODO Benjamin Zander
@@ -720,11 +736,14 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
-*** TODO (2012) Electric Sea
+*** DONE (2012) Electric Sea
+    CLOSED: [2012-04-12 Thu 16:26]
 *** Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
 ** DONE Bullet for My Valentine                                        :1fav:
+** TODO Burzum
+*** TODO (2012) Umskiptar
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
@@ -784,7 +803,8 @@
 *** TODO (2011-06-10) Cocktail Eleven
 *** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
     CLOSED: [2012-03-20 Tue 17:56]
-*** TODO Weirdos And Classics
+*** DONE Weirdos And Classics
+    CLOSED: [2012-04-09 Mon 13:57]
 ** TODO Danzig                                                         :game:
 ** DONE Deep Purple
 ** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
@@ -839,6 +859,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
+*** DONE (1995-03) Burnt Offerings
 *** DONE (2001-01-08) The Melancholy E.P.
 *** DONE (2001-11-26) Tribute to the Gods
 *** DONE (2011) Dystopia
@@ -889,10 +910,12 @@
     CLOSED: [2012-04-07 Sat 15:09]
 *** TODO (2006-05-06) Only Whispering
 *** TODO (2007-08-11) Not Quite Connected
-*** TODO (2007-08-16) Dirty Wings
+*** DONE (2007-08-16) Dirty Wings
+    CLOSED: [2012-04-12 Thu 16:26]
 *** TODO (2008-04-24) The Simple Life
 *** TODO (2009-10-21) Breadcrumbs
-*** TODO (2010) Ashes
+*** DONE (2010) Ashes
+    CLOSED: [2012-04-09 Mon 14:00]
 ** DONE JT Bruce                                                :FAV:jamendo:
 *** DONE (2011) Ruined Subjects
 ** DONE Judas Priest
@@ -918,7 +941,7 @@
 ** DONE Linkin Park                                                     :FAV:
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
-*** TODO The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
+*** DONE The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
@@ -1043,7 +1066,8 @@
 ** TODO Pain Confessor                                                 :wail:
 *** TODO (2004-09-08) Turmoil
 *** TODO (2006-03-01) Fearrage
-*** TODO (2007-03-14) Purgatory of the Second Sun
+*** DONE (2007-03-14) Purgatory of the Second Sun
+    CLOSED: [2012-04-09 Mon 13:58]
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
 ** DONE Peter McConnell                                               :g:FAV:
@@ -1171,7 +1195,8 @@
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
-*** TODO (2010-03-16) God of War III
+*** DONE (2010-03-16) God of War III
+    CLOSED: [2012-04-09 Mon 13:59]
 *** Juno                                                                :FAV:
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
@@ -1216,6 +1241,7 @@
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
 ** Zak Belica
 *** DONE (2005) SiN                                                    :game:
+** TODO Zakk Wylde                                                       :jo:
 ** TODO Zero-Project                                               :FAV:inst:
 *** TODO (2012-01-06) Untold Stories of a Dying Moon
 * Person                                                                :FAV:
@@ -1234,7 +1260,8 @@
    :END:
 ** Dan Kaminsky
 ** TODO Daniel Tosh                                             :voice:humor:
-*** TODO (2005-11-08) True Stories I Made Up
+*** DONE (2005-11-08) True Stories I Made Up
+    CLOSED: [2012-04-11 Wed 14:29]
 *** TODO (2011-03-08) Happy Thoughts
 ** Dave Winer
    :PROPERTIES:
@@ -1256,10 +1283,14 @@
    :END:
 ** Jason Kottke
 ** Jason Scott                                                     :free:net:
+** Jiddu Krishnamurti
+*** Think on These Things                                              :tunx:
 ** Luminous                                                 :game:commentary:
    :PROPERTIES:
    :url:      https://youtube.com/user/LuminousStudio
    :END:
+** Malcolm Gladwell
+*** TODO The Tipping Point                                               :jo:
 ** GONE Mark Pilgrim                                   :free:code:net:whatwg:
    :PROPERTIES:
    :url:      http://firehose.diveintomark.org
