@@ -1,7 +1,4 @@
 """ Start up
-map S -ex tabopen https://www.youtube.com/html5
-   \ tabopen https://www.youtube.com/feather_beta
-   \ tabopen https://duckduckgo.com/settings.html
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
 set! browser.newtabpage.enabled=false
@@ -109,6 +106,9 @@ set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 
 """ Sites
+map S -ex tabopen https://www.youtube.com/html5
+   \ tabopen https://www.youtube.com/feather_beta
+   \ tabopen https://duckduckgo.com/settings.html
 set pk+=smbc-comics.com:x
 
 bmark -keyword ac about:config
