@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<foxyproxy mode="patterns" selectedTabIndex="0" toolbaricon="false" toolsMenu="false" contextMenu="false" advancedMenus="false" previousMode="disabled" resetIconColors="true" useStatusBarPrefix="true" excludePatternsFromCycling="false" excludeDisabledFromCycling="false" ignoreProxyScheme="false">
+<foxyproxy mode="patterns" selectedTabIndex="0" toolbaricon="false" toolsMenu="false" contextMenu="false" advancedMenus="false" previousMode="disabled" resetIconColors="true" useStatusBarPrefix="true" excludePatternsFromCycling="false" excludeDisabledFromCycling="false" ignoreProxyScheme="false" apiDisabled="false">
   <random includeDirect="false" includeDisabled="false"/>
   <statusbar icon="true" text="false" left="cycle" middle="cycle" right="contextmenu" width="0"/>
   <toolbar left="cycle" middle="cycle" right="contextmenu"/>
@@ -12,9 +12,9 @@
   <quickadd enabled="false" temp="false" reload="true" notify="true" notifyWhenCanceled="true" prompt="true" proxy-id="3856060272">
     <match enabled="true" name="Dynamic QuickAdd Pattern" pattern="*://${3}${6}/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
   </quickadd>
-  <defaultPrefs origPrefetch="18"/>
+  <defaultPrefs origPrefetch="18" origDiskCache="true" origMemCache="true" origOfflineCache="true" origSSLCache="false" origCookieBehavior="0"/>
   <proxies>
-    <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac">
+    <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
         <match enabled="true" name="onion" pattern="*.onion/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="ctt" pattern=".*coithienthai\..../.*" isRegEx="true" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
@@ -31,7 +31,7 @@
       <autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
       <manualconf host="127.0.0.1" port="9050" socksversion="4" isSocks="true"/>
     </proxy>
-    <proxy name="Default" id="3141913676" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="false" color="#0055E5" proxyDNS="true" noInternalIPs="false" autoconfMode="pac">
+    <proxy name="Default" id="3141913676" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="false" color="#0055E5" proxyDNS="true" noInternalIPs="false" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
         <match enabled="true" name="All" pattern="*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
       </matches>
