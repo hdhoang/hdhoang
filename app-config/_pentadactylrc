@@ -113,6 +113,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
 map S -js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
    \ services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
+   \ services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 set pk+=smbc-comics.com:x
 
 bmark -keyword ac about:config
