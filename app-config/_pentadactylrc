@@ -36,7 +36,7 @@ set! ui.key.contentAccess=4
 set! ui.key.menuAccessKey=0
 
 """ Display
-set guioptions+=c
+set guioptions+=cN
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
