@@ -1,19 +1,32 @@
 from __future__ import print_function
-from codecs import open # open files as utf-8 on windows
+from codecs import open
 import sys
 import xml.etree.cElementTree
 
-# python 2.6 doesn't support multiple contexts
-with open('jbo-eng_jbovlaste.dsl', mode='w', encoding='utf-8') as sys.stdout:
-    with sys.stdin as f:
-        dictionary = xml.etree.cElementTree.parse(f)
+def help():
+    print("""Usage: {0} xml dsl
+    with XML file from http://jbovlaste.lojban.org/export/xml.html.
+    - means read from stdin or write to stdout.
+    """.format(sys.argv[0]))
 
-    print('#NAME "jbovlaste Lojban<->{0}"\n'.format(
-                                     dictionary.find('direction').get('to')))
+if len(sys.argv) != 3:
+    help()
+    sys.exit(1)
+
+in_file = sys.argv[1] if sys.argv[1] != '-' else sys.stdin
+dictionary = xml.etree.cElementTree.parse(in_file)
+
+if sys.argv[-1] != '-':
+    out_file = open(sys.argv[-1], mode='w', encoding='utf-8')
+else:
+    out_file = sys.stdout
+
+out_file.write(u'#NAME "jbovlaste Lojban<->{0}"\n'
+                             .format(dictionary.find('direction').get('to')))
                                      # etree 1.2 doesn't support [@]
 
-    for v in dictionary.findall('direction/valsi'):
-        print(u"""
+for v in dictionary.findall('direction/valsi'):
+        out_file.write(u"""
 {0[word]} {rafsis}
     Type: {0[type]} {selmaho}
     {definition}
@@ -26,11 +39,13 @@ with open('jbo-eng_jbovlaste.dsl', mode='w', encoding='utf-8') as sys.stdout:
                              .replace('{','<<').replace('}','>>')
                              ))
 
-    for nlw in dictionary.findall('direction/nlword'):
-        print(u"""
+for nlw in dictionary.findall('direction/nlword'):
+        out_file.write(u"""
 {word}
     {sense}
     <<{valsi}>>{place}""".format(word=nlw.get('word')
                                 ,sense=nlw.get('sense', '')
                                 ,valsi=nlw.get('valsi')
                                 ,place=nlw.get('place', '')))
+
+out_file.close()
