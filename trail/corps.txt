@@ -262,7 +262,7 @@
 ** tvtropes.org                                                         :FAV:
 * Game
 ** DotA                                                                 :FAV:
-** Dungeon Crawl: Stone Soup                                  :roguelike:FAV:
+** Dungeon Crawl: Stone Soup                           :roguelike:FAV:addict:
    :PROPERTIES:
    :url:      http://crawl.develz.org
    :END:
@@ -272,25 +272,36 @@
    :END:
 ** Homeworld                                                  :space:rts:FAV:
 ** Homeworld 2                                                :space:rts:FAV:
+** ITR WoW                                                   :net:rpg:addict:
 ** nethack                                                    :roguelike:FAV:
 ** DONE Nexus: The Jupiter Incident                           :space:rts:FAV:
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
 * Girl                                                                   :ns:
-** (y)ape                                                               :FAV:
+** (y)ape                                                        :FAV:addict:
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
 ** Alisa Kiss                                                           :FAV:
-** NOT Alison Angel
+** Alison Angel                                                         :FAV:
+** ALS Scan
+*** NOT Breanne
+*** Brynn Tyler                                                         :FAV:
+*** NOT Destiny
+*** Emily                                                               :FAV:
+*** Eufrat                                                              :FAV:
+*** Eve Angel                                                           :FAV:
+*** Jade                                                                :FAV:
+*** Zoe                                                                 :FAV:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
 ** andreea-b.com                                                        :not:
+** Angel Button                                                         :FAV:
 ** Angela Melini                                                        :not:
-** Anja.de                                                              :not:
+** NOT Anja.de
 ** Ann Angel                                                            :not:
 ** Anne                                                                 :FAV:
    :PROPERTIES:
@@ -304,10 +315,12 @@
 *** NOT Amara
 *** NOT Anissa
 *** Anna Song                                                           :not:
+*** NOT Ayumi Oki
 *** Becky Jang                                                          :not:
 *** Carolyn                                                             :FAV:
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Claudia
+*** NOT Dana Pang
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
 *** Halle                                                               :not:
@@ -315,13 +328,16 @@
 *** Jamie                                                               :not:
 *** Jennifer Lee                                                        :FAV:
 *** Kaila Wang                                                          :not:
+*** NOT Kathy Liu
 *** Kelly                                                               :not:
 *** Kesara                                                              :FAV:
+*** Kim Yun Hee                                                         :FAV:
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :not:
 *** Misha                                                               :not:
 *** Monica                                                              :FAV:
-*** Nancy Ho                                                            :FAV:
+*** NOT Nancy Ho
+*** NOT Natalia
 *** NOT Nicole
 *** NOT Nina
 *** NOT Paris
@@ -333,6 +349,7 @@
 *** NOT Sydney
 *** NOT Tricia
 *** Victoria                                                            :FAV:
+*** NOT Yo Sung Hi
 ** Bailey Kline                                                         :FAV:
 ** BiancaBeauchamp                                                      :FAV:
 ** Brandy                                                               :FAV:
@@ -375,6 +392,7 @@
 ** Latexotica.com                                                       :FAV:
 ** NOT Lovable Kitty
    CLOSED: [2012-03-16 Fri 15:11]
+** Love Hina                                                         :FAV:jo:
 ** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
 *** Alea
@@ -384,6 +402,10 @@
 *** Kristina
 *** Mima A.
 *** Vera H.
+** Michelle Feynman                                                     :FAV:
+   :PROPERTIES:
+   :video:    https://youtu.be/Fzg1CU8t9nw
+   :END:
 ** Miss Luana                                                           :FAV:
 ** NOT Missy Model
 ** MPLstudios.com
@@ -417,6 +439,7 @@
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :not:
 ** Trang                                                             :FAV:vi:
+** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
@@ -453,6 +476,8 @@
 *** DONE Thief III: Deadly Shadows
 ** BOrangeFury
 *** DONE Fallout                                       :shot:humor:narrative:
+** Brassherald
+*** DONE Splinter Cell: Conviction                         :video:voice:info:
 ** Breetai
 *** DONE Fallout 2                                     :shot:humor:narrative:
 ** CannibalK9                                                         :speed:
@@ -532,6 +557,8 @@
 *** TODO Final Fantasy IV                                              :shot:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
+** perochialjoe
+*** DONE STALKER: Shadow of Chernobyl                           :video:voice:
 ** Pesmerga
 *** TODO Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
@@ -610,7 +637,7 @@
 ** TODO Blade
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
-** TODO Dansk erotisk komedie collection
+** Dansk erotisk komedie collection
    :PROPERTIES:
    :btih:     c99519791e88fdd3076ade1c386de878d2e5b122
    :END:
@@ -702,18 +729,13 @@
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
-** TODO Babes in Toyland                                                :jwz:
-*** TODO (1990) To Mother
-*** TODO (1990-04-16) Spanking Machine
-*** TODO (1992) Fontanelle
-*** TODO (1993) Painkillers
-*** TODO (1995) Nemesisters
-*** TODO (2001-11-27) The BBC John Peel Sessions 1990-92
+** NOT Babes in Toyland                                                 :jwz:
 ** Basil Poledouris
 *** DONE Red October soundtrack                                    :FAV:inst:
 ** TODO Benjamin Zander
 ** DONE Bethzaida                                                      :1fav:
 *** 1349                                                                :FAV:
+** TODO Beto Vázquez Infinity                                        :lastfm:
 ** DONE Bionic Commando                                                 :FAV:
 *** Rearmed                                                             :not:
 ** GONE Black Sabbath                                                   :FAV:
@@ -727,6 +749,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
     :END:
+** TODO Bob Marley
 ** DONE Bobaflex
 ** DONE Bon Jovi
 ** DONE BOND
@@ -755,6 +778,7 @@
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
    :END:
 ** DONE Cinderella                                                     :1fav:
+** TODO Clint Mansell
 ** DONE Coldplay
 *** NOT (2011) Mylo Xyloto
 ** TODO Crowded House
@@ -786,6 +810,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
     :END:
+** TODO Dan Masquelier                                               :lastfm:
 ** Dan Wentz                                                           :game:
 *** DONE FreeSpace 2 (official)
 ** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
@@ -823,6 +848,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
    :END:
+** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
 ** TODO Electric Light Orchestra
@@ -834,6 +860,7 @@
 ** DONE Ennio Morricone
 ** DONE Ensiferum
 ** DONE Epica
+*** TODO (2012-03-09) Requiem for the Indifferent
 ** Eric Brosius                                                    :FAV:game:
 *** TODO System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
@@ -846,6 +873,7 @@
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
+*** TODO (2012-02-23) DoYaThing
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** DONE Gạt Tàn Đầy                                                     :FAV:
@@ -855,12 +883,15 @@
    CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
 ** DONE Homeworld (official)
-** TODO Iced Earth
+** DONE Iced Earth
+   CLOSED: [2012-04-18 Wed 18:16]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
+*** DONE (1991-11-01) Night of the Stormrider
 *** DONE (1995-03) Burnt Offerings
 *** DONE (2001-01-08) The Melancholy E.P.
+*** DONE (2008-09-05) The Crucible of Man: Something Wicked, Part 2
 *** DONE (2001-11-26) Tribute to the Gods
 *** DONE (2011) Dystopia
 ** DONE Il Divo
@@ -899,20 +930,24 @@
     :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
     :END:
 ** TODO Jimi Hendrix
+** TODO Joan Osborne
 ** TODO Johann Sebastian Bach
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
 ** TODO Josh Woodward                                        :jamendo:lastfm:
 *** TODO (2004-04-17) Here Today
-*** TODO (2005-02-05) Crawford Street
+*** DONE (2005-02-05) Crawford Street
+    CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2005) Sunny Side of the Street
     CLOSED: [2012-04-07 Sat 15:09]
 *** TODO (2006-05-06) Only Whispering
-*** TODO (2007-08-11) Not Quite Connected
+*** DONE (2007-08-11) Not Quite Connected
+    CLOSED: [2012-04-18 Wed 18:20]
 *** DONE (2007-08-16) Dirty Wings
     CLOSED: [2012-04-12 Thu 16:26]
-*** TODO (2008-04-24) The Simple Life
+*** DONE (2008-04-24) The Simple Life
+    CLOSED: [2012-04-18 Wed 18:20]
 *** TODO (2009-10-21) Breadcrumbs
 *** DONE (2010) Ashes
     CLOSED: [2012-04-09 Mon 14:00]
@@ -937,8 +972,11 @@
     :mbid:     http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99
     :END:
 ** DONE Led Zeppelin                                                   :1fav:
+** TODO Lenka                                                            :jo:
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
+*** TODO (2012-06-26) Living Things
+** TODO Lionel Richie
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** DONE The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
@@ -950,7 +988,7 @@
 ** DONE Manowar                                                         :FAV:
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
-** TODO Maroon 5
+** TODO Maroon 5                                                         :jo:
 ** Matt Uelmen                                                         :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
@@ -1054,6 +1092,7 @@
    :END:
 *** DONE (2006) Time to Differ
 *** DONE (2008-11-19) Nice Noise
+** TODO Norah Jones
 ** Normand Corbeil
 *** Heavy Rain                                                     :FAV:game:
     :PROPERTIES:
@@ -1063,9 +1102,12 @@
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
-** TODO Pain Confessor                                                 :wail:
-*** TODO (2004-09-08) Turmoil
-*** TODO (2006-03-01) Fearrage
+** TODO Our Lady Peace
+** DONE Pain Confessor                                                 :wail:
+   CLOSED: [2012-04-18 Wed 18:21]
+*** DONE (2004-09-08) Turmoil
+    CLOSED: [2012-04-18 Wed 18:21]
+*** DONE (2006-03-01) Fearrage
 *** DONE (2007-03-14) Purgatory of the Second Sun
     CLOSED: [2012-04-09 Mon 13:58]
 ** TODO Pain of Salvation                                           :epic:jo:
@@ -1085,10 +1127,18 @@
 *** DONE (2003) Bình yên
 ** TODO Rage Against the Machine
 ** DONE Regina Spektor
+*** TODO (2012-05-29) What We Saw from the Cheap Seats
 ** DONE Rhapsody                                                     :FAV:it:
 *** TODO Luca Turilli
+**** TODO (1999-09-22) King of the Nordic Twilight
+**** TODO (2002) Prophet of the Last Eclipse
+**** TODO (2006-05-26) The Infinite Wonders of Creation
+**** TODO (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
+** TODO Rush
+** TODO Sabaton                                                      :lastfm:
 ** DONE Santana
+** TODO Santigold
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
@@ -1101,7 +1151,8 @@
     :END:
 *** DONE (2011) Comeblack
 ** TODO Sean Wright                                                  :lastfm:
-** TODO Secret Garden                                            :FAV:string:
+** DONE Secret Garden                                            :FAV:string:
+*** DONE (2007-11-26) Inside I'm Singing
 *** DONE (2011) Winter Poem
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
@@ -1116,6 +1167,7 @@
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                               :FAV:fi:
 ** DONE Spice Girls                                                       :f:
+** TODO Stam1na
 ** DONE Starcraft sound                                                   :g:
    :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
@@ -1132,6 +1184,7 @@
 ** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
 ** DONE Tarot                                                        :FAV:fi:
+** TODO Tesla
 ** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
 ** TODO The Charlie Daniels Band
@@ -1172,6 +1225,7 @@
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
 ** DONE Train                                                          :tunx:
+*** TODO (2012-04-16) California 37
 ** DONE Tryad                                                  :1fav:jamendo:
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** DONE Tuoni
@@ -1182,7 +1236,8 @@
 ** DONE Van Canto
 ** Various Artists
 *** TODO (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
-*** TODO (2003) Need for Speed Underground
+*** DONE (2003) Need for Speed Underground
+    CLOSED: [2012-04-18 Wed 18:22]
 *** DONE (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
@@ -1287,7 +1342,7 @@
 *** Think on These Things                                              :tunx:
 ** Luminous                                                 :game:commentary:
    :PROPERTIES:
-   :url:      https://youtube.com/user/LuminousStudio
+   :url:      https://www.youtube.com/playlist?list=PL8A63EC5F95C09145
    :END:
 ** Malcolm Gladwell
 *** TODO The Tipping Point                                               :jo:
