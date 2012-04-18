@@ -4,5 +4,5 @@
         update = rebase
 [submodule "emacs-prelude"]
 	path = emacs-prelude
-	url = git://github.com/bbatsov/emacs-prelude.git
+	url = git://github.com/bbatsov/prelude.git
         update = rebase
