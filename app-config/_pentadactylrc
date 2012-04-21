@@ -307,7 +307,12 @@ style -n "link decor: people" * <<EOS
 EOS
 style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
 style -n "link decor: cracked" * <<EOS
-[href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) }
+[href*="cracked.com/"]::before {
+     content: url(http:/www.cracked.com/favicon.ico);
+     display: inline-block;
+     height: 1em;
+     overflow: hidden;
+}
 @-moz-document domain("cracked.com") {
                [href*="cracked.com/"]::before { content: none }
                [role="main"] .body section [href*="cracked.com/"]::before { content: url(http:/www.cracked.com/favicon.ico) }
