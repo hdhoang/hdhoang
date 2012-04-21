@@ -314,27 +314,28 @@
 *** NOT Alesha
 *** NOT Amara
 *** NOT Anissa
-*** Anna Song                                                           :not:
+*** Anna Song                                                           :FAV:
 *** NOT Ayumi Oki
-*** Becky Jang                                                          :not:
+*** NOT Becky Jang
 *** Carolyn                                                             :FAV:
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Claudia
 *** NOT Dana Pang
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
-*** Halle                                                               :not:
+*** NOT Halle
+*** Hana                                                                :FAV:
 *** Iris                                                                :FAV:
 *** Jamie                                                               :not:
 *** Jennifer Lee                                                        :FAV:
-*** Kaila Wang                                                          :not:
+*** NOT Kaila Wang
 *** NOT Kathy Liu
-*** Kelly                                                               :not:
+*** NOT Kelly
 *** Kesara                                                              :FAV:
 *** Kim Yun Hee                                                         :FAV:
 *** Lin Si Yee                                                          :FAV:
-*** Lincy Leaw                                                          :not:
-*** Misha                                                               :not:
+*** NOT Lincy Leaw
+*** NOT Misha
 *** Monica                                                              :FAV:
 *** NOT Nancy Ho
 *** NOT Natalia
@@ -373,6 +374,7 @@
 ** Hegre-Archives.com                                                   :FAV:
 *** Luba
 ** Jayden                                                               :FAV:
+** Jessimodel                                                           :FAV:
 ** Jordan Capri                                                         :FAV:
    :PROPERTIES:
    :btih:     7b9cbccb0cb50ef6e0aba414ce9c3bea0f55abda
@@ -419,6 +421,7 @@
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
+** NOT Sweet Devon
 ** Sweet Natural Girl                                                   :FAV:
 ** Tawnee Stone                                                         :not:
 ** ThaiCuties / iThaiTeens
@@ -541,6 +544,8 @@
 *** TODO Jagged Alliance 2
 ** kefkafloyd
 *** DONE Bionic Commando (2009)                            :comp:video:voice:
+** kethryveris
+*** TODO Shadow Hearts                                      :shot:comp:humor:
 ** Leovinus
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
@@ -603,6 +608,8 @@
 ** WeX Majors
 *** DONE Spider-Man 2                                                 :video:
     CLOSED: [2012-02-27 Mon 10:50]
+** woodenchicken
+*** TODO Pathologic
 ** Yahtzee Croshaw
 *** TODO Dreamweb                                   :group:voice:video:humor:
     :PROPERTIES:
@@ -694,7 +701,7 @@
    CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
 ** TODO Accept
-*** TODO (1979) Accept
+*** DONE (1979) Accept
 *** TODO (1980) I'm a Rebel
 *** TODO (1981) Breaker
 *** TODO (1982) Restless and Wild
@@ -707,12 +714,14 @@
 *** TODO (1996) Predator
 *** TODO (2010-08-20) Blood of the Nations
 *** TODO (2012-04-06) Stalingrad
+** TODO Adam Lambert                                                   :tunx:
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
    CLOSED: [2012-01-15 Sun 20:50]
+** TODO Amity in Fame                                               :jamendo:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
 ** DONE Annihilator                                                     :FAV:
@@ -766,7 +775,7 @@
 **** DONE (2006) Anatomize
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
-*** TODO (2012) Umskiptar
+*** DONE (2012) Umskiptar
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
@@ -825,7 +834,7 @@
 *** DONE (2008-06-26) Beethoven
     CLOSED: [2012-03-20 Tue 17:56]
 *** TODO (2009-02-06) Madera Y Bronce
-*** TODO (2011-06-10) Cocktail Eleven
+*** DONE (2011-06-10) Cocktail Eleven
 *** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
     CLOSED: [2012-03-20 Tue 17:56]
 *** DONE Weirdos And Classics
@@ -963,6 +972,7 @@
 ** DONE Korpiklaani                                                     :FAV:
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
+*** DONE (2011-04-29) Illwill
 ** TODO Lamb of God
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/298909e4-ebcb-47b8-95e9-cc53b087fc65
@@ -1221,6 +1231,7 @@
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
+   :url:      http://home.broadpark.no/~emeyn/tl/links.html
    :END:
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
@@ -1231,6 +1242,7 @@
 ** DONE Tuoni
    CLOSED: [2012-03-02 Fri 08:51]
 *** DONE (2005) Elävät & kuolleet
+** TODO Tupac                                                           :rap:
 ** DONE Turisas                                                          :fi:
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
@@ -1243,10 +1255,10 @@
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
-*** TODO (2004) Need for Speed Underground 2
+*** DONE (2004) Need for Speed Underground 2
 *** TODO (2005-11) Need for Speed Most Wanted
 *** TODO (2006-11) Need for Speed Carbon
-*** TODO (2007) Need for Speed ProStreet
+*** DONE (2007) Need for Speed ProStreet
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
