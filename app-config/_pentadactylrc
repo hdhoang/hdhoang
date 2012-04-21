@@ -83,7 +83,6 @@ set! extensions.https_everywhere._observatory.priv_dns=true
 set! extensions.testpilot.alwaysSubmitData=true
 set! extensions.testpilot.popup.showOnNewResults=true
 set! extensions.testpilot.popup.showOnNewStudy=true
-set! flashblock.whitelist="youtube.com,s.ytimg.com/yt,oglaf.com,a.vimeocdn.com,b.vimeocdn.com"
 set! services.sync.engine.adblockplus=true
 if prefs.get('services.sync.client.name') == 'cenbaz'
     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
@@ -112,6 +111,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ tabopen https://duckduckgo.com/settings.html
 map S -js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
+   \ services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
    \ services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 set pk+=smbc-comics.com:x
