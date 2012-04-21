@@ -1,6 +1,6 @@
 # -*- mode: sh -*-
 
-export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS'
+export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS --LONG-PROMPT'
 export GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
 export CCACHE_BASEDIR=${HOME}
 
