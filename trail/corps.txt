@@ -565,7 +565,7 @@
 ** perochialjoe
 *** DONE STALKER: Shadow of Chernobyl                           :video:voice:
 ** Pesmerga
-*** TODO Vampire: The Masquerade: Bloodlines                 :shot:narrative:
+*** DONE Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
 *** DONE Sam & Max Hit the Road                           :voice:video:group:
 ** Psychedelic Eyeball                                :FAV:video:humor:voice:
@@ -706,14 +706,14 @@
 *** TODO (1981) Breaker
 *** TODO (1982) Restless and Wild
 *** TODO (1983) Balls to the Wall
-*** TODO (1985-05-24) Metal Heart
+*** DONE (1985-05-24) Metal Heart
 *** TODO (1986-07-01) Russian Roulette
 *** TODO (1993-02-01) Objection Overruled
 *** TODO (1993-06-07) Eat the Heat
 *** TODO (1994-10-04) Death Row
 *** TODO (1996) Predator
 *** TODO (2010-08-20) Blood of the Nations
-*** TODO (2012-04-06) Stalingrad
+*** DONE (2012-04-06) Stalingrad
 ** TODO Adam Lambert                                                   :tunx:
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alestorm                                                     :jbopre:
@@ -822,7 +822,7 @@
 ** TODO Dan Masquelier                                               :lastfm:
 ** Dan Wentz                                                           :game:
 *** DONE FreeSpace 2 (official)
-** TODO Daniel Bautista                                  :FAV:jamendo:lastfm:
+** DONE Daniel Bautista                                  :FAV:jamendo:lastfm:
 *** DONE (2007-09-03) Music for a Film
     CLOSED: [2012-03-30 Fri 13:55]
 *** DONE (2008-02-19) Recycle Bin
@@ -833,7 +833,7 @@
     CLOSED: [2012-04-04 Wed 15:01]
 *** DONE (2008-06-26) Beethoven
     CLOSED: [2012-03-20 Tue 17:56]
-*** TODO (2009-02-06) Madera Y Bronce
+*** DONE (2009-02-06) Madera Y Bronce
 *** DONE (2011-06-10) Cocktail Eleven
 *** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
     CLOSED: [2012-03-20 Tue 17:56]
@@ -945,7 +945,7 @@
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
 ** TODO Josh Woodward                                        :jamendo:lastfm:
-*** TODO (2004-04-17) Here Today
+*** DONE (2004-04-17) Here Today
 *** DONE (2005-02-05) Crawford Street
     CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2005) Sunny Side of the Street
@@ -1142,7 +1142,7 @@
 *** TODO Luca Turilli
 **** TODO (1999-09-22) King of the Nordic Twilight
 **** TODO (2002) Prophet of the Last Eclipse
-**** TODO (2006-05-26) The Infinite Wonders of Creation
+**** DONE (2006-05-26) The Infinite Wonders of Creation
 **** TODO (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Rush
@@ -1247,7 +1247,7 @@
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
-*** TODO (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
+*** DONE (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
 *** DONE (2003) Need for Speed Underground
     CLOSED: [2012-04-18 Wed 18:22]
 *** DONE (2003) Warcraft III: The Frozen Throne
@@ -1256,7 +1256,7 @@
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
 *** DONE (2004) Need for Speed Underground 2
-*** TODO (2005-11) Need for Speed Most Wanted
+*** DONE (2005-11) Need for Speed Most Wanted
 *** TODO (2006-11) Need for Speed Carbon
 *** DONE (2007) Need for Speed ProStreet
 *** DONE (2008-09-04) StarCraft
@@ -1326,10 +1326,10 @@
    :url:      http://www.antipope.org
    :END:
 ** Dan Kaminsky
-** TODO Daniel Tosh                                             :voice:humor:
+** DONE Daniel Tosh                                             :voice:humor:
 *** DONE (2005-11-08) True Stories I Made Up
     CLOSED: [2012-04-11 Wed 14:29]
-*** TODO (2011-03-08) Happy Thoughts
+*** DONE (2011-03-08) Happy Thoughts
 ** Dave Winer
    :PROPERTIES:
    :url:      http://scripting.com
