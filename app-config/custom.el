@@ -21,7 +21,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(defalias 'rb 'revert-buffer)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
 ;; Major modes
