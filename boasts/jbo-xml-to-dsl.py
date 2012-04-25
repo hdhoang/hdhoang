@@ -21,8 +21,10 @@ if sys.argv[-1] != '-':
 else:
     out_file = sys.stdout
 
-out_file.write(u'#NAME "jbovlaste Lojban<->{0}"\n'
-                             .format(dictionary.find('direction').get('to')))
+out_file.write(u"""#NAME "jbovlaste Lojban<->{0}"
+#INDEX_LANGUAGE "Lojban"
+#CONTENTS_LANGUAGE  "{0}"
+""".format(dictionary.find('direction').get('to')))
                                      # etree 1.2 doesn't support [@]
 
 for v in dictionary.findall('direction/valsi'):
