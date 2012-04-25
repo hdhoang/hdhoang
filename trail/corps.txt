@@ -288,6 +288,7 @@
 ** ALS Scan
 *** NOT Breanne
 *** Brynn Tyler                                                         :FAV:
+*** NOT Carrie
 *** NOT Destiny
 *** Emily                                                               :FAV:
 *** Eufrat                                                              :FAV:
@@ -321,10 +322,13 @@
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Claudia
 *** NOT Dana Pang
+*** Eliza                                                               :FAV:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
 *** NOT Halle
 *** Hana                                                                :FAV:
+*** NOT Irene Fah
+*** NOT Irene Far
 *** Iris                                                                :FAV:
 *** Jamie                                                               :not:
 *** Jennifer Lee                                                        :FAV:
@@ -350,7 +354,7 @@
 *** NOT Sydney
 *** NOT Tricia
 *** Victoria                                                            :FAV:
-*** NOT Yo Sung Hi
+*** Yo Sung Hi                                                          :FAV:
 ** Bailey Kline                                                         :FAV:
 ** BiancaBeauchamp                                                      :FAV:
 ** Brandy                                                               :FAV:
@@ -546,6 +550,8 @@
 *** DONE Bionic Commando (2009)                            :comp:video:voice:
 ** kethryveris
 *** TODO Shadow Hearts                                      :shot:comp:humor:
+** kloudtana
+*** TODO King of Demons                        :video:group:info:humor:voice:
 ** Leovinus
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
@@ -879,6 +885,7 @@
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
 ** DONE Flowing Tears
+** TODO Fort Minor
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
