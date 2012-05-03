@@ -39,6 +39,7 @@ for v in dictionary.findall('direction/valsi'):
                      ,definition=v.findtext('definition')
                      ,notes=v.findtext('notes', '')
                              .replace('{','<<').replace('}','>>')
+                             .replace('\n',' ')
                              ))
 
 for nlw in dictionary.findall('direction/nlword'):
