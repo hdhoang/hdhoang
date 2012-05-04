@@ -286,6 +286,7 @@
 ** Alisa Kiss                                                           :FAV:
 ** Alison Angel                                                         :FAV:
 ** ALS Scan
+*** NOT Belicia
 *** NOT Breanne
 *** Brynn Tyler                                                         :FAV:
 *** NOT Carrie
@@ -551,7 +552,7 @@
 ** kethryveris
 *** TODO Shadow Hearts                                      :shot:comp:humor:
 ** kloudtana
-*** TODO King of Demons                        :video:group:info:humor:voice:
+*** DONE King of Demons                        :video:group:info:humor:voice:
 ** Leovinus
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
@@ -609,6 +610,8 @@
     :END:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
+** UnknownMercernary
+*** TODO Soldier of Fotune                                :video:group:voice:
 ** Vexation
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
@@ -711,7 +714,7 @@
 *** TODO (1980) I'm a Rebel
 *** TODO (1981) Breaker
 *** TODO (1982) Restless and Wild
-*** TODO (1983) Balls to the Wall
+*** DONE (1983) Balls to the Wall
 *** DONE (1985-05-24) Metal Heart
 *** TODO (1986-07-01) Russian Roulette
 *** TODO (1993-02-01) Objection Overruled
@@ -964,7 +967,7 @@
     CLOSED: [2012-04-12 Thu 16:26]
 *** DONE (2008-04-24) The Simple Life
     CLOSED: [2012-04-18 Wed 18:20]
-*** TODO (2009-10-21) Breadcrumbs
+*** DONE (2009-10-21) Breadcrumbs
 *** DONE (2010) Ashes
     CLOSED: [2012-04-09 Mon 14:00]
 ** DONE JT Bruce                                                :FAV:jamendo:
@@ -1147,11 +1150,12 @@
 *** TODO (2012-05-29) What We Saw from the Cheap Seats
 ** DONE Rhapsody                                                     :FAV:it:
 *** TODO Luca Turilli
-**** TODO (1999-09-22) King of the Nordic Twilight
+**** DONE (1999-09-22) King of the Nordic Twilight
 **** TODO (2002) Prophet of the Last Eclipse
 **** DONE (2006-05-26) The Infinite Wonders of Creation
 **** TODO (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
+** TODO Richard Strauss
 ** TODO Rush
 ** TODO Sabaton                                                      :lastfm:
 ** DONE Santana
@@ -1175,6 +1179,7 @@
 ** TODO Sentenced
 ** TODO Sepultura                                                        :jo:
 ** DONE Shinedown                                                      :1fav:
+*** DONE (2012-03-27) Amaryllis
 ** GONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
@@ -1318,6 +1323,8 @@
 ** TODO Zakk Wylde                                                       :jo:
 ** TODO Zero-Project                                               :FAV:inst:
 *** TODO (2012-01-06) Untold Stories of a Dying Moon
+** Đặng Thái Sơn                                             :tunx:piano:FAV:
+*** TODO (2008-03-08) Chopin Polonaises Complete
 * Person                                                                :FAV:
 ** Aaron Straup Cope                                                    :net:
    :PROPERTIES:
