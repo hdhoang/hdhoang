@@ -31,8 +31,8 @@ for v in dictionary.findall('direction/valsi'):
         out_file.write(u"""
 {0[word]} {rafsis}
     Type: {0[type]} {selmaho}
-    {definition}
-    {notes}""".format(v.attrib
+    [tm]{definition}[/tm]
+    [com]{notes}[/com]""".format(v.attrib
                      ,rafsis=' '.join(['-{0.text}-'.format(r)
                                        for r in v.findall('rafsi')])
                      ,selmaho=v.findtext('selmaho', '')
