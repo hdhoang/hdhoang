@@ -192,7 +192,6 @@ autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
 container.accessKey = "o";
-container.focus();
 EOS
 style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #viewer-entries-container:focus { outline: none }
