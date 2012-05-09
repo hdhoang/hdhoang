@@ -222,6 +222,7 @@ style -n "gif decor" * <<EOS
 , [src*="imgur"]
 , [src*="kuvaton"]
 , [src*="myconfinedspace"]
+, [src*="soup.io/asset/"]
 , [src*="tumblr"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
 EOS
