@@ -197,7 +197,7 @@ EOS
 style -n "greader popping" https://www.google.com/reader/view/* <<EOS
 #viewer-entries-container:focus { outline: none }
 .entry-actions { display: block !important }
-#chrome-fullscreen-top-toggle, .email, .read-state { display: none !important }
+#chrome-fullscreen-top-toggle, .email { display: none !important }
 EOS
 
 set passkeys+=plus.google.com:'jk'
