@@ -128,6 +128,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
    \ bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
    \ bmark -keyword sp http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
+   \ bmark -keyword ts https://atlas.torproject.org/#search/cenba
    \ bmark -keyword gm https://mail.google.com/mail/#inbox -tags n
    \ bmark -keyword gr https://www.google.com/reader/view/ -tags n
    \ bmark -keyword g/ https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
