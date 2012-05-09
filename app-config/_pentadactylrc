@@ -209,6 +209,11 @@ autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
 doc.querySelector('.b-a').accessKey = 'e'
 EOS
 
+autocmd PageLoad https://ca.isohunt.com/lite/* <<EOS
+feedkeys <Esc>
+EOS
+style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
+
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
@@ -314,8 +319,6 @@ EOS
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
 
 style -n "lparchive" lparchive.org body { width: auto !important } [src$=".gif"] { border-right: 2px dotted #d33682 !important}
-
-style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
 
 style -n "cracked" cracked.com <<EOS
 .body section [href*="cracked.com/"] {
