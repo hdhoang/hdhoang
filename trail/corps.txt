@@ -208,7 +208,8 @@
 * Fiction
 ** China Miéville
 *** TODO Embassytown
-** TODO Ishmael                                                         :FAV:
+** Daniel Quinn
+*** TODO Ishmael                                                        :FAV:
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
@@ -238,11 +239,13 @@
    :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
    :url:      http://rifters.com
    :END:
+*** DONE Blindsight
 *** TODO Rifters trilogy
 **** TODO Starfish
 **** TODO Maelstorm
 **** TODO Behemoth
-*** TODO Blindsight
+*** shorts
+**** TODO The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                           :FAV:
 ** DONE The Last Ring-bearer                                       :blas:FAV:
@@ -321,8 +324,10 @@
 *** NOT Becky Jang
 *** Carolyn                                                             :FAV:
 *** Cho Hye Eun                                                         :FAV:
+*** NOT Cindy
 *** NOT Claudia
 *** NOT Dana Pang
+*** Destiny                                                             :FAV:
 *** Eliza                                                               :FAV:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
@@ -332,21 +337,25 @@
 *** NOT Irene Far
 *** Iris                                                                :FAV:
 *** Jamie                                                               :not:
+*** NOT Jenis
 *** Jennifer Lee                                                        :FAV:
 *** NOT Kaila Wang
 *** NOT Kathy Liu
 *** NOT Kelly
 *** Kesara                                                              :FAV:
 *** Kim Yun Hee                                                         :FAV:
+*** NOT Layla
 *** Lin Si Yee                                                          :FAV:
 *** NOT Lincy Leaw
+*** Marlina                                                             :FAV:
 *** NOT Misha
 *** Monica                                                              :FAV:
 *** NOT Nancy Ho
 *** NOT Natalia
 *** NOT Nicole
 *** NOT Nina
-*** NOT Paris
+*** NOT Olivia
+*** Paris                                                               :FAV:
 *** Petchara                                                            :FAV:
 *** Regina                                                              :FAV:
 *** NOT Reina
@@ -376,6 +385,7 @@
 ** Front
 *** Mellisa Clarke                                                      :FAV:
 ** Galitsin                                                             :FAV:
+** Hayden Winters
 ** Hegre-Archives.com                                                   :FAV:
 *** Luba
 ** Jayden                                                               :FAV:
@@ -400,7 +410,6 @@
 ** NOT Lovable Kitty
    CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
-** Marlina                                                              :not:
 ** Met-Art.com                                                          :FAV:
 *** Alea
 *** Anna
@@ -553,6 +562,8 @@
 *** TODO Shadow Hearts                                      :shot:comp:humor:
 ** kloudtana
 *** DONE King of Demons                        :video:group:info:humor:voice:
+** Kyyrewyyoae
+*** TODO Spycraft                                                      :shot:
 ** Leovinus
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
@@ -610,8 +621,6 @@
     :END:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
-** UnknownMercernary
-*** TODO Soldier of Fotune                                :video:group:voice:
 ** Vexation
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
@@ -853,12 +862,14 @@
 ** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
-   :jamendo:  http://www.jamendo.com/artist/Diablo_Swing_Orchestra_(2)
+   :jamendo:  http://www.jamendo.com/en/artist/351716/diablo-swing-orchestra
    :END:
 *** DONE (2006) The Butcher's Ballroom
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
     :END:
+*** TODO (2009-10) Sing Along Songs for the Damned & Delirious
+*** TODO (2012-05-22) Pandora's Piñata
 ** TODO Dire Strait
 ** DONE DJ Fab
 ** DONE Dr. Dre
@@ -888,7 +899,8 @@
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
 ** DONE Flowing Tears
-** TODO Fort Minor
+** TODO Fort Minor                                                      :FAV:
+*** TODO (2005) The Rising Tied
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** DONE Gorillaz
@@ -1180,6 +1192,7 @@
 ** TODO Sepultura                                                        :jo:
 ** DONE Shinedown                                                      :1fav:
 *** DONE (2012-03-27) Amaryllis
+** TODO Silversun Pickups
 ** GONE Simon & Garfunkel                                               :FAV:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
@@ -1300,6 +1313,10 @@
 **** Nature Songs
 **** Space Songs
 **** Weather Songs
+** TODO Verjnuarmu                                                       :fi:
+*** TODO (2006-01-25) Muanpiällinen helevetti
+*** TODO (2008-05-14) Ruatokansan uamunkoetto
+*** TODO (2010-10-27) Lohuton
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
