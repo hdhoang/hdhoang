@@ -484,7 +484,7 @@
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
 *** TODO Fallout 3
-*** TODO Temple of Elemental Evil
+*** TODO Temple of Elemental Evil                                :shot:humor:
     :PROPERTIES:
     :url:      http://lparchive.org/Temple-of-Elemental-Evil/
     :END:
@@ -715,6 +715,7 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
+** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
@@ -759,6 +760,7 @@
 ** NOT Babes in Toyland                                                 :jwz:
 ** Basil Poledouris
 *** DONE Red October soundtrack                                    :FAV:inst:
+** TODO Ben Houge                                                    :lastfm:
 ** TODO Benjamin Zander
 ** DONE Bethzaida                                                      :1fav:
 *** 1349                                                                :FAV:
@@ -781,6 +783,7 @@
 ** DONE Bon Jovi
 ** DONE BOND
 ** Boris                                                             :ja:not:
+** TODO Botany Bay                                                   :lastfm:
 ** TODO Breaking Benjamin
 ** Buckethead                                                           :FAV:
    :PROPERTIES:
@@ -872,6 +875,7 @@
 *** TODO (2012-05-22) Pandora's Piñata
 ** TODO Dire Strait
 ** DONE DJ Fab
+** TODO Double Dragon                                                :lastfm:
 ** DONE Dr. Dre
    CLOSED: [2012-01-09 Mon 16:20]
    :PROPERTIES:
@@ -1154,6 +1158,7 @@
    :url:      http://vgmetal.com
    :END:
 ** TODO Prince of Persia
+** TODO Prophecy                                                     :lastfm:
 ** TODO Puddle of Mudd
 ** TODO Quốc Bảo                                                     :FAV:vi:
 *** DONE (2003) Bình yên
