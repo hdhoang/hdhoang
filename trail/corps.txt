@@ -248,12 +248,12 @@
 **** TODO The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                           :FAV:
-** DONE The Last Ring-bearer                                       :blas:FAV:
+** DONE The Last Ring-bearer                                        :rev:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
    :background: http://ymarkov.livejournal.com/273409.html
    :END:
-** DONE The Salvation War                                          :blas:FAV:
+** DONE The Salvation War                                           :rev:FAV:
    :PROPERTIES:
    :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
    :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
@@ -303,6 +303,7 @@
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
+** NOT Andi Pink
 ** andreea-b.com                                                        :not:
 ** Angel Button                                                         :FAV:
 ** Angela Melini                                                        :not:
@@ -657,6 +658,7 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
+** DONE The Man from Earth (2007)                                   :rev:FAV:
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
@@ -715,23 +717,24 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
+** TODO 2pac                                                           :rap:http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
 ** TODO Accept
 *** DONE (1979) Accept
-*** TODO (1980) I'm a Rebel
-*** TODO (1981) Breaker
-*** TODO (1982) Restless and Wild
+*** DONE (1980) I'm a Rebel
+*** DONE (1981) Breaker
+*** DONE (1982) Restless and Wild
 *** DONE (1983) Balls to the Wall
 *** DONE (1985-05-24) Metal Heart
-*** TODO (1986-07-01) Russian Roulette
+*** DONE (1986-07-01) Russian Roulette
 *** TODO (1993-02-01) Objection Overruled
-*** TODO (1993-06-07) Eat the Heat
+*** DONE (1993-06-07) Eat the Heat
 *** TODO (1994-10-04) Death Row
 *** TODO (1996) Predator
-*** TODO (2010-08-20) Blood of the Nations
+*** DONE (2010-08-20) Blood of the Nations
 *** DONE (2012-04-06) Stalingrad
 ** TODO Adam Lambert                                                   :tunx:
 ** DONE Aerosmith                                                      :1fav:
@@ -754,6 +757,8 @@
 *** DONE (2006) If I Told You
 ** DONE Apocalyptica                                             :FAV:string:
 ** DONE Aqua                                                           :1fav:
+** TODO At Vance
+*** TODO (2012-04-27) Facing Your Enemy
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
@@ -931,6 +936,8 @@
 *** DONE (2011) Dystopia
 ** DONE Il Divo
 ** DONE Incubus
+** Inon Zur                                                            :game:
+*** DONE (2008-12-18) Prince of Persia
 ** TODO Insomnium
 *** DONE (2011) One for Sorrow
 ** DONE Iron Maiden                                                     :FAV:
@@ -1168,7 +1175,7 @@
 ** DONE Rhapsody                                                     :FAV:it:
 *** TODO Luca Turilli
 **** DONE (1999-09-22) King of the Nordic Twilight
-**** TODO (2002) Prophet of the Last Eclipse
+**** DONE (2002) Prophet of the Last Eclipse
 **** DONE (2006-05-26) The Infinite Wonders of Creation
 **** TODO (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
@@ -1212,6 +1219,8 @@
    :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
+** Steve Jablonsky
+*** DONE (2010-07-05) Prince of Persia: The Forgotten Sands            :game:
 ** TODO Steve Vai                                                      :inst:
 ** DONE Stone Sour                                                 :wail:FAV:
 ** DONE Stratovarius                                                 :FAV:fi:
@@ -1272,12 +1281,12 @@
 ** DONE Tuoni
    CLOSED: [2012-03-02 Fri 08:51]
 *** DONE (2005) Elävät & kuolleet
-** TODO Tupac                                                           :rap:
 ** DONE Turisas                                                          :fi:
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
 ** Various Artists
 *** DONE (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
+*** DONE (2000) Vampire: The Masquerade: Redemption                :game:FAV:
 *** DONE (2003) Need for Speed Underground
     CLOSED: [2012-04-18 Wed 18:22]
 *** DONE (2003) Warcraft III: The Frozen Throne
@@ -1287,7 +1296,7 @@
     :END:
 *** DONE (2004) Need for Speed Underground 2
 *** DONE (2005-11) Need for Speed Most Wanted
-*** TODO (2006-11) Need for Speed Carbon
+*** DONE (2006-11) Need for Speed Carbon
 *** DONE (2007) Need for Speed ProStreet
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
@@ -1344,7 +1353,7 @@
 *** DONE (2005) SiN                                                    :game:
 ** TODO Zakk Wylde                                                       :jo:
 ** TODO Zero-Project                                               :FAV:inst:
-*** TODO (2012-01-06) Untold Stories of a Dying Moon
+*** DONE (2012-01-06) Untold Stories of a Dying Moon
 ** Đặng Thái Sơn                                             :tunx:piano:FAV:
 *** TODO (2008-03-08) Chopin Polonaises Complete
 * Person                                                                :FAV:
@@ -1356,6 +1365,21 @@
    :PROPERTIES:
    :url:      http://pthree.org
    :END:
+** TODO Bill Hicks                                             :humor:spoken:
+*** TODO (1990) Dangerous
+*** TODO (1992) Relentless
+*** TODO (1993) Revelations
+*** TODO (1997-02-25) Arizona Bay
+*** TODO (1997-02-25) Rant in E-Minor
+*** TODO (2002-11-11) Flying Saucer Tour, Volume 1
+*** TODO (2002-11-11) Love, Laughter and Truth
+*** TODO (2003-05-19) Shock and Awe
+*** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
+*** TODO Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
+*** TODO Filling Up the Hump
+*** TODO Hicksville
+*** TODO Live in Brighton
+*** TODO The Letterman Performances
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Charlie Stross
    :PROPERTIES:
