@@ -298,6 +298,7 @@
 *** Eufrat                                                              :FAV:
 *** Eve Angel                                                           :FAV:
 *** Jade                                                                :FAV:
+*** NOT Silvia
 *** Zoe                                                                 :FAV:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
@@ -357,6 +358,7 @@
 *** NOT Nina
 *** NOT Olivia
 *** Paris                                                               :FAV:
+*** NOT Patricia
 *** Petchara                                                            :FAV:
 *** Regina                                                              :FAV:
 *** NOT Reina
@@ -513,6 +515,8 @@
 *** DONE Metal Gear Solid 4: Guns of the Patriot
 ** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
 *** DONE Metal Gear Solid
+** CirclMastr
+*** TODO Alpha Protocol                                    :video:voice:part:
 ** Coolguye and TheLastRoboKy
 *** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
@@ -571,7 +575,7 @@
 *** DONE Fahrenheit                                    :video:sub:humor:comp:
 *** DONE Heavy Rain                                    :comp:video:sub:humor:
 ** Magnetic North
-*** DONE Silent Steel                                          :humor:hybrid:
+*** DONE Silent Steel                                     :humor:hybrid:part:
     CLOSED: [2012-02-24 Fri 09:10]
 ** Mega64
 *** TODO Final Fantasy III                                   :shot:challenge:
@@ -658,7 +662,10 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
-** DONE The Man from Earth (2007)                                   :rev:FAV:
+** TODO Angel Densetsu                                                   :jo:
+   :PROPERTIES:
+   :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
+   :END:
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
@@ -702,6 +709,7 @@
    :END:
 ** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Iron Giant (1999)                                           :FAV:
+** DONE The Man from Earth (2007)                                   :rev:FAV:
 ** TODO The Man With No Name trilogy
 *** TODO A Fistful of Dollars (1964)
 *** TODO For A Few Dollars More (1965)
@@ -717,7 +725,10 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
-** TODO 2pac                                                           :rap:http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
+** TODO 2pac                                                            :rap:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
+   :END:
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
@@ -740,6 +751,8 @@
 ** DONE Aerosmith                                                      :1fav:
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
+** TODO Alizée                                                        :jo:fr:
+*** TODO (2010-03-29) Une enfant du siècle
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
    CLOSED: [2012-01-15 Sun 20:50]
@@ -1182,7 +1195,8 @@
 ** TODO Richard Strauss
 ** TODO Rush
 ** TODO Sabaton                                                      :lastfm:
-** DONE Santana
+** DONE Santana                                                  :FAV:guitar:
+*** TODO (2012-05-11) Shape Shifter
 ** TODO Santigold
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
@@ -1272,6 +1286,7 @@
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
    :url:      http://home.broadpark.no/~emeyn/tl/links.html
    :END:
+** TODO Tony Bennett                                                   :tunx:
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
 ** DONE Train                                                          :tunx:
