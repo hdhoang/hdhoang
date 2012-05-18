@@ -39,7 +39,7 @@ function getc() {
     python2 $v/youtube-dl/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s" || \
     wget --continue
 }
-alias nn='chrt -i 0 ionice -c 3 '
+alias nn='nice ionice -c 3 '
 
 # local info
 alias ls='ls --color=auto --file-type --group-directories-first'
