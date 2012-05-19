@@ -290,6 +290,7 @@
 ** Alison Angel                                                         :FAV:
 ** ALS Scan
 *** NOT Belicia
+*** NOT Bonnie
 *** NOT Breanne
 *** Brynn Tyler                                                         :FAV:
 *** NOT Carrie
@@ -325,12 +326,14 @@
 *** NOT Ayumi Oki
 *** NOT Becky Jang
 *** Carolyn                                                             :FAV:
+*** Chin Si Yee                                                         :FAV:
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Cindy
 *** NOT Claudia
 *** NOT Dana Pang
 *** Destiny                                                             :FAV:
 *** Eliza                                                               :FAV:
+*** Ellen                                                               :FAV:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
 *** NOT Halle
@@ -348,7 +351,7 @@
 *** Kim Yun Hee                                                         :FAV:
 *** NOT Layla
 *** Lin Si Yee                                                          :FAV:
-*** NOT Lincy Leaw
+*** Lincy Leaw                                                          :FAV:
 *** Marlina                                                             :FAV:
 *** NOT Misha
 *** Monica                                                              :FAV:
@@ -417,10 +420,11 @@
 *** Alea
 *** Anna
 *** Elena
-*** Emma A.                                                             :not:
+*** NOT Emma A
+*** Iveta B
 *** Kristina
-*** Mima A.
-*** Vera H.
+*** Mima A
+*** Vera H
 ** Michelle Feynman                                                     :FAV:
    :PROPERTIES:
    :video:    https://youtu.be/Fzg1CU8t9nw
@@ -446,7 +450,7 @@
 *** Benze Pharda                                                        :FAV:
 *** Cake                                                                :not:
 *** Felicia                                                             :FAV:
-*** Garfield Jantra                                                     :not:
+*** NOT Garfield Jantra
 *** Hana                                                                :FAV:
 *** June Piya                                                           :not:
 *** June Tharita                                                        :not:
@@ -487,7 +491,7 @@
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
 *** TODO Fallout 3
-*** TODO Temple of Elemental Evil                                :shot:humor:
+*** DONE Temple of Elemental Evil                          :group:shot:humor:
     :PROPERTIES:
     :url:      http://lparchive.org/Temple-of-Elemental-Evil/
     :END:
@@ -741,7 +745,7 @@
 *** DONE (1983) Balls to the Wall
 *** DONE (1985-05-24) Metal Heart
 *** DONE (1986-07-01) Russian Roulette
-*** TODO (1993-02-01) Objection Overruled
+*** DONE (1993-02-01) Objection Overruled
 *** DONE (1993-06-07) Eat the Heat
 *** TODO (1994-10-04) Death Row
 *** TODO (1996) Predator
@@ -749,10 +753,12 @@
 *** DONE (2012-04-06) Stalingrad
 ** TODO Adam Lambert                                                   :tunx:
 ** DONE Aerosmith                                                      :1fav:
+*** TODO (2012-05-15) Icon
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
 ** TODO Alizée                                                        :jo:fr:
 *** TODO (2010-03-29) Une enfant du siècle
+** TODO all:my:faults                                                :lastfm:
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
    CLOSED: [2012-01-15 Sun 20:50]
@@ -935,6 +941,7 @@
 ** DONE Helloween
    CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
+** TODO Hinder                                                       :lastfm:
 ** DONE Homeworld (official)
 ** DONE Iced Earth
    CLOSED: [2012-04-18 Wed 18:16]
@@ -1220,6 +1227,7 @@
 *** DONE (2012-03-27) Amaryllis
 ** TODO Silversun Pickups
 ** GONE Simon & Garfunkel                                               :FAV:
+** TODO Simple Plan                                                      :jo:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
 ** TODO Skrillex
@@ -1227,6 +1235,7 @@
 ** TODO Snow Patrol
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                               :FAV:fi:
+*** TODO (2012-05-22) Stones Grow Her Name
 ** DONE Spice Girls                                                       :f:
 ** TODO Stam1na
 ** DONE Starcraft sound                                                   :g:
@@ -1257,6 +1266,7 @@
 ** The Ink Spots                                                   :FAV:blue:
 ** DONE The Plasmas                                        :riff:game:lastfm:
    CLOSED: [2012-04-04 Wed 15:00]
+** TODO The Who
 ** DONE Theory of a Deadman                                       :game:wail:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b
@@ -1396,6 +1406,7 @@
 *** TODO Live in Brighton
 *** TODO The Letterman Performances
 ** Bradley M. Kuhn                                              :free:pgnome:
+** Carl Sagan
 ** Charlie Stross
    :PROPERTIES:
    :url:      http://www.antipope.org
@@ -1457,6 +1468,7 @@
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
+** TODO Terry Goodkind
 ** Đỗ Huân                                                     :FAV:vi:humor:
    :PROPERTIES:
    :url:      http://www.educons.net/
