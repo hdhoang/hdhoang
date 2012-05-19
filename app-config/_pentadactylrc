@@ -106,6 +106,7 @@ set! services.sync.engine.prefs=false
 set! toolkit.telemetry.enabled=true
 
 """ Sites
+map <C-n> -ex bmarks! -tags news
 map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ tabopen https://www.youtube.com/feather_beta
    \ tabopen https://duckduckgo.com/settings.html
