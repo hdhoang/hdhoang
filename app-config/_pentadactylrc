@@ -115,7 +115,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
    \ bmark -keyword bgp http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v http://vlasisku.lojban.org/?query=%s
-   \ bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive -tags news
+   \ bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive
    \ bmark -keyword lp http://lparchive.org/search/%s#results
    \ bmark -keyword ix -post f:1=%s http://ix.io/
    \ bmark -keyword io http://ix.io/%s/
