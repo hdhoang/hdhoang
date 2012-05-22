@@ -12,7 +12,7 @@
   <quickadd enabled="false" temp="false" reload="true" notify="true" notifyWhenCanceled="true" prompt="true" proxy-id="3856060272">
     <match enabled="true" name="Dynamic QuickAdd Pattern" pattern="*://${3}${6}/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
   </quickadd>
-  <defaultPrefs origPrefetch="18" origDiskCache="true" origMemCache="true" origOfflineCache="true" origSSLCache="false" origCookieBehavior="0"/>
+  <defaultPrefs origPrefetch="18"/>
   <proxies>
     <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
