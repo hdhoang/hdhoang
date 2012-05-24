@@ -97,6 +97,7 @@ set! app.update.enabled=false
 set! browser.download.manager.alertOnEXEOpen=false
 set! browser.download.manager.scanWhenDone=false
 set! browser.preferences.instantApply=true
+set! browser.search.context.loadInBackground=true
 set! intl.charset.default=UTF-8
 set! network.http.pipelining=true
 set! network.http.pipelining.ssl=true
