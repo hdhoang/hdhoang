@@ -9,7 +9,6 @@
 #+TAGS: game(G) jbopre(j) net(n) jo jamendo lastfm(l)
 
 * Comic                                                                 :FAV:
-** Walking in Squares                                             :site:game:
 ** A Softer World                                                :title:cute:
    :PROPERTIES:
    :url:      http://asofterworld.com
@@ -75,7 +74,7 @@
 ** Hyperbole and a Half
 ** INCIDENTAL COMICS                                                   :cute:
    :PROPERTIES:
-   :url:      http://thoughtballoonhelium.blogspot.com
+   :url:      http://www.incidentalcomics.com
    :END:
 ** Johnny Wander                                                       :cute:
    :PROPERTIES:
@@ -196,6 +195,7 @@
    :PROPERTIES:
    :url:      http://upup-downdown.com
    :END:
+** Walking in Squares                                             :site:game:
 ** Wondermark                                                         :title:
    :PROPERTIES:
    :url:      http://wondermark.com
@@ -286,6 +286,7 @@
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
+** Aiko Tanaka                                                          :FAV:
 ** Alisa Kiss                                                           :FAV:
 ** Alison Angel                                                         :FAV:
 ** ALS Scan
@@ -324,6 +325,7 @@
 *** NOT Anissa
 *** Anna Song                                                           :FAV:
 *** NOT Ayumi Oki
+*** Bambie                                                              :FAV:
 *** NOT Becky Jang
 *** Carolyn                                                             :FAV:
 *** Chin Si Yee                                                         :FAV:
@@ -331,6 +333,7 @@
 *** NOT Cindy
 *** NOT Claudia
 *** NOT Dana Pang
+*** Denise                                                              :FAV:
 *** Destiny                                                             :FAV:
 *** Eliza                                                               :FAV:
 *** Ellen                                                               :FAV:
@@ -341,7 +344,7 @@
 *** NOT Irene Fah
 *** NOT Irene Far
 *** Iris                                                                :FAV:
-*** Jamie                                                               :not:
+*** NOT Jamie
 *** NOT Jenis
 *** Jennifer Lee                                                        :FAV:
 *** NOT Kaila Wang
@@ -367,6 +370,7 @@
 *** NOT Reina
 *** NOT Salina
 *** NOT Sandra Mar
+*** Sophie                                                              :FAV:
 *** NOT Sydney
 *** NOT Tricia
 *** Victoria                                                            :FAV:
@@ -383,13 +387,17 @@
 ** DDD Brandy                                                           :not:
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
+*** Anke
 *** Arev
 *** Jadi
+*** Jenni A
 *** Mona
 ** foxes.com                                                            :not:
 ** Francesca Dani                                                       :FAV:
 ** Front
 *** Mellisa Clarke                                                      :FAV:
+** FTVGirls
+*** Christine                                                           :FAV:
 ** Galitsin                                                             :FAV:
 ** Hayden Winters
 ** Hegre-Archives.com                                                   :FAV:
@@ -404,6 +412,7 @@
    :PROPERTIES:
    :url:      http://josiemodel.ca
    :END:
+** Julia Cerkonova                                                      :FAV:
 ** Kari Sweets                                                          :not:
 ** Katie Fey/Jenya D                                                    :FAV:
    :PROPERTIES:
@@ -416,6 +425,7 @@
 ** NOT Lovable Kitty
    CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
+** Luna Lane                                                            :FAV:
 ** Met-Art.com                                                          :FAV:
 *** Alea
 *** Anna
@@ -438,7 +448,6 @@
 *** Angel Dark
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
-** Sophie                                                               :FAV:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
@@ -490,7 +499,6 @@
 ** Blastinus
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
-*** TODO Fallout 3
 *** DONE Temple of Elemental Evil                          :group:shot:humor:
     :PROPERTIES:
     :url:      http://lparchive.org/Temple-of-Elemental-Evil/
@@ -504,10 +512,11 @@
 *** DONE Splinter Cell: Conviction                         :video:voice:info:
 ** Breetai
 *** DONE Fallout 2                                     :shot:humor:narrative:
-** CannibalK9                                                         :speed:
-*** DONE Grand Theft Auto: San Andreas                          :video:voice:
+** CannibalK9                                             :speed:video:voice:
+*** DONE Grand Theft Auto: San Andreas
+*** TODO Hitman: Codename 47
 ** CapitanGarlic
-*** TODO Icewind Dale
+*** TODO Icewind Dale 2                           :shot:humor:narrative:part:
     :PROPERTIES:
     :url:      http://lparchive.org/Icewind-Dale-2/
     :END:
@@ -520,7 +529,7 @@
 ** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
 *** DONE Metal Gear Solid
 ** CirclMastr
-*** TODO Alpha Protocol                                    :video:voice:part:
+*** DONE Alpha Protocol                          :video:voice:part:comp:info:
 ** Coolguye and TheLastRoboKy
 *** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
@@ -757,6 +766,10 @@
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
 ** TODO Alizée                                                        :jo:fr:
+*** TODO (2000-11-28) Gourmandises
+*** TODO (2003-04) Mes courants électriques...
+*** TODO (2004-10-18) Alizée en concert
+*** TODO (2008-06-25) Psychédélices
 *** TODO (2010-03-29) Une enfant du siècle
 ** TODO all:my:faults                                                :lastfm:
 ** ALONE IN THE CHAOS                                            :not:lastfm:
@@ -813,8 +826,12 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
+*** TODO (2011-05-20) Empty Space
+*** TODO (2011-08-17) 3 Foot Clearance
+*** TODO (2011-08-17) Look Up There
+*** TODO (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
-    CLOSED: [2012-04-12 Thu 16:26]
+*** TODO (2012-04-14) Balloon Cement
 *** Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
@@ -997,13 +1014,13 @@
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 *** DONE Crab Canon                                                     :FAV:
 ** DONE Josh Groban
-** TODO Josh Woodward                                        :jamendo:lastfm:
+** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
 *** DONE (2005-02-05) Crawford Street
     CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2005) Sunny Side of the Street
     CLOSED: [2012-04-07 Sat 15:09]
-*** TODO (2006-05-06) Only Whispering
+*** DONE (2006-05-06) Only Whispering
 *** DONE (2007-08-11) Not Quite Connected
     CLOSED: [2012-04-18 Wed 18:20]
 *** DONE (2007-08-16) Dirty Wings
@@ -1040,6 +1057,7 @@
 ** DONE Linkin Park                                                     :FAV:
 *** TODO (2012-06-26) Living Things
 ** TODO Lionel Richie
+** TODO Louis Armstrong
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** DONE The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
@@ -1175,7 +1193,7 @@
     CLOSED: [2012-04-09 Mon 13:58]
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
-** DONE Peter McConnell                                               :g:FAV:
+** DONE Peter McConnell                                            :game:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Phil Collins
@@ -1201,6 +1219,8 @@
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
 ** TODO Rush
+** Russell Brower & Laurence Juber                                     :game:
+*** TODO (2012-05-15) Diablo III: Collector's Edition Soundtrack
 ** TODO Sabaton                                                      :lastfm:
 ** DONE Santana                                                  :FAV:guitar:
 *** TODO (2012-05-11) Shape Shifter
@@ -1234,11 +1254,11 @@
 ** TODO Slayer
 ** TODO Snow Patrol
 *** DONE (2011) Fallen Empires
-** DONE Sonata Arctica                                               :FAV:fi:
+** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** TODO (2012-05-22) Stones Grow Her Name
 ** DONE Spice Girls                                                       :f:
 ** TODO Stam1na
-** DONE Starcraft sound                                                   :g:
+** DONE Starcraft sound                                                :game:
    :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
@@ -1263,7 +1283,7 @@
 ** DONE The Corrs                                              :FAV:f:string:
 ** DONE The Cranberries                                              :FAV:jo:
    CLOSED: [2012-01-09 Mon 14:35]
-** The Ink Spots                                                   :FAV:blue:
+** TODO The Ink Spots                                              :FAV:blue:
 ** DONE The Plasmas                                        :riff:game:lastfm:
    CLOSED: [2012-04-04 Wed 15:00]
 ** TODO The Who
@@ -1380,7 +1400,7 @@
 ** TODO Zero-Project                                               :FAV:inst:
 *** DONE (2012-01-06) Untold Stories of a Dying Moon
 ** Đặng Thái Sơn                                             :tunx:piano:FAV:
-*** TODO (2008-03-08) Chopin Polonaises Complete
+*** DONE (2008-03-08) Chopin Polonaises Complete
 * Person                                                                :FAV:
 ** Aaron Straup Cope                                                    :net:
    :PROPERTIES:
