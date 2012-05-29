@@ -234,7 +234,7 @@
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
-** Peter Watts
+** Peter Watts                                                      :sci:FAV:
    :PROPERTIES:
    :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
    :url:      http://rifters.com
@@ -245,9 +245,9 @@
 **** TODO Maelstorm
 **** TODO Behemoth
 *** shorts
-**** TODO The Island
+**** DONE The Island
 ** Roger Williams
-*** DONE The Metamorphosis of Prime Intellect                           :FAV:
+*** DONE The Metamorphosis of Prime Intellect                       :sci:FAV:
 ** DONE The Last Ring-bearer                                        :rev:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
@@ -309,10 +309,10 @@
 ** NOT Andi Pink
 ** andreea-b.com                                                        :not:
 ** Angel Button                                                         :FAV:
-** Angela Melini                                                        :not:
+** NOT Angela Melini
 ** NOT Anja.de
-** Ann Angel                                                            :not:
-** Anne                                                                 :FAV:
+** NOT Ann Angel
+** NOT Anne
    :PROPERTIES:
    :url:      http://anneteenmodel.com
    :END:
@@ -378,6 +378,7 @@
 ** Bailey Kline                                                         :FAV:
 ** BiancaBeauchamp                                                      :FAV:
 ** Brandy                                                               :FAV:
+** NOT Cameron Hertz
 ** Czech-Babes.com
 *** Marie                                                               :not:
 *** Olivia                                                              :FAV:
@@ -399,7 +400,7 @@
 ** FTVGirls
 *** Christine                                                           :FAV:
 ** Galitsin                                                             :FAV:
-** Hayden Winters
+** Hayden Winters                                                       :FAV:
 ** Hegre-Archives.com                                                   :FAV:
 *** Luba
 ** Jayden                                                               :FAV:
@@ -413,6 +414,7 @@
    :url:      http://josiemodel.ca
    :END:
 ** Julia Cerkonova                                                      :FAV:
+** Justine Joli                                                         :FAV:
 ** Kari Sweets                                                          :not:
 ** Katie Fey/Jenya D                                                    :FAV:
    :PROPERTIES:
@@ -514,7 +516,7 @@
 *** DONE Fallout 2                                     :shot:humor:narrative:
 ** CannibalK9                                             :speed:video:voice:
 *** DONE Grand Theft Auto: San Andreas
-*** TODO Hitman: Codename 47
+*** DONE Hitman: Codename 47
 ** CapitanGarlic
 *** TODO Icewind Dale 2                           :shot:humor:narrative:part:
     :PROPERTIES:
@@ -821,7 +823,7 @@
 ** DONE BOND
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
-** TODO Breaking Benjamin
+** TODO Breaking Benjamin                                                :jo:
 ** Buckethead                                                           :FAV:
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
@@ -841,14 +843,17 @@
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
-** TODO Celldweller                                                 :game:jo:
-** DONE Charon                                                          :FAV:
-** DONE Children Of Bodom                                            :FAV:fi:
-** TODO Chumbawamba
+** TODO Celldweller                                                      :jo:
+** DONE Charon                                                  :jo:wail:FAV:
+** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
+*** TODO (2008) Blooddrunk
+*** TODO (2011) Relentless Reckless Forever
+** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
    :END:
 ** DONE Cinderella                                                     :1fav:
+** TODO Clawfinger                                                       :jo:
 ** TODO Clint Mansell
 ** DONE Coldplay
 *** NOT (2011) Mylo Xyloto
@@ -948,6 +953,7 @@
 *** TODO (2005) The Rising Tied
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
+** TODO Garbage
 ** DONE Gorillaz
 *** TODO (2012-02-23) DoYaThing
 ** TODO Green Days
@@ -955,7 +961,7 @@
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
 ** DONE Harvey Danger                                                   :FAV:
-** DONE Helloween
+** DONE Helloween                                                       :FAV:
    CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
 ** TODO Hinder                                                       :lastfm:
@@ -1198,6 +1204,7 @@
 *** DONE Grim Fandango Additional
 ** TODO Phil Collins
 ** DONE Pink Floyd
+** TODO Placebo                                                          :jo:
 ** DONE Powerglove                                                      :FAV:
    :PROPERTIES:
    :url:      http://vgmetal.com
@@ -1319,6 +1326,15 @@
 ** TODO Tony Bennett                                                   :tunx:
 ** TODO Tony Cicoria
 ** Tool                                                                 :not:
+** TODO Tracy Chapman                                                :tunx:f:
+*** TODO (1988-04-05) Tracy Chapman
+*** TODO (1989-09) Crossroads
+*** TODO (1992-04-28) Matters of the Heart
+*** TODO (1995-11-14) New Beginning
+*** TODO (2000-02-15) Telling Stories
+*** TODO (2002-10-15) Let It Rain
+*** TODO (2005-09-13) Where You Live
+*** TODO (2008-11-07) Our Bright Future
 ** DONE Train                                                          :tunx:
 *** TODO (2012-04-16) California 37
 ** DONE Tryad                                                  :1fav:jamendo:
@@ -1454,6 +1470,9 @@
    :PROPERTIES:
    :url:      http://hixie.ch
    :END:
+** James Kakalios                                                 :sci:humor:
+*** The Amazing Story of Quantum Mechanics
+*** The Physics of Super Heroes
 ** Jason Kottke
 ** Jason Scott                                                     :free:net:
 ** Jiddu Krishnamurti
@@ -1478,6 +1497,9 @@
     :PROPERTIES:
     :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
     :END:
+** Robert Graves                                                        :rev:
+*** TODO I, Claudius
+*** TODO King Jesus
 ** Shamus Young                                                   :game:code:
    :PROPERTIES:
    :url:      http://shamusyoung.com
@@ -1489,15 +1511,16 @@
    :url:      http://terminally-incoherent.com
    :END:
 ** TODO Terry Goodkind
-** Đỗ Huân                                                     :FAV:vi:humor:
+** Đỗ Huân                                                :FAV:vi:humor:tunx:
    :PROPERTIES:
    :url:      http://www.educons.net/
+   :google:   https://plus.google.com/100358532436095582785
    :END:
 *** DONE Tào lao gà
     :PROPERTIES:
     :url:      http://taolaoga.blogspot.com/
     :END:
-*** TODO Vẹo rồng
+*** DONE Vẹo rồng
 *** TODO Ông ve chai
 * Steps
 ** Music
@@ -1551,15 +1574,17 @@
 ** Lennart Poettering
    :PROPERTIES:
    :url:      http://0pointer.de
+   :nickname: mezcalero
    :END:
 ** Leon Bambrick
    :PROPERTIES:
    :url:      http://secretgeek.net
    :END:
 ** Little Big Details
-** mjd
+** Mark Jason Domius
    :PROPERTIES:
    :url:      http://blog.plover.com
+   :nickname: mjd
    :END:
 ** Planet Debian                                                       :pdeb:
 ** Planet Emacsen                                                    :pemacs:
