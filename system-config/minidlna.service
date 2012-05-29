@@ -1,0 +1,15 @@
+[Unit]
+Description=minidlna server
+After=network.target
+
+[Service]
+Type=forking
+User=nobody
+ExecStart=/usr/sbin/minidlna
+PIDFile=/var/run/minidlna.pid
+CapabilityBoundingSet=
+ReadOnlyDirectories=/
+ReadWriteDirectories=/var/cache/minidlna /var/run
+
+[Install]
+WantedBy=multi-user.target
