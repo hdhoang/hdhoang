@@ -498,6 +498,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Left-4-Dead/
     :END:
+** Belgaer
+*** TODO Postal III                                               :video:sub:
 ** Blastinus
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
@@ -548,6 +550,10 @@
 ** fleshweasel
 *** DONE Diablo                                            :video:voice:info:
     CLOSED: [2012-03-09 Fri 13:55]
+** FrenzyTheKillbot
+*** TODO 007: Blood Stone                                             :video:
+*** TODO 007: The World is Not Enough                            :info:video:
+*** TODO 007: Quantum Solace                                     :info:video:
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Giragast
@@ -949,8 +955,8 @@
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
 ** DONE Flowing Tears
-** TODO Fort Minor                                                      :FAV:
-*** TODO (2005) The Rising Tied
+** DONE Fort Minor                                                      :FAV:
+*** DONE (2005) The Rising Tied
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** TODO Garbage
@@ -1209,6 +1215,7 @@
    :PROPERTIES:
    :url:      http://vgmetal.com
    :END:
+** TODO Primus
 ** TODO Prince of Persia
 ** TODO Prophecy                                                     :lastfm:
 ** TODO Puddle of Mudd
@@ -1232,6 +1239,7 @@
 ** DONE Santana                                                  :FAV:guitar:
 *** TODO (2012-05-11) Shape Shifter
 ** TODO Santigold
+** DONE Sarah Brightman                                            :f:jo:FAV:
 ** GONE Savatage                                                   :epic:FAV:
 *** Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
