@@ -230,6 +230,7 @@
 *** DONE Lộc Đỉnh Ký                                                    :FAV:
 ** Kurt Vonnegut
 *** DONE Slaughterhouse-Five                                            :FAV:
+*** TODO A Man Without A Country
 ** DONE Lost Girls                                                      :FAV:
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
@@ -240,12 +241,12 @@
    :url:      http://rifters.com
    :END:
 *** DONE Blindsight
+*** TODO Crysis: Legion                                                :game:
 *** TODO Rifters trilogy
 **** TODO Starfish
 **** TODO Maelstorm
 **** TODO Behemoth
-*** shorts
-**** DONE The Island
+*** DONE  The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                       :sci:FAV:
 ** DONE The Last Ring-bearer                                        :rev:FAV:
@@ -290,6 +291,8 @@
 ** Alisa Kiss                                                           :FAV:
 ** Alison Angel                                                         :FAV:
 ** ALS Scan
+*** NOT Agnes
+*** NOT Alice
 *** NOT Belicia
 *** NOT Bonnie
 *** NOT Breanne
@@ -300,7 +303,9 @@
 *** Eufrat                                                              :FAV:
 *** Eve Angel                                                           :FAV:
 *** Jade                                                                :FAV:
+*** Katalin                                                             :FAV:
 *** NOT Silvia
+*** Sophie                                                              :FAV:
 *** Zoe                                                                 :FAV:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
@@ -490,6 +495,7 @@
 *** Homeworld series
 *** Tenchu series
 ** Azure_Horizon
+*** TODO Final Fantasy VIII                                            :shot:
 *** DONE Koudelka                                                  :f:hybrid:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
@@ -1022,9 +1028,24 @@
     :END:
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
-** TODO Johann Sebastian Bach
-*** DONE The Well-Tempered Clavier feat. Angela Hewitt
+** Johann Sebastian Bach
+*** TODO Bach Organ Works (feat. James Kibbie)
+**** TODO Chorale Variations (feat. organ: James Kibbie)
+**** TODO Clavierübung III (feat. organ: James Kibbie)
+**** TODO Concerti (feat. organ: James Kibbie)
+**** TODO Fantasias and Fugues, Toccatas and Fugues (feat. organ: James Kibbie)
+**** TODO Individual Chorale Preludes (feat. organ: James Kibbie)
+**** TODO Leipzig Chorales (feat. organ: James Kibbie)
+**** TODO Neumeister Chorales (feat. organ: James Kibbie)
+**** TODO Orgelbüchlein (feat. organ: James Kibbie)
+**** TODO Other Free Works (feat. organ: James Kibbie)
+**** TODO Preludes and Fugues (feat. organ: James Kibbie)
+**** TODO Rudorff Chorales (feat. organ: James Kibbie)
+**** TODO Schübler Chorales (feat. organ: James Kibbie)
+**** TODO Trio Sonatas (feat. organ: James Kibbie)
 *** DONE Crab Canon                                                     :FAV:
+*** TODO (2012-05-28) Open Goldberg Variations
+*** DONE The Well-Tempered Clavier feat. Angela Hewitt
 ** DONE Josh Groban
 ** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
@@ -1153,6 +1174,7 @@
     :mbid:     http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa
     :END:
 ** TODO Nat King Cole
+** TODO Neil Young & Crazy Horse
 ** DONE Nevermore
 ** Nhạc cách mạng
 *** Một mùa xuân nho nhỏ
@@ -1216,7 +1238,6 @@
    :url:      http://vgmetal.com
    :END:
 ** TODO Primus
-** TODO Prince of Persia
 ** TODO Prophecy                                                     :lastfm:
 ** TODO Puddle of Mudd
 ** TODO Quốc Bảo                                                     :FAV:vi:
@@ -1225,11 +1246,11 @@
 ** DONE Regina Spektor
 *** TODO (2012-05-29) What We Saw from the Cheap Seats
 ** DONE Rhapsody                                                     :FAV:it:
-*** TODO Luca Turilli
+*** DONE Luca Turilli
 **** DONE (1999-09-22) King of the Nordic Twilight
 **** DONE (2002) Prophet of the Last Eclipse
 **** DONE (2006-05-26) The Infinite Wonders of Creation
-**** TODO (2006-06-09) Lost Horizons
+**** DONE (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
 ** TODO Rush
@@ -1456,6 +1477,8 @@
    :url:      http://www.antipope.org
    :END:
 ** Dan Kaminsky
+** Daniel Dennett                                                       :mjd:
+*** TODO Darwin's Dangerous Idea
 ** DONE Daniel Tosh                                             :voice:humor:
 *** DONE (2005-11-08) True Stories I Made Up
     CLOSED: [2012-04-11 Wed 14:29]
