@@ -230,7 +230,8 @@ style -n "gif decor" * <<EOS
 EOS
 style -n "titled image decor" * <<EOS
 img[title]:not(:-moz-any(
- [src*='anticscomic.com/']
+[title=""]
+, [src*='anticscomic.com/']
 , [src*='buttersafe.com/']
 , [src*='calmblueoceans.com/']
 , [src*='chainsawsuit.com/']
@@ -257,7 +258,6 @@ img[title]:not(:-moz-any(
 , [src*='upup-downdown.com/']
 ))
 { outline: 2px dashed #6c71c4; outline-offset: 1px }
-img[title=""] { outline: none !important }
 EOS
 
 style -n "link decor: good hosts" * <<EOS
