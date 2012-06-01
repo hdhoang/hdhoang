@@ -1,4 +1,6 @@
 # -*- mode: sh -*-
+# ~/.zshrc.local ~/.bash_login
+
 # places
 if [[ $(hostname) == cenbaz ]]; then
     z=/cygdrive/c

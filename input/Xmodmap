@@ -1,4 +1,6 @@
 ! -*- mode: conf-xdefaults -*-
+! ~/.Xmodmap
+
 keycode 133 = BackSpace
 
 remove mod1 = Alt_R

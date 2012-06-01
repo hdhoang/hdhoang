@@ -1,4 +1,5 @@
 ; -*- mode: lisp -*-
+; $h/emacs-prelude/personal/custom.el
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

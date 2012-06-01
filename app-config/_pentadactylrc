@@ -1,3 +1,5 @@
+" ~/.pentadactylrc
+
 """ Start up
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
