@@ -306,10 +306,12 @@ style -n "link decor: people" * <<EOS
 , [href*="aaronland.info/"]
 , [href*="//girtby.net/"]
 , [href*="ignorethecode.net/"]
+, [href*="johndcook.com/"]
 , [href*="pixelbeat.org/"]
 , [href*="//plasmasturm.org/"]
 , [href*="plover.com/"]
 , [href*="shamusyoung.com/"]
+, [href*="terminally-incoherent.com/"]
 )::after { content: "\22c6" }
 EOS
 style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
