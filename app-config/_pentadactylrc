@@ -233,7 +233,6 @@ EOS
 style -n "titled image decor" * <<EOS
 img[title]:not(:-moz-any(
 [title=""]
-, [src*='anticscomic.com/']
 , [src*='buttersafe.com/']
 , [src*='calmblueoceans.com/']
 , [src*='chainsawsuit.com/']
