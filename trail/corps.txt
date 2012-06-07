@@ -213,6 +213,15 @@
    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
+*** TODO The Story of B
+*** TODO My Ishmael
+** Isaac Asimov
+*** TODO The Last Question
+    :PROPERTIES:
+    :url:      http://www.multivax.com/last_question.html
+    :END:
+** Joe Lansdale
+*** TODO Vanilla Ride
 ** K. A. Applegate                                                      :FAV:
    :PROPERTIES:
    :btih:     E34975D39BE058E38C1D03EA8EF838102BB320D2
@@ -242,11 +251,11 @@
    :END:
 *** DONE Blindsight
 *** TODO Crysis: Legion                                                :game:
-*** TODO Rifters trilogy
-**** TODO Starfish
+*** Rifters trilogy
+**** DONE Starfish
 **** TODO Maelstorm
 **** TODO Behemoth
-*** DONE  The Island
+*** DONE The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                       :sci:FAV:
 ** DONE The Last Ring-bearer                                        :rev:FAV:
@@ -298,6 +307,7 @@
 *** NOT Breanne
 *** Brynn Tyler                                                         :FAV:
 *** NOT Carrie
+*** NOT Cynthia
 *** NOT Destiny
 *** Emily                                                               :FAV:
 *** Eufrat                                                              :FAV:
@@ -504,8 +514,6 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Left-4-Dead/
     :END:
-** Belgaer
-*** TODO Postal III                                               :video:sub:
 ** Blastinus
 *** DONE Final Fantasy VI                                    :shot:info:comp:
 ** Bobbin Threadbare                             :comp:info:chal:video:voice:
@@ -601,6 +609,8 @@
 ** LordMune
 *** DONE Fahrenheit                                    :video:sub:humor:comp:
 *** DONE Heavy Rain                                    :comp:video:sub:humor:
+** Magnatux
+*** TODO Myst                                                          :shot:
 ** Magnetic North
 *** DONE Silent Steel                                     :humor:hybrid:part:
     CLOSED: [2012-02-24 Fri 09:10]
@@ -633,6 +643,8 @@
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
 ** Scorchy
 *** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
+** SeriousSirrus
+*** TODO Myst (RealMyst)                                   :video:info:voice:
 ** Sethur
 *** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
@@ -696,6 +708,7 @@
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
+** TODO Chronicle
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
 ** Dansk erotisk komedie collection
@@ -743,10 +756,10 @@
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** TODO The Simpsons
-** TODO Trilogy of life
+** Trilogy of life
 *** DONE Il Decameron (1971)
     CLOSED: [2012-03-16 Fri 16:08]
-*** TODO I racconti di Canterbury (1972)
+*** DONE I racconti di Canterbury (1972)
 *** TODO Il fiore delle mille e una notte (1974)
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
@@ -771,10 +784,14 @@
 *** DONE (1993-02-01) Objection Overruled
 *** DONE (1993-06-07) Eat the Heat
 *** TODO (1994-10-04) Death Row
-*** TODO (1996) Predator
+*** DONE (1996) Predator
 *** DONE (2010-08-20) Blood of the Nations
 *** DONE (2012-04-06) Stalingrad
 ** TODO Adam Lambert                                                   :tunx:
+** TODO Adèle
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04
+   :END:
 ** DONE Aerosmith                                                      :1fav:
 *** TODO (2012-05-15) Icon
 ** TODO Alestorm                                                     :jbopre:
@@ -852,6 +869,7 @@
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
 *** DONE (2012) Umskiptar
+** TODO Butterfly Tea                                                :lastfm:
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
@@ -958,11 +976,14 @@
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
 ** TODO Fear Factory
+*** TODO (2012-06-05) The Industrialist
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
+** DONE Flight of the Conchords                                         :FAV:
 ** DONE Flowing Tears
 ** DONE Fort Minor                                                      :FAV:
 *** DONE (2005) The Rising Tied
+** TODO France Gall
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** TODO Garbage
@@ -1029,22 +1050,8 @@
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
 ** Johann Sebastian Bach
-*** TODO Bach Organ Works (feat. James Kibbie)
-**** TODO Chorale Variations (feat. organ: James Kibbie)
-**** TODO Clavierübung III (feat. organ: James Kibbie)
-**** TODO Concerti (feat. organ: James Kibbie)
-**** TODO Fantasias and Fugues, Toccatas and Fugues (feat. organ: James Kibbie)
-**** TODO Individual Chorale Preludes (feat. organ: James Kibbie)
-**** TODO Leipzig Chorales (feat. organ: James Kibbie)
-**** TODO Neumeister Chorales (feat. organ: James Kibbie)
-**** TODO Orgelbüchlein (feat. organ: James Kibbie)
-**** TODO Other Free Works (feat. organ: James Kibbie)
-**** TODO Preludes and Fugues (feat. organ: James Kibbie)
-**** TODO Rudorff Chorales (feat. organ: James Kibbie)
-**** TODO Schübler Chorales (feat. organ: James Kibbie)
-**** TODO Trio Sonatas (feat. organ: James Kibbie)
 *** DONE Crab Canon                                                     :FAV:
-*** TODO (2012-05-28) Open Goldberg Variations
+*** TODO (2012-05-28) Open Goldberg Variations                          :FAV:
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 ** DONE Josh Groban
 ** DONE Josh Woodward                                        :jamendo:lastfm:
@@ -1093,6 +1100,7 @@
 ** TODO Louis Armstrong
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
+*** (1997-10-14) Complete Beethoven Edition
 *** DONE The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
@@ -1163,6 +1171,7 @@
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
+** TODO My Bloody Valentine
 ** DONE My Chemical Romance                                            :1fav:
 ** TODO Månegarm                                              :guitar:lastfm:
 ** DONE Mỹ Linh                                                         :FAV:
@@ -1175,7 +1184,8 @@
     :END:
 ** TODO Nat King Cole
 ** TODO Neil Young & Crazy Horse
-** DONE Nevermore
+*** TODO (2012-06-05) Americana
+** TODO Nevermore
 ** Nhạc cách mạng
 *** Một mùa xuân nho nhỏ
 *** Nguời Hà Nội
@@ -1279,6 +1289,7 @@
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** TODO Sepultura                                                        :jo:
+** TODO Shadowy Men on a Shadowy Planet
 ** DONE Shinedown                                                      :1fav:
 *** DONE (2012-03-27) Amaryllis
 ** TODO Silversun Pickups
@@ -1439,6 +1450,8 @@
 ** DONE X/X JAPAN                                                   :1fav:ja:
 ** NOT Xihilisk                                                      :lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
+** TODO Zack Browning
+*** TODO Secret Pulse
 ** Zak Belica
 *** DONE (2005) SiN                                                    :game:
 ** TODO Zakk Wylde                                                       :jo:
@@ -1455,6 +1468,9 @@
    :PROPERTIES:
    :url:      http://pthree.org
    :END:
+** Benjamin Franklin                                                    :mjd:
+** TODO Bill Hammack
+*** TODO Eight Amazing Engineering Stories
 ** TODO Bill Hicks                                             :humor:spoken:
 *** TODO (1990) Dangerous
 *** TODO (1992) Relentless
@@ -1541,16 +1557,20 @@
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
    :END:
-** TODO Terry Goodkind
+** Terry Goodkind
+** Richard Dawkins
+*** TODO The God Delusion
 ** Đỗ Huân                                                :FAV:vi:humor:tunx:
    :PROPERTIES:
    :url:      http://www.educons.net/
    :google:   https://plus.google.com/100358532436095582785
    :END:
+*** TODO Ta bao nhiêu tuổi
 *** DONE Tào lao gà
     :PROPERTIES:
     :url:      http://taolaoga.blogspot.com/
     :END:
+*** TODO Tào lao gà 2
 *** DONE Vẹo rồng
 *** TODO Ông ve chai
 * Steps
