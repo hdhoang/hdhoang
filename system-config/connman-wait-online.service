@@ -1,0 +1,15 @@
+[Unit]
+Description=connman Wait Online
+Requires=connman.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/connman-wait-online
+
+User=nobody
+PrivateTmp=yes
+PrivateNetwork=yes
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=network.target

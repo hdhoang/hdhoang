@@ -1,0 +1,20 @@
+#!/usr/bin/python2
+
+import dbus
+import gobject
+from dbus.mainloop.glib import DBusGMainLoop
+
+DBusGMainLoop(set_as_default=True)
+mainloop = gobject.MainLoop()
+bus = dbus.SystemBus()
+
+def exit_when_online(name, value):
+    if name == "State" and value == "online":
+        mainloop.quit()
+
+bus.add_signal_receiver(exit_when_online,
+                        bus_name = "net.connman",
+                        path = "/",
+                        signal_name = "PropertyChanged")
+
+mainloop.run()
