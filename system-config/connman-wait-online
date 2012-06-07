@@ -1,20 +1,21 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 
-import dbus
-import gobject
-from dbus.mainloop.glib import DBusGMainLoop
+from PyQt4 import QtCore, QtDBus
 
-DBusGMainLoop(set_as_default=True)
-mainloop = gobject.MainLoop()
-bus = dbus.SystemBus()
+app = QtCore.QCoreApplication([''])
 
-def exit_when_online(name, value):
-    if name == "State" and value == "online":
-        mainloop.quit()
+class Dummy(QtCore.QObject):
+      @QtCore.pyqtSlot(str, QtDBus.QDBusVariant)
+      def exit_when_online(self, name, value):
+            if name == "State" and value.variant() == "online":
+                  app.quit()
+obj = Dummy()
 
-bus.add_signal_receiver(exit_when_online,
-                        bus_name = "net.connman",
-                        path = "/",
-                        signal_name = "PropertyChanged")
+bus = QtDBus.QDBusConnection.systemBus()
+bus.connect("net.connman",
+            "/",
+            "net.connman.Manager",
+            "PropertyChanged",
+            obj.exit_when_online)
 
-mainloop.run()
+app.exec_()
