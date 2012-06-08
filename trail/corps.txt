@@ -799,7 +799,7 @@
 ** TODO Alizée                                                        :jo:fr:
 *** TODO (2000-11-28) Gourmandises
 *** TODO (2003-04) Mes courants électriques...
-*** TODO (2004-10-18) Alizée en concert
+*** DONE (2004-10-18) Alizée en concert
 *** TODO (2008-06-25) Psychédélices
 *** TODO (2010-03-29) Une enfant du siècle
 ** TODO all:my:faults                                                :lastfm:
@@ -860,7 +860,7 @@
 *** TODO (2011-05-20) Empty Space
 *** TODO (2011-08-17) 3 Foot Clearance
 *** TODO (2011-08-17) Look Up There
-*** TODO (2011-08-17) Underground Chamber
+*** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
 *** TODO (2012-04-14) Balloon Cement
 *** Thanatopsis
@@ -1101,6 +1101,32 @@
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** (1997-10-14) Complete Beethoven Edition
+**** Volume 1: Symphonien
+**** Volume 2: Konzerte
+**** TODO Volume 3: Orchestral Works / Music for the Stage
+     :PROPERTIES:
+     :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
+     :END:
+**** Volume 4: Leonore / Fidelio
+**** TODO Volume 5: Piano Sonatas
+     :PROPERTIES:
+     :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
+     :END:
+**** Volume 6: Piano Works
+**** Volume 7: Violinsonaten
+**** Volume 8: Cello Sonatas
+**** Volume 9: Piano Trios
+**** Volume 10: String Trios
+**** Volume 11: The Early Quartets
+**** Volume 12: The Middle Quartets
+**** Volume 13: The Late Quartets
+**** Volume 14: Chamber Works
+**** Volume 15: Wind Music
+**** Volume 16: Lieder
+**** Volume 17: Folksong Arrangements
+**** Volume 18: Secular Choral Works
+**** Volume 19: Large Choral Works
+**** Volume 20: Historic Recordings
 *** DONE The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
