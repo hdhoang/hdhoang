@@ -123,7 +123,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword ix -post f:1=%s http://ix.io/
    \ bmark -keyword io http://ix.io/%s/
    \ bmark -keyword i https://ca.isohunt.com/lite/#s=seeds&q=%s&p=1
-   \ bmark -keyword b https://btdigg.org/search?q=%s&p=0
+   \ bmark -keyword b https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword d http://beta.demonoid.me/files/?query=%s
    \ bmark -keyword m http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
    \ bmark -keyword ma http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
