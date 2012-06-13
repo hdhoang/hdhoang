@@ -1,6 +1,6 @@
 [Unit]
 Description=connman Wait Online
-Requires=connman.service
+Requisite=connman.service
 
 [Service]
 Type=oneshot
