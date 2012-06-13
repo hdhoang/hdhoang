@@ -820,6 +820,10 @@
 *** DONE (2006) If I Told You
 ** DONE Apocalyptica                                             :FAV:string:
 ** DONE Aqua                                                           :1fav:
+** TODO Arcana
+   :PROPERTIES:
+   :btih:     http://musicbrainz.org/artist/93c1606c-28ef-4955-ae75-331a0975608d
+   :END:
 ** TODO At Vance
 *** TODO (2012-04-27) Facing Your Enemy
 ** DONE Avenged Sevenfold                                          :riff:FAV:
@@ -1025,6 +1029,8 @@
 ** Jan Morgenstern
 *** DONE Big Buck Bunny
     CLOSED: [2012-01-13 Fri 14:51]
+** Jeremy Soule                                                        :game:
+*** DONE (2000) Icewind Dale
 ** DONE Jesper Kyd                                                     :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
@@ -1358,7 +1364,13 @@
    CLOSED: [2012-01-09 Mon 14:35]
 ** TODO The Ink Spots                                              :FAV:blue:
 ** DONE The Plasmas                                        :riff:game:lastfm:
-   CLOSED: [2012-04-04 Wed 15:00]
+*** TODO (2008) Extreme NES Terror
+*** TODO (2008) Noentiendo
+*** TODO (2009) NES Cult Armageddon
+*** TODO (2010) Beware the invasion
+*** TODO (2009) R3BORN
+*** TODO (2010) 16 Fighting Bits
+*** TODO (2011) Taste My Power
 ** TODO The Who
 ** DONE Theory of a Deadman                                       :game:wail:
    :PROPERTIES:
@@ -1471,7 +1483,7 @@
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
 ** TODO Within Temptation                                              :jo:f:
-** DONE Wolfgang Amadeus Mozart
+** Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
 ** NOT Xihilisk                                                      :lastfm:
