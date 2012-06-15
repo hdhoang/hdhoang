@@ -9,8 +9,8 @@ app = QtCore.QCoreApplication([''])
 
 class Dummy(QtCore.QObject):
       @QtCore.pyqtSlot(str, QtDBus.QDBusVariant)
-      def exit_when_online(self, name, value):
-            if name == "State" and value.variant() == "online":
+      def exit_when_connected(self, name, value):
+            if name == "State" and value.variant() in ["ready", "online"]:
                   app.quit()
 obj = Dummy()
 
@@ -19,6 +19,6 @@ bus.connect(CONNMAN_SERVICE,
             CONNMAN_PATH,
             CONNMAN_IFACE,
             "PropertyChanged",
-            obj.exit_when_online)
+            obj.exit_when_connected)
 
 app.exec_()
