@@ -8,10 +8,10 @@ CONNMAN_IFACE   = "net.connman.Manager"
 app = QtCore.QCoreApplication([''])
 
 class Dummy(QtCore.QObject):
-      @QtCore.pyqtSlot(str, QtDBus.QDBusVariant)
-      def exit_when_connected(self, name, value):
-            if name == "State" and value.variant() in ["ready", "online"]:
-                  app.quit()
+    @QtCore.pyqtSlot(str, QtDBus.QDBusVariant)
+    def exit_when_connected(self, name, value):
+        if name == "State" and value.variant() in ["ready", "online"]:
+            app.quit()
 obj = Dummy()
 
 bus = QtDBus.QDBusConnection.systemBus()
