@@ -2,6 +2,9 @@
 
 from PyQt4 import QtCore, QtDBus
 
+CONNMAN_SERVICE = "net.connman"
+CONNMAN_PATH    = "/"
+CONNMAN_IFACE   = "net.connman.Manager"
 app = QtCore.QCoreApplication([''])
 
 class Dummy(QtCore.QObject):
@@ -12,9 +15,9 @@ class Dummy(QtCore.QObject):
 obj = Dummy()
 
 bus = QtDBus.QDBusConnection.systemBus()
-bus.connect("net.connman",
-            "/",
-            "net.connman.Manager",
+bus.connect(CONNMAN_SERVICE,
+            CONNMAN_PATH,
+            CONNMAN_IFACE,
             "PropertyChanged",
             obj.exit_when_online)
 
