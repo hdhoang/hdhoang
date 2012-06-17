@@ -39,6 +39,6 @@
 
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 (add-hook 'prog-mode-hook 'prelude-turn-off-whitespace t)
-(prelude-restore-arrow-keys)
+(guru-mode -1)
 
 (load-theme 'solarized-light)
