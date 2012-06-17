@@ -241,6 +241,7 @@ img[title]:not(:-moz-any(
 , [src*='e-merl.com']
 , [src*='endlessorigami.com/']
 , [src*='happletea.com/']
+, [src*='invisiblebread.com/']
 , [src*='johnnywander.com/']
 , [src*='lastplacecomics.com/']
 , [src*='mimiandeunice.com/']
