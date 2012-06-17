@@ -253,7 +253,7 @@
 *** TODO Crysis: Legion                                                :game:
 *** Rifters trilogy
 **** DONE Starfish
-**** TODO Maelstorm
+**** DONE Maelstorm
 **** TODO Behemoth
 *** DONE The Island
 ** Roger Williams
@@ -501,6 +501,7 @@
 *** Leon Kadena                                                         :FAV:
 * LP                                                               :FAV:game:
 ** TODO ??
+*** Commandos series
 *** Hitman series
 *** Homeworld series
 *** Tenchu series
@@ -555,6 +556,12 @@
     CLOSED: [2012-02-26 Sun 09:58]
 ** CrookedB
 *** TODO Escape from Hell
+** Crowetron
+*** TODO Parasite Eve
+*** TODO Parasite Eve 2                                              :hybrid:
+** Dart Ronson
+*** TODO Hitman: Blood Money                                          :video:
+*** TODO Hitman: Contracts                                            :video:
 ** Elephantgun
 *** DONE Breaking Final Fantasy VI                                      :FAV:
     CLOSED: [2012-02-24 Fri 08:19]
@@ -659,6 +666,7 @@
 *** DONE Prey                                             :video:voice:humor:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
+*** TODO Metal Gear: Ghost Babel
 *** TODO Xenogears                                                     :shot:
     :PROPERTIES:
     :url:      http://lparchive.org/Xenogears-(by-The-Dark-Id)/
@@ -711,19 +719,25 @@
 ** TODO Chronicle
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
-** Dansk erotisk komedie collection
+** Dansk erotisk komedie
    :PROPERTIES:
    :btih:     c99519791e88fdd3076ade1c386de878d2e5b122
    :END:
-*** DONE Der må være en sengekant (1975)
-*** DONE I Jomfruens tegn (1973)
-*** DONE I løvens tegn (1976)
-    CLOSED: [2012-03-14 Wed 14:40]
-*** DONE I Tvillingernes Tegn (1975)
-*** DONE I Tyrens Tegn (1974)
-*** DONE Romantik på sengekanten (1973)
-*** DONE Tandlæge på sengekanten (1971)
-    CLOSED: [2012-03-28 Wed 15:23]
+*** TODO Den Røde Rubin (1970)
+*** TODO Der Må Være En Sengekant (1975)
+*** TODO Hopla På Sengekanten (1976)
+*** TODO I Jomfruens Tegn (1973)
+*** TODO I Løvens Tegn (1976)
+*** TODO I Skorpionens Tegn (1977)
+*** TODO I Skyttens Tegn (1978)
+*** TODO I Tvillingernes Tegn (1975)
+*** TODO I Tyrens Tegn (1974)
+*** TODO Mazurka På Sengekanten (1970)
+*** TODO Motorvej På Sengekanten (1972)
+*** TODO Rektor På Sengekanten (1972)
+*** TODO Romantik På Sengekanten (1973)
+*** TODO Sømænd På Sengekanten (1976)
+*** TODO Tandlæge På Sengekanten (1971)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -837,7 +851,7 @@
 ** DONE Bethzaida                                                      :1fav:
 *** 1349                                                                :FAV:
 ** TODO Beto Vázquez Infinity                                        :lastfm:
-** DONE Bionic Commando                                                 :FAV:
+** DONE Bionic Commando                                            :FAV:game:
 *** Rearmed                                                             :not:
 ** GONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
@@ -1083,6 +1097,7 @@
 ** TODO Kamelot
 ** Kazuma Jinnouchi
 *** DONE (2010-04-12) Metal Gear Solid: Peace Walker
+** TODO Kirsty MacColl
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                                     :FAV:
@@ -1107,7 +1122,10 @@
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** (1997-10-14) Complete Beethoven Edition
-**** Volume 1: Symphonien
+**** TODO Volume 1: Symphonien
+     :PROPERTIES:
+     :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
+     :END:
 **** Volume 2: Konzerte
 **** TODO Volume 3: Orchestral Works / Music for the Stage
      :PROPERTIES:
@@ -1371,6 +1389,8 @@
 *** TODO (2009) R3BORN
 *** TODO (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
+** TODO The Smashing Pumpkins
+*** TODO (2012-06-18) Oceania
 ** TODO The Who
 ** DONE Theory of a Deadman                                       :game:wail:
    :PROPERTIES:
