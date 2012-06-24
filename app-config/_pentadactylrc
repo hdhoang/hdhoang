@@ -210,8 +210,9 @@ dactyl.open(["https://plusone.google.com/_/+1/fastbutton?url=" + encodeURICompon
             ,"https://plusone.google.com/_/+1/confirm?url=" + encodeURIComponent(content.location.href)]
            ,{ from: 'links', where: dactyl.NEW_TAB })
 EOS
-autocmd PageLoad https://plusone.google.com/_/+1/confirm?* -js <<EOS
-doc.querySelector('[guidedhelpid="sharebutton"]').accessKey = 'e'
+autocmd PageLoad https://plusone.google.com/_/+1/* -js <<EOS
+doc.querySelector('#plusone [role="button"]
+                  ,[guidedhelpid="sharebutton"]').accessKey = 'e'
 EOS
 
 autocmd PageLoad https://ca.isohunt.com/lite/* <<EOS
