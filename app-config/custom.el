@@ -25,6 +25,7 @@
  )
 
 (global-set-key (kbd "C-\\") 'toggle-input-method)
+(global-set-key (kbd "C-x M-t") 'ansi-term)
 
 ;; Major modes
 (autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
