@@ -224,7 +224,7 @@
 *** TODO Vanilla Ride
 ** K. A. Applegate                                                      :FAV:
    :PROPERTIES:
-   :btih:     E34975D39BE058E38C1D03EA8EF838102BB320D2
+   :btih:     EF1B388444ABBA45CE9B743D823D863DCBE6B5F9
    :END:
 *** DONE Animorphs
     :PROPERTIES:
@@ -235,6 +235,9 @@
     :url:      http://www.mediafire.com/?dbwbk05tackx2l
     :END:
 *** TODO Remnants
+    :PROPERTIES:
+    :btih:     4672142E19DB2CB4E99C57A002F30DD801705877
+    :END:
 ** Kim Dung
 *** DONE Lộc Đỉnh Ký                                                    :FAV:
 ** Kurt Vonnegut
@@ -493,7 +496,6 @@
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
-** Victoria                                                             :FAV:
 ** Watch 4 Beauty                                                       :FAV:
 *** Marketa Belonoha
 ** X-Art                                                                :FAV:
@@ -627,6 +629,8 @@
     :url:      http://lparchive.org/Final-Fantasy-III-(by-Mega64)/
     :END:
 *** TODO Final Fantasy IV                                              :shot:
+** Niggurath
+*** TODO Dead Space 2                                                 :video:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** perochialjoe
@@ -671,8 +675,12 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Xenogears-(by-The-Dark-Id)/
     :END:
+** The Man with a Hat
+*** TODO Dead Space                                          :video:sub:info:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
+** TyrantSabre
+*** DONE Stuntman                                               :video:voice:
 ** Vexation
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
@@ -721,17 +729,17 @@
 ** TODO Comedian
 ** Dansk erotisk komedie
    :PROPERTIES:
-   :btih:     c99519791e88fdd3076ade1c386de878d2e5b122
+   :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
 *** TODO Den Røde Rubin (1970)
 *** TODO Der Må Være En Sengekant (1975)
 *** TODO Hopla På Sengekanten (1976)
-*** TODO I Jomfruens Tegn (1973)
-*** TODO I Løvens Tegn (1976)
-*** TODO I Skorpionens Tegn (1977)
+*** TODO I Jomfruens Tegn (1973)                                        :sub:
+*** TODO I Løvens Tegn (1976)                                           :sub:
+*** TODO I Skorpionens Tegn (1977)                                      :sub:
 *** TODO I Skyttens Tegn (1978)
-*** TODO I Tvillingernes Tegn (1975)
-*** TODO I Tyrens Tegn (1974)
+*** TODO I Tvillingernes Tegn (1975)                                    :sub:
+*** TODO I Tyrens Tegn (1974)                                           :sub:
 *** TODO Mazurka På Sengekanten (1970)
 *** TODO Motorvej På Sengekanten (1972)
 *** TODO Rektor På Sengekanten (1972)
@@ -752,6 +760,7 @@
 ** TODO MacGyver                                                        :FAV:
 ** TODO Malna (2000)
 ** TODO Melancholia
+** TODO Moon
 ** DONE Mr. Nobody                                               :jbopre:FAV:
 ** DONE Outrageous Fortune (1987)                                       :FAV:
    :PROPERTIES:
@@ -891,6 +900,7 @@
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
+** TODO Cat Power
 ** TODO Celldweller                                                      :jo:
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
@@ -965,7 +975,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
     :END:
-*** TODO (2009-10) Sing Along Songs for the Damned & Delirious
+*** DONE (2009-10) Sing Along Songs for the Damned & Delirious
 *** TODO (2012-05-22) Pandora's Piñata
 ** TODO Dire Strait
 ** DONE DJ Fab
@@ -1158,6 +1168,7 @@
     :END:
 ** GONE M2M                                                            :1fav:
 ** DONE Manowar                                                         :FAV:
+*** TODO (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
@@ -1180,6 +1191,13 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
+** Max Payne                                                           :game:
+*** TODO Max Payne
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b
+    :END:
+*** TODO Max Payne 2: The Fall of Max Payne
+*** TODO Max Payne 3: The Official Soundtrack
 ** DONE Megadeth                                                   :FAV:riff:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e
@@ -1313,6 +1331,13 @@
 **** DONE (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
+** TODO Ringo Shiina                                               :FAV:ja:f:
+*** TODO (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
+*** TODO (2000-03-31) 勝訴ストリップ (Winning Strip)
+*** TODO (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
+*** TODO (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
+*** TODO (2007-02-21) 平成風俗 (Japanese Manners)
+*** TODO (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
 ** Russell Brower & Laurence Juber                                     :game:
 *** TODO (2012-05-15) Diablo III: Collector's Edition Soundtrack
@@ -1339,6 +1364,11 @@
 ** DONE Senses Fail                                                     :not:
 ** TODO Sentenced
 ** TODO Sepultura                                                        :jo:
+** Shadow Hearts
+*** TODO Koudelka
+*** TODO Shadow Hearts
+*** DONE (2004-03-24) Shadow Hearts II
+*** TODO Shadow Hearts III
 ** TODO Shadowy Men on a Shadowy Planet
 ** DONE Shinedown                                                      :1fav:
 *** DONE (2012-03-27) Amaryllis
@@ -1389,6 +1419,12 @@
 *** TODO (2009) R3BORN
 *** TODO (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
+** TODO The Police
+*** TODO (1978-11) Outlandos d'Amour
+*** TODO (1979-10) Reggatta de Blanc
+*** TODO (1980-10-03) Zenyattà Mondatta
+*** TODO (1981-10) Ghost in the Machine
+*** TODO (1983-06-01) Synchronicity
 ** TODO The Smashing Pumpkins
 *** TODO (2012-06-18) Oceania
 ** TODO The Who
@@ -1415,7 +1451,13 @@
 ** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
 *** DONE (2011) Samsara
-** DONE Tokyo Jihen/Ringo Shiina                                     :FAV:ja:
+** TODO Tokyo Jihen
+*** TODO (2004-11-25) 教育 (Kyouiku)
+*** TODO (2006-01-25) 大人 (Adult)
+*** TODO (2007-09-26) 娯楽 (Variety)
+*** TODO (2010-02-24) スポーツ (Sports)
+*** TODO (2011-06-29) 大発見 (Daihakken)
+*** TODO (2012-01-18) color bars
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
@@ -1487,7 +1529,7 @@
 **** Space Songs
 **** Weather Songs
 ** TODO Verjnuarmu                                                       :fi:
-*** TODO (2006-01-25) Muanpiällinen helevetti
+*** DONE (2006-01-25) Muanpiällinen helevetti
 *** TODO (2008-05-14) Ruatokansan uamunkoetto
 *** TODO (2010-10-27) Lohuton
 ** DONE Warmen
@@ -1541,7 +1583,7 @@
 *** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
 *** TODO Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
 *** TODO Filling Up the Hump
-*** TODO Hicksville
+*** DONE Hicksville
 *** TODO Live in Brighton
 *** TODO The Letterman Performances
 ** Bradley M. Kuhn                                              :free:pgnome:
