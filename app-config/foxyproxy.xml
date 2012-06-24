@@ -25,7 +25,7 @@
         <match enabled="false" name="fbme" pattern="http://fb.me/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="v6 fb" pattern="*.v6.facebook.com/*" isRegEx="false" isBlackList="true" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="false" name="zm" pattern="http*://*zahe.me/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="false" name="blogspot" pattern="http://*.blogspot.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
+        <match enabled="true" name="blogspot" pattern="http://*.blogspot.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
       </matches>
       <autoconf url="" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
       <autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
