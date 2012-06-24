@@ -3,6 +3,7 @@
 export LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS --LONG-PROMPT'
 export GREP_OPTIONS='--color --binary-files=without-match --ignore-case'
 export CCACHE_BASEDIR=${HOME}
+export GOPATH=~/go
 
 if [[ $(hostname) == cenbaz ]]; then
     export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
