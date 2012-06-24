@@ -10,6 +10,7 @@
  '(custom-safe-themes (quote ("d2622a2a2966905a5237b54f35996ca6fda2f79a9253d44793cfe31079e3c92b" "baed08a10ff9393ce578c3ea3e8fd4f8c86e595463a882c55f3bd617df7e5a45" "485737acc3bedc0318a567f1c0f5e7ed2dfde3fb" default)))
  '(default-input-method "vietnamese-telex")
  '(electric-pair-mode nil)
+ '(explicit-shell-file-name "/bin/zsh")
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
