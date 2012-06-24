@@ -211,8 +211,8 @@ dactyl.open(["https://plusone.google.com/_/+1/fastbutton?url=" + encodeURICompon
            ,{ from: 'links', where: dactyl.NEW_TAB })
 EOS
 autocmd PageLoad https://plusone.google.com/_/+1/* -js <<EOS
-doc.querySelector('#plusone [role="button"]
-                  ,[guidedhelpid="sharebutton"]').accessKey = 'e'
+doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
+                 .accessKey = 'e'
 EOS
 
 autocmd PageLoad https://ca.isohunt.com/lite/* <<EOS
