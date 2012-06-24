@@ -130,9 +130,9 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword ma http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-   \ bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
-   \ bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
-   \ bmark -keyword sp http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
+   \ bmark -keyword t http://yape.i2p.tin0.de/pe/train.php
+   \ bmark -keyword at http://yape.i2p.tin0.de/pe/async/asynctrain.php
+   \ bmark -keyword sp http://yape.i2p.tin0.de/pe/stat.php?personal=1
    \ bmark -keyword ts https://atlas.torproject.org/#search/cenba
    \ bmark -keyword gm https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword gr https://www.google.com/reader/view/ -tags news
