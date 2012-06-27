@@ -291,6 +291,7 @@ style -n "link decor: youtube-dl" * <<EOS
 , [href*="mtv.com/videos/"]
 , [href*="soundcloud.com/"]
 , [href*="viddler.com/"]
+, [href*="video.google.com/"]
 , [href*="vimeo.com/"]
 , [href*="xvideos.com/video"]
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
