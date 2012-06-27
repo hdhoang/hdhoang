@@ -222,6 +222,8 @@
     :END:
 ** Joe Lansdale
 *** TODO Vanilla Ride
+** John Scalzi
+*** TODO Redshirts
 ** K. A. Applegate                                                      :FAV:
    :PROPERTIES:
    :btih:     EF1B388444ABBA45CE9B743D823D863DCBE6B5F9
@@ -832,6 +834,7 @@
 ** TODO Amity in Fame                                               :jamendo:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
+** TODO Amy Winehouse
 ** DONE Annihilator                                                     :FAV:
 ** DONE Anthrax                                                        :1fav:
 ** DONE Antonín Dvorák
@@ -886,13 +889,14 @@
    :END:
 *** TODO (2011-05-20) Empty Space
 *** TODO (2011-08-17) 3 Foot Clearance
-*** TODO (2011-08-17) Look Up There
+*** DONE (2011-08-17) Look Up There
 *** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
-*** TODO (2012-04-14) Balloon Cement
+*** DONE (2012-04-14) Balloon Cement
 *** Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
+** TODO Buddy Guy
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
 *** DONE (2012) Umskiptar
@@ -1368,7 +1372,7 @@
 *** TODO Koudelka
 *** TODO Shadow Hearts
 *** DONE (2004-03-24) Shadow Hearts II
-*** TODO Shadow Hearts III
+*** DONE Shadow Hearts III
 ** TODO Shadowy Men on a Shadowy Planet
 ** DONE Shinedown                                                      :1fav:
 *** DONE (2012-03-27) Amaryllis
@@ -1383,6 +1387,8 @@
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** TODO (2012-05-22) Stones Grow Her Name
+** TODO Soul Asylum
+*** TODO (2012-07-17) Delayed Reaction
 ** DONE Spice Girls                                                       :f:
 ** TODO Stam1na
 ** DONE Starcraft sound                                                :game:
@@ -1465,7 +1471,7 @@
    :END:
 ** TODO Tony Bennett                                                   :tunx:
 ** TODO Tony Cicoria
-** Tool                                                                 :not:
+** NOT Tool
 ** TODO Tracy Chapman                                                :tunx:f:
 *** TODO (1988-04-05) Tracy Chapman
 *** TODO (1989-09) Crossroads
@@ -1531,7 +1537,7 @@
 ** TODO Verjnuarmu                                                       :fi:
 *** DONE (2006-01-25) Muanpiällinen helevetti
 *** TODO (2008-05-14) Ruatokansan uamunkoetto
-*** TODO (2010-10-27) Lohuton
+*** DONE (2010-10-27) Lohuton
 ** DONE Warmen
 ** TODO White Lion
 ** TODO Whitesnake
@@ -1638,6 +1644,10 @@
    :PROPERTIES:
    :url:      https://blip.tv/show/latest_episode/756280
    :END:
+** Neil deGrasse Tyson                                            :sci:humor:
+*** TODO The Pluto Files
+** Richard Dawkins
+*** TODO The God Delusion
 ** GONE Richard Feynman                                           :humor:sci:
 *** Surely You're Joking, Mr. Feynman
 *** What Do You Care What Other People Think? Further Adventures of a Curious Character
@@ -1658,8 +1668,6 @@
    :url:      http://terminally-incoherent.com
    :END:
 ** Terry Goodkind
-** Richard Dawkins
-*** TODO The God Delusion
 ** Đỗ Huân                                                :FAV:vi:humor:tunx:
    :PROPERTIES:
    :url:      http://www.educons.net/
