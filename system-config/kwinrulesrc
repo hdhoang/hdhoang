@@ -51,6 +51,8 @@ wmclassmatch=1
 
 [4]
 Description=editor
+maximizevert=true
+maximizevertrule=2
 shortcut=Meta+&
 shortcutrule=2
 types=4294967295
