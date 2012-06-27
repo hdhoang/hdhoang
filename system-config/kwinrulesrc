@@ -19,7 +19,7 @@ wmclassmatch=1
 Description=browser
 position=0,0
 positionrule=2
-shortcut=Alt+Shift+F2
+shortcut=Meta+[
 shortcutrule=2
 types=4294967295
 windowrole=browser
@@ -51,7 +51,7 @@ wmclassmatch=1
 
 [4]
 Description=editor
-shortcut=Alt+Shift+F4
+shortcut=Meta+&
 shortcutrule=2
 types=4294967295
 wmclass=emacs
@@ -62,7 +62,7 @@ wmclassmatch=1
 Description=movie
 position=640,550
 positionrule=3
-shortcut=Alt+Shift+F3
+shortcut=Meta+{
 shortcutrule=2
 types=4294967295
 wmclass=mplayer
