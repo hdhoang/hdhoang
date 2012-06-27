@@ -15,6 +15,7 @@ else
 fi
 h=$mount/Public/hdhoang
 conf=$h/system-config/$(hostname)
+box=$mount/Box
 t=$mount/t
 dl=$mount/Downloads
 m=$mount/Music
