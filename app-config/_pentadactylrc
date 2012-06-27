@@ -113,35 +113,32 @@ map <C-S-n> -ex bmarks! -tags news
 map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ tabopen https://www.youtube.com/feather_beta
    \ tabopen https://duckduckgo.com/settings.html
-   \ bmark -keyword ac about:config
-   \ bmark -keyword st about:sync-tabs
-   \ bmark -keyword p https://en.wikipedia.org/wiki/Well-known_ports
-   \ bmark -keyword bgp http://bgp.he.net/search?search[search]=%s
-   \ bmark -keyword v http://vlasisku.lojban.org/?query=%s
-   \ bmark -keyword 1 https://blip.tv/Nebu1a#EpisodeArchive
-   \ bmark -keyword lp http://lparchive.org/search/%s#results
-   \ bmark -keyword ix -post f:1=%s http://ix.io/
-   \ bmark -keyword io http://ix.io/%s/
-   \ bmark -keyword i https://ca.isohunt.com/lite/#s=seeds&q=%s&p=1
-   \ bmark -keyword b https://btdigg.org/search?q=%s&order=0&p=0
-   \ bmark -keyword d http://beta.demonoid.me/files/?query=%s
-   \ bmark -keyword ss http://next.subscene.com/subtitles/title.aspx?q=%s
-   \ bmark -keyword m http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
-   \ bmark -keyword ma http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
-   \ bmark -keyword mg http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
-   \ bmark -keyword mr http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-   \ bmark -keyword t http://hb4pm4eznzhd6mts.onion/pe/train.php
-   \ bmark -keyword at http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
-   \ bmark -keyword sp http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
-   \ bmark -keyword ts https://atlas.torproject.org/#search/cenba
-   \ bmark -keyword gm https://mail.google.com/mail/#inbox -tags news
-   \ bmark -keyword gr https://www.google.com/reader/view/ -tags news
-   \ bmark -keyword g/ https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
-   \ bmark -keyword gt https://www.google.com/reader/view/#stream/user/-/label/%s
-   \ bmark -keyword ge https://www.google.com/reader/view/#stream/user/-/state/com.google/itemrecs/en
-   \ bmark -keyword gs https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
-   \ bmark -keyword ga https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
-   \ bmark -keyword gp https://plus.google.com/
+   \ bmark -keyword ac -t config about:config
+   \ bmark -keyword st -t sync-tabs about:sync-tabs
+   \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
+   \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
+   \ bmark -keyword 1 -t nebu1a https://blip.tv/Nebu1a#EpisodeArchive
+   \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
+   \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
+   \ bmark -keyword io -t ixopen http://ix.io/%s/
+   \ bmark -keyword i -t isohunt https://ca.isohunt.com/lite/#s=seeds&q=%s&p=1
+   \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
+   \ bmark -keyword d -t demon http://beta.demonoid.me/files/?query=%s
+   \ bmark -keyword ss -t sub http://next.subscene.com/subtitles/title.aspx?q=%s
+   \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
+   \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
+   \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
+   \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
+   \ bmark -keyword t -t train http://hb4pm4eznzhd6mts.onion/pe/train.php
+   \ bmark -keyword at -t asynctrain http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
+   \ bmark -keyword sp -t 'personal stats' http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
+   \ bmark -keyword ts -t 'tor cenba' https://atlas.torproject.org/#search/cenba
+   \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
+   \ bmark -keyword gr -t greader https://www.google.com/reader/view/ -tags news
+   \ bmark -keyword g/ -t 'search gread' https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
+   \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
+   \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
+   \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
 map S -js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
    \ services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
