@@ -249,6 +249,15 @@
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
+** Neal Stephenson
+*** Baroque
+**** TODO Quicksilver
+**** TODO Confusion
+**** TODO The System of the World
+*** TODO Snow Crash
+*** TODO The Diamond Age
+** Orson Scott Card
+*** TODO Ender's Game
 ** Peter Watts                                                      :sci:FAV:
    :PROPERTIES:
    :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
@@ -463,6 +472,7 @@
    :END:
 ** Miss Luana                                                           :FAV:
 ** NOT Missy Model
+** Monika Vesela
 ** MPLstudios.com
 ** Nicole                                                               :FAV:
 ** Nikki                                                                :FAV:
@@ -503,6 +513,12 @@
 ** X-Art                                                                :FAV:
 ** xcity.jp
 *** Leon Kadena                                                         :FAV:
+** ZooSkool                                                             :FAV:
+*** Carmen
+**** Body Heat
+*** StrayX
+**** Missionary Impossible
+**** The Record
 * LP                                                               :FAV:game:
 ** TODO ??
 *** Commandos series
@@ -723,31 +739,28 @@
    :PROPERTIES:
    :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
    :END:
+** Bedside
+*** TODO Der må være en sengekant (1975)                                :sub:
+*** DONE Hopla på sengekanten (1976)                                    :FAV:
+**** Vivi Rau
+*** TODO Mazurka på sengekanten (1970)                                  :sub:
+*** TODO Motorvej på sengekanten (1972)
+*** TODO Rektor på sengekanten (1972)
+*** TODO Romantik på sengekanten (1973)
+*** DONE Sømænd på sengekanten (1976)
+*** TODO Tandlæge på sengekanten (1971)
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
 ** TODO Chronicle
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
+** TODO Contact (1997)
 ** Dansk erotisk komedie
    :PROPERTIES:
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
 *** TODO Den Røde Rubin (1970)
-*** TODO Der Må Være En Sengekant (1975)
-*** TODO Hopla På Sengekanten (1976)
-*** TODO I Jomfruens Tegn (1973)                                        :sub:
-*** TODO I Løvens Tegn (1976)                                           :sub:
-*** TODO I Skorpionens Tegn (1977)                                      :sub:
-*** TODO I Skyttens Tegn (1978)
-*** TODO I Tvillingernes Tegn (1975)                                    :sub:
-*** TODO I Tyrens Tegn (1974)                                           :sub:
-*** TODO Mazurka På Sengekanten (1970)
-*** TODO Motorvej På Sengekanten (1972)
-*** TODO Rektor På Sengekanten (1972)
-*** TODO Romantik På Sengekanten (1973)
-*** TODO Sømænd På Sengekanten (1976)
-*** TODO Tandlæge På Sengekanten (1971)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -788,6 +801,13 @@
 *** TODO Il fiore delle mille e una notte (1974)
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
+** Zodiac
+*** DONE Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
+*** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
+*** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
+*** TODO I Løvens tegn (1976)                                           :sub:
+*** TODO I Tvillingernes tegn (1975)                                    :sub:
+*** TODO I Tyrens tegn (1974)                                           :sub:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** TODO 2pac                                                            :rap:
@@ -970,7 +990,7 @@
     CLOSED: [2012-04-09 Mon 13:57]
 ** TODO Danzig                                                         :game:
 ** DONE Deep Purple
-** TODO Diablo Swing Orchestra                           :FAV:string:jamendo:
+** DONE Diablo Swing Orchestra                           :FAV:string:jamendo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
    :jamendo:  http://www.jamendo.com/en/artist/351716/diablo-swing-orchestra
@@ -980,7 +1000,7 @@
     :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
     :END:
 *** DONE (2009-10) Sing Along Songs for the Damned & Delirious
-*** TODO (2012-05-22) Pandora's Piñata
+*** DONE (2012-05-22) Pandora's Piñata
 ** TODO Dire Strait
 ** DONE DJ Fab
 ** TODO Double Dragon                                                :lastfm:
@@ -1023,9 +1043,11 @@
 *** TODO (2012-02-23) DoYaThing
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
+** TODO Gustav Mahler
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
 ** DONE Harvey Danger                                                   :FAV:
+** TODO Heart
 ** DONE Helloween                                                       :FAV:
    CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
@@ -1322,6 +1344,7 @@
 ** TODO Primus
 ** TODO Prophecy                                                     :lastfm:
 ** TODO Puddle of Mudd
+** TODO Pyotr Ilyich Tchaikovsky
 ** TODO Quốc Bảo                                                     :FAV:vi:
 *** DONE (2003) Bình yên
 ** TODO Rage Against the Machine
@@ -1473,9 +1496,9 @@
 ** TODO Tony Cicoria
 ** NOT Tool
 ** TODO Tracy Chapman                                                :tunx:f:
-*** TODO (1988-04-05) Tracy Chapman
+*** DONE (1988-04-05) Tracy Chapman
 *** TODO (1989-09) Crossroads
-*** TODO (1992-04-28) Matters of the Heart
+*** DONE (1992-04-28) Matters of the Heart
 *** TODO (1995-11-14) New Beginning
 *** TODO (2000-02-15) Telling Stories
 *** TODO (2002-10-15) Let It Rain
@@ -1618,6 +1641,37 @@
     :url:      http://hpmor.com/
     :END:
 ** GONE George Carlin                                           :voice:humor:
+   :PROPERTIES:
+   :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
+   :END:
+*** TODO (1967) Take-Offs & Put-Ons
+*** TODO (1972) Class Clown
+*** TODO (1972) FM & AM
+*** TODO (1972) The Original George Carlin
+*** TODO (1973-10) Occupation: Foole
+*** TODO (1974-11) Toledo Window Box
+*** TODO (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
+*** TODO (1977-04) On the Road
+*** TODO (1981) Killer Carlin
+*** TODO (1981-11) A Place for My Stuff!
+*** TODO (1984) Carlin on Campus
+*** TODO (1986-06-30) Playin' With Your Head
+*** TODO (1988-08-15) What Am I Doing in New Jersey?
+*** TODO (1990-11-20) Parental Advisory: Explicit Lyrics
+*** TODO (1992-10-27) Classic Gold
+*** TODO (1992-11-10) Jammin' in New York
+*** TODO (1996-09-17) Back in Town
+*** TODO (1999-05-04) You Are All Diseased
+*** TODO (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
+*** TODO (2000-05) Brain Droppings
+*** TODO (2001-05) Napalm and Silly Putty
+*** TODO (2001-12-11) Complaints and Grievances
+*** TODO (2002) 40 Years in Comedy
+*** TODO (2002-03-12) George Carlin on Comedy
+*** TODO (2002-04) More Napalm & Silly Putty
+*** TODO (2004-10-12) When Will Jesus Bring the Pork Chops?
+*** TODO (2006-01-10) Life Is Worth Losing
+*** TODO (2008-07-29) It's Bad for Ya
 *** Last Words                                                          :bio:
 ** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
