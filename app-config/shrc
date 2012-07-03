@@ -148,6 +148,7 @@ if [ -n "$ZSH_NAME" ]; then
 
     setopt dvorak
     bindkey -r ",."
+    bindkey "^[h" slash-backward-kill-word
 
     alias -s jpg=gwenview
     alias -s jpeg=gwenview
