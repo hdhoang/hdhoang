@@ -65,9 +65,11 @@ positionrule=3
 shortcut=Alt+Shift+F3
 shortcutrule=2
 types=4294967295
-wmclass=mplayer
+windowrole=^$|vlc-video
+windowrolematch=3
+wmclass=mplayer|vlc
 wmclasscomplete=false
-wmclassmatch=2
+wmclassmatch=3
 
 [6]
 Description=conversation
