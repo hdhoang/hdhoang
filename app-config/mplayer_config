@@ -3,6 +3,6 @@
 vo=gl,caca,
 ontop=true
 osdlevel=3
-quiet
+quiet=true
 use-filename-title=true
 subfont-text-scale=6
