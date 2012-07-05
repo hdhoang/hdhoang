@@ -22,7 +22,7 @@ shortcutrule=2
 types=4294967295
 windowrole=browser
 windowrolematch=1
-wmclass=nightly
+wmclass=firefox
 wmclasscomplete=false
 wmclassmatch=2
 
