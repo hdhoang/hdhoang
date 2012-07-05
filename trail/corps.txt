@@ -384,6 +384,7 @@
 *** NOT Layla
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
+*** Lilian                                                              :FAV:
 *** Marlina                                                             :FAV:
 *** NOT Misha
 *** Monica                                                              :FAV:
@@ -508,6 +509,7 @@
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
+** NOT Vintage Queen
 ** Watch 4 Beauty                                                       :FAV:
 *** Marketa Belonoha
 ** X-Art                                                                :FAV:
@@ -580,8 +582,8 @@
 *** TODO Parasite Eve
 *** TODO Parasite Eve 2                                              :hybrid:
 ** Dart Ronson
-*** TODO Hitman: Blood Money                                          :video:
-*** TODO Hitman: Contracts                                            :video:
+*** DONE Hitman: Blood Money                                    :video:voice:
+*** DONE Hitman: Contracts                                      :video:voice:
 ** Elephantgun
 *** DONE Breaking Final Fantasy VI                                      :FAV:
     CLOSED: [2012-02-24 Fri 08:19]
@@ -641,6 +643,8 @@
 ** Magnetic North
 *** DONE Silent Steel                                     :humor:hybrid:part:
     CLOSED: [2012-02-24 Fri 09:10]
+** Mecheon
+*** TODO Ecco the Dolphin                                       :video:voice:
 ** Mega64
 *** TODO Final Fantasy III                                   :shot:challenge:
     :PROPERTIES:
@@ -739,6 +743,7 @@
    :PROPERTIES:
    :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
    :END:
+** TODO Bad Lieutenant
 ** Bedside
 *** TODO Der må være en sengekant (1975)                                :sub:
 *** DONE Hopla på sengekanten (1976)                                    :FAV:
@@ -781,6 +786,27 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
+** Russian Institute                                                     :ns:
+   :PROPERTIES:
+   :btih:     acc369d2488640c59ad58c1fb0a0c63e3ac73adb
+   :END:
+*** TODO (2004) Lesson 1
+*** TODO (2004) Lesson 2
+*** TODO (2005) Lesson 3
+*** TODO (2005) Lesson 4
+*** TODO (2005) Lesson 5
+*** TODO (2005) Lesson 6 School Girls                                    :en:
+*** TODO (2006) Lesson 7                                                 :en:
+*** TODO (2007) Lesson 8
+*** TODO (2007) Lesson 9 Special Camping                                 :en:
+*** TODO (2008) Lesson 10 Holidays                                       :en:
+*** DONE (2009) Lesson 11 Pony Club                                      :en:
+*** TODO (2009) Lesson 12 Back To School                                 :en:
+*** TODO (2010) Lesson 13 Gang Bang                                      :en:
+*** TODO (2010) Lesson 14 Anal Lesson
+*** TODO (2011) Lesson 15 Anna's Sisters
+*** TODO (2011) Lesson 16 Lolitas
+*** TODO (2012) Lesson 17 Sex Lesson
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
@@ -805,7 +831,7 @@
 *** DONE Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
 *** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
-*** TODO I Løvens tegn (1976)                                           :sub:
+*** DONE I Løvens tegn (1976)                                    :sub:FAV:vi:
 *** TODO I Tvillingernes tegn (1975)                                    :sub:
 *** TODO I Tyrens tegn (1974)                                           :sub:
 * Music
@@ -1012,6 +1038,8 @@
 ** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
+** DONE El Pogo8bit
+*** DONE (2009) Listen to Your Game EP                                  :FAV:
 ** TODO Electric Light Orchestra
 ** DONE Elias Viljanen                                                  :FAV:
 ** TODO Eluveitie
@@ -1345,6 +1373,7 @@
 ** TODO Prophecy                                                     :lastfm:
 ** TODO Puddle of Mudd
 ** TODO Pyotr Ilyich Tchaikovsky
+** TODO Queen
 ** TODO Quốc Bảo                                                     :FAV:vi:
 *** DONE (2003) Bình yên
 ** TODO Rage Against the Machine
@@ -1602,7 +1631,7 @@
 *** TODO Eight Amazing Engineering Stories
 ** TODO Bill Hicks                                             :humor:spoken:
 *** TODO (1990) Dangerous
-*** TODO (1992) Relentless
+*** DONE (1992) Relentless
 *** TODO (1993) Revelations
 *** TODO (1997-02-25) Arizona Bay
 *** TODO (1997-02-25) Rant in E-Minor
