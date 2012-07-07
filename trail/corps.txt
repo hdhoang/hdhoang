@@ -688,6 +688,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
     :END:
+** slowbeef
+*** TODO Policenauts                                                 :hybrid:
 ** Static_Fiend
 *** DONE Prey                                             :video:voice:humor:
 ** The Dark Id
@@ -744,7 +746,7 @@
    :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
    :END:
 ** TODO Bad Lieutenant
-** Bedside
+** Bedside                                                               :ns:
 *** TODO Der må være en sengekant (1975)                                :sub:
 *** DONE Hopla på sengekanten (1976)                                    :FAV:
 **** Vivi Rau
@@ -790,7 +792,7 @@
    :PROPERTIES:
    :btih:     acc369d2488640c59ad58c1fb0a0c63e3ac73adb
    :END:
-*** TODO (2004) Lesson 1
+*** DONE (2004) Lesson 1
 *** TODO (2004) Lesson 2
 *** TODO (2005) Lesson 3
 *** TODO (2005) Lesson 4
@@ -827,7 +829,7 @@
 *** TODO Il fiore delle mille e una notte (1974)
 ** TODO Tucker and Dave vs Evil                                          :jo:
 ** DONE Zardoz (1974)                                                   :FAV:
-** Zodiac
+** Zodiac                                                                :ns:
 *** DONE Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
 *** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
@@ -1137,6 +1139,10 @@
 *** DONE Crab Canon                                                     :FAV:
 *** TODO (2012-05-28) Open Goldberg Variations                          :FAV:
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
+** TODO Johannes Brahms
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51
+   :END:
 ** DONE Josh Groban
 ** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
@@ -1531,7 +1537,7 @@
 *** TODO (1995-11-14) New Beginning
 *** TODO (2000-02-15) Telling Stories
 *** TODO (2002-10-15) Let It Rain
-*** TODO (2005-09-13) Where You Live
+*** DONE (2005-09-13) Where You Live
 *** TODO (2008-11-07) Our Bright Future
 ** DONE Train                                                          :tunx:
 *** TODO (2012-04-16) California 37
@@ -1695,13 +1701,13 @@
 *** TODO (2000-05) Brain Droppings
 *** TODO (2001-05) Napalm and Silly Putty
 *** TODO (2001-12-11) Complaints and Grievances
-*** TODO (2002) 40 Years in Comedy
+*** DONE (2002) 40 Years in Comedy
 *** TODO (2002-03-12) George Carlin on Comedy
 *** TODO (2002-04) More Napalm & Silly Putty
 *** TODO (2004-10-12) When Will Jesus Bring the Pork Chops?
 *** TODO (2006-01-10) Life Is Worth Losing
 *** TODO (2008-07-29) It's Bad for Ya
-*** Last Words                                                          :bio:
+*** TODO (2009-11-10) Last Words                                        :bio:
 ** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
    :url:      http://hixie.ch
