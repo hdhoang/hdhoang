@@ -224,7 +224,8 @@ style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background
 style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
-  [src*="forgifs"]
+  [src*="cyborgmatt.com/"]
+, [src*="forgifs"]
 , [src*="fukung"]
 , [src*="imgur"]
 , [src*="kuvaton"]
@@ -263,6 +264,7 @@ img[title]:not(:-moz-any(
 , [src*='terminally-incoherent.com/']
 , [src*='thebadchemicals.com/']
 , [src*='todayifoundout.com/']
+, [src*='uncubedthecomic.com/']
 , [src*='upup-downdown.com/']
 ))
 { outline: 2px dashed #6c71c4; outline-offset: 1px }
@@ -312,9 +314,12 @@ style -n "link decor: people" * <<EOS
   [href*="/~cks/"]
 , [href*="apenwarr.ca/"]
 , [href*="aaronland.info/"]
+, [href*="backofthecerealbox.com/"]
 , [href*="//girtby.net/"]
 , [href*="ignorethecode.net/"]
 , [href*="johndcook.com/"]
+, [href*="kidicarus222.blogspot.com/"]
+, [href*="msdn.com/b/oldnewthing/"]
 , [href*="pixelbeat.org/"]
 , [href*="//plasmasturm.org/"]
 , [href*="plover.com/"]
