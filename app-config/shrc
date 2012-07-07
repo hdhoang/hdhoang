@@ -56,6 +56,7 @@ alias fr='free -h | awk "NR==2 {print \$4}"'
 alias t='tail -f'
 
 # network info
+alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias nh='sudo nethogs'
 alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 port_mapping=(
