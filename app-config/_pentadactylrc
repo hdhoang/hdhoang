@@ -127,7 +127,7 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword d -t demon http://beta.demonoid.me/files/?query=%s
    \ bmark -keyword tpb -t tpb https://thepiratebay.se/s/?q=%s&page=0
-   \ bmark -keyword ss -t sub http://next.subscene.com/subtitles/title.aspx?q=%s
+   \ bmark -keyword ss -t sub http://subscene.com/subtitles/title.aspx?q=%s
    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
