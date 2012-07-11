@@ -112,9 +112,9 @@ set! toolkit.telemetry.enabled=true
 
 """ Sites
 map <C-S-n> -ex bmarks! -tags news
-map <C-S-s> -ex tabopen https://www.youtube.com/html5
-   \ tabopen https://www.youtube.com/feather_beta
-   \ tabopen https://duckduckgo.com/settings.html
+map S -ex bmark https://www.youtube.com/html5 -tags setting
+   \ bmark https://www.youtube.com/feather_beta -tags setting
+   \ bmark https://duckduckgo.com/settings.html -tags setting
    \ bmark -keyword ac -t config about:config
    \ bmark -keyword st -t sync-tabs about:sync-tabs
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
@@ -142,11 +142,12 @@ map <C-S-s> -ex tabopen https://www.youtube.com/html5
    \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
    \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
    \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
-map S -js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
-   \ services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
-   \ services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
-   \ services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
-   \ services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+map <C-S-s> -ex bmarks! -tags setting
+   \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
+   \ js services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
+   \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
+   \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
+   \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 set pk+=smbc-comics.com:x
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
