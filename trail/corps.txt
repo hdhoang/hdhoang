@@ -268,7 +268,7 @@
 *** Rifters trilogy
 **** DONE Starfish
 **** DONE Maelstorm
-**** TODO Behemoth
+**** DONE Behemoth
 *** DONE The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                       :sci:FAV:
@@ -644,7 +644,7 @@
 *** DONE Silent Steel                                     :humor:hybrid:part:
     CLOSED: [2012-02-24 Fri 09:10]
 ** Mecheon
-*** TODO Ecco the Dolphin                                       :video:voice:
+*** DONE Ecco the Dolphin                                       :video:voice:
 ** Mega64
 *** TODO Final Fantasy III                                   :shot:challenge:
     :PROPERTIES:
@@ -760,9 +760,11 @@
 ** TODO Blackadder
 ** TODO Blade
 ** TODO Chronicle
+** TODO Citizen Kane
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
 ** TODO Contact (1997)
+** TODO Damages
 ** Dansk erotisk komedie
    :PROPERTIES:
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
@@ -793,7 +795,7 @@
    :btih:     acc369d2488640c59ad58c1fb0a0c63e3ac73adb
    :END:
 *** DONE (2004) Lesson 1
-*** TODO (2004) Lesson 2
+*** DONE (2004) Lesson 2
 *** TODO (2005) Lesson 3
 *** TODO (2005) Lesson 4
 *** TODO (2005) Lesson 5
@@ -834,7 +836,7 @@
 *** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
 *** DONE I Løvens tegn (1976)                                    :sub:FAV:vi:
-*** TODO I Tvillingernes tegn (1975)                                    :sub:
+*** TODO I Tvillingernes tegn (1975)                                 :sub:vi:
 *** TODO I Tyrens tegn (1974)                                           :sub:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
@@ -904,6 +906,7 @@
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon                                                         :1fav:
 ** NOT Babes in Toyland                                                 :jwz:
+** TODO Banda Calypso
 ** Basil Poledouris
 *** DONE Red October soundtrack                                    :FAV:inst:
 ** TODO Ben Houge                                                    :lastfm:
@@ -1044,6 +1047,8 @@
 *** DONE (2009) Listen to Your Game EP                                  :FAV:
 ** TODO Electric Light Orchestra
 ** DONE Elias Viljanen                                                  :FAV:
+** TODO Elton John
+*** TODO (2012-07-16) Good Morning to the Night
 ** TODO Eluveitie
 ** TODO Elvis Presley
 ** DONE Eminem                                                          :FAV:
@@ -1059,6 +1064,10 @@
 ** DONE Faerghail
 ** TODO Fear Factory
 *** TODO (2012-06-05) The Industrialist
+** TODO Feist
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/a670e05a-cea8-4b37-bce9-d82daf1a0fa4
+   :END:
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
 ** DONE Flight of the Conchords                                         :FAV:
@@ -1737,9 +1746,10 @@
 *** TODO The Pluto Files
 ** Richard Dawkins
 *** TODO The God Delusion
-** GONE Richard Feynman                                           :humor:sci:
-*** Surely You're Joking, Mr. Feynman
-*** What Do You Care What Other People Think? Further Adventures of a Curious Character
+** GONE Richard Feynman                                       :humor:sci:FAV:
+*** TODO Physics Lectures
+*** DONE Surely You're Joking, Mr. Feynman
+*** DONE What Do You Care What Other People Think? Further Adventures of a Curious Character
     :PROPERTIES:
     :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
     :END:
