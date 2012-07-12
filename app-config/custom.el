@@ -16,7 +16,8 @@
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(sentence-end-double-space nil)
  '(user-full-name "Hоàng Đức Hiếu")
- '(vc-follow-symlinks t))
+ '(vc-follow-symlinks t)
+ '(windmove-wrap-around t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
