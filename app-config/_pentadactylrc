@@ -320,6 +320,7 @@ style -n "link decor: people" * <<EOS
 , [href*="ignorethecode.net/"]
 , [href*="johndcook.com/"]
 , [href*="kidicarus222.blogspot.com/"]
+, [href*="leancrew.com/"]
 , [href*="/oldnewthing/archive/"]
 , [href*="pixelbeat.org/"]
 , [href*="//plasmasturm.org/"]
