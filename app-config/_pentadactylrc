@@ -341,7 +341,7 @@ style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .sp
 style -n "lparchive" lparchive.org body { width: auto !important } [src$=".gif"] { border-right: 2px dotted #d33682 !important}
 
 style -n "cracked" cracked.com <<EOS
-.body section [href*="cracked.com/"] {
+#PrimaryContent .body section [href*="cracked.com/"]:not(.stronglinks) {
      background: no-repeat url(http:/www.cracked.com/favicon.ico);
      padding-left: 32px !important;
 }
