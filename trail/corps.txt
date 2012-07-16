@@ -258,6 +258,8 @@
 *** TODO The Diamond Age
 ** Orson Scott Card
 *** TODO Ender's Game
+** Paul Park
+*** TODO Celestis
 ** Peter Watts                                                      :sci:FAV:
    :PROPERTIES:
    :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
@@ -836,7 +838,7 @@
 *** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
 *** DONE I Løvens tegn (1976)                                    :sub:FAV:vi:
-*** TODO I Tvillingernes tegn (1975)                                 :sub:vi:
+*** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
 *** TODO I Tyrens tegn (1974)                                           :sub:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
@@ -956,6 +958,7 @@
 *** TODO Ngày Khác
 ** GONE Carpenters                                                      :FAV:
 ** TODO Cat Power
+** TODO Celestial Aeon                                               :lastfm:
 ** TODO Celldweller                                                      :jo:
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
