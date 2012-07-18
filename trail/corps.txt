@@ -220,6 +220,8 @@
     :PROPERTIES:
     :url:      http://www.multivax.com/last_question.html
     :END:
+** James Schmitz
+*** TODO Sour Note on Palayata
 ** Joe Lansdale
 *** TODO Vanilla Ride
 ** John Scalzi
@@ -255,9 +257,13 @@
 **** TODO Confusion
 **** TODO The System of the World
 *** TODO Snow Crash
+*** TODO Snow Crash
+*** TODO The Big U
 *** TODO The Diamond Age
 ** Orson Scott Card
 *** TODO Ender's Game
+*** TODO Ender's Shadow
+*** TODO Speaker for the Dead
 ** Paul Park
 *** TODO Celestis
 ** Peter Watts                                                      :sci:FAV:
@@ -349,6 +355,7 @@
    :END:
 ** Aria Giovanni                                                        :not:
 ** Ariel Rebel                                                          :FAV:
+** Ashley Renee
 ** Asians4You
 *** NOT Aggie
 *** NOT Alesha
@@ -655,6 +662,8 @@
 *** TODO Final Fantasy IV                                              :shot:
 ** Niggurath
 *** TODO Dead Space 2                                                 :video:
+*** TODO Silent Hill 2                                                :video:
+*** TODO Silent Hill 3                                                :video:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** perochialjoe
@@ -798,7 +807,7 @@
    :END:
 *** DONE (2004) Lesson 1
 *** DONE (2004) Lesson 2
-*** TODO (2005) Lesson 3
+*** DONE (2005) Lesson 3
 *** TODO (2005) Lesson 4
 *** TODO (2005) Lesson 5
 *** TODO (2005) Lesson 6 School Girls                                    :en:
@@ -839,8 +848,10 @@
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
 *** DONE I Løvens tegn (1976)                                    :sub:FAV:vi:
 *** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
-*** TODO I Tyrens tegn (1974)                                           :sub:
+*** DONE I Tyrens tegn (1974)                                    :sub:FAV:vi:
 * Music
+** TODO Dave Matthews Band
+*** TODO (2012-09-11) Away from the World
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** TODO 2pac                                                            :rap:
    :PROPERTIES:
@@ -850,7 +861,7 @@
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
 ** GONE ABBA                                                            :FAV:
-** TODO Accept
+** Accept
 *** DONE (1979) Accept
 *** DONE (1980) I'm a Rebel
 *** DONE (1981) Breaker
@@ -860,7 +871,7 @@
 *** DONE (1986-07-01) Russian Roulette
 *** DONE (1993-02-01) Objection Overruled
 *** DONE (1993-06-07) Eat the Heat
-*** TODO (1994-10-04) Death Row
+*** DONE (1994-10-04) Death Row
 *** DONE (1996) Predator
 *** DONE (2010-08-20) Blood of the Nations
 *** DONE (2012-04-06) Stalingrad
@@ -1061,7 +1072,7 @@
 ** DONE Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
 ** Eric Brosius                                                    :FAV:game:
-*** TODO System Shock 2
+*** DONE System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
@@ -1121,6 +1132,7 @@
 ** Jan Morgenstern
 *** DONE Big Buck Bunny
     CLOSED: [2012-01-13 Fri 14:51]
+** TODO Jay-Z                                                           :rap:
 ** Jeremy Soule                                                        :game:
 *** DONE (2000) Icewind Dale
 ** DONE Jesper Kyd                                                     :game:
@@ -1238,7 +1250,7 @@
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
     :END:
-** GONE M2M                                                            :1fav:
+** GONE M2M                                                             :FAV:
 ** DONE Manowar                                                         :FAV:
 *** TODO (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
@@ -1389,6 +1401,8 @@
    :END:
 ** TODO Primus
 ** TODO Prophecy                                                     :lastfm:
+** TODO Public Enemy
+*** TODO (2012-07-13) Most of My Heroes Still Don't Appear on No Stamp
 ** TODO Puddle of Mudd
 ** TODO Pyotr Ilyich Tchaikovsky
 ** TODO Queen
@@ -1456,10 +1470,10 @@
 ** TODO Snow Patrol
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
-*** TODO (2012-05-22) Stones Grow Her Name
+*** DONE (2012-05-22) Stones Grow Her Name
 ** TODO Soul Asylum
 *** TODO (2012-07-17) Delayed Reaction
-** DONE Spice Girls                                                       :f:
+** GONE Spice Girls                                                       :f:
 ** TODO Stam1na
 ** DONE Starcraft sound                                                :game:
    :PROPERTIES:
