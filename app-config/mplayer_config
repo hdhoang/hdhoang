@@ -1,7 +1,6 @@
 # ~/.mplayer/config
 
 vo=gl,caca,
-ontop=true
 osdlevel=3
 quiet=true
 use-filename-title=true
