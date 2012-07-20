@@ -512,7 +512,7 @@
 *** Yu                                                                  :FAV:
 ** Thainee                                                              :not:
 ** the waitress                                                      :FAV:vi:
-** Tila Nguyen                                                          :not:
+** Tila Nguyen                                                          :FAV:
 ** Trang                                                             :FAV:vi:
 ** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
@@ -808,7 +808,7 @@
 *** DONE (2004) Lesson 1
 *** DONE (2004) Lesson 2
 *** DONE (2005) Lesson 3
-*** TODO (2005) Lesson 4
+*** DONE (2005) Lesson 4
 *** TODO (2005) Lesson 5
 *** TODO (2005) Lesson 6 School Girls                                    :en:
 *** TODO (2006) Lesson 7                                                 :en:
@@ -844,7 +844,7 @@
 ** DONE Zardoz (1974)                                                   :FAV:
 ** Zodiac                                                                :ns:
 *** DONE Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
-*** TODO Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
+*** DONE Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
 *** DONE I Jomfruens tegn (1973)                                 :FAV:vi:sub:
 *** DONE I Løvens tegn (1976)                                    :sub:FAV:vi:
 *** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
@@ -973,7 +973,7 @@
 ** TODO Celldweller                                                      :jo:
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
-*** TODO (2008) Blooddrunk
+*** DONE (2008-04-09) Blooddrunk                                       :1fav:
 *** TODO (2011) Relentless Reckless Forever
 ** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
@@ -1671,13 +1671,14 @@
 *** TODO (2002-11-11) Love, Laughter and Truth
 *** TODO (2003-05-19) Shock and Awe
 *** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
-*** TODO Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
+*** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
 *** TODO Filling Up the Hump
 *** DONE Hicksville
 *** TODO Live in Brighton
 *** TODO The Letterman Performances
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Carl Sagan
+*** TODO The Demon Haunted World
 ** Charlie Stross
    :PROPERTIES:
    :url:      http://www.antipope.org
