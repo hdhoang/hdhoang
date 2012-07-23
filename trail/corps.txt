@@ -418,6 +418,7 @@
 ** BiancaBeauchamp                                                      :FAV:
 ** Brandy                                                               :FAV:
 ** NOT Cameron Hertz
+** NOT Christina Model
 ** Czech-Babes.com
 *** Marie                                                               :not:
 *** Olivia                                                              :FAV:
@@ -951,7 +952,7 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
-*** TODO (2011-05-20) Empty Space
+*** DONE (2011-05-20) Empty Space
 *** TODO (2011-08-17) 3 Foot Clearance
 *** DONE (2011-08-17) Look Up There
 *** NOT (2011-08-17) Underground Chamber
@@ -1276,7 +1277,7 @@
     :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
 ** Max Payne                                                           :game:
-*** TODO Max Payne
+*** DONE Max Payne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b
     :END:
@@ -1421,7 +1422,7 @@
 ** TODO Richard Strauss
 ** TODO Ringo Shiina                                               :FAV:ja:f:
 *** TODO (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
-*** TODO (2000-03-31) 勝訴ストリップ (Winning Strip)
+*** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
 *** TODO (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
 *** TODO (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
 *** TODO (2007-02-21) 平成風俗 (Japanese Manners)
@@ -1454,7 +1455,7 @@
 ** TODO Sepultura                                                        :jo:
 ** Shadow Hearts
 *** TODO Koudelka
-*** TODO Shadow Hearts
+*** DONE Shadow Hearts
 *** DONE (2004-03-24) Shadow Hearts II
 *** DONE Shadow Hearts III
 ** TODO Shadowy Men on a Shadowy Planet
@@ -1490,6 +1491,7 @@
 *** DONE Lady Gaga                                                      :FAV:
 *** DONE Senses Fail                                                    :FAV:
 *** DONE Shinedown                                                      :FAV:
+*** DONE Tupac                                                         :1fav:
 ** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
 ** DONE Tarot                                                        :FAV:fi:
@@ -1558,7 +1560,7 @@
 ** NOT Tool
 ** TODO Tracy Chapman                                                :tunx:f:
 *** DONE (1988-04-05) Tracy Chapman
-*** TODO (1989-09) Crossroads
+*** DONE (1989-09) Crossroads
 *** DONE (1992-04-28) Matters of the Heart
 *** TODO (1995-11-14) New Beginning
 *** TODO (2000-02-15) Telling Stories
@@ -1664,7 +1666,7 @@
 ** TODO Bill Hicks                                             :humor:spoken:
 *** TODO (1990) Dangerous
 *** DONE (1992) Relentless
-*** TODO (1993) Revelations
+*** DONE (1993) Revelations
 *** TODO (1997-02-25) Arizona Bay
 *** TODO (1997-02-25) Rant in E-Minor
 *** TODO (2002-11-11) Flying Saucer Tour, Volume 1
