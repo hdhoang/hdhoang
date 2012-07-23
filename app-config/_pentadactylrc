@@ -278,6 +278,7 @@ style -n "link decor: good hosts" * <<EOS
 , [href*="ifile.it"]
 , [href*="mediafire.com/"],[href*="mfi.re/"]
 , [href*="megashare.com/"]
+, [href*="min.us/"]
 , [href*="rapidshare.com/"]
 , [href*="youporn.com/"] /* download links */
 { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
