@@ -762,7 +762,7 @@
 *** TODO Der må være en sengekant (1975)                                :sub:
 *** DONE Hopla på sengekanten (1976)                                    :FAV:
 **** Vivi Rau
-*** TODO Mazurka på sengekanten (1970)                                  :sub:
+*** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
 *** TODO Motorvej på sengekanten (1972)
 *** TODO Rektor på sengekanten (1972)
 *** TODO Romantik på sengekanten (1973)
@@ -775,7 +775,7 @@
 ** TODO Citizen Kane
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
-** TODO Contact (1997)
+** DONE Contact (1997)                                              :FAV:sci:
 ** TODO Damages
 ** Dansk erotisk komedie
    :PROPERTIES:
@@ -810,7 +810,7 @@
 *** DONE (2004) Lesson 2
 *** DONE (2005) Lesson 3
 *** DONE (2005) Lesson 4
-*** TODO (2005) Lesson 5
+*** DONE (2005) Lesson 5
 *** TODO (2005) Lesson 6 School Girls                                    :en:
 *** TODO (2006) Lesson 7                                                 :en:
 *** TODO (2007) Lesson 8
@@ -1226,7 +1226,7 @@
      :PROPERTIES:
      :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
      :END:
-**** Volume 4: Leonore / Fidelio
+**** TODO Volume 4: Leonore / Fidelio
 **** TODO Volume 5: Piano Sonatas
      :PROPERTIES:
      :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
@@ -1252,6 +1252,7 @@
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
     :END:
 ** GONE M2M                                                             :FAV:
+*** DONE (2000-03-07) Shades of Purple
 ** DONE Manowar                                                         :FAV:
 *** TODO (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
@@ -1505,7 +1506,7 @@
 ** TODO The Ink Spots                                              :FAV:blue:
 ** DONE The Plasmas                                        :riff:game:lastfm:
 *** TODO (2008) Extreme NES Terror
-*** TODO (2008) Noentiendo
+*** DONE (2008) Noentiendo
 *** TODO (2009) NES Cult Armageddon
 *** TODO (2010) Beware the invasion
 *** TODO (2009) R3BORN
@@ -1562,7 +1563,7 @@
 *** DONE (1988-04-05) Tracy Chapman
 *** DONE (1989-09) Crossroads
 *** DONE (1992-04-28) Matters of the Heart
-*** TODO (1995-11-14) New Beginning
+*** DONE (1995-11-14) New Beginning
 *** TODO (2000-02-15) Telling Stories
 *** TODO (2002-10-15) Let It Rain
 *** DONE (2005-09-13) Where You Live
