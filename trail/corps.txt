@@ -776,6 +776,9 @@
 ** TODO Colossus: The Forbin Project                                 :jbopre:
 ** TODO Comedian
 ** DONE Contact (1997)                                              :FAV:sci:
+   :PROPERTIES:
+   :btih:     95fbac135060d6f82caa5a5d8990a10ab8babbad
+   :END:
 ** TODO Damages
 ** Dansk erotisk komedie
    :PROPERTIES:
@@ -851,8 +854,6 @@
 *** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
 *** DONE I Tyrens tegn (1974)                                    :sub:FAV:vi:
 * Music
-** TODO Dave Matthews Band
-*** TODO (2012-09-11) Away from the World
 ** DONE "Weird Al" Yankovic                                             :FAV:
 ** TODO 2pac                                                            :rap:
    :PROPERTIES:
@@ -1035,6 +1036,8 @@
 *** DONE Weirdos And Classics
     CLOSED: [2012-04-09 Mon 13:57]
 ** TODO Danzig                                                         :game:
+** TODO Dave Matthews Band
+*** TODO (2012-09-11) Away from the World
 ** DONE Deep Purple
 ** DONE Diablo Swing Orchestra                           :FAV:string:jamendo:
    :PROPERTIES:
@@ -1066,10 +1069,13 @@
 *** TODO (2012-07-16) Good Morning to the Night
 ** TODO Eluveitie
 ** TODO Elvis Presley
+** TODO Emilie Autumn
+*** TODO (2012-07-24) Fight Like a Girl
 ** DONE Eminem                                                          :FAV:
 *** DONE D12
 ** DONE Ennio Morricone
 ** DONE Ensiferum
+** TODO Entombed
 ** DONE Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
 ** Eric Brosius                                                    :FAV:game:
@@ -1224,9 +1230,12 @@
 **** Volume 2: Konzerte
 **** TODO Volume 3: Orchestral Works / Music for the Stage
      :PROPERTIES:
-     :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
+     :btih:     44058b609887f0a65aa45c210bc487a4afac9b69
      :END:
 **** TODO Volume 4: Leonore / Fidelio
+     :PROPERTIES:
+     :btih:     12CC8570AE6BF00D634366D6F632A8EB61FC4479
+     :END:
 **** TODO Volume 5: Piano Sonatas
      :PROPERTIES:
      :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
@@ -1412,7 +1421,7 @@
 *** DONE (2003) Bình yên
 ** TODO Rage Against the Machine
 ** DONE Regina Spektor
-*** TODO (2012-05-29) What We Saw from the Cheap Seats
+*** DONE (2012-05-29) What We Saw from the Cheap Seats
 ** DONE Rhapsody                                                     :FAV:it:
 *** DONE Luca Turilli
 **** DONE (1999-09-22) King of the Nordic Twilight
@@ -1455,7 +1464,7 @@
 ** TODO Sentenced
 ** TODO Sepultura                                                        :jo:
 ** Shadow Hearts
-*** TODO Koudelka
+*** DONE Koudelka
 *** DONE Shadow Hearts
 *** DONE (2004-03-24) Shadow Hearts II
 *** DONE Shadow Hearts III
@@ -1509,7 +1518,7 @@
 *** DONE (2008) Noentiendo
 *** TODO (2009) NES Cult Armageddon
 *** TODO (2010) Beware the invasion
-*** TODO (2009) R3BORN
+*** DONE (2009) R3BORN
 *** TODO (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
 ** TODO The Police
@@ -1564,7 +1573,7 @@
 *** DONE (1989-09) Crossroads
 *** DONE (1992-04-28) Matters of the Heart
 *** DONE (1995-11-14) New Beginning
-*** TODO (2000-02-15) Telling Stories
+*** DONE (2000-02-15) Telling Stories
 *** TODO (2002-10-15) Let It Rain
 *** DONE (2005-09-13) Where You Live
 *** TODO (2008-11-07) Our Bright Future
