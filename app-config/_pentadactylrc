@@ -94,6 +94,7 @@ elif prefs.get('services.sync.client.name') == 'cenba'
     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
 fi
 set! plugins.click_to_play=true
+set! plugins.hide_infobar_for_missing_plugin=true
 
 """ Core
 set editor='emacsclient +<line> <file>'
