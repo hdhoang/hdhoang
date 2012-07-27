@@ -150,7 +150,14 @@ map <C-S-s> -ex bmarks! -tags setting
    \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
    \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+
 set pk+=smbc-comics.com:x
+style -n "smbc red button" www.smbc-comics.com <<EOS
+#aftercomic {
+  display: block !important;
+  position: static !important;
+}
+EOS
 
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
