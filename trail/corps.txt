@@ -272,7 +272,7 @@
    :url:      http://rifters.com
    :END:
 *** DONE Blindsight
-*** TODO Crysis: Legion                                                :game:
+*** DONE Crysis: Legion                                                :game:
 *** Rifters trilogy
 **** DONE Starfish
 **** DONE Maelstorm
@@ -326,6 +326,7 @@
 *** NOT Alice
 *** NOT Belicia
 *** NOT Bonnie
+*** NOT Brea
 *** NOT Breanne
 *** Brynn Tyler                                                         :FAV:
 *** NOT Carrie
@@ -335,7 +336,9 @@
 *** Eufrat                                                              :FAV:
 *** Eve Angel                                                           :FAV:
 *** Jade                                                                :FAV:
+*** NOT Karen
 *** Katalin                                                             :FAV:
+*** Nevaeh                                                              :FAV:
 *** NOT Silvia
 *** Sophie                                                              :FAV:
 *** Zoe                                                                 :FAV:
@@ -370,6 +373,7 @@
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Cindy
 *** NOT Claudia
+*** NOT Crystal
 *** NOT Dana Pang
 *** Denise                                                              :FAV:
 *** Destiny                                                             :FAV:
@@ -385,15 +389,16 @@
 *** NOT Jamie
 *** NOT Jenis
 *** Jennifer Lee                                                        :FAV:
+*** NOT Julia
 *** NOT Kaila Wang
 *** NOT Kathy Liu
 *** NOT Kelly
 *** Kesara                                                              :FAV:
 *** Kim Yun Hee                                                         :FAV:
 *** NOT Layla
+*** Lilian                                                              :FAV:
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
-*** Lilian                                                              :FAV:
 *** Marlina                                                             :FAV:
 *** NOT Misha
 *** Monica                                                              :FAV:
@@ -415,7 +420,8 @@
 *** Victoria                                                            :FAV:
 *** Yo Sung Hi                                                          :FAV:
 ** Bailey Kline                                                         :FAV:
-** BiancaBeauchamp                                                      :FAV:
+** Bianca Beauchamp                                                     :FAV:
+** NOT Bobbi Billard
 ** Brandy                                                               :FAV:
 ** NOT Cameron Hertz
 ** NOT Christina Model
@@ -456,7 +462,7 @@
 ** Julia Cerkonova                                                      :FAV:
 ** Justine Joli                                                         :FAV:
 ** Kari Sweets                                                          :not:
-** Katie Fey/Jenya D                                                    :FAV:
+** Katie Fey/Jenya D/Eugenia Diordiychuk                                :FAV:
    :PROPERTIES:
    :url:      http://katiefey.com
    :END:
@@ -468,6 +474,7 @@
    CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
 ** Luna Lane                                                            :FAV:
+** Megan Qt                                                             :FAV:
 ** Met-Art.com                                                          :FAV:
 *** Alea
 *** Anna
@@ -489,6 +496,7 @@
 ** Nikki                                                                :FAV:
 ** PiER999
 *** Angel Dark
+** NOT Rachel Aziani
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
 ** Stanislava                                                           :FAV:
@@ -497,6 +505,7 @@
 ** NOT Sweet Devon
 ** Sweet Natural Girl                                                   :FAV:
 ** Tawnee Stone                                                         :not:
+** Taylor Twins                                                         :FAV:
 ** ThaiCuties / iThaiTeens
 *** Anny Wadee                                                          :FAV:
 *** Benze Pharda                                                        :FAV:
@@ -566,11 +575,6 @@
 ** CannibalK9                                             :speed:video:voice:
 *** DONE Grand Theft Auto: San Andreas
 *** DONE Hitman: Codename 47
-** CapitanGarlic
-*** TODO Icewind Dale 2                           :shot:humor:narrative:part:
-    :PROPERTIES:
-    :url:      http://lparchive.org/Icewind-Dale-2/
-    :END:
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
 ** Chip Cheezum, General Ironicus         :group:video:voice:comp:info:humor:
@@ -759,7 +763,7 @@
    :END:
 ** TODO Bad Lieutenant
 ** Bedside                                                               :ns:
-*** TODO Der må være en sengekant (1975)                                :sub:
+*** DONE Der må være en sengekant (1975)                            :sub:FAV:
 *** DONE Hopla på sengekanten (1976)                                    :FAV:
 **** Vivi Rau
 *** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
@@ -784,7 +788,7 @@
    :PROPERTIES:
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
-*** TODO Den Røde Rubin (1970)
+*** TODO Sangen om den røde rubin (1970)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -814,7 +818,7 @@
 *** DONE (2005) Lesson 3
 *** DONE (2005) Lesson 4
 *** DONE (2005) Lesson 5
-*** TODO (2005) Lesson 6 School Girls                                    :en:
+*** DONE (2005) Lesson 6 School Girls                                    :en:
 *** TODO (2006) Lesson 7                                                 :en:
 *** TODO (2007) Lesson 8
 *** TODO (2007) Lesson 9 Special Camping                                 :en:
@@ -954,12 +958,13 @@
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
 *** DONE (2011-05-20) Empty Space
-*** TODO (2011-08-17) 3 Foot Clearance
+*** DONE (2011-08-17) 3 Foot Clearance
 *** DONE (2011-08-17) Look Up There
 *** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
 *** DONE (2012-04-14) Balloon Cement
 *** Thanatopsis
+**** DONE Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
 ** TODO Buddy Guy
@@ -1106,6 +1111,8 @@
 ** TODO Gustav Mahler
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
+** Hans Zimmer
+*** DONE The Rock                                                 :movie:FAV:
 ** DONE Harvey Danger                                                   :FAV:
 ** TODO Heart
 ** DONE Helloween                                                       :FAV:
@@ -1164,6 +1171,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
     :END:
+** TODO Jewel
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
 ** Johann Sebastian Bach
@@ -1262,6 +1270,7 @@
     :END:
 ** GONE M2M                                                             :FAV:
 *** DONE (2000-03-07) Shades of Purple
+*** DONE (2002-03-05) The Big Room
 ** DONE Manowar                                                         :FAV:
 *** TODO (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
@@ -1404,6 +1413,7 @@
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 ** TODO Phil Collins
+** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
 ** TODO Placebo                                                          :jo:
 ** DONE Powerglove                                                      :FAV:
@@ -1434,7 +1444,7 @@
 *** TODO (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
 *** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
 *** TODO (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
-*** TODO (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
+*** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
 *** TODO (2007-02-21) 平成風俗 (Japanese Manners)
 *** TODO (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
@@ -1442,7 +1452,7 @@
 *** TODO (2012-05-15) Diablo III: Collector's Edition Soundtrack
 ** TODO Sabaton                                                      :lastfm:
 ** DONE Santana                                                  :FAV:guitar:
-*** TODO (2012-05-11) Shape Shifter
+*** DONE (2012-05-11) Shape Shifter
 ** TODO Santigold
 ** DONE Sarah Brightman                                            :f:jo:FAV:
 ** GONE Savatage                                                   :epic:FAV:
@@ -1484,6 +1494,8 @@
 *** DONE (2012-05-22) Stones Grow Her Name
 ** TODO Soul Asylum
 *** TODO (2012-07-17) Delayed Reaction
+** Spencer Nilsen
+*** TODO (1996) Ecco: Songs of Time                                :game:FAV:
 ** GONE Spice Girls                                                       :f:
 ** TODO Stam1na
 ** DONE Starcraft sound                                                :game:
@@ -1524,8 +1536,8 @@
 ** TODO The Police
 *** TODO (1978-11) Outlandos d'Amour
 *** TODO (1979-10) Reggatta de Blanc
-*** TODO (1980-10-03) Zenyattà Mondatta
-*** TODO (1981-10) Ghost in the Machine
+*** DONE (1980-10-03) Zenyattà Mondatta
+*** DONE (1981-10) Ghost in the Machine
 *** TODO (1983-06-01) Synchronicity
 ** TODO The Smashing Pumpkins
 *** TODO (2012-06-18) Oceania
@@ -1558,7 +1570,7 @@
 *** TODO (2006-01-25) 大人 (Adult)
 *** TODO (2007-09-26) 娯楽 (Variety)
 *** TODO (2010-02-24) スポーツ (Sports)
-*** TODO (2011-06-29) 大発見 (Daihakken)
+*** DONE (2011-06-29) 大発見 (Daihakken)
 *** TODO (2012-01-18) color bars
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
@@ -1677,11 +1689,11 @@
 *** TODO (1990) Dangerous
 *** DONE (1992) Relentless
 *** DONE (1993) Revelations
-*** TODO (1997-02-25) Arizona Bay
+*** DONE (1997-02-25) Arizona Bay
 *** TODO (1997-02-25) Rant in E-Minor
 *** TODO (2002-11-11) Flying Saucer Tour, Volume 1
 *** TODO (2002-11-11) Love, Laughter and Truth
-*** TODO (2003-05-19) Shock and Awe
+*** DONE (2003-05-19) Shock and Awe
 *** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
 *** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
 *** TODO Filling Up the Hump
@@ -1730,7 +1742,7 @@
 *** TODO (1981-11) A Place for My Stuff!
 *** TODO (1984) Carlin on Campus
 *** TODO (1986-06-30) Playin' With Your Head
-*** TODO (1988-08-15) What Am I Doing in New Jersey?
+*** DONE (1988-08-15) What Am I Doing in New Jersey?
 *** TODO (1990-11-20) Parental Advisory: Explicit Lyrics
 *** TODO (1992-10-27) Classic Gold
 *** TODO (1992-11-10) Jammin' in New York
