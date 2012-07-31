@@ -3,8 +3,8 @@
 
 keycode 133 = BackSpace
 
-remove mod1 = Alt_R
 keycode 108 = Escape
+remove mod1 = Escape
 
 remove control = Control_L
 keycode 37  = Return
