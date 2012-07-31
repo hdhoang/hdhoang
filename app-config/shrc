@@ -7,6 +7,7 @@ if [[ $(hostname) == cenbaz ]]; then
     mount=/cygdrive/h
     selsormenli=/cygdrive/s
     pool=/cygdrive/m
+    export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
 else
     z=/mnt/cenbaz
     mount=~
@@ -26,8 +27,6 @@ g=$z/@g
 s=$z/@s
 fav=$mount/Public/fav
 fm=$fav/Music
-
-source $h/app-config/env
 
 # utils
 alias g='git'
@@ -178,6 +177,7 @@ fi
 
 if [[ $(uname) == Darwin ]]; then
     export PATH=$PATH:~/brew/bin
+    awk -F = '/=/{ print $1 " " $2 }' $h/app-config/env | xargs launchctl setenv
 
     export CLICOLOR
     alias ls='ls -GT'
