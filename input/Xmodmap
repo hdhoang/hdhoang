@@ -6,8 +6,9 @@ keycode 133 = BackSpace
 keycode 108 = Escape
 remove mod1 = Escape
 
+clear lock
+remove control = Caps_Lock
 keycode 37  = Return
-remove control = Return
 
 keycode 91  = Delete
 keycode 104 = Return
