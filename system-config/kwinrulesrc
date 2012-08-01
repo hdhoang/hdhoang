@@ -80,7 +80,7 @@ wmclassmatch=3
 [6]
 Description=conversation
 position=935,0
-positionrule=2
+positionrule=3
 size=360,1040
 sizerule=2
 types=1
