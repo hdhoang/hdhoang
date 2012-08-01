@@ -359,6 +359,7 @@
 ** Aria Giovanni                                                        :not:
 ** Ariel Rebel                                                          :FAV:
 ** Ashley Renee
+** Ashlyn Rae                                                           :FAV:
 ** Asians4You
 *** NOT Aggie
 *** NOT Alesha
@@ -432,6 +433,7 @@
 *** Stanislava                                                          :not:
 *** Zuzana                                                              :not:
 ** DDD Brandy                                                           :not:
+** NOT Dita von Teese
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
 *** Anke
@@ -449,6 +451,7 @@
 ** Hayden Winters                                                       :FAV:
 ** Hegre-Archives.com                                                   :FAV:
 *** Luba
+** Ivana Fukalot                                                        :FAV:
 ** Jayden                                                               :FAV:
 ** Jessimodel                                                           :FAV:
 ** Jordan Capri                                                         :FAV:
@@ -788,7 +791,7 @@
    :PROPERTIES:
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
-*** TODO Sangen om den røde rubin (1970)
+*** DONE Sangen om den røde rubin (1970)
 ** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
@@ -981,7 +984,7 @@
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
 *** DONE (2008-04-09) Blooddrunk                                       :1fav:
-*** TODO (2011) Relentless Reckless Forever
+*** DONE (2011) Relentless Reckless Forever
 ** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
@@ -1335,6 +1338,8 @@
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
 ** DONE Michael Learns to Rock                                         :1fav:
+** Michael McCann
+*** DONE (2011-11-15) Deus Ex: Human Revolution                    :FAV:game:
 ** DONE Microwave                                               :vi:riff:FAV:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
@@ -1567,11 +1572,11 @@
 *** DONE (2011) Samsara
 ** TODO Tokyo Jihen
 *** TODO (2004-11-25) 教育 (Kyouiku)
-*** TODO (2006-01-25) 大人 (Adult)
+*** DONE (2006-01-25) 大人 (Adult)
 *** TODO (2007-09-26) 娯楽 (Variety)
 *** TODO (2010-02-24) スポーツ (Sports)
 *** DONE (2011-06-29) 大発見 (Daihakken)
-*** TODO (2012-01-18) color bars
+*** DONE (2012-01-18) color bars
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
@@ -1733,7 +1738,7 @@
 *** TODO (1967) Take-Offs & Put-Ons
 *** TODO (1972) Class Clown
 *** TODO (1972) FM & AM
-*** TODO (1972) The Original George Carlin
+*** DONE (1972) The Original George Carlin
 *** TODO (1973-10) Occupation: Foole
 *** TODO (1974-11) Toledo Window Box
 *** TODO (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
@@ -1823,6 +1828,16 @@
 *** DONE Vẹo rồng
 *** TODO Ông ve chai
 * Steps
+** Font
+*** ttf-baekmuk
+*** ttf-hannom
+*** ttf-indic-otf
+*** ttf-linux-libertine
+*** ttf-symbola
+    :PROPERTIES:
+    :url:      http://users.teilar.gr/~g1951d/
+    :END:
+*** ttf-tlwg
 ** Music
 # chromaprint
 # picard
