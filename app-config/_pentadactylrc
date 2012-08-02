@@ -23,6 +23,7 @@ map s <C-c>
 map <C-space> <C-d>
 map <C-S-space> <C-u>
 map <C-$> -ex tabmove $
+map <A-$> g$
 map <A-C-[> <C-2>
 map <A-d> d
 set activate-=diverted,links,tabopen,paste
