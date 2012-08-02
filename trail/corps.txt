@@ -339,6 +339,7 @@
 *** NOT Karen
 *** Katalin                                                             :FAV:
 *** Nevaeh                                                              :FAV:
+*** NOT Nicky Blond
 *** NOT Silvia
 *** Sophie                                                              :FAV:
 *** Zoe                                                                 :FAV:
@@ -1179,7 +1180,7 @@
 ** TODO Joan Osborne
 ** Johann Sebastian Bach
 *** DONE Crab Canon                                                     :FAV:
-*** TODO (2012-05-28) Open Goldberg Variations                          :FAV:
+*** DONE (2012-05-28) Open Goldberg Variations                    :FAV:piano:
 *** DONE The Well-Tempered Clavier feat. Angela Hewitt
 ** TODO Johannes Brahms
    :PROPERTIES:
@@ -1451,7 +1452,7 @@
 *** TODO (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
 *** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
 *** TODO (2007-02-21) 平成風俗 (Japanese Manners)
-*** TODO (2009-06-24) 三文ゴシップ (Superficial Gossip)
+*** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
 ** Russell Brower & Laurence Juber                                     :game:
 *** TODO (2012-05-15) Diablo III: Collector's Edition Soundtrack
