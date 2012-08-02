@@ -7,7 +7,6 @@ if [[ $(hostname) == cenbaz ]]; then
     mount=/cygdrive/h
     selsormenli=/cygdrive/s
     pool=/cygdrive/m
-    export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
 else
     z=/mnt/cenbaz
     mount=~
@@ -173,6 +172,12 @@ if [ -n "$ZSH_NAME" ]; then
     alias -s part=m
     alias -s ogg=m
     alias -s mp3=m
+fi
+
+if [[ $(hostname) == cenbaz ]]; then
+    . $h/app-config/env
+    export $(cut -s -d= -f1 $h/app-config/env)
+    export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
 fi
 
 if [[ $(uname) == Darwin ]]; then
