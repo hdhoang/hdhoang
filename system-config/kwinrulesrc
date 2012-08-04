@@ -1,5 +1,7 @@
 [1]
 Description=file
+closeable=false
+closeablerule=2
 maximizevert=true
 maximizevertrule=2
 noborder=true
