@@ -478,6 +478,8 @@
    CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
 ** Luna Lane                                                            :FAV:
+** MC-Nudes
+*** Raylene                                                             :FAV:
 ** Megan Qt                                                             :FAV:
 ** Met-Art.com                                                          :FAV:
 *** Alea
@@ -768,14 +770,14 @@
 ** TODO Bad Lieutenant
 ** Bedside                                                               :ns:
 *** DONE Der må være en sengekant (1975)                            :sub:FAV:
-*** DONE Hopla på sengekanten (1976)                                    :FAV:
+*** TODO Hopla på sengekanten (1976)                                :FAV:sub:
 **** Vivi Rau
 *** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
-*** TODO Motorvej på sengekanten (1972)
-*** TODO Rektor på sengekanten (1972)
-*** TODO Romantik på sengekanten (1973)
+*** TODO Motorvej på sengekanten (1972)                                 :sub:
+*** TODO Rektor på sengekanten (1972)                                   :sub:
+*** DONE Romantik på sengekanten (1973)                             :sub:FAV:
 *** DONE Sømænd på sengekanten (1976)
-*** TODO Tandlæge på sengekanten (1971)
+*** TODO Tandlæge på sengekanten (1971)                                 :sub:
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
@@ -823,7 +825,7 @@
 *** DONE (2005) Lesson 4
 *** DONE (2005) Lesson 5
 *** DONE (2005) Lesson 6 School Girls                                    :en:
-*** TODO (2006) Lesson 7                                                 :en:
+*** DONE (2006) Lesson 7                                                 :en:
 *** TODO (2007) Lesson 8
 *** TODO (2007) Lesson 9 Special Camping                                 :en:
 *** TODO (2008) Lesson 10 Holidays                                       :en:
@@ -1280,6 +1282,7 @@
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
+*** TODO (2012-06-26) Overexposed
 ** Matt Uelmen                                                         :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
@@ -1539,8 +1542,8 @@
 *** DONE (2009) R3BORN
 *** TODO (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
-** TODO The Police
-*** TODO (1978-11) Outlandos d'Amour
+** TODO The Police                                                     :1fav:
+*** DONE (1978-11) Outlandos d'Amour
 *** TODO (1979-10) Reggatta de Blanc
 *** DONE (1980-10-03) Zenyattà Mondatta
 *** DONE (1981-10) Ghost in the Machine
@@ -1586,13 +1589,13 @@
 ** TODO Tony Bennett                                                   :tunx:
 ** TODO Tony Cicoria
 ** NOT Tool
-** TODO Tracy Chapman                                                :tunx:f:
+** TODO Tracy Chapman                                            :tunx:f:FAV:
 *** DONE (1988-04-05) Tracy Chapman
 *** DONE (1989-09) Crossroads
 *** DONE (1992-04-28) Matters of the Heart
 *** DONE (1995-11-14) New Beginning
 *** DONE (2000-02-15) Telling Stories
-*** TODO (2002-10-15) Let It Rain
+*** DONE (2002-10-15) Let It Rain
 *** DONE (2005-09-13) Where You Live
 *** TODO (2008-11-07) Our Bright Future
 ** DONE Train                                                          :tunx:
@@ -1747,13 +1750,13 @@
 *** TODO (1981) Killer Carlin
 *** TODO (1981-11) A Place for My Stuff!
 *** TODO (1984) Carlin on Campus
-*** TODO (1986-06-30) Playin' With Your Head
+*** DONE (1986-06-30) Playin' With Your Head
 *** DONE (1988-08-15) What Am I Doing in New Jersey?
 *** TODO (1990-11-20) Parental Advisory: Explicit Lyrics
 *** TODO (1992-10-27) Classic Gold
 *** TODO (1992-11-10) Jammin' in New York
 *** TODO (1996-09-17) Back in Town
-*** TODO (1999-05-04) You Are All Diseased
+*** DONE (1999-05-04) You Are All Diseased
 *** TODO (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
 *** TODO (2000-05) Brain Droppings
 *** TODO (2001-05) Napalm and Silly Putty
