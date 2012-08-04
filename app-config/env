@@ -5,6 +5,7 @@ LESS='--no-init --quit-if-one-screen --ignore-case --RAW-CONTROL-CHARS --LONG-PR
 GREP_OPTIONS='--color --binary-files without-match --ignore-case'
 CCACHE_BASEDIR=${HOME}
 GOPATH=~/go
+QT_PLUGIN_PATH=/usr/lib/kde4/plugins
 
 EDITOR=emacsclient
 
