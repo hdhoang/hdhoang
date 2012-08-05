@@ -411,7 +411,7 @@
 *** NOT Olivia
 *** Paris                                                               :FAV:
 *** NOT Patricia
-*** Petchara                                                            :FAV:
+*** Petchara Pannarai                                                   :FAV:
 *** Regina                                                              :FAV:
 *** NOT Reina
 *** NOT Salina
@@ -484,6 +484,8 @@
 ** Met-Art.com                                                          :FAV:
 *** Alea
 *** Anna
+*** Ariel A
+*** Chiara A
 *** Elena
 *** NOT Emma A
 *** Iveta B
@@ -509,6 +511,7 @@
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
 ** NOT Sweet Devon
+** NOT Sweet Juliette
 ** Sweet Natural Girl                                                   :FAV:
 ** Tawnee Stone                                                         :not:
 ** Taylor Twins                                                         :FAV:
@@ -773,7 +776,7 @@
 *** TODO Hopla på sengekanten (1976)                                :FAV:sub:
 **** Vivi Rau
 *** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
-*** TODO Motorvej på sengekanten (1972)                                 :sub:
+*** DONE Motorvej på sengekanten (1972)                                 :sub:
 *** TODO Rektor på sengekanten (1972)                                   :sub:
 *** DONE Romantik på sengekanten (1973)                             :sub:FAV:
 *** DONE Sømænd på sengekanten (1976)
@@ -1705,10 +1708,10 @@
 *** DONE (2003-05-19) Shock and Awe
 *** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
 *** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
-*** TODO Filling Up the Hump
+*** DONE Filling Up the Hump
 *** DONE Hicksville
-*** TODO Live in Brighton
-*** TODO The Letterman Performances
+*** DONE Live in Brighton
+*** DONE The Letterman Performances
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Carl Sagan
 *** TODO The Demon Haunted World
@@ -1741,11 +1744,11 @@
    :END:
 *** TODO (1967) Take-Offs & Put-Ons
 *** TODO (1972) Class Clown
-*** TODO (1972) FM & AM
+*** DONE (1972) FM & AM
 *** DONE (1972) The Original George Carlin
 *** TODO (1973-10) Occupation: Foole
 *** TODO (1974-11) Toledo Window Box
-*** TODO (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
+*** DONE (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
 *** TODO (1977-04) On the Road
 *** TODO (1981) Killer Carlin
 *** TODO (1981-11) A Place for My Stuff!
