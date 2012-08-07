@@ -773,7 +773,7 @@
 ** TODO Bad Lieutenant
 ** Bedside                                                               :ns:
 *** DONE Der må være en sengekant (1975)                            :sub:FAV:
-*** TODO Hopla på sengekanten (1976)                                :FAV:sub:
+*** DONE Hopla på sengekanten (1976)                                :FAV:sub:
 **** Vivi Rau
 *** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
 *** DONE Motorvej på sengekanten (1972)                                 :sub:
@@ -1118,6 +1118,21 @@
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** TODO Gustav Mahler
+*** TODO (1999) Symphony No. 9
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/7ca1cf4a-0d5d-326e-8244-3d61ee02210f
+    :btih:     daf8c8885d5001c2004ead53b809d8a5b32e698b
+    :END:
+*** TODO (2001) Symphony No. 5
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/db4fecca-8e1c-46e9-8ee1-9e90820cfd69
+    :btih:     a85b2ddd2c3238d611829bd70d560213f8d5074c
+    :END:
+*** TODO (2001-08-28) Symphony No. 4
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/eace2ac3-9fb7-4667-942b-4468463584f8
+    :btih:     ca6a53a4a28857b33e39fdf36e8bb56f14d96af1
+    :END:
 ** DONE Gạt Tàn Đầy                                                     :FAV:
 ** GONE Hanoi Rocks                                                     :FAV:
 ** Hans Zimmer
@@ -1280,6 +1295,7 @@
 ** GONE M2M                                                             :FAV:
 *** DONE (2000-03-07) Shades of Purple
 *** DONE (2002-03-05) The Big Room
+*** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 ** DONE Manowar                                                         :FAV:
 *** TODO (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
@@ -1580,7 +1596,7 @@
 ** TODO Tokyo Jihen
 *** TODO (2004-11-25) 教育 (Kyouiku)
 *** DONE (2006-01-25) 大人 (Adult)
-*** TODO (2007-09-26) 娯楽 (Variety)
+*** DONE (2007-09-26) 娯楽 (Variety)
 *** TODO (2010-02-24) スポーツ (Sports)
 *** DONE (2011-06-29) 大発見 (Daihakken)
 *** DONE (2012-01-18) color bars
@@ -1698,7 +1714,7 @@
 ** TODO Bill Hammack
 *** TODO Eight Amazing Engineering Stories
 ** TODO Bill Hicks                                             :humor:spoken:
-*** TODO (1990) Dangerous
+*** DONE (1990) Dangerous
 *** DONE (1992) Relentless
 *** DONE (1993) Revelations
 *** DONE (1997-02-25) Arizona Bay
@@ -1743,22 +1759,21 @@
    :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
    :END:
 *** TODO (1967) Take-Offs & Put-Ons
-*** TODO (1972) Class Clown
+*** DONE (1972) Class Clown
 *** DONE (1972) FM & AM
 *** DONE (1972) The Original George Carlin
 *** TODO (1973-10) Occupation: Foole
 *** TODO (1974-11) Toledo Window Box
 *** DONE (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
-*** TODO (1977-04) On the Road
-*** TODO (1981) Killer Carlin
-*** TODO (1981-11) A Place for My Stuff!
+*** DONE (1977-04) On the Road
+*** DONE (1981) Killer Carlin
+*** DONE (1981-11) A Place for My Stuff!
 *** TODO (1984) Carlin on Campus
 *** DONE (1986-06-30) Playin' With Your Head
 *** DONE (1988-08-15) What Am I Doing in New Jersey?
 *** TODO (1990-11-20) Parental Advisory: Explicit Lyrics
-*** TODO (1992-10-27) Classic Gold
-*** TODO (1992-11-10) Jammin' in New York
-*** TODO (1996-09-17) Back in Town
+*** DONE (1992-11-10) Jammin' in New York
+*** DONE (1996-09-17) Back in Town
 *** DONE (1999-05-04) You Are All Diseased
 *** TODO (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
 *** TODO (2000-05) Brain Droppings
