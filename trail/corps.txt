@@ -349,6 +349,7 @@
    :END:
 ** NOT Andi Pink
 ** andreea-b.com                                                        :not:
+** Anetta Keys                                                          :FAV:
 ** Angel Button                                                         :FAV:
 ** NOT Angela Melini
 ** NOT Anja.de
@@ -434,6 +435,9 @@
 *** Stanislava                                                          :not:
 *** Zuzana                                                              :not:
 ** DDD Brandy                                                           :not:
+** Digital Desire
+*** Brooke Lee Adams
+*** Veronica Zemanova                                                   :FAV:
 ** NOT Dita von Teese
 ** Erica Campbell                                                       :FAV:
 ** FemJoy                                                               :FAV:
@@ -477,6 +481,7 @@
 ** NOT Lovable Kitty
    CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
+** Luana Lani                                                           :FAV:
 ** Luna Lane                                                            :FAV:
 ** MC-Nudes
 *** Raylene                                                             :FAV:
@@ -489,6 +494,8 @@
 *** Elena
 *** NOT Emma A
 *** Iveta B
+*** Jade A
+*** Jenni A
 *** Kristina
 *** Mima A
 *** Vera H
@@ -496,7 +503,6 @@
    :PROPERTIES:
    :video:    https://youtu.be/Fzg1CU8t9nw
    :END:
-** Miss Luana                                                           :FAV:
 ** NOT Missy Model
 ** Monika Vesela
 ** MPLstudios.com
@@ -505,6 +511,8 @@
 ** PiER999
 *** Angel Dark
 ** NOT Rachel Aziani
+** RED                                                                   :ja:
+*** TODO 074
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
 ** Stanislava                                                           :FAV:
@@ -777,7 +785,7 @@
 **** Vivi Rau
 *** DONE Mazurka på sengekanten (1970)                              :sub:FAV:
 *** DONE Motorvej på sengekanten (1972)                                 :sub:
-*** TODO Rektor på sengekanten (1972)                                   :sub:
+*** DONE Rektor på sengekanten (1972)                               :sub:FAV:
 *** DONE Romantik på sengekanten (1973)                             :sub:FAV:
 *** DONE Sømænd på sengekanten (1976)
 *** TODO Tandlæge på sengekanten (1971)                                 :sub:
@@ -798,7 +806,6 @@
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
 *** DONE Sangen om den røde rubin (1970)
-** DONE Dogma (1999)                                                    :FAV:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
 ** DONE Duplicity (2009)                                                :FAV:
@@ -807,6 +814,14 @@
 ** TODO Europe Trip                                                      :jo:
 ** DONE Flypaper (2011)                                              :FAV:jo:
 ** TODO Ghostbusters
+** Kevin Smith                                                          :FAV:
+*** DONE Chasing Amy (1997)
+*** DONE Clerks (1994)
+*** DONE Clerks II (2006)
+*** DONE Dogma (1999)
+*** DONE Jay and Silent Bob Strike Back (2001)
+*** TODO Jersey Girl (2004)
+*** DONE Mallrats (1995)
 ** TODO Kiss Me Deadly
 ** DONE Limitless (2011)                                         :jbopre:FAV:
 ** TODO MacGyver                                                        :FAV:
@@ -899,12 +914,12 @@
 *** TODO (2012-05-15) Icon
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
-** TODO Alizée                                                        :jo:fr:
-*** TODO (2000-11-28) Gourmandises
-*** TODO (2003-04) Mes courants électriques...
+** DONE Alizée                                                   :jo:fr:1fav:
+*** DONE (2000-11-28) Gourmandises
+*** DONE (2003-04) Mes courants électriques...
 *** DONE (2004-10-18) Alizée en concert
-*** TODO (2008-06-25) Psychédélices
-*** TODO (2010-03-29) Une enfant du siècle
+*** DONE (2008-06-25) Psychédélices
+*** DONE (2010-03-29) Une enfant du siècle
 ** TODO all:my:faults                                                :lastfm:
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
@@ -947,6 +962,16 @@
 ** GONE Black Sabbath                                                   :FAV:
 ** TODO Blind Guardian
 ** DONE Bliss(This)
+** Blizzard
+*** DONE (2003) Warcraft III: The Frozen Throne
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
+    :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
+    :END:
+*** DONE (2008-09-04) StarCraft
+*** DONE (2010) World of Warcraft: Cataclysm
+    CLOSED: [2012-01-29 Sun 14:15]
+*** DONE (2012-05-15) Diablo III: Collector's Edition Soundtrack
 ** TODO Blondie
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
@@ -961,6 +986,7 @@
 ** DONE BOND
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
+** GONE Boyzone                                                         :FAV:
 ** TODO Breaking Benjamin                                                :jo:
 ** Buckethead                                                           :FAV:
    :PROPERTIES:
@@ -987,6 +1013,12 @@
 ** TODO Cat Power
 ** TODO Celestial Aeon                                               :lastfm:
 ** TODO Celldweller                                                      :jo:
+*** TODO (2003-02-11) Celldweller
+*** TODO (2004) Beta Cessions
+*** TODO (2008-12) Soundtrack for the Voices in My Head, Volume 01
+*** TODO (2009-08-25) Wish Upon a Blackstar, Chapter 01
+*** TODO (2011) Soundtrack for the Voices in My Head, Volume 02_ Chapter 1
+*** TODO (2012-07-24) Soundtrack for the Voices in My Head, Volume 2
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
 *** DONE (2008-04-09) Blooddrunk                                       :1fav:
@@ -1050,6 +1082,8 @@
 *** DONE Weirdos And Classics
     CLOSED: [2012-04-09 Mon 13:57]
 ** TODO Danzig                                                         :game:
+** Darren Korb
+*** DONE (2011-08-05) Bastion Original Soundtrack                  :game:FAV:
 ** TODO Dave Matthews Band
 *** TODO (2012-09-11) Away from the World
 ** DONE Deep Purple
@@ -1255,7 +1289,7 @@
 ** TODO Low Roar                                                         :jo:
 ** GONE Ludwig van Beethoven                                            :FAV:
 *** (1997-10-14) Complete Beethoven Edition
-**** TODO Volume 1: Symphonien
+**** DONE Volume 1: Symphonies
      :PROPERTIES:
      :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
      :END:
@@ -1297,7 +1331,7 @@
 *** DONE (2002-03-05) The Big Room
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 ** DONE Manowar                                                         :FAV:
-*** TODO (2012-06-16) The Lord of Steel
+*** DONE (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
@@ -1542,6 +1576,10 @@
 *** DONE Senses Fail                                                    :FAV:
 *** DONE Shinedown                                                      :FAV:
 *** DONE Tupac                                                         :1fav:
+** TODO Styles of Beyond
+*** TODO (1999-08-24) 2000 Fold
+*** TODO (2003) Megadef
+*** TODO (2007-08-10) Razor Tag
 ** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
 ** DONE Tarot                                                        :FAV:fi:
@@ -1608,7 +1646,7 @@
 ** TODO Tony Bennett                                                   :tunx:
 ** TODO Tony Cicoria
 ** NOT Tool
-** TODO Tracy Chapman                                            :tunx:f:FAV:
+** DONE Tracy Chapman                                            :tunx:f:FAV:
 *** DONE (1988-04-05) Tracy Chapman
 *** DONE (1989-09) Crossroads
 *** DONE (1992-04-28) Matters of the Heart
@@ -1616,7 +1654,7 @@
 *** DONE (2000-02-15) Telling Stories
 *** DONE (2002-10-15) Let It Rain
 *** DONE (2005-09-13) Where You Live
-*** TODO (2008-11-07) Our Bright Future
+*** DONE (2008-11-07) Our Bright Future
 ** DONE Train                                                          :tunx:
 *** TODO (2012-04-16) California 37
 ** DONE Tryad                                                  :1fav:jamendo:
@@ -1632,18 +1670,10 @@
 *** DONE (2000) Vampire: The Masquerade: Redemption                :game:FAV:
 *** DONE (2003) Need for Speed Underground
     CLOSED: [2012-04-18 Wed 18:22]
-*** DONE (2003) Warcraft III: The Frozen Throne
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
-    :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
-    :END:
 *** DONE (2004) Need for Speed Underground 2
 *** DONE (2005-11) Need for Speed Most Wanted
 *** DONE (2006-11) Need for Speed Carbon
 *** DONE (2007) Need for Speed ProStreet
-*** DONE (2008-09-04) StarCraft
-*** DONE (2010) World of Warcraft: Cataclysm
-    CLOSED: [2012-01-29 Sun 14:15]
 *** DONE (2010-03-16) God of War III
     CLOSED: [2012-04-09 Mon 13:59]
 *** Juno                                                                :FAV:
@@ -1722,7 +1752,7 @@
 *** TODO (2002-11-11) Flying Saucer Tour, Volume 1
 *** TODO (2002-11-11) Love, Laughter and Truth
 *** DONE (2003-05-19) Shock and Awe
-*** TODO 1989_ I'm Sorry Folks_ Chicago, IL, USA
+*** DONE 1989_ I'm Sorry Folks_ Chicago, IL, USA
 *** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
 *** DONE Filling Up the Hump
 *** DONE Hicksville
@@ -1762,16 +1792,16 @@
 *** DONE (1972) Class Clown
 *** DONE (1972) FM & AM
 *** DONE (1972) The Original George Carlin
-*** TODO (1973-10) Occupation: Foole
-*** TODO (1974-11) Toledo Window Box
+*** DONE (1973-10) Occupation: Foole
+*** DONE (1974-11) Toledo Window Box
 *** DONE (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
 *** DONE (1977-04) On the Road
 *** DONE (1981) Killer Carlin
 *** DONE (1981-11) A Place for My Stuff!
-*** TODO (1984) Carlin on Campus
+*** DONE (1984) Carlin on Campus
 *** DONE (1986-06-30) Playin' With Your Head
 *** DONE (1988-08-15) What Am I Doing in New Jersey?
-*** TODO (1990-11-20) Parental Advisory: Explicit Lyrics
+*** DONE (1990-11-20) Parental Advisory: Explicit Lyrics
 *** DONE (1992-11-10) Jammin' in New York
 *** DONE (1996-09-17) Back in Town
 *** DONE (1999-05-04) You Are All Diseased
@@ -1783,8 +1813,8 @@
 *** TODO (2002-03-12) George Carlin on Comedy
 *** TODO (2002-04) More Napalm & Silly Putty
 *** TODO (2004-10-12) When Will Jesus Bring the Pork Chops?
-*** TODO (2006-01-10) Life Is Worth Losing
-*** TODO (2008-07-29) It's Bad for Ya
+*** DONE (2006-01-10) Life Is Worth Losing
+*** DONE (2008-07-29) It's Bad for Ya
 *** TODO (2009-11-10) Last Words                                        :bio:
 ** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
@@ -1814,6 +1844,7 @@
 ** Neil deGrasse Tyson                                            :sci:humor:
 *** TODO The Pluto Files
 ** Richard Dawkins
+*** TODO (1986) The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe without Design
 *** TODO The God Delusion
 ** GONE Richard Feynman                                       :humor:sci:FAV:
 *** TODO Physics Lectures
