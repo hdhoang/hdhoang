@@ -120,7 +120,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword st -t sync-tabs about:sync-tabs
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
-   \ bmark -keyword 1 -t nebu1a https://blip.tv/Nebu1a#EpisodeArchive
+   \ bmark -keyword 1 -t nebu1a http://blip.tv/Nebu1a#EpisodeArchive
    \ bmark -keyword dw -t 'Dota 2 Wiki' http://www.dota2wiki.com/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dr -t 'Dota random' http://www.dota2wiki.com/wiki/Special:Random
    \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
