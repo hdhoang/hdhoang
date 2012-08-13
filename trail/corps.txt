@@ -512,9 +512,11 @@
 *** Angel Dark
 ** NOT Rachel Aziani
 ** RED                                                                   :ja:
-*** TODO 074
+*** NOT 58
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
+** SOE                                                                   :ja:
+*** TODO 607 Ero Study                                                   :jo:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
@@ -913,6 +915,7 @@
 ** DONE Aerosmith                                                      :1fav:
 *** TODO (2012-05-15) Icon
 ** TODO Alestorm                                                     :jbopre:
+** TODO Alicia Keys
 ** TODO Alice Cooper
 ** DONE Alizée                                                   :jo:fr:1fav:
 *** DONE (2000-11-28) Gourmandises
@@ -927,7 +930,7 @@
 ** TODO Amity in Fame                                               :jamendo:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
-** TODO Amy Winehouse
+** TODO Amy Winehouse                                                  :tunx:
 ** DONE Annihilator                                                     :FAV:
 ** DONE Anthrax                                                        :1fav:
 ** DONE Antonín Dvorák
@@ -1002,7 +1005,7 @@
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
-** TODO Buddy Guy
+** TODO Buddy Guy                                                      :tunx:
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
 *** DONE (2012) Umskiptar
@@ -1405,6 +1408,7 @@
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
+*** TODO (2012-09-17) The 2nd Law
 ** TODO My Bloody Valentine
 ** DONE My Chemical Romance                                            :1fav:
 ** TODO Månegarm                                              :guitar:lastfm:
@@ -1592,12 +1596,12 @@
    CLOSED: [2012-01-09 Mon 14:35]
 ** TODO The Ink Spots                                              :FAV:blue:
 ** DONE The Plasmas                                        :riff:game:lastfm:
-*** TODO (2008) Extreme NES Terror
+*** DONE (2008) Extreme NES Terror
 *** DONE (2008) Noentiendo
 *** TODO (2009) NES Cult Armageddon
 *** TODO (2010) Beware the invasion
 *** DONE (2009) R3BORN
-*** TODO (2010) 16 Fighting Bits
+*** DONE (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
 ** TODO The Police                                                     :1fav:
 *** DONE (1978-11) Outlandos d'Amour
@@ -1632,7 +1636,7 @@
 ** DONE To/Die/For                                                 :FAV:wail:
 *** DONE (2011) Samsara
 ** TODO Tokyo Jihen
-*** TODO (2004-11-25) 教育 (Kyouiku)
+*** DONE (2004-11-25) 教育 (Kyouiku)
 *** DONE (2006-01-25) 大人 (Adult)
 *** DONE (2007-09-26) 娯楽 (Variety)
 *** TODO (2010-02-24) スポーツ (Sports)
