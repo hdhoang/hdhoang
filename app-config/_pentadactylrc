@@ -242,6 +242,7 @@ img[title]:not(:-moz-any(
 , [src*='e-merl.com']
 , [src*='endlessorigami.com/']
 , [src*='happletea.com/']
+, [src*='hejibits.com/']
 , [src*='hipsterhitler.com/']
 , [src*='invisiblebread.com/']
 , [src*='johnnywander.com/']
