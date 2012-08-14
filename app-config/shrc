@@ -60,6 +60,8 @@ alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 port_mapping=(
 587 tcp 465 tcp # tor
 588 tcp 466 tcp # tor
+20220 tcp 20220 udp # torrent
+20221 udp 20222 udp # ktorrent
 25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
