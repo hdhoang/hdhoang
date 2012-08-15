@@ -21,7 +21,7 @@ set nextpattern^=›
 set urlseparator=' , '
 
 """ Display
-set guioptions+=cN
+set guioptions+=N
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
