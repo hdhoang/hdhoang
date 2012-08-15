@@ -57,6 +57,8 @@ maximizevert=true
 maximizevertrule=2
 noborder=true
 noborderrule=2
+position=179,27
+positionrule=3
 shortcut=Meta+=
 shortcutrule=2
 types=4294967295
