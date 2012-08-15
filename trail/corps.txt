@@ -1001,6 +1001,7 @@
 *** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
 *** DONE (2012-04-14) Balloon Cement
+*** TODO (2012-08-09) The Shores of Molokai
 *** Thanatopsis
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
@@ -1271,6 +1272,7 @@
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                                     :FAV:
+*** TODO (2012-08-14) Manala
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
 *** DONE (2011-04-29) Illwill
@@ -1552,6 +1554,7 @@
 ** TODO Simple Plan                                                      :jo:
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
+*** TODO (2012-08-07) Lost in Transition
 ** TODO Skrillex
 ** TODO Slayer
 ** TODO Snow Patrol
