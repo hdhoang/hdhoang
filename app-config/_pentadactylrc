@@ -3,19 +3,6 @@
 """ Start up
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
-set! browser.newtabpage.enabled=false
-set! browser.privatebrowsing.dont_prompt_on_enter=true
-set! browser.sessionstore.restore_pinned_tabs_on_demand=true
-set! browser.shell.checkDefaultBrowser=false
-set! browser.startup.homepage=about:blank
-set! browser.startup.page=3
-set! downbar.function.firstRun=false
-set! extensions.dactyl.first-run=false
-set! extensions.firebug.showFirstRunPage=false
-set! extensions.foxyproxy.firstrun=false
-set! general.warnOnAboutConfig=false
-set! security.warn_viewing_mixed=false
-set! toolkit.telemetry.prompted=2
 
 """ Input
 map A -ex dialog about
@@ -32,84 +19,15 @@ set newtab=help
 set hintkeys=$.aoeupjxyidhtnmz
 set nextpattern^=›
 set urlseparator=' , '
-set! browser.backspace_action=0
-set! browser.link.open_newwindow=3
-set! devtools.gcli.enable=true
-set! layout.spellcheckDefault=0
-set! middlemouse.contentLoadURL=false
-set! ui.key.contentAccess=4
-set! ui.key.menuAccessKey=0
 
 """ Display
 set guioptions+=cN
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
-set! browser.anchor_color="#6c71c4"
-set! browser.display.background_color="#fdf6e3"
-set! browser.display.foreground_color="#657b83"
-set! browser.display.use_system_colors=false
-set! browser.fullscreen.autohide=false
-set! browser.tabs.closeButtons=2
-set! general.smoothScroll=false
-set! font.default.x-western="sans-serif"
-if /NT 6\.1/.test(navigator.oscpu)
-    set! font.name.monospace.x-western=Consolas
-    set! font.name.sans-serif.x-western=Calibri
-    set! font.name.serif.x-western=Cambria
-fi
-
-""" Extension
-if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
-    tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
-else
-    set defsearch=duckduckgo
-    set! browser.search.defaultenginename="DuckDuckGo"
-fi
-set! capability.policy.yesscript.sites="http://bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com http://www.salon.com"
-set! downbar.display.clearButton=true
-set! downbar.display.mainButton=false
-set! downbar.display.speed=false
-set! downbar.display.toMiniButton=true
-set! downbar.function.clearFiletypes=""
-set! downbar.function.removeOnOpen=false
-set! downbar.function.soundCompleteIgnore="torrent"
-set! downbar.function.soundOnComplete=1
-set! downbar.style.speedColor0="0;#dc322f"
-set! downbar.style.speedColor1="50;#b58900"
-set! downbar.style.speedColor2="100;#859900"
-set! downbar.style.speedColor3="200;#2aa198"
-set! downbar.style.speedColorsEnabled=true
-set! downbar.style.useGradients=false
-set! extensions.checkCompatibility.nightly=false
-set! extensions.https_everywhere._observatory.alt_roots=true
-set! extensions.https_everywhere._observatory.enabled=true
-set! extensions.https_everywhere._observatory.priv_dns=true
-set! extensions.testpilot.alwaysSubmitData=true
-set! extensions.testpilot.popup.showOnNewResults=true
-set! extensions.testpilot.popup.showOnNewStudy=true
-set! services.sync.engine.adblockplus=true
-if prefs.get('services.sync.client.name') == 'cenbaz'
-    set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
-elif prefs.get('services.sync.client.name') == 'cenba'
-    set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
-fi
-set! plugins.hide_infobar_for_missing_plugin=true
 
 """ Core
 set editor='emacsclient +<line> <file>'
-set! app.update.enabled=false
-set! browser.download.manager.alertOnEXEOpen=false
-set! browser.download.manager.scanWhenDone=false
-set! browser.preferences.instantApply=true
-set! browser.search.context.loadInBackground=true
-set! intl.charset.default=UTF-8
-set! network.http.pipelining=true
-set! network.http.pipelining.ssl=true
-set! network.http.spdy.enabled=true
-set! network.protocol-handler.expose.magnet=false
-set! services.sync.engine.prefs=false
-set! toolkit.telemetry.enabled=true
 
 """ Sites
 map <C-S-n> -ex bmarks! -tags news
@@ -144,6 +62,86 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
    \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
 map <C-S-s> -ex bmarks! -tags setting
+   \ set! browser.newtabpage.enabled=false
+   \ set! browser.privatebrowsing.dont_prompt_on_enter=true
+   \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
+   \ set! browser.shell.checkDefaultBrowser=false
+   \ set! browser.startup.homepage=about:blank
+   \ set! browser.startup.page=3
+   \ set! general.warnOnAboutConfig=false
+   \ set! security.warn_viewing_mixed=false
+   \ set! toolkit.telemetry.prompted=2
+   \ set! browser.backspace_action=0
+   \ set! browser.link.open_newwindow=3
+   \ set! devtools.gcli.enable=true
+   \ set! layout.spellcheckDefault=0
+   \ set! middlemouse.contentLoadURL=false
+   \ set! ui.key.contentAccess=4
+   \ set! ui.key.menuAccessKey=0
+   \ set! browser.anchor_color="#6c71c4"
+   \ set! browser.display.background_color="#fdf6e3"
+   \ set! browser.display.foreground_color="#657b83"
+   \ set! browser.display.use_system_colors=false
+   \ set! browser.fullscreen.autohide=false
+   \ set! browser.tabs.closeButtons=2
+   \ set! general.smoothScroll=false
+   \ set! font.default.x-western="sans-serif"
+   \ if /NT 6\.1/.test(navigator.oscpu)
+   \     set! font.name.monospace.x-western=Consolas
+   \     set! font.name.sans-serif.x-western=Calibri
+   \     set! font.name.serif.x-western=Cambria
+   \ fi
+   \ set! capability.policy.yesscript.sites="http://bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com http://www.salon.com"
+   \ set! downbar.display.clearButton=true
+   \ set! downbar.display.mainButton=false
+   \ set! downbar.display.speed=false
+   \ set! downbar.display.toMiniButton=true
+   \ set! downbar.function.clearFiletypes=""
+   \ set! downbar.function.firstRun=false
+   \ set! downbar.function.removeOnOpen=false
+   \ set! downbar.function.soundCompleteIgnore="torrent"
+   \ set! downbar.function.soundOnComplete=1
+   \ set! downbar.style.speedColor0="0;#dc322f"
+   \ set! downbar.style.speedColor1="50;#b58900"
+   \ set! downbar.style.speedColor2="100;#859900"
+   \ set! downbar.style.speedColor3="200;#2aa198"
+   \ set! downbar.style.speedColorsEnabled=true
+   \ set! downbar.style.useGradients=false
+   \ set! extensions.checkCompatibility.nightly=false
+   \ set! extensions.firebug.showFirstRunPage=false
+   \ set! extensions.https_everywhere.Blip\ (partial)=false
+   \ set! extensions.https_everywhere._observatory.alt_roots=true
+   \ set! extensions.https_everywhere._observatory.enabled=true
+   \ set! extensions.https_everywhere._observatory.priv_dns=true
+   \ set! extensions.testpilot.alwaysSubmitData=true
+   \ set! extensions.testpilot.popup.showOnNewResults=true
+   \ set! extensions.testpilot.popup.showOnNewStudy=true
+   \ set! extensions.foxyproxy.firstrun=false
+   \ if prefs.get('services.sync.client.name') == 'cenbaz'
+   \     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
+   \ elif prefs.get('services.sync.client.name') == 'cenba'
+   \     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
+   \ fi
+   \ set! services.sync.engine.adblockplus=true
+   \ set! plugins.hide_infobar_for_missing_plugin=true
+   \ set! app.update.enabled=false
+   \ set! browser.download.manager.alertOnEXEOpen=false
+   \ set! browser.download.manager.scanWhenDone=false
+   \ set! browser.preferences.instantApply=true
+   \ set! browser.search.context.loadInBackground=true
+   \ if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
+   \     tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
+   \ else
+   \     set defsearch=duckduckgo
+   \     set! browser.search.defaultenginename="DuckDuckGo"
+   \ fi
+   \ set! intl.charset.default=UTF-8
+   \ set! network.http.pipelining=true
+   \ set! network.http.pipelining.ssl=true
+   \ set! network.http.spdy.enabled=true
+   \ set! network.protocol-handler.expose.magnet=false
+   \ set! services.sync.engine.prefs=false
+   \ set! toolkit.telemetry.enabled=true
    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
