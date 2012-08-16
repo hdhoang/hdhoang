@@ -316,6 +316,8 @@ style -n "link decor: dansdata" www.dansdata.com a:not([href^="http"])::after { 
 style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
+, [href*="advogato.org/person/apenwarr/"]
+, [href*="alumnit.ca/~apenwarr/"]
 , [href*="apenwarr.ca/"]
 , [href*="aaronland.info/"]
 , [href*="backofthecerealbox.com/"]
