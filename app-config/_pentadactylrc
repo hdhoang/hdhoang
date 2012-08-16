@@ -185,7 +185,7 @@ try {
 EOS
 style -n "yape space" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
 html { overflow-x: hidden; position: relative; height: 100%; }
-img { margin-right: 50%; position: absolute; bottom: 0; max-width: 100%; max-height: -moz-calc(100% - 40px) }
+img { margin-right: 50%; position: absolute; bottom: 0; max-width: 100%; max-height: calc(100% - 1em) }
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
