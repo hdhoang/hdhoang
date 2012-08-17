@@ -90,6 +90,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.display.use_system_colors=false
    \ set! browser.fullscreen.autohide=false
    \ set! browser.tabs.closeButtons=2
+   \ set! browser.tabs.onTop=false
    \ set! general.smoothScroll=false
    \ set! font.default.x-western="sans-serif"
    \ if /NT 6\.1/.test(navigator.oscpu)
