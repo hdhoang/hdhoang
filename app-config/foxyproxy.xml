@@ -29,7 +29,7 @@
       </matches>
       <autoconf url="" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
       <autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
-      <manualconf host="127.0.0.1" port="9050" socksversion="4" isSocks="true"/>
+      <manualconf host="cenba.zahe.me" port="9050" socksversion="4" isSocks="true"/>
     </proxy>
     <proxy name="Default" id="3141913676" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="false" color="#0055E5" proxyDNS="true" noInternalIPs="false" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
