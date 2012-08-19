@@ -19,6 +19,12 @@ set newtab=help
 set hintkeys=$.aoeupjxyidhtnmz
 set nextpattern^=›
 set urlseparator=' , '
+if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
+    tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
+else
+    set defsearch=duckduckgo
+    set! browser.search.defaultenginename="DuckDuckGo"
+fi
 
 """ Display
 set guioptions+=N
@@ -136,12 +142,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.download.manager.scanWhenDone=false
    \ set! browser.preferences.instantApply=true
    \ set! browser.search.context.loadInBackground=true
-   \ if services.browserSearch.currentEngine.searchForm != "https://duckduckgo.com"
-   \     tabopen https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-ssl/
-   \ else
-   \     set defsearch=duckduckgo
-   \     set! browser.search.defaultenginename="DuckDuckGo"
-   \ fi
    \ set! intl.charset.default=UTF-8
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.ssl=true
