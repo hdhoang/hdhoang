@@ -243,7 +243,6 @@ img[title]:not(:-moz-any(
 , [src*='buttersafe.com/']
 , [src*='calmblueoceans.com/']
 , [src*='chainsawsuit.com/']
-, [src*='channelate.com/']
 , [src*='e-merl.com']
 , [src*='endlessorigami.com/']
 , [src*='happletea.com/']
