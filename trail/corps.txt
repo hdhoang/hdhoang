@@ -498,6 +498,7 @@
 *** Jenni A
 *** Kristina
 *** Mima A
+*** Sophie D
 *** Vera H
 ** Michelle Feynman                                                     :FAV:
    :PROPERTIES:
@@ -543,10 +544,52 @@
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :FAV:
 ** Trang                                                             :FAV:vi:
+** Tumblr                                                               :FAV:
+*** ALovingFamily                                                :in:fiction:
+*** Asialicious
+*** AssTitsFace
+*** AttractiveWomen                                                    :name:
+*** BadAsianWife                                                    :fiction:
+*** BeautifulNakedLadies
+*** bjaddict                                                     :bj:fiction:
+*** Contexxxt                                                            :in:
+*** CuteCuteJapanese                                                     :ja:
+*** DisgustingPleasure                                           :fiction:in:
+*** effinbeautiful
+*** ero
+*** HardDickWetPussy
+*** HeavenlyRedheads                                                    :red:
+*** HipFuck2
+*** Hot-Redheads                                                        :red:
+*** HotChicksLoveBigDicks
+*** HotHotAsians                                                    :ja:name:
+*** IncestDreams                                                         :in:
+*** IncestualAngels                                              :in:fiction:
+*** ItNeeds2bStrange                                                     :in:
+*** KittiesnTitties                                                    :cute:
+*** lingerie love
+*** MyNaughtyPen                                                         :in:
+*** PookiesFamily                                                        :in:
+*** RandomErotic                                                       :name:
+*** RedPinkWhite                                                      :cloth:
+**** BlackPanty                                                       :cloth:
+**** SultrySpecs                                                      :cloth:
+*** SexAndSexyStuff
+*** SlutsInMyDreams
+*** SlutSoft                                                             :ja:
+*** StephaniessSecrets                                                   :in:
+*** StylishPorn
+*** TastefulSin
+*** NOT TheGifer
+*** UniformPleasures                                                  :cloth:
+*** WhatTheyWereDoing                                                    :in:
+*** WorkingLady                                                    :ja:cloth:
+*** wywbdns                                                         :fiction:
 ** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
 ** Twistys.com
+** NOT VanaWeb
 ** NOT Vintage Queen
 ** Watch 4 Beauty                                                       :FAV:
 *** Marketa Belonoha
@@ -691,6 +734,7 @@
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** perochialjoe
+*** TODO Alan Wake                                                    :video:
 *** DONE STALKER: Shadow of Chernobyl                           :video:voice:
 ** Pesmerga
 *** DONE Vampire: The Masquerade: Bloodlines                 :shot:narrative:
@@ -727,6 +771,8 @@
 *** TODO Policenauts                                                 :hybrid:
 ** Static_Fiend
 *** DONE Prey                                             :video:voice:humor:
+** Stratafyre
+*** TODO Velvet Assassin                                        :voice:video:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Metal Gear: Ghost Babel
@@ -790,7 +836,7 @@
 *** DONE Rektor på sengekanten (1972)                               :sub:FAV:
 *** DONE Romantik på sengekanten (1973)                             :sub:FAV:
 *** DONE Sømænd på sengekanten (1976)
-*** TODO Tandlæge på sengekanten (1971)                                 :sub:
+*** DONE Tandlæge på sengekanten (1971)                             :sub:FAV:
 ** DONE Big Trouble in Little China
 ** TODO Blackadder
 ** TODO Blade
@@ -892,6 +938,7 @@
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
+** TODO A Perfect Circle
 ** GONE ABBA                                                            :FAV:
 ** Accept
 *** DONE (1979) Accept
@@ -915,8 +962,8 @@
 ** DONE Aerosmith                                                      :1fav:
 *** TODO (2012-05-15) Icon
 ** TODO Alestorm                                                     :jbopre:
-** TODO Alicia Keys
 ** TODO Alice Cooper
+** TODO Alicia Keys
 ** DONE Alizée                                                   :jo:fr:1fav:
 *** DONE (2000-11-28) Gourmandises
 *** DONE (2003-04) Mes courants électriques...
@@ -1211,12 +1258,13 @@
 ** TODO Jay-Z                                                           :rap:
 ** Jeremy Soule                                                        :game:
 *** DONE (2000) Icewind Dale
-** DONE Jesper Kyd                                                     :game:
+** Jesper Kyd                                                          :game:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
    :END:
 *** DONE (2011) Assassin's Creed Revelations
     CLOSED: [2012-04-06 Fri 15:01]
+*** TODO (2012-08-14) Darksiders II Original Soundtrack
 *** DONE Hitman 2: Silent Assassin
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19
@@ -1288,7 +1336,7 @@
 ** TODO Lenka                                                            :jo:
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
-*** TODO (2012-06-26) Living Things
+*** DONE (2012-06-26) Living Things
 ** TODO Lionel Richie
 ** TODO Louis Armstrong
 ** TODO Low Roar                                                         :jo:
@@ -1307,7 +1355,7 @@
      :PROPERTIES:
      :btih:     12CC8570AE6BF00D634366D6F632A8EB61FC4479
      :END:
-**** TODO Volume 5: Piano Sonatas
+**** DONE Volume 5: Piano Sonatas
      :PROPERTIES:
      :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
      :END:
@@ -1508,10 +1556,10 @@
 **** DONE (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
-** TODO Ringo Shiina                                               :FAV:ja:f:
+** TODO Ringo Shiina                                            :FAV:ja:f:jo:
 *** TODO (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
 *** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
-*** TODO (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
+*** DONE (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
 *** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
 *** TODO (2007-02-21) 平成風俗 (Japanese Manners)
 *** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
@@ -1564,7 +1612,7 @@
 ** TODO Soul Asylum
 *** TODO (2012-07-17) Delayed Reaction
 ** Spencer Nilsen
-*** TODO (1996) Ecco: Songs of Time                                :game:FAV:
+*** DONE (1996) Ecco: Songs of Time                                :game:FAV:
 ** GONE Spice Girls                                                       :f:
 ** TODO Stam1na
 ** DONE Starcraft sound                                                :game:
@@ -1574,6 +1622,7 @@
 ** Steve Jablonsky
 *** DONE (2010-07-05) Prince of Persia: The Forgotten Sands            :game:
 ** TODO Steve Vai                                                      :inst:
+*** TODO (2012-08-14) The Story of Light
 ** DONE Stone Sour                                                 :wail:FAV:
 ** DONE Stratovarius                                                 :FAV:fi:
 *** DONE Timo Tolkki
@@ -1601,17 +1650,17 @@
 ** DONE The Plasmas                                        :riff:game:lastfm:
 *** DONE (2008) Extreme NES Terror
 *** DONE (2008) Noentiendo
-*** TODO (2009) NES Cult Armageddon
+*** DONE (2009) NES Cult Armageddon
 *** TODO (2010) Beware the invasion
 *** DONE (2009) R3BORN
 *** DONE (2010) 16 Fighting Bits
 *** TODO (2011) Taste My Power
-** TODO The Police                                                     :1fav:
+** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
-*** TODO (1979-10) Reggatta de Blanc
+*** DONE (1979-10) Reggatta de Blanc
 *** DONE (1980-10-03) Zenyattà Mondatta
 *** DONE (1981-10) Ghost in the Machine
-*** TODO (1983-06-01) Synchronicity
+*** DONE (1983-06-01) Synchronicity
 ** TODO The Smashing Pumpkins
 *** TODO (2012-06-18) Oceania
 ** TODO The Who
@@ -1812,10 +1861,10 @@
 *** DONE (1992-11-10) Jammin' in New York
 *** DONE (1996-09-17) Back in Town
 *** DONE (1999-05-04) You Are All Diseased
-*** TODO (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
-*** TODO (2000-05) Brain Droppings
-*** TODO (2001-05) Napalm and Silly Putty
-*** TODO (2001-12-11) Complaints and Grievances
+*** DONE (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
+*** DONE (2000-05) Brain Droppings
+*** DONE (2001-05) Napalm and Silly Putty
+*** DONE (2001-12-11) Complaints and Grievances
 *** DONE (2002) 40 Years in Comedy
 *** TODO (2002-03-12) George Carlin on Comedy
 *** TODO (2002-04) More Napalm & Silly Putty
@@ -1834,6 +1883,8 @@
 ** Jason Scott                                                     :free:net:
 ** Jiddu Krishnamurti
 *** Think on These Things                                              :tunx:
+** John Ralston Saul
+*** TODO The Collapse of Globalism and the Reinvention of the World    :econ:
 ** Luminous                                                 :game:commentary:
    :PROPERTIES:
    :url:      https://www.youtube.com/playlist?list=PL8A63EC5F95C09145
@@ -1846,7 +1897,7 @@
    :END:
 ** Nebu1a                                                   :game:commentary:
    :PROPERTIES:
-   :url:      https://blip.tv/show/latest_episode/756280
+   :url:      http://blip.tv/show/latest_episode/756280
    :END:
 ** Neil deGrasse Tyson                                            :sci:humor:
 *** TODO The Pluto Files
