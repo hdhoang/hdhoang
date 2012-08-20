@@ -4,9 +4,10 @@
 
 #+TAGS: { FAV 1fav }
 #+TAGS: vi fi ja ru
-#+TAGS: string { riff guitar } piano
+#+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
-#+TAGS: game jbopre net jo jamendo lastfm
+#+TAGS: game jbopre net jo mjd jamendo lastfm
+#+TAGS: be bj { in fiction } cloth dom red name
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -524,26 +525,27 @@
 ** NOT Sweet Devon
 ** NOT Sweet Juliette
 ** Sweet Natural Girl                                                   :FAV:
-** Tawnee Stone                                                         :not:
+** NOT Tawnee Stone
 ** Taylor Twins                                                         :FAV:
 ** ThaiCuties / iThaiTeens
 *** Anny Wadee                                                          :FAV:
 *** Benze Pharda                                                        :FAV:
-*** Cake                                                                :not:
+*** NOT Cake
 *** Felicia                                                             :FAV:
 *** NOT Garfield Jantra
 *** Hana                                                                :FAV:
-*** June Piya                                                           :not:
-*** June Tharita                                                        :not:
-*** Matt P                                                              :not:
+*** NOT June Piya
+*** NOT June Tharita
+*** NOT Matt P
 *** Mo                                                                  :FAV:
-*** Ploy Sirinda                                                        :not:
-*** So                                                                  :not:
+*** NOT Ploy Sirinda
+*** NOT So
 *** Yu                                                                  :FAV:
-** Thainee                                                              :not:
+** NOT Thainee
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :FAV:
 ** Trang                                                             :FAV:vi:
+** NSFW.MyConfinedSpace.com                                        :name:FAV:
 ** Tumblr                                                               :FAV:
 *** ALovingFamily                                                :in:fiction:
 *** Asialicious
@@ -561,7 +563,7 @@
 *** HeavenlyRedheads                                                    :red:
 *** HipFuck2
 *** Hot-Redheads                                                        :red:
-*** HotChicksLoveBigDicks
+*** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                              :in:fiction:
@@ -1528,6 +1530,7 @@
 ** DONE Peter McConnell                                            :game:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
+*** DONE (2005-09-10) Psychonauts Original Soundtrack
 ** TODO Phil Collins
 ** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
@@ -1687,11 +1690,11 @@
 ** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
 *** DONE (2011) Samsara
-** TODO Tokyo Jihen
+** DONE Tokyo Jihen                                             :jo:ja:FAV:f:
 *** DONE (2004-11-25) 教育 (Kyouiku)
 *** DONE (2006-01-25) 大人 (Adult)
 *** DONE (2007-09-26) 娯楽 (Variety)
-*** TODO (2010-02-24) スポーツ (Sports)
+*** DONE (2010-02-24) スポーツ (Sports)
 *** DONE (2011-06-29) 大発見 (Daihakken)
 *** DONE (2012-01-18) color bars
 ** DONE Tom Lehrer                                                 :FAV:mock:
@@ -1799,14 +1802,14 @@
 ** Benjamin Franklin                                                    :mjd:
 ** TODO Bill Hammack
 *** TODO Eight Amazing Engineering Stories
-** TODO Bill Hicks                                             :humor:spoken:
+** DONE Bill Hicks                                             :humor:spoken:
 *** DONE (1990) Dangerous
 *** DONE (1992) Relentless
 *** DONE (1993) Revelations
 *** DONE (1997-02-25) Arizona Bay
-*** TODO (1997-02-25) Rant in E-Minor
-*** TODO (2002-11-11) Flying Saucer Tour, Volume 1
-*** TODO (2002-11-11) Love, Laughter and Truth
+*** DONE (1997-02-25) Rant in E-Minor
+*** DONE (2002-11-11) Flying Saucer Tour, Volume 1
+*** DONE (2002-11-11) Love, Laughter and Truth
 *** DONE (2003-05-19) Shock and Awe
 *** DONE 1989_ I'm Sorry Folks_ Chicago, IL, USA
 *** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
