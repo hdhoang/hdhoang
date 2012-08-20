@@ -62,10 +62,11 @@ port_mapping=(
 588 tcp 466 tcp # tor
 20220 tcp 20220 udp # torrent
 20221 udp 20222 udp # ktorrent
+22 tcp # ssh
 25 tcp # exim
 80 tcp 443 tcp # lighttpd
 )
-alias op='upnpc -r ${port_mapping[*]} && upnpc -a 192.168.0.56 22 2222 tcp'
+alias op='upnpc -r ${port_mapping[*]}'
 
 # file ops
 function cd() {
