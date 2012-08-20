@@ -2,11 +2,11 @@
 #+STARTUP: showall
 #+TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
 
-#+TAGS: FAV(f) 1fav(1)
-#+TAGS: vi(V) fi(F) ja(J) ru(R)
-#+TAGS: string(s) riff(r) guitar(g) piano(p)
-#+TAGS: group video(v) voice(a) shot chal speed comp info(i) narrative humor(h)
-#+TAGS: game(G) jbopre(j) net(n) jo jamendo lastfm(l)
+#+TAGS: FAV 1fav
+#+TAGS: vi fi ja ru
+#+TAGS: string riff guitar piano
+#+TAGS: group video voice shot chal speed comp info narrative humor
+#+TAGS: game jbopre net jo jamendo lastfm
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
