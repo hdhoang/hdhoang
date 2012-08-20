@@ -2,9 +2,9 @@
 #+STARTUP: showall
 #+TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
 
-#+TAGS: FAV 1fav
+#+TAGS: { FAV 1fav }
 #+TAGS: vi fi ja ru
-#+TAGS: string riff guitar piano
+#+TAGS: string { riff guitar } piano
 #+TAGS: group video voice shot chal speed comp info narrative humor
 #+TAGS: game jbopre net jo jamendo lastfm
 
