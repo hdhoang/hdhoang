@@ -1015,10 +1015,25 @@
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** Blizzard
+*** DONE (1996) Diablo
+    CLOSED: [2012-04-04 Wed 14:59]
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
+    :END:
+*** DONE (2000) Diablo II
+    CLOSED: [2012-03-02 Fri 08:50]
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
+    :END:
 *** DONE (2003) Warcraft III: The Frozen Throne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
+    :END:
+*** DONE (2007) Diablo II: Lord of Destruction
+    CLOSED: [2012-03-10 Sat 12:42]
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
@@ -1284,6 +1299,8 @@
     :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
     :END:
 ** TODO Jewel
+** Jim Guthrie
+*** DONE (2011-04-05) Sword & Sworcery LP: The Ballad of the Space Babies :FAV:game:
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
 ** Johann Sebastian Bach
@@ -1321,7 +1338,7 @@
 ** TODO Kirsty MacColl
 ** TODO Korn
 *** DONE (2011) The Path of Totality
-** DONE Korpiklaani                                                     :FAV:
+** DONE Korpiklaani                                             :FAV:fi:riff:
 *** TODO (2012-08-14) Manala
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
@@ -1391,32 +1408,13 @@
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
 *** TODO (2012-06-26) Overexposed
-** Matt Uelmen                                                         :game:
-   :PROPERTIES:
-   :mbid:     http://musicbrainz.org/artist/79dc561a-5e4f-459d-804a-13b7fc0e303b
-   :END:
-*** DONE (1996) Diablo
-    CLOSED: [2012-04-04 Wed 14:59]
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
-    :END:
-*** DONE (2000) Diablo II
-    CLOSED: [2012-03-02 Fri 08:50]
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
-    :END:
-*** DONE (2007) Diablo II: Lord of Destruction
-    CLOSED: [2012-03-10 Sat 12:42]
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
-    :END:
 ** Max Payne                                                           :game:
 *** DONE Max Payne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b
     :END:
 *** TODO Max Payne 2: The Fall of Max Payne
-*** TODO Max Payne 3: The Official Soundtrack
+*** DONE Max Payne 3: The Official Soundtrack
 ** DONE Megadeth                                                   :FAV:riff:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e
@@ -1457,6 +1455,8 @@
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
    :END:
 ** DONE Mike Oldfield                                     :FAV:string:guitar:
+** Mikko Tarmia
+*** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
@@ -1531,6 +1531,7 @@
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
 *** DONE (2005-09-10) Psychonauts Original Soundtrack
+*** DONE (2012-05-31) Psychonauts: Original Cinematic Score
 ** TODO Phil Collins
 ** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
@@ -1567,8 +1568,6 @@
 *** TODO (2007-02-21) 平成風俗 (Japanese Manners)
 *** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
-** Russell Brower & Laurence Juber                                     :game:
-*** TODO (2012-05-15) Diablo III: Collector's Edition Soundtrack
 ** TODO Sabaton                                                      :lastfm:
 ** DONE Santana                                                  :FAV:guitar:
 *** DONE (2012-05-11) Shape Shifter
@@ -1637,7 +1636,7 @@
 *** DONE Tupac                                                         :1fav:
 ** TODO Styles of Beyond
 *** TODO (1999-08-24) 2000 Fold
-*** TODO (2003) Megadef
+*** DONE (2003) Megadef
 *** TODO (2007-08-10) Razor Tag
 ** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
@@ -1657,7 +1656,7 @@
 *** TODO (2010) Beware the invasion
 *** DONE (2009) R3BORN
 *** DONE (2010) 16 Fighting Bits
-*** TODO (2011) Taste My Power
+*** DONE (2011) Taste My Power
 ** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
 *** DONE (1979-10) Reggatta de Blanc
@@ -1759,9 +1758,9 @@
 **** Nature Songs
 **** Space Songs
 **** Weather Songs
-** TODO Verjnuarmu                                                       :fi:
+** DONE Verjnuarmu                                                       :fi:
 *** DONE (2006-01-25) Muanpiällinen helevetti
-*** TODO (2008-05-14) Ruatokansan uamunkoetto
+*** DONE (2008-05-14) Ruatokansan uamunkoetto
 *** DONE (2010-10-27) Lohuton
 ** DONE Warmen
 ** TODO White Lion
