@@ -185,7 +185,7 @@ fi
 
 if [[ $(uname) == Darwin ]]; then
     export PATH=$PATH:~/brew/bin
-    awk -F = '/=/{ print $1 " " $2 }' $h/app-config/env | xargs launchctl setenv
+    awk -F = '/=/{ print $1 " " $2 }' $h/app-config/env | xargs -L 1 launchctl setenv
 
     export CLICOLOR
     alias ls='ls -GT'
