@@ -9,6 +9,7 @@ RelayBandwidthBurst 131072
 RelayBandwidthRate 65536
 ExitPolicy reject *:*
 
+RunAsDaemon 1
 User tor
 DataDirectory /var/lib/tor
 Log notice syslog
