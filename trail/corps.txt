@@ -3,7 +3,7 @@
 #+TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
 
 #+TAGS: { FAV 1fav }
-#+TAGS: vi fi ja ru
+#+TAGS: vi fi en ja ru
 #+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
 #+TAGS: game jbopre net jo mjd jamendo lastfm
@@ -342,14 +342,14 @@
 *** Nevaeh                                                              :FAV:
 *** NOT Nicky Blond
 *** NOT Silvia
-*** Sophie                                                              :FAV:
+*** Sophie Moone                                                        :FAV:
 *** Zoe                                                                 :FAV:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
-** NOT Andi Pink
-** andreea-b.com                                                        :not:
+** Andi Pink                                                            :FAV:
+** NOT andreea-b.com
 ** Anetta Keys                                                          :FAV:
 ** Angel Button                                                         :FAV:
 ** NOT Angela Melini
@@ -471,6 +471,7 @@
 ** Julia Cerkonova                                                      :FAV:
 ** Justine Joli                                                         :FAV:
 ** Kari Sweets                                                          :not:
+** Kate's Playground                                                    :FAV:
 ** Katie Fey/Jenya D/Eugenia Diordiychuk                                :FAV:
    :PROPERTIES:
    :url:      http://katiefey.com
@@ -510,6 +511,7 @@
 ** MPLstudios.com
 ** Nicole                                                               :FAV:
 ** Nikki                                                                :FAV:
+** NSFW.MyConfinedSpace.com                                        :name:FAV:
 ** PiER999
 *** Angel Dark
 ** NOT Rachel Aziani
@@ -545,8 +547,8 @@
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :FAV:
 ** Trang                                                             :FAV:vi:
-** NSFW.MyConfinedSpace.com                                        :name:FAV:
 ** Tumblr                                                               :FAV:
+*** WhsThatGirl                                                        :name:
 *** ALovingFamily                                                :in:fiction:
 *** Asialicious
 *** AssTitsFace
@@ -894,13 +896,13 @@
 *** DONE (2005) Lesson 5
 *** DONE (2005) Lesson 6 School Girls                                    :en:
 *** DONE (2006) Lesson 7                                                 :en:
-*** TODO (2007) Lesson 8
+*** DONE (2007) Lesson 8
 *** TODO (2007) Lesson 9 Special Camping                                 :en:
 *** TODO (2008) Lesson 10 Holidays                                       :en:
 *** DONE (2009) Lesson 11 Pony Club                                      :en:
 *** TODO (2009) Lesson 12 Back To School                                 :en:
 *** TODO (2010) Lesson 13 Gang Bang                                      :en:
-*** TODO (2010) Lesson 14 Anal Lesson
+*** TODO (2010) Lesson 14 Anal Lesson                                    :en:
 *** TODO (2011) Lesson 15 Anna's Sisters
 *** TODO (2011) Lesson 16 Lolitas
 *** TODO (2012) Lesson 17 Sex Lesson
@@ -1336,6 +1338,8 @@
 ** Kazuma Jinnouchi
 *** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 ** TODO Kirsty MacColl
+** TODO Kiss
+*** TODO (2012-08-21) Destroyer- Resurrected
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                             :FAV:fi:riff:
