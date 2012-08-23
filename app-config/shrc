@@ -32,8 +32,8 @@ alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
 alias x=parallel
 alias e='"$EDITOR" -n'
-alias f='firefox-nightly'
-function yb() { f https:youtu.be/$1; }
+alias o='xdg-open'
+function yb() { o https:youtu.be/$1; }
 function getc() {
     cd ${1:-.}
     python2 $v/youtube-dl/youtube-dl || \
