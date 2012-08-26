@@ -282,6 +282,7 @@ style -n "link decor: good hosts" * <<EOS
 , [href*="megashare.com/"]
 , [href*="min.us/"], [href*="minus.com/"]
 , [href*="rapidshare.com/"]
+, [href*="ul.to/"], [href*="uploaded.to/"], [href*="uploaded.net/"]
 , [href*="youporn.com/"] /* download links */
 { text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
 EOS
