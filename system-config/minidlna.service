@@ -10,6 +10,8 @@ PIDFile=/var/run/minidlna.pid
 CapabilityBoundingSet=
 ReadOnlyDirectories=/
 ReadWriteDirectories=/var/cache/minidlna /var/run
+Nice=15
+IOSchedulingClass=idle
 
 [Install]
 WantedBy=multi-user.target
