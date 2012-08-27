@@ -125,6 +125,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! downbar.style.useGradients=false
    \ set! extensions.checkCompatibility.nightly=false
    \ set! extensions.firebug.showFirstRunPage=false
+   \ set! extensions.https_everywhere.Justin.tv\ (partial)=false
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
    \ set! extensions.https_everywhere._observatory.priv_dns=true
