@@ -7,7 +7,7 @@
 #+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
 #+TAGS: game jbopre net jo mjd jamendo lastfm
-#+TAGS: be bj { in fiction } cloth dom red name
+#+TAGS: be bj { in fiction } cloth dom red name gif
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -367,12 +367,15 @@
 *** NOT Aggie
 *** NOT Alesha
 *** NOT Amara
+*** Andria                                                              :FAV:
 *** NOT Anissa
 *** Anna Song                                                           :FAV:
 *** NOT Ayumi Oki
 *** Bambie                                                              :FAV:
 *** NOT Becky Jang
 *** Carolyn                                                             :FAV:
+*** Casandra                                                            :FAV:
+*** Cherry Chen                                                         :FAV:
 *** Chin Si Yee                                                         :FAV:
 *** Cho Hye Eun                                                         :FAV:
 *** NOT Cindy
@@ -422,6 +425,7 @@
 *** NOT Sydney
 *** NOT Tricia
 *** Victoria                                                            :FAV:
+*** Yang Hai Ling
 *** Yo Sung Hi                                                          :FAV:
 ** Bailey Kline                                                         :FAV:
 ** Bianca Beauchamp                                                     :FAV:
@@ -498,6 +502,7 @@
 *** Iveta B
 *** Jade A
 *** Jenni A
+*** Lena S
 *** Kristina
 *** Mima A
 *** Sophie D
@@ -510,13 +515,15 @@
 ** Monika Vesela
 ** MPLstudios.com
 ** Nicole                                                               :FAV:
-** Nikki                                                                :FAV:
+** Nikki Sims                                                           :FAV:
 ** NSFW.MyConfinedSpace.com                                        :name:FAV:
 ** PiER999
 *** Angel Dark
+** NOT PureDee
 ** NOT Rachel Aziani
 ** RED                                                                   :ja:
 *** NOT 58
+** Sarah Michelle Gellar                                                :FAV:
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
 ** SOE                                                                   :ja:
@@ -524,6 +531,7 @@
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
+** Susan Wayland / Sway                                           :FAV:cloth:
 ** NOT Sweet Devon
 ** NOT Sweet Juliette
 ** Sweet Natural Girl                                                   :FAV:
@@ -533,9 +541,7 @@
 *** Anny Wadee                                                          :FAV:
 *** Benze Pharda                                                        :FAV:
 *** NOT Cake
-*** Felicia                                                             :FAV:
 *** NOT Garfield Jantra
-*** Hana                                                                :FAV:
 *** NOT June Piya
 *** NOT June Tharita
 *** NOT Matt P
@@ -548,19 +554,23 @@
 ** Tila Nguyen                                                          :FAV:
 ** Trang                                                             :FAV:vi:
 ** Tumblr                                                               :FAV:
-*** WhsThatGirl                                                        :name:
+*** 2drool4                                                             :gif:
 *** ALovingFamily                                                :in:fiction:
-*** Asialicious
+*** Asialicious                                                          :ja:
 *** AssTitsFace
 *** AttractiveWomen                                                    :name:
 *** BadAsianWife                                                    :fiction:
+*** BeastXXX                                                             :be:
 *** BeautifulNakedLadies
 *** bjaddict                                                     :bj:fiction:
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
 *** DisgustingPleasure                                           :fiction:in:
 *** effinbeautiful
+*** EpicNSFW
 *** ero
+*** FuckYeahFrenchMaids                                               :cloth:
+*** GirlsWithGlasses                                                  :cloth:
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
 *** HipFuck2
@@ -574,6 +584,7 @@
 *** lingerie love
 *** MyNaughtyPen                                                         :in:
 *** PookiesFamily                                                        :in:
+*** QueensOfBlowjob                                                      :bj:
 *** RandomErotic                                                       :name:
 *** RedPinkWhite                                                      :cloth:
 **** BlackPanty                                                       :cloth:
@@ -581,12 +592,13 @@
 *** SexAndSexyStuff
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
+*** SmutRoleplayQu33n                                                    :be:
 *** StephaniessSecrets                                                   :in:
 *** StylishPorn
 *** TastefulSin
 *** NOT TheGifer
-*** UniformPleasures                                                  :cloth:
 *** WhatTheyWereDoing                                                    :in:
+*** WhsThatGirl                                                        :name:
 *** WorkingLady                                                    :ja:cloth:
 *** wywbdns                                                         :fiction:
 ** tunx                                                                 :FAV:
@@ -703,6 +715,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate/
     :END:
+** kalonZombie
+*** TODO Portal 1 & 2
 ** Karach
 *** TODO Jagged Alliance 2
 ** kefkafloyd
@@ -777,6 +791,8 @@
 *** DONE Prey                                             :video:voice:humor:
 ** Stratafyre
 *** TODO Velvet Assassin                                        :voice:video:
+** supergreatfriend
+*** TODO Spy Fiction                                                  :video:
 ** The Dark Id
 *** DONE Chrono Cross                                  :shot:info:humor:comp:
 *** TODO Metal Gear: Ghost Babel
@@ -939,6 +955,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
    :END:
+** TODO 3 Doors Down
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
@@ -1014,6 +1031,7 @@
 ** DONE Bionic Commando                                            :FAV:game:
 *** Rearmed                                                             :not:
 ** GONE Black Sabbath                                                   :FAV:
+*** TODO Ozzy Osbourne
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** Blizzard
@@ -1041,6 +1059,14 @@
 *** DONE (2010) World of Warcraft: Cataclysm
     CLOSED: [2012-01-29 Sun 14:15]
 *** DONE (2012-05-15) Diablo III: Collector's Edition Soundtrack
+*** DONE Starcraft sound                                               :game:
+   :PROPERTIES:
+   :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
+   :END:
+*** TODO Warcraft III sound
+    :PROPERTIES:
+    :btih:     3EC5AFB039BF4B984FD99E39B22D3FC63E733FB9
+    :END:
 ** TODO Blondie
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
@@ -1067,7 +1093,7 @@
 *** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
 *** DONE (2012-04-14) Balloon Cement
-*** TODO (2012-08-09) The Shores of Molokai
+*** DONE (2012-08-09) The Shores of Molokai
 *** Thanatopsis
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
@@ -1082,13 +1108,18 @@
 ** GONE Carpenters                                                      :FAV:
 ** TODO Cat Power
 ** TODO Celestial Aeon                                               :lastfm:
-** TODO Celldweller                                                      :jo:
-*** TODO (2003-02-11) Celldweller
-*** TODO (2004) Beta Cessions
-*** TODO (2008-12) Soundtrack for the Voices in My Head, Volume 01
-*** TODO (2009-08-25) Wish Upon a Blackstar, Chapter 01
-*** TODO (2011) Soundtrack for the Voices in My Head, Volume 02_ Chapter 1
-*** TODO (2012-07-24) Soundtrack for the Voices in My Head, Volume 2
+** TODO Celesty
+*** TODO (2002) Reign of Elements
+*** TODO (2004) Legacy of Hate
+*** TODO (2006) Mortal Mind Creation
+*** TODO (2009) Vendetta
+** DONE Celldweller                                                      :jo:
+*** DONE (2003-02-11) Celldweller
+*** DONE (2004) Beta Cessions
+*** DONE (2008-12) Soundtrack for the Voices in My Head, Volume 01
+*** DONE (2009-08-25) Wish Upon a Blackstar, Chapter 01
+*** DONE (2011) Soundtrack for the Voices in My Head, Volume 02_ Chapter 1
+*** DONE (2012-07-24) Soundtrack for the Voices in My Head, Volume 2
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
 *** DONE (2008-04-09) Blooddrunk                                       :1fav:
@@ -1193,6 +1224,7 @@
 *** DONE D12
 ** DONE Ennio Morricone
 ** DONE Ensiferum
+*** TODO (2012-08-27) Unsung Heroes
 ** TODO Entombed
 ** DONE Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
@@ -1222,17 +1254,17 @@
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** TODO Gustav Mahler
-*** TODO (1999) Symphony No. 9
+*** DONE (1999) Symphony No. 9
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/7ca1cf4a-0d5d-326e-8244-3d61ee02210f
     :btih:     daf8c8885d5001c2004ead53b809d8a5b32e698b
     :END:
-*** TODO (2001) Symphony No. 5
+*** DONE (2001) Symphony No. 5
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/db4fecca-8e1c-46e9-8ee1-9e90820cfd69
     :btih:     a85b2ddd2c3238d611829bd70d560213f8d5074c
     :END:
-*** TODO (2001-08-28) Symphony No. 4
+*** DONE (2001-08-28) Symphony No. 4
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/eace2ac3-9fb7-4667-942b-4468463584f8
     :btih:     ca6a53a4a28857b33e39fdf36e8bb56f14d96af1
@@ -1243,6 +1275,7 @@
 *** DONE The Rock                                                 :movie:FAV:
 ** DONE Harvey Danger                                                   :FAV:
 ** TODO Heart
+*** TODO (2012-10-02) Fanatic
 ** DONE Helloween                                                       :FAV:
    CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
@@ -1340,10 +1373,19 @@
 ** TODO Kirsty MacColl
 ** TODO Kiss
 *** TODO (2012-08-21) Destroyer- Resurrected
+** TODO Kiuas
+*** TODO (2002) The Discipline of Steel
+*** TODO (2003-02) Born Under the Northern Lights
+*** TODO (2004-03-29) Winter in June
+*** TODO (2005-04-27) The Spirit of Ukko
+*** TODO (2006-05-24) Reformation
+*** TODO (2008-02-20) Of Sacrifice, Loss and Reward
+*** TODO (2008-03-12) The New Dark Age
+*** TODO (2010-03-31) Lustdriven
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                             :FAV:fi:riff:
-*** TODO (2012-08-14) Manala
+*** DONE (2012-08-14) Manala
 ** GONE Kylähullut                                                      :FAV:
 ** DONE Lake of Tears                                                   :FAV:
 *** DONE (2011-04-29) Illwill
@@ -1370,11 +1412,11 @@
      :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
      :END:
 **** Volume 2: Konzerte
-**** TODO Volume 3: Orchestral Works / Music for the Stage
+**** DONE Volume 3: Orchestral Works / Music for the Stage
      :PROPERTIES:
      :btih:     44058b609887f0a65aa45c210bc487a4afac9b69
      :END:
-**** TODO Volume 4: Leonore / Fidelio
+**** DONE Volume 4: Leonore / Fidelio
      :PROPERTIES:
      :btih:     12CC8570AE6BF00D634366D6F632A8EB61FC4479
      :END:
@@ -1412,12 +1454,12 @@
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
 *** TODO (2012-06-26) Overexposed
-** Max Payne                                                           :game:
+** Max Payne                                                       :game:FAV:
 *** DONE Max Payne
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b
     :END:
-*** TODO Max Payne 2: The Fall of Max Payne
+*** DONE Max Payne 2: The Fall of Max Payne
 *** DONE Max Payne 3: The Official Soundtrack
 ** DONE Megadeth                                                   :FAV:riff:
    :PROPERTIES:
@@ -1429,7 +1471,7 @@
     :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
     :END:
 *** DONE (2011) Th1rt3en
-** TODO MegaDriver                                         :riff:game:lastfm:
+** DONE MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
    :END:
@@ -1440,6 +1482,7 @@
 *** DONE (2007) Sword, Shurikins & Fists
 *** DONE (2007) Top Gear
 *** DONE (2008) MetalHog
+*** DONE (2011) Metal for Gamers
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -1553,6 +1596,7 @@
 ** TODO Queen
 ** TODO Quốc Bảo                                                     :FAV:vi:
 *** DONE (2003) Bình yên
+** TODO Radiohead                                                        :jo:
 ** TODO Rage Against the Machine
 ** DONE Regina Spektor
 *** DONE (2012-05-29) What We Saw from the Cheap Seats
@@ -1564,12 +1608,12 @@
 **** DONE (2006-06-09) Lost Horizons
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
-** TODO Ringo Shiina                                            :FAV:ja:f:jo:
-*** TODO (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
+** DONE Ringo Shiina                                            :FAV:ja:f:jo:
+*** DONE (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
 *** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
 *** DONE (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
 *** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
-*** TODO (2007-02-21) 平成風俗 (Japanese Manners)
+*** DONE (2007-02-21) 平成風俗 (Japanese Manners)
 *** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
 ** TODO Sabaton                                                      :lastfm:
@@ -1616,32 +1660,40 @@
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** DONE (2012-05-22) Stones Grow Her Name
 ** TODO Soul Asylum
+*** TODO (1984) Say What You Will, Clarence... Karl Sold the Truck
+*** TODO (1986-01-18) Made to Be Broken
+*** TODO (1986-06-24) Time's Incinerator
+*** TODO (1986-11) While You Were Out
+*** TODO (1988-04-25) Hang Time
+*** TODO (1988-07-01) Clam Dip And Other Delights
+*** TODO (1990-09-04) And the Horse They Rode in On
+*** TODO (1992-10-06) Grave Dancers Union
+*** TODO (1995-06-06) Let Your Dim Light Shine
+*** TODO (1998-05-12) Candy From a Stranger
+*** TODO (2006-07-11) The Silver Lining
 *** TODO (2012-07-17) Delayed Reaction
 ** Spencer Nilsen
 *** DONE (1996) Ecco: Songs of Time                                :game:FAV:
 ** GONE Spice Girls                                                       :f:
 ** TODO Stam1na
-** DONE Starcraft sound                                                :game:
-   :PROPERTIES:
-   :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
-   :END:
 ** Steve Jablonsky
 *** DONE (2010-07-05) Prince of Persia: The Forgotten Sands            :game:
 ** TODO Steve Vai                                                      :inst:
 *** TODO (2012-08-14) The Story of Light
 ** DONE Stone Sour                                                 :wail:FAV:
+*** TODO (2012-10) House of Gold and Bones
 ** DONE Stratovarius                                                 :FAV:fi:
 *** DONE Timo Tolkki
-** DONE String Quartet tributes                                 :FAV::string:
+** DONE String Quartet tributes                                  :FAV:string:
 *** DONE Evanescene                                                     :FAV:
 *** DONE Lady Gaga                                                      :FAV:
 *** DONE Senses Fail                                                    :FAV:
 *** DONE Shinedown                                                      :FAV:
 *** DONE Tupac                                                         :1fav:
-** TODO Styles of Beyond
-*** TODO (1999-08-24) 2000 Fold
+** DONE Styles of Beyond
+*** DONE (1999-08-24) 2000 Fold
 *** DONE (2003) Megadef
-*** TODO (2007-08-10) Razor Tag
+*** DONE (2007-08-10) Razor Tag
 ** DONE Symphony X                                                 :FAV:epic:
 ** DONE System of a Down
 ** DONE Tarot                                                        :FAV:fi:
@@ -1653,14 +1705,6 @@
 ** DONE The Cranberries                                              :FAV:jo:
    CLOSED: [2012-01-09 Mon 14:35]
 ** TODO The Ink Spots                                              :FAV:blue:
-** DONE The Plasmas                                        :riff:game:lastfm:
-*** DONE (2008) Extreme NES Terror
-*** DONE (2008) Noentiendo
-*** DONE (2009) NES Cult Armageddon
-*** TODO (2010) Beware the invasion
-*** DONE (2009) R3BORN
-*** DONE (2010) 16 Fighting Bits
-*** DONE (2011) Taste My Power
 ** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
 *** DONE (1979-10) Reggatta de Blanc
@@ -1678,6 +1722,14 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/3d667c9b-133a-4f33-a7ba-dc3a92c21dd2
     :END:
+** DONE ThePlasmas                                         :riff:game:lastfm:
+*** DONE (2008) Extreme NES Terror
+*** DONE (2008) Noentiendo
+*** DONE (2009) NES Cult Armageddon
+*** DONE (2010) Beware the invasion
+*** DONE (2009) R3BORN
+*** DONE (2010) 16 Fighting Bits
+*** DONE (2011) Taste My Power
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
@@ -1850,7 +1902,7 @@
    :PROPERTIES:
    :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
    :END:
-*** TODO (1967) Take-Offs & Put-Ons
+*** DONE (1967) Take-Offs & Put-Ons
 *** DONE (1972) Class Clown
 *** DONE (1972) FM & AM
 *** DONE (1972) The Original George Carlin
@@ -1872,12 +1924,12 @@
 *** DONE (2001-05) Napalm and Silly Putty
 *** DONE (2001-12-11) Complaints and Grievances
 *** DONE (2002) 40 Years in Comedy
-*** TODO (2002-03-12) George Carlin on Comedy
-*** TODO (2002-04) More Napalm & Silly Putty
-*** TODO (2004-10-12) When Will Jesus Bring the Pork Chops?
+*** DONE (2002-03-12) George Carlin on Comedy
+*** DONE (2002-04) More Napalm & Silly Putty
+*** DONE (2004-10-12) When Will Jesus Bring the Pork Chops?
 *** DONE (2006-01-10) Life Is Worth Losing
 *** DONE (2008-07-29) It's Bad for Ya
-*** TODO (2009-11-10) Last Words                                        :bio:
+*** DONE (2009-11-10) Last Words                                        :bio:
 ** Ian Hickson                                                   :net:whatwg:
    :PROPERTIES:
    :url:      http://hixie.ch
@@ -1971,6 +2023,12 @@
 # amarok
 *** favm
     %artist%_@_%title%_[[%album%]]
+** Win8
+   :PROPERTIES:
+   :url:      http://vozforums.com/showthread.php?t=2900808
+   :END:
+*** TODO BIOS
+*** TODO ext2fsd
 * Technical                                                             :FAV:
 ** #jbopre
    :PROPERTIES:
