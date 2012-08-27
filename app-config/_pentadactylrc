@@ -61,6 +61,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword i -t isohunt https://ca.isohunt.com/lite/#s=seeds&q=%s&p=1
    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword tpb -t tpb https://thepiratebay.se/s/?q=%s&page=0
+   \ bmark -keyword lf -t last.fm http://www.last.fm/user/hdh0#recentTracks
    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
