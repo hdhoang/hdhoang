@@ -359,8 +359,6 @@ style -n "cracked" cracked.com <<EOS
 .Body, .body { padding-left: 0 !important }
 EOS
 
-style -n "lastfm popover" last.fm iframe {height: 100px !important}
-
 style -n "girtby" girtby.net a { text-decoration: underline !important }
 
 style -n "phoronix" www.phoronix.com #phxcms_content_right { float: none !important }
