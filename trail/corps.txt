@@ -314,7 +314,7 @@
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
-* Girl                                                                   :ns:
+* Girl                                                                 :ns:f:
 ** (y)ape                                                        :FAV:addict:
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
@@ -365,8 +365,10 @@
 ** Ashlyn Rae                                                           :FAV:
 ** Asians4You
 *** NOT Aggie
+*** Aida
 *** NOT Alesha
 *** NOT Amara
+*** Amika                                                               :FAV:
 *** Andria                                                              :FAV:
 *** NOT Anissa
 *** Anna Song                                                           :FAV:
@@ -407,6 +409,7 @@
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
 *** Marlina                                                             :FAV:
+*** NOT Megan
 *** NOT Misha
 *** Monica                                                              :FAV:
 *** NOT Nancy Ho
@@ -423,6 +426,7 @@
 *** NOT Sandra Mar
 *** Sophie                                                              :FAV:
 *** NOT Sydney
+*** Tonya
 *** NOT Tricia
 *** Victoria                                                            :FAV:
 *** Yang Hai Ling
@@ -445,6 +449,7 @@
 *** Veronica Zemanova                                                   :FAV:
 ** NOT Dita von Teese
 ** Erica Campbell                                                       :FAV:
+** NOT Faye Reagan
 ** FemJoy                                                               :FAV:
 *** Anke
 *** Arev
@@ -523,6 +528,7 @@
 ** NOT Rachel Aziani
 ** RED                                                                   :ja:
 *** NOT 58
+** Risa Yoshiki                                                      :FAV:ja:
 ** Sarah Michelle Gellar                                                :FAV:
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
@@ -555,7 +561,7 @@
 ** Trang                                                             :FAV:vi:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
-*** ALovingFamily                                                :in:fiction:
+*** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
 *** AssTitsFace
 *** AttractiveWomen                                                    :name:
@@ -565,11 +571,12 @@
 *** bjaddict                                                     :bj:fiction:
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
-*** DisgustingPleasure                                           :fiction:in:
+*** DisgustingPleasure                                                   :in:
 *** effinbeautiful
 *** EpicNSFW
 *** ero
 *** FuckYeahFrenchMaids                                               :cloth:
+*** GimmeSomeGinger                                                     :red:
 *** GirlsWithGlasses                                                  :cloth:
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
@@ -590,11 +597,14 @@
 **** BlackPanty                                                       :cloth:
 **** SultrySpecs                                                      :cloth:
 *** SexAndSexyStuff
+*** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
 *** SmutRoleplayQu33n                                                    :be:
+*** SpankableMaids                                                    :cloth:
 *** StephaniessSecrets                                                   :in:
 *** StylishPorn
+*** TabooDepravity                                                       :in:
 *** TastefulSin
 *** NOT TheGifer
 *** WhatTheyWereDoing                                                    :in:
@@ -960,6 +970,10 @@
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
 ** TODO A Perfect Circle
+*** TODO (2000-05-23) Mer de noms
+*** TODO (2003-09-16) Thirteenth Step
+*** TODO (2004-11-02) eMOTIVe
+*** TODO (2004-11-16) aMOTION
 ** GONE ABBA                                                            :FAV:
 ** Accept
 *** DONE (1979) Accept
@@ -1018,7 +1032,7 @@
 *** TODO (2012-04-27) Facing Your Enemy
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
-** DONE Ayreon                                                         :1fav:
+** DONE Ayreon
 ** NOT Babes in Toyland                                                 :jwz:
 ** TODO Banda Calypso
 ** Basil Poledouris
@@ -1580,6 +1594,14 @@
 *** DONE (2005-09-10) Psychonauts Original Soundtrack
 *** DONE (2012-05-31) Psychonauts: Original Cinematic Score
 ** TODO Phil Collins
+** Piano tributes                                                     :piano:
+*** DONE (2005-01-04) Eclipse: Piano Tribute to Evanescence             :FAV:
+*** TODO (2005-08-02) The Piano Tribute to Iron Maiden
+*** TODO (2007) Pianotarium: Piano Tribute to Metallica
+*** DONE (2007-01-09) My Chemical Romance: A Piano Tribute
+*** TODO (2010-07-13) The Piano Tribute to Lady Gaga
+*** TODO (2011) Piano Tribute to Mumford & Sons
+*** TODO (2012-08-28) Piano Tribute to Aerosmith
 ** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
 ** TODO Placebo                                                          :jo:
@@ -1616,6 +1638,7 @@
 *** DONE (2007-02-21) 平成風俗 (Japanese Manners)
 *** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
+** TODO Saattue
 ** TODO Sabaton                                                      :lastfm:
 ** DONE Santana                                                  :FAV:guitar:
 *** DONE (2012-05-11) Shape Shifter
@@ -1680,11 +1703,13 @@
 *** DONE (2010-07-05) Prince of Persia: The Forgotten Sands            :game:
 ** TODO Steve Vai                                                      :inst:
 *** TODO (2012-08-14) The Story of Light
+** TODO Stevie Ray Vaughan                                           :guitar:
 ** DONE Stone Sour                                                 :wail:FAV:
 *** TODO (2012-10) House of Gold and Bones
 ** DONE Stratovarius                                                 :FAV:fi:
+*** TODO (2012-08-28) Under Flaming Winter Skies
 *** DONE Timo Tolkki
-** DONE String Quartet tributes                                  :FAV:string:
+** String Quartet tributes                                       :FAV:string:
 *** DONE Evanescene                                                     :FAV:
 *** DONE Lady Gaga                                                      :FAV:
 *** DONE Senses Fail                                                    :FAV:
@@ -2007,6 +2032,8 @@
     :url:      http://users.teilar.gr/~g1951d/
     :END:
 *** ttf-tlwg
+** FXP
+*** TODO warranty 2013-03-08
 ** Music
 # chromaprint
 # picard
