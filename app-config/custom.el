@@ -13,6 +13,7 @@
  '(explicit-shell-file-name "/bin/zsh")
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
+ '(org-M-RET-may-split-line nil)
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(sentence-end-double-space nil)
  '(user-full-name "Hоàng Đức Hiếu")
