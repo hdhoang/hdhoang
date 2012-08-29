@@ -211,7 +211,7 @@ EOS
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
-set passkeys+='https://www.google.com/reader/view/*':'vf/? npsmrgaeUNPXO'
+set passkeys+='https://www.google.com/reader/view/*':'vf/? npsmrgaeTUNPXO'
 autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
 let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
