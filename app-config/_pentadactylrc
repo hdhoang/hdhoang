@@ -146,6 +146,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.download.manager.scanWhenDone=false
    \ set! browser.preferences.instantApply=true
    \ set! browser.search.context.loadInBackground=true
+   \ set! browser.search.suggest.enabled=false
    \ set! intl.charset.default=UTF-8
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.ssl=true
