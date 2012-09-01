@@ -27,7 +27,7 @@ set guioptions+=cN
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
-style -name 'bars order' -agent * <<EOS
+style -name 'GUI arrangement' -agent * <<EOS
 #browser { -moz-box-ordinal-group: 0 }
 #navigator-toolbox { -moz-box-ordinal-group: 2 }
 #addon-bar { -moz-box-ordinal-group: 1001 }
@@ -186,7 +186,7 @@ try {
     doc.querySelector('[value="Bad"]').accessKey=',';
 } catch (e){}
 EOS
-style -n "yape space" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
+style -n "yape" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
 html { overflow-x: hidden; position: relative; height: 100%; }
 img { margin-right: 50%; position: absolute; bottom: 0; max-width: 100%; max-height: -moz-calc(100% - 1em) }
 [value="Good"] { float: left }
@@ -215,7 +215,7 @@ let container = doc.getElementById("viewer-entries-container");
 container.tabIndex = "-1";
 container.accessKey = "o";
 EOS
-style -n "greader popping" https://www.google.com/reader/view/* <<EOS
+style -n "greader" https://www.google.com/reader/view/* <<EOS
 #viewer-entries-container:focus { outline: none }
 .entry-actions { display: block !important }
 #gb, #chrome-fullscreen-top-toggle, .item-plusone, .sharebox, .email { display: none !important }
