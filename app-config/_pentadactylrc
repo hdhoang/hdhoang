@@ -256,6 +256,7 @@ img[title]:not(:-moz-any(
 , [src*='lunchbreath.com/']
 , [src*='mimiandeunice.com/']
 , [src*='neatorama.com/']
+, [src*='pandyland.net/']
 , [src*='pbfcomics.com/']
 , [src*='pidjin.net/']
 , [src*='ribbonfarm.com/']
