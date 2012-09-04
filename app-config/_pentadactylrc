@@ -84,7 +84,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.startup.page=3
    \ set! general.warnOnAboutConfig=false
    \ set! security.warn_viewing_mixed=false
-   \ set! toolkit.telemetry.prompted=2
    \ set! browser.backspace_action=0
    \ set! browser.link.open_newwindow=3
    \ set! devtools.gcli.enable=true
