@@ -11,6 +11,7 @@ map <C-space> <C-d>
 map <C-S-space> <C-u>
 map <A-$> -ex tabmove $
 map <C-$> g$
+map <C-6> 6b
 map <A-C-[> <C-2>
 map <A-d> d
 set activate-=diverted,links,tabopen,paste
