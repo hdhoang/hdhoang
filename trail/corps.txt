@@ -345,6 +345,7 @@
 *** NOT Silvia
 *** Sophie Moone                                                        :FAV:
 *** Zoe                                                                 :FAV:
+** Ameri Ichinose                                                    :ja:FAV:
 ** Amy                                                                  :FAV:
    :PROPERTIES:
    :url:      http://amyamyamy.com
@@ -483,7 +484,7 @@
    :url:      http://josiemodel.ca
    :END:
 ** Julia Cerkonova                                                      :FAV:
-** Justine Joli                                                         :FAV:
+** Justine Joli                                                     :FAV:red:
 ** Kari Sweets                                                          :not:
 ** Kate's Playground                                                    :FAV:
 ** Katherine Heigl                                                      :FAV:
@@ -526,6 +527,7 @@
 ** NOT Missy Model
 ** Monika Vesela
 ** MPLstudios.com
+** Nana Ogura                                                        :FAV:ja:
 ** Nicole                                                               :FAV:
 ** Nikki Sims                                                           :FAV:
 ** NSFW.MyConfinedSpace.com                                        :name:FAV:
@@ -595,17 +597,20 @@
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
+*** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                              :in:fiction:
+*** InnocentLook
 *** IntoBe
 *** ItNeeds2bStrange                                                     :in:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
-*** LuvAsianPuss                                                    :fiction:
+*** LuvAsianPuss                                            :fiction:fiction:
 *** MyNaughtyPen                                                         :in:
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
 *** RandomErotic                                                       :name:
+*** RedheadBoobies                                                      :red:
 *** RedPinkWhite                                                      :cloth:
 **** BlackPanty                                                       :cloth:
 **** SultrySpecs                                                      :cloth:
@@ -649,7 +654,7 @@
 *** Homeworld series
 *** Tenchu series
 ** Azure_Horizon
-*** TODO Final Fantasy VIII                                            :shot:
+*** DONE Final Fantasy VIII                            :shot:info:humor:comp:
 *** DONE Koudelka                                                  :f:hybrid:
 *** TODO Saiyuki: Journey West                                         :shot:
 ** Azzur
@@ -1368,6 +1373,8 @@
 *** DONE (2011-04-05) Sword & Sworcery LP: The Ballad of the Space Babies :FAV:game:
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
+** Joel Nielsen
+*** TODO (2012-09-01) Black Mesa                                       :game:
 ** Johann Sebastian Bach
 *** DONE Crab Canon                                                     :FAV:
 *** DONE (2012-05-28) Open Goldberg Variations                    :FAV:piano:
@@ -1560,7 +1567,7 @@
 *** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
 *** DONE (2011) Imaginaerum
-*** DONE Tarja
+*** DONE Tarja Turunen
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4
     :END:
@@ -1568,6 +1575,7 @@
      :PROPERTIES:
      :mbid:     http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5
      :END:
+**** TODO (2012-09-04) Act 1
 ** TODO Nirvana
 ** DONE Nobuo Uematsu
 *** DONE FF VIII
@@ -1604,6 +1612,7 @@
     CLOSED: [2012-04-09 Mon 13:58]
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
+** TODO Paramore                                                          :f:
 ** DONE Peter McConnell                                            :game:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
@@ -1777,6 +1786,7 @@
 *** DONE (2009) R3BORN
 *** DONE (2010) 16 Fighting Bits
 *** DONE (2011) Taste My Power
+** TODO Therion
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
