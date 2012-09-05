@@ -2,6 +2,7 @@
 ! ~/.Xmodmap
 
 keycode 133 = BackSpace
+remove mod4 = Super_L
 
 keycode 108 = Escape
 remove mod1 = Alt_R
