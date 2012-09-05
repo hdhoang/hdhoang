@@ -90,6 +90,16 @@ alias bu='rs --delete --exclude=Cache/ --exclude=thumbnails/ --exclude=sumatrapd
 # system
 alias ssc='sudo systemctl --system'
 alias usc='systemctl --user'
+function usd {
+    . $h/app-config/env
+    export $(cut -s -d= -f1 $h/app-config/env)
+
+    export DISPLAY=:0
+    export XDG_RUNTIME_DIR=/run/user/$UID
+    export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$UID/dbus/user_bus_socket
+
+    systemd-cat systemd
+}
 
 alias mp='nn makepkg -isf'
 alias i='sudo pacman'
