@@ -6,6 +6,7 @@ map <C-S-r> -ex restart +purgecaches
 
 """ Input
 map A -ex dialog about
+map <C-S-b> -ex dialog places
 map s <C-c>
 map <C-space> <C-d>
 map <C-S-space> <C-u>
