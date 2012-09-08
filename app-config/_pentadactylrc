@@ -81,6 +81,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
    \ set! browser.shell.checkDefaultBrowser=false
+   \ set! browser.startup.homepage=about:blank
    \ set! browser.startup.page=3
    \ set! general.warnOnAboutConfig=false
    \ set! security.warn_viewing_mixed=false
