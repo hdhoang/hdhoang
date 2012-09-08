@@ -54,6 +54,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
    \ bmark -keyword dw -t 'Dota 2 Wiki' http://www.dota2wiki.com/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dr -t 'Dota random' http://www.dota2wiki.com/wiki/Special:Random
+   \ bmark -keyword df -t 'Dota 2 fix' http://dev.dota2.com/showthread.php?t=28814
    \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
    \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
    \ bmark -keyword io -t ixopen http://ix.io/%s/
