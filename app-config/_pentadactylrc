@@ -101,7 +101,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.tabs.onTop=false
    \ set! general.smoothScroll=false
    \ set! font.default.x-western="sans-serif"
-   \ if /NT 6\.1/.test(navigator.oscpu)
+   \ if /NT 6\.1/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
    \     set! font.name.sans-serif.x-western=Calibri
    \     set! font.name.serif.x-western=Cambria
