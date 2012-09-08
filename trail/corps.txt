@@ -73,6 +73,10 @@
    :END:
 ** Hipster Hitler                                                 :blas:cute:
 ** Hyperbole and a Half
+** If we don't, remember me
+   :PROPERTIES:
+   :url:      http://iwdrm.tumblr.com
+   :END:
 ** INCIDENTAL COMICS                                                   :cute:
    :PROPERTIES:
    :url:      http://www.incidentalcomics.com
@@ -338,6 +342,7 @@
 *** Eufrat                                                              :FAV:
 *** Eve Angel                                                           :FAV:
 *** Jade                                                                :FAV:
+*** Jennifer Love                                                       :FAV:
 *** NOT Karen
 *** Katalin                                                             :FAV:
 *** Nevaeh                                                              :FAV:
@@ -379,6 +384,7 @@
 *** NOT Becky Jang
 *** Carolyn                                                             :FAV:
 *** Casandra                                                            :FAV:
+*** Cherry                                                              :FAV:
 *** Cherry Chen                                                         :FAV:
 *** Chin Si Yee                                                         :FAV:
 *** Cho Hye Eun                                                         :FAV:
@@ -432,6 +438,7 @@
 *** Tonya
 *** NOT Tricia
 *** Victoria                                                            :FAV:
+*** Yang Fu Hong
 *** Yang Hai Ling
 *** Yo Sung Hi                                                          :FAV:
 ** Bailey Kline                                                         :FAV:
@@ -516,6 +523,7 @@
 *** Jade A
 *** Jenni A
 *** Lena S
+*** Lilu C
 *** Kristina
 *** Mima A
 *** Sophie D
@@ -571,6 +579,7 @@
 ** Trang                                                             :FAV:vi:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
+*** AloneInMyOffice                                                 :fiction:
 *** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
 *** AssTitsFace
@@ -605,7 +614,7 @@
 *** ItNeeds2bStrange                                                     :in:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
-*** LuvAsianPuss                                            :fiction:fiction:
+*** LuvAsianPuss                                                 :fiction:ja:
 *** MyNaughtyPen                                                         :in:
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
@@ -950,7 +959,7 @@
 *** TODO (2010) Lesson 13 Gang Bang                                      :en:
 *** TODO (2010) Lesson 14 Anal Lesson                                    :en:
 *** DONE (2011) Lesson 15 Anna's Sisters
-*** TODO (2011) Lesson 16 Lolitas
+*** DONE (2011) Lesson 16 Lolitas
 *** TODO (2012) Lesson 17 Sex Lesson
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
@@ -1097,7 +1106,7 @@
    :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
-*** TODO Warcraft III sound
+*** DONE Warcraft III sound
     :PROPERTIES:
     :btih:     3EC5AFB039BF4B984FD99E39B22D3FC63E733FB9
     :END:
@@ -1116,7 +1125,7 @@
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
 ** GONE Boyzone                                                         :FAV:
-** TODO Breaking Benjamin                                                :jo:
+** TODO Breaking Benjamin                                              :game:
 ** Buckethead                                                           :FAV:
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
@@ -1411,12 +1420,12 @@
 ** TODO Kiss
 *** TODO (2012-08-21) Destroyer- Resurrected
 ** TODO Kiuas
-*** TODO (2002) The Discipline of Steel
+*** DONE (2002) The Discipline of Steel
 *** TODO (2003-02) Born Under the Northern Lights
 *** DONE (2004-03-29) Winter in June
 *** TODO (2005-04-27) The Spirit of Ukko
 *** TODO (2006-05-24) Reformation
-*** TODO (2008-02-20) Of Sacrifice, Loss and Reward
+*** DONE (2008-02-20) Of Sacrifice, Loss and Reward
 *** TODO (2008-03-12) The New Dark Age
 *** TODO (2010-03-31) Lustdriven
 ** TODO Korn
@@ -1424,6 +1433,8 @@
 ** DONE Korpiklaani                                             :FAV:fi:riff:
 *** DONE (2012-08-14) Manala
 ** GONE Kylähullut                                                      :FAV:
+** TODO Lacrimosa
+*** TODO (2012-09) Revolution
 ** DONE Lake of Tears                                                   :FAV:
 *** DONE (2011-04-29) Illwill
 ** TODO Lamb of God
@@ -1560,6 +1571,16 @@
 ** TODO Neil Young & Crazy Horse
 *** TODO (2012-06-05) Americana
 ** TODO Nevermore
+*** TODO (1992) Utopia
+*** TODO (1995) Nevermore
+*** TODO (1996-07-23) In Memory
+*** TODO (1996-10-28) The Politics of Ecstasy
+*** TODO (1999-01-06) Dreaming Neon Black
+*** TODO (2000-09-18) Dead Heart in a Dead World
+*** TODO (2000-12-06) Believe in Nothing
+*** TODO (2003-07-21) Enemies of Reality
+*** TODO (2005-07-25) This Godless Endeavor
+*** TODO (2010-05-28) The Obsidian Conspiracy
 ** Nhạc cách mạng
 *** Một mùa xuân nho nhỏ
 *** Nguời Hà Nội
@@ -1624,7 +1645,7 @@
 *** TODO (2005-08-02) The Piano Tribute to Iron Maiden
 *** TODO (2007) Pianotarium: Piano Tribute to Metallica
 *** DONE (2007-01-09) My Chemical Romance: A Piano Tribute
-*** TODO (2010-07-13) The Piano Tribute to Lady Gaga
+*** DONE (2010-07-13) The Piano Tribute to Lady Gaga
 *** TODO (2011) Piano Tribute to Mumford & Sons
 *** TODO (2012-08-28) Piano Tribute to Aerosmith
 ** DONE Pilotwings 64                                              :FAV:game:
@@ -1736,11 +1757,15 @@
 *** TODO (2012-08-28) Under Flaming Winter Skies
 *** DONE Timo Tolkki
 ** String Quartet tributes                                       :FAV:string:
+*** DONE (1999) The String Quartet Tribute to Led Zeppelin
 *** DONE (2002) The String Quartet Tribute to Coldplay
+*** DONE (2002) The String Quartet Tribute to Incubus
 *** DONE (2003) The String Quartet Tribute to Evanescence
 *** DONE (2004) The String Quartet Tribute to Guns N' Roses
 *** DONE (2004) The String Quartet Tribute to the Red Hot Chili Peppers :FAV:
+*** DONE (2006) Embracing The Heaviness: The String Quartet Tribute to Stone Sour
 *** DONE (2006) Strung Out On Shinedown: The String Quartet Tribute
+*** DONE (2007) The String Quartet Tribute to 2Pac
 *** DONE (2010) VSQ Performs Lady Gaga
 *** DONE Senses Fail
 *** DONE Shinedown
