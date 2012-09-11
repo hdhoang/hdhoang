@@ -44,6 +44,7 @@
           '(lambda () (setq comment-start "#") (glasses-mode t)))
 
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
+(add-hook 'prog-mode-hook 'turn-off-flyspell t)
 (add-hook 'prog-mode-hook 'prelude-turn-off-whitespace t)
 
 (load-theme 'solarized-light)
