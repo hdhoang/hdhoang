@@ -33,7 +33,7 @@ alias gp='g pr | grep "up to date" || g ml'
 alias x=parallel
 alias e='"$EDITOR" -n'
 alias o='xdg-open'
-function yb() { o 'https://www.youtube.com/watch?v='$1; }
+function yb() { firefox 'https://www.youtube.com/watch?v='$1; }
 function getc() {
     cd ${1:-.}
     python2 $v/youtube-dl/youtube-dl || \
