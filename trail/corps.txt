@@ -474,6 +474,8 @@
 ** FTVGirls
 *** Christine                                                           :FAV:
 ** Galitsin                                                             :FAV:
+** Graphis                                                           :ja:FAV:
+*** Okita Anri
 ** Harumi Asano                                                      :ja:FAV:
 ** Hayden Winters                                                       :FAV:
 ** Hegre-Archives.com                                                   :FAV:
@@ -616,6 +618,7 @@
 *** lingerie love
 *** LuvAsianPuss                                                 :fiction:ja:
 *** MyNaughtyPen                                                         :in:
+*** OwnerOfBeauty                                                        :in:
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
 *** RandomErotic                                                       :name:
@@ -637,6 +640,7 @@
 *** TooCuteForPorn                                                     :name:
 *** WhatTheyWereDoing                                                    :in:
 *** WhsThatGirl                                                        :name:
+*** WomenFighters                                                     :cloth:
 *** WorkingLady                                                    :ja:cloth:
 *** wywbdns                                                         :fiction:
 ** tunx                                                                 :FAV:
@@ -766,6 +770,8 @@
 *** DONE King of Demons                        :video:group:info:humor:voice:
 ** Kyyrewyyoae
 *** TODO Spycraft                                                      :shot:
+** Leavemywife
+*** TODO Earthbound                                               :shot:info:
 ** Leovinus
 *** DONE Final Fantasy VIII                                      :shot:humor:
 ** LordMune
@@ -843,6 +849,8 @@
 *** TODO Dead Space                                          :video:sub:info:
 ** The White Dragon
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
+** TheOneAndOnlyT
+*** TODO Exit Fate                                           :shot:info:comp:
 ** TyrantSabre
 *** DONE Stuntman                                               :video:voice:
 ** Vexation
@@ -960,7 +968,7 @@
 *** TODO (2010) Lesson 14 Anal Lesson                                    :en:
 *** DONE (2011) Lesson 15 Anna's Sisters
 *** DONE (2011) Lesson 16 Lolitas
-*** TODO (2012) Lesson 17 Sex Lesson
+*** DONE (2012) Lesson 17 Sex Lesson
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
@@ -974,6 +982,7 @@
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** TODO The Simpsons
+** TODO Tombstone (1993)
 ** Trilogy of life
 *** DONE Il Decameron (1971)
     CLOSED: [2012-03-16 Fri 16:08]
@@ -1290,6 +1299,8 @@
 ** DONE Fort Minor                                                      :FAV:
 *** DONE (2005) The Rising Tied
 ** TODO France Gall
+** TODO Franz Liszt                                                   :piano:
+*** Liebestraum                                                         :FAV:
 ** DONE Frédéric Chopin                                                 :FAV:
 *** DONE Complete Piano Music feat. Idil Biret
 ** TODO Garbage
@@ -1414,8 +1425,7 @@
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
-** Kazuma Jinnouchi
-*** DONE (2010-04-12) Metal Gear Solid: Peace Walker
+*** TODO (2012-10-26) Silverthorn
 ** TODO Kirsty MacColl
 ** TODO Kiss
 *** TODO (2012-08-21) Destroyer- Resurrected
@@ -1496,6 +1506,10 @@
 *** DONE (2000-03-07) Shades of Purple
 *** DONE (2002-03-05) The Big Room
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
+** TODO Machine Men
+*** TODO (2003) Scars & Wounds
+*** TODO (2005-08-08) Elegies
+*** TODO (2007-02-16) Circus of Fools
 ** DONE Manowar                                                         :FAV:
 *** DONE (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
@@ -1537,6 +1551,7 @@
 *** DONE MGS2
 *** DONE MGS3
 *** DONE MGS4
+*** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 ** DONE Metallica                                                       :FAV:
 ** TODO Michael Bublé
 ** DONE Michael Hoenig
@@ -1553,6 +1568,18 @@
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
+** TODO Mokoma                                                           :fi:
+*** TODO (1999) Valu
+*** TODO (2001) Mokoman 120 päivää
+*** TODO (2001) Rajapyykki
+*** TODO (2003-10-10) Punainen kukko EP
+*** TODO (2003) Kurimus
+*** TODO (2004-05-12) Tämän maailman ruhtinaan hovi
+*** TODO (2004-09-01) Mokoman 120 päivää
+*** TODO (2006-02-08) Kuoleman laulukunnaat
+*** TODO (2006-10-18) Viides vuodenaika
+*** TODO (2007-11-28) Luihin ja ytimiin
+*** TODO (2010-03-24) Sydänjuuret
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
 *** TODO (2012-09-17) The 2nd Law
@@ -1766,6 +1793,7 @@
 *** DONE (2006) Embracing The Heaviness: The String Quartet Tribute to Stone Sour
 *** DONE (2006) Strung Out On Shinedown: The String Quartet Tribute
 *** DONE (2007) The String Quartet Tribute to 2Pac
+*** DONE (2008-04-15) String Tribute to Bullet for My Valentine
 *** DONE (2010) VSQ Performs Lady Gaga
 *** DONE Senses Fail
 *** DONE Shinedown
@@ -1778,6 +1806,7 @@
 ** DONE System of a Down
 ** TODO Tacere
 ** DONE Tarot                                                        :FAV:fi:
+** TODO Ted Nugent                                                     :riff:
 ** TODO Tesla
 ** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
