@@ -46,5 +46,6 @@
 (remove-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 (add-hook 'prog-mode-hook 'turn-off-flyspell t)
 (add-hook 'prog-mode-hook 'prelude-turn-off-whitespace t)
+(add-hook 'prog-mode-hook 'guru-off t)
 
 (load-theme 'solarized-light)
