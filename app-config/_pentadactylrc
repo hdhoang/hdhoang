@@ -44,7 +44,6 @@ set editor='emacsclient +<line> <file>'
 """ Sites
 map <C-S-n> -ex bmarks! -tags news
 map S -ex bmark https://www.youtube.com/html5 -tags setting
-   \ bmark https://www.youtube.com/feather_beta -tags setting
    \ bmark https://duckduckgo.com/settings.html -tags setting
    \ bmark -keyword ac -t config about:config
    \ bmark -keyword st -t sync-tabs about:sync-tabs
