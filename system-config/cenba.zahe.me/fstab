@@ -3,7 +3,7 @@ LABEL=cenba / ext4 defaults,relatime 0 1
 
 LABEL=SELSORMENLI /mnt/selsormenli vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
 LABEL=CMACMA /mnt/cmacma/SD\040Card vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
-jmtpfs /mnt/cmacma fuse defaults,allow_other,umask=0022,nonempty,noauto
+jmtpfs /mnt/cmacma fuse defaults,users,umask=0022,nonempty,noauto
 LABEL=hdhoang /home/hdhoang ext4 defaults,noatime 0 2
 
 LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto,noatime
