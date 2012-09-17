@@ -1,6 +1,7 @@
 -*- mode: org -*-
 #+STARTUP: showall
-#+TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
+#+TYP_TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
+#+TYP_TODO: | as(a) with(w) solo(s)
 
 #+TAGS: { FAV 1fav }
 #+TAGS: vi fi en ja ru
@@ -110,6 +111,10 @@
 ** GONE Pants Are Overrated                                            :game:
    :PROPERTIES:
    :url:      http://pantsareoverrated.com
+   :END:
+** Pearls Before Swine                                                 :cute:
+   :PROPERTIES:
+   :3rd:      http://www.arcamax.com/thefunnies/pearlsbeforeswine/rss
    :END:
 ** Penny Arcarde Comics                                            :game:3rd:
    :PROPERTIES:
@@ -301,6 +306,7 @@
 *** Red Storm Rising                                                    :FAV:
 ** tvtropes.org                                                         :FAV:
 * Game
+** TODO Black Mesa Source
 ** DotA                                                                 :FAV:
 ** Dungeon Crawl: Stone Soup                           :roguelike:FAV:addict:
    :PROPERTIES:
@@ -404,6 +410,7 @@
 *** NOT Irene Far
 *** Iris                                                                :FAV:
 *** NOT Jamie
+*** NOT Janet
 *** NOT Jenis
 *** Jennifer Lee                                                        :FAV:
 *** NOT Jody Lang
@@ -412,9 +419,11 @@
 *** NOT Kathy Liu
 *** NOT Kelly
 *** Kesara                                                              :FAV:
+*** NOT Kim Yeon Lee
 *** Kim Yun Hee                                                         :FAV:
 *** NOT Layla
 *** Lilian                                                              :FAV:
+*** NOT Lily Tang
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
 *** Marlina                                                             :FAV:
@@ -437,6 +446,7 @@
 *** NOT Sydney
 *** Tonya
 *** NOT Tricia
+*** Trista                                                              :FAV:
 *** Victoria                                                            :FAV:
 *** Yang Fu Hong
 *** Yang Hai Ling
@@ -455,9 +465,10 @@
 *** Stanislava                                                          :not:
 *** Zuzana                                                              :not:
 ** DDD Brandy                                                           :not:
-** Digital Desire
+** Digital Desire                                                       :FAV:
 *** Brooke Lee Adams
-*** Veronica Zemanova                                                   :FAV:
+*** Samantha Saint
+*** Veronica Zemanova
 ** NOT Dita von Teese
 ** Erica Campbell                                                       :FAV:
 ** NOT Faye Reagan
@@ -503,6 +514,7 @@
    :END:
 ** Kirsten Dunst                                                        :FAV:
 ** Kristina Fey                                                         :not:
+** Laetitia Casta                                                       :FAV:
 ** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
 ** NOT Lovable Kitty
@@ -578,7 +590,6 @@
 ** NOT Thainee
 ** the waitress                                                      :FAV:vi:
 ** Tila Nguyen                                                          :FAV:
-** Trang                                                             :FAV:vi:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
 *** AloneInMyOffice                                                 :fiction:
@@ -608,15 +619,17 @@
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
+*** HowlingLust                                                          :be:
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                              :in:fiction:
 *** InnocentLook
 *** IntoBe
 *** ItNeeds2bStrange                                                     :in:
+*** K9andHorse                                                           :be:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
-*** LuvAsianPuss                                                 :fiction:ja:
+*** NOT LuvAsianPuss                                             :fiction:ja:
 *** MyNaughtyPen                                                         :in:
 *** OwnerOfBeauty                                                        :in:
 *** PookiesFamily                                                        :in:
@@ -669,7 +682,7 @@
 ** Azure_Horizon
 *** DONE Final Fantasy VIII                            :shot:info:humor:comp:
 *** DONE Koudelka                                                  :f:hybrid:
-*** TODO Saiyuki: Journey West                                         :shot:
+*** DONE Saiyuki: Journey West                               :shot:comp:info:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
 ** baldurk
@@ -698,12 +711,12 @@
 *** DONE Hitman: Codename 47
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
-** Chip Cheezum, General Ironicus         :group:video:voice:comp:info:humor:
-*** DONE Metal Gear Solid 2: Substance
-*** DONE Metal Gear Solid 3: Snake Eater
-*** DONE Metal Gear Solid 4: Guns of the Patriot
-** Chip Cheezum, VoidBurger                    :video:voice:info:humor:group:
-*** DONE Metal Gear Solid
+*** with General Ironicus                 :group:video:voice:comp:info:humor:
+**** DONE Metal Gear Solid 2: Substance
+**** DONE Metal Gear Solid 3: Snake Eater
+**** DONE Metal Gear Solid 4: Guns of the Patriot
+*** with VoidBurger                            :video:voice:info:humor:group:
+**** DONE Metal Gear Solid
 ** CirclMastr
 *** DONE Alpha Protocol                          :video:voice:part:comp:info:
 ** Coolguye and TheLastRoboKy
@@ -758,6 +771,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate/
     :END:
+** Jade Star, Chunky, Felime, Shinx
+*** TODO Borderlands                                :video:voice:group:humor:
 ** kalonZombie
 *** TODO Portal 1 & 2
 ** Karach
@@ -816,6 +831,8 @@
     :END:
 ** Research Indicates
 *** DONE JurassicPark: Trepasser                           :video:info:voice:
+** salttotart
+*** TODO Limbo                                                  :video:voice:
 ** Scorchy
 *** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
 ** SeriousSirrus
@@ -889,7 +906,8 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
-** TODO Angel Densetsu                                                   :jo:
+** TODO Samurai Champloo                                              :jo:ja:
+** TODO Angel Densetsu                                                :jo:ja:
    :PROPERTIES:
    :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
    :END:
@@ -960,7 +978,7 @@
 *** DONE (2005) Lesson 6 School Girls                                    :en:
 *** DONE (2006) Lesson 7                                                 :en:
 *** DONE (2007) Lesson 8
-*** TODO (2007) Lesson 9 Special Camping                                 :en:
+*** DONE (2007) Lesson 9 Special Camping                                 :en:
 *** TODO (2008) Lesson 10 Holidays                                       :en:
 *** DONE (2009) Lesson 11 Pony Club                                      :en:
 *** TODO (2009) Lesson 12 Back To School                                 :en:
@@ -1083,7 +1101,7 @@
 ** DONE Bionic Commando                                            :FAV:game:
 *** Rearmed                                                             :not:
 ** GONE Black Sabbath                                                   :FAV:
-*** TODO Ozzy Osbourne
+*** solo Ozzy Osbourne
 ** TODO Blind Guardian
 ** DONE Bliss(This)
 ** Blizzard
@@ -1127,6 +1145,8 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
     :END:
+** TODO Blut aus Nord
+*** TODO (2012-09-21) 777 - Cosmosophy
 ** TODO Bob Marley
 ** DONE Bobaflex
 ** DONE Bon Jovi
@@ -1139,17 +1159,44 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
-*** DONE (2011-05-20) Empty Space
-*** DONE (2011-08-17) 3 Foot Clearance
-*** DONE (2011-08-17) Look Up There
-*** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
-*** DONE (2012-04-14) Balloon Cement
-*** DONE (2012-08-09) The Shores of Molokai
-*** Thanatopsis
+*** with Alix Lambert and Travis Dickerson
+**** TODO (2008-08) Running After Deer
+*** with Bryan "Brain" Mantia
+**** TODO (2007-10-30) Kevin's Noodle House
+**** TODO (2010-10-13) Brain as Hamenoodle
+*** with Bryan "Brain" Mantia & Melissa Reese
+**** TODO (2010) Best Regards
+**** TODO (2010-10-13) Kind Regards
+*** as Death Cube K
+**** TODO (1994-05-10) Dreamatorium
+**** TODO (1997) Disembodied
+**** TODO (1999-11-10) Tunnel
+**** TODO (2007-12-17) Monolith
+**** TODO (2007) DCK
+**** TODO (2009-10-15) Torn from Black Space
+*** with Frankenstein Brothers
+**** TODO (2008-09-17) Bolt on Neck_ Prototype #1
+*** with Jonas Hellborg
+**** TODO (1993) Octave of the Holy Innocents
+*** Pike
+**** DONE (2011-05-15) It's Alive
+**** DONE (2011-05-20) Empty Space
+**** DONE (2011-08-17) 3 Foot Clearance
+**** DONE (2011-08-17) Look Up There
+**** NOT (2011-08-17) Underground Chamber
+**** DONE (2012-04-14) Balloon Cement
+**** DONE (2012-08-09) The Shores of Molokai
+*** with Thanatopsis
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
+*** with Travis Dickerson
+**** TODO (2006) Chicken Noodles
+**** TODO (2007-12-15) Chicken Noodles II
+**** TODO (2010-11-01) Left Hanging
+*** with Travis Dickerson and Bryan "Brain" Mantia
+**** TODO (2008-09-17) The Dragons of Eden
 ** TODO Buddy Guy                                                      :tunx:
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
@@ -1431,7 +1478,7 @@
 *** TODO (2012-08-21) Destroyer- Resurrected
 ** TODO Kiuas
 *** DONE (2002) The Discipline of Steel
-*** TODO (2003-02) Born Under the Northern Lights
+*** DONE (2003-02) Born Under the Northern Lights
 *** DONE (2004-03-29) Winter in June
 *** TODO (2005-04-27) The Spirit of Ukko
 *** TODO (2006-05-24) Reformation
@@ -1506,6 +1553,8 @@
 *** DONE (2000-03-07) Shades of Purple
 *** DONE (2002-03-05) The Big Room
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
+*** solo Marion Raven
+**** DONE (2005-06-08) Here I Am
 ** TODO Machine Men
 *** TODO (2003) Scars & Wounds
 *** TODO (2005-08-08) Elegies
@@ -1571,7 +1620,6 @@
 ** TODO Mokoma                                                           :fi:
 *** TODO (1999) Valu
 *** TODO (2001) Mokoman 120 päivää
-*** TODO (2001) Rajapyykki
 *** TODO (2003-10-10) Punainen kukko EP
 *** TODO (2003) Kurimus
 *** TODO (2004-05-12) Tämän maailman ruhtinaan hovi
@@ -1615,7 +1663,7 @@
 *** Đất nuớc
 ** DONE Nightwish                                                       :FAV:
 *** DONE (2011) Imaginaerum
-*** DONE Tarja Turunen
+*** solo Tarja Turunen
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4
     :END:
@@ -1673,7 +1721,7 @@
 *** TODO (2007) Pianotarium: Piano Tribute to Metallica
 *** DONE (2007-01-09) My Chemical Romance: A Piano Tribute
 *** DONE (2010-07-13) The Piano Tribute to Lady Gaga
-*** TODO (2011) Piano Tribute to Mumford & Sons
+*** DONE (2011) Piano Tribute to Mumford & Sons
 *** TODO (2012-08-28) Piano Tribute to Aerosmith
 ** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
@@ -1696,20 +1744,14 @@
 ** DONE Regina Spektor
 *** DONE (2012-05-29) What We Saw from the Cheap Seats
 ** DONE Rhapsody                                                     :FAV:it:
-*** DONE Luca Turilli
+*** solo Luca Turilli
 **** DONE (1999-09-22) King of the Nordic Twilight
 **** DONE (2002) Prophet of the Last Eclipse
 **** DONE (2006-05-26) The Infinite Wonders of Creation
 **** DONE (2006-06-09) Lost Horizons
+*** as Rhapsody of Fire
 ** DONE Richard Clayderman                                       :inst:piano:
 ** TODO Richard Strauss
-** DONE Ringo Shiina                                            :FAV:ja:f:jo:
-*** DONE (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
-*** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
-*** DONE (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
-*** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
-*** DONE (2007-02-21) 平成風俗 (Japanese Manners)
-*** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** TODO Rush
 ** TODO Saattue
 ** TODO Sabaton                                                      :lastfm:
@@ -1718,7 +1760,7 @@
 ** TODO Santigold
 ** DONE Sarah Brightman                                            :f:jo:FAV:
 ** GONE Savatage                                                   :epic:FAV:
-*** Trans-Siberian Orchestra
+*** as Trans-Siberian Orchestra
 ** DONE Scorpions                                                       :FAV:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6
@@ -1757,10 +1799,10 @@
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** DONE (2012-05-22) Stones Grow Her Name
 ** TODO Soul Asylum
-*** TODO (1984) Say What You Will, Clarence... Karl Sold the Truck
+*** DONE (1984) Say What You Will, Clarence... Karl Sold the Truck
 *** TODO (1986-01-18) Made to Be Broken
 *** TODO (1986-06-24) Time's Incinerator
-*** TODO (1986-11) While You Were Out
+*** DONE (1986-11) While You Were Out
 *** TODO (1988-04-25) Hang Time
 *** DONE (1988-07-01) Clam Dip And Other Delights
 *** TODO (1990-09-04) And the Horse They Rode in On
@@ -1782,7 +1824,7 @@
 *** TODO (2012-10) House of Gold and Bones
 ** DONE Stratovarius                                                 :FAV:fi:
 *** TODO (2012-08-28) Under Flaming Winter Skies
-*** DONE Timo Tolkki
+*** solo Timo Tolkki
 ** String Quartet tributes                                       :FAV:string:
 *** DONE (1999) The String Quartet Tribute to Led Zeppelin
 *** DONE (2002) The String Quartet Tribute to Coldplay
@@ -1792,8 +1834,10 @@
 *** DONE (2004) The String Quartet Tribute to the Red Hot Chili Peppers :FAV:
 *** DONE (2006) Embracing The Heaviness: The String Quartet Tribute to Stone Sour
 *** DONE (2006) Strung Out On Shinedown: The String Quartet Tribute
+*** DONE (2006) The Dream is Real: The String Quartet Tribute to Senses Fail
 *** DONE (2007) The String Quartet Tribute to 2Pac
 *** DONE (2008-04-15) String Tribute to Bullet for My Valentine
+*** DONE (2009) Vitamin String Quartet Performs Green Day's American Idiot
 *** DONE (2010) VSQ Performs Lady Gaga
 *** DONE Senses Fail
 *** DONE Shinedown
@@ -1863,6 +1907,13 @@
 *** DONE (2010-02-24) スポーツ (Sports)
 *** DONE (2011-06-29) 大発見 (Daihakken)
 *** DONE (2012-01-18) color bars
+*** solo Ringo Shiina
+**** DONE (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
+**** DONE (2000-03-31) 勝訴ストリップ (Winning Strip)
+**** DONE (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
+**** DONE (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
+**** DONE (2007-02-21) 平成風俗 (Japanese Manners)
+**** DONE (2009-06-24) 三文ゴシップ (Superficial Gossip)
 ** DONE Tom Lehrer                                                 :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
