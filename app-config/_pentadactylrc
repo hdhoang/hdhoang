@@ -135,6 +135,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ elif prefs.get('services.sync.client.name') == 'cenba'
    \     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml
    \ fi
+   \ set! extensions.adblockplus.detachsidebar=true
    \ set! services.sync.engine.adblockplus=true
    \ set! plugins.hide_infobar_for_missing_plugin=true
    \ set! app.update.enabled=false
