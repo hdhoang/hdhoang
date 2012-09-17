@@ -22,7 +22,7 @@
         <match enabled="true" name="NGD" pattern="*ninjagameden.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="imageshack" pattern="http://img*.imageshack.us/img*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="lx" pattern="*lauxanh*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="false" name="fbme" pattern="http://fb.me/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
+        <match enabled="true" name="imgur" pattern="http://i.imgur.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="cracked" pattern="*cracked.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="false" name="zm" pattern="http*://*zahe.me/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="blogspot" pattern="http://*.blogspot.*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
