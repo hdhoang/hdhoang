@@ -51,6 +51,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
    \ bmark -keyword 1 -t nebu1a http://blip.tv/Nebu1a#EpisodeArchive
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
+   \ bmark -keyword dh -t Dotaholic http://dotaholic.com/dota-2/search?i=%s
    \ bmark -keyword dw -t 'Dota 2 Wiki' http://www.dota2wiki.com/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dr -t 'Dota random' http://www.dota2wiki.com/wiki/Special:Random
    \ bmark -keyword df -t 'Dota 2 fix' http://dev.dota2.com/showthread.php?t=28814
