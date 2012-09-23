@@ -131,7 +131,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! extensions.testpilot.alwaysSubmitData=true
    \ set! extensions.testpilot.popup.showOnNewResults=true
    \ set! extensions.testpilot.popup.showOnNewStudy=true
-   \ if prefs.get('services.sync.client.name') == 'cenbaz'
+   \ if prefs.get('services.sync.client.name') == 'cenbab'
    \     set! extensions.foxyproxy.settings=file:///H:/Public/hdhoang/app-config/foxyproxy.xml
    \ elif prefs.get('services.sync.client.name') == 'cenba'
    \     set! extensions.foxyproxy.settings=file:///home/hdhoang/Public/hdhoang/app-config/foxyproxy.xml

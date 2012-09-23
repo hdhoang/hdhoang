@@ -2,13 +2,13 @@
 # ~/.zshrc.local ~/.bash_login
 
 # places
-if [[ $(hostname) == cenbaz ]]; then
+if [[ $(hostname) == cenbab ]]; then
     z=/cygdrive/c
     mount=/cygdrive/h
     selsormenli=/cygdrive/s
     pool=/cygdrive/m
 else
-    z=/mnt/cenbaz
+    z=/mnt/cenbab
     mount=~
     selsormenli=/mnt/selsormenli
     pool=/mnt/marbi

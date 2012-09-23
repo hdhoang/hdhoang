@@ -6,7 +6,7 @@ LABEL=CMACMA /mnt/cmacma/SD\040Card vfat defaults,users,noatime,utf8,uid=1000,gi
 jmtpfs /mnt/cmacma fuse defaults,users,umask=0022,nonempty,noauto
 LABEL=hdhoang /home/hdhoang ext4 defaults,noatime 0 2
 
-LABEL=cenbaz /mnt/cenbaz ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto,noatime
+LABEL=cenbab /mnt/cenbab ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto,noatime
 LABEL=marbi /mnt/marbi ntfs-3g defaults,windows_name,uid=1000,fmask=133,dmask=022,noauto,noatime
 
 /swapfile none swap
