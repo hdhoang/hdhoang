@@ -25,6 +25,7 @@ set nextpattern^=›
 set urlseparator=' , '
 
 """ Display
+silent colorscheme solarized-light
 set guioptions+=cN
 set showstatuslinks=command
 set hlfind
