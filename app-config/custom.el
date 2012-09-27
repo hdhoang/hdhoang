@@ -48,4 +48,6 @@
 (add-hook 'prog-mode-hook 'prelude-turn-off-whitespace t)
 (add-hook 'prog-mode-hook 'turn-off-guru-mode t)
 
+(unless (package-installed-p 'solarized-theme)
+  (package-install 'solarized-theme))
 (load-theme 'solarized-light)
