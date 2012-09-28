@@ -51,3 +51,6 @@
 (unless (package-installed-p 'solarized-theme)
   (package-install 'solarized-theme))
 (load-theme 'solarized-light)
+
+(if (eq window-system-version 6)
+    (set-default-font "Consolas-12"))
