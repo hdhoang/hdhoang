@@ -313,6 +313,7 @@ style -n "link decor: youtube-dl" * <<EOS
 , [href*="viddler.com/"]
 , [href*="video.google.com/"]
 , [href*="vimeo.com/"]
+, [href*="video.xnxx.com/video"]
 , [href*="xvideos.com/video"]
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
 )::after { content: "\21af" }
