@@ -14,8 +14,6 @@ map <A-$> -ex tabmove $
 map <C-$> g$
 map <F1> <C-^>
 map <C-6> 6b
-map <A-C-[> <C-2>
-map <A-d> d
 set activate-=diverted,links,tabopen,paste
 set complete=location,search
 bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
