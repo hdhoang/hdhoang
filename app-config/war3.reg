@@ -6,7 +6,6 @@
 
 [HKEY_CURRENT_USER\Software\Blizzard Entertainment\Warcraft III\Sound]
 "music"=dword:00000000
-"unit"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Blizzard Entertainment\Warcraft III\Video]
 "colordepth"=dword:00000020
