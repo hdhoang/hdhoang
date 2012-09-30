@@ -402,10 +402,12 @@
 *** NOT Dana Pang
 *** Denise                                                              :FAV:
 *** Destiny                                                             :FAV:
+*** NOT Diana Shui
 *** Eliza                                                               :FAV:
 *** Ellen                                                               :FAV:
 *** Elyssa                                                              :FAV:
 *** Felicia                                                             :FAV:
+*** Ginny                                                               :FAV:
 *** NOT Halle
 *** Hana                                                                :FAV:
 *** NOT Irene Fah
@@ -428,6 +430,7 @@
 *** NOT Lily Tang
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
+*** NOT Lora Weon
 *** Marlina                                                             :FAV:
 *** NOT Megan
 *** NOT Misha
@@ -444,6 +447,7 @@
 *** NOT Reina
 *** NOT Salina
 *** NOT Sandra Mar
+*** NOT So Jin Yong
 *** Sophie                                                              :FAV:
 *** NOT Sunny Lee
 *** NOT Sydney
@@ -713,6 +717,8 @@
 ** CannibalK9                                             :speed:video:voice:
 *** DONE Grand Theft Auto: San Andreas
 *** DONE Hitman: Codename 47
+** Chakan
+*** TODO Dungeon Crawl                                                 :shot:
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
 *** with General Ironicus                 :group:video:voice:comp:info:humor:
@@ -1003,6 +1009,7 @@
    :END:
 ** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Iron Giant (1999)                                           :FAV:
+** TODO The Machinist (2004)
 ** DONE The Man from Earth (2007)                                   :rev:FAV:
 ** TODO The Man With No Name trilogy
 *** TODO A Fistful of Dollars (1964)
@@ -1035,10 +1042,10 @@
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
    CLOSED: [2012-01-21 Sat 17:04]
-** TODO A Perfect Circle
-*** TODO (2000-05-23) Mer de noms
-*** DONE (2003-09-16) Thirteenth Step
-*** DONE (2004-11-02) eMOTIVe
+** DONE A Perfect Circle                                               :1fav:
+*** DONE (2000-05-23) Mer de noms
+*** DONE (2003-09-16) Thirteenth Step                                  :1fav:
+*** DONE (2004-11-02) eMOTIVe                                          :1fav:
 *** DONE (2004-11-16) aMOTION
 ** GONE ABBA                                                            :FAV:
 ** Accept
@@ -1062,6 +1069,7 @@
    :END:
 ** DONE Aerosmith                                                      :1fav:
 *** TODO (2012-05-15) Icon
+*** TODO (2012-11-06) Music from Another Dimension!
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
 ** TODO Alicia Keys
@@ -1181,10 +1189,10 @@
 *** as Death Cube K
 **** TODO (1994-05-10) Dreamatorium
 **** TODO (1997) Disembodied
-**** TODO (1999-11-10) Tunnel
+**** DONE (1999-11-10) Tunnel
 **** NOT (2007-12-17) Monolith
 **** TODO (2007) DCK
-**** TODO (2009-10-15) Torn from Black Space
+**** DONE (2009-10-15) Torn from Black Space
 *** with Frankenstein Brothers
 **** TODO (2008-09-17) Bolt on Neck_ Prototype #1
 *** with Jonas Hellborg
@@ -1203,8 +1211,8 @@
 **** DONE (2006) Anatomize
 *** with Travis Dickerson
 **** TODO (2006) Chicken Noodles
-**** TODO (2007-12-15) Chicken Noodles II
-**** TODO (2010-11-01) Left Hanging
+**** DONE (2007-12-15) Chicken Noodles II
+**** DONE (2010-11-01) Left Hanging
 *** with Travis Dickerson and Bryan "Brain" Mantia
 **** TODO (2008-09-17) The Dragons of Eden
 ** TODO Buddy Guy                                                      :tunx:
@@ -1218,8 +1226,8 @@
 ** TODO Cat Power
 ** TODO Celestial Aeon                                               :lastfm:
 ** TODO Celesty
-*** TODO (2002) Reign of Elements
-*** TODO (2004) Legacy of Hate
+*** DONE (2002) Reign of Elements
+*** DONE (2004) Legacy of Hate
 *** TODO (2006) Mortal Mind Creation
 *** DONE (2009) Vendetta
 ** DONE Celldweller                                                      :jo:
@@ -1490,7 +1498,7 @@
 *** DONE (2002) The Discipline of Steel
 *** DONE (2003-02) Born Under the Northern Lights
 *** DONE (2004-03-29) Winter in June
-*** TODO (2005-04-27) The Spirit of Ukko
+*** DONE (2005-04-27) The Spirit of Ukko
 *** DONE (2006-05-24) Reformation
 *** DONE (2008-02-20) Of Sacrifice, Loss and Reward
 *** TODO (2008-03-12) The New Dark Age
@@ -1565,9 +1573,9 @@
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 *** solo Marion Raven
 **** DONE (2005-06-08) Here I Am
-** TODO Machine Men
-*** TODO (2003) Scars & Wounds
-*** TODO (2005-08-08) Elegies
+** DONE Machine Men                                                     :FAV:
+*** DONE (2003) Scars & Wounds
+*** DONE (2005-08-08) Elegies
 *** DONE (2007-02-16) Circus of Fools
 ** DONE Manowar                                                         :FAV:
 *** DONE (2012-06-16) The Lord of Steel
@@ -1628,14 +1636,14 @@
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
 ** TODO Mokoma                                                           :fi:
-*** TODO (1999) Valu
-*** TODO (2001) Mokoman 120 päivää
+*** DONE (1999) Valu
+*** DONE (2001) Mokoman 120 päivää
 *** TODO (2003-10-10) Punainen kukko EP
-*** TODO (2003) Kurimus
-*** TODO (2004-05-12) Tämän maailman ruhtinaan hovi
+*** DONE (2003) Kurimus
+*** DONE (2004-05-12) Tämän maailman ruhtinaan hovi
 *** TODO (2006-02-08) Kuoleman laulukunnaat
 *** TODO (2006-10-18) Viides vuodenaika
-*** TODO (2007-11-28) Luihin ja ytimiin
+*** DONE (2007-11-28) Luihin ja ytimiin
 *** TODO (2010-03-24) Sydänjuuret
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
@@ -1657,12 +1665,12 @@
 ** TODO Nevermore
 *** DONE (1992) Utopia
 *** TODO (1995) Nevermore
-*** TODO (1996-07-23) In Memory
+*** DONE (1996-07-23) In Memory
 *** TODO (1996-10-28) The Politics of Ecstasy
 *** TODO (1999-01-06) Dreaming Neon Black
 *** DONE (2000-09-18) Dead Heart in a Dead World
 *** TODO (2000-12-06) Believe in Nothing
-*** TODO (2003-07-21) Enemies of Reality
+*** DONE (2003-07-21) Enemies of Reality
 *** TODO (2005-07-25) This Godless Endeavor
 *** TODO (2010-05-28) The Obsidian Conspiracy
 ** Nhạc cách mạng
@@ -1729,7 +1737,7 @@
 ** Piano tributes                                                     :piano:
 *** DONE (2005-01-04) Eclipse: Piano Tribute to Evanescence             :FAV:
 *** DONE (2005-08-02) The Piano Tribute to Iron Maiden
-*** TODO (2007) Pianotarium: Piano Tribute to Metallica
+*** DONE (2007) Pianotarium: Piano Tribute to Metallica
 *** DONE (2007-01-09) My Chemical Romance: A Piano Tribute
 *** DONE (2010-07-13) The Piano Tribute to Lady Gaga
 *** DONE (2011) Piano Tribute to Mumford & Sons
@@ -1820,8 +1828,8 @@
 *** DONE (1988-07-01) Clam Dip And Other Delights
 *** TODO (1990-09-04) And the Horse They Rode in On
 *** TODO (1992-10-06) Grave Dancers Union
-*** TODO (1995-06-06) Let Your Dim Light Shine
-*** TODO (1998-05-12) Candy From a Stranger
+*** DONE (1995-06-06) Let Your Dim Light Shine
+*** DONE (1998-05-12) Candy From a Stranger
 *** DONE (2006-07-11) The Silver Lining
 *** DONE (2012-07-17) Delayed Reaction
 ** Spencer Nilsen
@@ -1899,6 +1907,7 @@
 *** DONE (2010) 16 Fighting Bits
 *** DONE (2011) Taste My Power
 ** TODO Therion
+*** TODO (2012-09-28) Les Fleurs Du Mal
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
