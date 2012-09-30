@@ -54,4 +54,4 @@
 (load-theme 'solarized-light)
 
 (if (eq window-system-version 6)
-    (set-default-font "Consolas-12"))
+    (set-default-font "Consolas-11"))
