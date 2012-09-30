@@ -228,7 +228,7 @@ feedkeys <Esc>
 EOS
 style -n "isohunt" isohunt.com .listing { margin-right: 0 !important; background-color: white !important }
 
-style -n "link colors" * :visited { color: #d33682 !important } :link[href^="#"] { color: #268bd2 !important }
+style -n "link colors" * :visited { color: #859900 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
   [src*="cyborgmatt.com/"]
