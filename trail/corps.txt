@@ -1181,20 +1181,20 @@
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
-**** TODO (2007-10-30) Kevin's Noodle House
+**** DONE (2007-10-30) Kevin's Noodle House
 **** DONE (2010-10-13) Brain as Hamenoodle
 *** with Bryan "Brain" Mantia & Melissa Reese
-**** TODO (2010) Best Regards
-**** TODO (2010-10-13) Kind Regards
-*** as Death Cube K
-**** TODO (1994-05-10) Dreamatorium
-**** TODO (1997) Disembodied
-**** DONE (1999-11-10) Tunnel
+**** DONE (2010) Best Regards
+**** DONE (2010-10-13) Kind Regards
+*** as Death Cube K                                                    :1fav:
+**** DONE (1994-05-10) Dreamatorium                                    :1fav:
+**** DONE (1997) Disembodied                                           :1fav:
+**** NOT (1999-11-10) Tunnel
 **** NOT (2007-12-17) Monolith
-**** TODO (2007) DCK
-**** DONE (2009-10-15) Torn from Black Space
+**** NOT (2007) DCK
+**** NOT (2009-10-15) Torn from Black Space
 *** with Frankenstein Brothers
-**** TODO (2008-09-17) Bolt on Neck_ Prototype #1
+**** DONE (2008-09-17) Bolt on Neck_ Prototype #1
 *** with Jonas Hellborg
 **** DONE (1993) Octave of the Holy Innocents
 *** Pike
@@ -1210,11 +1210,11 @@
 **** DONE (2003) Axiology
 **** DONE (2006) Anatomize
 *** with Travis Dickerson
-**** TODO (2006) Chicken Noodles
+**** DONE (2006) Chicken Noodles
 **** DONE (2007-12-15) Chicken Noodles II
 **** DONE (2010-11-01) Left Hanging
 *** with Travis Dickerson and Bryan "Brain" Mantia
-**** TODO (2008-09-17) The Dragons of Eden
+**** DONE (2008-09-17) The Dragons of Eden
 ** TODO Buddy Guy                                                      :tunx:
 ** DONE Bullet for My Valentine                                        :1fav:
 ** TODO Burzum
@@ -1225,10 +1225,10 @@
 ** GONE Carpenters                                                      :FAV:
 ** TODO Cat Power
 ** TODO Celestial Aeon                                               :lastfm:
-** TODO Celesty
+** DONE Celesty
 *** DONE (2002) Reign of Elements
 *** DONE (2004) Legacy of Hate
-*** TODO (2006) Mortal Mind Creation
+*** DONE (2006) Mortal Mind Creation
 *** DONE (2009) Vendetta
 ** DONE Celldweller                                                      :jo:
 *** DONE (2003-02-11) Celldweller
@@ -1341,7 +1341,7 @@
 *** DONE D12
 ** DONE Ennio Morricone
 ** DONE Ensiferum
-*** TODO (2012-08-27) Unsung Heroes
+*** DONE (2012-08-27) Unsung Heroes
 ** TODO Entombed
 ** DONE Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
@@ -1459,7 +1459,7 @@
 ** TODO Jimi Hendrix
 ** TODO Joan Osborne
 ** Joel Nielsen
-*** TODO (2012-09-01) Black Mesa                                       :game:
+*** DONE (2012-09-01) Black Mesa                                       :game:
 ** Johann Sebastian Bach
 *** DONE Crab Canon                                                     :FAV:
 *** DONE (2012-05-28) Open Goldberg Variations                    :FAV:piano:
@@ -1494,15 +1494,15 @@
 ** TODO Kirsty MacColl
 ** TODO Kiss
 *** TODO (2012-08-21) Destroyer- Resurrected
-** TODO Kiuas
+** DONE Kiuas
 *** DONE (2002) The Discipline of Steel
 *** DONE (2003-02) Born Under the Northern Lights
 *** DONE (2004-03-29) Winter in June
 *** DONE (2005-04-27) The Spirit of Ukko
 *** DONE (2006-05-24) Reformation
 *** DONE (2008-02-20) Of Sacrifice, Loss and Reward
-*** TODO (2008-03-12) The New Dark Age
-*** TODO (2010-03-31) Lustdriven
+*** DONE (2008-03-12) The New Dark Age
+*** DONE (2010-03-31) Lustdriven
 ** TODO Korn
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                             :FAV:fi:riff:
@@ -1573,6 +1573,7 @@
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 *** solo Marion Raven
 **** DONE (2005-06-08) Here I Am
+** TODO Metal Church
 ** DONE Machine Men                                                     :FAV:
 *** DONE (2003) Scars & Wounds
 *** DONE (2005-08-08) Elegies
@@ -1635,16 +1636,16 @@
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
-** TODO Mokoma                                                           :fi:
+** DONE Mokoma                                                           :fi:
 *** DONE (1999) Valu
 *** DONE (2001) Mokoman 120 päivää
-*** TODO (2003-10-10) Punainen kukko EP
+*** DONE (2003-10-10) Punainen kukko EP
 *** DONE (2003) Kurimus
 *** DONE (2004-05-12) Tämän maailman ruhtinaan hovi
-*** TODO (2006-02-08) Kuoleman laulukunnaat
-*** TODO (2006-10-18) Viides vuodenaika
+*** DONE (2006-02-08) Kuoleman laulukunnaat
+*** DONE (2006-10-18) Viides vuodenaika
 *** DONE (2007-11-28) Luihin ja ytimiin
-*** TODO (2010-03-24) Sydänjuuret
+*** DONE (2010-03-24) Sydänjuuret
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
 *** TODO (2012-09-17) The 2nd Law
@@ -1662,17 +1663,17 @@
 ** TODO Nat King Cole
 ** TODO Neil Young & Crazy Horse
 *** TODO (2012-06-05) Americana
-** TODO Nevermore
+** DONE Nevermore
 *** DONE (1992) Utopia
-*** TODO (1995) Nevermore
+*** DONE (1995) Nevermore
 *** DONE (1996-07-23) In Memory
-*** TODO (1996-10-28) The Politics of Ecstasy
-*** TODO (1999-01-06) Dreaming Neon Black
+*** DONE (1996-10-28) The Politics of Ecstasy
+*** DONE (1999-01-06) Dreaming Neon Black
 *** DONE (2000-09-18) Dead Heart in a Dead World
-*** TODO (2000-12-06) Believe in Nothing
+*** DONE (2000-12-06) Believe in Nothing
 *** DONE (2003-07-21) Enemies of Reality
-*** TODO (2005-07-25) This Godless Endeavor
-*** TODO (2010-05-28) The Obsidian Conspiracy
+*** DONE (2005-07-25) This Godless Endeavor
+*** DONE (2010-05-28) The Obsidian Conspiracy
 ** Nhạc cách mạng
 *** Một mùa xuân nho nhỏ
 *** Nguời Hà Nội
@@ -1819,15 +1820,15 @@
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** DONE (2012-05-22) Stones Grow Her Name
-** TODO Soul Asylum
+** DONE Soul Asylum
 *** DONE (1984) Say What You Will, Clarence... Karl Sold the Truck
 *** DONE (1986-01-18) Made to Be Broken
 *** DONE (1986-06-24) Time's Incinerator
 *** DONE (1986-11) While You Were Out
 *** DONE (1988-04-25) Hang Time
 *** DONE (1988-07-01) Clam Dip And Other Delights
-*** TODO (1990-09-04) And the Horse They Rode in On
-*** TODO (1992-10-06) Grave Dancers Union
+*** DONE (1990-09-04) And the Horse They Rode in On
+*** DONE (1992-10-06) Grave Dancers Union
 *** DONE (1995-06-06) Let Your Dim Light Shine
 *** DONE (1998-05-12) Candy From a Stranger
 *** DONE (2006-07-11) The Silver Lining
@@ -1856,7 +1857,7 @@
 *** DONE (2006) Embracing The Heaviness: The String Quartet Tribute to Stone Sour
 *** DONE (2006) Strung Out On Shinedown: The String Quartet Tribute
 *** DONE (2006) The Dream is Real: The String Quartet Tribute to Senses Fail
-*** DONE (2007) The String Quartet Tribute to 2Pac
+*** DONE (2007) The String Quartet Tribute to 2Pac                     :1fav:
 *** DONE (2008-04-15) String Tribute to Bullet for My Valentine
 *** DONE (2009) Vitamin String Quartet Performs Green Day's American Idiot
 *** DONE (2010) VSQ Performs Lady Gaga
