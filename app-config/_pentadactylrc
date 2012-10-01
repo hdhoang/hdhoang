@@ -366,3 +366,5 @@ EOS
 style -n "girtby" girtby.net a { text-decoration: underline !important }
 
 style -n "phoronix" www.phoronix.com #phxcms_content_right { float: none !important }
+
+style -n "dota2wiki" www.dota2wiki.com #bodyContent2 { margin-right: 0 !important} #curse-panel { display: none }
