@@ -24,7 +24,7 @@
         <match enabled="true" name="lx" pattern="*lauxanh*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="imgur" pattern="http://i.imgur.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="cracked" pattern="*cracked.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="false" name="zm" pattern="http*://*zahe.me/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
+        <match enabled="true" name="ggpht" pattern="*.ggpht.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="blogspot" pattern="http://*.blogspot.*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="BotCB" pattern="http://www.backofthecerealbox.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
       </matches>
