@@ -192,6 +192,7 @@ if [[ $(hostname) == cenbaz ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
     export EDITOR="/cygdrive/c/Program Files (x86)/Notepad++/notepad++.exe"
+    alias nn='nice '
 fi
 
 if [[ $(uname) == Darwin ]]; then
