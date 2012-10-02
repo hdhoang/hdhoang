@@ -474,6 +474,7 @@
 *** Zuzana                                                              :not:
 ** DDD Brandy                                                           :not:
 ** Digital Desire                                                       :FAV:
+*** Brett Rossi
 *** Brooke Lee Adams
 *** Samantha Saint
 *** Veronica Zemanova
@@ -606,7 +607,6 @@
 *** AssTitsFace
 *** AttractiveWomen                                                    :name:
 *** BadAsianWife                                                    :fiction:
-*** BeastXXX                                                             :be:
 *** BeautifulNakedLadies
 *** bjaddict                                                     :bj:fiction:
 *** Contexxxt                                                            :in:
@@ -729,8 +729,6 @@
 **** DONE Metal Gear Solid
 ** CirclMastr
 *** DONE Alpha Protocol                          :video:voice:part:comp:info:
-** Coiler12
-*** TODO Steel Panthers: Main Battle Tank                              :shot:
 ** Coolguye and TheLastRoboKy
 *** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
@@ -885,6 +883,8 @@
 *** TODO Exit Fate                                           :shot:info:comp:
 ** TyrantSabre
 *** DONE Stuntman                                               :video:voice:
+** Various
+*** DONE Steel Panthers: Main Battle Tank                        :shot:group:
 ** Vexation
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
@@ -2322,6 +2322,7 @@
 **** make
 *** python2
 *** rsync
+*** util-linux
 *** wget
 ** Emacs
 *** Prelude
