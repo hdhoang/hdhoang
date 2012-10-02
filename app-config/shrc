@@ -188,7 +188,7 @@ if [ -n "$ZSH_NAME" ]; then
     alias -s mp3=m
 fi
 
-if [[ $(hostname) == cenbaz ]]; then
+if [[ $(hostname) == cenbab ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
     alias nn='nice '
