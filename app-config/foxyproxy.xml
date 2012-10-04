@@ -14,7 +14,7 @@
   </quickadd>
   <defaultPrefs origPrefetch="18"/>
   <proxies>
-    <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
+    <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" fromSubscription="false" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
         <match enabled="true" name="onion" pattern="*.onion/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="ctt" pattern=".*coithienthai\..../.*" isRegEx="true" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
@@ -32,7 +32,7 @@
       <autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
       <manualconf host="cenba.zahe.me" port="9050" socksversion="4" isSocks="true"/>
     </proxy>
-    <proxy name="Default" id="3141913676" notes="These are the settings that are used when no patterns match a URL." enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="false" color="#0055E5" proxyDNS="true" noInternalIPs="false" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
+    <proxy name="Default" id="3141913676" notes="These are the settings that are used when no patterns match a URL." fromSubscription="false" enabled="true" mode="direct" selectedTabIndex="0" lastresort="true" animatedIcons="false" includeInCycle="false" color="#0055E5" proxyDNS="true" noInternalIPs="false" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
         <match enabled="true" name="All" pattern="*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
       </matches>
