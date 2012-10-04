@@ -180,6 +180,7 @@ try {
     doc.querySelector('#good button, [value="Good"]').accessKey='e';
     doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
     doc.querySelector('select').accessKey='u'
+    doc.querySelector('select').tabIndex=1;
 } catch (e if e instanceof TypeError) {
     doc.querySelector('[value="Login"]').form.submit()
 }
