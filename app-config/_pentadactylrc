@@ -242,6 +242,7 @@ style -n "gif decor" * <<EOS
 , [src*="myconfinedspace"]
 , [src*="soup.io/asset/"]
 , [src*="tumblr"]
+, [src*="xkcd.com/comic"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
 EOS
 style -n "titled image decor" * <<EOS
