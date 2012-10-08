@@ -350,6 +350,7 @@
 *** Eve Angel                                                           :FAV:
 *** Jade                                                                :FAV:
 *** Jennifer Love                                                       :FAV:
+*** Jessie Rogers                                                       :FAV:
 *** NOT Karen
 *** Katalin                                                             :FAV:
 *** Nevaeh                                                              :FAV:
@@ -386,6 +387,7 @@
 *** Andria                                                              :FAV:
 *** NOT Anissa
 *** Anna Song                                                           :FAV:
+*** Annie Chui                                                          :FAV:
 *** NOT Ayumi Oki
 *** Bambie                                                              :FAV:
 *** NOT Becky Jang
@@ -433,6 +435,7 @@
 *** NOT Lora Weon
 *** Marlina                                                             :FAV:
 *** NOT Megan
+*** NOT Mimie
 *** NOT Misha
 *** Monica                                                              :FAV:
 *** NOT Nancy Ho
@@ -447,6 +450,7 @@
 *** NOT Reina
 *** NOT Salina
 *** NOT Sandra Mar
+*** Serene Kow                                                          :FAV:
 *** NOT So Jin Yong
 *** Sophie                                                              :FAV:
 *** NOT Sunny Lee
@@ -502,6 +506,7 @@
 *** Luba
 ** Ivana Fukalot                                                        :FAV:
 ** Jayden                                                               :FAV:
+** Jennifer Conelly
 ** Jerri Byrne                                                        :cloth:
 ** Jessimodel                                                           :FAV:
 ** Jordan Capri                                                         :FAV:
@@ -624,6 +629,7 @@
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
 *** HipFuck2
+*** Jaeminha                                                        :be:toon:
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
@@ -633,7 +639,6 @@
 *** IncestualAngels                                              :in:fiction:
 *** InnocentLook
 *** IntoBe
-*** ItNeeds2bStrange                                                     :in:
 *** K9andHorse                                                           :be:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
@@ -651,12 +656,12 @@
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
-*** SmutRoleplayQu33n                                                    :be:
+*** SmutRoleplayQu33n                                               :be:toon:
 *** SpankableMaids                                                    :cloth:
 *** StephaniessSecrets                                                   :in:
 *** StylishPorn
 *** TabooDepravity                                                       :in:
-*** TastefulSin
+*** TastefulSin                                                        :name:
 *** NOT TheGifer
 *** TooCuteForPorn                                                     :name:
 *** WhatTheyWereDoing                                                    :in:
@@ -790,7 +795,8 @@
 ** kefkafloyd
 *** DONE Bionic Commando (2009)                            :comp:video:voice:
 ** kethryveris
-*** DONE Shadow Hearts                                 :shot:comp:humor:info:
+*** DONE Shadow Hearts                               :hybrid:comp:humor:info:
+*** TODO Shadow Hearts: Covenant                                     :hybrid:
 ** kloudtana
 *** DONE King of Demons                        :video:group:info:humor:voice:
 ** Kyyrewyyoae
@@ -953,6 +959,7 @@
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
 *** DONE Sangen om den røde rubin (1970)
+** DONE Dark City (1998)                                          :FAV:f:sci:
 ** DONE Donnie Darko (2001)                                             :FAV:
 *** Gretchen
 ** DONE Duplicity (2009)                                                :FAV:
@@ -996,7 +1003,7 @@
 *** DONE (2007) Lesson 9 Special Camping                                 :en:
 *** DONE (2008) Lesson 10 Holidays                                       :en:
 *** DONE (2009) Lesson 11 Pony Club                                      :en:
-*** TODO (2009) Lesson 12 Back To School                                 :en:
+*** DONE (2009) Lesson 12 Back To School                                 :en:
 *** TODO (2010) Lesson 13 Gang Bang                                      :en:
 *** TODO (2010) Lesson 14 Anal Lesson                                    :en:
 *** DONE (2011) Lesson 15 Anna's Sisters
@@ -1178,6 +1185,9 @@
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
 *** DONE (2012) Electric Sea
+*** TODO (2012-09-20) March of the Slunks
+*** TODO (2012-09-20) Racks
+*** TODO (2012-09-20) The Silent Picture Book
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1205,6 +1215,11 @@
 **** NOT (2011-08-17) Underground Chamber
 **** DONE (2012-04-14) Balloon Cement
 **** DONE (2012-08-09) The Shores of Molokai
+*** with Shin Terai
+**** TODO (1999) Unison
+*** with Shine
+**** TODO (2004-02-24) Heaven and Hell
+**** TODO (2007-06-12) Lightyears
 *** with Thanatopsis
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
@@ -1348,6 +1363,8 @@
 ** Eric Brosius                                                    :FAV:game:
 *** DONE System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
+** TODO Europe
+*** TODO (2012-04) Back of Bones
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
 ** TODO Fear Factory
@@ -1573,7 +1590,6 @@
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 *** solo Marion Raven
 **** DONE (2005-06-08) Here I Am
-** TODO Metal Church
 ** DONE Machine Men                                                     :FAV:
 *** DONE (2003) Scars & Wounds
 *** DONE (2005-08-08) Elegies
@@ -1613,6 +1629,7 @@
 *** DONE (2007) Top Gear
 *** DONE (2008) MetalHog
 *** DONE (2011) Metal for Gamers
+** TODO Metal Church
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -1754,6 +1771,7 @@
 ** TODO Prophecy                                                     :lastfm:
 ** TODO Public Enemy
 *** TODO (2012-07-13) Most of My Heroes Still Don't Appear on No Stamp
+*** TODO (2012-10-01) The Evil Empire of Everything
 ** TODO Puddle of Mudd
 ** TODO Pyotr Ilyich Tchaikovsky
 ** TODO Queen
@@ -2017,6 +2035,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
+*** TODO (2012-10-19) Time I
 ** TODO Within Temptation                                              :jo:f:
 ** Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
