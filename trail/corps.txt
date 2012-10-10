@@ -43,6 +43,7 @@
    :url:      http://cowbirdsinlove.com
    :END:
 ** Cyanide and Happiness                                            :ns:sick:
+** desudesu0.com                                                         :ns:
 ** Dinosaur Comics                                           :title:cute:phi:
    :PROPERTIES:
    :url:      http://qwantz.com
@@ -416,7 +417,7 @@
 *** NOT Irene Far
 *** Iris                                                                :FAV:
 *** NOT Jamie
-*** NOT Janet
+*** Janet                                                               :FAV:
 *** NOT Jenis
 *** Jennifer Lee                                                        :FAV:
 *** NOT Jody Lang
@@ -629,7 +630,6 @@
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
 *** HipFuck2
-*** Jaeminha                                                        :be:toon:
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
@@ -637,8 +637,10 @@
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                              :in:fiction:
+*** Indifferent-cats-in-amateur-porn                                   :cute:
 *** InnocentLook
 *** IntoBe
+*** Jaeminha                                                        :be:toon:
 *** K9andHorse                                                           :be:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
@@ -653,6 +655,7 @@
 **** BlackPanty                                                       :cloth:
 **** SultrySpecs                                                      :cloth:
 *** SexAndSexyStuff
+*** SexyPets                                                             :be:
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
@@ -664,6 +667,7 @@
 *** TastefulSin                                                        :name:
 *** NOT TheGifer
 *** TooCuteForPorn                                                     :name:
+*** UltimateBetrayal                                                :fiction:
 *** WhatTheyWereDoing                                                    :in:
 *** WhsThatGirl                                                        :name:
 *** WomenFighters                                                     :cloth:
@@ -1004,12 +1008,12 @@
 *** DONE (2008) Lesson 10 Holidays                                       :en:
 *** DONE (2009) Lesson 11 Pony Club                                      :en:
 *** DONE (2009) Lesson 12 Back To School                                 :en:
-*** TODO (2010) Lesson 13 Gang Bang                                      :en:
+*** DONE (2010) Lesson 13 Gang Bang                                      :en:
 *** TODO (2010) Lesson 14 Anal Lesson                                    :en:
 *** DONE (2011) Lesson 15 Anna's Sisters
 *** DONE (2011) Lesson 16 Lolitas
 *** DONE (2012) Lesson 17 Sex Lesson
-** TODO Samurai Champloo                                              :jo:ja:
+** TODO Samurai Champloo                                         :jo:ja:toon:
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
@@ -1027,7 +1031,6 @@
 ** TODO Tombstone (1993)
 ** Trilogy of life
 *** DONE Il Decameron (1971)
-    CLOSED: [2012-03-16 Fri 16:08]
 *** DONE I racconti di Canterbury (1972)
 *** TODO Il fiore delle mille e una notte (1974)
 ** TODO Tucker and Dave vs Evil                                          :jo:
@@ -1216,10 +1219,10 @@
 **** DONE (2012-04-14) Balloon Cement
 **** DONE (2012-08-09) The Shores of Molokai
 *** with Shin Terai
-**** TODO (1999) Unison
+**** DONE (1999) Unison                                                 :FAV:
 *** with Shine
-**** TODO (2004-02-24) Heaven and Hell
-**** TODO (2007-06-12) Lightyears
+**** NOT (2004-02-24) Heaven and Hell
+**** DONE (2007-06-12) Lightyears                                       :FAV:
 *** with Thanatopsis
 **** DONE Thanatopsis
 **** DONE (2003) Axiology
