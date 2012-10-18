@@ -19,6 +19,7 @@
  '(org-M-RET-may-split-line nil)
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(sentence-end-double-space nil)
+ '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
  '(windmove-wrap-around t))
