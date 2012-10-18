@@ -198,9 +198,9 @@ img:not([src$="thumb"]) { position: absolute; bottom: 0; max-width: 66%; max-hei
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
-body > a, h1, a+p
-, [name=width], [name=height]
-, #settings td>:not(select), [type='text']
+body > a, h1, p:not(:last-child)
+, form td:last-child:not(#imgslot)
+, #settings td>:not(select), #keyslot
 { display: none }
 EOS
 
