@@ -84,6 +84,10 @@
    :PROPERTIES:
    :url:      http://www.incidentalcomics.com
    :END:
+** Invisible Bread
+   :PROPERTIES:
+   :url:      http://invisiblebread.com
+   :END:
 ** Johnny Wander                                                       :cute:
    :PROPERTIES:
    :url:      http://johnnywander.com
@@ -349,6 +353,7 @@
 *** Emily                                                               :FAV:
 *** Eufrat                                                              :FAV:
 *** Eve Angel                                                           :FAV:
+*** Gina Lee                                                            :FAV:
 *** Jade                                                                :FAV:
 *** Jennifer Love                                                       :FAV:
 *** Jessie Rogers                                                       :FAV:
@@ -369,6 +374,7 @@
 ** Anetta Keys                                                          :FAV:
 ** Angel Button                                                         :FAV:
 ** NOT Angela Melini
+** AnimalSexFun.com                                                      :be:
 ** NOT Anja.de
 ** NOT Ann Angel
 ** NOT Anne
@@ -389,6 +395,7 @@
 *** NOT Anissa
 *** Anna Song                                                           :FAV:
 *** Annie Chui                                                          :FAV:
+*** NOT Areeya Oki
 *** NOT Ayumi Oki
 *** Bambie                                                              :FAV:
 *** NOT Becky Jang
@@ -477,6 +484,7 @@
 *** Petra                                                               :FAV:
 *** Stanislava                                                          :not:
 *** Zuzana                                                              :not:
+** NOT Dawn's Place
 ** DDD Brandy                                                           :not:
 ** Digital Desire                                                       :FAV:
 *** Brett Rossi
@@ -492,6 +500,7 @@
 *** Jadi
 *** Jenni A
 *** Mona
+** NOT FlexiBecky
 ** foxes.com                                                            :not:
 ** Francesca Dani                                                       :FAV:
 ** Front
@@ -529,6 +538,7 @@
    :END:
 ** Kirsten Dunst                                                        :FAV:
 ** Kristina Fey                                                         :not:
+** Kurara Tachibana                                                      :ja:
 ** Laetitia Casta                                                       :FAV:
 ** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
@@ -614,9 +624,12 @@
 *** AttractiveWomen                                                    :name:
 *** BadAsianWife                                                    :fiction:
 *** BeautifulNakedLadies
-*** bjaddict                                                     :bj:fiction:
+*** bjaddict                                                 :bj:fiction:gif:
+*** BloodRedFerox                                           :be:toon:fiction:
+*** bncGirl                                                              :be:
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
+*** DarkerThanDaylight                                                :in:be:
 *** DicksInMouths
 *** DisgustingPleasure                                                   :in:
 *** effinbeautiful
@@ -634,18 +647,22 @@
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
 *** HowlingLust                                                          :be:
+*** IncestAnimal94                                                       :in:
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
-*** IncestualAngels                                              :in:fiction:
+*** IncestualAngels                                                      :in:
 *** Indifferent-cats-in-amateur-porn                                   :cute:
 *** InnocentLook
-*** IntoBe
+*** IntoBe                                                            :video:
 *** Jaeminha                                                        :be:toon:
 *** K9andHorse                                                           :be:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
 *** NOT LuvAsianPuss                                             :fiction:ja:
+*** max1475                                                         :be:toon:
+*** Mr-Hard-Wood                                                         :in:
 *** MyNaughtyPen                                                         :in:
+*** NakedDoors                                                      :fiction:
 *** OwnerOfBeauty                                                        :in:
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
@@ -661,10 +678,12 @@
 *** SlutSoft                                                             :ja:
 *** SmutRoleplayQu33n                                               :be:toon:
 *** SpankableMaids                                                    :cloth:
+*** StashErotica                                                   :gif:toon:
 *** StephaniessSecrets                                                   :in:
 *** StylishPorn
 *** TabooDepravity                                                       :in:
 *** TastefulSin                                                        :name:
+*** The-Porn-Stories                                                :fiction:
 *** NOT TheGifer
 *** TooCuteForPorn                                                     :name:
 *** UltimateBetrayal                                                :fiction:
@@ -679,6 +698,7 @@
 ** Twistys.com
 ** NOT VanaWeb
 ** NOT Vintage Queen
+** NOT Violet Erotica
 ** Watch 4 Beauty                                                       :FAV:
 *** Marketa Belonoha
 ** X-Art                                                                :FAV:
@@ -833,17 +853,16 @@
 *** TODO L.A. Noire                                                   :video:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
-** perochialjoe
-*** TODO Alan Wake                                                    :video:
-*** DONE STALKER: Shadow of Chernobyl                           :video:voice:
-*** TODO STALKER: Clear Sky
+** perochialjoe                                                 :video:voice:
+*** TODO Alan Wake
+*** DONE STALKER: Shadow of Chernobyl
+*** DONE STALKER: Clear Sky
 ** Pesmerga
 *** DONE Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
 *** DONE Sam & Max Hit the Road                           :voice:video:group:
 ** Psychedelic Eyeball                                :FAV:video:humor:voice:
 *** DONE Prince of Persia 1
-    CLOSED: [2012-01-16 Mon 14:56]
 *** DONE Prince of Persia 2
 ** python862
 *** TODO Metal Gear Solid: Portable Ops
@@ -1199,6 +1218,11 @@
 *** with Bryan "Brain" Mantia & Melissa Reese
 **** DONE (2010) Best Regards
 **** DONE (2010-10-13) Kind Regards
+*** with Cobra Strike
+**** TODO (1999-08-24) The 13th Scroll
+**** TODO (2000-09-30) Cobra Strike II: Y,Y+B,X+Y<hold>←
+*** with Colonel Claypool's Bucket of Bernie Brains
+**** DONE (2004-09-21) The Big Eyeball in the Sky                      :1fav:
 *** as Death Cube K                                                    :1fav:
 **** DONE (1994-05-10) Dreamatorium                                    :1fav:
 **** DONE (1997) Disembodied                                           :1fav:
@@ -1527,6 +1551,27 @@
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                             :FAV:fi:riff:
 *** DONE (2012-08-14) Manala
+** TODO Kotiteollisuus                                                   :fi:
+*** DONE (1998-05) Aamen
+*** TODO (1999-05) Eevan perintö
+*** TODO (2000-10) Tomusta ja tuhkasta
+*** DONE (2000-11-24) Kädessäni
+*** DONE (2001-06-08) Yksinpuhelu
+*** DONE (2002-03-01) Kuolleen kukan nimi
+*** TODO (2002-09-13) ± 0
+*** DONE (2003-09-12) Helvetistä itään
+*** DONE (2003-11-07) Minä olen
+*** DONE (2004-09-22) Kultalusikka
+*** TODO (2005-03-23) 7
+*** TODO (2006-11-08) Iankaikkinen
+*** TODO (2007-11-07) Murheen mailla 1996-2007
+*** TODO (2008-08-13) Sotakoira
+*** DONE (2009-01-28) Mahtisanat
+*** TODO (2009-02-18) Ukonhauta
+*** DONE (2011-03-02) Kotiteollisuus
+*** TODO (2012-09-21) Sotakoira II
+*** as Hullu ukko ja kotiteollisuus
+**** NOT (1996-08) Hullu ukko ja Kotiteollisuus
 ** GONE Kylähullut                                                      :FAV:
 ** TODO Lacrimosa
 *** TODO (2012-09) Revolution
@@ -2040,6 +2085,14 @@
     :END:
 *** TODO (2012-10-19) Time I
 ** TODO Within Temptation                                              :jo:f:
+*** TODO (1997-04-06) Enter
+*** NOT (1998) The Dance
+*** DONE (2000-12-04) Mother Earth
+*** TODO (2004-11-15) The Silent Force
+*** TODO (2007-03-20) The Heart of Everything
+*** DONE (2008) Destroyed
+*** DONE (2009) The Rarest Songs                                       :1fav:
+*** TODO (2011-03-29) The Unforgiving
 ** Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
