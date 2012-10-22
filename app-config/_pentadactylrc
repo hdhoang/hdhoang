@@ -197,7 +197,8 @@ img:not([src$="thumb"]) { position: fixed; bottom: 0; max-width: 700px; max-heig
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
-body > a, h1, p:not(:last-child)
+p:last-child { display: block; position: fixed; bottom: 0; right: 0 }
+body > a, h1, p
 , form td:last-child:not(#imgslot)
 , #settings td>:not(select), #keyslot
 { display: none }
