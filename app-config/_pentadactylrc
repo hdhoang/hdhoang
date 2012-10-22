@@ -193,8 +193,7 @@ try {
 } catch (e){}
 EOS
 style -n "yape" (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.de|mooo\.com))/.+train\.php <<EOS
-html { overflow-x: hidden; position: relative; width: 150%; height: 100% }
-img:not([src$="thumb"]) { position: absolute; bottom: 0; max-width: 66%; max-height: -moz-calc(100% - 1em) }
+img:not([src$="thumb"]) { position: fixed; bottom: 0; max-width: 700px; max-height: 98% }
 [value="Good"] { float: left }
 body { margin: 0 }
 td { padding: 0 !important }
