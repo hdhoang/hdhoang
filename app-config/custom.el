@@ -13,7 +13,6 @@
  '(electric-pair-mode nil)
  '(explicit-shell-file-name "/bin/zsh")
  '(frame-title-format "%f")
- '(global-hl-line-mode nil)
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
  '(org-M-RET-may-split-line nil)
