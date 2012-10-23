@@ -227,6 +227,15 @@ style -n "greader" https://www.google.com/reader/view/* <<EOS
 #gb, #chrome-fullscreen-top-toggle, .item-plusone, .sharebox, .email { display: none !important }
 EOS
 
+map + -js <<EOS
+dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
+           ,{ from: 'links', where: dactyl.NEW_TAB })
+EOS
+autocmd PageLoad https://plusone.google.com/_/+1/* -js <<EOS
+doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
+                 .accessKey = 'e'
+EOS
+
 autocmd PageLoad https://ca.isohunt.com/lite/* <<EOS
 feedkeys <Esc>
 EOS
