@@ -185,7 +185,7 @@
    :END:
 ** Subnormality                                                        :cute:
    :PROPERTIES:
-   :url:      http://viruscomix.com
+   :url:      https://viruscomix.wordpress.com
    :END:
 ** The Non-Adventures of Wonderella
    :PROPERTIES:
@@ -543,7 +543,6 @@
 ** lambda                                                            :FAV:vi:
 ** Latexotica.com                                                       :FAV:
 ** NOT Lovable Kitty
-   CLOSED: [2012-03-16 Fri 15:11]
 ** Love Hina                                                         :FAV:jo:
 ** Luana Lani                                                           :FAV:
 ** Luna Lane                                                            :FAV:
@@ -590,7 +589,7 @@
 ** Sasha Grey                                                           :FAV:
 ** Score Group                                                          :not:
 ** SOE                                                                   :ja:
-*** TODO 607 Ero Study                                                   :jo:
+*** DONE 607 Ero Study                                                   :jo:
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
@@ -639,10 +638,10 @@
 *** FuckYeahAsianMaids                                             :ja:cloth:
 *** FuckYeahFrenchMaids                                               :cloth:
 *** GimmeSomeGinger                                                     :red:
-*** GirlsWithGlasses                                                  :cloth:
+*** GirlsWithGlasses                                             :cloth:name:
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
-*** HipFuck2
+*** HipFuck2                                                            :gif:
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
@@ -655,13 +654,13 @@
 *** InnocentLook
 *** IntoBe                                                            :video:
 *** Jaeminha                                                        :be:toon:
+*** JoinMileHighClub
 *** K9andHorse                                                           :be:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
 *** NOT LuvAsianPuss                                             :fiction:ja:
 *** max1475                                                         :be:toon:
-*** Mr-Hard-Wood                                                         :in:
-*** MyNaughtyPen                                                         :in:
+*** MyNaughtyPen                                                     :in:gif:
 *** NakedDoors                                                      :fiction:
 *** OwnerOfBeauty                                                        :in:
 *** PookiesFamily                                                        :in:
@@ -672,6 +671,7 @@
 **** BlackPanty                                                       :cloth:
 **** SultrySpecs                                                      :cloth:
 *** SexAndSexyStuff
+*** SexOnMassTransit
 *** SexyPets                                                             :be:
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
@@ -684,6 +684,7 @@
 *** TabooDepravity                                                       :in:
 *** TastefulSin                                                        :name:
 *** The-Porn-Stories                                                :fiction:
+*** TheErodyssey                                              :cloth:fiction:
 *** NOT TheGifer
 *** TooCuteForPorn                                                     :name:
 *** UltimateBetrayal                                                :fiction:
@@ -1011,27 +1012,6 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
-** Russian Institute                                                     :ns:
-   :PROPERTIES:
-   :btih:     acc369d2488640c59ad58c1fb0a0c63e3ac73adb
-   :END:
-*** DONE (2004) Lesson 1
-*** DONE (2004) Lesson 2
-*** DONE (2005) Lesson 3
-*** DONE (2005) Lesson 4
-*** DONE (2005) Lesson 5
-*** DONE (2005) Lesson 6 School Girls                                    :en:
-*** DONE (2006) Lesson 7                                                 :en:
-*** DONE (2007) Lesson 8
-*** DONE (2007) Lesson 9 Special Camping                                 :en:
-*** DONE (2008) Lesson 10 Holidays                                       :en:
-*** DONE (2009) Lesson 11 Pony Club                                      :en:
-*** DONE (2009) Lesson 12 Back To School                                 :en:
-*** DONE (2010) Lesson 13 Gang Bang                                      :en:
-*** TODO (2010) Lesson 14 Anal Lesson                                    :en:
-*** DONE (2011) Lesson 15 Anna's Sisters
-*** DONE (2011) Lesson 16 Lolitas
-*** DONE (2012) Lesson 17 Sex Lesson
 ** TODO Samurai Champloo                                         :jo:ja:toon:
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
@@ -1207,9 +1187,9 @@
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
 *** DONE (2012) Electric Sea
-*** TODO (2012-09-20) March of the Slunks
-*** TODO (2012-09-20) Racks
-*** TODO (2012-09-20) The Silent Picture Book
+*** DONE (2012-09-20) March of the Slunks
+*** DONE (2012-09-20) Racks
+*** DONE (2012-09-20) The Silent Picture Book
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1219,8 +1199,8 @@
 **** DONE (2010) Best Regards
 **** DONE (2010-10-13) Kind Regards
 *** with Cobra Strike
-**** TODO (1999-08-24) The 13th Scroll
-**** TODO (2000-09-30) Cobra Strike II: Y,Y+B,X+Y<hold>←
+**** DONE (1999-08-24) The 13th Scroll
+**** DONE (2000-09-30) Cobra Strike II: Y,Y+B,X+Y<hold>←
 *** with Colonel Claypool's Bucket of Bernie Brains
 **** DONE (2004-09-21) The Big Eyeball in the Sky                      :1fav:
 *** as Death Cube K                                                    :1fav:
@@ -1326,21 +1306,15 @@
 *** DONE FreeSpace 2 (official)
 ** DONE Daniel Bautista                                  :FAV:jamendo:lastfm:
 *** DONE (2007-09-03) Music for a Film
-    CLOSED: [2012-03-30 Fri 13:55]
 *** DONE (2008-02-19) Recycle Bin
-    CLOSED: [2012-04-04 Wed 15:00]
 *** DONE (2008-04-18) 15
-    CLOSED: [2012-03-28 Wed 17:31]
 *** DONE (2008-05-09) Classics and Soundtracks
-    CLOSED: [2012-04-04 Wed 15:01]
 *** DONE (2008-06-26) Beethoven
-    CLOSED: [2012-03-20 Tue 17:56]
 *** DONE (2009-02-06) Madera Y Bronce
 *** DONE (2011-06-10) Cocktail Eleven
 *** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
-    CLOSED: [2012-03-20 Tue 17:56]
+*** TODO (2012-10-22) Eurotrip
 *** DONE Weirdos And Classics
-    CLOSED: [2012-04-09 Mon 13:57]
 ** TODO Danzig                                                         :game:
 ** Darren Korb
 *** DONE (2011-08-05) Bastion Original Soundtrack                  :game:FAV:
@@ -1551,25 +1525,25 @@
 *** DONE (2011) The Path of Totality
 ** DONE Korpiklaani                                             :FAV:fi:riff:
 *** DONE (2012-08-14) Manala
-** TODO Kotiteollisuus                                                   :fi:
+** DONE Kotiteollisuus                                                   :fi:
 *** DONE (1998-05) Aamen
-*** TODO (1999-05) Eevan perintö
-*** TODO (2000-10) Tomusta ja tuhkasta
+*** DONE (1999-05) Eevan perintö
+*** DONE (2000-10) Tomusta ja tuhkasta
 *** DONE (2000-11-24) Kädessäni
 *** DONE (2001-06-08) Yksinpuhelu
 *** DONE (2002-03-01) Kuolleen kukan nimi
-*** TODO (2002-09-13) ± 0
+*** DONE (2002-09-13) ± 0
 *** DONE (2003-09-12) Helvetistä itään
 *** DONE (2003-11-07) Minä olen
 *** DONE (2004-09-22) Kultalusikka
-*** TODO (2005-03-23) 7
-*** TODO (2006-11-08) Iankaikkinen
-*** TODO (2007-11-07) Murheen mailla 1996-2007
-*** TODO (2008-08-13) Sotakoira
+*** DONE (2005-03-23) 7
+*** DONE (2006-11-08) Iankaikkinen
+*** DONE (2007-11-07) Murheen mailla 1996-2007
+*** DONE (2008-08-13) Sotakoira
 *** DONE (2009-01-28) Mahtisanat
-*** TODO (2009-02-18) Ukonhauta
+*** DONE (2009-02-18) Ukonhauta
 *** DONE (2011-03-02) Kotiteollisuus
-*** TODO (2012-09-21) Sotakoira II
+*** DONE (2012-09-21) Sotakoira II
 *** as Hullu ukko ja kotiteollisuus
 **** NOT (1996-08) Hullu ukko ja Kotiteollisuus
 ** GONE Kylähullut                                                      :FAV:
@@ -1711,6 +1685,7 @@
 *** DONE (2006-10-18) Viides vuodenaika
 *** DONE (2007-11-28) Luihin ja ytimiin
 *** DONE (2010-03-24) Sydänjuuret
+*** TODO (2012-10-19) 180 astetta
 ** TODO Monty Python                                                    :FAV:
 ** DONE Muse                                                           :1fav:
 *** TODO (2012-09-17) The 2nd Law
@@ -1728,6 +1703,7 @@
 ** TODO Nat King Cole
 ** TODO Neil Young & Crazy Horse
 *** TODO (2012-06-05) Americana
+*** TODO (2012-10-29) Psychedelic Pill
 ** DONE Nevermore
 *** DONE (1992) Utopia
 *** DONE (1995) Nevermore
@@ -2084,15 +2060,15 @@
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
 *** TODO (2012-10-19) Time I
-** TODO Within Temptation                                              :jo:f:
-*** TODO (1997-04-06) Enter
+** DONE Within Temptation                                              :jo:f:
+*** DONE (1997-04-06) Enter
 *** NOT (1998) The Dance
 *** DONE (2000-12-04) Mother Earth
-*** TODO (2004-11-15) The Silent Force
-*** TODO (2007-03-20) The Heart of Everything
+*** DONE (2004-11-15) The Silent Force
+*** DONE (2007-03-20) The Heart of Everything
 *** DONE (2008) Destroyed
 *** DONE (2009) The Rarest Songs                                       :1fav:
-*** TODO (2011-03-29) The Unforgiving
+*** DONE (2011-03-29) The Unforgiving
 ** Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
@@ -2365,7 +2341,7 @@
 *** aspell-en
 *** bind
 *** ca-certificates
-*** git
+*** git-completion
 *** libiconv
 *** libxml2
 *** minidlna
