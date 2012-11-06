@@ -17,16 +17,9 @@
     <proxy name="Tor" id="3856060272" notes="Proxy through the Tor Network - http://tor.eff.org" fromSubscription="false" enabled="true" mode="manual" selectedTabIndex="2" lastresort="false" animatedIcons="false" includeInCycle="true" color="green" proxyDNS="true" noInternalIPs="true" autoconfMode="pac" clearCacheBeforeUse="false" disableCache="false" clearCookiesBeforeUse="false" rejectCookies="false">
       <matches>
         <match enabled="true" name="onion" pattern="*.onion/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="ctt" pattern=".*coithienthai\..../.*" isRegEx="true" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="tor check" pattern="https://check.torproject.org/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
         <match enabled="true" name="NGD" pattern="*ninjagameden.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="imageshack" pattern="http://img*.imageshack.us/img*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="lx" pattern="*lauxanh*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="imgur" pattern="http://i.imgur.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="cracked" pattern="*cracked.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="ggpht" pattern="*.ggpht.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="blogspot" pattern="http://*.blogspot.*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
-        <match enabled="true" name="BotCB" pattern="http://www.backofthecerealbox.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
+        <match enabled="true" name="reddit" pattern="*.reddit.com/*" isRegEx="false" isBlackList="false" isMultiLine="false" caseSensitive="false" fromSubscription="false"/>
       </matches>
       <autoconf url="" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
       <autoconf url="http://wpad/wpad.dat" loadNotification="true" errorNotification="true" autoReload="false" reloadFreqMins="60" disableOnBadPAC="true"/>
