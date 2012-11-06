@@ -8,7 +8,7 @@
 #+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
 #+TAGS: game jbopre net jo mjd jamendo lastfm
-#+TAGS: be bj { in fiction } cloth dom red name gif
+#+TAGS: be bj { in fiction } cloth dom red name gif toon
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -309,6 +309,21 @@
    :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewforum.php?f=29
    :END:
 ** DONE Tom Clancy
+*** Jack Ryan
+**** DONE Without Remorse
+**** DONE Patriot Games
+**** DONE Red Rabbit
+**** DONE The Hunt for Red October
+**** DONE The Cardinal of the Kremlin
+**** DONE Clear and Present Danger
+**** DONE The Sum of All Fears
+**** DONE Debt of Honor
+**** DONE Executive Orders
+**** DONE Rainbow Six
+**** DONE The Bear and the Dragon
+**** NOT The Teeth of the Tiger
+**** TODO Dead or Alive
+**** TODO Locked On
 *** Red Storm Rising                                                    :FAV:
 ** tvtropes.org                                                         :FAV:
 * Game
@@ -324,9 +339,8 @@
    :END:
 ** Homeworld                                                  :space:rts:FAV:
 ** Homeworld 2                                                :space:rts:FAV:
-** ITR WoW                                                   :net:rpg:addict:
 ** nethack                                                    :roguelike:FAV:
-** DONE Nexus: The Jupiter Incident                           :space:rts:FAV:
+** DONE Nexus: The Jupiter Incident                          :space:tact:FAV:
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
@@ -341,6 +355,7 @@
 ** ALS Scan
 *** NOT Agnes
 *** NOT Alice
+*** Angelina Crow                                                       :FAV:
 *** NOT Belicia
 *** NOT Bonnie
 *** NOT Brea
@@ -401,7 +416,7 @@
 *** NOT Becky Jang
 *** NOT Carla
 *** Carolyn                                                             :FAV:
-*** Casandra                                                            :FAV:
+*** NOT Casandra
 *** Cherry                                                              :FAV:
 *** Cherry Chen                                                         :FAV:
 *** Chin Si Yee                                                         :FAV:
@@ -411,7 +426,7 @@
 *** NOT Crystal
 *** NOT Dana Pang
 *** Denise                                                              :FAV:
-*** Destiny                                                             :FAV:
+*** NOT Destiny
 *** NOT Diana Shui
 *** Eliza                                                               :FAV:
 *** Ellen                                                               :FAV:
@@ -443,6 +458,7 @@
 *** NOT Lora Weon
 *** Marlina                                                             :FAV:
 *** NOT Megan
+*** NOT Miki
 *** NOT Mimie
 *** NOT Misha
 *** Monica                                                              :FAV:
@@ -453,6 +469,7 @@
 *** NOT Olivia
 *** Paris                                                               :FAV:
 *** NOT Patricia
+*** NOT Pavadee
 *** Petchara Pannarai                                                   :FAV:
 *** Regina                                                              :FAV:
 *** NOT Reina
@@ -468,7 +485,7 @@
 *** Trista                                                              :FAV:
 *** Victoria                                                            :FAV:
 *** NOT Violet
-*** Yang Fu Hong
+*** NOT Yang Fu Hong
 *** Yang Hai Ling
 *** Yo Sung Hi                                                          :FAV:
 ** Bailey Kline                                                         :FAV:
@@ -676,7 +693,6 @@
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
-*** SmutRoleplayQu33n                                               :be:toon:
 *** SpankableMaids                                                    :cloth:
 *** StashErotica                                                   :gif:toon:
 *** StephaniessSecrets                                                   :in:
@@ -687,12 +703,14 @@
 *** TheErodyssey                                              :cloth:fiction:
 *** NOT TheGifer
 *** TooCuteForPorn                                                     :name:
+*** TsukiWulf                                                       :be:toon:
 *** UltimateBetrayal                                                :fiction:
 *** WhatTheyWereDoing                                                    :in:
 *** WhsThatGirl                                                        :name:
 *** WomenFighters                                                     :cloth:
 *** WorkingLady                                                    :ja:cloth:
 *** wywbdns                                                         :fiction:
+*** YourTeachersSecrets                                             :fiction:
 ** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
@@ -748,7 +766,7 @@
 *** DONE Grand Theft Auto: San Andreas
 *** DONE Hitman: Codename 47
 ** Chakan
-*** TODO Dungeon Crawl                                                 :shot:
+*** DONE Dungeon Crawl                                                 :shot:
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
 *** with General Ironicus                 :group:video:voice:comp:info:humor:
@@ -763,7 +781,6 @@
 *** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
 *** DONE Prince of Persia: The Two Thrones                 :video:voice:info:
-    CLOSED: [2012-02-26 Sun 09:58]
 ** CrookedB
 *** TODO Escape from Hell
 ** Crowetron
@@ -825,7 +842,7 @@
 ** kloudtana
 *** DONE King of Demons                        :video:group:info:humor:voice:
 ** Kyyrewyyoae
-*** TODO Spycraft                                                      :shot:
+*** DONE Spycraft                                                      :shot:
 ** Leavemywife
 *** TODO Earthbound                                               :shot:info:
 ** Leovinus
@@ -1101,7 +1118,6 @@
 ** DONE Antonín Dvorák
 *** DONE The Masterworks
 ** DONE Aoife Ní Fhearraigh
-   CLOSED: [2012-03-13 Tue 20:00]
 *** DONE (1997) Aoife
 *** DONE (2003) The Turning of the Tide
 *** DONE (2006) If I Told You
@@ -1133,12 +1149,10 @@
 ** DONE Bliss(This)
 ** Blizzard
 *** DONE (1996) Diablo
-    CLOSED: [2012-04-04 Wed 14:59]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
     :END:
 *** DONE (2000) Diablo II
-    CLOSED: [2012-03-02 Fri 08:50]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
     :END:
@@ -1148,13 +1162,11 @@
     :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
     :END:
 *** DONE (2007) Diablo II: Lord of Destruction
-    CLOSED: [2012-03-10 Sat 12:42]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
     :END:
 *** DONE (2008-09-04) StarCraft
 *** DONE (2010) World of Warcraft: Cataclysm
-    CLOSED: [2012-01-29 Sun 14:15]
 *** DONE (2012-05-15) Diablo III: Collector's Edition Soundtrack
 *** DONE Starcraft sound                                               :game:
    :PROPERTIES:
@@ -1213,7 +1225,7 @@
 *** with Frankenstein Brothers
 **** DONE (2008-09-17) Bolt on Neck_ Prototype #1
 *** with Jonas Hellborg
-**** DONE (1993) Octave of the Holy Innocents
+**** NOT (1993) Octave of the Holy Innocents
 *** Pike
 **** DONE (2011-05-15) It's Alive
 **** DONE (2011-05-20) Empty Space
@@ -1286,18 +1298,16 @@
     :mbid:     http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998
     :END:
 ** DONE Céline Dion                                                  :FAV:fr:
+*** DONE (2012-11-03) Sans Attendre
 ** DONE Dan Bull
-   CLOSED: [2012-03-13 Tue 19:57]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/f1597ac6-6cc6-4769-9751-69f681f015da
    :END:
 *** DONE (2009) Safe
-    CLOSED: [2011-12-28 Wed 16:44]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/e7ef5790-57b7-41cd-a1ae-58ec4e60520d
     :END:
 *** DONE (2011) Face
-    CLOSED: [2012-03-13 Tue 19:57]
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/31ed54d7-4e0d-4d4a-a764-ed397be2e432
     :END:
@@ -1313,7 +1323,7 @@
 *** DONE (2009-02-06) Madera Y Bronce
 *** DONE (2011-06-10) Cocktail Eleven
 *** DONE (2012-01-09) Symphony No. 1 in A minor, Op. 12
-*** TODO (2012-10-22) Eurotrip
+*** DONE (2012-10-22) Eurotrip
 *** DONE Weirdos And Classics
 ** TODO Danzig                                                         :game:
 ** Darren Korb
@@ -1651,7 +1661,18 @@
 *** DONE (2007) Top Gear
 *** DONE (2008) MetalHog
 *** DONE (2011) Metal for Gamers
-** TODO Metal Church
+** DONE Metal Church                                                   :1fav:
+*** DONE (1982-10) Four Hymns
+*** DONE (1984) Metal Church
+*** DONE (1986) The Dark
+*** DONE (1989) Blessing in Disguise
+*** DONE (1991-03-26) The Human Factor
+*** DONE (1993) Hanging in the Balance
+*** DONE (1998-10-05) Live
+*** DONE (1999) Masterpeace
+*** DONE (2004-07-26) The Weight of the World
+*** DONE (2006-06-27) A Light in the Dark
+*** DONE (2008-09-23) This Present Wasteland
 ** GONE Metal Gear Solid                                                :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -1825,6 +1846,7 @@
 ** DONE Sarah Brightman                                            :f:jo:FAV:
 ** GONE Savatage                                                   :epic:FAV:
 *** as Trans-Siberian Orchestra
+**** TODO (2012-10-30) Dream of Fireflies (on a Christmas Night)
 ** DONE Scorpions                                                       :FAV:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6
