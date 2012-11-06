@@ -183,7 +183,7 @@ autocmd PageLoad (hb4pm4eznzhd6mts\.(onion|tor2web\.org)|yape\.(i2p|i2p\.tin0\.d
 try {
     doc.querySelector('#good button, [value="Good"]').accessKey='e';
     doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
-    doc.querySelector('select').accessKey='u'
+    doc.querySelector('select').accessKey='o'
     doc.querySelector('select').tabIndex=1;
 } catch (e if e instanceof TypeError) {
     doc.querySelector('[value="Login"]').form.submit()
