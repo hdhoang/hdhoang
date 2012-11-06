@@ -1,0 +1,13 @@
+# -*- mode: conf-space -*-
+# %APPDATA%\Roaming\tor\torrc
+ContactInfo tor at zahe dot me
+Nickname cenbab
+DirPort 465
+ORPort 587
+SocksListenAddress 127.0.0.1
+SocksListenAddress 192.168.0.56
+RelayBandwidthBurst 131072
+RelayBandwidthRate 65536
+ExitPolicy reject *:*
+
+DirReqStatistics 0
