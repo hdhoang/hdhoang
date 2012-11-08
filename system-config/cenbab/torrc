@@ -1,5 +1,5 @@
 # -*- mode: conf-space -*-
-# %APPDATA%\Roaming\tor\torrc
+# %windir%\ServiceProfiles\LocalService\AppData\Roaming\tor\torrc
 ContactInfo tor at zahe dot me
 Nickname cenbab
 DirPort 465
