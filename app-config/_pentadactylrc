@@ -125,6 +125,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! downbar.style.speedColor3="200;#2aa198"
    \ set! downbar.style.speedColorsEnabled=true
    \ set! downbar.style.useGradients=false
+   \ set! extensions.checkCompatibility.8.0=false
    \ set! extensions.checkCompatibility.nightly=false
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
