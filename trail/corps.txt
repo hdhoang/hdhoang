@@ -8,7 +8,7 @@
 #+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
 #+TAGS: game jbopre net jo mjd jamendo lastfm
-#+TAGS: be bj { in fiction } cloth dom red name gif toon
+#+TAGS: be bj { in fiction } cloth scene dom red name gif toon
 
 * Comic                                                                 :FAV:
 ** A Softer World                                                :title:cute:
@@ -324,11 +324,36 @@
 **** NOT The Teeth of the Tiger
 **** TODO Dead or Alive
 **** TODO Locked On
+**** TODO Threat Vector
 *** Red Storm Rising                                                    :FAV:
 ** tvtropes.org                                                         :FAV:
 * Game
 ** TODO Black Mesa Source
-** DotA                                                                 :FAV:
+   :PROPERTIES:
+   :btih:     A9B546B8141C210870CE09C43038A6AEE9E0157F
+   :END:
+** Dota 2                                                               :FAV:
+   :PROPERTIES:
+   :feed:     http://store.steampowered.com/news/?feed=steam_updates&appids=570
+   :END:
+*** DotaCinema
+*** Luminous
+   :PROPERTIES:
+   :url:      https://www.youtube.com/playlist?list=PL8A63EC5F95C09145
+   :youtube:  LuminousInverse
+   :END:
+*** Nebu1a
+   :PROPERTIES:
+   :url:      http://blip.tv/show/latest_episode/756280
+   :END:
+*** Purge
+    :PROPERTIES:
+    :youtube:  PurgeGamers
+    :END:
+*** XVRogue
+    :PROPERTIES:
+    :youtube:  XVRogueGaming
+    :END:
 ** Dungeon Crawl: Stone Soup                           :roguelike:FAV:addict:
    :PROPERTIES:
    :url:      http://crawl.develz.org
@@ -414,6 +439,7 @@
 *** NOT Ayumi Oki
 *** Bambie                                                              :FAV:
 *** NOT Becky Jang
+*** Belle                                                               :FAV:
 *** NOT Carla
 *** Carolyn                                                             :FAV:
 *** NOT Casandra
@@ -488,6 +514,7 @@
 *** NOT Yang Fu Hong
 *** Yang Hai Ling
 *** Yo Sung Hi                                                          :FAV:
+** Autumn Riley                                                         :FAV:
 ** Bailey Kline                                                         :FAV:
 ** Bianca Beauchamp                                                     :FAV:
 ** NOT Bobbi Billard
@@ -633,7 +660,7 @@
 ** Tila Nguyen                                                          :FAV:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
-*** AloneInMyOffice                                                 :fiction:
+*** AloneInMyOffice                                                   :scene:
 *** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
 *** AssTitsFace
@@ -641,7 +668,6 @@
 *** BadAsianWife                                                    :fiction:
 *** BeautifulNakedLadies
 *** bjaddict                                                 :bj:fiction:gif:
-*** BloodRedFerox                                           :be:toon:fiction:
 *** bncGirl                                                              :be:
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
@@ -655,6 +681,7 @@
 *** FuckYeahAsianMaids                                             :ja:cloth:
 *** FuckYeahFrenchMaids                                               :cloth:
 *** GimmeSomeGinger                                                     :red:
+*** GirlsGettingClean                                                 :scene:
 *** GirlsWithGlasses                                             :cloth:name:
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
@@ -662,8 +689,6 @@
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
-*** HowlingLust                                                          :be:
-*** IncestAnimal94                                                       :in:
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                                      :in:
@@ -671,8 +696,8 @@
 *** InnocentLook
 *** IntoBe                                                            :video:
 *** Jaeminha                                                        :be:toon:
-*** JoinMileHighClub
-*** K9andHorse                                                           :be:
+*** JoinMileHighClub                                                  :scene:
+*** Kariann19                                                    :be:toon:in:
 *** KittiesnTitties                                                    :cute:
 *** lingerie love
 *** NOT LuvAsianPuss                                             :fiction:ja:
@@ -683,13 +708,13 @@
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
 *** RandomErotic                                                       :name:
+*** RassBaby                                                             :be:
 *** RedheadBoobies                                                      :red:
 *** RedPinkWhite                                                      :cloth:
 **** BlackPanty                                                       :cloth:
 **** SultrySpecs                                                      :cloth:
 *** SexAndSexyStuff
-*** SexOnMassTransit
-*** SexyPets                                                             :be:
+*** SexOnMassTransit                                                  :scene:
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
@@ -710,7 +735,7 @@
 *** WomenFighters                                                     :cloth:
 *** WorkingLady                                                    :ja:cloth:
 *** wywbdns                                                         :fiction:
-*** YourTeachersSecrets                                             :fiction:
+*** YourTeachersSecrets                                       :fiction:scene:
 ** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
@@ -741,6 +766,8 @@
 *** DONE Saiyuki: Journey West                               :shot:comp:info:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
+** Bacter
+*** TODO Bureau 13                                               :shot:humor:
 ** baldurk
 *** TODO Left 4 Dead
     :PROPERTIES:
@@ -777,12 +804,14 @@
 **** DONE Metal Gear Solid
 ** CirclMastr
 *** DONE Alpha Protocol                          :video:voice:part:comp:info:
+** Cool Ghost
+*** TODO Metal Gear 1 & 2
 ** Coolguye and TheLastRoboKy
 *** DONE Dark Messiah of Might & Magic                    :group:video:voice:
 ** Coulis
 *** DONE Prince of Persia: The Two Thrones                 :video:voice:info:
 ** CrookedB
-*** TODO Escape from Hell
+*** DONE Escape from Hell                              :shot:info:comp:humor:
 ** Crowetron
 *** TODO Parasite Eve
 *** TODO Parasite Eve 2                                              :hybrid:
@@ -791,13 +820,11 @@
 *** DONE Hitman: Contracts                                      :video:voice:
 ** Elephantgun
 *** DONE Breaking Final Fantasy VI                                      :FAV:
-    CLOSED: [2012-02-24 Fri 08:19]
     :PROPERTIES:
     :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
     :END:
 ** fleshweasel
 *** DONE Diablo                                            :video:voice:info:
-    CLOSED: [2012-03-09 Fri 13:55]
 ** FrenzyTheKillbot
 *** TODO 007: Blood Stone                                             :video:
 *** TODO 007: The World is Not Enough                            :info:video:
@@ -806,7 +833,6 @@
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Giragast
 *** DONE Project IGI                            :video:voice:comp:info:humor:
-    CLOSED: [2012-03-01 Thu 23:10]
 ** Goldom
 *** DONE Descent: Freespace                                 :hybrid:info:sub:
     :PROPERTIES:
@@ -854,7 +880,6 @@
 *** TODO Myst                                                          :shot:
 ** Magnetic North
 *** DONE Silent Steel                                     :humor:hybrid:part:
-    CLOSED: [2012-02-24 Fri 09:10]
 ** Mecheon
 *** DONE Ecco the Dolphin                                       :video:voice:
 ** Mega64
@@ -879,6 +904,8 @@
 *** DONE Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
 *** DONE Sam & Max Hit the Road                           :voice:video:group:
+** PoshAlligator, AngstyFerrets
+*** TODO Indiana Jones and the Last Crusade                           :video:
 ** Psychedelic Eyeball                                :FAV:video:humor:voice:
 *** DONE Prince of Persia 1
 *** DONE Prince of Persia 2
@@ -901,12 +928,13 @@
 *** DONE Prince of Persia: Sands of Time
 ** Shadow Catboy
 *** DONE Planescape: Torment                                 :shot:narrative:
-    CLOSED: [2012-03-16 Fri 21:37]
 ** Shugojin
 *** TODO Baldur's Gate 2 and Throne of Bhaal
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
     :END:
+** Skippy Granola
+*** TODO Syberia                                                :video:voice:
 ** slowbeef
 *** TODO Policenauts                                                 :hybrid:
 ** Static_Fiend
@@ -936,7 +964,6 @@
 *** DONE Grim Fandango: The Movie                               :video:humor:
 ** WeX Majors
 *** DONE Spider-Man 2                                                 :video:
-    CLOSED: [2012-02-27 Mon 10:50]
 ** woodenchicken
 *** TODO Pathologic
 ** Yahtzee Croshaw
@@ -1035,6 +1062,7 @@
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
 ** TODO The Adventures of Tintin: Secret of the Unicorn
+** DONE The Big Lebowski (1998)                                          :jo:
 ** DONE The Iron Giant (1999)                                           :FAV:
 ** TODO The Machinist (2004)
 ** DONE The Man from Earth (2007)                                   :rev:FAV:
@@ -1060,14 +1088,13 @@
 *** DONE I Tyrens tegn (1974)                                    :sub:FAV:vi:
 * Music
 ** DONE "Weird Al" Yankovic                                             :FAV:
-** TODO 2pac                                                            :rap:
+** DONE 2pac                                                            :rap:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
    :END:
 ** TODO 3 Doors Down
 ** TODO 50 Cent                                                  :rap:lastfm:
 ** DONE 8 Bit Instrumental                                      :game:lastfm:
-   CLOSED: [2012-01-21 Sat 17:04]
 ** DONE A Perfect Circle                                               :1fav:
 *** DONE (2000-05-23) Mer de noms
 *** DONE (2003-09-16) Thirteenth Step                                  :1fav:
@@ -1108,7 +1135,6 @@
 ** TODO all:my:faults                                                :lastfm:
 ** ALONE IN THE CHAOS                                            :not:lastfm:
 ** DONE Alsou                                                        :ru:FAV:
-   CLOSED: [2012-01-15 Sun 20:50]
 ** TODO Amity in Fame                                               :jamendo:
 ** DONE Amon Amarth                                                     :FAV:
 ** DONE Amorphis                                                        :FAV:
@@ -1346,13 +1372,14 @@
 ** DONE DJ Fab
 ** TODO Double Dragon                                                :lastfm:
 ** DONE Dr. Dre
-   CLOSED: [2012-01-09 Mon 16:20]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
    :END:
 ** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
 ** DONE Dry Kill Logic
+** TODO EELS
+*** TODO (2013-02-03) Wonderful, Glorious
 ** DONE El Pogo8bit
 *** DONE (2009) Listen to Your Game EP                                  :FAV:
 ** TODO Electric Light Orchestra
@@ -1369,7 +1396,7 @@
 ** DONE Ensiferum
 *** DONE (2012-08-27) Unsung Heroes
 ** TODO Entombed
-** DONE Epica
+** TODO Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
 ** Eric Brosius                                                    :FAV:game:
 *** DONE System Shock 2
@@ -1378,6 +1405,7 @@
 *** TODO (2012-04) Back of Bones
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
+** TODO Fate Zero
 ** TODO Fear Factory
 *** TODO (2012-06-05) The Industrialist
 ** TODO Feist
@@ -1425,12 +1453,10 @@
 ** TODO Heart
 *** TODO (2012-10-02) Fanatic
 ** DONE Helloween                                                       :FAV:
-   CLOSED: [2011-12-30 Fri 10:35]
 ** DONE HIM                                                             :FAV:
 ** TODO Hinder                                                       :lastfm:
 ** DONE Homeworld (official)
 ** DONE Iced Earth
-   CLOSED: [2012-04-18 Wed 18:16]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
    :END:
@@ -1454,7 +1480,6 @@
 *** Republic: The Revolution
 ** Jan Morgenstern
 *** DONE Big Buck Bunny
-    CLOSED: [2012-01-13 Fri 14:51]
 ** TODO Jay-Z                                                           :rap:
 ** Jeremy Soule                                                        :game:
 *** DONE (2000) Icewind Dale
@@ -1463,7 +1488,6 @@
    :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
    :END:
 *** DONE (2011) Assassin's Creed Revelations
-    CLOSED: [2012-04-06 Fri 15:01]
 *** TODO (2012-08-14) Darksiders II Original Soundtrack
 *** DONE Hitman 2: Silent Assassin
     :PROPERTIES:
@@ -1500,25 +1524,22 @@
 ** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
 *** DONE (2005-02-05) Crawford Street
-    CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2005) Sunny Side of the Street
-    CLOSED: [2012-04-07 Sat 15:09]
 *** DONE (2006-05-06) Only Whispering
 *** DONE (2007-08-11) Not Quite Connected
-    CLOSED: [2012-04-18 Wed 18:20]
 *** DONE (2007-08-16) Dirty Wings
-    CLOSED: [2012-04-12 Thu 16:26]
 *** DONE (2008-04-24) The Simple Life
-    CLOSED: [2012-04-18 Wed 18:20]
 *** DONE (2009-10-21) Breadcrumbs
 *** DONE (2010) Ashes
-    CLOSED: [2012-04-09 Mon 14:00]
 ** DONE JT Bruce                                                :FAV:jamendo:
 *** DONE (2011) Ruined Subjects
 ** DONE Judas Priest
 ** DONE Kalmah
 ** TODO Kamelot
 *** TODO (2012-10-26) Silverthorn
+** TODO Kasey Chambers
+*** feat Shane Nicholson
+**** TODO (2012-10-22) Wreck and Ruin
 ** TODO Kirsty MacColl
 ** TODO Kiss
 *** TODO (2012-08-21) Destroyer- Resurrected
@@ -1692,7 +1713,8 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
    :END:
-** DONE Mike Oldfield                                     :FAV:string:guitar:
+** DONE Mike Oldfield                                     :FAV:
+*** TODO (2012-10-09) Journey into Space
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
@@ -1764,7 +1786,6 @@
 **** DONE Soundtrack
 **** DONE Soundtrack Plus
 ** DONE nocreeps                                                :FAV:jamendo:
-   CLOSED: [2012-01-13 Fri 14:50]
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8
    :END:
@@ -1782,12 +1803,9 @@
 ** DONE OneRepublic
 ** TODO Our Lady Peace
 ** DONE Pain Confessor                                                 :wail:
-   CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2004-09-08) Turmoil
-    CLOSED: [2012-04-18 Wed 18:21]
 *** DONE (2006-03-01) Fearrage
 *** DONE (2007-03-14) Purgatory of the Second Sun
-    CLOSED: [2012-04-09 Mon 13:58]
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
 ** TODO Paramore                                                          :f:
@@ -1878,6 +1896,7 @@
 ** TODO Sirenia                                                           :f:
 ** TODO Sixpence None the Richer                                      :FAV:f:
 *** TODO (2012-08-07) Lost in Transition
+** TODO Skillet
 ** TODO Skrillex
 ** TODO Slayer
 ** TODO Snow Patrol
@@ -1944,7 +1963,6 @@
 ** TODO The Civil Wars                                                    :f:
 ** DONE The Corrs                                              :FAV:f:string:
 ** DONE The Cranberries                                              :FAV:jo:
-   CLOSED: [2012-01-09 Mon 14:35]
 ** TODO The Ink Spots                                              :FAV:blue:
 ** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
@@ -1972,19 +1990,35 @@
 *** DONE (2010) 16 Fighting Bits
 *** DONE (2011) Taste My Power
 ** TODO Therion
-*** TODO (2012-09-28) Les Fleurs Du Mal
+*** TODO (1991) Of Darkness...
+*** TODO (1992) Beyond Sanctorum
+*** TODO (1994-01-25) Symphony Masses: Ho Drakon Ho Megas
+*** TODO (1996-08-08) Theli
+*** TODO (1996-11-15) Lepaca Kliffoth
+*** TODO (1997-06-26) A'arab Zaraq Lucid Dreaming
+*** TODO (1998) Vovin
+*** TODO (1999-06-07) Crowning of Atlantis
+*** TODO (2000-01-31) Deggial
+*** TODO (2001-11-13) Secret of the Runes
+*** TODO (2003-01-28) Live in Midgård
+*** TODO (2004-06-01) Lemuria
+*** TODO (2004-06-01) Sirius B
+*** TODO (2006-06-13) Celebrators of Becoming
+*** TODO (2007-02-06) Gothic Kabbalah
+*** TODO (2008-07-28) Live Gothic
+*** TODO (2009) The Miskolc Experience
+*** TODO (2010-10-26) Sitra Ahra
+*** TODO (2012-09-28) Les fleurs du mal
 ** TODO They Might Be Giants                                         :jbopre:
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** DONE Tim Minchin                                                     :FAV:
-   CLOSED: [2012-04-04 Wed 15:01]
 *** DONE (2005) Darkside
 *** DONE (2006) So Rock
 *** DONE (2008) Ready for This?
 *** DONE (2010-12-14) Live at the O2
 *** DONE (2011) Tim Minchin and the Heritage Orchestra
 *** DONE Timmy the Dog
-    CLOSED: [2012-01-09 Mon 14:35]
 ** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
 *** DONE (2011) Samsara
@@ -2024,7 +2058,6 @@
 ** DONE Tryad                                                  :1fav:jamendo:
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** DONE Tuoni
-   CLOSED: [2012-03-02 Fri 08:51]
 *** DONE (2005) Elävät & kuolleet
 ** DONE Turisas                                                          :fi:
 ** DONE Turmion Kätilöt
@@ -2033,13 +2066,11 @@
 *** DONE (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
 *** DONE (2000) Vampire: The Masquerade: Redemption                :game:FAV:
 *** DONE (2003) Need for Speed Underground
-    CLOSED: [2012-04-18 Wed 18:22]
 *** DONE (2004) Need for Speed Underground 2
 *** DONE (2005-11) Need for Speed Most Wanted
 *** DONE (2006-11) Need for Speed Carbon
 *** DONE (2007) Need for Speed ProStreet
 *** DONE (2010-03-16) God of War III
-    CLOSED: [2012-04-09 Mon 13:59]
 *** Juno                                                                :FAV:
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
@@ -2053,7 +2084,6 @@
     :mbid:     http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0
     :END:
 *** DONE Singing Science Records                                        :FAV:
-    CLOSED: [2012-01-07 Sat 20:05]
     :PROPERTIES:
     :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
     :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
@@ -2147,7 +2177,6 @@
 *** TODO Darwin's Dangerous Idea
 ** DONE Daniel Tosh                                             :voice:humor:
 *** DONE (2005-11-08) True Stories I Made Up
-    CLOSED: [2012-04-11 Wed 14:29]
 *** DONE (2011-03-08) Happy Thoughts
 ** Dave Winer
    :PROPERTIES:
@@ -2206,19 +2235,11 @@
 *** Think on These Things                                              :tunx:
 ** John Ralston Saul
 *** TODO The Collapse of Globalism and the Reinvention of the World    :econ:
-** Luminous                                                 :game:commentary:
-   :PROPERTIES:
-   :url:      https://www.youtube.com/playlist?list=PL8A63EC5F95C09145
-   :END:
 ** Malcolm Gladwell
 *** TODO The Tipping Point                                               :jo:
 ** GONE Mark Pilgrim                                   :free:code:net:whatwg:
    :PROPERTIES:
    :url:      http://firehose.diveintomark.org
-   :END:
-** Nebu1a                                                   :game:commentary:
-   :PROPERTIES:
-   :url:      http://blip.tv/show/latest_episode/756280
    :END:
 ** Neil deGrasse Tyson                                            :sci:humor:
 *** TODO The Pluto Files
@@ -2240,7 +2261,6 @@
    :url:      http://shamusyoung.com
    :END:
 *** DONE Free Radical                                             :narrative:
-    CLOSED: [2012-03-20 Tue 13:27]
 ** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
