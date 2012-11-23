@@ -159,6 +159,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! network.protocol-handler.expose.magnet=false
    \ set! services.sync.engine.prefs=false
    \ set! toolkit.telemetry.enabled=true
+   \ set! toolkit.telemetry.prompted=2
    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
