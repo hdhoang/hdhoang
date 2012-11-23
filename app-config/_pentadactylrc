@@ -25,7 +25,7 @@ set nextpattern^=›
 set urlseparator=' , '
 
 """ Display
-map <M-t> -js content.document.toggleImageSize()
+map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
 set guioptions+=cN
 set showstatuslinks=command
