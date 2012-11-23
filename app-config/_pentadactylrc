@@ -364,7 +364,7 @@ style -n "link decor: people" * <<EOS
 , [href*="terminally-incoherent.com/"]
 )::after { content: "\22c6" }
 EOS
-style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://secure.wikimedia.org/favicon.ico) }
+style -n "link decor: WP" * [href*=".wikipedia.org/"]::before { content: url(https://en.wikipedia.org/favicon.ico) }
 
 style -n "link decor: tvtropes" * <<EOS
 [href*="tvtropes.org/"]::before { content: url(http://tvtropes.org/favicon.ico) }
