@@ -7,7 +7,8 @@
 #+TAGS: vi fi en ja ru
 #+TAGS: string { riff guitar } piano mock spoken wail
 #+TAGS: group video voice shot chal speed comp info narrative humor
-#+TAGS: game jbopre net jo mjd jamendo lastfm
+#+TAGS: game tac rts puz
+#+TAGS: jbopre net jo mjd jamendo lastfm
 #+TAGS: be bj { in fiction } cloth scene dom red name gif toon
 
 * Comic                                                                 :FAV:
@@ -47,6 +48,7 @@
 ** Dinosaur Comics                                           :title:cute:phi:
    :PROPERTIES:
    :url:      http://qwantz.com
+   :side:     http://awgeezawgeez.tumblr.com
    :END:
 ** DOGHOUSE                                                      :title:cute:
    :PROPERTIES:
@@ -220,6 +222,10 @@
 ** xkcd                                                               :title:
    :PROPERTIES:
    :url:      https://xkcd.com
+   :END:
+** YOU CHOSE WRONG
+   :PROPERTIES:
+   :url:      http://youchosewrong.tumblr.com
    :END:
 * Fiction
 ** China Miéville
@@ -663,7 +669,7 @@
 *** AloneInMyOffice                                                   :scene:
 *** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
-*** AssTitsFace
+*** AssTitsFace                                                         :gif:
 *** AttractiveWomen                                                    :name:
 *** BadAsianWife                                                    :fiction:
 *** BeautifulNakedLadies
@@ -678,17 +684,20 @@
 *** EpicNSFW
 *** ero
 *** FilthyWetSlut
+*** FireRedGirls                                                        :red:
 *** FuckYeahAsianMaids                                             :ja:cloth:
 *** FuckYeahFrenchMaids                                               :cloth:
 *** GimmeSomeGinger                                                     :red:
 *** GirlsGettingClean                                                 :scene:
 *** GirlsWithGlasses                                             :cloth:name:
+*** GirlYouWant
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
 *** HipFuck2                                                            :gif:
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
+*** IgnobleDaddy                                                    :be:toon:
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                                      :in:
@@ -697,9 +706,8 @@
 *** IntoBe                                                            :video:
 *** Jaeminha                                                        :be:toon:
 *** JoinMileHighClub                                                  :scene:
-*** Kariann19                                                    :be:toon:in:
 *** KittiesnTitties                                                    :cute:
-*** lingerie love
+*** LingerieLove
 *** NOT LuvAsianPuss                                             :fiction:ja:
 *** max1475                                                         :be:toon:
 *** MyNaughtyPen                                                     :in:gif:
@@ -756,18 +764,18 @@
 **** The Record
 * LP                                                               :FAV:game:
 ** TODO ??
-*** Commandos series
-*** Hitman series
-*** Homeworld series
-*** Tenchu series
+*** Commandos series                                                    :tac:
+*** Hitman series                                                       :puz:
+*** Homeworld series                                                    :rts:
+*** Tenchu series                                                        :ja:
 ** Azure_Horizon
-*** DONE Final Fantasy VIII                            :shot:info:humor:comp:
-*** DONE Koudelka                                                  :f:hybrid:
-*** DONE Saiyuki: Journey West                               :shot:comp:info:
+*** DONE Final Fantasy VIII                         :shot:info:humor:comp:ja:
+*** DONE Koudelka                                               :f:hybrid:ja:
+*** DONE Saiyuki: Journey West                            :shot:comp:info:ja:
 ** Azzur
 *** DONE Warcraft: Orcs & Humans                  :shot:info:humor:narrative:
 ** Bacter
-*** TODO Bureau 13                                               :shot:humor:
+*** TODO Bureau 13                                            :shot:humor:ja:
 ** baldurk
 *** TODO Left 4 Dead
     :PROPERTIES:
@@ -933,6 +941,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
     :END:
+** Silver Falcon
+*** TODO Okami                                                     :video:ja:
 ** Skippy Granola
 *** TODO Syberia                                                :video:voice:
 ** slowbeef
@@ -1087,7 +1097,7 @@
 *** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
 *** DONE I Tyrens tegn (1974)                                    :sub:FAV:vi:
 * Music
-** DONE "Weird Al" Yankovic                                             :FAV:
+** DONE "Weird Al" Yankovic                                             :FAV:mock:
 ** DONE 2pac                                                            :rap:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
@@ -1520,6 +1530,9 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51
    :END:
+** TODO Jonathan Coulton                                      :FAV:mock:cute:
+*** with John Roderick
+**** TODO (2012-11-15) One Christmas at a Time
 ** DONE Josh Groban
 ** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
@@ -1592,6 +1605,7 @@
     :END:
 ** DONE Led Zeppelin                                                   :1fav:
 ** TODO Lenka                                                            :jo:
+** TODO Lia
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
 *** DONE (2012-06-26) Living Things
