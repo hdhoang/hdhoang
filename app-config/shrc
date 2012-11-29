@@ -36,8 +36,8 @@ alias o='xdg-open'
 function yb() { firefox 'https://www.youtube.com/watch?v='$1; }
 function getc() {
     cd ${1:-.}
-    python2 $v/youtube-dl/youtube_dl || \
-    python2 $v/youtube-dl/youtube_dl --batch-file dq.txt --output "%(upload_date)s-%(stitle)s-%(id)s.%(ext)s" || \
+    $v/youtube-dl || \
+    $v/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(title)s-%(id)s.%(ext)s" || \
     wget --continue
 }
 alias nn='nice ionice -c 3 '
