@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<foxyproxy mode="patterns" selectedTabIndex="0" toolbaricon="false" toolsMenu="false" contextMenu="false" advancedMenus="false" previousMode="disabled" resetIconColors="true" useStatusBarPrefix="true" excludePatternsFromCycling="false" excludeDisabledFromCycling="false" ignoreProxyScheme="false" apiDisabled="false">
+<foxyproxy mode="patterns" selectedTabIndex="0" toolbaricon="false" toolsMenu="false" contextMenu="false" advancedMenus="false" previousMode="disabled" resetIconColors="true" useStatusBarPrefix="true" excludePatternsFromCycling="false" excludeDisabledFromCycling="false" ignoreProxyScheme="false" apiDisabled="false" proxyForVersionCheck="3141913676">
   <random includeDirect="false" includeDisabled="false"/>
   <statusbar icon="true" text="false" left="cycle" middle="cycle" right="contextmenu" width="0"/>
   <toolbar left="cycle" middle="cycle" right="contextmenu"/>
