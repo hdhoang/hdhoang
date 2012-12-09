@@ -47,7 +47,6 @@
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
 
-(add-hook 'prog-mode-hook 'whitespace-turn-off t)
 (add-hook 'prog-mode-hook 'turn-off-guru-mode t)
 
 (load-theme 'solarized-light)
