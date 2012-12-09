@@ -18,6 +18,7 @@
  '(org-M-RET-may-split-line nil)
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
+ '(prelude-guru nil)
  '(sentence-end-double-space nil)
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
@@ -46,8 +47,6 @@
         '("service" "socket" "desktop" "directory"))
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
-
-(add-hook 'prog-mode-hook 'turn-off-guru-mode t)
 
 (load-theme 'solarized-light)
 
