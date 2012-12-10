@@ -49,6 +49,7 @@
    :PROPERTIES:
    :url:      http://qwantz.com
    :side:     http://awgeezawgeez.tumblr.com
+   :blog:     http://ryannorth.tumblr.com
    :END:
 ** DOGHOUSE                                                      :title:cute:
    :PROPERTIES:
@@ -58,7 +59,6 @@
    :PROPERTIES:
    :url:      http://endlessorigami.com
    :END:
-** Everyday Blues                                                      :cute:
 ** Extra Ordinary                                           :cute:title:site:
    :PROPERTIES:
    :url:      http://exocomics.com
@@ -201,6 +201,10 @@
    :PROPERTIES:
    :url:      http://thinhline.tumblr.com
    :END:
+** The Urf
+   :PROPERTIES:
+   :url:      http://theurf.com
+   :END:
 ** theWAREHOUSE
    :PROPERTIES:
    :url:      http://warehousecomic.com
@@ -334,7 +338,7 @@
 *** Red Storm Rising                                                    :FAV:
 ** tvtropes.org                                                         :FAV:
 * Game
-** TODO Black Mesa Source
+** DONE Black Mesa Source
    :PROPERTIES:
    :btih:     A9B546B8141C210870CE09C43038A6AEE9E0157F
    :END:
@@ -375,6 +379,16 @@
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
+** The Walking Dead                                                     :FAV:
+*** DONE Season 1
+    :PROPERTIES:
+    :btih:     3B0145A3290093165340EC9E875BAFB48EACDAC3
+    :END:
+**** DONE Episode 1
+**** DONE Episode 2
+**** DONE Episode 3
+**** DONE Episode 4
+**** DONE Episode 5
 * Girl                                                                 :ns:f:
 ** (y)ape                                                        :FAV:addict:
    :PROPERTIES:
@@ -643,6 +657,7 @@
 ** Stanislava                                                           :FAV:
 ** Stoya                                                                :FAV:
 ** Suicide Girls                                                        :FAV:
+** Sunny Leone                                                          :FAV:
 ** Susan Wayland / Sway                                           :FAV:cloth:
 ** NOT Sweet Devon
 ** NOT Sweet Juliette
@@ -666,6 +681,7 @@
 ** Tila Nguyen                                                          :FAV:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
+*** Air-Trip                                                          :cloth:
 *** AloneInMyOffice                                                   :scene:
 *** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
@@ -675,6 +691,7 @@
 *** BeautifulNakedLadies
 *** bjaddict                                                 :bj:fiction:gif:
 *** bncGirl                                                              :be:
+*** ClothingProhibited
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
 *** DarkerThanDaylight                                                :in:be:
@@ -697,7 +714,6 @@
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
-*** IgnobleDaddy                                                    :be:toon:
 *** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                                      :in:
@@ -919,6 +935,8 @@
 *** DONE Prince of Persia 2
 ** python862
 *** TODO Metal Gear Solid: Portable Ops
+** Qotile Swirl
+*** TODO Alone in the Dark                                            :video:
 ** Raar_Im_A_Dinosaur
 *** DONE System Shock 2                                         :video:voice:
     :PROPERTIES:
@@ -947,6 +965,8 @@
 *** TODO Syberia                                                :video:voice:
 ** slowbeef
 *** TODO Policenauts                                                 :hybrid:
+** Spoiler Warning                                        :group:voice:video:
+*** TODO The Walking Dead
 ** Static_Fiend
 *** DONE Prey                                             :video:voice:humor:
 ** Stratafyre
@@ -966,6 +986,8 @@
 *** DONE Final Fantasy IX                              :shot:info:humor:comp:
 ** TheOneAndOnlyT
 *** TODO Exit Fate                                           :shot:info:comp:
+** TheWanderingNewbie
+*** TODO Iji                                                          :video:
 ** TyrantSabre
 *** DONE Stuntman                                               :video:voice:
 ** Various
@@ -1073,6 +1095,7 @@
    :END:
 ** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Big Lebowski (1998)                                          :jo:
+** TODO The Hobbit
 ** DONE The Iron Giant (1999)                                           :FAV:
 ** TODO The Machinist (2004)
 ** DONE The Man from Earth (2007)                                   :rev:FAV:
@@ -1126,6 +1149,16 @@
 *** DONE (2010-08-20) Blood of the Nations
 *** DONE (2012-04-06) Stalingrad
 ** TODO Adam Lambert                                                   :tunx:
+*** TODO (2009-05-21) No Boundaries
+*** TODO (2009-11-17) Take One
+*** TODO (2009-11-23) For Your Entertainment
+*** TODO (2010-04-09) Remixes
+*** TODO (2010-05-01) For Your Entertainment
+*** TODO (2010-08-17) If I Had You (Remixed)
+*** TODO (2010-12-06) Acoustic Live!
+*** TODO (2011-03-21) Glam Nation Live
+*** TODO (2011-11-21) Beg for Mercy
+*** TODO (2012-05-15) Trespassing
 ** TODO Adèle
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04
@@ -1151,6 +1184,8 @@
 ** TODO Amy Winehouse                                                  :tunx:
 ** DONE Annihilator                                                     :FAV:
 ** DONE Anthrax                                                        :1fav:
+** TODO Antimatter
+*** TODO (2012-11-23) Fear of a Unique Identity
 ** DONE Antonín Dvorák
 *** DONE The Masterworks
 ** DONE Aoife Ní Fhearraigh
@@ -1225,6 +1260,7 @@
 ** TODO Bob Marley
 ** DONE Bobaflex
 ** DONE Bon Jovi
+*** TODO (2012-11-27) Inside Out
 ** DONE BOND
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
@@ -1397,6 +1433,8 @@
 ** TODO Elton John
 *** TODO (2012-07-16) Good Morning to the Night
 ** TODO Eluveitie
+** TODO Elvis Costello
+*** TODO (2012-11-23) In Motion Pictures
 ** TODO Elvis Presley
 ** TODO Emilie Autumn
 *** TODO (2012-07-24) Fight Like a Girl
@@ -1618,7 +1656,10 @@
      :PROPERTIES:
      :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
      :END:
-**** Volume 2: Konzerte
+**** TODO Volume 2: Concertos
+     :PROPERTIES:
+     :btih:     F903BD41E9AE78E29AB038A8E0CC573A44B0329E
+     :END:
 **** DONE Volume 3: Orchestral Works / Music for the Stage
      :PROPERTIES:
      :btih:     44058b609887f0a65aa45c210bc487a4afac9b69
@@ -1657,6 +1698,8 @@
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 *** solo Marion Raven
 **** DONE (2005-06-08) Here I Am
+** TODO HammerFall
+*** TODO (2012-11-30) Gates of Dalhalla
 ** DONE Machine Men                                                     :FAV:
 *** DONE (2003) Scars & Wounds
 *** DONE (2005-08-08) Elegies
@@ -2014,7 +2057,6 @@
 *** TODO (1999-06-07) Crowning of Atlantis
 *** TODO (2000-01-31) Deggial
 *** TODO (2001-11-13) Secret of the Runes
-*** TODO (2003-01-28) Live in Midgård
 *** TODO (2004-06-01) Lemuria
 *** TODO (2004-06-01) Sirius B
 *** TODO (2006-06-13) Celebrators of Becoming
@@ -2056,6 +2098,7 @@
    :url:      http://home.broadpark.no/~emeyn/tl/links.html
    :END:
 ** TODO Tony Bennett                                                   :tunx:
+*** TODO (2012-10-22) Viva Duets
 ** TODO Tony Cicoria
 ** NOT Tool
 ** DONE Tracy Chapman                                            :tunx:f:FAV:
@@ -2140,6 +2183,7 @@
 ** DONE X/X JAPAN                                                   :1fav:ja:
 ** NOT Xihilisk                                                      :lastfm:
 ** TODO Yngwie J. Malmsteen                                     :inst:guitar:
+*** TODO (2012-12-05) Spellbound
 ** TODO Zack Browning
 *** TODO Secret Pulse
 ** Zak Belica
