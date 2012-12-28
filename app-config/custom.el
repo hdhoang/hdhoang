@@ -15,6 +15,7 @@
  '(frame-title-format "%f")
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
+ '(org-log-done nil)
  '(org-M-RET-may-split-line nil)
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
