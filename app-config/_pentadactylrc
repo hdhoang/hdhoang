@@ -362,6 +362,7 @@ style -n "link decor: people" * <<EOS
 , [href*="pixelbeat.org/"]
 , [href*="//plasmasturm.org/"]
 , [href*="plover.com/"]
+, [href*="//prog21.dadgum.com/"]
 , [href*="shamusyoung.com/"]
 , [href*="terminally-incoherent.com/"]
 )::after { content: "\22c6" }
