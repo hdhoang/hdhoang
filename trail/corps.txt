@@ -498,7 +498,8 @@
 *** Kim Yun Hee                                                         :FAV:
 *** NOT Layla
 *** Lilian                                                              :FAV:
-*** NOT Lily Tang
+*** Lily Tang                                                           :FAV:
+*** Sofiana                                                             :FAV:
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
 *** NOT Lora Weon
@@ -784,6 +785,8 @@
 *** Hitman series                                                       :puz:
 *** Homeworld series                                                    :rts:
 *** Tenchu series                                                        :ja:
+** Alaan
+*** TODO The Legend of Dragoon
 ** Azure_Horizon
 *** DONE Final Fantasy VIII                         :shot:info:humor:comp:ja:
 *** DONE Koudelka                                               :f:hybrid:ja:
@@ -847,6 +850,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
     :END:
+** Epee Em
+*** TODO Pokemon Vietnamese Crystal                              :shot:humor:
 ** fleshweasel
 *** DONE Diablo                                            :video:voice:info:
 ** FrenzyTheKillbot
@@ -1494,6 +1499,8 @@
     :btih:     ca6a53a4a28857b33e39fdf36e8bb56f14d96af1
     :END:
 ** DONE Gạt Tàn Đầy                                                     :FAV:
+** TODO HammerFall
+*** TODO (2012-11-30) Gates of Dalhalla
 ** GONE Hanoi Rocks                                                     :FAV:
 ** Hans Zimmer
 *** DONE The Rock                                                 :movie:FAV:
@@ -1501,6 +1508,7 @@
 ** TODO Heart
 *** TODO (2012-10-02) Fanatic
 ** DONE Helloween                                                       :FAV:
+*** TODO (2013-01-18) Straight Out of Hell Helloween
 ** DONE HIM                                                             :FAV:
 ** TODO Hinder                                                       :lastfm:
 ** DONE Homeworld (official)
@@ -1642,6 +1650,7 @@
     :mbid:     http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99
     :END:
 ** DONE Led Zeppelin                                                   :1fav:
+*** TODO (2012-11-19) Celebration Day
 ** TODO Lenka                                                            :jo:
 ** TODO Lia
 ** TODO Life of Agony
@@ -1692,14 +1701,13 @@
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
     :END:
+** TODO M.I.A
 ** GONE M2M                                                             :FAV:
 *** DONE (2000-03-07) Shades of Purple
 *** DONE (2002-03-05) The Big Room
 *** DONE (2003-05-05) The Day You Went Away: The Best of M2M
 *** solo Marion Raven
 **** DONE (2005-06-08) Here I Am
-** TODO HammerFall
-*** TODO (2012-11-30) Gates of Dalhalla
 ** DONE Machine Men                                                     :FAV:
 *** DONE (2003) Scars & Wounds
 *** DONE (2005-08-08) Elegies
@@ -2055,7 +2063,7 @@
 *** TODO (1997-06-26) A'arab Zaraq Lucid Dreaming
 *** TODO (1998) Vovin
 *** TODO (1999-06-07) Crowning of Atlantis
-*** TODO (2000-01-31) Deggial
+*** DONE (2000-01-31) Deggial                                           :FAV:
 *** TODO (2001-11-13) Secret of the Runes
 *** TODO (2004-06-01) Lemuria
 *** TODO (2004-06-01) Sirius B
@@ -2119,6 +2127,8 @@
 ** DONE Turisas                                                          :fi:
 ** DONE Turmion Kätilöt
 ** DONE Van Canto
+** TODO Vanilla Sky
+*** TODO (2012-12-18) The Band Not the Movie
 ** Various Artists
 *** DONE (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
 *** DONE (2000) Vampire: The Masquerade: Redemption                :game:FAV:
@@ -2168,7 +2178,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
-*** TODO (2012-10-19) Time I
+*** DONE (2012-10-19) Time I
 ** DONE Within Temptation                                              :jo:f:
 *** DONE (1997-04-06) Enter
 *** NOT (1998) The Dance
