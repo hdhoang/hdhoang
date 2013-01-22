@@ -3,6 +3,6 @@
 [Service]
 CapabilityBoundingSet=
 ReadOnlyDirectories=/
-ReadWriteDirectories=/var/cache/minidlna /var/run
+ReadWriteDirectories=/cygdrive/h/minidlna /run/minidlna
 Nice=15
 IOSchedulingClass=idle
