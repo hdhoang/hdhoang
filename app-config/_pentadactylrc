@@ -78,6 +78,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword gr -t greader https://www.google.com/reader/view/ -tags news
    \ bmark -keyword g/ -t 'search gread' https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
+   \ bmark -keyword g/s -t 'search starred' https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fstarred
    \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
    \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
    \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
