@@ -463,6 +463,7 @@
 *** NOT Carla
 *** Carolyn                                                             :FAV:
 *** NOT Casandra
+*** Celine                                                              :FAV:
 *** Cherry                                                              :FAV:
 *** Cherry Chen                                                         :FAV:
 *** Chin Si Yee                                                         :FAV:
@@ -499,7 +500,6 @@
 *** NOT Layla
 *** Lilian                                                              :FAV:
 *** Lily Tang                                                           :FAV:
-*** Sofiana                                                             :FAV:
 *** Lin Si Yee                                                          :FAV:
 *** Lincy Leaw                                                          :FAV:
 *** NOT Lora Weon
@@ -524,6 +524,7 @@
 *** NOT Sandra Mar
 *** Serene Kow                                                          :FAV:
 *** NOT So Jin Yong
+*** Sofiana                                                             :FAV:
 *** Sophie                                                              :FAV:
 *** NOT Sunny Lee
 *** NOT Sydney
@@ -927,8 +928,9 @@
 *** DONE Full Throttle                                            :shot:info:
 ** perochialjoe                                                 :video:voice:
 *** TODO Alan Wake
-*** DONE STALKER: Shadow of Chernobyl
+*** TODO STALKER: Call of Pripyat
 *** DONE STALKER: Clear Sky
+*** DONE STALKER: Shadow of Chernobyl
 ** Pesmerga
 *** DONE Vampire: The Masquerade: Bloodlines                 :shot:narrative:
 ** Piss-Ant
@@ -1093,6 +1095,7 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
+** TODO Roseanna's Grave
 ** TODO Samurai Champloo                                         :jo:ja:toon:
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
@@ -1101,6 +1104,7 @@
 ** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Big Lebowski (1998)                                          :jo:
 ** TODO The Hobbit
+*** TODO 48fps
 ** DONE The Iron Giant (1999)                                           :FAV:
 ** TODO The Machinist (2004)
 ** DONE The Man from Earth (2007)                                   :rev:FAV:
@@ -1125,7 +1129,7 @@
 *** DONE I Tvillingernes tegn (1975)                                 :sub:vi:
 *** DONE I Tyrens tegn (1974)                                    :sub:FAV:vi:
 * Music
-** DONE "Weird Al" Yankovic                                             :FAV:mock:
+** DONE "Weird Al" Yankovic                                        :FAV:mock:
 ** DONE 2pac                                                            :rap:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
@@ -1205,6 +1209,7 @@
    :END:
 ** TODO At Vance
 *** TODO (2012-04-27) Facing Your Enemy
+** TODO Atlas Plug
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon
@@ -1260,6 +1265,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
     :END:
+** TODO Blue Stahli
 ** TODO Blut aus Nord
 *** TODO (2012-09-21) 777 - Cosmosophy
 ** TODO Bob Marley
@@ -1328,6 +1334,7 @@
 **** DONE (2008-09-17) The Dragons of Eden
 ** TODO Buddy Guy                                                      :tunx:
 ** DONE Bullet for My Valentine                                        :1fav:
+*** TODO (2013-02-12) Temper Temper
 ** TODO Burzum
 *** DONE (2012) Umskiptar
 ** TODO Butterfly Tea                                                :lastfm:
@@ -1419,6 +1426,8 @@
     :END:
 *** DONE (2009-10) Sing Along Songs for the Damned & Delirious
 *** DONE (2012-05-22) Pandora's Piñata
+** TODO Dido
+*** TODO (2013-03-04) Girl Who Got Away
 ** TODO Dire Strait
 ** DONE DJ Fab
 ** TODO Double Dragon                                                :lastfm:
@@ -1508,7 +1517,7 @@
 ** TODO Heart
 *** TODO (2012-10-02) Fanatic
 ** DONE Helloween                                                       :FAV:
-*** TODO (2013-01-18) Straight Out of Hell Helloween
+*** TODO (2013-01-18) Straight Out of Hell
 ** DONE HIM                                                             :FAV:
 ** TODO Hinder                                                       :lastfm:
 ** DONE Homeworld (official)
@@ -1537,6 +1546,7 @@
 ** Jan Morgenstern
 *** DONE Big Buck Bunny
 ** TODO Jay-Z                                                           :rap:
+*** TODO (2013-01-01) Black American Gangster
 ** Jeremy Soule                                                        :game:
 *** DONE (2000) Icewind Dale
 ** Jesper Kyd                                                          :game:
@@ -1565,6 +1575,7 @@
 ** Jim Guthrie
 *** DONE (2011-04-05) Sword & Sworcery LP: The Ballad of the Space Babies :FAV:game:
 ** TODO Jimi Hendrix
+*** (2013-03-05) People, Hell and Angels
 ** TODO Joan Osborne
 ** Joel Nielsen
 *** DONE (2012-09-01) Black Mesa                                       :game:
@@ -1778,7 +1789,7 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
    :END:
-** DONE Mike Oldfield                                     :FAV:
+** DONE Mike Oldfield                                                   :FAV:
 *** TODO (2012-10-09) Journey into Space
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
@@ -1923,6 +1934,13 @@
 ** TODO Rush
 ** TODO Saattue
 ** TODO Sabaton                                                      :lastfm:
+** TODO Samurai Champloo
+*** TODO (2004-06-23) Samurai Champloo Music Record: Departure
+*** TODO (2004-06-23) Samurai Champloo Music Record: Masta
+*** TODO (2004-08-18) YOU ~Himawari~
+*** TODO (2004-09-22) Samurai Champloo Music Record 2: Playlist
+*** TODO (2004-09-22) Samurai Champloo Music Record: Impression
+*** TODO (2005-04-21) #501
 ** DONE Santana                                                  :FAV:guitar:
 *** DONE (2012-05-11) Shape Shifter
 ** TODO Santigold
