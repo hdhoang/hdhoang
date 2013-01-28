@@ -1,0 +1,8 @@
+[Unit]
+Description=Linux image changed
+
+[Path]
+PathChanged=/boot/vmlinuz-linux
+
+[Install]
+WantedBy=basic.target

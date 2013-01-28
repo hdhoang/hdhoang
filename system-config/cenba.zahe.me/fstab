@@ -1,4 +1,5 @@
 LABEL=cenba / ext4 defaults,relatime 0 1
+PARTLABEL=EFI\040System /boot vfat defaults,x-systemd-automount
 
 LABEL=SELSORMENLI /mnt/selsormenli vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto
 LABEL=CMACMA /mnt/cmacma/SD\040Card vfat defaults,users,noatime,utf8,uid=1000,gid=100,fmask=133,dmask=022,noauto

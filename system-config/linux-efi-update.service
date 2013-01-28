@@ -1,0 +1,6 @@
+[Unit]
+Description=Copy Linux as EFI application
+
+[Service]
+Type=oneshot
+ExecStart=/bin/cp /boot/vmlinuz-linux /boot/linux.efi
