@@ -6,6 +6,7 @@ map <C-S-r> -ex restart +purgecaches
 
 """ Input
 map A -ex dialog about
+map <C-j> -ex dialog downloads
 map <C-S-b> -js window.PlacesCommandHook.showPlacesOrganizer('AllBookmarks')
 map s <C-c>
 map <C-space> <C-d>
