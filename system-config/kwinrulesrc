@@ -83,11 +83,11 @@ wmclassmatch=3
 
 [6]
 Description=conversation
-position=935,0
+position=960,0
 positionrule=3
 shortcut=Meta+*
 shortcutrule=2
-size=360,1040
+size=335,1000
 sizerule=2
 types=1
 windowrole=conversation
