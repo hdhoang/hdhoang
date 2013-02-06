@@ -997,6 +997,8 @@
 *** TODO Iji                                                          :video:
 ** TyrantSabre
 *** DONE Stuntman                                               :video:voice:
+** unfair
+*** TODO Deus Ex
 ** Various
 *** DONE Steel Panthers: Main Battle Tank                        :shot:group:
 ** Vexation
@@ -1005,8 +1007,8 @@
 *** DONE Spider-Man 2                                                 :video:
 ** woodenchicken
 *** TODO Pathologic
-** Yahtzee Croshaw
-*** TODO Dreamweb                                   :group:voice:video:humor:
+** Yahtzee Croshaw                                  :group:voice:video:humor:
+*** DONE Dreamweb
     :PROPERTIES:
     :url:      https://www.youtube.com/watch?v=RgU-KA46THc
     :END:
@@ -1273,6 +1275,7 @@
 ** DONE Bon Jovi
 *** TODO (2012-11-27) Inside Out
 ** DONE BOND
+** TODO Boney M.
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
 ** GONE Boyzone                                                         :FAV:
@@ -1785,6 +1788,9 @@
 ** DONE Michael Learns to Rock                                         :1fav:
 ** Michael McCann
 *** DONE (2011-11-15) Deus Ex: Human Revolution                    :FAV:game:
+** TODO Michelle Stewart                                                :FAV:
+*** TODO (2011) Walking on Ashes
+*** TODO (2013) Sands of Time
 ** DONE Microwave                                               :vi:riff:FAV:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
@@ -2011,7 +2017,7 @@
 ** DONE Stone Sour                                                 :wail:FAV:
 *** TODO (2012-10) House of Gold and Bones
 ** DONE Stratovarius                                                 :FAV:fi:
-*** TODO (2012-08-28) Under Flaming Winter Skies
+*** TODO (2013-01-25) Unbreakable
 *** solo Timo Tolkki
 ** String Quartet tributes                                       :FAV:string:
 *** DONE (1999) The String Quartet Tribute to Led Zeppelin
@@ -2046,6 +2052,7 @@
 ** TODO The Civil Wars                                                    :f:
 ** DONE The Corrs                                              :FAV:f:string:
 ** DONE The Cranberries                                              :FAV:jo:
+** TODO The Doors
 ** TODO The Ink Spots                                              :FAV:blue:
 ** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
