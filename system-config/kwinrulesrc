@@ -72,7 +72,7 @@ above=true
 aboverule=2
 position=635,22
 positionrule=3
-shortcut=Meta+*
+shortcut=Alt+u
 shortcutrule=2
 types=4294967295
 windowrole=^$|vlc-video
@@ -85,7 +85,7 @@ wmclassmatch=3
 Description=conversation
 position=935,0
 positionrule=3
-shortcut=Meta+=
+shortcut=Meta+*
 shortcutrule=2
 size=360,1040
 sizerule=2
