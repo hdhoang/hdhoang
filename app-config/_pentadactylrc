@@ -297,6 +297,7 @@ img[title]:not(:-moz-any(
 , [src*='todayifoundout.com/']
 , [src*='uncubedthecomic.com/']
 , [src*='upup-downdown.com/']
+, [src*='warehousecomic.com/']
 ))
 { outline: 2px dashed #6c71c4; outline-offset: 1px }
 EOS
