@@ -55,7 +55,6 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword st -t sync-tabs about:sync-tabs
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
-   \ bmark -keyword 1 -t nebu1a http://blip.tv/Nebu1a#EpisodeArchive
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dh -t Dotaholic http://dotaholic.com/dota-2/search?i=%s
