@@ -85,6 +85,11 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
    \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
    \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
+   \ extadd https://addons.mozilla.org/firefox/downloads/latest/8538/addon-8538-latest.xpi?src=feedly-website
+   \ bmark -keyword fr -t 'feedly' http://www.feedly.com/home#index
+   \ bmark -keyword ft -t 'feedly category' http://www.feedly.com/home#category/%s
+   \ bmark -keyword fs -t 'feedly saved' http://www.feedly.com/home#saved
+   \ bmark -keyword fa -t 'feedly latest' http://www.feedly.com/home#latest
 map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
@@ -229,6 +234,8 @@ style -n "greader" https://www.google.com/reader/view/* <<EOS
 #viewer-header, .entry-actions { display: block !important }
 #chrome-fullscreen-top-toggle, .item-plusone, .sharebox, .email { display: none !important }
 EOS
+
+set passkeys+='http://www.feedly.com/home*':'v?smrga'
 
 map + -js <<EOS
 dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
