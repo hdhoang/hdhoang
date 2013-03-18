@@ -98,6 +98,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.link.open_newwindow=3
    \ set! layout.spellcheckDefault=0
    \ set! middlemouse.contentLoadURL=false
+   \ set! middlemouse.paste=true
    \ set! ui.key.contentAccess=4
    \ set! ui.key.menuAccessKey=0
    \ set! browser.anchor_color="#6c71c4"
