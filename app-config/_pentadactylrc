@@ -3,6 +3,9 @@
 """ Start up
 map <C-r> -ex rehash
 map <C-S-r> -ex restart +purgecaches
+set! browser.backspace_action=0
+set! browser.link.open_newwindow=3
+set! middlemouse.contentLoadURL=false
 
 """ Input
 map A -ex dialog about
