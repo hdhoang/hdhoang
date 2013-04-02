@@ -783,6 +783,7 @@
 * LP                                                               :FAV:game:
 ** TODO ??
 *** Commandos series                                                    :tac:
+*** Daikatana
 *** Hitman series                                                       :puz:
 *** Homeworld series                                                    :rts:
 *** Tenchu series                                                        :ja:
@@ -895,6 +896,9 @@
 ** kethryveris
 *** DONE Shadow Hearts                               :hybrid:comp:humor:info:
 *** TODO Shadow Hearts: Covenant                                     :hybrid:
+    :PROPERTIES:
+    :part:     42
+    :END:
 ** kloudtana
 *** DONE King of Demons                        :video:group:info:humor:voice:
 ** Kyyrewyyoae
@@ -922,8 +926,12 @@
 *** TODO Dead Space 2                                                 :video:
 *** TODO Silent Hill 2                                                :video:
 *** TODO Silent Hill 3                                                :video:
-** Occultatio, Mott514
-*** TODO L.A. Noire                                                   :video:
+** OatmealRaisin
+*** TODO Spec Ops: The Line                                :video:voice:comp:
+** Occultatio
+*** TODO Driver: San Francisco
+*** with Mott514
+**** TODO L.A. Noire                                                  :video:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
 ** perochialjoe                                                 :video:voice:
@@ -972,8 +980,8 @@
 *** TODO Syberia                                                :video:voice:
 ** slowbeef
 *** TODO Policenauts                                                 :hybrid:
-** Spoiler Warning                                        :group:voice:video:
-*** TODO The Walking Dead
+** Spoiler Warning Show                                   :group:voice:video:
+*** DONE The Walking Dead
 ** Static_Fiend
 *** DONE Prey                                             :video:voice:humor:
 ** Stratafyre
@@ -1036,6 +1044,7 @@
    :END:
 ** Today I Found Out                                                    :FAV:
 * Movie
+** TODO Aladdeen
 ** TODO Angel Densetsu                                          :jo:ja:video:
    :PROPERTIES:
    :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
@@ -1097,6 +1106,9 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
+** TODO Paranorman (2012)
+** Pixar
+*** TODO Monster Inc
 ** TODO Roseanna's Grave
 ** TODO Samurai Champloo                                         :jo:ja:toon:
 ** DONE Strange Days (1995)                                             :FAV:
@@ -1116,6 +1128,7 @@
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** TODO The Simpsons
+** TODO To Rome with Love
 ** TODO Tombstone (1993)
 ** Trilogy of life
 *** DONE Il Decameron (1971)
@@ -1159,17 +1172,17 @@
 *** DONE (1996) Predator
 *** DONE (2010-08-20) Blood of the Nations
 *** DONE (2012-04-06) Stalingrad
-** TODO Adam Lambert                                                   :tunx:
-*** TODO (2009-05-21) No Boundaries
-*** TODO (2009-11-17) Take One
-*** TODO (2009-11-23) For Your Entertainment
-*** TODO (2010-04-09) Remixes
-*** TODO (2010-05-01) For Your Entertainment
-*** TODO (2010-08-17) If I Had You (Remixed)
-*** TODO (2010-12-06) Acoustic Live!
-*** TODO (2011-03-21) Glam Nation Live
-*** TODO (2011-11-21) Beg for Mercy
-*** TODO (2012-05-15) Trespassing
+** DONE Adam Lambert                                                   :tunx:
+*** DONE (2009-05-21) No Boundaries
+*** DONE (2009-11-17) Take One
+*** DONE (2009-11-23) For Your Entertainment
+*** DONE (2010-04-09) Remixes
+*** DONE (2010-05-01) For Your Entertainment
+*** DONE (2010-08-17) If I Had You (Remixed)
+*** DONE (2010-12-06) Acoustic Live!
+*** DONE (2011-03-21) Glam Nation Live
+*** DONE (2011-11-21) Beg for Mercy
+*** DONE (2012-05-15) Trespassing
 ** TODO Adèle
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04
@@ -1179,6 +1192,8 @@
 *** TODO (2012-11-06) Music from Another Dimension!
 ** TODO Alestorm                                                     :jbopre:
 ** TODO Alice Cooper
+** TODO Alice in Chains
+*** TODO (2013-05-28) The Devil Put Dinosaurs Here
 ** TODO Alicia Keys
 ** DONE Alizée                                                   :jo:fr:1fav:
 *** DONE (2000-11-28) Gourmandises
@@ -1212,6 +1227,8 @@
 ** TODO At Vance
 *** TODO (2012-04-27) Facing Your Enemy
 ** TODO Atlas Plug
+** TODO Avantasia
+*** TODO (2013-03-30) The Mystery of Time
 ** DONE Avenged Sevenfold                                          :riff:FAV:
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon
@@ -1259,6 +1276,7 @@
     :PROPERTIES:
     :btih:     3EC5AFB039BF4B984FD99E39B22D3FC63E733FB9
     :END:
+*** TODO (2013-03-12) StarCraft II: Heart of the Swarm
 ** TODO Blondie
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
@@ -1274,6 +1292,8 @@
 ** DONE Bobaflex
 ** DONE Bon Jovi
 *** TODO (2012-11-27) Inside Out
+*** TODO (2013-03-12) What About Now
+*** TODO (2013-03-26) Icon
 ** DONE BOND
 ** TODO Boney M.
 ** Boris                                                             :ja:not:
@@ -1418,6 +1438,8 @@
 ** TODO Dave Matthews Band
 *** TODO (2012-09-11) Away from the World
 ** DONE Deep Purple
+** TODO Depeche Mode
+*** TODO (2013-03-22) Delta Machine
 ** DONE Diablo Swing Orchestra                           :FAV:string:jamendo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
@@ -1466,6 +1488,8 @@
 ** Eric Brosius                                                    :FAV:game:
 *** DONE System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
+** TODO Eternal Tears of Sorrow
+*** TODO (2013-02-22) Saivon Lapsi
 ** TODO Europe
 *** TODO (2012-04) Back of Bones
 ** DONE Evanescene                                                      :FAV:
@@ -1478,6 +1502,7 @@
    :mbid:     http://musicbrainz.org/artist/a670e05a-cea8-4b37-bce9-d82daf1a0fa4
    :END:
 ** TODO Finntroll
+*** TODO (2013-03-25) Blodsvept
 ** TODO FireLake                                                       :1fav:
 *** Dirge for the Planet                                                :FAV:
 ** DONE Flight of the Conchords                                         :FAV:
@@ -1522,8 +1547,10 @@
 ** DONE Helloween                                                       :FAV:
 *** TODO (2013-01-18) Straight Out of Hell
 ** DONE HIM                                                             :FAV:
+*** TODO (2013-04-26) Tears on Tape
 ** TODO Hinder                                                       :lastfm:
 ** DONE Homeworld (official)
+** TODO Humer                                                          :chip:
 ** DONE Iced Earth
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
@@ -1594,6 +1621,7 @@
 *** with John Roderick
 **** TODO (2012-11-15) One Christmas at a Time
 ** DONE Josh Groban
+*** TODO (2013-02-01) All That Echoes
 ** DONE Josh Woodward                                        :jamendo:lastfm:
 *** DONE (2004-04-17) Here Today
 *** DONE (2005-02-05) Crawford Street
@@ -1679,7 +1707,7 @@
      :PROPERTIES:
      :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
      :END:
-**** TODO Volume 2: Concertos
+**** DONE Volume 2: Concertos
      :PROPERTIES:
      :btih:     F903BD41E9AE78E29AB038A8E0CC573A44B0329E
      :END:
@@ -1715,6 +1743,7 @@
     :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
     :END:
+** TODO Lê Cát Trọng Lý
 ** TODO M.I.A
 ** GONE M2M                                                             :FAV:
 *** DONE (2000-03-07) Shades of Purple
@@ -1773,15 +1802,17 @@
 *** DONE (2004-07-26) The Weight of the World
 *** DONE (2006-06-27) A Light in the Dark
 *** DONE (2008-09-23) This Present Wasteland
-** GONE Metal Gear Solid                                                :FAV:
+** Metal Gear Solid                                                     :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
 *** DONE MGS2
 *** DONE MGS3
 *** DONE MGS4
 *** DONE (2010-04-12) Metal Gear Solid: Peace Walker
+*** TODO (2013-02-19) Metal Gear Rising: Revengeance-Vocal Tracks
 ** DONE Metallica                                                       :FAV:
 ** TODO Michael Bublé
+*** TODO (2013-04-12) To Be Loved
 ** DONE Michael Hoenig
 *** DONE Baldur's Gate
 *** DONE Baldur's Gate II
@@ -1789,7 +1820,7 @@
 ** Michael McCann
 *** DONE (2011-11-15) Deus Ex: Human Revolution                    :FAV:game:
 ** TODO Michelle Stewart                                                :FAV:
-*** TODO (2011) Walking on Ashes
+*** DONE (2011) Walking on Ashes
 *** TODO (2013) Sands of Time
 ** DONE Microwave                                               :vi:riff:FAV:
    :PROPERTIES:
@@ -1797,6 +1828,7 @@
    :END:
 ** DONE Mike Oldfield                                                   :FAV:
 *** TODO (2012-10-09) Journey into Space
+*** TODO (2013-02-01) Tubular Beats
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
@@ -1883,6 +1915,7 @@
 ** DONE Nuclear Assault
 ** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
+*** TODO (2013-03-22) Native
 ** TODO Our Lady Peace
 ** DONE Pain Confessor                                                 :wail:
 *** DONE (2004-09-08) Turmoil
@@ -1940,13 +1973,6 @@
 ** TODO Rush
 ** TODO Saattue
 ** TODO Sabaton                                                      :lastfm:
-** TODO Samurai Champloo
-*** TODO (2004-06-23) Samurai Champloo Music Record: Departure
-*** TODO (2004-06-23) Samurai Champloo Music Record: Masta
-*** TODO (2004-08-18) YOU ~Himawari~
-*** TODO (2004-09-22) Samurai Champloo Music Record 2: Playlist
-*** TODO (2004-09-22) Samurai Champloo Music Record: Impression
-*** TODO (2005-04-21) #501
 ** DONE Santana                                                  :FAV:guitar:
 *** DONE (2012-05-11) Shape Shifter
 ** TODO Santigold
@@ -1968,6 +1994,7 @@
 *** DONE (2007-11-26) Inside I'm Singing
 *** DONE (2011) Winter Poem
 ** DONE Senses Fail                                                     :not:
+*** TODO (2013-03-26) Renacer
 ** TODO Sentenced
 ** TODO Sepultura                                                        :jo:
 ** Shadow Hearts
@@ -2015,9 +2042,11 @@
 *** TODO (2012-08-14) The Story of Light
 ** TODO Stevie Ray Vaughan                                           :guitar:
 ** DONE Stone Sour                                                 :wail:FAV:
-*** TODO (2012-10) House of Gold and Bones
+*** DONE (2012-10) House of Gold and Bones, Part 1
+*** TODO (2013-04-09) House of Gold & Bones Part 2
 ** DONE Stratovarius                                                 :FAV:fi:
-*** TODO (2013-01-25) Unbreakable
+*** DONE (2013-01-25) Unbreakable
+*** TODO (2013-02-25) Nemesis
 *** solo Timo Tolkki
 ** String Quartet tributes                                       :FAV:string:
 *** DONE (1999) The String Quartet Tribute to Led Zeppelin
@@ -2079,26 +2108,27 @@
 *** DONE (2009) R3BORN
 *** DONE (2010) 16 Fighting Bits
 *** DONE (2011) Taste My Power
-** TODO Therion
-*** TODO (1991) Of Darkness...
-*** TODO (1992) Beyond Sanctorum
-*** TODO (1994-01-25) Symphony Masses: Ho Drakon Ho Megas
-*** TODO (1996-08-08) Theli
-*** TODO (1996-11-15) Lepaca Kliffoth
-*** TODO (1997-06-26) A'arab Zaraq Lucid Dreaming
-*** TODO (1998) Vovin
-*** TODO (1999-06-07) Crowning of Atlantis
+** DONE Therion
+*** DONE (1991) Of Darkness...
+*** DONE (1992) Beyond Sanctorum
+*** DONE (1994-01-25) Symphony Masses: Ho Drakon Ho Megas
+*** DONE (1996-08-08) Theli
+*** DONE (1996-11-15) Lepaca Kliffoth
+*** DONE (1997-06-26) A'arab Zaraq Lucid Dreaming
+*** DONE (1998) Vovin
+*** DONE (1999-06-07) Crowning of Atlantis
 *** DONE (2000-01-31) Deggial                                           :FAV:
-*** TODO (2001-11-13) Secret of the Runes
-*** TODO (2004-06-01) Lemuria
-*** TODO (2004-06-01) Sirius B
-*** TODO (2006-06-13) Celebrators of Becoming
-*** TODO (2007-02-06) Gothic Kabbalah
-*** TODO (2008-07-28) Live Gothic
-*** TODO (2009) The Miskolc Experience
-*** TODO (2010-10-26) Sitra Ahra
-*** TODO (2012-09-28) Les fleurs du mal
+*** DONE (2001-11-13) Secret of the Runes
+*** DONE (2004-06-01) Lemuria
+*** DONE (2004-06-01) Sirius B
+*** DONE (2006-06-13) Celebrators of Becoming
+*** DONE (2007-02-06) Gothic Kabbalah
+*** DONE (2008-07-28) Live Gothic
+*** DONE (2009) The Miskolc Experience
+*** DONE (2010-10-26) Sitra Ahra
+*** DONE (2012-09-28) Les fleurs du mal
 ** TODO They Might Be Giants                                         :jbopre:
+*** TODO (2013-03-05) Nanobots
 ** DONE Thy Serpent                                                    :1fav:
 ** TODO Thủy Triều Đỏ                                                    :vi:
 ** DONE Tim Minchin                                                     :FAV:
@@ -2228,6 +2258,8 @@
 *** DONE (2012-01-06) Untold Stories of a Dying Moon
 ** Đặng Thái Sơn                                             :tunx:piano:FAV:
 *** DONE (2008-03-08) Chopin Polonaises Complete
+* Non-fiction
+** TODO As a man thinketh                                                :jo:
 * Person                                                                :FAV:
 ** Aaron Straup Cope                                                    :net:
    :PROPERTIES:
