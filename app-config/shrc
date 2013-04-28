@@ -156,6 +156,7 @@ if [ -n "$ZSH_NAME" ]; then
 
     WORDCHARS=''
 
+    add-zsh-hook -d precmd prompt_grml_precmd
     EXITCODE="%(?..${fg[red]}%? )"
     PROMPT="${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
 %# ${NO_COLOUR}"
