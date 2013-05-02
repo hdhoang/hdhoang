@@ -74,9 +74,9 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-   \ bmark -keyword t -t train http://hb4pm4eznzhd6mts.onion/pe/train.php
-   \ bmark -keyword at -t asynctrain http://hb4pm4eznzhd6mts.onion/pe/async/asynctrain.php
-   \ bmark -keyword sp -t 'personal stats' http://hb4pm4eznzhd6mts.onion/pe/stat.php?personal=1
+   \ bmark -keyword t -t train http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/train.php
+   \ bmark -keyword at -t asynctrain http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/async/asynctrain.php
+   \ bmark -keyword sp -t 'personal stats' http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/stat.php?personal=1
    \ bmark -keyword ts -t 'tor cenba' https://atlas.torproject.org/#search/cenba
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword gr -t greader https://www.google.com/reader/view/ -tags news
