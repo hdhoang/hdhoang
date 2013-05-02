@@ -234,6 +234,37 @@
 * Fiction
 ** China Miéville
 *** TODO Embassytown
+** Christopher Wood                                                      :ns:
+*** as Timothy Lea
+**** TODO Confessions From a Haunted House
+**** TODO Confessions From a Health Farm
+**** TODO Confessions from a Holiday Camp
+**** TODO Confessions From a Hotel
+**** TODO Confessions From a Luxury Liner
+**** TODO Confessions From a Nudist Colony
+**** TODO Confessions From the Clink
+**** TODO Confessions From the Pop Scene
+**** TODO Confessions From the Shop Floor
+**** TODO Confessions of a Driving Instructor
+**** TODO Confessions of a Film Extra
+**** TODO Confessions of a Long Distance Lorry Driver
+**** TODO Confessions of a Milkman
+**** TODO Confessions of a Plumber's Mate
+**** TODO Confessions of a Private Dick
+**** TODO Confessions of a Private Soldier
+**** TODO Confessions of a Travelling Salesman
+**** TODO Confessions of a Window Cleaner
+**** TODO Confessions of an Ice Cream Man
+*** as Rosie Dixon
+**** TODO Confessions From a Package Tour
+**** TODO Confessions From an Escort Agency
+**** TODO Confessions of a Baby Sitter
+**** TODO Confessions of a Gym Mistress
+**** TODO Confessions of a Lady Courier
+**** TODO Confessions of a Night Nurse
+**** TODO Confessions of a Personal Secretary
+**** TODO Confessions of a Physical WRAC
+**** TODO Rosie Dixon, Barmaid
 ** Daniel Quinn
 *** TODO Ishmael                                                        :FAV:
    :PROPERTIES:
@@ -1206,7 +1237,9 @@
 ** DONE Alsou                                                        :ru:FAV:
 ** TODO Amity in Fame                                               :jamendo:
 ** DONE Amon Amarth                                                     :FAV:
+*** TODO (2013-07-21) Deceiver of the Gods
 ** DONE Amorphis                                                        :FAV:
+*** TODO (2013-04-19) Circle
 ** TODO Amy Winehouse                                                  :tunx:
 ** DONE Annihilator                                                     :FAV:
 ** DONE Anthrax                                                        :1fav:
@@ -1243,7 +1276,8 @@
 ** TODO Beto Vázquez Infinity                                        :lastfm:
 ** DONE Bionic Commando                                            :FAV:game:
 *** Rearmed                                                             :not:
-** GONE Black Sabbath                                                   :FAV:
+** DONE Black Sabbath                                                   :FAV:
+*** TODO (2013-06-10) 13
 *** solo Ozzy Osbourne
 ** TODO Blind Guardian
 ** DONE Bliss(This)
@@ -1967,6 +2001,7 @@
 **** DONE (2006-06-09) Lost Horizons
 *** as Rhapsody of Fire
 ** DONE Richard Clayderman                                       :inst:piano:
+*** TODO (2013-04-30) Romantique
 ** TODO Richard Strauss
 ** TODO Richie Sambora
 *** TODO (2012-09-25) Aftermath of the Lowdown
@@ -1977,6 +2012,7 @@
 *** DONE (2012-05-11) Shape Shifter
 ** TODO Santigold
 ** DONE Sarah Brightman                                            :f:jo:FAV:
+*** TODO (2013-04-05) Dreamchaser
 ** GONE Savatage                                                   :epic:FAV:
 *** as Trans-Siberian Orchestra
 **** TODO (2012-10-30) Dream of Fireflies (on a Christmas Night)
