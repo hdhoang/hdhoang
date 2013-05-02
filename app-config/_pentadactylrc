@@ -92,6 +92,10 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword fa -t 'feedly latest' http://www.feedly.com/home#latest
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
+   \ set! browser.contentHandlers.auto.application/vnd.mozilla.maybe.feed=http://www.feedly.com/subscribe.htm?feedURL=%s
+   \ set! browser.feeds.handler=reader
+   \ set! browser.feeds.handler.default=web
+   \ set! browser.feeds.handlers.webservice=http://www.feedly.com/subscribe.htm?feedURL=%s
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
@@ -211,15 +215,6 @@ body > a, h1, p
 , form td:last-child:not(#imgslot)
 , #settings td>:not(select), #keyslot
 { display: none }
-EOS
-
-set! browser.contentHandlers.auto.application/vnd.mozilla.maybe.feed=http://fusion.google.com/add?feedurl=%s
-set! browser.feeds.handler=reader
-set! browser.feeds.handler.default=web
-set! browser.feeds.handlers.webservice=http://fusion.google.com/add?feedurl=%s
-autocmd PageLoadPre http://www.google.com/ig/add?feedurl=* -js <<EOS
-doc.location.replace(doc.location.href.replace('/ig/add?feedurl=',
-     '/reader/view/#stream/feed/'))
 EOS
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
