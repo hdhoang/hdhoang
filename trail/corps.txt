@@ -265,6 +265,8 @@
 **** TODO Confessions of a Personal Secretary
 **** TODO Confessions of a Physical WRAC
 **** TODO Rosie Dixon, Barmaid
+** Dan Simmons
+*** TODO Illium and Olympos
 ** Daniel Quinn
 *** TODO Ishmael                                                        :FAV:
    :PROPERTIES:
@@ -337,6 +339,8 @@
 *** DONE The Island
 ** Roger Williams
 *** DONE The Metamorphosis of Prime Intellect                       :sci:FAV:
+** Roger Zelazny
+*** TODO Lord of Light
 ** DONE The Last Ring-bearer                                        :rev:FAV:
    :PROPERTIES:
    :url:      http://ymarkov.livejournal.com/270570.html
@@ -891,6 +895,8 @@
 *** TODO 007: Blood Stone                                             :video:
 *** TODO 007: The World is Not Enough                            :info:video:
 *** TODO 007: Quantum Solace                                     :info:video:
+** gatz
+*** TODO Vampire the Masquerade: Redemption                 :shot:comp:humor:
 ** Geop
 *** DONE Shadow of the Colossus                              :comp:video:sub:
 ** Giragast
@@ -928,7 +934,7 @@
 *** DONE Shadow Hearts                               :hybrid:comp:humor:info:
 *** TODO Shadow Hearts: Covenant                                     :hybrid:
     :PROPERTIES:
-    :part:     42
+    :part:     45
     :END:
 ** kloudtana
 *** DONE King of Demons                        :video:group:info:humor:voice:
@@ -965,6 +971,8 @@
 **** TODO L.A. Noire                                                  :video:
 ** Opendork
 *** DONE Full Throttle                                            :shot:info:
+** pannycakes
+*** TODO Star Wars: Republic Commando                        :video:sub:info:
 ** perochialjoe                                                 :video:voice:
 *** TODO Alan Wake
 *** TODO STALKER: Call of Pripyat
@@ -1148,6 +1156,7 @@
    :END:
 ** TODO The Adventures of Tintin: Secret of the Unicorn
 ** DONE The Big Lebowski (1998)                                          :jo:
+** TODO The Hangover
 ** TODO The Hobbit
 *** TODO 48fps
 ** DONE The Iron Giant (1999)                                           :FAV:
