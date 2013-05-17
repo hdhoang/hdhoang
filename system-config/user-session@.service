@@ -1,5 +1,4 @@
 .include /usr/lib/systemd/system/user-session@.service
 
 [Service]
-TTYPath=/dev/tty1
 EnvironmentFile=%h/.pam_environment
