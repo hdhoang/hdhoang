@@ -58,7 +58,6 @@ alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias nh='sudo nethogs enp3s0'
 alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 port_mapping=(
-587 tcp 465 tcp # tor
 5880 tcp 4660 tcp # tor
 4444 tcp # i2p proxy
 20220 tcp 20220 udp # torrent
