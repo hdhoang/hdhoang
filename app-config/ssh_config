@@ -11,3 +11,7 @@ HostName cenba.zahe.me
 CheckHostIP no
 Port 2222
 IdentityFile ~/secrets/czm
+
+Host kub
+HostName kub.zahe.me
+IdentityFile ~/.ssh/kub
