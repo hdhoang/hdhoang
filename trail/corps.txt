@@ -1403,6 +1403,7 @@
 *** TODO (2013-02-12) Temper Temper
 ** TODO Burzum
 *** DONE (2012) Umskiptar
+*** TODO (2013-05-27) Sôl austan, Mâni vestan
 ** TODO Butterfly Tea                                                :lastfm:
 ** DONE Bức Tường                                                       :FAV:
 *** TODO Ngày Khác
@@ -1425,6 +1426,7 @@
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
 *** DONE (2008-04-09) Blooddrunk                                       :1fav:
 *** DONE (2011) Relentless Reckless Forever
+*** TODO (2013-06-06) Halo of Blood
 ** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
@@ -2058,6 +2060,7 @@
 ** TODO Sixpence None the Richer                                      :FAV:f:
 *** TODO (2012-08-07) Lost in Transition
 ** TODO Skillet
+*** TODO (2013-06-25) Rise
 ** TODO Skrillex
 ** TODO Slayer
 ** TODO Snow Patrol
