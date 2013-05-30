@@ -1,0 +1,11 @@
+# -*- mode: conf-space -*-
+ContactInfo tor at zahe dot me
+Nickname kub2web
+Tor2webMode 1
+CircuitBuildTimeout 100
+SocksListenAddress 127.0.0.1:9052
+ExitPolicy reject *:*
+
+RunAsDaemon 1
+DataDirectory /var/lib/tor2web
+Log notice syslog
