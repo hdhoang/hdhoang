@@ -1,0 +1,17 @@
+[Unit]
+Description=Anonymizing Overlay Network
+After=network.target
+
+[Service]
+User=tor
+ExecStart=/usr/local/bin/tor2web -f /etc/tor/tor2webrc
+KillSignal=SIGINT
+LimitNOFILE=8192
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+PrivateTmp=yes
+ReadOnlyDirectories=/
+ReadWriteDirectories=/var/lib/tor2web
