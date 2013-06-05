@@ -3,11 +3,10 @@ ContactInfo tor at zahe dot me
 Nickname kub
 DirPort 4660
 ORPort 5880
-SocksListenAddress 0.0.0.0
+SOCKSPort 0.0.0.0:9050
 RelayBandwidthBurst 131072
 RelayBandwidthRate 65536
 ExitPolicy reject *:*
 
-RunAsDaemon 1
 DataDirectory /var/lib/tor
 Log notice syslog

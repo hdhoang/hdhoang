@@ -1,11 +1,6 @@
 .include /usr/lib/systemd/system/tor.service
 
-[Unit]
-After=network.target
-
 [Service]
-User=tor
-Group=tor
 PrivateTmp=yes
 ReadOnlyDirectories=/
 ReadWriteDirectories=/var/lib/tor
