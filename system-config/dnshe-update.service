@@ -1,0 +1,9 @@
+[Unit]
+Description=Update HE.net DDNS
+After=network.target
+
+[Service]
+Type=oneshot
+User=hdhoang
+ExecStart=/usr/bin/curl --silent -k --netrc "https://dyn.dns.he.net/nic/update"
+
