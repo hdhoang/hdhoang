@@ -1,7 +1,7 @@
 [Unit]
-Description=selfoss update feeds
+Description=update selfoss
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/php /usr/share/webapps/selfoss/update.php
+ExecStart=/usr/bin/php /home/hdhoang/selfoss/update.php
 User=http
