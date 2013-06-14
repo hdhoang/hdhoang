@@ -170,6 +170,7 @@ map <C-S-s> -ex bmarks! -tags setting
    \ js services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
    \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
+   \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 
 set pk+=smbc-comics.com:x
@@ -232,6 +233,8 @@ style -n "greader" https://www.google.com/reader/view/* <<EOS
 EOS
 
 set passkeys+='http://www.feedly.com/home*':'v?smrga'
+
+set passkeys+=flecu.zahe.me:'vonp<Left><Right>smrUS'
 
 map + -js <<EOS
 dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
