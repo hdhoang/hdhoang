@@ -2,7 +2,8 @@
 listen-address  127.0.0.1:8118
 toggle  0
 accept-intercepted-requests 1
-forward-socks4a / 127.0.0.1:9052 .
+forward-socks5t /      127.0.0.1:9050 .
+forward-socks5t .onion 127.0.0.1:9052 .
 confdir /etc/privoxy
 
 toggle  1
