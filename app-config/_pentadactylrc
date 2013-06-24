@@ -85,17 +85,8 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
    \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
    \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
-   \ extadd https://addons.mozilla.org/firefox/downloads/latest/8538/addon-8538-latest.xpi?src=feedly-website
-   \ bmark -keyword fr -t 'feedly' http://www.feedly.com/home#index
-   \ bmark -keyword ft -t 'feedly category' http://www.feedly.com/home#category/%s
-   \ bmark -keyword fs -t 'feedly saved' http://www.feedly.com/home#saved
-   \ bmark -keyword fa -t 'feedly latest' http://www.feedly.com/home#latest
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
-   \ set! browser.contentHandlers.auto.application/vnd.mozilla.maybe.feed=http://www.feedly.com/subscribe.htm?feedURL=%s
-   \ set! browser.feeds.handler=reader
-   \ set! browser.feeds.handler.default=web
-   \ set! browser.feeds.handlers.webservice=http://www.feedly.com/subscribe.htm?feedURL=%s
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
@@ -231,8 +222,6 @@ style -n "greader" https://www.google.com/reader/view/* <<EOS
 #viewer-header, .entry-actions { display: block !important }
 #chrome-fullscreen-top-toggle, .item-plusone, .sharebox, .email { display: none !important }
 EOS
-
-set passkeys+='http://www.feedly.com/home*':'v?smrga'
 
 set passkeys+=flecu.zahe.me:'vonp<Left><Right>smrUS'
 
