@@ -79,12 +79,6 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword sp -t 'personal stats' http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/stat.php?personal=1
    \ bmark -keyword ts -t 'tor cenba' https://atlas.torproject.org/#search/cenba
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
-   \ bmark -keyword gr -t greader https://www.google.com/reader/view/ -tags news
-   \ bmark -keyword g/ -t 'search gread' https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fread
-   \ bmark -keyword g/s -t 'search starred' https://www.google.com/reader/view/#search/%22%s%22//user%2F-%2Fstate%2Fcom.google%2Fstarred
-   \ bmark -keyword gt -t 'greader label' https://www.google.com/reader/view/#stream/user/-/label/%s
-   \ bmark -keyword gs -t starred https://www.google.com/reader/view/#stream/user/-/state/com.google/starred
-   \ bmark -keyword ga -t 'greader all' https://www.google.com/reader/view/#stream/user/-/state/com.google/reading-list
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.newtabpage.enabled=false
@@ -210,18 +204,6 @@ body > a, h1, p
 EOS
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
-
-set passkeys+='https://www.google.com/reader/view/*':'vf/? npsmrgaeTUNPXO'
-autocmd DOMLoad https://www.google.com/reader/view/* -js <<EOS
-let container = doc.getElementById("viewer-entries-container");
-container.tabIndex = "-1";
-container.accessKey = "o";
-EOS
-style -n "greader" https://www.google.com/reader/view/* <<EOS
-#viewer-entries-container:focus { outline: none }
-#viewer-header, .entry-actions { display: block !important }
-#chrome-fullscreen-top-toggle, .item-plusone, .sharebox, .email { display: none !important }
-EOS
 
 set passkeys+=flecu.zahe.me:'vonp<Left><Right>smrUS'
 
