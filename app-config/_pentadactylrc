@@ -57,8 +57,8 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
-   \ bmark -keyword dw -t 'Dota 2 Wiki' http://www.dota2wiki.com/index.php?title=Special%3ASearch&search=%s
-   \ bmark -keyword dr -t 'Dota random' http://www.dota2wiki.com/wiki/Special:Random
+   \ bmark -keyword dw -t 'Dota 2 Wiki' http://dota2.gamepedia.com/index.php?title=Special%3ASearch&search=%s
+   \ bmark -keyword dr -t 'Dota 2 Random' http://dota2.gamepedia.com/Special:Random
    \ bmark -keyword df -t 'Dota 2 fix' http://dev.dota2.com/showthread.php?t=28814
    \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
    \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
@@ -364,6 +364,6 @@ style -n "girtby" girtby.net a { text-decoration: underline !important }
 
 style -n "phoronix" www.phoronix.com #phxcms_content_right { float: none !important }
 
-style -n "dota2wiki" www.dota2wiki.com #bodyContent2 { margin-right: 0 !important} #curse-panel { display: none }
+style -n "dota2wiki" dota2.gamepedia.com #bodyContent2 { margin-right: 0 !important} #curse-panel { display: none }
 
 style -n "d20" www.shamusyoung.com [href^="?"]::after { content: "\22c6" }
