@@ -721,23 +721,18 @@
 ** Tila Nguyen                                                          :FAV:
 ** Tumblr                                                               :FAV:
 *** 2drool4                                                             :gif:
-*** Air-Trip                                                          :cloth:
 *** AloneInMyOffice                                                   :scene:
-*** ALovingFamily                                                        :in:
 *** Asialicious                                                          :ja:
 *** AssTitsFace                                                         :gif:
 *** AttractiveWomen                                                    :name:
 *** BadAsianWife                                                    :fiction:
 *** BeautifulNakedLadies
 *** bjaddict                                                 :bj:fiction:gif:
-*** bncGirl                                                              :be:
 *** ClothingProhibited
 *** Contexxxt                                                            :in:
 *** CuteCuteJapanese                                                     :ja:
-*** DarkerThanDaylight                                                :in:be:
 *** DicksInMouths
-*** DisgustingPleasure                                                   :in:
-*** effinbeautiful
+*** EffinBeautiful
 *** EpicNSFW
 *** ero
 *** FilthyWetSlut
@@ -745,8 +740,6 @@
 *** FuckYeahAsianMaids                                             :ja:cloth:
 *** FuckYeahFrenchMaids                                               :cloth:
 *** GimmeSomeGinger                                                     :red:
-*** GirlsGettingClean                                                 :scene:
-*** GirlsWithGlasses                                             :cloth:name:
 *** GirlYouWant
 *** HardDickWetPussy
 *** HeavenlyRedheads                                                    :red:
@@ -754,25 +747,22 @@
 *** Hot-Redheads                                                        :red:
 *** HotChicksLoveBigDicks                                              :name:
 *** HotHotAsians                                                    :ja:name:
-*** IncestCandy                                                          :in:
 *** IncestDreams                                                         :in:
 *** IncestualAngels                                                      :in:
 *** Indifferent-cats-in-amateur-porn                                   :cute:
 *** InnocentLook
 *** IntoBe                                                            :video:
-*** Jaeminha                                                        :be:toon:
 *** JoinMileHighClub                                                  :scene:
 *** KittiesnTitties                                                    :cute:
 *** LingerieLove
 *** NOT LuvAsianPuss                                             :fiction:ja:
-*** max1475                                                         :be:toon:
 *** MyNaughtyPen                                                     :in:gif:
 *** NakedDoors                                                      :fiction:
 *** OwnerOfBeauty                                                        :in:
+*** Perfect-Curves                                                     :name:
 *** PookiesFamily                                                        :in:
 *** QueensOfBlowjob                                                      :bj:
 *** RandomErotic                                                       :name:
-*** RassBaby                                                             :be:
 *** RedheadBoobies                                                      :red:
 *** RedPinkWhite                                                      :cloth:
 **** BlackPanty                                                       :cloth:
@@ -782,24 +772,18 @@
 *** SheIsSoSexy                                                          :ja:
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
-*** SpankableMaids                                                    :cloth:
 *** StashErotica                                                   :gif:toon:
-*** StephaniessSecrets                                                   :in:
 *** StylishPorn
-*** TabooDepravity                                                       :in:
-*** TastefulSin                                                        :name:
+*** TempleOfGinger
 *** The-Porn-Stories                                                :fiction:
 *** TheErodyssey                                              :cloth:fiction:
 *** NOT TheGifer
-*** TooCuteForPorn                                                     :name:
-*** TsukiWulf                                                       :be:toon:
-*** UltimateBetrayal                                                :fiction:
+*** TravelForTheWomen
 *** WhatTheyWereDoing                                                    :in:
 *** WhsThatGirl                                                        :name:
 *** WomenFighters                                                     :cloth:
 *** WorkingLady                                                    :ja:cloth:
-*** wywbdns                                                         :fiction:
-*** YourTeachersSecrets                                       :fiction:scene:
+*** wywbdns                                                             :gif:
 ** tunx                                                                 :FAV:
 ** Tussinee                                                             :not:
 ** TV girl                                                           :FAV:vi:
@@ -1159,12 +1143,13 @@
 ** Pixar
 *** TODO Monster Inc
 ** TODO Quentin Tarantino
+*** DONE Django Unchained (2012)
 *** DONE Inglorious Basterds
+*** DONE Pulp Fiction (1994)
 *** DONE Reservoir Dogs
-*** DONE Pulp Fiction
-*** TODO Django Unchained
 ** TODO Roseanna's Grave
 ** TODO Samurai Champloo                                         :jo:ja:toon:
+** TODO Seven Psychopaths (2012)                                         :jo:
 ** DONE Strange Days (1995)                                             :FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
@@ -1190,6 +1175,7 @@
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
 ** TODO The Simpsons
+** DONE The Usual Suspects (1995)                                       :FAV:
 ** TODO To Rome with Love
 ** TODO Tombstone (1993)
 ** Trilogy of life
@@ -1288,6 +1274,8 @@
    :PROPERTIES:
    :btih:     http://musicbrainz.org/artist/93c1606c-28ef-4955-ae75-331a0975608d
    :END:
+** TODO Arctic Monkeys
+*** TODO (2013-09-09) AM
 ** TODO At Vance
 *** TODO (2012-04-27) Facing Your Enemy
 ** TODO Atlas Plug
@@ -1529,7 +1517,7 @@
    :END:
 ** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
-** DONE Dry Kill Logic
+** DONE Dry Kill Logic                                                 :1fav:
 ** TODO EELS
 *** TODO (2013-02-03) Wonderful, Glorious
 ** DONE El Pogo8bit
@@ -1644,6 +1632,7 @@
 *** DONE Big Buck Bunny
 ** TODO Jay-Z                                                           :rap:
 *** TODO (2013-01-01) Black American Gangster
+*** TODO (2013-07-08) Magna Carta... Holy Grail
 ** Jeremy Soule                                                        :game:
 *** DONE (2000) Icewind Dale
 ** Jesper Kyd                                                          :game:
@@ -1674,6 +1663,8 @@
 ** TODO Jimi Hendrix
 *** (2013-03-05) People, Hell and Angels
 ** TODO Joan Osborne
+** Joe Hisaishi
+*** (2011-02-09) Ni no Kuni: Shikkoku no Madoushi                       :FAV:
 ** Joel Nielsen
 *** DONE (2012-09-01) Black Mesa                                       :game:
 ** Johann Sebastian Bach
@@ -1918,6 +1909,8 @@
 ** TODO My Bloody Valentine
 ** DONE My Chemical Romance                                            :1fav:
 ** TODO Månegarm                                              :guitar:lastfm:
+** TODO Månegram
+*** TODO (2013-06-28) Legions of the North
 ** DONE Mỹ Linh                                                         :FAV:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79
@@ -1985,6 +1978,8 @@
 ** DONE Oleg Serkov                                         :FAV:inst:string:
 ** DONE OneRepublic
 *** TODO (2013-03-22) Native
+** TODO Orphaned Land
+*** TODO (2013-06-24) All Is One
 ** TODO Our Lady Peace
 ** DONE Pain Confessor                                                 :wail:
 *** DONE (2004-09-08) Turmoil
@@ -2081,6 +2076,7 @@
 ** TODO Simple Plan                                                      :jo:
 ** TODO Sinergy
 ** TODO Sirenia                                                           :f:
+*** TODO (2013-06-28) Perils of the Deep Blue
 ** TODO Sixpence None the Richer                                      :FAV:f:
 *** TODO (2012-08-07) Lost in Transition
 ** TODO Skillet
@@ -2149,6 +2145,7 @@
 ** TODO Tesla
 ** GONE Thanh Tùng                                                   :FAV:vi:
 ** TODO The Beatles                                                     :FAV:
+** TODO The Bug
 ** TODO The Charlie Daniels Band
 ** TODO The Civil Wars                                                    :f:
 ** DONE The Corrs                                              :FAV:f:string:
