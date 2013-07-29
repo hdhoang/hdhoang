@@ -736,7 +736,6 @@
 *** EpicNSFW
 *** ero
 *** FilthyWetSlut
-*** FireRedGirls                                                        :red:
 *** FuckYeahAsianMaids                                             :ja:cloth:
 *** FuckYeahFrenchMaids                                               :cloth:
 *** GimmeSomeGinger                                                     :red:
@@ -755,14 +754,10 @@
 *** JoinMileHighClub                                                  :scene:
 *** KittiesnTitties                                                    :cute:
 *** LingerieLove
-*** NOT LuvAsianPuss                                             :fiction:ja:
 *** MyNaughtyPen                                                     :in:gif:
-*** NakedDoors                                                      :fiction:
 *** OwnerOfBeauty                                                        :in:
 *** Perfect-Curves                                                     :name:
 *** PookiesFamily                                                        :in:
-*** QueensOfBlowjob                                                      :bj:
-*** RandomErotic                                                       :name:
 *** RedheadBoobies                                                      :red:
 *** RedPinkWhite                                                      :cloth:
 **** BlackPanty                                                       :cloth:
@@ -773,12 +768,9 @@
 *** SlutsInMyDreams
 *** SlutSoft                                                             :ja:
 *** StashErotica                                                   :gif:toon:
-*** StylishPorn
-*** TempleOfGinger
+*** TempleOfGinger                                                     :name:
 *** The-Porn-Stories                                                :fiction:
 *** TheErodyssey                                              :cloth:fiction:
-*** NOT TheGifer
-*** TravelForTheWomen
 *** WhatTheyWereDoing                                                    :in:
 *** WhsThatGirl                                                        :name:
 *** WomenFighters                                                     :cloth:
@@ -1256,7 +1248,7 @@
 ** DONE Amon Amarth                                                     :FAV:
 *** TODO (2013-07-21) Deceiver of the Gods
 ** DONE Amorphis                                                        :FAV:
-*** TODO (2013-04-19) Circle
+*** DONE (2013-04-19) Circle
 ** TODO Amy Winehouse                                                  :tunx:
 ** DONE Annihilator                                                     :FAV:
 ** DONE Anthrax                                                        :1fav:
@@ -1282,6 +1274,7 @@
 ** TODO Avantasia
 *** TODO (2013-03-30) The Mystery of Time
 ** DONE Avenged Sevenfold                                          :riff:FAV:
+*** TODO (2013-08-27) Hail to the King
 ** DONE Avril Lavigne                                                   :FAV:
 ** DONE Ayreon
 ** NOT Babes in Toyland                                                 :jwz:
@@ -1296,9 +1289,8 @@
 ** DONE Bionic Commando                                            :FAV:game:
 *** Rearmed                                                             :not:
 ** DONE Black Sabbath                                                   :FAV:
-*** TODO (2013-06-10) 13
+*** DONE (2013-06-10) 13
 *** solo Ozzy Osbourne
-** TODO Blind Guardian
 ** DONE Bliss(This)
 ** Blizzard
 *** DONE (1996) Diablo
@@ -1393,6 +1385,13 @@
 **** NOT (2011-08-17) Underground Chamber
 **** DONE (2012-04-14) Balloon Cement
 **** DONE (2012-08-09) The Shores of Molokai
+**** DONE (2013-04-04) Pikes 11
+**** DONE (2013-05) Pike 12
+**** DONE (2013-05-13) Pike 13
+**** DONE (2013) Pike 14
+**** DONE (2013-05-13) Pike 15
+**** DONE (2013-05-24) Pike 16
+**** DONE (2013-06-01) Pike 17
 *** with Shin Terai
 **** DONE (1999) Unison                                                 :FAV:
 *** with Shine
@@ -1436,7 +1435,7 @@
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
 *** DONE (2008-04-09) Blooddrunk                                       :1fav:
 *** DONE (2011) Relentless Reckless Forever
-*** TODO (2013-06-06) Halo of Blood
+*** DONE (2013-06-06) Halo of Blood
 ** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
@@ -1529,6 +1528,7 @@
 ** TODO Eluveitie
 ** TODO Elvis Costello
 *** TODO (2012-11-23) In Motion Pictures
+*** TODO (2013-09-16) Wise Up Ghost
 ** TODO Elvis Presley
 ** TODO Emilie Autumn
 *** TODO (2012-07-24) Fight Like a Girl
@@ -1837,7 +1837,7 @@
     :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
     :END:
 *** DONE (2011) Th1rt3en
-*** TODO (2013-06-04) Super Collider
+*** DONE (2013-06-04) Super Collider
 ** DONE MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
@@ -2035,6 +2035,9 @@
 ** TODO Richard Strauss
 ** TODO Richie Sambora
 *** TODO (2012-09-25) Aftermath of the Lowdown
+** DONE Rumer
+*** DONE (2012-01-25) Seasons of My Soul
+*** DONE (2012-05-28) Boys Don't Cry
 ** TODO Rush
 ** TODO Saattue
 ** TODO Sabaton                                                      :lastfm:
@@ -2042,7 +2045,7 @@
 *** DONE (2012-05-11) Shape Shifter
 ** TODO Santigold
 ** DONE Sarah Brightman                                            :f:jo:FAV:
-*** TODO (2013-04-05) Dreamchaser
+*** DONE (2013-04-05) Dreamchaser
 ** GONE Savatage                                                   :epic:FAV:
 *** as Trans-Siberian Orchestra
 **** TODO (2012-10-30) Dream of Fireflies (on a Christmas Night)
