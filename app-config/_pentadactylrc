@@ -158,9 +158,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 
 set pk+=smbc-comics.com:x
-autocmd PageLoad www.smbc-comics.com -javascript <<EOS
-doc.querySelector('.comicboxcenter').scrollIntoView();
-EOS
 style -n "smbc red button" www.smbc-comics.com <<EOS
 #aftercomic {
   display: block !important;
