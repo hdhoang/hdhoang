@@ -50,6 +50,7 @@
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
 
+(prelude-require-package 'solarized-theme)
 (load-theme 'solarized-light)
 
 (if (eq window-system-version 6)
