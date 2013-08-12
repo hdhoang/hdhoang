@@ -32,6 +32,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+(global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 (global-set-key (kbd "C-x M-t") 'ansi-term)
 (global-set-key (kbd "C-x <up>") 'windmove-up)
