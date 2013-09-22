@@ -2,30 +2,30 @@
 # ~/.zshrc.local ~/.bash_login
 
 # places
-if [[ $(hostname) == cenbab ]]; then
-    z=/cygdrive/c
-    mount=/cygdrive/h
-    selsormenli=/cygdrive/s
-    pool=/cygdrive/m
-else
+if [[ $(hostname) == cenba ]]; then
     z=/mnt/cenbab
     mount=~
     selsormenli=/mnt/selsormenli
     pool=/mnt/marbi
+else
+    z=/cygdrive/c
+    mount=/cygdrive/h
+    selsormenli=/cygdrive/s
+    pool=/cygdrive/m
 fi
 h=$mount/Public/hdhoang
 conf=$h/system-config/$(hostname)
 box=$mount/Box
 t=$mount/t
 dl=$mount/Downloads
-m=$mount/Music
+m=$mount/Music/_new
 p=$mount/Pictures
 v=$mount/Videos
 mi=$mount/Public/mirror
 g=$z/@g
 s=$z/@s
 fav=$mount/Public/fav
-fm=$fav/Music
+fm=$mount/Music
 
 # utils
 alias g='git'
