@@ -12,8 +12,8 @@ map A -ex dialog about
 map <C-j> -ex dialog downloads
 map <C-S-b> -js window.PlacesCommandHook.showPlacesOrganizer('AllBookmarks')
 map s <C-c>
-map <C-space> <C-d>
-map <C-S-space> <C-u>
+map <space> <C-d>
+map <S-space> <C-u>
 map <A-$> -ex tabmove $
 map <C-$> g$
 map <F1> <C-^>
