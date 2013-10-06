@@ -203,6 +203,9 @@ EOS
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
 set passkeys+=flecu.zahe.me:'vojknp<Left><Right>smrUS'
+style -n "selfoss" flecu.zahe.me <<EOS
+.entry-content { -moz-column-count: 1 !important }
+EOS
 
 map + -js <<EOS
 dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
