@@ -21,6 +21,7 @@
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(prelude-guru nil)
  '(sentence-end-double-space nil)
+ '(solarized-use-variable-pitch nil)
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
