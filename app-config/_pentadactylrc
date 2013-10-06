@@ -67,7 +67,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword ia -t isohunt https://ca.isohunt.com/lite/#s=age&q=%s&p=1
    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
-   \ bmark -keyword tpb -t tpb https://thepiratebay.se/s/?q=%s&page=0
+   \ bmark -keyword tpb -t tpb https://thepiratebay.sx/s/?q=%s&page=0
    \ bmark -keyword mt -t metasearch http://metasearch.torrentproject.com/#!search=%s
    \ bmark -keyword lf -t last.fm http://www.last.fm/user/hdh0#recentTracks
    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
