@@ -232,39 +232,42 @@
    :url:      http://youchosewrong.tumblr.com
    :END:
 * Fiction
+** Charlie Stross
+   :PROPERTIES:
+   :url:      http://www.antipope.org
+   :END:
+*** TODO (1993) Scratch Monkey
+*** TODO (2005) Accelerando
+*** TODO (2006) Glasshouse
+*** TODO (2012) The Rapture of the Nerds
+*** Eschaton series
+**** TODO (2003) Singularity Sky
+**** TODO (2004) Iron Sunrise
+*** Halting State series
+**** DONE (2007) Halting State
+**** TODO (2011) Rule 34
+**** TODO (2014) The Lambda Functionary
+*** Merchant Princes series
+**** TODO (2004) The Family Trade
+**** TODO (2005) The Hidden Family
+**** TODO (2006) The Clan Corporate
+**** TODO (2007) The Merchants' War
+**** TODO (2009) The Revolution Business
+**** TODO (2010) The Trade of Queens
+*** Saturn's Children series
+**** TODO (2008) Saturn's Children
+**** TODO (2013) Neptune's Brood
+*** The Laundry Files
+**** DONE (2004) The Atrocity Archives
+**** DONE (2006) The Jennifer Morgue
+**** DONE (2008) Down on the Farm
+**** DONE (2013) Equoid
+**** DONE (2010) The Fuller Memorandum
+**** DONE (2009) Overtime
+**** DONE (2012) The Apocalypse Codex
+**** TODO (2014) The Rhesus Chart
 ** China Miéville
 *** TODO Embassytown
-** Christopher Wood                                                      :ns:
-*** as Timothy Lea
-**** TODO Confessions From a Haunted House
-**** TODO Confessions From a Health Farm
-**** TODO Confessions from a Holiday Camp
-**** TODO Confessions From a Hotel
-**** TODO Confessions From a Luxury Liner
-**** TODO Confessions From a Nudist Colony
-**** TODO Confessions From the Clink
-**** TODO Confessions From the Pop Scene
-**** TODO Confessions From the Shop Floor
-**** TODO Confessions of a Driving Instructor
-**** TODO Confessions of a Film Extra
-**** TODO Confessions of a Long Distance Lorry Driver
-**** TODO Confessions of a Milkman
-**** TODO Confessions of a Plumber's Mate
-**** TODO Confessions of a Private Dick
-**** TODO Confessions of a Private Soldier
-**** TODO Confessions of a Travelling Salesman
-**** TODO Confessions of a Window Cleaner
-**** TODO Confessions of an Ice Cream Man
-*** as Rosie Dixon
-**** TODO Confessions From a Package Tour
-**** TODO Confessions From an Escort Agency
-**** TODO Confessions of a Baby Sitter
-**** TODO Confessions of a Gym Mistress
-**** TODO Confessions of a Lady Courier
-**** TODO Confessions of a Night Nurse
-**** TODO Confessions of a Personal Secretary
-**** TODO Confessions of a Physical WRAC
-**** TODO Rosie Dixon, Barmaid
 ** Dan Simmons
 *** TODO Illium and Olympos
 ** Daniel Quinn
@@ -305,11 +308,13 @@
 *** DONE Lộc Đỉnh Ký                                                    :FAV:
 ** Kurt Vonnegut
 *** DONE Slaughterhouse-Five                                            :FAV:
-*** TODO A Man Without A Country
+*** DONE A Man Without A Country
 ** DONE Lost Girls                                                      :FAV:
    :PROPERTIES:
    :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
    :END:
+** Max Brooks
+*** TODO World War Z: An Oral History of the Zombie War
 ** Neal Stephenson
 *** Baroque
 **** TODO Quicksilver
@@ -428,7 +433,7 @@
 **** DONE Episode 4
 **** DONE Episode 5
 * Girl                                                                 :ns:f:
-** (y)ape                                                        :FAV:addict:
+** GONE (y)ape                                                   :FAV:addict:
    :PROPERTIES:
    :url:      http://hb4pm4eznzhd6mts.onion
    :END:
@@ -839,6 +844,8 @@
 **** DONE Metal Gear Solid
 ** CirclMastr
 *** DONE Alpha Protocol                          :video:voice:part:comp:info:
+** Coiler12
+*** TODO Kerbal Space Program                                :shot:narrative:
 ** Cool Ghost
 *** TODO Metal Gear 1 & 2
 ** Coolguye and TheLastRoboKy
@@ -893,6 +900,8 @@
     :PROPERTIES:
     :url:      http://lparchive.org/Baldurs-Gate/
     :END:
+** Iron Chitlin
+*** TODO Blades of Time                                               :video:
 ** Jade Star, Chunky, Felime, Shinx
 *** TODO Borderlands                                :video:voice:group:humor:
 ** kalonZombie
@@ -1266,8 +1275,9 @@
 ** TODO Avantasia
 *** TODO (2013-03-30) The Mystery of Time
 ** DONE Avenged Sevenfold                                          :riff:FAV:
-*** TODO (2013-08-27) Hail to the King
+*** TODO (2013-08-23) Hail to the King
 ** DONE Avril Lavigne                                                   :FAV:
+*** TODO (2013-11-05) Avril Lavigne
 ** DONE Ayreon
 ** NOT Babes in Toyland                                                 :jwz:
 ** TODO Banda Calypso
@@ -1327,6 +1337,7 @@
 *** TODO (2012-09-21) 777 - Cosmosophy
 ** TODO Bob Marley
 ** DONE Bobaflex
+*** TODO (2013-09-10) Chalatan's Web
 ** DONE Bon Jovi
 *** TODO (2012-11-27) Inside Out
 *** TODO (2013-03-12) What About Now
@@ -1345,6 +1356,11 @@
 *** DONE (2012-09-20) March of the Slunks
 *** DONE (2012-09-20) Racks
 *** DONE (2012-09-20) The Silent Picture Book
+*** TODO (2013-04-04) Forgotten Library
+*** TODO (2013-08-16) Telescape
+*** TODO (2013-09-04) Slug Cartilage
+*** TODO (2013-09-05) Pancake Heater
+*** TODO (2013-09-26) Splatters
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1387,6 +1403,8 @@
 **** TODO (2013-06-27) Pike 18
 **** TODO (2013-06-27) Pike 19
 **** TODO (2013-06-27) Pike 20
+**** TODO (2013-09-03) Pike 21
+**** TODO (2013-09-03) Pike 22
 *** with Shin Terai
 **** DONE (1999) Unison                                                 :FAV:
 *** with Shine
@@ -1455,6 +1473,7 @@
     :END:
 ** DONE Céline Dion                                                  :FAV:fr:
 *** DONE (2012-11-03) Sans Attendre
+*** TODO (2013-11-05) Loved Me Back to Life
 ** DONE Dan Bull
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/f1597ac6-6cc6-4769-9751-69f681f015da
@@ -1511,6 +1530,7 @@
    :END:
 ** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
+*** TODO (2013-09-18) Dream Theater
 ** DONE Dry Kill Logic                                                 :1fav:
 ** TODO EELS
 *** TODO (2013-02-03) Wonderful, Glorious
@@ -1520,6 +1540,7 @@
 ** DONE Elias Viljanen                                                  :FAV:
 ** TODO Elton John
 *** TODO (2012-07-16) Good Morning to the Night
+*** TODO (2013-09-16) The Diving Board
 ** TODO Eluveitie
 ** TODO Elvis Costello
 *** TODO (2012-11-23) In Motion Pictures
@@ -1544,6 +1565,8 @@
 *** TODO (2012-04) Back of Bones
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
+** TODO Fates Warning
+*** TODO (2013-09-30) Darkness in a Different Light
 ** TODO Fate Zero
 ** TODO Fear Factory
 *** TODO (2012-06-05) The Industrialist
@@ -1730,6 +1753,7 @@
 *** DONE (2009-02-18) Ukonhauta
 *** DONE (2011-03-02) Kotiteollisuus
 *** DONE (2012-09-21) Sotakoira II
+*** TODO (2013-07-05) Maailmanloppu
 *** as Hullu ukko ja kotiteollisuus
 **** NOT (1996-08) Hullu ukko ja Kotiteollisuus
 ** GONE Kylähullut                                                      :FAV:
@@ -1752,6 +1776,7 @@
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
 *** DONE (2012-06-26) Living Things
+*** TODO (2013-10-29) Recharged
 ** TODO Lionel Richie
 ** TODO Louis Armstrong
 ** TODO Low Roar                                                         :jo:
@@ -1866,6 +1891,7 @@
 *** DONE (2010-04-12) Metal Gear Solid: Peace Walker
 *** TODO (2013-02-19) Metal Gear Rising: Revengeance-Vocal Tracks
 ** DONE Metallica                                                       :FAV:
+*** TODO (2013-08-13) Anger
 ** TODO Michael Bublé
 *** TODO (2013-04-12) To Be Loved
 ** DONE Michael Hoenig
@@ -1945,6 +1971,7 @@
      :mbid:     http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5
      :END:
 **** TODO (2012-09-04) Act 1
+**** TODO (2013-08-30) Colours in the Dark
 ** TODO Nirvana
 ** TODO No Doubt                                                          :f:
 *** TODO (2012-09-25) Push and Shove
@@ -1983,6 +2010,8 @@
 ** TODO Pain of Salvation                                           :epic:jo:
 ** DONE Pantera
 ** TODO Paramore                                                          :f:
+** TODO Pearl Jam
+*** TODO (2013-10-15) Lightning Bolt
 ** DONE Peter McConnell                                            :game:FAV:
 *** DONE Grim Fandango
 *** DONE Grim Fandango Additional
@@ -2247,7 +2276,10 @@
 ** DONE Tuoni
 *** DONE (2005) Elävät & kuolleet
 ** DONE Turisas                                                          :fi:
+*** TODO (2013-08-21) Turisas2013
 ** DONE Turmion Kätilöt
+** TODO Týr
+*** TODO (2013-09-13) Valkyrja
 ** DONE Van Canto
 ** TODO Vanilla Sky
 *** TODO (2012-12-18) The Band Not the Movie
@@ -2360,10 +2392,6 @@
 ** Bradley M. Kuhn                                              :free:pgnome:
 ** Carl Sagan
 *** TODO The Demon Haunted World
-** Charlie Stross
-   :PROPERTIES:
-   :url:      http://www.antipope.org
-   :END:
 ** Dan Kaminsky
 ** Daniel Dennett                                                       :mjd:
 *** TODO Darwin's Dangerous Idea
