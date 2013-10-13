@@ -51,7 +51,7 @@ alias locate='locate -ie'
 alias p='pgrep -f'
 alias s='watch "cpupower -c all frequency-info -mf; cpupower -c all frequency-info -ms; sensors | grep -v fan"'
 alias fr='free -h | awk "NR==2 {print \$4}"'
-alias t='tail -f'
+alias t='less -F'
 
 # network info
 alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
