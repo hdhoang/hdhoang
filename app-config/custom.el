@@ -25,6 +25,7 @@
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
+ '(whitespace-style (quote (face tabs empty trailing)))
  '(windmove-wrap-around t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
