@@ -245,7 +245,7 @@
 **** TODO (2004) Iron Sunrise
 *** Halting State series
 **** DONE (2007) Halting State
-**** TODO (2011) Rule 34
+**** DONE (2011) Rule 34
 **** TODO (2014) The Lambda Functionary
 *** Merchant Princes series
 **** TODO (2004) The Family Trade
@@ -257,6 +257,7 @@
 *** Saturn's Children series
 **** TODO (2008) Saturn's Children
 **** TODO (2013) Neptune's Brood
+**** DONE Bit Rot
 *** The Laundry Files
 **** DONE (2004) The Atrocity Archives
 **** DONE (2006) The Jennifer Morgue
@@ -1279,6 +1280,7 @@
 ** DONE Avril Lavigne                                                   :FAV:
 *** TODO (2013-11-05) Avril Lavigne
 ** DONE Ayreon
+*** TODO (2013-10-25) The Theory of Everything
 ** NOT Babes in Toyland                                                 :jwz:
 ** TODO Banda Calypso
 ** Basil Poledouris
@@ -1352,15 +1354,38 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
+*** DONE (2011-05-15) It's Alive
+*** DONE (2011-05-20) Empty Space
+*** DONE (2011-08-17) 3 Foot Clearance
+*** DONE (2011-08-17) Look Up There
+*** NOT (2011-08-17) Underground Chamber
 *** DONE (2012) Electric Sea
+*** DONE (2012-04-14) Balloon Cement
+*** DONE (2012-08-09) The Shores of Molokai
 *** DONE (2012-09-20) March of the Slunks
 *** DONE (2012-09-20) Racks
 *** DONE (2012-09-20) The Silent Picture Book
+*** DONE (2013) Pike 14
 *** TODO (2013-04-04) Forgotten Library
-*** TODO (2013-08-16) Telescape
+*** DONE (2013-04-04) Pikes 11
+*** DONE (2013-05) Pike 12
+*** DONE (2013-05-13) Pike 13
+*** DONE (2013-05-13) Pike 15
+*** DONE (2013-05-24) Pike 16
+*** DONE (2013-06-01) Pike 17
+*** TODO (2013-06-27) Pike 18
+*** TODO (2013-06-27) Pike 19
+*** TODO (2013-06-27) Pike 20
+*** DONE (2013-08-16) Telescape
+*** TODO (2013-09-03) Pike 21
+*** TODO (2013-09-03) Pike 22
 *** TODO (2013-09-04) Slug Cartilage
 *** TODO (2013-09-05) Pancake Heater
+*** TODO (2013-09-13) Worms for the Garden
+*** TODO (2013-09-18) Halls of Dimension
 *** TODO (2013-09-26) Splatters
+*** TODO (2013-10-04) Feathers
+*** TODO (2013-10-05) Mannequin Cemetery
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1385,26 +1410,6 @@
 **** DONE (2008-09-17) Bolt on Neck_ Prototype #1
 *** with Jonas Hellborg
 **** NOT (1993) Octave of the Holy Innocents
-*** Pike
-**** DONE (2011-05-15) It's Alive
-**** DONE (2011-05-20) Empty Space
-**** DONE (2011-08-17) 3 Foot Clearance
-**** DONE (2011-08-17) Look Up There
-**** NOT (2011-08-17) Underground Chamber
-**** DONE (2012-04-14) Balloon Cement
-**** DONE (2012-08-09) The Shores of Molokai
-**** DONE (2013-04-04) Pikes 11
-**** DONE (2013-05) Pike 12
-**** DONE (2013-05-13) Pike 13
-**** DONE (2013) Pike 14
-**** DONE (2013-05-13) Pike 15
-**** DONE (2013-05-24) Pike 16
-**** DONE (2013-06-01) Pike 17
-**** TODO (2013-06-27) Pike 18
-**** TODO (2013-06-27) Pike 19
-**** TODO (2013-06-27) Pike 20
-**** TODO (2013-09-03) Pike 21
-**** TODO (2013-09-03) Pike 22
 *** with Shin Terai
 **** DONE (1999) Unison                                                 :FAV:
 *** with Shine
