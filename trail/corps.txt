@@ -1,6 +1,6 @@
 -*- mode: org -*-
 #+STARTUP: showall
-#+TYP_TODO: TODO(t) | DONE(d) GONE(g) NOT(n)
+#+TYP_TODO: TODO(t) GOIN(o) | DONE(d) GONE(g) NOT(n)
 #+TYP_TODO: | as(a) with(w) solo(s)
 
 #+TAGS: { FAV 1fav }
@@ -232,6 +232,11 @@
    :url:      http://youchosewrong.tumblr.com
    :END:
 * Fiction
+** Scientist's Thesis
+*** GOIN Rationalising Death
+    :PROPERTIES:
+    :url:      http://www.fanfiction.net/s/9380249/
+    :END:
 ** Charlie Stross
    :PROPERTIES:
    :url:      http://www.antipope.org
@@ -440,7 +445,7 @@
    :END:
 ** Aiko Tanaka                                                          :FAV:
 ** Alisa Kiss                                                           :FAV:
-** Alison Angel                                                         :FAV:
+** NOT Alison Angel                                                     :FAV:
 ** ALS Scan
 *** NOT Agnes
 *** NOT Alice
@@ -473,7 +478,7 @@
    :PROPERTIES:
    :url:      http://amyamyamy.com
    :END:
-** Andi Pink                                                            :FAV:
+** NOT Andi Pink                                                        :FAV:
 ** NOT andreea-b.com
 ** Anetta Keys                                                          :FAV:
 ** Angel Button                                                         :FAV:
@@ -485,7 +490,7 @@
    :PROPERTIES:
    :url:      http://anneteenmodel.com
    :END:
-** Aria Giovanni                                                        :not:
+** NOT Aria Giovanni                                                    :not:
 ** Ariel Rebel                                                          :FAV:
 ** Ashley Renee
 ** Ashlyn Rae                                                           :FAV:
@@ -595,7 +600,7 @@
 *** Stanislava                                                          :not:
 *** Zuzana                                                              :not:
 ** NOT Dawn's Place
-** DDD Brandy                                                           :not:
+** NOT DDD Brandy                                                       :not:
 ** Digital Desire                                                       :FAV:
 *** Brett Rossi
 *** Brooke Lee Adams
@@ -696,7 +701,7 @@
 *** NOT 58
 ** Risa Yoshiki                                                      :FAV:ja:
 ** Sarah Michelle Gellar                                                :FAV:
-** Sasha Grey                                                           :FAV:
+** NOT Sasha Grey                                                       :FAV:
 ** Score Group                                                          :not:
 ** SOE                                                                   :ja:
 *** DONE 607 Ero Study                                                   :jo:
@@ -835,6 +840,8 @@
 *** DONE Hitman: Codename 47
 ** Chakan
 *** DONE Dungeon Crawl                                                 :shot:
+** Chaostime
+*** TODO XCOM: Enemy Unknown
 ** Chip Cheezum
 *** DONE Zone of the Enders                                      :humor:mock:
 *** with General Ironicus                 :group:video:voice:comp:info:humor:
@@ -1001,6 +1008,7 @@
 ** slowbeef
 *** TODO Policenauts                                                 :hybrid:
 ** Spoiler Warning Show                                   :group:voice:video:
+*** TODO Metro 2033
 *** DONE The Walking Dead
 ** Static_Fiend
 *** DONE Prey                                             :video:voice:humor:
@@ -1026,6 +1034,7 @@
 ** TyrantSabre
 *** DONE Stuntman                                               :video:voice:
 ** unfair
+*** TODO Dear Esther
 *** TODO Deus Ex
 ** Various
 *** DONE Steel Panthers: Main Battle Tank                        :shot:group:
@@ -1349,6 +1358,7 @@
 ** Boris                                                             :ja:not:
 ** TODO Botany Bay                                                   :lastfm:
 ** GONE Boyzone                                                         :FAV:
+*** TODO (2013-11-25) BZ20
 ** TODO Breaking Benjamin                                              :game:
 ** Buckethead                                                           :FAV:
    :PROPERTIES:
@@ -1386,6 +1396,12 @@
 *** TODO (2013-09-26) Splatters
 *** TODO (2013-10-04) Feathers
 *** TODO (2013-10-05) Mannequin Cemetery
+*** TODO (2013-10-24) Pearson's Square
+*** TODO (2013-10-29) Pumpkin
+*** TODO (2013-11-02) Thank You Ohlinger's
+*** TODO (2013-11-02) The Pit
+*** TODO (2013-11-09) Rise of the Blue Lotus
+*** TODO (2013-11-11) Hollowed Out
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1461,6 +1477,7 @@
 ** DONE Cinderella                                                     :1fav:
 ** TODO Clawfinger                                                       :jo:
 ** TODO Clint Mansell
+*** TODO (2013-09-23) Filth
 ** DONE Coldplay
 *** NOT (2011) Mylo Xyloto
 ** TODO Crowded House
@@ -1511,6 +1528,8 @@
 ** TODO Dave Matthews Band
 *** TODO (2012-09-11) Away from the World
 ** DONE Deep Purple
+** TODO Deicide
+*** TODO (2013-11-26) In the Minds of Evil
 ** TODO Depeche Mode
 *** TODO (2013-03-22) Delta Machine
 ** DONE Diablo Swing Orchestra                           :FAV:string:jamendo:
@@ -1554,6 +1573,7 @@
 ** TODO Emilie Autumn
 *** TODO (2012-07-24) Fight Like a Girl
 ** DONE Eminem                                                          :FAV:
+*** TODO (2013-11-05) The Marshall Mathers LP 2
 *** DONE D12
 ** DONE Ennio Morricone
 ** DONE Ensiferum
@@ -1561,6 +1581,7 @@
 ** TODO Entombed
 ** TODO Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
+*** TODO (2013-10-28) Back to the Front
 ** Eric Brosius                                                    :FAV:game:
 *** DONE System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
@@ -1570,9 +1591,9 @@
 *** TODO (2012-04) Back of Bones
 ** DONE Evanescene                                                      :FAV:
 ** DONE Faerghail
+** TODO Fate Zero
 ** TODO Fates Warning
 *** TODO (2013-09-30) Darkness in a Different Light
-** TODO Fate Zero
 ** TODO Fear Factory
 *** TODO (2012-06-05) The Industrialist
 ** TODO Feist
@@ -1620,6 +1641,8 @@
 ** Hans Zimmer
 *** DONE The Rock                                                 :movie:FAV:
 ** DONE Harvey Danger                                                   :FAV:
+** TODO Heart
+*** TODO (2013-05-13) Icon
 ** TODO Heart
 *** TODO (2012-10-02) Fanatic
 ** DONE Helloween                                                       :FAV:
@@ -1887,6 +1910,7 @@
 *** DONE (2004-07-26) The Weight of the World
 *** DONE (2006-06-27) A Light in the Dark
 *** DONE (2008-09-23) This Present Wasteland
+*** TODO (2013-10-22) Generation Nothing
 ** Metal Gear Solid                                                     :FAV:
 *** DONE MGS
 **** Twin Snakes                                                        :not:
@@ -2059,6 +2083,7 @@
 **** DONE (2006-05-26) The Infinite Wonders of Creation
 **** DONE (2006-06-09) Lost Horizons
 *** as Rhapsody of Fire
+**** TODO (2013-11-22) Dark Wings of Steel
 ** DONE Richard Clayderman                                       :inst:piano:
 *** TODO (2013-04-30) Romantique
 ** TODO Richard Strauss
@@ -2374,8 +2399,8 @@
    :url:      http://pthree.org
    :END:
 ** Ben "Yahtzee" Croshaw                                               :game:
-*** TODO Mogworld
-*** TODO Jampocalypse
+*** DONE Mogworld
+*** TODO Jam
 ** Benjamin Franklin                                                    :mjd:
 ** TODO Bill Hammack
 *** TODO Eight Amazing Engineering Stories
