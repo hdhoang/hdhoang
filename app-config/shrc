@@ -159,7 +159,7 @@ if [ -n "$ZSH_NAME" ]; then
     add-zsh-hook -d precmd prompt_grml_precmd
     EXITCODE="%(?..${fg[red]}%? )"
     PROMPT="%m ${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
-%# ${NO_COLOUR}"
+%# ${NO_COLOR}"
 
     setopt dvorak
     bindkey -r ",."
