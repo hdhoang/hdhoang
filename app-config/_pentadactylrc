@@ -32,7 +32,7 @@ set urlseparator=' , '
 """ Display
 map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
-set guioptions+=cN
+set guioptions+=cNT
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
