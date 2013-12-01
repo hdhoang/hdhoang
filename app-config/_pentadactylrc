@@ -205,6 +205,8 @@ doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
                  .accessKey = 'e'
 EOS
 
+set passkeys+=tumblr.com:jk
+
 style -n "link colors" * :visited { color: #859900 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
