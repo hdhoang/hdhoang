@@ -110,7 +110,7 @@ pkg=/var/cache/pacman/pkg
 ap=$mount/archlinux
 function aur {
     cd $ap
-    cower $1 || curl -o- https://aur.archlinux.org/packages/$1/$1.tar.gz | tar zxv
+    cower $1 || curl -o- https://aur.archlinux.org/packages/${1:0:2}/$1/$1.tar.gz | tar zxv
     cd $1
     mp ${*:2}
 }
