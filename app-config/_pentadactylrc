@@ -32,18 +32,10 @@ set urlseparator=' , '
 """ Display
 map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
-set guioptions+=cN
+set guioptions+=cNT
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
-style -name 'GUI arrangement' -agent * <<EOS
-#browser { -moz-box-ordinal-group: 0 }
-#navigator-toolbox { -moz-box-ordinal-group: 2 }
-#addon-bar { -moz-box-ordinal-group: 1001 }
-#downbarHolder { -moz-box-ordinal-group: 2 }
-
-[dlgtype="cancel"], [anonid="button1"] { -moz-box-ordinal-group: 2 }
-EOS
 
 """ Core
 set editor='emacsclient +<line> <file>'
@@ -96,8 +88,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.display.background_color="#fdf6e3"
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
-   \ set! browser.fullscreen.autohide=false
-   \ set! browser.tabs.closeButtons=2
    \ set! browser.tabs.onTop=false
    \ set! general.smoothScroll=false
    \ set! font.default.x-western="sans-serif"
@@ -215,16 +205,12 @@ doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
                  .accessKey = 'e'
 EOS
 
+set passkeys+=tumblr.com:jk
+
 style -n "link colors" * :visited { color: #859900 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
-  [src*="cyborgmatt.com/"]
-, [src*="forgifs"]
-, [src*="fukung"]
-, [src*="imgur"]
-, [src*="kuvaton"]
-, [src*="myconfinedspace"]
-, [src*="soup.io/asset/"]
+  [src*="imgur"]
 , [src*="tumblr"]
 , [src*="xkcd.com/comic"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
