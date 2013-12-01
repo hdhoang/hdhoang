@@ -492,7 +492,7 @@
    :END:
 ** NOT Aria Giovanni                                                    :not:
 ** Ariel Rebel                                                          :FAV:
-** Ashley Renee
+** NOT Ashley Renee
 ** Ashlyn Rae                                                           :FAV:
 ** Asians4You
 *** NOT Aggie
@@ -592,7 +592,7 @@
 ** Brandy                                                               :FAV:
 ** NOT Cameron Hertz
 ** NOT Christina Model
-** Crissy Moran                                                         :FAV:
+** NOT Crissy Moran                                                     :FAV:
 ** Czech-Babes.com
 *** Marie                                                               :not:
 *** Olivia                                                              :FAV:
@@ -1402,6 +1402,8 @@
 *** TODO (2013-11-02) The Pit
 *** TODO (2013-11-09) Rise of the Blue Lotus
 *** TODO (2013-11-11) Hollowed Out
+*** TODO (2013-11-22) It Smells Like Frogs
+*** TODO (2013-11-26) Twisterlend
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1579,6 +1581,7 @@
 ** DONE Ensiferum
 *** DONE (2012-08-27) Unsung Heroes
 ** TODO Entombed
+*** TODO (2013-10-28) Back to the Front
 ** TODO Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
 *** TODO (2013-10-28) Back to the Front
@@ -1804,7 +1807,7 @@
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
 *** DONE (2012-06-26) Living Things
-*** TODO (2013-10-29) Recharged
+*** NOT (2013-10-29) Recharged
 ** TODO Lionel Richie
 ** TODO Louis Armstrong
 ** TODO Low Roar                                                         :jo:
@@ -2187,6 +2190,7 @@
 *** DONE (2008-04-15) String Tribute to Bullet for My Valentine
 *** DONE (2009) Vitamin String Quartet Performs Green Day's American Idiot
 *** DONE (2010) VSQ Performs Lady Gaga
+*** TODO (2013-11-27) A Tribute to Dazed and Confused
 *** DONE Senses Fail
 *** DONE Shinedown
 *** DONE Tupac                                                         :1fav:
@@ -2399,8 +2403,8 @@
    :url:      http://pthree.org
    :END:
 ** Ben "Yahtzee" Croshaw                                               :game:
-*** DONE Mogworld
-*** TODO Jam
+*** DONE (2010) Mogworld
+*** DONE (2012) Jam
 ** Benjamin Franklin                                                    :mjd:
 ** TODO Bill Hammack
 *** TODO Eight Amazing Engineering Stories
