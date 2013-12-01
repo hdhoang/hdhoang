@@ -1,8 +1,17 @@
-.include /usr/lib/systemd/system/minidlna.service
+[Unit]
+Description=minidlna server
+After=network.target
 
 [Service]
-CapabilityBoundingSet=
+Type=forking
+User=hdhoang
+ExecStart=/usr/bin/minidlnad -P /cygdrive/h/minidlna/pid
+PIDFile=/cygdrive/h/minidlna/pid
+
 ReadOnlyDirectories=/
-ReadWriteDirectories=/cygdrive/h/minidlna /run/minidlna
+ReadWriteDirectories=/cygdrive/h/minidlna
 Nice=15
 IOSchedulingClass=idle
+
+[Install]
+WantedBy=multi-user.target
