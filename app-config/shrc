@@ -86,7 +86,7 @@ alias mv='mv -i'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --no-group'
-alias bu='rs --delete --exclude=Cache/ --exclude=thumbnails/ --exclude=sumatrapdfcache/ --exclude=emacs-prelude/ $z/@g $mount/s $h $mount/secrets $p $mount/Public/pic $mi/{Books,p} $m $v $pool'
+alias bu='rs --delete $mount/s $mount/secrets $p $fm $v hdhoang@kub.zahe.me:/cygdrive/h'
 
 # system
 alias ssc='sudo systemctl --system'
