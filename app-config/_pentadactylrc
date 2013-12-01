@@ -210,13 +210,7 @@ set passkeys+=tumblr.com:jk
 style -n "link colors" * :visited { color: #859900 !important } :link[href^="#"] { color: #268bd2 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
-  [src*="cyborgmatt.com/"]
-, [src*="forgifs"]
-, [src*="fukung"]
-, [src*="imgur"]
-, [src*="kuvaton"]
-, [src*="myconfinedspace"]
-, [src*="soup.io/asset/"]
+  [src*="imgur"]
 , [src*="tumblr"]
 , [src*="xkcd.com/comic"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
