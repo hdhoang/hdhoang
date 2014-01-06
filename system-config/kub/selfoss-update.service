@@ -3,5 +3,5 @@ Description=update selfoss
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/php /home/hdhoang/selfoss/update.php
+ExecStart=/usr/bin/php /scratch/selfoss/update.php
 User=http
