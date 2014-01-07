@@ -52,6 +52,8 @@
 (add-hook 'conf-windows-mode-hook
           '(lambda () (setq comment-start "#") (glasses-mode t)))
 
+(require 'prelude-ido)
+
 (prelude-require-package 'solarized-theme)
 (load-theme 'solarized-light)
 
