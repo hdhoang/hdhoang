@@ -1,5 +1,5 @@
 [Timer]
-OnCalendar=05,08,11,15,20,00:30:00
+OnCalendar=2014-*-* 05,08,11,15,20,00:30:00
 
 [Install]
 WantedBy=multi-user.target

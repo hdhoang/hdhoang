@@ -1,8 +1,0 @@
-.include /usr/lib/systemd/system/minidlna.service
-
-[Service]
-CapabilityBoundingSet=
-ReadOnlyDirectories=/
-ReadWriteDirectories=/cygdrive/h/minidlna /run/minidlna
-Nice=15
-IOSchedulingClass=idle

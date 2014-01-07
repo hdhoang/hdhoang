@@ -1,4 +1,0 @@
-.include /usr/lib/systemd/system/user-session@.service
-
-[Service]
-EnvironmentFile=%h/.pam_environment
