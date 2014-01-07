@@ -242,9 +242,9 @@
    :url:      http://www.antipope.org
    :END:
 *** TODO (1993) Scratch Monkey
-*** TODO (2005) Accelerando
+*** DONE (2005) Accelerando
 *** TODO (2006) Glasshouse
-*** TODO (2012) The Rapture of the Nerds
+*** NOT (2012) The Rapture of the Nerds
 *** Eschaton series
 **** TODO (2003) Singularity Sky
 **** TODO (2004) Iron Sunrise
@@ -260,8 +260,8 @@
 **** TODO (2009) The Revolution Business
 **** TODO (2010) The Trade of Queens
 *** Saturn's Children series
-**** TODO (2008) Saturn's Children
-**** TODO (2013) Neptune's Brood
+**** DONE (2008) Saturn's Children
+**** DONE (2013) Neptune's Brood
 **** DONE Bit Rot
 *** The Laundry Files
 **** DONE (2004) The Atrocity Archives
@@ -1285,7 +1285,7 @@
 ** TODO Avantasia
 *** TODO (2013-03-30) The Mystery of Time
 ** DONE Avenged Sevenfold                                          :riff:FAV:
-*** TODO (2013-08-23) Hail to the King
+*** DONE (2013-08-23) Hail to the King
 ** DONE Avril Lavigne                                                   :FAV:
 *** TODO (2013-11-05) Avril Lavigne
 ** DONE Ayreon
@@ -1334,7 +1334,7 @@
     :PROPERTIES:
     :btih:     3EC5AFB039BF4B984FD99E39B22D3FC63E733FB9
     :END:
-*** TODO (2013-03-12) StarCraft II: Heart of the Swarm
+*** DONE (2013-03-12) StarCraft II: Heart of the Swarm
 ** TODO Blondie
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
@@ -1348,10 +1348,10 @@
 *** TODO (2012-09-21) 777 - Cosmosophy
 ** TODO Bob Marley
 ** DONE Bobaflex
-*** TODO (2013-09-10) Chalatan's Web
+*** DONE (2013-09-10) Chalatan's Web
 ** DONE Bon Jovi
 *** TODO (2012-11-27) Inside Out
-*** TODO (2013-03-12) What About Now
+*** DONE (2013-03-12) What About Now
 *** TODO (2013-03-26) Icon
 ** DONE BOND
 ** TODO Boney M.
@@ -1376,34 +1376,35 @@
 *** DONE (2012-09-20) Racks
 *** DONE (2012-09-20) The Silent Picture Book
 *** DONE (2013) Pike 14
-*** TODO (2013-04-04) Forgotten Library
+*** DONE (2013-04-04) Forgotten Library
 *** DONE (2013-04-04) Pikes 11
 *** DONE (2013-05) Pike 12
 *** DONE (2013-05-13) Pike 13
 *** DONE (2013-05-13) Pike 15
 *** DONE (2013-05-24) Pike 16
 *** DONE (2013-06-01) Pike 17
-*** TODO (2013-06-27) Pike 18
-*** TODO (2013-06-27) Pike 19
-*** TODO (2013-06-27) Pike 20
+*** DONE (2013-06-27) Pike 18
+*** DONE (2013-06-27) Pike 19
+*** DONE (2013-06-27) Pike 20
 *** DONE (2013-08-16) Telescape
-*** TODO (2013-09-03) Pike 21
-*** TODO (2013-09-03) Pike 22
-*** TODO (2013-09-04) Slug Cartilage
+*** DONE (2013-09-03) Pike 21
+*** DONE (2013-09-03) Pike 22
+*** DONE (2013-09-04) Slug Cartilage
 *** TODO (2013-09-05) Pancake Heater
-*** TODO (2013-09-13) Worms for the Garden
-*** TODO (2013-09-18) Halls of Dimension
-*** TODO (2013-09-26) Splatters
-*** TODO (2013-10-04) Feathers
-*** TODO (2013-10-05) Mannequin Cemetery
-*** TODO (2013-10-24) Pearson's Square
-*** TODO (2013-10-29) Pumpkin
-*** TODO (2013-11-02) Thank You Ohlinger's
-*** TODO (2013-11-02) The Pit
-*** TODO (2013-11-09) Rise of the Blue Lotus
-*** TODO (2013-11-11) Hollowed Out
-*** TODO (2013-11-22) It Smells Like Frogs
-*** TODO (2013-11-26) Twisterlend
+*** DONE (2013-09-13) Worms for the Garden
+*** DONE (2013-09-18) Halls of Dimension
+*** DONE (2013-09-26) Splatters
+*** DONE (2013-10-04) Feathers
+*** DONE (2013-10-05) Mannequin Cemetery
+*** DONE (2013-10-24) Pearson's Square
+*** DONE (2013-10-29) Pumpkin
+*** DONE (2013-11-02) Thank You Ohlinger's
+*** DONE (2013-11-02) The Pit
+*** DONE (2013-11-09) Rise of the Blue Lotus
+*** DONE (2013-11-11) Hollowed Out
+*** DONE (2013-11-22) It Smells Like Frogs
+*** DONE (2013-11-26) Twisterlend
+*** TODO (2013-12-11) Coat of Charms
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1556,7 +1557,7 @@
    :END:
 ** TODO DragonForce                                                      :jo:
 ** DONE Dream Theater
-*** TODO (2013-09-18) Dream Theater
+*** DONE (2013-09-18) Dream Theater
 ** DONE Dry Kill Logic                                                 :1fav:
 ** TODO EELS
 *** TODO (2013-02-03) Wonderful, Glorious
@@ -1619,6 +1620,7 @@
 ** TODO Garbage
 ** DONE Gorillaz
 *** TODO (2012-02-23) DoYaThing
+** TODO Grateful Dead
 ** TODO Green Days
 ** DONE Guns N' Roses                                                   :FAV:
 ** TODO Gustav Mahler
@@ -1665,6 +1667,7 @@
 *** DONE (2008-09-05) The Crucible of Man: Something Wicked, Part 2
 *** DONE (2001-11-26) Tribute to the Gods
 *** DONE (2011) Dystopia
+*** TODO (2014-01-21) Plagues of Babylon
 ** DONE Il Divo
 ** DONE Incubus
 ** Inon Zur                                                            :game:
@@ -1784,7 +1787,7 @@
 *** DONE (2009-02-18) Ukonhauta
 *** DONE (2011-03-02) Kotiteollisuus
 *** DONE (2012-09-21) Sotakoira II
-*** TODO (2013-07-05) Maailmanloppu
+*** DONE (2013-07-05) Maailmanloppu
 *** as Hullu ukko ja kotiteollisuus
 **** NOT (1996-08) Hullu ukko ja Kotiteollisuus
 ** GONE Kylähullut                                                      :FAV:
@@ -2022,6 +2025,7 @@
 *** DONE (2006) Time to Differ
 *** DONE (2008-11-19) Nice Noise
 ** TODO Norah Jones
+*** TODO (2013-11-25) Foreverly
 ** Normand Corbeil
 *** Heavy Rain                                                     :FAV:game:
     :PROPERTIES:
@@ -2164,6 +2168,8 @@
 *** DONE (1996) Ecco: Songs of Time                                :game:FAV:
 ** GONE Spice Girls                                                       :f:
 ** TODO Stam1na
+** Starbomb
+*** TODO Starbomb                                                       :FAV:
 ** Steve Jablonsky
 *** DONE (2010-07-05) Prince of Persia: The Forgotten Sands            :game:
 ** TODO Steve Vai                                                      :inst:
@@ -2267,6 +2273,7 @@
 *** DONE (2008) Ready for This?
 *** DONE (2010-12-14) Live at the O2
 *** DONE (2011) Tim Minchin and the Heritage Orchestra
+*** TODO (2013-11-29) So Fucking Rock
 *** DONE Timmy the Dog
 ** TODO Tina Arena
 ** DONE To/Die/For                                                 :FAV:wail:
@@ -2310,10 +2317,10 @@
 ** DONE Tuoni
 *** DONE (2005) Elävät & kuolleet
 ** DONE Turisas                                                          :fi:
-*** TODO (2013-08-21) Turisas2013
+*** DONE (2013-08-21) Turisas2013
 ** DONE Turmion Kätilöt
 ** TODO Týr
-*** TODO (2013-09-13) Valkyrja
+*** DONE (2013-09-13) Valkyrja
 ** DONE Van Canto
 ** TODO Vanilla Sky
 *** TODO (2012-12-18) The Band Not the Movie
@@ -2376,6 +2383,7 @@
 *** DONE (2008) Destroyed
 *** DONE (2009) The Rarest Songs                                       :1fav:
 *** DONE (2011-03-29) The Unforgiving
+*** TODO (2014-01-31) Hydra
 ** Wolfgang Amadeus Mozart
 *** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
 ** DONE X/X JAPAN                                                   :1fav:ja:
