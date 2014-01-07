@@ -61,3 +61,4 @@
     (set-default-font "Consolas-11"))
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
+(remove-hook 'git-commit-mode-hook 'flyspell-mode)
