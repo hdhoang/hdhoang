@@ -22,6 +22,7 @@
  '(prelude-guru nil)
  '(sentence-end-double-space nil)
  '(solarized-use-variable-pitch nil)
+ '(sql-connection-alist (quote (("selfoss" (sql-product (quote mysql)) (sql-user "selfoss") (sql-database "selfoss") (sql-server "192.168.1.54")))))
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
