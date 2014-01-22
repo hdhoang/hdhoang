@@ -22,6 +22,7 @@
  '(prelude-guru nil)
  '(sentence-end-double-space nil)
  '(solarized-use-variable-pitch nil)
+ '(sql-connection-alist (quote (("selfoss" (sql-product (quote mysql)) (sql-user "selfoss") (sql-database "selfoss") (sql-server "192.168.1.54")))))
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
@@ -59,6 +60,10 @@
 
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
+(if (eq system-type 'windows-nt)
+    (custom-set-variables
+     '(sql-mysql-options (quote ("mysql")))
+     '(sql-mysql-program "fakecygpty")))
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (remove-hook 'git-commit-mode-hook 'flyspell-mode)
