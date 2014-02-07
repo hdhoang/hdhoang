@@ -33,6 +33,7 @@ set urlseparator=' , '
 map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
 set guioptions+=cNT
+set scrollsteps=1
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
@@ -89,7 +90,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
    \ set! browser.tabs.onTop=false
-   \ set! general.smoothScroll=false
    \ set! font.default.x-western="sans-serif"
    \ if /NT 6/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
