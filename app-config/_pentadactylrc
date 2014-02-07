@@ -38,7 +38,7 @@ set hlfind
 set pageinfo=fgmse
 
 """ Core
-set editor='emacsclient +<line> <file>'
+set editor='emacsclientw +<line> <file>'
 
 """ Sites
 map <C-S-n> -ex bmarks! -tags news
