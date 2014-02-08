@@ -1,10 +1,18 @@
 use selfoss;
 
-update items set unread = 0 where
-   (link like 'http://decorumcomics.com/%'
-         and link < 'http://decorumcomics.com/comic.php?id=165')
-or (link like 'http://drawingboardcomic.com/%'
-         and link < 'http://drawingboardcomic.com/index.php?comic=205')
-or (link like 'http://www.giantitp.com/%'
-         and link < 'http://www.giantitp.com/comics/oots0935.html')
-or source = (select id from sources where title like 'oglaf%');
+create procedure read_all (pattern char(30))
+       update items set unread = 0 where link like concat('%',pattern,'%');
+create procedure mark_5_unread (pattern char(30))
+       update items set unread = 1 where link like concat('%',pattern,'%')
+                    limit 5;
+
+call read_all('drawingboard');
+call mark_5_unread('drawingboard');
+call read_all('oglaf');
+call mark_5_unread('oglaf');
+call read_all('oots');
+call mark_5_unread('oots');
+call read_all('satw');
+call mark_5_unread('satw');
+call read_all('stupidfox');
+call mark_5_unread('stupidfox');

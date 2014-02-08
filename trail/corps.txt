@@ -1408,6 +1408,7 @@
 *** TODO (2013-12-11) Coat of Charms
 *** TODO (2013-12-24) Wishes
 *** TODO (2014-01-09) You Can't Triple Stamp a Double Stamp
+*** TODO (2014-01-17) The Coats of Claude
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -2069,6 +2070,7 @@
 ** DONE Pilotwings 64                                              :FAV:game:
 ** DONE Pink Floyd
 ** TODO Placebo                                                          :jo:
+** TODO Poisonblack
 ** DONE Powerglove                                                      :FAV:
    :PROPERTIES:
    :url:      http://vgmetal.com
@@ -2257,8 +2259,8 @@
 *** TODO (2012-10-01) Taste My Power
 *** TODO (2013-03-05) Holy Whiplash
 *** with Action Adventure World
-**** TODO (2010-02-08) Volume 1: Ghosts n Goblins
-**** TODO (2010-10-08) Volume 2: Megaman VI
+**** NOT (2010-02-08) Volume 1: Ghosts n Goblins
+**** NOT (2010-10-08) Volume 2: Megaman VI
 *** with The Black Warriors
 **** TODO (2013) SPLIT
 *** as The Missing Plasma
@@ -2542,7 +2544,8 @@
    :PROPERTIES:
    :url:      http://shamusyoung.com
    :END:
-*** DONE Free Radical                                             :narrative:
+*** DONE Free Radical                                        :narrative:game:
+*** TODO The Witch Watch
 ** Terminally Incoherent                                         :movie:fdim:
    :PROPERTIES:
    :url:      http://terminally-incoherent.com
