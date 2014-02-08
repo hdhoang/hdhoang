@@ -1,0 +1,4 @@
+# /etc/supysonic
+[base]
+database_uri = mysql://
+filetypes = flac,m4a,mp2,mp3,ogg,wma
