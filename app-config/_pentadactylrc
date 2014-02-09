@@ -96,31 +96,11 @@ map <C-S-s> -ex bmarks! -tags setting
    \     set! font.name.sans-serif.x-western=Calibri
    \     set! font.name.serif.x-western=Cambria
    \ fi
-   \ set! capability.policy.yesscript.sites="http://bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com http://www.salon.com"
-   \ set! downbar.display.clearButton=true
-   \ set! downbar.display.mainButton=false
-   \ set! downbar.display.speed=false
-   \ set! downbar.display.toMiniButton=true
-   \ set! downbar.function.clearFiletypes=""
-   \ set! downbar.function.firstRun=false
-   \ set! downbar.function.removeOnOpen=false
-   \ set! downbar.function.soundCompleteIgnore="torrent"
-   \ set! downbar.function.soundOnComplete=1
-   \ set! downbar.style.speedColor0="0;#dc322f"
-   \ set! downbar.style.speedColor1="50;#b58900"
-   \ set! downbar.style.speedColor2="100;#859900"
-   \ set! downbar.style.speedColor3="200;#2aa198"
-   \ set! downbar.style.speedColorsEnabled=true
-   \ set! downbar.style.useGradients=false
-   \ set! extensions.checkCompatibility.8.0=false
    \ set! extensions.checkCompatibility.nightly=false
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
    \ set! extensions.https_everywhere._observatory.priv_dns=true
-   \ set! extensions.testpilot.alwaysSubmitData=true
-   \ set! extensions.testpilot.popup.showOnNewResults=true
-   \ set! extensions.testpilot.popup.showOnNewStudy=true
    \ extadd https://adblockplus.org/devbuilds/adblockplus/00latest.xpi
    \ set! extensions.adblockplus.detachsidebar=true
    \ set! services.sync.engine.adblockplus=true
