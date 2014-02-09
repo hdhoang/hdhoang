@@ -66,9 +66,6 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-   \ bmark -keyword t -t train http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/train.php
-   \ bmark -keyword at -t asynctrain http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/async/asynctrain.php
-   \ bmark -keyword sp -t 'personal stats' http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/stat.php?personal=1
    \ bmark -keyword ts -t 'tor cenba' https://atlas.torproject.org/#search/cenba
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
@@ -138,36 +135,6 @@ EOS
 " thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
 autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
-
-map <C-[> 2b
-" trigger on PageLoad so that the password is filled in
-autocmd PageLoad (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/.+train\.php -javascript <<EOS
-try {
-    doc.querySelector('#good button, [value="Good"]').accessKey='e';
-    doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
-    doc.querySelector('select').accessKey='o'
-    doc.querySelector('select').tabIndex=1;
-} catch (e if e instanceof TypeError) {
-    doc.querySelector('[value="Login"]').form.submit()
-}
-EOS
-autocmd DOMLoad (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/pe/train.php -javascript <<EOS
-try {
-    doc.querySelector('[value="Good"]').accessKey='e';
-    doc.querySelector('[value="Bad"]').accessKey=',';
-} catch (e){}
-EOS
-style -n "yape" (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/.+train\.php <<EOS
-img:not([src$="thumb"]) { position: fixed; bottom: 0; max-width: 700px; max-height: 98% }
-[value="Good"] { float: left }
-body { margin: 0 }
-td { padding: 0 !important }
-p:last-child { display: block; position: fixed; bottom: 0; right: 0 }
-body > a, h1, p
-, form td:last-child:not(#imgslot)
-, #settings td>:not(select), #keyslot
-{ display: none }
-EOS
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
