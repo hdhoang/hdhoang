@@ -193,6 +193,7 @@ fi
 if [[ $(uname -o) == Cygwin ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
+    export EDITOR=emacsclientw
     alias nn='nice '
 fi
 
