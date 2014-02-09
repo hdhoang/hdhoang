@@ -2,7 +2,6 @@
 
 """ Start up
 map <C-r> -ex rehash
-map <C-S-r> -ex restart +purgecaches
 set! browser.backspace_action=0
 set! browser.link.open_newwindow=3
 set! middlemouse.contentLoadURL=false
@@ -18,16 +17,12 @@ map <A-p> -ex pintab!
 map <A-$> -ex tabmove $
 map <C-$> g$
 map <F1> <C-^>
-map <C-6> 6b
-map <C-9> 9b
 set activate-=diverted,links,tabopen,paste
 set complete=location,search
 bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
 set defsearch=ddg
 set newtab=help
 set hintkeys=$.aoeupjxyidhtnmz
-set nextpattern^=›
-set urlseparator=' , '
 
 """ Display
 map <A-t> -js content.document.toggleImageSize()
