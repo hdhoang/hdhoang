@@ -106,8 +106,10 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.aggressive=true
    \ set! network.http.pipelining.ssl=true
-   \ set! network.http.proxy.pipelining=true
-   \ set! network.http.spdy.enabled=true
+   \ set! network.http.proxy.socks=kub.zahe.me
+   \ set! network.http.proxy.socks_port=9050
+   \ set! network.http.proxy.socks_remote_dns=true
+   \ set! network.http.spdy.enabled.http2draft=true
    \ set! network.protocol-handler.expose.magnet=false
    \ set! services.sync.engine.prefs=false
    \ set! toolkit.telemetry.enabled=true
@@ -117,6 +119,8 @@ map <C-S-s> -ex bmarks! -tags setting
    \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+
+map -count <C-A-p> -ex set! network.proxy.type=<count>
 
 set pk+=smbc-comics.com:x
 style -n "smbc red button" www.smbc-comics.com <<EOS
