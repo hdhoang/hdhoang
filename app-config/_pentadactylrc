@@ -46,7 +46,6 @@ map <C-S-n> -ex bmarks! -tags news
 map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark https://www.youtube.com/feather_beta -tags setting
    \ bmark -keyword ac -t config about:config
-   \ bmark -keyword st -t sync-tabs about:sync-tabs
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
@@ -143,15 +142,6 @@ style -n "selfoss" flecu.zahe.me <<EOS
 .entry-content { -moz-column-count: 1 !important }
 EOS
 
-map + -js <<EOS
-dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
-           ,{ from: 'links', where: dactyl.NEW_TAB })
-EOS
-autocmd PageLoad https://plusone.google.com/_/+1/* -js <<EOS
-doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
-                 .accessKey = 'e'
-EOS
-
 set passkeys+=tumblr.com:jk
 
 style -n "link colors" * :visited { color: #859900 !important } :link[href^="#"] { color: #268bd2 !important }
@@ -201,28 +191,6 @@ img[title]:not(:-moz-any(
 ))
 { outline: 2px dashed #6c71c4; outline-offset: 1px }
 EOS
-
-style -n "link decor: good hosts" * <<EOS
-  [href*="depositfiles.com/"] /* clean UI, reasonable waiting */
-, [href*="hotfile.com/"]
-, [href*="ifile.it"]
-, [href*="mediafire.com/"],[href*="mfi.re/"]
-, [href*="megashare.com/"]
-, [href*="min.us/"], [href*="minus.com/"]
-, [href*="rapidshare.com/"]
-, [href*="ul.to/"], [href*="uploaded.to/"], [href*="uploaded.net/"]
-, [href*="youporn.com/"] /* download links */
-{ text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
-EOS
-style -n "link decor: bad hosts" * <<EOS
-  [href*="fileserve.com/"] /* slow UI */
-, [href*="filesmonster.com/"] /* bad UI and splits big files */
-, [href*="filesonic.com/"] /* horrid UI */
-, [href*="megaupload.com/"]
-, [href*="oron.com/"] /* 60s */
-, [href*="uploading.com/"] /* 60s */
-{ text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
-EOS
 style -n "link decor: youtube-dl" * <<EOS
 :-moz-any(
   [href*="blip.tv/"]
@@ -243,9 +211,6 @@ style -n "link decor: youtube-dl" * <<EOS
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
 )::after { content: "\21af" }
 EOS
-
-style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
-style -n "link decor: dansdata" www.dansdata.com a:not([href^="http"])::after { content: "\22c6" }
 style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
@@ -278,21 +243,3 @@ style -n "link decor: tvtropes" * <<EOS
 }
 EOS
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
-
-style -n "lparchive" lparchive.org body { width: auto !important } [src$=".gif"] { border-right: 2px dotted #d33682 !important}
-
-style -n "cracked" cracked.com <<EOS
-#PrimaryContent .body section [href*="cracked.com/"]:not(.stronglinks) {
-     background: no-repeat url(http:/www.cracked.com/favicon.ico);
-     padding-left: 32px !important;
-}
-.Body, .body { padding-left: 0 !important }
-EOS
-
-style -n "girtby" girtby.net a { text-decoration: underline !important }
-
-style -n "phoronix" www.phoronix.com #phxcms_content_right { float: none !important }
-
-style -n "dota2wiki" dota2.gamepedia.com #bodyContent2 { margin-right: 0 !important} #curse-panel { display: none }
-
-style -n "d20" www.shamusyoung.com [href^="?"]::after { content: "\22c6" }
