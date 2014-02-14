@@ -1118,6 +1118,7 @@
 ** TODO Europe Trip                                                      :jo:
 ** TODO Final Destination
 ** DONE Flypaper (2011)                                              :FAV:jo:
+** TODO Frozen
 ** TODO Ghostbusters
 ** Kevin Smith                                                          :FAV:
 *** DONE Chasing Amy (1997)
@@ -1178,6 +1179,7 @@
 *** TODO For A Few Dollars More (1965)
 *** TODO The Good, The Bad, The Ugly (1966)
 ** TODO The Men Who Stare at Goats                                       :tv:
+** TODO The Monuments Men
 ** TODO The Simpsons
 ** DONE The Usual Suspects (1995)                                       :FAV:
 ** TODO To Rome with Love
@@ -2384,6 +2386,8 @@
 *** DONE (2008-05-14) Ruatokansan uamunkoetto
 *** DONE (2010-10-27) Lohuton
 ** DONE Warmen
+** TODO Whispered
+*** TODO (2014-02-07) Shogunate Macabre
 ** TODO White Lion
 ** TODO Whitesnake
 ** TODO Whitney Houston
