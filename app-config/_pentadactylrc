@@ -64,6 +64,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
+   \ set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
