@@ -238,7 +238,7 @@
    :END:
 *** TODO (1993) Scratch Monkey
 *** DONE (2005) Accelerando
-*** TODO (2006) Glasshouse
+*** DONE (2006) Glasshouse
 *** NOT (2012) The Rapture of the Nerds
 *** Eschaton series
 **** TODO (2003) Singularity Sky
@@ -1393,7 +1393,7 @@
 *** DONE (2013-09-03) Pike 21
 *** DONE (2013-09-03) Pike 22
 *** DONE (2013-09-04) Slug Cartilage
-*** TODO (2013-09-05) Pancake Heater
+*** DONE (2013-09-05) Pancake Heater
 *** DONE (2013-09-13) Worms for the Garden
 *** DONE (2013-09-18) Halls of Dimension
 *** DONE (2013-09-26) Splatters
@@ -1407,10 +1407,12 @@
 *** DONE (2013-11-11) Hollowed Out
 *** DONE (2013-11-22) It Smells Like Frogs
 *** DONE (2013-11-26) Twisterlend
-*** TODO (2013-12-11) Coat of Charms
-*** TODO (2013-12-24) Wishes
-*** TODO (2014-01-09) You Can't Triple Stamp a Double Stamp
-*** TODO (2014-01-17) The Coats of Claude
+*** DONE (2013-12-11) Coat of Charms
+*** DONE (2013-12-24) Wishes
+*** DONE (2014-01-09) You Can't Triple Stamp a Double Stamp
+*** DONE (2014-01-17) The Coats of Claude
+*** DONE (2014-02-07) Hide in the Pickling Jar
+*** DONE (2014-02-07) Monument Valley
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -2159,6 +2161,7 @@
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** DONE (2012-05-22) Stones Grow Her Name
+*** TODO (2014-03-28) Pariah's Child
 ** DONE Soul Asylum
 *** DONE (1984) Say What You Will, Clarence... Karl Sold the Truck
 *** DONE (1986-01-18) Made to Be Broken
@@ -2248,26 +2251,26 @@
 ** DONE ThePlasmas                                         :riff:game:lastfm:
 *** DONE (2008) Extreme NES Terror
 *** DONE (2008) Noentiendo
-*** TODO (2009) Bite My Bytes
-*** TODO (2009) In the Year 200X
+*** DONE (2009) Bite My Bytes
+*** DONE (2009) In the Year 200X
 *** DONE (2009) NES Cult Armageddon
 *** DONE (2009) R3BORN
 *** DONE (2010) Beware the invasion
 *** DONE (2010-01-22) 16 Fighting Bits
-*** TODO (2011) MegaMan 6 Tribute Album
+*** DONE (2011) MegaMan 6 Tribute Album
 *** DONE (2011) Taste My Power
-*** TODO (2012) ?
-*** TODO (2012-02-07) MegaMan 1
-*** TODO (2012-05-18) Little Nemo: The Dream Album
-*** TODO (2012-10-01) Taste My Power
-*** TODO (2013-03-05) Holy Whiplash
+*** DONE (2012) ?
+*** DONE (2012-02-07) MegaMan 1
+*** DONE (2012-05-18) Little Nemo: The Dream Album
+*** DONE (2012-10-01) Taste My Power
+*** DONE (2013-03-05) Holy Whiplash
 *** with Action Adventure World
 **** NOT (2010-02-08) Volume 1: Ghosts n Goblins
 **** NOT (2010-10-08) Volume 2: Megaman VI
 *** with The Black Warriors
-**** TODO (2013) SPLIT
+**** DONE (2013) SPLIT
 *** as The Missing Plasma
-**** TODO (2010) Not a Game Anymore
+**** DONE (2010) Not a Game Anymore
 ** DONE Therion
 *** DONE (1991) Of Darkness...
 *** DONE (1992) Beyond Sanctorum
