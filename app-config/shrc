@@ -5,26 +5,22 @@
 if [[ $(uname -o) == Cygwin ]]; then
     z=/cygdrive/c
     mount=/cygdrive/h
-    selsormenli=/cygdrive/s
-    pool=/cygdrive/m
 else
     z=/mnt/cenbab
     mount=~
-    selsormenli=/mnt/selsormenli
-    pool=/mnt/marbi
 fi
 h=$mount/Public/hdhoang
 conf=$h/system-config/$(hostname)
 box=$mount/Box
+dbox=$mount/DropBox
 t=$mount/t
 dl=$mount/Downloads
 m=$mount/Music/_new
 p=$mount/Pictures
 v=$mount/Videos
 mi=$mount/Public/mirror
-g=$z/@g
-s=$z/@s
-fav=$mount/Public/fav
+g=$mount/g
+s=$dbox/runnable
 fm=$mount/Music
 
 # utils
@@ -57,16 +53,6 @@ alias t='less -F'
 alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias nh='sudo nethogs enp3s0'
 alias np='sudo tcpdump -w - | pv -bert >/dev/null'
-port_mapping=(
-5880 tcp 4660 tcp # tor
-4444 tcp # i2p proxy
-20220 tcp 20220 udp # torrent
-20221 udp 20222 udp # ktorrent
-22 tcp # ssh
-25 tcp # exim
-80 tcp 443 tcp # lighttpd
-)
-alias op='upnpc -r ${port_mapping[*]}'
 
 # file ops
 function cd() {
@@ -86,7 +72,7 @@ alias mv='mv -i'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --no-group'
-alias bu='rs --size-only --delete --exclude=cache2 $mount/s $mount/secrets $p $fm $v hdhoang@kub.zahe.me:/mnt/marbi'
+alias bu='rs --size-only --delete --exclude=cache2 $s $dbox/setup $mount/secrets $p $fm $v hdhoang@kub.zahe.me:/mnt/marbi'
 
 # system
 alias ssc='sudo systemctl --system'
@@ -124,7 +110,6 @@ alias dum='dumx -v $m -type d|cut -c 9-|x -kX ls -1'
 alias favd='ls $fm/*/* | grep -o "[^/]*_@_[^[]*" | uniq -di'
 alias fava='ls $fm/*/* | grep -o "[^/]*_@" | uniq -c | sort -n'
 alias favl='ls $fm/*/* | grep -o "\[.*\]" | sort | uniq -c | sort -n'
-alias favs='rs --delete $fav $pool'
 function favm() {
     # not using alias to keep emacs hili sane
     cd $fm
@@ -193,6 +178,7 @@ fi
 if [[ $(uname -o) == Cygwin ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
+    export EDITOR=emacsclientw
     alias nn='nice '
 fi
 

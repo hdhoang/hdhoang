@@ -2,7 +2,6 @@
 
 """ Start up
 map <C-r> -ex rehash
-map <C-S-r> -ex restart +purgecaches
 set! browser.backspace_action=0
 set! browser.link.open_newwindow=3
 set! middlemouse.contentLoadURL=false
@@ -18,34 +17,30 @@ map <A-p> -ex pintab!
 map <A-$> -ex tabmove $
 map <C-$> g$
 map <F1> <C-^>
-map <C-6> 6b
-map <C-9> 9b
 set activate-=diverted,links,tabopen,paste
-set complete=location,search
-bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
+set complete=history,search
+silent bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
 set defsearch=ddg
 set newtab=help
 set hintkeys=$.aoeupjxyidhtnmz
-set nextpattern^=›
-set urlseparator=' , '
 
 """ Display
 map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
 set guioptions+=cNT
+set scrollsteps=1
 set showstatuslinks=command
 set hlfind
 set pageinfo=fgmse
 
 """ Core
-set editor='emacsclient +<line> <file>'
+set editor='emacsclientw +<line> <file>'
 
 """ Sites
 map <C-S-n> -ex bmarks! -tags news
 map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark https://www.youtube.com/feather_beta -tags setting
    \ bmark -keyword ac -t config about:config
-   \ bmark -keyword st -t sync-tabs about:sync-tabs
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
@@ -65,13 +60,11 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-   \ bmark -keyword t -t train http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/train.php
-   \ bmark -keyword at -t asynctrain http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/async/asynctrain.php
-   \ bmark -keyword sp -t 'personal stats' http://vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p/pe/stat.php?personal=1
-   \ bmark -keyword ts -t 'tor cenba' https://atlas.torproject.org/#search/cenba
+   \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
+   \ set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
@@ -89,38 +82,17 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
    \ set! browser.tabs.onTop=false
-   \ set! general.smoothScroll=false
    \ set! font.default.x-western="sans-serif"
    \ if /NT 6/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
    \     set! font.name.sans-serif.x-western=Calibri
    \     set! font.name.serif.x-western=Cambria
    \ fi
-   \ set! capability.policy.yesscript.sites="http://bluescreenofawesome.com http://www.cracked.com http://www.escapistmagazine.com http://www.salon.com"
-   \ set! downbar.display.clearButton=true
-   \ set! downbar.display.mainButton=false
-   \ set! downbar.display.speed=false
-   \ set! downbar.display.toMiniButton=true
-   \ set! downbar.function.clearFiletypes=""
-   \ set! downbar.function.firstRun=false
-   \ set! downbar.function.removeOnOpen=false
-   \ set! downbar.function.soundCompleteIgnore="torrent"
-   \ set! downbar.function.soundOnComplete=1
-   \ set! downbar.style.speedColor0="0;#dc322f"
-   \ set! downbar.style.speedColor1="50;#b58900"
-   \ set! downbar.style.speedColor2="100;#859900"
-   \ set! downbar.style.speedColor3="200;#2aa198"
-   \ set! downbar.style.speedColorsEnabled=true
-   \ set! downbar.style.useGradients=false
-   \ set! extensions.checkCompatibility.8.0=false
    \ set! extensions.checkCompatibility.nightly=false
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
    \ set! extensions.https_everywhere._observatory.priv_dns=true
-   \ set! extensions.testpilot.alwaysSubmitData=true
-   \ set! extensions.testpilot.popup.showOnNewResults=true
-   \ set! extensions.testpilot.popup.showOnNewStudy=true
    \ extadd https://adblockplus.org/devbuilds/adblockplus/00latest.xpi
    \ set! extensions.adblockplus.detachsidebar=true
    \ set! services.sync.engine.adblockplus=true
@@ -135,8 +107,10 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.aggressive=true
    \ set! network.http.pipelining.ssl=true
-   \ set! network.http.proxy.pipelining=true
-   \ set! network.http.spdy.enabled=true
+   \ set! network.http.proxy.socks=kub.zahe.me
+   \ set! network.http.proxy.socks_port=9050
+   \ set! network.http.proxy.socks_remote_dns=true
+   \ set! network.http.spdy.enabled.http2draft=true
    \ set! network.protocol-handler.expose.magnet=false
    \ set! services.sync.engine.prefs=false
    \ set! toolkit.telemetry.enabled=true
@@ -146,6 +120,8 @@ map <C-S-s> -ex bmarks! -tags setting
    \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+
+map -count <C-A-p> -ex set! network.proxy.type=<count>
 
 set pk+=smbc-comics.com:x
 style -n "smbc red button" www.smbc-comics.com <<EOS
@@ -159,50 +135,11 @@ EOS
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
 autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
 
-map <C-[> 2b
-" trigger on PageLoad so that the password is filled in
-autocmd PageLoad (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/.+train\.php -javascript <<EOS
-try {
-    doc.querySelector('#good button, [value="Good"]').accessKey='e';
-    doc.querySelector('#bad button,   [value="Bad"]').accessKey=',';
-    doc.querySelector('select').accessKey='o'
-    doc.querySelector('select').tabIndex=1;
-} catch (e if e instanceof TypeError) {
-    doc.querySelector('[value="Login"]').form.submit()
-}
-EOS
-autocmd DOMLoad (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/pe/train.php -javascript <<EOS
-try {
-    doc.querySelector('[value="Good"]').accessKey='e';
-    doc.querySelector('[value="Bad"]').accessKey=',';
-} catch (e){}
-EOS
-style -n "yape" (hb4pm4eznzhd6mts.onion|vh2e7a2imnfcr2rauxb3v6dxehe7wuxthucgcg2oh6bw22tyljtq.b32.i2p)/.+train\.php <<EOS
-img:not([src$="thumb"]) { position: fixed; bottom: 0; max-width: 700px; max-height: 98% }
-[value="Good"] { float: left }
-body { margin: 0 }
-td { padding: 0 !important }
-p:last-child { display: block; position: fixed; bottom: 0; right: 0 }
-body > a, h1, p
-, form td:last-child:not(#imgslot)
-, #settings td>:not(select), #keyslot
-{ display: none }
-EOS
-
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
 set passkeys+=flecu.zahe.me:'vojknp<Left><Right>smrUS'
 style -n "selfoss" flecu.zahe.me <<EOS
 .entry-content { -moz-column-count: 1 !important }
-EOS
-
-map + -js <<EOS
-dactyl.open("https://plusone.google.com/_/+1/fastbutton?url=" + encodeURIComponent(content.location.href)
-           ,{ from: 'links', where: dactyl.NEW_TAB })
-EOS
-autocmd PageLoad https://plusone.google.com/_/+1/* -js <<EOS
-doc.querySelector('#plusone [role="button"], [guidedhelpid="sharebutton"]')
-                 .accessKey = 'e'
 EOS
 
 set passkeys+=tumblr.com:jk
@@ -221,7 +158,6 @@ img[title]:not(:-moz-any(
 , [src*='buttersafe.com/']
 , [src*='calmblueoceans.com/']
 , [src*='chainsawsuit.com/']
-, [src*='channelate.com/']
 , [src*='e-merl.com']
 , [src*='endlessorigami.com/']
 , [src*='everydayblues.net/']
@@ -234,6 +170,7 @@ img[title]:not(:-moz-any(
 , [src*='lunchbreath.com/']
 , [src*='mimiandeunice.com/']
 , [src*='neatorama.com/']
+, [src*='nerfnow.com/']
 , [src*='pandyland.net/']
 , [src*='pbfcomics.com/']
 , [src*='pidjin.net/']
@@ -253,28 +190,6 @@ img[title]:not(:-moz-any(
 , [src*='warehousecomic.com/']
 ))
 { outline: 2px dashed #6c71c4; outline-offset: 1px }
-EOS
-
-style -n "link decor: good hosts" * <<EOS
-  [href*="depositfiles.com/"] /* clean UI, reasonable waiting */
-, [href*="hotfile.com/"]
-, [href*="ifile.it"]
-, [href*="mediafire.com/"],[href*="mfi.re/"]
-, [href*="megashare.com/"]
-, [href*="min.us/"], [href*="minus.com/"]
-, [href*="rapidshare.com/"]
-, [href*="ul.to/"], [href*="uploaded.to/"], [href*="uploaded.net/"]
-, [href*="youporn.com/"] /* download links */
-{ text-decoration: overline !important; -moz-text-decoration-style: wavy !important }
-EOS
-style -n "link decor: bad hosts" * <<EOS
-  [href*="fileserve.com/"] /* slow UI */
-, [href*="filesmonster.com/"] /* bad UI and splits big files */
-, [href*="filesonic.com/"] /* horrid UI */
-, [href*="megaupload.com/"]
-, [href*="oron.com/"] /* 60s */
-, [href*="uploading.com/"] /* 60s */
-{ text-decoration: line-through !important; -moz-text-decoration-style: wavy !important }
 EOS
 style -n "link decor: youtube-dl" * <<EOS
 :-moz-any(
@@ -296,9 +211,6 @@ style -n "link decor: youtube-dl" * <<EOS
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
 )::after { content: "\21af" }
 EOS
-
-style -n "link decor: ignco" ignorethecode.net :link { text-decoration: underline !important }
-style -n "link decor: dansdata" www.dansdata.com a:not([href^="http"])::after { content: "\22c6" }
 style -n "link decor: people" * <<EOS
 :-moz-any(
   [href*="/~cks/"]
@@ -331,21 +243,3 @@ style -n "link decor: tvtropes" * <<EOS
 }
 EOS
 style -n "tvtropes spoiler" tvtropes.org .spoiler { color: grey !important } .spoiler a { color: teal !important } a { text-decoration: underline !important }
-
-style -n "lparchive" lparchive.org body { width: auto !important } [src$=".gif"] { border-right: 2px dotted #d33682 !important}
-
-style -n "cracked" cracked.com <<EOS
-#PrimaryContent .body section [href*="cracked.com/"]:not(.stronglinks) {
-     background: no-repeat url(http:/www.cracked.com/favicon.ico);
-     padding-left: 32px !important;
-}
-.Body, .body { padding-left: 0 !important }
-EOS
-
-style -n "girtby" girtby.net a { text-decoration: underline !important }
-
-style -n "phoronix" www.phoronix.com #phxcms_content_right { float: none !important }
-
-style -n "dota2wiki" dota2.gamepedia.com #bodyContent2 { margin-right: 0 !important} #curse-panel { display: none }
-
-style -n "d20" www.shamusyoung.com [href^="?"]::after { content: "\22c6" }
