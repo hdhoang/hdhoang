@@ -25,6 +25,7 @@ set newtab=help
 set hintkeys=$.aoeupjxyidhtnmz
 
 """ Display
+highlight Hint -append font-size: 14px !important
 map <A-t> -js content.document.toggleImageSize()
 silent colorscheme solarized-light
 set guioptions+=cNT
