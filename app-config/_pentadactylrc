@@ -117,9 +117,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! services.sync.engine.prefs=false
    \ set! toolkit.telemetry.enabled=true
    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
-   \ js services.permissions.add(services.io.newURI("http:blip.tv",null,null), 'image', services.permissions.DENY_ACTION)
-   \ js services.permissions.add(services.io.newURI("http:oglaf.com",null,null), 'plugins', services.permissions.ALLOW_ACTION)
-   \ js services.permissions.add(services.io.newURI("http:www.google.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 
