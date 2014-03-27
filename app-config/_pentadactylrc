@@ -63,6 +63,7 @@ map S -ex bmark https://www.youtube.com/html5 -tags setting
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
+   \ bmark -keyword fb -t fb https:fb.me -tags news
    \ bmark -keyword fbm -t 'fb chat' https://www.facebook.com/messages/%s
 map <C-S-s> -ex bmarks! -tags setting
    \ set! accessibility.browsewithcaret_shortcut.enabled=false
