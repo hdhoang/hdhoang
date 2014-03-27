@@ -273,7 +273,7 @@
 *** TODO Illium and Olympos
 ** Daniel Quinn
 *** DONE Ishmael                                                        :FAV:
-   :PROPERTIES:
+    :PROPERTIES:
    :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
    :END:
 *** TODO The Story of B
@@ -397,12 +397,12 @@
    :END:
 *** DotaCinema
 *** Luminous
-   :PROPERTIES:
+    :PROPERTIES:
    :url:      https://www.youtube.com/playlist?list=PL8A63EC5F95C09145
    :youtube:  LuminousInverse
    :END:
 *** Nebu1a
-   :PROPERTIES:
+    :PROPERTIES:
    :url:      http://blip.tv/show/latest_episode/756280
    :END:
 *** Purge
@@ -1330,7 +1330,7 @@
 *** DONE (2010) World of Warcraft: Cataclysm
 *** DONE (2012-05-15) Diablo III: Collector's Edition Soundtrack
 *** DONE Starcraft sound                                               :game:
-   :PROPERTIES:
+    :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
 *** DONE Warcraft III sound
@@ -1407,12 +1407,21 @@
 *** DONE (2013-11-11) Hollowed Out
 *** DONE (2013-11-22) It Smells Like Frogs
 *** DONE (2013-11-26) Twisterlend
+*** TODO (2013-11-27) Pikes
 *** DONE (2013-12-11) Coat of Charms
 *** DONE (2013-12-24) Wishes
 *** DONE (2014-01-09) You Can't Triple Stamp a Double Stamp
 *** DONE (2014-01-17) The Coats of Claude
 *** DONE (2014-02-07) Hide in the Pickling Jar
 *** DONE (2014-02-07) Monument Valley
+*** TODO (2014-02-21) Pike 43
+*** TODO (2014-02-25) Pitch Dark
+*** TODO (2014-02-26) Backwards Chimney
+*** TODO (2014-03-01) Rainy Days
+*** TODO (2014-03-01) Roller Coaster Track Repair
+*** TODO (2014-03-13) Factory
+*** TODO (2014-03-23) City of Ferris Wheels
+*** TODO (2014-06-01) The Spirit Winds
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
 *** with Bryan "Brain" Mantia
@@ -1491,6 +1500,7 @@
 *** TODO (2013-09-23) Filth
 ** DONE Coldplay
 *** NOT (2011) Mylo Xyloto
+*** TODO (2014-05-19) Ghost Stories
 ** TODO Crowded House
 ** TODO Cryhavoc
    :PROPERTIES:
@@ -1558,6 +1568,8 @@
 *** TODO (2013-03-04) Girl Who Got Away
 ** TODO Dire Strait
 ** DONE DJ Fab
+** TODO Dornenreich
+*** TODO (2014-05-02) Freiheit
 ** TODO Double Dragon                                                :lastfm:
 ** DONE Dr. Dre
    :PROPERTIES:
@@ -1569,6 +1581,7 @@
 ** DONE Dry Kill Logic                                                 :1fav:
 ** TODO EELS
 *** TODO (2013-02-03) Wonderful, Glorious
+*** TODO (2014-04-22) The Cautionary Tales of Mark Oliver Everett
 ** DONE El Pogo8bit
 *** DONE (2009) Listen to Your Game EP                                  :FAV:
 ** TODO Electric Light Orchestra
@@ -1866,6 +1879,17 @@
     :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
     :END:
 ** TODO Lê Cát Trọng Lý
+** DONE Lệ Quyên                                                 :vi:f:voice:
+*** DONE (2004-08-27) Giấc mơ có thật
+*** DONE (2006-12) Lời yêu còn măi
+*** DONE (2009-11-20) Nếu như ngày đó
+*** DONE (2009-12-04) Acoustic
+*** DONE (2010-08-10) Khúc tình xưa
+*** DONE (2011-05-19) Để nhớ một thời ta đã yêu
+*** DONE (2011-12-09) Trả lại thời gian
+*** DONE (2012-05-29) Tình khúc yêu thương
+*** DONE (2013-09) Con tim dại khờ
+*** DONE (2013-09) Dòng thời gian
 ** TODO M.I.A
 ** GONE M2M                                                             :FAV:
 *** DONE (2000-03-07) Shades of Purple
@@ -1901,6 +1925,7 @@
     :END:
 *** DONE (2011) Th1rt3en
 *** DONE (2013-06-04) Super Collider
+*** TODO (2014-02-25) Icon
 ** DONE MegaDriver                                         :riff:game:lastfm:
    :PROPERTIES:
    :url:      http://megadriver.com.br
@@ -1952,8 +1977,10 @@
    :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
    :END:
 ** DONE Mike Oldfield                                                   :FAV:
-*** TODO (2012-10-09) Journey into Space
-*** TODO (2013-02-01) Tubular Beats
+*** DONE (2013-02-01) Tubular Beats
+*** TODO (2014-03-03) Man On the Rocks
+*** with Terry Oldfield
+**** DONE (2012-10-09) Journey into Space
 ** Mikko Tarmia
 *** DONE (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
 ** TODO Milkmen
@@ -2084,6 +2111,7 @@
 ** TODO Public Enemy
 *** TODO (2012-07-13) Most of My Heroes Still Don't Appear on No Stamp
 *** TODO (2012-10-01) The Evil Empire of Everything
+*** TODO (2014-02-25) Icon
 ** TODO Puddle of Mudd
 ** TODO Pyotr Ilyich Tchaikovsky
 ** TODO Queen
@@ -2103,6 +2131,7 @@
 **** TODO (2013-11-22) Dark Wings of Steel
 ** DONE Richard Clayderman                                       :inst:piano:
 *** TODO (2013-04-30) Romantique
+*** TODO (2014-03-14) Plays World Hits
 ** TODO Richard Strauss
 ** TODO Richie Sambora
 *** TODO (2012-09-25) Aftermath of the Lowdown
@@ -2231,6 +2260,8 @@
 ** DONE The Cranberries                                              :FAV:jo:
 ** TODO The Doors
 ** TODO The Ink Spots                                              :FAV:blue:
+** TODO The Lord Weird Slough Feg
+*** TODO (2014-02-18) Digital Resistance
 ** NOT The Police                                                      :1fav:
 *** DONE (1978-11) Outlandos d'Amour
 *** DONE (1979-10) Reggatta de Blanc
