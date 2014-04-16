@@ -19,6 +19,7 @@
  '(frame-title-format "%f" t)
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
+ '(initial-buffer-choice (quote remember-notes))
  '(org-M-RET-may-split-line nil)
  '(org-log-done nil)
  '(org-use-speed-commands t)
