@@ -26,6 +26,7 @@
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(prelude-guru nil)
  '(sentence-end-double-space nil)
+ '(solarized-use-more-italic t)
  '(solarized-use-variable-pitch nil)
  '(sql-connection-alist
    (quote
