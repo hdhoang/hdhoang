@@ -83,7 +83,6 @@ map <C-S-s> -ex bmarks! -tags setting
    \ set! browser.display.background_color="#fdf6e3"
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
-   \ set! browser.tabs.onTop=false
    \ set! font.default.x-western="sans-serif"
    \ if /NT 6/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
