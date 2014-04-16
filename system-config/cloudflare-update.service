@@ -1,0 +1,9 @@
+[Unit]
+Description=Update CloudFlare DNS
+After=network.target
+
+[Service]
+Type=oneshot
+User=nobody
+ExecStart=/usr/local/bin/cloudflare-update
+

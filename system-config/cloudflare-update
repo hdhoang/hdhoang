@@ -1,0 +1,4 @@
+#!/bin/sh
+# /usr/local/bin/cloudflare-update
+/bin/curl --silent https://www.cloudflare.com/api_json.html -d email=... -d tkn=... -d z=zahe.me -d a=rec_edit -d id=139692430 -d type=A -d name=kub -d ttl=1 -d content=$(/bin/curl --silent https://icanhazip.com)
+
