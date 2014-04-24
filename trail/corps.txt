@@ -248,12 +248,9 @@
 **** DONE (2011) Rule 34
 **** TODO (2014) The Lambda Functionary
 *** Merchant Princes series
-**** TODO (2004) The Family Trade
-**** TODO (2005) The Hidden Family
-**** TODO (2006) The Clan Corporate
-**** TODO (2007) The Merchants' War
-**** TODO (2009) The Revolution Business
-**** TODO (2010) The Trade of Queens
+**** TODO The Bloodline Feud
+**** TODO The Traders' War
+**** TODO The Revolution Trade
 *** Saturn's Children series
 **** DONE (2008) Saturn's Children
 **** DONE (2013) Neptune's Brood
@@ -1169,6 +1166,7 @@
 *** TODO 2
 *** TODO 3
 ** TODO The Hangover
+** TODO The Heart of Justice (1996)
 ** TODO The Hobbit
 *** TODO 48fps
 ** DONE The Iron Giant (1999)                                           :FAV:
@@ -1407,20 +1405,21 @@
 *** DONE (2013-11-11) Hollowed Out
 *** DONE (2013-11-22) It Smells Like Frogs
 *** DONE (2013-11-26) Twisterlend
-*** TODO (2013-11-27) Pikes
+*** DONE (2013-11-27) Pikes
 *** DONE (2013-12-11) Coat of Charms
 *** DONE (2013-12-24) Wishes
 *** DONE (2014-01-09) You Can't Triple Stamp a Double Stamp
 *** DONE (2014-01-17) The Coats of Claude
 *** DONE (2014-02-07) Hide in the Pickling Jar
 *** DONE (2014-02-07) Monument Valley
-*** TODO (2014-02-21) Pike 43
-*** TODO (2014-02-25) Pitch Dark
-*** TODO (2014-02-26) Backwards Chimney
-*** TODO (2014-03-01) Rainy Days
-*** TODO (2014-03-01) Roller Coaster Track Repair
-*** TODO (2014-03-13) Factory
-*** TODO (2014-03-23) City of Ferris Wheels
+*** DONE (2014-02-21) Pike 43
+*** DONE (2014-02-25) Pitch Dark
+*** DONE (2014-02-26) Backwards Chimney
+*** DONE (2014-03-01) Rainy Days
+*** DONE (2014-03-01) Roller Coaster Track Repair
+*** DONE (2014-03-13) Factory
+*** DONE (2014-03-23) City of Ferris Wheels
+*** TODO (2014-03-27) The Frankensteins Monsters Blinds
 *** TODO (2014-06-01) The Spirit Winds
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
@@ -1487,9 +1486,9 @@
 *** DONE (2012-07-24) Soundtrack for the Voices in My Head, Volume 2
 ** DONE Charon                                                  :jo:wail:FAV:
 ** DONE Children Of Bodom                                    :jo:riff:FAV:fi:
-*** DONE (2008-04-09) Blooddrunk                                       :1fav:
-*** DONE (2011) Relentless Reckless Forever
-*** DONE (2013-06-06) Halo of Blood
+*** NOT (2008-04-09) Blooddrunk                                        :1fav:
+*** NOT (2011) Relentless Reckless Forever
+*** NOT (2013-06-06) Halo of Blood
 ** TODO Chumbawamba                                                      :jo:
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
@@ -1607,6 +1606,7 @@
 ** TODO Epica
 *** TODO (2012-03-09) Requiem for the Indifferent
 *** TODO (2013-10-28) Back to the Front
+*** TODO (2014-05-02) The Quantum Enigma
 ** Eric Brosius                                                    :FAV:game:
 *** DONE System Shock 2
 *** DONE (2006) Thief: Deadly Shadow
@@ -1736,6 +1736,7 @@
 ** TODO Jimi Hendrix
 *** (2013-03-05) People, Hell and Angels
 ** TODO Joan Osborne
+*** TODO (2014-04-08) Love and Hate
 ** Joe Hisaishi
 *** (2011-02-09) Ni no Kuni: Shikkoku no Madoushi                       :FAV:
 ** Joel Nielsen
@@ -1827,7 +1828,7 @@
     :END:
 ** DONE Led Zeppelin                                                   :1fav:
 *** TODO (2012-11-19) Celebration Day
-** TODO Lenka                                                            :jo:
+** DONE Lenka                                                     :jo:f:1fav:
 ** TODO Lia
 ** TODO Life of Agony
 ** DONE Linkin Park                                                     :FAV:
@@ -1902,11 +1903,13 @@
 *** DONE (2005-08-08) Elegies
 *** DONE (2007-02-16) Circus of Fools
 ** DONE Manowar                                                         :FAV:
-*** DONE (2012-06-16) The Lord of Steel
+*** NOT (2012-06-16) The Lord of Steel
 ** Mark Morgan                                                     :FAV:game:
 *** DONE (1999) Planescape: Torment
 ** TODO Maroon 5                                                         :jo:
 *** TODO (2012-06-26) Overexposed
+** TODO Mastodon
+*** TODO (2014-04-17) High Road
 ** Max Payne                                                       :game:FAV:
 *** DONE Max Payne
     :PROPERTIES:
@@ -2011,6 +2014,7 @@
     :PROPERTIES:
     :mbid:     http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa
     :END:
+** TODO Mỹ Tâm
 ** TODO Nat King Cole
 ** TODO Neil Young & Crazy Horse
 *** TODO (2012-06-05) Americana
@@ -2190,7 +2194,7 @@
 *** DONE (2011) Fallen Empires
 ** DONE Sonata Arctica                                     :riff:epic:FAV:fi:
 *** DONE (2012-05-22) Stones Grow Her Name
-*** TODO (2014-03-28) Pariah's Child
+*** NOT (2014-03-28) Pariah's Child
 ** DONE Soul Asylum
 *** DONE (1984) Say What You Will, Clarence... Karl Sold the Truck
 *** DONE (1986-01-18) Made to Be Broken
@@ -2374,6 +2378,7 @@
 ** Trịnh Công Sơn                                                    :FAV:vi:
 ** DONE Tuoni
 *** DONE (2005) Elävät & kuolleet
+*** TODO (2014-03-07) Kuolonpyörä
 ** DONE Turisas                                                          :fi:
 *** DONE (2013-08-21) Turisas2013
 ** DONE Turmion Kätilöt

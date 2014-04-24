@@ -8,21 +8,36 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(current-language-environment "UTF-8")
- '(custom-safe-themes (quote ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+ '(custom-safe-themes
+   (quote
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(default-input-method "vietnamese-telex")
+ '(desktop-load-locked-desktop t)
+ '(desktop-save-mode t)
  '(electric-pair-mode nil)
  '(explicit-shell-file-name "/bin/zsh")
  '(frame-title-format "%f" t)
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
+ '(initial-buffer-choice (quote remember-notes))
  '(org-M-RET-may-split-line nil)
  '(org-log-done nil)
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(prelude-guru nil)
  '(sentence-end-double-space nil)
+ '(solarized-use-more-italic t)
  '(solarized-use-variable-pitch nil)
- '(sql-connection-alist (quote (("selfoss" (sql-product (quote mysql)) (sql-user "selfoss") (sql-database "selfoss") (sql-server "192.168.1.54")))))
+ '(sql-connection-alist
+   (quote
+    (("selfoss"
+      (sql-product
+       (quote mysql))
+      (sql-user "selfoss")
+      (sql-database "selfoss")
+      (sql-server "192.168.1.54")))))
+ '(sql-mysql-options (quote ("mysql")))
+ '(sql-mysql-program "fakecygpty")
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
