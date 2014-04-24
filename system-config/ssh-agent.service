@@ -1,0 +1,10 @@
+[Unit]
+Description=ssh-agent
+
+[Service]
+Type=forking
+ExecStart=/bin/sh -c '/usr/bin/ssh-agent > %h/.agent-info'
+
+[Install]
+Alias=agent.service
+WantedBy=default.target

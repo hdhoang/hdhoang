@@ -1,11 +1,11 @@
 [Unit]
-After=gpg-agent.service
+After=agent.service
 
 [Service]
 Type=forking
 Restart=always
 ExecStart=/usr/bin/emacs --daemon
-EnvironmentFile=%h/.gpg-agent-info
+EnvironmentFile=%h/.agent-info
 
 [Install]
 WantedBy=default.target

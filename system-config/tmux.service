@@ -1,5 +1,5 @@
 [Unit]
-After=gpg-agent.service
+After=agent.service
 
 [Service]
 Type=forking
@@ -7,7 +7,7 @@ KillMode=none
 Restart=always
 ExecStart=/usr/bin/tmux new-session -d
 ExecStop=/usr/bin/tmux kill-server
-EnvironmentFile=%h/.gpg-agent-info
+EnvironmentFile=%h/.agent-info
 
 [Install]
 WantedBy=default.target
