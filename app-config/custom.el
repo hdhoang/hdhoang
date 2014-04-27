@@ -8,9 +8,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(current-language-environment "UTF-8")
- '(custom-safe-themes
-   (quote
-    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(default-input-method "vietnamese-telex")
  '(desktop-load-locked-desktop t)
  '(electric-pair-mode nil)
@@ -70,7 +67,7 @@
 (require 'prelude-ido)
 
 (prelude-require-package 'solarized-theme)
-(load-theme 'solarized-light)
+(load-theme 'solarized-light t)
 
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
