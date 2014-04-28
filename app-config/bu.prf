@@ -1,0 +1,23 @@
+# ~/.unison/default.prf
+batch = true
+confirmbigdel = true
+sortbysize = true
+
+root = h:\
+force = h:\
+path = Dropbox/runnable
+path = Dropbox/setup
+path = secrets
+path = Music
+path = Pictures
+path = Videos
+
+ignore = Name Thumbs.db
+ignore = Name Desktop.ini
+ignore = Path Dropbox/runnable/foobar2000/running
+ignore = Path secrets/fxprofile/parent.lock
+ignore = Path secrets/fxprofile/cache2
+
+root = ssh://hdhoang@kub.zahe.me//mnt/marbi
+sshargs = -i /cygdrive/h/secrets/kub
+fat = true
