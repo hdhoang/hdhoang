@@ -16,6 +16,8 @@ ignore = Name Desktop.ini
 ignore = Path Dropbox/runnable/foobar2000/running
 ignore = Path secrets/fxprofile/parent.lock
 ignore = Path secrets/fxprofile/cache2
+ignore = Name *-wal
+ignore = Name *-shm
 
 root = ssh://hdhoang@kub.zahe.me//mnt/marbi
 sshargs = -i /cygdrive/h/secrets/kub
