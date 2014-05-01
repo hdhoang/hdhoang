@@ -21,6 +21,7 @@
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
  '(prelude-guru nil)
+ '(proced-filter (quote all))
  '(sentence-end-double-space nil)
  '(solarized-use-more-italic t)
  '(solarized-use-variable-pitch nil)
