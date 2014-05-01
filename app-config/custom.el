@@ -80,3 +80,5 @@
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (remove-hook 'git-commit-mode-hook 'flyspell-mode)
+(add-hook 'post-command-hook
+          '(lambda () (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
