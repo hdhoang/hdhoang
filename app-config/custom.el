@@ -1,7 +1,5 @@
 ; -*- mode: lisp -*-
 ; $h/emacs-prelude/personal/custom.el
-(server-start)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -23,6 +21,7 @@
  '(prelude-guru nil)
  '(proced-filter (quote all))
  '(sentence-end-double-space nil)
+ '(server-mode t)
  '(solarized-use-more-italic t)
  '(solarized-use-variable-pitch nil)
  '(sql-connection-alist
