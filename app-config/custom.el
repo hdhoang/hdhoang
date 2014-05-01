@@ -38,7 +38,8 @@
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
  '(whitespace-style (quote (face tabs empty trailing)))
- '(windmove-wrap-around t))
+ '(windmove-wrap-around t)
+ '(xterm-mouse-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
