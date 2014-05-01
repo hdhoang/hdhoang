@@ -66,9 +66,11 @@
 
 (require 'prelude-ido)
 
-(prelude-require-package 'solarized-theme)
-(load-theme 'solarized-light t)
-
+(if (not window-system)
+    (disable-theme 'zenburn)
+  (prelude-require-package 'solarized-theme)
+  (load-theme 'solarized-light t))
+ 
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
 (if (eq system-type 'windows-nt)
