@@ -1,9 +1,0 @@
-# echo -n 'root=LABEL=cenba initrd=\initramfs-linux.img quiet' | iconv -f ascii -t ucs2 | sudo efibootmgr -v -c -L 'ArchLinux' -l '\linux.efi' -@ -
-[Unit]
-Description=Linux image changed
-
-[Path]
-PathChanged=/boot/vmlinuz-linux
-
-[Install]
-WantedBy=basic.target
