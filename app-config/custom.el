@@ -71,7 +71,8 @@
     (disable-theme 'zenburn)
   (prelude-require-package 'solarized-theme)
   (load-theme 'solarized-light t))
- 
+(global-hl-line-mode -1)
+
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
 (if (eq system-type 'windows-nt)
