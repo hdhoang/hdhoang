@@ -241,8 +241,8 @@
 *** DONE (2006) Glasshouse
 *** NOT (2012) The Rapture of the Nerds
 *** Eschaton series
-**** TODO (2003) Singularity Sky
-**** TODO (2004) Iron Sunrise
+**** DONE (2003) Singularity Sky
+**** DONE (2004) Iron Sunrise
 *** Halting State series
 **** DONE (2007) Halting State
 **** DONE (2011) Rule 34
@@ -1419,7 +1419,9 @@
 *** DONE (2014-03-01) Roller Coaster Track Repair
 *** DONE (2014-03-13) Factory
 *** DONE (2014-03-23) City of Ferris Wheels
-*** TODO (2014-03-27) The Frankensteins Monsters Blinds
+*** DONE (2014-03-27) The Frankensteins Monsters Blinds
+*** TODO (2014-04-18) Cycle
+*** TODO (2014-04-22) Claymation Courtyard
 *** TODO (2014-06-01) The Spirit Winds
 *** with Alix Lambert and Travis Dickerson
 **** DONE (2008-08) Running After Deer
