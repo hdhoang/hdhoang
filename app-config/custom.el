@@ -9,6 +9,8 @@
  '(default-input-method "vietnamese-telex")
  '(desktop-load-locked-desktop t)
  '(electric-pair-mode nil)
+ '(erc-hide-list (quote ("JOIN" "PART" "QUIT")))
+ '(erc-prompt-for-password nil)
  '(explicit-shell-file-name "/bin/zsh")
  '(frame-title-format "%f" t)
  '(ido-use-virtual-buffers t)
