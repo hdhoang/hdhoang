@@ -1,0 +1,107 @@
+#    -*- mode: org -*-
+* TODO Aladdeen
+* TODO Bad Lieutenant
+* Bedside                                                                :ns:
+ - [X] Der må være en sengekant (1975)                            :sub:FAV:
+ - [X] Hopla på sengekanten (1976)                                :FAV:sub:
+*** Vivi Rau
+ - [X] Mazurka på sengekanten (1970)                              :sub:FAV:
+ - [X] Motorvej på sengekanten (1972)                                 :sub:
+ - [X] Rektor på sengekanten (1972)                               :sub:FAV:
+ - [X] Romantik på sengekanten (1973)                             :sub:FAV:
+ - [X] Sømænd på sengekanten (1976)
+ - [X] Tandlæge på sengekanten (1971)                             :sub:FAV:
+* DONE Big Trouble in Little China
+* TODO Blackadder
+* TODO Blade
+* TODO Brave
+* TODO Chronicle
+* TODO Citizen Kane
+* TODO Colossus: The Forbin Project                                  :jbopre:
+* TODO Comedian
+* DONE Contact (1997)                                               :FAV:sci:
+   :PROPERTIES:
+   :btih:     95fbac135060d6f82caa5a5d8990a10ab8babbad
+   :END:
+* TODO Damages
+* DONE Sangen om den røde rubin (1970)
+   :PROPERTIES:
+   :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
+   :END:
+* DONE Dark City (1998)                                           :FAV:f:sci:
+* DONE Donnie Darko (2001)                                              :FAV:
+* TODO Duck Soup
+* DONE Duplicity (2009)                                                 :FAV:
+* DONE Eternal Sunshine of the Spotless Mind (2004)                     :FAV:
+* TODO Europe Trip                                                       :jo:
+* TODO Final Destination
+* DONE Flypaper (2011)                                               :FAV:jo:
+* TODO Frozen
+* TODO Ghostbusters
+* Kevin Smith                                                           :FAV:
+ - [X] Chasing Amy (1997)
+ - [X] Clerks (1994)
+ - [X] Clerks II (2006)
+ - [X] Dogma (1999)
+ - [X] Jay and Silent Bob Strike Back (2001)
+ - [X] Jersey Girl (2004)
+ - [X] Mallrats (1995)
+* TODO Kiss Me Deadly
+* DONE Limitless (2011)                                          :jbopre:FAV:
+* TODO MacGyver                                                         :FAV:
+* TODO Malna (2000)
+* TODO Melancholia
+* DONE Men in Black
+ - [X] II
+ - [X] 3
+* TODO Moon
+* DONE Mr. Nobody                                                :jbopre:FAV:
+* TODO Nick of Time
+* TODO No Strings Attached
+* DONE Outrageous Fortune (1987)                                        :FAV:
+   :PROPERTIES:
+   :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
+   :END:
+* TODO Paranorman (2012)
+* Pixar
+ - [ ] Monster Inc
+* TODO Quentin Tarantino
+ - [X] Django Unchained (2012)
+ - [X] Inglorious Basterds
+ - [X] Pulp Fiction (1994)
+ - [X] Reservoir Dogs
+* TODO Roseanna's Grave
+* TODO Samurai Champloo                                          :jo:ja:toon:
+* TODO Seven Psychopaths (2012)                                          :jo:
+* DONE Strange Days (1995)                                              :FAV:
+   :PROPERTIES:
+   :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
+   :END:
+* DONE Taken
+ - [X] 2
+* TODO The Adventures of Tintin: Secret of the Unicorn
+* DONE The Big Lebowski (1998)                                           :jo:
+* TODO The Freshman
+* TODO The Heart of Justice (1996)
+* DONE The Iron Giant (1999)                                            :FAV:
+* TODO The Machinist (2004)
+* DONE The Man from Earth (2007)                                    :rev:FAV:
+* TODO The Man With No Name trilogy
+ - [ ] A Fistful of Dollars (1964)
+ - [ ] For A Few Dollars More (1965)
+ - [ ] The Good, The Bad, The Ugly (1966)
+* TODO The Men Who Stare at Goats                                        :tv:
+* TODO The Monuments Men
+* TODO The Simpsons
+* DONE The Usual Suspects (1995)                                        :FAV:
+* TODO To Rome with Love
+* TODO Tombstone (1993)
+* TODO Tucker and Dave vs Evil                                           :jo:
+* DONE Zardoz (1974)                                                    :FAV:
+* Zodiac                                                                 :ns:
+ - [X] Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
+ - [X] Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
+ - [X] I Jomfruens tegn (1973)                                 :FAV:vi:sub:
+ - [X] I Løvens tegn (1976)                                    :sub:FAV:vi:
+ - [X] I Tvillingernes tegn (1975)                                 :sub:vi:
+ - [X] I Tyrens tegn (1974)                                    :sub:FAV:vi:

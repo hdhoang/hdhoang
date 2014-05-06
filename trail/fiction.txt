@@ -1,0 +1,168 @@
+#    -*- mode: org -*-
+* Charlie Stross
+  :PROPERTIES:
+  :url:      http://www.antipope.org
+  :END:
+** TODO (1993) Scratch Monkey
+** DONE (2005) Accelerando
+** DONE (2006) Glasshouse
+** NOT (2012) The Rapture of the Nerds
+** Eschaton series
+*** DONE (2003) Singularity Sky
+*** DONE (2004) Iron Sunrise
+** Halting State series
+*** DONE (2007) Halting State
+*** DONE (2011) Rule 34
+*** TODO (2014) The Lambda Functionary
+** Merchant Princes series [0/3]
+ 1. [ ] The Bloodline Feud
+ 2. [ ] The Traders' War
+ 3. [ ] The Revolution Trade
+** Saturn's Children series
+ 1. [X] (2008) Saturn's Children
+ 2. [X] (2013) Neptune's Brood
+ - [X] Bit Rot
+** The Laundry Files [7/8]
+ 1. [X] (2004) The Atrocity Archives
+ 2. [X] (2006) The Jennifer Morgue
+ 3. [X] (2008) Down on the Farm
+ 4. [X] (2013) Equoid
+ 5. [X] (2010) The Fuller Memorandum
+ 6. [X] (2009) Overtime
+ 7. [X] (2012) The Apocalypse Codex
+ 8. [ ] (2014) The Rhesus Chart
+* China Miéville
+** TODO Embassytown
+* Dan Simmons
+** TODO Illium and Olympos
+* Daniel Quinn
+** Ishmael trilogy
+    :PROPERTIES:
+   :btih:     680b75af47e831ebad348d6ebf843757bc1429d1
+   :END:
+ 1. [X] Ishmael
+ 2. [ ] The Story of B
+ 3. [ ] My Ishmael
+* Eliezer Yudkowsky
+   :PROPERTIES:
+   :url:      http://yudkowsky.net
+   :END:
+** Harry Potter and the Methods of Rationality
+    :PROPERTIES:
+    :url:      http://hpmor.com/
+    :END:
+* Isaac Asimov
+** DONE The Last Question
+    :PROPERTIES:
+    :url:      http://www.multivax.com/last_question.html
+    :END:
+* James Schmitz
+** TODO Sour Note on Palayata
+* Joe Lansdale
+** TODO Vanilla Ride
+* John Scalzi
+** TODO Redshirts
+* K. A. Applegate                                                       :FAV:
+   :PROPERTIES:
+   :btih:     EF1B388444ABBA45CE9B743D823D863DCBE6B5F9
+   :END:
+** DONE Animorphs
+    :PROPERTIES:
+    :btih:     04f439a9eac3b86636beff502590484945b57d74
+    :END:
+** DONE Everworld
+    :PROPERTIES:
+    :url:      http://www.mediafire.com/?dbwbk05tackx2l
+    :END:
+** DONE Remnants
+    :PROPERTIES:
+    :btih:     4672142E19DB2CB4E99C57A002F30DD801705877
+    :END:
+* Kim Dung
+** DONE Lộc Đỉnh Ký                                                     :FAV:
+* Kurt Vonnegut
+** DONE Slaughterhouse-Five                                             :FAV:
+** DONE A Man Without A Country
+* DONE Lost Girls                                                       :FAV:
+   :PROPERTIES:
+   :btih:     12df2b907933afa9bc7ca361f2f56791301ba58d
+   :END:
+* Mark Twain
+** TODO A Connecticut Yankee in King Arthur's Court
+* Max Brooks
+** TODO World War Z: An Oral History of the Zombie War
+* Neal Stephenson
+** Baroque
+*** TODO Quicksilver
+*** TODO Confusion
+*** TODO The System of the World
+** TODO Snow Crash
+** TODO The Big U
+** TODO The Diamond Age
+* Orson Scott Card
+** TODO Ender's Game
+** TODO Ender's Shadow
+** TODO Speaker for the Dead
+* Paul Park
+** TODO Celestis
+* Peter Watts                                                       :sci:FAV:
+   :PROPERTIES:
+   :btih:     fa6388fb90a2710cf35555c8d55ab57c203ee7d7
+   :url:      http://rifters.com
+   :END:
+- Blindsight
+- Crysis: Legion                                                  :game:
+** Rifters trilogy
+ 1. [X] Starfish
+ 2. [X] Maelstorm
+ 3. [X] Behemoth
+- The Island
+* Rationalising Death
+    :PROPERTIES:
+    :url:      http://www.fanfiction.net/s/9380249/
+    :END:
+* Roger Williams
+** DONE The Metamorphosis of Prime Intellect                        :sci:FAV:
+* Roger Zelazny
+** TODO Lord of Light
+* Shamus Young                                                    :game:code:
+   :PROPERTIES:
+   :url:      http://shamusyoung.com
+   :END:
+*** DONE Free Radical                                        :narrative:game:
+*** TODO The Witch Watch
+* Terry Pratchett
+** TODO The Last Hero
+* DONE The Last Ring-bearer                                         :rev:FAV:
+   :PROPERTIES:
+   :url:      http://ymarkov.livejournal.com/270570.html
+   :background: http://ymarkov.livejournal.com/273409.html
+   :END:
+* DONE The Salvation War                                            :rev:FAV:
+   :PROPERTIES:
+   :SUMMARY:  http://www.stardestroyer.net/mrwong/wiki/index.php/The_Salvation_War
+   :tropes:   http://tvtropes.org/pmwiki/pmwiki.php/Main/TheSalvationWar
+   :spinoff:  http://bbs.stardestroyer.net/viewtopic.php?f=9&t=128314
+   :url:      http://www.tboverse.us/HPCAFORUM/phpBB3/viewforum.php?f=29
+   :END:
+* DONE Tom Clancy
+- Red Storm Rising                                                      :FAV:
+** Jack Ryan [12/15]
+ 1. [X] Without Remorse
+ 2. [X] Patriot Games
+ 3. [X] Red Rabbit
+ 4. [X] The Hunt for Red October
+ 5. [X] The Cardinal of the Kremlin
+ 6. [X] Clear and Present Danger
+ 7. [X] The Sum of All Fears
+ 8. [X] Debt of Honor
+ 9. [X] Executive Orders
+ 10. [X] Rainbow Six
+ 11. [X] The Bear and the Dragon
+ 12. [X] The Teeth of the Tiger
+ 13. [ ] Dead or Alive
+ 14. [ ] Locked On
+ 15. [ ] Threat Vector
+* Ben "Yahtzee" Croshaw                                                :game:
+*** DONE (2010) Mogworld
+*** DONE (2012) Jam

@@ -1,0 +1,1244 @@
+#    -*- mode: org -*-
+* "Weird Al" Yankovic                                              :FAV:mock:
+* 2pac                                                                  :rap:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/382f1005-e9ab-4684-afd4-0bdae4ee37f2
+   :END:
+* 3 Doors Down
+* 50 Cent                                                        :rap:lastfm:
+* 8 Bit Instrumental                                            :game:lastfm:
+* A Perfect Circle                                                     :1fav:
+ 1. [X] (2000-05-23) Mer de noms
+ 1. [X] (2003-09-16) Thirteenth Step                                  :1fav:
+ 1. [X] (2004-11-02) eMOTIVe                                          :1fav:
+ 1. [X] (2004-11-16) aMOTION
+* GONE ABBA                                                             :FAV:
+* Accept
+ 1. [X] (1979) Accept
+ 1. [X] (1980) I'm a Rebel
+ 1. [X] (1981) Breaker
+ 1. [X] (1982) Restless and Wild
+ 1. [X] (1983) Balls to the Wall
+ 1. [X] (1985-05-24) Metal Heart
+ 1. [X] (1986-07-01) Russian Roulette
+ 1. [X] (1993-02-01) Objection Overruled
+ 1. [X] (1993-06-07) Eat the Heat
+ 1. [X] (1994-10-04) Death Row
+ 1. [X] (1996) Predator
+ 1. [X] (2010-08-20) Blood of the Nations
+ 1. [X] (2012-04-06) Stalingrad
+* Adam Lambert                                                         :tunx:
+ 1. [X] (2009-05-21) No Boundaries
+ 1. [X] (2009-11-17) Take One
+ 1. [X] (2009-11-23) For Your Entertainment
+ 1. [X] (2010-04-09) Remixes
+ 1. [X] (2010-05-01) For Your Entertainment
+ 1. [X] (2010-08-17) If I Had You (Remixed)
+ 1. [X] (2010-12-06) Acoustic Live!
+ 1. [X] (2011-03-21) Glam Nation Live
+ 1. [X] (2011-11-21) Beg for Mercy
+ 1. [X] (2012-05-15) Trespassing
+* Adèle
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04
+   :END:
+* Aerosmith                                                            :1fav:
+ 1. [ ] (2012-05-15) Icon
+ 1. [ ] (2012-11-06) Music from Another Dimension!
+* Alestorm                                                           :jbopre:
+* Alice Cooper
+* Alice in Chains
+ 1. [ ] (2013-05-28) The Devil Put Dinosaurs Here
+* Alicia Keys
+* Alizée                                                         :jo:fr:1fav:
+ 1. [X] (2000-11-28) Gourmandises
+ 1. [X] (2003-04) Mes courants électriques...
+ 1. [X] (2004-10-18) Alizée en concert
+ 1. [X] (2008-06-25) Psychédélices
+ 1. [X] (2010-03-29) Une enfant du siècle
+* all:my:faults                                                      :lastfm:
+* ALONE IN THE CHAOS                                             :not:lastfm:
+* Alsou                                                              :ru:FAV:
+* Amity in Fame                                                     :jamendo:
+* Amon Amarth                                                           :FAV:
+ 1. [ ] (2013-07-21) Deceiver of the Gods
+* Amorphis                                                              :FAV:
+ 1. [X] (2013-04-19) Circle
+* Amy Winehouse                                                        :tunx:
+* Annihilator                                                           :FAV:
+* Anthrax                                                              :1fav:
+* Antimatter
+ 1. [ ] (2012-11-23) Fear of a Unique Identity
+* Antonín Dvorák
+ 1. [X] The Masterworks
+* Aoife Ní Fhearraigh
+ 1. [X] (1997) Aoife
+ 1. [X] (2003) The Turning of the Tide
+ 1. [X] (2006) If I Told You
+* Apocalyptica                                                   :FAV:string:
+* Aqua                                                                 :1fav:
+* Arcana
+   :PROPERTIES:
+   :btih:     http://musicbrainz.org/artist/93c1606c-28ef-4955-ae75-331a0975608d
+   :END:
+* Arctic Monkeys
+ 1. [ ] (2013-09-09) AM
+* At Vance
+ 1. [ ] (2012-04-27) Facing Your Enemy
+* Atlas Plug
+* Avantasia
+ 1. [ ] (2013-03-30) The Mystery of Time
+* Avenged Sevenfold                                                :riff:FAV:
+ 1. [X] (2013-08-23) Hail to the King
+* Avril Lavigne                                                         :FAV:
+ 1. [ ] (2013-11-05) Avril Lavigne
+* Ayreon
+ 1. [ ] (2013-10-25) The Theory of Everything
+* Banda Calypso
+* Basil Poledouris
+ 1. [X] Red October soundtrack                                    :FAV:inst:
+* Ben Houge                                                          :lastfm:
+* Benjamin Zander
+* Beto Vázquez Infinity                                              :lastfm:
+* Bionic Commando                                                  :FAV:game:
+** Rearmed                                                              :not:
+* Black Sabbath                                                         :FAV:
+ 1. [X] (2013-06-10) 13
+** solo Ozzy Osbourne
+* Bliss(This)
+* Blizzard
+ 1. [X] (1996) Diablo
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/233bb756-6d4f-32e0-8bd5-37b22e06a0b7
+    :END:
+ 1. [X] (2000) Diablo II
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/0d69ad15-d7be-3233-846e-1b3b4b4db0d0
+    :END:
+ 1. [X] (2003) Warcraft III: The Frozen Throne
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/620e4fd3-5450-3bc0-b811-d02e3bf2db3e
+    :url:      http://downloads.khinsider.com/game-soundtracks/album/warcraft-3-frozen-throne
+    :END:
+ 1. [X] (2007) Diablo II: Lord of Destruction
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/91688e94-3889-391a-a35d-8bf8b1d1fdd5
+    :END:
+ 1. [X] (2008-09-04) StarCraft
+ 1. [X] (2010) World of Warcraft: Cataclysm
+ 1. [X] (2012-05-15) Diablo III: Collector's Edition Soundtrack
+ 1. [X] Starcraft sound                                               :game:
+    :PROPERTIES:
+   :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
+   :END:
+ 1. [X] Warcraft III sound
+    :PROPERTIES:
+    :btih:     3EC5AFB039BF4B984FD99E39B22D3FC63E733FB9
+    :END:
+ 1. [X] (2013-03-12) StarCraft II: Heart of the Swarm
+* Blondie
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/4d2956d1-a3f7-44bb-9a41-67563e1a0c94
+   :END:
+ 1. [ ] (2011) Panic of Girls
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/613eaaf2-0d4d-4f45-a49e-9b5c64f27c1f
+    :END:
+* Blue Stahli
+* Blut aus Nord
+ 1. [ ] (2012-09-21) 777 - Cosmosophy
+* Bob Marley
+* Bobaflex
+ 1. [X] (2013-09-10) Chalatan's Web
+* Bon Jovi
+ 1. [ ] (2012-11-27) Inside Out
+ 2. [X] (2013-03-12) What About Now
+ 3. [ ] (2013-03-26) Icon
+* BOND
+* Boney M.
+* Boris                                                              :ja:not:
+* Botany Bay                                                         :lastfm:
+* GONE Boyzone                                                          :FAV:
+ 1. [ ] (2013-11-25) BZ20
+* Breaking Benjamin                                                    :game:
+* Buckethead                                                            :FAV:
+   :PROPERTIES:
+   :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
+   :END:
+ 1. [X] (2011-05-15) It's Alive
+ 2. [X] (2011-05-20) Empty Space
+ 3. [X] (2011-08-17) 3 Foot Clearance
+ 4. [X] (2011-08-17) Look Up There
+ 5. [X] (2011-08-17) Underground Chamber
+ 6. [X] (2012) Electric Sea
+ 7. [X] (2012-04-14) Balloon Cement
+ 8. [X] (2012-08-09) The Shores of Molokai
+ 9. [X] (2012-09-20) March of the Slunks
+ 10. [X] (2012-09-20) Racks
+ 11. [X] (2012-09-20) The Silent Picture Book
+ 12. [X] (2013) Pike 14
+ 13. [X] (2013-04-04) Forgotten Library
+ 14. [X] (2013-04-04) Pikes 11
+ 15. [X] (2013-05) Pike 12
+ 16. [X] (2013-05-13) Pike 13
+ 17. [X] (2013-05-13) Pike 15
+ 18. [X] (2013-05-24) Pike 16
+ 19. [X] (2013-06-01) Pike 17
+ 20. [X] (2013-06-27) Pike 18
+ 21. [X] (2013-06-27) Pike 19
+ 22. [X] (2013-06-27) Pike 20
+ 23. [X] (2013-08-16) Telescape
+ 24. [X] (2013-09-03) Pike 21
+ 25. [X] (2013-09-03) Pike 22
+ 26. [X] (2013-09-04) Slug Cartilage
+ 27. [X] (2013-09-05) Pancake Heater
+ 28. [X] (2013-09-13) Worms for the Garden
+ 29. [X] (2013-09-18) Halls of Dimension
+ 30. [X] (2013-09-26) Splatters
+ 31. [X] (2013-10-04) Feathers
+ 32. [X] (2013-10-05) Mannequin Cemetery
+ 33. [X] (2013-10-24) Pearson's Square
+ 34. [X] (2013-10-29) Pumpkin
+ 35. [X] (2013-11-02) Thank You Ohlinger's
+ 36. [X] (2013-11-02) The Pit
+ 37. [X] (2013-11-09) Rise of the Blue Lotus
+ 38. [X] (2013-11-11) Hollowed Out
+ 39. [X] (2013-11-22) It Smells Like Frogs
+ 40. [X] (2013-11-26) Twisterlend
+ 41. [X] (2013-11-27) Pikes
+ 42. [X] (2013-12-11) Coat of Charms
+ 43. [X] (2013-12-24) Wishes
+ 44. [X] (2014-01-09) You Can't Triple Stamp a Double Stamp
+ 45. [X] (2014-01-17) The Coats of Claude
+ 46. [X] (2014-02-07) Hide in the Pickling Jar
+ 47. [X] (2014-02-07) Monument Valley
+ 48. [X] (2014-02-21) Pike 43
+ 49. [X] (2014-02-25) Pitch Dark
+ 50. [X] (2014-02-26) Backwards Chimney
+ 51. [X] (2014-03-01) Rainy Days
+ 52. [X] (2014-03-01) Roller Coaster Track Repair
+ 53. [X] (2014-03-13) Factory
+ 54. [X] (2014-03-23) City of Ferris Wheels
+ 55. [X] (2014-03-27) The Frankensteins Monsters Blinds
+ 56. [ ] (2014-04-18) Cycle
+ 57. [ ] (2014-04-22) Claymation Courtyard
+ 58. [ ] (2014-06-01) The Spirit Winds
+** with Alix Lambert and Travis Dickerson
+ 1. [X] (2008-08) Running After Deer
+** with Bryan "Brain" Mantia
+* 1. [X] (2007-10-30) Kevin's Noodle House
+* 1. [X] (2010-10-13) Brain as Hamenoodle
+** with Bryan "Brain" Mantia & Melissa Reese
+* 1. [X] (2010) Best Regards
+* 1. [X] (2010-10-13) Kind Regards
+** with Cobra Strike
+* 1. [X] (1999-08-24) The 13th Scroll
+* 1. [X] (2000-09-30) Cobra Strike II: Y,Y+B,X+Y<hold>←
+** with Colonel Claypool's Bucket of Bernie Brains
+* 1. [X] (2004-09-21) The Big Eyeball in the Sky                       :1fav:
+** as Death Cube K                                                     :1fav:
+* 1. [X] (1994-05-10) Dreamatorium                                     :1fav:
+ 1. [X] (1997) Disembodied                                           :1fav:
+ 2. [X] (1999-11-10) Tunnel
+ 3. [X] (2007-12-17) Monolith
+ 4. [X] (2007) DCK
+ 5. [X] (2009-10-15) Torn from Black Space
+** with Frankenstein Brothers
+* 1. [X] (2008-09-17) Bolt on Neck_ Prototype #1
+** with Jonas Hellborg
+*** NOT (1993) Octave of the Holy Innocents
+** with Shin Terai
+* 1. [X] (1999) Unison                                                  :FAV:
+** with Shine
+*** NOT (2004-02-24) Heaven and Hell
+* 1. [X] (2007-06-12) Lightyears                                        :FAV:
+** with Thanatopsis
+* 1. [X] Thanatopsis
+* 1. [X] (2003) Axiology
+* 1. [X] (2006) Anatomize
+** with Travis Dickerson
+* 1. [X] (2006) Chicken Noodles
+* 1. [X] (2007-12-15) Chicken Noodles II
+* 1. [X] (2010-11-01) Left Hanging
+** with Travis Dickerson and Bryan "Brain" Mantia
+* 1. [X] (2008-09-17) The Dragons of Eden
+* Buddy Guy                                                            :tunx:
+* Bullet for My Valentine                                              :1fav:
+ 1. [ ] (2013-02-12) Temper Temper
+* Burzum
+ 1. [X] (2012) Umskiptar
+ 1. [ ] (2013-05-27) Sôl austan, Mâni vestan
+* Butterfly Tea                                                      :lastfm:
+* Bức Tường                                                             :FAV:
+ 1. [ ] Ngày Khác
+* GONE Carpenters                                                       :FAV:
+* Cat Power
+* Celestial Aeon                                                     :lastfm:
+* Celesty
+ 1. [X] (2002) Reign of Elements
+ 1. [X] (2004) Legacy of Hate
+ 1. [X] (2006) Mortal Mind Creation
+ 1. [X] (2009) Vendetta
+* Celldweller                                                            :jo:
+ 1. [X] (2003-02-11) Celldweller
+ 1. [X] (2004) Beta Cessions
+ 1. [X] (2008-12) Soundtrack for the Voices in My Head, Volume 01
+ 1. [X] (2009-08-25) Wish Upon a Blackstar, Chapter 01
+ 1. [X] (2011) Soundtrack for the Voices in My Head, Volume 02_ Chapter 1
+ 1. [X] (2012-07-24) Soundtrack for the Voices in My Head, Volume 2
+* Charon                                                        :jo:wail:FAV:
+* Children of Bodom                                          :jo:riff:FAV:fi:
+** NOT (2008-04-09) Blooddrunk                                         :1fav:
+** NOT (2011) Relentless Reckless Forever
+** NOT (2013-06-06) Halo of Blood
+* Chumbawamba                                                            :jo:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d
+   :END:
+* Cinderella                                                           :1fav:
+* Clawfinger                                                             :jo:
+* Clint Mansell
+ 1. [ ] (2013-09-23) Filth
+* Coldplay
+ 1. [X] (2011) Mylo Xyloto
+ 2. [ ] (2014-05-19) Ghost Stories
+* Crowded House
+* Cryhavoc
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/9e4a0fe6-1c4f-4abd-aea8-0d21a1d13f55
+   :END:
+ 1. [X] (1998) Sweetbriers
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/0fd8cd40-6782-3b70-9687-88d385edc122
+    :END:
+ 1. [X] (1999) Pitch-Black Blues
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998
+    :END:
+* Céline Dion                                                        :FAV:fr:
+ 1. [X] (2012-11-03) Sans Attendre
+ 1. [ ] (2013-11-05) Loved Me Back to Life
+* Dan Masquelier                                                     :lastfm:
+* Dan Wentz                                                            :game:
+ 1. [X] FreeSpace 2 (official)
+* Daniel Bautista                                        :FAV:jamendo:lastfm:
+ 1. [X] (2007-09-03) Music for a Film
+ 2. [X] (2008-02-19) Recycle Bin
+ 3. [X] (2008-04-18) 15
+ 4. [X] (2008-05-09) Classics and Soundtracks
+ 5. [X] (2008-06-26) Beethoven
+ 6. [X] (2009-02-06) Madera Y Bronce
+ 7. [X] (2011-06-10) Cocktail Eleven
+ 8. [X] (2012-01-09) Symphony No. 1 in A minor, Op. 12
+ 9. [X] (2012-10-22) Eurotrip
+ 10. [X] Weirdos And Classics
+* Danzig                                                               :game:
+* Darren Korb
+ 1. [X] (2011-08-05) Bastion Original Soundtrack                  :game:FAV:
+* Dave Matthews Band
+ 1. [ ] (2012-09-11) Away from the World
+* Deep Purple
+* Deicide
+ 1. [ ] (2013-11-26) In the Minds of Evil
+* Depeche Mode
+ 1. [ ] (2013-03-22) Delta Machine
+* Diablo Swing Orchestra                                 :FAV:string:jamendo:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f
+   :jamendo:  http://www.jamendo.com/en/artist/351716/diablo-swing-orchestra
+   :END:
+ 1. [X] (2006) The Butcher's Ballroom
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676
+    :END:
+ 1. [X] (2009-10) Sing Along Songs for the Damned & Delirious
+ 1. [X] (2012-05-22) Pandora's Piñata
+* Dido
+ 1. [ ] (2013-03-04) Girl Who Got Away
+* Dire Strait
+* DJ Fab
+* Dornenreich
+ 1. [ ] (2014-05-02) Freiheit
+* Double Dragon                                                      :lastfm:
+* Dr. Dre
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
+   :END:
+* DragonForce                                                            :jo:
+* Dream Theater
+ 1. [X] (2013-09-18) Dream Theater
+* Dry Kill Logic                                                       :1fav:
+* EELS
+ 1. [ ] (2013-02-03) Wonderful, Glorious
+ 1. [ ] (2014-04-22) The Cautionary Tales of Mark Oliver Everett
+* El Pogo8bit
+ 1. [X] (2009) Listen to Your Game EP                                  :FAV:
+* Electric Light Orchestra
+* Elias Viljanen                                                        :FAV:
+* Elton John
+ 1. [ ] (2012-07-16) Good Morning to the Night
+ 1. [ ] (2013-09-16) The Diving Board
+* Eluveitie
+* Elvis Costello
+ 1. [ ] (2012-11-23) In Motion Pictures
+ 1. [ ] (2013-09-16) Wise Up Ghost
+* Elvis Presley
+* Emilie Autumn
+ 1. [ ] (2012-07-24) Fight Like a Girl
+* Eminem                                                                :FAV:
+ 1. [ ] (2013-11-05) The Marshall Mathers LP 2
+ 1. [X] D12
+* Ennio Morricone
+* Ensiferum
+ 1. [X] (2012-08-27) Unsung Heroes
+* Entombed
+ 1. [ ] (2013-10-28) Back to the Front
+* Epica
+ 1. [ ] (2012-03-09) Requiem for the Indifferent
+ 1. [ ] (2013-10-28) Back to the Front
+ 1. [ ] (2014-05-02) The Quantum Enigma
+* Eric Brosius                                                     :FAV:game:
+ 1. [X] System Shock 2
+ 1. [X] (2006) Thief: Deadly Shadow
+* Eternal Tears of Sorrow
+ 1. [ ] (2013-02-22) Saivon Lapsi
+* Europe
+ 1. [ ] (2012-04) Back of Bones
+* Evanescene                                                            :FAV:
+* Faerghail
+* Fate Zero
+* Fates Warning
+ 1. [ ] (2013-09-30) Darkness in a Different Light
+* Fear Factory
+ 1. [ ] (2012-06-05) The Industrialist
+* Feist
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/a670e05a-cea8-4b37-bce9-d82daf1a0fa4
+   :END:
+* Finntroll
+ 1. [ ] (2013-03-25) Blodsvept
+* FireLake                                                             :1fav:
+** Dirge for the Planet                                                 :FAV:
+* Flight of the Conchords                                               :FAV:
+* Flowing Tears
+* Fort Minor                                                            :FAV:
+ 1. [X] (2005) The Rising Tied
+* France Gall
+* Franz Liszt                                                         :piano:
+** Liebestraum                                                          :FAV:
+* Frédéric Chopin                                                       :FAV:
+ 1. [X] Complete Piano Music feat. Idil Biret
+* Garbage
+* Gorillaz
+ 1. [ ] (2012-02-23) DoYaThing
+* Grateful Dead
+* Green Days
+* Guns N' Roses                                                         :FAV:
+* Gustav Mahler
+ 1. [X] (1999) Symphony No. 9
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/7ca1cf4a-0d5d-326e-8244-3d61ee02210f
+    :btih:     daf8c8885d5001c2004ead53b809d8a5b32e698b
+    :END:
+ 1. [X] (2001) Symphony No. 5
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/db4fecca-8e1c-46e9-8ee1-9e90820cfd69
+    :btih:     a85b2ddd2c3238d611829bd70d560213f8d5074c
+    :END:
+ 1. [X] (2001-08-28) Symphony No. 4
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/eace2ac3-9fb7-4667-942b-4468463584f8
+    :btih:     ca6a53a4a28857b33e39fdf36e8bb56f14d96af1
+    :END:
+* Gạt Tàn Đầy                                                           :FAV:
+* HammerFall
+ 1. [ ] (2012-11-30) Gates of Dalhalla
+* GONE Hanoi Rocks                                                      :FAV:
+* Hans Zimmer
+ 1. [X] The Rock                                                 :movie:FAV:
+* Harvey Danger                                                         :FAV:
+* Heart
+ 1. [ ] (2013-05-13) Icon
+* Heart
+ 1. [ ] (2012-10-02) Fanatic
+* Helloween                                                             :FAV:
+ 1. [ ] (2013-01-18) Straight Out of Hell
+* HIM                                                                   :FAV:
+ 1. [ ] (2013-04-26) Tears on Tape
+* Hinder                                                             :lastfm:
+* Homeworld (official)
+* Humer                                                                :chip:
+* Iced Earth
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537
+   :END:
+ 1. [X] (1991-11-01) Night of the Stormrider
+ 1. [X] (1995-03) Burnt Offerings
+ 1. [X] (2001-01-08) The Melancholy E.P.
+ 1. [X] (2008-09-05) The Crucible of Man: Something Wicked, Part 2
+ 1. [X] (2001-11-26) Tribute to the Gods
+ 1. [X] (2011) Dystopia
+ 1. [ ] (2014-01-21) Plagues of Babylon
+* Il Divo
+* Incubus
+* Inon Zur                                                             :game:
+ 1. [X] (2008-12-18) Prince of Persia
+* Insomnium
+ 1. [X] (2011) One for Sorrow
+* Iron Maiden                                                           :FAV:
+* Jack Wall
+ 1. [X] Jade Empire
+* James Hannigan                                                        :FAV:
+** Evil Genius
+** Republic: The Revolution
+* Jan Morgenstern
+ 1. [X] Big Buck Bunny
+* Jay-Z                                                                 :rap:
+ 1. [ ] (2013-01-01) Black American Gangster
+ 1. [ ] (2013-07-08) Magna Carta... Holy Grail
+* Jeremy Soule                                                         :game:
+ 1. [X] (2000) Icewind Dale
+* Jesper Kyd                                                           :game:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1
+   :END:
+ 1. [X] (2011) Assassin's Creed Revelations
+ 1. [ ] (2012-08-14) Darksiders II Original Soundtrack
+ 1. [X] Hitman 2: Silent Assassin
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19
+    :END:
+ 1. [X] Hitman: Blood Money
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/5042140e-f13e-4b1b-b507-7345ec0eb13f
+    :END:
+ 1. [X] Hitman: Codename 47
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/6d71dc61-2f26-406a-9815-f9bb8a6087e6
+    :END:
+ 1. [X] Hitman: Contracts
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/477683d8-bbbf-43b0-ae22-c09eca9084e5
+    :END:
+* Jewel
+* Jim Guthrie
+ 1. [X] (2011-04-05) Sword & Sworcery LP: The Ballad of the Space Babies :FAV:game:
+* Jimi Hendrix
+** (2013-03-05) People, Hell and Angels
+* Joan Osborne
+ 1. [ ] (2014-04-08) Love and Hate
+* Joe Hisaishi
+** (2011-02-09) Ni no Kuni: Shikkoku no Madoushi                        :FAV:
+* Joel Nielsen
+ 1. [X] (2012-09-01) Black Mesa                                       :game:
+* Johann Sebastian Bach
+ 1. [X] Crab Canon                                                     :FAV:
+ 1. [X] (2012-05-28) Open Goldberg Variations                    :FAV:piano:
+ 1. [X] The Well-Tempered Clavier feat. Angela Hewitt
+* Johannes Brahms
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c70d12a2-24fe-4f83-a6e6-57d84f8efb51
+   :END:
+* Jonathan Coulton                                            :FAV:mock:cute:
+ 1. [ ] (2014-01-05) Code Monkey Save World: Unplugged
+** with John Roderick
+* 1. [ ] (2012-11-15) One Christmas at a Time
+* Josh Groban
+ 1. [ ] (2013-02-01) All That Echoes
+* Josh Woodward                                              :jamendo:lastfm:
+ 1. [X] (2004-04-17) Here Today
+ 1. [X] (2005-02-05) Crawford Street
+ 1. [X] (2005) Sunny Side of the Street
+ 1. [X] (2006-05-06) Only Whispering
+ 1. [X] (2007-08-11) Not Quite Connected
+ 1. [X] (2007-08-16) Dirty Wings
+ 1. [X] (2008-04-24) The Simple Life
+ 1. [X] (2009-10-21) Breadcrumbs
+ 1. [X] (2010) Ashes
+* JT Bruce                                                      :FAV:jamendo:
+ 1. [X] (2011) Ruined Subjects
+* Judas Priest
+* Kalmah
+ 1. [ ] (2013-06-25) Seventh Swamphony
+* Kamelot
+ 1. [ ] (2012-10-26) Silverthorn
+* Kasey Chambers
+** feat Shane Nicholson
+* 1. [ ] (2012-10-22) Wreck and Ruin
+* Kirsty MacColl
+* Kiss
+ 1. [ ] (2012-08-21) Destroyer- Resurrected
+* Kiuas
+ 1. [X] (2002) The Discipline of Steel
+ 1. [X] (2003-02) Born Under the Northern Lights
+ 1. [X] (2004-03-29) Winter in June
+ 1. [X] (2005-04-27) The Spirit of Ukko
+ 1. [X] (2006-05-24) Reformation
+ 1. [X] (2008-02-20) Of Sacrifice, Loss and Reward
+ 1. [X] (2008-03-12) The New Dark Age
+ 1. [X] (2010-03-31) Lustdriven
+* Korn
+ 1. [X] (2011) The Path of Totality
+* Korpiklaani                                                   :FAV:fi:riff:
+ 1. [X] (2012-08-14) Manala
+* Kotiteollisuus                                                         :fi:
+ 1. [X] (1998-05) Aamen
+ 1. [X] (1999-05) Eevan perintö
+ 1. [X] (2000-10) Tomusta ja tuhkasta
+ 1. [X] (2000-11-24) Kädessäni
+ 1. [X] (2001-06-08) Yksinpuhelu
+ 1. [X] (2002-03-01) Kuolleen kukan nimi
+ 1. [X] (2002-09-13) ± 0
+ 1. [X] (2003-09-12) Helvetistä itään
+ 1. [X] (2003-11-07) Minä olen
+ 1. [X] (2004-09-22) Kultalusikka
+ 1. [X] (2005-03-23) 7
+ 1. [X] (2006-11-08) Iankaikkinen
+ 1. [X] (2007-11-07) Murheen mailla 1996-2007
+ 1. [X] (2008-08-13) Sotakoira
+ 1. [X] (2009-01-28) Mahtisanat
+ 1. [X] (2009-02-18) Ukonhauta
+ 1. [X] (2011-03-02) Kotiteollisuus
+ 1. [X] (2012-09-21) Sotakoira II
+ 1. [X] (2013-07-05) Maailmanloppu
+** as Hullu ukko ja kotiteollisuus
+*** NOT (1996-08) Hullu ukko ja Kotiteollisuus
+* GONE Kylähullut                                                       :FAV:
+* Lacrimosa
+ 1. [ ] (2012-09) Revolution
+* Lake of Tears                                                         :FAV:
+ 1. [X] (2011-04-29) Illwill
+* Lamb of God
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/298909e4-ebcb-47b8-95e9-cc53b087fc65
+   :END:
+ 1. [ ] Resolution
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99
+    :END:
+* Led Zeppelin                                                         :1fav:
+ 1. [ ] (2012-11-19) Celebration Day
+* Lenka                                                           :jo:f:1fav:
+* Lia
+* Life of Agony
+* Linkin Park                                                           :FAV:
+ 1. [X] (2012-06-26) Living Things
+** NOT (2013-10-29) Recharged
+* Lionel Richie
+* Louis Armstrong
+* Low Roar                                                               :jo:
+* GONE Ludwig van Beethoven                                             :FAV:
+** (1997-10-14) Complete Beethoven Edition
+* 1. [X] Volume 1: Symphonies
+     :PROPERTIES:
+     :btih:     779BC870E5AF8AB5C8342146B3ACE68B478419D5
+     :END:
+* 1. [X] Volume 2: Concertos
+     :PROPERTIES:
+     :btih:     F903BD41E9AE78E29AB038A8E0CC573A44B0329E
+     :END:
+* 1. [X] Volume 3: Orchestral Works / Music for the Stage
+     :PROPERTIES:
+     :btih:     44058b609887f0a65aa45c210bc487a4afac9b69
+     :END:
+* 1. [X] Volume 4: Leonore / Fidelio
+     :PROPERTIES:
+     :btih:     12CC8570AE6BF00D634366D6F632A8EB61FC4479
+     :END:
+* 1. [X] Volume 5: Piano Sonatas
+     :PROPERTIES:
+     :btih:     da84b865ad48b0e0109a69d415f41114f9fe303b
+     :END:
+*** Volume 6: Piano Works
+*** Volume 7: Violinsonaten
+*** Volume 8: Cello Sonatas
+*** Volume 9: Piano Trios
+*** Volume 10: String Trios
+*** Volume 11: The Early Quartets
+*** Volume 12: The Middle Quartets
+*** Volume 13: The Late Quartets
+*** Volume 14: Chamber Works
+*** Volume 15: Wind Music
+*** Volume 16: Lieder
+*** Volume 17: Folksong Arrangements
+*** Volume 18: Secular Choral Works
+*** Volume 19: Large Choral Works
+*** Volume 20: Historic Recordings
+ 1. [X] The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f
+    :btih:     975e84080f1b4ddce5d74c89e2b1519c1a3710cd
+    :END:
+* Lê Cát Trọng Lý
+* Lệ Quyên                                                       :vi:f:voice:
+ 1. [X] (2004-08-27) Giấc mơ có thật
+ 1. [X] (2006-12) Lời yêu còn măi
+ 1. [X] (2009-11-20) Nếu như ngày đó
+ 1. [X] (2009-12-04) Acoustic
+ 1. [X] (2010-08-10) Khúc tình xưa
+ 1. [X] (2011-05-19) Để nhớ một thời ta đã yêu
+ 1. [X] (2011-12-09) Trả lại thời gian
+ 1. [X] (2012-05-29) Tình khúc yêu thương
+ 1. [X] (2013-09) Con tim dại khờ
+ 1. [X] (2013-09) Dòng thời gian
+* M.I.A
+* GONE M2M                                                              :FAV:
+ 1. [X] (2000-03-07) Shades of Purple
+ 1. [X] (2002-03-05) The Big Room
+ 1. [X] (2003-05-05) The Day You Went Away: The Best of M2M
+** solo Marion Raven
+* 1. [X] (2005-06-08) Here I Am
+* Machine Men                                                           :FAV:
+ 1. [X] (2003) Scars & Wounds
+ 1. [X] (2005-08-08) Elegies
+ 1. [X] (2007-02-16) Circus of Fools
+* Manowar                                                               :FAV:
+ 1. [ ] (2012-06-16) The Lord of Steel
+* Mark Morgan                                                      :FAV:game:
+ 1. [X] (1999) Planescape: Torment
+* Maroon 5                                                               :jo:
+ 1. [ ] (2012-06-26) Overexposed
+* Mastodon
+ 1. [ ] (2014-04-17) High Road
+* Max Payne                                                        :game:FAV:
+ 1. [X] Max Payne
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b
+    :END:
+ 1. [X] Max Payne 2: The Fall of Max Payne
+ 1. [X] Max Payne 3: The Official Soundtrack
+* Megadeth                                                         :FAV:riff:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e
+   :END:
+ 1. [X] (2007) United Abominations
+ 1. [X] (2009) Endgame
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a
+    :END:
+ 1. [X] (2011) Th1rt3en
+ 1. [X] (2013-06-04) Super Collider
+ 1. [ ] (2014-02-25) Icon
+* MegaDriver                                               :riff:game:lastfm:
+   :PROPERTIES:
+   :url:      http://megadriver.com.br
+   :END:
+ 1. [X] (2003) Push Start Button
+ 1. [X] (2004) Action Metal
+ 1. [X] (2004) Metal Axe
+ 1. [X] (2004) Metal Beast
+ 1. [X] (2007) Sword, Shurikins & Fists
+ 1. [X] (2007) Top Gear
+ 1. [X] (2008) MetalHog
+ 1. [X] (2011) Metal for Gamers
+* Metal Church                                                         :1fav:
+ 1. [X] (1982-10) Four Hymns
+ 1. [X] (1984) Metal Church
+ 1. [X] (1986) The Dark
+ 1. [X] (1989) Blessing in Disguise
+ 1. [X] (1991-03-26) The Human Factor
+ 1. [X] (1993) Hanging in the Balance
+ 1. [X] (1998-10-05) Live
+ 1. [X] (1999) Masterpeace
+ 1. [X] (2004-07-26) The Weight of the World
+ 1. [X] (2006-06-27) A Light in the Dark
+ 1. [X] (2008-09-23) This Present Wasteland
+ 1. [ ] (2013-10-22) Generation Nothing
+* Metal Gear Solid                                                      :FAV:
+ 1. [X] MGS
+*** Twin Snakes                                                         :not:
+ 1. [X] MGS2
+ 1. [X] MGS3
+ 1. [X] MGS4
+ 1. [X] (2010-04-12) Metal Gear Solid: Peace Walker
+ 1. [ ] (2013-02-19) Metal Gear Rising: Revengeance-Vocal Tracks
+* Metallica                                                             :FAV:
+ 1. [ ] (2013-08-13) Anger
+* Michael Bublé
+ 1. [ ] (2013-04-12) To Be Loved
+* Michael Hoenig
+ 1. [X] Baldur's Gate
+ 1. [X] Baldur's Gate II
+* Michael Learns to Rock                                               :1fav:
+* Michael McCann
+ 1. [X] (2011-11-15) Deus Ex: Human Revolution                    :FAV:game:
+* Michelle Stewart                                                      :FAV:
+ 1. [X] (2011) Walking on Ashes
+ 1. [ ] (2013) Sands of Time
+* Microwave                                                     :vi:riff:FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884
+   :END:
+* Mike Oldfield                                                         :FAV:
+ 1. [X] (2013-02-01) Tubular Beats
+ 1. [ ] (2014-03-03) Man On the Rocks
+** with Terry Oldfield
+* 1. [X] (2012-10-09) Journey into Space
+* Mikko Tarmia
+ 1. [X] (2011-05-17) Amnesia: The Dark Descent                    :FAV:game:
+* Milkmen
+* Mokoma                                                                 :fi:
+ 1. [X] (1999) Valu
+ 1. [X] (2001) Mokoman 120 päivää
+ 1. [X] (2003-10-10) Punainen kukko EP
+ 1. [X] (2003) Kurimus
+ 1. [X] (2004-05-12) Tämän maailman ruhtinaan hovi
+ 1. [X] (2006-02-08) Kuoleman laulukunnaat
+ 1. [X] (2006-10-18) Viides vuodenaika
+ 1. [X] (2007-11-28) Luihin ja ytimiin
+ 1. [X] (2010-03-24) Sydänjuuret
+ 1. [ ] (2012-10-19) 180 astetta
+* Monty Python                                                          :FAV:
+* Muse                                                                 :1fav:
+ 1. [ ] (2012-09-17) The 2nd Law
+* My Bloody Valentine
+* My Chemical Romance                                                  :1fav:
+* Månegarm                                                    :guitar:lastfm:
+* Månegram
+ 1. [ ] (2013-06-28) Legions of the North
+* Mỹ Linh                                                               :FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79
+   :END:
+ 1. [X] (2005) Chat với Mozart                                         :not:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa
+    :END:
+* Mỹ Tâm
+* Nat King Cole
+* Neil Young & Crazy Horse
+ 1. [ ] (2012-06-05) Americana
+ 1. [ ] (2012-10-29) Psychedelic Pill
+* Nevermore
+ 1. [X] (1992) Utopia
+ 1. [X] (1995) Nevermore
+ 1. [X] (1996-07-23) In Memory
+ 1. [X] (1996-10-28) The Politics of Ecstasy
+ 1. [X] (1999-01-06) Dreaming Neon Black
+ 1. [X] (2000-09-18) Dead Heart in a Dead World
+ 1. [X] (2000-12-06) Believe in Nothing
+ 1. [X] (2003-07-21) Enemies of Reality
+ 1. [X] (2005-07-25) This Godless Endeavor
+ 1. [X] (2010-05-28) The Obsidian Conspiracy
+* Nhạc cách mạng
+** Một mùa xuân nho nhỏ
+** Nguời Hà Nội
+** Tuổi trẻ thế hệ Bác Hồ
+** Đất nuớc
+* Nightwish                                                             :FAV:
+ 1. [X] (2011) Imaginaerum
+** solo Tarja Turunen
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4
+    :END:
+* 1. [X] (2006) Henkäys ikuisuudesta
+     :PROPERTIES:
+     :mbid:     http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5
+     :END:
+* 1. [ ] (2012-09-04) Act 1
+* 1. [ ] (2013-08-30) Colours in the Dark
+* Nirvana
+* No Doubt                                                                :f:
+ 1. [ ] (2012-09-25) Push and Shove
+* Nobuo Uematsu
+ 1. [X] FF VIII
+* 1. [X] Soundtrack
+* 1. [X] Piano Collection
+ 1. [X] FF IX
+* 1. [X] Piano Collection
+* 1. [X] Soundtrack
+* 1. [X] Soundtrack Plus
+* nocreeps                                                      :FAV:jamendo:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8
+   :END:
+ 1. [X] (2006) Time to Differ
+ 1. [X] (2008-11-19) Nice Noise
+* Norah Jones
+ 1. [ ] (2013-11-25) Foreverly
+* Normand Corbeil
+** Heavy Rain                                                      :FAV:game:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release/44108976-6221-46c0-9902-b9c0330a3670
+    :END:
+* Norther
+* Nuclear Assault
+* Oleg Serkov                                               :FAV:inst:string:
+* OneRepublic
+ 1. [ ] (2013-03-22) Native
+* Orphaned Land
+ 1. [ ] (2013-06-24) All Is One
+* Our Lady Peace
+* Pain Confessor                                                       :wail:
+ 1. [X] (2004-09-08) Turmoil
+ 1. [X] (2006-03-01) Fearrage
+ 1. [X] (2007-03-14) Purgatory of the Second Sun
+* Pain of Salvation                                                 :epic:jo:
+* Pantera
+* Paramore                                                                :f:
+* Pearl Jam
+ 1. [ ] (2013-10-15) Lightning Bolt
+* Peter McConnell                                                  :game:FAV:
+ 1. [X] Grim Fandango
+ 1. [X] Grim Fandango Additional
+ 1. [X] (2005-09-10) Psychonauts Original Soundtrack
+ 1. [X] (2012-05-31) Psychonauts: Original Cinematic Score
+* Phil Collins
+* Piano tributes                                                      :piano:
+ 1. [X] (2005-01-04) Eclipse: Piano Tribute to Evanescence             :FAV:
+ 1. [X] (2005-08-02) The Piano Tribute to Iron Maiden
+ 1. [X] (2007) Pianotarium: Piano Tribute to Metallica
+ 1. [X] (2007-01-09) My Chemical Romance: A Piano Tribute
+ 1. [X] (2010-07-13) The Piano Tribute to Lady Gaga
+ 1. [X] (2011) Piano Tribute to Mumford & Sons
+ 1. [ ] (2012-08-28) Piano Tribute to Aerosmith
+* Pilotwings 64                                                    :FAV:game:
+* Pink Floyd
+* Placebo                                                                :jo:
+* Poisonblack
+* Powerglove                                                            :FAV:
+   :PROPERTIES:
+   :url:      http://vgmetal.com
+   :END:
+* Primus
+* Prophecy                                                           :lastfm:
+* Public Enemy
+ 1. [ ] (2012-07-13) Most of My Heroes Still Don't Appear on No Stamp
+ 1. [ ] (2012-10-01) The Evil Empire of Everything
+ 1. [ ] (2014-02-25) Icon
+* Puddle of Mudd
+* Pyotr Ilyich Tchaikovsky
+* Queen
+* Quốc Bảo                                                           :FAV:vi:
+ 1. [X] (2003) Bình yên
+* Radiohead                                                              :jo:
+* Rage Against the Machine
+* Regina Spektor
+ 1. [X] (2012-05-29) What We Saw from the Cheap Seats
+* Rhapsody                                                           :FAV:it:
+** solo Luca Turilli
+* 1. [X] (1999-09-22) King of the Nordic Twilight
+* 1. [X] (2002) Prophet of the Last Eclipse
+* 1. [X] (2006-05-26) The Infinite Wonders of Creation
+* 1. [X] (2006-06-09) Lost Horizons
+** as Rhapsody of Fire
+* 1. [ ] (2013-11-22) Dark Wings of Steel
+* Richard Clayderman                                             :inst:piano:
+ 1. [ ] (2013-04-30) Romantique
+ 1. [ ] (2014-03-14) Plays World Hits
+* Richard Strauss
+* Richie Sambora
+ 1. [ ] (2012-09-25) Aftermath of the Lowdown
+* Rumer
+ 1. [X] (2012-01-25) Seasons of My Soul
+ 1. [X] (2012-05-28) Boys Don't Cry
+* Rush
+* Saattue
+* Sabaton                                                            :lastfm:
+* Santana                                                        :FAV:guitar:
+ 1. [X] (2012-05-11) Shape Shifter
+* Santigold
+* Sarah Brightman                                                  :f:jo:FAV:
+ 1. [X] (2013-04-05) Dreamchaser
+* GONE Savatage                                                    :epic:FAV:
+** as Trans-Siberian Orchestra
+* 1. [ ] (2012-10-30) Dream of Fireflies (on a Christmas Night)
+* Scorpions                                                             :FAV:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6
+   :END:
+ 1. [X] (2007) Humanity: Hour I
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286
+    :END:
+ 1. [X] (2011) Comeblack
+* Sean Wright                                                        :lastfm:
+* Secret Garden                                                  :FAV:string:
+ 1. [X] (2007-11-26) Inside I'm Singing
+ 1. [X] (2011) Winter Poem
+* Senses Fail                                                           :not:
+ 1. [ ] (2013-03-26) Renacer
+* Sentenced
+* Sepultura                                                              :jo:
+* Shadow Hearts
+ 1. [X] Koudelka
+ 1. [X] Shadow Hearts
+ 1. [X] (2004-03-24) Shadow Hearts II
+ 1. [X] Shadow Hearts III
+* Shadowy Men on a Shadowy Planet
+* Shinedown                                                            :1fav:
+ 1. [X] (2012-03-27) Amaryllis
+* Silversun Pickups
+* GONE Simon & Garfunkel                                                :FAV:
+* Simple Plan                                                            :jo:
+* Sinergy
+* Sirenia                                                                 :f:
+ 1. [ ] (2013-06-28) Perils of the Deep Blue
+* Sixpence None the Richer                                            :FAV:f:
+ 1. [ ] (2012-08-07) Lost in Transition
+* Skillet
+ 1. [ ] (2013-06-25) Rise
+* Skrillex
+* Slayer
+* Snow Patrol
+ 1. [X] (2011) Fallen Empires
+* Sonata Arctica                                           :riff:epic:FAV:fi:
+ 1. [X] (2012-05-22) Stones Grow Her Name
+ 1. [X] (2014-03-28) Pariah's Child
+* Soul Asylum
+ 1. [X] (1984) Say What You Will, Clarence... Karl Sold the Truck
+ 1. [X] (1986-01-18) Made to Be Broken
+ 1. [X] (1986-06-24) Time's Incinerator
+ 1. [X] (1986-11) While You Were Out
+ 1. [X] (1988-04-25) Hang Time
+ 1. [X] (1988-07-01) Clam Dip And Other Delights
+ 1. [X] (1990-09-04) And the Horse They Rode in On
+ 1. [X] (1992-10-06) Grave Dancers Union
+ 1. [X] (1995-06-06) Let Your Dim Light Shine
+ 1. [X] (1998-05-12) Candy From a Stranger
+ 1. [X] (2006-07-11) The Silver Lining
+ 1. [X] (2012-07-17) Delayed Reaction
+* Spencer Nilsen
+ 1. [X] (1996) Ecco: Songs of Time                                :game:FAV:
+* GONE Spice Girls                                                        :f:
+* Stam1na
+ 1. [ ] (2014-02-07) SLK
+* Starbomb
+ 1. [X] Starbomb                                                       :FAV:
+* Steve Vai                                                            :inst:
+ 1. [ ] (2012-08-14) The Story of Light
+* Stevie Ray Vaughan                                                 :guitar:
+* Stone Sour                                                       :wail:FAV:
+* Stratovarius                                                       :FAV:fi:
+ 1. [X] (2013-01-25) Unbreakable
+ 1. [ ] (2013-02-25) Nemesis
+** solo Timo Tolkki
+* String Quartet tributes                                        :FAV:string:
+ 1. [X] (1999) The String Quartet Tribute to Led Zeppelin
+ 1. [X] (2002) The String Quartet Tribute to Coldplay
+ 1. [X] (2002) The String Quartet Tribute to Incubus
+ 1. [X] (2003) The String Quartet Tribute to Evanescence
+ 1. [X] (2004) The String Quartet Tribute to Guns N' Roses
+ 1. [X] (2004) The String Quartet Tribute to the Red Hot Chili Peppers :FAV:
+ 1. [X] (2006) Embracing The Heaviness: The String Quartet Tribute to Stone Sour
+ 1. [X] (2006) Strung Out On Shinedown: The String Quartet Tribute
+ 1. [X] (2006) The Dream is Real: The String Quartet Tribute to Senses Fail
+ 1. [X] (2007) The String Quartet Tribute to 2Pac                     :1fav:
+ 1. [X] (2008-04-15) String Tribute to Bullet for My Valentine
+ 1. [X] (2009) Vitamin String Quartet Performs Green Day's American Idiot
+ 1. [X] (2010) VSQ Performs Lady Gaga
+ 1. [ ] (2013-11-27) A Tribute to Dazed and Confused
+ 1. [X] Senses Fail
+ 1. [X] Shinedown
+ 1. [X] Tupac                                                         :1fav:
+* Styles of Beyond
+ 1. [X] (1999-08-24) 2000 Fold
+ 1. [X] (2003) Megadef
+ 1. [X] (2007-08-10) Razor Tag
+* Symphony X                                                       :FAV:epic:
+* System of a Down
+* Tacere
+* Tarot                                                              :FAV:fi:
+* Ted Nugent                                                           :riff:
+* Tesla
+* Thanh Tùng                                                         :FAV:vi:
+* The Beatles                                                           :FAV:
+* The Bug
+* The Charlie Daniels Band
+* The Civil Wars                                                          :f:
+* The Corrs                                                    :FAV:f:string:
+* The Cranberries                                                    :FAV:jo:
+* The Doors
+* The Ink Spots                                                    :FAV:blue:
+* The Lord Weird Slough Feg
+ 1. [ ] (2014-02-18) Digital Resistance
+* The Smashing Pumpkins
+ 1. [ ] (2012-06-18) Oceania
+* The Who
+* Theory of a Deadman                                             :game:wail:
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b
+   :END:
+ 1. [X] (2011) The Truth Is...
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/3d667c9b-133a-4f33-a7ba-dc3a92c21dd2
+    :END:
+* ThePlasmas                                               :riff:game:lastfm:
+ 1. [X] (2008) Extreme NES Terror
+ 1. [X] (2008) Noentiendo
+ 1. [X] (2009) Bite My Bytes
+ 1. [X] (2009) In the Year 200X
+ 1. [X] (2009) NES Cult Armageddon
+ 1. [X] (2009) R3BORN
+ 1. [X] (2010) Beware the invasion
+ 1. [X] (2010-01-22) 16 Fighting Bits
+ 1. [X] (2011) MegaMan 6 Tribute Album
+ 1. [X] (2011) Taste My Power
+ 1. [X] (2012) ?
+ 1. [X] (2012-02-07) MegaMan 1
+ 1. [X] (2012-05-18) Little Nemo: The Dream Album
+ 1. [X] (2012-10-01) Taste My Power
+ 1. [X] (2013-03-05) Holy Whiplash
+** with Action Adventure World
+*** NOT (2010-02-08) Volume 1: Ghosts n Goblins
+*** NOT (2010-10-08) Volume 2: Megaman VI
+** with The Black Warriors
+* 1. [X] (2013) SPLIT
+** as The Missing Plasma
+* 1. [X] (2010) Not a Game Anymore
+* Therion
+ 1. [X] (1991) Of Darkness...
+ 1. [X] (1992) Beyond Sanctorum
+ 1. [X] (1994-01-25) Symphony Masses: Ho Drakon Ho Megas
+ 1. [X] (1996-08-08) Theli
+ 1. [X] (1996-11-15) Lepaca Kliffoth
+ 1. [X] (1997-06-26) A'arab Zaraq Lucid Dreaming
+ 1. [X] (1998) Vovin
+ 1. [X] (1999-06-07) Crowning of Atlantis
+ 1. [X] (2000-01-31) Deggial                                           :FAV:
+ 1. [X] (2001-11-13) Secret of the Runes
+ 1. [X] (2004-06-01) Lemuria
+ 1. [X] (2004-06-01) Sirius B
+ 1. [X] (2006-06-13) Celebrators of Becoming
+ 1. [X] (2007-02-06) Gothic Kabbalah
+ 1. [X] (2008-07-28) Live Gothic
+ 1. [X] (2009) The Miskolc Experience
+ 1. [X] (2010-10-26) Sitra Ahra
+ 1. [X] (2012-09-28) Les fleurs du mal
+* They Might Be Giants                                               :jbopre:
+ 1. [ ] (2013-03-05) Nanobots
+* Thy Serpent                                                          :1fav:
+* Thủy Triều Đỏ                                                          :vi:
+* Tim Minchin                                                           :FAV:
+ 1. [X] (2005) Darkside
+ 1. [X] (2006) So Rock
+ 1. [X] (2008) Ready for This?
+ 1. [X] (2010-12-14) Live at the O2
+ 1. [X] (2011) Tim Minchin and the Heritage Orchestra
+ 1. [ ] (2013-11-29) So Fucking Rock
+ 1. [X] Timmy the Dog
+* Tina Arena
+* To/Die/For                                                       :FAV:wail:
+ 1. [X] (2011) Samsara
+* Tokyo Jihen                                                   :jo:ja:FAV:f:
+ 1. [X] (2004-11-25) 教育 (Kyouiku)
+ 1. [X] (2006-01-25) 大人 (Adult)
+ 1. [X] (2007-09-26) 娯楽 (Variety)
+ 1. [X] (2010-02-24) スポーツ (Sports)
+ 1. [X] (2011-06-29) 大発見 (Daihakken)
+ 1. [X] (2012-01-18) color bars
+** solo Ringo Shiina
+* 1. [X] (1999-02-24) 無罪モラトリアム (Innocence Moratorium)
+* 1. [X] (2000-03-31) 勝訴ストリップ (Winning Strip)
+* 1. [X] (2002-05-27) 唄ひ手冥利～其の壱～ (Utaite Myouri)
+* 1. [X] (2003-02-23) 加爾基 精液 栗ノ花 (Kalk Samen Chestnut Flower)
+* 1. [X] (2007-02-21) 平成風俗 (Japanese Manners)
+* 1. [X] (2009-06-24) 三文ゴシップ (Superficial Gossip)
+* Tom Lehrer                                                       :FAV:mock:
+   :PROPERTIES:
+   :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
+   :url:      http://home.broadpark.no/~emeyn/tl/links.html
+   :END:
+* Tony Bennett                                                         :tunx:
+ 1. [ ] (2012-10-22) Viva Duets
+* Tony Cicoria
+* NOT Tool
+* Tracy Chapman                                                  :tunx:f:FAV:
+ 1. [X] (1988-04-05) Tracy Chapman
+ 1. [X] (1989-09) Crossroads
+ 1. [X] (1992-04-28) Matters of the Heart
+ 1. [X] (1995-11-14) New Beginning
+ 1. [X] (2000-02-15) Telling Stories
+ 1. [X] (2002-10-15) Let It Rain
+ 1. [X] (2005-09-13) Where You Live
+ 1. [X] (2008-11-07) Our Bright Future
+* Train                                                                :tunx:
+ 1. [ ] (2012-04-16) California 37
+* Tryad                                                        :1fav:jamendo:
+* Trịnh Công Sơn                                                     :FAV:vi:
+* Tuoni
+ 1. [X] (2005) Elävät & kuolleet
+ 1. [ ] (2014-03-07) Kuolonpyörä
+* Turisas                                                                :fi:
+ 1. [X] (2013-08-21) Turisas2013
+* Turmion Kätilöt
+* Týr
+ 1. [X] (2013-09-13) Valkyrja
+* Van Canto
+ 1. [ ] (2014-02-07) Dawn of the Brave
+* Vanilla Sky
+ 1. [ ] (2012-12-18) The Band Not the Movie
+* Various Artists
+ 1. [X] (1999-10) Mong ước kỷ niệm xưa                              :vi:FAV:
+ 1. [X] (2000) Vampire: The Masquerade: Redemption                :game:FAV:
+ 1. [X] (2003) Need for Speed Underground
+ 1. [X] (2004) Need for Speed Underground 2
+ 1. [X] (2005-11) Need for Speed Most Wanted
+ 1. [X] (2006-11) Need for Speed Carbon
+ 1. [X] (2007) Need for Speed ProStreet
+ 1. [X] (2010-03-16) God of War III
+** Juno                                                                 :FAV:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d
+    :END:
+** Juno B-Sides: Almost Adopted Songs                                   :FAV:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/9de09c3a-7609-34f3-9e84-4f37fc5c4df6
+    :END:
+** Rock The Nation: Tìm đến nhau                                :FAV:vi:riff:
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0
+    :END:
+ 1. [X] Singing Science Records                                        :FAV:
+    :PROPERTIES:
+    :url:      http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/
+    :btih:     9073760c256d58a33b4fd69c78b2c8b858bdeebb
+    :END:
+*** Energy & Motion Songs
+*** Experiment Songs
+*** More Nature Songs
+*** Nature Songs
+*** Space Songs
+*** Weather Songs
+* Verjnuarmu                                                             :fi:
+ 1. [X] (2006-01-25) Muanpiällinen helevetti
+ 1. [X] (2008-05-14) Ruatokansan uamunkoetto
+ 1. [X] (2010-10-27) Lohuton
+* Warmen
+* Whispered [0/1]
+ 1. [ ] (2014-02-07) Shogunate Macabre
+* White Lion
+* Whitesnake
+* Whitney Houston
+* Winger
+* Wintersun
+   :PROPERTIES:
+   :mbid:     http://musicbrainz.org/artist/c054ea6b-c585-41eb-ae7e-4b0ca43308ff
+   :END:
+ 1. [X] (2004) Wintersun
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
+    :END:
+ 1. [X] (2012-10-19) Time I
+* Within Temptation                                                    :jo:f:
+ 1. [X] (1997-04-06) Enter
+ 1. [X] (2000-12-04) Mother Earth
+ 1. [X] (2004-11-15) The Silent Force
+ 1. [X] (2007-03-20) The Heart of Everything
+ 1. [X] (2008) Destroyed
+ 1. [X] (2009) The Rarest Songs                                       :1fav:
+ 1. [X] (2011-03-29) The Unforgiving
+ 1. [ ] (2014-01-31) Hydra
+* Wolfgang Amadeus Mozart
+ 1. [X] Requiem in D minor K626, Karajan 1962                         :1fav:
+* X/X JAPAN                                                         :1fav:ja:
+* Yngwie J. Malmsteen                                           :inst:guitar:
+ 1. [ ] (2012-12-05) Spellbound
+* Zack Browning
+ 1. [ ] Secret Pulse
+* Zak Belica
+ 1. [X] (2005) SiN                                                    :game:
+* Zakk Wylde                                                             :jo:
+* Zero-Project                                                     :FAV:inst:
+ 1. [X] (2012-01-06) Untold Stories of a Dying Moon
+ 1. [ ] (2013-07-06) e-world: The Ultimate Edition

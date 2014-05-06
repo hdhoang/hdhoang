@@ -1,0 +1,109 @@
+#    -*- mode: org -*-
+* Benjamin Franklin                                                     :mjd:
+* TODO Bill Hammack
+** TODO Eight Amazing Engineering Stories
+* DONE Bill Hicks                                              :humor:spoken:
+*** DONE (1990) Dangerous
+*** DONE (1992) Relentless
+*** DONE (1993) Revelations
+*** DONE (1997-02-25) Arizona Bay
+*** DONE (1997-02-25) Rant in E-Minor
+*** DONE (2002-11-11) Flying Saucer Tour, Volume 1
+*** DONE (2002-11-11) Love, Laughter and Truth
+*** DONE (2003-05-19) Shock and Awe
+*** DONE 1989_ I'm Sorry Folks_ Chicago, IL, USA
+*** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
+*** DONE Filling Up the Hump
+*** DONE Hicksville
+*** DONE Live in Brighton
+*** DONE The Letterman Performances
+* Bradley M. Kuhn                                               :free:pgnome:
+* Carl Sagan
+** TODO The Demon Haunted World
+* Dan Kaminsky
+* Daniel Dennett                                                        :mjd:
+** TODO Darwin's Dangerous Idea
+* DONE Daniel Tosh                                              :voice:humor:
+** DONE (2005-11-08) True Stories I Made Up
+** DONE (2011-03-08) Happy Thoughts
+* Dave Winer
+   :PROPERTIES:
+   :url:      http://scripting.com
+   :END:
+* GONE George Carlin                                            :voice:humor:
+   :PROPERTIES:
+   :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
+   :END:
+** DONE (1967) Take-Offs & Put-Ons
+** DONE (1972) Class Clown
+** DONE (1972) FM & AM
+** DONE (1972) The Original George Carlin
+** DONE (1973-10) Occupation: Foole
+** DONE (1974-11) Toledo Window Box
+** DONE (1975-10) An Evening With Wally Londo Featuring Bill Slaszo
+** DONE (1977-04) On the Road
+** DONE (1981) Killer Carlin
+** DONE (1981-11) A Place for My Stuff!
+** DONE (1984) Carlin on Campus
+** DONE (1986-06-30) Playin' With Your Head
+** DONE (1988-08-15) What Am I Doing in New Jersey?
+** DONE (1990-11-20) Parental Advisory: Explicit Lyrics
+** DONE (1992-11-10) Jammin' in New York
+** DONE (1996-09-17) Back in Town
+** DONE (1999-05-04) You Are All Diseased
+** DONE (1999-10-19) The Little David Years: 1971-1977 CD 7: Free Complimentary Extra Bonus Disc Not for Sale Anywhere!
+** DONE (2000-05) Brain Droppings
+** DONE (2001-05) Napalm and Silly Putty
+** DONE (2001-12-11) Complaints and Grievances
+** DONE (2002) 40 Years in Comedy
+** DONE (2002-03-12) George Carlin on Comedy
+** DONE (2002-04) More Napalm & Silly Putty
+** DONE (2004-10-12) When Will Jesus Bring the Pork Chops?
+** DONE (2006-01-10) Life Is Worth Losing
+** DONE (2008-07-29) It's Bad for Ya
+** DONE (2009-11-10) Last Words                                        :bio:
+* Ian Hickson                                                    :net:whatwg:
+   :PROPERTIES:
+   :url:      http://hixie.ch
+   :END:
+* James Kakalios                                                  :sci:humor:
+** The Amazing Story of Quantum Mechanics
+** The Physics of Super Heroes
+* Jason Kottke
+* Jason Scott                                                      :free:net:
+* Jiddu Krishnamurti
+** Think on These Things                                               :tunx:
+* John Ralston Saul
+** TODO The Collapse of Globalism and the Reinvention of the World     :econ:
+* Malcolm Gladwell
+** TODO The Tipping Point                                                :jo:
+* GONE Mark Pilgrim                                    :free:code:net:whatwg:
+   :PROPERTIES:
+   :url:      http://firehose.diveintomark.org
+   :END:
+* Neil deGrasse Tyson                                             :sci:humor:
+** TODO The Pluto Files
+* Richard Dawkins
+** TODO (1986) The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe without Design
+** TODO The God Delusion
+* GONE Richard Feynman                                        :humor:sci:FAV:
+** TODO Physics Lectures
+** DONE Surely You're Joking, Mr. Feynman
+** DONE What Do You Care What Other People Think? Further Adventures of a Curious Character
+    :PROPERTIES:
+    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
+    :END:
+* Đỗ Huân                                                 :FAV:vi:humor:tunx:
+   :PROPERTIES:
+   :url:      http://www.educons.net/
+   :google:   https://plus.google.com/100358532436095582785
+   :END:
+*** TODO Ta bao nhiêu tuổi
+*** DONE Tào lao gà
+    :PROPERTIES:
+    :url:      http://taolaoga.blogspot.com/
+    :END:
+*** TODO Tào lao gà 2
+*** DONE Vẹo rồng
+*** DONE Ông ve chai
+* TODO As a man thinketh                                                 :jo:

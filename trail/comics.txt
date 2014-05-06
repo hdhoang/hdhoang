@@ -1,0 +1,224 @@
+#    -*- mode: org -*-
+* TODO Angel Densetsu                                          :jo:ja:video:
+   :PROPERTIES:
+   :url:      http://mangafox.me/manga/angel_densetsu/v01/c001/1.html
+   :END:
+* A Softer World                                                :title:cute:
+   :PROPERTIES:
+   :url:      http://asofterworld.com
+   :END:
+* Abstruse Goose                                                 :title:sci:
+   :PROPERTIES:
+   :url:      http://abstrusegoose.com
+   :END:
+* AmazingSuperPowers                                            :title:sick:
+   :PROPERTIES:
+   :url:      http://amazingsuperpowers.com
+   :END:
+* Bent Objects                                                        :cute:
+   :PROPERTIES:
+   :url:      http://bentobjects.blogspot.com
+   :END:
+* Buttersafe                                                  :sad:3rd:cute:
+   :PROPERTIES:
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=22a693bd3326845a59474b926185ff0e&_render=rss
+   :url:      http://buttersafe.com
+   :END:
+* Calamities of Nature                                                 :sci:
+* Calm Blue Oceans
+* ChannelATE                                                          :sick:
+   :PROPERTIES:
+   :url:      http://channelate.com
+   :END:
+* Cowbirds in Love                                                    :cute:
+   :PROPERTIES:
+   :url:      http://cowbirdsinlove.com
+   :END:
+* Cyanide and Happiness                                            :ns:sick:
+* desudesu0.com                                                         :ns:
+* Dinosaur Comics                                           :title:cute:phi:
+   :PROPERTIES:
+   :url:      http://qwantz.com
+   :side:     http://awgeezawgeez.tumblr.com
+   :blog:     http://ryannorth.tumblr.com
+   :END:
+* DOGHOUSE                                                      :title:cute:
+   :PROPERTIES:
+   :url:      http://thedoghousediaries.com
+   :END:
+* Endless Origami
+   :PROPERTIES:
+   :url:      http://endlessorigami.com
+   :END:
+* Extra Ordinary                                           :cute:title:site:
+   :PROPERTIES:
+   :url:      http://exocomics.com
+   :END:
+* Fake Science                                                        :cute:
+* Fredo and Pid'jin                                                   :blas:
+   :PROPERTIES:
+   :url:      http://pidjin.net
+   :END:
+* Happle Tea                                                           :phi:
+   :PROPERTIES:
+   :url:      http://happletea.com
+   :END:
+* Hejibits                                                      :game:title:
+   :PROPERTIES:
+   :url:      http://hejibits.com
+   :END:
+* Hipster Hitler                                                 :blas:cute:
+* Hyperbole and a Half
+* If we don't, remember me
+   :PROPERTIES:
+   :url:      http://iwdrm.tumblr.com
+   :END:
+* INCIDENTAL COMICS                                                   :cute:
+   :PROPERTIES:
+   :url:      http://www.incidentalcomics.com
+   :END:
+* Invisible Bread
+   :PROPERTIES:
+   :url:      http://invisiblebread.com
+   :END:
+* Johnny Wander                                                       :cute:
+   :PROPERTIES:
+   :url:      http://johnnywander.com
+   :END:
+* Liz Prince Power                                                    :cute:
+   :PROPERTIES:
+   :url:      http://lizprincepower.com
+   :END:
+* LOLDWELL.com                                                        :game:
+   :PROPERTIES:
+   :url:      http://loldwell.com
+   :END:
+* Married To The Sea                                                  :cute:
+* Mimi and Eunice                                                 :phi:free:
+   :PROPERTIES:
+   :url:      http://mimiandeunice.com
+   :END:
+* Nedroid Picture Diary 2                                            :title:
+   :PROPERTIES:
+   :url:      http://nedroid.com
+   :END:
+* Oglaf                                                     :ns:extra:title:
+   :PROPERTIES:
+   :url:      http://oglaf.com
+   :END:
+* Optipess                                                            :sick:
+* GONE Pants Are Overrated                                            :game:
+   :PROPERTIES:
+   :url:      http://pantsareoverrated.com
+   :END:
+* Pearls Before Swine                                                 :cute:
+   :PROPERTIES:
+   :3rd:      http://www.arcamax.com/thefunnies/pearlsbeforeswine/rss
+   :END:
+* Penny Arcarde Comics                                            :game:3rd:
+   :PROPERTIES:
+   :url:      http://penny-arcade.com
+   :3rd:      http://pipes.yahoo.com/pipes/pipe.run?_id=IjjUcuSa3RGmgXqp1L3fcQ&_render=rss
+   :END:
+* Pictures for sad children                                       :cute:sad:
+   :PROPERTIES:
+   :url:      http://picturesforsadchildren.com
+   :END:
+* Pie Comic                                                           :site:
+   :PROPERTIES:
+   :url:      http://piecomic.com
+   :END:
+* POPSTRIP                                                   :title:sci:phi:
+   :PROPERTIES:
+   :url:      http://popstrip.com
+   :END:
+* Random Russ
+* Rock, Paper, Cynic                                              :cute:sad:
+   :PROPERTIES:
+   :url:      http://rockpapercynic.com
+   :END:
+* Saturday Morning Breakfast Cereal                 :extra:3rd:daily:ns:sci:
+   :PROPERTIES:
+   :url:      http://smbc-comics.com
+   :END:
+* Savage Chickens                                                     :cute:
+   :PROPERTIES:
+   :url:      http://savagechickens.com
+   :END:
+* Sent From The Moon                                            :cute:title:
+   :PROPERTIES:
+   :url:      http://sentfromthemoon.com
+   :END:
+* GONE Sexy Losers                                        :ns:end:cute:sick:
+   :PROPERTIES:
+   :url:      http://sexylosers.com
+   :cont:     [[the thin H line]]
+   :END:
+* Shoebox                                                       :movie:cute:
+   :PROPERTIES:
+   :url:      http://shoeboxblog.com
+   :END:
+** Chuck & Beans
+    :PROPERTIES:
+    :feed:     http://www.shoeboxblog.com/?feed=rss2&cat=1279
+    :END:
+** Jana’s Thinkings
+** Random Russ
+* Sinfest                                                             :cute:
+   :PROPERTIES:
+   :url:      http://sinfest.net
+   :END:
+* Something of that Ilk
+   :PROPERTIES:
+   :url:      http://somethingofthatilk.com
+   :END:
+* Spud Comics
+   :PROPERTIES:
+   :url:      http://spudcomics.com
+   :END:
+* Subnormality                                                        :cute:
+   :PROPERTIES:
+   :url:      https://viruscomix.wordpress.com
+   :END:
+* The Non-Adventures of Wonderella
+   :PROPERTIES:
+   :url:      http://nonadventures.com
+   :END:
+* The Oatmeal                                                    :cute:sick:
+   :PROPERTIES:
+   :url:      http://theoatmeal.com
+   :END:
+* the thin H line                                                       :ns:
+   :PROPERTIES:
+   :url:      http://thinhline.tumblr.com
+   :END:
+* The Urf
+   :PROPERTIES:
+   :url:      http://theurf.com
+   :END:
+* theWAREHOUSE
+   :PROPERTIES:
+   :url:      http://warehousecomic.com
+   :END:
+* Tree Lobsters!                                                 :sci:title:
+   :PROPERTIES:
+   :url:      http://treelobsters.com
+   :END:
+* Up Up Down Down                                                :site:game:
+   :PROPERTIES:
+   :url:      http://upup-downdown.com
+   :END:
+* Walking in Squares                                             :site:game:
+* Wondermark                                                         :title:
+   :PROPERTIES:
+   :url:      http://wondermark.com
+   :END:
+* Wulffmorgenthaler                                                     :ns:
+* xkcd                                                               :title:
+   :PROPERTIES:
+   :url:      https://xkcd.com
+   :END:
+* YOU CHOSE WRONG
+   :PROPERTIES:
+   :url:      http://youchosewrong.tumblr.com
+   :END:
