@@ -1,7 +1,6 @@
 # ~/.unison/default.prf
 batch = true
 confirmbigdel = true
-sortbysize = true
 
 root = h:\
 force = h:\
