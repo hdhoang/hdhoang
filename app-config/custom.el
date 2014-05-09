@@ -9,6 +9,7 @@
  '(default-input-method "vietnamese-telex")
  '(desktop-load-locked-desktop t)
  '(electric-pair-mode nil)
+ '(erc-autojoin-channels-alist (quote (("freenode" "#lojban" "#jbopre" "#vnluser"))))
  '(erc-hide-list (quote ("JOIN" "PART" "QUIT")))
  '(erc-prompt-for-password nil)
  '(explicit-shell-file-name "/bin/zsh")
@@ -86,3 +87,5 @@
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (add-hook 'post-command-hook
           '(lambda () (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
+
+(erc :server "irc.freenode.net")
