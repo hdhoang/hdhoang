@@ -20,6 +20,7 @@
  '(org-log-done nil)
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
+ '(prelude-flyspell nil)
  '(prelude-guru nil)
  '(proced-filter (quote all))
  '(sentence-end-double-space nil)
@@ -83,6 +84,5 @@
      '(sql-mysql-program "fakecygpty")))
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
-(remove-hook 'git-commit-mode-hook 'flyspell-mode)
 (add-hook 'post-command-hook
           '(lambda () (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
