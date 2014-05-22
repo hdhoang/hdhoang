@@ -68,7 +68,9 @@
                        (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
         '("service" "socket" "desktop" "directory"))
 (add-hook 'conf-windows-mode-hook
-          '(lambda () (setq comment-start "#") (glasses-mode t)))
+          '(lambda ()
+             (setq comment-start "#")
+             (glasses-mode t)))
 
 (require 'prelude-ido)
 
@@ -87,4 +89,5 @@
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (add-hook 'post-command-hook
-          '(lambda () (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
+          '(lambda ()
+             (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
