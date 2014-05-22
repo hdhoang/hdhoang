@@ -54,8 +54,8 @@
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 (global-set-key (kbd "C-x M-t") 'term)
-(global-set-key (kbd "C-x <up>") 'windmove-up)
-(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-c <up>") 'windmove-up)
+(global-set-key (kbd "C-c <down>") 'windmove-down)
 
 ;; Major modes
 (autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
