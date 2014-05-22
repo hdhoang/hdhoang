@@ -1,36 +1,40 @@
 #    -*- mode: org -*-
 * Benjamin Franklin                                                     :mjd:
-* TODO Bill Hammack
-** TODO Eight Amazing Engineering Stories
-* DONE Bill Hicks                                              :humor:spoken:
-*** DONE (1990) Dangerous
-*** DONE (1992) Relentless
-*** DONE (1993) Revelations
-*** DONE (1997-02-25) Arizona Bay
-*** DONE (1997-02-25) Rant in E-Minor
-*** DONE (2002-11-11) Flying Saucer Tour, Volume 1
-*** DONE (2002-11-11) Love, Laughter and Truth
-*** DONE (2003-05-19) Shock and Awe
-*** DONE 1989_ I'm Sorry Folks_ Chicago, IL, USA
-*** DONE Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
-*** DONE Filling Up the Hump
-*** DONE Hicksville
-*** DONE Live in Brighton
-*** DONE The Letterman Performances
+*  Bill Hammack
+ - [ ] Eight Amazing Engineering Stories
+* Bill Hicks                                                   :humor:spoken:
+ - [X] (1990) Dangerous
+ - [X] (1992) Relentless
+ - [X] (1993) Revelations
+ - [X] (1997-02-25) Arizona Bay
+ - [X] (1997-02-25) Rant in E-Minor
+ - [X] (2002-11-11) Flying Saucer Tour, Volume 1
+ - [X] (2002-11-11) Love, Laughter and Truth
+ - [X] (2003-05-19) Shock and Awe
+ - [X] 1989_ I'm Sorry Folks_ Chicago, IL, USA
+ - [X] Dark Poet_ 1992-03-15_ Yuk Yuk's, Toronto
+ - [X] Filling Up the Hump
+ - [X] Hicksville
+ - [X] Live in Brighton
+ - [X] The Letterman Performances
 * Bradley M. Kuhn                                               :free:pgnome:
-* Carl Sagan
-** TODO The Demon Haunted World
+* Carl Sagan                                                            :sci:
+ - [ ] Billions and Billions
+ - [ ] Cosmos
+ - [ ] Contact
+ - [ ] The Dragons of Eden
+ - [ ] The Demon Haunted World: Science has a Candle in the Dark
 * Dan Kaminsky
 * Daniel Dennett                                                        :mjd:
-** TODO Darwin's Dangerous Idea
-* DONE Daniel Tosh                                              :voice:humor:
+ - [ ] Darwin's Dangerous Idea
+* Daniel Tosh                                                   :voice:humor:
 ** DONE (2005-11-08) True Stories I Made Up
 ** DONE (2011-03-08) Happy Thoughts
 * Dave Winer
    :PROPERTIES:
    :url:      http://scripting.com
    :END:
-* GONE George Carlin                                            :voice:humor:
+* George Carlin                                                 :voice:humor:
    :PROPERTIES:
    :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
    :END:
@@ -67,22 +71,20 @@
    :url:      http://hixie.ch
    :END:
 * James Kakalios                                                  :sci:humor:
-** The Amazing Story of Quantum Mechanics
-** The Physics of Super Heroes
+ - [ ] The Amazing Story of Quantum Mechanics
+ - [ ] The Physics of Super Heroes
 * Jason Kottke
 * Jason Scott                                                      :free:net:
 * Jiddu Krishnamurti
-** Think on These Things                                               :tunx:
+ - [ ] Think on These Things                                                :tunx:
 * John Ralston Saul
-** TODO The Collapse of Globalism and the Reinvention of the World     :econ:
-* Malcolm Gladwell
-** TODO The Tipping Point                                                :jo:
-* GONE Mark Pilgrim                                    :free:code:net:whatwg:
+ - [ ] The Collapse of Globalism and the Reinvention of the World     :econ:
+* Mark Pilgrim                                    :free:code:net:whatwg:
    :PROPERTIES:
    :url:      http://firehose.diveintomark.org
    :END:
 * Neil deGrasse Tyson                                             :sci:humor:
-** TODO The Pluto Files
+ - [ ] The Pluto Files
 * Richard Dawkins
 ** TODO (1986) The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe without Design
 ** TODO The God Delusion
@@ -106,4 +108,4 @@
 *** TODO Tào lao gà 2
 *** DONE Vẹo rồng
 *** DONE Ông ve chai
-* TODO As a man thinketh                                                 :jo:
+* As a man thinketh                                                      :jo:

@@ -1,4 +1,4 @@
--*- mode: org -*-
+# -*- mode: org -*-
 * DONE Black Mesa Source
    :PROPERTIES:
    :btih:     A9B546B8141C210870CE09C43038A6AEE9E0157F
@@ -46,14 +46,14 @@
     :PROPERTIES:
     :btih:     3B0145A3290093165340EC9E875BAFB48EACDAC3
     :END:
- - [X] Episode 1
- - [X] Episode 2
- - [X] Episode 3
- - [X] Episode 4
- - [X] Episode 5
+ 1. [X] Episode 1
+ 2. [X] Episode 2
+ 3. [X] Episode 3
+ 4. [X] Episode 4
+ 5. [X] Episode 5
 ** TODO Season 2
- - [X] Episode 1
- - [ ] Episode 2
- - [ ] Episode 3
- - [ ] Episode 4
- - [ ] Episode 5
+ 1. [X] Episode 1
+ 2. [ ] Episode 2
+ 3. [ ] Episode 3
+ 4. [ ] Episode 4
+ 5. [ ] Episode 5
