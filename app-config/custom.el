@@ -88,5 +88,3 @@
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (add-hook 'post-command-hook
           '(lambda () (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007"))))
-
-(erc :server "irc.freenode.net")
