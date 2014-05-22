@@ -83,9 +83,9 @@
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
 (if (eq system-type 'windows-nt)
-    (custom-set-variables
-     '(sql-mysql-options (quote ("mysql")))
-     '(sql-mysql-program "fakecygpty")))
+    (progn
+     (setq sql-mysql-options (quote ("mysql")))
+     (setq sql-mysql-program "fakecygpty")))
 
 (remove-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
 (add-hook 'post-command-hook
