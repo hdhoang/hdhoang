@@ -142,7 +142,7 @@ EOS
 
 set passkeys+=tumblr.com:jk
 
-style -n "link colors" * :visited { color: #859900 !important }
+style -n "visited" flecu.zahe.me,dota2lounge.com :visited { color: #859900 !important }
 style -n "gif decor" * <<EOS
 :-moz-any(
   [src*="imgur"]
