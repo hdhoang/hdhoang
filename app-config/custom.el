@@ -27,6 +27,7 @@
  '(prelude-flyspell nil)
  '(prelude-guru nil)
  '(proced-filter (quote all))
+ '(proced-tree-flag t)
  '(sentence-end-double-space nil)
  '(server-mode t)
  '(solarized-use-more-italic t)
