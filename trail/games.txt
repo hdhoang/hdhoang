@@ -40,6 +40,7 @@
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
+* TODO Psi-Ops: The Mindgate Conspiracy
 * TODO Sleeping Dogs
 * The Walking Dead                                                     :FAV:
 ** DONE Season 1
@@ -52,7 +53,7 @@
  4. [X] Episode 4
  5. [X] Episode 5
 ** TODO Season 2
- 1. [X] Episode 1
+ 1. [X] Episode 1: All That Remains
  2. [ ] Episode 2
  3. [ ] Episode 3
  4. [ ] Episode 4

@@ -1,6 +1,6 @@
 #    -*- mode: org -*-
 * Benjamin Franklin                                                     :mjd:
-*  Bill Hammack
+* Bill Hammack
  - [ ] Eight Amazing Engineering Stories
 * Bill Hicks                                                   :humor:spoken:
  - [X] (1990) Dangerous
@@ -70,6 +70,8 @@
    :PROPERTIES:
    :url:      http://hixie.ch
    :END:
+* James Cambias
+ - [ ] A Darkling Sea
 * James Kakalios                                                  :sci:humor:
  - [ ] The Amazing Story of Quantum Mechanics
  - [ ] The Physics of Super Heroes
