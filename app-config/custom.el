@@ -2,6 +2,8 @@
 ; $h/emacs-prelude/personal/custom.el
 (prelude-require-package 'evil)
 (evil-mode 1)
+(define-key evil-normal-state-map (kbd "<SPC>") 'evil-scroll-down)
+(define-key evil-normal-state-map (kbd "S-<SPC>") 'evil-scroll-up)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
