@@ -20,4 +20,3 @@ ignore = Name *-shm
 
 root = ssh://hdhoang@kub.zahe.me//mnt/marbi
 sshargs = -i /cygdrive/h/secrets/kub
-fat = true
