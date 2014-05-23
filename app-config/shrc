@@ -28,8 +28,8 @@ alias x=parallel
 alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
-    $v/youtube-dl || \
-    $v/youtube-dl --batch-file dq.txt --output "%(upload_date)s-%(title)s-%(id)s.%(ext)s" || \
+    $v/_youtube-dl || \
+    $v/_youtube-dl --batch-file _dq.txt --output "%(upload_date)s-%(title)s-%(id)s.%(ext)s" || \
     wget --continue
 }
 alias nn='nice ionice -c 3 '
