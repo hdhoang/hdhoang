@@ -1,68 +1,57 @@
 #    -*- mode: org -*-
-
-
-Archived entries from file /home/hdhoang/Public/hdhoang/trail/corps.txt
-
-
-* Technical                                                             :FAV:
-  :PROPERTIES:
-  :ARCHIVE_TIME: 2014-05-06 Tue 11:16
-  :ARCHIVE_FILE: ~/Public/hdhoang/trail/corps.txt
-  :ARCHIVE_CATEGORY: corps
-  :END:
-** #jbopre
+* #jbopre
    :PROPERTIES:
    :url:      irc://chat.freenode.net/#jbopre
    :END:
-*** Broca
-*** clsn                                                                 :py:
+** Broca
+** clsn                                                                 :py:
     :PROPERTIES:
     :url:      http://web.meson.org
     :END:
-*** jcowan                                                             :pint:
+** jcowan                                                             :pint:
     :PROPERTIES:
     :url:      http://home.ccil.org/~cowan/
     :END:
-*** rlpowell
-*** Tene
-*** treed
-** GONE Alastair Rankine
+** rlpowell
+** Tene
+** treed
+* Alastair Rankine
    :PROPERTIES:
    :url:      http://girtby.net
    :END:
-** Better Explained
+* Better Explained
    :PROPERTIES:
    :url:      http://betterexplained.com
    :END:
-** cks                                                          :psysad:herd:
+* cks                                                          :psysad:herd:
    :PROPERTIES:
    :url:      http://utcc.utoronto.ca/~cks/
    :END:
-** Håkon Wium Lie                                                       :net:
-*** CSS: Design for the Web
-** Kernel Planet                                                         :pk:
-** Lennart Poettering
+* Håkon Wium Lie                                                       :net:
+** CSS: Design for the Web
+* Kernel Planet                                                         :pk:
+* Lennart Poettering
    :PROPERTIES:
    :url:      http://0pointer.de
    :nickname: mezcalero
    :END:
-** Leon Bambrick
+* Leon Bambrick
    :PROPERTIES:
    :url:      http://secretgeek.net
    :END:
-** Little Big Details
-** Mark Jason Domius
+* Little Big Details
+* Mark Jason Domius
    :PROPERTIES:
    :url:      http://blog.plover.com
    :nickname: mjd
    :END:
-** Planet Debian                                                       :pdeb:
-** Planet Emacsen                                                    :pemacs:
-** Planet GNOME                                                      :pgnome:
-** Planet KDE                                                          :pkde:
-** Planet Mozilla                                                      :pmoz:
-** The Endeavour
+* Planet Debian                                                       :pdeb:
+* Planet Emacsen                                                    :pemacs:
+* Planet GNOME                                                      :pgnome:
+* Planet KDE                                                          :pkde:
+* Planet Mozilla                                                      :pmoz:
+* The Endeavour
    :PROPERTIES:
    :url:      http://johndcook.com
    :END:
-** xorl %eax, %eax
+* xorl %eax, %eax

@@ -1,0 +1,27 @@
+# -*- mode: org -*-
+* Cleaning old items in selfoss
+  :PROPERTIES:
+  :header-args:sql: :engine mysql :dbhost 192.168.1.54 :dbuser selfoss :database selfoss
+  :END:
+Some feeds come with all items since the beginning, and every 30 days, selfoss drops them from the database and treat the feed as totally new. This mark all but the 5 newest items in each feed as read.
+ 1. Create procedures to mark items matching a link pattern as read, and mark the top 5 items as unread. Newer items come at the beginning of the feed, and thus has lower id in database
+    #+begin_src sql
+        create procedure read_all (pattern char(30))
+               update items set unread = 0 where link like concat('%',pattern,'%');
+        create procedure mark_5_unread (pattern char(30))
+               update items set unread = 1 where link like concat('%',pattern,'%')
+                        limit 5;
+    #+end_src
+ 2. Mark read and unread items with these patterns
+    #+begin_src sql
+        call read_all('http://drawingboardcomic.com');
+        call mark_5_unread('http://drawingboardcomic.com');
+        call read_all('http://oglaf.com/');
+        call mark_5_unread('http://oglaf.com/');
+        call read_all('giantitp.com/comics/oots');
+        call mark_5_unread('giantitp.com/comics/oots');
+        call read_all('/satwcomic/');
+        call mark_5_unread('/satwcomic/');
+        call read_all('/stupidfox/');
+        call mark_5_unread('/stupidfox/');
+    #+end_src
