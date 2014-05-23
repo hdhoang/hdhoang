@@ -23,6 +23,7 @@
  '(indicate-empty-lines t)
  '(initial-buffer-choice (quote remember-notes))
  '(org-M-RET-may-split-line nil)
+ '(org-babel-load-languages (quote ((emacs-lisp . t) (sql . t))))
  '(org-log-done nil)
  '(org-use-speed-commands t)
  '(pkgbuild-user-mail-address "arch@zahe.me")
