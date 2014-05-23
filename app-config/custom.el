@@ -77,10 +77,8 @@
 
 (require 'prelude-ido)
 
-(if (not window-system)
-    (disable-theme 'zenburn)
-  (prelude-require-package 'solarized-theme)
-  (load-theme 'solarized-light t))
+(prelude-require-package 'solarized-theme)
+(load-theme 'solarized-light t)
 (global-hl-line-mode -1)
 
 (if (eq window-system-version 6)
