@@ -5,9 +5,9 @@ confirmbigdel = true
 root = h:\
 force = h:\
 path = Dropbox
-path = secrets
 path = Music
 path = Pictures
+path = secrets
 
 ignore = Name Thumbs.db
 ignore = Name Desktop.ini
