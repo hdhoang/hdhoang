@@ -44,8 +44,6 @@
       (sql-user "selfoss")
       (sql-database "selfoss")
       (sql-server "192.168.1.54")))))
- '(sql-mysql-options (quote ("mysql")))
- '(sql-mysql-program "fakecygpty")
  '(tool-bar-mode t)
  '(user-full-name "Hоàng Đức Hiếu")
  '(vc-follow-symlinks t)
