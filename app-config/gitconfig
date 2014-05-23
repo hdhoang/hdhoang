@@ -31,10 +31,3 @@
     d = diff --word-diff=porcelain
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --all
-
-[filter "xmllint"]
-    clean = xmllint --format %f
-
-[filter "registry"]
-    clean  = iconv -f utf-16le -t utf-8
-    smudge = iconv -f utf-8 -t utf-16le

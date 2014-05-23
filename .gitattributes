@@ -1,2 +1,0 @@
-*.xml   filter=xmllint
-*.reg   filter=registry
