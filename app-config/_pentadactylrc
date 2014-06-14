@@ -115,6 +115,7 @@ map <C-S-s> -ex set! accessibility.browsewithcaret_shortcut.enabled=false
    \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 
+" Set to 1 to proxy through tor network
 map -count <C-A-p> -ex set! network.proxy.type=<count>
 
 set pk+=smbc-comics.com:x
