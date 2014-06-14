@@ -72,7 +72,7 @@
  3. [X] <2006> If I Told You
 * Apocalyptica                                                   :FAV:string:
 * Aqua                                                                 :1fav:
-* TODO Arch Enemy
+* Arch Enemy
  1. [ ] <2014-06-04 Wed> War Eternal
 * Arcana
    :PROPERTIES:
@@ -87,6 +87,7 @@
  1. [ ] <2013-03-30> The Mystery of Time
 * Avenged Sevenfold                                                :riff:FAV:
  1. [X] <2013-08-23> Hail to the King
+ 2. [ ] <2014-06-03> X-Posed
 * Avril Lavigne                                                         :FAV:
  1. [ ] <2013-11-05> Avril Lavigne
 * Ayreon
@@ -144,6 +145,7 @@
 * Blue Stahli
 * Blut aus Nord
  1. [ ] <2012-09-21> 777 - Cosmosophy
+ 2. [ ] <2014-06-20> Triunity
 * Bob Marley
 * Bobaflex
  1. [X] <2013-09-10> Chalatan's Web
@@ -223,7 +225,10 @@
  59. [ ] <2014-04-30> Outpost
  60. [ ] <2014-05-13> Footsteps
  61. [ ] <2014-05-20 Tue> Citacis
- 62. [ ] <2014-06-01> The Spirit Winds
+ 62. [ ] <2014-05-23 Fri> The Miskatonic Scale
+ 63. [ ] <2014-05-28 Wed> Grand Gallery
+ 64. [ ] <2014-05-28 Wed> Outlined for Citacis
+ 65. [ ] <2014-06-01> The Spirit Winds
 ** with Alix Lambert and Travis Dickerson
  1. [X] <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -269,6 +274,7 @@
 * Burzum
  1. [X] <2012> Umskiptar
  2. [ ] <2013-05-27> Sôl austan, Mâni vestan
+ 3. [ ] <2014-06-02 Mon> The Ways of Yore
 * Butterfly Tea                                                      :lastfm:
 * Bức Tường                                                             :FAV:
  1. [ ] Ngày Khác
@@ -366,7 +372,6 @@
    :PROPERTIES:
    :mbid:     http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203
    :END:
-* DragonForce                                                            :jo:
 * Dream Theater
  1. [X] <2013-09-18> Dream Theater
 * Dry Kill Logic                                                       :1fav:
@@ -841,8 +846,9 @@
      :PROPERTIES:
      :mbid:     http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5
      :END:
- 1. [ ] <2012-09-04> Act 1
- 1. [ ] <2013-08-30> Colours in the Dark
+ 2. [ ] <2012-09-04> Act 1
+ 3. [ ] <2013-08-30> Colours in the Dark
+ 4. [ ] <2014-06-10 Tue> Beauty & The Beat
 * Nirvana
 * No Doubt                                                                :f:
  1. [ ] <2012-09-25> Push and Shove
@@ -1067,9 +1073,7 @@
    :mbid:     http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b
    :END:
  1. [X] <2011> The Truth Is...
-    :PROPERTIES:
-    :mbid:     http://musicbrainz.org/release-group/3d667c9b-133a-4f33-a7ba-dc3a92c21dd2
-    :END:
+ 2. [ ] <2014-07-24 Thu> Savages
 * ThePlasmas                                               :riff:game:lastfm:
  1. [X] <2008> Extreme NES Terror
  2. [X] <2008> Noentiendo
@@ -1093,6 +1097,9 @@
  1. [X] <2013> SPLIT
 ** as The Missing Plasma
  1. [X] <2010> Not a Game Anymore
+    :PROPERTIES:
+    :mbid:     http://musicbrainz.org/release-group/3d667c9b-133a-4f33-a7ba-dc3a92c21dd2
+    :END:
 * Therion
  1. [X] <1991> Of Darkness...
  2. [X] <1992> Beyond Sanctorum
@@ -1141,6 +1148,7 @@
  4. [X] <2003-02-23> 加爾基 精液 栗ノ花 <Kalk Samen Chestnut Flower>
  5. [X] <2007-02-21> 平成風俗 <Japanese Manners>
  6. [X] <2009-06-24> 三文ゴシップ <Superficial Gossip>
+ 7. [ ] <2014-05-27> 逆輸入 〜港湾局〜
 * Tom Lehrer                                                       :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
@@ -1229,13 +1237,14 @@
  1. [X] <2012-10-19> Time I
 * Within Temptation                                                    :jo:f:
  1. [X] <1997-04-06> Enter
- 1. [X] <2000-12-04> Mother Earth
- 1. [X] <2004-11-15> The Silent Force
- 1. [X] <2007-03-20> The Heart of Everything
- 1. [X] <2008> Destroyed
- 1. [X] <2009> The Rarest Songs                                       :1fav:
- 1. [X] <2011-03-29> The Unforgiving
- 1. [ ] <2014-01-31> Hydra
+ 2. [X] <2000-12-04> Mother Earth
+ 3. [X] <2004-11-15> The Silent Force
+ 4. [X] <2007-03-20> The Heart of Everything
+ 5. [X] <2008> Destroyed
+ 6. [X] <2009> The Rarest Songs
+ 7. [X] <2011-03-29> The Unforgiving
+ 8. [ ] <2013-04-19 Fri> The Q-music Sessions
+ 9. [ ] <2014-02-03 Mon> Hydra
 * Wolfgang Amadeus Mozart
  1. [X] Requiem in D minor K626, Karajan 1962                         :1fav:
 * X/X JAPAN                                                         :1fav:ja:
