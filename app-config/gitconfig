@@ -5,21 +5,9 @@
     email = hdhoang@zahe.me
 [color]
     ui = auto
-[pack]
-    threads = 0
 [core]
     eol = lf
     whitespace = trailing-space,space-before-tab
-[diff]
-    renamelimit = 0
-    renames = copies
-    mnemonicprefix = true
-[branch]
-    autosetuprebase = always
-[rebase]
-    autosquash = true
-[push]
-    default = nothing
 
 [alias]
     pr = pull --rebase
@@ -29,5 +17,3 @@
     ap = add -p
     c = commit -v
     d = diff --word-diff=porcelain
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --all
