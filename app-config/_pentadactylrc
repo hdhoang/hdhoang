@@ -104,11 +104,11 @@ map <C-S-s> -ex set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.aggressive=true
    \ set! network.http.pipelining.ssl=true
-   \ set! network.http.proxy.socks=kub.zahe.me
-   \ set! network.http.proxy.socks_port=9050
-   \ set! network.http.proxy.socks_remote_dns=true
    \ set! network.http.spdy.enabled.http2draft=true
    \ set! network.protocol-handler.expose.magnet=false
+   \ set! network.proxy.socks=kub.zahe.me
+   \ set! network.proxy.socks_port=9050
+   \ set! network.proxy.socks_remote_dns=true
    \ set! services.sync.engine.prefs=false
    \ set! toolkit.telemetry.enabled=true
    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
