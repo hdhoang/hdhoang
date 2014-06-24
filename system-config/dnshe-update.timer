@@ -1,5 +1,5 @@
 [Timer]
-OnCalendar=hourly
+OnCalendar=daily
 
 [Install]
 WantedBy=multi-user.target
