@@ -24,11 +24,8 @@
    :btih:     95fbac135060d6f82caa5a5d8990a10ab8babbad
    :END:
 * TODO Damages
-* DONE Sangen om den røde rubin (1970)
-   :PROPERTIES:
-   :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
-   :END:
 * DONE Dark City (1998)                                           :FAV:f:sci:
+* TODO Did You Hear About The Morgans?
 * DONE Donnie Darko (2001)                                              :FAV:
 * TODO Duck Soup
 * DONE Duplicity (2009)                                                 :FAV:
@@ -63,6 +60,7 @@
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
 * TODO Paranorman (2012)
+* TODO Passengers
 * Pixar
  - [ ] Monster Inc
 * TODO Quentin Tarantino
@@ -72,6 +70,10 @@
  - [X] Reservoir Dogs
 * TODO Roseanna's Grave
 * TODO Samurai Champloo                                          :jo:ja:toon:
+* DONE Sangen om den røde rubin (1970)
+   :PROPERTIES:
+   :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
+   :END:
 * TODO Seven Psychopaths (2012)                                          :jo:
 * DONE Strange Days (1995)                                              :FAV:
    :PROPERTIES:
@@ -97,6 +99,7 @@
 * TODO To Rome with Love
 * TODO Tombstone (1993)
 * TODO Tucker and Dave vs Evil                                           :jo:
+* DONE Warm Bodies
 * DONE Zardoz (1974)                                                    :FAV:
 * Zodiac                                                                 :ns:
  - [X] Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:

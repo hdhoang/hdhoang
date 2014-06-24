@@ -633,7 +633,7 @@
 * Linkin Park                                                           :FAV:
  1. [X] <2012-06-26> Living Things
  2. [X] <2013-10-29> Recharged
- 3. [ ] <2014-06-17 Tue> The Hunting Party
+ 3. [ ] <2014-06-13 Fri> The Hunting Party
 * Lionel Richie
 * Louis Armstrong
 * Low Roar                                                               :jo:
@@ -1248,6 +1248,9 @@
 * Wolfgang Amadeus Mozart
  1. [X] Requiem in D minor K626, Karajan 1962                         :1fav:
 * X/X JAPAN                                                         :1fav:ja:
+* Yanni
+ 1. [ ] <2010-10-19 Tue> Mexicanisimo
+ 2. [ ] <2011-02-18 Fri> Truth of Touch
 * Yngwie J. Malmsteen                                           :inst:guitar:
  1. [ ] <2012-12-05> Spellbound
 * Zack Browning
