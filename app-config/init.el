@@ -2,7 +2,7 @@
 ; ~/.emacs
 (defun ensure-package (package)
   (unless (package-installed-p package)
-    (package-install)))
+    (package-install package)))
 (package-initialize)
 
 (ensure-package 'evil)
