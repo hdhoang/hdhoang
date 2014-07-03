@@ -65,7 +65,7 @@
  '(erc-autojoin-channels-alist (quote (("freenode" "#lojban" "#jbopre" "#vnluser"))))
  '(erc-hide-list (quote ("JOIN" "PART" "QUIT")))
  '(erc-prompt-for-password nil)
- '(explicit-shell-file-name "/bin/zsh")
+ '(explicit-shell-file-name "zsh")
  '(frame-title-format "%f" t)
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
