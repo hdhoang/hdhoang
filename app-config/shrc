@@ -1,5 +1,5 @@
 # -*- mode: sh -*-
-# ~/.zshrc.local ~/.bash_login
+# ~/.zshrc ~/.bash_login
 
 # places
 if [[ $(uname -o) == Cygwin ]]; then
@@ -90,29 +90,21 @@ if [ -n "$BASH" ]; then
 fi
 
 if [ -n "$ZSH_NAME" ]; then
-# assuming grml-zsh-config is used
     setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
     setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
     unsetopt AUTO_NAME_DIRS bash_auto_list
     zstyle ':vcs_info:*' enable git
 
-    WORDCHARS=''
-
-    add-zsh-hook -d precmd prompt_grml_precmd
-    EXITCODE="%(?..${fg[red]}%? )"
-    PROMPT="%m ${fg[magenta]}%~ ${fg[cyan]}%w ${EXITCODE}
-%# ${NO_COLOR}"
+    PROMPT="%m %~ %w %(?..%? )
+%# "
 
     setopt dvorak
-    bindkey -r ",."
-    bindkey -r "^ed"
     bindkey "^[h" slash-backward-kill-word
 fi
 
 if [[ $(uname -o) == Cygwin ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
-    export EDITOR=emacsclientw
     alias nn='nice '
 fi
 
