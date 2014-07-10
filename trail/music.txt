@@ -221,9 +221,9 @@
  55. [X] <2014-03-27> The Frankensteins Monsters Blinds
  56. [X] <2014-04-18> Cycle
  57. [X] <2014-04-22> Claymation Courtyard
- 58. [ ] <2014-04-28> Night Gallery
- 59. [ ] <2014-04-30> Outpost
- 60. [ ] <2014-05-13> Footsteps
+ 58. [X] <2014-04-28> Night Gallery
+ 59. [X] <2014-04-30> Outpost
+ 60. [X] <2014-05-13> Footsteps
  61. [ ] <2014-05-20 Tue> Citacis
  62. [ ] <2014-05-23 Fri> The Miskatonic Scale
  63. [ ] <2014-05-28 Wed> Grand Gallery
@@ -1236,16 +1236,6 @@
     :mbid:     http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a
     :END:
  1. [X] <2012-10-19> Time I
-* Within Temptation                                                    :jo:f:
- 1. [X] <1997-04-06> Enter
- 2. [X] <2000-12-04> Mother Earth
- 3. [X] <2004-11-15> The Silent Force
- 4. [X] <2007-03-20> The Heart of Everything
- 5. [X] <2008> Destroyed
- 6. [X] <2009> The Rarest Songs
- 7. [X] <2011-03-29> The Unforgiving
- 8. [ ] <2013-04-19 Fri> The Q-music Sessions
- 9. [ ] <2014-02-03 Mon> Hydra
 * Wolfgang Amadeus Mozart
  1. [X] Requiem in D minor K626, Karajan 1962                         :1fav:
 * X/X JAPAN                                                         :1fav:ja:
