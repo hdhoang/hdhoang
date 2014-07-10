@@ -129,7 +129,7 @@ autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', do
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 
-set passkeys+=flecu.zahe.me:'vojknp<Left><Right>smrUS'
+set passkeys+=flecu.zahe.me:'vnpsUS'
 style -n "selfoss" flecu.zahe.me <<EOS
 .entry-content { -moz-column-count: 1 !important }
 EOS
