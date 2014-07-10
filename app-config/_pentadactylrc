@@ -90,9 +90,6 @@ map <C-S-s> -ex set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
    \ set! extensions.https_everywhere._observatory.priv_dns=true
-   \ extadd https://adblockplus.org/devbuilds/adblockplus/00latest.xpi
-   \ set! extensions.adblockplus.detachsidebar=true
-   \ set! services.sync.engine.adblockplus=true
    \ set! plugins.hide_infobar_for_missing_plugin=true
    \ set! app.update.enabled=false
    \ set! browser.download.manager.alertOnEXEOpen=false
