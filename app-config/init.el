@@ -5,14 +5,26 @@
     (package-install package)))
 (package-initialize)
 
+(ensure-package 'smex)
 (ensure-package 'evil)
 (evil-mode 1)
-(define-key evil-normal-state-map (kbd "<SPC>") 'evil-scroll-down)
-(define-key evil-normal-state-map (kbd "S-<SPC>") 'evil-scroll-up)
+(evil-define-key 'normal global-map
+  ":" 'smex
+  (kbd "C-y") 'yank
+  (kbd "<SPC>") 'evil-scroll-down
+  (kbd "S-<SPC>") 'evil-scroll-up
+)
+(evil-define-key 'insert global-map
+  (kbd "M-x") 'smex
+  (kbd "C-y") 'yank
+  (kbd "C-n") 'next-line
+  (kbd "C-p") 'previous-line
+  (kbd "C-v") 'evil-scroll-down
+  (kbd "M-v") 'evil-scroll-up
+)
+(evil-set-initial-state 'magit-log-edit-mode 'insert)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
-(ensure-package 'smex)
-(global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 (global-set-key (kbd "C-x M-t") 'term)
