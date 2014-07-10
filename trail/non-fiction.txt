@@ -1,4 +1,6 @@
 #    -*- mode: org -*-
+* Barbara Minto
+** The Pyramid Principle
 * Benjamin Franklin                                                     :mjd:
 * Bill Hammack
  - [ ] Eight Amazing Engineering Stories
