@@ -8,31 +8,35 @@
 (ensure-package 'smex)
 (ensure-package 'evil)
 (evil-mode 1)
-(evil-define-key 'normal global-map
-  ":" 'smex
-  (kbd "C-y") 'yank
-  (kbd "<SPC>") 'evil-scroll-down
-  (kbd "S-<SPC>") 'evil-scroll-up
-)
-(evil-define-key 'insert global-map
-  (kbd "M-x") 'smex
-  (kbd "C-y") 'yank
-  (kbd "C-n") 'next-line
-  (kbd "C-p") 'previous-line
-  (kbd "C-v") 'evil-scroll-down
-  (kbd "M-v") 'evil-scroll-up
-)
+(dolist (state '(normal motion))
+  (evil-define-key state global-map
+    ":" 'smex
+    (kbd "<SPC>") 'evil-scroll-down
+    (kbd "S-<SPC>") 'evil-scroll-up
+    ))
+(dolist (state '(insert motion normal))
+  (evil-define-key state global-map
+    (kbd "C-d") 'delete-char
+    (kbd "C-y") 'evil-paste-after
+    (kbd "M-y") 'evil-paste-pop
+    (kbd "M-Y") 'evil-paste-pop-next
+    (kbd "C-e") 'end-of-line
+    (kbd "C-n") 'next-line
+    (kbd "C-p") 'previous-line
+    ))
 (evil-set-initial-state 'magit-log-edit-mode 'insert)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 (global-set-key (kbd "C-x M-t") 'term)
 (global-set-key (kbd "C-x M-m") 'shell)
 (global-set-key (kbd "C-x p") 'proced)
 (global-set-key (kbd "C-x g") 'magit-status)
-(global-set-key (kbd "C-c <up>") 'windmove-up)
-(global-set-key (kbd "C-c <down>") 'windmove-down)
+(global-set-key (kbd "C-v") 'evil-scroll-down)
+(global-set-key (kbd "M-v") 'evil-scroll-up)
 
 ;; Major modes
 (autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
