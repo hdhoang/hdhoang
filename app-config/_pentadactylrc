@@ -62,7 +62,7 @@ map S -ex bmark -keyword ac -t config about:config
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
-   \ bmark -keyword fb -t facebook https://facebook.com/ -tags news
+   \ bmark -keyword fb -t facebook https://fb.me/%s -tags news
 map <C-S-s> -ex set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
