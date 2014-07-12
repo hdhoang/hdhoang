@@ -66,7 +66,7 @@
  1. [ ] <2012-11-23> Fear of a Unique Identity
 * Antonín Dvorák
  1. [X] The Masterworks
-* Aoife Ní Fhearraigh
+* Aoife Ní Fhearraigh							  :f:
  1. [X] <1997> Aoife
  2. [X] <2003> The Turning of the Tide
  3. [X] <2006> If I Told You
@@ -103,7 +103,7 @@
 * Black Sabbath                                                         :FAV:
  1. [X] <2013-06-10> 13
 ** solo Ozzy Osbourne
-* Bliss<This>
+* Bliss(This)
 * Blizzard
  1. [X] <1996> Diablo
     :PROPERTIES:
