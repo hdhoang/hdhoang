@@ -1,5 +1,4 @@
-; -*- mode: lisp -*-
-; ~/.emacs
+; ~/.emacs.d/init.el
 (defun ensure-package (package)
   (unless (package-installed-p package)
     (package-install package)))
@@ -39,30 +38,30 @@
 (global-set-key (kbd "M-v") 'evil-scroll-up)
 
 ;; Major modes
-(autoload 'pkgbuild-mode "pkgbuild-mode" "" t)
-(add-to-list 'auto-mode-alist '("PKGBUILD" . pkgbuild-mode))
-(add-to-list 'auto-mode-alist '("\\.install\\'" . sh-mode))
-(add-to-list 'auto-mode-alist '("\\.do\\'" . sh-mode))
-(mapcar (lambda (ext)
-          (add-to-list 'auto-mode-alist
-                       (cons (concat "\\." ext "\\'") 'conf-windows-mode)))
-        '("service" "socket" "desktop" "directory"))
+(dolist (assoc '(("PKGBUILD" . pkgbuild-mode)
+		 ("\\.install\\'" . sh-mode)
+		 ("\\.do\\'" . sh-mode)
+		 ("\\.service\\'" . conf-windows-mode)
+		 ("\\.socket\\'" . conf-windows-mode)
+		 ("\\.timer\\'" . conf-windows-mode)
+		 ("\\.directory\\'" . conf-windows-mode)
+		 ))
+  (add-to-list 'auto-mode-alist assoc))
 (add-hook 'conf-windows-mode-hook
           '(lambda ()
              (setq comment-start "#")
              (glasses-mode t)))
+(if (eq system-type 'windows-nt)
+    (setq sql-mysql-options '("mysql")
+	  sql-mysql-program "fakecygpty"
+	  ))
 
-(ido-mode 1)
-
+;; Appearance
 (ensure-package 'color-theme-solarized)
 (load-theme 'solarized-light t)
 
 (if (eq window-system-version 6)
     (set-default-font "Consolas-11"))
-(if (eq system-type 'windows-nt)
-    (progn
-     (setq sql-mysql-options (quote ("mysql")))
-     (setq sql-mysql-program "fakecygpty")))
 
 (add-hook 'post-command-hook
           '(lambda ()
@@ -85,6 +84,7 @@
  '(erc-prompt-for-password nil)
  '(explicit-shell-file-name "zsh")
  '(frame-title-format "%f" t)
+ '(ido-mode (quote both) nil (ido))
  '(ido-use-virtual-buffers t)
  '(indicate-empty-lines t)
  '(initial-buffer-choice (quote remember-notes))
@@ -114,6 +114,7 @@
       (sql-database "selfoss")
       (sql-server "192.168.1.54")))))
  '(user-full-name "Hоàng Đức Hiếu")
+ '(user-mail-address "hdhoang@zahe.me")
  '(vc-follow-symlinks t)
  '(whitespace-style (quote (face tabs empty trailing)))
  '(windmove-wrap-around t)
