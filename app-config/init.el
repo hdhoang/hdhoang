@@ -102,6 +102,7 @@
  '(proced-tree-flag t)
  '(sentence-end-double-space nil)
  '(server-mode t)
+ '(show-paren-mode t)
  '(solarized-use-more-italic t)
  '(solarized-use-variable-pitch nil)
  '(sql-connection-alist
