@@ -124,8 +124,8 @@
 ** Shell
    #+begin_src emacs-lisp
      (defun shell--prev-buffer (func name)
-       "Switch back to the previous buffer if already in the called shell"
-       (if (member (buffer-name) '("*shell*" name))
+       "Switch back to the previous buffer if already in shell"
+       (if (string= (buffer-name) "*shell*")
          (switch-to-prev-buffer)
          (apply func name)))
      (advice-add 'shell :around #'shell--prev-buffer)
