@@ -123,12 +123,11 @@
    #+end_src
 ** Shell
    #+begin_src emacs-lisp
-     (defun shell--prev-buffer (func name)
+     (defadvice shell (around prev-buffer activate)
        "Switch back to the previous buffer if already in shell"
        (if (string= (buffer-name) "*shell*")
          (switch-to-prev-buffer)
-         (apply func name)))
-     (advice-add 'shell :around #'shell--prev-buffer)
+         ad-do-it))
      (setq shell-file-name "zsh")
      (global-set-key (kbd "C-x M-m") 'shell)
      (global-set-key (kbd "C-x M-t") 'term)
