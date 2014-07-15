@@ -1,0 +1,172 @@
+#+title: emacs customization
+#+startup: showall
+* Who am I?
+  #+begin_src emacs-lisp
+    (setq user-full-name "Hоàng Đức Hiếu"
+          user-mail-address "hdhoang@zahe.me"
+          erc-nick "hdhoang"
+          pkgbuild-user-mail-address "arch@zahe.me")
+  #+end_src
+* Start up
+  #+begin_src emacs-lisp
+    (server-mode t)
+    (desktop-read)
+    (desktop-save-mode t)
+    (setq
+     auto-save-default nil
+     make-backup-files nil
+     desktop-load-locked-desktop t ;  Load locked desktop from crashed emacs
+     inhibit-startup-screen t)
+  #+end_src
+  #+begin_src emacs-lisp
+    (add-to-list 'package-archives
+                 '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (defun ensure-package (package)
+      "Install PACKAGE if necessary"
+      (unless (package-installed-p package)
+        (package-install package)))
+  #+end_src
+* Input
+  #+begin_src emacs-lisp
+    (set-language-environment "UTF-8")
+    (setq default-input-method "vietnamese-telex")
+    (global-set-key (kbd "C-\\") 'toggle-input-method)
+  #+end_src
+** Evil
+   #+begin_src emacs-lisp
+     (ensure-package 'evil)
+     (evil-mode t)
+   #+end_src
+   Mimic [[file+emacs:_pentadactylrc][dactyl]] scrolling
+   #+begin_src emacs-lisp
+     (dolist (state '(normal motion))
+       (evil-define-key state global-map
+         (kbd "<SPC>") 'evil-scroll-down
+         (kbd "S-<SPC>") 'evil-scroll-up))
+     (global-set-key (kbd "C-v") 'evil-scroll-down)
+     (global-set-key (kbd "M-v") 'evil-scroll-up)
+   #+end_src
+   Restore some emacs bindings
+   #+begin_src emacs-lisp
+     (dolist (state '(insert motion normal))
+       (evil-define-key state global-map
+         (kbd "C-t") 'transpose-chars
+         (kbd "C-d") 'delete-char
+         (kbd "C-k") 'kill-line
+         (kbd "C-y") 'evil-paste-after
+         (kbd "M-y") 'evil-paste-pop (kbd "M-Y") 'evil-paste-pop-next
+         (kbd "C-e") 'end-of-line
+         (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
+         (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
+         (kbd "C-r") 'isearch-backward))
+   #+end_src
+** Ido and Smex
+   #+begin_src emacs-lisp
+     (ido-mode t)
+     (setq ido-use-virtual-buffers t)
+     (ensure-package 'smex)
+     (global-set-key (kbd "M-x") 'smex)
+     (dolist (state '(normal motion))
+       (evil-define-key state global-map
+         ":" 'smex))
+   #+end_src
+** Other convenient bindings
+   #+begin_src emacs-lisp
+     (defalias 'yes-or-no-p 'y-or-n-p)
+     (defalias 'dabbrev-expand 'hippie-expand)
+     (global-set-key (kbd "C-M-h") 'backward-kill-word)
+   #+end_src
+* Major modes
+  #+begin_src emacs-lisp
+    (dolist (assoc '(("PKGBUILD" . pkgbuild-mode)
+                     ("\\.install\\'" . sh-mode)
+                     ("\\.do\\'" . sh-mode)
+                     ("\\.service\\'" . conf-windows-mode)
+                     ("\\.socket\\'" . conf-windows-mode)
+                     ("\\.timer\\'" . conf-windows-mode)
+                     ("\\.directory\\'" . conf-windows-mode)))
+      (add-to-list 'auto-mode-alist assoc))
+  #+end_src
+** Desktop files
+   #+begin_src emacs-lisp
+     (add-hook 'conf-windows-mode-hook
+               '(lambda ()
+                  (setq comment-start "#")
+                  (glasses-mode t)))
+   #+end_src
+** ERC
+   #+begin_src emacs-lisp
+     (setq erc-autojoin-channels-alist '(("freenode" "#lojban" "#jbopre" "#vnluser"))
+           erc-hide-list '("JOIN" "PART" "QUIT"))
+   #+end_src
+** Magit
+   Enter commit buffer in insert state
+   #+begin_src emacs-lisp
+     (evil-set-initial-state 'magit-log-edit-mode 'insert)
+     (setq vc-follow-symlinks t)
+     (global-set-key (kbd "C-x g") 'magit-status)
+   #+end_src
+** Org
+   #+begin_src emacs-lisp
+     (setq org-M-RET-may-split-line nil
+           org-src-fontify-natively t
+           org-use-speed-commands t)
+     (add-to-list 'org-babel-load-languages '(sql . t))
+   #+end_src
+** Proced
+   #+begin_src emacs-lisp
+     (setq proced-filter 'all
+           proced-tree-flag t)
+     (global-set-key (kbd "C-x p") 'proced)
+   #+end_src
+** Shell
+   #+begin_src emacs-lisp
+     (defun shell--prev-buffer (func name)
+       "Switch back to the previous buffer if already in the called shell"
+       (if (member (buffer-name) '("*shell*" name))
+         (switch-to-prev-buffer)
+         (apply func name)))
+     (advice-add 'shell :around #'shell--prev-buffer)
+     (setq shell-file-name "zsh")
+     (global-set-key (kbd "C-x M-m") 'shell)
+     (global-set-key (kbd "C-x M-t") 'term)
+   #+end_src
+** SQL
+   Wrap Cygwin mysql with [[https://github.com/Shougo/fakecygpty/blob/master/fakecygpty.c][fakecygpty]]
+   #+begin_src emacs-lisp
+     (when (string-prefix-p "CYGWIN" (shell-command-to-string "uname"))
+       (setq sql-mysql-program "fakecygpty"
+             sql-mysql-options '("mysql")))
+   #+end_src
+*** Connections
+    #+begin_src emacs-lisp
+      (setq sql-connection-alist '(
+          ("selfoss"
+            (sql-product 'mysql)
+            (sql-user "selfoss")
+            (sql-database "selfoss")
+            (sql-server "192.168.1.54"))))
+    #+end_src
+* Appearance
+  Set terminal title
+  #+begin_src emacs-lisp
+    (add-hook 'post-command-hook
+              '(lambda ()
+                 (unless window-system
+                   (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))))
+  #+end_src
+  #+begin_src emacs-lisp
+    (setq frame-title-format "%f"
+          calendar-week-start-day 1)
+    (blink-cursor-mode -1)
+    (show-paren-mode t)
+  #+end_src
+  #+begin_src emacs-lisp
+    (ensure-package 'color-theme-solarized)
+    (load-theme 'solarized-light t)
+  #+end_src
+  On newer Windows, use Consolas
+  #+begin_src emacs-lisp
+    (if (eq window-system-version 6)
+        (set-default-font "Consolas-11"))
+  #+end_src
