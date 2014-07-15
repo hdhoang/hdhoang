@@ -90,6 +90,7 @@ if [ -n "$BASH" ]; then
 fi
 
 if [ -n "$ZSH_NAME" ]; then
+    setopt autocd
     setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
     setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
     unsetopt AUTO_NAME_DIRS bash_auto_list
