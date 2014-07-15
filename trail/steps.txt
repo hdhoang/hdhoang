@@ -6,7 +6,9 @@
 Some feeds come with all items since the beginning, and every 30 days,
 selfoss drops them from the database and treat the feed as totally
 new. This mark all but the 5 newest items in each feed as read.
- 1. Create procedures to mark items matching a link pattern as read, and mark the top 5 items as unread. Newer items come at the beginning of the feed, and thus has lower id in database
+ 1. Create procedures to mark items matching a link pattern as read,
+    and mark the top 5 items as unread. Newer items come at the
+    beginning of the feed, and thus has lower id in database
     #+name: create-procedures
     #+begin_src sql
       create procedure read_all (pattern char(30))
@@ -18,14 +20,14 @@ new. This mark all but the 5 newest items in each feed as read.
  2. Mark read and unread items with these patterns
     #+name: mark-items
     #+begin_src sql
-        call read_all('http://drawingboardcomic.com');
-        call mark_5_unread('http://drawingboardcomic.com');
-        call read_all('http://oglaf.com/');
-        call mark_5_unread('http://oglaf.com/');
-        call read_all('giantitp.com/comics/oots');
-        call mark_5_unread('giantitp.com/comics/oots');
-        call read_all('/satwcomic/');
-        call mark_5_unread('/satwcomic/');
-        call read_all('/stupidfox/');
-        call mark_5_unread('/stupidfox/');
+      call read_all('http://drawingboardcomic.com');
+      call mark_5_unread('http://drawingboardcomic.com');
+      call read_all('http://oglaf.com/');
+      call mark_5_unread('http://oglaf.com/');
+      call read_all('giantitp.com/comics/oots');
+      call mark_5_unread('giantitp.com/comics/oots');
+      call read_all('/satwcomic/');
+      call mark_5_unread('/satwcomic/');
+      call read_all('/stupidfox/');
+      call mark_5_unread('/stupidfox/');
     #+end_src
