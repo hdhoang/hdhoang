@@ -59,6 +59,8 @@
          (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
          (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
          (kbd "C-r") 'isearch-backward))
+     (evil-define-key 'motion help-mode-map
+       (kbd "<tab>") 'forward-button)
    #+end_src
 ** Ido and Smex
    #+begin_src emacs-lisp
