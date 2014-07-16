@@ -1,4 +1,13 @@
 # -*- mode: org -*-
+* Changing profile pictures [8/8]
+ - [X] [[https://www.facebook.com/hdh000][Facebook]]
+ - [X] [[https://github.com/settings/profile][Github]]
+ - [X] Google
+ - [X] [[https://en.gravatar.com/emails][Gravatar]]
+ - [X] [[http://www.last.fm/settings][Last.fm]]
+ - [X] [[https://profile.live.com/cid-13197dc9e233bef0/details/Edit/Pic][Microsoft]]
+ - [X] [[http://steamcommunity.com/id/lasigma/edit][Steam]]
+ - [X] [[https://twitter.com/lasigma?edit%3Dtrue][Twitter]]
 * Cleaning old items in selfoss
   :PROPERTIES:
   :header-args:sql: :engine mysql :dbhost 192.168.1.54 :dbuser selfoss :database selfoss

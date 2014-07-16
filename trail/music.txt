@@ -1,5 +1,6 @@
 #    -*- mode: org -*-
 * "Weird Al" Yankovic                                              :FAV:mock:
+ 1. [ ] <2014-07-15 Tue> Mandatory Fun
 * 2pac                                                                  :rap:
 * 3 Doors Down
 * 50 Cent                                                        :rap:lastfm:
@@ -387,6 +388,7 @@
  1. [ ] <2012-07-16> Good Morning to the Night
  1. [ ] <2013-09-16> The Diving Board
 * Eluveitie
+ - [ ] <2014-08-01 Fri> Origins
 * Elvis Costello
  1. [ ] <2012-11-23> In Motion Pictures
  1. [ ] <2013-09-16> Wise Up Ghost
@@ -850,6 +852,7 @@
  2. [ ] <2012-09-04> Act 1
  3. [ ] <2013-08-30> Colours in the Dark
  4. [ ] <2014-06-10 Tue> Beauty & The Beat
+ 5. [ ] <2014-07-15 Tue> Left in the Dark
 * Nirvana
 * No Doubt                                                                :f:
  1. [ ] <2012-09-25> Push and Shove
