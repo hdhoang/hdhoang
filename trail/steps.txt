@@ -2,11 +2,11 @@
 * Changing profile pictures [8/8]
  - [X] [[https://www.facebook.com/hdh000][Facebook]]
  - [X] [[https://github.com/settings/profile][Github]]
- - [X] Google
+ - [X] [[https://plus.google.com/110711359835920217300/about][Google]]
  - [X] [[https://en.gravatar.com/emails][Gravatar]]
  - [X] [[http://www.last.fm/settings][Last.fm]]
  - [X] [[https://profile.live.com/cid-13197dc9e233bef0/details/Edit/Pic][Microsoft]]
- - [X] [[http://steamcommunity.com/id/lasigma/edit][Steam]]
+ - [X] [[http://steamcommunity.com/id/lasigmaz/edit][Steam]]
  - [X] [[https://twitter.com/lasigma?edit%3Dtrue][Twitter]]
 * Cleaning old items in selfoss
   :PROPERTIES:
@@ -40,3 +40,14 @@ new. This mark all but the 5 newest items in each feed as read.
       call read_all('/stupidfox/');
       call mark_5_unread('/stupidfox/');
     #+end_src
+* Picard
+  Date formatting:
+  : $if(%date%,\(%date%\) )
+* Two-factor authentication for ssh
+ 1. Install either [[https://code.google.com/p/google-authenticator/wiki/PamModuleInstructions][google-authenticator]] or [[http://www.nongnu.org/oath-toolkit/][OATH toolkit]], then set up
+    the secret
+ 2. Enable the PAM module
+ 3. In sshd_config:
+    : ChallengeResponseAuthentication yes
+ 4. To allow publickey login:
+    : AuthenticationMethods publickey keyboard-interactive:pam
