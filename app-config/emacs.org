@@ -16,14 +16,19 @@
      desktop-load-locked-desktop t ;  Load locked desktop from crashed emacs
      inhibit-startup-screen t)
   #+end_src
+  Install packages
   #+begin_src emacs-lisp
     (package-initialize)
-    (defun ensure-package (package)
-      "Install PACKAGE if necessary"
-      (unless (package-installed-p package)
-        (package-install package)))
     (add-to-list 'package-archives
                  '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (let ((missing-packages (cl-remove-if 'package-installed-p
+                                          '(color-theme-solarized
+                                            evil
+                                            smex
+                                            expand-region))))
+      (unless (null missing-packages)
+        (package-refresh-contents)
+        (mapc 'package-install missing-packages)))
   #+end_src
 * Input
   #+begin_src emacs-lisp
@@ -33,7 +38,6 @@
   #+end_src
 ** Evil
    #+begin_src emacs-lisp
-     (ensure-package 'evil)
      (evil-mode t)
    #+end_src
    Mimic [[file+emacs:_pentadactylrc][dactyl]] scrolling
@@ -65,7 +69,6 @@
    #+begin_src emacs-lisp
      (ido-mode t)
      (setq ido-use-virtual-buffers t)
-     (ensure-package 'smex)
      (global-set-key (kbd "M-x") 'smex)
      (dolist (state '(normal motion))
        (evil-define-key state global-map
@@ -73,7 +76,6 @@
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
-     (ensure-package 'expand-region)
      (global-set-key (kbd "M-=") 'er/expand-region)
    #+end_src
 ** Other convenient bindings
@@ -167,7 +169,6 @@
     (show-paren-mode t)
   #+end_src
   #+begin_src emacs-lisp
-    (ensure-package 'color-theme-solarized)
     (load-theme 'solarized-light t)
   #+end_src
   On newer Windows, use Consolas
