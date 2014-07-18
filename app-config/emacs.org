@@ -17,12 +17,13 @@
      inhibit-startup-screen t)
   #+end_src
   #+begin_src emacs-lisp
-    (add-to-list 'package-archives
-                 '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (package-initialize)
     (defun ensure-package (package)
       "Install PACKAGE if necessary"
       (unless (package-installed-p package)
         (package-install package)))
+    (add-to-list 'package-archives
+                 '("marmalade" . "http://marmalade-repo.org/packages/"))
   #+end_src
 * Input
   #+begin_src emacs-lisp
