@@ -1,9 +1,9 @@
 #    -*- mode: org -*-
-* Charlie Stross
+* Charlie Stross							:sci:
   :PROPERTIES:
   :url:      http://www.antipope.org
   :END:
-** TODO (1993) Scratch Monkey
+** NOT (1993) Scratch Monkey
 ** DONE (2005) Accelerando
 ** DONE (2006) Glasshouse
 ** NOT (2012) The Rapture of the Nerds
@@ -56,6 +56,7 @@
     :PROPERTIES:
     :url:      http://www.multivax.com/last_question.html
     :END:
+* Jacek Dukaj								:sci:
 * James Schmitz
 ** TODO Sour Note on Palayata
 * Joe Lansdale
