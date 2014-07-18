@@ -10,8 +10,6 @@
 * Start up
   #+begin_src emacs-lisp
     (server-mode t)
-    (desktop-read)
-    (desktop-save-mode t)
     (setq
      auto-save-default nil
      make-backup-files nil
@@ -175,4 +173,10 @@
   #+begin_src emacs-lisp
     (if (eq window-system-version 6)
         (set-default-font "Consolas-11"))
+  #+end_src
+* Finalize start up
+  Restore the desktop when settings have been applied
+  #+begin_src emacs-lisp
+    (desktop-save-mode t)
+    (desktop-read)
   #+end_src
