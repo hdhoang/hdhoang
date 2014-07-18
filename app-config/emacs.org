@@ -76,7 +76,7 @@
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
-     (global-set-key (kbd "M-=") 'er/expand-region)
+     (global-set-key (kbd "C-=") 'er/expand-region)
    #+end_src
 ** Other convenient bindings
    #+begin_src emacs-lisp
