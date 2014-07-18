@@ -104,7 +104,8 @@
 ** ERC
    #+begin_src emacs-lisp
      (setq erc-autojoin-channels-alist '(("freenode" "#lojban" "#jbopre" "#vnluser"))
-           erc-hide-list '("JOIN" "PART" "QUIT"))
+                erc-hide-list '("JOIN" "PART" "QUIT"))
+     (evil-set-initial-state 'erc-mode 'normal)
    #+end_src
 ** Magit
    Enter commit buffer in insert state
