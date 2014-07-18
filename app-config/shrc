@@ -94,6 +94,7 @@ if [ -n "$ZSH_NAME" ]; then
     setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
     setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
     unsetopt AUTO_NAME_DIRS bash_auto_list
+    autoload select-word-style && select-word-style BASH # with CamelCase support
     zstyle ':vcs_info:*' enable git
 
     PROMPT="%m %~ %w %(?..%? )
