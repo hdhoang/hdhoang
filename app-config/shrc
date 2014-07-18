@@ -100,7 +100,6 @@ if [ -n "$ZSH_NAME" ]; then
 %# "
 
     setopt dvorak
-    bindkey "^[h" slash-backward-kill-word
 fi
 
 if [[ $(uname -o) == Cygwin ]]; then
