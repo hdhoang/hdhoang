@@ -25,6 +25,7 @@
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(color-theme-solarized
                                             evil
+                                            rainbow-delimiters
                                             smex
                                             expand-region))))
       (unless (null missing-packages)
@@ -168,7 +169,7 @@
     (setq frame-title-format "%f"
           calendar-week-start-day 1)
     (blink-cursor-mode -1)
-    (show-paren-mode t)
+    (global-rainbow-delimiters-mode t)
   #+end_src
   #+begin_src emacs-lisp
     (load-theme 'solarized-light t)
