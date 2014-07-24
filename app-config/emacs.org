@@ -3,8 +3,8 @@
 * Who am I?
   #+begin_src emacs-lisp
     (setq user-full-name "Hоàng Đức Hiếu"
+          user-login-name "hdhoang"
           user-mail-address "hdhoang@zahe.me"
-          erc-nick "hdhoang"
           pkgbuild-user-mail-address "arch@zahe.me")
   #+end_src
 * Start up
