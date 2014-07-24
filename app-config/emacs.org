@@ -83,6 +83,7 @@
    #+begin_src emacs-lisp
      (defalias 'yes-or-no-p 'y-or-n-p)
      (defalias 'dabbrev-expand 'hippie-expand)
+     (global-set-key (kbd "<M-f4>") 'delete-frame)
    #+end_src
 * Major modes
   #+begin_src emacs-lisp
