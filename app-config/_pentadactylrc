@@ -42,6 +42,7 @@ map <C-S-n> -ex bmarks! -tags news
 map S -ex bmark -keyword ac -t config about:config
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
+   \ bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
    \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dw -t 'Dota 2 Wiki' http://dota2.gamepedia.com/index.php?title=Special%3ASearch&search=%s
