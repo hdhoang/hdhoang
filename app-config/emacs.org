@@ -21,6 +21,7 @@
     (package-initialize)
     (add-to-list 'package-archives
                  '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (require 'cl-lib)
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(color-theme-solarized
                                             evil
