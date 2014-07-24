@@ -1,0 +1,40 @@
+* Intel
+** 478
+*** Chipset
+**** 845
+**** 915
+**** 945
+** 775
+*** Core
+**** Conroe
+**** Allendale
+*** Chipset
+**** 965
+**** G31
+**** G41 DDR2/DDR3
+** 1155
+*** PCH
+* RAM
+| Type  | Pins | Rating      | Clock        |
+|-------+------+-------------+--------------|
+| SDRAM |  168 |             |              |
+| DDR   |  184 | PC200->400  | 100->200MHz  |
+| DDR2  |  240 | PC400->1066 | 200->533MHz  |
+| DDR3  |  240 | PC800->2133 | 400->1066MHz |
+* PS
+| Color  | Voltage |
+|--------+---------|
+| Orange | 3.3V    |
+| Red    | 5V      |
+| Yellow | 12V     |
+* Expansion
+** PCI
+** AGP
+** PCIe
+* Disk
+** ATA
+** SATA
+* Optical
+| Type | 1x Speed |
+| CD   | 150kbps  |
+| DVD  | 1350kbps |

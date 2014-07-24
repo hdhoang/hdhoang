@@ -1072,7 +1072,9 @@
 ** DONE <2008-05-14> Ruatokansan uamunkoetto
 ** DONE <2010-10-27> Lohuton
 * Warmen
-* Whispered [0/1]
+* Whispered [0/3]
+** TODO <2007> Wrath of Heaven
+** TODO <2010-02-10 Wed> Thousand Swords
 ** TODO <2014-02-07> Shogunate Macabre
 * White Lion
 * Whitesnake
@@ -1091,6 +1093,8 @@
 * Zak Belica
 ** DONE <2005> SiN                                                    :game:
 * Zakk Wylde                                                             :jo:
-* Zero-Project                                                     :FAV:inst:
-** DONE <2012-01-06> Untold Stories of a Dying Moon
+* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]                                                     :FAV:inst:
+** TODO <2008-08-17 Sun> Disabled Emotions Suite
+** TODO <2009-06-24 Wed> Earth
+** TODO <2012-01-06> Untold Stories of a Dying Moon
 ** TODO <2013-07-06> e-world: The Ultimate Edition
