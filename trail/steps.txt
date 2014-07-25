@@ -20,6 +20,7 @@ new. This mark all but the 5 newest items in each feed as read.
     beginning of the feed, and thus has lower id in database
     #+name: create-procedures
     #+begin_src sql
+      use selfoss;
       create procedure read_all (pattern char(30))
              update items set unread = 0 where link like concat('%',pattern,'%');
       create procedure mark_5_unread (pattern char(30))
@@ -29,6 +30,7 @@ new. This mark all but the 5 newest items in each feed as read.
  2. Mark read and unread items with these patterns
     #+name: mark-items
     #+begin_src sql
+      use selfoss;
       call read_all('http://drawingboardcomic.com');
       call mark_5_unread('http://drawingboardcomic.com');
       call read_all('http://oglaf.com/');
@@ -40,6 +42,26 @@ new. This mark all but the 5 newest items in each feed as read.
       call read_all('/stupidfox/');
       call mark_5_unread('/stupidfox/');
     #+end_src
+* Installing Arch
+  #+begin_src sh
+    loadkeys dvorak
+    mkfs root
+    mkfs.vfat boot
+    mount root /mnt
+    mount boot /mnt/boot
+    vim /etc/pacman.d/mirrorlist
+    pacstrap /mnt base base-devel zsh git ntp vim btrfs-progs
+    genfstab /mnt >> /mnt/etc/fstab
+    arch-chroot /mnt
+    ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
+    echo KEYMAP=dvorak > /etc/vconsole.conf
+    echo LANG=en_US.UTF-8 > /etc/locale.conf
+    vim /etc/locale.gen && locale-gen
+    visudo
+    useradd hdhoang -m -g users -G wheel,systemd-journal
+    passwd
+    passwd hdhoang
+  #+end_src
 * Picard
   Date formatting:
   : $if(%date%,\(%date%\) )
