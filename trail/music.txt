@@ -1110,5 +1110,6 @@
 * [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]                                                     :FAV:inst:
 ** TODO <2008-08-17 Sun> Disabled Emotions Suite
 ** TODO <2009-06-24 Wed> Earth
+** TODO <2009-11-22 Sun> Ambient Symphony
 ** TODO <2012-01-06> Untold Stories of a Dying Moon
 ** TODO <2013-07-06> e-world: The Ultimate Edition
