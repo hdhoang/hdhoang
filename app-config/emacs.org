@@ -26,7 +26,7 @@
     (require 'cl-lib)
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(ace-window
-                                            color-theme-solarized
+                                            color-theme-sanityinc-solarized
                                             evil
                                             rainbow-delimiters
                                             smex
@@ -180,7 +180,7 @@
     (global-rainbow-delimiters-mode t)
   #+end_src
   #+begin_src emacs-lisp
-    (load-theme 'solarized-light t)
+    (load-theme 'sanityinc-solarized-light t)
   #+end_src
   On newer Windows, use Consolas
   #+begin_src emacs-lisp
