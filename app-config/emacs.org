@@ -25,7 +25,8 @@
             ("melpa" . "http://melpa.milkbox.net/packages/")))
     (require 'cl-lib)
     (let ((missing-packages (cl-remove-if 'package-installed-p
-                                          '(color-theme-solarized
+                                          '(ace-window
+                                            color-theme-solarized
                                             evil
                                             rainbow-delimiters
                                             smex
@@ -41,6 +42,10 @@
     (setq default-input-method "vietnamese-telex")
     (global-set-key (kbd "C-\\") 'toggle-input-method)
   #+end_src
+** Ace-window
+   #+begin_src emacs-lisp
+     (global-set-key (kbd "C-x o") 'ace-window)
+   #+end_src
 ** Evil
    #+begin_src emacs-lisp
      (evil-mode t)
