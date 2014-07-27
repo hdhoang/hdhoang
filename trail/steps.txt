@@ -53,6 +53,9 @@ new. This mark all but the 5 newest items in each feed as read.
     pacstrap /mnt base base-devel zsh git ntp vim btrfs-progs
     genfstab /mnt >> /mnt/etc/fstab
     arch-chroot /mnt
+    ln -s /usr/lib/systemd/system/systemd-{network,resolve,timesync}d.service /etc/systemd/system/multi-user.target.wants/
+    ln -sf /run/systemd/resovled/resolv.conf /etc/resolv.conf
+    vim /etc/systemd/network/net.network
     ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
     echo KEYMAP=dvorak > /etc/vconsole.conf
     echo LANG=en_US.UTF-8 > /etc/locale.conf
