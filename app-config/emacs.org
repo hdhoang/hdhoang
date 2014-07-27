@@ -148,6 +148,7 @@
      (setq shell-file-name "zsh")
      (global-set-key (kbd "C-x M-m") 'shell)
      (global-set-key (kbd "C-x M-t") 'term)
+     (define-key comint-mode-map (kbd "<SPC>") 'comint-magic-space)
    #+end_src
 ** SQL
    Wrap Cygwin mysql with [[https://github.com/Shougo/fakecygpty/blob/master/fakecygpty.c][fakecygpty]]
