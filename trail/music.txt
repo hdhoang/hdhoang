@@ -1,5 +1,19 @@
 #    -*- mode: org -*-
 * "Weird Al" Yankovic						   :FAV:mock:
+** TODO <1983-04-26> "Weird Al" Yankovic
+** TODO <1984-02-28> In 3-D
+** TODO <1985-06-18> Dare to Be Stupid
+** TODO <1986-10-21> Polka Party!
+** TODO <1988> Even Worse
+** TODO <1989-07-18> UHF and Other Stuff
+** TODO <1992-04-14> Off the Deep End
+** TODO <1993-10-05> Alapalooza
+** TODO <1996-03-12> Bad Hair Day
+** TODO <1999-06-29> Running With Scissors
+** TODO <2003-05-20> Poodle Hat
+** TODO <2006-10-03> Straight Outta Lynwood
+** TODO <2011-06-21> Alpocalypse
+** TODO <2014-07-15> Mandatory Fun
 ** TODO <2014-07-15 Tue> Mandatory Fun
 * 2pac                                                                  :rap:
 * 3 Doors Down

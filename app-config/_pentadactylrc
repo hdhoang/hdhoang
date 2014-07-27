@@ -126,6 +126,7 @@ EOS
 autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
 
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
+set passkeys+=google.com/contacts/:'#jkoux,.'
 
 set passkeys+=flecu.zahe.me:'vjksUS'
 style -n "selfoss" flecu.zahe.me <<EOS
