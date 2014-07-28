@@ -24,8 +24,8 @@
             ("marmalade" . "http://marmalade-repo.org/packages/")
             ("melpa" . "http://melpa.milkbox.net/packages/")))
     (require 'cl-lib)
-    (add-to-list 'package-pinned-packages
-                 '(magit . "marmalade"))
+    (setq package-pinned-packages
+          '((magit . "marmalade")))
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(ace-window
                                             color-theme-sanityinc-solarized
