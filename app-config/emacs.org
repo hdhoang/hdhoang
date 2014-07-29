@@ -42,6 +42,7 @@
   #+begin_src emacs-lisp
     (set-language-environment "UTF-8")
     (setq-default buffer-file-coding-system 'unix)
+    (setq-default sentence-end-double-space nil)
     (setq default-input-method "vietnamese-telex")
     (global-set-key (kbd "C-\\") 'toggle-input-method)
   #+end_src
