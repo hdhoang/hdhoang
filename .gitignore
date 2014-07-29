@@ -1,4 +1,5 @@
 app-config/emacs.el
-trail/*html
-trail/*tex
-trail/*pdf
+*.pdf
+*.gz
+*.tex
+trail/*.html

@@ -131,6 +131,10 @@
 ** Org
    #+begin_src emacs-lisp
      (setq org-M-RET-may-split-line nil
+           org-latex-default-packages-alist (delete '("AUTO" "inputenc" t)
+                                                    org-latex-default-packages-alist)
+           org-latex-packages-alist '(("" "libertine" t))
+           org-latex-pdf-process '("xelatex %f")
            org-src-fontify-natively t
            org-use-speed-commands t)
      (add-to-list 'org-babel-load-languages '(sql . t))
