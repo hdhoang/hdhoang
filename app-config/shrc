@@ -2,8 +2,8 @@
 # ~/.zshrc ~/.bash_login
 
 # places
-if [[ $(uname -o) == Cygwin ]]; then
-    mount=/cygdrive/h
+if [[ $(uname -o) == Msys ]]; then
+    mount=/h
 else
     mount=~
 fi

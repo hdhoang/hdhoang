@@ -19,4 +19,4 @@ ignore = Name *-wal
 ignore = Name *-shm
 
 root = ssh://hdhoang@kub.zahe.me//mnt/marbi
-sshargs = -i /cygdrive/h/secrets/kub
+sshargs = -i /h/secrets/kub
