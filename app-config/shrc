@@ -29,7 +29,6 @@ alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
     $v/_youtube-dl || \
-    $v/_youtube-dl --batch-file _dq.txt --output "%(upload_date)s-%(title)s-%(id)s.%(ext)s" || \
     wget --continue
 }
 alias nn='nice ionice -c 3 '
