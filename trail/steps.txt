@@ -76,3 +76,7 @@ new. This mark all but the 5 newest items in each feed as read.
     : ChallengeResponseAuthentication yes
  4. To allow publickey login:
     : AuthenticationMethods publickey keyboard-interactive:pam
+* Windows
+** Environment
+ - PATH :: H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\msys32\usr\bin;H:\Dropbox\runnable\miktex\miktex\bin\
+ - ALTERNATE_EDITOR :: runemacs

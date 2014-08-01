@@ -168,6 +168,8 @@
  13. [ ] Dead or Alive
  14. [ ] Locked On
  15. [ ] Threat Vector
+* [[http://www.tomkratman.com/asod.html][Tom Kratman]]
+** TODO (2014) Big Boys Don't Cry
 * Ben "Yahtzee" Croshaw                                                :game:
 *** DONE (2010) Mogworld
 *** DONE (2012) Jam
