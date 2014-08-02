@@ -189,6 +189,7 @@
           calendar-week-start-day 1)
     (blink-cursor-mode -1)
     (global-rainbow-delimiters-mode t)
+    (setq undo-tree-mode-lighter "")
   #+end_src
   #+begin_src emacs-lisp
     (load-theme 'sanityinc-solarized-light t)
