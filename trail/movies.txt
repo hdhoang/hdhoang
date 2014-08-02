@@ -45,6 +45,7 @@
  - [X] Mallrats (1995)
 * TODO Kiss Me Deadly
 * DONE Limitless (2011)                                          :jbopre:FAV:
+* TODO Lucy (2014)							:jwz:
 * TODO MacGyver                                                         :FAV:
 * TODO Malna (2000)
 * TODO Melancholia
