@@ -196,7 +196,7 @@
   On newer Windows, use Consolas
   #+begin_src emacs-lisp
     (if (eq window-system-version 6)
-        (set-default-font "Consolas-11" :frames t))
+        (set-default-font "Consolas-12" :frames t))
   #+end_src
 * Finalize start up
   Restore the desktop when settings have been applied
