@@ -1,0 +1,18 @@
+# -*- mode: sh -*-
+#biolinum.zip:META-INF/com/google/android/updater-script
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system");
+
+package_extract_file("LinBiolinum_Rah.ttf",  "/system/fonts/LinBiolinum_Rah.ttf");
+package_extract_file("LinBiolinum_RBah.ttf", "/system/fonts/LinBiolinum_RBah.ttf");
+package_extract_file("LinBiolinum_RIah.ttf", "/system/fonts/LinBiolinum_RIah.ttf");
+
+delete("/system/fonts/Roboto-Regular.ttf", "/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-Thin.ttf");
+delete("/system/fonts/Roboto-Bold.ttf",   "/system/fonts/Roboto-Italic.ttf");
+
+symlink("LinBiolinum_Rah.ttf", "/system/fonts/Roboto-Regular.ttf", "/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-Thin.ttf");
+symlink("LinBiolinum_RBah.ttf", "/system/fonts/Roboto-Bold.ttf");
+symlink("LinBiolinum_RIah.ttf", "/system/fonts/Roboto-Italic.ttf");
+
+set_metadata_recursive("/system/fonts", "uid", 0, "gid", 0, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+
+unmount("/system");
