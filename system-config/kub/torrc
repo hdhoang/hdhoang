@@ -4,8 +4,7 @@ Nickname kub
 DirPort 4660
 ORPort 5880
 SOCKSPort 0.0.0.0:9050
-RelayBandwidthBurst 131072
-RelayBandwidthRate 65536
+MaxAdvertisedBandwidth 40 KBytes
 ExitPolicy reject *:*
 
 DataDirectory /var/lib/tor
