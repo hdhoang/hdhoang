@@ -1,12 +1,52 @@
+* Intel
+** 478
+*** Chipset
+**** 845
+**** 915
+**** 945
+** 775
+*** Core
+**** Conroe
+**** Allendale
+*** Chipset
+**** 965
+**** G31
+**** G41 DDR2/DDR3
+** 1155
+*** PCH
+* RAM
+| Type  | Pins | Voltage   | Rating      | Clock        |
+|-------+------+-----------+-------------+--------------|
+| SDRAM |  168 | 3.3V      | PC33->100   | 33->100MHz   |
+| DDR   |  184 | 2.5V      | PC200->400  | 100->200MHz  |
+| DDR2  |  240 | 1.8V      | PC400->1066 | 200->533MHz  |
+| DDR3  |  240 | 1.5,1.35V | PC800->2133 | 400->1066MHz |
+* PS
+| Color  | Voltage |
+|--------+---------|
+| Orange | 3.3V    |
+| Red    | 5V      |
+| Yellow | 12V     |
+* Expansion
+** PCI
+** AGP
+** PCIe
+* Disk
+** ATA
+** SATA
+* Optical
+| Type | 1x Speed |
+| CD   | 150kbps  |
+| DVD  | 1350kbps |
 * <2014-08-02 Sat> Giao tiếp hiệu quả
 ** Lễ nghi
  1. Chào
  2. Tự giới thiệu
  3. Hỏi
 ** Kiểu người
- 1. IQ :: cứng nhắc, ko đùa được khi chưa quen biết
- 2. EQ :: nhịn tức, chém thớt sau
- 3. SQ :: kiểm soát EQ, mềm mỏng
+ - IQ :: cứng nhắc, ko đùa được khi chưa quen biết
+ - EQ :: nhịn tức, chém thớt sau
+ - SQ :: kiểm soát EQ, mềm mỏng
 ** Thái độ giao tiếp
    Chân thành
 ** Bước giao tiếp
