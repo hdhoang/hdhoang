@@ -7,11 +7,12 @@ package_extract_file("LinBiolinum_RBah.ttf", "/system/fonts/LinBiolinum_RBah.ttf
 package_extract_file("LinBiolinum_RIah.ttf", "/system/fonts/LinBiolinum_RIah.ttf");
 
 delete("/system/fonts/Roboto-Regular.ttf", "/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-Thin.ttf");
-delete("/system/fonts/Roboto-Bold.ttf",   "/system/fonts/Roboto-Italic.ttf");
+delete("/system/fonts/Roboto-Italic.ttf", "/system/fonts/Roboto-LightItalic.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+delete("/system/fonts/Roboto-Bold.ttf", "/system/fonts/Roboto-BoldItalic.ttf");
 
 symlink("LinBiolinum_Rah.ttf", "/system/fonts/Roboto-Regular.ttf", "/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-Thin.ttf");
-symlink("LinBiolinum_RBah.ttf", "/system/fonts/Roboto-Bold.ttf");
-symlink("LinBiolinum_RIah.ttf", "/system/fonts/Roboto-Italic.ttf");
+symlink("LinBiolinum_RIah.ttf", "/system/fonts/Roboto-Italic.ttf", "/system/fonts/Roboto-LightItalic.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+symlink("LinBiolinum_RBah.ttf", "/system/fonts/Roboto-Bold.ttf", "/system/fonts/Roboto-BoldItalic.ttf");
 
 set_metadata_recursive("/system/fonts", "uid", 0, "gid", 0, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 
