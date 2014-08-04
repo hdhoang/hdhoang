@@ -84,9 +84,9 @@ map <C-S-s> -ex set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! font.default.x-western="sans-serif"
    \ if /NT 6/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
-   \     set! font.name.sans-serif.x-western=Calibri
-   \     set! font.name.serif.x-western=Cambria
    \ fi
+   \ set! font.name.sans-serif.x-western=Linux Biolinum O
+   \ set! font.name.serif.x-western=Linux Libertine O
    \ set! extensions.checkCompatibility.nightly=false
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
