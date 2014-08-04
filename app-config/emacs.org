@@ -24,8 +24,6 @@
             ("marmalade" . "http://marmalade-repo.org/packages/")
             ("melpa" . "http://melpa.milkbox.net/packages/")))
     (require 'cl-lib)
-    (setq package-pinned-packages
-          '((magit . "marmalade")))
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(ace-window
                                             color-theme-sanityinc-solarized
@@ -126,7 +124,7 @@
 ** Magit
    Enter commit buffer in insert state
    #+begin_src emacs-lisp
-     (evil-set-initial-state 'magit-log-edit-mode 'insert)
+     (evil-set-initial-state 'git-commit-mode 'insert)
      (setq vc-follow-symlinks t)
      (global-set-key (kbd "C-x g") 'magit-status)
    #+end_src
