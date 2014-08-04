@@ -1,18 +1,23 @@
 * Intel
 ** 478
+   Hiếm gặp, không còn bán
 *** Chipset
 **** 845
 **** 915
 **** 945
 ** 775
-*** Core
-**** Conroe
-**** Allendale
+   Còn bán, do cửa hàng bảo hành
+*** CPU
+ - Core 2: Exxxx Conroe
+ - Pentium: B9xx Allendale
 *** Chipset
 **** 965
 **** G31
 **** G41 DDR2/DDR3
 ** 1155
+*** CPU
+ - Pentium: G2xxx
+ - Core i
 *** PCH
 * RAM
 | Type  | Pins | Voltage   | Rating      | Clock        |
@@ -22,18 +27,21 @@
 | DDR2  |  240 | 1.8V      | PC400->1066 | 200->533MHz  |
 | DDR3  |  240 | 1.5,1.35V | PC800->2133 | 400->1066MHz |
 * PS
-| Color  | Voltage |
-|--------+---------|
-| Orange | 3.3V    |
-| Red    | 5V      |
-| Yellow | 12V     |
+| Wire color | Voltage |
+|------------+---------|
+| Orange     | 3.3V    |
+| Red        | 5V      |
+| Yellow     | 12V     |
 * Expansion
 ** PCI
 ** AGP
 ** PCIe
+ - 16x: graphics
+ - 1x: 1G ethernet
 * Disk
 ** ATA
-** SATA
+   Cắm ổ cứng vào đầu master được thì tốt
+** SATA/eSATA
 * Optical
 | Type | 1x Speed |
 | CD   | 150kbps  |
@@ -71,3 +79,6 @@
 ** Nghệ thuật
  - Định hướng :: chuyển chủ đề từ từ
  - Hoán vị :: cướp lấy quyền chủ động từ sự sơ hở của người kia
+* Doanh nghiệp
+** Gameloft
+   Một phần của Gameloft SEA, 4 chi nhánh ở VN

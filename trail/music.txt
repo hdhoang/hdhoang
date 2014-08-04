@@ -157,19 +157,18 @@
 ** DONE <2011-08-17> 3 Foot Clearance
 ** DONE <2011-08-17> Look Up There
 ** DONE <2011-08-17> Underground Chamber
-** DONE <2012> Electric Sea
 ** DONE <2012-04-14> Balloon Cement
 ** DONE <2012-08-09> The Shores of Molokai
 ** DONE <2012-09-20> March of the Slunks
 ** DONE <2012-09-20> Racks
 ** DONE <2012-09-20> The Silent Picture Book
-** DONE <2013> Pike 14
+** DONE <2012> Electric Sea
 ** DONE <2013-04-04> Forgotten Library
 ** DONE <2013-04-04> Pikes 11
-** DONE <2013-05> Pike 12
 ** DONE <2013-05-13> Pike 13
 ** DONE <2013-05-13> Pike 15
 ** DONE <2013-05-24> Pike 16
+** DONE <2013-05> Pike 12
 ** DONE <2013-06-01> Pike 17
 ** DONE <2013-06-27> Pike 18
 ** DONE <2013-06-27> Pike 19
@@ -195,6 +194,7 @@
 ** DONE <2013-11-27> Pikes
 ** DONE <2013-12-11> Coat of Charms
 ** DONE <2013-12-24> Wishes
+** DONE <2013> Pike 14
 ** DONE <2014-01-09> You Can't Triple Stamp a Double Stamp
 ** DONE <2014-01-17> The Coats of Claude
 ** DONE <2014-02-07> Hide in the Pickling Jar
@@ -218,6 +218,11 @@
 ** TODO <2014-05-28 Wed> Outlined for Citacis
 ** TODO <2014-06-01> The Spirit Winds
 ** TODO <2014-06-25> Hold Me Forever
+** TODO <2014-07-10 Thu> Ydrapoej
+** TODO <2014-07-12 Sat> Abandoned Slaughterhouse
+** TODO <2014-07-18 Fri> Assignment 033-03
+** TODO <2014-07-21 Mon> Aquarium
+** TODO <2014-07-29 Tue> Snow Slug
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
