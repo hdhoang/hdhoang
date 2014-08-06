@@ -1,9 +1,8 @@
-# -*- mode: org -*-
 * DONE Black Mesa Source
    :PROPERTIES:
    :btih:     A9B546B8141C210870CE09C43038A6AEE9E0157F
    :END:
-* Dota 2                                                               :FAV:
+* Dota 2								:FAV:
    :PROPERTIES:
    :feed:     http://store.steampowered.com/news/?feed=steam_updates&appids=570
    :END:
@@ -25,24 +24,24 @@
     :PROPERTIES:
     :youtube:  XVRogueGaming
     :END:
-* Dungeon Crawl: Stone Soup                           :roguelike:FAV:addict:
+* Dungeon Crawl: Stone Soup			       :roguelike:FAV:addict:
    :PROPERTIES:
    :url:      http://crawl.develz.org
    :END:
-* DONE Grim Fandango                                         :adventure:FAV:
+* DONE Grim Fandango					      :adventure:FAV:
    :PROPERTIES:
    :lp:       http://lparchive.org/Grim-Fandango-%28Video%29/
    :END:
-* Homeworld                                                  :space:rts:FAV:
-* Homeworld 2                                                :space:rts:FAV:
-* nethack                                                    :roguelike:FAV:
-* DONE Nexus: The Jupiter Incident                          :space:tact:FAV:
+* Homeworld						      :space:rts:FAV:
+* Homeworld 2						      :space:rts:FAV:
+* nethack						      :roguelike:FAV:
+* DONE Nexus: The Jupiter Incident			     :space:tact:FAV:
    :PROPERTIES:
    :lp:       https://www.youtube.com/watch?v=lototgZSUwk
    :END:
 * TODO Psi-Ops: The Mindgate Conspiracy
 * TODO Sleeping Dogs
-* The Walking Dead                                                     :FAV:
+* The Walking Dead							:FAV:
 ** DONE Season 1
     :PROPERTIES:
     :btih:     3B0145A3290093165340EC9E875BAFB48EACDAC3

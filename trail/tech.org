@@ -1,14 +1,13 @@
-#    -*- mode: org -*-
 * #jbopre
    :PROPERTIES:
    :url:      irc://chat.freenode.net/#jbopre
    :END:
 ** Broca
-** clsn                                                                 :py:
+** clsn									 :py:
     :PROPERTIES:
     :url:      http://web.meson.org
     :END:
-** jcowan                                                             :pint:
+** jcowan							       :pint:
     :PROPERTIES:
     :url:      http://home.ccil.org/~cowan/
     :END:
@@ -23,13 +22,13 @@
    :PROPERTIES:
    :url:      http://betterexplained.com
    :END:
-* cks                                                          :psysad:herd:
+* cks								:psysad:herd:
    :PROPERTIES:
    :url:      http://utcc.utoronto.ca/~cks/
    :END:
-* Håkon Wium Lie                                                       :net:
+* Håkon Wium Lie							:net:
 ** CSS: Design for the Web
-* Kernel Planet                                                         :pk:
+* Kernel Planet								 :pk:
 * Lennart Poettering
    :PROPERTIES:
    :url:      http://0pointer.de
@@ -45,11 +44,11 @@
    :url:      http://blog.plover.com
    :nickname: mjd
    :END:
-* Planet Debian                                                       :pdeb:
-* Planet Emacsen                                                    :pemacs:
-* Planet GNOME                                                      :pgnome:
-* Planet KDE                                                          :pkde:
-* Planet Mozilla                                                      :pmoz:
+* Planet Debian							       :pdeb:
+* Planet Emacsen						     :pemacs:
+* Planet GNOME							     :pgnome:
+* Planet KDE							       :pkde:
+* Planet Mozilla						       :pmoz:
 * The Endeavour
    :PROPERTIES:
    :url:      http://johndcook.com

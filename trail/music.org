@@ -1,4 +1,3 @@
-#    -*- mode: org -*-
 * "Weird Al" Yankovic						   :FAV:mock:
 ** TODO <1983-04-26> "Weird Al" Yankovic
 ** TODO <1984-02-28> In 3-D
@@ -15,16 +14,16 @@
 ** TODO <2011-06-21> Alpocalypse
 ** TODO <2014-07-15> Mandatory Fun
 ** TODO <2014-07-15 Tue> Mandatory Fun
-* 2pac                                                                  :rap:
+* 2pac									:rap:
 * 3 Doors Down
-* 50 Cent                                                        :rap:lastfm:
-* 8 Bit Instrumental                                            :game:lastfm:
-* A Perfect Circle                                                     :1fav:
+* 50 Cent							 :rap:lastfm:
+* 8 Bit Instrumental						:game:lastfm:
+* A Perfect Circle						       :1fav:
 ** DONE <2000-05-23> Mer de noms
-** DONE <2003-09-16> Thirteenth Step                                  :1fav:
-** DONE <2004-11-02> eMOTIVe                                          :1fav:
+** DONE <2003-09-16> Thirteenth Step				       :1fav:
+** DONE <2004-11-02> eMOTIVe					       :1fav:
 ** DONE <2004-11-16> aMOTION
-* ABBA                                                                  :FAV:
+* ABBA									:FAV:
 * Accept
 ** DONE <1979> Accept
 ** DONE <1980> I'm a Rebel
@@ -39,7 +38,8 @@
 ** DONE <1996> Predator
 ** DONE <2010-08-20> Blood of the Nations
 ** DONE <2012-04-06> Stalingrad
-* Adam Lambert                                                         :tunx:
+** TODO <2014-08-13 Wed> Blind Rage
+* Adam Lambert							       :tunx:
 ** DONE <2009-05-21> No Boundaries
 ** DONE <2009-11-17> Take One
 ** DONE <2009-11-23> For Your Entertainment
@@ -51,29 +51,29 @@
 ** DONE <2011-11-21> Beg for Mercy
 ** DONE <2012-05-15> Trespassing
 * [[http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04][Adèle]]
-* Aerosmith                                                            :1fav:
+* Aerosmith							       :1fav:
 ** TODO <2012-05-15> Icon
 ** TODO <2012-11-06> Music from Another Dimension!
-* Alestorm                                                           :jbopre:
+* Alestorm							     :jbopre:
 * Alice Cooper
 * Alice in Chains
 ** DONE <2013-05-28> The Devil Put Dinosaurs Here
 * Alicia Keys
-* Alizée                                                         :jo:fr:1fav:
+* Alizée							 :jo:fr:1fav:
 ** DONE <2000-11-28> Gourmandises
 ** DONE <2003-04> Mes courants électriques...
 ** DONE <2004-10-18> Alizée en concert
 ** DONE <2008-06-25> Psychédélices
 ** DONE <2010-03-29> Une enfant du siècle
-* Alsou                                                              :ru:FAV:
-* Amity in Fame                                                     :jamendo:
-* Amon Amarth                                                           :FAV:
+* Alsou								     :ru:FAV:
+* Amity in Fame							    :jamendo:
+* Amon Amarth								:FAV:
 ** TODO <2013-07-21> Deceiver of the Gods
-* Amorphis                                                              :FAV:
+* Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
-* Amy Winehouse                                                        :tunx:
-* Annihilator                                                           :FAV:
-* Anthrax                                                              :1fav:
+* Amy Winehouse							       :tunx:
+* Annihilator								:FAV:
+* Anthrax							       :1fav:
 * Antimatter
 ** TODO <2012-11-23> Fear of a Unique Identity
 * Antonín Dvorák
@@ -82,8 +82,8 @@
 ** DONE <1997> Aoife
 ** DONE <2003> The Turning of the Tide
 ** DONE <2006> If I Told You
-* Apocalyptica                                                   :FAV:string:
-* Aqua                                                                 :1fav:
+* Apocalyptica							 :FAV:string:
+* Aqua								       :1fav:
 * [[http://musicbrainz.org/artist/93c1606c-28ef-4955-ae75-331a0975608d][Arcana]]
 * Arch Enemy
 ** TODO <2014-06-04 Wed> War Eternal
@@ -94,22 +94,22 @@
 * Atlas Plug
 * Avantasia
 ** TODO <2013-03-30> The Mystery of Time
-* Avenged Sevenfold                                                :riff:FAV:
+* Avenged Sevenfold						   :riff:FAV:
 ** DONE <2013-08-23> Hail to the King
 ** TODO <2014-06-03> X-Posed
-* Avril Lavigne                                                         :FAV:
+* Avril Lavigne								:FAV:
 ** TODO <2013-11-05> Avril Lavigne
 * Ayreon
 ** TODO <2013-10-25> The Theory of Everything
 * Banda Calypso
 * Basil Poledouris
-** DONE Red October soundtrack                                     :FAV:ost:
-* Ben Houge                                                          :lastfm:
+** DONE Red October soundtrack					    :FAV:ost:
+* Ben Houge							     :lastfm:
 * Benjamin Zander
-* Beto Vázquez Infinity                                              :lastfm:
-* Bionic Commando                                                  :FAV:game:
-** Rearmed                                                              :not:
-* Black Sabbath                                                         :FAV:
+* Beto Vázquez Infinity						     :lastfm:
+* Bionic Commando						   :FAV:game:
+** Rearmed								:not:
+* Black Sabbath								:FAV:
 ** DONE <2013-06-10> 13
 ** solo Ozzy Osbourne
 * Bliss(This)
@@ -121,7 +121,7 @@
 ** DONE <2008-09-04> StarCraft
 ** DONE <2010> World of Warcraft: Cataclysm
 ** DONE <2012-05-15> Diablo III: Collector's Edition Soundtrack
-** DONE Starcraft sound                                               :game:
+** DONE Starcraft sound						       :game:
     :PROPERTIES:
    :btih:     DDD749C72C859C80CB2648207909B3A447FCD582
    :END:
@@ -145,13 +145,14 @@
 ** TODO <2013-03-26> Icon
 * BOND
 * Boney M.
-* Boris                                                              :ja:not:
-* Botany Bay                                                         :lastfm:
-* Breaking Benjamin                                                    :game:
-* Buckethead                                                            :FAV:
+* Boris								     :ja:not:
+* Botany Bay							     :lastfm:
+* Breaking Benjamin						       :game:
+* Buckethead								:FAV:
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
+** TODO <2010-09-16 Thu> Spinal Clock
 ** DONE <2011-05-15> It's Alive
 ** DONE <2011-05-20> Empty Space
 ** DONE <2011-08-17> 3 Foot Clearance
@@ -235,10 +236,10 @@
 *** DONE <1999-08-24> The 13th Scroll
 *** DONE <2000-09-30> Cobra Strike II: Y,Y+B,X+Y<hold>←
 ** with Colonel Claypool's Bucket of Bernie Brains
-*** DONE <2004-09-21> The Big Eyeball in the Sky                       :1fav:
-** as Death Cube K                                                     :1fav:
-*** DONE <1994-05-10> Dreamatorium                                     :1fav:
-*** DONE <1997> Disembodied                                           :1fav:
+*** DONE <2004-09-21> The Big Eyeball in the Sky		       :1fav:
+** as Death Cube K						       :1fav:
+*** DONE <1994-05-10> Dreamatorium				       :1fav:
+*** DONE <1997> Disembodied					       :1fav:
 *** DONE <1999-11-10> Tunnel
 *** DONE <2007-12-17> Monolith
 *** DONE <2007> DCK
@@ -248,10 +249,10 @@
 ** with Jonas Hellborg
 *** DONE <1993> Octave of the Holy Innocents
 ** with Shin Terai
-** DONE <1999> Unison                                                  :FAV:
+** DONE <1999> Unison							:FAV:
 ** with Shine
 ** DONE <2004-02-24> Heaven and Hell
-** DONE <2007-06-12> Lightyears                                        :FAV:
+** DONE <2007-06-12> Lightyears						:FAV:
 ** with Thanatopsis
 ** DONE Thanatopsis
 ** DONE <2003> Axiology
@@ -262,38 +263,38 @@
 ** DONE <2010-11-01> Left Hanging
 ** with Travis Dickerson and Bryan "Brain" Mantia
 ** DONE <2008-09-17> The Dragons of Eden
-* Buddy Guy                                                            :tunx:
-* Bullet for My Valentine                                              :1fav:
+* Buddy Guy							       :tunx:
+* Bullet for My Valentine					       :1fav:
 ** TODO <2013-02-12> Temper Temper
 * Burzum
 ** DONE <2012> Umskiptar
 ** TODO <2013-05-27> Sôl austan, Mâni vestan
 ** TODO <2014-06-02 Mon> The Ways of Yore
-* Butterfly Tea                                                      :lastfm:
-* Bức Tường                                                             :FAV:
+* Butterfly Tea							     :lastfm:
+* Bức Tường								:FAV:
 ** TODO Ngày Khác
 * Cat Power
-* Celestial Aeon                                                     :lastfm:
+* Celestial Aeon						     :lastfm:
 * Celesty
 ** DONE <2002> Reign of Elements
 ** DONE <2004> Legacy of Hate
 ** DONE <2006> Mortal Mind Creation
 ** DONE <2009> Vendetta
-* Celldweller                                                            :jo:
+* Celldweller								 :jo:
 ** DONE <2003-02-11> Celldweller
 ** DONE <2004> Beta Cessions
 ** DONE <2008-12> Soundtrack for the Voices in My Head, Volume 01
 ** DONE <2009-08-25> Wish Upon a Blackstar, Chapter 01
 ** DONE <2011> Soundtrack for the Voices in My Head, Volume 02: Chapter 1
 ** DONE <2012-07-24> Soundtrack for the Voices in My Head, Volume 2
-* Charon                                                        :jo:wail:FAV:
-* Children of Bodom                                          :jo:riff:FAV:fi:
-** DONE <2008-04-09> Blooddrunk                                         :1fav:
+* Charon							:jo:wail:FAV:
+* Children of Bodom					     :jo:riff:FAV:fi:
+** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] 								 :jo:
-* Cinderella                                                           :1fav:
-* Clawfinger                                                             :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* Cinderella							       :1fav:
+* Clawfinger								 :jo:
 * Clint Mansell
 ** TODO <2013-09-23> Filth
 * Coldplay
@@ -303,13 +304,13 @@
 * [[http://musicbrainz.org/artist/9e4a0fe6-1c4f-4abd-aea8-0d21a1d13f55][Cryhavoc]]
 ** DONE <1998> [[http://musicbrainz.org/release-group/0fd8cd40-6782-3b70-9687-88d385edc122][Sweetbriers]]
 ** DONE <1999> [[http://musicbrainz.org/release-group/58eb4bcf-5bd0-39eb-b854-69e6f603d998][Pitch-Black Blues]]
-* Céline Dion                                                        :FAV:fr:
+* Céline Dion							     :FAV:fr:
 ** DONE <2012-11-03> Sans Attendre
 ** TODO <2013-11-05> Loved Me Back to Life
-* Dan Masquelier                                                     :lastfm:
-* Dan Wentz                                                            :game:
+* Dan Masquelier						     :lastfm:
+* Dan Wentz							       :game:
 ** DONE FreeSpace 2
-* Daniel Bautista                                        :FAV:jamendo:lastfm:
+* Daniel Bautista					 :FAV:jamendo:lastfm:
 ** DONE <2007-09-03> Music for a Film
 ** DONE <2008-02-19> Recycle Bin
 ** DONE <2008-04-18> 15
@@ -321,9 +322,9 @@
 ** DONE <2012-10-22> Eurotrip
 ** TODO <2014-05-20 Tue> Download or Die
 ** DONE Weirdos And Classics
-* Danzig                                                               :game:
+* Danzig							       :game:
 * Darren Korb
-** DONE <2011-08-05> Bastion Original Soundtrack                  :game:FAV:
+** DONE <2011-08-05> Bastion Original Soundtrack		   :game:FAV:
 * Dave Matthews Band
 ** TODO <2012-09-11> Away from the World
 * Deep Purple
@@ -341,18 +342,18 @@
 * DJ Fab
 * Dornenreich
 ** TODO <2014-05-02> Freiheit
-* Double Dragon                                                      :lastfm:
+* Double Dragon							     :lastfm:
 * [[http://musicbrainz.org/artist/5f6ab597-f57a-40da-be9e-adad48708203][Dr. Dre]]
 * Dream Theater
 ** DONE <2013-09-18> Dream Theater
-* Dry Kill Logic                                                       :1fav:
+* Dry Kill Logic						       :1fav:
 * EELS
 ** TODO <2013-02-03> Wonderful, Glorious
 ** TODO <2014-04-22> The Cautionary Tales of Mark Oliver Everett
 * El Pogo8bit
-** DONE <2009> Listen to Your Game EP                                  :FAV:
+** DONE <2009> Listen to Your Game EP					:FAV:
 * Electric Light Orchestra
-* Elias Viljanen                                                        :FAV:
+* Elias Viljanen							:FAV:
 * Elton John
 ** TODO <2012-07-16> Good Morning to the Night
 ** TODO <2013-09-16> The Diving Board
@@ -364,7 +365,7 @@
 * Elvis Presley
 * Emilie Autumn
 ** TODO <2012-07-24> Fight Like a Girl
-* Eminem                                                                :FAV:
+* Eminem								:FAV:
 ** TODO <2013-11-05> The Marshall Mathers LP 2
 ** DONE D12
 * Ennio Morricone
@@ -376,14 +377,14 @@
 ** TODO <2012-03-09> Requiem for the Indifferent
 ** TODO <2013-10-28> Back to the Front
 ** TODO <2014-05-02> The Quantum Enigma
-* Eric Brosius                                                     :FAV:game:
+* Eric Brosius							   :FAV:game:
 ** DONE System Shock 2
 ** DONE <2006> Thief: Deadly Shadow
 * Eternal Tears of Sorrow
 ** TODO <2013-02-22> Saivon Lapsi
 * Europe
 ** TODO <2012-04> Back of Bones
-* Evanescene                                                            :FAV:
+* Evanescene								:FAV:
 * Faerghail
 * Fate Zero
 * Fates Warning
@@ -393,23 +394,23 @@
 * [[http://musicbrainz.org/artist/a670e05a-cea8-4b37-bce9-d82daf1a0fa4][Feist]]
 * Finntroll
 ** TODO <2013-03-25> Blodsvept
-* FireLake                                                             :1fav:
-** Dirge for the Planet                                                 :FAV:
-* Flight of the Conchords                                               :FAV:
+* FireLake							       :1fav:
+** Dirge for the Planet							:FAV:
+* Flight of the Conchords						:FAV:
 * Flowing Tears
-* Fort Minor                                                            :FAV:
+* Fort Minor								:FAV:
 ** DONE <2005> The Rising Tied
 * France Gall
-* Franz Liszt                                                         :piano:
-** Liebestraum                                                          :FAV:
-* Frédéric Chopin                                                       :FAV:
+* Franz Liszt							      :piano:
+** Liebestraum								:FAV:
+* Frédéric Chopin							:FAV:
 ** DONE Complete Piano Music feat. Idil Biret
 * Garbage
-* GONE Boyzone                                                          :FAV:
+* GONE Boyzone								:FAV:
 ** DONE <2013-11-25> BZ20
-* GONE Carpenters                                                       :FAV:
-* GONE Kylähullut                                                       :FAV:
-* GONE Ludwig van Beethoven                                             :FAV:
+* GONE Carpenters							:FAV:
+* GONE Kylähullut							:FAV:
+* GONE Ludwig van Beethoven						:FAV:
 ** <1997-10-14> Complete Beethoven Edition
 ** DONE Volume 1: Symphonies
      :PROPERTIES:
@@ -447,44 +448,44 @@
 *** Volume 19: Large Choral Works
 *** Volume 20: Historic Recordings
 ** DONE [[http://musicbrainz.org/release-group/f1b595ba-6c14-39e7-b7db-a6774c7c7c1f][The Symphonies (Berliner Philharmoniker feat. conductor: Herbert von Karajan)]]
-* GONE M2M                                                              :FAV:
+* GONE M2M								:FAV:
 ** DONE <2000-03-07> Shades of Purple
 ** DONE <2002-03-05> The Big Room
 ** DONE <2003-05-05> The Day You Went Away: The Best of M2M
 ** solo Marion Raven
 ** DONE <2005-06-08> Here I Am
-* GONE Savatage                                                    :epic:FAV:
+* GONE Savatage							   :epic:FAV:
 ** as Trans-Siberian Orchestra
 *** TODO <2012-10-30> Dream of Fireflies <on a Christmas Night>
-* GONE Simon & Garfunkel                                                :FAV:
-* GONE Spice Girls                                                        :f:
+* GONE Simon & Garfunkel						:FAV:
+* GONE Spice Girls							  :f:
 * Gorillaz
 ** TODO <2012-02-23> DoYaThing
 * Grateful Dead
 * Green Days
-* Guns N' Roses                                                         :FAV:
+* Guns N' Roses								:FAV:
 * Gustav Mahler
 ** DONE <1999> [[http://musicbrainz.org/release-group/7ca1cf4a-0d5d-326e-8244-3d61ee02210f][Symphony No. 9]]
 ** DONE <2001> [[http://musicbrainz.org/release-group/db4fecca-8e1c-46e9-8ee1-9e90820cfd69][Symphony No. 5]]
 ** DONE <2001-08-28> [[http://musicbrainz.org/release-group/eace2ac3-9fb7-4667-942b-4468463584f8][Symphony No. 4]]
-* Gạt Tàn Đầy                                                           :FAV:
+* Gạt Tàn Đầy								:FAV:
 * HammerFall
 ** TODO <2012-11-30> Gates of Dalhalla
-* Hanoi Rocks                                                           :FAV:
+* Hanoi Rocks								:FAV:
 * Hans Zimmer
-** DONE The Rock                                                 :movie:FAV:
-* Harvey Danger                                                         :FAV:
+** DONE The Rock						  :movie:FAV:
+* Harvey Danger								:FAV:
 * Heart
 ** TODO <2013-05-13> Icon
 * Heart
 ** TODO <2012-10-02> Fanatic
-* Helloween                                                             :FAV:
+* Helloween								:FAV:
 ** TODO <2013-01-18> Straight Out of Hell
-* HIM                                                                   :FAV:
+* HIM									:FAV:
 ** TODO <2013-04-26> Tears on Tape
-* Hinder                                                             :lastfm:
+* Hinder							     :lastfm:
 * Homeworld
-* Humer                                                                :chip:
+* Humer								       :chip:
 * [[http://musicbrainz.org/artist/8a0e10a9-80c7-40e0-bf5b-89f1d57f9537][Iced Earth]]
 ** DONE <1991-11-01> Night of the Stormrider
 ** DONE <1995-03> Burnt Offerings
@@ -495,25 +496,25 @@
 ** TODO <2014-01-21> Plagues of Babylon
 * Il Divo
 * Incubus
-* Inon Zur                                                             :game:
+* Inon Zur							       :game:
 ** DONE <2008-12-18> Prince of Persia
 * Insomnium
 ** DONE <2011> One for Sorrow
 ** TODO <2014-04-25> Shadows of the Dying Sun
-* Iron Maiden                                                           :FAV:
+* Iron Maiden								:FAV:
 * Jack Wall
 ** DONE Jade Empire
-* James Hannigan                                                        :FAV:
+* James Hannigan							:FAV:
 ** Evil Genius
 ** Republic: The Revolution
 * Jan Morgenstern
 ** DONE Big Buck Bunny
-* Jay-Z                                                                 :rap:
+* Jay-Z									:rap:
 ** TODO <2013-01-01> Black American Gangster
 ** TODO <2013-07-08> Magna Carta... Holy Grail
-* Jeremy Soule                                                         :game:
+* Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]                                                           :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -528,21 +529,21 @@
 * Joan Osborne
 ** TODO <2014-04-08> Love and Hate
 * Joe Hisaishi
-** <2011-02-09> Ni no Kuni: Shikkoku no Madoushi                        :FAV:
+** <2011-02-09> Ni no Kuni: Shikkoku no Madoushi			:FAV:
 * Joel Nielsen
-** DONE <2012-09-01> Black Mesa                                       :game:
+** DONE <2012-09-01> Black Mesa					       :game:
 * Johann Sebastian Bach
-** DONE Crab Canon                                                     :FAV:
-** DONE <2012-05-28> Open Goldberg Variations                    :FAV:piano:
+** DONE Crab Canon							:FAV:
+** DONE <2012-05-28> Open Goldberg Variations			  :FAV:piano:
 ** DONE The Well-Tempered Clavier feat. Angela Hewitt
 * Johannes Brahms
-* Jonathan Coulton                                            :FAV:mock:cute:
+* Jonathan Coulton					      :FAV:mock:cute:
 ** TODO <2014-01-05> Code Monkey Save World: Unplugged
 ** with John Roderick
 *** TODO <2012-11-15> One Christmas at a Time
 * Josh Groban
 ** TODO <2013-02-01> All That Echoes
-* Josh Woodward                                              :jamendo:lastfm:
+* Josh Woodward						     :jamendo:lastfm:
 ** DONE <2004-04-17> Here Today
 ** DONE <2005-02-05> Crawford Street
 ** DONE <2005> Sunny Side of the Street
@@ -552,7 +553,7 @@
 ** DONE <2008-04-24> The Simple Life
 ** DONE <2009-10-21> Breadcrumbs
 ** DONE <2010> Ashes
-* JT Bruce                                                      :FAV:jamendo:
+* JT Bruce							:FAV:jamendo:
 ** DONE <2011> Ruined Subjects
 * Judas Priest
 ** TODO <2014-07-08 Tue> Redeemer of Souls
@@ -577,9 +578,9 @@
 ** DONE <2010-03-31> Lustdriven
 * Korn
 ** DONE <2011> The Path of Totality
-* Korpiklaani                                                   :FAV:fi:riff:
+* Korpiklaani							:FAV:fi:riff:
 ** DONE <2012-08-14> Manala
-* Kotiteollisuus                                                         :fi:
+* Kotiteollisuus							 :fi:
 ** DONE <1998-05> Aamen
 ** DONE <1999-05> Eevan perintö
 ** DONE <2000-10> Tomusta ja tuhkasta
@@ -603,24 +604,24 @@
 ** DONE <1996-08> Hullu ukko ja Kotiteollisuus
 * Lacrimosa
 ** TODO <2012-09> Revolution
-* Lake of Tears                                                         :FAV:
+* Lake of Tears								:FAV:
 ** DONE <2011-04-29> Illwill
 * [[http://musicbrainz.org/artist/298909e4-ebcb-47b8-95e9-cc53b087fc65][Lamb of God]]
 ** TODO [[http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99][Resolution]]
-* Led Zeppelin                                                         :1fav:
+* Led Zeppelin							       :1fav:
 ** TODO <2012-11-19> Celebration Day
-* Lenka                                                           :jo:f:1fav:
+* Lenka								  :jo:f:1fav:
 * Lia
 * Life of Agony
-* Linkin Park                                                           :FAV:
+* Linkin Park								:FAV:
 ** DONE <2012-06-26> Living Things
 ** DONE <2013-10-29> Recharged
 ** TODO <2014-06-13 Fri> The Hunting Party
 * Lionel Richie
 * Louis Armstrong
-* Low Roar                                                               :jo:
+* Low Roar								 :jo:
 * Lê Cát Trọng Lý
-* Lệ Quyên                                                       :vi:f:voice:
+* Lệ Quyên							 :vi:f:voice:
 ** DONE <2004-08-27> Giấc mơ có thật
 ** DONE <2006-12> Lời yêu còn măi
 ** DONE <2009-11-20> Nếu như ngày đó
@@ -632,30 +633,30 @@
 ** DONE <2013-09> Con tim dại khờ
 ** DONE <2013-09> Dòng thời gian
 * M.I.A
-* Machine Men                                                           :FAV:
+* Machine Men								:FAV:
 ** DONE <2003> Scars & Wounds
 ** DONE <2005-08-08> Elegies
 ** DONE <2007-02-16> Circus of Fools
-* Manowar                                                               :FAV:
-** TODO <2012-06-16> The Lord of Steel
-* Mark Morgan                                                      :FAV:game:
+* Manowar								:FAV:
+** DONE <2012-06-16> The Lord of Steel
+* Mark Morgan							   :FAV:game:
 ** DONE <1999> Planescape: Torment
-* Maroon 5                                                               :jo:
+* Maroon 5								 :jo:
 ** TODO <2012-06-26> Overexposed
+** TODO <2014-09-02 Tue> V
 * Mastodon
 ** TODO <2014-04-17> High Road
 ** TODO <2014-06-24 Tue> Once More 'Round the Sun
-* Max Payne                                                        :game:FAV:
+* Max Payne							   :game:FAV:
 ** DONE [[http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b][Max Payne]]
 ** DONE Max Payne 2: The Fall of Max Payne
 ** DONE Max Payne 3: The Official Soundtrack
-* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]]                                                         :FAV:riff:
+* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]]							   :FAV:riff:
 ** DONE <2007> United Abominations
 ** DONE <2009> [[http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a][Endgame]]
 ** DONE <2011> Th1rt3en
 ** DONE <2013-06-04> Super Collider
-** TODO <2014-02-25> Icon
-* [[http://megadriver.com.br][MegaDriver]]                                               :riff:game:lastfm:
+* [[http://megadriver.com.br][MegaDriver]]						   :riff:game:lastfm:
 ** DONE <2003> Push Start Button
 ** DONE <2004> Action Metal
 ** DONE <2004> Metal Axe
@@ -664,7 +665,7 @@
 ** DONE <2007> Top Gear
 ** DONE <2008> MetalHog
 ** DONE <2011> Metal for Gamers
-* Metal Church                                                         :1fav:
+* Metal Church							       :1fav:
 ** DONE <1982-10> Four Hymns
 ** DONE <1984> Metal Church
 ** DONE <1986> The Dark
@@ -677,37 +678,37 @@
 ** DONE <2006-06-27> A Light in the Dark
 ** DONE <2008-09-23> This Present Wasteland
 ** TODO <2013-10-22> Generation Nothing
-* Metal Gear Solid                                                      :FAV:
+* Metal Gear Solid							:FAV:
 ** DONE MGS
-*** Twin Snakes 							:not:
+*** Twin Snakes								:not:
 ** DONE MGS2
 ** DONE MGS3
 ** DONE MGS4
 ** DONE <2010-04-12> Metal Gear Solid: Peace Walker
 ** TODO <2013-02-19> Metal Gear Rising: Revengeance-Vocal Tracks
-* Metallica                                                             :FAV:
+* Metallica								:FAV:
 ** TODO <2013-08-13> Anger
 * Michael Bublé
 ** TODO <2013-04-12> To Be Loved
 * Michael Hoenig
 ** DONE Baldur's Gate
 ** DONE Baldur's Gate II
-* Michael Learns to Rock                                               :1fav:
+* Michael Learns to Rock					       :1fav:
 * Michael McCann
-** DONE <2011-11-15> Deus Ex: Human Revolution                    :FAV:game:
-* Michelle Stewart                                                      :FAV:
+** DONE <2011-11-15> Deus Ex: Human Revolution			   :FAV:game:
+* Michelle Stewart							:FAV:
 ** DONE <2011> Walking on Ashes
 ** TODO <2013> Sands of Time
-* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]]                                                     :vi:riff:FAV:
-* Mike Oldfield                                                         :FAV:
+* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]] :vi:riff:FAV:
+* Mike Oldfield								:FAV:
 ** DONE <2013-02-01> Tubular Beats
 ** TODO <2014-03-03> Man On the Rocks
 ** with Terry Oldfield
 *** DONE <2012-10-09> Journey into Space
 * Mikko Tarmia
-** DONE <2011-05-17> Amnesia: The Dark Descent                    :FAV:game:
+** DONE <2011-05-17> Amnesia: The Dark Descent			   :FAV:game:
 * Milkmen
-* Mokoma                                                                 :fi:
+* Mokoma								 :fi:
 ** DONE <1999> Valu
 ** DONE <2001> Mokoman 120 päivää
 ** DONE <2003-10-10> Punainen kukko EP
@@ -718,15 +719,15 @@
 ** DONE <2007-11-28> Luihin ja ytimiin
 ** DONE <2010-03-24> Sydänjuuret
 ** TODO <2012-10-19> 180 astetta
-* Monty Python                                                          :FAV:
-* Muse                                                                 :1fav:
+* Monty Python								:FAV:
+* Muse								       :1fav:
 ** TODO <2012-09-17> The 2nd Law
 * My Bloody Valentine
-* My Chemical Romance                                                  :1fav:
+* My Chemical Romance						       :1fav:
 * Månegram
 ** TODO <2013-06-28> Legions of the North
-* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]]                                                               :FAV:
-** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]]                                         :not:
+* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]] :FAV:
+** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]] :not:
 * Mỹ Tâm
 * Nat King Cole
 * Neil Young & Crazy Horse
@@ -748,7 +749,7 @@
 ** Nguời Hà Nội
 ** Tuổi trẻ thế hệ Bác Hồ
 ** Đất nuớc
-* Nightwish                                                             :FAV:
+* Nightwish								:FAV:
 ** DONE <2011> Imaginaerum
 ** solo [[http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4][Tarja Turunen]]
 *** DONE <2006> [[http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5][Henkäys ikuisuudesta]]
@@ -757,7 +758,7 @@
 *** TODO <2014-06-10 Tue> Beauty & The Beat
 *** TODO <2014-07-15 Tue> Left in the Dark
 * Nirvana
-* No Doubt                                                                :f:
+* No Doubt								  :f:
 ** TODO <2012-09-25> Push and Shove
 * Nobuo Uematsu
 ** DONE FF VIII
@@ -767,55 +768,55 @@
 ** DONE Piano Collection
 ** DONE Soundtrack
 ** DONE Soundtrack Plus
-* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]]                                                      :FAV:jamendo:
+* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]] :FAV:jamendo:
 ** DONE <2006> Time to Differ
 ** DONE <2008-11-19> Nice Noise
 * Norah Jones
 ** TODO <2013-11-25> Foreverly
 * Normand Corbeil
-** [[http://musicbrainz.org/release/44108976-6221-46c0-9902-b9c0330a3670][Heavy Rain]]                                                      :FAV:game:
+** [[http://musicbrainz.org/release/44108976-6221-46c0-9902-b9c0330a3670][Heavy Rain]] :FAV:game:
 * Norther
 * NOT Tool
 * Nuclear Assault
-* Oleg Serkov                                               :FAV:inst:string:
+* Oleg Serkov						    :FAV:inst:string:
 * OneRepublic
 ** TODO <2013-03-22> Native
 * Orphaned Land
 ** TODO <2013-06-24> All Is One
 * Our Lady Peace
-* Pain Confessor                                                       :wail:
+* Pain Confessor						       :wail:
 ** DONE <2004-09-08> Turmoil
 ** DONE <2006-03-01> Fearrage
 ** DONE <2007-03-14> Purgatory of the Second Sun
-* Pain of Salvation                                                 :epic:jo:
+* Pain of Salvation						    :epic:jo:
 * Pantera
-* Paramore                                                                :f:
+* Paramore								  :f:
 * Pearl Jam
 ** TODO <2013-10-15> Lightning Bolt
-* Peter McConnell                                                  :game:FAV:
+* Peter McConnell						   :game:FAV:
 ** DONE Grim Fandango
 ** DONE Grim Fandango Additional
 ** DONE <2005-09-10> Psychonauts Original Soundtrack
 ** DONE <2012-05-31> Psychonauts: Original Cinematic Score
 * Phil Collins
-* Piano tributes                                                      :piano:
-** DONE <2005-01-04> Eclipse: Piano Tribute to Evanescence             :FAV:
+* Piano tributes						      :piano:
+** DONE <2005-01-04> Eclipse: Piano Tribute to Evanescence		:FAV:
 ** DONE <2005-08-02> The Piano Tribute to Iron Maiden
 ** DONE <2007> Pianotarium: Piano Tribute to Metallica
 ** DONE <2007-01-09> My Chemical Romance: A Piano Tribute
 ** DONE <2010-07-13> The Piano Tribute to Lady Gaga
 ** DONE <2011> Piano Tribute to Mumford & Sons
 ** TODO <2012-08-28> Piano Tribute to Aerosmith
-* Pilotwings 64                                                    :FAV:game:
+* Pilotwings 64							   :FAV:game:
 * Pink Floyd
-* Placebo                                                                :jo:
+* Placebo								 :jo:
 * Poisonblack
-* Powerglove                                                            :FAV:
+* Powerglove								:FAV:
    :PROPERTIES:
    :url:      http://vgmetal.com
    :END:
 * Primus
-* Prophecy                                                           :lastfm:
+* Prophecy							     :lastfm:
 * Public Enemy
 ** TODO <2012-07-13> Most of My Heroes Still Don't Appear on No Stamp
 ** TODO <2012-10-01> The Evil Empire of Everything
@@ -823,13 +824,13 @@
 * Puddle of Mudd
 * Pyotr Ilyich Tchaikovsky
 * Queen
-* Quốc Bảo                                                           :FAV:vi:
+* Quốc Bảo							     :FAV:vi:
 ** DONE <2003> Bình yên
-* Radiohead                                                              :jo:
+* Radiohead								 :jo:
 * Rage Against the Machine
 * Regina Spektor
 ** DONE <2012-05-29> What We Saw from the Cheap Seats
-* Rhapsody                                                           :FAV:it:
+* Rhapsody							     :FAV:it:
 ** solo Luca Turilli
 ** DONE <1999-09-22> King of the Nordic Twilight
 ** DONE <2002> Prophet of the Last Eclipse
@@ -837,7 +838,7 @@
 ** DONE <2006-06-09> Lost Horizons
 ** as Rhapsody of Fire
 *** TODO <2013-11-22> Dark Wings of Steel
-* Richard Clayderman                                             :inst:piano:
+* Richard Clayderman						 :inst:piano:
 ** TODO <2013-04-30> Romantique
 ** TODO <2014-03-14> Plays World Hits
 * Richard Strauss
@@ -848,38 +849,38 @@
 ** DONE <2012-05-28> Boys Don't Cry
 * Rush
 * Saattue
-* Sabaton                                                            :lastfm:
-* Santana                                                        :FAV:guitar:
+* Sabaton							     :lastfm:
+* Santana							 :FAV:guitar:
 ** DONE <2012-05-11> Shape Shifter
 ** DONE <2014-05-06> Corazón
 * Santigold
-* Sarah Brightman                                                  :f:jo:FAV:
+* Sarah Brightman						   :f:jo:FAV:
 ** DONE <2013-04-05> Dreamchaser
-* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]]                                                             :FAV:
+* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]] :FAV:
 ** DONE <2007> [[http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286][Humanity: Hour I]]
 ** DONE <2011> Comeblack
-* Sean Wright                                                        :lastfm:
-* Secret Garden                                                  :FAV:string:
+* Sean Wright							     :lastfm:
+* Secret Garden							 :FAV:string:
 ** DONE <2007-11-26> Inside I'm Singing
 ** DONE <2011> Winter Poem
-* Senses Fail                                                           :not:
+* Senses Fail								:not:
 ** TODO <2013-03-26> Renacer
 * Sentenced
-* Sepultura                                                              :jo:
+* Sepultura								 :jo:
 * Shadow Hearts
 ** DONE Koudelka
 ** DONE Shadow Hearts
 ** DONE <2004-03-24> Shadow Hearts II
 ** DONE Shadow Hearts III
 * Shadowy Men on a Shadowy Planet
-* Shinedown                                                            :1fav:
+* Shinedown							       :1fav:
 ** DONE <2012-03-27> Amaryllis
 * Silversun Pickups
-* Simple Plan                                                            :jo:
+* Simple Plan								 :jo:
 * Sinergy
-* Sirenia                                                                 :f:
+* Sirenia								  :f:
 ** TODO <2013-06-28> Perils of the Deep Blue
-* Sixpence None the Richer                                            :FAV:f:
+* Sixpence None the Richer					      :FAV:f:
 ** TODO <2012-08-07> Lost in Transition
 * Skillet
 ** TODO <2013-06-25> Rise
@@ -887,7 +888,7 @@
 * Slayer
 * Snow Patrol
 ** DONE <2011> Fallen Empires
-* Sonata Arctica                                           :riff:epic:FAV:fi:
+* Sonata Arctica					   :riff:epic:FAV:fi:
 ** DONE <2012-05-22> Stones Grow Her Name
 ** DONE <2014-03-28> Pariah's Child
 * Soul Asylum
@@ -904,65 +905,65 @@
 ** DONE <2006-07-11> The Silver Lining
 ** DONE <2012-07-17> Delayed Reaction
 * Spencer Nilsen
-** DONE <1996> Ecco: Songs of Time                                :game:FAV:
+** DONE <1996> Ecco: Songs of Time				   :game:FAV:
 * Stam1na
 ** TODO <2014-02-07> SLK
 * Starbomb
-** DONE Starbomb                                                       :FAV:
-* Steve Vai                                                            :inst:
+** DONE Starbomb							:FAV:
+* Steve Vai							       :inst:
 ** TODO <2012-08-14> The Story of Light
-* Stevie Ray Vaughan                                                 :guitar:
-* Stone Sour                                                       :wail:FAV:
-* Stratovarius                                                       :FAV:fi:
+* Stevie Ray Vaughan						     :guitar:
+* Stone Sour							   :wail:FAV:
+* Stratovarius							     :FAV:fi:
 ** DONE <2013-01-25> Unbreakable
 ** TODO <2013-02-25> Nemesis
 ** solo Timo Tolkki
-* String Quartet tributes                                        :FAV:string:
+* String Quartet tributes					 :FAV:string:
 ** DONE <1999> The String Quartet Tribute to Led Zeppelin
 ** DONE <2002> The String Quartet Tribute to Coldplay
 ** DONE <2002> The String Quartet Tribute to Incubus
 ** DONE <2003> The String Quartet Tribute to Evanescence
 ** DONE <2004> The String Quartet Tribute to Guns N' Roses
-** DONE <2004> The String Quartet Tribute to the Red Hot Chili Peppers :FAV:
+** DONE <2004> The String Quartet Tribute to the Red Hot Chili Peppers	:FAV:
 ** DONE <2006> Embracing The Heaviness: The String Quartet Tribute to Stone Sour
 ** DONE <2006> Strung Out On Shinedown: The String Quartet Tribute
 ** DONE <2006> The Dream is Real: The String Quartet Tribute to Senses Fail
-** DONE <2007> The String Quartet Tribute to 2Pac                     :1fav:
+** DONE <2007> The String Quartet Tribute to 2Pac		       :1fav:
 ** DONE <2008-04-15> String Tribute to Bullet for My Valentine
 ** DONE <2009> Vitamin String Quartet Performs Green Day's American Idiot
 ** DONE <2010> VSQ Performs Lady Gaga
 ** TODO <2013-11-27> A Tribute to Dazed and Confused
 ** DONE Senses Fail
 ** DONE Shinedown
-** DONE Tupac                                                         :1fav:
+** DONE Tupac							       :1fav:
 * Styles of Beyond
 ** DONE <1999-08-24> 2000 Fold
 ** DONE <2003> Megadef
 ** DONE <2007-08-10> Razor Tag
-* Symphony X                                                       :FAV:epic:
+* Symphony X							   :FAV:epic:
 * System of a Down
 * Tacere
-* Tarot                                                              :FAV:fi:
-* Ted Nugent                                                           :riff:
+* Tarot								     :FAV:fi:
+* Ted Nugent							       :riff:
 * Tesla
-* Thanh Tùng                                                         :FAV:vi:
-* The Beatles                                                           :FAV:
+* Thanh Tùng							     :FAV:vi:
+* The Beatles								:FAV:
 * The Bug
 * The Charlie Daniels Band
-* The Civil Wars                                                          :f:
-* The Corrs                                                    :FAV:f:string:
-* The Cranberries                                                    :FAV:jo:
+* The Civil Wars							  :f:
+* The Corrs						       :FAV:f:string:
+* The Cranberries						     :FAV:jo:
 * The Doors
-* The Ink Spots                                                    :FAV:blue:
+* The Ink Spots							   :FAV:blue:
 * The Lord Weird Slough Feg
 ** TODO <2014-02-18> Digital Resistance
 * The Smashing Pumpkins
 ** TODO <2012-06-18> Oceania
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]                                             :game:wail:
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
-* ThePlasmas                                               :riff:game:lastfm:
+* ThePlasmas						   :riff:game:lastfm:
 ** DONE <2008> Extreme NES Terror
 ** DONE <2008> Noentiendo
 ** DONE <2009> Bite My Bytes
@@ -994,7 +995,7 @@
 ** DONE <1997-06-26> A'arab Zaraq Lucid Dreaming
 ** DONE <1998> Vovin
 ** DONE <1999-06-07> Crowning of Atlantis
-** DONE <2000-01-31> Deggial                                           :FAV:
+** DONE <2000-01-31> Deggial						:FAV:
 ** DONE <2001-11-13> Secret of the Runes
 ** DONE <2004-06-01> Lemuria
 ** DONE <2004-06-01> Sirius B
@@ -1004,11 +1005,11 @@
 ** DONE <2009> The Miskolc Experience
 ** DONE <2010-10-26> Sitra Ahra
 ** DONE <2012-09-28> Les fleurs du mal
-* They Might Be Giants                                               :jbopre:
+* They Might Be Giants						     :jbopre:
 ** TODO <2013-03-05> Nanobots
-* Thy Serpent                                                          :1fav:
-* Thủy Triều Đỏ                                                          :vi:
-* Tim Minchin                                                           :FAV:
+* Thy Serpent							       :1fav:
+* Thủy Triều Đỏ								 :vi:
+* Tim Minchin								:FAV:
 ** DONE <2005> Darkside
 ** DONE <2006> So Rock
 ** DONE <2008> Ready for This?
@@ -1017,9 +1018,9 @@
 ** DONE <2013-11-29> So Fucking Rock
 ** DONE Timmy the Dog
 * Tina Arena
-* To/Die/For                                                       :FAV:wail:
+* To/Die/For							   :FAV:wail:
 ** DONE <2011> Samsara
-* Tokyo Jihen                                                   :jo:ja:FAV:f:
+* Tokyo Jihen							:jo:ja:FAV:f:
 ** DONE <2004-11-25> 教育 <Kyouiku>
 ** DONE <2006-01-25> 大人 <Adult>
 ** DONE <2007-09-26> 娯楽 <Variety>
@@ -1034,15 +1035,15 @@
 *** DONE <2007-02-21> 平成風俗 <Japanese Manners>
 *** DONE <2009-06-24> 三文ゴシップ <Superficial Gossip>
 *** TODO <2014-05-27> 逆輸入 〜港湾局〜
-* Tom Lehrer                                                       :FAV:mock:
+* Tom Lehrer							   :FAV:mock:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
    :url:      http://home.broadpark.no/~emeyn/tl/links.html
    :END:
-* Tony Bennett                                                         :tunx:
+* Tony Bennett							       :tunx:
 ** TODO <2012-10-22> Viva Duets
 * Tony Cicoria
-* Tracy Chapman                                                  :tunx:f:FAV:
+* Tracy Chapman							 :tunx:f:FAV:
 ** DONE <1988-04-05> Tracy Chapman
 ** DONE <1989-09> Crossroads
 ** DONE <1992-04-28> Matters of the Heart
@@ -1051,14 +1052,15 @@
 ** DONE <2002-10-15> Let It Rain
 ** DONE <2005-09-13> Where You Live
 ** DONE <2008-11-07> Our Bright Future
-* Train                                                                :tunx:
+* Train								       :tunx:
 ** TODO <2012-04-16> California 37
-* Tryad                                                        :1fav:jamendo:
-* Trịnh Công Sơn                                                     :FAV:vi:
+** TODO <2014-09-16 Tue> Bulletproof Picasso
+* Tryad							       :1fav:jamendo:
+* Trịnh Công Sơn						     :FAV:vi:
 * Tuoni
 ** DONE <2005> Elävät & kuolleet
 ** TODO <2014-03-07> Kuolonpyörä
-* Turisas                                                                :fi:
+* Turisas								 :fi:
 ** DONE <2013-08-21> Turisas2013
 * Turmion Kätilöt
 * Týr
@@ -1068,25 +1070,25 @@
 * Vanilla Sky
 ** TODO <2012-12-18> The Band Not the Movie
 * Various Artists
-** DONE <1999-10> Mong ước kỷ niệm xưa                              :vi:FAV:
-** DONE <2000> Vampire: The Masquerade: Redemption                :game:FAV:
+** DONE <1999-10> Mong ước kỷ niệm xưa				     :vi:FAV:
+** DONE <2000> Vampire: The Masquerade: Redemption		   :game:FAV:
 ** DONE <2003> Need for Speed Underground
 ** DONE <2004> Need for Speed Underground 2
 ** DONE <2005-11> Need for Speed Most Wanted
 ** DONE <2006-11> Need for Speed Carbon
 ** DONE <2007> Need for Speed ProStreet
 ** DONE <2010-03-16> God of War III
-** [[http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d][Juno]]                                                                 :FAV:
-** [[http://musicbrainz.org/release-group/9de09c3a-7609-34f3-9e84-4f37fc5c4df6][Juno B-Sides: Almost Adopted Songs]]                                   :FAV:
-** [[http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0][Rock The Nation: Tìm đến nhau]]                                :FAV:vi:riff:
-** DONE [[http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/][Singing Science Records]]                                        :FAV:
+** [[http://musicbrainz.org/release-group/88512a56-30d3-3795-87c0-f7270c8b016d][Juno]] :FAV:
+** [[http://musicbrainz.org/release-group/9de09c3a-7609-34f3-9e84-4f37fc5c4df6][Juno B-Sides: Almost Adopted Songs]] :FAV:
+** [[http://musicbrainz.org/release-group/32a44820-50e3-4572-8cf6-c875acd411a0][Rock The Nation: Tìm đến nhau]] :FAV:vi:riff:
+** DONE [[http://web.archive.org/web/20100410043232/http://www.acme.com/jef/singing_science/][Singing Science Records]] :FAV:
 *** Energy & Motion Songs
 *** Experiment Songs
 *** More Nature Songs
 *** Nature Songs
 *** Space Songs
 *** Weather Songs
-* Verjnuarmu                                                             :fi:
+* Verjnuarmu								 :fi:
 ** DONE <2006-01-25> Muanpiällinen helevetti
 ** DONE <2008-05-14> Ruatokansan uamunkoetto
 ** DONE <2010-10-27> Lohuton
@@ -1103,18 +1105,19 @@
 ** DONE <2004> [[http://musicbrainz.org/release-group/7e8c9b16-b135-3eaf-9e33-7ca1aa694a8a][Wintersun]]
 ** DONE <2012-10-19> Time I
 * Wolfgang Amadeus Mozart
-** DONE Requiem in D minor K626, Karajan 1962                         :1fav:
-* X/X JAPAN                                                         :1fav:ja:
-* Yngwie J. Malmsteen                                           :inst:guitar:
+** DONE Requiem in D minor K626, Karajan 1962			       :1fav:
+* X/X JAPAN							    :1fav:ja:
+* Yngwie J. Malmsteen						:inst:guitar:
 ** TODO <2012-12-05> Spellbound
 * Zack Browning
 ** TODO Secret Pulse
 * Zak Belica
-** DONE <2005> SiN                                                    :game:
-* Zakk Wylde                                                             :jo:
-* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]                                                     :FAV:inst:
+** DONE <2005> SiN						       :game:
+* Zakk Wylde								 :jo:
+* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]] :FAV:inst:
 ** TODO <2008-08-17 Sun> Disabled Emotions Suite
 ** TODO <2009-06-24 Wed> Earth
 ** TODO <2009-11-22 Sun> Ambient Symphony
+** TODO <2010> Fairytale
 ** TODO <2012-01-06> Untold Stories of a Dying Moon
 ** TODO <2013-07-06> e-world: The Ultimate Edition

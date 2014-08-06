@@ -1,10 +1,9 @@
-#    -*- mode: org -*-
 * Barbara Minto
 ** The Pyramid Principle
-* Benjamin Franklin                                                     :mjd:
+* Benjamin Franklin							:mjd:
 * Bill Hammack
  - [ ] Eight Amazing Engineering Stories
-* Bill Hicks                                                   :humor:spoken:
+* Bill Hicks						       :humor:spoken:
  - [X] (1990) Dangerous
  - [X] (1992) Relentless
  - [X] (1993) Revelations
@@ -19,24 +18,24 @@
  - [X] Hicksville
  - [X] Live in Brighton
  - [X] The Letterman Performances
-* Bradley M. Kuhn                                               :free:pgnome:
-* Carl Sagan                                                            :sci:
+* Bradley M. Kuhn						:free:pgnome:
+* Carl Sagan								:sci:
  - [ ] Billions and Billions
  - [ ] Cosmos
  - [ ] Contact
  - [ ] The Dragons of Eden
  - [ ] The Demon Haunted World: Science has a Candle in the Dark
 * Dan Kaminsky
-* Daniel Dennett                                                        :mjd:
+* Daniel Dennett							:mjd:
  - [ ] Darwin's Dangerous Idea
-* Daniel Tosh                                                   :voice:humor:
+* Daniel Tosh							:voice:humor:
 ** DONE (2005-11-08) True Stories I Made Up
 ** DONE (2011-03-08) Happy Thoughts
 * Dave Winer
    :PROPERTIES:
    :url:      http://scripting.com
    :END:
-* George Carlin                                                 :voice:humor:
+* George Carlin							:voice:humor:
    :PROPERTIES:
    :btih:     DF8CA6C19FB0666E789FD08E7148CF5304529923
    :END:
@@ -67,39 +66,39 @@
 ** DONE (2004-10-12) When Will Jesus Bring the Pork Chops?
 ** DONE (2006-01-10) Life Is Worth Losing
 ** DONE (2008-07-29) It's Bad for Ya
-** DONE (2009-11-10) Last Words                                        :bio:
-* Ian Hickson                                                    :net:whatwg:
+** DONE (2009-11-10) Last Words						:bio:
+* Ian Hickson							 :net:whatwg:
    :PROPERTIES:
    :url:      http://hixie.ch
    :END:
 * James Cambias
  - [ ] A Darkling Sea
-* James Kakalios                                                  :sci:humor:
+* James Kakalios						  :sci:humor:
  - [ ] The Amazing Story of Quantum Mechanics
  - [ ] The Physics of Super Heroes
 * Jason Kottke
-* Jason Scott                                                      :free:net:
+* Jason Scott							   :free:net:
 * Jiddu Krishnamurti
  - [ ] Think on These Things                                                :tunx:
 * John Ralston Saul
  - [ ] The Collapse of Globalism and the Reinvention of the World     :econ:
-* Mark Pilgrim                                    :free:code:net:whatwg:
+* Mark Pilgrim					       :free:code:net:whatwg:
    :PROPERTIES:
    :url:      http://firehose.diveintomark.org
    :END:
-* Neil deGrasse Tyson                                             :sci:humor:
+* Neil deGrasse Tyson						  :sci:humor:
  - [ ] The Pluto Files
 * Richard Dawkins
 ** TODO (1986) The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe without Design
 ** TODO The God Delusion
-* GONE Richard Feynman                                        :humor:sci:FAV:
+* GONE Richard Feynman					      :humor:sci:FAV:
 ** TODO Physics Lectures
 ** DONE Surely You're Joking, Mr. Feynman
 ** DONE What Do You Care What Other People Think? Further Adventures of a Curious Character
     :PROPERTIES:
     :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
     :END:
-* Đỗ Huân                                                 :FAV:vi:humor:tunx:
+* Đỗ Huân						  :FAV:vi:humor:tunx:
    :PROPERTIES:
    :url:      http://www.educons.net/
    :google:   https://plus.google.com/100358532436095582785
@@ -112,4 +111,4 @@
 *** TODO Tào lao gà 2
 *** DONE Vẹo rồng
 *** DONE Ông ve chai
-* As a man thinketh                                                      :jo:
+* As a man thinketh							 :jo:

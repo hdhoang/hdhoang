@@ -1,4 +1,3 @@
-# -*- mode: org -*-
 * Changing profile pictures [8/8]
  - [X] [[https://www.facebook.com/hdh000][Facebook]]
  - [X] [[https://github.com/settings/profile][Github]]
@@ -78,5 +77,6 @@ new. This mark all but the 5 newest items in each feed as read.
     : AuthenticationMethods publickey keyboard-interactive:pam
 * Windows
 ** Environment
- - PATH :: H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\msys32\usr\bin;H:\Dropbox\runnable\miktex\miktex\bin\
+ - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin;/mingw32/bin
+ - EDITOR :: emacsclient
  - ALTERNATE_EDITOR :: runemacs

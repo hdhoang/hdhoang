@@ -1,0 +1,251 @@
+* TODO ??
+** Commandos series							:tac:
+** Daikatana
+** Hitman series							:puz:
+** Homeworld series							:rts:
+** Tenchu series							 :ja:
+* Alaan
+** TODO The Legend of Dragoon
+* Azure_Horizon
+** DONE Final Fantasy VIII			    :shot:info:humor:comp:ja:
+** DONE Koudelka						:f:hybrid:ja:
+** DONE Saiyuki: Journey West				  :shot:comp:info:ja:
+* Azzur
+** DONE Warcraft: Orcs & Humans			  :shot:info:humor:narrative:
+* Bacter
+** TODO Bureau 13					      :shot:humor:ja:
+* baldurk
+** TODO Left 4 Dead
+    :PROPERTIES:
+    :url:      http://lparchive.org/Left-4-Dead/
+    :END:
+* Blastinus
+** DONE Final Fantasy VI				     :shot:info:comp:
+* Bobbin Threadbare				 :comp:info:chal:video:voice:
+** DONE Temple of Elemental Evil			   :group:shot:humor:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Temple-of-Elemental-Evil/
+    :END:
+** DONE Thief I: The Dark Project
+** DONE Thief II: The Metal Age					      :humor:
+** DONE Thief III: Deadly Shadows
+* BOrangeFury
+** DONE Fallout					       :shot:humor:narrative:
+* Brassherald
+** DONE Splinter Cell: Conviction			   :video:voice:info:
+* Breetai
+** DONE Fallout 2				       :shot:humor:narrative:
+* CannibalK9						  :speed:video:voice:
+** DONE Grand Theft Auto: San Andreas
+** DONE Hitman: Codename 47
+* Chakan
+** DONE Dungeon Crawl						       :shot:
+* Chaostime
+** TODO XCOM: Enemy Unknown
+* Chip Cheezum
+** DONE Zone of the Enders					 :humor:mock:
+** with General Ironicus		  :group:video:voice:comp:info:humor:
+*** DONE Metal Gear Solid 2: Substance
+*** DONE Metal Gear Solid 3: Snake Eater
+*** DONE Metal Gear Solid 4: Guns of the Patriot
+** with VoidBurger			       :video:voice:info:humor:group:
+*** DONE Metal Gear Solid
+* CirclMastr
+** DONE Alpha Protocol				 :video:voice:part:comp:info:
+* Coiler12
+** TODO Kerbal Space Program				     :shot:narrative:
+* Cool Ghost
+** TODO Metal Gear 1 & 2
+* Coolguye and TheLastRoboKy
+** DONE Dark Messiah of Might & Magic			  :group:video:voice:
+* Coulis
+** DONE Prince of Persia: The Two Thrones		   :video:voice:info:
+* CrookedB
+** DONE Escape from Hell			       :shot:info:comp:humor:
+* Crowetron
+** TODO Parasite Eve
+** TODO Parasite Eve 2						     :hybrid:
+* Dart Ronson
+** DONE Hitman: Blood Money					:video:voice:
+** DONE Hitman: Contracts					:video:voice:
+* Elephantgun
+** DONE Breaking Final Fantasy VI					:FAV:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Breaking-Final-Fantasy-VI/
+    :END:
+* Epee Em
+** TODO Pokemon Vietnamese Crystal				 :shot:humor:
+* fleshweasel
+** DONE Diablo						   :video:voice:info:
+* FrenzyTheKillbot
+** TODO 007: Blood Stone					      :video:
+** TODO 007: The World is Not Enough				 :info:video:
+** TODO 007: Quantum Solace					 :info:video:
+* gatz
+** TODO Vampire the Masquerade: Redemption		    :shot:comp:humor:
+* Geop
+** DONE Shadow of the Colossus				     :comp:video:sub:
+* Giragast
+** DONE Project IGI				:video:voice:comp:info:humor:
+* Goldom
+** DONE Descent: Freespace				    :hybrid:info:sub:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Descent-Freespace/
+    :END:
+** DONE Freespace 2 Open				    :hybrid:info:sub:
+    :PROPERTIES:
+    :url:      http://lparchive.org/FreeSpace-2-Open/
+    :END:
+* GuavaMoment
+** TODO X-COM: Apocalypse
+** TODO X-COM: Interceptor
+** TODO X-COM: Terror from the Deep
+** TODO X-COM: UFO Defense
+* Haller
+** DONE InFamous				     :video:comp:voice:humor:
+* Hammer Floyd
+** TODO Baldur's Gate
+    :PROPERTIES:
+    :url:      http://lparchive.org/Baldurs-Gate/
+    :END:
+* Iron Chitlin
+** TODO Blades of Time						      :video:
+* Jade Star, Chunky, Felime, Shinx
+** TODO Borderlands				    :video:voice:group:humor:
+* kalonZombie
+** TODO Portal 1 & 2
+* Karach
+** TODO Jagged Alliance 2
+* kefkafloyd
+** DONE Bionic Commando (2009)				   :comp:video:voice:
+* kethryveris
+** DONE Shadow Hearts				     :hybrid:comp:humor:info:
+** TODO Shadow Hearts: Covenant					     :hybrid:
+    :PROPERTIES:
+    :part:     45
+    :END:
+* kloudtana
+** DONE King of Demons			       :video:group:info:humor:voice:
+* Kyyrewyyoae
+** DONE Spycraft						       :shot:
+* Leavemywife
+** TODO Earthbound						  :shot:info:
+* Leovinus
+** DONE Final Fantasy VIII					 :shot:humor:
+* LordMune
+** DONE Fahrenheit				       :video:sub:humor:comp:
+** DONE Heavy Rain				       :comp:video:sub:humor:
+* Magnatux
+** TODO Myst							       :shot:
+* Magnetic North
+** DONE Silent Steel					  :humor:hybrid:part:
+* Mecheon
+** DONE Ecco the Dolphin					:video:voice:
+* Mega64
+** TODO Final Fantasy III				     :shot:challenge:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Final-Fantasy-III-(by-Mega64)/
+    :END:
+** TODO Final Fantasy IV					       :shot:
+* Niggurath
+** TODO Dead Space 2						      :video:
+** TODO Silent Hill 2						      :video:
+** TODO Silent Hill 3						      :video:
+* OatmealRaisin
+** TODO Spec Ops: The Line				   :video:voice:comp:
+* Occultatio
+** TODO Driver: San Francisco
+** with Mott514
+*** TODO L.A. Noire						      :video:
+* Opendork
+** DONE Full Throttle						  :shot:info:
+* pannycakes
+** TODO Star Wars: Republic Commando			     :video:sub:info:
+* perochialjoe							:video:voice:
+** TODO Alan Wake
+** TODO STALKER: Call of Pripyat
+** DONE STALKER: Clear Sky
+** DONE STALKER: Shadow of Chernobyl
+* Pesmerga
+** DONE Vampire: The Masquerade: Bloodlines		     :shot:narrative:
+* Piss-Ant
+** DONE Sam & Max Hit the Road				  :voice:video:group:
+* PoshAlligator, AngstyFerrets
+** TODO Indiana Jones and the Last Crusade			      :video:
+* Psychedelic Eyeball				      :FAV:video:humor:voice:
+** DONE Prince of Persia 1
+** DONE Prince of Persia 2
+* python862
+** TODO Metal Gear Solid: Portable Ops
+* Qotile Swirl
+** TODO Alone in the Dark					      :video:
+* Raar_Im_A_Dinosaur
+** DONE System Shock 2						:video:voice:
+    :PROPERTIES:
+    :url:      http://lparchive.org/System-Shock-2/
+    :END:
+* Research Indicates
+** DONE JurassicPark: Trepasser				   :video:info:voice:
+* salttotart
+** TODO Limbo							:video:voice:
+* Scorchy
+** DONE Star Wars: Knights of the Old Republic II :shot:info:comp:humor:narrative:
+* SeriousSirrus
+** TODO Myst (RealMyst)					   :video:info:voice:
+* Sethur
+** DONE Prince of Persia: Sands of Time
+* Shadow Catboy
+** DONE Planescape: Torment				     :shot:narrative:
+* Shugojin
+** TODO Baldur's Gate 2 and Throne of Bhaal
+    :PROPERTIES:
+    :url:      http://lparchive.org/Baldurs-Gate-2-and-Throne-of-Bhaal/
+    :END:
+* Silver Falcon
+** TODO Okami							   :video:ja:
+* Skippy Granola
+** TODO Syberia							:video:voice:
+* slowbeef
+** TODO Policenauts						     :hybrid:
+* Spoiler Warning Show					  :group:voice:video:
+** TODO Metro 2033
+** DONE The Walking Dead
+* Static_Fiend
+** DONE Prey						  :video:voice:humor:
+* Stratafyre
+** TODO Velvet Assassin						:voice:video:
+* supergreatfriend
+** TODO Spy Fiction						      :video:
+* The Dark Id
+** DONE Chrono Cross				       :shot:info:humor:comp:
+** TODO Metal Gear: Ghost Babel
+** TODO Xenogears						       :shot:
+    :PROPERTIES:
+    :url:      http://lparchive.org/Xenogears-(by-The-Dark-Id)/
+    :END:
+* The Man with a Hat
+** TODO Dead Space					     :video:sub:info:
+* The White Dragon
+** DONE Final Fantasy IX			       :shot:info:humor:comp:
+* TheOneAndOnlyT
+** TODO Exit Fate					     :shot:info:comp:
+* TheWanderingNewbie
+** TODO Iji							      :video:
+* TyrantSabre
+** DONE Stuntman						:video:voice:
+* unfair
+** TODO Dear Esther
+** TODO Deus Ex
+* Various
+** DONE Steel Panthers: Main Battle Tank			 :shot:group:
+* Vexation
+** DONE Grim Fandango: The Movie				:video:humor:
+* WeX Majors
+** DONE Spider-Man 2						      :video:
+* woodenchicken
+** TODO Pathologic
+* Ben "Yahtzee" Croshaw				    :group:voice:video:humor:
+** DONE Dreamweb
+    :PROPERTIES:
+    :url:      https://www.youtube.com/watch?v=RgU-KA46THc
+    :END:
