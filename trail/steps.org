@@ -1,4 +1,5 @@
-* Changing profile pictures [8/8]
+* Changing profile pictures [9/9]
+ - [X] [[https://app.box.com/settings][Box]]
  - [X] [[https://www.facebook.com/hdh000][Facebook]]
  - [X] [[https://github.com/settings/profile][Github]]
  - [X] [[https://plus.google.com/110711359835920217300/about][Google]]
@@ -70,11 +71,16 @@ new. This mark all but the 5 newest items in each feed as read.
 * Two-factor authentication for ssh
  1. Install either [[https://code.google.com/p/google-authenticator/wiki/PamModuleInstructions][google-authenticator]] or [[http://www.nongnu.org/oath-toolkit/][OATH toolkit]], then set up
     the secret
- 2. Enable the PAM module
+ 2. Enable the PAM module, place it before password authentication
  3. In sshd_config:
     : ChallengeResponseAuthentication yes
  4. To allow publickey login:
     : AuthenticationMethods publickey keyboard-interactive:pam
+* Keys
+ - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2
+ - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+ - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
+ - Windows 8 Core :: 334NH-RXG76-64THK-C7CKG-D3VPT
 * Windows
 ** Environment
  - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin;/mingw32/bin
