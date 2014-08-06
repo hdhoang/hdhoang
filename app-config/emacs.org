@@ -138,7 +138,8 @@
            org-src-fontify-natively t
            org-use-speed-commands t)
      (add-hook 'org-mode-hook '(lambda ()
-                                 (add-hook 'before-save-hook 'org-align-all-tags)))
+                                 (add-hook 'before-save-hook 'org-align-all-tags
+                                           :local t)))
      (add-to-list 'org-babel-load-languages '(sql . t))
    #+end_src
 ** Proced
