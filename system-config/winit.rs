@@ -3,11 +3,16 @@
 use std::io::process::Command;
 
 #[cfg(target_os="win32")]
-fn main () {
-    let cs = ["intl.cpl", "desk.cpl"];
-    for c in cs.iter() {
-        match Command::new("control").arg(*c).spawn() {
-            _ => ()
+fn open_cpl(cpl: &str) -> () {
+    match Command::new("control")
+        .arg(cpl.into_string().append(".cpl")).spawn() {
+            Err(e) => { println!("{}", e) },
+            Ok(_) => { () }
         }
+}
+
+fn main () {
+    for c in ["intl", "desk"].iter() {
+        open_cpl(*c);
     }
 }
