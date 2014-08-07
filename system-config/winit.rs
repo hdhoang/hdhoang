@@ -4,7 +4,7 @@ use std::io::process::Command;
 fn main () {
     let cs = ["intl.cpl", "desk.cpl"];
     for c in cs.iter() {
-        match Command::new("control").arg(c.to_string()).spawn() {
+        match Command::new("control").arg(*c).spawn() {
             _ => ()
         }
     }
