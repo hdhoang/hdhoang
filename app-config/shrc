@@ -104,10 +104,11 @@ if [ -n "$ZSH_NAME" ]; then
     setopt dvorak
 fi
 
-if [[ $(uname -o) == Cygwin ]]; then
+if [[ $(uname -o) == Msys ]]; then
     . $h/app-config/env
     export $(cut -s -d= -f1 $h/app-config/env)
     alias nn='nice '
+    alias sudo=''
 fi
 
 if [[ $(uname) == Darwin ]]; then
