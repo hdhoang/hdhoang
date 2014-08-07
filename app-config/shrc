@@ -40,6 +40,7 @@ alias du='du -h --total'
 alias p='pgrep -f'
 alias fr='free -h | awk "NR==2 {print \$4}"'
 alias t='less -F'
+alias j='journalctl -afb'
 
 # network info
 alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
