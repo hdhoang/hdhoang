@@ -1,5 +1,5 @@
 ; ~/.emacs.d/init.el
-(funcall #'package-initialize)
+(package-initialize)
 (require 'org)
 (org-babel-load-file
  (expand-file-name "emacs.org"
