@@ -49,11 +49,11 @@ alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 # file ops
 function cd() {
     if [[ $# -eq 0 ]]; then ~; fi
-    if [[ -f $1 ]]; then
-        [[ ! -e ${1%/*} ]] && return 1
-        builtin cd "${1%/*}"
+    if [[ -d $1 ]]; then
+        builtin cd $1
     else
-        builtin cd "$1"
+        [[ ! -e ${1%/*} ]] && return 1
+        builtin cd ${1%/*}
     fi
 }
 alias ...='cd ../../'
