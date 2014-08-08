@@ -15,4 +15,5 @@ fn main () {
     for c in ["intl", "desk"].iter() {
         open_cpl(*c);
     }
+    match Command::new("caps2ctrl").spawn() { _ => () }
 }
