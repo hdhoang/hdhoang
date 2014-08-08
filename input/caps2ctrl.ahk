@@ -1,0 +1,2 @@
+#SingleInstance force
+Capslock::Ctrl
