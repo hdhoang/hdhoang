@@ -77,10 +77,12 @@ new. This mark all but the 5 newest items in each feed as read.
  4. To allow publickey login:
     : AuthenticationMethods publickey keyboard-interactive:pam
 * Keys
- - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2
- - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+ - Office 2003 :: GWH28-DGCMP-P6RC4-6J4MT-3HFDY
  - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
+ - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2
  - Windows 8 Core :: 334NH-RXG76-64THK-C7CKG-D3VPT
+ - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+ - Windows XP :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
 * Windows
 ** Environment
  - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin;/mingw32/bin

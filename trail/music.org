@@ -292,7 +292,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -332,7 +332,7 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -471,6 +471,7 @@
 * Gạt Tàn Đầy								:FAV:
 * HammerFall
 ** TODO <2012-11-30> Gates of Dalhalla
+** TODO <2014-08-27 Wed> (r)Evolution
 * Hanoi Rocks								:FAV:
 * Hans Zimmer
 ** DONE The Rock						  :movie:FAV:
@@ -651,12 +652,12 @@
 ** DONE [[http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b][Max Payne]]
 ** DONE Max Payne 2: The Fall of Max Payne
 ** DONE Max Payne 3: The Official Soundtrack
-* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]]							   :FAV:riff:
+* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]] :FAV:riff:
 ** DONE <2007> United Abominations
 ** DONE <2009> [[http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a][Endgame]]
 ** DONE <2011> Th1rt3en
 ** DONE <2013-06-04> Super Collider
-* [[http://megadriver.com.br][MegaDriver]]						   :riff:game:lastfm:
+* [[http://megadriver.com.br][MegaDriver]]		   :riff:game:lastfm:
 ** DONE <2003> Push Start Button
 ** DONE <2004> Action Metal
 ** DONE <2004> Metal Axe
