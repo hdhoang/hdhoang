@@ -90,7 +90,7 @@ fi
 
 if [ -n "$ZSH_NAME" ]; then
     setopt autocd
-    SAVEHIST=1; HISTFILE=~/.zsh_history
+    HISTSIZE=SAVEHIST=1000; HISTFILE=~/.zsh_history
     setopt inc_append_history noclobber HIST_ALLOW_CLOBBER HIST_REDUCE_BLANKS
     setopt INTERACTIVE_COMMENTS LOCAL_OPTIONS
     unsetopt AUTO_NAME_DIRS bash_auto_list
