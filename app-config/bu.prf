@@ -1,5 +1,6 @@
 # ~/.unison/default.prf
 batch = true
+perms = 0
 confirmbigdel = true
 
 root = h:\
