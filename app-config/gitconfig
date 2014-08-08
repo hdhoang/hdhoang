@@ -17,3 +17,5 @@
     ap = add -p
     c = commit -v
     d = diff --word-diff=porcelain
+[push]
+	default = simple
