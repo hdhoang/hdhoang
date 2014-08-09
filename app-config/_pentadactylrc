@@ -26,7 +26,7 @@ set newtab=help
 """ Display
 highlight Hint -append font-size: 14px !important
 map <A-t> -js content.document.toggleImageSize()
-set guioptions+=cNT
+set guioptions+=c
 set scrollsteps=1
 set showstatuslinks=command
 set hlfind
