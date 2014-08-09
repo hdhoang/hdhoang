@@ -41,7 +41,6 @@
 * [[http://www.incidentalcomics.com][INCIDENTAL COMICS]]						       :cute:
 * [[http://invisiblebread.com][Invisible Bread]]
 * Jim Benton
-* [[http://johnnywander.com][Johnny Wander]]							       :cute:
 * Last Place Comics
 * Left-handed Toons
 * [[http://lizprincepower.com][Liz Prince Power]]						       :cute:
@@ -85,7 +84,6 @@
 * [[http://spudcomics.com][Spud Comics]]
 * Stuff No One Told Me (but I learned anyway)
 * StupidFox
-* [[https://viruscomix.wordpress.com][Virus Comix]]							       :cute:
 * The Awkward Yeti
 * the bad chemicals
 * The Book of Biff
@@ -105,6 +103,7 @@
 * twisted pencil
 * Underpants Jail
 * [[http://upup-downdown.com][Up Up Down Down]]						  :site:game:
+* [[https://viruscomix.wordpress.com][Virus Comix]]							       :cute:
 * Walking in Squares						  :site:game:
 * [[http://wondermark.com][Wondermark]]							      :title:
 * Wrong Hands

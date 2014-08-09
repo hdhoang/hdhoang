@@ -292,7 +292,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -1115,10 +1115,23 @@
 * Zak Belica
 ** DONE <2005> SiN						       :game:
 * Zakk Wylde								 :jo:
-* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]] :FAV:inst:
+* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]							   :FAV:inst:
 ** TODO <2008-08-17 Sun> Disabled Emotions Suite
 ** TODO <2009-06-24 Wed> Earth
 ** TODO <2009-11-22 Sun> Ambient Symphony
 ** TODO <2010> Fairytale
+** TODO <2010-08-16 Mon> Autumn Prelude
+** TODO <2010-08-20 Fri> Darkness Falls
+** TODO <2010-10-31 Sun> Celtic Dream
+** TODO <2010-10-31 Sun> Indian Spirit
+** TODO <2010-11-13 Sat> Fairytale 2
+** TODO <2010-12-23 Thu> Fairytale 2: The Orchestral Expansion
+** TODO <2011-03-11 Fri> Die acht Sünden
 ** TODO <2012-01-06> Untold Stories of a Dying Moon
+** TODO <2012-08-05 Sun> To the End of the World
+** TODO <2012-11-01 Thu> The Great Spirit
+** TODO <2013-04-04 Thu> Fly Away
 ** TODO <2013-07-06> e-world: The Ultimate Edition
+** TODO <2014-02-27 Thu> Pandora's Dream
+** TODO <2014-06-07 Sat> Infinity
+** TODO <2014-06-12 Thu> The Lounge Conspiracy
