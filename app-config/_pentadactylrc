@@ -22,12 +22,10 @@ set complete=native:history
 silent bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
 set defsearch=ddg
 set newtab=help
-set hintkeys=$.aoeupjxyidhtnmz
 
 """ Display
 highlight Hint -append font-size: 14px !important
 map <A-t> -js content.document.toggleImageSize()
-silent colorscheme solarized-light
 set guioptions+=cNT
 set scrollsteps=1
 set showstatuslinks=command
