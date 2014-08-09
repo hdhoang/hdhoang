@@ -22,6 +22,7 @@ set complete=native:history
 silent bmark -keyword ddg -t DDG https://duckduckgo.com/?q=%s
 set defsearch=ddg
 set newtab=help
+set urlseparator='; '
 
 """ Display
 highlight Hint -append font-size: 14px !important
