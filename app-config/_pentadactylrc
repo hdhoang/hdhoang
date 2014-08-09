@@ -36,7 +36,6 @@ set pageinfo=fgmse
 set editor='emacsclientw +<line> <file>'
 
 """ Sites
-map <C-S-n> -ex bmarks! -tags news
 map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
@@ -60,8 +59,8 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
-   \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox -tags news
-   \ bmark -keyword fb -t facebook https://fb.me/%s -tags news
+   \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox
+   \ bmark -keyword fb -t facebook https://fb.me/%s
    \ set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
