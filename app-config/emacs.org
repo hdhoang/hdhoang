@@ -163,12 +163,6 @@
      (define-key comint-mode-map (kbd "<SPC>") 'comint-magic-space)
    #+end_src
 ** SQL
-   Wrap Cygwin mysql with [[https://github.com/Shougo/fakecygpty/blob/master/fakecygpty.c][fakecygpty]]
-   #+begin_src emacs-lisp
-     (when (string-prefix-p "CYGWIN" (shell-command-to-string "uname"))
-       (setq sql-mysql-program "fakecygpty"
-             sql-mysql-options '("mysql")))
-   #+end_src
 *** Connections
     #+begin_src emacs-lisp
       (setq sql-connection-alist '(
