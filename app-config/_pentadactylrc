@@ -181,21 +181,9 @@ img[title]:not(:-moz-any(
 EOS
 style -n "link decor: youtube-dl" * <<EOS
 :-moz-any(
-  [href*="blip.tv/"]
-, [href*="collegehumor.com/video/"]
-, [href*="dailymotion."][href*="/video/"]
-, [href*="escapistmagazine.com/videos/view/"]
-, [href*="infoq.com/"]
-, [href*="mixcloud.com/"]
-, [href*="mtv.com/videos/"]
+  [href*="escapistmagazine.com/videos/view/"]
 , [href*="soundcloud.com/"]
-, [href*="twitch.tv/"]
-, [href*="viddler.com/"]
-, [href*="video.google.com/"]
 , [href*="vimeo.com/"]
-, [href*="video.xnxx.com/video"]
-, [href*="xvideos.com/video"]
-, [href*="youku.com/v_show/"]
 , [href*="youtu.be/"],[href*="youtube.com/watch?"]
 )::after { content: "\21af" }
 EOS
