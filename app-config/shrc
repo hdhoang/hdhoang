@@ -58,7 +58,7 @@ function cd() {
 }
 alias ...='cd ../../'
 alias mkdir='mkdir -p'
-alias cp='cp -r --reflink=auto --preserve=xattr'
+alias cp='cp -r --reflink=auto'
 alias ln='ln -i'
 alias mv='mv -i'
 alias rm='rm --interactive=once --one-file-system'
