@@ -1,5 +1,6 @@
-* Changing profile pictures [9/9]
+* Changing profile pictures [10/10]
  - [X] [[https://app.box.com/settings][Box]]
+ - [X] [[http://crowdcrafting.org/account/hdhoang/update][CrowdCrafting]]
  - [X] [[https://www.facebook.com/hdh000][Facebook]]
  - [X] [[https://github.com/settings/profile][Github]]
  - [X] [[https://plus.google.com/110711359835920217300/about][Google]]
@@ -42,29 +43,30 @@ new. This mark all but the 5 newest items in each feed as read.
       call read_all('/stupidfox/');
       call mark_5_unread('/stupidfox/');
     #+end_src
-* Installing Arch
-  #+begin_src sh
-    loadkeys dvorak
-    mkfs root
-    mkfs.vfat boot
-    mount root /mnt
-    mount boot /mnt/boot
-    vim /etc/pacman.d/mirrorlist
-    pacstrap /mnt base base-devel zsh git ntp vim btrfs-progs
-    genfstab /mnt >> /mnt/etc/fstab
-    arch-chroot /mnt
-    ln -s /usr/lib/systemd/system/systemd-{network,resolve,timesync}d.service /etc/systemd/system/multi-user.target.wants/
-    ln -sf /run/systemd/resovled/resolv.conf /etc/resolv.conf
-    vim /etc/systemd/network/net.network
-    ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
-    echo KEYMAP=dvorak > /etc/vconsole.conf
-    echo LANG=en_US.UTF-8 > /etc/locale.conf
-    vim /etc/locale.gen && locale-gen
-    visudo
-    useradd hdhoang -m -g users -G wheel,systemd-journal
-    passwd
-    passwd hdhoang
-  #+end_src
+* Arch
+** Installing
+   #+begin_src sh
+     loadkeys dvorak
+     mkfs root
+     mkfs.vfat boot
+     mount root /mnt
+     mount boot /mnt/boot
+     vim /etc/pacman.d/mirrorlist
+     pacstrap /mnt base base-devel zsh git ntp vim btrfs-progs openssh grub efibootmgr
+     genfstab /mnt >> /mnt/etc/fstab
+     arch-chroot /mnt
+     ln -s /usr/lib/systemd/system/systemd-{network,resolve,timesync}d.service /etc/systemd/system/multi-user.target.wants/
+     ln -sf /run/systemd/resovled/resolv.conf /etc/resolv.conf
+     vim /etc/systemd/network/net.network
+     ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
+     echo KEYMAP=dvorak > /etc/vconsole.conf
+     echo LANG=en_US.UTF-8 > /etc/locale.conf
+     vim /etc/locale.gen && locale-gen
+     visudo
+     useradd hdhoang -m -g users -G wheel,systemd-journal
+     passwd
+     passwd hdhoang
+   #+end_src
 * Picard
   Date formatting:
   : $if(%date%,\(%date%\) )
@@ -76,15 +78,32 @@ new. This mark all but the 5 newest items in each feed as read.
     : ChallengeResponseAuthentication yes
  4. To allow publickey login:
     : AuthenticationMethods publickey keyboard-interactive:pam
-* Keys
- - Office 2003 :: GWH28-DGCMP-P6RC4-6J4MT-3HFDY
- - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
- - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2
- - Windows 8 Core :: 334NH-RXG76-64THK-C7CKG-D3VPT
- - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
- - Windows XP :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
 * Windows
-** Environment
- - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin;/mingw32/bin
- - EDITOR :: emacsclient
- - ALTERNATE_EDITOR :: runemacs
+** Install
+ #+begin_src conf-windows :tangle ei.cfg
+   [Channel]
+   OEM
+   [EditionID]
+   Core
+   [VL]
+   0
+ #+end_src
+*** Keys
+   - Office 2003 :: GWH28-DGCMP-P6RC4-6J4MT-3HFDY
+   - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
+   - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2a0j0
+   - Windows 8 Core :: 334NH-RXG76-64THK-C7CKG-D3VPT
+   - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
+   - Windows XP :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
+** Set up [4/4]
+ 1. [X] Environment
+    - ALTERNATE_EDITOR :: H:\Dropbox\runnable\emacs\bin\runemacs.exe
+    - EDITOR :: emacsclientw
+    - HOME :: H:\Dropbox\home
+    - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin
+ 2. [X] netplwiz
+ 3. [X] Take ownership
+ 4. [X] Edit /etc/{group,passwd}
+  #+begin_src
+    wmic useraccount get name,sid
+  #+end_src

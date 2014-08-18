@@ -1,3 +1,4 @@
+
 * 1111 Comics
 * A Geek Story
 * [[http://asofterworld.com][A Softer World]]						 :title:cute:
@@ -35,50 +36,50 @@
 * Geek Hero Comic
 * Gerbil With a Jetpack
 * [[http://happletea.com][Happle Tea]]								:phi:
-* [[http://hejibits.com][Hejibits]]							 :game:title:
+* [[http://hejibits.com][Hejibits]]				 :game:title:
 * Hipster Hitler						  :blas:cute:
 * Imogen Quest
-* [[http://www.incidentalcomics.com][INCIDENTAL COMICS]]						       :cute:
+* [[http://www.incidentalcomics.com][INCIDENTAL COMICS]]	       :cute:
 * [[http://invisiblebread.com][Invisible Bread]]
 * Jim Benton
 * Last Place Comics
 * Left-handed Toons
-* [[http://lizprincepower.com][Liz Prince Power]]						       :cute:
+* [[http://lizprincepower.com][Liz Prince Power]]		       :cute:
 * Loading Artist
-* [[http://loldwell.com][LOLDWELL.com]]							       :game:
+* [[http://loldwell.com][LOLDWELL.com]]				       :game:
 * lunarbaboon
 * lunchbreath
 * Maneggs
 * Married To The Sea						       :cute:
 * Mercworks
-* [[http://mimiandeunice.com][Mimi and Eunice]]						   :phi:free:
+* [[http://mimiandeunice.com][Mimi and Eunice]]			   :phi:free:
 * Mordant Orange
 * Mumbletimes
-* [[http://nedroid.com][Nedroid Picture Diary 2]]					      :title:
+* [[http://nedroid.com][Nedroid Picture Diary 2]]		      :title:
 * Nerf Now
-* [[http://oglaf.com][Oglaf]]							     :ns:extra:title:
+* [[http://oglaf.com][Oglaf]]				     :ns:extra:title:
 * Optipess							       :sick:
 * Order of the Stick
 * Owl Turd
 * Pandyland
-* [[http://pantsareoverrated.com][Pants Are Overrated]]						       :game:
-* [[http://feeds.feedburner.com/uclick/pearlsbeforeswine][Pearls Before Swine]]						       :cute:
+* [[http://pantsareoverrated.com][Pants Are Overrated]]		       :game:
+* [[http://feeds.feedburner.com/uclick/pearlsbeforeswine][Pearls Before Swine]] :cute:
 * Peebles Lab
-* [[http://picturesforsadchildren.com][Pictures for sad children]]					   :cute:sad:
-* [[http://piecomic.com][Pie Comic]]							       :site:
-* [[http://popstrip.com][POPsickleSTRIP]]					      :title:sci:phi:
+* [[http://picturesforsadchildren.com][Pictures for sad children]] :cute:sad:
+* [[http://piecomic.com][Pie Comic]]				       :site:
+* [[http://popstrip.com][POPsickleSTRIP]]		      :title:sci:phi:
 * Questionable Skills
-* [[http://rockpapercynic.com][Rock, Paper, Cynic]]						   :cute:sad:
+* [[http://rockpapercynic.com][Rock, Paper, Cynic]]		   :cute:sad:
 * rosemary mosco birdandmoon.com
-* [[http://smbc-comics.com][Saturday Morning Breakfast Cereal]]		     :extra:3rd:daily:ns:sci:
-* [[http://savagechickens.com][Savage Chickens]]						       :cute:
+* [[http://smbc-comics.com][Saturday Morning Breakfast Cereal]] :extra:3rd:daily:ns:sci:
+* [[http://savagechickens.com][Savage Chickens]]		       :cute:
 * Scandinavia and the World
-* [[http://sentfromthemoon.com][Sent From The Moon]]						 :cute:title:
-* [[http://shoeboxblog.com][Shoebox]]							 :movie:cute:
+* [[http://sentfromthemoon.com][Sent From The Moon]]		 :cute:title:
+* [[http://shoeboxblog.com][Shoebox]]				 :movie:cute:
 ** Chuck & Beans
 ** Jana’s Thinkings
 ** Random Russ
-* [[http://sinfest.net][Sinfest]]							       :cute:
+* [[http://sinfest.net][Sinfest]]				       :cute:
 * [[http://somethingofthatilk.com][Something of that Ilk]]
 * SPACE AVALANCHE
 * [[http://spudcomics.com][Spud Comics]]
@@ -99,13 +100,13 @@
 * Three Panel Soul
 * Time Trabble
 * Toonhole
-* [[http://treelobsters.com][Tree Lobsters!]]						  :sci:title:
+* [[http://treelobsters.com][Tree Lobsters!]]			  :sci:title:
 * twisted pencil
 * Underpants Jail
-* [[http://upup-downdown.com][Up Up Down Down]]						  :site:game:
-* [[https://viruscomix.wordpress.com][Virus Comix]]							       :cute:
+* [[http://upup-downdown.com][Up Up Down Down]]			  :site:game:
+* [[https://viruscomix.wordpress.com][Virus Comix]]		       :cute:
 * Walking in Squares						  :site:game:
-* [[http://wondermark.com][Wondermark]]							      :title:
+* [[http://wondermark.com][Wondermark]]				      :title:
 * Wrong Hands
 * Wumo									 :ns:
-* [[https://xkcd.com][xkcd]]								      :title:
+* [[https://xkcd.com][xkcd]]					      :title:

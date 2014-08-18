@@ -1,5 +1,6 @@
+
 * "Weird Al" Yankovic						   :FAV:mock:
-** TODO <1983-04-26> "Weird Al" Yankovic
+** DONE <1983-04-26> "Weird Al" Yankovic
 ** TODO <1984-02-28> In 3-D
 ** TODO <1985-06-18> Dare to Be Stupid
 ** TODO <1986-10-21> Polka Party!
@@ -13,7 +14,7 @@
 ** TODO <2006-10-03> Straight Outta Lynwood
 ** TODO <2011-06-21> Alpocalypse
 ** TODO <2014-07-15> Mandatory Fun
-** TODO <2014-07-15 Tue> Mandatory Fun
+** DONE <2014-07-15 Tue> Mandatory Fun
 * 2pac									:rap:
 * 3 Doors Down
 * 50 Cent							 :rap:lastfm:
@@ -53,7 +54,7 @@
 * [[http://musicbrainz.org/artist/b0335a95-8a12-4c71-8149-5054ec847d04][Adèle]]
 * Aerosmith							       :1fav:
 ** TODO <2012-05-15> Icon
-** TODO <2012-11-06> Music from Another Dimension!
+** DONE <2012-11-06> Music from Another Dimension!
 * Alestorm							     :jbopre:
 * Alice Cooper
 * Alice in Chains
@@ -152,7 +153,7 @@
    :PROPERTIES:
    :btih:     1EE920B8E92EF179F798B58FEFEDE2DD5C5E3413
    :END:
-** TODO <2010-09-16 Thu> Spinal Clock
+** DONE <2010-09-16 Thu> Spinal Clock
 ** DONE <2011-05-15> It's Alive
 ** DONE <2011-05-20> Empty Space
 ** DONE <2011-08-17> 3 Foot Clearance
@@ -215,13 +216,13 @@
 ** DONE <2014-05-13> Footsteps
 ** TODO <2014-05-20 Tue> Citacis
 ** TODO <2014-05-23 Fri> The Miskatonic Scale
-** TODO <2014-05-28 Wed> Grand Gallery
+** DONE <2014-05-28 Wed> Grand Gallery
 ** TODO <2014-05-28 Wed> Outlined for Citacis
-** TODO <2014-06-01> The Spirit Winds
+** DONE <2014-06-01> The Spirit Winds
 ** TODO <2014-06-25> Hold Me Forever
 ** TODO <2014-07-10 Thu> Ydrapoej
 ** TODO <2014-07-12 Sat> Abandoned Slaughterhouse
-** TODO <2014-07-18 Fri> Assignment 033-03
+** DONE <2014-07-18 Fri> Assignment 033-03
 ** TODO <2014-07-21 Mon> Aquarium
 ** TODO <2014-07-29 Tue> Snow Slug
 ** with Alix Lambert and Travis Dickerson
@@ -292,7 +293,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -332,7 +333,7 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -1060,7 +1061,7 @@
 * Trịnh Công Sơn						     :FAV:vi:
 * Tuoni
 ** DONE <2005> Elävät & kuolleet
-** TODO <2014-03-07> Kuolonpyörä
+** DONE <2014-03-07> Kuolonpyörä
 * Turisas								 :fi:
 ** DONE <2013-08-21> Turisas2013
 * Turmion Kätilöt
@@ -1094,10 +1095,10 @@
 ** DONE <2008-05-14> Ruatokansan uamunkoetto
 ** DONE <2010-10-27> Lohuton
 * Warmen
-* Whispered [0/3]
-** TODO <2007> Wrath of Heaven
-** TODO <2010-02-10 Wed> Thousand Swords
-** TODO <2014-02-07> Shogunate Macabre
+* Whispered [3/3]
+** DONE <2007> Wrath of Heaven
+** DONE <2010-02-10 Wed> Thousand Swords
+** DONE <2014-02-07> Shogunate Macabre
 * White Lion
 * Whitesnake
 * Whitney Houston
@@ -1116,22 +1117,24 @@
 ** DONE <2005> SiN						       :game:
 * Zakk Wylde								 :jo:
 * [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]							   :FAV:inst:
-** TODO <2008-08-17 Sun> Disabled Emotions Suite
-** TODO <2009-06-24 Wed> Earth
+** DONE <2008-08-17 Sun> Disabled Emotions Suite
+** DONE <2009-06-24 Wed> Earth
 ** TODO <2009-11-22 Sun> Ambient Symphony
 ** TODO <2010> Fairytale
 ** TODO <2010-08-16 Mon> Autumn Prelude
-** TODO <2010-08-20 Fri> Darkness Falls
+** DONE <2010-08-20 Fri> Darkness Falls
 ** TODO <2010-10-31 Sun> Celtic Dream
 ** TODO <2010-10-31 Sun> Indian Spirit
 ** TODO <2010-11-13 Sat> Fairytale 2
-** TODO <2010-12-23 Thu> Fairytale 2: The Orchestral Expansion
-** TODO <2011-03-11 Fri> Die acht Sünden
+** DONE <2010-12-23 Thu> Fairytale 2: The Orchestral Expansion
+** DONE <2011-03-11 Fri> Die acht Sünden
 ** TODO <2012-01-06> Untold Stories of a Dying Moon
-** TODO <2012-08-05 Sun> To the End of the World
+** DONE <2012-08-05 Sun> To the End of the World
 ** TODO <2012-11-01 Thu> The Great Spirit
-** TODO <2013-04-04 Thu> Fly Away
+** DONE <2013-04-04 Thu> Fly Away
 ** TODO <2013-07-06> e-world: The Ultimate Edition
 ** TODO <2014-02-27 Thu> Pandora's Dream
 ** TODO <2014-06-07 Sat> Infinity
 ** TODO <2014-06-12 Thu> The Lounge Conspiracy
+* Đỗ Bảo
+** DONE <2008> Cánh cung
