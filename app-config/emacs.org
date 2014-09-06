@@ -182,6 +182,7 @@
   #+end_src
   #+begin_src emacs-lisp
     (setq frame-title-format "%f"
+          visible-bell t
           calendar-week-start-day 1)
     (blink-cursor-mode -1)
     (show-paren-mode t)
