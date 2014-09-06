@@ -1,19 +1,19 @@
 
-* "Weird Al" Yankovic						   :FAV:mock:
+* GWAR
+* "Weird Al" Yankovic						 :FAV:comedy:
 ** DONE <1983-04-26> "Weird Al" Yankovic
-** TODO <1984-02-28> In 3-D
-** TODO <1985-06-18> Dare to Be Stupid
-** TODO <1986-10-21> Polka Party!
-** TODO <1988> Even Worse
-** TODO <1989-07-18> UHF and Other Stuff
-** TODO <1992-04-14> Off the Deep End
-** TODO <1993-10-05> Alapalooza
-** TODO <1996-03-12> Bad Hair Day
-** TODO <1999-06-29> Running With Scissors
-** TODO <2003-05-20> Poodle Hat
-** TODO <2006-10-03> Straight Outta Lynwood
-** TODO <2011-06-21> Alpocalypse
-** TODO <2014-07-15> Mandatory Fun
+** DONE <1984-02-28> In 3-D
+** DONE <1985-06-18> Dare to Be Stupid
+** DONE <1986-10-21> Polka Party!
+** DONE <1988> Even Worse
+** DONE <1989-07-18> UHF and Other Stuff
+** DONE <1992-04-14> Off the Deep End
+** DONE <1993-10-05> Alapalooza
+** DONE <1996-03-12> Bad Hair Day
+** DONE <1999-06-29> Running With Scissors
+** DONE <2003-05-20> Poodle Hat
+** DONE <2006-10-03> Straight Outta Lynwood
+** DONE <2011-06-21> Alpocalypse
 ** DONE <2014-07-15 Tue> Mandatory Fun
 * 2pac									:rap:
 * 3 Doors Down
@@ -98,6 +98,7 @@
 * Avenged Sevenfold						   :riff:FAV:
 ** DONE <2013-08-23> Hail to the King
 ** TODO <2014-06-03> X-Posed
+** TODO <2014-08-25 Mon> Waking the Fallen: Resurrected
 * Avril Lavigne								:FAV:
 ** TODO <2013-11-05> Avril Lavigne
 * Ayreon
@@ -214,17 +215,20 @@
 ** DONE <2014-04-28> Night Gallery
 ** DONE <2014-04-30> Outpost
 ** DONE <2014-05-13> Footsteps
-** TODO <2014-05-20 Tue> Citacis
-** TODO <2014-05-23 Fri> The Miskatonic Scale
+** DONE <2014-05-20 Tue> Citacis
+** DONE <2014-05-23 Fri> The Miskatonic Scale
 ** DONE <2014-05-28 Wed> Grand Gallery
-** TODO <2014-05-28 Wed> Outlined for Citacis
+** DONE <2014-05-28 Wed> Outlined for Citacis
 ** DONE <2014-06-01> The Spirit Winds
-** TODO <2014-06-25> Hold Me Forever
-** TODO <2014-07-10 Thu> Ydrapoej
-** TODO <2014-07-12 Sat> Abandoned Slaughterhouse
+** DONE <2014-06-25> Hold Me Forever
+** DONE <2014-07-10 Thu> Ydrapoej
+** DONE <2014-07-12 Sat> Abandoned Slaughterhouse
 ** DONE <2014-07-18 Fri> Assignment 033-03
-** TODO <2014-07-21 Mon> Aquarium
-** TODO <2014-07-29 Tue> Snow Slug
+** DONE <2014-07-21 Mon> Aquarium
+** DONE <2014-07-29 Tue> Snow Slug
+** DONE <2014-08-05 Tue> Celery
+** DONE <2014-08-13 Wed> Closed Attractions
+** DONE <2014-08-14 Thu> Leave the Light On
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -293,7 +297,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -333,7 +337,7 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -354,12 +358,14 @@
 * El Pogo8bit
 ** DONE <2009> Listen to Your Game EP					:FAV:
 * Electric Light Orchestra
+* Electric Wizard
+** TODO <2014-09-29 Mon> Time to Die
 * Elias Viljanen							:FAV:
 * Elton John
 ** TODO <2012-07-16> Good Morning to the Night
 ** TODO <2013-09-16> The Diving Board
 * Eluveitie
-** TODO <2014-08-01 Fri> Origins
+** DONE <2014-08-01 Fri> Origins
 * Elvis Costello
 ** TODO <2012-11-23> In Motion Pictures
 ** TODO <2013-09-16> Wise Up Ghost
@@ -539,7 +545,7 @@
 ** DONE <2012-05-28> Open Goldberg Variations			  :FAV:piano:
 ** DONE The Well-Tempered Clavier feat. Angela Hewitt
 * Johannes Brahms
-* Jonathan Coulton					      :FAV:mock:cute:
+* Jonathan Coulton					    :FAV:comedy:cute:
 ** TODO <2014-01-05> Code Monkey Save World: Unplugged
 ** with John Roderick
 *** TODO <2012-11-15> One Christmas at a Time
@@ -945,6 +951,7 @@
 * Symphony X							   :FAV:epic:
 * System of a Down
 * Tacere
+* Take That
 * Tarot								     :FAV:fi:
 * Ted Nugent							       :riff:
 * Tesla
@@ -962,7 +969,8 @@
 * The Smashing Pumpkins
 ** TODO <2012-06-18> Oceania
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
+* The Who
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]						  :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
 * ThePlasmas						   :riff:game:lastfm:
@@ -1037,13 +1045,13 @@
 *** DONE <2007-02-21> 平成風俗 <Japanese Manners>
 *** DONE <2009-06-24> 三文ゴシップ <Superficial Gossip>
 *** TODO <2014-05-27> 逆輸入 〜港湾局〜
-* Tom Lehrer							   :FAV:mock:
+* Tom Lehrer							 :FAV:comedy:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
    :url:      http://home.broadpark.no/~emeyn/tl/links.html
    :END:
 * Tony Bennett							       :tunx:
-** TODO <2012-10-22> Viva Duets
+** DONE <2012-10-22> Viva Duets
 * Tony Cicoria
 * Tracy Chapman							 :tunx:f:FAV:
 ** DONE <1988-04-05> Tracy Chapman
@@ -1055,7 +1063,7 @@
 ** DONE <2005-09-13> Where You Live
 ** DONE <2008-11-07> Our Bright Future
 * Train								       :tunx:
-** TODO <2012-04-16> California 37
+** DONE <2012-04-16> California 37
 ** TODO <2014-09-16 Tue> Bulletproof Picasso
 * Tryad							       :1fav:jamendo:
 * Trịnh Công Sơn						     :FAV:vi:
@@ -1110,31 +1118,31 @@
 ** DONE Requiem in D minor K626, Karajan 1962			       :1fav:
 * X/X JAPAN							    :1fav:ja:
 * Yngwie J. Malmsteen						:inst:guitar:
-** TODO <2012-12-05> Spellbound
+** DONE <2012-12-05> Spellbound
 * Zack Browning
 ** TODO Secret Pulse
 * Zak Belica
 ** DONE <2005> SiN						       :game:
 * Zakk Wylde								 :jo:
-* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]							   :FAV:inst:
+* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]] :FAV:inst:
 ** DONE <2008-08-17 Sun> Disabled Emotions Suite
 ** DONE <2009-06-24 Wed> Earth
-** TODO <2009-11-22 Sun> Ambient Symphony
-** TODO <2010> Fairytale
-** TODO <2010-08-16 Mon> Autumn Prelude
+** DONE <2009-11-22 Sun> Ambient Symphony
+** DONE <2010> Fairytale
+** DONE <2010-08-16 Mon> Autumn Prelude
 ** DONE <2010-08-20 Fri> Darkness Falls
-** TODO <2010-10-31 Sun> Celtic Dream
-** TODO <2010-10-31 Sun> Indian Spirit
-** TODO <2010-11-13 Sat> Fairytale 2
+** DONE <2010-10-31 Sun> Celtic Dream
+** DONE <2010-10-31 Sun> Indian Spirit
+** DONE <2010-11-13 Sat> Fairytale 2
 ** DONE <2010-12-23 Thu> Fairytale 2: The Orchestral Expansion
 ** DONE <2011-03-11 Fri> Die acht Sünden
-** TODO <2012-01-06> Untold Stories of a Dying Moon
+** DONE <2012-01-06> Untold Stories of a Dying Moon
 ** DONE <2012-08-05 Sun> To the End of the World
-** TODO <2012-11-01 Thu> The Great Spirit
+** DONE <2012-11-01 Thu> The Great Spirit
 ** DONE <2013-04-04 Thu> Fly Away
-** TODO <2013-07-06> e-world: The Ultimate Edition
-** TODO <2014-02-27 Thu> Pandora's Dream
-** TODO <2014-06-07 Sat> Infinity
-** TODO <2014-06-12 Thu> The Lounge Conspiracy
+** DONE <2013-07-06> e-world: The Ultimate Edition
+** DONE <2014-02-27 Thu> Pandora's Dream
+** DONE <2014-06-07 Sat> Infinity
+** DONE <2014-06-12 Thu> The Lounge Conspiracy
 * Đỗ Bảo
 ** DONE <2008> Cánh cung

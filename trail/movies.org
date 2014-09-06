@@ -35,6 +35,8 @@
 * TODO Frozen
 * TODO Ghostbusters
 * TODO Guardians of the Galaxy (2014)
+* TODO Her
+* TODO The Purge
 * Kevin Smith								:FAV:
  - [X] Chasing Amy (1997)
  - [X] Clerks (1994)

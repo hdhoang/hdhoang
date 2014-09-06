@@ -32,6 +32,13 @@
 | Orange     | 3.3V    |
 | Red        | 5V      |
 | Yellow     | 12V     |
+* Network
+** RJ-45
+| Type     | Order                 |
+| EIA-568A | WG-G-WO-b-wb-O-wbr-br |
+| EIA-568B | WO-O-WG-b-wb-G-wbr-br |
+Different types on ends makes a crossover cable, used to connect
+devices of the same type.
 * Expansion
 ** PCI
 ** AGP
@@ -93,5 +100,6 @@
     - Cần hiểu biết sản phẩm
  3. Chốt bán hàng
 * Doanh nghiệp
+** Media Bridge
 ** Gameloft
    Một phần của Gameloft SEA, 4 chi nhánh ở VN
