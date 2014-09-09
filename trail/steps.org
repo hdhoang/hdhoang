@@ -93,6 +93,7 @@ new. This mark all but the 5 newest items in each feed as read.
    - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
    - VMware Workstation 10 :: 4c4ek89kdl5zfp91la5p2a0j0
    - Windows 8 Core :: 334NH-RXG76-64THK-C7CKG-D3VPT
+   - Windows 8 Pro upgrade :: NT8WP-BH8HQ-VBD32-KMQHT-234DH
    - Windows Server 2012 R2 Standard Core :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
    - Windows XP :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
 ** Set up [4/4]

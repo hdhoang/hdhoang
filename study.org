@@ -26,19 +26,23 @@
 | DDR   |  184 | 2.5V      | PC200->400  | 100->200MHz  |
 | DDR2  |  240 | 1.8V      | PC400->1066 | 200->533MHz  |
 | DDR3  |  240 | 1.5,1.35V | PC800->2133 | 400->1066MHz |
-* PS
-| Wire color | Voltage |
-|------------+---------|
-| Orange     | 3.3V    |
-| Red        | 5V      |
-| Yellow     | 12V     |
+* Power supply
+| Wire color | Usage        |
+|------------+--------------|
+| Orange     | 3.3V         |
+| Red        | 5V           |
+| Yellow     | 12V          |
+| Green      | Power up     |
+| Purple     | Always on 5V |
+| Teal       | -12V         |
 * Network
 ** RJ-45
-| Type     | Order                 |
-| EIA-568A | WG-G-WO-b-wb-O-wbr-br |
-| EIA-568B | WO-O-WG-b-wb-G-wbr-br |
+| EIA-568 | Order                 |
+| A       | WG-G-WO-b-wb-O-wbr-br |
+| B       | WO-O-WG-b-wb-G-wbr-br |
 Different types on ends makes a crossover cable, used to connect
-devices of the same type.
+devices of the same type. 1G cables need to have all wires correct.
+100 cables just need wires 1-2-3-6.
 * Expansion
 ** PCI
 ** AGP
@@ -103,3 +107,8 @@ devices of the same type.
 ** Media Bridge
 ** Gameloft
    Một phần của Gameloft SEA, 4 chi nhánh ở VN
+* Classes
+| Major | 06 | 07 | 08 | 09 | 06 | 07 | 08 | 09 |
+|-------+----+----+----+----+----+----+----+----|
+| C     |    |    |  H |    |    |    |  L |    |
+| S     |    |    |    |    |  L |    |    |    |
