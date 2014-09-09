@@ -195,6 +195,8 @@
   #+end_src
   On newer Windows, use Consolas
   #+begin_src emacs-lisp
-    (if (eq window-system-version 6)
-        (set-default-font "Consolas-12" :frames t))
+    (when (eq window-system 'w32)
+      (if (> window-system-version 5)
+          (set-default-font "Consolas-12" :frames t)
+        (set-default-font "Lucida Console-10" :frames t)))
   #+end_src
