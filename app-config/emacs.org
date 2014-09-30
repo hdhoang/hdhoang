@@ -29,7 +29,6 @@
                                             color-theme-sanityinc-solarized
                                             evil
                                             magit
-                                            rainbow-delimiters
                                             smex
                                             expand-region))))
       (unless (null missing-packages)
@@ -187,7 +186,6 @@
           calendar-week-start-day 1)
     (blink-cursor-mode -1)
     (show-paren-mode t)
-    (global-rainbow-delimiters-mode t)
     (setq undo-tree-mode-lighter ""
           magit-auto-revert-mode-lighter "")
   #+end_src
