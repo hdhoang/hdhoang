@@ -1,7 +1,7 @@
+" -*- mode: text -*-
 " ~/.pentadactylrc
 
 """ Start up
-map <C-r> -ex rehash
 set! browser.backspace_action=0
 set! browser.link.open_newwindow=3
 set! middlemouse.contentLoadURL=false
