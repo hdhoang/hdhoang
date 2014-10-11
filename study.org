@@ -1,3 +1,4 @@
+* Printer
 * Intel
 ** 478
    Hiếm gặp, không còn bán
@@ -57,6 +58,15 @@ devices of the same type. 1G cables need to have all wires correct.
 | Type | 1x Speed |
 | CD   | 150kbps  |
 | DVD  | 1350kbps |
+* Windows
+** Administrative Shares
+ 1. HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters\AutoShare{Server,Wks}=0
+ 2. net stop server
+ 3. net start netsvcs
+ 4. net share
+** Permission
+*** Sharing: everyone has full control
+*** Security: CREATOR OWNER
 * <2014-08-02 Sat> Giao tiếp hiệu quả
 ** Lễ nghi
  1. Chào
@@ -103,12 +113,36 @@ devices of the same type. 1G cables need to have all wires correct.
  2. Giải quyết lo lắng
     - Cần hiểu biết sản phẩm
  3. Chốt bán hàng
+* <2014-09> Kỹ năng thuyết trình
+ 1. Mục đích thuyết phục
+ 2. Tương tác với khán giả
+    - Câu hỏi
+    - Quét mắt nhìn khắp
+* <2014-10-09 Thu> Phỏng vấn xin việc
+ 1. Giao thoa mục tiêu cá nhân và tổ chức, được thăm dò bằng các câu
+    hỏi về tương lai. Tìm hiểu bản thân để biết mình muốn gì và có thể
+    làm gì. Tìm hiểu điểm thiếu của tổ chức để mình bổ sung.
+ 2. Thái độ học tập tham gia, tích cực
+ 3. Trong phỏng vấn
+    - Trang phục lịch sự, kể cả dép
+    - Đến sớm, muộn thì tự nhận lỗi, thiếu chuẩn bị bất thường
+    - Ngồi trật tự
+    - Sắp xếp giấy tờ
+    - Vào đưa mắt nhìn tên giám khảo
+    - Chờ mời ngồi
+    - Chào bằng tên
+    - Ngồi hướng về phía trước, tay để trước mặt
+    - Dừng một chút trước khi trả lời
+    - Không hỏi lương, thưởng, chế độ, giờ làm
+    - Uống nước phải mời trước
+    - Cảm ơn bằng tên
 * Doanh nghiệp
+** NDS/maychu365
 ** Media Bridge
 ** Gameloft
    Một phần của Gameloft SEA, 4 chi nhánh ở VN
 * Classes
 | Major | 06 | 07 | 08 | 09 | 06 | 07 | 08 | 09 |
 |-------+----+----+----+----+----+----+----+----|
-| C     |    |    |  H |    |    |    |  L |    |
-| S     |    |    |    |    |  L |    |    |    |
+| C     |    |  G |  H |    | L  |    |  L |    |
+| S     |    |  H |    |    | L  |    |    |    |

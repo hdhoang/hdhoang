@@ -1,5 +1,4 @@
 
-* GWAR
 * "Weird Al" Yankovic						 :FAV:comedy:
 ** DONE <1983-04-26> "Weird Al" Yankovic
 ** DONE <1984-02-28> In 3-D
@@ -73,6 +72,10 @@
 * Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
 * Amy Winehouse							       :tunx:
+* Ani DiFranco
+** TODO <2014-10-14 Tue> Allergic to Water
+* Annie Lennox
+** TODO <2014-10-21 Tue> Nostalgia
 * Annihilator								:FAV:
 * Anthrax							       :1fav:
 * Antimatter
@@ -227,11 +230,16 @@
 ** DONE <2014-07-21 Mon> Aquarium
 ** DONE <2014-07-29 Tue> Snow Slug
 ** DONE <2014-08-05 Tue> Celery
-** DONE <2014-08-13 Wed> Closed Attractions
+** TODO <2014-08-13 Wed> Closed Attractions
 ** DONE <2014-08-14 Thu> Leave the Light On
-** TODO <2014-08-22 Fri> Final Bend of the Labyrinth
-** TODO <2014-08-22 Fri> Inifinity Hill
-** TODO <2014-08-29 Fri> Twilight Constrictor
+** DONE <2014-08-22 Fri> Final Bend of the Labyrinth
+** DONE <2014-08-22 Fri> Inifinity Hill
+** DONE <2014-08-29 Fri> Twilight Constrictor
+** TODO <2014-09-04 Thu> Bumbyride Dreamlands
+** TODO <2014-09-14 Sun> Geppetos Trunk
+** TODO <2014-09-17 Wed> Cutout Animatronic
+** TODO <2014-09-27 Sat> Calamity Cabin
+** TODO <2014-09-27 Sat> Carnival of Cartilage
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -340,7 +348,7 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -478,6 +486,7 @@
 ** DONE <1999> [[http://musicbrainz.org/release-group/7ca1cf4a-0d5d-326e-8244-3d61ee02210f][Symphony No. 9]]
 ** DONE <2001> [[http://musicbrainz.org/release-group/db4fecca-8e1c-46e9-8ee1-9e90820cfd69][Symphony No. 5]]
 ** DONE <2001-08-28> [[http://musicbrainz.org/release-group/eace2ac3-9fb7-4667-942b-4468463584f8][Symphony No. 4]]
+* GWAR
 * Gạt Tàn Đầy								:FAV:
 * HammerFall
 ** TODO <2012-11-30> Gates of Dalhalla
@@ -525,7 +534,7 @@
 ** TODO <2013-07-08> Magna Carta... Holy Grail
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -1055,6 +1064,7 @@
    :END:
 * Tony Bennett							       :tunx:
 ** DONE <2012-10-22> Viva Duets
+** TODO <2014-09-23 Tue> Cheek to Cheek
 * Tony Cicoria
 * Tracy Chapman							 :tunx:f:FAV:
 ** DONE <1988-04-05> Tracy Chapman
