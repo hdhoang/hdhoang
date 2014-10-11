@@ -3,14 +3,12 @@
 
 # places
 if [[ $(uname -o) == Msys ]]; then
-    mount=/h
+    mount=h:
 else
     mount=~
 fi
-h=$mount/Public/hdhoang
+h=$mount/Dropbox
 conf=$h/system-config/$(hostname)
-box=$mount/Box
-dbox=$mount/DropBox
 t=$mount/t
 dl=$mount/Downloads
 m=$mount/Music/_new

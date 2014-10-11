@@ -7,8 +7,6 @@ root = h:\
 force = h:\
 path = Dropbox
 path = Music
-path = Pictures
-path = secrets
 
 ignore = Name Thumbs.db
 ignore = Name Desktop.ini
@@ -19,4 +17,4 @@ ignore = Name *-wal
 ignore = Name *-shm
 
 root = ssh://hdhoang@kub.zahe.me//mnt/marbi
-sshargs = -i /h/secrets/kub
+sshargs = -i /h/Dropbox/secrets/kub

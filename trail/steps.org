@@ -100,7 +100,7 @@ new. This mark all but the 5 newest items in each feed as read.
  1. [X] Environment
     - ALTERNATE_EDITOR :: runemacs
     - EDITOR :: emacsclientw
-    - HOME :: H:\Dropbox\home
+    - HOME :: H:\Dropbox\app-config
     - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin
  2. [X] netplwiz
  3. [X] Control Panel\Hardware and Sound\Power Options\System Settings
