@@ -11,3 +11,6 @@ desktop.ini
 /app-config/.emacs.d/
 /app-config/.ssh/known_hosts
 /secrets/
+/Books/
+/Desktop/
+/app-config/.bash_history
