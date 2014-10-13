@@ -1,3 +1,0 @@
-# /etc/udev/rules.d
-
-ATTRS{name}=="Microsoft Natural® Ergonomic Keyboard 4000", OWNER="hdhoang"
