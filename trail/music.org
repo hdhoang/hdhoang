@@ -240,6 +240,8 @@
 ** TODO <2014-09-17 Wed> Cutout Animatronic
 ** TODO <2014-09-27 Sat> Calamity Cabin
 ** TODO <2014-09-27 Sat> Carnival of Cartilage
+** TODO <2014-10-03 Fri> Dreamless Slumber
+** TODO <2014-10-07 Tue> Whirlpool
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -1159,3 +1161,5 @@
 ** DONE <2014-06-12 Thu> The Lounge Conspiracy
 * Đỗ Bảo
 ** DONE <2008> Cánh cung
+* The Dead Milkmen
+** TODO <2014-10-07 Tue> Pretty Music for Pretty People
