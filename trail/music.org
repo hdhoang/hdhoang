@@ -72,8 +72,12 @@
 * Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
 * Amy Winehouse							       :tunx:
+* Devin Townsend
+** TODO <2014-10-27 Mon> Z2
 * Ani DiFranco
 ** TODO <2014-10-14 Tue> Allergic to Water
+* Riot
+** TODO <2014-10-27 Mon> Unleash the Fire
 * Annie Lennox
 ** TODO <2014-10-21 Tue> Nostalgia
 * Annihilator								:FAV:
@@ -242,6 +246,7 @@
 ** TODO <2014-09-27 Sat> Carnival of Cartilage
 ** TODO <2014-10-03 Fri> Dreamless Slumber
 ** TODO <2014-10-07 Tue> Whirlpool
+** TODO <2014-10-11 Sat> Walk in Loset
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -350,7 +355,7 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -536,7 +541,7 @@
 ** TODO <2013-07-08> Magna Carta... Holy Grail
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]

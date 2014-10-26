@@ -26,7 +26,7 @@
  - [ ] Cosmos
  - [ ] Contact
  - [ ] The Dragons of Eden
- - [ ] The Demon Haunted World: Science has a Candle in the Dark
+ - [X] The Demon Haunted World: Science has a Candle in the Dark
 * Dan Kaminsky
 * Daniel Dennett							:mjd:
  - [ ] Darwin's Dangerous Idea
