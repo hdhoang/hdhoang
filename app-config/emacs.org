@@ -157,11 +157,12 @@
    #+end_src
 ** Shell
    #+begin_src emacs-lisp
-     (defadvice shell (around prev-buffer activate)
+     (defun shell--prev-buffer (func name)
        "Switch back to the previous buffer if already in shell"
        (if (string= (buffer-name) "*shell*")
          (switch-to-prev-buffer)
-         ad-do-it))
+         (apply func name)))
+     (advice-add 'shell :around #'shell--prev-buffer)
      (if (eq system-type 'windows-nt)
          (setq shell-file-name "bash")
        (setq shell-file-name "zsh"))
