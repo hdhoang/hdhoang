@@ -27,6 +27,7 @@
     (require 'cl-lib)
     (let ((missing-packages (cl-remove-if 'package-installed-p
                                           '(ace-window
+                                            aggressive-indent
                                             color-theme-sanityinc-solarized
                                             evil
                                             magit
@@ -43,6 +44,7 @@
     (setq-default sentence-end-double-space nil)
     (setq default-input-method "vietnamese-telex")
     (global-set-key (kbd "C-\\") 'toggle-input-method)
+    (global-aggressive-indent-mode)
   #+end_src
 ** Ace-window
    #+begin_src emacs-lisp
