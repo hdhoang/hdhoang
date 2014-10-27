@@ -72,12 +72,8 @@
 * Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
 * Amy Winehouse							       :tunx:
-* Devin Townsend
-** TODO <2014-10-27 Mon> Z2
 * Ani DiFranco
 ** TODO <2014-10-14 Tue> Allergic to Water
-* Riot
-** TODO <2014-10-27 Mon> Unleash the Fire
 * Annie Lennox
 ** TODO <2014-10-21 Tue> Nostalgia
 * Annihilator								:FAV:
@@ -355,7 +351,9 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* Devin Townsend
+** TODO <2014-10-27 Mon> Z2
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -541,7 +539,7 @@
 ** TODO <2013-07-08> Magna Carta... Holy Grail
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -871,6 +869,8 @@
 * Richard Strauss
 * Richie Sambora
 ** TODO <2012-09-25> Aftermath of the Lowdown
+* Riot
+** TODO <2014-10-27 Mon> Unleash the Fire
 * Rumer
 ** DONE <2012-01-25> Seasons of My Soul
 ** DONE <2012-05-28> Boys Don't Cry
@@ -981,6 +981,8 @@
 * The Civil Wars							  :f:
 * The Corrs						       :FAV:f:string:
 * The Cranberries						     :FAV:jo:
+* The Dead Milkmen
+** TODO <2014-10-07 Tue> Pretty Music for Pretty People
 * The Doors
 * The Ink Spots							   :FAV:blue:
 * The Lord Weird Slough Feg
@@ -1123,6 +1125,7 @@
 ** DONE <2008-05-14> Ruatokansan uamunkoetto
 ** DONE <2010-10-27> Lohuton
 * Warmen
+** TODO <2014-09-30 T3> First of the Five Elements
 * Whispered [3/3]
 ** DONE <2007> Wrath of Heaven
 ** DONE <2010-02-10 Wed> Thousand Swords
@@ -1166,5 +1169,3 @@
 ** DONE <2014-06-12 Thu> The Lounge Conspiracy
 * Đỗ Bảo
 ** DONE <2008> Cánh cung
-* The Dead Milkmen
-** TODO <2014-10-07 Tue> Pretty Music for Pretty People
