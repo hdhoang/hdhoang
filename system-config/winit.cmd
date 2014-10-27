@@ -6,3 +6,4 @@ start /b unikeynt
 start /b emacs\bin\runemacs
 start /b firefox\firefox -profile \fxprofile -no-remote
 start /b foobar2000\foobar2000
+start /b psexec -s -i taskmgr
