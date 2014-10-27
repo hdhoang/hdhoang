@@ -3,7 +3,7 @@
 
 # places
 if [[ $(uname -o) == Msys ]]; then
-    mount=h:
+    mount=/h
 else
     mount=~
 fi
