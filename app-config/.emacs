@@ -1,4 +1,4 @@
-; ~/.emacs.d/init.el
+; ~/.emacs
 (package-initialize)
 (require 'org)
 (org-babel-load-file
