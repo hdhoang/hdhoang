@@ -1,7 +1,0 @@
-- caps2ctrl :: [[ix.io/ec9/]]
-- install_flash :: [[ix.io/eUR/]]
-- pentadactyl :: [[ix.io/eUL/]]
-- pentadactylrc :: [[ix.io/eIE/]]
-- procexp :: [[ix.io/eUW/]]
-- procmon :: [[ix.io/eUS/]]
-- psexec :: [[ix.io/eUQ/]]
