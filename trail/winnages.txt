@@ -1,0 +1,4 @@
+* Noticed tomahawk release notes pulling stable's HEAD instead of the release's tag
+* Diagnosed tomahawk uninstaller's behaviour by looking at VLC installer
+* Wrote and fixed various systemd units
+* Rewrote pkgfile zsh hook after stumbled upon the zsh user guide

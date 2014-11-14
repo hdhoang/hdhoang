@@ -72,6 +72,8 @@
 * Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
 * Amy Winehouse							       :tunx:
+* Einsturzende Neubauten
+** TODO <2014-11-07 T6> Lament
 * Ani DiFranco
 ** TODO <2014-10-14 Tue> Allergic to Water
 * Annie Lennox
@@ -141,6 +143,7 @@
 * Blut aus Nord
 ** TODO <2012-09-21> 777 - Cosmosophy
 ** TODO <2014-06-20> Triunity
+** TODO <2014-10-10 T6> Memoria Vetusta III: Saturnian Poetry
 * Bob Marley
 * Bobaflex
 ** DONE <2013-09-10> Chalatan's Web
@@ -243,6 +246,11 @@
 ** TODO <2014-10-03 Fri> Dreamless Slumber
 ** TODO <2014-10-07 Tue> Whirlpool
 ** TODO <2014-10-11 Sat> Walk in Loset
+** TODO <2014-10-18 T7> Our Selves
+** TODO <2014-10-20 T2> Interstellar Slunk
+** TODO <2014-10-25 T7> Red Pepper Restaurant
+** TODO <2014-10-29 T4> The Time Travelers Dream
+** TODO <2014-10-31 T6> Listen for the Whisper
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -319,6 +327,8 @@
 * Coldplay
 ** DONE <2011> Mylo Xyloto
 ** TODO <2014-05-19> Ghost Stories
+* Cool Cavement
+** TODO <2014-11-01 T7> Funkloric Trip
 * Crowded House
 * [[http://musicbrainz.org/artist/9e4a0fe6-1c4f-4abd-aea8-0d21a1d13f55][Cryhavoc]]
 ** DONE <1998> [[http://musicbrainz.org/release-group/0fd8cd40-6782-3b70-9687-88d385edc122][Sweetbriers]]
@@ -353,7 +363,7 @@
 ** TODO <2013-03-22> Delta Machine
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -814,6 +824,7 @@
 ** DONE <2006-03-01> Fearrage
 ** DONE <2007-03-14> Purgatory of the Second Sun
 * Pain of Salvation						    :epic:jo:
+** TODO <2014-11-10 T2> Falling Home
 * Pantera
 * Paramore								  :f:
 * Pearl Jam
@@ -883,7 +894,7 @@
 * Santigold
 * Sarah Brightman						   :f:jo:FAV:
 ** DONE <2013-04-05> Dreamchaser
-* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]] :FAV:
+* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]]								:FAV:
 ** DONE <2007> [[http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286][Humanity: Hour I]]
 ** DONE <2011> Comeblack
 * Sean Wright							     :lastfm:
@@ -989,7 +1000,7 @@
 ** TODO <2014-02-18> Digital Resistance
 * The Smashing Pumpkins
 ** TODO <2012-06-18> Oceania
-* The Who
+** TODO <2014-12-08 T2> Monuments to an Elegy
 * The Who
 * [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
 ** DONE <2011> The Truth Is...
@@ -1058,7 +1069,7 @@
 ** DONE <2010-02-24> スポーツ <Sports>
 ** DONE <2011-06-29> 大発見 <Daihakken>
 ** DONE <2012-01-18> color bars
-** solo Ringo Shiina
+** solo 椎名 林檎 <Shiina Ringo>
 *** DONE <1999-02-24> 無罪モラトリアム <Innocence Moratorium>
 *** DONE <2000-03-31> 勝訴ストリップ <Winning Strip>
 *** DONE <2002-05-27> 唄ひ手冥利～其の壱～ <Utaite Myouri>
@@ -1066,6 +1077,7 @@
 *** DONE <2007-02-21> 平成風俗 <Japanese Manners>
 *** DONE <2009-06-24> 三文ゴシップ <Superficial Gossip>
 *** TODO <2014-05-27> 逆輸入 〜港湾局〜
+*** TODO <2014-11-05 T4> 日出処
 * Tom Lehrer							 :FAV:comedy:
    :PROPERTIES:
    :btih:     24dfce89c974e8693b201d2ab2284dd9012c0471
