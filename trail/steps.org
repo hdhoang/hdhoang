@@ -96,16 +96,11 @@ new. This mark all but the 5 newest items in each feed as read.
    - [[magnet:?xt%3Durn:btih:F3EA2D2939380BB32F2B67E2E3ABABB5CD202F75][Windows 8 Core]] :: 334NH-RXG76-64THK-C7CKG-D3VPT
    - [[magnet:?xt%3Durn:btih:6BEEDA8E06240739CC892D463CA594DC183A5212&dn%3Den_windows_server_2012_r2_vl_with_update_x64_dvd_4065221.iso][Windows Server 2012 R2 Standard Core]] :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
    - [[magnet:?xt%3Durn:btih:AC361E33F84B5957A8319CF6B559910B15F6A556&dn%3Den_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974&tr%3Dudp%253a%252f%252ftracker.openbittorrent.com%253a80%252fannounce&tr%3Dudp%253a%252f%252ftracker.openbittorrent.com%253a80%252fannounce&tr%3Dudp%253a%252f%252fdenis.stalker.h3q.com%253a6969%252fannounce&tr%3Dhttp%253a%252f%252fdenis.stalker.h3q.com%253a6969%252fannounce&tr%3Dhttp%253a%252f%252fwww.torrentsnipe.info%253a2701%252fannounce][Windows XP]] :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
-** Set up [4/4]
+** Set up [3/3]
  1. [X] Environment
     - ALTERNATE_EDITOR :: runemacs
     - EDITOR :: emacsclientw
     - HOME :: H:\Dropbox\app-config
-    - PATH :: H:\Dropbox\runnable;H:\Dropbox\runnable\emacs\bin;H:\Dropbox\runnable\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\Dropbox\runnable\msys32\usr\bin
+    - PATH :: H:\Dropbox\app;H:\g\emacs\bin;H:\g\miktex\miktex\bin\;C:\Program Files (x86)\Rust\bin;H:\g\msys64\usr\bin
  2. [X] netplwiz
- 3. [X] Control Panel\Hardware and Sound\Power Options\System Settings
- 4. [X] Take ownership
- 5. [X] Edit /etc/{group,passwd}
-  #+begin_src
-    wmic useraccount get name,sid
-  #+end_src
+ 3. [X] Take ownership
