@@ -7,12 +7,14 @@ root = h:\
 force = h:\
 path = Dropbox
 path = Music
+path = g/emacs
+path = g/firefox
+path = g/uTorrent
+path = g/vlc
 
 ignore = Name Thumbs.db
 ignore = Name Desktop.ini
-ignore = Path Dropbox/runnable/foobar2000/running
-ignore = Path Dropbox/fxprofile/parent.lock
-ignore = Path Dropbox/fxprofile/cache2
+ignore = Path Dropbox/app/foobar2000/running
 ignore = Name *-wal
 ignore = Name *-shm
 
