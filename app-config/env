@@ -8,3 +8,7 @@ QT_PLUGIN_PATH=/usr/lib/kde4/plugins
 EDITOR=emacsclient
 
 EMAIL=hdhoang@zahe.me
+
+XMODIFIERS=@im=ibus
+GTK_IM_MODULE=ibus
+QT_IM_MODULE=ibus
