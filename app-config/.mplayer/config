@@ -1,7 +1,0 @@
-# ~/.mplayer/config
-
-osdlevel=3
-quiet=true
-nolirc=true
-use-filename-title=true
-subfont-text-scale=6
