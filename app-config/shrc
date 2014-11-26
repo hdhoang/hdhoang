@@ -64,8 +64,8 @@ alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --no-group'
 
 # system
-alias ssc='sudo systemctl --system'
-alias usc='systemctl --user'
+alias sc='sudo systemctl --system'
+alias uc='systemctl --user'
 alias mp='nn makepkg -isf'
 alias i='sudo pacman'
 alias pc='pacman -Qdt && i -R $(pacman -Qdtq)'
