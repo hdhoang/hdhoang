@@ -20,7 +20,7 @@ map <F1> <C-^>
 set activate-=diverted,links,tabopen,paste
 silent bmark -keyword ddg -t DDG https://duckduckgo.com/?kn=1&kp=-1&kae=c&q=%s
 set defsearch=ddg
-set hintkeys=12345,
+set hintkeys=12345
 set newtab=help
 set urlseparator='; '
 
