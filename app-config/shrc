@@ -66,18 +66,9 @@ alias rs='nn rsync --human-readable --verbose --progress --partial --archive --n
 # system
 alias sc='sudo systemctl --system'
 alias uc='systemctl --user'
+alias i=yaourt
 alias mp='nn makepkg -isf'
-alias i='sudo pacman'
-alias pc='pacman -Qdt && i -R $(pacman -Qdtq)'
-alias cower='cower -fddt $ap'
 pkg=/var/cache/pacman/pkg
-ap=$mount/archlinux
-function aur {
-    cd $ap
-    cower $1 || curl -o- https://aur.archlinux.org/packages/${1:0:2}/$1/$1.tar.gz | tar zxv
-    cd $1
-    mp ${*:2}
-}
 
 if [ -n "$BASH" ]; then
     shopt -s histverify histappend
