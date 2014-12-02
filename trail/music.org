@@ -72,8 +72,6 @@
 * Amorphis								:FAV:
 ** DONE <2013-04-19> Circle
 * Amy Winehouse							       :tunx:
-* Einsturzende Neubauten
-** TODO <2014-11-07 T6> Lament
 * Ani DiFranco
 ** TODO <2014-10-14 Tue> Allergic to Water
 * Annie Lennox
@@ -111,6 +109,8 @@
 * Banda Calypso
 * Basil Poledouris
 ** DONE Red October soundtrack					    :FAV:ost:
+* TODO Belle and Sebastian
+** TODO <2015-01-19 T2> Girls in Peacetime Want to Dance
 * Ben Houge							     :lastfm:
 * Benjamin Zander
 * Beto Vázquez Infinity						     :lastfm:
@@ -242,15 +242,17 @@
 ** TODO <2014-09-14 Sun> Geppetos Trunk
 ** TODO <2014-09-17 Wed> Cutout Animatronic
 ** TODO <2014-09-27 Sat> Calamity Cabin
-** TODO <2014-09-27 Sat> Carnival of Cartilage
+** DONE <2014-09-27 Sat> Carnival of Cartilage
 ** TODO <2014-10-03 Fri> Dreamless Slumber
 ** TODO <2014-10-07 Tue> Whirlpool
 ** TODO <2014-10-11 Sat> Walk in Loset
 ** TODO <2014-10-18 T7> Our Selves
 ** TODO <2014-10-20 T2> Interstellar Slunk
 ** TODO <2014-10-25 T7> Red Pepper Restaurant
-** TODO <2014-10-29 T4> The Time Travelers Dream
+** DONE <2014-10-29 T4> The Time Travelers Dream
 ** TODO <2014-10-31 T6> Listen for the Whisper
+** TODO <2014-11-15 T7> The Splatterhorn
+** TODO <2014-11-20 T5> Coaster Coat
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -363,7 +365,7 @@
 ** TODO <2013-03-22> Delta Machine
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -381,6 +383,8 @@
 * EELS
 ** TODO <2013-02-03> Wonderful, Glorious
 ** TODO <2014-04-22> The Cautionary Tales of Mark Oliver Everett
+* Einsturzende Neubauten
+** TODO <2014-11-07 T6> Lament
 * El Pogo8bit
 ** DONE <2009> Listen to Your Game EP					:FAV:
 * Electric Light Orchestra
@@ -441,6 +445,7 @@
 * Garbage
 * GONE Boyzone								:FAV:
 ** DONE <2013-11-25> BZ20
+** TODO <2014-11-21 T6> Dublin to Detroit
 * GONE Carpenters							:FAV:
 * GONE Kylähullut							:FAV:
 * GONE Ludwig van Beethoven						:FAV:
@@ -894,7 +899,7 @@
 * Santigold
 * Sarah Brightman						   :f:jo:FAV:
 ** DONE <2013-04-05> Dreamchaser
-* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]]								:FAV:
+* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]] :FAV:
 ** DONE <2007> [[http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286][Humanity: Hour I]]
 ** DONE <2011> Comeblack
 * Sean Wright							     :lastfm:
@@ -929,6 +934,7 @@
 * Sonata Arctica					   :riff:epic:FAV:fi:
 ** DONE <2012-05-22> Stones Grow Her Name
 ** DONE <2014-03-28> Pariah's Child
+** TODO <2014-10-24 T6> Ecliptica - Revisited
 * Soul Asylum
 ** DONE <1984> Say What You Will, Clarence... Karl Sold the Truck
 ** DONE <1986-01-18> Made to Be Broken

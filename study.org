@@ -146,3 +146,8 @@ devices of the same type. 1G cables need to have all wires correct.
 |-------+----+----+----+----+----+----+----+----|
 | C     |    |  G |  H |    | L  |    |  L |    |
 | S     |    |  H |    |    | L  |    |    |    |
+* <2014-11-11 T3> Kỹ năng làm việc đồng đội
+** Nhiều đầu -> nhiều ý tưởng kỳ dị
+** Kỹ năng lắng nghe
+:: chú tâm -> tập trung -> nghe -> hiểu -> hồi đáp -> phát triển ->
+* <2014-11-25 T3> Mô hình tổ chức doanh nghiệp

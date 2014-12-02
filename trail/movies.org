@@ -1,23 +1,22 @@
 
 * 2 Guns
 * 300
- - [X] Rise of an Empire
+** Rise of an Empire
 * TODO Aladdeen								 :jo:
 * Aliens (2012)
 * TODO Bad Lieutenant
 * Bedside								 :ns:
- - [X] Der må være en sengekant (1975)                            :sub:FAV:
- - [X] Hopla på sengekanten (1976)                                :FAV:sub:
- - [X] Mazurka på sengekanten (1970)                              :sub:FAV:
- - [X] Motorvej på sengekanten (1972)                                 :sub:
- - [X] Rektor på sengekanten (1972)                               :sub:FAV:
- - [X] Romantik på sengekanten (1973)                             :sub:FAV:
- - [X] Sømænd på sengekanten (1976)
- - [X] Tandlæge på sengekanten (1971)                             :sub:FAV:
+** Der må være en sengekant (1975)				    :sub:FAV:
+** Hopla på sengekanten (1976)					    :FAV:sub:
+** Mazurka på sengekanten (1970)				    :sub:FAV:
+** Motorvej på sengekanten (1972)					:sub:
+** Rektor på sengekanten (1972)					    :sub:FAV:
+** Romantik på sengekanten (1973)				    :sub:FAV:
+** Sømænd på sengekanten (1976)
+** Tandlæge på sengekanten (1971)				    :sub:FAV:
 * DONE Big Trouble in Little China
 * TODO Blackadder							 :tv:
 * TODO Blade
-* TODO Brave
 * TODO Catch Me If You Can
 * TODO Chronicle
 * TODO Colossus The Forbin Project				     :jbopre:
@@ -27,8 +26,8 @@
 * DONE Dark City (1998)						  :FAV:f:sci:
 * TODO Did You Hear About The Morgans?
 * Disney							       :anim:
- - [X] Maleficent (2014)
- - [X] Frozen (2013)
+** Maleficent (2014)
+** Frozen (2013)
 * DONE Donnie Darko (2001)						:FAV:
 * TODO Duck Soup
 * DONE Duplicity (2009)							:FAV:
@@ -39,13 +38,13 @@
 * TODO Guardians of the Galaxy (2014)
 * TODO Her (2014)
 * Kevin Smith								:FAV:
- - [X] Chasing Amy (1997)
- - [X] Clerks (1994)
- - [X] Clerks II (2006)
- - [X] Dogma (1999)
- - [X] Jay and Silent Bob Strike Back (2001)
- - [X] Jersey Girl (2004)
- - [X] Mallrats (1995)
+** Chasing Amy (1997)
+** Clerks (1994)
+** Clerks II (2006)
+** Dogma (1999)
+** Jay and Silent Bob Strike Back (2001)
+** Jersey Girl (2004)
+** Mallrats (1995)
 * TODO Kiss Me Deadly
 * DONE Limitless (2011)						 :jbopre:FAV:
 * TODO Lucy (2014)							:jwz:
@@ -54,8 +53,8 @@
 * DONE Man on the Ledge
 * TODO Melancholia
 * DONE Men in Black
- - [X] II
- - [X] 3
+** II
+** 3
 * TODO Moon
 * TODO Mr. Nobody						 :jbopre:FAV:
 * TODO Nick of Time
@@ -64,15 +63,20 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
-* TODO Paranorman (2012)
+* DONE Paranorman (2012)
 * TODO Passengers
 * Pixar								       :anim:
- - [ ] Monster Inc
+** DONE Brave								  :q:
+** TODO Toy Story
+** TODO Toy Story 2
+** TODO Toy Story 3
+** TODO Monsters University
+** TODO Monsters Inc
 * TODO Quentin Tarantino
- - [X] Django Unchained (2012)
- - [X] Inglorious Basterds
- - [X] Pulp Fiction (1994)
- - [X] Reservoir Dogs
+** Django Unchained (2012)
+** Inglorious Basterds
+** Pulp Fiction (1994)
+** Reservoir Dogs
 * Red Lights
 * TODO Roseanna's Grave
 * TODO Samurai Champloo						 :jo:ja:anim:
@@ -87,7 +91,7 @@
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
 * DONE Taken
- - [X] 2
+** 2
 * TODO The Adventures of Tintin: Secret of the Unicorn
 * DONE The Big Lebowski (1998)						 :jo:
 * TODO The Freshman
@@ -112,9 +116,9 @@
 * DONE Warm Bodies
 * DONE Zardoz (1974)							:FAV:
 * Zodiac								 :ns:
- - [X] Agent 69 Jensen i Skorpionens tegn (1977)                  :sub:FAV:
- - [X] Agent 69 Jensen i Skyttens tegn (1978)                         :sub:
- - [X] I Jomfruens tegn (1973)                                 :FAV:vi:sub:
- - [X] I Løvens tegn (1976)                                    :sub:FAV:vi:
- - [X] I Tvillingernes tegn (1975)                                 :sub:vi:
- - [X] I Tyrens tegn (1974)                                    :sub:FAV:vi:
+** Agent 69 Jensen i Skorpionens tegn (1977)			    :sub:FAV:
+** Agent 69 Jensen i Skyttens tegn (1978)				:sub:
+** I Jomfruens tegn (1973)					 :FAV:vi:sub:
+** I Løvens tegn (1976)						 :sub:FAV:vi:
+** I Tvillingernes tegn (1975)					     :sub:vi:
+** I Tyrens tegn (1974)						 :sub:FAV:vi:
