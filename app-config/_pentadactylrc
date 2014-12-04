@@ -62,7 +62,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
-   \ bmark -keyword gm -t gmail https://mail.google.com/mail/#inbox
+   \ bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
    \ bmark -keyword fb -t facebook https://fb.me/%s
    \ set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
