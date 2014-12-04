@@ -33,7 +33,7 @@ alias nn='nice ionice -c 3 '
 
 # local info
 alias ls='ls --color=auto --file-type'
-alias df='df -hT --total -x tmpfs -x devtmpfs'
+alias df='df -hT -x tmpfs -x devtmpfs'
 alias du='du -h --total'
 alias p='pgrep -f'
 alias fr='free -h | awk "NR!=3 {print \$NF}"'
