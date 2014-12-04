@@ -233,26 +233,26 @@
 ** DONE <2014-07-21 Mon> Aquarium
 ** DONE <2014-07-29 Tue> Snow Slug
 ** DONE <2014-08-05 Tue> Celery
-** TODO <2014-08-13 Wed> Closed Attractions
+** DONE <2014-08-13 Wed> Closed Attractions
 ** DONE <2014-08-14 Thu> Leave the Light On
 ** DONE <2014-08-22 Fri> Final Bend of the Labyrinth
 ** DONE <2014-08-22 Fri> Inifinity Hill
 ** DONE <2014-08-29 Fri> Twilight Constrictor
-** TODO <2014-09-04 Thu> Bumbyride Dreamlands
-** TODO <2014-09-14 Sun> Geppetos Trunk
-** TODO <2014-09-17 Wed> Cutout Animatronic
-** TODO <2014-09-27 Sat> Calamity Cabin
+** DONE <2014-09-04 Thu> Bumbyride Dreamlands
+** DONE <2014-09-14 Sun> Geppetos Trunk
+** DONE <2014-09-17 Wed> Cutout Animatronic
+** DONE <2014-09-27 Sat> Calamity Cabin
 ** DONE <2014-09-27 Sat> Carnival of Cartilage
-** TODO <2014-10-03 Fri> Dreamless Slumber
-** TODO <2014-10-07 Tue> Whirlpool
-** TODO <2014-10-11 Sat> Walk in Loset
-** TODO <2014-10-18 T7> Our Selves
-** TODO <2014-10-20 T2> Interstellar Slunk
-** TODO <2014-10-25 T7> Red Pepper Restaurant
+** DONE <2014-10-03 Fri> Dreamless Slumber
+** DONE <2014-10-07 Tue> Whirlpool
+** DONE <2014-10-11 Sat> Walk in Loset
+** DONE <2014-10-18 T7> Our Selves
+** DONE <2014-10-20 T2> Interstellar Slunk
+** DONE <2014-10-25 T7> Red Pepper Restaurant
 ** DONE <2014-10-29 T4> The Time Travelers Dream
-** TODO <2014-10-31 T6> Listen for the Whisper
-** TODO <2014-11-15 T7> The Splatterhorn
-** TODO <2014-11-20 T5> Coaster Coat
+** DONE <2014-10-31 T6> Listen for the Whisper
+** DONE <2014-11-15 T7> The Splatterhorn
+** DONE <2014-11-20 T5> Coaster Coat
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
