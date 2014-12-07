@@ -4,8 +4,8 @@ fn main() {
     let xrandr = std::io::Command::new("/usr/bin/xrandr");
 
     let query = xrandr.clone();
-    let qo = query.output().ok().expect("No output").output;
-    let orientation = std::str::from_utf8(qo.as_slice()).expect("No output")
+    let qo = query.output().ok().expect("Failed running xrandr").output;
+    let orientation = std::str::from_utf8(qo.as_slice()).expect("Output is invalid")
         .lines().nth(1).expect("Wrong number of lines")
         .words().nth(3).expect("Wrong number of words");
     let new_orientation = match orientation {
@@ -19,5 +19,5 @@ fn main() {
              .status().ok().unwrap());
     println!("input map {}", std::io::Command::new("/usr/bin/xinput")
              .args(&["map-to-output", "Atmel Atmel maXTouch Digitizer", "LVDS1"])
-             .status().ok().unwrap())
+             .status().ok().expect("Failed running xinput"))
 }
