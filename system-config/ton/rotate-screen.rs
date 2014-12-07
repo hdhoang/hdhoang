@@ -15,6 +15,6 @@ fn main() {
         _ => "inverted",
     };
 
-    println!("rotated: {}", xrandr.clone().args(&["--output", "LVDS1", "--rotate", new_orientation])
-             .status().ok().unwrap().success())
+    println!("rotate {}", xrandr.clone().args(&["--output", "LVDS1", "--rotate", new_orientation])
+             .status().ok().unwrap())
 }
