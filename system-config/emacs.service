@@ -6,7 +6,6 @@ Type=forking
 Restart=always
 ExecStart=/usr/bin/emacs --daemon
 EnvironmentFile=%h/.agent-info
-Environment=DISPLAY=192.168.1.55:0.0
 
 [Install]
 WantedBy=default.target
