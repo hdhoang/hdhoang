@@ -16,5 +16,8 @@ fn main() {
     };
 
     println!("rotate {}", xrandr.clone().args(&["--output", "LVDS1", "--rotate", new_orientation])
+             .status().ok().unwrap());
+    println!("input map {}", std::io::Command::new("/usr/bin/xinput")
+             .args(&["map-to-output", "Atmel Atmel maXTouch Digitizer", "LVDS1"])
              .status().ok().unwrap())
 }
