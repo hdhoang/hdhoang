@@ -24,18 +24,10 @@
           '(("gnu" . "http://elpa.gnu.org/packages/")
             ("marmalade" . "http://marmalade-repo.org/packages/")
             ("melpa" . "http://melpa.milkbox.net/packages/")))
-    (require 'cl-lib)
-    (let ((missing-packages (cl-remove-if 'package-installed-p
-                                          '(ace-window
-                                            aggressive-indent
-                                            color-theme-sanityinc-solarized
-                                            evil
-                                            magit
-                                            smex
-                                            expand-region))))
-      (unless (null missing-packages)
-        (package-refresh-contents)
-        (mapc 'package-install missing-packages)))
+    (unless (package-installed-p 'use-package)
+      (package-refresh-contents)
+      (package-install 'use-package))
+    (require 'use-package)
   #+end_src
 * Input
   #+begin_src emacs-lisp
@@ -44,54 +36,59 @@
     (setq-default sentence-end-double-space nil)
     (setq default-input-method "vietnamese-telex")
     (global-set-key (kbd "C-\\") 'toggle-input-method)
-    (global-aggressive-indent-mode)
+    (use-package aggressive-indent
+      :ensure
+      :config (global-aggressive-indent-mode))
   #+end_src
 ** Ace-window
    #+begin_src emacs-lisp
-     (global-set-key (kbd "C-x o") 'ace-window)
+     (use-package ace-window
+       :ensure
+       :bind ("C-x o" . ace-window))
    #+end_src
 ** Evil
    #+begin_src emacs-lisp
-     (evil-mode t)
-   #+end_src
-   Mimic [[file+emacs:_pentadactylrc][dactyl]] scrolling
-   #+begin_src emacs-lisp
-     (dolist (state '(normal motion))
-       (evil-define-key state global-map
-         (kbd "<SPC>") 'evil-scroll-down
-         (kbd "S-<SPC>") 'evil-scroll-up))
-     (global-set-key (kbd "C-v") 'evil-scroll-down)
-     (global-set-key (kbd "M-v") 'evil-scroll-up)
-   #+end_src
-   Restore some emacs bindings
-   #+begin_src emacs-lisp
-     (dolist (state '(insert motion normal))
-       (evil-define-key state global-map
-         (kbd "C-t") 'transpose-chars
-         (kbd "C-d") 'delete-char
-         (kbd "C-k") 'kill-line
-         (kbd "C-y") 'evil-paste-before
-         (kbd "M-y") 'evil-paste-pop (kbd "M-Y") 'evil-paste-pop-next
-         (kbd "C-e") 'end-of-line
-         (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
-         (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
-         (kbd "C-r") 'isearch-backward))
-     (evil-define-key 'motion help-mode-map
-       (kbd "<tab>") 'forward-button)
+     (use-package evil
+       :ensure
+       :bind (("C-v" . evil-scroll-down)
+              ("M-v" . evil-scroll-up))
+       :config
+       (progn
+         (evil-mode t)
+         (dolist (state '(normal motion))
+           (evil-define-key state global-map
+             ":" 'smex
+             (kbd "<SPC>") 'evil-scroll-down
+             (kbd "S-<SPC>") 'evil-scroll-up))
+         (dolist (state '(insert motion normal))
+           (evil-define-key state global-map
+             (kbd "C-t") 'transpose-chars
+             (kbd "C-d") 'delete-char
+             (kbd "C-k") 'kill-line
+             (kbd "C-y") 'evil-paste-before
+             (kbd "M-y") 'evil-paste-pop (kbd "M-Y") 'evil-paste-pop-next
+             (kbd "C-e") 'end-of-line
+             (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
+             (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
+             (kbd "C-r") 'isearch-backward))
+         (evil-define-key 'motion help-mode-map
+           (kbd "<tab>") 'forward-button)))
    #+end_src
 ** Ido and Smex
    #+begin_src emacs-lisp
      (ido-mode t)
      (setq ido-use-virtual-buffers t)
-     (global-set-key (kbd "M-x") 'smex)
-     (global-set-key (kbd "M-X") 'smex-major-mode-commands)
-     (dolist (state '(normal motion))
-       (evil-define-key state global-map
-         ":" 'smex))
+     (use-package smex
+       :ensure
+       :bind (("M-x" . smex)
+              ("M-X" . smex-major-mode-commands)))
+
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
-     (global-set-key (kbd "C-=") 'er/expand-region)
+     (use-package expand-region
+       :ensure
+       :bind ("C-=" . er/expand-region))
    #+end_src
 ** Other convenient bindings
    #+begin_src emacs-lisp
@@ -101,14 +98,13 @@
    #+end_src
 * Major modes
   #+begin_src emacs-lisp
-    (dolist (assoc '(("PKGBUILD" . pkgbuild-mode)
-                     ("\\.install\\'" . sh-mode)
-                     ("\\.do\\'" . sh-mode)
-                     ("\\.service\\'" . conf-windows-mode)
+    (dolist (assoc '(("\\.service\\'" . conf-windows-mode)
                      ("\\.socket\\'" . conf-windows-mode)
                      ("\\.timer\\'" . conf-windows-mode)
                      ("\\.directory\\'" . conf-windows-mode)))
       (add-to-list 'auto-mode-alist assoc))
+    (use-package pkgbuild-mode
+      :mode ("\\.install\\'" . sh-mode))
   #+end_src
 ** Desktop files
    #+begin_src emacs-lisp
@@ -121,14 +117,18 @@
    #+begin_src emacs-lisp
      (setq erc-autojoin-channels-alist '(("freenode" "#lojban" "#jbopre" "#vnluser"))
                 erc-hide-list '("JOIN" "PART" "QUIT"))
-     (evil-set-initial-state 'erc-mode 'normal)
+     (use-package evil
+       :config (evil-set-initial-state 'erc-mode 'normal))
    #+end_src
 ** Magit
    Enter commit buffer in insert state
    #+begin_src emacs-lisp
-     (evil-set-initial-state 'git-commit-mode 'insert)
+     (use-package magit
+       :ensure
+       :bind ("C-x g" . magit-status))
+     (use-package evil
+       :config (evil-set-initial-state 'git-commit-mode 'insert))
      (setq vc-follow-symlinks t)
-     (global-set-key (kbd "C-x g") 'magit-status)
      (defun fix-cygwin-magit-dir (dir)
        "cygwin/msys2 git confuses emacs into opening \"d:/d/git\". Fix that"
        (replace-regexp-in-string "\\([a-z]\\):/\\1" "\\1:" dir))
@@ -198,7 +198,9 @@
           magit-auto-revert-mode-lighter "")
   #+end_src
   #+begin_src emacs-lisp
-    (load-theme 'sanityinc-solarized-light t)
+    (use-package color-theme-sanityinc-solarized
+      :ensure
+      :config (load-theme 'sanityinc-solarized-light t))
   #+end_src
   On newer Windows, use Consolas
   #+begin_src emacs-lisp
