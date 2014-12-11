@@ -8,16 +8,27 @@ fn main() {
     let orientation = std::str::from_utf8(qo.as_slice()).expect("Output is invalid")
         .lines().nth(1).expect("Wrong number of lines")
         .words().nth(3).expect("Wrong number of words");
-    let new_orientation = match orientation {
+    let new_screen_orientation = match orientation {
         "inverted" => "normal",
         "left" => "right",
         "right" => "left",
-        _ => "inverted",
+        "(normal" => "inverted",
+        _ => panic!("Unknown orientation")
     };
 
-    println!("rotate {}", xrandr.clone().args(&["--output", "LVDS1", "--rotate", new_orientation])
+    println!("screen rotation {}", xrandr.clone()
+             .args(&["--output", "LVDS1", "--rotate", new_screen_orientation])
              .status().ok().unwrap());
-    println!("input map {}", std::io::Command::new("/usr/bin/xinput")
-             .args(&["map-to-output", "Atmel Atmel maXTouch Digitizer", "LVDS1"])
-             .status().ok().expect("Failed running xinput"))
+
+    let new_touch_orientation = match new_screen_orientation {
+        "normal" => "none",
+        "left" => "ccw",
+        "right" => "cw",
+        "inverted" => "half",
+        _ => panic!("Unknown new rotation")
+    };
+    println!("touch  rotation {}", std::io::Command::new("/usr/bin/xsetwacom")
+             .args(&["set", "Atmel Atmel maXTouch Digitizer touch",
+                     "Rotate", new_touch_orientation])
+             .status().ok().expect("Failed running xsetwacom"))
 }
