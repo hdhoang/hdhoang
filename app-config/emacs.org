@@ -74,15 +74,11 @@
          (evil-define-key 'motion help-mode-map
            (kbd "<tab>") 'forward-button)))
    #+end_src
-** Ido and Smex
+** Helm
    #+begin_src emacs-lisp
-     (ido-mode t)
-     (setq ido-use-virtual-buffers t)
-     (use-package smex
+     (use-package helm
        :ensure
-       :bind (("M-x" . smex)
-              ("M-X" . smex-major-mode-commands)))
-
+       :config (helm-mode 1))
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
