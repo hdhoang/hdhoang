@@ -76,7 +76,8 @@
    #+begin_src emacs-lisp
      (use-package helm
        :ensure
-       :config (helm-mode 1))
+       :config (helm-mode 1)
+       :bind ("C-c h" . helm-command-prefix))
      (use-package evil
        (dolist (state '(insert motion normal))
          (evil-define-key state global-map
