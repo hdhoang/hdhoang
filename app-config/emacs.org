@@ -65,7 +65,6 @@
              (kbd "C-d") 'delete-char
              (kbd "C-k") 'kill-line
              (kbd "C-y") 'evil-paste-before
-             (kbd "M-y") 'evil-paste-pop (kbd "M-Y") 'evil-paste-pop-next
              (kbd "C-e") 'end-of-line
              (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
              (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
@@ -78,6 +77,10 @@
      (use-package helm
        :ensure
        :config (helm-mode 1))
+     (use-package evil
+       (dolist (state '(insert motion normal))
+         (evil-define-key state global-map
+           (kbd "M-y") 'helm-show-kill-ring)))
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
