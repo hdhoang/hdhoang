@@ -57,7 +57,6 @@
          (evil-mode t)
          (dolist (state '(normal motion))
            (evil-define-key state global-map
-             ":" 'smex
              (kbd "<SPC>") 'evil-scroll-down
              (kbd "S-<SPC>") 'evil-scroll-up))
          (dolist (state '(insert motion normal))
