@@ -321,7 +321,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -408,6 +408,7 @@
 * Ennio Morricone
 * Ensiferum
 ** DONE <2012-08-27> Unsung Heroes
+** <2015-02-24 Tue> One Man Army
 * Entombed
 ** TODO <2013-10-28> Back to the Front
 * Epica
@@ -554,7 +555,7 @@
 ** TODO <2013-07-08> Magna Carta... Holy Grail
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -954,6 +955,7 @@
 ** TODO <2014-02-07> SLK
 * Starbomb
 ** DONE Starbomb							:FAV:
+** <2014-12-16 Tue> Player Select
 * Steve Vai							       :inst:
 ** TODO <2012-08-14> The Story of Light
 * Stevie Ray Vaughan						     :guitar:
@@ -1008,7 +1010,7 @@
 ** TODO <2012-06-18> Oceania
 ** TODO <2014-12-08 T2> Monuments to an Elegy
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]						  :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
 * ThePlasmas						   :riff:game:lastfm:

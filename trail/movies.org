@@ -1,7 +1,7 @@
 
 * 2 Guns
 * 300
-** Rise of an Empire
+** Rise of an Empire							  :q:
 * TODO Aladdeen								 :jo:
 * Aliens (2012)
 * TODO Bad Lieutenant
@@ -26,8 +26,8 @@
 * DONE Dark City (1998)						  :FAV:f:sci:
 * TODO Did You Hear About The Morgans?
 * Disney							       :anim:
-** Maleficent (2014)
-** Frozen (2013)
+** Maleficent (2014)							  :q:
+** Frozen (2013)							  :q:
 * DONE Donnie Darko (2001)						:FAV:
 * TODO Duck Soup
 * DONE Duplicity (2009)							:FAV:
@@ -36,7 +36,7 @@
 * TODO Final Destination
 * DONE Flypaper (2011)						     :FAV:jo:
 * TODO Guardians of the Galaxy (2014)
-* TODO Her (2014)
+* TODO Her (2013)
 * Kevin Smith								:FAV:
 ** Chasing Amy (1997)
 ** Clerks (1994)
@@ -63,6 +63,7 @@
    :PROPERTIES:
    :btih:     8EC7FFD9A3255281E58A2F0D9DC6E490FFE1C3DB
    :END:
+* TODO Pacific Rim
 * DONE Paranorman (2012)
 * TODO Passengers
 * Pixar								       :anim:
@@ -84,14 +85,15 @@
    :PROPERTIES:
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
-* TODO Secretary (2002)
+* DONE Secretary (2002)
 * TODO Seven Psychopaths (2012)						 :jo:
 * DONE Strange Days (1995)						:FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
 * DONE Taken
-** 2
+** DONE 2
+** TODO 3
 * TODO The Adventures of Tintin: Secret of the Unicorn
 * DONE The Big Lebowski (1998)						 :jo:
 * TODO The Freshman
@@ -105,7 +107,7 @@
  - [ ] The Good, The Bad, The Ugly (1966)
 * TODO The Men Who Stare at Goats
 * TODO The Monuments Men
-* TODO The Prestige (2006)
+* DONE The Prestige (2006)						  :q:
 * TODO The Purge
 * TODO The Simpsons							 :tv:
 * DONE The Usual Suspects (1995)					:FAV:
@@ -113,7 +115,7 @@
 * TODO To Rome with Love
 * TODO Tombstone (1993)
 * TODO Tucker and Dave vs Evil						 :jo:
-* DONE Warm Bodies
+* DONE Warm Bodies							  :q:
 * DONE Zardoz (1974)							:FAV:
 * Zodiac								 :ns:
 ** Agent 69 Jensen i Skorpionens tegn (1977)			    :sub:FAV:
