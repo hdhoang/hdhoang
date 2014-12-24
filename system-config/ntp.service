@@ -1,8 +1,0 @@
-[Unit]
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/ntpd -qg
-
-[Install]
-WantedBy=multi-user.target
