@@ -72,8 +72,8 @@ pkg=/var/cache/pacman/pkg
 
 if [ -n "$BASH" ]; then
     shopt -s histverify histappend
-    shopt -s extglob nocaseglob globstar
-    shopt -s autocd
+    shopt -s extglob nocaseglob
+    [[ $BASH_VERSINFO > 3 ]] && shopt -s autocd globstar
 
     alias which=type
 fi
