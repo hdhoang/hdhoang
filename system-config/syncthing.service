@@ -1,0 +1,11 @@
+[Unit]
+Description=Syncthing for %u
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/syncthing
+Environment=STNOUPGRADE=yes
+RestartForceExitStatus=3
+
+[Install]
+WantedBy=default.target
