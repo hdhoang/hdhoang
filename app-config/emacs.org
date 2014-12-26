@@ -79,15 +79,18 @@
        :config (helm-mode 1)
        :bind ("C-c h" . helm-command-prefix))
      (use-package evil
-       (dolist (state '(insert motion normal))
-         (evil-define-key state global-map
-           (kbd "M-y") #'helm-show-kill-ring)))
+       :config (dolist (state '(insert motion normal))
+                 (evil-define-key state global-map
+                   (kbd "M-y") #'helm-show-kill-ring)))
    #+end_src
 ** Quickrun
    #+begin_src emacs-lisp
      (use-package quickrun
        :ensure
        :bind ("C-c q" . quickrun))
+     (use-package evil
+       :config (evil-define-key 'normal quickrun/mode-map
+                 "q" #'quit-window))
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
