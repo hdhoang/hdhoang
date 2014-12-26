@@ -82,6 +82,11 @@
        (dolist (state '(insert motion normal))
          (evil-define-key state global-map
            (kbd "M-y") 'helm-show-kill-ring)))
+** Quickrun
+   #+begin_src emacs-lisp
+     (use-package quickrun
+       :ensure
+       :bind ("C-c q" . quickrun))
    #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
