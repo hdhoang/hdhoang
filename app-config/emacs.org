@@ -57,20 +57,20 @@
          (evil-mode t)
          (dolist (state '(normal motion))
            (evil-define-key state global-map
-             (kbd "<SPC>") 'evil-scroll-down
-             (kbd "S-<SPC>") 'evil-scroll-up))
+             (kbd "<SPC>") #'evil-scroll-down
+             (kbd "S-<SPC>") #'evil-scroll-up))
          (dolist (state '(insert motion normal))
            (evil-define-key state global-map
-             (kbd "C-t") 'transpose-chars
-             (kbd "C-d") 'delete-char
-             (kbd "C-k") 'kill-line
-             (kbd "C-y") 'evil-paste-before
-             (kbd "C-e") 'end-of-line
-             (kbd "C-f") 'forward-char   (kbd "C-b") 'backward-char
-             (kbd "C-n") 'next-line      (kbd "C-p") 'previous-line
-             (kbd "C-r") 'isearch-backward))
+             (kbd "C-t") #'transpose-chars
+             (kbd "C-d") #'delete-char
+             (kbd "C-k") #'kill-line
+             (kbd "C-y") #'evil-paste-before
+             (kbd "C-e") #'end-of-line
+             (kbd "C-f") #'forward-char   (kbd "C-b") #'backward-char
+             (kbd "C-n") #'next-line      (kbd "C-p") #'previous-line
+             (kbd "C-r") #'isearch-backward))
          (evil-define-key 'motion help-mode-map
-           (kbd "<tab>") 'forward-button)))
+           (kbd "<tab>") #'forward-button)))
    #+end_src
 ** Helm
    #+begin_src emacs-lisp
@@ -81,7 +81,8 @@
      (use-package evil
        (dolist (state '(insert motion normal))
          (evil-define-key state global-map
-           (kbd "M-y") 'helm-show-kill-ring)))
+           (kbd "M-y") #'helm-show-kill-ring)))
+   #+end_src
 ** Quickrun
    #+begin_src emacs-lisp
      (use-package quickrun
@@ -96,9 +97,9 @@
    #+end_src
 ** Other convenient bindings
    #+begin_src emacs-lisp
-     (defalias 'yes-or-no-p 'y-or-n-p)
-     (defalias 'dabbrev-expand 'hippie-expand)
-     (global-set-key (kbd "<M-f4>") 'delete-frame)
+     (defalias 'yes-or-no-p #'y-or-n-p)
+     (defalias 'dabbrev-expand #'hippie-expand)
+     (global-set-key (kbd "<M-f4>") #'delete-frame)
    #+end_src
 * Major modes
   #+begin_src emacs-lisp
@@ -160,7 +161,7 @@
    #+begin_src emacs-lisp
      (setq proced-filter 'all
            proced-tree-flag t)
-     (global-set-key (kbd "C-x p") 'proced)
+     (global-set-key (kbd "C-x p") #'proced)
    #+end_src
 ** Shell
    #+begin_src emacs-lisp
@@ -173,9 +174,9 @@
      (if (eq system-type 'windows-nt)
          (setq shell-file-name "bash")
        (setq shell-file-name "zsh"))
-     (global-set-key (kbd "C-x M-m") 'shell)
-     (global-set-key (kbd "C-x M-t") 'term)
-     (define-key comint-mode-map (kbd "<SPC>") 'comint-magic-space)
+     (global-set-key (kbd "C-x M-m") #'shell)
+     (global-set-key (kbd "C-x M-t") #'term)
+     (define-key comint-mode-map (kbd "<SPC>") #'comint-magic-space)
    #+end_src
 ** SQL
 *** Connections
