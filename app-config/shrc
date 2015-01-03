@@ -86,6 +86,7 @@ if [ -n "$ZSH_NAME" ]; then
     unsetopt AUTO_NAME_DIRS bash_auto_list
     autoload select-word-style && select-word-style BASH # with CamelCase support
     zstyle ':vcs_info:*' enable git
+    autoload -U compinit && compinit
 
     PROMPT="%m %~ %w %(?..%? )
 %# "
