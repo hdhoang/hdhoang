@@ -125,6 +125,11 @@
                   (setq comment-start "#")
                   (glasses-mode t)))
    #+end_src
+** Dired
+   #+begin_src emacs-lisp
+     (setq dired-guess-shell-alist-user
+           '(("." "xdg-open;")))
+   #+end_src
 ** ERC
    #+begin_src emacs-lisp
      (setq erc-autojoin-channels-alist '(("freenode" "#lojban" "#jbopre" "#vnluser"))
