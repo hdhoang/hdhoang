@@ -131,7 +131,8 @@
 ** Dired
    #+begin_src emacs-lisp
      (setq dired-guess-shell-alist-user
-           '(("." "xdg-open;")))
+           '(("\\.htm" "firefox")
+             ("." "xdg-open;")))
    #+end_src
 ** ERC
    #+begin_src emacs-lisp
