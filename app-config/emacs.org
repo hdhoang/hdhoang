@@ -83,6 +83,7 @@
                  (define-key helm-map (kbd "C-z") #'helm-select-action)
                  (define-key helm-map (kbd "C-i") #'helm-execute-persistent-action))
        :bind (("C-c h" . helm-command-prefix)
+              ("C-x b" . helm-mini)
               ("M-x" . helm-M-x)))
      (use-package evil
        :config (dolist (state '(insert motion normal))
