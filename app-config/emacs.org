@@ -78,6 +78,7 @@
      (use-package helm
        :ensure
        :config (progn
+                 (require 'helm-config)
                  (helm-mode 1)
                  (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action))
        :bind ("C-c h" . helm-command-prefix))
