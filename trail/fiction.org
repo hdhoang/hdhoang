@@ -1,4 +1,6 @@
 
+* Thomas A Mays
+** DONE A Sword into Darkness
 * Max Gladwell
 * Nicola Griffith
 ** Hilda

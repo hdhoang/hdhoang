@@ -36,6 +36,7 @@
 * TODO Europe Trip							 :jo:
 * TODO Final Destination
 * DONE Flypaper (2011)						     :FAV:jo:
+* Gravity
 * TODO Guardians of the Galaxy (2014)
 * TODO Her (2013)
 * Kevin Smith								:FAV:
@@ -93,7 +94,7 @@
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
-* DONE Taken
+* DONE Taken								  :q:
 ** DONE 2
 ** TODO 3
 * TODO The Adventures of Tintin: Secret of the Unicorn
