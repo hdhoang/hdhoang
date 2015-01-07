@@ -80,9 +80,10 @@
        :config (progn
                  (require 'helm-config)
                  (helm-mode 1)
-       :bind ("C-c h" . helm-command-prefix))
                  (define-key helm-map (kbd "C-z") #'helm-select-action)
                  (define-key helm-map (kbd "C-i") #'helm-execute-persistent-action))
+       :bind (("C-c h" . helm-command-prefix)
+              ("M-x" . helm-M-x)))
      (use-package evil
        :config (dolist (state '(insert motion normal))
                  (evil-define-key state global-map
