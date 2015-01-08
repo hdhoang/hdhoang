@@ -139,8 +139,7 @@
    #+begin_src emacs-lisp
      (define-key dired-mode-map (kbd "RET") #'dired-do-async-shell-command)
      (setq dired-guess-shell-alist-user
-           '(("\\.htm" "firefox")
-             ("." "xdg-open;")))
+           '(("." "xdg-open;")))
    #+end_src
 ** ERC
    #+begin_src emacs-lisp
