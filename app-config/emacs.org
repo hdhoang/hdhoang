@@ -133,6 +133,7 @@
    #+end_src
 ** Dired
    #+begin_src emacs-lisp
+     (define-key dired-mode-map (kbd "RET") #'dired-do-async-shell-command)
      (setq dired-guess-shell-alist-user
            '(("\\.htm" "firefox")
              ("." "xdg-open;")))
