@@ -75,7 +75,6 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! security.warn_viewing_mixed=false
    \ set! layout.spellcheckDefault=0
    \ set! middlemouse.paste=true
-   \ set! ui.key.contentAccess=4
    \ set! ui.key.menuAccessKey=0
    \ set! browser.anchor_color="#6c71c4"
    \ set! browser.display.background_color="#fdf6e3"
