@@ -19,16 +19,20 @@
      desktop-load-locked-desktop t ;  Load locked desktop from crashed emacs
      inhibit-startup-screen t)
   #+end_src
-  Install packages
+  Package management
   #+begin_src emacs-lisp
     (setq package-archives
-          '(("gnu" . "http://elpa.gnu.org/packages/")
-            ("marmalade" . "http://marmalade-repo.org/packages/")
-            ("melpa" . "http://melpa.milkbox.net/packages/")))
+          '(("gnu" . "https://elpa.gnu.org/packages/")
+            ("marmalade" . "https://marmalade-repo.org/packages/")
+            ("melpa" . "http://melpa.org/packages/")))
     (unless (package-installed-p 'use-package)
       (package-refresh-contents)
       (package-install 'use-package))
     (require 'use-package)
+    (use-package paradox
+      :config (progn
+                (setq paradox-github-token t)
+                (setq paradox-execute-asynchronously nil)))
   #+end_src
 * Input
   #+begin_src emacs-lisp
