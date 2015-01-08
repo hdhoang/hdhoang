@@ -8,7 +8,7 @@ else
     mount=~
 fi
 h=$mount/Dropbox
-conf=$h/system-config/$(hostname)
+conf=$h/config/$(hostname)
 t=$mount/t
 dl=$mount/Downloads
 m=$h/New\ Music
@@ -95,15 +95,15 @@ if [ -n "$ZSH_NAME" ]; then
 fi
 
 if [[ $(uname -o) == Msys ]]; then
-    . $h/app-config/env
-    export $(cut -s -d= -f1 $h/app-config/env)
+    . $h/config/env
+    export $(cut -s -d= -f1 $h/config/env)
     alias nn='nice '
     alias sudo=''
 fi
 
 if [[ $(uname) == Darwin ]]; then
     export PATH=$PATH:~/brew/bin
-    awk -F = '/=/{ print $1 " " $2 }' $h/app-config/env | xargs -L 1 launchctl setenv
+    awk -F = '/=/{ print $1 " " $2 }' $h/config/env | xargs -L 1 launchctl setenv
 
     export CLICOLOR
     alias ls='ls -GT'
