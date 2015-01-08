@@ -84,9 +84,7 @@
        :config (progn
                  (require 'helm-config)
                  (helm-mode 1)
-                 (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring)
-                 (define-key helm-map (kbd "C-z") #'helm-select-action)
-                 (define-key helm-map (kbd "C-i") #'helm-execute-persistent-action))
+                 (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
        :bind (("C-h SPC" . helm-all-mark-rings)
               ("C-x b" . helm-mini)
               ("C-x C-b" . helm-buffers-list)
