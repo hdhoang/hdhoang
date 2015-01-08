@@ -52,7 +52,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
    \ bmark -keyword io -t ixopen http://ix.io/%s/
    \ bmark -keyword bb -t burnbit http://burnbit.com/burn?file=%s
-   \ bmark -keyword yts -t yify https://yts.re/browse-movie/%s/720p/All/0/latest
+   \ bmark -keyword yts -t yify https://yts.re/browse-movie/%s/720p/All/0/latest/1
    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
    \ bmark -keyword mt -t metasearch http://metasearch.torrentproject.com/#!search=%s
