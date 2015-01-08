@@ -75,7 +75,7 @@
    #+end_src
 ** Helm
    #+begin_src emacs-lisp
-     (use-package helm
+     (use-package helm-proc
        :ensure
        :config (progn
                  (require 'helm-config)
@@ -87,6 +87,7 @@
               ("C-x b" . helm-mini)
               ("C-x C-b" . helm-buffers-list)
               ("C-x C-f" . helm-find-files)
+              ("C-x p" . helm-proc)
               ("M-s o" . helm-occur)
               ("M-x" . helm-M-x)))
      (use-package evil
@@ -176,12 +177,6 @@
                                  (add-hook 'before-save-hook 'org-align-all-tags
                                            :local t)))
      (add-to-list 'org-babel-load-languages '(sql . t))
-   #+end_src
-** Proced
-   #+begin_src emacs-lisp
-     (setq proced-filter 'all
-           proced-tree-flag t)
-     (global-set-key (kbd "C-x p") #'proced)
    #+end_src
 ** Shell
    #+begin_src emacs-lisp
