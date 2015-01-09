@@ -1,7 +1,7 @@
 replaygain "track"
 auto_update "yes"
 
-sticker_file "~/Dropbox/app-config/mpd_sticker"
+sticker_file "~/Dropbox/config/mpd_sticker"
 db_file "~/.local/mpd_db"
 music_directory "~/Music"
 playlist_directory "~/Dropbox/playlists"
