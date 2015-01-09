@@ -150,6 +150,7 @@
 ** Docview
    #+begin_src emacs-lisp
      (setq doc-view-cache-directory (expand-file-name "~/.docview"))
+     (add-hook 'view-mode-hook #'evil-emacs-state)
    #+end_src
 ** ERC
    #+begin_src emacs-lisp
