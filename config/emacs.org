@@ -105,6 +105,13 @@
      (use-package evil
        :config (evil-set-initial-state 'quickrun/mode 'emacs))
    #+end_src
+** Smartparens
+   #+begin_src emacs-lisp
+     (use-package smartparens
+       :ensure
+       :config (progn (require 'smartparens-config)
+                      (smartparens-global-mode t)))
+   #+end_src
 ** Expand-region
    #+begin_src emacs-lisp
      (use-package expand-region
