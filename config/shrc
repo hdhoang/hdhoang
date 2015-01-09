@@ -9,15 +9,10 @@ else
 fi
 h=$mount/Dropbox
 conf=$h/config/$(hostname)
-t=$mount/t
 dl=$mount/Downloads
-m=$h/New\ Music
-p=$mount/Pictures
 v=$mount/Videos
-mi=$mount/Public/mirror
-g=$mount/g
-s=$dbox/runnable
 fm=$mount/Music
+m=$fm/_new
 
 export PATH=/usr/lib/ccache/bin:$PATH:$h/bin
 
@@ -56,8 +51,7 @@ function cd() {
         builtin cd ${1%/*}
     fi
 }
-alias ...='cd ../../'
-alias mkdir='mkdir -p'
+alias md='mkdir -p'
 alias cp='cp -r --reflink=auto'
 alias ln='ln -i'
 alias mv='mv -i'
