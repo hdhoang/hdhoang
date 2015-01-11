@@ -140,9 +140,6 @@
       (add-to-list 'auto-mode-alist assoc))
     (use-package pkgbuild-mode
       :mode ("\\.install\\'" . sh-mode))
-    (use-package rust-mode
-      :ensure
-      :mode "\\.rs\\'")
   #+end_src
 ** Desktop files
    #+begin_src emacs-lisp
@@ -201,6 +198,14 @@
                                            :local t)))
      (add-to-list 'org-babel-load-languages '(sql . t))
    #+end_src
+** Rust
+   #+begin_src emacs-lisp
+     (use-package rust-mode
+       :ensure
+       :mode "\\.rs\\'")
+     (use-package flycheck-rust
+       :config (flycheck-rust-setup))
+  #+end_src
 ** Shell
    #+begin_src emacs-lisp
      (defun shell--prev-buffer (func name)
