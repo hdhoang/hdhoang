@@ -189,7 +189,6 @@
            org-latex-packages-alist '(("" "libertine" t))
            org-latex-pdf-process '("xelatex %f")
            org-src-fontify-natively t
-           org-startup-folded nil
            org-use-speed-commands t)
      (add-hook 'org-mode-hook '(lambda ()
                                  (add-hook 'before-save-hook 'org-align-all-tags
