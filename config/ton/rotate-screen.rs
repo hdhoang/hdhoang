@@ -5,7 +5,7 @@ fn main() {
 
     let query = xrandr.clone();
     let qo = query.output().ok().expect("Failed running xrandr").output;
-    let orientation = std::str::from_utf8(qo.as_slice()).expect("Output is invalid")
+    let orientation = std::str::from_utf8(qo.as_slice()).ok().expect("Output is invalid")
         .lines().nth(1).expect("Wrong number of lines")
         .words().nth(3).expect("Wrong number of words");
     let new_screen_orientation = match orientation {
