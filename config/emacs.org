@@ -78,6 +78,12 @@
          (evil-define-key 'motion help-mode-map
            (kbd "<tab>") #'forward-button)))
    #+end_src
+** Flycheck
+   #+begin_src emacs-lisp
+     (use-package flycheck
+       :ensure
+       :config (global-flycheck-mode))
+   #+end_src
 ** Helm
    #+begin_src emacs-lisp
      (use-package helm-proc
