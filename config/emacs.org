@@ -44,6 +44,7 @@
     (use-package aggressive-indent
       :ensure
       :config (global-aggressive-indent-mode))
+    (defalias #'vb #'revert-buffer)
   #+end_src
 ** Ace-window
    #+begin_src emacs-lisp
