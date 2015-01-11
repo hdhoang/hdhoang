@@ -13,7 +13,7 @@ fn main() {
         "left" => "right",
         "right" => "left",
         "(normal" => "inverted",
-        _ => panic!("Unknown orientation")
+        _ => unreachable!("Unknown orientation")
     };
 
     println!("screen rotation {}", xrandr.clone()
@@ -25,7 +25,7 @@ fn main() {
         "left" => "ccw",
         "right" => "cw",
         "inverted" => "half",
-        _ => panic!("Unknown new rotation")
+        _ => unreachable!("Unknown new orientation")
     };
     println!("touch  rotation {}", std::io::Command::new("/usr/bin/xsetwacom")
              .args(&["set", "Atmel Atmel maXTouch Digitizer touch",
