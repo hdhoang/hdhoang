@@ -96,7 +96,8 @@
               ("C-x b" . helm-mini)
               ("C-x C-b" . helm-buffers-list)
               ("C-x C-f" . helm-find-files)
-              ("C-x p" . helm-proc)
+              ("C-c g" . helm-do-grep)
+              ("C-c p" . helm-proc)
               ("M-s o" . helm-occur)
               ("M-x" . helm-M-x)))
      (use-package evil
