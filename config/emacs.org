@@ -1,5 +1,4 @@
 #+title: emacs customization
-#+startup: showall
 * Who am I?
   #+begin_src emacs-lisp
     (setq user-full-name "Hоàng Đức Hiếu"
