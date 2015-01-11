@@ -1,11 +1,12 @@
 *.3gp
 *.doc
-*.jpg
 *.ico
+*.jpg
 *.mp4
 *.png
 *.rtf
 /.dropbox
+/.dropbox.cache/
 /.stfolder
 /Books/
 /Camera Uploads/

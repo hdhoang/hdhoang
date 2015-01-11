@@ -44,6 +44,11 @@ new. This mark all but the 5 newest items in each feed as read.
       call mark_5_unread('/stupidfox/');
     #+end_src
 * Arch
+** Suspend
+   On s230u, suspending is disrupted by the USB interface
+   #+begin_src sh
+     sudo -i; parallel 'echo {} | sudo tee /proc/acpi/wakeup' ::: EHC1 EHC2
+   #+end_src
 ** Installing
    #+begin_src sh
      loadkeys dvorak

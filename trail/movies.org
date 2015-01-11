@@ -36,7 +36,7 @@
 * TODO Europe Trip							 :jo:
 * TODO Final Destination
 * DONE Flypaper (2011)						     :FAV:jo:
-* Gravity
+* DONE Gravity								  :q:
 * TODO Guardians of the Galaxy (2014)
 * TODO Her (2013)
 * Kevin Smith								:FAV:
