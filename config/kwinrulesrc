@@ -7,5 +7,14 @@ wmclass=
 wmclasscomplete=false
 wmclassmatch=0
 
+[2]
+Description=unclosable
+closeable=false
+closeablerule=2
+types=1
+wmclass=firefox|emacs
+wmclasscomplete=false
+wmclassmatch=3
+
 [General]
-count=1
+count=2
