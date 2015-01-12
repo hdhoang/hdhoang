@@ -16,8 +16,10 @@ fn main() {
         _ => unreachable!("Unknown orientation")
     };
 
-    println!("screen rotation {}", xrandr.clone()
-             .args(&["--output", "LVDS1", "--rotate", new_screen_orientation])
+    println!("screen rotation {}",
+             xrandr.clone()
+             .args(&["--output", "LVDS1",
+                     "--rotate", new_screen_orientation])
              .status().ok().unwrap());
 
     let new_touch_orientation = match new_screen_orientation {
@@ -27,7 +29,8 @@ fn main() {
         "inverted" => "half",
         _ => unreachable!("Unknown new orientation")
     };
-    println!("touch  rotation {}", std::io::Command::new("/usr/bin/xsetwacom")
+    println!("touch  rotation {}",
+             std::io::Command::new("/usr/bin/xsetwacom")
              .args(&["set", "Atmel Atmel maXTouch Digitizer touch",
                      "Rotate", new_touch_orientation])
              .status().ok().expect("Failed running xsetwacom"))
