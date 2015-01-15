@@ -32,7 +32,7 @@
     (use-package paradox
       :config (progn
                 (setq paradox-github-token t)
-                (setq paradox-execute-asynchronously t)))
+                (setq paradox-execute-asynchronously nil)))
   #+end_src
 * Input
   #+begin_src emacs-lisp
