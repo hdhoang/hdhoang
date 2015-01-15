@@ -141,6 +141,7 @@ style -n "visited" flecu.zahe.me,dota2lounge.com :visited { color: #859900 !impo
 style -n "gif decor" * <<EOS
 :-moz-any(
   [src*="imgur"]
+, [src*="myconfinedspace"]
 , [src*="tumblr"]
 , [src*="xkcd.com/comic"]
 )[src$=".gif"] { border-right: 2px dotted #d33682 !important}
