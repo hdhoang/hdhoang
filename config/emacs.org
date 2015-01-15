@@ -158,13 +158,20 @@
        :config (require 'dired+))
      (eval-after-load "dired"
        '(define-key dired-mode-map (kbd "RET") #'dired-do-async-shell-command))
-     (setq dired-guess-shell-alist-user
+     (setq dired-recursive-copies 'always
+           dired-recursive-deletes 'always
+           dired-guess-shell-alist-user
            '(("." "xdg-open;")))
    #+end_src
 ** Docview
    #+begin_src emacs-lisp
+     (use-package doc-view
+       :config (progn
+                 (define-key doc-view-mode-map (kbd "<mouse-1>") 'doc-view-scroll-up-or-next-page)
+                 (define-key doc-view-mode-map (kbd "<mouse-3>") 'doc-view-scroll-down-or-previous-page)))
      (setq doc-view-cache-directory (expand-file-name "~/.docview"))
-     (add-hook 'view-mode-hook #'evil-emacs-state)
+     (use-package evil
+       :config (add-hook 'view-mode-hook #'evil-emacs-state))
    #+end_src
 ** ERC
    #+begin_src emacs-lisp
