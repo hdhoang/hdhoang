@@ -18,7 +18,7 @@ map <A-$> -ex tabmove $
 map <C-$> g$
 map <F1> <C-^>
 map = zi
-map - zo
+map \- zo
 set activate-=diverted,links,tabopen,paste
 silent bmark -keyword ddg -t DDG https://duckduckgo.com/?kn=1&kp=-1&kae=c&q=%s
 set defsearch=ddg
