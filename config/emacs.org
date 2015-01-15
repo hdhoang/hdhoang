@@ -33,6 +33,8 @@
       :config (progn
                 (setq paradox-github-token t)
                 (setq paradox-execute-asynchronously nil)))
+    (use-package evil
+      :config (evil-set-initial-state 'paradox-menu-mode 'emacs))
   #+end_src
 * Input
   #+begin_src emacs-lisp
