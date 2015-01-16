@@ -1,7 +1,7 @@
 fn main() {
     std::os::setenv("DISPLAY", ":0");
     std::os::setenv("XAUTHORITY",
-                    std::os::getenv("HOME").unwrap() + "/.Xauthority");
+                    std::os::homedir().unwrap().join(".Xauthority"));
     let xrandr = std::io::Command::new("/usr/bin/xrandr");
 
     let output = String::from_utf8(xrandr.clone().output()
