@@ -95,7 +95,7 @@
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F
    :END:
 * DONE Taken								  :q:
-** DONE 2
+** DONE 2								  :q:
 ** TODO 3
 * TODO The Adventures of Tintin: Secret of the Unicorn
 * DONE The Big Lebowski (1998)						 :jo:
