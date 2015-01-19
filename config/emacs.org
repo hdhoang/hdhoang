@@ -257,6 +257,7 @@
     (tool-bar-mode -1)
     (blink-cursor-mode -1)
     (show-paren-mode t)
+    (winner-mode)
     (setq undo-tree-mode-lighter ""
           magit-auto-revert-mode-lighter "")
   #+end_src
