@@ -188,7 +188,8 @@
        :bind ("C-x g" . magit-status))
      (use-package evil
        :config (evil-set-initial-state 'git-commit-mode 'insert))
-     (setq vc-follow-symlinks t)
+     (setq magit-save-some-buffers 'dontask
+           vc-follow-symlinks t)
      (defun fix-cygwin-magit-dir (dir)
        "cygwin/msys2 git confuses emacs into opening \"d:/d/git\". Fix that"
        (replace-regexp-in-string "\\([a-z]\\):/\\1" "\\1:" dir))
