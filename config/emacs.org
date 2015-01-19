@@ -12,7 +12,7 @@
     (desktop-save-mode t)
     (setq
      auto-save-default nil
-     confirm-kill-emacs #'yes-or-no
+     confirm-kill-emacs #'yes-or-no-p
      delete-by-moving-to-trash t
      load-prefer-newer t
      make-backup-files nil
