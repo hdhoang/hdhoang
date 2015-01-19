@@ -173,6 +173,11 @@
      (use-package evil
        :config (add-hook 'view-mode-hook #'evil-emacs-state))
    #+end_src
+** Ediff
+   #+begin_src emacs-lisp
+     (setq ediff-window-setup-function #'ediff-setup-windows-plain
+           ediff-split-window-function #'split-window-horizontally)
+   #+end_src
 ** ERC
    #+begin_src emacs-lisp
      (setq erc-autojoin-channels-alist '(("freenode" "#lojban" "#jbopre" "#vnluser"))
