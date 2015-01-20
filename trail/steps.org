@@ -80,7 +80,9 @@ new. This mark all but the 5 newest items in each feed as read.
     the secret
  2. Enable the PAM module, place it before password authentication
  3. In sshd_config:
+    : PasswordAuthentication no
     : ChallengeResponseAuthentication yes
+    : UsePAM yes
  4. To allow publickey login:
     : AuthenticationMethods publickey keyboard-interactive:pam
 * Windows
