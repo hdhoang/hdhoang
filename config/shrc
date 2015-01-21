@@ -24,7 +24,8 @@ alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
     for t in {1..50}; do
-	youtube-dl || wget --continue
+	[ -r _q.txt ] && youtube-dl
+	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
 }
 alias nn='nice ionice -c 3 '
