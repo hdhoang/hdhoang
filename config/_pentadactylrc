@@ -16,6 +16,8 @@ map <S-space> <C-u>
 map <A-p> -ex pintab!
 map <A-$> -ex tabmove $
 map <C-$> g$
+map <S-Left> gT
+map <S-Right> gt
 map <F1> <C-^>
 map = zi
 map \- zo
