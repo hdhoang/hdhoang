@@ -76,6 +76,8 @@
 ** TODO Toy Story 3
 ** TODO Monsters University
 ** TODO Monsters Inc
+* DONE Rio (2011)							  :q:
+** TODO 2 (2013)
 * TODO Quentin Tarantino
 ** Django Unchained (2012)
 ** Inglorious Basterds

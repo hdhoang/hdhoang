@@ -253,6 +253,7 @@
 ** DONE <2014-10-31 T6> Listen for the Whisper
 ** DONE <2014-11-15 T7> The Splatterhorn
 ** DONE <2014-11-20 T5> Coaster Coat
+** TODO <2015-01-13 Tue> Sideway Streets
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -555,7 +556,7 @@
 ** TODO <2013-07-08> Magna Carta... Holy Grail
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -767,7 +768,7 @@
 * My Chemical Romance						       :1fav:
 * Månegram
 ** TODO <2013-06-28> Legions of the North
-* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]] :FAV:
+* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]]								:FAV:
 ** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]] :not:
 * Mỹ Tâm
 * Nat King Cole
@@ -792,6 +793,7 @@
 ** Đất nuớc
 * Nightwish								:FAV:
 ** DONE <2011> Imaginaerum
+** TODO <2015-03-27 Fri> Endless Forms Most Beautiful
 ** solo [[http://musicbrainz.org/artist/a1e626f0-ed1f-444a-af2e-86aeae6651e4][Tarja Turunen]]
 *** DONE <2006> [[http://musicbrainz.org/release-group/079f6637-c0fe-3d44-a299-82f9675c85a5][Henkäys ikuisuudesta]]
 *** TODO <2012-09-04> Act 1
@@ -809,7 +811,7 @@
 ** DONE Piano Collection
 ** DONE Soundtrack
 ** DONE Soundtrack Plus
-* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]] :FAV:jamendo:
+* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]]							:FAV:jamendo:
 ** DONE <2006> Time to Differ
 ** DONE <2008-11-19> Nice Noise
 * Norah Jones
@@ -1010,7 +1012,7 @@
 ** TODO <2012-06-18> Oceania
 ** TODO <2014-12-08 T2> Monuments to an Elegy
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]						  :game:wail:
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
 * ThePlasmas						   :riff:game:lastfm:
