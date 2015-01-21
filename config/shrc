@@ -23,8 +23,9 @@ alias x=parallel
 alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
-    youtube-dl || \
-	wget --continue
+    for t in {1..50}; do
+	youtube-dl || wget --continue
+    done
 }
 alias nn='nice ionice -c 3 '
 
