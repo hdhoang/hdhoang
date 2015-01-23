@@ -30,6 +30,7 @@
       (package-install 'use-package))
     (require 'use-package)
     (use-package paradox
+      :ensure
       :config (progn
                 (setq paradox-github-token t)
                 (setq paradox-execute-asynchronously nil)))
