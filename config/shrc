@@ -40,7 +40,7 @@ alias t='less -F'
 alias j='journalctl -afb'
 
 # network info
-alias dnsip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias dnsip='drill +short myip.opendns.com @resolver1.opendns.com'
 alias np='sudo tcpdump -w - | pv -bert >/dev/null'
 
 # file ops
