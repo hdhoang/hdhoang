@@ -229,6 +229,7 @@
 ** DONE <2014-06-25> Hold Me Forever
 ** DONE <2014-07-10 Thu> Ydrapoej
 ** DONE <2014-07-12 Sat> Abandoned Slaughterhouse
+** TODO <2014-07-15 Tue> Sphere Facade
 ** DONE <2014-07-18 Fri> Assignment 033-03
 ** DONE <2014-07-21 Mon> Aquarium
 ** DONE <2014-07-29 Tue> Snow Slug
@@ -254,6 +255,7 @@
 ** DONE <2014-11-15 T7> The Splatterhorn
 ** DONE <2014-11-20 T5> Coaster Coat
 ** TODO <2015-01-13 Tue> Sideway Streets
+** TODO <2015-01-21 Wed> Squid Ink Lodge
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -768,7 +770,7 @@
 * My Chemical Romance						       :1fav:
 * Månegram
 ** TODO <2013-06-28> Legions of the North
-* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]]								:FAV:
+* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]] :FAV:
 ** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]] :not:
 * Mỹ Tâm
 * Nat King Cole
@@ -811,7 +813,7 @@
 ** DONE Piano Collection
 ** DONE Soundtrack
 ** DONE Soundtrack Plus
-* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]]							:FAV:jamendo:
+* [[http://musicbrainz.org/artist/21efac97-2cf7-4eb2-acc3-dea1c0d23ac8][nocreeps]] :FAV:jamendo:
 ** DONE <2006> Time to Differ
 ** DONE <2008-11-19> Nice Noise
 * Norah Jones

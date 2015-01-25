@@ -77,7 +77,7 @@
 ** TODO Monsters University
 ** TODO Monsters Inc
 * DONE Rio (2011)							  :q:
-** TODO 2 (2013)
+** DONE 2 (2013)							  :q:
 * TODO Quentin Tarantino
 ** Django Unchained (2012)
 ** Inglorious Basterds
