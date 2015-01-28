@@ -162,7 +162,8 @@
      (setq dired-recursive-copies 'always
            dired-recursive-deletes 'always
            dired-guess-shell-alist-user
-           '(("." "xdg-open;")))
+           '(("\\.cb.\\'" "okular")
+             ("." "xdg-open;")))
    #+end_src
 ** Docview
    #+begin_src emacs-lisp
