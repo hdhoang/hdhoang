@@ -64,6 +64,7 @@
        :config
        (progn
          (evil-mode t)
+         (evil-set-initial-state 'special-mode 'emacs)
          (dolist (state '(normal motion))
            (evil-define-key state global-map
              (kbd "<SPC>") #'evil-scroll-down
@@ -186,6 +187,11 @@
                 erc-hide-list '("JOIN" "PART" "QUIT"))
      (use-package evil
        :config (evil-set-initial-state 'erc-mode 'normal))
+   #+end_src
+** Image
+   #+begin_src emacs-lisp
+     (use-package evil
+       :config (evil-set-initial-state 'image-mode 'emacs))
    #+end_src
 ** Magit
    Enter commit buffer in insert state
