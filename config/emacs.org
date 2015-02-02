@@ -44,6 +44,7 @@
     (setq-default sentence-end-double-space nil)
     (setq default-input-method "vietnamese-telex")
     (global-set-key (kbd "C-\\") 'toggle-input-method)
+    (global-unset-key (kbd "<f11>"))
     (use-package aggressive-indent
       :ensure
       :config (global-aggressive-indent-mode))
