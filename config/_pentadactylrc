@@ -19,6 +19,7 @@ map <C-$> g$
 map <S-Left> gT
 map <S-Right> gt
 map <F1> <C-^>
+map <F11> _
 map = zi
 map \- zo
 map K :execute '!/home/hdhoang/Dropbox/bin/kdeconnect-send ' + buffer.URL<RET>
