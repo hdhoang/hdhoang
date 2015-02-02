@@ -1,14 +1,14 @@
 
 * 2 Guns
 * 300
-** Rise of an Empire							  :q:
+** DONE Rise of an Empire						  :q:
 * TODO Aladdeen								 :jo:
 * Aliens (2012)
 * Arthur Newman
 * TODO Bad Lieutenant
 * Bedside								 :ns:
 ** Der må være en sengekant (1975)				    :sub:FAV:
-** Hopla på sengekanten (1976)					    :FAV:sub:
+** Hopla på sengekanten (1976)					    :sub:FAV:
 ** Mazurka på sengekanten (1970)				    :sub:FAV:
 ** Motorvej på sengekanten (1972)					:sub:
 ** Rektor på sengekanten (1972)					    :sub:FAV:
@@ -34,11 +34,13 @@
 * DONE Duplicity (2009)							:FAV:
 * DONE Eternal Sunshine of the Spotless Mind (2004)			:FAV:
 * TODO Europe Trip							 :jo:
+* DONE Evil Dead
 * TODO Final Destination
 * DONE Flypaper (2011)						     :FAV:jo:
-* DONE Gravity								  :q:
+* DONE Gravity (2013)							  :q:
 * TODO Guardians of the Galaxy (2014)
 * TODO Her (2013)
+* DONE I Fine... Thank You... Love You					  :q:
 * Kevin Smith								:FAV:
 ** Chasing Amy (1997)
 ** Clerks (1994)
@@ -48,6 +50,7 @@
 ** Jersey Girl (2004)
 ** Mallrats (1995)
 * TODO Kiss Me Deadly
+* DONE Legend of the Guardians: The Owls of Ga'Hoole			  :q:
 * DONE Limitless (2011)						 :jbopre:FAV:
 * TODO Lucy (2014)							:jwz:
 * TODO MacGyver							     :FAV:tv:
@@ -58,7 +61,7 @@
 ** II
 ** 3
 * TODO Moon
-* Mortdecai
+* TODO Mortdecai (2015)
 * TODO Mr. Nobody						 :jbopre:FAV:
 * TODO Nick of Time
 * TODO No Strings Attached
@@ -76,14 +79,14 @@
 ** TODO Toy Story 3
 ** TODO Monsters University
 ** TODO Monsters Inc
-* DONE Rio (2011)							  :q:
-** DONE 2 (2013)							  :q:
 * TODO Quentin Tarantino
 ** Django Unchained (2012)
 ** Inglorious Basterds
 ** Pulp Fiction (1994)
 ** Reservoir Dogs
-* Red Lights
+* TODO Red Lights (2012)
+* DONE Rio (2011)							  :q:
+** DONE 2 (2013)							  :q:
 * TODO Roseanna's Grave
 * TODO Samurai Champloo						 :jo:ja:anim:
 * DONE Sangen om den røde rubin (1970)
@@ -92,6 +95,7 @@
    :END:
 * DONE Secretary (2002)
 * TODO Seven Psychopaths (2012)						 :jo:
+* DONE Sky High								  :q:
 * DONE Strange Days (1995)						:FAV:
    :PROPERTIES:
    :btih:     8C0017203A58D1C617823CA40C3C04F2BB574A4F

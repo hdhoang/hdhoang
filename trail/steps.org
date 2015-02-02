@@ -100,7 +100,7 @@ new. This mark all but the 5 newest items in each feed as read.
    - Office 2003 :: GWH28-DGCMP-P6RC4-6J4MT-3HFDY
    - Virtual CD 10 :: VCDA-GG6x-3DYj-9QkS-P53M
    - [[http://burnbit.com/torrent/298294/VMware_workstation_full_10_0_3_1895310_exe][VMware Workstation 10]] :: 4c4ek89kdl5zfp91la5p2a0j0
-   - VMware Workstation 11 :: 1F04Z-6D111-7Z029-AV0Q4-3AEH8
+   - [[http://burnbit.com/torrent/325034/VMware_Workstation_Full_11_0_0_2305329_x86_64_bundle][VMware Workstation 11]] :: 1F04Z-6D111-7Z029-AV0Q4-3AEH8
    - [[magnet:?xt%3Durn:btih:F3EA2D2939380BB32F2B67E2E3ABABB5CD202F75][Windows 8 Core]] :: 334NH-RXG76-64THK-C7CKG-D3VPT
    - [[magnet:?xt%3Durn:btih:6BEEDA8E06240739CC892D463CA594DC183A5212&dn%3Den_windows_server_2012_r2_vl_with_update_x64_dvd_4065221.iso][Windows Server 2012 R2 Standard Core]] :: D2N9P-3P6X9-2R39C-7RTCD-MDVJX
    - [[magnet:?xt%3Durn:btih:AC361E33F84B5957A8319CF6B559910B15F6A556&dn%3Den_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974&tr%3Dudp%253a%252f%252ftracker.openbittorrent.com%253a80%252fannounce&tr%3Dudp%253a%252f%252ftracker.openbittorrent.com%253a80%252fannounce&tr%3Dudp%253a%252f%252fdenis.stalker.h3q.com%253a6969%252fannounce&tr%3Dhttp%253a%252f%252fdenis.stalker.h3q.com%253a6969%252fannounce&tr%3Dhttp%253a%252f%252fwww.torrentsnipe.info%253a2701%252fannounce][Windows XP]] :: MR49R-DRJXX-M6PX2-V96BF-8CKBJ
@@ -118,3 +118,5 @@ new. This mark all but the 5 newest items in each feed as read.
   swconfig dev eth1 set enable_vlan 1
   swconfig dev eth1 set apply
   #+end_src
+* VMWare + mesa-gl
+: mks.gl.allowBlacklistedDrivers = "TRUE"

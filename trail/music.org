@@ -256,6 +256,10 @@
 ** DONE <2014-11-20 T5> Coaster Coat
 ** TODO <2015-01-13 Tue> Sideway Streets
 ** TODO <2015-01-21 Wed> Squid Ink Lodge
+** TODO <2015-01-27 Tue> The Moltrail
+** TODO <2015-01-29 Thu> Forest of Bamboo
+** TODO <2015-01-30 Fri> Collect Itself
+** TODO <2015-01-30 Fri> Weird Glows Gleam
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
