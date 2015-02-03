@@ -1,0 +1,34 @@
+# -*- mode: sh -*-
+#fira.zip:META-INF/com/google/android/updater-script
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system");
+package_extract_dir("fira",  "/system/fonts/");
+
+delete("/system/fonts/DroidSansMono.ttf");
+symlink("FiraMono-Regular.ttf", "/system/fonts/DroidSansMono.ttf");
+
+delete("/system/fonts/Roboto-Regular.ttf", "/system/fonts/Roboto-Italic.ttf");
+symlink("FiraSans-Book.ttf", "/system/fonts/Roboto-Regular.ttf");
+symlink("FiraSans-BookItalic.ttf", "/system/fonts/Roboto-Italic.ttf");
+
+delete("/system/fonts/Roboto-Bold.ttf", "/system/fonts/Roboto-BoldItalic.ttf");
+symlink("FiraSans-Bold.ttf", "/system/fonts/Roboto-Bold.ttf");
+symlink("FiraSans-BoldItalic.ttf", "/system/fonts/Roboto-BoldItalic.ttf");
+
+delete("/system/fonts/Roboto-Thin.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+symlink("FiraSans-Thin.ttf", "/system/fonts/Roboto-Thin.ttf");
+symlink("FiraSans-ThinItalic.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+
+delete("/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+symlink("FiraSans-Light.ttf", "/system/fonts/Roboto-Light.ttf");
+symlink("FiraSans-LightItalic.ttf", "/system/fonts/Roboto-LightItalic.ttf");
+
+delete("/system/fonts/Roboto-Medium.ttf", "/system/fonts/Roboto-MediumItalic.ttf");
+symlink("FiraSans-Medium.ttf", "/system/fonts/Roboto-Medium.ttf");
+symlink("FiraSans-MediumItalic.ttf", "/system/fonts/Roboto-MediumItalic.ttf");
+
+delete("/system/fonts/Roboto-Black.ttf", "/system/fonts/Roboto-BlackItalic.ttf");
+symlink("FiraSans-Heavy.ttf", "/system/fonts/Roboto-Heavy.ttf");
+symlink("FiraSans-HeavyItalic.ttf", "/system/fonts/Roboto-HeavyItalic.ttf");
+
+set_metadata_recursive("/system/fonts", "uid", 0, "gid", 0, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+unmount("/system");
