@@ -85,6 +85,7 @@ if [ -n "$ZSH_NAME" ]; then
     autoload select-word-style && select-word-style BASH # with CamelCase support
     zstyle ':vcs_info:*' enable git
     autoload -U compinit && compinit
+    compdef yaourt=pacman
 
     PROMPT="%m %~ %w %(?..%? )
 %# "
