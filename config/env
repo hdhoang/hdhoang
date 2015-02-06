@@ -4,7 +4,7 @@
 CCACHE_BASEDIR=/
 GOPATH=~/go
 QT_PLUGIN_PATH=/usr/lib/kde4/plugins
-PATH=/usr/lib/ccache/bin:/usr/bin:/home/hdhoang/Dropbox/bin
+PATH=/home/hdhoang/Dropbox/bin:/usr/lib/ccache/bin:/usr/bin
 
 EDITOR=emacsclient
 
