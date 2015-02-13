@@ -18,7 +18,7 @@ delete("/system/fonts/Roboto-Thin.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
 symlink("FiraSans-Thin.ttf", "/system/fonts/Roboto-Thin.ttf");
 symlink("FiraSans-ThinItalic.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
 
-delete("/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-ThinItalic.ttf");
+delete("/system/fonts/Roboto-Light.ttf", "/system/fonts/Roboto-LightItalic.ttf");
 symlink("FiraSans-Light.ttf", "/system/fonts/Roboto-Light.ttf");
 symlink("FiraSans-LightItalic.ttf", "/system/fonts/Roboto-LightItalic.ttf");
 
