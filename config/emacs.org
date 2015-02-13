@@ -229,6 +229,7 @@
        :ensure
        :mode "\\.rs\\'")
      (use-package flycheck-rust
+       :ensure
        :config (flycheck-rust-setup))
   #+end_src
 ** Shell
