@@ -259,7 +259,7 @@
 ** TODO <2015-01-27 Tue> The Moltrail
 ** TODO <2015-01-29 Thu> Forest of Bamboo
 ** TODO <2015-01-30 Fri> Collect Itself
-** TODO <2015-01-30 Fri> Weird Glows Gleam
+** DONE <2015-01-30 Fri> Weird Glows Gleam
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -328,7 +328,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
