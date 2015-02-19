@@ -144,7 +144,8 @@
 ** TODO <2012-09-21> 777 - Cosmosophy
 ** TODO <2014-06-20> Triunity
 ** TODO <2014-10-10 T6> Memoria Vetusta III: Saturnian Poetry
-* Bob Marley
+* Bob Marley & The Wailers
+** TODO <2015-02-17 Tue> Easy Skanking in Boston '78
 * Bobaflex
 ** DONE <2013-09-10> Chalatan's Web
 * Bon Jovi
@@ -260,6 +261,8 @@
 ** TODO <2015-01-29 Thu> Forest of Bamboo
 ** TODO <2015-01-30 Fri> Collect Itself
 ** DONE <2015-01-30 Fri> Weird Glows Gleam
+** TODO <2015-02-04 Wed> The Left Panel
+** TODO <2015-02-15 Sun> Wall To Wall Cobwebs
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -328,7 +331,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -370,9 +373,11 @@
 ** TODO <2013-11-26> In the Minds of Evil
 * Depeche Mode
 ** TODO <2013-03-22> Delta Machine
+* TODO Modest Mouse
+** TODO <2015-03-17 Tue> Strangers to Ourselves
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -560,9 +565,10 @@
 * Jay-Z									:rap:
 ** TODO <2013-01-01> Black American Gangster
 ** TODO <2013-07-08> Magna Carta... Holy Grail
+** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
