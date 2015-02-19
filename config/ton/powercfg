@@ -1,17 +1,5 @@
 #!/bin/sh
-echo 0 > /proc/sys/kernel/nmi_watchdog
-echo 1 > /sys/module/snd_hda_intel/parameters/power_save
-echo 1500 > /proc/sys/vm/dirty_writeback_centisecs
-ethtool -s enp4s0 wol d
-for dev in 0:0{0,2}.0 0:1c.{0,1,3} 0:1f.{0,2,3} 0:1{4,6,a,b,d}.0 {2,3,4}:00.0;do
-    echo auto > /sys/bus/pci/devices/0000:0$dev/power/control
-done
-for dev in usb{1..4} 1-1 1-1.1 2-1 2-1.5; do
-    echo auto > /sys/bus/usb/devices/$dev/power/control
-done
-for n in {0..5}; do
-    echo min_power > /sys/class/scsi_host/host$n/link_power_management_policy
-done
+powertop --auto-tune --quiet
 for n in 1 2; do
     grep "EHC$n.*enabled" /proc/acpi/wakeup && echo EHC$n > /proc/acpi/wakeup
 done
