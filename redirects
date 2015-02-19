@@ -1,6 +1,6 @@
 # /etc/nginx/redirects
 /_ https://raw.githubusercontent.com/hdhoang/hdhoang/master/app-config/_pentadactylrc;
-/c https://www.dropbox.com/s/a93ht6i8u9kvurc/caps2ctrl.exe?dl=1;
+/c caps2ctrl.exe;
 /d http://5digits.org/nightly/pentadactyl-latest.xpi;
 /f https://fpdownload.macromedia.com/pub/flashplayer/current/support/install_flash_player.exe;
 /p http://robinbakker.nl/perisonic/;
