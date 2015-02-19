@@ -5,6 +5,7 @@ CCACHE_BASEDIR=/
 GOPATH=~/go
 QT_PLUGIN_PATH=/usr/lib/kde4/plugins
 PATH=/home/hdhoang/Dropbox/bin:/usr/lib/ccache/bin:/usr/bin:/usr/bin/core_perl
+SSH_AUTH_SOCK=/home/hdhoang/.gnupg/S.gpg-agent.ssh
 
 EDITOR=emacsclient
 

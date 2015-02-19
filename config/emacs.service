@@ -1,11 +1,11 @@
 [Unit]
-After=agent.service
+Description=Emacs
 
 [Service]
 Type=forking
 Restart=always
 ExecStart=/usr/bin/emacs --daemon
-EnvironmentFile=%h/.agent-info
+Environment=SSH_AUTH_SOCK=%h/.gnupg/S.gpg-agent.ssh
 
 [Install]
 WantedBy=default.target
