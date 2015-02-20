@@ -1,0 +1,10 @@
+[Unit]
+Description=Emacs GUI
+After=emacs.service
+Requires=emacs.service
+
+[Service]
+ExecStart=/usr/bin/emacsclient -c
+
+[Install]
+WantedBy=graphical.target

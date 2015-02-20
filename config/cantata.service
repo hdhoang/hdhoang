@@ -1,0 +1,11 @@
+[Unit]
+Description=Cantata MPD client
+
+[Service]
+BusName=org.mpris.MediaPlayer2.cantata
+BusName=com.googlecode.cantata
+ExecStart=/usr/bin/cantata
+ExecStop=/usr/bin/busctl --user call org.mpris.MediaPlayer2.cantata /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2 Quit
+
+[Install]
+WantedBy=graphical.target

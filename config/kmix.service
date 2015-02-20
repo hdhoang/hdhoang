@@ -1,0 +1,11 @@
+[Unit]
+Description=Volume mixer
+
+[Service]
+BusName=org.kde.kmix
+Type=forking
+ExecStart=/usr/bin/kmix
+ExecStop=/usr/bin/kquitapp kmix
+
+[Install]
+WantedBy=graphical.target
