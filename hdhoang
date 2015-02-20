@@ -1,11 +1,11 @@
-<!doctype html><html><head>
-    <!-- ~/Public/hdhoang/hdhoang -->
+<!doctype html>
+<meta charset=utf-8>
+<!-- ~/Public/index.html -->
 
-<title>OpenID endpoint (google)</title>
 <link rel="openid2.provider"
       href="https://www.google.com/accounts/o8/ud?source=profiles" >
 <link rel="openid2.local_id"
-      href="https://www.google.com/profiles/hieu.d.hoang" >
+      href="https://www.google.com/profiles/110711359835920217300" >
 
 <!-- <title>OpenID endpoint (myopenid)</title> -->
 <!-- <link rel="openid.server" href="http://www.myopenid.com/server" /> -->
@@ -25,5 +25,9 @@
 <!-- <link rel="openid2.local_id openid.delegate" -->
 <!--      href="https://hdhoang.startssl.com/" /> -->
 
-<p>Feel free to browse around my
-<a href=https://zahe.me>public machine</a>.
+<p>Elsewhere on the net:<ul>
+    <li><a rel=me href=https://github.com/hdhoang>Github</a></li>
+    <li><a rel=me href=https://plus.google.com/u/0/110711359835920217300/about>Google</a></li>
+    <li><a rel=me href=http://www.last.fm/user/hdh0>Last.fm</a></li>
+    <li><a rel=me href=https://facebook.com/hdh000/about>Facebook</a></li>
+    <li><a rel=me href=https://twitter.com/lasigmaz>Twitter</a></li>
