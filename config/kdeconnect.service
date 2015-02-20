@@ -2,7 +2,6 @@
 Description=KDE connect
 
 [Service]
-BusName=org.kde.kdeconnect
 Type=forking
 ExecStart=/usr/lib/kde4/libexec/kdeconnectd
 ExecStop=/usr/bin/kquitapp kdeconnect

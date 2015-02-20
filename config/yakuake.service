@@ -2,7 +2,6 @@
 Description=Drop-down terminal
 
 [Service]
-BusName=org.kde.yakuake
 Type=forking
 ExecStart=/usr/bin/yakuake
 ExecStop=/usr/bin/kquitapp yakuake
