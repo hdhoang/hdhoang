@@ -33,7 +33,7 @@
       :ensure
       :config (progn
                 (setq paradox-github-token t)
-                (setq paradox-execute-asynchronously nil)))
+                (setq paradox-execute-asynchronously t)))
     (use-package evil
       :config (evil-set-initial-state 'paradox-menu-mode 'emacs))
   #+end_src
