@@ -6,4 +6,4 @@ Type=forking
 ExecStart=/usr/bin/gpg-agent --daemon --enable-ssh-support
 
 [Install]
-WantedBy=default.target
+WantedBy=basic.target

@@ -7,4 +7,4 @@ ExecStart=/usr/bin/yakuake
 ExecStop=/usr/bin/kquitapp yakuake
 
 [Install]
-WantedBy=graphical.target
+WantedBy=plasma-workspace.target

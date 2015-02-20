@@ -7,4 +7,4 @@ Requires=emacs.service
 ExecStart=/usr/bin/emacsclient -c
 
 [Install]
-WantedBy=graphical.target
+WantedBy=plasma-workspace.target

@@ -7,4 +7,4 @@ ExecStart=/usr/bin/kmix
 ExecStop=/usr/bin/kquitapp kmix
 
 [Install]
-WantedBy=graphical.target
+WantedBy=plasma-workspace.target

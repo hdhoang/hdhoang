@@ -8,4 +8,4 @@ ExecStart=/usr/bin/cantata
 ExecStop=/usr/bin/busctl --user call org.mpris.MediaPlayer2.cantata /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2 Quit
 
 [Install]
-WantedBy=graphical.target
+WantedBy=plasma-workspace.target

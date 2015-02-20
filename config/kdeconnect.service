@@ -7,4 +7,4 @@ ExecStart=/usr/lib/kde4/libexec/kdeconnectd
 ExecStop=/usr/bin/kquitapp kdeconnect
 
 [Install]
-WantedBy=basic.target
+WantedBy=plasma-workspace.target
