@@ -23,8 +23,9 @@ alias x=parallel
 alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
+    [[ $PWD =~ Videos ]] && _max_quality=(--max-quality 18)
     for t in {1..50}; do
-	[ -r _q.txt ] && youtube-dl
+	[ -r _q.txt ] && youtube-dl $_max_quality
 	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
 }
