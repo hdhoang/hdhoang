@@ -263,6 +263,10 @@
 ** DONE <2015-01-30 Fri> Weird Glows Gleam
 ** TODO <2015-02-04 Wed> The Left Panel
 ** TODO <2015-02-15 Sun> Wall To Wall Cobwebs
+** TODO <2015-02-18 Wed> Night of the Snowmole
+** TODO <2015-02-19 Thu> Creeky Doors and Creeky Floors
+** TODO <2015-02-21 Sat> Herbie Theatre
+** TODO <2015-02-25 Wed> Glow in the Dark
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -331,7 +335,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -420,7 +424,7 @@
 * Ennio Morricone
 * Ensiferum
 ** DONE <2012-08-27> Unsung Heroes
-** <2015-02-24 Tue> One Man Army
+** TODO <2015-02-20 Fri> One Man Army
 * Entombed
 ** TODO <2013-10-28> Back to the Front
 * Epica
@@ -568,7 +572,7 @@
 ** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
