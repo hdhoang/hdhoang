@@ -29,8 +29,10 @@ function getc() {
 	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
 }
-function wifi() {
-    wpa_passphrase "$*" | grep -v \# | sudo tee -a /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
+function wpa_add {
+    wpa_passphrase "$*" | grep -v \# \
+	| sudo tee -a /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf \
+	&& sc restart wpa_supplicant@wlp3s0
 }
 alias nn='nice ionice -c 3 '
 
