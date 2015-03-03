@@ -16,10 +16,10 @@ fn main() {
         .lines().nth(1).expect("Wrong number of lines")
         .words().nth(3).expect("Wrong number of words");
     let new_screen_orientation = match orientation {
-        "inverted" => "normal",
-        "left" => "right",
-        "right" => "left",
-        "(normal" => "inverted",
+        "(normal" => "left",
+        "left" => "inverted",
+        "inverted" => "right",
+        "right" => "normal",
         _ => unreachable!("Unknown orientation")
     };
 
