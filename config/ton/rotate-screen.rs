@@ -1,3 +1,4 @@
+// -*- compile-command: (concat "rustc --out-dir ~/Dropbox/bin " buffer-file-name) -*-
 fn main() {
     std::os::setenv("DISPLAY", ":0");
     std::os::setenv("XAUTHORITY",
