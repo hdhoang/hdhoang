@@ -2,13 +2,10 @@
 #![feature(env,process,std_misc)]
 use std::env::{set_var, home_dir};
 use std::process::Command;
-use std::ffi::AsOsStr;
 
 fn main() {
     set_var("DISPLAY", ":0");
-    let mut xauth = home_dir().unwrap();
-    xauth.push(".Xauthority");
-    set_var("XAUTHORITY", xauth.as_os_str());
+    set_var("XAUTHORITY", "/home/hdhoang/.Xauthority");
 
     let xrandr = Command::new("/usr/bin/xrandr").output().unwrap();
     let output = String::from_utf8_lossy(&xrandr.stdout);
