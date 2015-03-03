@@ -29,6 +29,9 @@ function getc() {
 	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
 }
+function wifi_scan {
+    iwlist wlp3s0 scan | grep -A1 "Encryption key:off"
+}
 function wpa_add {
     wpa_passphrase "$*" | grep -v \# \
 	| sudo tee -a /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf \
