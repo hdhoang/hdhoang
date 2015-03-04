@@ -1,6 +1,6 @@
-// -*- compile-command: (concat "rustc --out-dir ~/Dropbox/bin " buffer-file-name) -*-
 #![feature(env,process,std_misc)]
 use std::env::{set_var, home_dir};
+// -*- compile-command: "rustc --out-dir ~/Dropbox/bin rotate-screen.rs" -*-
 use std::process::Command;
 
 fn main() {
