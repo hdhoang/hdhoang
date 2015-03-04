@@ -1,11 +1,12 @@
 # /etc/nginx/redirects
 /_ https://raw.githubusercontent.com/hdhoang/hdhoang/master/app-config/_pentadactylrc;
-/c caps2ctrl.exe;
+/c /mirror/caps2ctrl.exe;
 /d http://5digits.org/nightly/pentadactyl-latest.xpi;
 /f https://fpdownload.macromedia.com/pub/flashplayer/current/support/install_flash_player.exe;
 /p http://robinbakker.nl/perisonic/;
 /pe http://live.sysinternals.com/procexp.exe;
 /pm http://live.sysinternals.com/procmon.exe;
 /ps http://live.sysinternals.com/psexec.exe;
+/pt https://www.dropbox.com/s/8jw84rzk3twon9t/Cisco%20Packet%20Tracer%206.2%20for%20Windows%20Student%20Version%20%28no%20tutorials%29.exe?dl=1;
 /s https://puttytray.goeswhere.com/download/putty.exe;
 /v http://subnettingpractice.com/vlsm.html;
