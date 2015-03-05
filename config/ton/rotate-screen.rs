@@ -38,24 +38,11 @@ fn main() {
                        "0","0","1"],
         _ => unreachable!("Unknown orientation")
     };
-    for device in &["SynPS/2 Synaptics TouchPad", "TPPS/2 IBM TrackPoint"] {
+    for device in &["SynPS/2 Synaptics TouchPad", "TPPS/2 IBM TrackPoint", "Atmel Atmel maXTouch Digitizer touch"] {
         println!("{} rotation {}", device,
                  Command::new("/usr/bin/xinput").arg("set-prop")
                  .arg(device).arg("Coordinate Transformation Matrix")
                  .args(&new_transformation_matrix)
                  .status().ok().expect("Failed running xinput"))
     };
-
-    let new_touch_orientation = match new_screen_orientation {
-        "normal" => "none",
-        "left" => "ccw",
-        "right" => "cw",
-        "inverted" => "half",
-        _ => unreachable!("Unknown new orientation")
-    };
-    println!("touch  rotation {}",
-             std::process::Command::new("/usr/bin/xsetwacom")
-             .args(&["set", "Atmel Atmel maXTouch Digitizer touch",
-                     "Rotate", new_touch_orientation])
-             .status().ok().expect("Failed running xsetwacom"))
 }
