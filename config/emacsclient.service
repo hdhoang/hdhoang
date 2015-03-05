@@ -5,6 +5,8 @@ Requires=emacs.service
 
 [Service]
 ExecStart=/usr/bin/emacsclient -c
+Restart=on-failure
+RestartSec=1sec
 
 [Install]
 WantedBy=plasma-workspace.target
