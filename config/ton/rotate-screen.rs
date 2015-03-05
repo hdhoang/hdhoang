@@ -4,9 +4,6 @@ use std::env;
 use std::process::Command;
 
 fn main() {
-    env::set_var("DISPLAY", ":0");
-    env::set_var("XAUTHORITY", "/home/hdhoang/.Xauthority");
-
     let xrandr = Command::new("/usr/bin/xrandr").output().unwrap();
     let output = String::from_utf8_lossy(&xrandr.stdout);
     let orientation = output
