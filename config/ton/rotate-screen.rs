@@ -4,17 +4,24 @@ use std::env;
 use std::process::Command;
 
 fn main() {
-    let xrandr = Command::new("/usr/bin/xrandr").output().unwrap();
-    let output = String::from_utf8_lossy(&xrandr.stdout);
-    let orientation = output
-        .lines().nth(1).expect("Wrong number of lines")
-        .words().nth(3).expect("Wrong number of words");
-    let new_screen_orientation = match orientation {
-        "(normal" => "right",
-        "right" => "inverted",
-        "inverted" => "normal",
-        _ => unreachable!("Unknown orientation")
-    };
+    let args: Vec<_> = env::args().collect();
+    let new_screen_orientation: &str;
+
+    if args.len() == 2 {
+        new_screen_orientation = &args[1];
+    } else {
+        let xrandr = Command::new("/usr/bin/xrandr").output().unwrap();
+        let output = String::from_utf8_lossy(&xrandr.stdout);
+        let orientation = output
+            .lines().nth(1).expect("Wrong number of lines")
+            .words().nth(3).expect("Wrong number of words");
+        new_screen_orientation = match orientation {
+            "(normal" => "right",
+            "right" => "inverted",
+            "inverted" => "normal",
+            _ => unreachable!("Unknown orientation")
+        };
+    }
 
     println!("screen rotation {}",
              Command::new("/usr/bin/xrandr")
