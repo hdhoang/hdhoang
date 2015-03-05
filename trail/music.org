@@ -255,18 +255,21 @@
 ** DONE <2014-10-31 T6> Listen for the Whisper
 ** DONE <2014-11-15 T7> The Splatterhorn
 ** DONE <2014-11-20 T5> Coaster Coat
+** DONE <2014-12-05 Fri> Yarn
 ** TODO <2015-01-13 Tue> Sideway Streets
 ** TODO <2015-01-21 Wed> Squid Ink Lodge
 ** TODO <2015-01-27 Tue> The Moltrail
-** TODO <2015-01-29 Thu> Forest of Bamboo
-** TODO <2015-01-30 Fri> Collect Itself
+** DONE <2015-01-29 Thu> Forest of Bamboo
+** DONE <2015-01-30 Fri> Collect Itself
 ** DONE <2015-01-30 Fri> Weird Glows Gleam
 ** TODO <2015-02-04 Wed> The Left Panel
 ** TODO <2015-02-15 Sun> Wall To Wall Cobwebs
-** TODO <2015-02-18 Wed> Night of the Snowmole
-** TODO <2015-02-19 Thu> Creeky Doors and Creeky Floors
+** DONE <2015-02-18 Wed> Night of the Snowmole
+** DONE <2015-02-19 Thu> Creeky Doors and Creeky Floors
 ** TODO <2015-02-21 Sat> Herbie Theatre
 ** TODO <2015-02-25 Wed> Glow in the Dark
+** TODO <2015-02-27 Fri> Marble Monsters
+** TODO <2015-02-27 Fri> Project Little Man
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -381,7 +384,7 @@
 ** TODO <2015-03-17 Tue> Strangers to Ourselves
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
