@@ -26,6 +26,29 @@ fn main() {
                      "--rotate", new_screen_orientation])
              .status().ok().unwrap());
 
+    let new_transformation_matrix = match new_screen_orientation {
+        "normal"   => ["1","0","0",
+                       "0","1","0",
+                       "0","0","1"],
+        "left"     => ["0","1","0",
+                       "-1","0","1",
+                       "0","0","1"],
+        "inverted" => ["-1","0","1",
+                       "0","-1","1",
+                       "0","0","1"],
+        "right"    => ["0","-1","1",
+                       "1","0","0",
+                       "0","0","1"],
+        _ => unreachable!("Unknown orientation")
+    };
+    for device in &["SynPS/2 Synaptics TouchPad", "TPPS/2 IBM TrackPoint"] {
+        println!("{} rotation {}", device,
+                 Command::new("/usr/bin/xinput").arg("set-prop")
+                 .arg(device).arg("Coordinate Transformation Matrix")
+                 .args(&new_transformation_matrix)
+                 .status().ok().expect("Failed running xinput"))
+    };
+
     let new_touch_orientation = match new_screen_orientation {
         "normal" => "none",
         "left" => "ccw",
