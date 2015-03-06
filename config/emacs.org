@@ -275,7 +275,6 @@
     (setq frame-title-format "%f"
           visible-bell t
           calendar-week-start-day 1)
-    (menu-bar-mode -1)
     (tool-bar-mode -1)
     (blink-cursor-mode -1)
     (show-paren-mode t)
