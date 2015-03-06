@@ -1,0 +1,10 @@
+[Unit]
+Description=Tune power
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/home/hdhoang/Dropbox/config/ton/powercfg
+
+[Install]
+WantedBy=basic.target
