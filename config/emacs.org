@@ -162,7 +162,7 @@
        :config (require 'dired+))
      (defun dired-open ()
        (interactive)
-       (dired-do-shell-command "xdg-open" :file-list (dired-get-marked-files)))
+       (dired-do-shell-command "xdg-open &" :file-list (dired-get-marked-files)))
      (eval-after-load "dired"
        '(progn (define-key dired-mode-map (kbd "RET") #'dired-open)
                (define-key dired-mode-map (kbd "<mouse-2>") #'dired-open)))
