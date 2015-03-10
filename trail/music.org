@@ -230,7 +230,7 @@
 ** DONE <2014-06-25> Hold Me Forever
 ** DONE <2014-07-10 Thu> Ydrapoej
 ** DONE <2014-07-12 Sat> Abandoned Slaughterhouse
-** TODO <2014-07-15 Tue> Sphere Facade
+** DONE <2014-07-15 Tue> Sphere Facade
 ** DONE <2014-07-18 Fri> Assignment 033-03
 ** DONE <2014-07-21 Mon> Aquarium
 ** DONE <2014-07-29 Tue> Snow Slug
@@ -258,7 +258,7 @@
 ** DONE <2014-12-05 Fri> Yarn
 ** TODO <2015-01-13 Tue> Sideway Streets
 ** TODO <2015-01-21 Wed> Squid Ink Lodge
-** TODO <2015-01-27 Tue> The Moltrail
+** DONE <2015-01-27 Tue> The Moltrail
 ** DONE <2015-01-29 Thu> Forest of Bamboo
 ** DONE <2015-01-30 Fri> Collect Itself
 ** DONE <2015-01-30 Fri> Weird Glows Gleam
@@ -270,6 +270,8 @@
 ** TODO <2015-02-25 Wed> Glow in the Dark
 ** TODO <2015-02-27 Fri> Marble Monsters
 ** TODO <2015-02-27 Fri> Project Little Man
+** TODO <2015-02-28 Sat> Infinity of the Spheres
+** TODO <2015-03-01 Sun> Vacuum
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -317,6 +319,8 @@
 ** TODO <2013-05-27> Sôl austan, Mâni vestan
 ** TODO <2014-06-02 Mon> The Ways of Yore
 * Butterfly Tea							     :lastfm:
+* TODO Toto
+** TODO <2015-03-23 Mon> Toto XIV
 * Bức Tường								:FAV:
 ** TODO Ngày Khác
 * Cat Power
@@ -338,7 +342,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
