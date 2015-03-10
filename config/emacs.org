@@ -13,6 +13,7 @@
     (setq
      auto-save-default nil
      confirm-kill-emacs #'yes-or-no-p
+     custom-file "~/.emacs.d/custom.el"
      delete-by-moving-to-trash t
      load-prefer-newer t
      make-backup-files nil
