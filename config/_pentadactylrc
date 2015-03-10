@@ -31,6 +31,7 @@ set newtab=help
 set urlseparator='; '
 
 """ Display
+highlight Bell /**/
 highlight Hint -append font-size: 14px !important
 map <A-t> -js content.document.toggleImageSize()
 set guioptions+=c
