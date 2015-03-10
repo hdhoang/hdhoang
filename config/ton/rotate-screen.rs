@@ -19,7 +19,7 @@ fn main() {
             "(normal" => "right",
             "right" => "inverted",
             "inverted" => "normal",
-            _ => unreachable!("Unknown orientation")
+            _ => unreachable!("Unknown orientation {}.", orientation)
         };
     }
 
@@ -42,7 +42,7 @@ fn main() {
         "right"    => ["0","1","0",
                        "-1","0","1",
                        "0","0","1"],
-        _ => unreachable!("Unknown orientation")
+        _ => unreachable!("Unknown orientation {}.", new_screen_orientation)
     };
     for device in &["SynPS/2 Synaptics TouchPad", "TPPS/2 IBM TrackPoint", "Atmel Atmel maXTouch Digitizer touch"] {
         println!("{} rotation {}", device,
