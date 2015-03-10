@@ -18,5 +18,17 @@ wmclass=firefox|emacs
 wmclasscomplete=false
 wmclassmatch=3
 
+[3]
+Description=Application settings for emacs
+clientmachine=ton
+clientmachinematch=0
+maximizehoriz=true
+maximizehorizrule=2
+maximizevert=true
+maximizevertrule=2
+wmclass=emacs
+wmclasscomplete=false
+wmclassmatch=1
+
 [General]
-count=2
+count=3
