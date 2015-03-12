@@ -16,6 +16,7 @@
      custom-file "~/.emacs.d/custom.el"
      delete-by-moving-to-trash t
      load-prefer-newer t
+     tramp-default-method "ssh"
      make-backup-files nil
      desktop-load-locked-desktop t ;  Load locked desktop from crashed emacs
      inhibit-startup-screen t)
