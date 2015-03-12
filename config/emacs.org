@@ -48,6 +48,7 @@
     (global-unset-key (kbd "<f11>"))
     (use-package aggressive-indent
       :ensure
+      :diminish ""
       :config (global-aggressive-indent-mode))
     (global-set-key (kbd "C-x C-r")
                     (lambda () (interactive) (revert-buffer :noconfirm t)))
@@ -98,6 +99,7 @@
        :config (progn
                  (require 'helm-config)
                  (helm-mode 1)
+                 (diminish 'helm-mode)
                  (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
        :bind (("C-h SPC" . helm-all-mark-rings)
               ("C-x b" . helm-mini)
@@ -124,6 +126,7 @@
    #+begin_src emacs-lisp
      (use-package smartparens
        :ensure
+       :diminish ""
        :config (progn (require 'smartparens-config)
                       (smartparens-global-mode t)))
    #+end_src
