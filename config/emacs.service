@@ -2,10 +2,10 @@
 Description=Emacs
 
 [Service]
-Type=forking
-Restart=always
-ExecStart=/usr/bin/emacs --daemon
+ExecStart=/usr/bin/emacs
 Environment=SSH_AUTH_SOCK=%h/.gnupg/S.gpg-agent.ssh
+Restart=always
+RestartSec=1sec
 
 [Install]
 WantedBy=default.target
