@@ -58,6 +58,7 @@
    #+begin_src emacs-lisp
      (use-package ace-window
        :ensure
+       :config (ace-window-display-mode 1)
        :bind ("C-x o" . ace-window))
    #+end_src
 ** Evil
