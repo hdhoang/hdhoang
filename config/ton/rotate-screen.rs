@@ -18,7 +18,8 @@ fn main() {
         new_screen_orientation = match orientation {
             "(normal" => "left",
             "left" => "inverted",
-            "inverted" => "normal",
+            "inverted" => "right",
+            "right" => "normal",
             _ => unreachable!("Unknown orientation {}.", orientation)
         };
     }
