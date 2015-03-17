@@ -17,9 +17,7 @@ fn main() {
             .words().nth(3).expect("Wrong number of words");
         new_screen_orientation = match orientation {
             "(normal" => "left",
-            "left" => "inverted",
-            "inverted" => "right",
-            "right" => "normal",
+            "left" => "normal",
             _ => unreachable!("Unknown orientation {}.", orientation)
         };
     }
