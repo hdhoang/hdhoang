@@ -272,6 +272,9 @@
 ** TODO <2015-02-27 Fri> Project Little Man
 ** TODO <2015-02-28 Sat> Infinity of the Spheres
 ** TODO <2015-03-01 Sun> Vacuum
+** TODO <2015-03-11 Wed> Elevator
+** TODO <2015-03-19 Thu> Louzenger
+** TODO <2015-03-21 Sat> Shaded Ray
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -445,6 +448,7 @@
 ** TODO <2013-02-22> Saivon Lapsi
 * Europe
 ** TODO <2012-04> Back of Bones
+** TODO <2015-03-02 Mon> War of Kings
 * Evanescene								:FAV:
 * Faerghail
 * Fate Zero
@@ -545,6 +549,7 @@
 ** TODO <2012-10-02> Fanatic
 * Helloween								:FAV:
 ** TODO <2013-01-18> Straight Out of Hell
+** TODO <2015-05-29 Fri> My God-Given Right
 * HIM									:FAV:
 ** TODO <2013-04-26> Tears on Tape
 * Hinder							     :lastfm:
@@ -579,7 +584,7 @@
 ** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -645,6 +650,7 @@
 ** DONE <2011> The Path of Totality
 * Korpiklaani							:FAV:fi:riff:
 ** DONE <2012-08-14> Manala
+** TODO <2015-05-01 Fri> Noita
 * Kotiteollisuus							 :fi:
 ** DONE <1998-05> Aamen
 ** DONE <1999-05> Eevan perintö
@@ -1177,6 +1183,7 @@
 ** DONE <2014-02-07> Shogunate Macabre
 * White Lion
 * Whitesnake
+** TODO <2015-05-15 Fri> The Purple Album
 * Whitney Houston
 * Winger
 * [[http://musicbrainz.org/artist/c054ea6b-c585-41eb-ae7e-4b0ca43308ff][Wintersun]]

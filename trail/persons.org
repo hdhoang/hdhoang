@@ -105,7 +105,7 @@
 ** DONE Splinter Cell: Conviction			   :video:voice:info:
 * Breetai
 ** DONE Fallout 2				       :shot:humor:narrative:
-* [[http://buttersafe.com][Buttersafe]]						       :sad:3rd:cute:
+* [[http://buttersafe.com][Buttersafe]]			       :sad:3rd:cute:
 * Calamities of Nature							:sci:
 * Calm Blue Oceans
 * CannibalK9						  :speed:video:voice:
@@ -121,7 +121,7 @@
 * chainsawsuit
 * Chakan
 ** DONE Dungeon Crawl						       :shot:
-* [[http://channelate.com][ChannelATE]]							       :sick:
+* [[http://channelate.com][ChannelATE]]				       :sick:
 * Chaostime
 ** TODO XCOM: Enemy Unknown
 * Charlie Stross							:sci:
@@ -132,10 +132,10 @@
 ** DONE (2005) Accelerando
 ** DONE (2006) Glasshouse
 ** NOT (2012) The Rapture of the Nerds
-** Eschaton series
+** Eschaton
 *** DONE (2003) Singularity Sky
 *** DONE (2004) Iron Sunrise
-** Halting State series
+** Halting State
 *** DONE (2007) Halting State
 *** DONE (2011) Rule 34
 *** TODO (2014) The Lambda Functionary
@@ -143,11 +143,11 @@
  1. [ ] The Bloodline Feud
  2. [ ] The Traders' War
  3. [ ] The Revolution Trade
-** Saturn's Children series
+** Saturn's Children
  1. [X] (2008) Saturn's Children
  2. [X] (2013) Neptune's Brood
  - [X] Bit Rot
-** The Laundry Files [7/8]
+** The Laundry Files [8/9]
  1. [X] (2004) The Atrocity Archives
  2. [X] (2006) The Jennifer Morgue
  3. [X] (2008) Down on the Farm
@@ -155,7 +155,8 @@
  5. [X] (2010) The Fuller Memorandum
  6. [X] (2009) Overtime
  7. [X] (2012) The Apocalypse Codex
- 8. [ ] (2014) The Rhesus Chart
+ 8. [X] (2014) The Rhesus Chart
+ 9. [ ] (2015) The Annihilation Score
 * China Miéville
 ** TODO Embassytown
 * Chip Cheezum
@@ -181,7 +182,7 @@
 ** DONE Dark Messiah of Might & Magic			  :group:video:voice:
 * Coulis
 ** DONE Prince of Persia: The Two Thrones		   :video:voice:info:
-* [[http://cowbirdsinlove.com][Cowbirds in Love]]						       :cute:
+* [[http://cowbirdsinlove.com][Cowbirds in Love]]		       :cute:
 * CrookedB
 ** DONE Escape from Hell			       :shot:info:comp:humor:
 * Crowetron
@@ -228,19 +229,20 @@
    :PROPERTIES:
    :url:      http://yudkowsky.net
    :END:
-** Harry Potter and the Methods of Rationality
+** DONE Harry Potter and the Methods of Rationality
     :PROPERTIES:
     :url:      http://hpmor.com/
     :END:
+** TODO Rationality: From AI to Zombies
 * [[http://endlessorigami.com][Endless Origami]]
 * Epee Em
 ** TODO Pokemon Vietnamese Crystal				 :shot:humor:
-* [[http://exocomics.com][Extra Ordinary]]		    :cute:title:site:
+* [[http://exocomics.com][Extra Ordinary]]					    :cute:title:site:
 * Fake Science							       :cute:
 * fleshweasel
 ** DONE Diablo						   :video:voice:info:
 * Fowl Language Comics
-* [[http://pidjin.net][Fredo and Pid'jin]]			       :blas:
+* [[http://pidjin.net][Fredo and Pid'jin]]						       :blas:
 * FrenzyTheKillbot
 ** TODO 007: Blood Stone					      :video:
 ** TODO 007: The World is Not Enough				 :info:video:
@@ -293,13 +295,6 @@
 ** DONE Freespace 2 Open				    :hybrid:info:sub:
     :PROPERTIES:
     :url:      http://lparchive.org/FreeSpace-2-Open/
-    :END:
-* GONE Richard Feynman					      :humor:sci:FAV:
-** TODO Physics Lectures
-** DONE Surely You're Joking, Mr. Feynman
-** DONE What Do You Care What Other People Think? Further Adventures of a Curious Character
-    :PROPERTIES:
-    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
     :END:
 * GuavaMoment
 ** TODO X-COM: Apocalypse
@@ -555,6 +550,13 @@
 * Richard Dawkins
 ** TODO (1986) The Blind Watchmaker: Why the Evidence of Evolution Reveals a Universe without Design
 ** TODO The God Delusion
+* GONE Richard Feynman					      :humor:sci:FAV:
+** TODO Physics Lectures
+** DONE Surely You're Joking, Mr. Feynman
+** DONE What Do You Care What Other People Think? Further Adventures of a Curious Character
+    :PROPERTIES:
+    :url:      https://rs547dt.rapidshare.com/#!download|547tl3|150849492|feynman.djvu|10718|R~0C14ADE2389A0C654993D7A1EECB0172|0|0
+    :END:
 * [[http://rockpapercynic.com][Rock, Paper, Cynic]]		   :cute:sad:
 * Roger Williams
 ** DONE The Metamorphosis of Prime Intellect			    :sci:FAV:
@@ -602,6 +604,7 @@
 * SPACE AVALANCHE
 * Spoiler Warning Show					  :group:voice:video:
 ** TODO Metro 2033
+** TODO Hitman: Absolution
 ** DONE The Walking Dead
 * [[http://spudcomics.com][Spud Comics]]
 * Static_Fiend
@@ -612,7 +615,8 @@
 * StupidFox
 * supergreatfriend
 ** TODO Spy Fiction						      :video:
-* Terry Pratchett
+* GONE Terry Pratchett
+** TODO Mort
 ** TODO The Last Hero
 * The Awkward Yeti
 * the bad chemicals

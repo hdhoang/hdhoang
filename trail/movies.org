@@ -95,6 +95,8 @@
    :btih:     496d68b8a24a03143019e9470b495daf6141e7ed
    :END:
 * DONE Secretary (2002)
+* TODO Cruel Intentions
+* TODO White God
 * TODO Seven Psychopaths (2012)						 :jo:
 * DONE Sky High								  :q:
 * DONE Strange Days (1995)						:FAV:
