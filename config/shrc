@@ -23,7 +23,7 @@ alias x=parallel
 alias e='"$EDITOR" -n'
 function getc() {
     cd ${1:-.}
-    for t in {1..50}; do
+    for t in {1..1}; do
 	[ -r _q.txt ] && youtube-dl
 	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
