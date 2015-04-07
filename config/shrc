@@ -68,6 +68,12 @@ alias mv='mv -i'
 alias rm='rm --interactive=once --one-file-system'
 alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --no-group'
+function favm() {
+    parallel --rpl '{_} $Global::use{"File::Basename"} ||= eval "use File::Basename; 1;"; $_ = dirname($_); s:_new/::' \
+	     mkdir -p {_} \;\
+	     mv -v -t {_} {} \
+	     ::: $*
+}
 
 # system
 alias sc='sudo systemctl --full --system'
