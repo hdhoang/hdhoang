@@ -7,7 +7,7 @@ if [[ $(uname -o) == Msys ]]; then
 else
     mount=~
 fi
-h=$mount/Dropbox
+h=$mount/Copy
 conf=$h/config/$(hostname)
 dl=$mount/Downloads
 v=$mount/Videos
