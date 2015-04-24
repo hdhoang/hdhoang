@@ -99,7 +99,6 @@
      (use-package helm-proc
        :ensure
        :config (progn
-                 (require 'helm-config)
                  (helm-mode 1)
                  (diminish 'helm-mode)
                  (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
@@ -111,6 +110,7 @@
               ("C-c p" . helm-proc)
               ("M-s o" . helm-occur)
               ("M-x" . helm-M-x)))
+     (require 'helm-config)
      (use-package evil
        :config (dolist (state '(insert motion normal))
                  (evil-define-key state global-map
