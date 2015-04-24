@@ -270,11 +270,16 @@
 ** TODO <2015-02-25 Wed> Glow in the Dark
 ** TODO <2015-02-27 Fri> Marble Monsters
 ** TODO <2015-02-27 Fri> Project Little Man
-** TODO <2015-02-28 Sat> Infinity of the Spheres
+** DONE <2015-02-28 Sat> Infinity of the Spheres
 ** TODO <2015-03-01 Sun> Vacuum
-** TODO <2015-03-11 Wed> Elevator
+** DONE <2015-03-11 Wed> Elevator
 ** TODO <2015-03-19 Thu> Louzenger
 ** TODO <2015-03-21 Sat> Shaded Ray
+** TODO <2015-03-31 Tue> Rotten Candy Cane
+** TODO <2015-04-04 Sat> Along the River Bank
+** TODO <2015-04-10 Fri> Tourist
+** TODO <2015-04-12 Sun> Paint to the Tile
+** TODO <2015-04-20 Mon> Tucked Into Dreams
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -305,9 +310,10 @@
 ** DONE <2004-02-24> Heaven and Hell
 ** DONE <2007-06-12> Lightyears						:FAV:
 ** with Thanatopsis
-** DONE Thanatopsis
+** DONE <2001> Thanatopsis
 ** DONE <2003> Axiology
 ** DONE <2006> Anatomize
+** TODO <2015-04-11 Sat> Requiem
 ** with Travis Dickerson
 ** DONE <2006> Chicken Noodles
 ** DONE <2007-12-15> Chicken Noodles II
@@ -326,6 +332,7 @@
 ** TODO <2015-03-23 Mon> Toto XIV
 * Bức Tường								:FAV:
 ** TODO Ngày Khác
+** TODO <2015> Đất Việt
 * Cat Power
 * Celestial Aeon						     :lastfm:
 * Celesty
@@ -391,7 +398,7 @@
 ** TODO <2015-03-17 Tue> Strangers to Ourselves
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -409,6 +416,7 @@
 * EELS
 ** TODO <2013-02-03> Wonderful, Glorious
 ** TODO <2014-04-22> The Cautionary Tales of Mark Oliver Everett
+** TODO <2015-04-14 Tue> Royal Albert Hall
 * Einsturzende Neubauten
 ** TODO <2014-11-07 T6> Lament
 * El Pogo8bit
@@ -584,7 +592,7 @@
 ** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -631,6 +639,7 @@
 ** TODO <2013-06-25> Seventh Swamphony
 * Kamelot
 ** TODO <2012-10-26> Silverthorn
+** TODO <2015-05-08 Fri> Haven
 * Kasey Chambers
 ** feat Shane Nicholson
 *** TODO <2012-10-22> Wreck and Ruin
@@ -1221,3 +1230,5 @@
 ** DONE <2014-06-12 Thu> The Lounge Conspiracy
 * Đỗ Bảo
 ** DONE <2008> Cánh cung
+* Toto
+** TODO <2015-03-20 Fri> Toto XIV
