@@ -11,6 +11,7 @@ EDITOR=emacsclient
 
 EMAIL=hdhoang@zahe.me
 
+DISPLAY=:0
 XMODIFIERS=@im=ibus
 GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
