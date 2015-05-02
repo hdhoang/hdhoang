@@ -1,5 +1,4 @@
 // -*- compile-command: "rustc --out-dir ~/Dropbox/bin rotate-screen.rs" -*-
-#![feature(env,process)]
 use std::env;
 use std::process::Command;
 
@@ -14,7 +13,7 @@ fn main() {
         let output = String::from_utf8_lossy(&xrandr.stdout);
         let orientation = output
             .lines().nth(1).expect("Wrong number of lines")
-            .words().nth(3).expect("Wrong number of words");
+            .split(' ').nth(3).expect("Wrong number of words");
         new_screen_orientation = match orientation {
             "(normal" | "inverted" => "left",
             "left" | "right" => "normal",
