@@ -280,6 +280,7 @@
 ** TODO <2015-04-10 Fri> Tourist
 ** TODO <2015-04-12 Sun> Paint to the Tile
 ** TODO <2015-04-20 Mon> Tucked Into Dreams
+** TODO <2015-04-22 Wed> Forever Lake
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -352,7 +353,7 @@
 ** DONE <2008-04-09> Blooddrunk					       :1fav:
 ** DONE <2011> Relentless Reckless Forever
 ** DONE <2013-06-06> Halo of Blood
-* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]]								 :jo:
+* [[http://musicbrainz.org/artist/7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d][Chumbawamba]] :jo:
 * Cinderella							       :1fav:
 * Clawfinger								 :jo:
 * Clint Mansell
@@ -398,7 +399,7 @@
 ** TODO <2015-03-17 Tue> Strangers to Ourselves
 * Devin Townsend
 ** TODO <2014-10-27 Mon> Z2
-* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]]				 :FAV:string:jamendo:
+* [[http://musicbrainz.org/artist/af723a8a-d3db-46c2-82a3-201dde8fa27f][Diablo Swing Orchestra]] :FAV:string:jamendo:
 ** DONE <2006> [[http://musicbrainz.org/release-group/ff69348f-1831-36e3-8c3b-1f477c1e8676][The Butcher's Ballroom]]
 ** DONE <2009-10> Sing Along Songs for the Damned & Delirious
 ** DONE <2012-05-22> Pandora's Piñata
@@ -621,6 +622,7 @@
 *** TODO <2012-11-15> One Christmas at a Time
 * Josh Groban
 ** TODO <2013-02-01> All That Echoes
+** TODO <2015-04-28 Tue> Stages
 * Josh Woodward						     :jamendo:lastfm:
 ** DONE <2004-04-17> Here Today
 ** DONE <2005-02-05> Crawford Street
@@ -680,6 +682,7 @@
 ** DONE <2011-03-02> Kotiteollisuus
 ** DONE <2012-09-21> Sotakoira II
 ** DONE <2013-07-05> Maailmanloppu
+** TODO <2015-10-04 Sun> Kruuna/klaava
 ** as Hullu ukko ja kotiteollisuus
 ** DONE <1996-08> Hullu ukko ja Kotiteollisuus
 * Lacrimosa
@@ -1050,7 +1053,7 @@
 ** TODO <2012-06-18> Oceania
 ** TODO <2014-12-08 T2> Monuments to an Elegy
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]						  :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
 * ThePlasmas						   :riff:game:lastfm:
@@ -1097,6 +1100,7 @@
 ** DONE <2012-09-28> Les fleurs du mal
 * They Might Be Giants						     :jbopre:
 ** TODO <2013-03-05> Nanobots
+** TODO <2015-04-20 Mon> Glean
 * Thy Serpent							       :1fav:
 * Thủy Triều Đỏ								 :vi:
 * Tim Minchin								:FAV:
