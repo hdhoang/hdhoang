@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- /etc/firewalld/services -->
-<service>
-  <port protocol="tcp" port="9091"/>
-  <port protocol="tcp" port="50775"/>
-  <port protocol="udp" port="50775"/>
-</service>
