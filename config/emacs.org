@@ -96,18 +96,17 @@
    #+end_src
 ** Helm
    #+begin_src emacs-lisp
-     (use-package helm-proc
+     (use-package helm
        :ensure
        :config (progn
                  (helm-mode 1)
-                 (diminish 'helm-mode)
                  (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
+       :diminish ""
        :bind (("C-h SPC" . helm-all-mark-rings)
               ("C-x b" . helm-mini)
               ("C-x C-b" . helm-buffers-list)
               ("C-x C-f" . helm-find-files)
               ("C-c g" . helm-do-grep)
-              ("C-c p" . helm-proc)
               ("M-s o" . helm-occur)
               ("M-x" . helm-M-x)))
      (require 'helm-config)
