@@ -27,3 +27,5 @@
 /trail/*.html
 desktop.ini
 /bin/
+/config/vorme/tmp/
+/config/vorme/usr/
