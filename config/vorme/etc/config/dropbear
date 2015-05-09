@@ -1,0 +1,5 @@
+
+config dropbear 'global'
+	option PasswordAuth 'on'
+	option Port '22'
+
