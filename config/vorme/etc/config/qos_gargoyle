@@ -1,7 +1,7 @@
 
 config upload 'upload'
 	option default_class 'uclass_3'
-	option total_bandwidth '600'
+	option total_bandwidth '550'
 
 config download 'download'
 	option default_class 'dclass_3'
