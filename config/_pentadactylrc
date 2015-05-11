@@ -115,6 +115,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! toolkit.telemetry.enabled=true
    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
    \ js services.permissions.add(services.io.newURI("http:flecu.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
+   \ js services.permissions.add(services.io.newURI("http:kuf.zahe.me",null,null), 'popup', services.permissions.ALLOW_ACTION)
    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
 
 " Set to 1 to proxy through tor network
@@ -135,6 +136,7 @@ autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', do
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 set passkeys+=google.com/contacts/:'#jkoux,.'
 
+set passkeys+=kuf.zahe.me/index.php/apps/news/:opns
 set passkeys+=flecu.zahe.me:'vjksUS'
 style -n "selfoss" flecu.zahe.me <<EOS
 .entry-content { -moz-column-count: 1 !important }
