@@ -1,0 +1,8 @@
+[Unit]
+Description=Viber
+
+[Service]
+ExecStart=/opt/viber/Viber
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,3 @@
+#!/bin/sh
+echo none > /sys/class/leds/cubieboard:green:usr/trigger
+echo mmc0 > /sys/class/leds/cubieboard:blue:usr/trigger

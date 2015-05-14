@@ -1,0 +1,10 @@
+[Unit]
+Description=On-screen keyboard
+
+[Service]
+ExecStart=/usr/bin/onboard
+Restart=always
+RestartSec=1sec
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,5 @@
+[Service]
+ExecStart=/usr/bin/ipfs daemon
+
+[Install]
+WantedBy=basic.target
