@@ -1,4 +1,6 @@
 # /etc/supysonic
 [base]
-database_uri = mysql://
-filetypes = flac,m4a,mp2,mp3,ogg,wma
+database_uri = sqlite:/var/lib/supysonic/db.sqlite
+
+[webapp]
+cache_dir = /tmp/supysonic
