@@ -6,7 +6,7 @@ config upload 'upload'
 config download 'download'
 	option default_class 'dclass_3'
 	option qos_monenabled 'true'
-	option total_bandwidth '4093'
+	option total_bandwidth '3900'
 
 config download_class 'dclass_1'
 	option name 'VoIP'
