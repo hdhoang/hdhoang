@@ -101,6 +101,12 @@ config download_rule 'download_rule_1200'
 	option srcport '4180-4199'
 	option proto 'udp'
 
+config download_rule 'download_rule_1300'
+	option class 'dclass_1'
+	option test_order '1300'
+	option dstport '22'
+	option proto 'tcp'
+
 config upload_class 'uclass_1'
 	option name 'VoIP'
 	option percent_bandwidth '1'
@@ -203,4 +209,10 @@ config upload_rule 'upload_rule_1400'
 	option test_order '1400'
 	option dstport '4180-4199'
 	option proto 'udp'
+
+config upload_rule 'upload_rule_1500'
+	option class 'uclass_1'
+	option test_order '1500'
+	option srcport '22'
+	option proto 'tcp'
 
