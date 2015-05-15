@@ -107,7 +107,6 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! network.http.pipelining=true
    \ set! network.http.pipelining.aggressive=true
    \ set! network.http.pipelining.ssl=true
-   \ set! network.http.spdy.enabled.http2draft=true
    \ set! network.protocol-handler.expose.magnet=false
    \ set! network.proxy.socks=kub.zahe.me
    \ set! network.proxy.socks_port=9050
