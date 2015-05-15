@@ -79,6 +79,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! browser.startup.homepage=about:blank
    \ set! browser.startup.page=3
    \ set! general.warnOnAboutConfig=false
+   \ set! security.OCSP.enabled=0
    \ set! security.warn_viewing_mixed=false
    \ set! layout.spellcheckDefault=0
    \ set! middlemouse.paste=true
