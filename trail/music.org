@@ -67,6 +67,8 @@
 ** DONE <2010-03-29> Une enfant du siècle
 * Alsou								     :ru:FAV:
 * Amity in Fame							    :jamendo:
+* Amon Tobin
+** TODO <2015-04-12 Sun> Dark Jovian
 * Amon Amarth								:FAV:
 ** TODO <2013-07-21> Deceiver of the Gods
 * Amorphis								:FAV:
@@ -281,6 +283,14 @@
 ** TODO <2015-04-12 Sun> Paint to the Tile
 ** TODO <2015-04-20 Mon> Tucked Into Dreams
 ** TODO <2015-04-22 Wed> Forever Lake
+** TODO <2015-04-25 Sat> Down in the Bayou, Part Two
+** TODO <2015-04-29 Wed> Down in the Bayou, Part One
+** TODO <2015-04-30 Thu> Chamber of Drawers
+** TODO <2015-05-01 Fri> Embroidery
+** TODO <2015-05-08 Fri> Haunted Roller Coaster Chair
+** TODO <2015-05-08 Fri> Digging Under the Basement
+** TODO <2015-05-10 Sun> Firebolt
+** TODO <2015-05-10 Sun> Solar Sailcraft
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -691,6 +701,7 @@
 ** DONE <2011-04-29> Illwill
 * [[http://musicbrainz.org/artist/298909e4-ebcb-47b8-95e9-cc53b087fc65][Lamb of God]]
 ** TODO [[http://musicbrainz.org/release-group/3cc68275-4a0b-4a45-8871-8cccec423a99][Resolution]]
+** TODO <2015-07> VII: Strum Und Drang
 * Led Zeppelin							       :1fav:
 ** TODO <2012-11-19> Celebration Day
 * Lenka								  :jo:f:1fav:
@@ -734,12 +745,12 @@
 ** DONE [[http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b][Max Payne]]
 ** DONE Max Payne 2: The Fall of Max Payne
 ** DONE Max Payne 3: The Official Soundtrack
-* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]] :FAV:riff:
+* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]]							   :FAV:riff:
 ** DONE <2007> United Abominations
 ** DONE <2009> [[http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a][Endgame]]
 ** DONE <2011> Th1rt3en
 ** DONE <2013-06-04> Super Collider
-* [[http://megadriver.com.br][MegaDriver]]		   :riff:game:lastfm:
+* [[http://megadriver.com.br][MegaDriver]]						   :riff:game:lastfm:
 ** DONE <2003> Push Start Button
 ** DONE <2004> Action Metal
 ** DONE <2004> Metal Axe
@@ -782,7 +793,7 @@
 * Michelle Stewart							:FAV:
 ** DONE <2011> Walking on Ashes
 ** TODO <2013> Sands of Time
-* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]] :vi:riff:FAV:
+* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]]							:vi:riff:FAV:
 * Mike Oldfield								:FAV:
 ** DONE <2013-02-01> Tubular Beats
 ** TODO <2014-03-03> Man On the Rocks
@@ -809,7 +820,7 @@
 * My Chemical Romance						       :1fav:
 * Månegram
 ** TODO <2013-06-28> Legions of the North
-* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]] :FAV:
+* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]]								:FAV:
 ** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]] :not:
 * Mỹ Tâm
 * Nat King Cole
@@ -943,7 +954,7 @@
 * Santigold
 * Sarah Brightman						   :f:jo:FAV:
 ** DONE <2013-04-05> Dreamchaser
-* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]] :FAV:
+* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]]								:FAV:
 ** DONE <2007> [[http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286][Humanity: Hour I]]
 ** DONE <2011> Comeblack
 * Sean Wright							     :lastfm:
@@ -952,6 +963,7 @@
 ** DONE <2011> Winter Poem
 * Senses Fail								:not:
 ** TODO <2013-03-26> Renacer
+** TODO <2015-06-30 Tue> Pull the Thorns From Your Heart
 * Sentenced
 * Sepultura								 :jo:
 * Shadow Hearts
@@ -967,6 +979,7 @@
 * Sinergy
 * Sirenia								  :f:
 ** TODO <2013-06-28> Perils of the Deep Blue
+** TODO <2015-05-08 Fri> The Seventh Life Path
 * Sixpence None the Richer					      :FAV:f:
 ** TODO <2012-08-07> Lost in Transition
 * Skillet
@@ -1053,7 +1066,7 @@
 ** TODO <2012-06-18> Oceania
 ** TODO <2014-12-08 T2> Monuments to an Elegy
 * The Who
-* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]]						  :game:wail:
+* [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
 ** DONE <2011> The Truth Is...
 ** TODO <2014-07-24 Thu> Savages
 * ThePlasmas						   :riff:game:lastfm:
@@ -1236,3 +1249,5 @@
 ** DONE <2008> Cánh cung
 * Toto
 ** TODO <2015-03-20 Fri> Toto XIV
+* Weedeater
+** TODO <2015-05-18 Mon> Goliathan
