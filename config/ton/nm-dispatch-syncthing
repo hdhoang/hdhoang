@@ -1,0 +1,13 @@
+#!/bin/sh
+# /etc/NetworkManager/dispatcher.d/nm-dispatch-syncthing
+case $2 in
+    up)
+	if iwgetid | grep autonomy; then
+	    act=start
+	else
+	    act=stop
+	fi;;
+    down)
+	act=stop;;
+esac
+sudo -u hdhoang DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus systemctl --user $act syncthing
