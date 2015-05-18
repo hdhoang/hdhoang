@@ -3,7 +3,7 @@ ContactInfo tor at zahe dot me
 Nickname kub
 DirPort 4660
 ORPort 5880
-SOCKSPort 0.0.0.0:9050
+SOCKSPort 192.168.1.54:9050
 MaxAdvertisedBandwidth 40 KBytes
 ExitPolicy reject *:*
 
