@@ -13,10 +13,10 @@ config interface 'lan'
 	option force_link '1'
 	option type 'bridge'
 	option proto 'static'
-	option ipaddr '192.168.1.1'
 	option netmask '255.255.255.0'
 	option ip6assign '60'
 	option dns '151.236.20.236 103.25.202.192 128.199.248.105 106.186.17.181'
+	option ipaddr '10.117.14.1'
 
 config interface 'wan'
 	option ifname 'eth1'
@@ -40,10 +40,4 @@ config switch_vlan
 	option device 'switch0'
 	option vlan '1'
 	option ports '0 1 2 3 4'
-
-config route 'route1'
-	option target '10.0.0.0'
-	option interface 'lan'
-	option gateway '192.168.1.54'
-	option netmask '255.0.0.0'
 
