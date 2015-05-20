@@ -134,7 +134,7 @@ autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', do
 set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
 set passkeys+=google.com/contacts/:'#jkoux,.'
 
-set passkeys+=kuf.zahe.me/index.php/apps/news/:opns
+set passkeys+=kuf.zahe.me/index.php/apps/news/:opnse
 style -n "ownCloud" kuf.zahe.me <<EOS
 .icon-rss  { display: block !important }
 EOS
