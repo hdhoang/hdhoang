@@ -259,7 +259,7 @@
 ** DONE <2014-11-20 T5> Coaster Coat
 ** DONE <2014-12-05 Fri> Yarn
 ** TODO <2015-01-13 Tue> Sideway Streets
-** TODO <2015-01-21 Wed> Squid Ink Lodge
+** DONE <2015-01-21 Wed> Squid Ink Lodge
 ** DONE <2015-01-27 Tue> The Moltrail
 ** DONE <2015-01-29 Thu> Forest of Bamboo
 ** DONE <2015-01-30 Fri> Collect Itself
@@ -270,10 +270,10 @@
 ** DONE <2015-02-19 Thu> Creeky Doors and Creeky Floors
 ** TODO <2015-02-21 Sat> Herbie Theatre
 ** TODO <2015-02-25 Wed> Glow in the Dark
-** TODO <2015-02-27 Fri> Marble Monsters
+** DONE <2015-02-27 Fri> Marble Monsters
 ** TODO <2015-02-27 Fri> Project Little Man
 ** DONE <2015-02-28 Sat> Infinity of the Spheres
-** TODO <2015-03-01 Sun> Vacuum
+** DONE <2015-03-01 Sun> Vacuum
 ** DONE <2015-03-11 Wed> Elevator
 ** TODO <2015-03-19 Thu> Louzenger
 ** TODO <2015-03-21 Sat> Shaded Ray
@@ -291,6 +291,7 @@
 ** TODO <2015-05-08 Fri> Digging Under the Basement
 ** TODO <2015-05-10 Sun> Firebolt
 ** TODO <2015-05-10 Sun> Solar Sailcraft
+** TODO <2015-05-16 Sat> Hideous Phantasm
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -334,6 +335,7 @@
 * Buddy Guy							       :tunx:
 * Bullet for My Valentine					       :1fav:
 ** TODO <2013-02-12> Temper Temper
+** TODO <2015-08-14 Fri> Venom
 * Burzum
 ** DONE <2012> Umskiptar
 ** TODO <2013-05-27> Sôl austan, Mâni vestan
@@ -603,7 +605,7 @@
 ** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -745,12 +747,12 @@
 ** DONE [[http://musicbrainz.org/release-group/e87bee4b-bc91-3007-bff5-4fdc9b89314b][Max Payne]]
 ** DONE Max Payne 2: The Fall of Max Payne
 ** DONE Max Payne 3: The Official Soundtrack
-* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]]							   :FAV:riff:
+* [[http://musicbrainz.org/artist/a9044915-8be3-4c7e-b11f-9e2d2ea0a91e][Megadeth]] :FAV:riff:
 ** DONE <2007> United Abominations
 ** DONE <2009> [[http://musicbrainz.org/release-group/e165f024-3fab-4002-aad9-18da9c515d2a][Endgame]]
 ** DONE <2011> Th1rt3en
 ** DONE <2013-06-04> Super Collider
-* [[http://megadriver.com.br][MegaDriver]]						   :riff:game:lastfm:
+* [[http://megadriver.com.br][MegaDriver]]		   :riff:game:lastfm:
 ** DONE <2003> Push Start Button
 ** DONE <2004> Action Metal
 ** DONE <2004> Metal Axe
@@ -793,7 +795,7 @@
 * Michelle Stewart							:FAV:
 ** DONE <2011> Walking on Ashes
 ** TODO <2013> Sands of Time
-* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]]							:vi:riff:FAV:
+* [[http://musicbrainz.org/artist/ca4fbd2f-75ef-4dfb-82b3-a24a8a96e884][Microwave]] :vi:riff:FAV:
 * Mike Oldfield								:FAV:
 ** DONE <2013-02-01> Tubular Beats
 ** TODO <2014-03-03> Man On the Rocks
@@ -813,6 +815,7 @@
 ** DONE <2007-11-28> Luihin ja ytimiin
 ** DONE <2010-03-24> Sydänjuuret
 ** TODO <2012-10-19> 180 astetta
+** TODO <2015-06-02 Tue> Elävien Kirjoihin
 * Monty Python								:FAV:
 * Muse								       :1fav:
 ** TODO <2012-09-17> The 2nd Law
@@ -820,7 +823,7 @@
 * My Chemical Romance						       :1fav:
 * Månegram
 ** TODO <2013-06-28> Legions of the North
-* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]]								:FAV:
+* [[http://musicbrainz.org/artist/639e251c-32b1-4f35-af32-9eef33267d79][Mỹ Linh]] :FAV:
 ** DONE <2005> [[http://musicbrainz.org/release-group/d624f7b3-a88e-3742-87da-3f13b98bf1fa][Chat với Mozart]] :not:
 * Mỹ Tâm
 * Nat King Cole
@@ -954,7 +957,7 @@
 * Santigold
 * Sarah Brightman						   :f:jo:FAV:
 ** DONE <2013-04-05> Dreamchaser
-* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]]								:FAV:
+* [[http://musicbrainz.org/artist/c3cceeed-3332-4cf0-8c4c-bbde425147b6][Scorpions]] :FAV:
 ** DONE <2007> [[http://musicbrainz.org/release-group/5c92dd07-3d1e-4e96-9b52-69c84de57286][Humanity: Hour I]]
 ** DONE <2011> Comeblack
 * Sean Wright							     :lastfm:
@@ -1043,6 +1046,7 @@
 ** DONE <2003> Megadef
 ** DONE <2007-08-10> Razor Tag
 * Symphony X							   :FAV:epic:
+** TODO <2015-07-24 Fri> Underworld
 * System of a Down
 * Tacere
 * Take That
