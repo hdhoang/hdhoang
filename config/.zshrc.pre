@@ -1,4 +1,0 @@
-# ~/.zshrc.pre
-
-source ~/Public/hdhoang/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-setopt histverify numeric_glob_sort
