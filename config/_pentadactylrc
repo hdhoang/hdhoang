@@ -137,6 +137,7 @@ set passkeys+=google.com/contacts/:'#jkoux,.'
 set passkeys+=kuf.zahe.me/index.php/apps/news/:opnse
 style -n "ownCloud" kuf.zahe.me <<EOS
 .icon-rss  { display: block !important }
+body, button { font-family: sans !important }
 EOS
 
 set passkeys+=tumblr.com:jk
