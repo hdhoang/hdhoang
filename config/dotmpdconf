@@ -4,7 +4,7 @@ auto_update "yes"
 sticker_file "~/Dropbox/config/mpd_sticker"
 db_file "~/.local/mpd_db"
 music_directory "~/Music"
-playlist_directory "~/Dropbox/playlists"
+playlist_directory "~/Music"
 audio_output {
 name "pulse"
 type "pulse"
