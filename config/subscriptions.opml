@@ -10,7 +10,6 @@
     <outline title="yahtzee19" text="yahtzee19" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC-Q4WBqNtMF_2GbIsGjic4A" htmlUrl="http://www.youtube.com/user/yahtzee19"/>
     <outline title="xorl %eax, %eax" text="xorl %eax, %eax" type="rss" xmlUrl="http://xorl.wordpress.com/feed/" htmlUrl="https://xorl.wordpress.com/"/>
     <outline title="xkcd" text="xkcd" type="rss" xmlUrl="http://blog.xkcd.com/feed/" htmlUrl="http://blog.xkcd.com/"/>
-    <outline title="xkcd" text="xkcd" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=5588da6b615aa6a51deeab9844ced2ec&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=5588da6b615aa6a51deeab9844ced2ec"/>
     <outline title="The latest XKCD quote database entries" text="The latest XKCD quote database entries" type="rss" xmlUrl="http://peeron.com/tickers/xkcdb.xml" htmlUrl="http://www.xkcdb.com/"/>
     <outline title="Wumo | Kind of Normal" text="Wumo | Kind of Normal" type="rss" xmlUrl="http://kindofnormal.com/wumo/?view=rss" htmlUrl="http://kindofnormal.com/wumo"/>
     <outline title="WTF, Evolution?!" text="WTF, Evolution?!" type="rss" xmlUrl="http://wtfevolution.tumblr.com/rss" htmlUrl="http://wtfevolution.tumblr.com/"/>
@@ -41,7 +40,6 @@
     <outline title="Twenty Sided" text="Twenty Sided" type="rss" xmlUrl="http://www.shamusyoung.com/twentysidedtale/?feed=rss2" htmlUrl="http://www.shamusyoung.com/twentysidedtale"/>
     <outline title="TryMike4instance" text="TryMike4instance" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCHd_diOoX2PP33hpixxm6tA" htmlUrl="http://www.youtube.com/user/TryMike4instance"/>
     <outline title="trust me, I need this" text="trust me, I need this" type="rss" xmlUrl="http://blog.claycomix.com/feed/" htmlUrl="http://blog.claycomix.com/"/>
-    <outline title="Tree Lobsters" text="Tree Lobsters" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=3948af3a6fd93e20a8f393ab30a58370&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=3948af3a6fd93e20a8f393ab30a58370"/>
     <outline title="Torment: Tides of Numenera" text="Torment: Tides of Numenera" type="rss" xmlUrl="http://tormentrpg.tumblr.com/rss" htmlUrl="http://tormentrpg.tumblr.com/"/>
     <outline title="toonhole" text="toonhole" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCLNx637ltD8sjW-45ZtlYxA" htmlUrl="http://www.youtube.com/user/toonhole"/>
     <outline title="Toonhole" text="Toonhole" type="rss" xmlUrl="http://feeds.feedburner.com/Toonhole" htmlUrl="http://www.toonhole.com/"/>
@@ -55,7 +53,6 @@
     <outline title="Three Panel Soul" text="Three Panel Soul" type="rss" xmlUrl="http://threepanelsoul.com/feed/" htmlUrl="http://threepanelsoul.com/"/>
     <outline title="This Week in Rust" text="This Week in Rust" type="rss" xmlUrl="http://this-week-in-rust.org/atom.xml" htmlUrl="http://this-week-in-rust.org/"/>
     <outline title="Things My Cat Hates" text="Things My Cat Hates" type="rss" xmlUrl="http://thingsmycathates.tumblr.com/rss" htmlUrl="http://thingsmycathates.tumblr.com/"/>
-    <outline title="Things in Squares" text="Things in Squares" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=1695462d86b71093c623bdb6a01a2137&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=1695462d86b71093c623bdb6a01a2137"/>
     <outline title="The Weinerworks" text="The Weinerworks" type="rss" xmlUrl="http://feeds.feedburner.com/TheWeinerworks" htmlUrl="http://www.theweinerworks.com/"/>
     <outline title="theWAREHOUSE webcomic" text="theWAREHOUSE webcomic" type="rss" xmlUrl="http://warehousecomic.com/?feed=rss2" htmlUrl="http://warehousecomic.com/"/>
     <outline title="The Vietnamese Wife, Western Husband Club" text="The Vietnamese Wife, Western Husband Club" type="rss" xmlUrl="http://vwwhc.blogspot.com/feeds/posts/default" htmlUrl="http://vwwhc.blogspot.com/"/>
@@ -80,7 +77,6 @@
     <outline title="The Awkward Yeti" text="The Awkward Yeti" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=c1dd90bd0aaf513912f421c6fa98dbcd&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=c1dd90bd0aaf513912f421c6fa98dbcd"/>
     <outline title="Terminally Incoherent" text="Terminally Incoherent" type="rss" xmlUrl="http://www.terminally-incoherent.com/blog/feed/" htmlUrl="http://www.terminally-incoherent.com/blog"/>
     <outline title="TED-Ed" text="TED-Ed" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCsooa4yRKGN_zEE8iknghZA" htmlUrl="http://www.youtube.com/user/TEDEducation"/>
-    <outline title="Tech Notes" text="Tech Notes" type="rss" xmlUrl="http://neugierig.org/software/blog/atom.xml" htmlUrl="http://neugierig.org/software/blog/"/>
     <outline title="TaoLaoGa" text="TaoLaoGa" type="rss" xmlUrl="http://taolaoga.blogspot.com/feeds/posts/default" htmlUrl="http://taolaoga.blogspot.com/"/>
     <outline title="sysdig" text="sysdig" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCDbiexphNqm5BkSFpQuxRAA" htmlUrl="http://www.youtube.com/channel/UCDbiexphNqm5BkSFpQuxRAA"/>
     <outline title="Sysdig Cloud" text="Sysdig Cloud" type="rss" xmlUrl="https://sysdig.com/feed/" htmlUrl="https://sysdig.com/"/>
@@ -160,7 +156,6 @@
     <outline title="planet commandline + snippets" text="planet commandline + snippets" type="rss" xmlUrl="http://planet-commandline.org/+snippets/atom.xml" htmlUrl="http://www.planet-commandline.org/+snippets/"/>
     <outline title="Planet Arch Linux" text="Planet Arch Linux" type="rss" xmlUrl="http://planet.archlinux.org/atom.xml" htmlUrl="https://planet.archlinux.org/"/>
     <outline title="Pixel Laboratories" text="Pixel Laboratories" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCO_wMcWmsdfpqoz7x51XnXw" htmlUrl="http://www.youtube.com/user/PixelLaboratories"/>
-    <outline title="www.pixelbeat.org" text="www.pixelbeat.org" type="rss" xmlUrl="http://www.pixelbeat.org/feed/rss2.xml" htmlUrl="http://www.pixelbeat.org/"/>
     <outline title="Pie Comic by John McNamee" text="Pie Comic by John McNamee" type="rss" xmlUrl="http://piecomic.tumblr.com/rss" htmlUrl="http://piecomic.tumblr.com/"/>
     <outline title="Pictures in Boxes" text="Pictures in Boxes" type="rss" xmlUrl="http://picturesinboxescomic.tumblr.com/rss" htmlUrl="http://picturesinboxescomic.tumblr.com/"/>
     <outline title="PhilosophyFile" text="PhilosophyFile" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCIThl1QA8ICaoYT630pn4IA" htmlUrl="http://www.youtube.com/user/PhilosophyFile"/>
@@ -200,7 +195,6 @@
     <outline title="Nick Bradbury" text="Nick Bradbury" type="rss" xmlUrl="http://feeds.feedburner.com/NickBradbury" htmlUrl="http://nickbradbury.com/"/>
     <outline title="NGINX" text="NGINX" type="rss" xmlUrl="http://nginx.com/feed/" htmlUrl="http://nginx.com/"/>
     <outline title="NETRESEC Network Security Blog" text="NETRESEC Network Security Blog" type="rss" xmlUrl="http://www.netresec.com/rss.ashx" htmlUrl="http://www.netresec.com/?page=Blog"/>
-    <outline title="Nerf NOW!!" text="Nerf NOW!!" type="rss" xmlUrl="http://www.nerfnow.com/index.xml" htmlUrl="http://www.nerfnow.com/"/>
     <outline title="Neopythonic" text="Neopythonic" type="rss" xmlUrl="http://neopythonic.blogspot.com/feeds/posts/default" htmlUrl="http://neopythonic.blogspot.com/"/>
     <outline title="Neil Slorance" text="Neil Slorance" type="rss" xmlUrl="http://www.neilslorance.com/feed/" htmlUrl="http://www.neilslorance.com/"/>
     <outline title="http://www.haydenplanetarium.org/tyson/feed" text="http://www.haydenplanetarium.org/tyson/feed" type="rss" xmlUrl="http://www.haydenplanetarium.org/tyson/feed" htmlUrl="http://www.haydenplanetarium.org/tyson/feed"/>
@@ -236,7 +230,6 @@
     <outline title="Lowering the Bar" text="Lowering the Bar" type="rss" xmlUrl="http://www.loweringthebar.net/atom.xml" htmlUrl="http://www.loweringthebar.net/"/>
     <outline title="LOLDWELL.com" text="LOLDWELL.com" type="rss" xmlUrl="http://loldwell.com/?feed=rss2" htmlUrl="http://loldwell.com/"/>
     <outline title="The Logical Language Group" text="The Logical Language Group" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC0x_lRMgxm0Kp1-5geKW1aw" htmlUrl="http://www.youtube.com/user/LogicalLanguageGroup"/>
-    <outline title="Loading Artist" text="Loading Artist" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=11234c15a36689ee7a34d791b113e6c6&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=11234c15a36689ee7a34d791b113e6c6"/>
     <outline title="Hi, I'm Liz" text="Hi, I'm Liz" type="rss" xmlUrl="http://lizclimo.tumblr.com/rss" htmlUrl="http://lizclimo.tumblr.com/"/>
     <outline title="Little Big Details" text="Little Big Details" type="rss" xmlUrl="http://littlebigdetails.com/rss" htmlUrl="http://littlebigdetails.com/"/>
     <outline title="Linux.conf.au 2015 -- Auckland, New Zealand" text="Linux.conf.au 2015 -- Auckland, New Zealand" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCnIMb-fa7vesn2m95gHio_w" htmlUrl="http://www.youtube.com/user/linuxconfau2015"/>
@@ -328,7 +321,6 @@
     <outline title="FavScientist" text="FavScientist" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4_HPD_v8Id82lnBrX7w7lg" htmlUrl="http://www.youtube.com/user/FavScientist"/>
     <outline title="Fake Science" text="Fake Science" type="rss" xmlUrl="http://fakescience.tumblr.com/rss" htmlUrl="http://fakescience.tumblr.com/"/>
     <outline title="Fabulous adventures in coding" text="Fabulous adventures in coding" type="rss" xmlUrl="http://ericlippert.com/feed/" htmlUrl="http://ericlippert.com/"/>
-    <outline title="The Escapist : Extra Punctuation" text="The Escapist : Extra Punctuation" type="rss" xmlUrl="http://www.escapistmagazine.com/rss/articles/video-games/columns/extra-punctuation" htmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/extra-punctuation"/>
     <outline title="Extraordinary comics" text="Extraordinary comics" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=8d35990bbb9a41d66c42783dbaea9dd3&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=8d35990bbb9a41d66c42783dbaea9dd3"/>
     <outline title="Explosm.net" text="Explosm.net" type="rss" xmlUrl="https://feeds.feedburner.com/Explosm" htmlUrl="http://www.explosm.net/rss.php"/>
     <outline title="ExplosmEntertainment" text="ExplosmEntertainment" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCWXCrItCF6ZgXrdozUS-Idw" htmlUrl="http://www.youtube.com/user/ExplosmEntertainment"/>
@@ -337,8 +329,6 @@
     <outline title="Eric Holk" text="Eric Holk" type="rss" xmlUrl="http://blog.theincredibleholk.org/atom.xml" htmlUrl="http://blog.theincredibleholk.org/"/>
     <outline title="Enter the void *" text="Enter the void *" type="rss" xmlUrl="http://blog.emillon.org/rss.xml" htmlUrl="http://blog.emillon.org/"/>
     <outline title="engineerguy" text="engineerguy" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2bkHVIDjXS7sgrgjFtzOXQ" htmlUrl="http://www.youtube.com/user/engineerguyvideo"/>
-    <outline title="Endless Parentheses" text="Endless Parentheses" type="rss" xmlUrl="http://endlessparentheses.com/atom.xml" htmlUrl="http://endlessparentheses.com/?source=rss"/>
-    <outline title="Endless Origami" text="Endless Origami" type="rss" xmlUrl="http://endlessorigami.com/feed/" htmlUrl="http://endlessorigami.com/"/>
     <outline title="EminemVEVO" text="EminemVEVO" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC20vb-R_px4CguHzzBPhoyQ" htmlUrl="http://www.youtube.com/user/EminemVEVO"/>
     <outline title="emacsrocks" text="emacsrocks" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCkRmQ_G_NbdbCQMpALg6UPg" htmlUrl="http://www.youtube.com/user/emacsrocks"/>
     <outline title="eluveitieofficial" text="eluveitieofficial" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UClV0x3k5Oxm7vREoLEOPeGg" htmlUrl="http://www.youtube.com/user/eluveitieofficial"/>
@@ -349,8 +339,6 @@
     <outline title="Eben Moglen | The Guardian" text="Eben Moglen | The Guardian" type="rss" xmlUrl="http://www.theguardian.com/profile/eben-moglen/rss" htmlUrl="http://www.theguardian.com/profile/eben-moglen"/>
     <outline title="Dungeon Crawl Stone Soup" text="Dungeon Crawl Stone Soup" type="rss" xmlUrl="http://crawl.develz.org/wordpress/feed" htmlUrl="http://crawl.develz.org/wordpress"/>
     <outline title="Đu Đồ Đút" text="Đu Đồ Đút" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCC7ruh9xQCr0ze5bdd7FQxw" htmlUrl="http://www.youtube.com/user/dudodut"/>
-    <outline title="Dropbox Tech Blog" text="Dropbox Tech Blog" type="rss" xmlUrl="http://tech.dropbox.com/feed/" htmlUrl="https://dropboxtechblog.wordpress.com/"/>
-    <outline title="Dropbox Blog" text="Dropbox Blog" type="rss" xmlUrl="http://blog.dropbox.com/feed/" htmlUrl="https://dropboxmainblog.wordpress.com/"/>
     <outline title="Drawn to Knowledge" text="Drawn to Knowledge" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCPubeOuXQEXOOo9jgiw2_ug" htmlUrl="http://www.youtube.com/user/drawntoknowledge"/>
     <outline title="Drawing Board" text="Drawing Board" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=97aeae9504e3679baa8f8c75ecea788c&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=97aeae9504e3679baa8f8c75ecea788c"/>
     <outline title="DotaCinema" text="DotaCinema" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCNRQ-DWUXf4UVN9L31Y9f3Q" htmlUrl="http://www.youtube.com/user/DotaCinema"/>
@@ -372,7 +360,6 @@
     <outline title="Scripting News" text="Scripting News" type="rss" xmlUrl="http://scripting.com/rss.xml" htmlUrl="http://scripting.com/"/>
     <outline title="Daring Fireball" text="Daring Fireball" type="rss" xmlUrl="https://daringfireball.net/feeds/main" htmlUrl="http://daringfireball.net/"/>
     <outline title="Dan Kaminsky's Blog" text="Dan Kaminsky's Blog" type="rss" xmlUrl="http://dankaminsky.com/feed/" htmlUrl="http://dankaminsky.com/"/>
-    <outline title="daniel.haxx.se" text="daniel.haxx.se" type="rss" xmlUrl="http://daniel.haxx.se/blog/feed/" htmlUrl="http://daniel.haxx.se/blog"/>
     <outline title="Cyborgmatt" text="Cyborgmatt" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCe3QZ0CBLNZeHV-luMp1KEA" htmlUrl="http://www.youtube.com/user/Cyborgmatt"/>
     <outline title="CyanogenMod" text="CyanogenMod" type="rss" xmlUrl="http://www.cyanogenmod.org/feed/" htmlUrl="http://www.cyanogenmod.org/"/>
     <outline title="curl | sh" text="curl | sh" type="rss" xmlUrl="http://curlpipesh.tumblr.com/rss" htmlUrl="http://curlpipesh.tumblr.com/"/>
@@ -398,7 +385,6 @@
     <outline title="cat versus human" text="cat versus human" type="rss" xmlUrl="http://feeds.feedburner.com/CatVersusHuman" htmlUrl="http://www.catversushuman.com/"/>
     <outline title="Calm Blue Oceans" text="Calm Blue Oceans" type="rss" xmlUrl="http://calmblueoceanscomic.tumblr.com/rss" htmlUrl="http://calmblueoceanscomic.tumblr.com/"/>
     <outline title="Calamities of Nature" text="Calamities of Nature" type="rss" xmlUrl="http://feeds.feedburner.com/calamitiesofnature" htmlUrl="http://www.calamitiesofnature.com/"/>
-    <outline title="Buttersafe" text="Buttersafe" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=3e446abc6bd27ca8d55324b345809276&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=3e446abc6bd27ca8d55324b345809276"/>
     <outline title="Bruce Lawson's  personal site" text="Bruce Lawson's  personal site" type="rss" xmlUrl="http://www.brucelawson.co.uk/feed/" htmlUrl="http://www.brucelawson.co.uk/"/>
     <outline title="Bram Cohen" text="Bram Cohen" type="rss" xmlUrl="http://bramcohen.com/feed" htmlUrl="http://bramcohen.com/"/>
     <outline title="BradyStuff" text="BradyStuff" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCRwr1kxjL-8m1L6mQXB2zSQ" htmlUrl="http://www.youtube.com/user/BradyStuff"/>
@@ -456,16 +442,44 @@
     <outline title="the jsomers.net blog" text="the jsomers.net blog" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=607c4de555ebdf34f7f6abc6ab8d73e8" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=607c4de555ebdf34f7f6abc6ab8d73e8"/>
     <outline title="The Book of Biff" text="The Book of Biff" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=79ea2e0d8d06855ca9b209dd5fcce149&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=79ea2e0d8d06855ca9b209dd5fcce149"/>
     <outline title="secretGeek copy" text="secretGeek copy" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=ec927ef2f60ab6c4c23a3e22cd40d44c" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=ec927ef2f60ab6c4c23a3e22cd40d44c"/>
-    <outline title="Extra Fabulous Comics" text="Extra Fabulous Comics" type="rss" xmlUrl="https://pipes.yahoo.com/pipes/pipe.run?_id=575e370cf4f116d098ac5cb632cd1665&amp;_render=rss" htmlUrl="https://pipes.yahoo.com/pipes/pipe.info?_id=575e370cf4f116d098ac5cb632cd1665"/>
     <outline title="C10M" text="C10M" type="rss" xmlUrl="http://c10m.robertgraham.com/" htmlUrl="http://c10m.robertgraham.com/"/>
-    <outline title="Recent Commits to core:master" text="Recent Commits to core:master" type="rss" xmlUrl="https://github.com/owncloud/core/commits/master.atom" htmlUrl="https://github.com/owncloud/core/commits/master"/>
     <outline title="Recent Commits to news:master" text="Recent Commits to news:master" type="rss" xmlUrl="https://github.com/owncloud/news/commits/master" htmlUrl="https://github.com/owncloud/news/commits/master"/>
     <outline title="Recent Commits to contacts:master" text="Recent Commits to contacts:master" type="rss" xmlUrl="https://github.com/owncloud/contacts/commits/master" htmlUrl="https://github.com/owncloud/contacts/commits/master"/>
     <outline title="Recent Commits to News-Android-App:master" text="Recent Commits to News-Android-App:master" type="rss" xmlUrl="https://github.com/owncloud/News-Android-App/commits/master" htmlUrl="https://github.com/owncloud/News-Android-App/commits/master"/>
     <outline title="kottke.org" text="kottke.org" type="rss" xmlUrl="http://kottke.org/" htmlUrl="http://kottke.org/"/>
     <outline title="AMD" text="AMD" type="rss" xmlUrl="https://www.youtube.com/user/amd" htmlUrl="http://www.youtube.com/user/amd"/>
     <outline title="Huon on the internet" text="Huon on the internet" type="rss" xmlUrl="https://huonw.github.io/blog/" htmlUrl="http://huonw.github.io/blog/"/>
-    <outline title="Recent Commits to sysdig:dev" text="Recent Commits to sysdig:dev" type="rss" xmlUrl="https://github.com/draios/sysdig/commits/dev" htmlUrl="https://github.com/draios/sysdig/commits/dev"/>
-    <outline title="Raymii.org" text="Raymii.org" type="rss" xmlUrl="https://raymii.org/s/feed.xml" htmlUrl="https://raymii.org/s"/>
+    <outline title="Japan Foundation Việt Nam" text="Japan Foundation Việt Nam" type="rss" xmlUrl="http://jpf.org.vn/feed/" htmlUrl="http://jpf.org.vn/"/>
+    <outline title="Evan Miller's News" text="Evan Miller's News" type="rss" xmlUrl="http://www.evanmiller.org/" htmlUrl="http://evanmiller.org/"/>
+    <outline title="This Week in Wizard" text="This Week in Wizard" type="rss" xmlUrl="http://wizardmac.tumblr.com/" htmlUrl="http://wizardmac.tumblr.com/"/>
+    <outline title="SSLMate Blog" text="SSLMate Blog" type="rss" xmlUrl="https://sslmate.com/blog/" htmlUrl="https://sslmate.com/blog"/>
+    <outline title="SciShow Space" text="SciShow Space" type="rss" xmlUrl="https://youtube.com/user/scishowspace" htmlUrl="http://www.youtube.com/channel/UCrMePiHCWG4Vwqv3t7W9EFg"/>
+    <outline title="GitHub Engineering" text="GitHub Engineering" type="rss" xmlUrl="http://githubengineering.com/" htmlUrl="http://githubengineering.com/"/>
+    <outline title="Tech Notes" text="Tech Notes" type="rss" xmlUrl="http://neugierig.org/software/blog/" htmlUrl="http://neugierig.org/software/blog/"/>
+    <outline title="Fox-IT Youtube Channel" text="Fox-IT Youtube Channel" type="rss" xmlUrl="https://www.youtube.com/user/foxitsecurity" htmlUrl="http://www.youtube.com/channel/UCgd3tGOs59njaBtUD4xPAXQ"/>
+    <outline title="Fox-IT International blog" text="Fox-IT International blog" type="rss" xmlUrl="http://blog.fox-it.com/" htmlUrl="http://blog.fox-it.com/"/>
+    <outline title="AMD Blogs" text="AMD Blogs" type="rss" xmlUrl="http://feeds.feedburner.com/amd/all" htmlUrl="http://pipes.yahoo.com/pipes/pipe.info?_id=bd39f5a6488826a99a96329ca48b6ca7"/>
+    <outline title="Comics" text="Comics" type="rss" xmlUrl="http://www.jimbenton.com/page14/files/feed.xml" htmlUrl="http://www.jimbenton.com/page14"/>
+    <outline title="Konklone" text="Konklone" type="rss" xmlUrl="https://konklone.com/blog" htmlUrl="https://konklone.com/"/>
+    <outline title="Uniform Porn" text="Uniform Porn" type="rss" xmlUrl="http://uniform-porn.org/" htmlUrl="http://uniform-porn.org/"/>
+    <outline title="The Setup" text="The Setup" type="rss" xmlUrl="http://usesthis.com/" htmlUrl="http://usesthis.com/"/>
+    <outline title="Ninja Sex Party" text="Ninja Sex Party" type="rss" xmlUrl="https://www.youtube.com/user/NinjaSexParty" htmlUrl="http://www.youtube.com/channel/UCs7yDP7KWrh0wd_4qbDP32g"/>
+    <outline title="The Scene" text="The Scene" type="rss" xmlUrl="https://www.youtube.com/user/thesceneYT" htmlUrl="http://www.youtube.com/channel/UC7duzDwGoGU6S51Qyask0kA"/>
+    <outline title="MyConfinedSpace NSFW" text="MyConfinedSpace NSFW" type="rss" xmlUrl="http://nsfw.myconfinedspace.com" htmlUrl="http://nsfw.myconfinedspace.com/"/>
+    <outline title="Release notes from uBlock" text="Release notes from uBlock" type="rss" xmlUrl="https://github.com/chrisaljoudi/uBlock/releases.atom" htmlUrl="https://github.com/chrisaljoudi/uBlock/releases"/>
+    <outline title="Release notes from syncthing" text="Release notes from syncthing" type="rss" xmlUrl="https://github.com/syncthing/syncthing/releases.atom" htmlUrl="https://github.com/syncthing/syncthing/releases"/>
+    <outline title="Software Maniacs blog" text="Software Maniacs blog" type="rss" xmlUrl="http://softwaremaniacs.org/blog/feed/en/" htmlUrl="http://softwaremaniacs.org/blog/en/"/>
+    <outline title="Nerf NOW!!" text="Nerf NOW!!" type="rss" xmlUrl="https://www.nerfnow.com/" htmlUrl="http://www.nerfnow.com/"/>
+    <outline title="Extra Fabulous Comics" text="Extra Fabulous Comics" type="rss" xmlUrl="http://extrafabulouscomics.com/" htmlUrl="http://extrafabulouscomics.com/"/>
+    <outline title="Buttersafe" text="Buttersafe" type="rss" xmlUrl="http://buttersafe.com/" htmlUrl="http://buttersafe.com/"/>
+    <outline title="The Escapist : Extra Punctuation" text="The Escapist : Extra Punctuation" type="rss" xmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/extra-punctuation" htmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/extra-punctuation"/>
+    <outline title="Endless Origami" text="Endless Origami" type="rss" xmlUrl="http://endlessorigami.com/" htmlUrl="http://endlessorigami.com/"/>
+    <outline title="Loading Artist" text="Loading Artist" type="rss" xmlUrl="http://www.loadingartist.com/" htmlUrl="http://www.loadingartist.com/"/>
+    <outline title="Saturday Morning Breakfast Cereal" text="Saturday Morning Breakfast Cereal" type="rss" xmlUrl="http://www.smbc-comics.com/rss.php" htmlUrl="http://www.smbc-comics.com/"/>
+    <outline title="xkcd.com" text="xkcd.com" type="rss" xmlUrl="https://xkcd.com/atom.xml" htmlUrl="http://xkcd.com/"/>
+    <outline title="www.pixelbeat.org" text="www.pixelbeat.org" type="rss" xmlUrl="http://www.pixelbeat.org/" htmlUrl="http://www.pixelbeat.org/"/>
+    <outline title="Tree Lobsters!" text="Tree Lobsters!" type="rss" xmlUrl="http://www.treelobsters.com/" htmlUrl="http://www.treelobsters.com/"/>
+    <outline title="Things in Squares » Languages » English" text="Things in Squares » Languages » English" type="rss" xmlUrl="http://www.thingsinsquares.com/en/" htmlUrl="http://www.thingsinsquares.com/"/>
+    <outline title="The Escapist : Experienced Points" text="The Escapist : Experienced Points" type="rss" xmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/experienced-points" htmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/experienced-points"/>
   </body>
 </opml>
