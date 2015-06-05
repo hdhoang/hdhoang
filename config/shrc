@@ -21,6 +21,9 @@ alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
 alias x=parallel
 alias e='"$EDITOR" -n'
+function starred_youtube() {
+    mysql -uroot -p -NBe 'select url from oc.oc_news_items where status=4 and url like "%youtube%"; update oc.oc_news_items set status=0 where status=4 and url like "%youtube%";' | tee -a $v/_q.txt 
+}
 function getc() {
     cd ${1:-.}
     for t in {1..1}; do
