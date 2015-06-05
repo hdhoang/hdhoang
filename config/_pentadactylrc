@@ -94,7 +94,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! font.name.sans-serif.x-western=Linux Biolinum O
    \ set! font.name.serif.x-western=Linux Libertine O
    \ set! extensions.checkCompatibility.nightly=false
-   \ extadd https://github.com/chrisaljoudi/uBlock/releases/download/0.9.4.0/uBlock.firefox.xpi
+   \ extadd https://github.com/chrisaljoudi/uBlock/releases/download/0.9.5.0/uBlock.firefox.xpi
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
