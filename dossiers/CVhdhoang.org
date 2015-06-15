@@ -1,0 +1,55 @@
+#+TITLE: HOANG DUC HIEU
+#+EMAIL: 1988 / +84-166-241-9526 / cv@zahe.me
+#+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t
+#+LATEX_CLASS_OPTIONS: [twocolumn]
+#+LATEX_HEADER: \usepackage{titling}
+#+LATEX_HEADER: \pretitle{\begin{flushright}\LARGE}
+#+LATEX_HEADER: \posttitle{\par\end{flushright}}
+#+LATEX_HEADER: \preauthor{\begin{flushright}}
+#+LATEX_HEADER: \postauthor{\end{flushright}}
+#+LATEX_HEADER: \pagenumbering{gobble}
+* Education
+  - 2014 - now :: Studying System Administration at Bachkhoa-Aptech
+                  (graduating early 2017)
+  - 2013 - 2014 :: Finished K12 and completed accounting course at
+                   Quang Trung private school
+  - 2007 - 2012 :: Self-learned various topics
+    - Programming languages (web and backend)
+    - History of free software
+    - Hanoi GNU/Linux user community
+    - Wing-chun martial arts
+    - The constructed logical language Lojban
+  - 2006 - 2007 :: Freshman in computer programming at Monash College,
+                   Australia (earned Distinction and High Distinction
+                   in most subjects)
+  - 2003 - 2006 :: Chu Van An Highschool, majoring in English (earned
+                   2nd place in city-level competition)
+#+LATEX: \newpage
+* Qualifications and skills
+** IT skills
+ - In-depth GNU/Linux usage and administration, experienced in
+   self-hosting web sites
+ - Comprehensive network understanding
+ - Office equipment troubleshooting
+ - Familiarity with various OSes
+ - Using version control systems, especially git
+ - Contributing to free software projects ([[https://github.com/hdhoang][GitHub profile]])
+** Language skills 
+ - Fluency in English (IELTS 7.5, last taken 2009)
+ - Elementary Japanese (striving to acquire N3 in early 2016)
+** Others
+ - Self-teaching discipline
+ - Strong interest in learning new topics
+* Objectives							    :ARCHIVE:
+ - What ::
+   + Resident technician for an organization
+   + System/network administrator at a service provider
+ - When :: part-time, until graduation
+ - Why :: a challenging field with continual updates, but still have low-stress time for self-improving
+ - Who :: NGO, SME
+ - Where :: HN - HY - HD
+* Interests
+ - Exploring science, history, and natural subjects
+ - Science-fictional novels, rational fanfictions
+ - Electric guitar riffs
+ - Frequent blood donor (until no longer eligible)
