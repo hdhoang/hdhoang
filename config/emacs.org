@@ -280,7 +280,7 @@
                    (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))))
   #+end_src
   #+begin_src emacs-lisp
-    (setq frame-title-format "%f"
+    (setq frame-title-format "%b"
           visible-bell t
           calendar-week-start-day 1)
     (tool-bar-mode -1)
