@@ -30,7 +30,10 @@ function vtv() {
 function getc() {
     cd ${1:-.}
     for t in {1..1}; do
-	[ -r _q.txt ] && youtube-dl
+	[ -r _q.txt ] && for f in _q*txt; do
+	    echo $f
+	    youtube-dl -a $f;
+	done
 	[ -r _wq.txt ] && wget --continue --input _wq.txt
     done
 }
