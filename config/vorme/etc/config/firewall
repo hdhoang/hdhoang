@@ -168,3 +168,12 @@ config redirect 'redirect_enabled_number_6'
 	option dest_ip '10.117.14.54'
 	option dest_port '4004'
 
+config redirect 'redirect_enabled_number_7'
+	option name 'ovpn'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'udp'
+	option src_dport '22'
+	option dest_ip '10.117.14.54'
+	option dest_port '1194'
+
