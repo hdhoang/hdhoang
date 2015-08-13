@@ -159,3 +159,12 @@ config redirect 'redirect_enabled_number_5'
 	option dest_ip '10.117.14.54'
 	option dest_port '4500'
 
+config redirect 'redirect_enabled_number_6'
+	option name 'ipfs'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'udp'
+	option src_dport '4004'
+	option dest_ip '10.117.14.54'
+	option dest_port '4004'
+
