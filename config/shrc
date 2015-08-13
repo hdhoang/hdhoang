@@ -2,19 +2,13 @@
 # ~/.zshrc ~/.bash_login
 
 # places
-if [[ $(uname -o) == Msys ]]; then
-    mount=/h
-else
-    mount=~
-fi
+mount=~
 h=$mount/Copy
 conf=$h/config/$(hostname)
 dl=$mount/Downloads
 v=$mount/Videos
 fm=$mount/Music
 m=$fm/_new
-
-export PATH=/usr/lib/ccache/bin:$PATH:$h/bin
 
 # utils
 alias g='git'
