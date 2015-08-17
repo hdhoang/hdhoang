@@ -107,7 +107,8 @@ if [ -n "$ZSH_NAME" ]; then
     which dnf &>/dev/null && compdef dnf=yum
     which pacman &>/dev/null && compdef yaourt=pacman
 
-    PROMPT="%m %~ %w %(?..%? )
+    autoload -U colors && colors
+    PROMPT="%m $fg_bold[yellow]%~$reset_color %w %(?..%? )
 %# "
 
     setopt dvorak
