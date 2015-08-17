@@ -19,3 +19,7 @@
     d = diff --word-diff=porcelain
 [push]
 	default = simple
+[pull]
+	rebase = true
+[rebase]
+	stat = true
