@@ -269,6 +269,10 @@
             (sql-database "selfoss")
             (sql-server "192.168.1.54"))))
     #+end_src
+** YAML
+   #+begin_src emacs-lisp
+     (use-package yaml-mode)
+   #+end_src
 * Appearance
   Set terminal title
   #+begin_src emacs-lisp
