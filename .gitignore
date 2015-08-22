@@ -3,30 +3,19 @@
 *.ico
 *.jpg
 *.mp4
+*.pdf
 *.png
 *.rtf
-/.dropbox
-/.dropbox.cache/
 /.stfolder
 /Books/
-/Camera Uploads/
 /Desktop/
-/config/.config/MusicBrainz/
-/config/.config/mpv/watch_later/
-/config/.emacs.d/
-/config/.gnupg/
-/config/.lesshst
-/config/.smex-items
-/config/.ssh/known_hosts
+/Pictures/
+/bin/
 /config/emacs.el
-/config/mpd_sticker
 /config/packettracer/
-/fedevel pcb course/
-/playlists/
+/config/vorme/
+/dossiers/
 /secrets/
 /trail/*.html
 desktop.ini
-/bin/
-/config/vorme/tmp/
-/config/vorme/usr/
 /config/kub/eap.task
