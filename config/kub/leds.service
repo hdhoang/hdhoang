@@ -1,6 +1,6 @@
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/leds
+ExecStart=/usr/local/bin/leds
 
 [Install]
 WantedBy=basic.target

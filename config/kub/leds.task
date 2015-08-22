@@ -1,0 +1,3 @@
+    - template: src=leds dest=/usr/local/bin/leds
+    - template: src=leds.service dest=/etc/systemd/system/leds.service
+    - service: name=leds state=started enabled=yes

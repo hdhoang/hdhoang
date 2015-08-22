@@ -1,0 +1,8 @@
+# -*- mode: yaml -*-
+- hosts: k
+  tasks:
+    - command: chdir=~/owncloud git pull
+    - command: chdir=~/owncloud/apps/news git pull
+    - command: /home/hdhoang/owncloud/occ upgrade --no-app-disable
+      become: yes
+      become_user: http

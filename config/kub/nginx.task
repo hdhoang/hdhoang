@@ -1,0 +1,13 @@
+# -*- mode: yaml -*-
+- hosts: k
+  vars:
+    network: 10.117.14.
+    address: "{{ network }}54"
+  become: yes
+  tasks:
+    - pacman: name=nginx
+    - template: src=nginx.conf dest=/etc/nginx/nginx.conf
+    - copy: src=redirects dest=/etc/nginx/redirects
+    - copy: src=../../secrets/1_zahe.me_bundle.crt dest=/etc/nginx/zahe.me.crt
+    - copy: src=../../secrets/2_zahe.me.key dest=/etc/nginx/zahe.me.key
+    - service: name=nginx state=reloaded enabled=yes

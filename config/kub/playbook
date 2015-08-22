@@ -1,0 +1,20 @@
+# -*- mode: yaml -*-
+- hosts: k
+  vars:
+    network: 10.117.14.
+    address: "{{ network }}54"
+  become: yes
+  tasks:
+    - pacman: name=atop
+    - pacman: name=parallel
+    - pacman: name=tmux
+    - pacman: name=tree
+    - pacman: name=vim
+    - pacman: name=zsh
+    - include: leds.task
+    - include: minidlna.task
+    - include: nginx.task
+    - include: openvpn.task
+    - include: owncloud.task
+    - include: strongswan.task
+    - include: tor.task

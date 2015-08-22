@@ -1,0 +1,8 @@
+    - template: src=ipsec.conf dest=/etc/ipsec.conf
+    - copy: src=../../secrets/1_k.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/k.zahe.me.crt
+    - copy: src=../../secrets/2_k.zahe.me.key dest=/etc/ipsec.d/private/k.zahe.me.key
+    - copy: src=../../secrets/1_ton.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/ton.zahe.me.crt
+    - lineinfile: "line=': RSA k.zahe.me.key' name=/etc/ipsec.secrets create=yes mode=0600 state=present"
+    - sysctl: key=net.ipv4.conf.eth0.forwarding value=1
+    - include: eap.task
+    - service: name=strongswan state=started enabled=yes
