@@ -13,7 +13,10 @@
         - name: tree
         - name: vim
         - name: zsh
+
     - template: src=eth0.network dest=/etc/systemd/network/eth0.network
+    - lineinfile: dest=/etc/resolv.conf line="nameserver {{ network }}.1"
+    - service: name=systemd-networkd state=started enabled=yes
 
     - copy: src=leds dest=/usr/local/bin/leds mode=744
     - template: src=leds.service dest=/etc/systemd/system/leds.service
@@ -41,7 +44,7 @@
     - git: repo=https://github.com/owncloud/news dest=/home/hdhoang/owncloud/apps/news
       become: no
     - template: src=owncloud.ini dest=/etc/uwsgi/owncloud.ini
-    - service: name=uwsgi@owncloud state=started enabled=yes
+    - service: name=uwsgi@owncloud state=restarted enabled=yes
 
     - template: src=ipsec.conf dest=/etc/ipsec.conf
     - copy: src=../../secrets/1_k.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/k.zahe.me.crt
