@@ -1,3 +1,0 @@
-    - pacman: name=openvpn
-    - template: src=openvpn_kub.conf dest=/etc/openvpn/kub.conf
-    - service: name=openvpn@kub state=started enabled=yes

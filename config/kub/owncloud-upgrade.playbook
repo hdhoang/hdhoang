@@ -1,0 +1,8 @@
+# -*- mode: yaml -*-
+- hosts: k
+  tasks:
+    - git: repo=https://github.com/owncloud/core dest=/home/hdhoang/owncloud
+    - git: repo=https://github.com/owncloud/news dest=/home/hdhoang/owncloud/apps/news
+    - command: /home/hdhoang/owncloud/occ upgrade --no-app-disable || true
+      become: yes
+      become_user: http

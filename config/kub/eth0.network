@@ -1,0 +1,7 @@
+[Match]
+Name=eth0
+[Network]
+Address={{ address }}/24
+DNS={{ network }}.1
+Gateway={{ network }}.1
+IPForward=yes
