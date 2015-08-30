@@ -271,7 +271,7 @@
     #+end_src
 ** YAML
    #+begin_src emacs-lisp
-     (use-package yaml-mode)
+     (use-package yaml-mode :ensure)
    #+end_src
 * Appearance
   Set terminal title
