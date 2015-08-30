@@ -9,6 +9,7 @@ dl=$mount/Downloads
 v=$mount/Videos
 fm=$mount/Music
 m=$fm/_new
+PATH=$h/bin:/usr/bin:$PATH
 
 # utils
 alias g='git'
