@@ -212,8 +212,6 @@
      (use-package magit
        :ensure
        :bind ("C-x g" . magit-status))
-     (use-package evil
-       :config (evil-set-initial-state 'git-commit-mode 'insert))
      (setq magit-save-some-buffers 'dontask
            magit-last-seen-setup-instructions "1.4.0"
            vc-follow-symlinks t)
