@@ -257,16 +257,6 @@
      (global-set-key (kbd "C-x M-t") #'term)
      (define-key comint-mode-map (kbd "<SPC>") #'comint-magic-space)
    #+end_src
-** SQL
-*** Connections
-    #+begin_src emacs-lisp
-      (setq sql-connection-alist '(
-          ("selfoss"
-            (sql-product 'mysql)
-            (sql-user "selfoss")
-            (sql-database "selfoss")
-            (sql-server "192.168.1.54"))))
-    #+end_src
 ** YAML
    #+begin_src emacs-lisp
      (use-package yaml-mode :ensure)
