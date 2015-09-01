@@ -6,14 +6,14 @@
     network: 10.117.14
     address: "{{ network }}.54"
   tasks:
-    - pacman: name={{ item.name }}
+    - pacman: name={{ item }}
       with_items:
-        - name: atop
-        - name: parallel
-        - name: tmux
-        - name: tree
-        - name: vim
-        - name: zsh
+        - atop
+        - parallel
+        - tmux
+        - tree
+        - vim
+        - zsh
 
     - template: src=eth0.network dest=/etc/systemd/network/eth0.network
     - lineinfile: dest=/etc/resolv.conf line="nameserver {{ network }}.1"
