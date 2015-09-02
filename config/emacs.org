@@ -18,6 +18,7 @@
      load-prefer-newer t
      tramp-default-method "ssh"
      make-backup-files nil
+     safe-local-variable-values '((flycheck-mode . nil))
      scroll-preserve-screen-position 'always
      desktop-load-locked-desktop t ;  Load locked desktop from crashed emacs
      inhibit-startup-screen t)
