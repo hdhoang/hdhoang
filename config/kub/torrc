@@ -1,8 +1,8 @@
 # -*- mode: conf-space -*-
 ContactInfo tor at zahe dot me
-Nickname kub
-DirPort 4660
-ORPort 5880
+Nickname {{ ansible_hostname }}
+DirPort {{ ports.torDir }}
+ORPort {{ ports.torOr }}
 SOCKSPort {{ address }}:9050
 MaxAdvertisedBandwidth 40 KBytes
 ExitPolicy reject *:*
