@@ -304,6 +304,9 @@
 ** TODO <2015-06-10 Wed> Kareem's Footprint
 ** TODO <2015-06-11 Thu> Carrotcature
 ** TODO <2015-06-13 Sat> Popcorn Shells
+** TODO <2015-06-17 Wed> Invisable Forest
+** TODO <2015-06-19 Fri> Chickencoopscope
+** TODO <2015-06-21 Sun> Heaven is your Home (For my Father, Thomas Manley Carroll)
 ** with Alix Lambert and Travis Dickerson
 *** DONE <2008-08> Running After Deer
 ** with Bryan "Brain" Mantia
@@ -606,6 +609,7 @@
 ** DONE <2011> One for Sorrow
 ** TODO <2014-04-25> Shadows of the Dying Sun
 * Iron Maiden								:FAV:
+** TODO <2015-09-04 Fri> The Book of Souls
 * Jack Wall
 ** DONE Jade Empire
 * James Hannigan							:FAV:
@@ -619,7 +623,7 @@
 ** TODO <2015-02-11 Wed> The Black Gangster
 * Jeremy Soule							       :game:
 ** DONE <2000> Icewind Dale
-* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]] :game:
+* [[http://musicbrainz.org/artist/5156bb2c-45d7-4660-8234-4d84452c93e1][Jesper Kyd]]							       :game:
 ** DONE <2011> Assassin's Creed Revelations
 ** TODO <2012-08-14> Darksiders II Original Soundtrack
 ** DONE [[http://musicbrainz.org/release/9508a04b-697a-41e6-a183-d4de4bea1a19][Hitman 2: Silent Assassin]]
@@ -1004,6 +1008,7 @@
 ** TODO <2013-06-25> Rise
 * Skrillex
 * Slayer
+** TODO <2015-09-11 Fri> Relentless
 * Snow Patrol
 ** DONE <2011> Fallen Empires
 * Sonata Arctica					   :riff:epic:FAV:fi:
@@ -1084,6 +1089,7 @@
 * The Smashing Pumpkins
 ** TODO <2012-06-18> Oceania
 ** TODO <2014-12-08 T2> Monuments to an Elegy
+** TODO <2015-05-22 Fri> Bruised Angel Wings
 * The Who
 * [[http://musicbrainz.org/artist/183e636e-d41c-43fe-a428-8a034eb20c7b][Theory of a Deadman]] :game:wail:
 ** DONE <2011> The Truth Is...
@@ -1244,7 +1250,7 @@
 * Zak Belica
 ** DONE <2005> SiN						       :game:
 * Zakk Wylde								 :jo:
-* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]] :FAV:inst:
+* [[http://www.jamendo.com/en/artist/340121/zero-project][Zero-Project]]							   :FAV:inst:
 ** DONE <2008-08-17 Sun> Disabled Emotions Suite
 ** DONE <2009-06-24 Wed> Earth
 ** DONE <2009-11-22 Sun> Ambient Symphony
@@ -1268,5 +1274,3 @@
 ** DONE <2008> Cánh cung
 * Toto
 ** TODO <2015-03-20 Fri> Toto XIV
-* Weedeater
-** TODO <2015-05-18 Mon> Goliathan
