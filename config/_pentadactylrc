@@ -88,9 +88,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
    \ set! font.default.x-western="sans-serif"
-   \ if /NT 6/.test(window.navigator.oscpu)
-   \     set! font.name.monospace.x-western=Consolas
-   \ fi
+   \ set! font.name.monospace.x-western=Hack
    \ set! font.name.sans-serif.x-western=Linux Biolinum O
    \ set! font.name.serif.x-western=Linux Libertine O
    \ set! extensions.checkCompatibility.nightly=false
