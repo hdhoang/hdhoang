@@ -88,9 +88,9 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
    \ set! font.default.x-western="sans-serif"
-   \ set! font.name.monospace.x-western=Hack
-   \ set! font.name.sans-serif.x-western=Linux Biolinum O
-   \ set! font.name.serif.x-western=Linux Libertine O
+   \ if /NT 6/.test(window.navigator.oscpu)
+   \     set! font.name.monospace.x-western=Consolas
+   \ fi
    \ set! extensions.checkCompatibility.nightly=false
    \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
