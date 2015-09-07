@@ -92,7 +92,6 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \     set! font.name.monospace.x-western=Consolas
    \ fi
    \ set! extensions.checkCompatibility.nightly=false
-   \ extadd https://www.eff.org/files/https-everywhere-devel.xpi
    \ set! extensions.https_everywhere._observatory.alt_roots=true
    \ set! extensions.https_everywhere._observatory.enabled=true
    \ set! extensions.https_everywhere._observatory.priv_dns=true
