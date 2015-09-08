@@ -87,8 +87,9 @@ function favm() {
 # system
 alias sc='sudo systemctl --full --system'
 alias uc='systemctl --full --user'
-alias i=yaourt
-alias mp='nn makepkg -isf'
+alias i='sudo pacman'
+function aur() { $h/config/aur.playbook -e name=$1 $@[2,-1]}
+alias mp='nn makepkg --install --syncdeps --force'
 pkg=/var/cache/pacman/pkg
 
 if [ -n "$BASH" ]; then
@@ -109,7 +110,6 @@ if [ -n "$ZSH_NAME" ]; then
     zstyle ':vcs_info:*' enable git
     autoload -U compinit && compinit
     which dnf &>/dev/null && compdef dnf=yum
-    which pacman &>/dev/null && compdef yaourt=pacman
 
     autoload -U colors && colors
     PROMPT="%m $fg_bold[yellow]%~$reset_color %w %(?..%? )

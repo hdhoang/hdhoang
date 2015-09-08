@@ -1,0 +1,9 @@
+#!/bin/ansible-playbook
+# -*- mode: yaml -*-
+- hosts: arch
+  vars:
+    store: /home/hdhoang/archlinux
+  tasks:
+    - get_url: url=https://aur4.archlinux.org/cgit/aur.git/snapshot/{{name}}.tar.gz dest={{store}}/
+    - command: tar xf {{store}}/{{name}}.tar.gz chdir={{store}}
+    - command: makepkg --noconfirm --install --force --syncdeps chdir={{store}}/{{name}}
