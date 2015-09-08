@@ -7,7 +7,6 @@
     - group: name={{user}} gid=1000
     - user: name={{user}} uid=1000 createhome=no group={{user}} groups=wheel,systemd-journal,uucp,wireshark shell=/bin/zsh
     - lineinfile: dest=/etc/pacman.d/mirrorlist insertbefore=BOF line="Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch"
-      become: yesnn
     - ini_file: dest=/etc/pacman.conf section=multilib option=Include value=/etc/pacman.d/mirrorlist
     - ini_file: dest=/etc/pacman.conf section=blackarch option=Server value=http://f.archlinuxvn.org/blackarch/$repo/os/$arch
     - lineinfile: dest=/etc/pacman.conf line={{item}} insertafter=options
