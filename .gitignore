@@ -11,11 +11,13 @@
 /Desktop/
 /Pictures/
 /bin/
+/config/dotconfig/mpv/watch_later
 /config/emacs.el
+/config/kub/eap.task
+/config/mpd_sticker
 /config/packettracer/
 /config/vorme/
 /dossiers/
 /secrets/
 /trail/*.html
 desktop.ini
-/config/kub/eap.task
