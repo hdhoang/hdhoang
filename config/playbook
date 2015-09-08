@@ -92,6 +92,7 @@
         - pulseaudio-alsa
         - rust
         - sddm
+        - sni-qt
         - steam
         - syncthing
         - ttf-hannom
