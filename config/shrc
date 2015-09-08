@@ -112,8 +112,8 @@ if [ -n "$ZSH_NAME" ]; then
     which dnf &>/dev/null && compdef dnf=yum
 
     autoload -U colors && colors
-    PROMPT="%m $fg_bold[yellow]%~$reset_color %w %(?..%? )
-%# "
+    PROMPT="%m $fg_bold[red]%~$reset_color %w %(?..%? )
+    %# "
 
     setopt dvorak
 fi
