@@ -1,4 +1,4 @@
-// -*- compile-command: "rustc --out-dir ~/Dropbox/bin rotate-screen.rs" -*-
+// -*- compile-command: "rustc --out-dir ~/Copy/bin rotate-screen.rs" -*-
 use std::env;
 use std::process::Command;
 

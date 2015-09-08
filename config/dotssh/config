@@ -8,12 +8,9 @@ Host github.com bitbucket.org
 User git
 IdentityFile ~/Copy/secrets/git
 
-Host k
-Hostname kub
+Host kub
 User hdhoang
 IdentityFile ~/Copy/secrets/kub
-# work around TOS breakage
-ProxyCommand nc %h %p
 
 Host vorme
 User root

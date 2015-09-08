@@ -4,7 +4,7 @@ Description=Tune power
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStart=/home/hdhoang/Dropbox/config/ton/powercfg
+ExecStart=/usr/local/bin/powercfg
 
 [Install]
 WantedBy=basic.target

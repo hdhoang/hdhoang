@@ -1,0 +1,17 @@
+[1]
+Description=Window settings for firefox
+clientmachine=ton
+clientmachinematch=0
+noborder=true
+noborderrule=2
+title=Pentadactyl
+titlematch=0
+types[$d]
+windowrole=browser
+windowrolematch=1
+wmclass=navigator firefox
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=1
