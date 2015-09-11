@@ -10,6 +10,8 @@ conf="{{h}}/config/{{ansible_hostname}}"
 locale=en_US
 network=10.117.14
 
+[kub]
+kub
 [kub:vars]
 address={{network}}.54
 ports={ owncloud: 4004, ipfs: 4001, torDir: 4660, torOr: 5880 }
