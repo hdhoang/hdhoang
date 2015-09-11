@@ -75,13 +75,23 @@ alias prv='perl-rename -iv'
 alias rs='nn rsync --human-readable --verbose --progress --partial --archive --no-group'
 function favm() {
     pushd $fm
-    if [[ $# -eq 0 ]]; then track="$(mpc -f %file%|head -1)"; fi
     parallel --rpl '{_} $Global::use{"File::Basename"} ||= eval "use File::Basename; 1;"; $_ = dirname($_); s:_new/::' \
 	     mkdir -p {_} \;\
 	     mv -v -t {_} {} \
 	     ::: $track $@
     popd
-    unset track
+}
+function favc() {
+    file=$fm/"$(mpc -f %file% |head -1)"
+    folder=$fm/"$(mpc -f '[%albumartist%|%artist%]/[%album%]/' |head -1| tr -d ':\\\"*?')"
+    mkdir -p "$folder" && mv -v "$file" "$folder"
+    unset folder file
+}
+function favv() {
+    file=$fm/"$(mpc -f %file% |head -1)"
+    name="$(mpc -f '%title% - %artist%.mp3' |head -1)"
+    mv -v "$file" "$fm/vi/$name"
+    unset name file
 }
 
 # system
