@@ -108,6 +108,7 @@
         - ibus-qt
         - ibus-unikey
         - kdegraphics-ksnapshot
+        - kdegraphics-okular
         - kdemultimedia-kmix
         - libva-intel-driver
         - mesa-libgl
@@ -122,6 +123,9 @@
         - sddm
         - skype
         - lib32-libcanberra-pulse
+        - lib32-alsa-plugins
+        - lib32-mpg123
+        - qemu
         - sni-qt
         - steam
         - syncthing
