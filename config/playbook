@@ -19,6 +19,7 @@
         - VerbosePkgLists
     # - command: pacman-key -r 7533bafe69a25079
     # - command: pacman-key --lsign 7533bafe69a25079
+    - lineinfile: dest=/etc/makepkg.conf line='MAKEFLAGS="-j{{ansible_processor_vcpus}}"'
     - pacman: state=absent name={{item}}
       with_items:
         - jfsutils
