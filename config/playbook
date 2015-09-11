@@ -143,6 +143,7 @@
         - yakuake
     - user: name=hdhoang append=yes groups=wireshark
       when: ansible_hostname == 'ton'
+    - ini_file: dest=/etc/NetworkManager/NetworkManager.conf section=main option=dhcp value=internal
     - copy: src=keyboard.conf dest=/etc/X11/xorg.conf.d/
       when: ansible_hostname == 'ton'
     - copy: src={{ansible_hostname}}/pointer.conf dest=/etc/X11/xorg.conf.d/
