@@ -71,6 +71,11 @@
       when: ansible_hostname == 'ton'
     - mount: src=LABEL=home name={{home}} fstype=ntfs-3g opts=noatime,nofail state=present
       when: ansible_hostname == 'ton'
+    - shell: fallocate -m 2G /swap && mkswap /swap creates=/swap
+      when: ansible_hostname == 'ton'
+    - file: state=file path=/swap mode=600
+      when: ansible_hostname == 'ton'
+    - mount: src=/swap name=none fstype=swap state=present
       when: ansible_hostname == 'ton'
     - mount: src=LABEL=ESP name=/boot fstype=vfat state=present
       when: ansible_hostname == 'ton'
