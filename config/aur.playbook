@@ -6,5 +6,5 @@
   tasks:
     - file: state=directory path={{store}}
     - get_url: url=https://aur4.archlinux.org/cgit/aur.git/snapshot/{{name}}.tar.gz dest={{store}}/
-    - command: tar xf {{store}}/{{name}}.tar.gz chdir={{store}}
+    - unarchive: copy=no src={{store}}/{{name}}.tar.gz dest={{store}}
     - command: makepkg --noconfirm --install --force --syncdeps chdir={{store}}/{{name}}
