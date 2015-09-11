@@ -176,8 +176,8 @@
     - copy: src={{h}}/secrets/1_ton.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/ton.zahe.me.crt
       when: ansible_hostname == 'kub'
     - include: kub/eap.task
+      when: ansible_hostname == 'kub'
     - service: name=strongswan state=started enabled=yes
-
 
     - pacman: name=powertop
     - copy: src={{conf}}/powercfg dest=/usr/local/bin/ mode=0744
