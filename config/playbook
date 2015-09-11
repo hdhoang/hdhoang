@@ -153,6 +153,7 @@
       become: no
     - copy: dest={{home}}/.gtkrc-2.0 content='include "/usr/share/themes/Breeze-gtk/gtk-2.0/gtkrc" gtk-theme-name=Breeze-gtk'
       become: no
+    - ini_file: dest={{home}}/.config/baloofilerc section="Basic Settings" option=Indexing-Enabled value="false"
     - pacman: name=acpid
       when: ansible_hostname == 'ton'
     - template: src={{ansible_hostname}}/rotation-button dest=/etc/acpi/events/
