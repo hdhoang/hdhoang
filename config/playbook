@@ -34,11 +34,13 @@
       pacman: name={{item}}
       with_items:
         - acpi
+        - android-tools
         - dhclient
         - dosfstools
         - ethtool
         - git
         - haveged
+        - iotop
         - lm_sensors
         - mlocate
         - net-tools
@@ -48,6 +50,7 @@
         - parallel
         - pkgfile
         - pv
+        - sshpass
         - sysdig
         - tcpdump
         - traceroute
