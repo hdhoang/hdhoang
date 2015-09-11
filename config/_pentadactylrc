@@ -88,6 +88,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ set! browser.display.foreground_color="#657b83"
    \ set! browser.display.use_system_colors=false
    \ set! font.default.x-western="sans-serif"
+   \ set! font.minimum-size.x-western=15
    \ if /NT 6/.test(window.navigator.oscpu)
    \     set! font.name.monospace.x-western=Consolas
    \ fi
