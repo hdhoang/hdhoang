@@ -16,10 +16,6 @@ alias g='git'
 alias gp='g pr | grep "up to date" || g ml'
 alias x=parallel
 alias e='"$EDITOR" -n'
-function starred_youtube() {
-    mysql -NBe 'select url from oc.oc_news_items where status=4 and url like "%youtube%"; update oc.oc_news_items set status=0 where status=4 and url like "%youtube%";' | tee -a $v/_q.txt
-    getc $v
-}
 function vtv() {
     mpv --no-ytdl --video-aspect=16:9 http://222.255.27.134/vtv$1.m3u8
 }
