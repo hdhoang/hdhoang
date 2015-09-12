@@ -222,7 +222,7 @@
         - {s: Match, o: Name, v: eth0}
         - {s: Network, o: Address, v: "{{address}}/24"}
         - {s: Network, o: Gateway, v: "{{network}}.1"}
-        - {s: Network, o: IPForward, v: yes}
+        - {s: Network, o: IPForward, v: "yes"}
     - lineinfile: dest=/etc/resolv.conf line="nameserver {{ network }}.1"
       when: ansible_hostname == 'kub'
     - service: name=systemd-networkd state=started enabled=yes
