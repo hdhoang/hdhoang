@@ -41,7 +41,7 @@ config rule
 	option proto 'icmp'
 	option icmp_type 'echo-request'
 	option family 'ipv4'
-	option target 'ACCEPT'
+	option target 'DROP'
 
 config rule
 	option name 'Allow-DHCPv6'
