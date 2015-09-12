@@ -1,0 +1,13 @@
+#!/bin/ansible-playbook
+# -*- mode: yaml -*-
+- hosts: arch
+  vars:
+    store: /tmp/aur
+  vars_prompt:
+    - name: package
+      private: no
+  tasks:
+    - file: state=directory path={{store}}
+    - get_url: url=https://aur4.archlinux.org/cgit/aur.git/snapshot/{{package}}.tar.gz dest={{store}}/
+    - unarchive: copy=no src={{store}}/{{package}}.tar.gz dest={{store}}
+    - command: nice makepkg --noconfirm --install --force --syncdeps chdir={{store}}/{{package}}
