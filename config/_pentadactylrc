@@ -49,7 +49,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
    \ bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
-   \ bmark -keyword yb -t youtube https://www.youtube.com/watch?v=%s
+   \ bmark -keyword yb -t youtube https://youtube.com/watch?v=%s
    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dw -t 'Dota 2 Wiki' http://dota2.gamepedia.com/index.php?title=Special%3ASearch&search=%s
    \ bmark -keyword dr -t 'Dota 2 Random' http://dota2.gamepedia.com/Special:Random
@@ -62,7 +62,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
    \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
    \ bmark -keyword mt -t metasearch http://metasearch.torrentproject.com/#!search=%s
-   \ bmark -keyword lf -t last.fm http://www.last.fm/user/hdh0#recentTracks
+   \ bmark -keyword lf -t last.fm http://last.fm/user/hdh0#recentTracks
    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
@@ -117,14 +117,14 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
 map -count <C-A-p> -ex set! network.proxy.type=<count>
 
 set pk+=smbc-comics.com:x
-style -n "smbc red button" www.smbc-comics.com <<EOS
+style -n "smbc red button" smbc-comics.com <<EOS
 #aftercomic {
   display: block !important;
   position: static !important;
 }
 EOS
 
-" thanks to Un-UTM Location Bar by Bruno Barão at https://www.userscripts.org/scripts/show/93825
+" thanks to Un-UTM Location Bar by Bruno Barão at https://userscripts.org/scripts/show/93825
 " and dactyl by Kris Maglione with https://code.google.com/p/dactyl/source/detail?r=15b2632ff06e72e863d80fba5df9f3b037b94a06 for the code
 autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
 
