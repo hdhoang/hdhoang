@@ -65,8 +65,6 @@
     - zsh
 - name: pkgfile update
   command: pkgfile -u creates=/var/cache/pkgfile/core.files
-- name: parallel promise
-  file: state=file path={{home}}/.parallel/will-cite
 - service: name=haveged state=started enabled=yes
 - name: SSD scheduler
   copy: dest=/etc/udev/rules.d/60-ssd-scheduler.rules content='ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="noop"'
