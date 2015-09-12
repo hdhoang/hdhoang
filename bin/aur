@@ -1,6 +1,7 @@
 #!/bin/ansible-playbook
 # -*- mode: yaml -*-
 - hosts: arch
+  gather_facts: no
   vars:
     store: /tmp/aur
   vars_prompt:
