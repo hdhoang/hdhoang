@@ -13,7 +13,7 @@
   when: ansible_architecture != "armv7l"
 - ini_file: dest=/etc/pacman.conf section=multilib option=Include value=/etc/pacman.d/mirrorlist
   when: ansible_architecture == "x86_64"
-- ini_file: dest=/etc/pacman.conf section=blackarch option=Server value=http://f.archlinuxvn.org/$arch/$repo/os/$arch
+- ini_file: dest=/etc/pacman.conf section=blackarch option=Server value=http://f.archlinuxvn.org/$repo/$repo/os/$arch
 - lineinfile: dest=/etc/pacman.conf line={{item}} insertafter=options
   with_items:
     - UseSyslog
