@@ -44,7 +44,7 @@ alias ls='ls --color=auto --file-type'
 alias df='df -hT -x devtmpfs'
 alias du='du -h --total'
 alias p='pgrep -f'
-alias fr='free -h | awk "NR!=3 {print \$NF}"'
+alias fr='free -h'
 alias t='less -F'
 alias j='journalctl -afb'
 
