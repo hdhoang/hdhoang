@@ -1,0 +1,5 @@
+- pacman: name=minidlna
+- template: src=minidlna.conf dest=/etc/
+- file: state=directory dest=/etc/systemd/system/minidlna.service.d/
+- ini_file: dest=/etc/systemd/system/minidlna.service.d/home.conf section=Service option=ProtectHome value=off
+- service: name=minidlna state=started enabled=yes

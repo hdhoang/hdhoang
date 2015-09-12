@@ -1,0 +1,5 @@
+# -*- mode: yaml -*-
+- lineinfile: "name=/etc/ipsec.secrets line='paj : EAP \"too much\"'"
+- lineinfile: "name=/etc/ipsec.secrets line='ninsam : EAP \"blargh\"'"
+
+  
