@@ -86,7 +86,11 @@
              (kbd "C-a") #'beginning-of-line (kbd "C-e") #'end-of-line
              (kbd "C-f") #'forward-char   (kbd "C-b") #'backward-char
              (kbd "C-n") #'next-line      (kbd "C-p") #'previous-line
+             (kbd "<down>") #'next-line   (kbd "<up>") #'previous-line
+             (kbd "j") #'next-line        (kbd "k") #'previous-line
              (kbd "C-r") #'isearch-backward))
+         (evil-define-key 'insert global-map
+           "j" #'self-insert-command "k" #'self-insert-command)
          (evil-define-key 'motion help-mode-map
            (kbd "<tab>") #'forward-button)))
    #+end_src
