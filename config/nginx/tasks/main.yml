@@ -4,3 +4,4 @@
 - copy: src={{h}}/secrets/1_zahe.me_bundle.crt dest=/etc/nginx/zahe.me.crt
 - copy: src={{h}}/secrets/2_zahe.me.key dest=/etc/nginx/zahe.me.key
 - service: name=nginx state=reloaded enabled=yes
+- file: state=link path={{home}}/Public/index.html src={{h}}/hdhoang
