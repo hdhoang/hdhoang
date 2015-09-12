@@ -1,6 +1,7 @@
 # -*- mode: sh -*-
 # ~/.pam_environment
 
+XDG_MUSIC_DIR=~/Music
 CCACHE_BASEDIR=/
 GOPATH=~/go
 QT_PLUGIN_PATH=/usr/lib/kde4/plugins
