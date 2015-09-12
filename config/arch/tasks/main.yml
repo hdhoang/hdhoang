@@ -11,6 +11,8 @@
 - name: pacman mirror
   lineinfile: dest=/etc/pacman.d/mirrorlist insertbefore=BOF line="Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch"
   when: ansible_architecture != "armv7l"
+- lineinfile: dest=/etc/pacman.d/mirrorlist insertbefore=BOF line="Server = http://vn.mirror.archlinuxarm.org/$arch/$repo"
+  when: ansible_architecture == "armv7l"
 - ini_file: dest=/etc/pacman.conf section=multilib option=Include value=/etc/pacman.d/mirrorlist
   when: ansible_architecture == "x86_64"
 - ini_file: dest=/etc/pacman.conf section=blackarch option=Server value=http://f.archlinuxvn.org/$repo/$repo/os/$arch
