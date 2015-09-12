@@ -19,16 +19,6 @@ alias e='"$EDITOR" -n'
 function vtv() {
     mpv --no-ytdl --video-aspect=16:9 http://222.255.27.134/vtv$1.m3u8
 }
-function getc() {
-    cd ${1:-.}
-    for t in {1..2}; do
-	[ -r _q.txt ] && for f in _q*txt; do
-	    echo $f
-	    youtube-dl -a $f;
-	done
-	[ -r _wq.txt ] && wget --continue --input _wq.txt
-    done
-}
 function wifi_scan {
     iwlist wlp3s0 scan | grep -A1 "Encryption key:off"
 }

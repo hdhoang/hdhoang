@@ -2,16 +2,10 @@
 # -*- mode: yaml -*-
 - hosts: kub
   gather_facts: no
-  vars:
-    - v: "{{home}}/Videos"
-    - q: "{{v}}/_q.txt"
   tasks:
     - command: mysql -Ne 'select url from oc.oc_news_items where status=4 and url like "%youtube%";'
       register: lists
-    - lineinfile: create=yes dest={{q}} line={{item}}
-      with_items: lists.stdout_lines
     - command: pkill youtube-dl
       ignore_errors: yes
-    - shell: chdir={{v}} youtube-dl -q && rm -v {{q}} && mysql -e 'update oc.oc_news_items set status=0 where status=4 and url like "%youtube%";'
-      async: 7200
-      poll: 0
+    - shell: youtube-dl {{item}} && mysql -e 'update oc.oc_news_items set status=0 where status=4 and url like "{{item}}";'
+      with_items: lists.stdout_lines
