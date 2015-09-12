@@ -101,6 +101,7 @@
         - chromaprint
         - chromium
         - dolphin
+        - drkonqi
         - emacs-pkgbuild-mode
         - firefox
         - gwenview
@@ -110,6 +111,10 @@
         - kdegraphics-ksnapshot
         - kdegraphics-okular
         - kdemultimedia-kmix
+        - kwallet-pam
+        - lib32-alsa-plugins
+        - lib32-libcanberra-pulse
+        - lib32-mpg123
         - libva-intel-driver
         - mesa-libgl
         - mpc
@@ -119,17 +124,16 @@
         - plasma-desktop
         - plasma-nm
         - pulseaudio-alsa
+        - qemu
+        - qt5-wayland
         - rust
         - sddm
         - skype
-        - lib32-libcanberra-pulse
-        - lib32-alsa-plugins
-        - lib32-mpg123
-        - qemu
         - sni-qt
         - steam
         - syncthing
         - ttf-hannom
+        - ttf-inconsolata
         - ttf-linux-libertine
         - virtualbox-guest-iso
         - virtualbox-host-dkms
@@ -139,6 +143,7 @@
         - xf86-input-wacom
         - xf86-video-intel
         - xorg-server
+        - xorg-server-xwayland
         - xorg-xinput
         - yakuake
     - user: name=hdhoang append=yes groups=wireshark
@@ -189,8 +194,8 @@
       when: ansible_hostname == 'ton'
 
     - name: links
-      become: no
       file: state=link src=appdata/Mozilla path={{home}}/.mozilla
+      become: no
     - copy: src={{conf}}/syncthing/ dest={{home}}/.config/syncthing/
       become: no
     - file: state=link src={{h}}/config/dotconfig/{{item}} path={{home}}/.config/{{item}}
