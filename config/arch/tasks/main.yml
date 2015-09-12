@@ -61,6 +61,7 @@
     - uucp
     - vim
     - wget
+    - yaourt
     - zsh
 - name: pkgfile update
   command: pkgfile -u creates=/var/cache/pkgfile/core.files
