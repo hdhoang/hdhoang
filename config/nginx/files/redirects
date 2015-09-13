@@ -1,5 +1,5 @@
 # /etc/nginx/redirects
-/_ https://raw.githubusercontent.com/hdhoang/hdhoang/master/app-config/_pentadactylrc;
+/_ https://raw.githubusercontent.com/hdhoang/hdhoang/master/config/dotpentadactylrc;
 /c /mirror/caps2ctrl.exe;
 /d http://5digits.org/nightly/pentadactyl-latest.xpi;
 /f https://fpdownload.macromedia.com/pub/flashplayer/current/support/install_flash_player.exe;

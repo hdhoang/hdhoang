@@ -17,6 +17,7 @@
     - mpdconf
     - pam_environment
     - ssh
+    - pentadactylrc
 - file: state=link src={{h}}/config/shrc path={{home}}/.zshrc
 - file: state=link src={{h}}/config/_pentadactylrc path={{home}}/.pentadactylrc
 - file: state=directory dest={{home}}/.config/gtk-3.0/
