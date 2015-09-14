@@ -26,6 +26,8 @@
     - lib32-mpg123
     - lib32-sni-qt
     - libva-intel-driver
+    - linux-zen
+    - linux-zen-headers
     - mesa-libgl
     - mpc
     - mpd
@@ -58,6 +60,13 @@
     - xorg-server-xwayland
     - xorg-xinput
     - yakuake
+- copy: dest=/boot/loader/loader.conf content="default zen"
+- lineinfile: dest=/boot/loader/entries/zen.conf line="{{item}}"
+  with_items:
+    - title zen
+    - linux vmlinuz-linux-zen
+    - initrd initramfs-linux-zen.img
+    - options rw root=LABEL={{ansible_hostname}} kdbus=1
 - user: name={{user}} append=yes groups=wireshark
 - ini_file: dest=/etc/NetworkManager/NetworkManager.conf section=main option=dhcp value=internal
 - copy: src=keyboard.conf dest=/etc/X11/xorg.conf.d/
