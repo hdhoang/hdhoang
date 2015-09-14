@@ -83,7 +83,7 @@ function favv() {
 # system
 alias sc='sudo systemctl --full --system'
 alias uc='systemctl --full --user'
-alias i='sudo pacman'
+alias i=yaourt
 alias mp='nn makepkg --install --syncdeps --force'
 pkg=/var/cache/pacman/pkg
 
@@ -105,6 +105,7 @@ if [ -n "$ZSH_NAME" ]; then
     zstyle ':vcs_info:*' enable git
     autoload -U compinit && compinit
     which dnf &>/dev/null && compdef dnf=yum
+    which yaourt &>/dev/null && compdef yaourt=pacman
 
     autoload -U colors && colors
     PROMPT="%m $fg_bold[red]%~$reset_color %w %(?..%? )
