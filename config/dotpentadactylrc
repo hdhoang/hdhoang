@@ -71,6 +71,7 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
    \ bmark -keyword fb -t facebook https://fb.me/%s
    \ bmark -keyword w -t wallabag https://framabag.org/u/hdhoang/?action=random
+   \ bmark -keyword wa -t 'add to wallabag' http://framabag.org/u/hdhoang/index.php?plainurl=%s
    \ set! accessibility.browsewithcaret_shortcut.enabled=false
    \ set! browser.newtabpage.enabled=false
    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
@@ -116,13 +117,13 @@ map <C-S-s> -ex bmark -keyword ac -t config about:config
 
 javascript <<EOS
 hints.addMode("w", "add to wallabag",
-  function(e, loc) { dactyl.open(
-  "http://framabag.org/u/hdhoang/index.php?plainurl=" + loc
-  , "background-tab")})
+  function(e) { util.fetchUrl(bookmarks.getSearchURL("wa") + e.href) })
 EOS
+set eht+=[w]:a
 style -n "framabag" framabag.org <<EOS
 pre { font-family: monospace !important }
 EOS
+
 " Set to 1 to proxy through tor network
 map -count <C-A-p> -ex set! network.proxy.type=<count>
 
