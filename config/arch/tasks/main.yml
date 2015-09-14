@@ -68,3 +68,4 @@
 - service: name=haveged state=started enabled=yes
 - name: SSD scheduler
   copy: dest=/etc/udev/rules.d/60-ssd-scheduler.rules content='ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="noop"'
+- sysctl: name=fs.inotify.max_user_watches value=524288
