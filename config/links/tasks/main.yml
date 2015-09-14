@@ -21,7 +21,6 @@
     - yaourtrc
 - file: state=directory path={{home}}/archlinux
 - file: state=link src={{h}}/config/shrc path={{home}}/.zshrc
-- file: state=link src={{h}}/config/_pentadactylrc path={{home}}/.pentadactylrc
 - file: state=directory dest={{home}}/.config/gtk-3.0/
 - ini_file: dest={{home}}/.config/gtk-3.0/settings.ini section=Settings option=gtk-theme-name value=Breeze-gtk
 - copy: dest={{home}}/.gtkrc-2.0 content='include "/usr/share/themes/Breeze-gtk/gtk-2.0/gtkrc" gtk-theme-name=Breeze-gtk'
