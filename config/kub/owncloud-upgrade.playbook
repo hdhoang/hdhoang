@@ -1,5 +1,7 @@
+#!/bin/ansible-playbook --ask-become-pass
 # -*- mode: yaml -*-
-- hosts: k
+- hosts: kub
+  gather_facts: no
   tasks:
     - git: repo=https://github.com/owncloud/core dest=/home/hdhoang/owncloud
     - git: repo=https://github.com/owncloud/news dest=/home/hdhoang/owncloud/apps/news

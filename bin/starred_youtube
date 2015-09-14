@@ -1,4 +1,4 @@
-#!/bin/ansible-playbook -v
+#!/bin/ansible-playbook
 # -*- mode: yaml -*-
 - hosts: kub
   gather_facts: no

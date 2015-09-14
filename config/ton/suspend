@@ -1,5 +1,0 @@
-# /etc/acpi/events/suspend
-event=button/power PBTN 00000080 00000000
-action=systemctl suspend
-event=button/lid LID close
-action=systemctl suspend
