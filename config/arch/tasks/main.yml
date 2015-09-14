@@ -7,7 +7,7 @@
 - copy: dest=/etc/vconsole.conf content="KEYMAP=caps2ctrl"
 - template: src=hosts dest=/etc/
 - group: name={{user}} gid=1000
-- user: name={{user}} uid=1000 createhome=no group={{user}} groups=wheel,systemd-journal,uucp shell=/bin/zsh
+- user: name={{user}} uid=1000 createhome=no group={{user}} groups=wheel,systemd-journal,uucp append=yes shell=/bin/zsh
 - name: pacman mirror
   lineinfile: dest=/etc/pacman.d/mirrorlist insertbefore=BOF line="Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch"
   when: ansible_architecture != "armv7l"
