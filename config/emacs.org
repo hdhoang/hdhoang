@@ -107,7 +107,7 @@
        :config (progn
                  (helm-mode 1)
                  (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
-       :diminish ""
+       :diminish helm-mode
        :bind (("C-h SPC" . helm-all-mark-rings)
               ("C-x b" . helm-mini)
               ("C-x C-b" . helm-buffers-list)
