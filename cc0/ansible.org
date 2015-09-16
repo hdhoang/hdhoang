@@ -1,0 +1,162 @@
+Việc cài đặt và cấu hình các máy chủ thường được ghi chép lại trong
+tài liệu dưới dạng các câu lệnh đã chạy, với giải thích kèm theo. Cách
+thức này gây mệt mỏi cho quản trị viên vì phải làm theo từng bước ở
+mỗi máy khi thiết lập mới, và có thể dẫn đến sai lầm, thiếu sót. Các
+hệ thống quản lý cấu hình như [[http://puppetlabs.com/][Puppet]] hay [[https://www.chef.io/][Chef]] giúp tự động hóa quá
+trình này, tuy nhiên, chúng cần được thiết lập sẵn trên các máy chủ
+trước khi hoạt động. [[https://ansible.com][Ansible]] là một công cụ khác, chỉ cần có ssh và
+python2 trên máy được quản lý (hoặc WinRM và PowerShell khi [[https://docs.ansible.com/ansible/intro_windows.html][quản lý
+Windows]]) mà không cần cài đặt gì khác.
+
+Ansible thiết lập cấu hình máy theo một vở diễn (play). Các tác vụ
+trong mỗi vở mô tả trạng thái ta muốn có trên mỗi máy, chứ không chỉ
+là các lệnh cần chạy như tài liệu chung chung. Ansible bỏ qua các bước
+đã hoàn thành, và chỉ chạy một tác vụ khi điều kiện nhất định được
+thỏa mãn. Các tác vụ liên quan đến nhau có thể được tập hợp lại thành
+một vai trò (role), sau đó áp dụng cho một nhóm các máy khi cần thiết.
+Nếu một vai trò được thiết kế linh hoạt với các biến thể, một quản trị
+viên khác có thể sử dụng nó trong môi trường của mình qua cộng đồng
+chia sẻ [[https://galaxy.ansible.com/][Ansible Galaxy]], hay trực tiếp từ tác giả.
+
+Việc giữ cấu hình các máy trong một định dạng dễ đọc như YAML cũng mở
+ra khả năng theo dõi sự tiến triển cúa môi trường bằng công cụ quản lý
+mã nguồn như git/hg/svn, và đan xen cấu hình đó trong tài liệu giải
+thích theo kiểu literate programming (lập trình bên trong thuyết
+minh). Đây sẽ là những nguồn tài nguyên quý giá để quản trị viên mới
+làm quen với môi trường, và cung cấp bối cảnh khi có vấn đề xảy ra.
+
+Ví dụ sử dụng trực tiếp ansible:
+#+BEGIN_EXAMPLE sh
+ ansible dns_server -m yum -a 'name=bind state=present'
+ ansible dns_server -m yum -a 'name=firewalld state=present'
+ ansible dns_server -m service -a 'name=firewalld state=started enabled=yes'
+ ansible dns_server -m service -a 'name=named state=started enabled=yes'
+ ansible dns_server -m firewalld -a 'zone=public service=dns state=enabled permanent=yes immediate=yes'
+#+END_EXAMPLE
+
+Lưu lại trong một vở diễn để triển khai bằng ansible-playbook:
+#+BEGIN_SRC yaml :tangle play.yml
+  #!/bin/ansible-playbook
+  - hosts: dns_server
+    vars:
+      - locale: vi_VN
+      - packages: [bind-utils, bind, firewalld]
+      - zone: bachkhoa-aptech.com
+    tasks:
+      - name: cho phép nhóm wheel dùng sudo
+        lineinfile: dest=/etc/sudoers line="%wheel ALL = (ALL) ALL" validate="visudo -c -f %s"
+      - name: đặt múi giờ
+        file: state=link path=/etc/localtime src=../usr/share/zoneinfo/Asia/Ho_Chi_Minh
+        
+      - name: cài các gói
+        yum: name={{ item }} state=present
+        with_items: packages
+      - name: tổng hợp cấu hình named từ các phần
+        template: dest=/etc/ src=named.conf validate="named-checkconf %s"
+      - name: đặt zone vào vị trí
+        template: dest=/var/named/ src={{zone}}.zone owner=named mode="u=r,go=" validate="named-checkzone {{zone}} %s"
+      - name: khởi chạy dịch vụ
+        service: name={{ item }} state=started enabled=yes
+        with_items:
+          - named
+          - firewalld
+      - name: mở cổng dịch vụ DNS
+        firewalld:
+          zone: public
+          service: dns
+          state: enabled
+          permanent: yes
+          immediate: yes
+#+END_SRC
+Khai báo các máy mục tiêu trong ansible.cfg và inventory:
+#+BEGIN_SRC conf-windows :tangle ansible.cfg
+  [defaults]
+  inventory=inventory
+  [ssh_connection]
+  ssh_args=-o ControlMaster=no
+#+END_SRC
+#+BEGIN_SRC conf-space :tangle inventory
+  dns_server ansible_ssh_host=192.168.56.9 ansible_ssh_pass=1 ansible_ssh_user=root
+#+END_SRC
+Các mẫu cấu hình:
+#+BEGIN_SRC conf :tangle named.conf
+  options {
+      listen-on port 53 { 127.0.0.1; };
+  };
+  zone "{{zone}}." IN {
+      type master;
+      file "/var/named/{{zone}}.zone";
+  };
+#+END_SRC
+#+BEGIN_SRC zone :tangle bachkhoa-aptech.com.zone
+  $TTL 1h
+  @ IN SOA {{zone}} root.{{zone}} (0 1h 1h 1h 1h)
+    IN NS n
+    IN A 127.0.0.1
+  n IN A 127.0.0.1
+#+END_SRC
+Triển khai:
+#+BEGIN_SRC sh :results verbatim :exports both
+  ansible-playbook play.yml
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+PLAY [dns_server] ************************************************************* 
+
+GATHERING FACTS *************************************************************** 
+ok: [dns_server]
+
+TASK: [cho phép nhóm wheel dùng sudo] ************************************** 
+ok: [dns_server]
+
+TASK: [đặt múi giờ] ***************************************************** 
+ok: [dns_server]
+
+TASK: [cài các gói] ******************************************************** 
+ok: [dns_server] => (item=bind-utils,bind,firewalld)
+
+TASK: [tổng hợp cấu hình named từ các phần] *********************** 
+ok: [dns_server]
+
+TASK: [đặt zone vào vị trí] ******************************************** 
+ok: [dns_server]
+
+TASK: [khởi chạy dịch vụ] ********************************************* 
+ok: [dns_server] => (item=named)
+ok: [dns_server] => (item=firewalld)
+
+TASK: [mở cổng dịch vụ DNS] ******************************************* 
+ok: [dns_server]
+
+PLAY RECAP ******************************************************************** 
+dns_server                 : ok=8    changed=0    unreachable=0    failed=0   
+
+#+end_example
+
+Kiểm tra dịch vụ:
+#+BEGIN_SRC sh :results verbatim :exports both
+  ansible dns_server -m command -a 'host bachkhoa-aptech.com 127.0.0.1'
+#+END_SRC
+
+#+RESULTS:
+: dns_server | success | rc=0 >>
+: Using domain server:
+: Name: 127.0.0.1
+: Address: 127.0.0.1#53
+: Aliases: 
+: 
+: bachkhoa-aptech.com has address 127.0.0.1
+: 
+
+Ansible khái quát hóa các công việc cần làm thành [[https://docs.ansible.com/ansible/list_of_all_modules.html][các module]], giảm sự
+khác biệt giữa các môi trường khác nhau. Ví dụ điển hình là [[https://docs.ansible.com/ansible/service_module.html][module
+service]], sử dụng cùng một giao diện cho các hệ khởi động BSD init,
+OpenRC, sysvinit, SMF, và systemd. Với phiên bản Ansible 2 sắp tới,
+việc quản lý gói cũng đuợc khái quát hóa tương tự thành module
+package, đại diện cho các module pacman, yum, apt, dnf, portage, opkg,
+apk, msi hiện tại. Các module [[https://docs.ansible.com/ansible/template_module.html][template]] và [[https://docs.ansible.com/ansible/assemble_module.html][assemble]] tạo các tập tin cấu
+hình phù hợp cho từng máy theo các mẫu viết sẵn, tránh sai sót khi sửa
+chữa bằng tay. [[https://docs.ansible.com/ansible/playbooks_vault.html][Vault]] cho phép mã hóa các cấu hình cần giữ bí mật như
+mật khẩu ban đầu, hoặc chìa bí mật.
