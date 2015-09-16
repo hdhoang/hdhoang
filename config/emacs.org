@@ -143,6 +143,16 @@
        :ensure
        :bind ("C-=" . er/expand-region))
    #+end_src
+** Yasnippet
+  #+begin_src emacs-lisp
+    (use-package yasnippet
+      :ensure
+      :diminish yas-minor-mode
+      :config (progn
+                (add-to-list 'yas-snippet-dirs
+                             (expand-file-name "~/Copy/config/yas"))
+                (yas-global-mode t)))
+  #+end_src
 ** Other convenient bindings
    #+begin_src emacs-lisp
      (defalias 'yes-or-no-p #'y-or-n-p)
