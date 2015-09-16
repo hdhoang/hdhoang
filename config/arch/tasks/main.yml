@@ -38,6 +38,7 @@
   pacman: name={{item}}
   with_items:
     - android-tools
+    - ansible
     - dosfstools
     - ethtool
     - git
