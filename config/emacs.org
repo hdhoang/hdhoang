@@ -275,6 +275,9 @@
 ** YAML
    #+begin_src emacs-lisp
      (use-package yaml-mode :ensure)
+     (use-package ansible-doc
+       :ensure
+       :config (add-hook 'yaml-mode-hook #'ansible-doc-mode))
    #+end_src
 * Appearance
   Set terminal title
