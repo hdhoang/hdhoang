@@ -1,6 +1,0 @@
-.include /usr/lib/systemd/system/tor.service
-
-[Service]
-PrivateTmp=yes
-ReadOnlyDirectories=/
-ReadWriteDirectories=/var/lib/tor

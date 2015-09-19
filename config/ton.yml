@@ -1,5 +1,0 @@
-- shell: fallocate -l 2G /swap && mkswap /swap creates=/swap
-- file: state=file path=/swap mode=600
-- mount: src=/swap name=none fstype=swap state=present
-- mount: src=LABEL=ESP name=/boot fstype=vfat state=present
-- mount: src=LABEL=home name={{home}} fstype=ntfs-3g opts=noatime,nofail state=present

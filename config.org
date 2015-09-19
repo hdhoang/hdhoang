@@ -2,10 +2,8 @@
 #+PROPERTY: header-args+ :comments org
 #+PROPERTY: header-args+ :mkdirp yes
 #+PROPERTY: header-args+ :noweb yes
-#+PROPERTY: header-args+ :var fm=fav_music
-#+PROPERTY: header-args:sh+ :var sc=system_ctl
-#+PROPERTY: header-args:sh+ :var uc=user_ctl
-#+PROPERTY: header-args:sh+ :var pm=pacman
+#+PROPERTY: header-args+ :results drawer
+#+PROPERTY: header-args:text+ :eval no
 * Places and names
   #+NAME: username
   #+BEGIN_SRC text
@@ -18,9 +16,9 @@
   #+END_SRC
 
   #+NAME: fav_music
-  #+BEGIN_EXAMPLE text
-    /home/hdhoang/Music
-  #+END_EXAMPLE
+  #+BEGIN_SRC text
+    /home/<<username>>/Music
+  #+END_SRC
 
   #+NAME: network
   #+BEGIN_SRC text
@@ -33,33 +31,32 @@
   #+END_SRC
 
   #+NAME: system_ctl
-  #+BEGIN_EXAMPLE text
+  #+BEGIN_SRC text
     systemctl --system --no-pager
-  #+END_EXAMPLE
-
-  #+NAME: user_ctl
-  #+BEGIN_EXAMPLE text
-    systemctl --user --no-pager
-  #+END_EXAMPLE
-
-  #+NAME: pacman
-  #+BEGIN_EXAMPLE text
-    pacman --noconfirm --needed
-  #+END_EXAMPLE
-* SSH
-  :PROPERTIES:
-  :tangle:   ~/.ssh/config
-  :END:
-
-  Hosts
-  #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
-    vorme ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf2C8j0GFA8eq8Vgva/9KI4cF4Q23v4rBk6zAxoyIJvENGkpDuUba4AOMabUkPiXU76KVbx/h4fOivjrWoUNG6Z0xEOJTQqVwuk7788dwIm49Ba+ZOC/sCtT7dsbshFpzXmkdASsZty0foFSILRADDTlB1MZiN9wJRlnjkmIO9WiSMYnuGzolO2f+Gy6LFrtQF1ZgOOqPToO4u4li3VPh1zdoY5+IQul9BQJGU7tMZrleH09LcOUlip8SHZYuXu/Zlb9GSK7Cj7WfGaR0k+xvs657n41haffQ5CxTjocqZdv7eO4Uo2ryWXn2Ck7DwKH6KMjEJZRbX32zLsTacQNgR
-    kub,<<network>>.54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGtY5ERdvH+mAQKfy270I+eEaZ2i6FhhEjG0EuzDxIym
   #+END_SRC
 
-  #+NAME: SSH encryption settings
+  #+NAME: user_ctl
+  #+BEGIN_SRC text
+    systemctl --user --no-pager
+  #+END_SRC
+
+  #+NAME: pacman
+  #+BEGIN_SRC text
+    pacman --noconfirm --needed
+  #+END_SRC
+
+  #+NAME: yt-dl
+  #+BEGIN_SRC text
+    youtube-dl --format "[height <=? 720]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
+  #+END_SRC
+
+* SSH
+  :PROPERTIES:
+  :header-args+: :tangle ~/.ssh/config
+  :END:
+
+  SSH encryption settings by https://stribika.github.io/2015/01/04/secure-secure-shell.html
   #+BEGIN_SRC conf
-    # https://stribika.github.io/2015/01/04/secure-secure-shell.html
     Host *
     KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1
     Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
@@ -67,31 +64,43 @@
   #+END_SRC
 
   Code hosting sites:
+  #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
+    github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
+    bitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==
+  #+END_SRC
   #+BEGIN_SRC conf
     Host github.com bitbucket.org
     User git
-    IdentityFile git
+    IdentityFile ~/.ssh/git
     Host git.kde.org
     User git
-    IdentityFile kde
+    IdentityFile ~/.ssh/kde
     Host heroku.com
-    IdentityFile heroku
+    IdentityFile ~/.ssh/heroku
   #+END_SRC
 
   Machines
+  #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
+    vorme ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf2C8j0GFA8eq8Vgva/9KI4cF4Q23v4rBk6zAxoyIJvENGkpDuUba4AOMabUkPiXU76KVbx/h4fOivjrWoUNG6Z0xEOJTQqVwuk7788dwIm49Ba+ZOC/sCtT7dsbshFpzXmkdASsZty0foFSILRADDTlB1MZiN9wJRlnjkmIO9WiSMYnuGzolO2f+Gy6LFrtQF1ZgOOqPToO4u4li3VPh1zdoY5+IQul9BQJGU7tMZrleH09LcOUlip8SHZYuXu/Zlb9GSK7Cj7WfGaR0k+xvs657n41haffQ5CxTjocqZdv7eO4Uo2ryWXn2Ck7DwKH6KMjEJZRbX32zLsTacQNgR
+    kub,<<network>>.54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGtY5ERdvH+mAQKfy270I+eEaZ2i6FhhEjG0EuzDxIym
+  #+END_SRC
   #+BEGIN_SRC conf
     Host vorme
     User root
-    IdentityFile kub
+    IdentityFile ~/.ssh/kub
     Host kub
     User <<username>>
-    IdentityFile kub
+    IdentityFile ~/.ssh/kub
+  #+END_SRC
+  #+BEGIN_SRC elisp :tangle ~/.emacs
+    (eval-after-load 'tramp
+      '(add-to-list 'tramp-default-proxies-alist '("kub" "root" "/ssh:kub:")))
   #+END_SRC
 
 * KDE
 ** kwin
    :PROPERTIES:
-   :tangle:   ~/.config/kwinrulesrc
+   :header-args+: :tangle ~/.config/kwinrulesrc
    :END:
 
    Remove border from firefox
@@ -105,6 +114,10 @@
      wmclass=navigator firefox
      wmclasscomplete=true
      wmclassmatch=1
+   #+END_SRC
+
+   Put emacs on F4
+   #+BEGIN_SRC conf
      [2]
      Description=Application settings for emacs
      shortcut=F4
@@ -112,14 +125,18 @@
      wmclass=emacs
      wmclasscomplete=false
      wmclassmatch=1
+   #+END_SRC
+
+   #+BEGIN_SRC conf
      [General]
      count=2
    #+END_SRC
 
 * Git
   :PROPERTIES:
-  :header-args: :tangle ~/.gitconfig
+  :header-args+: :tangle ~/.gitconfig
   :END:
+
   #+BEGIN_SRC conf
     [user]
     name = Hoàng Đức Hiếu
@@ -146,69 +163,19 @@
     stat = true
   #+END_SRC
 
-* Ansible
-  #+BEGIN_SRC elisp :tangle ~/.emacs
-    (use-package yaml-mode :ensure)
-  #+END_SRC
-
-** Inventory
-   :PROPERTIES: 
-   :tangle:   /home/hdhoang/Copy/config/ansible_inventory
-   :END:      
-   Here are the hosts and their variables
-   #+BEGIN_SRC conf
-     [arch]
-     kub ansible_python_interpreter=/usr/bin/python2
-     ton ansible_python_interpreter=/usr/bin/python2 ansible_connection=local
-
-     [all:vars]
-     user=<<username>>
-     home=/home/{{user}}
-     h="{{home}}/Copy"
-     conf="{{h}}/config/{{ansible_hostname}}"
-     locale=en_US
-     network=<<network>>
-   #+END_SRC
-
-   Ansible 2 doesn't accept host_vars here, create a dummy group
-   #+BEGIN_SRC conf
-     [kub]
-     kub
-     [kub:vars]
-     address={{network}}.54
-     ports={ owncloud: 4004, ipfs: 4001, torDir: 4660, torOr: 5880 }
-   #+END_SRC
-
-** Config
-   :PROPERTIES: 
-   :tangle:   ~/.ansible.cfg
-   :END:
-   Keep the inventory here
-   #+BEGIN_SRC conf
-     [default]
-     inventory = <<storage>>/config/ansible_inventory
-   #+END_SRC
-
-   ChallengeResponseAuthentication doesn't agree with ControlMaster
-   #+BEGIN_SRC conf :tangle no
-     [ssh_connection]
-     ssh_args=-o ControlMaster=no
-   #+END_SRC
-
 * ArchLinux
   :PROPERTIES: 
-  :header-args: :dir /sudo:: :results verbatim
+  :header-args+: :dir /sudo::
   :END:
 
   Pacman config
-  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
+  #+NAME: pacman_common
+  #+BEGIN_SRC conf
     [options]
     VerbosePkgLists
     UseSyslog
     CheckSpace
     HoldPkg = pacman glibc
-    Architecture = auto
-
     SigLevel = Required DatabaseOptional
     LocalFileSigLevel = Optional
 
@@ -222,18 +189,9 @@
     Server = http://f.archlinuxvn.org/$repo/$repo/os/$arch
   #+END_SRC
 
-  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
-    [multilib]
-    Include = /etc/pacman.d/mirrorlist
-  #+END_SRC
-
-  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.d/mirrorlist
-    Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
-  #+END_SRC
-
   Refresh database
   #+BEGIN_SRC sh
-    $pm -S -y
+    <<pacman>> -S -y
   #+END_SRC
 
   AUR helper
@@ -263,56 +221,79 @@
 
   Base utils
   #+BEGIN_SRC sh
-    $pm -S haveged p7zip parallel pkgfile yaourt
-    $sc enable --now haveged
+    <<pacman>> -S haveged p7zip parallel pkgfile yaourt
+    <<system_ctl>> enable --now haveged
   #+END_SRC
 
-  #+RESULTS:
-  : :: Synchronizing package databases...
-  :  core is up to date
-  :  extra is up to date
-  :  community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                 53.4 KiB  89.0K/s 00:31 [----------------------]   1% community                146.9 KiB   215K/s 00:12 [#---------------------]   5% community                221.4 KiB   268K/s 00:09 [#---------------------]   7% community                318.9 KiB   341K/s 00:07 [##--------------------]  11% community                393.7 KiB   352K/s 00:06 [##--------------------]  13% community                489.9 KiB   395K/s 00:05 [###-------------------]  17% community                562.8 KiB   385K/s 00:05 [####------------------]  19% community                622.9 KiB   326K/s 00:06 [####------------------]  21% community                756.1 KiB   439K/s 00:04 [#####-----------------]  26% community                845.6 KiB   442K/s 00:04 [######----------------]  29% community                928.4 KiB   431K/s 00:04 [#######---------------]  32% community                961.8 KiB   339K/s 00:05 [#######---------------]  33% community               1096.7 KiB   448K/s 00:03 [########--------------]  38% community               1174.2 KiB   428K/s 00:03 [#########-------------]  41% community               1261.0 KiB   430K/s 00:03 [#########-------------]  44% community               1346.5 KiB   429K/s 00:03 [##########------------]  47% community               1437.4 KiB   437K/s 00:03 [###########-----------]  50% community               1514.9 KiB   419K/s 00:03 [###########-----------]  53% community               1609.7 KiB   437K/s 00:02 [############----------]  56% community               1695.2 KiB   434K/s 00:02 [############----------]  59% community               1779.4 KiB   427K/s 00:02 [#############---------]  62% community               1874.2 KiB   443K/s 00:02 [##############--------]  65% community               1949.0 KiB   420K/s 00:02 [##############--------]  68% community               2038.6 KiB   422K/s 00:01 [###############-------]  71% community                  2.1 MiB   433K/s 00:01 [################------]  74% community                  2.2 MiB   426K/s 00:01 [################------]  77% community                  2.2 MiB   409K/s 00:01 [#################-----]  80% community                  2.3 MiB   398K/s 00:01 [##################----]  82% community                  2.4 MiB   405K/s 00:00 [##################----]  86% community                  2.5 MiB   426K/s 00:00 [###################---]  89% community                  2.6 MiB   420K/s 00:00 [####################--]  92% community                  2.7 MiB   440K/s 00:00 [####################--]  95% community                  2.7 MiB   416K/s 00:00 [#####################-]  98% community                  2.8 MiB   416K/s 00:07 [######################] 100%
-  :  multilib is up to date
-  :  blackarch is up to date
-  :  there is nothing to do
+  #+RESULTS[246fb5edf56c8a65956c76a771142cccc9311c1e]:
+  :RESULTS:
+:END:
 
   #+BEGIN_SRC sh
     pkgfile -u
   #+END_SRC
 
-  #+RESULTS:
-  
+  #+RESULTS[8f89a1af0eb151631a2621870940a147b4f44e9e]:
+  :RESULTS:
+  :: Updating 5 repos...
+    multilib is up to date
+    core is up to date
+    blackarch is up to date
+    download complete: extra                [     7.2 MiB   222K/s  1 remaining]
+    download complete: community            [    11.2 MiB   261K/s  0 remaining]
+  :: download complete in 44.07s            <    18.5 MiB   429K/s  2 files    >
+  :: waiting for 1 process to finish repacking repos...
+  :END:
+
   Dev-env:
   #+BEGIN_SRC sh
-    $pm -S base-devel rust git ansible android-tools
+    <<pacman>> -S base-devel rust git ansible android-tools
   #+END_SRC
+
+  #+RESULTS[5914114f3903afb69671b48693628b05faf8ec87]:
+  :RESULTS:
+  :: There are 25 members in group base-devel:
+  :: Repository core
+     1) autoconf  2) automake  3) binutils  4) bison  5) fakeroot  6) file
+     7) findutils  8) flex  9) gawk  10) gcc  11) gettext  12) grep  13) groff
+     14) gzip  15) libtool  16) m4  17) make  18) pacman  19) patch
+     20) pkg-config  21) sed  22) sudo  23) texinfo  24) util-linux  25) which
+
+  Enter a selection (default=all): 
+   there is nothing to do
+  :END:
 
   Monitoring:
   #+BEGIN_SRC sh
-    $pm -S ethtool lm_sensors net-tools psmisc \
+    <<pacman>> -S ethtool lm_sensors net-tools psmisc \
         procps-ng inetutils ltrace sysdig atop iotop
   #+END_SRC
-  
-  #+RESULTS:
-  
+
+  #+RESULTS[b8c88e933f247b67dbfa621d0608345d81b56289]:
+  :RESULTS:
+   there is nothing to do
+  :END:
+
   #+BEGIN_SRC sh :tangle ~/Copy/bin/strace :shebang #!/bin/sh :no-expand
     exec /usr/bin/ltrace -CSn2 $@
   #+END_SRC
 
   Of course emacs is installed, now run it
   #+BEGIN_SRC sh
-    $pm -S emacs-pkgbuild-mode
+    <<pacman>> -S emacs-pkgbuild-mode
   #+END_SRC
 
-  #+RESULTS:
-  :  there is nothing to do
+  #+RESULTS[08377acfb195390b89f5301beb348f82b480e180]:
+  :RESULTS:
+   there is nothing to do
+  :END:
 
   #+BEGIN_SRC conf :tangle ~/.config/systemd/user/emacs.service
     [Unit]
     Description=Emacs
 
     [Service]
-    ExecStart=/usr/bin/emacs
+    ExecStart=/bin/emacs
     Restart=always
     RestartSec=1sec
 
@@ -321,20 +302,107 @@
   #+END_SRC
 
   #+BEGIN_SRC sh :dir ~
-    $uc enable --now emacs
+    <<user_ctl>> enable --now emacs syncthing pulseaudio
   #+END_SRC
 
   #+RESULTS:
 
-** ton
-*** Fonts
-    #+BEGIN_SRC sh
-      $pm -S ttf-linux-libertine ttf-inconsolata ttf-hannom
+** kub
+   :PROPERTIES:
+   :header-args+: :dir /sudo:kub:
+   :END:
+*** Mounts
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/fstab
+      LABEL=<<username>> /home/<<username>> auto
+      LABEL=var /var auto
     #+END_SRC
 
-    #+RESULTS:
+*** Network
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/systemd/network/eth0.network
+      [Match]
+      Name = eth0
 
-    #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no
+      [Network]
+      Address = <<network>>.54/24
+      Gateway = <<network>>.1
+      IPForward = yes
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/resolv.conf
+      nameserver <<network>>.1 
+    #+END_SRC
+
+*** Pacman
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.conf
+      <<pacman_common>>
+
+      [options]
+      Architecture = armv7h
+
+      [alarm]
+      Include = /etc/pacman.d/mirrorlist
+      [aur]
+      Include = /etc/pacman.d/mirrorlist
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.d/mirrorlist
+      Server = http://vn.mirror.archlinuxarm.org/$arch/$repo
+    #+END_SRC
+
+*** LED blinking
+    #+BEGIN_SRC sh :tangle /sudo:kub:/usr/local/bin/leds :shebang #!/bin/sh
+      echo none > /sys/class/leds/cubieboard:green:usr/trigger
+      echo mmc0 > /sys/class/leds/cubieboard:blue:usr/trigger
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/systemd/system/leds.service
+      [Service]
+      Type=oneshot
+      ExecStart=/usr/local/bin/leds
+      RemainAfterExit=true
+
+      [Install]
+      WantedBy=basic.target
+    #+END_SRC
+
+*** Get starred youtube videos
+    #+BEGIN_SRC sh :tangle /kub:~/Copy/bin/starred_youtube :shebang #!/bin/sh
+      pkill youtube-dl
+      for u in $(mysql -Ne 'select url from oc.oc_news_items where status=4 and url like "%youtube%";'); do
+          <<yt-dl>> "$u" && mysql -e "update oc.oc_news_items set status=0 where status=4 and url like '$u';";
+      done
+    #+END_SRC
+
+** ton
+*** Mounts
+    #+BEGIN_SRC sh
+      fallocate -l 2G /swap
+      chmod u=rw,go= /swap
+      mkswap /swap
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
+      LABEL=home /home/<<username>> ntfs-3g noatime,nofail
+      LABEL=ESP /boot vfat
+      /swap none swap
+    #+END_SRC
+
+*** Pacman
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
+    <<pacman_common>>
+
+    [options]
+    Architecture = auto
+
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
+  #+END_SRC
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.d/mirrorlist
+    Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
+  #+END_SRC
+
+*** Fonts
+    #+BEGIN_SRC sh
+      <<pacman>> -S ttf-linux-libertine ttf-inconsolata ttf-hannom
+    #+END_SRC
+
+    #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no :comments no
       <?xml version='1.0'?>
       <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
       <fontconfig>
@@ -400,52 +468,67 @@
      ip route add default via 192.168.5.1
    #+END_SRC
 
-   
    #+RESULTS:
-   
+
    Delete that route
    #+BEGIN_SRC sh
      ip route del default via 192.168.0.1
    #+END_SRC
 
 *** mpd
-    :PROPERTIES: 
-    :header-args: :dir ~
-    :END:      
+    :PROPERTIES:
+    :header-args+: :dir ~
+    :END:
+
     Shuffle and play
     #+BEGIN_SRC sh :results silent
       mpc listall | shuf > $fm/pq.m3u && mpc clear && mpc load pq && mpc play
     #+END_SRC
 
-    
     Delete currently playing track
     #+BEGIN_SRC sh :eval query
       rm -v $fm/"$(mpc -f %file% | head -1)"
     #+END_SRC
 
-    
     #+RESULTS:
-*** starred_youtube
-    :PROPERTIES:
-    :tangle:   ~/Copy/bin/starred_youtube
-    :dir:      /ssh:kub:
-    :END:
-    #+BEGIN_SRC yaml :shebang #!/bin/ansible-playbook -i 127.0.0.1,
-      - hosts: 127.0.0.1
-        gather_facts: no
-        tasks:
-          - command: mysql -Ne 'select url from oc.oc_news_items where status=4 and url like "%youtube%";'
-            register: lists
-          - command: pkill youtube-dl
-            ignore_errors: yes
-          - shell: youtube-dl {{item}} && mysql -e 'update oc.oc_news_items set status=0 where status=4 and url like "{{item}}";'
-            with_items: lists.stdout_lines
-    #+END_SRC
 
+*** mpv
+    #+BEGIN_SRC conf :tangle ~/.config/mpv/mpv.conf
+      sub-auto=fuzzy
+      hwdec=auto
+      hwdec-codecs=all
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle ~/.config/mpv/input.conf
+      q quit_watch_later
+      MOUSE_BTN0 cycle pause
+      MOUSE_BTN1 show_progress
+      MOUSE_BTN2 cycle fullscreen
+      z set window-scale 0.5
+      Z set window-scale 1
+
+      ; show_progress
+      f show_text "${filename}"
+      d cycle audio
+      y add volume 1
+      i add volume -1
+      g add sub-delay  0.1
+      h add sub-delay -0.1
+      x cycle mute
+
+      k frame_step
+      ' seek +10
+      a seek -10
+      , seek +60
+      o seek -60
+      . seek +300
+      e seek -300
+
+      u cycle fullscreen
+    #+END_SRC
 * Emacs
-  :PROPERTIES: 
-  :header-args: :tangle ~/.emacs :results silent
-  :END:      
+  :PROPERTIES:
+  :header-args+: :tangle ~/.emacs :results silent
+  :END:
 
   OOBE settings:
   #+BEGIN_SRC elisp
@@ -457,7 +540,8 @@
     (defalias 'yes-or-no-p #'y-or-n-p)
     (defalias 'dabbrev-expand #'hippie-expand)
     (defalias 'man #'woman)
-    (setq calendar-week-start-day 1
+    (setq auto-save-default nil
+          calendar-week-start-day 1
           default-input-method "vietnamese-telex"
           desktop-load-locked-desktop t          
           inhibit-startup-screen t
@@ -619,6 +703,7 @@
      (use-package magit
        :ensure
        :bind ("C-x g" . magit-status))
+     (setq magit-save-repository-buffers 'dontask)
    #+END_SRC
 
 ** Dired
@@ -661,7 +746,8 @@
    #+BEGIN_SRC elisp
      (eval-after-load 'em-term
        '(progn
-          (add-to-list 'eshell-visual-commands "atop")
+          (dolist (prog '("atop" "systemd-cgls" "journalctl"))
+            (add-to-list 'eshell-visual-commands prog))
           (add-to-list 'eshell-visual-options '("ssh" "-t"))))
    #+END_SRC
 
@@ -671,19 +757,74 @@
    #+END_SRC
 
    Aliases:
-   #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias :no-expand
+   #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias
      alias vim find-file $1
+     alias g git $*
      alias i yaourt $*
-     alias sc systemctl --system --no-pager $*
-     alias uc systemctl --user --no-page $*
+     alias j journalctl $*
+     alias sc <<system_ctl>> $*
+     alias uc <<user_ctl>> $*
+     alias ytdl <<yt-dl>> $*
      alias fr free -h
    #+END_SRC
 
+* Ansible
+  #+BEGIN_SRC elisp :tangle ~/.emacs
+    (use-package yaml-mode :ensure)
+    (use-package ansible-doc :ensure
+      :config (add-hook 'yaml-mode-hook #'ansible-doc-mode))
+  #+END_SRC
+
+** Inventory
+   :PROPERTIES:
+   :header-args+: :tangle ~/.ansible_inventory
+   :END:
+
+   Here are the hosts and their variables
+   #+BEGIN_SRC conf
+     [arch]
+     kub ansible_python_interpreter=/usr/bin/python2
+     ton ansible_python_interpreter=/usr/bin/python2 ansible_connection=local
+
+     [all:vars]
+     user=<<username>>
+     home=/home/{{user}}
+     h="{{home}}/Copy"
+     conf="{{h}}/config/{{ansible_hostname}}"
+     locale=en_US
+     network=<<network>>
+   #+END_SRC
+
+   Ansible 2 doesn't accept host_vars here, create a dummy group
+   #+BEGIN_SRC conf
+     [kub]
+     kub
+     [kub:vars]
+     address={{network}}.54
+     ports={ owncloud: 4004, ipfs: 4001, torDir: 4660, torOr: 5880 }
+   #+END_SRC
+
+** Config
+   :PROPERTIES:
+   :header-args+: :tangle ~/.ansible.cfg
+   :END:
+
+   Keep the inventory here
+   #+BEGIN_SRC conf
+     [defaults]
+     inventory = ~/.ansible_inventory
+   #+END_SRC
+
+   For some reason ControlMaster isn't working
+   #+BEGIN_SRC conf
+     [ssh_connection]
+     ssh_args=-o ControlMaster=no
+   #+END_SRC
 * Firefox
   :PROPERTIES: 
-  :tangle:   ~/.pentadactylrc
+  :header-args+: :tangle ~/.pentadactylrc
   :END:      
-  This file is vimrc syntax
+  This file is in vimrc syntax
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (use-package vimrc-mode :ensure)
   #+END_SRC
@@ -892,128 +1033,130 @@
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v2
 
-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
-m5DxJew7zNVZdQSnAwHNGrxOkg==
-=TLb6
+hQEMA0GprIW1olW5AQgA2x7s/mYSa1f99Yf5PZ7nWPJ6a1Z//tN+SZpbFpHVv02D
+t4kJ4F1oOl0HkUp/N4baweOGBgeiNq6UQ5d3ySQhej6n1rTPO3qoSq6qaEjTxqIL
+jtHRlvki5LZ8gZUuVoQ4eWpDcpNfZEqocZJf/u2PtrIC2IKNYlW6AUPCJG9UN/cN
+CQJZqBSVyI9ChREufbWxvg8G3v3Kvwf77es4oS9llRKnVWYkv/ia5NfHDdm7/b/I
+yiJ1P9nKH7OxHSR8FFrLVIY+8n2ws1isgj5eY7HzJgZJE08NQK0Z/E2mZzg+q61O
+a0jFLTLHlmR31bZosfs346ftxs79wD+PCDixgu4z8tLsAedshO98hQ54uPIXT4c0
+r4Bup4adVkOcmUGzHpl0LAVnARDES0mye1JwjeueNnaHgMclkQdAK7nO+ifj4VgB
+8KFOGL9v4XCvN2CC7UhqtMufLjaRHyyFrsOyOQLEEqgqJJ3CzYoFpvUbGRuyCJFd
+eVhmdEiQ0aKNvn2mLtdrIWUpzDrKQX3uGpdnJ0kXIJtfvXhBQGDQPioYC6OXPHtV
+c1lr0TVX4YytiVm75quAMEpZEy8aU2VnYhSA4Yf6cNjU9z4R8+eshlWsMEhqD59+
+Oi0YYgqFtmzPz+j2srCjWFT+eO894mVqMVt5ihjY/WcqnqxYDG89ErRcNcvIAifp
+lPyBNJTUyIh9znrEYEptGKUQL5m3Uljsn+gI7eOIcfmnEdzClut8u/zzj0pGvgV2
+F5Ymk1NviuiADOPtP0O4PZQX+78O8WCO5dpU5qmxCUcGPlxjPON9vwQP89XO/ZxD
+Aav+VGwxhUWofbIRxlDRKpdyyN2Q7ALgpDBVvJRKyTANePATJbfMKpW0jNJVA8qj
+tVb2JBq/E8nwqFu4JU5dgcm6UURDr8FcxdgrGUPNAZWXYE6RvzmCx92TV0sF9FNK
+itCPFSch0Oes1mp0cCp3pPJTdMvpKB9Yvm2073k8tpXHT532uFg3b3m3osEsLilp
+Ib5S9S9BJqKkxg02QSAWzCMBGckDF2jrL33dxyg+8glAbL+z2wmQEcA9VpXTdU5w
+speQRIIaWrclljjJl/Zh3EXVIIywmG+ML1vzk+9R40DQTy/EVoEU4Tn4iRbccnun
+p+xIlQacMVEPyvwA7VOKnXRvxUDvtpzzJWb+Ees4br+mv88k/BrRXGfwfJGjAoFc
+l7WreQTI3SKyuzJmxwAmhkP8RH/vtTsvfzcEA3bSZMJE7ITH7r/eWvmZgpmUMShq
+wYHGS02eU35w741lgYlmvM4Iqyzf4gAKIbGemTgebFotkY3PqKCJfirCh2EiTGep
+YpU7sjub2eQUXGPC8y/k6gQH1b68U+Z32RVaYFI2CNxPFGwlsl7tlUK1aW2A1ll4
+4qoyFFuTYfBnUbNi/8czFDz7NF3eSBHUfI8bPoAvB+LUB29uOx7h62xA5ZlVuNJh
+sxlkJCKcoZETEFiRz7C/jLXqb4oxCIVpepz6cfoEPWvbOKhiNs78duDoL2S7RPcW
+jn5SLiX2EytUPmFUu5NlVkW/b9bQs96cPqkPpBbJROlh5r7GGKl1uJRDLzxpSx0E
+UpnnQQIigzeG6S50f5O7b1Hbes1oBY59Yk4LpcvFMOPVlJb34abcjAzqnR3MDIoN
+ME/jzhYcFpL8L+BpeNgweZjHhp2RzPG9t40xws0vGBYXt7O3BGAMyFRpQ1/IAzxy
+2GZvK3K/stpVlfaL5Nr0HZs1ECmyMGzdvr0LahqJVT6Qw8NF8CIUugDWT275ZPtr
+V/+rZAjECCfdsnfb0XtRc8Ekkm1esqSkYm/y1j1hGmQ18fuZAmfeIsIFF6mgy220
++ZEqJStjZOE6gQlJFAzkYan7lUL4TnLuXaeGUIorsWzvIMIlx0OqJ9DwMB2i1dRh
+mRCyNslVS50EvZf2arnXBbevAycrRaL8k+9vX6w89YZD4+u2irL8KPm0ygblTrHY
+Mn/XJSO7xLbks9VA/6FKrypklhEP+0qfQKPPRbKMvJxChtJIGsssTT44DTzkaNxS
+ve2h5ipAcdlycxcI7cKztAlEeoD0mZFdSk2HSWX06n9t8uW3RwNOUx9hAMXX3mvQ
+xKtSSdWTKzAc3wA3WEcfMqhw8sufTfxMsIf8XK4Pq5tHuXdQUtcmgz2VHJ7AZ+j1
+QcuXqoRzZnOR2ENb/e2NVNcTqbG9GyYCv98rpvtnNr7AmIopZ8P9wzcA0aswCIfy
+NSbcQUi851yYQYRVtE8h2cxo/OLltxCr021ggJ2EdgZyuHdIhJndP+siejoh7g48
+0gtFfZTQM6MsLnUna/0s56H5HmvTVRN6fvg21+fsAyzH9sGu7ovTWyqgdXeBFNNG
+kI+kt8fK+/UVaFBLv8GMLR1dzfzjtd0Z1LYsHyRvpxVeSSnxmpsLGPjKjYofIOf+
+GiiSoE0sDFa0JD5UH+Nnmt4pcQ/TJ5EaMpzboOS0VfGfH13sOjWVCi9fOZaeNZKI
+XJQU34kXaMtJjeOSRpzZoLcecG2cJNPgGyeTw0Yyk9R6Pj/bEUEGjYbhpxew1nQc
+HjjXvWhngxUFo7idin4H3VtndCH0j5fBodfs6+Lu9grN2jsn2rOawgYL96GZ3KqD
+fpWD3C3OlO9Gux6G0daUcn4D3lsAPA7jRz0+tazXGbrEklVb20U+G2NqZ9peF/UD
+WQ/WWGbU7jwWkKZ+B8I6GSmn5htsRFhfFM3lY6zRzKRIxejOY56wbdo1BcCb4BAB
+PPTrUhmkzg0cy2mgkvxy9KkOVkud1EoYwfgfryXSUWPGrWTWtAzJGyaNzDd9H8do
+8LphfkhndVSSP73qivf3qxteWfy3Uarndb7n9DhaIReiEVISdW9IQx99/MsmBU0a
+6/TDlWZOsAZpfou+kOK20yDHjg4YrpmZiK5Ml3OpMJc9IkNb6ruTQ1QMLGWcU0LC
+7kMhYVXPH+1eXjTzIe+JlVhbVmzX8JYkLs3iSjWmUnQ+ZvOgPp5jENoKKE7nvOsO
+xuDJVHEA/V0Y7KtJZL9Fe+W/Pt7t89Jn+i9lQfVH8qYxoFsGw9UBIgAv0RQ6FENA
+3BLByAsroK/0v1VA3Re7J30mipXE+21lMyURomdLdmEg0fAJvrykfl2UafF4TGQ/
+7K+8opuiayX004GFJeieFLEWcgU/lxLrIk2rYNEKqcfcMVz6IVHCrd1fUA/1sfwJ
+v5rk/a+CbgFykKMPiWfkat9t/eh3HvrQsVRkX74pK4SASj43pHDgKMMh3B0T7YE7
+qLiMUXNzdb3gT/QsUGulbZqWP/sN6/VyFiZ7OqYhUDSC3NA4XlRPHfyM8ylLfQ/y
+8e/W2pcAoyQHsguEe/daVG28QTHnQFGG+iR1KDczP7w1GK34HOhYKULND4ujm9QP
+UoYLjukJ4YilVbVlwlPIjzJBI8XTVZAQEKZUspoIgIB9H1TrR4J5tXVDsLLMg/Go
+POZqaFqIjh9FqBtojG2za0nRoudT2nUSRZrjTr88upGov6TuhbGn+HnD+jY8iiIJ
+PghdWn8hBj3njG3f7rK46RPm2YLyWpWwkl3l5hQzIbeoR2UI2KDUee6XXItqbI25
+BD2oQDD3fDYy4qw9oVkoJ9Sxq+sD2Lf73D33L7VQ/oFOPe/PLiZwOR5GuBnMLOKM
+MYwIlC2MHKz/tkYytGlBuWJNmvvDqFJFR430OSuuCPZDjj9irrsShMn3Hjej6I7w
+P4IauVEgn/GN1v0jzw3BggQ8A2mZrwJhJIQdXntwmpqv4/vMRPlSWtxjs0me+jXi
+JkizIeVyd/rdbBdy4oDPHeo2L5MNkk+LO7ByGH0O+IJghmfeaPZxgbYtsV5NgEeV
+T0TB3j7q8OaxODjZo5t3CJGcGwoUU7/ff7ZeH5BTYUMIJBtXqvfc1cSIeAQnpvjs
+HVI7czq6q0RB+famwaGmgeuZ4MDeu3UTZY+kzKPSIhFielvzudE07wP1nIe2OH7O
+hC+JI4E/rWoTDwDnjf0gOMQV8m6NSnvzulf15FdNW9bcjVYemFipAGkBAoHlhuJ1
+GfOU7+elt6twritmdyHZmNNGEsnd4fGufdBRJtOMKFPHG9wLTye7mRtBttk8bp/a
+/YiNrwU44hgFWVSYNejfRMTj/v1DTbHVLUI3bO31jOX/4Vxbz1zX3ikfEOWMo/U0
+kEl1s9+5rtbKp7c6lqbnz1e3RtpTB+sAzaAZpesvYtYaRcGC0C3N067Vkk3bm5k3
+vbHu9MnXNRm1ViAJboIuFNJw+z8mLycbIFprFfedePK46lFTDL0NxOmVKL9jegcT
+y8euYfrl8UKQ6bh/bkxoomhGh0rpw+zaFu9+7R3zooxzPTGDJGv5LOlgRhLUuVju
+mOO0uBaOnhZqDUM4ueVzPvLQtnzOWifCM7+eN7Pj600nuogdk6M0GkGv2kLk2hPi
+LSaoDBRK2Ai592elTeb154ugfE3FhyBpd3KhCd/KEPI2N6juVjrxIyR6YG3b1D0X
+qsR+/1hu+n5wzY2FYlE0nxXMyo42PQNae+krf0QQLSFbKCHLaMeGNSGRmqhh93UL
+ptY0sjh6P9ft700VQsxMHV+jrXSR1da9IBmYV74qQdD3ZjAXR/ji9vDoXCBNOQOq
+X25pVto6uM5wj/oa6rc1bWkVQRMsqrUNOGv6Dx5pxnkIz7Lk29r6TST9gTFVuShj
+7mus7ykhYpFtCMA/wmB2ifBEIV9E9287QksMZBJNfE8WyJSfgRP1+c23VsbMSBiH
+8hK+9u0DAXrMvRf5PEed+ixcEtZwrBZR5X8TIcjaYYgP7zvJTDH4lcKMZ5DBLw4u
+JjwDDcRw10XAMpgNlVZUwF3cZH+GBLUtm2TLRqBCkM29IZZM01kEXUDw7rEEqab6
+8ZhdltWKPrT4Xp2gLHsS8r8807YYw9ZQBNyvIkSLbKPPajqri/MfRYJbu3D3WGZG
+TXowwwXPyoQiywsR17iCQWuA+rzP6GaJW8zO1oZbRVpPOR8FdwNhcxBWjViuf78v
+Gx0ierW2i540iP6rvwkopthFwN2m4XlWVQOuB1c6G0cvC43tvF6cx2NuBhKPV2Ky
+dSP3SSfoc/G4CnGThGeYW9vpcUjro6OeoJfwAfGhpnzTnnY7TWO0mU1YrALkenPp
+abZfxDfvpgUf9Ai8tOE7oEjDGcx/HdwMU9+/soMCL5xDw/UKUUhQWBkgILro/Eo+
+fLQz4FS5dxWBQLOo2g/ljmiPl6MNjpdp2+c4GhSm1OfDcWH73XAiomSUfyQ9t8YD
+10/lnd4CZwudbvQlNkIGu7F0LQJDY+R0lqN+iDxW8u6fAE3xHSKrtt4YwW/Lc8gS
+Nf3EEhF1TITbjZ2YUixbE2G8MXqk06k7B58ALHWCxsx4cPNu5omURrRV3x5Xnbf0
+im675zJbayytZSCk3Ke1ZEpWIqAMWW3FVOOk35x4Epog0rrS09+bkFBsCSAHsjH+
+uzR0JfxtKJC7p7OK9f5vJKMU6WEvxYi+nX995csDm+KKQdVUdu+bSKaFNGwvd3Kh
+lS3uYOlz0oQRz/QHlDVLc07AQRO4cqh5ADueF+TFYT72kfIBE4HY2/2T8/Iqldhg
+mC+tWPY0+Zc+GXUFNQ78z4Ntu8sQVrZSPfYNetAGIlOBBMixDHMROR4p2G6PIyiw
+++tEavYEHgSQM20FPIjDm2VAhbacedxHHkE1MxBrqfO3T0aVptkLIPahBWH5LNcf
+O25znTJ2jQa1UYjnsm4OaDM15ibYT/18mf39wo5BoLBvheeQYjVRv9J7yZGSq1VZ
+0yqqHCGYPyU5Qtbtxpt9B6x6bMw0TnGKl2HJZbxeE7n7hcz8sIUZ88xVr3RIqK/H
+euoFuclyeBJFylkTRXZaFxqXsMfJwtG1pV7y6uDGMkiMjJy1hriaIBwzOO1wtpky
+T63phrNoLrfaVGSM0BIaelt+hw5He1jIW0HArf9qkT5URxgP7bBTBb7+awdQaM38
+q2vXL+Om9K4zi3uNcqsuU0fzapYWL+baGSV7kf4prPjfvjSV8xbsP71ZGGC2beSg
+SYOv+uGfuHyCWP3lLEZ1FaqS69/BJozkiOpWEgz1JAONzbxCReAkwGjsyk4yWCBS
+xx0Mf8MU5rBq27J0GkiTcnM7RCWGdfb7CzaUQ25OXWoilkF45j7TAEYSVwRcf9sF
+znZN9Iq9d455nUhNA8uDGgXgtXPKjmg6NBfdn6vM3qspD1gywIDb9jRVufIXXowg
+qEM6gTd3Z/1J/tUfn7Inv1Ivx2axXblgv8etGrbyG1+IRW146KCu5lhFIB4vpOPA
+a4o07q4u+vWsB5gwIKwXRdN+mjKY3QmqNqy5gbXiNLLNH3YIfvaIzKUJ3H7qMBWA
+bXPDW0KxKDw/jxbKZTfc3Oll+xLqpBWIasZIfZvFS9wzbFRBz5rLlfrj9Po8UbBl
+OZwfTjm17l/xrLRR0I2F1li/nRRd4wfXm1cqHbu8OdWBscPxVySxxItQwZ4/lliJ
+COzKoDQ9YxgPbbBggjOvW/gczmxPlRPcGhNKg/f7JWaNxJUa8C1dOU9kRTXJsaLG
+UYDprdsX57FvpbY8txGNW87w9wPcmFs45XBoOldhZxyLbN5F23p4ZyUV7MmIVTJZ
+se8x3NLWO0gmT6RehIbJRxG40ini/hNARclZgnbQPS4WUZeSbun1M4uufisMBjjv
+dbW5ocyLp+2cj1VZtCVcSu627jK9k62eP0s/tZmEEM9juwI/ZkW3DpkisSumPagB
+bL5xfqrMIFYsozARtklXTBISyYlaU5PLBl1qnMHZdz57dsBuGwk9LIJ3N4KGGxMp
+AWxSvqgLumcH9Gm1BczJJl5Xzf4M7s5H8Uxd+U4YwwvQ6yCpyVQHAe6ivZR/wUSb
+KArDIrx6OIDz1bun5gWIh1xqMsPp7mXRI1FBZYfMPVc4wQaS+CQpMxhSOqmo1dTt
+Kd8PfrTWF7iXq5WHV7+yDd4fH7qtDypJXEiIN+nzeKVy0xIZLRhkHQtcUd4Ab4qy
+TUTSsDWYVdVWpr2feiDF8gkuTlOnEcMAqFK2AsuuszLmzQnT9cXmautasdAVpdoK
+4Bh5ZqDUF8TEGH/WKP3duBqYqHDpdhJrQdDs/dJLXbeCZ53wX4odv3wxZG8blUDI
+mb/8d7H+b02fiajQm/Di6nVfJTT4q95gewYHBdTHL0rCzRTH5j859bsY8IewOUli
+yzeV7Os3mUWKExHhtT9Vv9wT6WCSRs6k7CIkf1KLlzDSqsQ475nNiE3Ob+hkYee+
+74twcmVEgejJ3Fio3REDjlq/ihWfLt60l0+/NgQ/zqw5HET5R+CtpAn+oGV4AmWF
+7hsFBAsgftUZJBsHf+Z6gXz1aHpPJlyUSQUSNzdjYlumNgW51KAqjA/EYzBepMER
+erx9fj2sHSqXYzoKaO6WZpwNrGnCJpsDxo0mPekHBASPwcxe2xz6Gd6Bq2/PRDxK
+7W620B406H5zCaJpQNcfpPYFVx3HjYUAeU/1JWXnsQ0ixoMnGQcmmnDM6cd6Vae1
+9rWVt/aPIxzl3zlUBdnYDO3MgTmE3ZRXISgxVRkqEI5FEWi/ZeJo6UILfT7BmJKr
+pDPYlrxDAlv3uyq1Y7oTTSBDvBpZ/a/4QF9kxaEtYSeSnm4+l25sE2awWZexPV3s
+bnm3W9GpI2jOBOOVUII7wb/88So4GvsnhgAcXZgRx+kGaCp8T+NXT5Nn7c/4y0QT
+3HE21EaOzQLFUNMpLC7aD9SRzEjzZRRizY1k16wN49XwfcEQHWHjFwiu+Y8J6Gpq
+CfT9UrIl34p6Yd+c0KMJXngdn4mfCE+6G6DYka4Rf2m734Do6fiJMQWx8rdhlxmt
+mefTpbyxfE1zCibNr22W11rCCHZFmno7cy64JsTX2glcidjUKPqpaDsIvi5bJw4X
+7SASQEc0wmKH/lZRe7YbF9rirHQCxbBK8Re7N3Mbqot8kd0fCCfCA4Z3iSx0UY6D
+7E5VQTNfavlRqAp3ke6QcIXojGQ=
+=IeVI
 -----END PGP MESSAGE-----

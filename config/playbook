@@ -12,18 +12,11 @@
   become: yes
   roles:
     - desktop
-  tasks:
-    - include: ton.yml
 - hosts: kub
   become: yes
   roles:
     - minidlna
-    - nginx
+    - role: nginx
     - owncloud
     - tor
-  tasks:
-    - include: kub.yml
-
-
-
-
+    - role: wallabag
