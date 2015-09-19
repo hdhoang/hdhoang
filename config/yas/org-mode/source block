@@ -1,6 +1,0 @@
-# key: <s
-# name: source block
-# --
-#+BEGIN_SRC $1
- $2
-#+END_SRC

@@ -1,0 +1,1019 @@
+#+PROPERTY: header-args+ :cache yes
+#+PROPERTY: header-args+ :comments org
+#+PROPERTY: header-args+ :mkdirp yes
+#+PROPERTY: header-args+ :noweb yes
+#+PROPERTY: header-args+ :var fm=fav_music
+#+PROPERTY: header-args:sh+ :var sc=system_ctl
+#+PROPERTY: header-args:sh+ :var uc=user_ctl
+#+PROPERTY: header-args:sh+ :var pm=pacman
+* Places and names
+  #+NAME: username
+  #+BEGIN_SRC text
+    hdhoang
+  #+END_SRC
+
+  #+NAME: storage
+  #+BEGIN_SRC text
+    /home/<<username>>/Copy
+  #+END_SRC
+
+  #+NAME: fav_music
+  #+BEGIN_EXAMPLE text
+    /home/hdhoang/Music
+  #+END_EXAMPLE
+
+  #+NAME: network
+  #+BEGIN_SRC text
+    10.117.14
+  #+END_SRC
+
+  #+NAME: domain
+  #+BEGIN_SRC text
+    zahe.me
+  #+END_SRC
+
+  #+NAME: system_ctl
+  #+BEGIN_EXAMPLE text
+    systemctl --system --no-pager
+  #+END_EXAMPLE
+
+  #+NAME: user_ctl
+  #+BEGIN_EXAMPLE text
+    systemctl --user --no-pager
+  #+END_EXAMPLE
+
+  #+NAME: pacman
+  #+BEGIN_EXAMPLE text
+    pacman --noconfirm --needed
+  #+END_EXAMPLE
+* SSH
+  :PROPERTIES:
+  :tangle:   ~/.ssh/config
+  :END:
+
+  Hosts
+  #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
+    vorme ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf2C8j0GFA8eq8Vgva/9KI4cF4Q23v4rBk6zAxoyIJvENGkpDuUba4AOMabUkPiXU76KVbx/h4fOivjrWoUNG6Z0xEOJTQqVwuk7788dwIm49Ba+ZOC/sCtT7dsbshFpzXmkdASsZty0foFSILRADDTlB1MZiN9wJRlnjkmIO9WiSMYnuGzolO2f+Gy6LFrtQF1ZgOOqPToO4u4li3VPh1zdoY5+IQul9BQJGU7tMZrleH09LcOUlip8SHZYuXu/Zlb9GSK7Cj7WfGaR0k+xvs657n41haffQ5CxTjocqZdv7eO4Uo2ryWXn2Ck7DwKH6KMjEJZRbX32zLsTacQNgR
+    kub,<<network>>.54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGtY5ERdvH+mAQKfy270I+eEaZ2i6FhhEjG0EuzDxIym
+  #+END_SRC
+
+  #+NAME: SSH encryption settings
+  #+BEGIN_SRC conf
+    # https://stribika.github.io/2015/01/04/secure-secure-shell.html
+    Host *
+    KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1
+    Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
+    MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-ripemd160-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,hmac-ripemd160,umac-128@openssh.com,hmac-sha1
+  #+END_SRC
+
+  Code hosting sites:
+  #+BEGIN_SRC conf
+    Host github.com bitbucket.org
+    User git
+    IdentityFile git
+    Host git.kde.org
+    User git
+    IdentityFile kde
+    Host heroku.com
+    IdentityFile heroku
+  #+END_SRC
+
+  Machines
+  #+BEGIN_SRC conf
+    Host vorme
+    User root
+    IdentityFile kub
+    Host kub
+    User <<username>>
+    IdentityFile kub
+  #+END_SRC
+
+* KDE
+** kwin
+   :PROPERTIES:
+   :tangle:   ~/.config/kwinrulesrc
+   :END:
+
+   Remove border from firefox
+   #+BEGIN_SRC conf
+     [1]
+     Description=Window settings for firefox
+     noborder=true
+     noborderrule=2
+     windowrole=browser
+     windowrolematch=1
+     wmclass=navigator firefox
+     wmclasscomplete=true
+     wmclassmatch=1
+     [2]
+     Description=Application settings for emacs
+     shortcut=F4
+     shortcutrule=2
+     wmclass=emacs
+     wmclasscomplete=false
+     wmclassmatch=1
+     [General]
+     count=2
+   #+END_SRC
+
+* Git
+  :PROPERTIES:
+  :header-args: :tangle ~/.gitconfig
+  :END:
+  #+BEGIN_SRC conf
+    [user]
+    name = Hoàng Đức Hiếu
+    email = <<username>>@<<domain>>
+    [color]
+    ui = auto
+    [core]
+    eol = lf
+    whitespace = trailing-space,space-before-tab
+
+    [alias]
+    pr = pull --rebase
+    ml = log --reverse --topo-order ORIG_HEAD..
+    l = log -p --word-diff
+    s = status -s
+    ap = add -p
+    c = commit -v
+    d = diff --word-diff=porcelain
+    [push]
+    default = simple
+    [pull]
+    rebase = true
+    [rebase]
+    stat = true
+  #+END_SRC
+
+* Ansible
+  #+BEGIN_SRC elisp :tangle ~/.emacs
+    (use-package yaml-mode :ensure)
+  #+END_SRC
+
+** Inventory
+   :PROPERTIES: 
+   :tangle:   /home/hdhoang/Copy/config/ansible_inventory
+   :END:      
+   Here are the hosts and their variables
+   #+BEGIN_SRC conf
+     [arch]
+     kub ansible_python_interpreter=/usr/bin/python2
+     ton ansible_python_interpreter=/usr/bin/python2 ansible_connection=local
+
+     [all:vars]
+     user=<<username>>
+     home=/home/{{user}}
+     h="{{home}}/Copy"
+     conf="{{h}}/config/{{ansible_hostname}}"
+     locale=en_US
+     network=<<network>>
+   #+END_SRC
+
+   Ansible 2 doesn't accept host_vars here, create a dummy group
+   #+BEGIN_SRC conf
+     [kub]
+     kub
+     [kub:vars]
+     address={{network}}.54
+     ports={ owncloud: 4004, ipfs: 4001, torDir: 4660, torOr: 5880 }
+   #+END_SRC
+
+** Config
+   :PROPERTIES: 
+   :tangle:   ~/.ansible.cfg
+   :END:
+   Keep the inventory here
+   #+BEGIN_SRC conf
+     [default]
+     inventory = <<storage>>/config/ansible_inventory
+   #+END_SRC
+
+   ChallengeResponseAuthentication doesn't agree with ControlMaster
+   #+BEGIN_SRC conf :tangle no
+     [ssh_connection]
+     ssh_args=-o ControlMaster=no
+   #+END_SRC
+
+* ArchLinux
+  :PROPERTIES: 
+  :header-args: :dir /sudo:: :results verbatim
+  :END:
+
+  Pacman config
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
+    [options]
+    VerbosePkgLists
+    UseSyslog
+    CheckSpace
+    HoldPkg = pacman glibc
+    Architecture = auto
+
+    SigLevel = Required DatabaseOptional
+    LocalFileSigLevel = Optional
+
+    [core]
+    Include = /etc/pacman.d/mirrorlist
+    [extra]
+    Include = /etc/pacman.d/mirrorlist
+    [community]
+    Include = /etc/pacman.d/mirrorlist
+    [blackarch]
+    Server = http://f.archlinuxvn.org/$repo/$repo/os/$arch
+  #+END_SRC
+
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
+  #+END_SRC
+
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.d/mirrorlist
+    Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
+  #+END_SRC
+
+  Refresh database
+  #+BEGIN_SRC sh
+    $pm -S -y
+  #+END_SRC
+
+  AUR helper
+  #+BEGIN_SRC yaml :tangle ~/Copy/bin/aur :shebang #!/bin/ansible-playbook
+    - hosts: arch
+      gather_facts: no
+      vars:
+        store: /tmp/aur
+      vars_prompt:
+        - name: package
+          private: no
+      tasks:
+        - file: state=directory path={{store}}
+        - get_url: url=https://aur4.archlinux.org/cgit/aur.git/snapshot/{{package}}.tar.gz dest={{store}}/
+        - unarchive: copy=no src={{store}}/{{package}}.tar.gz dest={{store}}
+        - command: nice makepkg --noconfirm --install --force --syncdeps chdir={{store}}/{{package}}
+  #+END_SRC
+
+  Yaourt config
+  #+BEGIN_SRC conf :tangle ~/.yaourtrc
+    AURUPGRADE=1
+    EXPORT=1
+    EXPORTDIR=~
+    BUILD_NOCONFIRM=1
+    EDITFILES=0
+  #+END_SRC
+
+  Base utils
+  #+BEGIN_SRC sh
+    $pm -S haveged p7zip parallel pkgfile yaourt
+    $sc enable --now haveged
+  #+END_SRC
+
+  #+RESULTS:
+  : :: Synchronizing package databases...
+  :  core is up to date
+  :  extra is up to date
+  :  community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                  0.0   B  0.00B/s 00:00 [----------------------]   0% community                 53.4 KiB  89.0K/s 00:31 [----------------------]   1% community                146.9 KiB   215K/s 00:12 [#---------------------]   5% community                221.4 KiB   268K/s 00:09 [#---------------------]   7% community                318.9 KiB   341K/s 00:07 [##--------------------]  11% community                393.7 KiB   352K/s 00:06 [##--------------------]  13% community                489.9 KiB   395K/s 00:05 [###-------------------]  17% community                562.8 KiB   385K/s 00:05 [####------------------]  19% community                622.9 KiB   326K/s 00:06 [####------------------]  21% community                756.1 KiB   439K/s 00:04 [#####-----------------]  26% community                845.6 KiB   442K/s 00:04 [######----------------]  29% community                928.4 KiB   431K/s 00:04 [#######---------------]  32% community                961.8 KiB   339K/s 00:05 [#######---------------]  33% community               1096.7 KiB   448K/s 00:03 [########--------------]  38% community               1174.2 KiB   428K/s 00:03 [#########-------------]  41% community               1261.0 KiB   430K/s 00:03 [#########-------------]  44% community               1346.5 KiB   429K/s 00:03 [##########------------]  47% community               1437.4 KiB   437K/s 00:03 [###########-----------]  50% community               1514.9 KiB   419K/s 00:03 [###########-----------]  53% community               1609.7 KiB   437K/s 00:02 [############----------]  56% community               1695.2 KiB   434K/s 00:02 [############----------]  59% community               1779.4 KiB   427K/s 00:02 [#############---------]  62% community               1874.2 KiB   443K/s 00:02 [##############--------]  65% community               1949.0 KiB   420K/s 00:02 [##############--------]  68% community               2038.6 KiB   422K/s 00:01 [###############-------]  71% community                  2.1 MiB   433K/s 00:01 [################------]  74% community                  2.2 MiB   426K/s 00:01 [################------]  77% community                  2.2 MiB   409K/s 00:01 [#################-----]  80% community                  2.3 MiB   398K/s 00:01 [##################----]  82% community                  2.4 MiB   405K/s 00:00 [##################----]  86% community                  2.5 MiB   426K/s 00:00 [###################---]  89% community                  2.6 MiB   420K/s 00:00 [####################--]  92% community                  2.7 MiB   440K/s 00:00 [####################--]  95% community                  2.7 MiB   416K/s 00:00 [#####################-]  98% community                  2.8 MiB   416K/s 00:07 [######################] 100%
+  :  multilib is up to date
+  :  blackarch is up to date
+  :  there is nothing to do
+
+  #+BEGIN_SRC sh
+    pkgfile -u
+  #+END_SRC
+
+  #+RESULTS:
+  
+  Dev-env:
+  #+BEGIN_SRC sh
+    $pm -S base-devel rust git ansible android-tools
+  #+END_SRC
+
+  Monitoring:
+  #+BEGIN_SRC sh
+    $pm -S ethtool lm_sensors net-tools psmisc \
+        procps-ng inetutils ltrace sysdig atop iotop
+  #+END_SRC
+  
+  #+RESULTS:
+  
+  #+BEGIN_SRC sh :tangle ~/Copy/bin/strace :shebang #!/bin/sh :no-expand
+    exec /usr/bin/ltrace -CSn2 $@
+  #+END_SRC
+
+  Of course emacs is installed, now run it
+  #+BEGIN_SRC sh
+    $pm -S emacs-pkgbuild-mode
+  #+END_SRC
+
+  #+RESULTS:
+  :  there is nothing to do
+
+  #+BEGIN_SRC conf :tangle ~/.config/systemd/user/emacs.service
+    [Unit]
+    Description=Emacs
+
+    [Service]
+    ExecStart=/usr/bin/emacs
+    Restart=always
+    RestartSec=1sec
+
+    [Install]
+    WantedBy=default.target
+  #+END_SRC
+
+  #+BEGIN_SRC sh :dir ~
+    $uc enable --now emacs
+  #+END_SRC
+
+  #+RESULTS:
+
+** ton
+*** Fonts
+    #+BEGIN_SRC sh
+      $pm -S ttf-linux-libertine ttf-inconsolata ttf-hannom
+    #+END_SRC
+
+    #+RESULTS:
+
+    #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no
+      <?xml version='1.0'?>
+      <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+      <fontconfig>
+        <match target="font">
+          <edit mode="assign" name="rgba">
+            <const>none</const>
+          </edit>
+        </match>
+        <match target="font">
+          <edit mode="assign" name="hinting">
+            <bool>true</bool>
+          </edit>
+        </match>
+        <match target="font">
+          <edit mode="assign" name="hintstyle">
+            <const>hintmedium</const>
+          </edit>
+        </match>
+        <match target="font">
+          <edit mode="assign" name="antialias">
+            <bool>true</bool>
+          </edit>
+        </match>
+        <dir>~/.fonts</dir>
+        <match target="pattern">
+          <test qual="any" name="family"><string>Arial</string></test>
+          <edit name="family" mode="assign" binding="same"><string>sans-serif</string></edit>
+        </match>
+        <alias>
+          <family>sans-serif</family>
+          <prefer>
+            <family>Linux Biolinum O</family>
+          </prefer>
+        </alias>
+        <alias>
+          <family>serif</family>
+          <prefer>
+            <family>Linux Libertine O</family>
+          </prefer>
+        </alias>
+        <alias>
+          <family>monospace</family>
+          <prefer>
+            <family>Inconsolata</family>
+          </prefer>
+        </alias>
+        <selectfont>
+          <rejectfont>
+            <glob>/usr/share/fonts/default/Type1/*</glob>
+            <pattern>
+              <patelt name="scalable">
+                <bool>false</bool>
+              </patelt>
+            </pattern>
+          </rejectfont>
+        </selectfont>
+      </fontconfig>
+    #+END_SRC
+
+*** Ethernet routing
+   Route through ethernet
+   #+BEGIN_SRC sh
+     ip route add default via 192.168.5.1
+   #+END_SRC
+
+   
+   #+RESULTS:
+   
+   Delete that route
+   #+BEGIN_SRC sh
+     ip route del default via 192.168.0.1
+   #+END_SRC
+
+*** mpd
+    :PROPERTIES: 
+    :header-args: :dir ~
+    :END:      
+    Shuffle and play
+    #+BEGIN_SRC sh :results silent
+      mpc listall | shuf > $fm/pq.m3u && mpc clear && mpc load pq && mpc play
+    #+END_SRC
+
+    
+    Delete currently playing track
+    #+BEGIN_SRC sh :eval query
+      rm -v $fm/"$(mpc -f %file% | head -1)"
+    #+END_SRC
+
+    
+    #+RESULTS:
+*** starred_youtube
+    :PROPERTIES:
+    :tangle:   ~/Copy/bin/starred_youtube
+    :dir:      /ssh:kub:
+    :END:
+    #+BEGIN_SRC yaml :shebang #!/bin/ansible-playbook -i 127.0.0.1,
+      - hosts: 127.0.0.1
+        gather_facts: no
+        tasks:
+          - command: mysql -Ne 'select url from oc.oc_news_items where status=4 and url like "%youtube%";'
+            register: lists
+          - command: pkill youtube-dl
+            ignore_errors: yes
+          - shell: youtube-dl {{item}} && mysql -e 'update oc.oc_news_items set status=0 where status=4 and url like "{{item}}";'
+            with_items: lists.stdout_lines
+    #+END_SRC
+
+* Emacs
+  :PROPERTIES: 
+  :header-args: :tangle ~/.emacs :results silent
+  :END:      
+
+  OOBE settings:
+  #+BEGIN_SRC elisp
+    (server-mode t)
+    (desktop-save-mode t)
+    (global-set-key (kbd "C-x C-r")
+                    (lambda () (interactive)
+                      (revert-buffer :noconfirm t)))
+    (defalias 'yes-or-no-p #'y-or-n-p)
+    (defalias 'dabbrev-expand #'hippie-expand)
+    (defalias 'man #'woman)
+    (setq calendar-week-start-day 1
+          default-input-method "vietnamese-telex"
+          desktop-load-locked-desktop t          
+          inhibit-startup-screen t
+          make-backup-files nil
+          scroll-preserve-screen-position t
+          tramp-default-method "ssh"
+          undo-tree-mode-lighter "" 
+          magit-auto-revert-mode-lighter ""
+          visible-bell t
+          frame-title-format "%b")
+    (set-language-environment "UTF-8")
+    (setq-default buffer-file-coding-system 'utf-8-unix)
+    (setq-default sentence-end-double-space nil)
+    (global-set-key (kbd "C-\\") #'toggle-input-method)
+    (tool-bar-mode -1)
+    (blink-cursor-mode -1)
+    (show-paren-mode t)
+    (global-hl-line-mode t)
+    (winner-mode)
+  #+END_SRC
+
+  Package management
+  #+BEGIN_SRC elisp
+    (package-initialize)
+    (setq package-archives
+          '(("gnu" . "https://elpa.gnu.org/packages/")
+            ("marmalade" . "https://marmalade-repo.org/packages/")
+            ("melpa" . "http://melpa.org/packages/")))
+    (unless (package-installed-p 'use-package)
+      (package-refresh-contents)
+      (package-install 'use-package))
+    (require 'use-package)
+  #+END_SRC
+
+  Color theme
+  #+BEGIN_SRC elisp
+    (use-package color-theme-sanityinc-solarized
+      :ensure
+      :config (load-theme 'sanityinc-solarized-light t))
+  #+END_SRC
+
+  Font on Windows
+  #+BEGIN_SRC elisp
+    (when (eq window-system 'w32)
+      (if (> window-system-version 5)
+          (set-default-font "Consolas-12" :frames t)
+        (set-default-font "Lucida Console-10" :frames t)))
+  #+END_SRC
+
+** Editing
+   Vim-style
+   #+BEGIN_SRC elisp
+     (use-package evil
+       :ensure
+       :bind (("C-v" . evil-scroll-down)
+              ("M-v" . evil-scroll-up))
+       :config
+       (progn
+         (evil-mode t)
+         (evil-set-initial-state 'special-mode 'emacs)
+         (dolist (state '(normal motion))
+           (evil-define-key state global-map
+             (kbd "<SPC>") #'evil-scroll-down
+             (kbd "S-<SPC>") #'evil-scroll-up))
+         (dolist (state '(insert motion normal))
+           (evil-define-key state global-map
+             (kbd "C-t") #'transpose-chars
+             (kbd "C-d") #'delete-char
+             (kbd "C-k") #'kill-line
+             (kbd "C-y") #'evil-paste-before
+             (kbd "C-a") #'beginning-of-line (kbd "C-e") #'end-of-line
+             (kbd "C-f") #'forward-char   (kbd "C-b") #'backward-char
+             (kbd "C-n") #'next-line      (kbd "C-p") #'previous-line
+             (kbd "<down>") #'next-line   (kbd "<up>") #'previous-line
+             (kbd "j") #'next-line        (kbd "k") #'previous-line
+             (kbd "C-r") #'isearch-backward))
+         (evil-define-key 'insert global-map
+           "j" #'self-insert-command "k" #'self-insert-command)
+         (evil-define-key 'motion help-mode-map
+           (kbd "<tab>") #'forward-button)))
+   #+END_SRC
+
+   Automatic parens
+   #+BEGIN_SRC elisp
+     (use-package smartparens
+       :ensure
+       :diminish ""
+       :config (progn (require 'smartparens-config)
+                      (smartparens-global-mode t)))
+   #+END_SRC
+
+   Aggressive indent
+   #+BEGIN_SRC elisp
+     (use-package aggressive-indent
+       :ensure
+       :diminish ""
+       :config (global-aggressive-indent-mode))
+   #+END_SRC
+
+   Switch window with ace
+   #+BEGIN_SRC elisp
+     (use-package ace-window
+       :ensure
+       :config (ace-window-display-mode 1)
+       :bind ("C-x o" . ace-window))
+   #+END_SRC
+
+   Do things with helm:
+   #+BEGIN_SRC elisp
+     (use-package helm
+       :ensure
+       :config (progn
+                 (helm-mode 1)
+                 (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
+       :diminish helm-mode
+       :bind (("C-h SPC" . helm-all-mark-rings)
+              ("C-x b" . helm-mini)
+              ("C-x C-b" . helm-buffers-list)
+              ("C-x C-f" . helm-find-files)
+              ("C-c g" . helm-do-grep)
+              ("M-s o" . helm-occur)
+              ("M-x" . helm-M-x)))
+     (require 'helm-config)
+     (use-package evil
+       :config (dolist (state '(insert motion normal))
+                 (evil-define-key state global-map
+                   (kbd "M-y") #'helm-show-kill-ring)))
+   #+END_SRC
+
+** Org
+   #+BEGIN_SRC elisp
+     (add-hook 'org-mode-hook
+               '(lambda ()
+                  (add-hook 'before-save-hook 'org-align-all-tags
+                            :local t)))
+     (org-babel-do-load-languages 'org-babel-load-languages
+                                  '((sh .t)))
+     (setq org-src-fontify-natively t)
+   #+END_SRC
+
+*** Crypt
+    #+BEGIN_SRC elisp
+      (require 'org-crypt)
+      (add-hook 'org-mode-hook
+                '(lambda ()
+                   (add-hook 'before-save-hook 'org-encrypt-entries
+                             :local t)))
+      (setq org-tags-exclude-from-inheritance '("crypt"))
+      (setq org-crypt-key "hdhoang@keybase.io")
+    #+END_SRC
+
+    Make it possible to tangle encrypted block
+    #+BEGIN_SRC elisp
+      (remove-hook 'org-babel-pre-tangle-hook #'save-buffer)
+    #+END_SRC
+
+** Magit
+   #+BEGIN_SRC elisp
+     (use-package magit
+       :ensure
+       :bind ("C-x g" . magit-status))
+   #+END_SRC
+
+** Dired
+   #+BEGIN_SRC elisp
+     (use-package dired+
+       :ensure
+       :config (progn (require 'dired+)
+                      (global-dired-hide-details-mode -1)))
+     (defun dired-open ()
+       (interactive)
+       (dired-do-shell-command "xdg-open &" :file-list (dired-get-marked-files)))
+     (eval-after-load "dired"
+       '(progn (define-key dired-mode-map (kbd "RET") #'dired-open)
+               (define-key dired-mode-map (kbd "<mouse-2>") #'dired-open)))
+     (setq dired-recursive-copies 'always
+           dired-recursive-deletes 'always
+           dired-listing-switches "-alh"
+           dired-guess-shell-alist-user
+           '(("\\.cb.\\'" "okular")
+             ("." "xdg-open;")))
+   #+END_SRC
+
+   
+** Eshell
+   Put eshell on a convenient binding
+   #+BEGIN_SRC elisp
+     (global-set-key (kbd "C-x M-m") #'eshell)
+   #+END_SRC
+
+   I like the prompt to be on a separate line.
+   #+BEGIN_SRC elisp
+     (setq eshell-prompt-function
+           '(lambda ()
+              (concat (eshell/pwd) "\n"
+                      (int-to-string eshell-last-command-status) "% "))
+           eshell-prompt-regexp "^[[:digit:]]+% ")
+   #+END_SRC
+
+   These are terminal-manipulating commands
+   #+BEGIN_SRC elisp
+     (eval-after-load 'em-term
+       '(progn
+          (add-to-list 'eshell-visual-commands "atop")
+          (add-to-list 'eshell-visual-options '("ssh" "-t"))))
+   #+END_SRC
+
+   Profile:
+   #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/profile :no-expand
+     addpath ~/Copy/bin
+   #+END_SRC
+
+   Aliases:
+   #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias :no-expand
+     alias vim find-file $1
+     alias i yaourt $*
+     alias sc systemctl --system --no-pager $*
+     alias uc systemctl --user --no-page $*
+     alias fr free -h
+   #+END_SRC
+
+* Firefox
+  :PROPERTIES: 
+  :tangle:   ~/.pentadactylrc
+  :END:      
+  This file is vimrc syntax
+  #+BEGIN_SRC elisp :tangle ~/.emacs
+    (use-package vimrc-mode :ensure)
+  #+END_SRC
+
+  Use DuckDuckGo:
+  #+BEGIN_SRC vimrc
+    silent bmark -keyword ddg -t DDG https://duckduckgo.com/?kn=1&kp=-1&kae=c&q=%s
+    set defsearch=ddg
+  #+END_SRC
+
+  Use backspace to go back:
+  #+BEGIN_SRC vimrc
+    set! browser.backspace_action=0
+  #+END_SRC
+
+  Don't let middle mouse paste:
+  #+BEGIN_SRC vimrc
+    set! middlemouse.contentLoadURL=false
+  #+END_SRC
+
+  Restore C-j for Downloads:
+  #+BEGIN_SRC vimrc
+    map <C-j> -ex dialog downloads
+  #+END_SRC
+
+  Bind stop to an easy binding:
+  #+BEGIN_SRC vimrc
+    map s <C-c>
+  #+END_SRC
+
+  Make scrolling easier:
+  #+BEGIN_SRC vimrc
+    map <space> <C-d>
+    map <S-space> <C-u>
+  #+END_SRC
+
+  Pin tab:
+  #+BEGIN_SRC vimrc
+    map <A-p> -ex pintab!
+  #+END_SRC
+
+  Move to first or last:
+  #+BEGIN_SRC vimrc
+    map <A-!> -ex tabm 1
+    map <A-$> -ex tabm $
+  #+END_SRC
+
+  Fast switching:
+  #+BEGIN_SRC vimrc
+    map -m normal,insert <F1> <C-^>
+  #+END_SRC
+
+  Don't raise these openings:
+  #+BEGIN_SRC vimrc
+    set activate-=diverted,links,tabopen,paste
+  #+END_SRC
+
+  Open help in a new tab
+  #+BEGIN_SRC vimrc
+    set newtab=help
+  #+END_SRC
+
+  Keep hint keys under left fingers:
+  #+BEGIN_SRC vimrc
+    set hintkeys=12345
+  #+END_SRC
+
+  Make hint text readable
+  #+BEGIN_SRC vimrc
+    highlight Hint -append font-size: 14px !important
+  #+END_SRC
+
+  Unzoom image:
+  #+BEGIN_SRC vimrc
+    map <A-t> -js content.document.toggleImageSize()
+  #+END_SRC
+
+  Show link in commandline:
+  #+BEGIN_SRC vimrc
+    set guioptions+=c
+    set showstatuslinks=command
+  #+END_SRC
+
+  Scroll by one line:
+  #+BEGIN_SRC vimrc
+    set scrollsteps=1
+  #+END_SRC
+
+  Show feeds first in pageinfo:
+  #+BEGIN_SRC vimrc
+    set pageinfo=fgmse
+  #+END_SRC
+
+  Use visual bell:
+  #+BEGIN_SRC vimrc
+    set visualbell
+  #+END_SRC
+
+  Bookmarks and preferences:
+  #+BEGIN_SRC vimrc
+    map <C-S-s> -ex bmark -keyword ac -t config about:config
+    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
+    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
+    \ bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
+    \ bmark -keyword yb -t youtube https://youtube.com/watch?v=%s
+    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
+    \ bmark -keyword dw -t 'Dota 2 Wiki' http://dota2.gamepedia.com/index.php?title=Special%3ASearch&search=%s
+    \ bmark -keyword dr -t 'Dota 2 Random' http://dota2.gamepedia.com/Special:Random
+    \ bmark -keyword df -t 'Dota 2 fix' http://dev.dota2.com/showthread.php?t=28814
+    \ bmark -keyword er -t 'POE Random' http://pathofexile.gamepedia.com/Special:Random
+    \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
+    \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
+    \ bmark -keyword io -t ixopen http://ix.io/%s/
+    \ bmark -keyword bb -t burnbit http://burnbit.com/burn?file=%s
+    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
+    \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
+    \ bmark -keyword mt -t metasearch http://metasearch.torrentproject.com/#!search=%s
+    \ bmark -keyword lf -t last.fm http://last.fm/user/hdh0#recentTracks
+    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
+    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
+    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
+    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
+    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
+    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
+    \ bmark -keyword fb -t facebook https://fb.me/%s
+    \ bmark -keyword w -t wallabag https://framabag.org/u/<<username>>/?action=random
+    \ set! accessibility.browsewithcaret_shortcut.enabled=false
+    \ set! browser.newtabpage.enabled=false
+    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
+    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
+    \ set! browser.shell.checkDefaultBrowser=false
+    \ set! browser.startup.homepage=about:blank
+    \ set! browser.startup.page=3
+    \ set! general.warnOnAboutConfig=false
+    \ set! security.OCSP.enabled=0
+    \ set! security.warn_viewing_mixed=false
+    \ set! layout.spellcheckDefault=0
+    \ set! middlemouse.paste=true
+    \ set! ui.key.menuAccessKey=0
+    \ set! browser.anchor_color="#6c71c4"
+    \ set! browser.display.background_color="#fdf6e3"
+    \ set! browser.display.foreground_color="#657b83"
+    \ set! browser.display.use_system_colors=false
+    \ set! font.default.x-western="sans-serif"
+    \ set! font.minimum-size.x-western=15
+    \ if /NT 6/.test(window.navigator.oscpu)
+    \     set! font.name.monospace.x-western=Consolas
+    \ fi
+    \ set! extensions.checkCompatibility.nightly=false
+    \ set! extensions.https_everywhere._observatory.alt_roots=true
+    \ set! extensions.https_everywhere._observatory.enabled=true
+    \ set! extensions.https_everywhere._observatory.priv_dns=true
+    \ set! plugins.hide_infobar_for_missing_plugin=true
+    \ set! browser.download.manager.alertOnEXEOpen=false
+    \ set! browser.download.manager.scanWhenDone=false
+    \ set! browser.search.context.loadInBackground=true
+    \ set! intl.charset.default=UTF-8
+    \ set! network.http.pipelining=true
+    \ set! network.http.pipelining.aggressive=true
+    \ set! network.http.pipelining.ssl=true
+    \ set! network.protocol-handler.expose.magnet=false
+    \ set! network.proxy.socks=kub.<<domain>>
+    \ set! network.proxy.socks_port=9050
+    \ set! network.proxy.socks_remote_dns=true
+    \ set! toolkit.telemetry.enabled=true
+    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
+    \ js services.permissions.add(services.io.newURI("http:kuf.<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
+    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+  #+END_SRC
+
+  Framabag's service:
+  #+BEGIN_SRC vimrc
+    silent bmark -keyword wa -t 'add to wallabag' http://framabag.org/u/<<username>>/index.php?plainurl=%s
+    javascript <<EOS
+    hints.addMode("a", "add to wallabag",
+    function(e) { util.fetchUrl(bookmarks.getSearchURL("wa") + e.href) })
+    EOS
+    set eht+=[a]:a
+    style -n "framabag" framabag.org <<EOS
+    pre { font-family: monospace !important }
+    EOS
+  #+END_SRC
+
+  Strip tracker from location, thanks to by [[https://userscripts.org/scripts/show/93825][Bruno Barão]] and [[https://github.com/5digits/dactyl/commit/7a1ffa5b555399c5d0925ad599e2640070bd128d][Kris Maglione]].
+  #+BEGIN_SRC vimrc
+    autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
+  #+END_SRC
+
+  OwnCloud News:
+  #+BEGIN_SRC vimrc
+    set passkeys+=kuf.<<domain>>/index.php/apps/news/:opnse
+    style -n "ownCloud" kuf.<<domain>> <<EOS
+    .icon-rss  { display: block !important }
+    body, button { font-family: sans !important }
+    EOS
+  #+END_SRC
+
+  Site keyboard shortcuts:
+  #+BEGIN_SRC vimrc
+    set passkeys+=tumblr.com:jk
+    set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
+    set passkeys+=google.com/contacts/:'#jkoux,.'
+  #+END_SRC
+
+* Secrets							      :crypt:
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+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
+m5DxJew7zNVZdQSnAwHNGrxOkg==
+=TLb6
+-----END PGP MESSAGE-----
