@@ -1,7 +1,0 @@
-- pacman: name=nginx
-- template: src=nginx.conf dest=/etc/nginx/
-- copy: src=redirects dest=/etc/nginx/
-- copy: src={{h}}/secrets/1_zahe.me_bundle.crt dest=/etc/nginx/zahe.me.crt
-- copy: src={{h}}/secrets/2_zahe.me.key dest=/etc/nginx/zahe.me.key mode="u=r,go="
-- service: name=nginx state=reloaded enabled=yes
-- file: state=link path={{home}}/Public/index.html src={{h}}/hdhoang

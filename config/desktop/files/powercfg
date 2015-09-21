@@ -1,5 +1,0 @@
-#!/bin/sh
-for n in 1 2; do
-    grep "EHC$n.*enabled" /proc/acpi/wakeup && echo EHC$n > /proc/acpi/wakeup
-done
-powertop --auto-tune

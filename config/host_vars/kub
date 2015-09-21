@@ -1,2 +1,0 @@
-address: "{{ network }}.54"
-ports: { owncloud: 4004, ipfs: 4001, torDir: 4660, torOr: 5880 }

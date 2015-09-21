@@ -1,3 +1,0 @@
-- template: src={{ansible_hostname}}_kub.ovpn dest=/etc/openvpn/kub.conf
-- service: name=openvpn@kub state=started enabled=yes
-  when: ansible_hostname != 'ton'

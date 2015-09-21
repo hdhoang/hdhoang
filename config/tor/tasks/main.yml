@@ -1,3 +1,0 @@
-- pacman: name=tor
-- template: src=torrc dest=/etc/tor/
-- service: name=tor state=started enabled=yes

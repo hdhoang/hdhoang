@@ -1,8 +1,0 @@
-- pacman: name=uwsgi-plugin-php
-- git: repo=https://github.com/owncloud/core dest={{home}}/owncloud
-  become: no
-- git: repo=https://github.com/owncloud/news dest={{home}}/owncloud/apps/news
-  become: no
-- template: src=owncloud.ini dest=/etc/uwsgi/
-- service: name=uwsgi@owncloud state=started enabled=yes
-
