@@ -889,9 +889,10 @@
       (remove-hook 'org-babel-pre-tangle-hook #'save-buffer)
     #+END_SRC
 
-** DocView
+** Doc-View
    #+BEGIN_SRC elisp
-     (setq doc-view-cache-directory (expand-file-name "~/.docview"))
+     (setq doc-view-resolution 300
+           doc-view-cache-directory (expand-file-name "~/.emacs.d/doc-view"))
      (use-package evil
        :config (add-hook 'view-mode-hook #'evil-emacs-state))
    #+END_SRC
