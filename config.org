@@ -671,6 +671,59 @@
       rm /usr/share/dbus-1/services/org.kde.{kded5,kglobalaccel,kuiserver,kwalletd5}.service
     #+END_SRC
 
+*** Picard
+    #+BEGIN_SRC sh :dir /sudo::
+      <<pacman>> -S picard chromaprint
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle ~/.config/MusicBrainz/Picard.conf
+      [setting]
+      server_host=musicbrainz.org
+      server_port=80
+
+      fingerprinting_system=acoustid
+      acoustid_apikey=<<acoustid_key>>
+      acoustid_fpcalc=/usr/bin/fpcalc
+
+      save_images_to_tags=true
+      save_only_front_images_to_tags=true
+      save_images_to_files=false
+      ca_provider_use_amazon=true
+      ca_provider_use_caa=true
+      ca_provider_use_caa_release_group_fallback=true
+      ca_provider_use_whitelist=true
+      caa_image_size=1
+      caa_approved_only=true
+      caa_restrict_image_types=true
+      analyze_new_files=false
+      ignore_file_mbids=false
+      quit_confirmation=true
+      va_name=Various Artists
+      nat_name=
+      standardize_artists=true
+
+      windows_compatibility=true
+      ascii_filenames=false
+      rename_files=true
+      move_files=true
+      file_naming_format="$if2(%albumartist%,%artist%)/$if($ne(%albumartist%,),%album%/)$if($gt(%totaldiscs%,1),%discnumber%-,)$if($ne(%albumartist%,),$num(%tracknumber%,2) ,)$if(%_multiartist%,%artist% - ,)%title%"
+      move_files_to=<<fav_music>>/_new
+      move_additional_files=true
+      move_additional_files_pattern=*.jpg *.png *.jpeg
+      delete_empty_dirs=true
+
+      browser_integration=true
+      browser_integration_port=8000
+      browser_integration_localhost_only=true
+
+      dont_write_tags=false
+      preserve_timestamps=false
+      write_id3v1=true
+      write_id3v23=true
+      id3v23_join_with=/
+      id3v2_encoding=utf-16
+      remove_ape_from_mp3=true
+      remove_id3_from_flac=true
+    #+END_SRC
 *** mpd
     :PROPERTIES:
     :header-args+: :dir ~
