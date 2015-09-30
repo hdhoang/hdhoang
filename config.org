@@ -499,6 +499,7 @@
       index hdhoang;
       default_type text/html;
       }
+      }
     #+END_SRC
 
 *** VPN
