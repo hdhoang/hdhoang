@@ -64,6 +64,9 @@
     keepalive 10 30
     tls-version-min 1.2
     tls-cipher TLS-DHE-RSA-WITH-AES-128-CBC-SHA
+    <tls-auth>
+    <<ta_key>>
+    </tls-auth>
     <ca>
     -----BEGIN CERTIFICATE-----
     MIIFrDCCA5SgAwIBAgIQOPZFweJdkSzOOys5EjF0DTANBgkqhkiG9w0BAQsFADBV
@@ -507,6 +510,7 @@
     #+BEGIN_SRC conf :tangle-mode 256 :tangle /sudo:kub:/etc/openvpn/kub.conf
       <<openvpn_common>>
 
+      key-direction 0
       tls-server
       <pkcs12>
       <<ton_pfx>>
@@ -589,6 +593,7 @@
     #+BEGIN_SRC conf :tangle-mode 256 :tangle /sudo::/etc/openvpn/kub.conf
       <<openvpn_common>>
 
+      key-direction 1
       tls-client
       <pkcs12>
       <<ton_pfx>>
