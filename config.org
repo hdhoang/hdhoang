@@ -878,7 +878,6 @@
                       (revert-buffer :noconfirm t)))
     (defalias 'yes-or-no-p #'y-or-n-p)
     (defalias 'dabbrev-expand #'hippie-expand)
-    (defalias 'man #'woman)
     (setq auto-save-default nil
           calendar-week-start-day 1
           default-input-method "vietnamese-telex"
