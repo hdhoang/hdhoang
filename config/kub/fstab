@@ -1,3 +1,0 @@
-LABEL=kub /home/hdhoang btrfs subvol=home:hdhoang
-LABEL=kub /home/hdhoang/Downloads btrfs subvolid=326
-LABEL=kub /var btrfs subvol=var:kub

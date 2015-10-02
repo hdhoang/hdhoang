@@ -1,9 +1,0 @@
-- template: src={{ansible_hostname}}_ipsec.conf dest=/etc/
-- copy: src={{h}}/secrets/1_{{ansible_hostname}}.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/{{ansible_hostname}}.crt
-- copy: src={{h}}/secrets/2_{{ansible_hostname}}.zahe.me.key dest=/etc/ipsec.d/private/{{ansible_hostname}}.key
-- lineinfile: "create=yes dest=/etc/ipsec.secrets line=': RSA {{ansible_hostname}}.key'"
-- copy: src={{h}}/secrets/1_ton.zahe.me_bundle.crt dest=/etc/ipsec.d/certs/ton.zahe.me.crt
-  when: ansible_hostname == 'kub'
-- include: eap.task
-  when: ansible_hostname == 'kub'
-- service: name=strongswan state=started enabled=yes
