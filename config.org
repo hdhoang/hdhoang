@@ -881,12 +881,12 @@
     (setq auto-save-default nil
           calendar-week-start-day 1
           default-input-method "vietnamese-telex"
-          desktop-load-locked-desktop t          
+          desktop-load-locked-desktop t
           inhibit-startup-screen t
           make-backup-files nil
           scroll-preserve-screen-position t
           tramp-default-method "ssh"
-          undo-tree-mode-lighter "" 
+          undo-tree-mode-lighter ""
           visible-bell t
           frame-title-format "%b")
     (set-language-environment "UTF-8")
@@ -1046,7 +1046,7 @@
            '(("\\.cb.\\'" "okular")
              ("." "xdg-open;")))
    #+END_SRC
-   
+
 ** Eshell
    Put eshell on a convenient binding
    #+BEGIN_SRC elisp
@@ -1139,9 +1139,9 @@
    #+END_SRC
 
 * Firefox
-  :PROPERTIES: 
+  :PROPERTIES:
   :header-args+: :tangle ~/.pentadactylrc
-  :END:      
+  :END:
   This file is in vimrc syntax
 
   #+BEGIN_SRC elisp :tangle ~/.emacs
