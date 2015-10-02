@@ -1020,6 +1020,8 @@
 
 ** Doc-View
    #+BEGIN_SRC elisp
+     (eval-after-load 'doc-view
+       '(bind-key (kbd "<mouse-1>") #'doc-view-scroll-up-or-next-page doc-view-mode-map))
      (setq doc-view-resolution 300
            doc-view-cache-directory (expand-file-name "~/.emacs.d/doc-view"))
      (use-package evil
