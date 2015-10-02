@@ -570,6 +570,10 @@
       Gateway = 192.168.4.1
       Address = 192.168.5.252/24
       Gateway = 192.168.5.1
+
+      [Route]
+      Destination=192.168.1.1
+      Source=192.168.1.252
     #+END_SRC
     #+BEGIN_SRC conf :tangle /sudo::/etc/systemd/network/dhcp.network
       [Network]
