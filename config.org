@@ -615,7 +615,7 @@
 
 *** Fonts
     #+BEGIN_SRC sh
-      <<pacman>> -S ttf-linux-libertine ttf-inconsolata ttf-hannom
+      <<pacman>> -S adobe-source-{sans,serif,code}-pro-fonts adobe-source-han-sans-otc-fonts
     #+END_SRC
 
     #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no :comments no
@@ -634,7 +634,7 @@
         </match>
         <match target="font">
           <edit mode="assign" name="hintstyle">
-            <const>hintmedium</const>
+            <const>hintslight</const>
           </edit>
         </match>
         <match target="font">
@@ -654,19 +654,19 @@
         <alias>
           <family>sans-serif</family>
           <prefer>
-            <family>Linux Biolinum O</family>
+            <family>Source Sans Pro</family>
           </prefer>
         </alias>
         <alias>
           <family>serif</family>
           <prefer>
-            <family>Linux Libertine O</family>
+            <family>Source Serif Pro</family>
           </prefer>
         </alias>
         <alias>
           <family>monospace</family>
           <prefer>
-            <family>Inconsolata</family>
+            <family>Source Code Pro</family>
           </prefer>
         </alias>
         <selectfont>
