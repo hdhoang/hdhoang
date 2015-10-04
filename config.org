@@ -135,12 +135,9 @@
    :header-args+: :tangle ~/.config/kwinrulesrc
    :END:
 
-   Remove border from firefox
    #+BEGIN_SRC conf
      [1]
      Description=Window settings for firefox
-     noborder=true
-     noborderrule=2
      shortcut=F5
      shortcutrule=2
      windowrole=browser
@@ -154,8 +151,6 @@
    #+BEGIN_SRC conf
      [2]
      Description=Application settings for emacs
-     noborder=true
-     noborderrule=2
      shortcut=F4
      shortcutrule=2
      wmclass=emacs
@@ -167,8 +162,6 @@
    #+BEGIN_SRC conf
      [3]
      Description=Application settings for konsole
-     noborder=true
-     noborderrule=2
      shortcut=F6
      shortcutrule=2
      wmclass=konsole
@@ -177,8 +170,15 @@
    #+END_SRC
 
    #+BEGIN_SRC conf
+     [4]
+     Description=No border on anything
+     noborder=true
+     noborderrule=2
+   #+END_SRC
+
+   #+BEGIN_SRC conf
      [General]
-     count=3
+     count=4
    #+END_SRC
 
 * Git
