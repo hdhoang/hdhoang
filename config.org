@@ -4,6 +4,7 @@
 #+PROPERTY: header-args+ :mkdirp yes
 #+PROPERTY: header-args+ :noweb yes
 #+PROPERTY: header-args+ :results silent
+#+PROPERTY: header-args+ :tangle-mode 256
 #+PROPERTY: header-args:text+ :eval no
 * Places and names
   #+NAME: username
@@ -694,7 +695,7 @@
        <<pacman>> -S virtualbox-guest-{modules,utils}
      #+END_SRC
      #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
-       home /home/<<username>> vboxsf uid=1000,gid=1000,dmode=755,fmode=644
+       home /home/<<username>> vboxsf uid=1000,gid=100,dmode=700,fmode=600
      #+END_SRC
      #+BEGIN_SRC sh :tangle ~/.xinitrc
        VBoxClient-all&
