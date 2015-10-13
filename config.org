@@ -1271,25 +1271,14 @@
     \ bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
     \ bmark -keyword yb -t youtube https://youtube.com/watch?v=%s
     \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
-    \ bmark -keyword dw -t 'Dota 2 Wiki' http://dota2.gamepedia.com/index.php?title=Special%3ASearch&search=%s
-    \ bmark -keyword dr -t 'Dota 2 Random' http://dota2.gamepedia.com/Special:Random
-    \ bmark -keyword df -t 'Dota 2 fix' http://dev.dota2.com/showthread.php?t=28814
-    \ bmark -keyword er -t 'POE Random' http://pathofexile.gamepedia.com/Special:Random
-    \ bmark -keyword lp -t LP http://lparchive.org/search/%s#results
-    \ bmark -keyword ix -t ix -post f:1=%s http://ix.io/
-    \ bmark -keyword io -t ixopen http://ix.io/%s/
     \ bmark -keyword bb -t burnbit http://burnbit.com/burn?file=%s
     \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
     \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
-    \ bmark -keyword mt -t metasearch http://metasearch.torrentproject.com/#!search=%s
-    \ bmark -keyword lf -t last.fm http://last.fm/user/hdh0#recentTracks
     \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
     \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
     \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
     \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-    \ bmark -keyword ts -t 'tor address' https://atlas.torproject.org/#search/kub
     \ bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
-    \ bmark -keyword w -t wallabag https://framabag.org/u/<<username>>/?action=random
     \ set! accessibility.browsewithcaret_shortcut.enabled=false
     \ set! browser.newtabpage.enabled=false
     \ set! browser.privatebrowsing.dont_prompt_on_enter=true
