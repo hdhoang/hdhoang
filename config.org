@@ -689,6 +689,24 @@
       rm /usr/share/dbus-1/services/org.kde.{kded5,kglobalaccel,kuiserver,kwalletd5}.service
     #+END_SRC
 
+**** Inside VirtualBox
+     #+BEGIN_SRC sh :dir /sudo::
+       <<pacman>> -S virtualbox-guest-{modules,utils}
+     #+END_SRC
+     #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
+       home /home/<<username>> vboxsf uid=1000,gid=1000,dmode=755,fmode=644
+     #+END_SRC
+     #+BEGIN_SRC sh :tangle ~/.xinitrc
+       VBoxClient-all&
+       cp -r ~/.gnupg $XDG_RUNTIME_DIR
+       chmod 700 $XDG_RUNTIME_DIR/.gnupg
+       export GNUPGHOME=$XDG_RUNTIME_DIR/.gnupg
+       exec gpg-agent --enable-ssh-support --daemon emacs
+     #+END_SRC
+     #+BEGIN_SRC sh
+       XAUTHORITY=/run/user/1000/xauth startx
+     #+END_SRC
+
 **** Keyboard
      Use dvorak, swap caps for ctrl
      #+BEGIN_SRC conf :tangle /sudo::/usr/share/kbd/keymaps/caps2ctrl.map
