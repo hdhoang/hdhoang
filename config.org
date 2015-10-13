@@ -233,9 +233,10 @@
     (eval-after-load 'use-package
       '(progn
          (use-package magit :ensure
-           :bind ("C-x g" . magit-status))
-         (setq magit-save-repository-buffers 'dontask
-               magit-push-always-verify nil)))
+           :bind ("C-x g" . magit-status)
+           :config
+           (setq magit-save-repository-buffers 'dontask
+                 magit-push-always-verify nil))))
   #+END_SRC
 
 * ArchLinux
@@ -930,30 +931,29 @@
    #+BEGIN_SRC elisp
      (use-package evil :ensure
        :config
-       (progn
-         (evil-mode t)
-         (evil-set-initial-state 'special-mode 'emacs)
-         (dolist (state '(normal motion))
-           (evil-define-key state global-map
-             (kbd "<SPC>") #'evil-scroll-down
-             (kbd "S-<SPC>") #'evil-scroll-up))
-         (dolist (state '(insert motion normal))
-           (evil-define-key state global-map
-             (kbd "C-t") #'transpose-chars
-             (kbd "C-d") #'delete-char
-             (kbd "C-k") #'kill-line
-             (kbd "C-y") #'evil-paste-before
-             (kbd "C-a") #'beginning-of-line (kbd "C-e") #'end-of-line
-             (kbd "C-f") #'forward-char   (kbd "C-b") #'backward-char
-             (kbd "C-n") #'next-line      (kbd "C-p") #'previous-line
-             (kbd "<down>") #'next-line   (kbd "<up>") #'previous-line
-             (kbd "j") #'next-line        (kbd "k") #'previous-line
-             (kbd "C-v") #'evil-scroll-down (kbd "M-v") #'evil-scroll-up
-             (kbd "C-r") #'isearch-backward))
-         (evil-define-key 'insert global-map
-           "j" #'self-insert-command "k" #'self-insert-command)
-         (evil-define-key 'motion help-mode-map
-           (kbd "<tab>") #'forward-button)))
+       (evil-mode t)
+       (evil-set-initial-state 'special-mode 'emacs)
+       (dolist (state '(normal motion))
+         (evil-define-key state global-map
+           (kbd "<SPC>") #'evil-scroll-down
+           (kbd "S-<SPC>") #'evil-scroll-up))
+       (dolist (state '(insert motion normal))
+         (evil-define-key state global-map
+           (kbd "C-t") #'transpose-chars
+           (kbd "C-d") #'delete-char
+           (kbd "C-k") #'kill-line
+           (kbd "C-y") #'evil-paste-before
+           (kbd "C-a") #'beginning-of-line (kbd "C-e") #'end-of-line
+           (kbd "C-f") #'forward-char   (kbd "C-b") #'backward-char
+           (kbd "C-n") #'next-line      (kbd "C-p") #'previous-line
+           (kbd "<down>") #'next-line   (kbd "<up>") #'previous-line
+           (kbd "j") #'next-line        (kbd "k") #'previous-line
+           (kbd "C-v") #'evil-scroll-down (kbd "M-v") #'evil-scroll-up
+           (kbd "C-r") #'isearch-backward))
+       (evil-define-key 'insert global-map
+         "j" #'self-insert-command "k" #'self-insert-command)
+       (evil-define-key 'motion help-mode-map
+         (kbd "<tab>") #'forward-button))
    #+END_SRC
 
    Aggressive indent
@@ -973,9 +973,9 @@
    Do things with helm:
    #+BEGIN_SRC elisp
      (use-package helm :ensure
-       :config (progn
-                 (helm-mode 1)
-                 (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring))
+       :config
+       (helm-mode 1)
+       (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring)
        :diminish helm-mode
        :bind (("C-h SPC" . helm-all-mark-rings)
               ("C-x b" . helm-mini)
@@ -1031,20 +1031,20 @@
 ** Dired
    #+BEGIN_SRC elisp
      (use-package dired+ :ensure
-       :config (progn (require 'dired+)
-                      (global-dired-hide-details-mode -1)))
-     (defun dired-open ()
-       (interactive)
-       (dired-do-shell-command "xdg-open &" :file-list (dired-get-marked-files)))
-     (eval-after-load 'dired
-       '(progn (define-key dired-mode-map (kbd "RET") #'dired-open)
-               (define-key dired-mode-map (kbd "<mouse-2>") #'dired-open)))
-     (setq dired-recursive-copies 'always
-           dired-recursive-deletes 'always
-           dired-listing-switches "-alh"
-           dired-guess-shell-alist-user
-           '(("\\.cb.\\'" "okular")
-             ("." "xdg-open;")))
+       :config
+       (require 'dired+)
+       (global-dired-hide-details-mode -1)
+       (defun dired-open ()
+         (interactive)
+         (dired-do-shell-command "xdg-open &" :file-list (dired-get-marked-files)))
+       (define-key dired-mode-map (kbd "RET") #'dired-open)
+       (define-key dired-mode-map (kbd "<mouse-2>") #'dired-open)
+       (setq dired-recursive-copies 'always
+             dired-recursive-deletes 'always
+             dired-listing-switches "-alh"
+             dired-guess-shell-alist-user
+             '(("\\.cb.\\'" "okular")
+               ("." "xdg-open;"))))
    #+END_SRC
 
 ** Eshell
