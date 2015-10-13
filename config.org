@@ -1017,7 +1017,7 @@
                   (add-hook 'before-save-hook 'org-align-all-tags
                             :local t)))
      (org-babel-do-load-languages 'org-babel-load-languages
-                                  '((sh .t)))
+                                  '((sh . t)))
      (setq org-src-fontify-natively t)
    #+END_SRC
 
