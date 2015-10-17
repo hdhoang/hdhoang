@@ -240,6 +240,13 @@
                  magit-push-always-verify nil))))
   #+END_SRC
 
+* Crawl
+  #+BEGIN_SRC conf :tangle ~/.crawlrc
+    tile_full_screen = false
+    autopickup_exceptions += <tomahawk, <throwing net, <javelin, <immol
+    autopickup_exceptions += <misc, <ego, <artefact, <mutagenic
+  #+END_SRC
+
 * ArchLinux
   Pacman config
   #+NAME: pacman_common
