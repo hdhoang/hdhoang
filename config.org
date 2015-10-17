@@ -4,7 +4,7 @@
 #+PROPERTY: header-args+ :mkdirp yes
 #+PROPERTY: header-args+ :noweb yes
 #+PROPERTY: header-args+ :results silent
-#+PROPERTY: header-args+ :tangle-mode 256
+#+PROPERTY: header-args+ :tangle-mode 384
 #+PROPERTY: header-args:text+ :eval no
 * Places and names
   #+NAME: username
