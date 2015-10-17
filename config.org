@@ -47,7 +47,7 @@
     pacman --noconfirm --needed
   #+END_SRC
 
-  #+NAME: yt-dl
+  #+NAME: ytdl
   #+BEGIN_SRC text
     youtube-dl --format "[height <=? 720]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
   #+END_SRC
@@ -1103,7 +1103,7 @@
      alias j journalctl -afb $*
      alias sc <<system_ctl>> $*
      alias uc <<user_ctl>> $*
-     alias ytdl <<yt-dl>> -a /home/<<username>>/q.txt
+     alias ytdl <<ytdl>> -a /home/<<username>>/q.txt
      alias fr free -h
    #+END_SRC
 
