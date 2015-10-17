@@ -1353,6 +1353,21 @@
     EOS
   #+END_SRC
 
+  #+BEGIN_SRC sh :dir /sudo:kub:
+    <<pacman>> -S jq
+  #+END_SRC
+  Get videos from saved pages
+  #+BEGIN_SRC sh :tangle /kub:.bashrc
+    function pocket_videos {
+        curl https://getpocket.com/v3/get \
+             -d consumer_key=<<pocket_consumer_key>> \
+             -d access_token=<<pocket_access_token>> \
+             -d contentType=video \
+            | jq -r ".list|.[]|.resolved_url" \
+            | xargs -n1 <<ytdl>> --ignore-errors
+    }
+  #+END_SRC
+
   Site keyboard shortcuts:
   #+BEGIN_SRC vimrc
     set passkeys+=tumblr.com:jk
