@@ -550,7 +550,7 @@
     #+END_SRC
 
 *** Hosts
-    #+BEGIN_SRC conf :tangle /sudo::/etc/hosts
+    #+BEGIN_SRC conf :tangle /sudo::/etc/hosts :tangle-mode 260
       127.0.0.1 ton
       ::1 ton
       <<prefix>>.1 vorme
