@@ -705,7 +705,7 @@
        exec gpg-agent --enable-ssh-support --daemon emacs
      #+END_SRC
      #+BEGIN_SRC sh
-       XAUTHORITY=/run/user/1000/xauth startx
+       XAUTHORITY=$XDG_RUNTIME_DIR/xauth startx
      #+END_SRC
 
 **** Keyboard
