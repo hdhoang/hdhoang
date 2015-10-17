@@ -1002,7 +1002,7 @@
               ("C-x C-b" . helm-buffers-list)
               ("C-x C-f" . helm-find-files)
               ("C-c g" . helm-do-grep)
-              ("M-s o" . helm-occur)
+              ("C-s" . helm-occur)
               ("M-x" . helm-M-x)))
      (require 'helm-config)
      (use-package evil
