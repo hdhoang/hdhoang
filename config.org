@@ -1098,7 +1098,6 @@
 
    Aliases:
    #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias
-     alias cp kioclient5 cp $*
      alias vim find-file $1
      alias i yaourt $*
      alias j journalctl -afb $*
