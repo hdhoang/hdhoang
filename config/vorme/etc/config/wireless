@@ -12,6 +12,7 @@ config wifi-iface 'ap_g'
 	option network 'lan'
 	option disassoc_low_ack '0'
 	option ssid 'autonomy'
+	option isolate '1'
 	option encryption 'psk2'
 	option key 'mot ngay tinh co'
 
