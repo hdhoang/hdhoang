@@ -490,7 +490,6 @@
 
       media_dir=<<storage>>
       media_dir=A,<<fav_music>>
-      media_dir=V,/home/<<username>>/Videos
       media_dir=V,/home/<<username>>/Public/mirror
     #+END_SRC
     #+BEGIN_SRC sh :dir /sudo:kub:
