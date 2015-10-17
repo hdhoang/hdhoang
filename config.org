@@ -1121,8 +1121,8 @@
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'use-package
       '(progn
-         (use-package yaml-mode :ensure)
-         (use-package ansible-doc :ensure
+         (use-package yaml-mode)
+         (use-package ansible-doc
            :config (add-hook 'yaml-mode-hook #'ansible-doc-mode))))
   #+END_SRC
 
