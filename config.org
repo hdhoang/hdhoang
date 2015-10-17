@@ -233,7 +233,7 @@
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'use-package
       '(progn
-         (use-package magit :ensure
+         (use-package magit
            :bind ("C-x g" . magit-status)
            :config
            (setq magit-save-repository-buffers 'dontask
@@ -928,12 +928,13 @@
     (unless (package-installed-p 'use-package)
       (package-refresh-contents)
       (package-install 'use-package))
+    (setq use-package-always-ensure t)
     (require 'use-package)
   #+END_SRC
 
   Color theme
   #+BEGIN_SRC elisp
-    (use-package color-theme-sanityinc-solarized :ensure
+    (use-package color-theme-sanityinc-solarized
       :config (load-theme 'sanityinc-solarized-light t))
   #+END_SRC
 
@@ -948,7 +949,7 @@
 ** Editing
    Vim-style
    #+BEGIN_SRC elisp
-     (use-package evil :ensure
+     (use-package evil
        :config
        (evil-mode t)
        (evil-set-initial-state 'special-mode 'emacs)
@@ -977,21 +978,21 @@
 
    Aggressive indent
    #+BEGIN_SRC elisp
-     (use-package aggressive-indent :ensure
+     (use-package aggressive-indent
        :diminish ""
        :config (global-aggressive-indent-mode))
    #+END_SRC
 
    Switch window with ace
    #+BEGIN_SRC elisp
-     (use-package ace-window :ensure
+     (use-package ace-window
        :config (ace-window-display-mode 1)
        :bind ("C-x o" . ace-window))
    #+END_SRC
 
    Do things with helm:
    #+BEGIN_SRC elisp
-     (use-package helm :ensure
+     (use-package helm
        :config
        (helm-mode 1)
        (define-key shell-mode-map (kbd "M-r") #'helm-comint-input-ring)
@@ -1049,7 +1050,7 @@
 
 ** Dired
    #+BEGIN_SRC elisp
-     (use-package dired+ :ensure
+     (use-package dired+
        :config
        (require 'dired+)
        (global-dired-hide-details-mode -1)
@@ -1165,7 +1166,7 @@
 
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'use-package
-      '(use-package vimrc-mode :ensure))
+      '(use-package vimrc-mode))
   #+END_SRC
 
   Use DuckDuckGo:
