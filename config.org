@@ -12,6 +12,15 @@
     hdhoang
   #+END_SRC
 
+  #+NAME: domain
+  #+BEGIN_SRC text
+    zahe.me
+  #+END_SRC
+
+  #+BEGIN_SRC emacs-lisp :tangle ~/.emacs
+    (setq user-mail-address "<<username>>@<<domain>>")
+  #+END_SRC
+
   #+NAME: storage
   #+BEGIN_SRC text
     /home/<<username>>/Copy
@@ -25,11 +34,6 @@
   #+NAME: prefix
   #+BEGIN_SRC text
     10.117.14
-  #+END_SRC
-
-  #+NAME: domain
-  #+BEGIN_SRC text
-    zahe.me
   #+END_SRC
 
   #+NAME: system_ctl
@@ -1036,7 +1040,6 @@
                    (add-hook 'before-save-hook 'org-encrypt-entries
                              :local t)))
       (setq org-tags-exclude-from-inheritance '("crypt"))
-      (setq org-crypt-key "<<username>>@keybase.io")
     #+END_SRC
 
     Make it possible to tangle encrypted block
