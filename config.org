@@ -765,6 +765,7 @@
      #+END_SRC
      #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
        home /home/<<username>> vboxsf uid=1000,gid=100,dmode=700,fmode=600
+       //192.168.208.1/home /home/hdhoang cifs rw,credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0644
      #+END_SRC
      #+BEGIN_SRC sh :tangle ~/.xinitrc
        VBoxClient-all&
