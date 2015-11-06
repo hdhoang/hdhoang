@@ -1416,7 +1416,7 @@
   Pocket
   #+BEGIN_SRC vimrc
     js services.permissions.add(services.io.newURI("http:getpocket.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
-    set passkeys+=getpocket.com:aojk
+    set passkeys+=getpocket.com:aojkfglvs
     style getpocket.com <<EOS
     ,* { font-family: sans-serif !important }
     code, pre { font-family: monospace !important }
