@@ -331,6 +331,9 @@
 
   Refresh database
   #+BEGIN_SRC sh :dir /sudo::
+    dirmngr --daemon
+    pacman-key -r 7533BAFE69A25079
+    pacman-key --lsign 7533BAFE69A25079
     <<pacman>> -S -y
   #+END_SRC
 
