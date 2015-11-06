@@ -433,7 +433,7 @@
     #+END_SRC
 
 *** Pacman
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.conf
+    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.conf :tangle-mode 260
       <<pacman_common>>
 
       [options]
@@ -652,7 +652,7 @@
     #+END_SRC
 
 *** Pacman
-  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf
+  #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.conf :tangle-mode 260
     <<pacman_common>>
 
     [options]
