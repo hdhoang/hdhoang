@@ -1423,7 +1423,7 @@
     EOS
   #+END_SRC
 
-  #+BEGIN_SRC sh :dir /sudo:kub:
+  #+BEGIN_SRC sh :dir /sudo:kub: :tangle /tmp/null
     <<pacman>> -S jq
   #+END_SRC
   Get videos from saved pages
