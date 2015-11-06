@@ -768,6 +768,7 @@
        //192.168.208.1/home /home/hdhoang cifs rw,credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0644
      #+END_SRC
      #+BEGIN_SRC sh :tangle ~/.xinitrc
+       xrandr --size 1360x768
        VBoxClient-all&
        cp -r ~/.gnupg $XDG_RUNTIME_DIR
        chmod 700 $XDG_RUNTIME_DIR/.gnupg
