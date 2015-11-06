@@ -1441,7 +1441,7 @@
   Site keyboard shortcuts:
   #+BEGIN_SRC vimrc
     set passkeys+=tumblr.com:jk
-    set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpu'
+    set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpux'
     set passkeys+=google.com/contacts/:'#jkoux,.'
   #+END_SRC
 
