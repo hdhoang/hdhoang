@@ -247,7 +247,7 @@
 * Crawl
   #+BEGIN_SRC conf :tangle ~/.crawlrc
     tile_full_screen = false
-    autopickup_exceptions += <tomahawk, <throwing net, <javelin, <immol
+    autopickup_exceptions += <tomahawk, <throwing net, <javelin, <rock, <immol
     autopickup_exceptions += <misc, <ego, <artefact, <mutagenic
   #+END_SRC
 
