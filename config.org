@@ -243,6 +243,22 @@
    #+END_SRC
 
 * Git
+  #+BEGIN_SRC conf :tangle .git/config
+    [core]
+            repositoryformatversion = 0
+            filemode = true
+            bare = false
+            logallrefupdates = true
+    [remote "origin"]
+            url = https://gitlab.com/<<username>>/<<username>>
+            pushUrl = gitlab.com:<<username>>/<<username>>
+            pushUrl = github.com:<<username>>/<<username>>
+            pushUrl = bitbucket.org:<<username>>/<<username>>
+            fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+            remote = origin
+            merge = refs/heads/master
+  #+END_SRC
 
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S git
