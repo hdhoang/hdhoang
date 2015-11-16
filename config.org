@@ -775,13 +775,13 @@
       rm /usr/share/dbus-1/services/org.kde.{kded5,kglobalaccel,kuiserver,kwalletd5}.service
     #+END_SRC
 
-**** Inside VirtualBox
+**** Inside VM
      #+BEGIN_SRC sh :dir /sudo::
        <<pacman>> -S virtualbox-guest-{modules,utils}
+       <<system_ctl>> enable --now systemd-networkd-wait-online
      #+END_SRC
      #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
-       home /home/<<username>> vboxsf uid=1000,gid=100,dmode=700,fmode=600
-       //192.168.208.1/home /home/hdhoang cifs rw,credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0644
+       //192.168.208.1/home /home/<<username>> cifs credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0600
      #+END_SRC
      #+BEGIN_SRC sh :tangle ~/.xinitrc
        xrandr --size 1360x768
