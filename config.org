@@ -6,8 +6,7 @@
 #+PROPERTY: header-args+ :results silent
 #+PROPERTY: header-args+ :tangle-mode 384
 #+PROPERTY: header-args:text+ :eval no
-* CV
-#+TITLE: HOANG DUC HIEU
+* Hoang Duc Hieu
 #+EMAIL: 1988 / +84-166-241-9526 / cv@zahe.me
 #+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t
 #+LATEX_CLASS_OPTIONS: [twocolumn]
