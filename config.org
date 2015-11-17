@@ -777,22 +777,14 @@
 
 **** Inside VM
      #+BEGIN_SRC sh :dir /sudo::
-       <<pacman>> -S virtualbox-guest-{modules,utils}
-       <<system_ctl>> enable --now systemd-networkd-wait-online
+       <<system_ctl>> enable --now systemd-networkd-wait-online sshd
      #+END_SRC
      #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
        //192.168.208.1/home /home/<<username>> cifs credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0600
      #+END_SRC
-     #+BEGIN_SRC sh :tangle ~/.xinitrc
-       xrandr --size 1360x768
-       VBoxClient-all&
-       cp -r ~/.gnupg $XDG_RUNTIME_DIR
-       chmod 700 $XDG_RUNTIME_DIR/.gnupg
-       export GNUPGHOME=$XDG_RUNTIME_DIR/.gnupg
-       exec gpg-agent --enable-ssh-support --daemon emacs
-     #+END_SRC
+     On the host side, open 445/tcp to this VM, and run emacs over X as
      #+BEGIN_SRC sh
-       XAUTHORITY=$XDG_RUNTIME_DIR/xauth startx
+       setxkbmap dvorak && emacs
      #+END_SRC
 
 **** Keyboard
