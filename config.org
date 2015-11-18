@@ -1411,38 +1411,17 @@
     map <A-s> -js dactyl.open("https://www.facebook.com/sharer/sharer.php?u=" + content.location)
   #+END_SRC
 
-  Feedly
+  Inoreader
   #+BEGIN_SRC vimrc
-    map <A-f> -js dactyl.open("https://feedly.com/i/spotlight/" + content.location)
-    js services.permissions.add(services.io.newURI("http:feedly.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
-    set passkeys+=feedly.com:vjkga
-    style feedly.com <<EOS
-    .websiteCallForAction { display: none !important }
-    EOS
+    map <A-f> -js dactyl.open("https://www.inoreader.com/?add_feed=" + content.location)
+    map <A-w> -js dactyl.open("https://www.inoreader.com/bookmarklet/save_web_page/" + encodeURIComponent(content.location))
+    js services.permissions.add(services.io.newURI("http:inoreader.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
+    set passkeys+=inoreader.com:jkgafswhq
   #+END_SRC
-
-  Pocket
-  #+BEGIN_SRC vimrc
-    js services.permissions.add(services.io.newURI("http:getpocket.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
-    set passkeys+=getpocket.com:aojkfglvs
-    style getpocket.com <<EOS
-    ,* { font-family: sans-serif !important }
-    code, pre { font-family: monospace !important }
-    EOS
-  #+END_SRC
-
-  #+BEGIN_SRC sh :dir /sudo:kub: :tangle /tmp/null
-    <<pacman>> -S jq
-  #+END_SRC
-  Get videos from saved pages
+  Get videos from starred items
   #+BEGIN_SRC sh :tangle /kub:.bashrc
-    function pocket_videos {
-        curl https://getpocket.com/v3/get \
-             -d consumer_key=<<pocket_consumer_key>> \
-             -d access_token=<<pocket_access_token>> \
-             -d contentType=video \
-            | jq -r ".list|.[]|.resolved_url" \
-            | xargs -n1 <<ytdl>> --ignore-errors
+    function videos() {
+        <<ytdl>> --ignore-errors https://www.inoreader.com/stream/user/1005933915/tag/user-favorites
     }
   #+END_SRC
 
