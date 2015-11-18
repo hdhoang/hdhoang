@@ -1,6 +1,0 @@
-#+title: Experience
-#+options: toc:nil
-- Name :: Hoàng Đức Hiếu
-- Born :: 1988
-- Email :: hdhoang+cv@zahe.me
-- Mobile :: +84 166 241 9526
