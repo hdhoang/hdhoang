@@ -1108,7 +1108,8 @@
                 '(lambda ()
                    (add-hook 'before-save-hook 'org-encrypt-entries
                              :local t)))
-      (setq org-tags-exclude-from-inheritance '("crypt"))
+      (setq org-tags-exclude-from-inheritance '("crypt")
+            org-crypt-key "<<username>>@<<domain>>")
     #+END_SRC
 
     Make it possible to tangle encrypted block
