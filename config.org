@@ -993,7 +993,6 @@
   OOBE settings:
   #+BEGIN_SRC elisp
     (server-mode t)
-    (desktop-save-mode t)
     (global-set-key (kbd "C-x C-r")
                     (lambda () (interactive)
                       (revert-buffer :noconfirm t)))
@@ -1002,7 +1001,6 @@
     (setq auto-save-default nil
           calendar-week-start-day 1
           default-input-method "vietnamese-telex"
-          desktop-load-locked-desktop t
           inhibit-startup-screen t
           make-backup-files nil
           scroll-preserve-screen-position t
