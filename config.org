@@ -17,8 +17,8 @@
 #+LATEX_HEADER: \postauthor{\end{flushright}}
 #+LATEX_HEADER: \pagenumbering{gobble}
 ** Education
-  - 2014 - now :: Studying System Administration at Bachkhoa-Aptech
-                  (graduating early 2017)
+  - 2014 - now :: Studying System Administration and software testing at Bachkhoa-Aptech
+                  (graduating 2016H2)
   - 2013 - 2014 :: Finished K12 and completed accounting course at
                    Quang Trung private school
   - 2007 - 2012 :: Self-learned various topics
