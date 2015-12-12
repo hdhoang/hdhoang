@@ -41,7 +41,7 @@
   - Office equipment troubleshooting
   - Familiarity with various OSes
   - Using version control systems, especially git
-  - Contributing to free software projects ([[https://github.com/hdhoang][GitHub profile]])
+  - Contributing to free software projects, collected in [[https://www.openhub.net/accounts/hdhoang/positions][OpenHub as hdhoang]]
 *** Language skills
   - Fluency in English (990 in TOEIC, 2015)
   - Elementary Japanese (striving to acquire N3 in early 2016)
