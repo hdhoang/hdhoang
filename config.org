@@ -167,7 +167,7 @@
 
   #+NAME: ytdl
   #+BEGIN_SRC text
-    youtube-dl --format "[height <=? 720]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
+    youtube-dl --format "[height <=? 480]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
   #+END_SRC
 
 * OpenVPN
@@ -1022,7 +1022,7 @@
       MOUSE_BTN0 cycle pause
       MOUSE_BTN1 show_progress
       MOUSE_BTN2 cycle fullscreen
-      z set window-scale 0.5
+      z set window-scale 2
       Z set window-scale 1
 
       ; show_progress
