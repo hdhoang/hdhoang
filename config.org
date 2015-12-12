@@ -25,7 +25,7 @@
     - Programming languages (web and backend)
     - History of free software
     - Hanoi GNU/Linux user community
-    - Wing-chun martial arts
+    - Wing-chun martial art
     - The constructed logical language Lojban
   - 2006 - 2007 :: Freshman in computer programming at Monash College,
                    Australia (earned Distinction and High Distinction
@@ -58,9 +58,10 @@
   - Where :: HN - HY - HD
 ** Interests
   - Exploring science, history, and natural subjects
-  - Science-fictional novels, rational fanfictions
+  - Science-fiction novels, rational fanfictions
   - Electric guitar riffs
-  - Frequent blood donor (until no longer eligible)
+  - Frequent blood donor until no longer eligible
+
 * Places and names
   #+BEGIN_SRC html :tangle /kub:Public/index.html
     <!doctype html>
@@ -119,14 +120,7 @@
       Vietnam</span>.
     </p>
   #+END_SRC
-#+BEGIN_SRC text :tangle /vorme:/etc/config/dropbear
 
-config dropbear 'global'
-	option PasswordAuth 'on'
-	option Port '22'
-
-
-#+END_SRC
   #+NAME: username
   #+BEGIN_SRC text
     hdhoang
