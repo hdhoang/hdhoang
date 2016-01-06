@@ -7,7 +7,7 @@
 #+PROPERTY: header-args+ :tangle-mode 384
 #+PROPERTY: header-args:text+ :eval no
 * Hoang Duc Hieu
-#+EMAIL: 1988 / +84-166-241-9526 / cv@zahe.me
+#+EMAIL: 1988 / +84-166-241-9526 / cv@hdhoang.space
 #+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t
 #+LATEX_CLASS_OPTIONS: [twocolumn]
 #+LATEX_HEADER: \usepackage{titling}
@@ -128,7 +128,7 @@
 
   #+NAME: domain
   #+BEGIN_SRC text
-    zahe.me
+    hdhoang.space
   #+END_SRC
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs
