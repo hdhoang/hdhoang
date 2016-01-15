@@ -6,61 +6,78 @@
 #+PROPERTY: header-args+ :results silent
 #+PROPERTY: header-args+ :tangle-mode 384
 #+PROPERTY: header-args:text+ :eval no
-* Hoang Duc Hieu
+* Hoàng Đức Hiếu
 #+EMAIL: 1988 / +84-166-241-9526 / cv@hdhoang.space
-#+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t
+#+SELECT_TAGS: vi
+#+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t tags:nil
 #+LATEX_CLASS_OPTIONS: [twocolumn]
+#+LATEX_HEADER: \usepackage{libertine}
+#+LATEX_HEADER: \usepackage{xcolor-solarized, sectsty}
+#+LATEX_HEADER: \usepackage[pagecolor={solarized-base3}]{pagecolor}
+#+LATEX: \sectionfont{\color{solarized-blue}}
+#+LATEX: \subsectionfont{\color{solarized-cyan}}
+#+LATEX: \vspace*{-197pt}\includegraphics{Pictures/mug/img078}
 #+LATEX_HEADER: \usepackage{titling}
 #+LATEX_HEADER: \pretitle{\begin{flushright}\LARGE}
 #+LATEX_HEADER: \posttitle{\par\end{flushright}}
 #+LATEX_HEADER: \preauthor{\begin{flushright}}
 #+LATEX_HEADER: \postauthor{\end{flushright}}
 #+LATEX_HEADER: \pagenumbering{gobble}
-** Education
-  - 2014 - now :: Studying System Administration and software testing at Bachkhoa-Aptech
-                  (graduating 2016H2)
-  - 2013 - 2014 :: Finished K12 and completed accounting course at
-                   Quang Trung private school
-  - 2007 - 2012 :: Self-learned various topics
-    - Programming languages (web and backend)
-    - History of free software
-    - Hanoi GNU/Linux user community
-    - Wing-chun martial art
-    - The constructed logical language Lojban
-  - 2006 - 2007 :: Freshman in computer programming at Monash College,
-                   Australia (earned Distinction and High Distinction
-                   in most subjects)
-  - 2003 - 2006 :: Chu Van An Highschool, majoring in English (earned
-                   2nd place in city-level competition)
+** Education								 :en:
+   - 2014 - now :: Studying System Administration and software testing
+                   at Bachkhoa-Aptech (graduating 2016H2)
+   - 2013 - 2014 :: Finished K12 and completed accounting course at
+                    Quang Trung private school
+   - 2007 - 2012 :: Self-learned various topics
+     - Programming languages (Python, shells, HTML5, Emacs Lisp, Rust)
+     - History of free software
+     - Hanoi GNU/Linux user community
+     - Wing-chun martial art
+     - The constructed logical language Lojban
+   - 2006 - 2007 :: Freshman in computer programming at Monash
+                    College, Australia (earned Distinction and High
+                    Distinction in most subjects)
+   - 2003 - 2006 :: Chu Van An Highschool, majoring in English
 #+LATEX: \newpage
-** Qualifications and skills
+** Tiểu sử								 :vi:
+   - 2014 - nay :: học quản trị mạng và kiểm thử phần mềm tại
+                   Bachkhoa-APTECH (dự kiến tốt nghiệp năm 2016)
+#+LATEX: \newpage
+** Qualifications and skills						 :en:
 *** IT skills
-  - In-depth GNU/Linux usage and administration, experienced in
-    self-hosting web sites
-  - Comprehensive network understanding
-  - Office equipment troubleshooting
-  - Familiarity with various OSes
-  - Using version control systems, especially git
-  - Contributing to free software projects, collected in [[https://www.openhub.net/accounts/hdhoang/positions][OpenHub as hdhoang]]
+   - In-depth GNU/Linux usage and administration, experienced in
+     self-hosting web sites (ownCloud on Debian Apache, ArchLinux nginx)
+   - Comprehensive network understanding (routing, firewall, encryption)
+   - Using version control systems, especially git
+   - Contributing to free software projects ([[https://www.openhub.net/accounts/hdhoang/positions][hdhoang on OpenHub]])
+   - Office equipment troubleshooting
 *** Language skills
-  - Fluency in English (990 in TOEIC, 2015)
-  - Elementary Japanese (striving to acquire N3 in early 2016)
+   - Fluency in English (990 in TOEIC, 2015)
+   - Elementary Japanese (N4 equivalent)
 *** Others
-  - Self-teaching discipline
-  - Strong interest in learning new topics
-** Objectives							    :ARCHIVE:
-  - What ::
-    + Resident technician for an organization
-    + System/network administrator at a service provider
-  - When :: part-time, until graduation
-  - Why :: a challenging field with continual updates, but still have low-stress time for self-improving
-  - Who :: NGO, SME
-  - Where :: HN - HY - HD
-** Interests
-  - Exploring science, history, and natural subjects
-  - Science-fiction novels, rational fanfictions
-  - Electric guitar riffs
-  - Frequent blood donor until no longer eligible
+   - Self-teaching discipline
+   - Strong interest in learning new topics
+** Kĩ năng								 :vi:
+*** Kĩ năng IT
+     - Sử dụng và quản trị các hệ thống GNU/Linux chuyên sâu, tự quản
+       trị dịch vụ web (owncloud, Debian Apache, ArchLinux nginx)
+     - Hiểu biết rõ hệ thống mạng (định tuyến, tường lửa)
+     - Sử dụng hệ thống quản lí phiên bản, đặc biệt là git
+     - Đóng góp vào các dự án phần mềm tự do ([[https://www.openhub.net/accounts/hdhoang][hdhoang trên OpenHub]])
+     - Xử lý vấn đề các thiết bị văn phòng
+*** Kĩ năng ngôn ngữ
+     - Tiếng Anh thuần thục (TOEIC 990, 2015)
+     - Tiếng Nhật cơ bản (tương đương N4)
+** Interests								 :en:
+   - Exploring science, history, and natural subjects
+   - Science-fiction novels, rational fanfictions
+   - Electric guitar riffs
+   - Frequent blood donor until no longer eligible
+** Sở thích								 :vi:
+    - Khám phá các chủ đề khoa học, lịch sử, tự nhiên
+    - Tiểu thuyết khoa học viễn tưởng, ???
+    - Nghe solo guitar điện
+    - Thường xuyên hiến máu cho đến khi hết khả năng
 
 * Places and names
   #+BEGIN_SRC html :tangle /kub:Public/index.html
