@@ -970,6 +970,23 @@
        emacs =  #109#0%192.168.208.128%22%<<username>>%%-1%0%cp -r ~/.gnupg /run/user/1000 && chmod -R 700 /run/user/1000/.gnupg && export GNUPGHOME__EQUAL__/run/user/1000/.gnupg && setxkbmap dvorak && gpg-agent --enable-ssh-support --daemon emacs%%22%%0%0%Interactive shell%h:\.ssh\kub%%0%0%0%0%%1080%%0#MobaFont%10%0%0%0%15%236,236,236%0,0,0%180,180,192%0%-1%0%%xterm%-1%0%0,0,0%54,54,54%255,96,96%255,128,128%96,255,96%128,255,128%255,255,54%255,255,128%96,96,255%128,128,255%255,54,255%255,128,255%54,255,255%128,255,255%236,236,236%255,255,255%80%24%0#0
      #+END_SRC
      Remember to quit emacs before suspending.
+***** Megasync
+      #+BEGIN_SRC sh :dir /sudo::
+       <<pacman>> -S xorg-server-xvfb megasync
+      #+END_SRC
+      #+BEGIN_SRC conf :tangle ~/.config/systemd/user/megasync.service
+       [Unit]
+       Description=Headless megasync
+
+       [Service]
+       ExecStart=/usr/bin/xvfb-run megasync
+
+       [Install]
+       WantedBy=default.target
+      #+END_SRC
+      #+BEGIN_SRC sh
+       <<user_ctl>> enable --now megasync
+      #+END_SRC
 
 **** Keyboard
      Use dvorak, swap caps for ctrl
