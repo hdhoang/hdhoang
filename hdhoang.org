@@ -994,7 +994,7 @@
        include "/usr/share/kbd/keymaps/i386/dvorak/dvorak.map.gz"
        keycode 58 = Control
      #+END_SRC
-     #+BEGIN_SRC sh
+     #+BEGIN_SRC sh :dir /sudo::
        localectl set-keymap caps2ctrl
      #+END_SRC
 
