@@ -161,12 +161,12 @@
 
   #+NAME: storage
   #+BEGIN_SRC text
-    /home/<<username>>/Copy
+    /home/<<username>>/sync
   #+END_SRC
 
-  #+NAME: fav_music
+  #+NAME: videos
   #+BEGIN_SRC text
-    /home/<<username>>/Music
+    /h/Public/Videos
   #+END_SRC
 
   #+NAME: prefix
@@ -196,7 +196,7 @@
 
   #+NAME: ytdl
   #+BEGIN_SRC text
-    youtube-dl --format "[height <=? 480]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
+    youtube-dl --no-mtime --format "[height <=? 480]" --output <<videos>>/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
   #+END_SRC
 
 * Blog
