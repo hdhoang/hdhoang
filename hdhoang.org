@@ -1629,13 +1629,12 @@
     set passkeys+=inoreader.com:jkgafswhq
   #+END_SRC
   Get videos from starred items
-  #+BEGIN_SRC sh :tangle /kub:.bash_login
+  #+BEGIN_SRC sh :tangle ~/.bash_login
     function videos() {
-        <<ytdl>> --ignore-errors $(curl 'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
-                                        -H 'AppId: 1000001238' -H 'AppKey: <<inoreader_key>>' \
-                                        -H 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
-                                          | jq -r '.items|.[]|.canonical[0]|.href' \
-                                          | grep -vE rapidgator\|escapistmag\|muspy )
+        <<ytdl>> --ignore-errors $(wget 'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
+                                        --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
+                                        --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
+                                          | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' | grep -vE 'reader/api|rapidgator|escapistmag|muspy' )
     }
   #+END_SRC
 
