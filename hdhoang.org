@@ -174,6 +174,11 @@
     10.117.14.
   #+END_SRC
 
+  #+NAME: prefix6
+  #+BEGIN_SRC text
+    2001:470:36:62a::
+  #+END_SRC
+
   #+NAME: system_ctl
   #+BEGIN_SRC text
     systemctl --system --no-pager
@@ -288,11 +293,11 @@
 
   Machines
   #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
-    vorme ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCf2C8j0GFA8eq8Vgva/9KI4cF4Q23v4rBk6zAxoyIJvENGkpDuUba4AOMabUkPiXU76KVbx/h4fOivjrWoUNG6Z0xEOJTQqVwuk7788dwIm49Ba+ZOC/sCtT7dsbshFpzXmkdASsZty0foFSILRADDTlB1MZiN9wJRlnjkmIO9WiSMYnuGzolO2f+Gy6LFrtQF1ZgOOqPToO4u4li3VPh1zdoY5+IQul9BQJGU7tMZrleH09LcOUlip8SHZYuXu/Zlb9GSK7Cj7WfGaR0k+xvs657n41haffQ5CxTjocqZdv7eO4Uo2ryWXn2Ck7DwKH6KMjEJZRbX32zLsTacQNgR
-    kub,<<prefix>>54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGtY5ERdvH+mAQKfy270I+eEaZ2i6FhhEjG0EuzDxIym
+    <<prefix>>1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL5T08oNKjMm7yWA0zqqqSwl6Vn0nlpoAlpP9USh0NewyfVO/xOGgkUWIlUU8p85Z3zK9YY3pl0zfQQrQHvp88Y=
+    <<prefix>>185 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMCCrxVyoz4ekNh2zAbr2JzvJdojMMoHYnbo20Qjn3sW+P7FUuuiknzbX0aX81BZWdKFwspNLJAXHLoiS8zy8Wc=
   #+END_SRC
   #+BEGIN_SRC conf
-    Host vorme
+    Host <<prefix>>1
     User root
     IdentityFile ~/.ssh/kub
   #+END_SRC
@@ -302,13 +307,13 @@
   #+END_SRC
 
   #+BEGIN_SRC conf
-    Host kub
+    Host <<prefix>>185
     User <<username>>
     IdentityFile ~/.ssh/kub
   #+END_SRC
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'tramp
-      '(add-to-list 'tramp-default-proxies-alist '("kub" "root" "/ssh:kub:")))
+      '(add-to-list 'tramp-default-proxies-alist '("<<prefix>>185" "root" "/ssh:<<prefix>>185:")))
   #+END_SRC
 
 * KDE
@@ -545,30 +550,79 @@
 
 ** kub
    :PROPERTIES:
-   :header-args+: :dir /sudo:kub:
+   :header-args+: :dir /sudo:10.117.14.185:
    :END:
 *** Mounts
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/fstab
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/fstab
       LABEL=<<username>> /home/<<username>> auto
       LABEL=var /var auto
     #+END_SRC
 
 *** Network
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/systemd/network/eth0.network
+    :PROPERTIES:
+    :header-args+: :tangle-mode 260
+    :END:
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/network/eth0.network
       [Match]
       Name = eth0
 
       [Network]
-      Address = <<prefix>>54/24
+      Address = <<prefix>>185/24
       Gateway = <<prefix>>1
+      DNS = <<prefix>>1
       IPForward = yes
+
+      Tunnel=he-ipv6
+      Address=<<prefix6>>1/64
     #+END_SRC
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/resolv.conf
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/network/he-ipv6.netdev
+      [NetDev]
+      Name=he-ipv6
+      Kind=sit
+      MTUBytes=1472
+
+      [Tunnel]
+      Local=<<prefix>>185
+      Remote=216.218.221.42
+      TTL=255
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/network/he-ipv6.network
+      [Match]
+      Name=he-ipv6
+      [Network]
+      Address=2001:470:35:62a::2/64
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/system/he-ipv6-route.service
+      [Unit]
+      After=network.target
+
+      [Service]
+      Type=oneshot
+      RemainAfterExit=yes
+      ExecStart=/bin/ip -6 route add default src <<prefix6>>1 dev he-ipv6
+      ExecStop=/bin/ip -6 route del default
+
+      [Install]
+      WantedBy=multi-user.target
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/radvd.conf
+      interface eth0 {
+      AdvSendAdvert on;
+      MinRtrAdvInterval 3;
+      MaxRtrAdvInterval 10;
+      AdvLinkMTU 1472;
+      prefix <<prefix6>>/64 {
+      AdvOnLink on;
+      AdvRouterAddr on;
+      };
+      };
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/resolv.conf
       nameserver <<prefix>>1
     #+END_SRC
 
 *** Pacman
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.conf :tangle-mode 260
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/pacman.conf :tangle-mode 260
       <<pacman_common>>
 
       [options]
@@ -579,16 +633,16 @@
       [aur]
       Include = /etc/pacman.d/mirrorlist
     #+END_SRC
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/pacman.d/mirrorlist
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/pacman.d/mirrorlist
       Server = http://vn.mirror.archlinuxarm.org/$arch/$repo
     #+END_SRC
 
 *** LED blinking
-    #+BEGIN_SRC sh :tangle /sudo:kub:/usr/local/bin/leds :shebang #!/bin/sh
+    #+BEGIN_SRC sh :tangle /sudo:10.117.14.185:/usr/local/bin/leds :shebang #!/bin/sh
       echo none > /sys/class/leds/cubieboard:green:usr/trigger
       echo mmc0 > /sys/class/leds/cubieboard:blue:usr/trigger
     #+END_SRC
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/systemd/system/leds.service
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/system/leds.service
       [Service]
       Type=oneshot
       ExecStart=/usr/local/bin/leds
@@ -741,7 +795,7 @@
     #+END_SRC
 
 *** SSH
-    #+BEGIN_SRC conf :tangle /sudo:kub:/etc/ssh/sshd_config
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/ssh/sshd_config
       Protocol 2
       HostKey /etc/ssh/ssh_host_ed25519_key
       HostKey /etc/ssh/ssh_host_rsa_key
@@ -769,14 +823,6 @@
       LABEL=home /home/<<username>> ntfs-3g noatime,nofail
       LABEL=ESP /boot vfat
       /swap none swap
-    #+END_SRC
-
-*** Hosts
-    #+BEGIN_SRC conf :tangle /sudo::/etc/hosts :tangle-mode 260
-      127.0.0.1 ton
-      ::1 ton
-      <<prefix>>1 vorme
-      <<prefix>>54 kub
     #+END_SRC
 
 *** Network
