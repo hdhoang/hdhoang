@@ -1650,6 +1650,33 @@
     map <A-r> -js dactyl.open("about:reader?url=" + content.location)
   #+END_SRC
 
+* Windows
+** Portables
+   #+BEGIN_SRC bat :tangle bin/pe.cmd
+     cd /d %~dp0\Tools
+     start /b procexp /e /accepteula
+   #+END_SRC
+   #+BEGIN_SRC bat :tangle bin/pi.cmd
+     cd /d %~dp0\picard
+     start /b picard
+   #+END_SRC
+   #+BEGIN_SRC bat :tangle bin/fx.cmd
+     cd /d %~dp0\fx
+     start /b firefox
+   #+END_SRC
+   #+BEGIN_SRC bat :tangle bin/tv.cmd
+     cd /d %~dp0\teamviewer
+     start /b teamviewer
+   #+END_SRC
+   #+BEGIN_SRC bat :tangle bin/kp.cmd
+     cd /d %~dp0\keepass
+     start /b keepass
+   #+END_SRC
+   #+BEGIN_SRC bat :tangle bin/ovpn.cmd
+     cd /d %~dp0
+     elevate openvpn --config hdhoang.ovpn
+   #+END_SRC
+
 * Secrets							      :crypt:
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG v2
