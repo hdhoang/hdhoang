@@ -1306,6 +1306,7 @@
      (org-babel-do-load-languages 'org-babel-load-languages
                                   '((sh . t)))
      (setq org-src-fontify-natively t)
+     (setq org-export-initial-scope 'subtree)
    #+END_SRC
 
 *** Crypt
