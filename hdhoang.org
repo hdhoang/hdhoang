@@ -80,7 +80,7 @@
     - Thường xuyên hiến máu cho đến khi hết khả năng
 
 * Places and names
-  #+BEGIN_SRC html :tangle /kub:Public/index.html
+  #+BEGIN_SRC html :tangle ~/Public/index.html :tangle-mode 388
     <!doctype html>
     <meta charset=utf-8>
 
@@ -107,22 +107,26 @@
     <!-- <link rel="openid2.local_id openid.delegate" -->
     <!--      href="https://<<username>>.startssl.com/" /> -->
 
-    <p>Elsewhere on the net:<ul>
-        <li><a rel=me href=https://telegram.me/<<username>>>Telegram</a></li>
-        <li><a rel=me href=https://www.openhub.net/accounts/<<username>>>OpenHub</a></li>
-        <li><a rel=me href=https://gitlab.com/u/<<username>>>Gitlab</a></li>
-        <li><a rel=me href=https://github.com/<<username>>?tab=activity>Github</a></li>
-        <li><a rel=me href=https://plus.google.com/u/0/110711359835920217300/about>Google</a></li>
-        <li><a rel=me href=http://www.last.fm/user/hdh0>Last.fm</a></li>
-        <li><a rel=me href=https://facebook.com/hdh000/about>Facebook</a></li>
-        <li><a rel=me href=https://twitter.com/lasigmaz>Twitter</a></li>
-        <li><a rel=me href=https://steamcommunity.com/id/lasigmaz>Steam</a></li>
-    </ul></p>
+    <p>Elsewhere on the net:
+      <dl>
+        <dt><<username>><dd><ul>
+                <li><a rel=me href=https://telegram.me/<<username>>>Telegram</a></li>
+                <li><a rel=me href=https://www.openhub.net/accounts/<<username>>>OpenHub</a></li>
+                <li><a rel=me href=https://gitlab.com/u/<<username>>>Gitlab</a></li>
+                <li><a rel=me href=https://github.com/<<username>>?tab=activity>Github</a></li>
+                <li><a rel=me href=http://www.last.fm/user/<<username>>>Last.fm</a></li>
+                <li><a rel=me href=https://facebook.com/hdh000/about>Facebook</a></li>
+            </ul></dd>
+        <dt>lasigmaz<dd><ul>
+              <li><a rel=me href=https://twitter.com/lasigmaz>Twitter</a></li>
+              <li><a rel=me href=https://steamcommunity.com/id/lasigmaz>Steam</a></li>
+            </ul></dd>
+    </p>
 
     <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
       <a rel="license"
-         href="http://creativecommons.org/publicdomain/zero/1.0/">
-        <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+         href="https://creativecommons.org/publicdomain/zero/1.0/">
+        <img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
       </a>
       <br />
       To the extent possible under law,
@@ -136,6 +140,9 @@
           content="VN" about="https://<<domain>>">
       Vietnam</span>.
     </p>
+
+    <p>
+    <a href=vanity-irc.html>Showing a custom hostname to Freenode</a>
   #+END_SRC
 
   #+NAME: username
@@ -145,7 +152,7 @@
 
   #+NAME: domain
   #+BEGIN_SRC text
-    hdhoang.space
+    <<username>>.space
   #+END_SRC
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs
@@ -186,6 +193,38 @@
   #+BEGIN_SRC text
     youtube-dl --format "[height <=? 480]" --output ~/Videos/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
   #+END_SRC
+
+* Blog
+** Vanity plate on IRC
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ~/Public/vanity-irc
+   :END:
+*** Ingredients:
+    - An IPv6 block whose PTR you can delegate (I use Hurricane Electric's [[https://tunnelbroker.net][tunnelbroker service]])
+    - A hostname whose AAAA you can change (I'm using a full domain, hosted on [[https://cloudflare.com][CloudFlare]], but it should works [[https://freedns.afraid.org][with subdomains]])
+    - I'm using a Debian machine to connect to Freenode
+*** Recipes:
+    1. Request an IPv6 tunnel with HE
+    2. Delegate its rDNS to [[https://dns.he.net][dns.he.net]]
+    3. Match forward and reverse DNS between an address and your hostname:
+       #+BEGIN_SRC sh :results replace
+         bash -c 'diff <(nslookup test-plate.hdhoang.space.) <(nslookup 2001:470:36:62a::cccc)'
+       #+END_SRC
+
+       #+RESULTS[b43b6d2d898df8156aa60d0405a8b2f68660f12d]:
+
+       - Choose an address, point it to your hostname
+       - Add the address to the hostname's AAAA records
+    6. Connect to Freenode with that address as the source, for example:
+       #+BEGIN_SRC sh
+         for fn in $(dig +short -t aaaa chat.freenode.net); do
+             ip -6 route add $fn src $address dev $tunnel_interface;
+         done;
+       #+END_SRC
+       or
+       #+BEGIN_SRC sh
+         ip -6 route add default src $address dev $tunnel_interface
+       #+END_SRC
 
 * OpenVPN
   #+BEGIN_SRC sh :dir /sudo::
