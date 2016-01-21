@@ -143,8 +143,9 @@
       Vietnam</span>.
     </p>
 
-    <p>
-    <a href=vanity-irc.html>Showing a custom hostname to Freenode</a>
+    <p>I have a maybe-blog:<ul>
+    <li><a href=vanity-irc.html>Showing a custom hostname to Freenode</a>.
+    <li><a href=borrow-die.html>Borrow checker analogy</a>.
   #+END_SRC
 
   #+NAME: username
@@ -202,6 +203,57 @@
   #+END_SRC
 
 * Blog
+** Consumption
+*** <2016-01-18 Mon> Rạng Đông A55N2/5W (42,200đ)
+** Borrow-checking with friends
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ~/Public/borrow-die
+   :END:
+   #+BEGIN_SRC rust :tangle ~/Public/die.rs
+     #[derive(Debug)]
+     enum D3 { One, Two, Three }
+     impl D3 {
+         fn peek(self: &D3, name: &str) {
+             println!("{} sees that it's {:?}.", name, self);
+         }
+     }
+   #+END_SRC
+   Our main character, named Max, has a d3.
+   #+BEGIN_SRC rust :tangle ~/Public/die.rs
+     fn main() {
+         print!("Hi, I'm Max. ");
+         let mut die = D3::Two;
+         die.peek("Max");
+   #+END_SRC
+   Max can rolls his die:
+   #+BEGIN_SRC rust :tangle ~/Public/die.rs
+         die = D3::One;
+         die.peek("Max");
+   #+END_SRC
+   Max invites Alice and Bob over for a game of dice. The die is on the table and everyone can see what it's showing.
+   #+BEGIN_SRC rust :tangle ~/Public/die.rs
+         'table: loop {
+             let bob = &die;
+             bob.peek("Bob");
+             die.peek("Everyone"); // same thing
+             break 'table; // that's enough peeking for now
+         }
+    #+END_SRC
+    It's Alice's turn, she picks up the die and rolls.
+    #+BEGIN_SRC rust :tangle ~/Public/die.rs
+         'alices_turn: loop {
+             let alice = &mut die;
+             *alice = D3::Three;
+             alice.peek("Alice");
+             break 'alices_turn;
+         }
+    #+END_SRC
+    It lands on the table and now everyone sees what Alice rolled.
+    #+BEGIN_SRC rust :tangle ~/Public/die.rs
+         die.peek("Max");
+     }
+   #+END_SRC
+   [[file:borrow-die.rs][Full code.]]
 ** Vanity plate on IRC
    :PROPERTIES:
    :EXPORT_FILE_NAME: ~/Public/vanity-irc
