@@ -7,9 +7,11 @@
 #+PROPERTY: header-args+ :tangle-mode 384
 #+PROPERTY: header-args:text+ :eval no
 * Hoàng Đức Hiếu
+  :PROPERTIES:
+  :EXPORT_OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t tags:nil
+  :END:
 #+EMAIL: 1988 / +84-166-241-9526 / cv@hdhoang.space
 #+SELECT_TAGS: vi
-#+OPTIONS: toc:nil date:nil arch:nil num:nil author:nil email:t tags:nil
 #+LATEX_CLASS_OPTIONS: [twocolumn]
 #+LATEX_HEADER: \usepackage{libertine}
 #+LATEX_HEADER: \usepackage{xcolor-solarized, sectsty}
