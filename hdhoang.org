@@ -1053,7 +1053,7 @@
      #+END_SRC
 
      Base Japanese IME on dvorak, swap caps for ctrl
-     #+BEGIN_SRC conf :tangle keyboard.reg
+     #+BEGIN_SRC conf :tangle keyboard.reg :comments no
        Windows Registry Editor Version 5.00
 
        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
@@ -1061,6 +1061,18 @@
 
        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000411]
        "Layout File"="kbddv.dll"
+     #+END_SRC
+     Tangle registry files as UTF-16LE with BOM
+     #+BEGIN_SRC elisp :tangle ~/.emacs
+       (add-to-list 'file-coding-system-alist '("\\.reg\\'" . utf-16le-with-signature-dos))
+       (add-hook 'org-babel-post-tangle-hook 'strip-initial-newline)
+       (defun strip-initial-newline ()
+         (when (string-match "^Windows Registry" (buffer-string))
+           (join-line 1)))
+     #+END_SRC
+     Import into registry
+     #+BEGIN_SRC sh
+       start regedit $PWD/*reg
      #+END_SRC
 
 **** Pointer
