@@ -1716,6 +1716,12 @@
     }
   #+END_SRC
 
+  ownCloud News
+  #+BEGIN_SRC vimrc
+    set passkeys+=<<domain>>/owncloud/index.php/apps/news/:jkrol
+    js services.permissions.add(services.io.newURI("https:<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
+  #+END_SRC
+
   Site keyboard shortcuts:
   #+BEGIN_SRC vimrc
     set passkeys+=tumblr.com:jk
