@@ -5,6 +5,10 @@ extern crate hyper;
 
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
+use hyper::client::Client;
+use hyper::error::Error as HyperError;
+use scraper::{Html, Selector};
+use std::io::{Read, Error, ErrorKind};
 
 static CHANNEL: &'static str = "#vnluser";
 static NAME: &'static str = "luser";
@@ -53,11 +57,8 @@ fn main() {
     }
 }
 
-fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
-    use hyper::client::Client;
+fn scrape_title(url: &str) -> Result<String, HyperError> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
-    use scraper::{Html, Selector};
-    use std::io::{Read, Error, ErrorKind};
 
     let select_title = Selector::parse("title").unwrap();
     let client = Client::new();
@@ -83,8 +84,7 @@ fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
                          .to_owned())
         }
         None => {
-            Err(hyper::error::Error::Io(Error::new(ErrorKind::InvalidData,
-                                                   "Response doesn't have a title")))
+            Err(HyperError::Io(Error::new(ErrorKind::InvalidData, "Response doesn't have a title")))
         }
     }
 }
