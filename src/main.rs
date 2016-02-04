@@ -56,10 +56,9 @@ fn main() {
 
 fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
     use hyper::client::Client;
-    use hyper::header::{UserAgent, ContentType, Cookie, CookiePair};
-    use hyper::mime::{Mime, TopLevel};
+    use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
-    use std::io::Read;
+    use std::io::{Read, Error, ErrorKind};
     use core::ops::Deref;
 
     let select_title = Selector::parse("title").unwrap();
@@ -73,23 +72,22 @@ fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
                                                               Ynx4rkFI"
                                                                  .to_owned())]))
                          .send());
-    match res.headers.get::<ContentType>() {
-        Some(&ContentType(Mime(TopLevel::Text, _, _))) => {
-            let mut html = String::with_capacity(32768);
-            try!(res.take(32768).read_to_string(&mut html));
-            Ok(Html::parse_fragment(&html)
-                   .select(&select_title)
-                   .next()
-                   .unwrap()
-                   .first_child()
-                   .unwrap()
-                   .value()
-                   .as_text()
-                   .unwrap()
-                   .deref()
-                   .replace("\n", " ")
-                   .to_owned())
+    let mut body = String::with_capacity(32768);
+    try!(res.take(32768).read_to_string(&mut body));
+    match Html::parse_fragment(&body).select(&select_title).next() {
+        Some(title_elem) => {
+            Ok(title_elem.first_child()
+                         .unwrap()
+                         .value()
+                         .as_text()
+                         .unwrap()
+                         .deref()
+                         .replace("\n", " ")
+                         .to_owned())
         }
-        _ => Ok("".to_owned()),
+        None => {
+            Err(hyper::error::Error::Io(Error::new(ErrorKind::InvalidData,
+                                                   "Response doesn't have a title")))
+        }
     }
 }
