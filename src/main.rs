@@ -48,7 +48,7 @@ fn main() {
                                                    format!("TITLE: {}", title)))
                             .unwrap();
                 }
-                Err(e) => println!("{:?}", e),
+                Err(e) => println!("{} {:?}", url, e),
             }
         }
     }
