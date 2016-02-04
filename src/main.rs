@@ -1,4 +1,3 @@
-extern crate core;
 extern crate regex;
 extern crate irc;
 extern crate scraper;
@@ -59,7 +58,6 @@ fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
     use std::io::{Read, Error, ErrorKind};
-    use core::ops::Deref;
 
     let select_title = Selector::parse("title").unwrap();
     let client = Client::new();
@@ -81,7 +79,6 @@ fn scrape_title(url: &str) -> Result<String, hyper::error::Error> {
                          .value()
                          .as_text()
                          .unwrap()
-                         .deref()
                          .replace("\n", " ")
                          .to_owned())
         }
