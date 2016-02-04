@@ -2,6 +2,7 @@ extern crate regex;
 extern crate irc;
 extern crate scraper;
 extern crate hyper;
+extern crate quick_xml;
 
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
@@ -12,6 +13,7 @@ use std::io::{Read, Error, ErrorKind};
 
 static CHANNEL: &'static str = "#vnluser";
 static NAME: &'static str = "luser";
+static APPID: &'static str = "ABCDE";
 
 fn main() {
     let freenode = IrcServer::from_config(Config {
@@ -54,6 +56,17 @@ fn main() {
                 Err(e) => println!("{} {:?}", url, e),
             }
         }
+        let wa_regex = Regex::new(r"^!wa (.+)$").unwrap();
+        if let Some(input) = wa_regex.captures(line)
+                                     .and_then(|caps| caps.at(1)) {
+            match wa_query(input) {
+                Err(e) => println!("{} {:?}", input, e),
+                Ok(text) => {
+                    freenode.send(Command::PRIVMSG(CHANNEL.to_owned(), text))
+                            .unwrap()
+                }
+            }
+        }
     }
 }
 
@@ -87,4 +100,27 @@ fn scrape_title(url: &str) -> Result<String, HyperError> {
             Err(HyperError::Io(Error::new(ErrorKind::InvalidData, "Response doesn't have a title")))
         }
     }
+}
+
+fn wa_query(input: &str) -> Result<String, HyperError> {
+    use hyper::header::ContentLength;
+    use quick_xml::{XmlReader, Event};
+
+    let client = Client::new();
+    let mut res = try!(client.get(&format!("http://api.wolframalpha.\
+                                            com/v2/query?format=plaintext&appid={}&input={}",
+                                           APPID,
+                                           input))
+                             .send());
+    let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
+    try!(res.read_to_string(&mut xml));
+    let tree = XmlReader::from_str(&xml).trim_text(true);
+    let mut answers = String::new();
+    for t in tree {
+        match t {
+            Ok(Event::Text(e)) => answers.push_str(&format!("{} ", e.into_string().unwrap())),
+            _ => {}
+        }
+    }
+    Ok(answers)
 }
