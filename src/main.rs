@@ -118,9 +118,8 @@ fn wa_query(input: &str) -> Result<String, HyperError> {
     let tree = XmlReader::from_str(&xml).trim_text(true);
     let mut answers = String::new();
     for t in tree {
-        match t {
-            Ok(Event::Text(e)) => answers.push_str(&format!("{} ", e.into_string().unwrap())),
-            _ => {}
+        if let Ok(Event::Text(e)) = t {
+            answers.push_str(&format!("{} ", e.into_string().unwrap()))
         }
     }
     Ok(answers)
