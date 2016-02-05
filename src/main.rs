@@ -94,6 +94,7 @@ fn scrape_title(url: &str) -> Result<String, HyperError> {
                          .as_text()
                          .unwrap()
                          .replace("\n", " ")
+                         .trim()
                          .to_owned())
         }
         None => {
