@@ -73,23 +73,23 @@ fn main() {
 fn scrape_title(url: &str) -> Result<String, HyperError> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
 
-    let select_title = Selector::parse("title").unwrap();
-    let client = Client::new();
-    let mut res = try!(client.get(url)
-                       .header(UserAgent("Firefox".to_owned()))
-                       .header(Cookie(vec![CookiePair::new(
-                           // cookie to access NYtimes articles
-                           "NYT-S".to_owned(),
-                           "0MCHCWA5RI93zDXrmvxADeHLKZwNYF3\
-                            ivqdeFz9JchiAIUFL2BEX5FWcV.\
-                            Ynx4rkFI"
-                               .to_owned())]))
-                       .send());
+    let mut res = try!(Client::new()
+                           .get(url)
+                           .header(UserAgent("Firefox".to_owned()))
+                           .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
+                                                               "NYT-S".to_owned(),
+                                                               "0MCHCWA5RI93zDXrmvxADeHLKZwNY\
+                                                                F3ivqdeFz9JchiAIUFL2BEX5FWcV.\
+                                                                Ynx4rkFI"
+                                                                   .to_owned())]))
+                           .send());
     let mut body = [0; 32768];
     match res.read_exact(&mut body) {
         _ => {}
     };
-    match Html::parse_fragment(&String::from_utf8_lossy(&body)).select(&select_title).next() {
+    match Html::parse_fragment(&String::from_utf8_lossy(&body))
+              .select(&Selector::parse("title").unwrap())
+              .next() {
         Some(title_elem) => {
             Ok(title_elem.first_child()
                          .unwrap()
