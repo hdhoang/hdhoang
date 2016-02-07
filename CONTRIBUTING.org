@@ -1,0 +1,7 @@
+Hi, thanks for looking into contributing. These are some features that luser is missing:
+
+* Configurable multiple channels support
+* Reading secrets from files
+* Tests
+* CLI interface
+* Reconnection on ping timeout
