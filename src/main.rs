@@ -46,8 +46,7 @@ fn main() {
             }
         }
         let url_regex = Regex::new(r"https?:[^\s]+").unwrap();
-        if let Some(url) = url_regex.captures(line)
-                                    .and_then(|caps| caps.at(0)) {
+        if let Some(url) = url_regex.captures(line).and_then(|caps| caps.at(0)) {
             match scrape_title(url) {
                 Ok(title) => {
                     freenode.send(Command::PRIVMSG(CHANNEL.to_owned(),
@@ -58,19 +57,14 @@ fn main() {
             }
         }
         let wa_regex = Regex::new(r"^!wa (.+)$").unwrap();
-        if let Some(input) = wa_regex.captures(line)
-                                     .and_then(|caps| caps.at(1)) {
+        if let Some(input) = wa_regex.captures(line).and_then(|caps| caps.at(1)) {
             match wa_query(input) {
                 Err(e) => println!("{} {:?}", input, e),
-                Ok(text) => {
-                    freenode.send(Command::PRIVMSG(CHANNEL.to_owned(), text))
-                            .unwrap()
-                }
+                Ok(text) => freenode.send(Command::PRIVMSG(CHANNEL.to_owned(), text)).unwrap(),
             }
         }
         let google_regex = Regex::new(r"^.g (.+)$").unwrap();
-        if let Some(input) = google_regex.captures(line)
-                                         .and_then(|caps| caps.at(1)) {
+        if let Some(input) = google_regex.captures(line).and_then(|caps| caps.at(1)) {
             match google(input) {
                 Err(e) => println!("{} {:?}", input, e),
                 Ok(text) => freenode.send(Command::PRIVMSG(CHANNEL.to_owned(), text)).unwrap(),
