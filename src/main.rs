@@ -143,7 +143,7 @@ fn google(input: &str) -> Result<String, HyperError> {
                            .send());
     let json = Json::from_reader(&mut res).unwrap();
     let ref result = json.search("results").unwrap()[0];
-    let url = result.find("unescapedUrl").unwrap();
-    let title = result.find("titleNoFormatting").unwrap();
+    let url = result.find("unescapedUrl").unwrap().as_string().unwrap();
+    let title = result.find("titleNoFormatting").unwrap().as_string().unwrap();
     Ok(format!("{} {}", url, title))
 }
