@@ -3,6 +3,7 @@ extern crate irc;
 extern crate scraper;
 extern crate hyper;
 extern crate quick_xml;
+extern crate rustc_serialize;
 
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
@@ -67,6 +68,14 @@ fn main() {
                 }
             }
         }
+        let google_regex = Regex::new(r"^.g (.+)$").unwrap();
+        if let Some(input) = google_regex.captures(line)
+                                         .and_then(|caps| caps.at(1)) {
+            match google(input) {
+                Err(e) => println!("{} {:?}", input, e),
+                Ok(text) => freenode.send(Command::PRIVMSG(CHANNEL.to_owned(), text)).unwrap(),
+            }
+        }
     }
 }
 
@@ -126,4 +135,19 @@ fn wa_query(input: &str) -> Result<String, HyperError> {
         }
     }
     Ok(answers)
+}
+
+fn google(input: &str) -> Result<String, HyperError> {
+    use rustc_serialize::json::Json;
+    // API: https://developers.google.com/web-search/docs/#code-snippets
+    let mut res = try!(Client::new()
+                           .get(&format!("https://ajax.googleapis.\
+                                          com/ajax/services/search/web?v=1.0&rsz=1&q={}",
+                                         input))
+                           .send());
+    let json = Json::from_reader(&mut res).unwrap();
+    let ref result = json.search("results").unwrap()[0];
+    let url = result.find("unescapedUrl").unwrap();
+    let title = result.find("titleNoFormatting").unwrap();
+    Ok(format!("{} {}", url, title))
 }
