@@ -8,9 +8,8 @@ extern crate rustc_serialize;
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
 use hyper::client::Client;
-use hyper::error::Error as HyperError;
 use scraper::{Html, Selector};
-use std::io::{Read, Error, ErrorKind};
+use std::io::Read;
 
 static CHANNEL: &'static str = "#vnluser";
 static NAME: &'static str = "luser";
@@ -28,6 +27,11 @@ fn main() {
                    })
                        .unwrap();
     freenode.identify().unwrap();
+
+    let mut handlers: Vec<Box<Handler>> = vec![];
+    handlers.push(Box::new(Titler { regex: Regex::new(r"https?:[^\s]+").unwrap() }));
+    handlers.push(Box::new(WolframAlpha { regex: Regex::new(r"^.wa (.+)").unwrap() }));
+    handlers.push(Box::new(Google { regex: Regex::new(r"^.g (.+)").unwrap() }));
 
     for message in freenode.iter() {
         let msg = message.unwrap();
@@ -48,102 +52,136 @@ fn main() {
                 continue;
             }
         }
-        let url_regex = Regex::new(r"https?:[^\s]+").unwrap();
-        if let Some(url) = url_regex.captures(line).and_then(|caps| caps.at(0)) {
-            match scrape_title(url) {
-                Ok(title) => {
-                    freenode.send(Command::PRIVMSG(channel.clone(), format!("TITLE: {}", title)))
-                            .unwrap();
+
+        for h in &handlers {
+            match h.run(&line) {
+                Err(e) => println!("{} {:?}", line, e),
+                Ok(reply) => {
+                    if reply.len() > 0 {
+                        freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap()
+                    }
                 }
-                Err(e) => println!("{} {:?}", url, e),
-            }
-        }
-        let wa_regex = Regex::new(r"^.wa (.+)$").unwrap();
-        if let Some(input) = wa_regex.captures(line).and_then(|caps| caps.at(1)) {
-            match wa_query(input) {
-                Err(e) => println!("{} {:?}", input, e),
-                Ok(text) => freenode.send(Command::PRIVMSG(channel.clone(), text)).unwrap(),
-            }
-        }
-        let google_regex = Regex::new(r"^.g (.+)$").unwrap();
-        if let Some(input) = google_regex.captures(line).and_then(|caps| caps.at(1)) {
-            match google(input) {
-                Err(e) => println!("{} {:?}", input, e),
-                Ok(text) => freenode.send(Command::PRIVMSG(channel.clone(), text)).unwrap(),
             }
         }
     }
 }
 
-fn scrape_title(url: &str) -> Result<String, HyperError> {
-    use hyper::header::{UserAgent, Cookie, CookiePair};
+#[derive(Debug)]
+enum Error {
+    Data(String),
+    Io(std::io::Error),
+    Hyper(hyper::error::Error),
+    Xml(quick_xml::error::Error),
+    Json(rustc_serialize::json::ParserError),
+}
 
-    let mut res = try!(Client::new()
-                           .get(url)
-                           .header(UserAgent("Firefox".to_owned()))
-                           .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
-                                                               "NYT-S".to_owned(),
-                                                               "0MCHCWA5RI93zDXrmvxADeHLKZwNY\
-                                                                F3ivqdeFz9JchiAIUFL2BEX5FWcV.\
-                                                                Ynx4rkFI"
-                                                                   .to_owned())]))
-                           .send());
-    let mut body = [0; 32768];
-    match res.read_exact(&mut body) {
-        _ => {}
-    };
-    match Html::parse_fragment(&String::from_utf8_lossy(&body))
-              .select(&Selector::parse("title").unwrap())
-              .next() {
-        Some(title_elem) => {
-            Ok(title_elem.first_child()
-                         .unwrap()
-                         .value()
-                         .as_text()
-                         .unwrap()
-                         .replace("\n", " ")
-                         .trim()
-                         .to_owned())
-        }
-        None => {
-            Err(HyperError::Io(Error::new(ErrorKind::InvalidData, "Response doesn't have a title")))
+trait Handler {
+    fn run(&self, line: &String) -> Result<String, Error>;
+}
+
+struct Titler {
+    regex: Regex,
+}
+impl Handler for Titler {
+    fn run(&self, line: &String) -> Result<String, Error> {
+        if let Some(url) = self.regex.captures(line).and_then(|caps| caps.at(0)) {
+            use hyper::header::{UserAgent, Cookie, CookiePair};
+
+            let mut res = try!(Client::new()
+                         .get(url)
+                         .header(UserAgent("Firefox".to_owned()))
+                         .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
+                                                             "NYT-S".to_owned(),
+                                                             "0MCHCWA5RI93zDXrmvxADeHLKZwNYF3\
+                                                              ivqdeFz9JchiAIUFL2BEX5FWcV.\
+                                                              Ynx4rkFI"
+                                                                 .to_owned())]))
+                         .send()
+                         .map_err(Error::Hyper));
+            let mut body = [0; 32768];
+            match res.read_exact(&mut body) {
+                _ => {}
+            };
+            match Html::parse_fragment(&String::from_utf8_lossy(&body))
+                      .select(&Selector::parse("title").unwrap())
+                      .next() {
+                Some(title_elem) => {
+                    Ok(format!("TITLE: {}",
+                               title_elem.first_child()
+                                         .unwrap()
+                                         .value()
+                                         .as_text()
+                                         .unwrap()
+                                         .replace("\n", " ")
+                                         .trim()))
+                }
+                None => Err(Error::Data("Response doesn't have a title".to_owned())),
+            }
+        } else {
+            Ok(String::new())
         }
     }
 }
 
-fn wa_query(input: &str) -> Result<String, HyperError> {
-    use hyper::header::ContentLength;
-    use quick_xml::{XmlReader, Event};
+struct WolframAlpha {
+    regex: Regex,
+}
+impl Handler for WolframAlpha {
+    fn run(&self, line: &String) -> Result<String, Error> {
+        if let Some(input) = self.regex.captures(line).and_then(|caps| caps.at(1)) {
+            use hyper::header::ContentLength;
+            use quick_xml::{XmlReader, Event};
 
-    let client = Client::new();
-    let mut res = try!(client.get(&format!("http://api.wolframalpha.\
-                                            com/v2/query?format=plaintext&appid={}&input={}",
-                                           APPID,
-                                           input))
-                             .send());
-    let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
-    try!(res.read_to_string(&mut xml));
-    let tree = XmlReader::from_str(&xml).trim_text(true);
-    let mut answers = String::new();
-    for t in tree {
-        if let Ok(Event::Text(e)) = t {
-            answers.push_str(&format!("{} ", e.into_string().unwrap()))
+            let mut res = try!(Client::new()
+                                   .get(&format!("http://api.wolframalpha.\
+                                                  com/v2/query?format=plaintext&appid={}&input=\
+                                                  {}",
+                                                 APPID,
+                                                 input))
+                                   .send()
+                                   .map_err(Error::Hyper));
+            let mut xml =
+                String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
+            try!(res.read_to_string(&mut xml).map_err(Error::Io));
+            let tree = XmlReader::from_str(&xml).trim_text(true);
+            let mut answers = String::new();
+            for t in tree {
+                if let Ok(Event::Text(e)) = t {
+                    answers.push_str(&format!("{} ", try!(e.into_string().map_err(Error::Xml))))
+                }
+            }
+            Ok(answers)
+        } else {
+            Ok(String::new())
         }
     }
-    Ok(answers)
 }
-
-fn google(input: &str) -> Result<String, HyperError> {
-    use rustc_serialize::json::Json;
-    // API: https://developers.google.com/web-search/docs/#code-snippets
-    let mut res = try!(Client::new()
-                           .get(&format!("https://ajax.googleapis.\
-                                          com/ajax/services/search/web?v=1.0&rsz=1&q={}",
-                                         input))
-                           .send());
-    let json = Json::from_reader(&mut res).unwrap();
-    let ref result = json.search("results").unwrap()[0];
-    let url = result.find("unescapedUrl").unwrap().as_string().unwrap();
-    let title = result.find("titleNoFormatting").unwrap().as_string().unwrap();
-    Ok(format!("{} {}", url, title))
+struct Google {
+    regex: Regex,
+}
+impl Handler for Google {
+    fn run(&self, line: &String) -> Result<String, Error> {
+        if let Some(input) = self.regex.captures(line).and_then(|caps| caps.at(1)) {
+            use rustc_serialize::json::Json;
+            // API: https://developers.google.com/web-search/docs/#code-snippets
+            let mut res = try!(Client::new()
+                                   .get(&format!("https://ajax.googleapis.\
+                                                  com/ajax/services/search/web?v=1.0&rsz=1&q={}",
+                                                 input))
+                                   .send()
+                                   .map_err(Error::Hyper));
+            let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
+            let ref result =
+                try!(json.search("results").ok_or(Error::Data("No results".to_owned())))[0];
+            let url = try!(result.find("unescapedUrl")
+                                 .ok_or(Error::Data("No url".to_owned()))
+                                 .map(|j| j.as_string().unwrap()));
+            let title = try!(result.find("titleNoFormatting")
+                                   .ok_or(Error::Data("No title".to_owned()))
+                                   .map(|j| j.as_string().unwrap()));
+            Ok(format!("{} {}", url, title))
+        } else {
+            Ok(String::new())
+        }
+    }
 }
