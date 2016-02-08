@@ -8,7 +8,6 @@ extern crate rustc_serialize;
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
 use hyper::client::Client;
-use scraper::{Html, Selector};
 use std::io::Read;
 
 static CHANNEL: &'static str = "#vnluser";
@@ -86,8 +85,10 @@ impl Handler for Titler {
     fn run(&self, line: &String) -> Result<String, Error> {
         if let Some(url) = self.regex.captures(line).and_then(|caps| caps.at(0)) {
             use hyper::header::{UserAgent, Cookie, CookiePair};
+            use scraper::{Html, Selector};
 
-            let mut res = try!(Client::new()
+            let mut res =
+                try!(Client::new()
                          .get(url)
                          .header(UserAgent("Firefox".to_owned()))
                          .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
