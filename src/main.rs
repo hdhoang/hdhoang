@@ -58,7 +58,7 @@ fn main() {
                 Err(e) => println!("{} {:?}", url, e),
             }
         }
-        let wa_regex = Regex::new(r"^!wa (.+)$").unwrap();
+        let wa_regex = Regex::new(r"^.wa (.+)$").unwrap();
         if let Some(input) = wa_regex.captures(line).and_then(|caps| caps.at(1)) {
             match wa_query(input) {
                 Err(e) => println!("{} {:?}", input, e),
