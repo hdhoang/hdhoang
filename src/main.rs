@@ -20,7 +20,7 @@ fn main() {
     let freenode = IrcServer::from_config(Config {
                        owners: Some(vec!["hdhoang".to_owned()]),
                        nickname: Some(NAME.to_owned()),
-                       alt_nicks: Some(vec![format!("{}_", NAME)]),
+                       alt_nicks: Some(vec![format!("{}-dev", NAME)]),
                        server: Some("chat.freenode.net".to_owned()),
                        port: Some(8000),
                        channels: Some(vec![CHANNEL.to_owned(), "#luser-test".to_owned()]),
