@@ -27,10 +27,11 @@ fn main() {
                        .unwrap();
     freenode.identify().unwrap();
 
-    let mut handlers: Vec<Box<Handler>> = vec![];
-    handlers.push(Box::new(Titler { regex: Regex::new(r"https?:[^\s]+").unwrap() }));
-    handlers.push(Box::new(WolframAlpha { regex: Regex::new(r"^.wa (.+)").unwrap() }));
-    handlers.push(Box::new(Google { regex: Regex::new(r"^.g (.+)").unwrap() }));
+    let handlers: Vec<Box<Handler>> = vec![
+        Box::new(Titler(Regex::new(r"https?:[^\s]+").unwrap())),
+        Box::new(WolframAlpha(Regex::new(r"^.wa (.+)").unwrap())),
+        Box::new(Google(Regex::new(r"^.g (.+)").unwrap())),
+    ];
 
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
@@ -79,12 +80,10 @@ trait Handler {
     fn run(&self, line: &String) -> Result<String, Error>;
 }
 
-struct Titler {
-    regex: Regex,
-}
+struct Titler(Regex);
 impl Handler for Titler {
     fn run(&self, line: &String) -> Result<String, Error> {
-        if let Some(url) = self.regex.captures(line).and_then(|caps| caps.at(0)) {
+        if let Some(url) = self.0.captures(line).and_then(|caps| caps.at(0)) {
             use hyper::header::{UserAgent, Cookie, CookiePair};
             use scraper::{Html, Selector};
 
@@ -125,12 +124,10 @@ impl Handler for Titler {
     }
 }
 
-struct WolframAlpha {
-    regex: Regex,
-}
+struct WolframAlpha(Regex);
 impl Handler for WolframAlpha {
     fn run(&self, line: &String) -> Result<String, Error> {
-        if let Some(input) = self.regex.captures(line).and_then(|caps| caps.at(1)) {
+        if let Some(input) = self.0.captures(line).and_then(|caps| caps.at(1)) {
             use hyper::header::ContentLength;
             use quick_xml::{XmlReader, Event};
 
@@ -158,12 +155,11 @@ impl Handler for WolframAlpha {
         }
     }
 }
-struct Google {
-    regex: Regex,
-}
+
+struct Google(Regex);
 impl Handler for Google {
     fn run(&self, line: &String) -> Result<String, Error> {
-        if let Some(input) = self.regex.captures(line).and_then(|caps| caps.at(1)) {
+        if let Some(input) = self.0.captures(line).and_then(|caps| caps.at(1)) {
             use rustc_serialize::json::Json;
             // API: https://developers.google.com/web-search/docs/#code-snippets
             let mut res = try!(Client::new()
