@@ -32,27 +32,27 @@ fn main() {
     handlers.push(Box::new(WolframAlpha { regex: Regex::new(r"^.wa (.+)").unwrap() }));
     handlers.push(Box::new(Google { regex: Regex::new(r"^.g (.+)").unwrap() }));
 
-    for message in freenode.iter() {
+    'messages: for message in freenode.iter() {
         let msg = message.unwrap();
         let line;
         // ignore empty messages
         match msg.suffix {
-            None => continue,
+            None => continue 'messages,
             Some(ref l) => line = l,
         }
         let channel;
         match msg.args.get(0) {
-            None => continue,
+            None => continue 'messages,
             Some(c) => channel = c,
         }
         // ignore other bots
         if let Some(ref user) = msg.prefix {
             if user.starts_with(NAME) || user.contains("bot") {
-                continue;
+                continue 'messages;
             }
         }
 
-        for h in &handlers {
+        'handling: for h in &handlers {
             match h.run(&line) {
                 Err(e) => println!("{} {:?}", line, e),
                 Ok(reply) => {
