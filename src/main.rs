@@ -57,7 +57,8 @@ fn main() {
                 Err(e) => println!("{} {:?}", line, e),
                 Ok(reply) => {
                     if reply.len() > 0 {
-                        freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap()
+                        freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
+                        continue 'messages;
                     }
                 }
             }
