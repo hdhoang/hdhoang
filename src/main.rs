@@ -57,7 +57,7 @@ fn main() {
             match h.run(&line) {
                 Err(e) => println!("{} {:?}", line, e),
                 Ok(reply) => {
-                    if reply.len() > 0 {
+                    if !reply.is_empty() {
                         freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
                         continue 'messages;
                     }
@@ -77,12 +77,12 @@ enum Error {
 }
 
 trait Handler {
-    fn run(&self, line: &String) -> Result<String, Error>;
+    fn run(&self, line: &str) -> Result<String, Error>;
 }
 
 struct Titler(Regex);
 impl Handler for Titler {
-    fn run(&self, line: &String) -> Result<String, Error> {
+    fn run(&self, line: &str) -> Result<String, Error> {
         if let Some(url) = self.0.captures(line).and_then(|caps| caps.at(0)) {
             use hyper::header::{UserAgent, Cookie, CookiePair};
             use scraper::{Html, Selector};
@@ -126,7 +126,7 @@ impl Handler for Titler {
 
 struct WolframAlpha(Regex);
 impl Handler for WolframAlpha {
-    fn run(&self, line: &String) -> Result<String, Error> {
+    fn run(&self, line: &str) -> Result<String, Error> {
         if let Some(input) = self.0.captures(line).and_then(|caps| caps.at(1)) {
             use hyper::header::ContentLength;
             use quick_xml::{XmlReader, Event};
@@ -158,7 +158,7 @@ impl Handler for WolframAlpha {
 
 struct Google(Regex);
 impl Handler for Google {
-    fn run(&self, line: &String) -> Result<String, Error> {
+    fn run(&self, line: &str) -> Result<String, Error> {
         if let Some(input) = self.0.captures(line).and_then(|caps| caps.at(1)) {
             use rustc_serialize::json::Json;
             // API: https://developers.google.com/web-search/docs/#code-snippets
@@ -169,8 +169,8 @@ impl Handler for Google {
                                    .send()
                                    .map_err(Error::Hyper));
             let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-            let ref result =
-                try!(json.search("results").ok_or(Error::Data("No results".to_owned())))[0];
+            let result =
+                &try!(json.search("results").ok_or(Error::Data("No results".to_owned())))[0];
             let url = try!(result.find("unescapedUrl")
                                  .ok_or(Error::Data("No url".to_owned()))
                                  .map(|j| j.as_string().unwrap()));
