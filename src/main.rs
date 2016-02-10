@@ -169,14 +169,18 @@ impl Handler for Google {
                                    .send()
                                    .map_err(Error::Hyper));
             let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-            let result =
-                &try!(json.search("results").ok_or(Error::Data("No results".to_owned())))[0];
-            let url = try!(result.find("unescapedUrl")
-                                 .ok_or(Error::Data("No url".to_owned()))
+            let results = try!(json.search("results").ok_or(Error::Data("No results".to_owned())));
+            if results.as_array().unwrap().is_empty() {
+                return Ok("No results".to_owned());
+            }
+            let url = try!(results[0]
+                               .find("unescapedUrl")
+                               .ok_or(Error::Data("No url".to_owned()))
+                               .map(|j| j.as_string().unwrap()));
+            let title = try!(results[0]
+                                 .find("titleNoFormatting")
+                                 .ok_or(Error::Data("No title".to_owned()))
                                  .map(|j| j.as_string().unwrap()));
-            let title = try!(result.find("titleNoFormatting")
-                                   .ok_or(Error::Data("No title".to_owned()))
-                                   .map(|j| j.as_string().unwrap()));
             Ok(format!("{} {}", url, title))
         } else {
             Ok(String::new())
