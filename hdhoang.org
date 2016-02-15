@@ -571,12 +571,6 @@
    :PROPERTIES:
    :header-args+: :dir /sudo:10.117.14.185:
    :END:
-*** Mounts
-    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/fstab
-      LABEL=<<username>> /home/<<username>> auto
-      LABEL=var /var auto
-    #+END_SRC
-
 *** Network
     :PROPERTIES:
     :header-args+: :tangle-mode 260
