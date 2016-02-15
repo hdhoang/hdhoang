@@ -857,6 +857,10 @@
 
     [multilib]
     Include = /etc/pacman.d/mirrorlist
+
+    [antergos]
+    SigLevel = PackageRequired
+    Include = /etc/pacman.d/antergos-mirrorlist
   #+END_SRC
   #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.d/mirrorlist
     Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
