@@ -1295,6 +1295,7 @@
 
    Aggressive indent
    #+BEGIN_SRC elisp
+     (setq tab-always-indent 'complete)
      (use-package aggressive-indent
        :diminish ""
        :config (global-aggressive-indent-mode))
