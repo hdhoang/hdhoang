@@ -811,6 +811,28 @@
     #+END_SRC
 
 ** ton
+*** Hardware
+    Fix USB interfering with suspending
+    #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
+      echo EHC1 > /proc/acpi/wakeup
+      echo EHC2 > /proc/acpi/wakeup
+    #+END_SRC
+    Let powertop autotune. This conveniently waits for the trackpoint to become available for the last section.
+    #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
+      powertop --auto-tune
+    #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo::/etc/systemd/system/s230u.service
+      [Service]
+      Type=oneshot
+      RemainAfterExit=yes
+      ExecStart=/usr/local/bin/s230u
+
+      [Install]
+      WantedBy=basic.target
+    #+END_SRC
+    #+BEGIN_SRC sh :dir /sudo::
+      <<system_ctl>> enable --now s230u
+    #+END_SRC
 *** Mounts
     #+BEGIN_SRC sh
       fallocate -l 2G /swap
@@ -1024,13 +1046,12 @@
      #+END_SRC
 
 **** Pointer
-     Use evdev for the touchscreen
-     #+BEGIN_SRC conf :tangle /sudo::/etc/X11/xorg.conf.d/pointer.conf
-       Section "InputClass"
-               Identifier "Atmel touchscreen"
-               MatchProduct "maXTouch"
-               Driver "evdev"
-       EndSection
+     Up sensitivity
+     #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
+       echo 200 > /sys/bus/serio/devices/serio2/sensitivity
+     #+END_SRC
+     #+BEGIN_SRC sh :dir /sudo::
+       <<pacman>> -S xf86-input-libinput
      #+END_SRC
 
      Use natural scrolling on touchpad
@@ -1038,7 +1059,7 @@
        Section "InputClass"
                Identifier "Natural scrolling"
                MatchProduct "TouchPad"
-               MatchDriver "libinput"
+               Driver "libinput"
                Option "NaturalScrolling" "1"
        EndSection
      #+END_SRC
