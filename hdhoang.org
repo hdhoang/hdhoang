@@ -103,7 +103,7 @@
 
   #+NAME: videos
   #+BEGIN_SRC text
-    /h/Public/Videos
+    /home/<<username>>/Public/Videos
   #+END_SRC
 
   #+NAME: prefix
@@ -1656,8 +1656,8 @@
 
   ownCloud News
   #+BEGIN_SRC vimrc
-    set passkeys+=<<domain>>/owncloud/index.php/apps/news/:jkrol
-    js services.permissions.add(services.io.newURI("https:<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
+    set passkeys+=kub.<<domain>>/index.php/apps/news/:jkrolfA
+    js services.permissions.add(services.io.newURI("https:kub.<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
   #+END_SRC
 
   Site keyboard shortcuts:
