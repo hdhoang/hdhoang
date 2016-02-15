@@ -133,7 +133,7 @@
 
   #+NAME: ytdl
   #+BEGIN_SRC text
-    youtube-dl --no-mtime --format "[height <=? 480]" --output <<videos>>/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
+    youtube-dl --format "[height <=? 480]" --output <<videos>>/"%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
   #+END_SRC
 
 * Blog
