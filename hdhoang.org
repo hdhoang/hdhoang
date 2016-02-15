@@ -1649,7 +1649,8 @@
         <<ytdl>> --ignore-errors $(wget 'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
                                         --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
                                         --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
-                                          | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' | grep -vE 'reader/api|rapidgator|escapistmag|muspy' )
+                                          | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' | grep -vE 'reader/api|rapidgator|escapistmag|muspy' ) \
+            | grep -B1 100%
     }
   #+END_SRC
 
