@@ -674,62 +674,64 @@
     #+BEGIN_SRC sh
       <<pacman>> -S nginx
     #+END_SRC
-    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
+    #+BEGIN_Src c :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
+      # -*- mode: c -*-
       events {}
       http {
-      include       mime.types;
-      default_type  text/plain;
-      charset utf-8;
-      gzip off;
+          include mime.types;
+          charset utf-8;
+          gzip off;
+          client_max_body_size 10G;
+          fastcgi_buffers 64 4K;
+          root /srv/http;
+          autoindex on;
+          index index.html index.php;
 
-      access_log  off;
-      log_not_found off;
 
-      server {
-      return 301 https://$host$request_uri;
-      }
+          access_log off;
+          log_not_found off;
 
-      ssl_protocols TLSv1.2;
-      ssl_ciphers EECDH+CHACHA20:EECDH+AES128;
-      ssl_prefer_server_ciphers on;
-      add_header Strict-Transport-Security max-age=31536000;
+          server {
+              return 301 https://$host$request_uri;
+          }
 
-      map $request_uri $dest {
-      /c /mirror/caps2ctrl.exe;
-      /d http://5digits.org/nightly/pentadactyl-latest.xpi;
-      /pe http://live.sysinternals.com/;
-      /s https://puttytray.goeswhere.com/download/putty.exe;
+          ssl_certificate /etc/letsencrypt/live/zahe.me/fullchain.pem;
+          ssl_certificate_key /etc/letsencrypt/live/zahe.me/privkey.pem;
+          ssl_protocols TLSv1.2;
+          ssl_ciphers EECDH+CHACHA20:EECDH+AES128;
+          ssl_prefer_server_ciphers on;
+          add_header Strict-Transport-Security max-age=31536000;
 
-      default "";
-      }
+          server {
+              listen 443 ssl spdy default_server;
+              listen [::]:443 ssl spdy default_server;
+              server_name <<domain>>;
 
-      server {
-      listen 443 ssl spdy default_server;
-      ssl_certificate <<domain>>.crt;
-      ssl_certificate_key <<domain>>.key;
-      server_name kub.<<domain>> <<domain>>;
-      root /home/<<username>>/Public/;
-      autoindex on;
-      if ($dest) {
-      return 301 $dest;
+              location /transmission {
+                  proxy_pass http://127.0.0.1:9091;
+              }
+          }
+          server {
+              listen 443 ssl spdy;
+              listen [::]:443 ssl spdy;
+              server_name kub.<<domain>>;
+              root /usr/share/webapps/owncloud;
+              location ~ \.htaccess|data|config|db_structure\.xml|README {
+                  deny all;
+              }
+              location / {
+                  rewrite ^/.well-known/carddav /owncloud/remote.php/carddav/ redirect;
+                  try_files $uri $uri/ =404;
+              }
+              location ~ \.php(?:$|/) {
+                  fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                  include fastcgi_params;
+                  fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                  fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+              }
+          }
       }
-      location /ipfs/ {
-      proxy_pass http://127.0.0.1:4005;
-      }
-      location ~ /mirror/(?:.*)\.part {
-      return 403 incomplete;
-      }
-      }
-
-      server {
-      listen 443 ssl spdy;
-      server_name id.<<domain>>;
-      root /home/<<username>>/Public/;
-      index <<username>>;
-      default_type text/html;
-      }
-      }
-    #+END_SRC
+     #+END_SRC
 
 *** DLNA
     #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
