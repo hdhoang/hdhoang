@@ -147,7 +147,7 @@
         line-height: 1.5;
     }
   #+END_SRC
-/** hdhoang
+** hdhoang
    :PROPERTIES:
    :EXPORT_FILE_NAME: ~/Public/index
    :END:
@@ -156,6 +156,7 @@
      + [[https://telegram.me/hdhoang][Telegram]]
      + [[https://www.openhub.net/accounts/hdhoang][OpenHub]]
      + [[https://gitlab.com/u/hdhoang][GitLab]]
+     + [[https://www.linkedin.com/in/hdhoang][LinkedIn]]
      + [[https://github.com/hdhoang?tab%3Dactivity][GitHub]]
      + [[http://www.last.fm/user/hdhoang][Last.fm]]
      + [[https://facebook.com/hdh000][Facebook]]
