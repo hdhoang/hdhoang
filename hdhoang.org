@@ -1298,7 +1298,9 @@
      (setq tab-always-indent 'complete)
      (use-package aggressive-indent
        :diminish ""
-       :config (global-aggressive-indent-mode))
+       :config
+       (global-aggressive-indent-mode)
+       (add-to-list 'aggressive-indent-excluded-modes 'rust-mode))
    #+END_SRC
 
    Switch window with ace
