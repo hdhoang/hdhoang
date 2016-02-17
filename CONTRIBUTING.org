@@ -1,7 +1,8 @@
 Hi, thanks for looking into contributing. These are some features that luser is missing:
 
-* Configurable multiple channels support
-* Reading secrets from files
-* Tests
-* CLI interface
-* Reconnection on ping timeout
+* TODO Handle gzip responses (news.zing.vn and baomoi.com)
+* TODO Configurable multiple channels support
+* TODO Reading secrets from files
+* TODO Tests
+* TODO CLI interface
+* TODO Reconnection on ping timeout
