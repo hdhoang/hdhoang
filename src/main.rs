@@ -72,7 +72,7 @@ fn main() {
         }
         // ignore other bots
         if let Some(ref user) = msg.prefix {
-            if user.starts_with(NAME) || user.contains("bot") {
+            if user.starts_with(NAME) || user.contains("bot") || user.contains("freenode") {
                 continue 'messages;
             }
         }
