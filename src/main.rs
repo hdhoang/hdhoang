@@ -15,6 +15,25 @@ static NAME: &'static str = "luser";
 static APPID: &'static str = "ABCDE";
 static YANDEX_KEY: &'static str = "trnsl.1.1";
 
+#[derive(Debug)]
+enum Error {
+    Data(String),
+    Io(std::io::Error),
+    Hyper(hyper::error::Error),
+    Xml(quick_xml::error::Error),
+    Json(rustc_serialize::json::ParserError),
+}
+
+struct Handler<'a>(Regex, &'a (Fn(&Regex, &str) -> Result<String, Error>));
+impl<'a> Handler<'a> {
+    fn can_handle(&self, line: &str) -> bool {
+        self.0.is_match(&line)
+    }
+    fn run(&self, line: &str) -> Result<String, Error> {
+        self.1(&self.0, &line)
+    }
+}
+
 fn main() {
     let freenode = IrcServer::from_config(Config {
                        owners: Some(vec!["hdhoang".to_owned()]),
@@ -28,12 +47,15 @@ fn main() {
                        .unwrap();
     freenode.identify().unwrap();
 
-    let handlers: Vec<Box<Handler>> = vec![
-        Box::new(Titler(Regex::new(r"https?:[^\s]+").unwrap())),
-        Box::new(Translator(Regex::new(r"^.tr (?P<lang>[^ ]+) (?P<text>.+)").unwrap())),
-        Box::new(WolframAlpha(Regex::new(r"^.wa (?P<query>.+)").unwrap())),
-        Box::new(Google(Regex::new(r"^.g (?P<query>.+)").unwrap())),
-    ];
+    let get_title = &get_title;
+    let wolframalpha = &wolframalpha;
+    let google = &google;
+    let translate = &translate;
+    let handlers = [Handler(Regex::new(r"https?:[^\s]+").unwrap(), get_title),
+                    Handler(Regex::new(r"^.wa (?P<query>.+)").unwrap(), wolframalpha),
+                    Handler(Regex::new(r"^.g (?P<query>.+)").unwrap(), google),
+                    Handler(Regex::new(r"^.tr (?P<lang>[^ ]+) (?P<text>.+)").unwrap(),
+                            translate)];
 
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
@@ -56,7 +78,7 @@ fn main() {
         }
 
         'handling: for h in &handlers {
-            if h.is_match(&line) {
+            if h.can_handle(&line) {
                 match h.run(&line) {
                     Err(e) => println!("{} {:?}", line, e),
                     Ok(reply) => {
@@ -71,159 +93,117 @@ fn main() {
     }
 }
 
-#[derive(Debug)]
-enum Error {
-    Data(String),
-    Io(std::io::Error),
-    Hyper(hyper::error::Error),
-    Xml(quick_xml::error::Error),
-    Json(rustc_serialize::json::ParserError),
-}
+fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
+    use hyper::header::{UserAgent, Cookie, CookiePair};
+    use scraper::{Html, Selector};
 
-trait Handler {
-    fn run(&self, line: &str) -> Result<String, Error>;
-    fn is_match(&self, line: &str) -> bool;
-}
-
-struct Titler(Regex);
-impl Handler for Titler {
-    fn is_match(&self, line: &str) -> bool {
-        self.0.is_match(&line)
-    }
-    fn run(&self, line: &str) -> Result<String, Error> {
-        use hyper::header::{UserAgent, Cookie, CookiePair};
-        use scraper::{Html, Selector};
-
-        let mut res = try!(Client::new()
-                           .get(&self.0
-                                .captures(&line).unwrap()
-                                .expand("$0"))
+    let mut res = try!(Client::new()
+                           .get(&regex.captures(&line)
+                                      .unwrap()
+                                      .expand("$0"))
                            .header(UserAgent("Firefox".to_owned()))
                            .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
-                               "NYT-S".to_owned(),
-                               "0MCHCWA5RI93zDXrmvxADeHLKZwNYF3\
-                                ivqdeFz9JchiAIUFL2BEX5FWcV.\
-                                Ynx4rkFI"
-                                   .to_owned())]))
+                                                               "NYT-S".to_owned(),
+                                                               "0MCHCWA5RI93zDXrmvxADeHLKZwNY\
+                                                                F3ivqdeFz9JchiAIUFL2BEX5FWcV.\
+                                                                Ynx4rkFI"
+                                                                   .to_owned())]))
                            .send()
                            .map_err(Error::Hyper));
-        let mut body = [0; 32768];
-        match res.read_exact(&mut body) {
-            _ => {}
-        };
-        match Html::parse_fragment(&String::from_utf8_lossy(&body))
-                  .select(&Selector::parse("title").unwrap())
-                  .next() {
-            Some(title_elem) => {
-                Ok(format!("TITLE: {}",
-                           title_elem.first_child()
-                                     .unwrap()
-                                     .value()
-                                     .as_text()
-                                     .unwrap()
-                                     .replace("\n", " ")
-                                     .trim()))
-            }
-            None => Err(Error::Data("Response doesn't have a title".to_owned())),
+    let mut body = [0; 32768];
+    match res.read_exact(&mut body) {
+        _ => {}
+    };
+    match Html::parse_fragment(&String::from_utf8_lossy(&body))
+              .select(&Selector::parse("title").unwrap())
+              .next() {
+        Some(title_elem) => {
+            Ok(format!("TITLE: {}",
+                       title_elem.first_child()
+                                 .unwrap()
+                                 .value()
+                                 .as_text()
+                                 .unwrap()
+                                 .replace("\n", " ")
+                                 .trim()))
         }
+        None => Err(Error::Data("Response doesn't have a title".to_owned())),
     }
 }
 
-struct WolframAlpha(Regex);
-impl Handler for WolframAlpha {
-    fn is_match(&self, line: &str) -> bool {
-        self.0.is_match(&line)
-    }
-    fn run(&self, line: &str) -> Result<String, Error> {
-        use hyper::header::ContentLength;
-        use quick_xml::{XmlReader, Event};
+fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
+    use hyper::header::ContentLength;
+    use quick_xml::{XmlReader, Event};
 
-        let mut res = try!(Client::new()
-                               .get(&self.0
-                                         .captures(&line)
-                                         .unwrap()
-                                         .expand(&format!("http://api.wolframalpha.\
-                                                           com/v2/query?format=plaintext&appid\
-                                                           ={}&input=$query",
-                                                          APPID)))
-                               .send()
-                               .map_err(Error::Hyper));
-        let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
-        try!(res.read_to_string(&mut xml).map_err(Error::Io));
-        let tree = XmlReader::from_str(&xml).trim_text(true);
-        let mut answers = String::new();
-        for t in tree {
-            if let Ok(Event::Text(e)) = t {
-                answers.push_str(&format!("{} ", try!(e.into_string().map_err(Error::Xml))))
-            }
+    let mut res = try!(Client::new()
+                           .get(&regex.captures(&line)
+                                      .unwrap()
+                                      .expand(&format!("http://api.wolframalpha.\
+                                                        com/v2/query?format=plaintext&appid={}\
+                                                        &input=$query",
+                                                       APPID)))
+                           .send()
+                           .map_err(Error::Hyper));
+    let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
+    try!(res.read_to_string(&mut xml).map_err(Error::Io));
+    let tree = XmlReader::from_str(&xml).trim_text(true);
+    let mut answers = String::new();
+    for t in tree {
+        if let Ok(Event::Text(e)) = t {
+            answers.push_str(&format!("{} ", try!(e.into_string().map_err(Error::Xml))))
         }
-        Ok(answers)
     }
+    Ok(answers)
 }
 
-struct Google(Regex);
-impl Handler for Google {
-    fn is_match(&self, line: &str) -> bool {
-        self.0.is_match(&line)
+fn google(regex: &Regex, line: &str) -> Result<String, Error> {
+    use rustc_serialize::json::Json;
+    // API: https://developers.google.com/web-search/docs/#code-snippets
+    let mut res = try!(Client::new()
+                           .get(&regex.captures(&line)
+                                      .unwrap()
+                                      .expand("https://ajax.googleapis.\
+                                               com/ajax/services/search/web?v=1.\
+                                               0&rsz=1&q=$query"))
+                           .send()
+                           .map_err(Error::Hyper));
+    let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
+    let results = try!(json.search("results").ok_or(Error::Data("No results".to_owned())));
+    if results.as_array().unwrap().is_empty() {
+        return Ok("No results".to_owned());
     }
-    fn run(&self, line: &str) -> Result<String, Error> {
-        use rustc_serialize::json::Json;
-        // API: https://developers.google.com/web-search/docs/#code-snippets
-        let mut res = try!(Client::new()
-                               .get(&self.0
-                                         .captures(&line)
-                                         .unwrap()
-                                         .expand("https://ajax.googleapis.\
-                                                  com/ajax/services/search/web?v=1.\
-                                                  0&rsz=1&q=$query"))
-                               .send()
-                               .map_err(Error::Hyper));
-        let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-        let results = try!(json.search("results").ok_or(Error::Data("No results".to_owned())));
-        if results.as_array().unwrap().is_empty() {
-            return Ok("No results".to_owned());
-        }
-        let url = try!(results[0]
-                           .find("unescapedUrl")
-                           .ok_or(Error::Data("No url".to_owned()))
-                           .map(|j| j.as_string().unwrap()));
-        let title = try!(results[0]
-                             .find("titleNoFormatting")
-                             .ok_or(Error::Data("No title".to_owned()))
-                             .map(|j| j.as_string().unwrap()));
-        Ok(format!("{} {}", url, title))
-    }
+    let url = try!(results[0]
+                       .find("unescapedUrl")
+                       .ok_or(Error::Data("No url".to_owned()))
+                       .map(|j| j.as_string().unwrap()));
+    let title = try!(results[0]
+                         .find("titleNoFormatting")
+                         .ok_or(Error::Data("No title".to_owned()))
+                         .map(|j| j.as_string().unwrap()));
+    Ok(format!("{} {}", url, title))
 }
 
-struct Translator(Regex);
-impl Handler for Translator {
-    fn is_match(&self, line: &str) -> bool {
-        self.0.is_match(&line)
-    }
-    fn run(&self, line: &str) -> Result<String, Error> {
-        use rustc_serialize::json::Json;
-        // API: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
-        let mut res = try!(Client::new()
-                               .get(&self.0
-                                         .captures(&line)
-                                         .unwrap()
-                                         .expand(&format!("https://translate.yandex.\
-                                                           net/api/v1.5/tr.\
-                                                           json/translate?key={}&text=$text&la\
-                                                           ng=$lang",
-                                                          YANDEX_KEY)))
-                               .send()
-                               .map_err(Error::Hyper));
-        let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-        let response = match json.find("code").unwrap().as_u64().unwrap() {
-            200 => {
-                format!("{}: {}",
-                        json.find("lang").unwrap().as_string().unwrap(),
-                        json.find("text").unwrap()[0].as_string().unwrap())
-            }
-            501 => json.find("message").unwrap().as_string().unwrap().to_owned(),
-            _ => json.as_string().unwrap().to_owned(),
-        };
-        Ok(response)
-    }
+fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
+    use rustc_serialize::json::Json;
+    // API: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
+    let mut res = try!(Client::new()
+                           .get(&regex.captures(&line)
+                                      .unwrap()
+                                      .expand(&format!("https://translate.yandex.net/api/v1.\
+                                                        5/tr.json/translate?key={}&text=$text&\
+                                                        lang=$lang",
+                                                       YANDEX_KEY)))
+                           .send()
+                           .map_err(Error::Hyper));
+    let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
+    let response = match json.find("code").unwrap().as_u64().unwrap() {
+        200 => {
+            format!("{}: {}",
+                    json.find("lang").unwrap().as_string().unwrap(),
+                    json.find("text").unwrap()[0].as_string().unwrap())
+        }
+        501 => json.find("message").unwrap().as_string().unwrap().to_owned(),
+        _ => json.as_string().unwrap().to_owned(),
+    };
+    Ok(response)
 }
