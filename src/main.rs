@@ -80,7 +80,7 @@ fn main() {
         'handling: for h in &handlers {
             if h.can_handle(&line) {
                 match h.run(&line) {
-                    Err(e) => println!("{} {:?}", line, e),
+                    Err(e) => println!("{:?} causes {:?}", line, e),
                     Ok(reply) => {
                         if !reply.is_empty() {
                             freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
