@@ -149,7 +149,7 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     let mut answers = String::new();
     for t in tree {
         if let Ok(Event::Text(e)) = t {
-            answers.push_str(&format!("{} ", try!(e.into_string().map_err(Error::Xml))))
+            answers.push_str(&format!("{} | ", try!(e.into_string().map_err(Error::Xml))))
         }
     }
     Ok(answers)
