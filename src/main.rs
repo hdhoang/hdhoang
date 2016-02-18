@@ -59,22 +59,21 @@ fn main() {
 
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
-        let line;
-        // ignore empty messages
-        match msg.suffix {
-            None => continue 'messages,
-            Some(ref l) => line = l,
-        }
-        let channel;
-        match msg.args.get(0) {
-            None => continue 'messages,
-            Some(c) => channel = c,
-        }
         // ignore other bots
-        if let Some(ref user) = msg.prefix {
-            if user.starts_with(NAME) || user.contains("bot") || user.contains("freenode") {
+        if let Some(ref nick) = msg.source_nickname() {
+            if nick.starts_with(NAME) || nick.contains("bot") || nick.contains("freenode") {
                 continue 'messages;
             }
+        }
+        let channel;
+        let line;
+        match msg.command {
+            Command::PRIVMSG(ref target, ref message) => {
+                channel = target;
+                line = message
+            }
+            _ => continue 'messages,
+
         }
 
         'handling: for h in &handlers {
