@@ -179,7 +179,7 @@ fn google(regex: &Regex, line: &str) -> Result<String, Error> {
                          .find("titleNoFormatting")
                          .ok_or(Error::Data("No title".to_owned()))
                          .map(|j| j.as_string().unwrap()));
-    Ok(format!("{} {}", url, title))
+    Ok(format!("{} {}", title, url))
 }
 
 fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
