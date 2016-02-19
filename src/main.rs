@@ -42,7 +42,6 @@ fn main() {
     }
 
     let freenode = IrcServer::from_config(Config {
-                       owners: Some(vec!["hdhoang".to_owned()]),
                        nickname: Some(format!("{}-0", NAME)),
                        alt_nicks: Some(alt_nicks),
                        server: Some("chat.freenode.net".to_owned()),
