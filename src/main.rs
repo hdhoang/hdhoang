@@ -6,7 +6,7 @@ extern crate quick_xml;
 extern crate rustc_serialize;
 
 use regex::Regex;
-use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command};
+use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command, Response};
 use hyper::client::Client;
 use std::io::Read;
 
@@ -62,14 +62,43 @@ fn main() {
                     Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
     let report_regex = Regex::new("^report!$").unwrap();
 
+    let mut lusers = vec![];
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
-        // ignore other bots
+
+        // Get other lusers
+        if let Command::Response(Response::RPL_NAMREPLY, _, Some(ref names)) = msg.command {
+            lusers.extend(names.split(' ')
+                               .filter(|n| n.starts_with(NAME))
+                               .map(String::from));
+            lusers.sort();
+            lusers.dedup();
+            continue 'messages;
+        }
         if let Some(ref nick) = msg.source_nickname() {
-            if nick.starts_with(NAME) || nick.contains("bot") || nick.contains("freenode") {
+            // Ignore bots and freenode
+            if nick.contains("bot") || nick.contains("freenode") {
+                continue 'messages;
+            }
+            // Update lusers list
+            if nick.starts_with(NAME) {
+                match msg.command {
+                    Command::JOIN(_, _, _) => {
+                        lusers.push(String::from(*nick));
+                        lusers.sort();
+                        lusers.dedup();
+                    }
+                    Command::QUIT(_) => {
+                        if let Ok(idx) = lusers.binary_search(&String::from(*nick)) {
+                            println!("{} quitted, leaving {:?}.", lusers.remove(idx), lusers)
+                        }
+                    }
+                    _ => (),
+                }
                 continue 'messages;
             }
         }
+
         let channel;
         let line;
         match msg.command {
@@ -83,12 +112,21 @@ fn main() {
 
         if report_regex.is_match(line) {
             freenode.send(Command::PRIVMSG(channel.clone(),
-                                           format!("{} operated by {:?}",
+                                           format!("{} operated by {}",
                                                    freenode.current_nickname(),
-                                                   freenode.config().owners)))
+                                                   freenode.config()
+                                                           .owners
+                                                           .as_ref()
+                                                           .map(|v| v.join(", "))
+                                                           .unwrap_or("someone".to_owned()))))
                     .unwrap();
             continue 'messages;
         }
+        // Don't response if we're not at the front
+        if lusers[0] != freenode.current_nickname() {
+            continue 'messages;
+        }
+
         'handling: for h in &handlers {
             if h.can_handle(&line) {
                 match h.run(&line) {
