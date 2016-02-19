@@ -12,8 +12,9 @@ use std::io::Read;
 
 static CHANNEL: &'static str = "#vnluser";
 static NAME: &'static str = "luser";
-static APPID: &'static str = "ABCDE";
-static YANDEX_KEY: &'static str = "trnsl.1.1";
+static APPID: &'static str = "3JEW42-4XXE264A93";
+static YANDEX_KEY: &'static str = "trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.\
+                                   cc28de2ba798bc3bc118e9f8201b6e6cea697810";
 
 #[derive(Debug)]
 enum Error {
