@@ -51,11 +51,10 @@ fn main() {
     let wolframalpha = &wolframalpha;
     let google = &google;
     let translate = &translate;
-    let handlers = [Handler(Regex::new(r"https?:[^\s]+").unwrap(), get_title),
-                    Handler(Regex::new(r"^.wa (?P<query>.+)").unwrap(), wolframalpha),
-                    Handler(Regex::new(r"^.g (?P<query>.+)").unwrap(), google),
-                    Handler(Regex::new(r"^.tr (?P<lang>[^ ]+) (?P<text>.+)").unwrap(),
-                            translate)];
+    let handlers = [Handler(Regex::new(TITLE_REGEX).unwrap(), get_title),
+                    Handler(Regex::new(WA_REGEX).unwrap(), wolframalpha),
+                    Handler(Regex::new(GOOGLE_REGEX).unwrap(), google),
+                    Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
 
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
@@ -92,6 +91,7 @@ fn main() {
     }
 }
 
+static TITLE_REGEX: &'static str = r"https?:[^\s]+";
 fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
@@ -130,6 +130,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     }
 }
 
+static WA_REGEX: &'static str = r"^.wa (?P<query>.+)";
 fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::ContentLength;
     use quick_xml::{XmlReader, Event};
@@ -155,6 +156,7 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     Ok(answers)
 }
 
+static GOOGLE_REGEX: &'static str = r"^.g (?P<query>.+)";
 fn google(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://developers.google.com/web-search/docs/#code-snippets
@@ -182,6 +184,7 @@ fn google(regex: &Regex, line: &str) -> Result<String, Error> {
     Ok(format!("{} {}", title, url))
 }
 
+static TRANSLATE_REGEX: &'static str = r"^.tr (?P<lang>[^ ]+) (?P<text>.+)";
 fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
