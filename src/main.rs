@@ -35,13 +35,18 @@ impl<'a> Handler<'a> {
 }
 
 fn main() {
+    let mut alt_nicks = vec![];
+    for n in 1..10 {
+        alt_nicks.push(format!("{}-{}", NAME, n))
+    }
+
     let freenode = IrcServer::from_config(Config {
                        owners: Some(vec!["hdhoang".to_owned()]),
-                       nickname: Some(NAME.to_owned()),
-                       alt_nicks: Some(vec![format!("{}-dev", NAME)]),
+                       nickname: Some(format!("{}-0", NAME)),
+                       alt_nicks: Some(alt_nicks),
                        server: Some("chat.freenode.net".to_owned()),
                        port: Some(8000),
-                       channels: Some(vec![CHANNEL.to_owned(), "#luser-test".to_owned()]),
+                       channels: Some(vec![String::from(CHANNEL), format!("#{}-test", NAME)]),
                        ..Default::default()
                    })
                        .unwrap();
