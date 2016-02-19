@@ -55,6 +55,7 @@ fn main() {
                     Handler(Regex::new(WA_REGEX).unwrap(), wolframalpha),
                     Handler(Regex::new(GOOGLE_REGEX).unwrap(), google),
                     Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
+    let report_regex = Regex::new("^report!$").unwrap();
 
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
@@ -75,6 +76,14 @@ fn main() {
 
         }
 
+        if report_regex.is_match(line) {
+            freenode.send(Command::PRIVMSG(channel.clone(),
+                                           format!("{} operated by {:?}",
+                                                   freenode.current_nickname(),
+                                                   freenode.config().owners)))
+                    .unwrap();
+            continue 'messages;
+        }
         'handling: for h in &handlers {
             if h.can_handle(&line) {
                 match h.run(&line) {
