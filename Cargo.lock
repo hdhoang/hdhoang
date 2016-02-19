@@ -3,7 +3,7 @@ name = "luser"
 version = "0.1.0"
 dependencies = [
  "hyper 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "irc 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "irc 0.10.0 (git+https://github.com/aatxe/irc)",
  "quick-xml 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "regex 0.1.51 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc-serialize 0.3.18 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -192,7 +192,7 @@ dependencies = [
 [[package]]
 name = "irc"
 version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+source = "git+https://github.com/aatxe/irc#46f9136c93063e8abb01b063df53897615007791"
 dependencies = [
  "encoding 0.2.32 (registry+https://github.com/rust-lang/crates.io-index)",
  "openssl 0.7.6 (registry+https://github.com/rust-lang/crates.io-index)",
