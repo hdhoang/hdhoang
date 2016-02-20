@@ -120,8 +120,7 @@ fn main() {
                     .unwrap();
             continue 'messages;
         }
-        // Don't response if we're not at the front
-        if lusers[0] != freenode.current_nickname() {
+        if lusers[msg.prefix.unwrap().len() % lusers.len()] != freenode.current_nickname() {
             continue 'messages;
         }
 
