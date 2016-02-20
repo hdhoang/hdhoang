@@ -74,21 +74,22 @@ fn main() {
             lusers.dedup();
             continue 'messages;
         }
-        if let Some(ref nick) = msg.source_nickname() {
+        if let Some(nick) = msg.source_nickname() {
             // Ignore bots and freenode
             if nick.contains("bot") || nick.contains("freenode") {
                 continue 'messages;
             }
             // Update lusers list
             if nick.starts_with(NAME) {
+                let nick = String::from(nick);
                 match msg.command {
                     Command::JOIN(_, _, _) => {
-                        lusers.push(String::from(*nick));
-                        lusers.sort();
-                        lusers.dedup();
+                        if let Err(idx) = lusers.binary_search(&nick) {
+                            lusers.insert(idx, nick)
+                        }
                     }
                     Command::QUIT(_) => {
-                        if let Ok(idx) = lusers.binary_search(&String::from(*nick)) {
+                        if let Ok(idx) = lusers.binary_search(&nick) {
                             println!("{} quitted, leaving {:?}.", lusers.remove(idx), lusers)
                         }
                     }
