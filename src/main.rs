@@ -100,13 +100,11 @@ fn main() {
 
         let channel;
         let line;
-        match msg.command {
-            Command::PRIVMSG(ref target, ref message) => {
-                channel = target;
-                line = message
-            }
-            _ => continue 'messages,
-
+        if let Command::PRIVMSG(ref target, ref message) = msg.command {
+            channel = target;
+            line = message
+        } else {
+            continue 'messages;
         }
 
         if line == "report!" {
