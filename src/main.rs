@@ -60,7 +60,6 @@ fn main() {
                     Handler(Regex::new(WA_REGEX).unwrap(), wolframalpha),
                     Handler(Regex::new(GOOGLE_REGEX).unwrap(), google),
                     Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
-    let report_regex = Regex::new("^report!$").unwrap();
 
     let mut lusers = vec![];
     'messages: for message in freenode.iter() {
@@ -110,7 +109,7 @@ fn main() {
 
         }
 
-        if report_regex.is_match(line) {
+        if line == "report!" {
             freenode.send(Command::PRIVMSG(channel.clone(),
                                            format!("{} operated by {}",
                                                    freenode.current_nickname(),
