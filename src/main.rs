@@ -79,22 +79,25 @@ fn main() {
             if nick.contains("bot") || nick.contains("freenode") {
                 continue 'messages;
             }
-            // Update lusers list
             if nick.starts_with(NAME) {
                 let nick = String::from(nick);
+                // Update lusers list
                 match msg.command {
-                    Command::JOIN(_, _, _) => {
+                    // Do not merge the following arms
+                    // Otherwise join -> insert -> join -> remove might happen
+                    Command::JOIN(..) => {
                         if let Err(idx) = lusers.binary_search(&nick) {
                             lusers.insert(idx, nick)
                         }
                     }
-                    Command::QUIT(_) => {
+                    Command::QUIT(..) => {
                         if let Ok(idx) = lusers.binary_search(&nick) {
-                            println!("{} quitted, leaving {:?}.", lusers.remove(idx), lusers)
+                            lusers.remove(idx);
                         }
                     }
                     _ => (),
                 }
+                // Ignore them
                 continue 'messages;
             }
         }
