@@ -113,13 +113,13 @@ fn main() {
 
         if line == "report!" {
             freenode.send(Command::PRIVMSG(channel.clone(),
-                                           format!("{} operated by {}",
-                                                   freenode.current_nickname(),
+                                           format!("operated by {}",
                                                    freenode.config()
                                                            .owners
                                                            .as_ref()
                                                            .map(|v| v.join(", "))
-                                                           .unwrap_or("someone".to_owned()))))
+                                                           .unwrap_or("someone anonymous"
+                                                                          .into()))))
                     .unwrap();
             continue 'messages;
         }
