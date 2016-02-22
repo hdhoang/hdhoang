@@ -44,7 +44,7 @@ fn main() {
     let freenode = IrcServer::from_config(Config {
                        nickname: Some(format!("{}-0", NAME)),
                        alt_nicks: Some(alt_nicks),
-                       server: Some("chat.freenode.net".to_owned()),
+                       server: Some("chat.freenode.net".into()),
                        port: Some(8000),
                        channels: Some(vec![String::from(CHANNEL), format!("#{}-test", NAME)]),
                        ..Default::default()
@@ -149,33 +149,30 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
                            .get(&regex.captures(&line)
                                       .unwrap()
                                       .expand("$0"))
-                           .header(UserAgent("Firefox".to_owned()))
+                           .header(UserAgent("Firefox".into()))
                            .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
-                                                               "NYT-S".to_owned(),
+                                                               "NYT-S".into(),
                                                                "0MCHCWA5RI93zDXrmvxADeHLKZwNY\
                                                                 F3ivqdeFz9JchiAIUFL2BEX5FWcV.\
                                                                 Ynx4rkFI"
-                                                                   .to_owned())]))
+                                                                   .into())]))
                            .send()
                            .map_err(Error::Hyper));
     let mut body = [0; 32768];
-    match res.read_exact(&mut body) {
-        _ => {}
-    };
-    match Html::parse_fragment(&String::from_utf8_lossy(&body))
-              .select(&Selector::parse("title").unwrap())
-              .next() {
-        Some(title_elem) => {
-            Ok(format!("TITLE: {}",
-                       title_elem.first_child()
-                                 .unwrap()
-                                 .value()
-                                 .as_text()
-                                 .unwrap()
-                                 .replace("\n", " ")
-                                 .trim()))
-        }
-        None => Err(Error::Data("Response doesn't have a title".to_owned())),
+    res.read_exact(&mut body).ok();
+    if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
+                                  .select(&Selector::parse("title").unwrap())
+                                  .next() {
+        Ok(format!("TITLE: {}",
+                   title_elem.first_child()
+                             .unwrap()
+                             .value()
+                             .as_text()
+                             .unwrap()
+                             .replace("\n", " ")
+                             .trim()))
+    } else {
+        Err(Error::Data("Response has no title".into()))
     }
 }
 
@@ -218,17 +215,17 @@ fn google(regex: &Regex, line: &str) -> Result<String, Error> {
                            .send()
                            .map_err(Error::Hyper));
     let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-    let results = try!(json.search("results").ok_or(Error::Data("No results".to_owned())));
+    let results = try!(json.search("results").ok_or(Error::Data("No results".into())));
     if results.as_array().unwrap().is_empty() {
-        return Ok("No results".to_owned());
+        return Ok("No results".into());
     }
     let url = try!(results[0]
                        .find("unescapedUrl")
-                       .ok_or(Error::Data("No url".to_owned()))
+                       .ok_or(Error::Data("No url".into()))
                        .map(|j| j.as_string().unwrap()));
     let title = try!(results[0]
                          .find("titleNoFormatting")
-                         .ok_or(Error::Data("No title".to_owned()))
+                         .ok_or(Error::Data("No title".into()))
                          .map(|j| j.as_string().unwrap()));
     Ok(format!("{} {}", title, url))
 }
@@ -253,8 +250,8 @@ fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
                     json.find("lang").unwrap().as_string().unwrap(),
                     json.find("text").unwrap()[0].as_string().unwrap())
         }
-        501 => json.find("message").unwrap().as_string().unwrap().to_owned(),
-        _ => json.as_string().unwrap().to_owned(),
+        501 => json.find("message").unwrap().as_string().unwrap().into(),
+        _ => json.as_string().unwrap().into(),
     };
     Ok(response)
 }
