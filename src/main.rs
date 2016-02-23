@@ -10,10 +10,10 @@ use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command, Respon
 use hyper::client::Client;
 use std::io::Read;
 
-static CHANNEL: &'static str = "#vnluser";
-static NAME: &'static str = "luser";
-static APPID: &'static str = "3JEW42-4XXE264A93";
-static YANDEX_KEY: &'static str = "trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.\
+const CHANNEL: &'static str = "#vnluser";
+const NAME: &'static str = "luser";
+const APPID: &'static str = "3JEW42-4XXE264A93";
+const YANDEX_KEY: &'static str = "trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.\
                                    cc28de2ba798bc3bc118e9f8201b6e6cea697810";
 
 #[derive(Debug)]
@@ -143,7 +143,7 @@ fn main() {
     }
 }
 
-static TITLE_REGEX: &'static str = r"https?:[^\s]+";
+const TITLE_REGEX: &'static str = r"https?:[^\s]+";
 fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
