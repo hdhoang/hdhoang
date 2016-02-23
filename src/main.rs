@@ -179,7 +179,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     }
 }
 
-static WA_REGEX: &'static str = r"^.wa (?P<query>.+)";
+const WA_REGEX: &'static str = concat!(r"^(\.|!|:)", "wa (?P<query>.+)");
 fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::ContentLength;
     use quick_xml::{XmlReader, Event};
@@ -205,7 +205,7 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     Ok(answers)
 }
 
-static GOOGLE_REGEX: &'static str = r"^.g (?P<query>.+)";
+const GOOGLE_REGEX: &'static str = concat!(r"^(\.|!|:)", "g (?P<query>.+)");
 fn google(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://developers.google.com/web-search/docs/#code-snippets
@@ -233,7 +233,7 @@ fn google(regex: &Regex, line: &str) -> Result<String, Error> {
     Ok(format!("{} {}", title, url))
 }
 
-static TRANSLATE_REGEX: &'static str = r"^.tr (?P<lang>[^ ]+) (?P<text>.+)";
+const TRANSLATE_REGEX: &'static str = concat!(r"^(\.|!|:)", "tr (?P<lang>[^ ]+) (?P<text>.+)");
 fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
