@@ -1,8 +1,18 @@
 Hi, thanks for looking into contributing. These are some features that luser is missing:
 
 * TODO Handle gzip responses (news.zing.vn and baomoi.com)
+  These sites always return gzip-encoded HTML, even when
+  Accept-Encoding doesn't list it. You can check by comparing =curl=
+  vs =curl --compressed=.
 * TODO Configurable multiple channels support
+  Possibly as commandline arguments, can also set owners.
 * TODO Reading secrets from files
+  API keys, identify passwords, channel passwords.
 * TODO Tests
+  It would be difficult to interface with IRC servers, but at least
+  the handling functions should be tested.
 * TODO CLI interface
+  Like chatbot's, this will speed up testing.
 * TODO Reconnection on ping timeout
+  [[https://github.com/aatxe/irc/blob/46f9136c93063e8abb01b063df53897615007791/src/client/server/mod.rs#L208][IrcServer should already reconnect automatically]], but possibly ipv6
+  tunneling is interfering
