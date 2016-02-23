@@ -166,14 +166,14 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
                                   .select(&Selector::parse("title").unwrap())
                                   .next() {
-        Ok(format!("TITLE: {}",
-                   title_elem.first_child()
-                             .unwrap()
-                             .value()
-                             .as_text()
-                             .unwrap()
-                             .replace("\n", " ")
-                             .trim()))
+        Ok(title_elem.first_child()
+                     .unwrap()
+                     .value()
+                     .as_text()
+                     .unwrap()
+                     .replace("\n", " ")
+                     .trim()
+                     .into())
     } else {
         Err(Error::Data("Response has no title".into()))
     }
