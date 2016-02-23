@@ -1,0 +1,11 @@
+See the bot in action at [[irc:chat.freenode.net/#luser-test][its test channel]].
+
+Building for ARM is a bit convoluted:
+
+1. Set up [[https://github.com/japaric/rust-cross][cross-compilation toolchain]]
+2. Copy the target's =/usr/include/openssl=, =lib{crypto,ssl,z}.so= to $PWD
+3. Run cargo with:
+   #+BEGIN_SRC sh
+     TARGET_CFLAGS="-I $PWD" cargo rustc --release --target arm-unknown-linux-gnueabihf -- -C linker=arm-linux-gnueabihf-gcc -lz -L $PWD
+   #+END_SRC
+4. Copy =target/arm-unknown-linux-gnueabihf/release/luser= to the target
