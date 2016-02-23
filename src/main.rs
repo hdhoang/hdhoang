@@ -72,6 +72,9 @@ fn main() {
                                .map(String::from));
             lusers.sort();
             lusers.dedup();
+            if !lusers.contains(&freenode.current_nickname().into()) {
+                let _ = freenode.reconnect();
+            }
             continue 'messages;
         }
         if let Some(nick) = msg.source_nickname() {
