@@ -254,7 +254,7 @@ fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
                     json.find("text").unwrap()[0].as_string().unwrap())
         }
         501 => json.find("message").unwrap().as_string().unwrap().into(),
-        _ => json.as_string().unwrap().into(),
+        _ => format!("{:?}", json.as_string()),
     };
     Ok(response)
 }
