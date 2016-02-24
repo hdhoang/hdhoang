@@ -4,6 +4,7 @@ extern crate scraper;
 extern crate hyper;
 extern crate quick_xml;
 extern crate rustc_serialize;
+extern crate url;
 
 use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command, Response};
@@ -113,13 +114,14 @@ fn main() {
 
         if line == "report!" {
             freenode.send(Command::PRIVMSG(channel.clone(),
-                                           format!("operated by {}",
+                                           format!("operated by {} with source code {}",
                                                    freenode.config()
                                                            .owners
                                                            .as_ref()
                                                            .map(|v| v.join(", "))
                                                            .unwrap_or("someone anonymous"
-                                                                          .into()))))
+                                                                          .into()),
+                                                   post_source_code())))
                     .unwrap();
             continue 'messages;
         }
@@ -257,4 +259,26 @@ fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
         _ => format!("{:?}", json.as_string()),
     };
     Ok(response)
+}
+
+fn post_source_code() -> String {
+    use url::form_urlencoded;
+    let form = [("read:1", "3"),
+                ("name:1", "main.rs"),
+                ("f:1", include_str!("main.rs")),
+                ("read:2", "3"),
+                ("name:2", "Cargo.toml"),
+                ("f:2", include_str!("../Cargo.toml"))];
+    let result = Client::new()
+                     .post("http://ix.io")
+                     .body(&form_urlencoded::serialize(form.iter()))
+                     .send();
+    match result {
+        Ok(mut response) => {
+            let mut reply = String::new();
+            let _ = response.read_to_string(&mut reply);
+            reply
+        }
+        Err(e) => format!("unable to post: {:?}", e),
+    }
 }

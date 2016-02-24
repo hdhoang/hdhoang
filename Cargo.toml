@@ -9,6 +9,7 @@ hyper = "*"
 regex = "*"
 quick-xml = "*"
 rustc-serialize = "*"
+url = "*"
 
 [dependencies.irc]
 git = "https://github.com/aatxe/irc"
