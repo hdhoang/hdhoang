@@ -12,9 +12,6 @@ use std::io::Read;
 
 const CHANNEL: &'static str = "#vnluser";
 const NAME: &'static str = "luser";
-const APPID: &'static str = "3JEW42-4XXE264A93";
-const YANDEX_KEY: &'static str = "trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.\
-                                   cc28de2ba798bc3bc118e9f8201b6e6cea697810";
 
 #[derive(Debug)]
 enum Error {
@@ -193,7 +190,7 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
                                       .expand(&format!("http://api.wolframalpha.\
                                                         com/v2/query?format=plaintext&appid={}\
                                                         &input=$query",
-                                                       APPID)))
+                                                       include_str!("wolframalpha_key"))))
                            .send()
                            .map_err(Error::Hyper));
     let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
@@ -246,7 +243,7 @@ fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
                                       .expand(&format!("https://translate.yandex.net/api/v1.\
                                                         5/tr.json/translate?key={}&text=$text&\
                                                         lang=$lang",
-                                                       YANDEX_KEY)))
+                                                       include_str!("yandex_key"))))
                            .send()
                            .map_err(Error::Hyper));
     let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
