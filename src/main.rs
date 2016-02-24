@@ -150,7 +150,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
 
-    let mut res = try!(Client::new()
+    let mut response = try!(Client::new()
                            .get(&regex.captures(&line)
                                       .unwrap()
                                       .expand("$0"))
@@ -164,7 +164,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
                            .send()
                            .map_err(Error::Hyper));
     let mut body = [0; 32768];
-    res.read_exact(&mut body).ok();
+    response.read_exact(&mut body).ok();
     if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
                                   .select(&Selector::parse("title").unwrap())
                                   .next() {
@@ -186,17 +186,18 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::ContentLength;
     use quick_xml::{XmlReader, Event};
 
-    let mut res = try!(Client::new()
-                           .get(&regex.captures(&line)
-                                      .unwrap()
-                                      .expand(&format!("http://api.wolframalpha.\
-                                                        com/v2/query?format=plaintext&appid={}\
-                                                        &input=$query",
-                                                       include_str!("wolframalpha_key"))))
-                           .send()
-                           .map_err(Error::Hyper));
-    let mut xml = String::with_capacity(**res.headers.get::<ContentLength>().unwrap() as usize);
-    try!(res.read_to_string(&mut xml).map_err(Error::Io));
+    let mut response = try!(Client::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand(&format!("http://api.wolframalpha.\
+                                                             com/v2/query?format=plaintext&app\
+                                                             id={}&input=$query",
+                                                            include_str!("wolframalpha_key"))))
+                                .send()
+                                .map_err(Error::Hyper));
+    let mut xml =
+        String::with_capacity(**response.headers.get::<ContentLength>().unwrap() as usize);
+    try!(response.read_to_string(&mut xml).map_err(Error::Io));
     let tree = XmlReader::from_str(&xml).trim_text(true);
     let mut answers = String::new();
     for t in tree {
@@ -211,14 +212,14 @@ const GOOGLE_REGEX: &'static str = concat!(r"^(\.|!|:)", "g (?P<query>.+)");
 fn google(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://developers.google.com/web-search/docs/#code-snippets
-    let mut res = try!(Client::new()
-                           .get(&regex.captures(&line)
-                                      .unwrap()
-                                      .expand("https://ajax.googleapis.\
-                                               com/ajax/services/search/web?v=1.\
-                                               0&rsz=1&q=$query"))
-                           .send()
-                           .map_err(Error::Hyper));
+    let mut response = try!(Client::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand("https://ajax.googleapis.\
+                                                    com/ajax/services/search/web?v=1.\
+                                                    0&rsz=1&q=$query"))
+                                .send()
+                                .map_err(Error::Hyper));
     let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
     let results = try!(json.search("results").ok_or(Error::Data("No results".into())));
     if results.as_array().unwrap().is_empty() {
@@ -239,17 +240,18 @@ const TRANSLATE_REGEX: &'static str = concat!(r"^(\.|!|:)", "tr (?P<lang>[^ ]+) 
 fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
     use rustc_serialize::json::Json;
     // API: https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
-    let mut res = try!(Client::new()
-                           .get(&regex.captures(&line)
-                                      .unwrap()
-                                      .expand(&format!("https://translate.yandex.net/api/v1.\
-                                                        5/tr.json/translate?key={}&text=$text&\
-                                                        lang=$lang",
-                                                       include_str!("yandex_key"))))
-                           .send()
-                           .map_err(Error::Hyper));
-    let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
-    let response = match json.find("code").unwrap().as_u64().unwrap() {
+    let mut response = try!(Client::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand(&format!("https://translate.yandex.\
+                                                             net/api/v1.5/tr.\
+                                                             json/translate?key={}&text=$text&\
+                                                             lang=$lang",
+                                                            include_str!("yandex_key"))))
+                                .send()
+                                .map_err(Error::Hyper));
+    let json = try!(Json::from_reader(&mut response).map_err(Error::Json));
+    let reply = match json.find("code").unwrap().as_u64().unwrap() {
         200 => {
             format!("{}: {}",
                     json.find("lang").unwrap().as_string().unwrap(),
@@ -258,7 +260,7 @@ fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
         501 => json.find("message").unwrap().as_string().unwrap().into(),
         _ => format!("{:?}", json.as_string()),
     };
-    Ok(response)
+    Ok(reply)
 }
 
 fn post_source_code() -> String {
