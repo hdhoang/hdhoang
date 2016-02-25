@@ -335,6 +335,27 @@
       '(add-to-list 'tramp-default-proxies-alist '("<<prefix>>185" "root" "/ssh:<<prefix>>185:")))
   #+END_SRC
 
+* OpenBox
+  #+BEGIN_SRC sh :tangle ~/.config/openbox/environment
+    export RUST_BACKTRACE=1
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
+    export GTK_IM_MODULE=ibus
+  #+END_SRC
+  #+BEGIN_SRC sh :tangle ~/.config/openbox/autostart
+    xbacklight =30 &
+    tint2 &
+    kwalletd &
+    lxpolkit &
+    firefox &
+    emacs &
+    quasselclient &
+    yakuake &
+    keepass &
+    pragha &
+    viber &
+  #+END_SRC
+
 * KDE
 ** kwin
    :PROPERTIES:
