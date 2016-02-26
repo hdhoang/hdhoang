@@ -201,13 +201,13 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
         String::with_capacity(**response.headers.get::<ContentLength>().unwrap() as usize);
     try!(response.read_to_string(&mut xml).map_err(Error::Io));
     let tree = XmlReader::from_str(&xml).trim_text(true);
-    let mut answers = String::new();
+    let mut answers = vec![];
     for t in tree {
         if let Ok(Event::Text(e)) = t {
-            answers.push_str(&format!("{} | ", try!(e.into_string().map_err(Error::Xml))))
+            answers.push(try!(e.into_string().map_err(Error::Xml)))
         }
     }
-    Ok(answers)
+    Ok(answers.join(" | "))
 }
 
 const GOOGLE_REGEX: &'static str = concat!(r"^(\.|!|:)", "g (?P<query>.+)");
