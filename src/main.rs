@@ -150,10 +150,12 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     use hyper::header::{UserAgent, Cookie, CookiePair};
     use scraper::{Html, Selector};
 
+    let url = regex.captures(&line).unwrap().expand("$0");
+    if url.contains("imgur.com/") {
+        return Ok(String::new());
+    }
     let mut response = try!(Client::new()
-                           .get(&regex.captures(&line)
-                                      .unwrap()
-                                      .expand("$0"))
+                           .get(&url)
                            .header(UserAgent("Firefox".into()))
                            .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
                                                                "NYT-S".into(),
