@@ -220,7 +220,7 @@ fn google(regex: &Regex, line: &str) -> Result<String, Error> {
                                                     0&rsz=1&q=$query"))
                                 .send()
                                 .map_err(Error::Hyper));
-    let json = try!(Json::from_reader(&mut res).map_err(Error::Json));
+    let json = try!(Json::from_reader(&mut response).map_err(Error::Json));
     let results = try!(json.search("results").ok_or(Error::Data("No results".into())));
     if results.as_array().unwrap().is_empty() {
         return Ok("No results".into());
