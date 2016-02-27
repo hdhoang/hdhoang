@@ -40,6 +40,7 @@ fn main() {
     }
 
     let freenode = IrcServer::from_config(Config {
+                       username: Some(NAME.into()),
                        nickname: Some(format!("{}-0", NAME)),
                        alt_nicks: Some(alt_nicks),
                        server: Some("chat.freenode.net".into()),
