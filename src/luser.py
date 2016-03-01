@@ -34,7 +34,7 @@ luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quits(c, e)
 def on_pubmsg(c, e):
     msg = e.arguments[0]
     if msg == "report!":
-        c.privmsg(e.target, "operated by hdhoang with source code ???")
+        return c.privmsg(e.target, "operated by hdhoang with source code ???")
     if lusers[len(e.source) % len(lusers)] == c.get_nickname():
         if msg[1:3] == 'g ':
             return c.privmsg(e.target, google(msg[3:]))
@@ -43,7 +43,7 @@ def on_pubmsg(c, e):
         if msg[1:4] == 'tr ':
             return c.privmsg(e.target, translate(msg[4:]))
         if 'http' in msg:
-            pass
+            return
             return c.privmsg(e.target, title(msg))
 luser.on_pubmsg = on_pubmsg
 
