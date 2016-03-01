@@ -35,7 +35,7 @@ luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quits(c, e)
 def on_pubmsg(c, e):
     msg = e.arguments[0]
     if msg == "report!":
-        return c.privmsg(e.target, "operated by hdhoang with source code ???")
+        return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
     if lusers[len(e.source) % len(lusers)] == c.get_nickname():
         if msg[1:3] == 'g ':
             return c.privmsg(e.target, google(msg[3:]))
@@ -47,6 +47,12 @@ def on_pubmsg(c, e):
             return
             return c.privmsg(e.target, title(msg))
 luser.on_pubmsg = on_pubmsg
+
+def post_source():
+    from http import client
+    conn = client.HTTPConnection('ix.io')
+    conn.request('POST', '/', 'f:1=' + parse.quote(open(__file__).read()))
+    return conn.getresponse().read().decode().strip()
 
 def google(text):
     import json
