@@ -18,6 +18,8 @@ def list_lusers(c, e):
     for luser in filter(lambda n: n.startswith(NAME), e.arguments[-1].split(' ')):
         if luser not in lusers:
             lusers.append(luser)
+    if c.get_nickname() not in lusers:
+        c.reconnect()
     lusers.sort()
 luser.on_namreply = list_lusers
 def luser_joins(c, e):
