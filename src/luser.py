@@ -6,7 +6,8 @@ lusers = []
 luser = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME+'-', NAME)
 
 def change_nick(c, e):
-    c.nick(c.get_nickname() + '0')
+    from random import randint
+    c.nick(c.get_nickname() + str(randint(0, 9)))
 luser.on_nicknameinuse = change_nick
 
 def join_channels(c, e):
