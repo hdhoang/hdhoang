@@ -39,11 +39,12 @@ def on_pubmsg(c, e):
         if msg[1:3] == 'g ':
             return c.privmsg(e.target, google(msg[3:]))
         if msg[1:4] == 'wa ':
-            c.privmsg(e.target, wolframalpha_key(msg[4:]))
+            return c.privmsg(e.target, wolframalpha(msg[4:]))
         if msg[1:4] == 'tr ':
-            c.privmsg(e.target, translate(msg[4:]))
+            return c.privmsg(e.target, translate(msg[4:]))
         if 'http' in msg:
-            c.privmsg(e.target, title(msg))
+            pass
+            return c.privmsg(e.target, title(msg))
 luser.on_pubmsg = on_pubmsg
 
 def google(text):
