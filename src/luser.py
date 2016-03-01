@@ -3,7 +3,7 @@ from urllib import request, parse
 from irc import bot
 NAME = 'luser'
 lusers = []
-luser = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME+'-py', NAME)
+luser = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME+'-', NAME)
 
 def change_nick(c, e):
     c.nick(c.get_nickname() + '0')
