@@ -1,3 +1,5 @@
+from http import client
+
 from irc import bot
 NAME = 'luser'
 lusers = []
@@ -33,7 +35,7 @@ def on_pubmsg(c, e):
         c.privmsg(e.target, "operated by hdhoang with source code ???")
     if lusers[len(e.source) % len(lusers)] == c.get_nickname():
         if msg[1:3] == 'g ':
-            c.privmsg(e.target, google(msg[3:]))
+            return c.privmsg(e.target, google(msg[3:]))
         if msg[1:4] == 'wa ':
             c.privmsg(e.target, wolframalpha_key(msg[4:]))
         if msg[1:4] == 'tr ':
@@ -43,7 +45,14 @@ def on_pubmsg(c, e):
 luser.on_pubmsg = on_pubmsg
 
 def google(text):
-    return "google not implemented"
+    import json
+    connection = client.HTTPSConnection('ajax.googleapis.com')
+    connection.request('GET','/ajax/services/search/web?v=1.0&rsz=1&q=' + text)
+    data = json.loads(connection.getresponse().read().decode())['responseData']
+    if len(data['results']) == 0:
+        return '0 result'
+    return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
+
 def wolframalpha(text):
     return "wa not implemented"
 def title(text):
