@@ -55,8 +55,14 @@ def google(text):
             return '0 result'
         return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
 
+wolframalpha_key = ''
+with open('wolframalpha_key') as f:
+    wolframalpha_key = f.read()
 def wolframalpha(text):
-    return "wa not implemented"
+    import xml.etree.ElementTree as ET
+    with request.urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid={}&input={}'.format(wolframalpha_key, parse.quote(text))) as r:
+        return ' / '.join(n.text for n in ET.parse(r).iter() if n.text and len(n.text.strip())).replace('\n', '')
+
 def title(text):
     return "title not implemented"
 def translate(text):
