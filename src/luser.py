@@ -66,7 +66,21 @@ def wolframalpha(text):
 
 def title(text):
     return "title not implemented"
+
+yandex_key = ''
+with open('yandex_key') as f:
+    yandex_key = f.read()
 def translate(text):
-    return "tr not implemented"
+    import json
+    import urllib.error
+    (lang, _, text) = text.partition(' ')
+    if not text:
+        return 'Missing text'
+    try:
+        with request.urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key={}&text={}&lang={}'.format(yandex_key, parse.quote(text), lang)) as r:
+            data = json.loads(r.read().decode())
+            return data['lang'] + ": " + data['text'][0]
+    except urllib.error.HTTPError:
+        return "Unsupported language or wrong key"
 
 luser.start()
