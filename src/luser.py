@@ -20,14 +20,14 @@ def list_lusers(c, e):
             lusers.append(luser)
     lusers.sort()
 luser.on_namreply = list_lusers
-def luser_join(c, e):
+def luser_joins(c, e):
     if e.source.nick not in lusers:
         lusers.append(e.source.nick)
         lusers.sort()
-luser.on_join = lambda c, e: e.source.startswith(NAME) and luser_join(c, e)
-def luser_quit(c, e):
+luser.on_join = lambda c, e: e.source.startswith(NAME) and luser_joins(c, e)
+def luser_quits(c, e):
     lusers.remove(e.source.nick)
-luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quit(c, e)
+luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quits(c, e)
 
 def on_pubmsg(c, e):
     msg = e.arguments[0]
