@@ -1,4 +1,4 @@
-from http import client
+from urllib import request, parse
 
 from irc import bot
 NAME = 'luser'
@@ -49,12 +49,11 @@ luser.on_pubmsg = on_pubmsg
 
 def google(text):
     import json
-    connection = client.HTTPSConnection('ajax.googleapis.com')
-    connection.request('GET','/ajax/services/search/web?v=1.0&rsz=1&q=' + text)
-    data = json.loads(connection.getresponse().read().decode())['responseData']
-    if len(data['results']) == 0:
-        return '0 result'
-    return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
+    with request.urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + parse.quote(text)) as r:
+        data = json.loads(r.read().decode())['responseData']
+        if not data['results']:
+            return '0 result'
+        return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
 
 def wolframalpha(text):
     return "wa not implemented"
