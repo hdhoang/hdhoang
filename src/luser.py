@@ -36,6 +36,7 @@ def on_pubmsg(c, e):
     msg = e.arguments[0]
     if msg == "report!":
         return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
+    if msg[0] not in ('.', '!', ':'): return
     if lusers[len(e.source) % len(lusers)] == c.get_nickname():
         if msg[1:3] == 'g ':
             return c.privmsg(e.target, google(msg[3:]))
