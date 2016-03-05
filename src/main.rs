@@ -34,15 +34,10 @@ impl<'a> Handler<'a> {
 }
 
 fn main() {
-    let mut alt_nicks = vec![];
-    for n in 1..10 {
-        alt_nicks.push(format!("{}-{}", NAME, n))
-    }
-
     let freenode = IrcServer::from_config(Config {
                        username: Some(NAME.into()),
                        nickname: Some(format!("{}-0", NAME)),
-                       alt_nicks: Some(alt_nicks),
+                       alt_nicks: Some((1..10).map(|n| format!("{}-{}", NAME, n)).collect()),
                        server: Some("chat.freenode.net".into()),
                        port: Some(8000),
                        channels: Some(vec![String::from(CHANNEL), format!("#{}-test", NAME)]),
