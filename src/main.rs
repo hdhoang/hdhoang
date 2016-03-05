@@ -152,7 +152,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
     use scraper::{Html, Selector};
 
     let url = regex.captures(&line).unwrap().expand("$0");
-    if url.contains("imgur.com/") {
+    if ["imgur.com/", "smbc-comics.com/"].iter().any(|uninteresting| url.contains(uninteresting)) {
         return Ok(String::new());
     }
     let mut response = try!(Client::new()
