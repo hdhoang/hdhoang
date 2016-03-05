@@ -35,6 +35,7 @@ impl<'a> Handler<'a> {
 
 fn main() {
     let freenode = IrcServer::from_config(Config {
+                       owners: Some(vec!["hdhoang".into()]),
                        username: Some(NAME.into()),
                        nickname: Some(format!("{}-0", NAME)),
                        alt_nicks: Some((1..10).map(|n| format!("{}-{}", NAME, n)).collect()),
