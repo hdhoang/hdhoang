@@ -1,4 +1,5 @@
 from urllib import request, parse
+from bs4 import BeautifulSoup
 
 from irc import bot
 NAME = 'luser'
@@ -71,7 +72,13 @@ def wolframalpha(text):
         return ' / '.join(n.text for n in ET.parse(r).iter() if n.text and len(n.text.strip())).replace('\n', '')
 
 def title(text):
-    return "title not implemented"
+    titles = []
+    urls = filter(lambda w: w.startswith('http'), text.split())
+    for u in urls:
+        with request.urlopen(u) as r:
+            title = BeautifulSoup(r.read(32768), 'html.parser').title
+            if title: titles.append(title.string)
+    return ' / '.join(titles)
 
 yandex_key = ''
 with open('yandex_key') as f:
