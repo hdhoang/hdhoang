@@ -77,7 +77,7 @@ def title(text):
     for u in urls:
         with request.urlopen(u) as r:
             title = BeautifulSoup(r.read(32768), 'html.parser').title
-            if title: titles.append(title.string)
+            if title: titles.append(title.string.replace('\n', '').strip())
     return ' / '.join(titles)
 
 yandex_key = ''
