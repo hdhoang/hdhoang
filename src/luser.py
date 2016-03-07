@@ -1,5 +1,6 @@
 from urllib import request, parse
 from bs4 import BeautifulSoup
+import urllib.error
 
 from irc import bot
 NAME = 'luser'
@@ -75,9 +76,13 @@ def title(text):
     titles = []
     urls = filter(lambda w: w.startswith('http'), text.split())
     for u in urls:
-        with request.urlopen(u) as r:
-            title = BeautifulSoup(r.read(32768), 'html.parser').title
-            if title: titles.append(title.string.replace('\n', '').strip())
+        try:
+            with request.urlopen(u) as r:
+                title = BeautifulSoup(r.read(50000), 'html.parser').title
+                if title: titles.append(title.string.replace('\n', '').strip())
+        except urllib.error.HTTPError as e:
+            print(u, "causes", e)
+            continue
     return ' / '.join(titles)
 
 yandex_key = ''
@@ -85,7 +90,6 @@ with open('yandex_key') as f:
     yandex_key = f.read()
 def translate(text):
     import json
-    import urllib.error
     (lang, _, text) = text.partition(' ')
     if not text:
         return 'Missing text'

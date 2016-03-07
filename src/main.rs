@@ -162,7 +162,7 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
                                                                    .into())]))
                            .send()
                            .map_err(Error::Hyper));
-    let mut body = [0; 32768];
+    let mut body = [0; 50_000];
     response.read_exact(&mut body).ok();
     if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
                                   .select(&Selector::parse("title").unwrap())
