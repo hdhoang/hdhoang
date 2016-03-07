@@ -10,6 +10,7 @@ use regex::Regex;
 use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command, Response};
 use hyper::client::Client;
 use std::io::Read;
+use std::collections::HashMap;
 
 const CHANNEL: &'static str = "#vnluser";
 const NAME: &'static str = "luser";
@@ -57,6 +58,7 @@ fn main() {
                     Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
 
     let mut lusers = vec![];
+    let mut last_lines = HashMap::new();
     'messages: for message in freenode.iter() {
         let msg = message.unwrap();
 
@@ -122,6 +124,26 @@ fn main() {
                     .unwrap();
             continue 'messages;
         }
+        if line.starts_with("s/") {
+            let parts = line.split('/').collect::<Vec<_>>();
+            if parts.len() < 3 {
+                continue 'messages;
+            }
+            if let Some(old_line) = last_lines.get(&msg.source_nickname().map(String::from)) {
+                if lusers[msg.prefix.clone().unwrap().len() % lusers.len()] ==
+                   freenode.current_nickname() {
+                    freenode.send(Command::PRIVMSG(channel.clone(),
+                                                   format!("{} meant to say \"{}\"",
+                                                           msg.source_nickname().unwrap(),
+                                                           (old_line as &str)
+                                                               .replace(parts[1], parts[2]))))
+                            .unwrap();
+                }
+            }
+        } else {
+            last_lines.insert(msg.source_nickname().map(String::from), line.clone());
+        }
+
         if lusers[msg.prefix.unwrap().len() % lusers.len()] != freenode.current_nickname() {
             continue 'messages;
         }

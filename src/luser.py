@@ -34,13 +34,23 @@ def luser_quits(c, e):
     lusers.remove(e.source.nick)
 luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quits(c, e)
 
+last_lines = {}
 def on_pubmsg(c, e):
     msg = e.arguments[0]
     if msg == "report!":
         return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
+    if msg.startswith('s/'):
+        parts = msg.split('/')
+        if len(parts) > 3 and lusers[len(e.source) % len(lusers)] == c.get_nickname():
+            return c.privmsg(e.target, "<{}> {}".format(e.source.nick,
+                                                        last_lines.get(e.source.nick, '')
+                                                        .replace(parts[1], parts[2])))
+    else:
+        last_lines[e.source.nick] = msg
     if lusers[len(e.source) % len(lusers)] == c.get_nickname():
         if 'http' in msg:
             return c.privmsg(e.target, title(msg))
+
         if msg[0] not in ('.', '!', ':'): return
         if msg[1:3] == 'g ':
             return c.privmsg(e.target, google(msg[3:]))
