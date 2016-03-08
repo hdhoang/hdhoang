@@ -37,18 +37,20 @@ luser.on_quit = lambda c, e: e.source.startswith(NAME) and luser_quits(c, e)
 last_lines = {}
 def on_pubmsg(c, e):
     my_nick = c.get_nickname()
+    nick = e.source.nick
+    if nick.startswith(NAME): return
     msg = e.arguments[0]
     addressed = msg.startswith(my_nick)
     if msg == "report!":
         return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
     if msg.startswith('s/'):
         parts = msg.split('/')
-        if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == my_nick and e.source.nick in last_lines:
-            return c.privmsg(e.target, "<{}> {}".format(e.source.nick,
-                                                        last_lines[e.source.nick]
+        if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == my_nick and nick in last_lines:
+            return c.privmsg(e.target, "<{}> {}".format(nick,
+                                                        last_lines[nick]
                                                         .replace(parts[1], parts[2])))
     else:
-        last_lines[e.source.nick] = msg
+        last_lines[nick] = msg
     if addressed or lusers[len(e.source) % len(lusers)] == my_nick:
         if addressed:
             msg = msg[len(my_nick) +2:] # remove addressing
