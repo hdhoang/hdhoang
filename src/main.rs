@@ -103,7 +103,9 @@ fn main() {
         }
 
         let channel;
-        let line;
+        let trimmed_line;
+        let mut line;
+
         if let Command::PRIVMSG(ref target, ref message) = msg.command {
             channel = target;
             line = message
@@ -144,18 +146,22 @@ fn main() {
             last_lines.insert(msg.source_nickname().map(String::from), line.clone());
         }
 
-        if lusers[msg.prefix.unwrap().len() % lusers.len()] != freenode.current_nickname() {
-            continue 'messages;
-        }
-
-        'handling: for h in &handlers {
-            if h.can_handle(&line) {
-                match h.run(&line) {
-                    Err(e) => println!("{:?} causes {:?}", line, e),
-                    Ok(reply) => {
-                        if !reply.is_empty() {
-                            freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
-                            continue 'messages;
+        let addressed = line.starts_with(freenode.current_nickname());
+        if addressed ||
+           lusers[msg.prefix.unwrap().len() % lusers.len()] == freenode.current_nickname() {
+            if addressed {
+                trimmed_line = line[freenode.current_nickname().len() + 2..].into();
+                line = &trimmed_line;
+            }
+            'handling: for h in &handlers {
+                if h.can_handle(line) {
+                    match h.run(line) {
+                        Err(e) => println!("{:?} causes {:?}", line, e),
+                        Ok(reply) => {
+                            if !reply.is_empty() {
+                                freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
+                                continue 'messages;
+                            }
                         }
                     }
                 }
