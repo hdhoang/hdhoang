@@ -41,9 +41,9 @@ def on_pubmsg(c, e):
         return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
     if msg.startswith('s/'):
         parts = msg.split('/')
-        if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == c.get_nickname():
+        if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == c.get_nickname() and e.source.nick in last_lines:
             return c.privmsg(e.target, "<{}> {}".format(e.source.nick,
-                                                        last_lines.get(e.source.nick, '')
+                                                        last_lines.get[e.source.nick]
                                                         .replace(parts[1], parts[2])))
     else:
         last_lines[e.source.nick] = msg
