@@ -58,12 +58,16 @@ def on_pubmsg(c, e):
             return c.privmsg(e.target, title(msg))
 
         if msg[0] not in ('.', '!', ':'): return
+        reply = ''
         if msg[1:3] == 'g ':
-            return c.privmsg(e.target, google(msg[3:]))
+            reply = google(msg[3:])
         if msg[1:4] == 'wa ':
-            return c.privmsg(e.target, wolframalpha(msg[4:]))
+            reply = wolframalpha(msg[4:])
         if msg[1:4] == 'tr ':
-            return c.privmsg(e.target, translate(msg[4:]))
+            reply = translate(msg[4:])
+        if reply:
+            # Keep PRIVMSG under 512bytes
+            return c.privmsg(e.target, reply[:512 - len(e.target) - 50])
 luser.on_pubmsg = on_pubmsg
 
 def post_source():
