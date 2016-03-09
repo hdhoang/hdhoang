@@ -46,7 +46,7 @@ def on_pubmsg(c, e):
     if msg.startswith('s/'):
         parts = msg.split('/')
         if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == my_nick and nick in last_lines:
-            return c.privmsg(e.target, "<{}> {}".format(nick,
+            return c.privmsg(e.target, "{} meant: {}".format(nick,
                                                         last_lines[nick]
                                                         .replace(parts[1], parts[2])))
     else:
