@@ -90,7 +90,14 @@ with open('wolframalpha_key') as f:
 def wolframalpha(text):
     import xml.etree.ElementTree as ET
     with request.urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid={}&input={}'.format(wolframalpha_key, parse.quote(text))) as r:
-        return ' / '.join(n.text for n in ET.parse(r).iter() if n.text and len(n.text.strip())).replace('\n', '')
+        tree = ET.parse(r)
+        reply = ''
+        for n in tree.iter():
+            if n.tag == 'pod':
+                reply += n.attrib['title'] + ': '
+            if n.tag == 'plaintext' and n.text and len(n.text.strip()):
+                reply += n.text + ' / '
+        return reply.replace('\n', ' ')
 
 def title(text):
     titles = []
