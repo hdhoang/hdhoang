@@ -14,16 +14,16 @@ from bs4 import BeautifulSoup
 from irc import bot
 NAME = 'luser'
 lusers = []
-luser = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME+'-', NAME)
+luser = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME)
 
 def change_nick(c, e):
     from random import randint
-    c.nick(c.get_nickname() + str(randint(0, 9)))
+    c.nick('{}-{}'.format(c.get_nickname(), str(randint(0, 9))))
 luser.on_nicknameinuse = change_nick
 
 def join_channels(c, e):
-    c.join("#luser-test")
-    c.join("#vnluser")
+    c.join("#{}-test".format(NAME))
+    c.join("#vn"+NAME)
 luser.on_welcome = join_channels
 
 def list_lusers(c, e):
