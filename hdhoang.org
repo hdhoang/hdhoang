@@ -737,7 +737,7 @@
               listen [::]:443 ssl spdy;
               server_name kub.<<domain>>;
               root /usr/share/webapps/owncloud;
-              location ~ \.htaccess|data|config|db_structure\.xml|README {
+              location ~ \.htaccess|/data/|/config/|db_structure\.xml|README {
                   deny all;
               }
               location / {
