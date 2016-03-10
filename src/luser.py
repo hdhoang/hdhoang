@@ -50,17 +50,19 @@ def on_pubmsg(c, e):
     if nick.startswith(NAME): return
     msg = e.arguments[0]
     addressed = msg.startswith(my_nick)
+    def handling(e):
+        return lusers[len(e.source) % len(lusers)] == my_nick
     if msg == "report!":
         return c.privmsg(e.target, "operated by hdhoang with source code " + post_source())
     if msg.startswith('s/'):
         parts = msg.split('/')
-        if len(parts) >= 3 and lusers[len(e.source) % len(lusers)] == my_nick and nick in last_lines:
+        if len(parts) >= 3 and handling(e) and nick in last_lines:
             return c.privmsg(e.target, "{} meant: {}".format(nick,
                                                         last_lines[nick]
                                                         .replace(parts[1], parts[2])))
     else:
         last_lines[nick] = msg
-    if addressed or lusers[len(e.source) % len(lusers)] == my_nick:
+    if addressed or handling(e):
         if addressed:
             msg = msg[len(my_nick) +2:] # remove addressing
         if 'http' in msg:
