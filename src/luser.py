@@ -109,6 +109,8 @@ def wolframalpha(text):
                 reply += n.attrib['title'] + ': '
             if n.tag == 'plaintext' and n.text and len(n.text.strip()):
                 reply += n.text + ' / '
+        if len(reply) > 512:
+            reply = reply[:200] + " http://wolframalpha.com/?input=" + quote(text)
         return reply.replace('\n', ' ')
 
 def title(text):
