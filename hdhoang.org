@@ -731,6 +731,15 @@
               location /transmission {
                   proxy_pass http://127.0.0.1:9091;
               }
+              location /zabbix {
+                  root /usr/share/webapps;
+                  location ~ \.php(?:$|/) {
+                      fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                      include fastcgi_params;
+                      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                      fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+                }
+             }
           }
           server {
               listen 443 ssl spdy;
