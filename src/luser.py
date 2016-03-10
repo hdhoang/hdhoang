@@ -1,6 +1,15 @@
-from urllib import request, parse
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+try:
+    from urllib.request import urlopen
+    from urllib.parse import quote
+    from urllib.error import HTTPError
+except ImportError:
+    from urllib2 import urlopen, quote, HTTPError
+
 from bs4 import BeautifulSoup
-import urllib.error
 
 from irc import bot
 NAME = 'luser'
@@ -71,14 +80,17 @@ def on_pubmsg(c, e):
 luser.on_pubmsg = on_pubmsg
 
 def post_source():
-    from http import client
-    conn = client.HTTPConnection('ix.io')
-    conn.request('POST', '/', 'f:1=' + parse.quote(open(__file__).read()))
+    try:
+        from http.client import HTTPConnection
+    except ImportError:
+        from httplib import HTTPConnection
+    conn = HTTPConnection('ix.io')
+    conn.request('POST', '/', 'f:1=' + quote(open(__file__).read()))
     return conn.getresponse().read().decode().strip()
 
 def google(text):
     import json
-    with request.urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + parse.quote(text)) as r:
+    with urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text)) as r:
         data = json.loads(r.read().decode())['responseData']
         if not data['results']:
             return '0 result'
@@ -89,7 +101,7 @@ with open('wolframalpha_key') as f:
     wolframalpha_key = f.read()
 def wolframalpha(text):
     import xml.etree.ElementTree as ET
-    with request.urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid={}&input={}'.format(wolframalpha_key, parse.quote(text))) as r:
+    with urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid={}&input={}'.format(wolframalpha_key, quote(text))) as r:
         tree = ET.parse(r)
         reply = ''
         for n in tree.iter():
@@ -104,10 +116,10 @@ def title(text):
     urls = filter(lambda w: w.startswith('http'), text.split())
     for u in urls:
         try:
-            with request.urlopen(u) as r:
+            with urlopen(u) as r:
                 title = BeautifulSoup(r.read(50000), 'html.parser').title
                 if title: titles.append(title.string.replace('\n', '').strip())
-        except urllib.error.HTTPError as e:
+        except HTTPError as e:
             print(u, "causes", e)
             continue
     return ' / '.join(titles)
@@ -121,10 +133,10 @@ def translate(text):
     if not text:
         return 'Missing text'
     try:
-        with request.urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key={}&text={}&lang={}'.format(yandex_key, parse.quote(text), lang)) as r:
+        with urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key={}&text={}&lang={}'.format(yandex_key, quote(text), lang)) as r:
             data = json.loads(r.read().decode())
             return data['lang'] + ": " + data['text'][0]
-    except urllib.error.HTTPError:
+    except HTTPError:
         return "Unsupported language or wrong key"
 
 luser.start()
