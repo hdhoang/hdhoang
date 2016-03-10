@@ -7,12 +7,14 @@
     <outline title="comic" text="comic">
       <outline title="PITCH BLACK" text="PITCH BLACK" type="rss" xmlUrl="http://pitchblack.thecomicseries.com/" htmlUrl="http://pitchblack.thecomicseries.com/"/>
       <outline title="Rock, Paper, Cynic" text="Rock, Paper, Cynic" type="rss" xmlUrl="http://www.isitcanon.com/" htmlUrl="http://rockpapercynic.tumblr.com/"/>
+      <outline title="Shitfest" text="Shitfest" type="rss" xmlUrl="http://shitfestcomic.com/" htmlUrl="http://shitfestcomic.com/"/>
       <outline title="Savage Chickens - Cartoons on Sticky Notes by Doug Savage" text="Savage Chickens - Cartoons on Sticky Notes by Doug Savage" type="rss" xmlUrl="http://www.savagechickens.com/feed" htmlUrl="http://www.savagechickens.com/"/>
       <outline title="SPACE AVALANCHE" text="SPACE AVALANCHE" type="rss" xmlUrl="http://feeds.feedburner.com/SpaceAvalanche" htmlUrl="http://www.spaceavalanche.com/"/>
       <outline title="Mr. Lovenstein" text="Mr. Lovenstein" type="rss" xmlUrl="http://www.mrlovenstein.com/rss.xml" htmlUrl="http://mrlovenstein.com/"/>
       <outline title="Stuff No One Told Me" text="Stuff No One Told Me" type="rss" xmlUrl="http://feeds.feedburner.com/StuffNoOneToldMeButILearnedAnyway" htmlUrl="http://www.snotm.com/"/>
       <outline title="theWAREHOUSE webcomic" text="theWAREHOUSE webcomic" type="rss" xmlUrl="http://warehousecomic.com/" htmlUrl="http://warehousecomic.com/"/>
       <outline title="Rock, Paper, Cynic" text="Rock, Paper, Cynic" type="rss" xmlUrl="http://www.rsspect.com/rss/rockpapercynic.xml" htmlUrl="http://www.rockpapercynic.com/"/>
+      <outline title="Dire Circumstances" text="Dire Circumstances" type="rss" xmlUrl="http://fruitscs.tumblr.com/" htmlUrl="http://fruitscs.tumblr.com/"/>
       <outline title="Virus Comix News" text="Virus Comix News" type="rss" xmlUrl="http://viruscomix.wordpress.com/feed/" htmlUrl="https://viruscomix.wordpress.com/"/>
       <outline title="Peebles Lab" text="Peebles Lab" type="rss" xmlUrl="http://www.peebleslab.com/rss" htmlUrl="http://www.peebleslab.com/"/>
       <outline title="http://owlturd.com/" text="http://owlturd.com/" type="rss" xmlUrl="http://owlturd.com/rss" htmlUrl="http://owlturd.com/"/>
@@ -32,20 +34,17 @@
       <outline title="Buttersafe" text="Buttersafe" type="rss" xmlUrl="http://buttersafe.com/feed/" htmlUrl="http://buttersafe.com/"/>
       <outline title="Poorly Drawn Lines" text="Poorly Drawn Lines" type="rss" xmlUrl="http://feeds.feedburner.com/PoorlyDrawnLines" htmlUrl="http://poorlydrawnlines.com/"/>
       <outline title="Depressed Alien" text="Depressed Alien" type="rss" xmlUrl="http://www.depressedalien.com/rss" htmlUrl="http://www.depressedalien.com/"/>
-      <outline title="My Cardboard Life" text="My Cardboard Life" type="rss" xmlUrl="http://mycardboardlife.com/feed/" htmlUrl="http://mycardboardlife.com/"/>
       <outline title="The Awkward Yeti" text="The Awkward Yeti" type="rss" xmlUrl="http://awkwardyeti.com/feed/" htmlUrl="http://theawkwardyeti.com/"/>
       <outline title="Order of the Stick" text="Order of the Stick" type="rss" xmlUrl="http://www.giantitp.com/comics/oots.rss" htmlUrl="http://www.giantitp.com/Comics.html"/>
       <outline title="Calm Blue Oceans" text="Calm Blue Oceans" type="rss" xmlUrl="http://calmblueoceanscomic.tumblr.com/rss" htmlUrl="http://calmblueoceanscomic.tumblr.com/"/>
-      <outline title="1111 Comics" text="1111 Comics" type="rss" xmlUrl="http://www.1111comics.me/" htmlUrl="http://www.1111comics.me/"/>
+      <outline title="Neil Slorance" text="Neil Slorance" type="rss" xmlUrl="http://www.neilslorance.com/" htmlUrl="http://www.neilslorance.com/"/>
+      <outline title="Mythdirection" text="Mythdirection" type="rss" xmlUrl="http://mythdirection.com/" htmlUrl="http://mythdirection.com/"/>
       <outline title="Sharksplode!" text="Sharksplode!" type="rss" xmlUrl="http://sharksplode.com/feed/" htmlUrl="http://sharksplode.com/"/>
-      <outline title="Toonhole" text="Toonhole" type="rss" xmlUrl="http://feeds.feedburner.com/Toonhole" htmlUrl="http://toonhole.com/"/>
       <outline title="Mumbletimes" text="Mumbletimes" type="rss" xmlUrl="http://chrishallbeck.tumblr.com/" htmlUrl="http://chrishallbeck.tumblr.com/"/>
       <outline title="Luke Surl Comics" text="Luke Surl Comics" type="rss" xmlUrl="http://www.lukesurl.com/" htmlUrl="http://www.lukesurl.com/"/>
       <outline title="The Odd 1's Out!" text="The Odd 1's Out!" type="rss" xmlUrl="http://theodd1sout.com/" htmlUrl="http://theodd1sout.com/"/>
-      <outline title="Left-Handed Toons" text="Left-Handed Toons" type="rss" xmlUrl="http://feeds.feedburner.com/lefthandedtoons/awesome" htmlUrl="http://www.lefthandedtoons.com/"/>
       <outline title="LOLDWELL.com" text="LOLDWELL.com" type="rss" xmlUrl="http://loldwell.com/?feed=rss2" htmlUrl="http://loldwell.com/"/>
       <outline title="cat versus human" text="cat versus human" type="rss" xmlUrl="http://feeds.feedburner.com/CatVersusHuman" htmlUrl="http://www.catversushuman.com/"/>
-      <outline title="CommitStrip" text="CommitStrip" type="rss" xmlUrl="http://www.commitstrip.com/en/feed/" htmlUrl="http://www.commitstrip.com/"/>
       <outline title="Extra Ordinary" text="Extra Ordinary" type="rss" xmlUrl="http://www.exocomics.com/feed" htmlUrl="http://www.exocomics.com/"/>
       <outline title="Safely Endangered" text="Safely Endangered" type="rss" xmlUrl="http://www.safelyendangered.com/feed/" htmlUrl="http://www.safelyendangered.com/"/>
       <outline title="Gerbil With a Jetpack" text="Gerbil With a Jetpack" type="rss" xmlUrl="http://gerbilwithajetpack.com/feed/" htmlUrl="http://gerbilwithajetpack.com/"/>
@@ -71,6 +70,7 @@
       <outline title="Channelate" text="Channelate" type="rss" xmlUrl="http://www.channelate.com/" htmlUrl="http://www.channelate.com/"/>
       <outline title="Dilbert Daily Strip" text="Dilbert Daily Strip" type="rss" xmlUrl="http://dilbert.com/strip/2016-01-23" htmlUrl="http://dilbert.com/"/>
       <outline title="MercWorks" text="MercWorks" type="rss" xmlUrl="http://mercworks.net/feed/" htmlUrl="http://mercworks.net/"/>
+      <outline title="Nedroid Fun Times" text="Nedroid Fun Times" type="rss" xmlUrl="http://nedroidcomics.tumblr.com/" htmlUrl="http://nedroidcomics.tumblr.com/"/>
       <outline title="Tree Lobsters!" text="Tree Lobsters!" type="rss" xmlUrl="http://www.treelobsters.com/" htmlUrl="http://www.treelobsters.com/"/>
       <outline title="Drawing Board" text="Drawing Board" type="rss" xmlUrl="http://drawingboardcomic.com/rss.php" htmlUrl="http://drawingboardcomic.com/"/>
       <outline title="The Comic Adventures of Left &amp; Right" text="The Comic Adventures of Left &amp; Right" type="rss" xmlUrl="http://www.rsspect.com/rss/leftandright.xml" htmlUrl="http://www.lr-comic.com/"/>
@@ -87,12 +87,15 @@
       <outline title="Berkeley Mews" text="Berkeley Mews" type="rss" xmlUrl="http://www.berkeleymews.com/?feed=rss2" htmlUrl="http://www.berkeleymews.com/"/>
       <outline title="chainsawsuit – three panels daily" text="chainsawsuit – three panels daily" type="rss" xmlUrl="http://chainsawsuit.com/feed" htmlUrl="http://chainsawsuit.com/"/>
       <outline title="Happle Tea" text="Happle Tea" type="rss" xmlUrl="http://www.happletea.com/feed/" htmlUrl="http://www.happletea.com/"/>
+      <outline title="UP and OUT" text="UP and OUT" type="rss" xmlUrl="http://upandoutcomic.tumblr.com/" htmlUrl="http://upandoutcomic.tumblr.com/"/>
       <outline title="xkcd" text="xkcd" type="rss" xmlUrl="http://blog.xkcd.com/feed/" htmlUrl="http://blog.xkcd.com/"/>
       <outline title="Derelict Orbital Reflector Devices" text="Derelict Orbital Reflector Devices" type="rss" xmlUrl="http://dord.horse/" htmlUrl="http://dord.horse/"/>
       <outline title="Obvious Plant" text="Obvious Plant" type="rss" xmlUrl="http://obviousplant.tumblr.com/rss" htmlUrl="http://obviousplant.tumblr.com/"/>
       <outline title="Let's Speak English" text="Let's Speak English" type="rss" xmlUrl="http://www.marycagle.com/rss.php" htmlUrl="http://www.marycagle.com/"/>
       <outline title="Uploads from The Searcher" text="Uploads from The Searcher" type="rss" xmlUrl="https://secure.flickr.com/services/feeds/photos_public.gne?id=58515917@N00&amp;lang=en-us&amp;format=atom" htmlUrl="https://www.flickr.com/photos/bar-art/"/>
       <outline title="Dorris McComics" text="Dorris McComics" type="rss" xmlUrl="http://dorrismccomics.com/" htmlUrl="http://dorrismccomics.com/"/>
+      <outline title="Malkidian Geometry" text="Malkidian Geometry" type="rss" xmlUrl="http://davidmalki.tumblr.com/" htmlUrl="http://davidmalki.tumblr.com/"/>
+      <outline title="lol.browserling.com" text="lol.browserling.com" type="rss" xmlUrl="https://lol.browserling.com/" htmlUrl="https://lol.browserling.com/"/>
       <outline title="Calamities of Nature" text="Calamities of Nature" type="rss" xmlUrl="http://feeds.feedburner.com/calamitiesofnature" htmlUrl="http://www.calamitiesofnature.com/"/>
       <outline title="StupidFox" text="StupidFox" type="rss" xmlUrl="http://feeds.feedburner.com/StupidFox" htmlUrl="http://stupidfox.net/"/>
       <outline title="The Non-Adventures of Wonderella" text="The Non-Adventures of Wonderella" type="rss" xmlUrl="http://nonadventures.com/feed/" htmlUrl="http://nonadventures.com/"/>
@@ -103,13 +106,18 @@
       <outline title="Dinosaur Comics!" text="Dinosaur Comics!" type="rss" xmlUrl="http://qwantz.com/rssfeed.php" htmlUrl="http://www.qwantz.com/"/>
       <outline title="Three Panel Soul" text="Three Panel Soul" type="rss" xmlUrl="http://www.threepanelsoul.com/rss.php" htmlUrl="http://www.threepanelsoul.com/"/>
       <outline title="The Pigeon Gazette" text="The Pigeon Gazette" type="rss" xmlUrl="http://thepigeongazette.tumblr.com/" htmlUrl="http://thepigeongazette.tumblr.com/"/>
-      <outline title="UP and OUT" text="UP and OUT" type="rss" xmlUrl="http://jeremykaye.tumblr.com/" htmlUrl="http://jeremykaye.tumblr.com/"/>
       <outline title="Oglaf! -- Comics. Often dirty." text="Oglaf! -- Comics. Often dirty." type="rss" xmlUrl="http://oglaf.com/feeds/rss/" htmlUrl="http://oglaf.com/latest/"/>
+      <outline title="Anything about nothing Updates" text="Anything about nothing Updates" type="rss" xmlUrl="http://www.anythingcomic.com/" htmlUrl="http://www.anythingcomic.com/"/>
+      <outline title="My Cardboard Life" text="My Cardboard Life" type="rss" xmlUrl="http://mycardboardlife.com/feed/" htmlUrl="http://mycardboardlife.com/"/>
+      <outline title="1111 Comics" text="1111 Comics" type="rss" xmlUrl="http://www.1111comics.me/" htmlUrl="http://www.1111comics.me/"/>
+      <outline title="Toonhole" text="Toonhole" type="rss" xmlUrl="http://feeds.feedburner.com/Toonhole" htmlUrl="http://toonhole.com/"/>
+      <outline title="Left-Handed Toons" text="Left-Handed Toons" type="rss" xmlUrl="http://feeds.feedburner.com/lefthandedtoons/awesome" htmlUrl="http://www.lefthandedtoons.com/"/>
+      <outline title="CommitStrip" text="CommitStrip" type="rss" xmlUrl="http://www.commitstrip.com/en/feed/" htmlUrl="http://www.commitstrip.com/"/>
     </outline>
     <outline title="Release notes from News-Android-App" text="Release notes from News-Android-App" type="rss" xmlUrl="https://github.com/owncloud/News-Android-App/releases" htmlUrl="https://github.com/owncloud/News-Android-App/releases"/>
-    <outline title="Shady Characters" text="Shady Characters" type="rss" xmlUrl="http://www.shadycharacters.co.uk/" htmlUrl="http://www.shadycharacters.co.uk/"/>
     <outline title="The Escapist : Experienced Points" text="The Escapist : Experienced Points" type="rss" xmlUrl="http://www.escapistmagazine.com/rss/articles/video-games/columns/experienced-points" htmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/experienced-points"/>
     <outline title="The Escapist : Extra Punctuation" text="The Escapist : Extra Punctuation" type="rss" xmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/extra-punctuation" htmlUrl="http://www.escapistmagazine.com/articles/view/video-games/columns/extra-punctuation"/>
     <outline title="cr.yp.to blog" text="cr.yp.to blog" type="rss" xmlUrl="http://blog.cr.yp.to/feed.application=xml" htmlUrl="http://blog.cr.yp.to/"/>
+    <outline title="Shady Characters" text="Shady Characters" type="rss" xmlUrl="http://www.shadycharacters.co.uk/" htmlUrl="http://www.shadycharacters.co.uk/"/>
   </body>
 </opml>
