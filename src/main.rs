@@ -226,9 +226,14 @@ fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
     try!(response.read_to_string(&mut xml).map_err(Error::Io));
     let tree = XmlReader::from_str(&xml).trim_text(true);
     let mut answers = vec![];
-    for t in tree {
-        if let Ok(Event::Text(e)) = t {
-            answers.push(try!(e.into_string().map_err(Error::Xml)))
+    for event in tree {
+        match event {
+            Ok(Event::Start(ref elem)) if elem.name() == b"pod" => {
+                println!("{:?}", elem.clone().into_string());
+                println!("{:?}", elem.attributes().collect::<Vec<_>>())
+            }
+            Ok(Event::Text(e)) => answers.push(try!(e.into_string().map_err(Error::Xml))),
+            _ => (),
         }
     }
     Ok(answers.join(" | "))
