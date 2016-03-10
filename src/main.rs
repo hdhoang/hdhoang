@@ -180,15 +180,15 @@ fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
         return Ok(String::new());
     }
     let mut response = try!(Client::new()
-                 .get(&url)
-                 .header(UserAgent("Firefox".into()))
-                 .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
-                                                     "NYT-S".into(),
-                                                     "0MOTYRtE4oUSHDXrmvxADeHEluv5kUWdpUdeFz9\
-                                                      JchiAKuaKkdl/6loIV.Ynx4rkFI"
-                                                         .into())]))
-                 .send()
-                 .map_err(Error::Hyper));
+                            .get(&url)
+                            .header(UserAgent("Firefox".into()))
+                            .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
+                                "NYT-S".into(),
+                                "0MOTYRtE4oUSHDXrmvxADeHEluv5kUWdpUdeFz9\
+                                 JchiAKuaKkdl/6loIV.Ynx4rkFI"
+                                    .into())]))
+                            .send()
+                            .map_err(Error::Hyper));
     let mut body = [0; 50_000];
     response.read_exact(&mut body).ok();
     if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
