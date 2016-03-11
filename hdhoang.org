@@ -260,6 +260,615 @@
          ip -6 route add default src $address dev $tunnel_interface
        #+END_SRC
 
+** IRC bot
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ~/Public/luser
+   :END:
+   [[irc:chat.freenode.net/#vnluser][#vnluser]] used to have a bot to grab link titles and search google.
+   It didn't work very well with Vietnamese characters, so it was retired. Here's a replacement in rust and python. Its name is
+   #+NAME: botname
+   #+BEGIN_SRC text
+     luser
+   #+END_SRC
+
+   There are several things it could improve on:
+    - [ ] Handle gzip responses (news.zing.vn and baomoi.com): These
+      sites always return gzip-encoded HTML, even when Accept-Encoding
+      doesn't list it. You can check by comparing =curl= vs =curl
+      --compressed=.
+    - [ ] Configurable multiple channels support, possibly as
+      commandline arguments, should also set owners.
+    - [ ] Reading secrets from files: API keys, identify passwords,
+      channel passwords.
+    - [ ] Tests: It would be difficult to interface with IRC servers,
+      but at least the handling functions should be tested.
+    - [ ] CLI interface: Like chatbot's, this will speed up testing.
+    - [ ] NYtimes access: The cookie needs to be periodically rebaked.
+      Theoretically cloaking as googlebot should work.
+    - [ ] Pod titles in rust: Quick-xml doesn't return the attributes
+      iterator currently.
+    - [ ] Reconnection on ping timeout: [[https://github.com/aatxe/irc/blob/46f9136c93063e8abb01b063df53897615007791/src/client/server/mod.rs#L208][IrcServer should already
+      reconnect automatically]], but possibly ipv6 tunneling is
+      interfering.
+
+   Now on to the code. Unfortunately, tangling from this Org source
+   loses indentations, so the python code can't be commented on line
+   by line. Here are the API keys and rust build setup:
+   #+NAME: wolframalpha_key
+   #+BEGIN_SRC text
+     3JEW42-4XXE264A93
+   #+END_SRC
+   #+NAME: yandex_key
+   #+BEGIN_SRC text
+     trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810
+   #+END_SRC
+   #+BEGIN_SRC conf :tangle ~/Public/luser.toml
+     [package]
+     name = "<<botname>>"
+     version = "0.1.0"
+     authors = ["Hoàng Đức Hiếu <<username>>@<<domain>>"]
+
+     [dependencies]
+     irc = "*"
+     scraper = "*"
+     hyper = "*"
+     regex = "*"
+     quick-xml = "*"
+     rustc-serialize = "*"
+     url = "*"
+   #+END_SRC
+   Importing dependencies. Python really comes with batteries.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs :post rustfmt_luser
+     extern crate regex;
+     extern crate irc;
+     extern crate scraper;
+     extern crate hyper;
+     extern crate quick_xml;
+     extern crate rustc_serialize;
+     extern crate url;
+
+     use regex::Regex;
+     use irc::client::prelude::{IrcServer, Server, ServerExt, Config, Command, Response};
+     use hyper::client::Client;
+     use std::io::Read;
+     use std::collections::HashMap;
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     try:
+         from urllib.request import urlopen
+         from urllib.parse import quote
+     except ImportError:
+         from urllib2 import urlopen, quote
+
+     from bs4 import BeautifulSoup
+
+     from irc import bot
+   #+END_SRC
+
+   Set up logging.
+
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     import os
+     import logging
+     logger = logging.getLogger(NAME)
+
+     def setup_logging(filename, path=None, verbose=False):
+         if not path:
+             path = os.path.dirname(os.path.realpath(__file__))
+         formatter = logging.Formatter('%(asctime)-15s (%(name)s) %(message)s')
+         level = logging.DEBUG if verbose else logging.INFO
+         logfile = os.path.join(log_path, logfile)
+         file_log = logging.handlers.TimedRotatingFileHandler(
+             os.path.join(path, filename),
+             when="midnight",
+             backupCount=31)
+         file_log.setLevel(log_level)
+         file_log.setFormatter(formatter)
+         logger.addHandler(file_log)
+
+     setup_logging(NAME + ".log")
+   #+END_SRC
+
+   Set up connection details. People should claim their names here.
+
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     const NAME: &'static str = "<<botname>>";
+     fn main() {
+         let freenode = IrcServer::from_config(Config {
+                            owners: Some(vec!["<<username>>".into()]),
+                            username: Some(NAME.into()),
+                            nickname: Some(format!("{}", NAME)),
+                            alt_nicks: Some((..10).map(|n| format!("{}-{}", NAME, n)).collect()),
+                            server: Some("chat.freenode.net".into()),
+                            port: Some(8000),
+                            channels: Some(vec![format!("#vn{}", NAME), format!("#{}-test", NAME)]),
+                            ..Default::default()
+                        })
+                            .unwrap();
+         freenode.identify().unwrap();
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     NAME = "<<botname>>"
+     <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME)
+
+     def change_nick(c, e):
+         from random import randint
+         c.nick('{}-{}'.format(c.get_nickname(), str(randint(0, 9))))
+     <<botname>>.on_nicknameinuse = change_nick
+
+     def join_channels(c, e):
+         c.join("#{}-test".format(NAME))
+         c.join("#vn"+NAME)
+     <<botname>>.on_welcome = join_channels
+   #+END_SRC
+   Handling scaffolding
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+         let get_title = &get_title;
+         let wolframalpha = &wolframalpha;
+         let google = &google;
+         let translate = &translate;
+         let handlers = [Handler(Regex::new(TITLE_REGEX).unwrap(), get_title),
+                         Handler(Regex::new(WA_REGEX).unwrap(), wolframalpha),
+                         Handler(Regex::new(GOOGLE_REGEX).unwrap(), google),
+                         Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
+
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def handle(c, e, msg):
+         try:
+             if 'http' in msg:
+                 c.privmsg(e.target, title(msg))
+             if msg[0] not in ('.', '!', ':'): return
+             reply = ''
+             if msg[1:3] == 'g ':
+                 reply = google(msg[3:])
+             if msg[1:4] == 'wa ':
+                 reply = wolframalpha(msg[4:])
+             if msg[1:4] == 'tr ':
+                 reply = translate(msg[4:])
+             if reply:
+                 # Keep PRIVMSG under 512bytes
+                 c.privmsg(e.target, reply[:512 - len(e.target) - 50])
+         except Exception as e:
+             logger.error(msg, "causes", e)
+   #+END_SRC
+
+   List other <<botname>>s, and update that list when one joins or quits.
+   This list is used by the <<botname>>s to decide whether to handle
+   unaddressed messages. If the length of the IRC prefix
+   'nick!user@host' for a message indexes to its name, that <<botname>>
+   response.
+
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     <<botname>>s = []
+     def list_<<botname>>s(c, e):
+         for <<botname>> in filter(lambda n: n.startswith(NAME), e.arguments[-1].split(' ')):
+             if <<botname>> not in <<botname>>s:
+                 <<botname>>s.append(<<botname>>)
+         if c.get_nickname() not in <<botname>>s:
+             c.reconnect()
+         <<botname>>s.sort()
+     <<botname>>.on_namreply = list_<<botname>>s
+   #+END_SRC
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+         let mut last_lines = HashMap::new();
+         let mut <<botname>>s = vec![];
+         'messages: for message in freenode.iter() {
+             let msg = message.unwrap();
+             if let Command::Response(Response::RPL_NAMREPLY, _, Some(ref names)) = msg.command {
+                 <<botname>>s.extend(names.split(' ')
+                                    .filter(|n| n.starts_with(NAME))
+                                    .map(String::from));
+                 <<botname>>s.sort();
+                 <<botname>>s.dedup();
+                 if !<<botname>>s.contains(&freenode.current_nickname().into()) {
+                     let _ = freenode.reconnect();
+                 }
+                 continue 'messages;
+             }
+             if let Some(nick) = msg.source_nickname() {
+   #+END_SRC
+   Ignore bots and freenode
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                 if nick.contains("bot") || nick.contains("freenode") {
+                     continue 'messages;
+                 }
+   #+END_SRC
+   Update <<botname>>s list
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                 if nick.starts_with(NAME) {
+                     let nick = String::from(nick);
+                     match msg.command {
+   #+END_SRC
+   Do not merge the following arms. Otherwise a join #c1 -> insert ->
+   join #c2 -> remove sequence might happen.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                         Command::JOIN(..) => {
+                             if let Err(idx) = <<botname>>s.binary_search(&nick) {
+                                 <<botname>>s.insert(idx, nick)
+                             }
+                         }
+
+   #+END_SRC
+   The next lambdas are abusing python logical operator, but they read
+   like English.
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def <<botname>>_joins(c, e):
+         if e.source.nick not in <<botname>>s:
+             <<botname>>s.append(e.source.nick)
+             <<botname>>s.sort()
+     <<botname>>.on_join = lambda c, e: e.source.startswith(NAME) and <<botname>>_joins(c, e)
+   #+END_SRC
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                         Command::QUIT(..) => {
+                             if let Ok(idx) = <<botname>>s.binary_search(&nick) {
+                                 <<botname>>s.remove(idx);
+                             }
+                         }
+                         _ => (),
+                     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def <<botname>>_quits(c, e):
+         <<botname>>s.remove(e.source.nick)
+     <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>_quits(c, e)
+   #+END_SRC
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                     continue 'messages;
+                 }
+             }
+   #+END_SRC
+   Actual message processing. Ignore the other <<botname>>s.
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     last_lines = {}
+     def on_pubmsg(c, e):
+         nick = e.source.nick
+         if nick.startswith(NAME): return
+         my_nick = c.get_nickname()
+         msg = e.arguments[0]
+         addressed = msg.startswith(my_nick)
+         def handling(e):
+             return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
+         if msg == "report!":
+             return c.privmsg(e.target, "operated by <<username>> with source code " + post_source())
+         if msg.startswith('s/'):
+             parts = msg.split('/')
+             if len(parts) >= 3 and handling(e) and nick in last_lines:
+                 return c.privmsg(e.target, "{} meant: {}".format(nick,
+                                                             last_lines[nick]
+                                                             .replace(parts[1], parts[2])))
+         else:
+             last_lines[nick] = msg
+         if addressed or handling(e):
+             if addressed:
+                 msg = msg[len(my_nick) +2:] # remove addressing
+             handle(c, e, msg)
+     <<botname>>.on_pubmsg = on_pubmsg
+   #+END_SRC
+   =trimmed_line= is here to hoist the trimmed line out of its
+   assignment block. Rust: the compiler knows better than you do.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+             let channel;
+             let trimmed_line;
+             let mut line;
+
+             if let Command::PRIVMSG(ref target, ref message) = msg.command {
+                 channel = target;
+                 line = message
+             } else {
+                 continue 'messages;
+             }
+
+             if line == "report!" {
+                 freenode.send(Command::PRIVMSG(channel.clone(),
+                                                format!("operated by {} with source code {}",
+                                                        freenode.config()
+                                                                .owners
+                                                                .as_ref()
+                                                                .map(|v| v.join(", "))
+                                                                .unwrap_or("someone anonymous"
+                                                                               .into()),
+                                                        post_source_code())))
+                         .unwrap();
+                 continue 'messages;
+             }
+             if line.starts_with("s/") {
+                 let parts = line.split('/').collect::<Vec<_>>();
+                 if parts.len() < 3 {
+                     continue 'messages;
+                 }
+                 if let Some(old_line) = last_lines.get(&msg.source_nickname().map(String::from)) {
+                     if <<botname>>s[msg.prefix.clone().unwrap().len() % <<botname>>s.len()] ==
+                        freenode.current_nickname() {
+                         freenode.send(Command::PRIVMSG(channel.clone(),
+                                                        format!("{} meant to say \"{}\"",
+                                                                msg.source_nickname().unwrap(),
+                                                                (old_line as &str)
+                                                                    .replace(parts[1], parts[2]))))
+                                 .unwrap();
+                     }
+                 }
+             } else {
+                 last_lines.insert(msg.source_nickname().map(String::from), line.clone());
+             }
+
+             let addressed = line.starts_with(freenode.current_nickname());
+             if addressed ||
+                <<botname>>s[msg.prefix.unwrap().len() % <<botname>>s.len()] == freenode.current_nickname() {
+                 if addressed {
+                     trimmed_line = line[freenode.current_nickname().len() + 2..].into();
+                     line = &trimmed_line;
+                 }
+                 'handling: for h in &handlers {
+                     if h.can_handle(line) {
+                         match h.run(line) {
+                             Err(e) => println!("{:?} causes {:?}", line, e),
+                             Ok(reply) => {
+                                 if !reply.is_empty() {
+                                     freenode.send(Command::PRIVMSG(channel.clone(), reply)).unwrap();
+                                     continue 'messages;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+   #+END_SRC
+   Rust handler scaffolding: casting into a common =Error= type and
+   associating regexes with their handling function. Rust is
+   surprisingly more object-happy than python.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     #[derive(Debug)]
+     enum Error {
+         Data(String),
+         Io(std::io::Error),
+         Hyper(hyper::error::Error),
+         Xml(quick_xml::error::Error),
+         Json(rustc_serialize::json::ParserError),
+     }
+
+     struct Handler<'a>(Regex, &'a (Fn(&Regex, &str) -> Result<String, Error>));
+     impl<'a> Handler<'a> {
+         fn can_handle(&self, line: &str) -> bool {
+             self.0.is_match(&line)
+         }
+         fn run(&self, line: &str) -> Result<String, Error> {
+             self.1(&self.0, &line)
+         }
+     }
+   #+END_SRC
+
+   Get title from URLs. The rust version only grabs the first URL in
+   each message, but it ignores a list of uninteresting domains.
+
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     const TITLE_REGEX: &'static str = r"https?:[^\s]+";
+     fn get_title(regex: &Regex, line: &str) -> Result<String, Error> {
+         use hyper::header::{UserAgent, Cookie, CookiePair};
+         use scraper::{Html, Selector};
+
+         let url = regex.captures(&line).unwrap().expand("$0");
+         if ["imgur.com/", "smbc-comics.com/"].iter().any(|uninteresting| url.contains(uninteresting)) {
+             return Ok(String::new());
+         }
+         let mut response = try!(Client::new()
+                                 .get(&url)
+                                 .header(UserAgent("Firefox".into()))
+                                 .header(Cookie(vec![CookiePair::new(// cookie to access NYtimes articles
+                                     "NYT-S".into(),
+                                     "0MOTYRtE4oUSHDXrmvxADeHEluv5kUWdpUdeFz9\
+                                      JchiAKuaKkdl/6loIV.Ynx4rkFI"
+                                         .into())]))
+                                 .send()
+                                 .map_err(Error::Hyper));
+         let mut body = [0; 50_000];
+         response.read_exact(&mut body).ok();
+         if let Some(title_elem) = Html::parse_fragment(&String::from_utf8_lossy(&body))
+                                       .select(&Selector::parse("title").unwrap())
+                                       .next() {
+             Ok(title_elem.first_child()
+                          .unwrap()
+                          .value()
+                          .as_text()
+                          .unwrap()
+                          .replace("\n", " ")
+                          .trim()
+                          .into())
+         } else {
+             Err(Error::Data("Response has no title".into()))
+         }
+     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def title(text):
+         titles = []
+         urls = filter(lambda w: w.startswith('http'), text.split())
+         for u in urls:
+             with urlopen(u) as r:
+                 title = BeautifulSoup(r.read(50000), 'html.parser').title
+                 if title: titles.append(title.string.replace('\n', '').strip())
+         return ' / '.join(titles)
+   #+END_SRC
+   Ask Wolfram|Alpha, the knowledge engine.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     const WA_REGEX: &'static str = concat!(r"^(\.|!|:)", "wa (?P<query>.+)");
+     fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
+         use hyper::header::ContentLength;
+         use quick_xml::{XmlReader, Event};
+
+         let mut response = try!(Client::new()
+                                     .get(&regex.captures(&line)
+                                                .unwrap()
+                                                .expand("http://api.wolframalpha.\
+                                                         com/v2/query?format=plaintext&appid=\
+                                                         <<wolframalpha_key>>&input=$query"))
+                                     .send()
+                                     .map_err(Error::Hyper));
+         let mut xml =
+             String::with_capacity(**response.headers.get::<ContentLength>().unwrap() as usize);
+         try!(response.read_to_string(&mut xml).map_err(Error::Io));
+         let tree = XmlReader::from_str(&xml).trim_text(true);
+         let mut answers = vec![];
+         for event in tree {
+             match event {
+   #+END_SRC
+
+   I would like to prefix each answer with its pod's title, but the
+   attributes iterator is failing here.
+
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+                 Ok(Event::Start(ref elem)) if elem.name() == b"pod" => {
+                     println!("{:?}", elem.clone().into_string());
+                     println!("{:?}", elem.attributes().collect::<Vec<_>>())
+                 }
+                 Ok(Event::Text(e)) => answers.push(try!(e.into_string().map_err(Error::Xml))),
+                 _ => (),
+             }
+         }
+         Ok(answers.join(" / "))
+     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def wolframalpha(text):
+         import xml.etree.ElementTree as ET
+         with urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text)) as r:
+             tree = ET.parse(r)
+             reply = ''
+             for n in tree.iter():
+                 if n.tag == 'pod':
+                     reply += n.attrib['title'] + ': '
+                 if n.tag == 'plaintext' and n.text and len(n.text.strip()):
+                     reply += n.text + ' / '
+             if len(reply) > 512:
+                 reply = reply[:200] + " http://wolframalpha.com/?input=" + quote(text)
+             return reply.replace('\n', ' ')
+   #+END_SRC
+   Returns the first Google result.
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     const GOOGLE_REGEX: &'static str = concat!(r"^(\.|!|:)", "g (?P<query>.+)");
+     fn google(regex: &Regex, line: &str) -> Result<String, Error> {
+         use rustc_serialize::json::Json;
+         // API: https://developers.google.com/web-search/docs/#code-snippets
+         let mut response = try!(Client::new()
+                                     .get(&regex.captures(&line)
+                                                .unwrap()
+                                                .expand("https://ajax.googleapis.\
+                                                         com/ajax/services/search/web?v=1.\
+                                                         0&rsz=1&q=$query"))
+                                     .send()
+                                     .map_err(Error::Hyper));
+         let json = try!(Json::from_reader(&mut response).map_err(Error::Json));
+         let results = try!(json.search("results").ok_or(Error::Data("No results".into())));
+         if results.as_array().unwrap().is_empty() {
+             return Ok("No results".into());
+         }
+         let url = try!(results[0]
+                            .find("unescapedUrl")
+                            .ok_or(Error::Data("No url".into()))
+                            .map(|j| j.as_string().unwrap()));
+         let title = try!(results[0]
+                              .find("titleNoFormatting")
+                              .ok_or(Error::Data("No title".into()))
+                              .map(|j| j.as_string().unwrap()));
+         Ok(format!("{} {}", title, url))
+     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def google(text):
+         import json
+         with urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text)) as r:
+             data = json.loads(r.read().decode())['responseData']
+             if not data['results']:
+                 return '0 result'
+             return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
+
+   #+END_SRC
+   Translates using [[https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/][Yandex]]:
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     const TRANSLATE_REGEX: &'static str = concat!(r"^(\.|!|:)", "tr (?P<lang>[^ ]+) (?P<text>.+)");
+     fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
+         use rustc_serialize::json::Json;
+         let mut response = try!(Client::new()
+                                     .get(&regex.captures(&line)
+                                                .unwrap()
+                                                .expand("https://translate.yandex.\
+                                                                  net/api/v1.5/tr.\
+                                                                  json/translate?key=<<yandex_key>>&text=$text&\
+                                                                  lang=$lang"))
+                                     .send()
+                                     .map_err(Error::Hyper));
+         let json = try!(Json::from_reader(&mut response).map_err(Error::Json));
+         let reply = match json.find("code").unwrap().as_u64().unwrap() {
+             200 => {
+                 format!("{}: {}",
+                         json.find("lang").unwrap().as_string().unwrap(),
+                         json.find("text").unwrap()[0].as_string().unwrap())
+             }
+             501 => json.find("message").unwrap().as_string().unwrap().into(),
+             _ => format!("{:?}", json.as_string()),
+         };
+         Ok(reply)
+     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def translate(text):
+         import json
+         (lang, _, text) = text.partition(' ')
+         if not text:
+             return 'Missing text'
+         with urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), lang)) as r:
+             data = json.loads(r.read().decode())
+             return data['lang'] + ": " + data['text'][0]
+   #+END_SRC
+   Posts its own source code:
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
+     fn post_source_code() -> String {
+         use url::form_urlencoded;
+         let form = [("read:1", "3"),
+                     ("name:1", "main.rs"),
+                     ("f:1", include_str!("main.rs")),
+                     ("read:2", "3"),
+                     ("name:2", "Cargo.toml"),
+                     ("f:2", include_str!("../Cargo.toml"))];
+         let result = Client::new()
+                          .post("http://ix.io")
+                          .body(&form_urlencoded::serialize(form.iter()))
+                          .send();
+         match result {
+             Ok(mut response) => {
+                 let mut reply = String::new();
+                 let _ = response.read_to_string(&mut reply);
+                 reply
+             }
+             Err(e) => format!("unable to post: {:?}", e),
+         }
+     }
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     def post_source():
+         try:
+             from http.client import HTTPConnection
+         except ImportError:
+             from httplib import HTTPConnection
+         conn = HTTPConnection('ix.io')
+         conn.request('POST', '/', 'read:1=3&name:1=<<botname>>.py&f:1=' + quote(open(__file__).read()))
+         return conn.getresponse().read().decode().strip()
+   #+END_SRC
+   Don't do this, just use python3
+   #+BEGIN_SRC python :tangle /dev/null
+     import sys
+     reload(sys)
+     sys.setdefaultencoding('utf8')
+   #+END_SRC
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
+     <<botname>>.start()
+   #+END_SRC
+   #+NAME: rustfmt_luser
+   #+BEGIN_SRC sh
+     rustfmt ~/Public/<<botname>>.rs
+   #+END_SRC
 * OpenVPN
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S openvpn
