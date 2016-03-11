@@ -350,23 +350,20 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      import os
      import logging
-     logger = logging.getLogger(NAME)
+     logger = logging.getLogger(__file__)
 
      def setup_logging(filename, path=None, verbose=False):
          if not path:
              path = os.path.dirname(os.path.realpath(__file__))
-         formatter = logging.Formatter('%(asctime)-15s (%(name)s) %(message)s')
-         level = logging.DEBUG if verbose else logging.INFO
-         logfile = os.path.join(log_path, logfile)
          file_log = logging.handlers.TimedRotatingFileHandler(
              os.path.join(path, filename),
              when="midnight",
              backupCount=31)
-         file_log.setLevel(log_level)
-         file_log.setFormatter(formatter)
+         file_log.setLevel(logging.DEBUG if verbose else logging.INFO)
+         file_log.setFormatter(logging.Formatter('%(asctime)-15s (%(name)s) %(message)s'))
          logger.addHandler(file_log)
 
-     setup_logging(NAME + ".log")
+     setup_logging("<<botname>>.log")
    #+END_SRC
 
    Set up connection details. People should claim their names here.
