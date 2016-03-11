@@ -1390,7 +1390,7 @@
                    (add-hook 'before-save-hook 'org-encrypt-entries
                              :local t)))
       (setq org-tags-exclude-from-inheritance '("crypt")
-            org-crypt-key user-mail-address)
+            org-crypt-key "<<username>>@keybase.io")
     #+END_SRC
 
     Make it possible to tangle encrypted block
