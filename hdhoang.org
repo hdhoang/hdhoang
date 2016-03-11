@@ -149,7 +149,13 @@
     pre {
         padding: 1em;
         border: dotted 1px #657b83;
-  }
+    }
+    .src-rust::before,
+    .src-python::before {
+        content: attr(class);
+        display: block;
+        float: right;
+    }
   #+END_SRC
 ** hdhoang
    :PROPERTIES:
