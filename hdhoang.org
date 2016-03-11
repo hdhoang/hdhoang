@@ -146,6 +146,10 @@
         margin: 0 25%;
         line-height: 1.5;
     }
+    pre {
+        padding: 1em;
+        border: dotted 1px #657b83;
+  }
   #+END_SRC
 ** hdhoang
    :PROPERTIES:
