@@ -1718,7 +1718,8 @@
      #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/rotate-screen :shebang #!/bin/sh :tangle-mode 365
        case $(xrandr | grep LVDS1 | cut -f 4 -d ' ' | tr -d '(') in
            normal) new="left";;
-           left)   new="normal";;
+           left)   new="inverted";;
+           inverted)   new="normal";;
        esac
        xrandr --output LVDS1 --rotate $new
 
