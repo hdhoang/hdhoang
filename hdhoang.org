@@ -1715,7 +1715,7 @@
        event=ibm/hotkey LEN0068:00 00000080 00006020
        action=sudo -u <<username>> DISPLAY=:0 /usr/local/bin/rotate-screen
      #+END_SRC
-     #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/rotate-screen :shebang #!/bin/sh
+     #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/rotate-screen :shebang #!/bin/sh :tangle-mode 365
        case $(xrandr | grep LVDS1 | cut -f 4 -d ' ' | tr -d '(') in
            normal) new="left";;
            left)   new="normal";;
