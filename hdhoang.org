@@ -684,6 +684,8 @@
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
+             if any(lambda d: d in u, ['imgur.com', 'smbc-comics.com']):
+                    continue
              request = build_opener()
              request.addheaders = [('Accept-Encoding', 'gzip')]
              response = request.open(u)
