@@ -743,17 +743,18 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def wolframalpha(text):
          import xml.etree.ElementTree as ET
-         with urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text)) as r:
-             tree = ET.parse(r)
-             reply = ''
-             for n in tree.iter():
-                 if n.tag == 'pod':
-                     reply += n.attrib['title'] + ': '
-                 if n.tag == 'plaintext' and n.text and len(n.text.strip()):
-                     reply += n.text + ' / '
-             if len(reply) > 512:
-                 reply = reply[:200] + " http://wolframalpha.com/?input=" + quote(text)
-             return reply.replace('\n', ' ')
+         r = urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text))
+         tree = ET.parse(r)
+         reply = ''
+         for n in tree.iter():
+             if n.tag == 'pod':
+                 reply += n.attrib['title'] + ': '
+             if n.tag == 'plaintext' and n.text and len(n.text.strip()):
+                 reply += n.text + ' / '
+         if len(reply) > 512:
+             reply = reply[:200] + " http://wolframalpha.com/?input=" + quote(text)
+         r.close()
+         return reply.replace('\n', ' ')
    #+END_SRC
    Returns the first Google result.
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
@@ -788,12 +789,12 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def google(text):
          import json
-         with urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text)) as r:
-             data = json.loads(r.read().decode())['responseData']
-             if not data['results']:
-                 return '0 result'
-             return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
-
+         r = urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text))
+         data = json.loads(r.read().decode())['responseData']
+         r.close()
+         if not data['results']:
+             return '0 result'
+         return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
    #+END_SRC
    Translates using [[https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/][Yandex]]:
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
@@ -828,9 +829,10 @@
          (lang, _, text) = text.partition(' ')
          if not text:
              return 'Missing text'
-         with urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), lang)) as r:
-             data = json.loads(r.read().decode())
-             return data['lang'] + ": " + data['text'][0]
+         r = urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), lang))
+         data = json.loads(r.read().decode())
+         r.close()
+         return data['lang'] + ": " + data['text'][0]
    #+END_SRC
    Posts its own source code:
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
