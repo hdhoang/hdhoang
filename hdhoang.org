@@ -529,7 +529,7 @@
          def handling(e):
              return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
          if msg == "report!":
-             return c.privmsg(e.target, "operated by <<username>> with source code " + post_source())
+             return c.privmsg(e.target, "operated by {} with source code {}".format(os.getenv('USER'), post_source()))
          if msg.startswith('s/'):
              parts = msg.split('/')
              if len(parts) >= 3 and handling(e) and nick in last_lines:
