@@ -177,6 +177,7 @@
    I have a maybe-blog:
    - [[file:vanity-irc.org][Showing a custom hostname to Freenode]]
    - [[file:borrow-die.org][Borrow checker analogy]]
+   - [[file:luser.org][Writing an IRC bot]]
 
 ** Consumption
 *** <2016-01-18 Mon> Rạng Đông A55N2/5W (42,200đ)
