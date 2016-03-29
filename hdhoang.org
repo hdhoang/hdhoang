@@ -335,10 +335,10 @@
    #+END_SRC
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      try:
-         from urllib.request import urlopen
+         from urllib.request import urlopen, build_opener
          from urllib.parse import quote
      except ImportError:
-         from urllib2 import urlopen, quote
+         from urllib2 import urlopen, quote, build_opener
 
      from bs4 import BeautifulSoup
 
@@ -684,9 +684,19 @@
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
-             with urlopen(u) as r:
-                 title = BeautifulSoup(r.read(50000), 'html.parser').title
-                 if title: titles.append(title.string.replace('\n', '').strip())
+             request = build_opener()
+             request.addheaders = [('Accept-Encoding', 'gzip')]
+             response = request.open(u)
+             if response.info().get('Content-Encoding') == 'gzip':
+                 from gzip import GzipFile
+                 if '__loader__' in globals():
+                     response = GzipFile(fileobj=response)
+                 else:
+                     from StringIO import StringIO
+                     response = GzipFile(fileobj=StringIO(response.read()))
+             title = BeautifulSoup(response.read(50000), 'html.parser').title
+             response.close()
+             if title: titles.append(title.string.replace('\n', '').strip())
          return ' / '.join(titles)
    #+END_SRC
    Ask Wolfram|Alpha, the knowledge engine.
