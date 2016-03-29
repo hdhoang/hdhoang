@@ -508,9 +508,7 @@
                      }
    #+END_SRC
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     def <<botname>>_quits(c, e):
-         <<botname>>s.remove(e.source.nick)
-     <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>_quits(c, e)
+     <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>s.remove(e.source.nick)
    #+END_SRC
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                      continue 'messages;
