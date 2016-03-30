@@ -312,6 +312,16 @@
       reconnect automatically]], but possibly ipv6 tunneling is
       interfering.
 
+   Compilation to ARMv7 is a bit tricky:
+
+    1. Set up [[https://github.com/japaric/rust-cross][cross-compilation toolchain]]
+    2. Copy the target's =/usr/include/openssl=, =lib{crypto,ssl,z}.so= to $PWD
+    3. Run cargo with:
+       #+BEGIN_SRC sh
+         TARGET_CFLAGS="-I $PWD" cargo rustc --release --target armv7-unknown-linux-gnueabihf -- -C linker=arm-linux-gnueabihf-gcc -lz -L $PWD
+       #+END_SRC
+    4. Copy =target/armv7-unknown-linux-gnueabihf/release/luser= to the target
+
    You can run tests for the python version:
 
    #+NAME: doctest_luser
