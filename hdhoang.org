@@ -336,10 +336,10 @@
    #+END_SRC
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      try:
-         from urllib.request import urlopen, build_opener
+         from urllib.request import urlopen, build_opener, HTTPCookieProcessor as Cookie
          from urllib.parse import quote
      except ImportError:
-         from urllib2 import urlopen, quote, build_opener
+         from urllib2 import urlopen, quote, build_opener, HTTPCookieHandler as Cookie
 
      from bs4 import BeautifulSoup
 
@@ -689,7 +689,7 @@
          for u in urls:
              if any(d in u for d in [<<uninteresting>>]):
                     continue
-             request = build_opener()
+             request = build_opener(Cookie())
              request.addheaders = [('Accept-Encoding', 'gzip')]
              response = request.open(u)
              if response.info().get('Content-Encoding') == 'gzip':
