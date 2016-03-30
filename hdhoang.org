@@ -1324,6 +1324,18 @@
     #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
       <<pacman>> -S tor
     #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/tor/torrc :tangle-mode 420
+      ContactInfo tor at <<domain>>
+      Nickname kub
+      DirPort 4660
+      ORPort 34289
+      SOCKSPort <<prefix>>185:9050
+      MaxAdvertisedBandwidth 40 KBytes
+      ExitPolicy reject *:*
+
+      DataDirectory /var/lib/tor
+      Log notice syslog
+   #+END_SRC
 
 *** HTTP
     #+BEGIN_SRC sh
