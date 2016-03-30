@@ -284,7 +284,8 @@
    :EXPORT_FILE_NAME: ~/Public/luser
    :END:
    [[irc:chat.freenode.net/#vnluser][#vnluser]] used to have a bot to grab link titles and search google.
-   It didn't work very well with Vietnamese characters, so it was retired. Here's a replacement in rust and python. Its name is
+   It didn't work very well with Vietnamese characters, so it was
+   retired. Here's a replacement in rust and python. Its name is
 
    #+NAME: botname
    #+BEGIN_SRC text
@@ -405,9 +406,8 @@
      const NAME: &'static str = "<<botname>>";
      fn main() {
          let freenode = IrcServer::from_config(Config {
-                            owners: Some(vec!["<<username>>".into()]),
-                            username: Some(NAME.into()),
-                            nickname: Some(format!("{}", NAME)),
+                            owners: Some(vec![env!("USER").into()]),
+                            nickname: Some(NAME.into()),
                             alt_nicks: Some((0..10).map(|n| format!("{}-{}", NAME, n)).collect()),
                             server: Some("chat.freenode.net".into()),
                             port: Some(8000),
@@ -428,7 +428,7 @@
 
      def change_nick(c, e):
          from random import randint
-         c.nick('{}-{}'.format(c.get_nickname(), str(randint(0, 9))))
+         c.nick('{}-{}'.format(NAME, str(randint(0, 9))))
      <<botname>>.on_nicknameinuse = change_nick
 
      def join_channels(c, e):
@@ -576,11 +576,11 @@
          if nick.startswith(NAME): return
          my_nick = c.get_nickname()
          msg = e.arguments[0]
+         if msg == "report!":
+             return c.privmsg(e.target, "operated by {} with source code {}".format(os.getenv('USER'), post_source()))
          addressed = msg.startswith(my_nick)
          def handling(e):
              return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
-         if msg == "report!":
-             return c.privmsg(e.target, "operated by {} with source code {}".format(os.getenv('USER'), post_source()))
          if msg.startswith('s/'):
              parts = msg.split('/')
              if len(parts) >= 3 and handling(e) and nick in last_lines:
