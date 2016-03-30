@@ -1089,6 +1089,7 @@
     export GTK_IM_MODULE=ibus
   #+END_SRC
   #+BEGIN_SRC sh :tangle ~/.config/openbox/autostart
+    compton &
     xbacklight =30 &
     tint2 &
     kwalletd &
