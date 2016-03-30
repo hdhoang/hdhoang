@@ -311,6 +311,13 @@
       reconnect automatically]], but possibly ipv6 tunneling is
       interfering.
 
+   You can run tests for the python version:
+
+   #+NAME: doctest_luser
+   #+BEGIN_SRC sh
+     python -m doctest ~/Public/<<botname>>.py
+   #+END_SRC
+
    Now on to the code. Unfortunately, tangling from this Org source
    loses indentations, so the python code can't be commented on line
    by line. Here are the API keys and rust build setup:
@@ -343,7 +350,7 @@
 
    Importing dependencies. Python really comes with batteries.
 
-   #+BEGIN_SRC rust :tangle ~/Public/luser.rs :post rustfmt_luser
+   #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      extern crate regex;
      extern crate irc;
      extern crate scraper;
@@ -948,10 +955,6 @@
      sys.setdefaultencoding('utf8')
    #+END_SRC
 
-   #+NAME: rustfmt_luser
-   #+BEGIN_SRC sh
-     rustfmt ~/Public/<<botname>>.rs
-   #+END_SRC
 * OpenVPN
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S openvpn
