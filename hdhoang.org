@@ -1407,15 +1407,15 @@
 
 *** IPsec
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/ipsec.conf
-      ca <<username>>
+      ca letsencrypt
           auto=add
-          cacert=ca.crt
+          cacert=/etc/letsencrypt/live/zahe.me/chain.pem
 
       conn kub
           auto=add
-          left=<<prefix>>54
-          leftid=k.<<domain>>
-          leftcert=kub.crt
+          left=<<prefix>>185
+          leftid=kub.<<domain>>
+          leftcert=/etc/letsencrypt/live/zahe.me/cert.pem
           leftsubnet=<<prefix>>0/24
           leftfirewall=yes
           leftdns=<<prefix>>1
