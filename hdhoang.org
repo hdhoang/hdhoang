@@ -367,6 +367,7 @@
    #+END_SRC
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
+     # -*- coding: utf-8 -*-
      try:
          from urllib.request import urlopen, build_opener, HTTPCookieProcessor
          from urllib.parse import quote
@@ -742,6 +743,18 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def title(text):
+         """
+         >>> title('http://www.vietnamplus.vn/tu-14-dong-loat-tang-phi-cao-toc-ha-noihai-phong-quoc-lo-5/378664.vnp')
+         'Từ 1/4: Đồng loạt tăng phí cao tốc Hà Nội-Hải Phòng, Quốc lộ 5  | Vietnam+ (VietnamPlus)'
+         >>> title('https://<<domain>>/<<botname>>.html https://<<domain>>/<<botname>>.html')
+         'IRC bot / IRC bot'
+         >>> title('http://www.nytimes.com/2016/01/26/business/marvin-minsky-pioneer-in-artificial-intelligence-dies-at-88.html')
+         'Marvin Minsky, Pioneer in Artificial Intelligence, Dies at 88 - The New York Times'
+         >>> title('http://www.baomoi.com/bao-nhieu-tan-bot-trung-quoc-da-duoc-nhap-ve-lam-tra-o-long-tea-plus/c/18486151.epi')
+         'Bao nhiêu tấn bột Trung Quốc đã được nhập về làm trà Ô long TEA Plus? - GĐ&XH;'
+         >>> title('http://news.zing.vn/chi-tiet-ban-do-cam-duong-dip-29-o-ha-noi-post574142.html')
+         'Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn'
+         """
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
@@ -806,6 +819,12 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def wolframalpha(text):
+         """
+         >>> wolframalpha('mass of sol')
+         'Input interpretation: Sun | mass / Result: 1.988435×10^30 kg  (kilograms) / Unit conversions: 4.383749×10^30 lb  (pounds) / 2.191874×10^27 sh tn  (short tons) / 1.988435×10^33 grams / 1 M_☉  (solar ma http://wolframalpha.com/?input=mass%20of%20sol'
+         >>> wolframalpha('é')
+         'Input interpretation: é  (character) / Visual form: Name: Latin small letter e with acute / Positions in alphabets: Czech | 9th letter (33rd letter from the end) Slovak | 12th letter (35th letter from http://wolframalpha.com/?input=%C3%A9'
+         """
          import xml.etree.ElementTree as ET
          r = urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text))
          tree = ET.parse(r)
@@ -855,6 +874,10 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def google(text):
+         """
+         >>> google('á')
+         'Á - Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/%C3%81'
+         """
          import json
          r = urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text))
          data = json.loads(r.read().decode('utf-8'))['responseData']
@@ -895,6 +918,20 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def translate(text):
+         """
+         >>> translate('la-en ad astra per aspera')
+         'la-en: to the stars through rough'
+         >>> translate("vi you think you're good?")
+         'en-vi: ngươi nghĩ ngươi giỏi không?'
+         >>> translate('en mày nghĩ mày ngon?')
+         "vi-en: you think you're so tough?"
+         >>> translate('klingon')
+         'Missing text'
+         >>> translate('jbo hello')
+         Traceback (most recent call last):
+           ...
+         urllib.error.HTTPError: HTTP Error 400: BAD REQUEST
+         """
          import json
          (lang, _, text) = text.partition(' ')
          if not text:
