@@ -276,7 +276,7 @@
        or
 
        #+BEGIN_SRC sh
-         ip -6 route add default src $address dev $tunnel_interface
+         ip -6 route replace default src $address dev $tunnel_interface
        #+END_SRC
 
 ** IRC bot
