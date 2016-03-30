@@ -292,7 +292,7 @@
    #+END_SRC
 
    There are several things it could improve on:
-    - [ ] Handle gzip responses (news.zing.vn and baomoi.com): These
+    - [X] Handle gzip responses (news.zing.vn and baomoi.com): These
       sites always return gzip-encoded HTML, even when Accept-Encoding
       doesn't list it. You can check by comparing =curl= vs =curl
       --compressed=.
@@ -303,7 +303,7 @@
     - [ ] Tests: It would be difficult to interface with IRC servers,
       but at least the handling functions should be tested.
     - [ ] CLI interface: Like chatbot's, this will speed up testing.
-    - [ ] NYtimes access: The cookie needs to be periodically rebaked.
+    - [X] NYtimes access: The cookie needs to be periodically rebaked.
       Theoretically cloaking as googlebot should work.
     - [ ] Pod titles in rust: Quick-xml doesn't return the attributes
       iterator currently.
