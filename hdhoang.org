@@ -638,7 +638,11 @@
    #+END_SRC
 
    Get title from URLs. The rust version only grabs the first URL in
-   each message, but it ignores a list of uninteresting domains.
+   each message. Some uninteresting domains are ignored:
+   #+NAME: uninteresting
+   #+BEGIN_SRC text
+     "imgur.com/", "smbc-comics.com/", "libgen.io/"
+   #+END_SRC
 
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      const TITLE_REGEX: &'static str = r"https?:[^\s]+";
@@ -647,7 +651,7 @@
          use scraper::{Html, Selector};
 
          let url = regex.captures(&line).unwrap().expand("$0");
-         if ["imgur.com/", "smbc-comics.com/"].iter().any(|uninteresting| url.contains(uninteresting)) {
+         if [<<uninteresting>>].iter().any(|domain| url.contains(domain)) {
              return Ok(String::new());
          }
          let mut response = try!(Client::new()
@@ -683,7 +687,7 @@
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
-             if any(lambda d: d in u, ['imgur.com', 'smbc-comics.com']):
+             if any(d in u for d in [<<uninteresting>>]):
                     continue
              request = build_opener()
              request.addheaders = [('Accept-Encoding', 'gzip')]
