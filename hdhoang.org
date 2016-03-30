@@ -2006,7 +2006,8 @@
                                   '((sh . t)))
      (setq org-src-fontify-natively t)
      (use-package htmlize :ensure)
-     (setq org-export-initial-scope 'subtree)
+     (setq org-export-initial-scope 'subtree
+           org-babel-use-quick-and-dirty-noweb-expansion t)
      (setq org-latex-pdf-process '("xelatex -interaction nonestopmode -output-directory %o %f"))
      (setq org-html-doctype "html5"
            org-html-html5-fancy t
