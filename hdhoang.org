@@ -1098,7 +1098,7 @@
     quasselclient &
     yakuake &
     keepass &
-    pragha &
+    pragha -p &
     viber &
   #+END_SRC
 
