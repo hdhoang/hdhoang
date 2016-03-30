@@ -140,6 +140,7 @@
   :PROPERTIES:
   :EXPORT_OPTIONS: toc:nil num:nil
   :END:
+
   #+BEGIN_SRC css :tangle ~/Public/blog.css
     body {
         background: #fdf6e3; color: #657b83;
@@ -157,6 +158,7 @@
         float: right;
     }
   #+END_SRC
+
 ** hdhoang
    :PROPERTIES:
    :EXPORT_FILE_NAME: ~/Public/index
@@ -185,6 +187,7 @@
    :PROPERTIES:
    :EXPORT_FILE_NAME: ~/Public/borrow-die
    :END:
+
    #+BEGIN_SRC rust :tangle ~/Public/die.rs
      #[derive(Debug)]
      enum D3 { One, Two, Three }
@@ -194,19 +197,25 @@
          }
      }
    #+END_SRC
+
    Our main character, named Max, has a d3.
+
    #+BEGIN_SRC rust :tangle ~/Public/die.rs
      fn main() {
          print!("Hi, I'm Max. ");
          let mut die = D3::Two;
          die.peek("Max");
    #+END_SRC
+
    Max can rolls his die:
+
    #+BEGIN_SRC rust :tangle ~/Public/die.rs
          die = D3::One;
          die.peek("Max");
    #+END_SRC
+
    Max invites Alice and Bob over for a game of dice. The die is on the table and everyone can see what it's showing.
+
    #+BEGIN_SRC rust :tangle ~/Public/die.rs
          'table: loop {
              let bob = &die;
@@ -215,7 +224,9 @@
              break 'table; // that's enough peeking for now
          }
     #+END_SRC
+
     It's Alice's turn, she picks up the die and rolls.
+
     #+BEGIN_SRC rust :tangle ~/Public/die.rs
          'alices_turn: loop {
              let alice = &mut die;
@@ -224,11 +235,14 @@
              break 'alices_turn;
          }
     #+END_SRC
+
     It lands on the table and now everyone sees what Alice rolled.
+
     #+BEGIN_SRC rust :tangle ~/Public/die.rs
          die.peek("Max");
      }
    #+END_SRC
+
    [[file:borrow-die.rs][Full code.]]
 ** Vanity plate on IRC
    :PROPERTIES:
@@ -242,6 +256,7 @@
     1. Request an IPv6 tunnel with HE
     2. Delegate its rDNS to [[https://dns.he.net][dns.he.net]]
     3. Match forward and reverse DNS between an address and your hostname:
+
        #+BEGIN_SRC sh :results replace
          bash -c 'diff <(nslookup test-plate.hdhoang.space.) <(nslookup 2001:470:36:62a::cccc)'
        #+END_SRC
@@ -251,12 +266,15 @@
        - Choose an address, point it to your hostname
        - Add the address to the hostname's AAAA records
     6. Connect to Freenode with that address as the source, for example:
+
        #+BEGIN_SRC sh
          for fn in $(dig +short -t aaaa chat.freenode.net); do
              ip -6 route add $fn src $address dev $tunnel_interface;
          done;
+
        #+END_SRC
        or
+
        #+BEGIN_SRC sh
          ip -6 route add default src $address dev $tunnel_interface
        #+END_SRC
@@ -267,6 +285,7 @@
    :END:
    [[irc:chat.freenode.net/#vnluser][#vnluser]] used to have a bot to grab link titles and search google.
    It didn't work very well with Vietnamese characters, so it was retired. Here's a replacement in rust and python. Its name is
+
    #+NAME: botname
    #+BEGIN_SRC text
      luser
@@ -295,14 +314,17 @@
    Now on to the code. Unfortunately, tangling from this Org source
    loses indentations, so the python code can't be commented on line
    by line. Here are the API keys and rust build setup:
+
    #+NAME: wolframalpha_key
    #+BEGIN_SRC text
      3JEW42-4XXE264A93
    #+END_SRC
+
    #+NAME: yandex_key
    #+BEGIN_SRC text
      trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810
    #+END_SRC
+
    #+BEGIN_SRC conf :tangle ~/Public/luser.toml
      [package]
      name = "<<botname>>"
@@ -318,7 +340,9 @@
      rustc-serialize = "*"
      url = "*"
    #+END_SRC
+
    Importing dependencies. Python really comes with batteries.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs :post rustfmt_luser
      extern crate regex;
      extern crate irc;
@@ -334,6 +358,7 @@
      use std::io::Read;
      use std::collections::HashMap;
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      try:
          from urllib.request import urlopen, build_opener, HTTPCookieProcessor as Cookie
@@ -386,6 +411,7 @@
                             .unwrap();
          freenode.identify().unwrap();
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      NAME = "<<botname>>"
      <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME)
@@ -400,7 +426,9 @@
          c.join("#vn"+NAME)
      <<botname>>.on_welcome = join_channels
    #+END_SRC
+
    Handling scaffolding
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
          let get_title = &get_title;
          let wolframalpha = &wolframalpha;
@@ -412,6 +440,7 @@
                          Handler(Regex::new(TRANSLATE_REGEX).unwrap(), translate)];
 
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def handle(c, e, msg):
          try:
@@ -449,6 +478,7 @@
          <<botname>>s.sort()
      <<botname>>.on_namreply = list_<<botname>>s
    #+END_SRC
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
          let mut last_lines = HashMap::new();
          let mut <<botname>>s = vec![];
@@ -467,20 +497,26 @@
              }
              if let Some(nick) = msg.source_nickname() {
    #+END_SRC
+
    Ignore bots and freenode
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                  if nick.contains("bot") || nick.contains("freenode") {
                      continue 'messages;
                  }
    #+END_SRC
+
    Update <<botname>>s list
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                  if nick.starts_with(NAME) {
                      let nick = String::from(nick);
                      match msg.command {
    #+END_SRC
+
    Do not merge the following arms. Otherwise a join #c1 -> insert ->
    join #c2 -> remove sequence might happen.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                          Command::JOIN(..) => {
                              if let Err(idx) = <<botname>>s.binary_search(&nick) {
@@ -489,8 +525,10 @@
                          }
 
    #+END_SRC
+
    The next lambdas are abusing python logical operator, but they read
    like English.
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def <<botname>>_joins(c, e):
          if e.source.nick not in <<botname>>s:
@@ -498,6 +536,7 @@
              <<botname>>s.sort()
      <<botname>>.on_join = lambda c, e: e.source.startswith(NAME) and <<botname>>_joins(c, e)
    #+END_SRC
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                          Command::QUIT(..) => {
                              if let Ok(idx) = <<botname>>s.binary_search(&nick) {
@@ -507,15 +546,19 @@
                          _ => (),
                      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>s.remove(e.source.nick)
    #+END_SRC
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
                      continue 'messages;
                  }
              }
    #+END_SRC
+
    Actual message processing. Ignore the other <<botname>>s.
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      last_lines = {}
      def on_pubmsg(c, e):
@@ -542,8 +585,10 @@
              handle(c, e, msg)
      <<botname>>.on_pubmsg = on_pubmsg
    #+END_SRC
+
    =trimmed_line= is here to hoist the trimmed line out of its
    assignment block. Rust: the compiler knows better than you do.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
              let channel;
              let trimmed_line;
@@ -613,9 +658,11 @@
          }
      }
    #+END_SRC
+
    Rust handler scaffolding: casting into a common =Error= type and
    associating regexes with their handling function. Rust is
    surprisingly more object-happy than python.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      #[derive(Debug)]
      enum Error {
@@ -639,6 +686,7 @@
 
    Get title from URLs. The rust version only grabs the first URL in
    each message. Some uninteresting domains are ignored:
+
    #+NAME: uninteresting
    #+BEGIN_SRC text
      "imgur.com/", "smbc-comics.com/", "libgen.io/"
@@ -682,6 +730,7 @@
          }
      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def title(text):
          titles = []
@@ -704,7 +753,9 @@
              if title: titles.append(title.string.replace('\n', '').strip())
          return ' / '.join(titles)
    #+END_SRC
+
    Ask Wolfram|Alpha, the knowledge engine.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      const WA_REGEX: &'static str = concat!(r"^(\.|!|:)", "wa (?P<query>.+)");
      fn wolframalpha(regex: &Regex, line: &str) -> Result<String, Error> {
@@ -743,6 +794,7 @@
          Ok(answers.join(" / "))
      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def wolframalpha(text):
          import xml.etree.ElementTree as ET
@@ -759,7 +811,9 @@
          r.close()
          return reply.replace('\n', ' ')
    #+END_SRC
+
    Returns the first Google result.
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      const GOOGLE_REGEX: &'static str = concat!(r"^(\.|!|:)", "g (?P<query>.+)");
      fn google(regex: &Regex, line: &str) -> Result<String, Error> {
@@ -789,6 +843,7 @@
          Ok(format!("{} {}", title, url))
      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def google(text):
          import json
@@ -799,7 +854,9 @@
              return '0 result'
          return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
    #+END_SRC
+
    Translates using [[https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/][Yandex]]:
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      const TRANSLATE_REGEX: &'static str = concat!(r"^(\.|!|:)", "tr (?P<lang>[^ ]+) (?P<text>.+)");
      fn translate(regex: &Regex, line: &str) -> Result<String, Error> {
@@ -826,6 +883,7 @@
          Ok(reply)
      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def translate(text):
          import json
@@ -837,7 +895,9 @@
          r.close()
          return data['lang'] + ": " + data['text'][0]
    #+END_SRC
+
    Posts its own source code:
+
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
      fn post_source_code() -> String {
          use url::form_urlencoded;
@@ -861,6 +921,7 @@
          }
      }
    #+END_SRC
+
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def post_source():
          try:
@@ -872,6 +933,7 @@
          return conn.getresponse().read().decode().strip()
    #+END_SRC
    Don't do this, just use python3
+
    #+BEGIN_SRC python :tangle /dev/null
      import sys
      reload(sys)
@@ -888,6 +950,7 @@
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S openvpn
   #+END_SRC
+
   #+NAME: openvpn_common
   #+BEGIN_SRC conf
     dev tun
@@ -949,11 +1012,13 @@
     <<prefix>>1 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL5T08oNKjMm7yWA0zqqqSwl6Vn0nlpoAlpP9USh0NewyfVO/xOGgkUWIlUU8p85Z3zK9YY3pl0zfQQrQHvp88Y=
     <<prefix>>185 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMCCrxVyoz4ekNh2zAbr2JzvJdojMMoHYnbo20Qjn3sW+P7FUuuiknzbX0aX81BZWdKFwspNLJAXHLoiS8zy8Wc=
   #+END_SRC
+
   #+BEGIN_SRC conf
     Host <<prefix>>1
     User root
     IdentityFile ~/.ssh/kub
   #+END_SRC
+
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'tramp
       '(add-to-list 'tramp-default-method-alist '("vorme" nil "scp")))
@@ -964,6 +1029,7 @@
     User <<username>>
     IdentityFile ~/.ssh/kub
   #+END_SRC
+
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'tramp
       '(add-to-list 'tramp-default-proxies-alist '("<<prefix>>185" "root" "/ssh:<<prefix>>185:")))
@@ -1009,6 +1075,7 @@
    #+END_SRC
 
    Put emacs on F4
+
    #+BEGIN_SRC conf
      [2]
      Description=Application settings for emacs
@@ -1020,6 +1087,7 @@
    #+END_SRC
 
    Put konsole on F6
+
    #+BEGIN_SRC conf
      [3]
      Description=Application settings for konsole
@@ -1086,11 +1154,13 @@
   #+END_SRC
 
   Code hosting sites:
+
   #+BEGIN_SRC conf :tangle ~/.ssh/known_hosts
     github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
     bitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==
     gitlab.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFSMqzJeV9rUzU4kWitGjeR4PWSa29SPqJ1fVkhtj3Hw9xjLVXVYrU9QlYWrOLXBpQ6KWjbjTDTdDkoohFzgbEY=
   #+END_SRC
+
   #+BEGIN_SRC conf :tangle ~/.ssh/config
     Host gitlab.com github.com bitbucket.org
     User git
@@ -1103,6 +1173,7 @@
   #+END_SRC
 
   Magit is awesome.
+
   #+BEGIN_SRC elisp :tangle ~/.emacs
     (eval-after-load 'use-package
       '(progn
@@ -1114,6 +1185,7 @@
   #+END_SRC
 
 * Crawl
+
   #+BEGIN_SRC conf :tangle ~/.crawlrc
     tile_full_screen = false
     autopickup_exceptions += <tomahawk, <throwing net, <javelin, <rock, <immol
@@ -1122,6 +1194,7 @@
 
 * ArchLinux
   Pacman config
+
   #+NAME: pacman_common
   #+BEGIN_SRC conf
     [options]
@@ -1143,6 +1216,7 @@
   #+END_SRC
 
   Refresh database
+
   #+BEGIN_SRC sh :dir /sudo::
     dirmngr --daemon
     pacman-key -r 7533BAFE69A25079
@@ -1151,6 +1225,7 @@
   #+END_SRC
 
   AUR helper
+
   #+BEGIN_SRC yaml :tangle ~/Copy/bin/aur :shebang #!/bin/ansible-playbook
     - hosts: arch
       gather_facts: no
@@ -1167,6 +1242,7 @@
   #+END_SRC
 
   Yaourt config
+
   #+BEGIN_SRC conf :tangle ~/.yaourtrc
     AURUPGRADE=1
     EXPORT=1
@@ -1176,6 +1252,7 @@
   #+END_SRC
 
   Base utils
+
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S haveged p7zip parallel pkgfile yaourt
     <<system_ctl>> enable --now haveged
@@ -1186,11 +1263,13 @@
   #+END_SRC
 
   Dev-env:
+
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S base-devel rust android-tools
   #+END_SRC
 
   Monitoring:
+
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S ethtool lm_sensors net-tools psmisc \
         procps-ng inetutils ltrace sysdig atop iotop
@@ -1201,6 +1280,7 @@
   #+END_SRC
 
   Of course emacs is installed, now run it
+
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S emacs-pkgbuild-mode
   #+END_SRC
@@ -1243,6 +1323,7 @@
       Tunnel=he-ipv6
       Address=<<prefix6>>1/64
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/network/he-ipv6.netdev
       [NetDev]
       Name=he-ipv6
@@ -1254,12 +1335,14 @@
       Remote=216.218.221.42
       TTL=255
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/network/he-ipv6.network
       [Match]
       Name=he-ipv6
       [Network]
       Address=2001:470:35:62a::2/64
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/system/he-ipv6-route.service
       [Unit]
       After=network.target
@@ -1273,6 +1356,7 @@
       [Install]
       WantedBy=multi-user.target
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/radvd.conf
       interface eth0 {
       AdvSendAdvert on;
@@ -1285,6 +1369,7 @@
       };
       };
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/resolv.conf
       nameserver <<prefix>>1
     #+END_SRC
@@ -1301,6 +1386,7 @@
       [aur]
       Include = /etc/pacman.d/mirrorlist
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/pacman.d/mirrorlist
       Server = http://vn.mirror.archlinuxarm.org/$arch/$repo
     #+END_SRC
@@ -1310,6 +1396,7 @@
       echo none > /sys/class/leds/cubieboard:green:usr/trigger
       echo mmc0 > /sys/class/leds/cubieboard:blue:usr/trigger
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/system/leds.service
       [Service]
       Type=oneshot
@@ -1324,6 +1411,7 @@
     #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
       <<pacman>> -S tor
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/tor/torrc :tangle-mode 420
       ContactInfo tor at <<domain>>
       Nickname kub
@@ -1341,6 +1429,7 @@
     #+BEGIN_SRC sh
       <<pacman>> -S nginx
     #+END_SRC
+
     #+BEGIN_Src c :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
       # -*- mode: c -*-
       events {}
@@ -1413,9 +1502,10 @@
     #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
       <<pacman>> -S minidlna
     #+END_SRC
-   #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
+
+    #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
       <<system_ctl>> enable --now minidlna
-    #+END_SRC
+     #+END_SRC
 
 *** IPsec
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/ipsec.conf
@@ -1485,14 +1575,18 @@
 ** ton
 *** Hardware
     Fix USB interfering with suspending
+
     #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
       echo EHC1 > /proc/acpi/wakeup
       echo EHC2 > /proc/acpi/wakeup
     #+END_SRC
+
     Let powertop autotune. This conveniently waits for the trackpoint to become available for the last section.
+
     #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
       powertop --auto-tune
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo::/etc/systemd/system/s230u.service
       [Service]
       Type=oneshot
@@ -1502,6 +1596,7 @@
       [Install]
       WantedBy=basic.target
     #+END_SRC
+
     #+BEGIN_SRC sh :dir /sudo::
       <<system_ctl>> enable --now s230u
     #+END_SRC
@@ -1511,6 +1606,7 @@
       chmod u=rw,go= /swap
       mkswap /swap
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
       LABEL=home /home/<<username>> ntfs-3g noatime,nofail
       LABEL=ESP /boot vfat
@@ -1537,6 +1633,7 @@
       Destination=192.168.1.1
       Source=192.168.1.252
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle /sudo::/etc/systemd/network/dhcp.network
       [Network]
       DHCP=ipv4
@@ -1556,6 +1653,7 @@
     SigLevel = PackageRequired
     Include = /etc/pacman.d/antergos-mirrorlist
   #+END_SRC
+
   #+BEGIN_SRC conf :tangle /sudo::/etc/pacman.d/mirrorlist
     Server = http://f.archlinuxvn.org/archlinux/$repo/os/$arch
   #+END_SRC
@@ -1650,6 +1748,7 @@
 
 *** Desktop
     These DBus services are provided by plasma-workspace-units.
+
     #+BEGIN_SRC sh :dir /sudo::
       rm /usr/share/dbus-1/services/org.kde.{kded5,kglobalaccel,kuiserver,kwalletd5}.service
     #+END_SRC
@@ -1658,18 +1757,23 @@
      #+BEGIN_SRC sh :dir /sudo::
        <<system_ctl>> enable --now systemd-networkd-wait-online sshd
      #+END_SRC
+
      #+BEGIN_SRC conf :tangle /sudo::/etc/fstab
        //192.168.208.1/home /home/<<username>> cifs credentials=/etc/cifs,uid=1000,gid=1000,file_mode=0600
      #+END_SRC
+
      On the host side, open 445/tcp to this VM, and run emacs over X with MobaXterm:
+
      #+BEGIN_SRC conf :tangle bin/emacs.moba
        emacs =  #109#0%192.168.208.128%22%<<username>>%%-1%0%cp -r ~/.gnupg /run/user/1000 && chmod -R 700 /run/user/1000/.gnupg && export GNUPGHOME__EQUAL__/run/user/1000/.gnupg && setxkbmap dvorak && gpg-agent --enable-ssh-support --daemon emacs%%22%%0%0%Interactive shell%h:\.ssh\kub%%0%0%0%0%%1080%%0#MobaFont%10%0%0%0%15%236,236,236%0,0,0%180,180,192%0%-1%0%%xterm%-1%0%0,0,0%54,54,54%255,96,96%255,128,128%96,255,96%128,255,128%255,255,54%255,255,128%96,96,255%128,128,255%255,54,255%255,128,255%54,255,255%128,255,255%236,236,236%255,255,255%80%24%0#0
      #+END_SRC
+
      Remember to quit emacs before suspending.
 ***** Megasync
       #+BEGIN_SRC sh :dir /sudo::
        <<pacman>> -S xorg-server-xvfb megasync
       #+END_SRC
+
       #+BEGIN_SRC conf :tangle ~/.config/systemd/user/megasync.service
        [Unit]
        Description=Headless megasync
@@ -1680,21 +1784,25 @@
        [Install]
        WantedBy=default.target
       #+END_SRC
+
       #+BEGIN_SRC sh
        <<user_ctl>> enable --now megasync
       #+END_SRC
 
 **** Keyboard
      Use dvorak, swap caps for ctrl
+
      #+BEGIN_SRC conf :tangle /sudo::/usr/share/kbd/keymaps/caps2ctrl.map
        include "/usr/share/kbd/keymaps/i386/dvorak/dvorak.map.gz"
        keycode 58 = Control
      #+END_SRC
+
      #+BEGIN_SRC sh :dir /sudo::
        localectl set-keymap caps2ctrl
      #+END_SRC
 
      Base Japanese IME on dvorak, swap caps for ctrl
+
      #+BEGIN_SRC conf :tangle keyboard.reg :comments no
        Windows Registry Editor Version 5.00
 
@@ -1704,7 +1812,9 @@
        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000411]
        "Layout File"="kbddv.dll"
      #+END_SRC
+
      Tangle registry files as UTF-16LE with BOM
+
      #+BEGIN_SRC elisp :tangle ~/.emacs
        (add-to-list 'file-coding-system-alist '("\\.reg\\'" . utf-16le-with-signature-dos))
        (add-hook 'org-babel-post-tangle-hook 'strip-initial-newline)
@@ -1712,21 +1822,26 @@
          (when (string-match "^Windows Registry" (buffer-string))
            (join-line 1)))
      #+END_SRC
+
      Import into registry
+
      #+BEGIN_SRC sh
        start regedit $PWD/*reg
      #+END_SRC
 
 **** Pointer
      Up sensitivity
+
      #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/s230u :tangle-mode 320
        echo 200 > /sys/bus/serio/devices/serio2/sensitivity
      #+END_SRC
+
      #+BEGIN_SRC sh :dir /sudo::
        <<pacman>> -S xf86-input-libinput
      #+END_SRC
 
      Use natural scrolling on touchpad
+
      #+BEGIN_SRC conf :tangle /sudo::/etc/X11/xorg.conf.d/pointer.conf
        Section "InputClass"
                Identifier "Natural scrolling"
@@ -1740,10 +1855,12 @@
      #+BEGIN_SRC sh :dir /sudo::
        <<pacman>> -S acpid
      #+END_SRC
+
      #+BEGIN_SRC text :tangle /sudo::/etc/acpi/events/rotation-button
        event=ibm/hotkey LEN0068:00 00000080 00006020
        action=sudo -u <<username>> DISPLAY=:0 /usr/local/bin/rotate-screen
      #+END_SRC
+
      #+BEGIN_SRC sh :tangle /sudo::/usr/local/bin/rotate-screen :shebang #!/bin/sh :tangle-mode 365
        case $(xrandr | grep LVDS1 | cut -f 4 -d ' ' | tr -d '(') in
            normal) new="left";;
@@ -1762,6 +1879,7 @@
            xinput set-prop "$dev" "Coordinate Transformation Matrix" $matrix
        done
      #+END_SRC
+
      #+BEGIN_SRC sh :dir /sudo::
        <<system_ctl>> enable --now acpid
      #+END_SRC
@@ -1770,6 +1888,7 @@
     #+BEGIN_SRC sh :dir /sudo::
       <<pacman>> -S picard chromaprint
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle ~/.config/MusicBrainz/Picard.conf
       [setting]
       server_host=musicbrainz.org
@@ -1819,6 +1938,7 @@
       remove_ape_from_mp3=true
       remove_id3_from_flac=true
     #+END_SRC
+
 *** mpd
     :PROPERTIES:
     :header-args+: :dir ~
@@ -1830,21 +1950,25 @@
     #+END_SRC
 
     Shuffle and play
+
     #+BEGIN_SRC sh :results raw
       mpc -q clear && mpc load pq && mpc -q shuffle && mpc play
     #+END_SRC
 
     Delete currently playing track
+
     #+BEGIN_SRC sh :eval query
       rm -v <<music>>/"$(mpc -f %file% | head -1)"
     #+END_SRC
 
 *** mpv
+
     #+BEGIN_SRC conf :tangle ~/.config/mpv/mpv.conf
       sub-auto=fuzzy
       hwdec=auto
       hwdec-codecs=all
     #+END_SRC
+
     #+BEGIN_SRC conf :tangle ~/.config/mpv/input.conf
       q quit_watch_later
       MOUSE_BTN0 cycle pause
@@ -1872,12 +1996,14 @@
 
       u cycle fullscreen
     #+END_SRC
+
 * Emacs
   :PROPERTIES:
   :header-args+: :tangle ~/.emacs
   :END:
 
   OOBE settings:
+
   #+BEGIN_SRC elisp
     (server-mode t)
     (global-set-key (kbd "C-x C-r")
@@ -1905,6 +2031,7 @@
   #+END_SRC
 
   Package management
+
   #+BEGIN_SRC elisp
     (package-initialize)
     (setq package-archives
@@ -1919,12 +2046,14 @@
   #+END_SRC
 
   Color theme
+
   #+BEGIN_SRC elisp
     (use-package color-theme-sanityinc-solarized
       :config (load-theme 'sanityinc-solarized-light t))
   #+END_SRC
 
   Font on Windows
+
   #+BEGIN_SRC elisp
     (when (eq window-system 'w32)
       (if (> window-system-version 5)
@@ -1934,6 +2063,7 @@
 
 ** Discovery
    Learn what's available under prefix keys
+
    #+BEGIN_SRC elisp
      (use-package which-key :ensure
        :diminish ""
@@ -1942,6 +2072,7 @@
 
 ** Editing
    Vim-style
+
    #+BEGIN_SRC elisp
      (use-package evil
        :config
@@ -1971,6 +2102,7 @@
    #+END_SRC
 
    Aggressive indent
+
    #+BEGIN_SRC elisp
      (setq tab-always-indent 'complete)
      (use-package aggressive-indent
@@ -1981,6 +2113,7 @@
    #+END_SRC
 
    Switch window with ace
+
    #+BEGIN_SRC elisp
      (use-package ace-window
        :config (ace-window-display-mode 1)
@@ -1988,6 +2121,7 @@
    #+END_SRC
 
    Do things with helm:
+
    #+BEGIN_SRC elisp
      (use-package helm
        :config
@@ -2009,6 +2143,7 @@
    #+END_SRC
 
 ** Org
+
    #+BEGIN_SRC elisp
      (add-hook 'org-mode-hook
                '(lambda ()
@@ -2031,6 +2166,7 @@
    #+END_SRC
 
 *** Crypt
+
     #+BEGIN_SRC elisp
       (require 'org-crypt)
       (add-hook 'org-mode-hook
@@ -2042,11 +2178,13 @@
     #+END_SRC
 
     Make it possible to tangle encrypted block
+
     #+BEGIN_SRC elisp
       (remove-hook 'org-babel-pre-tangle-hook #'save-buffer)
     #+END_SRC
 
 ** Doc-View
+
    #+BEGIN_SRC elisp
      (eval-after-load 'doc-view
        '(bind-key (kbd "<mouse-1>") #'doc-view-scroll-up-or-next-page doc-view-mode-map))
@@ -2057,6 +2195,7 @@
    #+END_SRC
 
 ** Dired
+
    #+BEGIN_SRC elisp
      (use-package dired+
        :config
@@ -2077,11 +2216,13 @@
 
 ** Eshell
    Put eshell on a convenient binding
+
    #+BEGIN_SRC elisp
      (global-set-key (kbd "C-x M-m") #'eshell)
    #+END_SRC
 
    I like the prompt to be on a separate line.
+
    #+BEGIN_SRC elisp
      (setq eshell-prompt-function
            '(lambda ()
@@ -2091,6 +2232,7 @@
    #+END_SRC
 
    These are terminal-manipulating commands
+
    #+BEGIN_SRC elisp
      (eval-after-load 'em-term
        '(progn
@@ -2100,11 +2242,13 @@
    #+END_SRC
 
    Profile:
+
    #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/profile :no-expand
      addpath ~/Copy/bin
    #+END_SRC
 
    Aliases:
+
    #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias
      alias vim find-file $1
      alias j journalctl -afb $*
@@ -2115,6 +2259,7 @@
    #+END_SRC
 
 * Ansible
+
   #+BEGIN_SRC sh :dir /sudo::
     <<pacman>> -S ansible
   #+END_SRC
@@ -2133,6 +2278,7 @@
    :END:
 
    Here are the hosts and their variables
+
    #+BEGIN_SRC conf
      [arch]
      kub ansible_python_interpreter=/usr/bin/python2
@@ -2153,12 +2299,14 @@
    :END:
 
    Keep the inventory here
+
    #+BEGIN_SRC conf
      [defaults]
      inventory = ~/.ansible_inventory
    #+END_SRC
 
    For some reason ControlMaster isn't working
+
    #+BEGIN_SRC conf
      [ssh_connection]
      ssh_args=-o ControlMaster=no
@@ -2183,94 +2331,112 @@
   #+END_SRC
 
   Use backspace to go back:
+
   #+BEGIN_SRC vimrc
     set! browser.backspace_action=0
   #+END_SRC
 
   Don't let middle mouse paste:
+
   #+BEGIN_SRC vimrc
     set! middlemouse.contentLoadURL=false
   #+END_SRC
 
   Restore C-j for Downloads:
+
   #+BEGIN_SRC vimrc
     map <C-j> -ex dialog downloads
   #+END_SRC
 
   Bind stop to an easy binding:
+
   #+BEGIN_SRC vimrc
     map s <C-c>
   #+END_SRC
 
   Make scrolling easier:
+
   #+BEGIN_SRC vimrc
     map <space> <C-d>
     map <S-space> <C-u>
   #+END_SRC
 
   Pin tab:
+
   #+BEGIN_SRC vimrc
     map <A-p> -ex pintab!
   #+END_SRC
 
   Move to first or last:
+
   #+BEGIN_SRC vimrc
     map <A-!> -ex tabm 1
     map <A-$> -ex tabm $
   #+END_SRC
 
   Fast switching:
+
   #+BEGIN_SRC vimrc
     map -m normal,insert <F1> <C-^>
   #+END_SRC
 
   Don't raise these openings:
+
   #+BEGIN_SRC vimrc
     set activate-=diverted,links,tabopen,paste
   #+END_SRC
 
   Open help in a new tab
+
   #+BEGIN_SRC vimrc
     set newtab=help
   #+END_SRC
 
   Keep hint keys under left fingers:
+
   #+BEGIN_SRC vimrc
     set hintkeys=12345
   #+END_SRC
 
   Make hint text readable
+
   #+BEGIN_SRC vimrc
     highlight Hint -append font-size: 14px !important
   #+END_SRC
 
   Unzoom image:
+
   #+BEGIN_SRC vimrc
     map <A-t> -js content.document.toggleImageSize()
   #+END_SRC
 
   Replace the status line with navigation bar, and show link in the commandline:
+
   #+BEGIN_SRC vimrc
     set guioptions=bTrc
     set showstatuslinks=command
   #+END_SRC
 
   Scroll by one line:
+
   #+BEGIN_SRC vimrc
     set scrollsteps=1
   #+END_SRC
 
   Show feeds first in pageinfo:
+
   #+BEGIN_SRC vimrc
     set pageinfo=fgmse
   #+END_SRC
 
   Use visual bell:
+
   #+BEGIN_SRC vimrc
     set visualbell
   #+END_SRC
 
   Bookmarks and preferences:
+
   #+BEGIN_SRC vimrc
     map <C-S-s> -ex bmark -keyword ac -t config about:config
     \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
@@ -2329,24 +2495,29 @@
   #+END_SRC
 
   Strip tracker from location, thanks to [[https://userscripts.org/scripts/show/93825][Bruno Barão]] and [[https://github.com/5digits/dactyl/commit/7a1ffa5b555399c5d0925ad599e2640070bd128d][Kris Maglione]].
+
   #+BEGIN_SRC vimrc
     autocmd DOMLoad (utm|wa)_ -js win.history.replaceState("Remove trackers", '', doc.location.href.replace(/&?(utm|wa)_[^&]+/g,'').replace(/\?$/,''))
   #+END_SRC
 
   Facebook
+
   #+BEGIN_SRC vimrc
     bmark -keyword fb -t facebook https://fb.me/%s
     map <A-s> -js dactyl.open("https://www.facebook.com/sharer/sharer.php?u=" + content.location)
   #+END_SRC
 
   Inoreader
+
   #+BEGIN_SRC vimrc
     map <A-f> -js dactyl.open("https://www.inoreader.com/?add_feed=" + content.location)
     map <A-w> -js dactyl.open("https://www.inoreader.com/bookmarklet/save_web_page/" + encodeURIComponent(content.location))
     js services.permissions.add(services.io.newURI("http:inoreader.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
     set passkeys+=inoreader.com:jkgafswhq
   #+END_SRC
+
   Get videos from starred items
+
   #+BEGIN_SRC sh :tangle ~/.bash_login
     function videos() {
         wget -O- \
@@ -2361,12 +2532,14 @@
   #+END_SRC
 
   ownCloud News
+
   #+BEGIN_SRC vimrc
     set passkeys+=kub.<<domain>>/index.php/apps/news/:jkrolfA
     js services.permissions.add(services.io.newURI("https:kub.<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
   #+END_SRC
 
   Site keyboard shortcuts:
+
   #+BEGIN_SRC vimrc
     set passkeys+=tumblr.com:jk
     set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpux'
@@ -2374,32 +2547,39 @@
   #+END_SRC
 
   Switch to reader mode:
+
   #+BEGIN_SRC vimrc
     map <A-r> -js dactyl.open("about:reader?url=" + content.location)
   #+END_SRC
 
 * Windows
 ** Portables
+
    #+BEGIN_SRC bat :tangle bin/pe.cmd
      cd /d %~dp0\Tools
      start /b procexp /e /accepteula
    #+END_SRC
+
    #+BEGIN_SRC bat :tangle bin/pi.cmd
      cd /d %~dp0\picard
      start /b picard
    #+END_SRC
+
    #+BEGIN_SRC bat :tangle bin/fx.cmd
      cd /d %~dp0\fx
      start /b firefox
    #+END_SRC
+
    #+BEGIN_SRC bat :tangle bin/tv.cmd
      cd /d %~dp0\teamviewer
      start /b teamviewer
    #+END_SRC
+
    #+BEGIN_SRC bat :tangle bin/kp.cmd
      cd /d %~dp0\keepass
      start /b keepass
    #+END_SRC
+
    #+BEGIN_SRC bat :tangle bin/ovpn.cmd
      cd /d %~dp0
      elevate openvpn --config hdhoang.ovpn
