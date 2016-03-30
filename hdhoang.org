@@ -150,6 +150,7 @@
     pre {
         padding: 1em;
         border: dotted 1px #657b83;
+        border-right: none;
     }
     .src-rust::before,
     .src-python::before {
