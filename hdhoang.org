@@ -767,16 +767,25 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def title(text):
          """
-         >>> title('http://www.vietnamplus.vn/tu-14-dong-loat-tang-phi-cao-toc-ha-noihai-phong-quoc-lo-5/378664.vnp')
-         'Từ 1/4: Đồng loạt tăng phí cao tốc Hà Nội-Hải Phòng, Quốc lộ 5  | Vietnam+ (VietnamPlus)'
-         >>> title('https://<<domain>>/<<botname>>.html https://<<domain>>/<<botname>>.html')
-         'IRC bot / IRC bot'
-         >>> title('http://www.nytimes.com/2016/01/26/business/marvin-minsky-pioneer-in-artificial-intelligence-dies-at-88.html')
-         'Marvin Minsky, Pioneer in Artificial Intelligence, Dies at 88 - The New York Times'
-         >>> title('http://www.baomoi.com/bao-nhieu-tan-bot-trung-quoc-da-duoc-nhap-ve-lam-tra-o-long-tea-plus/c/18486151.epi')
-         'Bao nhiêu tấn bột Trung Quốc đã được nhập về làm trà Ô long TEA Plus? - GĐ&XH;'
-         >>> title('http://news.zing.vn/chi-tiet-ban-do-cam-duong-dip-29-o-ha-noi-post574142.html')
-         'Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn'
+         Retrieve titles from URL in text.
+
+         TODO This case should ignore the 404.
+         >>> print(title('https://hdhoang.space/404 https://hdhoang.space/')) # doctest: +IGNORE_EXCEPTION_DETAIL
+         Traceback (most recent call last):
+           ...
+         urllib.error.HTTPError: HTTP Error 404: Not Found
+
+         >>> print(title('https://hdhoang.space/luser.html https://hdhoang.space/luser.html'))
+         IRC bot / IRC bot
+
+         >>> print(title('http://www.nytimes.com/2016/01/26/business/marvin-minsky-pioneer-in-artificial-intelligence-dies-at-88.html'))
+         Marvin Minsky, Pioneer in Artificial Intelligence, Dies at 88 - The New York Times
+
+         >>> print(title('http://www.baomoi.com/bao-nhieu-tan-bot-trung-quoc-da-duoc-nhap-ve-lam-tra-o-long-tea-plus/c/18486151.epi'))
+         Bao nhiêu tấn bột Trung Quốc đã được nhập về làm trà Ô long TEA Plus? - GĐ&XH;
+
+         >>> print(title('http://news.zing.vn/chi-tiet-ban-do-cam-duong-dip-29-o-ha-noi-post574142.html'))
+         Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn
          """
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
@@ -842,10 +851,17 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def wolframalpha(text):
          """
-         >>> wolframalpha('mass of sol')
-         'Input interpretation: Sun | mass / Result: 1.988435×10^30 kg  (kilograms) / Unit conversions: 4.383749×10^30 lb  (pounds) / 2.191874×10^27 sh tn  (short tons) / 1.988435×10^33 grams / 1 M_☉  (solar ma http://wolframalpha.com/?input=mass%20of%20sol'
-         >>> wolframalpha('é')
-         'Input interpretation: é  (character) / Visual form: Name: Latin small letter e with acute / Positions in alphabets: Czech | 9th letter (33rd letter from the end) Slovak | 12th letter (35th letter from http://wolframalpha.com/?input=%C3%A9'
+         Query WolframAlpha about text.
+
+         >>> print(wolframalpha('mass of sol'))
+         Input interpretation: Sun | mass / Result: 1.988435×10^30 kg  (kilograms) / Unit conversions: 4.383749×10^30 lb  (pounds) / 2.191874×10^27 sh tn  (short tons) / 1.988435×10^33 grams / 1 M_☉  (solar ma http://wolframalpha.com/?input=mass%20of%20sol
+
+         Check URL encoding:
+         >>> print(wolframalpha('4+6'))
+         Input: 4+6 / Result: 10 / Number name: ten / Number line: Manipulatives illustration:  | + |  |  |  4 |  | 6 |  | 10 / Typical human computation times: age 6:  5.3 seconds  |  age 8:  2.6 seconds  |  age 10:  1.7 seconds  |   age 18:  0.93 seconds (ignoring concentration, repetition, variations in education, etc.) / 
+
+         >>> print(wolframalpha('é'))
+         Input interpretation: é  (character) / Visual form: Name: Latin small letter e with acute / Positions in alphabets: Czech | 9th letter (33rd letter from the end) Slovak | 12th letter (35th letter from http://wolframalpha.com/?input=%C3%A9
          """
          r = urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text))
          tree = ET.parse(r)
@@ -896,8 +912,13 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def google(text):
          """
-         >>> google('á')
-         'Á - Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/%C3%81'
+         Retrieve the first result from a google for text.
+
+         >>> print(google('á'))
+         Á - Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/%C3%81
+
+         >>> print(google('naesuth no result here'))
+         0 result
          """
          r = urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text))
          data = json.loads(r.read().decode())['responseData']
@@ -939,15 +960,18 @@
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def translate(direction, text):
          """
-         >>> translate('la-en ad astra per aspera')
-         'la-en: to the stars through rough'
-         >>> translate("vi you think you're good?")
-         'en-vi: ngươi nghĩ ngươi giỏi không?'
-         >>> translate('en mày nghĩ mày ngon?')
-         "vi-en: you think you're so tough?"
-         >>> translate('klingon')
-         'Missing text'
-         >>> translate('jbo hello')
+         Translate text according to direction.
+
+         >>> print(translate('la-en', 'ad astra per aspera'))
+         la-en: to the stars through rough
+
+         >>> print(translate('vi', "you think you're good?"))
+         en-vi: ngươi nghĩ ngươi giỏi không?
+
+         >>> print(translate('en', 'mày nghĩ mày ngon?'))
+         vi-en: you think you're so tough?
+
+         >>> print(translate('jbo', 'hello')) # doctest: +IGNORE_EXCEPTION_DETAIL
          Traceback (most recent call last):
            ...
          urllib.error.HTTPError: HTTP Error 400: BAD REQUEST
@@ -988,6 +1012,12 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      def post_source():
+         """
+         Post this source code online.
+
+         >>> print(post_source()) # doctest: +ELLIPSIS
+         http://ix.io/...
+         """
          conn = HTTPConnection('ix.io')
          conn.request('POST', '/', 'read:1=3&name:1=<<botname>>.py&f:1=' + quote(open(__file__).read()))
          return conn.getresponse().read().decode().strip()
