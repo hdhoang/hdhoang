@@ -1650,7 +1650,7 @@
 
 *** HTTP
     #+BEGIN_SRC sh
-      <<pacman>> -S nginx
+      <<pacman>> -S nginx-mainline
     #+END_SRC
 
     #+BEGIN_SRC c :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
@@ -1682,8 +1682,8 @@
           add_header Strict-Transport-Security "max-age=31536000; preload; includeSubdomains";
 
           server {
-              listen 443 ssl spdy default_server;
-              listen [::]:443 ssl spdy default_server;
+              listen 443 ssl http2 default_server;
+              listen [::]:443 ssl http2 default_server;
               server_name <<domain>>;
 
               location /transmission {
@@ -1700,8 +1700,8 @@
              }
           }
           server {
-              listen 443 ssl spdy;
-              listen [::]:443 ssl spdy;
+              listen 443 ssl http2;
+              listen [::]:443 ssl http2;
               server_name kub.<<domain>>;
               root /usr/share/webapps/owncloud;
               location ~ \.htaccess|/data/|/config/|db_structure\.xml|README {
