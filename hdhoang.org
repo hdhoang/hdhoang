@@ -1653,71 +1653,69 @@
       <<pacman>> -S nginx-mainline
     #+END_SRC
 
-    #+BEGIN_SRC c :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
-      # -*- mode: c -*-
+    #+BEGIN_SRC doctex :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
       events {}
       http {
-          include mime.types;
-          charset utf-8;
-          gzip off;
-          client_max_body_size 10G;
-          fastcgi_buffers 64 4K;
-          root /srv/http;
-          autoindex on;
-          index index.html index.php;
+        include mime.types;
+        charset utf-8;
+        gzip off;
+        client_max_body_size 10G;
+        fastcgi_buffers 64 4K;
+        root /srv/http;
+        autoindex on;
+        index index.html index.php;
 
+        access_log off;
+        log_not_found off;
 
-          access_log off;
-          log_not_found off;
+        server {
+          return 301 https://$host$request_uri;
+        }
 
-          server {
-              return 301 https://$host$request_uri;
+        ssl_certificate /etc/letsencrypt/live/kub.<<domain>>/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/kub.<<domain>>/privkey.pem;
+        ssl_protocols TLSv1.2;
+        ssl_ciphers EECDH+CHACHA20:EECDH+AES128;
+        ssl_prefer_server_ciphers on;
+        add_header Strict-Transport-Security "max-age=31536000; preload; includeSubdomains";
+
+        server {
+          listen 443 ssl http2 default_server;
+          listen [::]:443 ssl http2 default_server;
+          server_name <<domain>>;
+
+          location /transmission {
+            proxy_pass http://127.0.0.1:9091;
           }
-
-          ssl_certificate /etc/letsencrypt/live/kub.<<domain>>/fullchain.pem;
-          ssl_certificate_key /etc/letsencrypt/live/kub.<<domain>>/privkey.pem;
-          ssl_protocols TLSv1.2;
-          ssl_ciphers EECDH+CHACHA20:EECDH+AES128;
-          ssl_prefer_server_ciphers on;
-          add_header Strict-Transport-Security "max-age=31536000; preload; includeSubdomains";
-
-          server {
-              listen 443 ssl http2 default_server;
-              listen [::]:443 ssl http2 default_server;
-              server_name <<domain>>;
-
-              location /transmission {
-                  proxy_pass http://127.0.0.1:9091;
-              }
-              location /zabbix {
-                  root /usr/share/webapps;
-                  location ~ \.php(?:$|/) {
-                      fastcgi_split_path_info ^(.+\.php)(/.+)$;
-                      include fastcgi_params;
-                      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                      fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
-                }
-             }
+          location /zabbix {
+            root /usr/share/webapps;
+            location ~ \.php(?:$|/) {
+              fastcgi_split_path_info ^(.+\.php)(/.+)$;
+              include fastcgi_params;
+              fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+              fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+            }
           }
-          server {
-              listen 443 ssl http2;
-              listen [::]:443 ssl http2;
-              server_name kub.<<domain>>;
-              root /usr/share/webapps/owncloud;
-              location ~ \.htaccess|/data/|/config/|db_structure\.xml|README {
-                  deny all;
-              }
-              location / {
-                  rewrite ^/.well-known/carddav /owncloud/remote.php/carddav/ redirect;
-                  try_files $uri $uri/ =404;
-              }
-              location ~ \.php(?:$|/) {
-                  fastcgi_split_path_info ^(.+\.php)(/.+)$;
-                  include fastcgi_params;
-                  fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-                  fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
-              }
+        }
+        server {
+          listen 443 ssl http2;
+          listen [::]:443 ssl http2;
+          server_name kub.<<domain>>;
+          root /usr/share/webapps/owncloud;
+          location ~ \.htaccess|/data/|/config/|db_structure\.xml|README {
+            deny all;
           }
+          location / {
+            rewrite ^/.well-known/carddav /owncloud/remote.php/carddav/ redirect;
+            try_files $uri $uri/ =404;
+          }
+          location ~ \.php(?:$|/) {
+            fastcgi_split_path_info ^(.+\.php)(/.+)$;
+            include fastcgi_params;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+          }
+        }
       }
      #+END_SRC
 
