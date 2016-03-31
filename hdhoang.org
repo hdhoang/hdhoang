@@ -419,7 +419,8 @@
              when="midnight",
              backupCount=31)
          file_log.setLevel(logging.DEBUG if verbose else logging.INFO)
-         file_log.setFormatter(logging.Formatter('%(asctime)-15s (%(name)s) %(message)s'))
+         file_log.setFormatter(logging.Formatter(
+             '%(asctime)-15s (%(name)s) %(message)s'))
          logger.addHandler(file_log)
    #+END_SRC
 
@@ -455,7 +456,7 @@
 
      def join_channels(c, e):
          c.join("#{}-test".format(NAME))
-         c.join("#vn"+NAME)
+         c.join("#vn" + NAME)
      <<botname>>.on_welcome = join_channels
    #+END_SRC
 
@@ -495,15 +496,16 @@
    #+END_SRC
 
    List other <<botname>>s, and update that list when one joins or quits.
-   This list is used by the <<botname>>s to decide whether to handle
+   This list is used by the lusers to decide whether to handle
    unaddressed messages. If the length of the IRC prefix
-   'nick!user@host' for a message indexes to its name, that <<botname>>
-   response.
+   'nick!user@host' for a message indexes to its name, that luser
+   responses.
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      <<botname>>s = []
      def list_<<botname>>s(c, e):
-         for <<botname>> in filter(lambda n: n.startswith(NAME), e.arguments[-1].split(' ')):
+         for <<botname>> in filter(lambda n: n.startswith(NAME),
+                                   e.arguments[-1].split(' ')):
              if <<botname>> not in <<botname>>s:
                  <<botname>>s.append(<<botname>>)
          if c.get_nickname() not in <<botname>>s:
@@ -600,21 +602,21 @@
          my_nick = c.get_nickname()
          msg = e.arguments[0]
          if msg == "report!":
-             return c.privmsg(e.target, "operated by {} with source code {}".format(os.getenv('USER'), post_source()))
+             return c.privmsg(e.target, "operated by {} with source code {}".format(
+                 os.getenv('USER'), post_source()))
          addressed = msg.startswith(my_nick)
          def handling(e):
              return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
          if msg.startswith('s/'):
              parts = msg.split('/')
              if len(parts) >= 3 and handling(e) and nick in last_lines:
-                 return c.privmsg(e.target, "{} meant: {}".format(nick,
-                                                             last_lines[nick]
-                                                             .replace(parts[1], parts[2])))
+                 return c.privmsg(e.target, "{} meant: {}".format(
+                     nick, last_lines[nick].replace(parts[1], parts[2])))
          else:
              last_lines[nick] = msg
          if addressed or handling(e):
              if addressed:
-                 msg = msg[len(my_nick) +2:] # remove addressing
+                 msg = msg[len(my_nick) + 2:]  # remove addressing
              handle(c, e, msg)
      <<botname>>.on_pubmsg = on_pubmsg
    #+END_SRC
@@ -790,8 +792,9 @@
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
-             if any(d in u for d in [<<uninteresting>>]):
-                    continue
+             if any(d in u
+                    for d in [<<uninteresting>>]):
+                 continue
              request = build_opener(HTTPCookieProcessor())
              request.addheaders = [('Accept-Encoding', 'gzip')]
              response = request.open(u)
@@ -863,7 +866,9 @@
          >>> print(wolframalpha('é'))
          Input interpretation: é  (character) / Visual form: Name: Latin small letter e with acute / Positions in alphabets: Czech | 9th letter (33rd letter from the end) Slovak | 12th letter (35th letter from http://wolframalpha.com/?input=%C3%A9
          """
-         r = urlopen('http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input=' + quote(text))
+         r = urlopen(
+             'http://api.wolframalpha.com/v2/query?format=plaintext&appid=<<wolframalpha_key>>&input='
+             + quote(text))
          tree = ET.parse(r)
          reply = ''
          for n in tree.iter():
@@ -920,12 +925,15 @@
          >>> print(google('naesuth no result here'))
          0 result
          """
-         r = urlopen('https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' + quote(text))
+         r = urlopen(
+             'https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' +
+             quote(text))
          data = json.loads(r.read().decode())['responseData']
          r.close()
          if not data['results']:
              return '0 result'
-         return data['results'][0]['titleNoFormatting'] + ' ' + data['results'][0]['unescapedUrl']
+         return data['results'][0]['titleNoFormatting'] + \
+         ' ' +  data['results'][0]['unescapedUrl']
    #+END_SRC
 
    Translates using [[https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/][Yandex]]:
@@ -978,7 +986,10 @@
          """
          if not text:
              return 'Missing text'
-         r = urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), direction))
+         r = urlopen(
+             'https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'
+             .format(
+                 quote(text), direction))
          data = json.loads(r.read().decode())
          r.close()
          return data['lang'] + ": " + data['text'][0]
@@ -1019,7 +1030,9 @@
          http://ix.io/...
          """
          conn = HTTPConnection('ix.io')
-         conn.request('POST', '/', 'read:1=3&name:1=<<botname>>.py&f:1=' + quote(open(__file__).read()))
+         conn.request(
+             'POST', '/',
+             'read:1=3&name:1=<<botname>>.py&f:1=' + quote(open(__file__).read()))
          return conn.getresponse().read().decode().strip()
    #+END_SRC
 
