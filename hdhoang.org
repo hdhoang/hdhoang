@@ -482,7 +482,8 @@
              if msg[1:4] == 'wa ':
                  reply = wolframalpha(msg[4:])
              if msg[1:4] == 'tr ':
-                 reply = translate(msg[4:])
+                 (lang, _, text) = msg[4:].partition(' ')
+                 reply = translate(lang, text)
              if reply:
                  # Keep PRIVMSG under 512bytes
                  c.privmsg(e.target, reply[:512 - len(e.target) - 50])
@@ -933,7 +934,7 @@
    #+END_SRC
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     def translate(text):
+     def translate(direction, text):
          """
          >>> translate('la-en ad astra per aspera')
          'la-en: to the stars through rough'
@@ -948,10 +949,9 @@
            ...
          urllib.error.HTTPError: HTTP Error 400: BAD REQUEST
          """
-         (lang, _, text) = text.partition(' ')
          if not text:
              return 'Missing text'
-         r = urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), lang))
+         r = urlopen('https://translate.yandex.net/api/v1.5/tr.json/translate?key=<<yandex_key>>&text={}&lang={}'.format(quote(text), direction))
          data = json.loads(r.read().decode('utf-8'))
          r.close()
          return data['lang'] + ": " + data['text'][0]
