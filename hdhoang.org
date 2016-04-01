@@ -568,17 +568,19 @@
 
    #+END_SRC
 
-   The next lambdas are abusing python logical operator, but they read
-   like English.
-
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      relay_msg = defaultdict(list) # dict<nick, [(source, line)]>
      def relay(c, target, nick):
          for (source, line) in relay_msg[nick]:
              c.privmsg(target, "{}: <{}> {}".format(nick, source, line))
          del relay_msg[nick]
-     <<botname>>.on_nick = lambda c, e: relay(c, e.target, e.target)
+     <<botname>>.on_nick = lambda c, e: relay(c, "#vn<<botname>>", e.target)
+   #+END_SRC
 
+   The next lambdas are abusing python logical operator, but they read
+   like English.
+
+   #+BEGIN_SRC python :tangle ~/Public/luser.py
      def <<botname>>_joins(e):
          if e.source.nick not in <<botname>>s:
              <<botname>>s.append(e.source.nick)
