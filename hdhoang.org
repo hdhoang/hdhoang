@@ -380,6 +380,10 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      # -*- coding: utf-8 -*-
+     # external batteries
+     from bs4 import BeautifulSoup
+     from irc import bot
+
      from sys import version_info
      from random import randint
      from gzip import GzipFile
@@ -398,10 +402,6 @@
          import sys
          reload(sys)
          sys.setdefaultencoding('utf8')
-
-     from bs4 import BeautifulSoup
-
-     from irc import bot
    #+END_SRC
 
    Set up logging.
