@@ -590,8 +590,6 @@
              return <<botname>>_joins(e)
          relay(c, e.target, nick)
      <<botname>>.on_join = on_join
-
-     <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>s.remove(e.source.nick)
    #+END_SRC
 
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
