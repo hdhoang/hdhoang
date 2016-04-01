@@ -617,7 +617,7 @@
    Actual message processing. Ignore the other lusers.
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     last_lines = {}
+     last_lines = {} # dict<nick, line>
      def on_pubmsg(c, e):
          nick = e.source.nick
          if nick.startswith(NAME): return
