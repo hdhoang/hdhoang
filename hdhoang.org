@@ -624,8 +624,7 @@
          my_nick = c.get_nickname()
          msg = e.arguments[0]
          if msg == "report!":
-             return c.privmsg(e.target, "operated by {} with source code {}".format(
-                 os.getenv('USER'), post_source()))
+             return c.privmsg(e.target, report())
          def handling(e):
              return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
          if msg.startswith('s/'):
@@ -1045,18 +1044,19 @@
    #+END_SRC
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     def post_source():
+     def report():
          """
-         Post this source code online.
+         Return owner and source code
 
-         >>> print(post_source()) # doctest: +ELLIPSIS
-         http://ix.io/...
+         >>> print(report()) # doctest: +ELLIPSIS
+         operated by ... with source code http://ix.io/...
          """
          conn = HTTPConnection('ix.io')
          conn.request(
              'POST', '/',
              'read:1=3&name:1=<<botname>>.py&f:1=' + quote(open(__file__).read()))
-         return conn.getresponse().read().decode().strip()
+         return "operated by {} with source code {}".format(
+                 os.getenv('USER'), conn.getresponse().read().decode().strip())
    #+END_SRC
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
