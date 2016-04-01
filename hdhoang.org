@@ -610,7 +610,8 @@
              return <<botname>>s[len(e.source) % len(<<botname>>s)] == my_nick
          if msg.startswith('s/'):
              parts = msg.split('/')
-             if len(parts) >= 3 and handling(e) and nick in last_lines:
+             if (len(parts) >= 3 and handling(e)
+                 and nick in last_lines and last_lines[nick].contains(parts[1])):
                  return c.privmsg(e.target, "{} meant: {}".format(
                      nick, last_lines[nick].replace(parts[1], parts[2])))
          else:
