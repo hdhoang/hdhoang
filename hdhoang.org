@@ -1765,6 +1765,9 @@
               fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
             }
           }
+          location /netdata {
+            proxy_pass http://127.0.0.1:19999;
+          }
         }
         server {
           listen 443 ssl http2;
