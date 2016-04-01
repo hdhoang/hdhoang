@@ -451,7 +451,9 @@
          <<botname>>.start()
 
      def change_nick(c, e):
-         c.nick('{}-{}'.format(NAME, str(randint(0, 9))))
+         new_nick = '{}-{}'.format(NAME, str(randint(0, 9)))
+         print("Changing nick to", new_nick)
+         c.nick(new_nick)
      <<botname>>.on_nicknameinuse = change_nick
 
      def join_channels(c, e):
