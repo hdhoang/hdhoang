@@ -384,6 +384,7 @@
      from bs4 import BeautifulSoup
      from irc import bot
 
+     from collections import defaultdict
      from sys import version_info
      from random import randint
      from gzip import GzipFile
@@ -482,6 +483,10 @@
              if 'http' in msg:
                  c.privmsg(e.target, title(msg))
              if msg[0] not in ('.', '!', ':'): return
+             if msg[1:6] == 'tell ':
+                 source = e.source.nick
+                 (target, _, line) = msg[6:].partition(' ')
+                 return relay_msg[target].append((source, line))
              reply = ''
              if msg[1:3] == 'g ':
                  reply = google(msg[3:])
@@ -567,11 +572,26 @@
    like English.
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     def <<botname>>_joins(c, e):
+     relay_msg = defaultdict(list) # dict<nick, [(source, line)]>
+     def relay(c, target, nick):
+         for (source, line) in relay_msg[nick]:
+             c.privmsg(target, "{}: <{}> {}".format(nick, source, line))
+         del relay_msg[nick]
+     <<botname>>.on_nick = lambda c, e: relay(c, e.target, e.target)
+
+     def <<botname>>_joins(e):
          if e.source.nick not in <<botname>>s:
              <<botname>>s.append(e.source.nick)
              <<botname>>s.sort()
-     <<botname>>.on_join = lambda c, e: e.source.startswith(NAME) and <<botname>>_joins(c, e)
+
+     def on_join(c, e):
+         nick = e.source.nick
+         if nick.startswith(NAME):
+             return <<botname>>_joins(e)
+         relay(c, e.target, nick)
+     <<botname>>.on_join = on_join
+
+     <<botname>>.on_quit = lambda c, e: e.source.startswith(NAME) and <<botname>>s.remove(e.source.nick)
    #+END_SRC
 
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
