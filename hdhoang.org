@@ -497,7 +497,7 @@
              logger.error('%s causes: %s' % (msg, str(e)))
    #+END_SRC
 
-   List other <<botname>>s, and update that list when one joins or quits.
+   List other lusers, and update that list when one joins or quits.
    This list is used by the lusers to decide whether to handle
    unaddressed messages. If the length of the IRC prefix
    'nick!user@host' for a message indexes to its name, that luser
@@ -594,7 +594,7 @@
              }
    #+END_SRC
 
-   Actual message processing. Ignore the other <<botname>>s.
+   Actual message processing. Ignore the other lusers.
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      last_lines = {}
