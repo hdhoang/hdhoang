@@ -617,7 +617,7 @@
    Actual message processing. Ignore the other lusers.
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
-     last_lines = {} # dict<nick, line>
+     last_lines = defaultdict(list) # dict<nick, line>
      def on_pubmsg(c, e):
          nick = e.source.nick
          if nick.startswith(NAME): return
@@ -630,7 +630,7 @@
          if msg.startswith('s/'):
              parts = msg.split('/')
              if (len(parts) >= 3 and handling(e)
-                 and nick in last_lines and parts[1] in last_lines[nick]):
+                 and parts[1] in last_lines[nick]):
                  return c.privmsg(e.target, "{} meant: {}".format(
                      nick, last_lines[nick].replace(parts[1], parts[2])))
          else:
