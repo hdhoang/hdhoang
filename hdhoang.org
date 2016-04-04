@@ -457,6 +457,8 @@
          c.nick(new_nick)
      <<botname>>.on_nicknameinuse = change_nick
 
+     <<botname>>.on_nickcollision = lambda c, _: c.reconnect()
+
      def join_channels(c, e):
          c.join("#{}-test".format(NAME))
          c.join("#vn" + NAME)
@@ -515,8 +517,6 @@
                                    e.arguments[-1].split(' ')):
              if <<botname>> not in <<botname>>s:
                  <<botname>>s.append(<<botname>>)
-         if c.get_nickname() not in <<botname>>s:
-             c.reconnect()
          <<botname>>s.sort()
      <<botname>>.on_namreply = list_<<botname>>s
    #+END_SRC
