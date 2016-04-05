@@ -382,7 +382,7 @@
      # -*- coding: utf-8 -*-
      # external batteries
      from bs4 import BeautifulSoup
-     from irc import bot
+     from irc import bot, connection
 
      from collections import defaultdict
      from sys import version_info
@@ -445,7 +445,8 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      NAME = "<<botname>>"
-     <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME)
+     <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME
+                                          connect_factory=connection.Factory(ipv6=True))
 
      def main():
          setup_logging("<<botname>>.log")
