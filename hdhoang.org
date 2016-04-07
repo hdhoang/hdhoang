@@ -1715,7 +1715,17 @@
 
 *** HTTP
     #+BEGIN_SRC sh
-      <<pacman>> -S nginx-mainline
+      <<pacman>> -S nginx-mainline php-fpm
+    #+END_SRC
+
+    #+NAME: php
+    #+BEGIN_SRC text
+      location ~ \.php(?:$|/) {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+      }
     #+END_SRC
 
     #+BEGIN_SRC doctex :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
@@ -1762,12 +1772,7 @@
           }
           location /zabbix {
             root /usr/share/webapps;
-            location ~ \.php(?:$|/) {
-              fastcgi_split_path_info ^(.+\.php)(/.+)$;
-              include fastcgi_params;
-              fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-              fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
-            }
+            <<php>>
           }
           location /netdata {
             proxy_pass http://127.0.0.1:19999;
@@ -1785,12 +1790,7 @@
             rewrite ^/.well-known/carddav /owncloud/remote.php/carddav/ redirect;
             try_files $uri $uri/ =404;
           }
-          location ~ \.php(?:$|/) {
-            fastcgi_split_path_info ^(.+\.php)(/.+)$;
-            include fastcgi_params;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
-          }
+          <<php>>
         }
       }
      #+END_SRC
