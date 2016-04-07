@@ -445,7 +445,7 @@
 
    #+BEGIN_SRC python :tangle ~/Public/luser.py
      NAME = "<<botname>>"
-     <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME
+     <<botname>> = bot.SingleServerIRCBot([("chat.freenode.net", 8000)], NAME, NAME,
                                           connect_factory=connection.Factory(ipv6=True))
 
      def main():
