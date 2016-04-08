@@ -385,7 +385,7 @@
      from irc import bot, connection
 
      from collections import defaultdict
-     from sys import version_info
+     from sys import version_info, exit
      from random import randint
      from gzip import GzipFile
      import xml.etree.ElementTree as ET
@@ -640,6 +640,7 @@
          if addressed or handling(e):
              if addressed:
                  msg = msg[len(my_nick) + 2:]  # remove addressing
+                 if msg.startswith('quit'): exit()
              handle(c, e, msg)
      <<botname>>.on_pubmsg = on_pubmsg
    #+END_SRC
