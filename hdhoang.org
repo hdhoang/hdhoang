@@ -819,7 +819,7 @@
          Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn
 
          >>> print(title('https://www.facebook.com/photo.php?fbid=261863914155282&set=a.261860180822322.1073742015.100009950253866&type=3&theater'))
-         Vo Thanh Thuy - Vo Thanh Thuy added 10 new photos to the... | Facebook
+         Vo Thanh Thuy - Vo Thanh Thuy added 8 new photos to the... | Facebook
          """
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
