@@ -505,7 +505,7 @@
                  # Keep PRIVMSG under 512bytes
                  c.privmsg(e.target, reply[:512 - len(e.target) - 50])
          except Exception as e:
-             logger.error('%s causes: %s' % (msg, str(e)))
+             logger.error('"%s" causes: %s' % (msg, str(e)))
    #+END_SRC
 
    List other lusers, and update that list when one joins or quits.
