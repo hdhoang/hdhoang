@@ -747,11 +747,16 @@
    #+END_SRC
 
    Get title from URLs. The rust version only grabs the first URL in
-   each message. Some uninteresting domains are ignored:
+   each message. Some domains with uninteresting titles are ignored:
 
    #+NAME: uninteresting
    #+BEGIN_SRC text
-     "imgur.com/", "smbc-comics.com/", "libgen.io/"
+     "smbc-comics.com/", "libgen.io/", "xkcdb.com/"
+   #+END_SRC
+
+   #+NAME: uninteresting_titles
+   #+BEGIN_SRC text
+     "XKCDB: The: The #xkcd Quote Database", "Saturday Morning Breakfast Cereal", "Library Genesis"
    #+END_SRC
 
    #+BEGIN_SRC rust :tangle ~/Public/luser.rs
@@ -798,7 +803,8 @@
          """
          Retrieve titles from URL in text.
 
-         >>> print(title('no url here'))
+         >>> len(title('no url here'))
+         0
 
          TODO This case should ignore the 404.
          >>> print(title('https://hdhoang.space/404 https://hdhoang.space/')) # doctest: +IGNORE_EXCEPTION_DETAIL
@@ -820,13 +826,14 @@
 
          >>> print(title('https://www.facebook.com/photo.php?fbid=261863914155282&set=a.261860180822322.1073742015.100009950253866&type=3&theater'))
          Vo Thanh Thuy - Vo Thanh Thuy added 8 new photos to the... | Facebook
+
+         >>> print(title('https://imgur.com/M18GYfw?r https://imgur.com/GUFyoUa?r'))
+         Glorious new key cap set for my work keyboard! - Imgur
          """
+         uninteresting = [<<uninteresting_titles>>]
          titles = []
          urls = filter(lambda w: w.startswith('http'), text.split())
          for u in urls:
-             if any(d in u
-                    for d in [<<uninteresting>>]):
-                 continue
              request = build_opener(HTTPCookieProcessor())
              request.addheaders = [('Accept-Encoding', 'gzip'), ('User-Agent', 'Mozilla/5.0')]
              response = request.open(u)
@@ -837,7 +844,10 @@
                      response = GzipFile(fileobj=StringIO(response.read()))
              title = BeautifulSoup(response.read(50000), 'html.parser').title
              response.close()
-             if title: titles.append(title.string.replace('\n', '').strip())
+             if (title
+                 and 'Imgur:' not in title.string
+                 and title.string not in uninteresting):
+                 titles.append(title.string.replace('\n', '').strip())
          return ' / '.join(titles)
    #+END_SRC
 
