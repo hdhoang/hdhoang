@@ -385,14 +385,14 @@
      from irc import bot, connection
 
      from collections import defaultdict
-     from sys import version_info, exit
      from random import randint
      from gzip import GzipFile
      import xml.etree.ElementTree as ET
      import json
+     import sys
      import os
 
-     if version_info.major == 3:
+     if sys.version_info.major == 3:
          from urllib.request import urlopen, build_opener, HTTPCookieProcessor
          from urllib.parse import quote
          from http.client import HTTPConnection
@@ -400,7 +400,6 @@
          from urllib2 import urlopen, quote, build_opener, HTTPCookieProcessor
          from httplib import HTTPConnection
          from StringIO import StringIO
-         import sys
          reload(sys)
          sys.setdefaultencoding('utf8')
    #+END_SRC
@@ -642,7 +641,9 @@
          if addressed or handling(c, e) or 'http' in msg:
              if addressed:
                  msg = msg[len(my_nick) + 2:]  # remove addressing
-                 if msg.startswith('quit'): exit()
+                 if msg.startswith('quit'): sys.exit()
+                 if msg.startswith('reload'):
+                     os.execl(sys.executable, NAME, __file__)
              handle(c, e, msg)
      <<botname>>.on_pubmsg = on_pubmsg
    #+END_SRC
@@ -830,7 +831,7 @@
              request.addheaders = [('Accept-Encoding', 'gzip'), ('User-Agent', 'Mozilla/5.0')]
              response = request.open(u)
              if response.info().get('Content-Encoding') == 'gzip':
-                 if version_info.major == 3:
+                 if sys.version_info.major == 3:
                      response = GzipFile(fileobj=response)
                  else:
                      response = GzipFile(fileobj=StringIO(response.read()))
