@@ -1354,11 +1354,16 @@
     lxpolkit &
     firefox &
     gpg-agent --enable-ssh-support --daemon emacs &
-    quasselclient &
     yakuake &
     keepass &
     pragha -p &
+  #+END_SRC
+
+  Communication
+  #+BEGIN_SRC sh :tangle ~/.config/openbox/autostart
+    quasselclient &
     viber &
+    skype &
   #+END_SRC
 
 ** kwin
