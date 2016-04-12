@@ -1,0 +1,3 @@
+[submodule "Books/plc"]
+	path = Books/plc
+	url = https://bitbucket.org/AdrienChampion/plc
