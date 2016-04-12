@@ -2790,60 +2790,63 @@
   Bookmarks and preferences:
 
   #+BEGIN_SRC vimrc
-    map <C-S-s> -ex bmark -keyword ac -t config about:config
-    \ bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
-    \ bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
-    \ bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
-    \ bmark -keyword yb -t youtube https://youtube.com/watch?v=%s
-    \ bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
-    \ bmark -keyword bb -t burnbit http://burnbit.com/burn?file=%s
-    \ bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
-    \ bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
-    \ bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
-    \ bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
-    \ bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
-    \ bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-    \ bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
-    \ set! accessibility.browsewithcaret_shortcut.enabled=false
-    \ set! browser.newtabpage.enabled=false
-    \ set! browser.privatebrowsing.dont_prompt_on_enter=true
-    \ set! browser.sessionstore.restore_pinned_tabs_on_demand=true
-    \ set! browser.shell.checkDefaultBrowser=false
-    \ set! browser.startup.homepage=about:blank
-    \ set! browser.startup.page=3
-    \ set! general.warnOnAboutConfig=false
-    \ set! security.OCSP.enabled=0
-    \ set! security.warn_viewing_mixed=false
-    \ set! layout.spellcheckDefault=0
-    \ set! middlemouse.paste=true
-    \ set! ui.key.menuAccessKey=0
-    \ set! browser.anchor_color="#6c71c4"
-    \ set! browser.display.background_color="#fdf6e3"
-    \ set! browser.display.foreground_color="#657b83"
-    \ set! browser.display.use_system_colors=false
-    \ set! font.default.x-western="sans-serif"
-    \ if /NT 6/.test(window.navigator.oscpu)
-    \     set! font.name.monospace.x-western=Consolas
-    \ fi
-    \ set! extensions.checkCompatibility.nightly=false
-    \ set! extensions.https_everywhere._observatory.alt_roots=true
-    \ set! extensions.https_everywhere._observatory.enabled=true
-    \ set! extensions.https_everywhere._observatory.priv_dns=true
-    \ set! plugins.hide_infobar_for_missing_plugin=true
-    \ set! browser.download.manager.alertOnEXEOpen=false
-    \ set! browser.download.manager.scanWhenDone=false
-    \ set! browser.search.context.loadInBackground=true
-    \ set! intl.charset.default=UTF-8
-    \ set! network.http.pipelining=true
-    \ set! network.http.pipelining.aggressive=true
-    \ set! network.http.pipelining.ssl=true
-    \ set! network.protocol-handler.expose.magnet=false
-    \ set! network.proxy.socks=kub.<<domain>>
-    \ set! network.proxy.socks_port=9050
-    \ set! network.proxy.socks_remote_dns=true
-    \ set! toolkit.telemetry.enabled=true
-    \ js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
-    \ js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+    if !getBoolPref("<<username>>.customized")
+    set! <<username>>.customized=true
+    bmark -keyword ac -t config about:config
+    bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
+    bmark -keyword v -t valsi http://vlasisku.lojban.org/?query=%s
+    bmark -keyword c -t camxes http://camxes.lojban.org/?text=%s
+    bmark -keyword yb -t youtube https://youtube.com/watch?v=%s
+    bmark -keyword cw -t 'CrawlWiki' http://crawl.chaosforge.org/index.php?title=Special%3ASearch&search=%s
+    bmark -keyword bb -t burnbit http://burnbit.com/burn?file=%s
+    bmark -keyword b -t btdigg https://btdigg.org/search?q=%s&order=0&p=0
+    bmark -keyword ba -t btdigg https://btdigg.org/search?q=%s&order=2&p=0
+    bmark -keyword m -t zing http://mp3.zing.vn/tim-kiem/bai-hat.html?q=%s
+    bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
+    bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
+    bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
+    bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
+    set! accessibility.browsewithcaret_shortcut.enabled=false
+    set! browser.newtabpage.enabled=false
+    set! browser.privatebrowsing.dont_prompt_on_enter=true
+    set! browser.sessionstore.restore_pinned_tabs_on_demand=true
+    set! browser.shell.checkDefaultBrowser=false
+    set! browser.startup.homepage=about:blank
+    set! browser.startup.page=3
+    set! general.warnOnAboutConfig=false
+    set! security.OCSP.enabled=0
+    set! security.warn_viewing_mixed=false
+    set! layout.spellcheckDefault=0
+    set! middlemouse.paste=true
+    set! ui.key.menuAccessKey=0
+    set! browser.anchor_color="#6c71c4"
+    set! browser.display.background_color="#fdf6e3"
+    set! browser.display.foreground_color="#657b83"
+    set! browser.display.use_system_colors=false
+    set! font.default.x-western="sans-serif"
+    if /NT 6/.test(window.navigator.oscpu)
+    set! font.name.monospace.x-western=Consolas
+    fi
+    set! extensions.checkCompatibility.nightly=false
+    set! extensions.https_everywhere._observatory.alt_roots=true
+    set! extensions.https_everywhere._observatory.enabled=true
+    set! extensions.https_everywhere._observatory.priv_dns=true
+    set! plugins.hide_infobar_for_missing_plugin=true
+    set! browser.download.manager.alertOnEXEOpen=false
+    set! browser.download.manager.scanWhenDone=false
+    set! browser.search.context.loadInBackground=true
+    set! intl.charset.default=UTF-8
+    set! network.http.pipelining=true
+    set! network.http.pipelining.aggressive=true
+    set! network.http.pipelining.ssl=true
+    set! network.protocol-handler.expose.magnet=false
+    set! network.proxy.socks=kub.<<domain>>
+    set! network.proxy.socks_port=9050
+    set! network.proxy.socks_remote_dns=true
+    set! toolkit.telemetry.enabled=true
+    js services.permissions.add(services.io.newURI("http:depositfiles.com",null,null), 'image', services.permissions.DENY_ACTION)
+    js services.loginManager.setLoginSavingEnabled("accounts.google.com", false)
+    fi
   #+END_SRC
 
   Strip tracker from location, thanks to [[https://userscripts.org/scripts/show/93825][Bruno Barão]] and [[https://github.com/5digits/dactyl/commit/7a1ffa5b555399c5d0925ad599e2640070bd128d][Kris Maglione]].
