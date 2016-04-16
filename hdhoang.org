@@ -1186,7 +1186,7 @@
     CUPS_SERVER=kub:631
     BROWSER=firefox
 
-    PATH=$HOME/.multirust/toolchains/nightly/bin:$PATH
+    PATH=/home/<<username>>/.cargo/bin:$PATH
     RUST_BACKTRACE=1
   #+END_SRC
 
