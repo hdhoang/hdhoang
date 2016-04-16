@@ -396,10 +396,13 @@
          from urllib.request import urlopen, build_opener, HTTPCookieProcessor
          from urllib.parse import quote
          from http.client import HTTPConnection
+         import html.parser as h
      else:
          from urllib2 import urlopen, quote, build_opener, HTTPCookieProcessor
          from httplib import HTTPConnection
          from StringIO import StringIO
+         from HTMLParser import HTMLParser
+         h = HTMLParser()
          reload(sys)
          sys.setdefaultencoding('utf8')
    #+END_SRC
@@ -824,8 +827,8 @@
          >>> print(title('http://news.zing.vn/chi-tiet-ban-do-cam-duong-dip-29-o-ha-noi-post574142.html'))
          Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn
 
-         >>> print(title('https://www.facebook.com/photo.php?fbid=261863914155282&set=a.261860180822322.1073742015.100009950253866&type=3&theater'))
-         Vo Thanh Thuy - Vo Thanh Thuy added 8 new photos to the... | Facebook
+         >>> print(title('https://www.facebook.com/photo.php?fbid=261863914155282&set=a.261860180822322.1073742015.100009950253866&type=3&theater')) # doctest: +ELLIPSIS
+         Vo Thanh Thuy - Vo Thanh Thuy ... | Facebook
 
          >>> print(title('https://imgur.com/M18GYfw?r https://imgur.com/GUFyoUa?r'))
          Glorious new key cap set for my work keyboard! - Imgur
@@ -964,6 +967,9 @@
          >>> print(google('á'))
          Á - Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/%C3%81
 
+         >>> print(google('trump south-china sea'))
+         Donald Trump weighs in on China's island-building in the South ... http://www.politifact.com/truth-o-meter/statements/2016/apr/04/donald-trump/donald-trump-weighs-chinas-island-building-south-c/
+
          >>> print(google('naesuth no result here'))
          0 result
          """
@@ -974,7 +980,7 @@
          r.close()
          if not data['results']:
              return '0 result'
-         return data['results'][0]['titleNoFormatting'] + \
+         return h.unescape(data['results'][0]['titleNoFormatting']) + \
          ' ' +  data['results'][0]['unescapedUrl']
    #+END_SRC
 
