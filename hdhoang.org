@@ -1181,6 +1181,8 @@
 * GUI
 
   #+BEGIN_SRC sh :tangle ~/.pam_environment
+    SSH_AUTH_SOCK=/home/<<username>>/.gnupg/S.gpg-agent.ssh
+
     CUPS_SERVER=kub:631
     BROWSER=firefox
 
@@ -1352,13 +1354,14 @@
   #+END_SRC
 
   #+BEGIN_SRC sh :tangle ~/.config/openbox/autostart
+    gpg-agent --daemon --enable-ssh-support
     compton &
     xbacklight =30 &
     tint2 &
     kwalletd &
     lxpolkit &
     firefox &
-    gpg-agent --enable-ssh-support --daemon emacs &
+    emacs &
     yakuake &
     keepass &
     pragha -p &
