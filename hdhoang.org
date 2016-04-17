@@ -165,17 +165,19 @@
    :EXPORT_FILE_NAME: ~/Public/index
    :END:
    Elsewhere on the net:
-   - hdhoang ::
+   - realtime ::
      + [[https://telegram.me/hdhoang][Telegram]]
-     + [[https://www.openhub.net/accounts/hdhoang][OpenHub]]
+     + [[skype:lazni0][Skype]]
+     + [[https://facebook.com/hdh000][Facebook]]
+   - feeds ::
+     + [[http://www.inoreader.com/stream/user/1005933915/tag/user-favorites][Inoreader]]
      + [[https://gitlab.com/u/hdhoang][GitLab]]
-     + [[https://www.linkedin.com/in/hdhoang][LinkedIn]]
      + [[https://github.com/hdhoang?tab%3Dactivity][GitHub]]
      + [[http://www.last.fm/user/hdhoang][Last.fm]]
-     + [[https://facebook.com/hdh000][Facebook]]
-   - lasigmaz ::
      + [[https://twitter.com/lasigmaz][Twitter]]
      + [[https://steamcommunity.com/id/lasigmaz][Steam]]
+     + [[https://www.openhub.net/accounts/hdhoang][OpenHub]]
+     + [[https://www.linkedin.com/in/hdhoang][LinkedIn]]
 
    I have a maybe-blog:
    - [[file:vanity-irc.org][Showing a custom hostname to Freenode]]
