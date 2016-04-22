@@ -167,8 +167,8 @@
    Elsewhere on the net:
    - realtime ::
      + [[https://telegram.me/hdhoang][Telegram]]
-     + [[skype:lazni0][Skype]]
-     + [[https://facebook.com/hdh000][Facebook]]
+     + [[skype:lazni0?chat][Skype]]
+     + [[https://fb.me/hdh000][Facebook]]
    - feeds ::
      + [[http://www.inoreader.com/stream/user/1005933915/tag/user-favorites][Inoreader]]
      + [[https://gitlab.com/u/hdhoang][GitLab]]
