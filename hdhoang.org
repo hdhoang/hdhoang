@@ -2177,14 +2177,16 @@
        localectl set-keymap caps2ctrl
      #+END_SRC
 
-     Base Japanese IME on dvorak, swap caps for ctrl
+     Swap caps for ctrl
 
-     #+BEGIN_SRC conf :tangle keyboard.reg :comments no
-       Windows Registry Editor Version 5.00
-
+     #+BEGIN_SRC conf :tangle keyboard.reg :comments no :shebang Windows Registry Editor Version 5.00
        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
        "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+     #+END_SRC
 
+     Base Japanese IME on dvorak
+
+     #+BEGIN_SRC conf :tangle keyboard.reg
        [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000411]
        "Layout File"="kbddv.dll"
      #+END_SRC
@@ -2193,10 +2195,6 @@
 
      #+BEGIN_SRC elisp :tangle ~/.emacs
        (add-to-list 'file-coding-system-alist '("\\.reg\\'" . utf-16le-with-signature-dos))
-       (add-hook 'org-babel-post-tangle-hook 'strip-initial-newline)
-       (defun strip-initial-newline ()
-         (when (string-match "^Windows Registry" (buffer-string))
-           (join-line 1)))
      #+END_SRC
 
      Import into registry
