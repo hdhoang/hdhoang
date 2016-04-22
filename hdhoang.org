@@ -380,7 +380,7 @@
      use std::collections::HashMap;
    #+END_SRC
 
-   #+BEGIN_SRC python :tangle ~/Public/luser.py
+   #+BEGIN_SRC python :tangle ~/Public/luser.py :shebang #!/usr/bin/env python3
      # -*- coding: utf-8 -*-
      # external batteries
      from bs4 import BeautifulSoup
