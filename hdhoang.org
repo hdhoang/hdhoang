@@ -183,9 +183,33 @@
    - [[file:vanity-irc.org][Showing a custom hostname to Freenode]]
    - [[file:borrow-die.org][Borrow checker analogy]]
    - [[file:luser.org][Writing an IRC bot]]
+   - [[file:graph.org][Making a reading list]]
 
 ** Consumption
 *** <2016-01-18 Mon> Rạng Đông A55N2/5W (42,200đ)
+
+** Bookmark graph
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: graph
+   :END:
+   Say, I follow a link from someone to something. I would like to put
+   that relationship into a digraph to be explored later. Nodes are
+   people and things (articles, videos, comics). People have handles
+   (unix username, twitter username, IRC handle, facebook ID, etc),
+   URLs. Things have title (file name, etc), URL/btih, authored date,
+   syndication feed.
+
+   An edge can be:
+
+   - Person authors thing
+   - Person mentions thing as text
+     With commentary or opinion
+   - Thing mentions thing as text
+     This would be the hyperlink text
+
+   The graph is serialized and saved in this repo. It can be exported
+   into OPML.
+
 ** Borrow-checking with friends
    :PROPERTIES:
    :EXPORT_FILE_NAME: ~/Public/borrow-die
