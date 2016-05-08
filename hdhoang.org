@@ -346,6 +346,16 @@
      trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810
    #+END_SRC
 
+   #+NAME: google_key
+   #+BEGIN_SRC text
+     AIzaSyDuesDCP1pqw6Ev_3zEAG4xuIKYp675oDw
+   #+END_SRC
+
+   #+NAME: google_cx
+   #+BEGIN_SRC text
+     002790383760335821747:hufomuuaviw
+   #+END_SRC
+
    #+BEGIN_SRC conf :tangle ~/Public/luser.toml
      [package]
      name = "<<botname>>"
@@ -398,13 +408,10 @@
          from urllib.request import urlopen, build_opener, HTTPCookieProcessor
          from urllib.parse import quote
          from http.client import HTTPConnection
-         import html.parser as h
      else:
          from urllib2 import urlopen, quote, build_opener, HTTPCookieProcessor
          from httplib import HTTPConnection
          from StringIO import StringIO
-         from HTMLParser import HTMLParser
-         h = HTMLParser()
          reload(sys)
          sys.setdefaultencoding('utf8')
    #+END_SRC
@@ -975,14 +982,14 @@
          0 result
          """
          r = urlopen(
-             'https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q=' +
+             'https://www.googleapis.com/customsearch/v1?key=<<google_key>>&cx=<<google_cx>>&q=' +
              quote(text))
-         data = json.loads(r.read().decode())['responseData']
+         data = json.loads(r.read().decode())
          r.close()
-         if not data['results']:
+         if 'items' not in data:
              return '0 result'
-         return h.unescape(data['results'][0]['titleNoFormatting']) + \
-         ' ' +  data['results'][0]['unescapedUrl']
+         return data['items'][0]['title'] + \
+         ' ' +  data['items'][0]['link']
    #+END_SRC
 
    Translates using [[https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/][Yandex]]:
