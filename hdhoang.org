@@ -1908,6 +1908,9 @@
         }
       }
      #+END_SRC
+    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/sudoers.d/occ-scan :tangle-mode 0
+      <<username>> ALL=(http) NOPASSWD: /usr/share/webapps/owncloud/occ files\:scan --path /<<username>>/files/Public/Videos
+    #+END_SRC
 
 *** DLNA
     #+BEGIN_SRC sh :dir /sudo:10.117.14.185:
