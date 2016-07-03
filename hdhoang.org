@@ -2618,6 +2618,7 @@
        (setq dired-recursive-copies 'always
              dired-recursive-deletes 'always
              dired-listing-switches "-alh"
+             async-shell-command-buffer 'new-buffer
              dired-guess-shell-alist-user
              '(("\\.cb.\\'" "okular")
                ("." "xdg-open;"))))
