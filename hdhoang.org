@@ -2973,15 +2973,19 @@
   Search hanzi:
   
   #+BEGIN_SRC vimrc
-    command k -js -nargs=* <<EOS
-      if (args.length == 0) { args = [dactyl.clipboardRead("global")]; }
-      for(var i=0;i<args.length;i++) {
-        arg = args[i];
-        for (var c=0;c<arg.length;c++) {
-          commands.execute("tabopen " + "http://hanviet.org/hv_timchu_ndv.php?unichar=" + arg.codePointAt(c))
-    }}
-EOS
+    map K -js <<EOS
+    if (buffer.selection.rangeCount == 0) {
+        string = dactyl.clipboardRead("global");
+    } else {
+        string = buffer.selection.toString();
+    }
+    for (var c of string) {
+        commands.execute("tabopen "
+        + "http://hanviet.org/hv_timchu_ndv.php?unichar=" + c.codePointAt(0))
+    }
+    EOS
   #+END_SRC
+
 * Windows
 ** Portables
 
