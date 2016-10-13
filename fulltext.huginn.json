@@ -7,20 +7,8 @@
   "tag_fg_color": "#ffffff",
   "tag_bg_color": "#5bc0de",
   "icon": "gear",
-  "exported_at": "2016-08-30T11:57:14Z",
+  "exported_at": "2016-10-13T02:25:07Z",
   "agents": [
-    {
-      "type": "Agents::RssAgent",
-      "name": "existential comics",
-      "disabled": false,
-      "guid": "0f6645693efc0841ab8b27e47bbb1390",
-      "options": {
-        "expected_update_period_in_days": "7",
-        "url": "http://existentialcomics.com/rss.xml"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
-    },
     {
       "type": "Agents::WebsiteAgent",
       "name": "Grab .feature_item",
@@ -71,10 +59,22 @@
       "disabled": false,
       "guid": "17b5e335890014c573a555f1fc865649",
       "options": {
-        "expected_update_period_in_days": "5",
+        "expected_update_period_in_days": "14",
         "url": "https://feeds2.feedburner.com/channelATE"
       },
       "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "Badass of the week",
+      "disabled": false,
+      "guid": "1d4d379b1603044a744d793a9e721b29",
+      "options": {
+        "expected_update_period_in_days": "5",
+        "url": "http://badassoftheweek.com/rss.xml"
+      },
+      "schedule": "every_1d",
       "keep_events_for": 172800
     },
     {
@@ -93,12 +93,17 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "priceonomics",
+      "name": "priceonomics, stephan boyer, pixelbeat, things of interest",
       "disabled": false,
       "guid": "228e85061185d0f57599afc8f63950a9",
       "options": {
         "expected_update_period_in_days": "7",
-        "url": "https://priceonomics.com/latest.rss"
+        "url": [
+          "https://priceonomics.com/latest.rss",
+          "https://www.stephanboyer.com/rss",
+          "http://www.pixelbeat.org/feed/rss2.xml",
+          "https://qntm.org/rss.php"
+        ]
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -157,7 +162,7 @@
       "disabled": false,
       "guid": "3b860ac36f021075dbb59628d7942020",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -180,7 +185,7 @@
       "disabled": false,
       "guid": "3cdce11fd66242b23b064126901dfe53",
       "options": {
-        "expected_update_period_in_days": "5",
+        "expected_update_period_in_days": "14",
         "url": "http://oglaf.com/feeds/rss/",
         "max_events_per_run": "5"
       },
@@ -193,7 +198,7 @@
       "disabled": false,
       "guid": "4002f73438041dc2a03e8b8d77cae049",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -213,7 +218,7 @@
       "disabled": false,
       "guid": "44d565d2e73d433b6cbacc7eb85296a7",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "data_from_event": "{{content}}",
         "type": "html",
         "mode": "merge",
@@ -230,36 +235,21 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "treelobster",
+      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters",
       "disabled": false,
-      "guid": "4a67fa75ac1459d81abc6dd2d8905121",
+      "guid": "486bcf512b50c544827097033458646d",
       "options": {
         "expected_update_period_in_days": "7",
-        "url": "http://www.treelobsters.com/feeds/posts/default"
+        "url": [
+          "https://blog.petrzemek.net/feed/",
+          "http://palves.net/feed/",
+          "http://brandonio21.com/feed/",
+          "http://www.joshbarczak.com/blog/?feed=rss2",
+          "https://feeds.feedburner.com/ShadyCharacters"
+        ]
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
-    },
-    {
-      "type": "Agents::WebsiteAgent",
-      "name": "Fix existential comics",
-      "disabled": false,
-      "guid": "4bbb0a8db2ca046f54947d7e9f185333",
-      "options": {
-        "expected_update_period_in_days": "2",
-        "data_from_event": "{{content}}",
-        "type": "text",
-        "mode": "merge",
-        "extract": {
-          "title_text": {
-            "regexp": "alt=\"(.*)\" title=",
-            "index": 1
-          }
-        }
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800,
-      "propagate_immediately": false
     },
     {
       "type": "Agents::RssAgent",
@@ -267,7 +257,7 @@
       "disabled": false,
       "guid": "56bb85d3e2862812931d20b6fde406a5",
       "options": {
-        "expected_update_period_in_days": "5",
+        "expected_update_period_in_days": "14",
         "url": "http://deathbulge.com/rss.xml"
       },
       "schedule": "every_2h",
@@ -289,7 +279,7 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab main .entry-content",
+      "name": "Grab main .entry-content, #main .entry-content",
       "disabled": false,
       "guid": "606130e1534ddade20db57f6961ea5c3",
       "options": {
@@ -299,7 +289,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": "main .entry-content"
+            "css": "main .entry-content, #main .entry-content"
           }
         }
       },
@@ -346,7 +336,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": "#comic img"
+            "css": ".comic img"
           },
           "extra": {
             "css": "li:first-child .body"
@@ -372,7 +362,7 @@
           "title": "Full Text feeds",
           "item": {
             "title": "{{title}}",
-            "description": "{{ content | remove: 'height=' | remove: 'width=' | remove: '-150x150'   | remove: '-170x170' }} {% if title_text != '' %} <p> {{ title_text }} {% endif %} <p> {{ extra }}",
+            "description": "{{ content | remove: '\"mouseover\" src=' | remove: 'data-over' | remove: 'height=' | remove: 'width=' | remove: 'resize=' | remove: '-150x150'   | remove: '-170x170' }} {% if title_text != '' %} <p> {{ title_text }} {% endif %} <p> {{ extra }}",
             "link": "{{url}}",
             "guid": "{{url}}",
             "pubDate": "{{last_updated}}",
@@ -381,7 +371,7 @@
           "link": "https://mysterious-lake-12328.herokuapp.com/scenarios/2",
           "description": "full text feeds"
         },
-        "events_to_show": "300"
+        "events_to_show": "3000"
       },
       "propagate_immediately": true
     },
@@ -391,7 +381,7 @@
       "disabled": false,
       "guid": "6e174c4da7ecd756938809751538f220",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": "http://www.threepanelsoul.com/rss.php"
       },
       "schedule": "every_2h",
@@ -411,17 +401,17 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .main-img",
+      "name": "Grab .main-img, .img-comic",
       "disabled": false,
       "guid": "776403ee888d6b71319568d606d977e0",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
         "extract": {
           "content": {
-            "css": "noscript .main-img"
+            "css": "noscript .main-img, .img-comic"
           }
         }
       },
@@ -449,7 +439,7 @@
       "disabled": false,
       "guid": "89b2a28929657ee15bc0d5cec63e5600",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -472,10 +462,10 @@
       "disabled": false,
       "guid": "89da0f78e765ca110e65160d66fae666",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": "https://www.malwaretech.com/feed/"
       },
-      "schedule": "every_2h",
+      "schedule": "every_2d",
       "keep_events_for": 172800
     },
     {
@@ -521,17 +511,20 @@
         "url": "http://www.giantitp.com/comics/oots.rss",
         "expected_update_period_in_days": "14"
       },
-      "schedule": "every_2d",
+      "schedule": "every_1d",
       "keep_events_for": 0
     },
     {
       "type": "Agents::RssAgent",
-      "name": "twenty sided",
+      "name": "twenty sided, tokyo damage",
       "disabled": false,
       "guid": "988988a2c9b3578d69e649362412df55",
       "options": {
         "expected_update_period_in_days": "1",
-        "url": "http://www.shamusyoung.com/twentysidedtale/?feed=rss2"
+        "url": [
+          "http://www.shamusyoung.com/twentysidedtale/?feed=rss2",
+          "http://www.hellodamage.com/top/feed/"
+        ]
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -566,7 +559,11 @@
         "url": [
           "https://feeds.feedburner.com/Optipess",
           "http://www.treelobsters.com/feeds/posts/default",
-          "http://qwantz.com/rssfeed.php"
+          "http://qwantz.com/rssfeed.php",
+          "http://drawingboardcomic.com/rss.php",
+          "http://www.treelobsters.com/feeds/posts/default",
+          "http://nedroid.com/feed/",
+          "http://imogenquest.net/?feed=rss2"
         ]
       },
       "schedule": "every_2h",
@@ -618,18 +615,6 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "shady characters",
-      "disabled": false,
-      "guid": "a475ebe5d9a1bd7c151d79ec451ea530",
-      "options": {
-        "expected_update_period_in_days": "7",
-        "url": "https://feeds.feedburner.com/ShadyCharacters"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
-    },
-    {
-      "type": "Agents::RssAgent",
       "name": "foolish manifesto",
       "disabled": false,
       "guid": "b4a10f7a67769a03a09a9158626f3b65",
@@ -646,7 +631,7 @@
       "disabled": false,
       "guid": "b6804eb9c54b94a60c7bf1671a6fa0d8",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{ url | replace: \"#\", \"api\" }}",
         "type": "json",
         "mode": "merge",
@@ -661,16 +646,24 @@
       "propagate_immediately": false
     },
     {
-      "type": "Agents::RssAgent",
-      "name": "tofugu",
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab badass",
       "disabled": false,
-      "guid": "b87c39376426c98e1f4c96cfcc7a06a2",
+      "guid": "bbab944268ea7fec10de089fd8a99b4d",
       "options": {
-        "expected_update_period_in_days": "7",
-        "url": "https://www.tofugu.com/feed.xml"
+        "expected_update_period_in_days": "2",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "div[style^=\"display\"], [bordercolor] td[valign]"
+          }
+        }
       },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
+      "schedule": "every_1d",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
     },
     {
       "type": "Agents::RssAgent",
@@ -698,23 +691,37 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .blog-content",
+      "name": "Grab .blog-content, #content",
       "disabled": false,
       "guid": "c5e34c10dc68629a5a43e84e8e9fb0fe",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
         "extract": {
           "content": {
-            "css": ".blog-content"
+            "css": ".blog-content, #content"
           }
         }
       },
       "schedule": "every_2h",
       "keep_events_for": 172800,
       "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "tofugu",
+      "disabled": false,
+      "guid": "ca37d583a48782a8a26e0d7c479c33e1",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": [
+          "https://www.tofugu.com/feed.xml"
+        ]
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 172800
     },
     {
       "type": "Agents::WebsiteAgent",
@@ -770,7 +777,7 @@
       "disabled": false,
       "guid": "d0e3ed25ea72fa4b7509c06d7e5c917d",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -802,7 +809,7 @@
       "disabled": false,
       "guid": "d3d1f232e4f81de70ae752934fe0a607",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": "https://feeds.feedburner.com/StupidFox"
       },
       "schedule": "every_2h",
@@ -814,7 +821,7 @@
       "disabled": false,
       "guid": "d577e5821a192298e3ba1436e96aabae",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -829,12 +836,24 @@
       "propagate_immediately": false
     },
     {
+      "type": "Agents::RssAgent",
+      "name": "dilbert",
+      "disabled": false,
+      "guid": "d8636d990a7f187596b2f4310476d14d",
+      "options": {
+        "expected_update_period_in_days": "1",
+        "url": "http://dilbert.com/feed"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 172800
+    },
+    {
       "type": "Agents::WebsiteAgent",
       "name": "Grab three panel soul",
       "disabled": false,
       "guid": "df215cd04084abe5ed016d4e7f69ce76",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -869,7 +888,7 @@
       "disabled": false,
       "guid": "edd1da70808891fab430478b71e3bd9e",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url_from_event": "{{ bonus_url }}",
         "type": "html",
         "mode": "merge",
@@ -889,7 +908,7 @@
       "disabled": false,
       "guid": "ef4e9a8acb7d24e50ccedcebd5c0f2bd",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -924,18 +943,6 @@
       "propagate_immediately": false
     },
     {
-      "type": "Agents::RssAgent",
-      "name": "etherealmind",
-      "disabled": false,
-      "guid": "f4b945b71698ef0ef038f7eef267d614",
-      "options": {
-        "expected_update_period_in_days": "7",
-        "url": "http://feeds.etherealmind.com/etherealmind"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
-    },
-    {
       "type": "Agents::WebsiteAgent",
       "name": "Grab #main",
       "disabled": false,
@@ -957,23 +964,11 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "sophos",
-      "disabled": false,
-      "guid": "fb339fbccbf3ff2be88bb1b237df1d88",
-      "options": {
-        "expected_update_period_in_days": "1",
-        "url": "https://nakedsecurity.sophos.com/feed/"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
-    },
-    {
-      "type": "Agents::RssAgent",
       "name": "sent from the moon",
       "disabled": false,
       "guid": "fd2c0bcd54bcad4105de5e5faf6c3c3f",
       "options": {
-        "expected_update_period_in_days": "5",
+        "expected_update_period_in_days": "14",
         "url": "http://sentfromthemoon.com/feed"
       },
       "schedule": "every_2h",
@@ -993,7 +988,9 @@
           "http://businesscat.happyjar.com/feed/",
           "http://extrafabulouscomics.com/feed/",
           "http://theawkwardyeti.com/feed/",
-          "http://www.loadingartist.com/feed/"
+          "http://www.loadingartist.com/feed/",
+          "http://nopornplan.com/feed/",
+          "http://itsthetie.com/feed/"
         ],
         "max_events_per_run": "300"
       },
@@ -1004,31 +1001,31 @@
   "links": [
     {
       "source": 0,
-      "receiver": 16
+      "receiver": 22
     },
     {
       "source": 1,
-      "receiver": 23
+      "receiver": 49
     },
     {
       "source": 2,
-      "receiver": 50
+      "receiver": 0
     },
     {
       "source": 3,
-      "receiver": 1
-    },
-    {
-      "source": 4,
       "receiver": 14
     },
     {
+      "source": 4,
+      "receiver": 39
+    },
+    {
       "source": 5,
-      "receiver": 23
+      "receiver": 22
     },
     {
       "source": 6,
-      "receiver": 44
+      "receiver": 42
     },
     {
       "source": 7,
@@ -1040,23 +1037,23 @@
     },
     {
       "source": 9,
-      "receiver": 22
+      "receiver": 21
     },
     {
       "source": 10,
-      "receiver": 30
+      "receiver": 29
     },
     {
       "source": 11,
-      "receiver": 37
+      "receiver": 36
     },
     {
       "source": 12,
-      "receiver": 46
+      "receiver": 45
     },
     {
       "source": 13,
-      "receiver": 23
+      "receiver": 22
     },
     {
       "source": 14,
@@ -1064,183 +1061,175 @@
     },
     {
       "source": 15,
-      "receiver": 37
-    },
-    {
-      "source": 16,
-      "receiver": 23
-    },
-    {
-      "source": 17,
-      "receiver": 40
-    },
-    {
-      "source": 18,
-      "receiver": 23
-    },
-    {
-      "source": 19,
-      "receiver": 23
-    },
-    {
-      "source": 20,
-      "receiver": 23
-    },
-    {
-      "source": 21,
-      "receiver": 11
-    },
-    {
-      "source": 22,
-      "receiver": 37
-    },
-    {
-      "source": 24,
-      "receiver": 51
-    },
-    {
-      "source": 25,
-      "receiver": 36
-    },
-    {
-      "source": 26,
-      "receiver": 23
-    },
-    {
-      "source": 27,
-      "receiver": 37
-    },
-    {
-      "source": 28,
-      "receiver": 23
-    },
-    {
-      "source": 29,
-      "receiver": 47
-    },
-    {
-      "source": 30,
-      "receiver": 23
-    },
-    {
-      "source": 31,
-      "receiver": 5
-    },
-    {
-      "source": 32,
-      "receiver": 55
-    },
-    {
-      "source": 33,
-      "receiver": 34
-    },
-    {
-      "source": 34,
-      "receiver": 23
-    },
-    {
-      "source": 35,
-      "receiver": 37
-    },
-    {
-      "source": 36,
-      "receiver": 23
-    },
-    {
-      "source": 37,
-      "receiver": 23
-    },
-    {
-      "source": 38,
-      "receiver": 19
-    },
-    {
-      "source": 39,
-      "receiver": 57
-    },
-    {
-      "source": 40,
-      "receiver": 23
-    },
-    {
-      "source": 41,
-      "receiver": 54
-    },
-    {
-      "source": 42,
-      "receiver": 11
-    },
-    {
-      "source": 43,
-      "receiver": 26
-    },
-    {
-      "source": 44,
-      "receiver": 23
-    },
-    {
-      "source": 45,
-      "receiver": 23
-    },
-    {
-      "source": 46,
       "receiver": 18
     },
     {
-      "source": 47,
-      "receiver": 23
+      "source": 16,
+      "receiver": 38
     },
     {
-      "source": 48,
+      "source": 17,
+      "receiver": 22
+    },
+    {
+      "source": 18,
+      "receiver": 22
+    },
+    {
+      "source": 19,
+      "receiver": 22
+    },
+    {
+      "source": 20,
+      "receiver": 11
+    },
+    {
+      "source": 21,
+      "receiver": 36
+    },
+    {
+      "source": 23,
+      "receiver": 51
+    },
+    {
+      "source": 24,
+      "receiver": 35
+    },
+    {
+      "source": 25,
+      "receiver": 22
+    },
+    {
+      "source": 26,
+      "receiver": 36
+    },
+    {
+      "source": 27,
+      "receiver": 22
+    },
+    {
+      "source": 28,
+      "receiver": 46
+    },
+    {
+      "source": 29,
+      "receiver": 22
+    },
+    {
+      "source": 30,
+      "receiver": 5
+    },
+    {
+      "source": 31,
+      "receiver": 55
+    },
+    {
+      "source": 32,
+      "receiver": 33
+    },
+    {
+      "source": 33,
+      "receiver": 22
+    },
+    {
+      "source": 34,
+      "receiver": 36
+    },
+    {
+      "source": 35,
+      "receiver": 22
+    },
+    {
+      "source": 36,
+      "receiver": 22
+    },
+    {
+      "source": 37,
+      "receiver": 56
+    },
+    {
+      "source": 38,
+      "receiver": 22
+    },
+    {
+      "source": 39,
+      "receiver": 22
+    },
+    {
+      "source": 40,
+      "receiver": 11
+    },
+    {
+      "source": 41,
+      "receiver": 25
+    },
+    {
+      "source": 42,
+      "receiver": 22
+    },
+    {
+      "source": 43,
+      "receiver": 54
+    },
+    {
+      "source": 44,
+      "receiver": 22
+    },
+    {
+      "source": 45,
+      "receiver": 17
+    },
+    {
+      "source": 46,
+      "receiver": 22
+    },
+    {
+      "source": 47,
       "receiver": 14
     },
     {
-      "source": 49,
-      "receiver": 28
-    },
-    {
-      "source": 50,
-      "receiver": 23
-    },
-    {
-      "source": 51,
-      "receiver": 23
-    },
-    {
-      "source": 52,
-      "receiver": 45
-    },
-    {
-      "source": 53,
-      "receiver": 23
-    },
-    {
-      "source": 54,
-      "receiver": 23
-    },
-    {
-      "source": 55,
-      "receiver": 20
-    },
-    {
-      "source": 56,
-      "receiver": 19
-    },
-    {
-      "source": 57,
-      "receiver": 23
-    },
-    {
-      "source": 58,
-      "receiver": 19
-    },
-    {
-      "source": 59,
+      "source": 48,
       "receiver": 27
     },
     {
-      "source": 60,
-      "receiver": 23
+      "source": 49,
+      "receiver": 22
+    },
+    {
+      "source": 50,
+      "receiver": 25
+    },
+    {
+      "source": 51,
+      "receiver": 22
+    },
+    {
+      "source": 52,
+      "receiver": 44
+    },
+    {
+      "source": 53,
+      "receiver": 22
+    },
+    {
+      "source": 54,
+      "receiver": 22
+    },
+    {
+      "source": 55,
+      "receiver": 19
+    },
+    {
+      "source": 56,
+      "receiver": 22
+    },
+    {
+      "source": 57,
+      "receiver": 26
+    },
+    {
+      "source": 58,
+      "receiver": 22
     }
   ],
   "control_links": [
