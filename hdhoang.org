@@ -2940,7 +2940,7 @@
              --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
              --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
             | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
-            | grep -vE 'reader/api|rapidgator|escapistmag|muspy' \
+            | grep -vE 'reader/api|rapidgator|js|avatar|identico|png|jpg|nippon.com|escapistmag|muspy' \
             | <<ytdl>> -a- --no-mtime --ignore-errors 2>/dev/null \
             | grep -B1 100%
     }
