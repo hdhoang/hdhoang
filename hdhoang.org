@@ -1192,7 +1192,7 @@
   #+BEGIN_SRC conf
     Host <<prefix>>1
     User root
-    IdentityFile ~/.ssh/kub
+    IdentityFile ~/.ssh/home
   #+END_SRC
 
   #+BEGIN_SRC elisp :tangle ~/.emacs
@@ -1203,7 +1203,7 @@
   #+BEGIN_SRC conf
     Host <<prefix>>185
     User <<username>>
-    IdentityFile ~/.ssh/kub
+    IdentityFile ~/.ssh/home
   #+END_SRC
 
   #+BEGIN_SRC elisp :tangle ~/.emacs
@@ -1879,7 +1879,7 @@
           server_name <<domain>>;
 
           location /deluge {
-            proxy_pass http://127.0.0.1:8112/;
+            proxy_pass http://kub.<<domain>>:8112/;
           }
           location /zabbix {
             root /usr/share/webapps;
