@@ -1531,6 +1531,7 @@
            :bind ("C-x g" . magit-status)
            :config
            (setq magit-save-repository-buffers 'dontask
+                 magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1
                  magit-push-always-verify nil))))
   #+END_SRC
 
