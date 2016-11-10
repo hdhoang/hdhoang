@@ -2865,7 +2865,7 @@
     bmark -keyword ma -t artist http://musicbrainz.org/search?advanced=1&type=artist&tport=8000&query=%s
     bmark -keyword mg -t group http://musicbrainz.org/search?advanced=1&type=release_group&tport=8000&query=%s
     bmark -keyword mr -t recording http://musicbrainz.org/search?advanced=1&type=recording&tport=8000&query=%s
-    bmark -keyword gm -t gmail https://mail.google.com/mail/#spam
+    bmark -keyword gm -t gmail https://inbox.google.com/
     set! accessibility.browsewithcaret_shortcut.enabled=false
     set! browser.newtabpage.enabled=false
     set! browser.privatebrowsing.dont_prompt_on_enter=true
@@ -2957,7 +2957,7 @@
 
   #+BEGIN_SRC vimrc
     set passkeys+=tumblr.com:jk
-    set passkeys+=mail.google.com/mail/:'#!ms+-/? jknpux'
+    set passkeys+=inbox.google.com:'#[/? rjknpou'
     set passkeys+=google.com/contacts/:'#jkoux,.'
   #+END_SRC
 
