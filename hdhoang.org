@@ -2739,7 +2739,7 @@
   Use DuckDuckGo:
 
   #+BEGIN_SRC vimrc
-    silent bmark -keyword ddg -t DDG https://duckduckgo.com/?kn=1&kp=-1&kae=c&q=%s
+    silent bmark -keyword ddg -t DDG https://beta.duckduckgo.com/?kp=-1&kn=1&kaj=m&kam=google-maps&kae=c&q=%s
     set defsearch=ddg
   #+END_SRC
 
