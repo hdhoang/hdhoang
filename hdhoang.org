@@ -128,7 +128,7 @@
 
   #+NAME: pacman
   #+BEGIN_SRC text
-    yaourt --noconfirm --needed
+    pacaur --noconfirm --needed
   #+END_SRC
 
   #+NAME: ytdl
