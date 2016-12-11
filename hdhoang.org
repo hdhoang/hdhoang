@@ -2922,7 +2922,12 @@
 
   #+BEGIN_SRC vimrc
     bmark -keyword fb -t facebook https://fb.me/%s
+    style facebook.com .carouselParent { display: none !important }
     map <A-s> -js dactyl.open("https://www.facebook.com/sharer/sharer.php?u=" + content.location)
+  #+END_SRC
+
+  #+BEGIN_SRC vimrc
+    set passkeys+=memrise.com:12345678
   #+END_SRC
 
   Inoreader
@@ -2931,7 +2936,7 @@
     map <A-f> -js dactyl.open("https://www.inoreader.com/?add_feed=" + content.location)
     map <A-w> -js dactyl.open("https://www.inoreader.com/bookmarklet/save_web_page/" + encodeURIComponent(content.location))
     js services.permissions.add(services.io.newURI("http:inoreader.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
-    set passkeys+=inoreader.com:jkgafswhq
+    set passkeys+=inoreader.com:jkgafswhq<left><right>
   #+END_SRC
 
   Get videos from starred items
