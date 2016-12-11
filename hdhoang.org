@@ -2825,10 +2825,10 @@
     map <A-t> -js content.document.toggleImageSize()
   #+END_SRC
 
-  Replace the status line with navigation bar, and show link in the commandline:
+  Minimize GUI
 
   #+BEGIN_SRC vimrc
-    set guioptions=bTrc
+    set guioptions=bsrc
     set showstatuslinks=command
   #+END_SRC
 
