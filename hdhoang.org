@@ -1773,6 +1773,10 @@
     #+END_SRC
 
     #+BEGIN_SRC conf :tangle /ssh:10.117.14.185:.tmux.conf
+      set -g base-index 1
+      set -g pane-base-index 1
+      setw -g aggressive-resize on
+      set -g history-limit 10000
       new-window -n Journal journalctl -afb
       new-window -n ipfs ipfs daemon
       new-window -n luser cp /var/lib/minidlna/Public/luser.py ~ && python2 ~/luser.py
