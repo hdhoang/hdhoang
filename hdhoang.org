@@ -1777,9 +1777,6 @@
       set -g pane-base-index 1
       setw -g aggressive-resize on
       set -g history-limit 10000
-      new-window -n Journal journalctl -afb
-      new-window -n ipfs ipfs daemon
-      new-window -n luser cp /var/lib/minidlna/Public/luser.py ~ && python2 ~/luser.py
     #+END_SRC
 
 *** Torrent
