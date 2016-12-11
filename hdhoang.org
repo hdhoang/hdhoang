@@ -2980,8 +2980,7 @@
         string = buffer.selection.toString();
     }
     for (var c of string) {
-        commands.execute("tabopen "
-        + "http://hanviet.org/hv_timchu_ndv.php?unichar=" + c.codePointAt(0))
+        commands.execute("tabopen " + "http://hvdic.thivien.net/word/" + c)
     }
     EOS
   #+END_SRC
