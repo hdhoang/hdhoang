@@ -1825,7 +1825,7 @@
 
 *** HTTP
     #+BEGIN_SRC sh
-      <<pacman>> -S nginx-mainline php-fpm
+      <<pacman>> -S nginx-mainline-full php-fpm
     #+END_SRC
 
     #+NAME: php
@@ -1834,11 +1834,12 @@
         fastcgi_split_path_info ^(.+\.php)(/.+)$;
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_pass unix:/run/php-fpm/php-fpm.sock;
+        fastcgi_pass php-fpm;
       }
     #+END_SRC
 
     #+BEGIN_SRC doctex :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
+      load_module /usr/lib/nginx-mainline/modules/ngx_http_fancyindex_module.so;
       events {}
       stream {
         server {
@@ -1855,11 +1856,20 @@
         client_max_body_size 10G;
         fastcgi_buffers 64 4K;
         root /srv/http;
-        autoindex on;
+        fancyindex on;
+        fancyindex_default_sort date_desc;
+        fancyindex_exact_size off;
+        fancyindex_name_length 82;
+        fancyindex_time_format "%Y-%m-%d %H:%M";
         index index.html index.php;
 
         access_log off;
         log_not_found off;
+
+        upstream php-fpm {
+          server unix:/run/php-fpm/php-fpm.sock;
+          server frambesi:8989;
+        }
 
         server {
           return 301 https://$host$request_uri;
