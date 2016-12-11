@@ -2791,6 +2791,8 @@
 
   #+BEGIN_SRC vimrc
     map -m normal,insert <F1> <C-^>
+    map -m insert <C-p> -ex tabprevious
+    map -m insert <C-n> -ex tabnext
   #+END_SRC
 
   Don't raise these openings:
