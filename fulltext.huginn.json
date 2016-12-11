@@ -7,7 +7,7 @@
   "tag_fg_color": "#ffffff",
   "tag_bg_color": "#5bc0de",
   "icon": "gear",
-  "exported_at": "2016-10-13T02:25:07Z",
+  "exported_at": "2016-12-11T11:01:09Z",
   "agents": [
     {
       "type": "Agents::WebsiteAgent",
@@ -28,18 +28,6 @@
       "schedule": "every_2h",
       "keep_events_for": 172800,
       "propagate_immediately": false
-    },
-    {
-      "type": "Agents::RssAgent",
-      "name": "ma3",
-      "disabled": false,
-      "guid": "150bebcd8ea8de04269d58de584f0b4d",
-      "options": {
-        "expected_update_period_in_days": "7",
-        "url": "http://www.ma3comic.com/comic.rss"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
     },
     {
       "type": "Agents::RssAgent",
@@ -66,18 +54,6 @@
       "keep_events_for": 172800
     },
     {
-      "type": "Agents::RssAgent",
-      "name": "Badass of the week",
-      "disabled": false,
-      "guid": "1d4d379b1603044a744d793a9e721b29",
-      "options": {
-        "expected_update_period_in_days": "5",
-        "url": "http://badassoftheweek.com/rss.xml"
-      },
-      "schedule": "every_1d",
-      "keep_events_for": 172800
-    },
-    {
       "type": "Agents::EventFormattingAgent",
       "name": "Show rollover comic",
       "disabled": false,
@@ -99,7 +75,6 @@
       "options": {
         "expected_update_period_in_days": "7",
         "url": [
-          "https://priceonomics.com/latest.rss",
           "https://www.stephanboyer.com/rss",
           "http://www.pixelbeat.org/feed/rss2.xml",
           "https://qntm.org/rss.php"
@@ -146,12 +121,15 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "practical dev",
+      "name": "practical dev, OddThinking",
       "disabled": false,
       "guid": "3439a8b55dfc2fac343bada956de2b61",
       "options": {
         "expected_update_period_in_days": "7",
-        "url": "https://dev.to/feed"
+        "url": [
+          "https://dev.to/feed",
+          "http://www.somethinkodd.com/oddthinking/feed/atom/"
+        ]
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -298,21 +276,6 @@
       "propagate_immediately": false
     },
     {
-      "type": "Agents::EventFormattingAgent",
-      "name": "Fix OOTS",
-      "disabled": false,
-      "guid": "63b4d4f0d83906a4e447e2cbb0f93edd",
-      "options": {
-        "instructions": {
-          "content": "{{ content | replace: '/comics/', 'http://www.giantitp.com/comics/' }}",
-          "id": "{{url}}"
-        },
-        "mode": "merge"
-      },
-      "keep_events_for": 172800,
-      "propagate_immediately": false
-    },
-    {
       "type": "Agents::RssAgent",
       "name": "hejibits",
       "disabled": false,
@@ -330,7 +293,7 @@
       "disabled": false,
       "guid": "65d4577a009657a2d11b28511d0520da",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "30",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -470,7 +433,7 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .article .body",
+      "name": "Grab .article .body, .article .text",
       "disabled": false,
       "guid": "94d51cb15c8692cce5c1d469cb5da01a",
       "options": {
@@ -480,7 +443,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": ".article .body"
+            "css": ".article .body, .article .text"
           }
         }
       },
@@ -503,27 +466,17 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "OOTS",
-      "disabled": false,
-      "guid": "96dd9159c9adb9d857a9e48801d14863",
-      "options": {
-        "max_events_per_run": "1",
-        "url": "http://www.giantitp.com/comics/oots.rss",
-        "expected_update_period_in_days": "14"
-      },
-      "schedule": "every_1d",
-      "keep_events_for": 0
-    },
-    {
-      "type": "Agents::RssAgent",
-      "name": "twenty sided, tokyo damage",
+      "name": "medium, twenty sided, tokyo damage",
       "disabled": false,
       "guid": "988988a2c9b3578d69e649362412df55",
       "options": {
         "expected_update_period_in_days": "1",
         "url": [
           "http://www.shamusyoung.com/twentysidedtale/?feed=rss2",
-          "http://www.hellodamage.com/top/feed/"
+          "http://www.hellodamage.com/top/feed/",
+          "https://medium.com/feed/@RiotChat",
+          "https://medium.com/feed/snips-ai",
+          "https://medium.com/feed/@sgrif"
         ]
       },
       "schedule": "every_2h",
@@ -531,7 +484,7 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .entry",
+      "name": "Grab .entry, .section-inner",
       "disabled": false,
       "guid": "9952e9e33647d092a07c43dfa1284782",
       "options": {
@@ -541,7 +494,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": ".entry"
+            "css": ".entry, .section-inner"
           }
         }
       },
@@ -642,26 +595,6 @@
         }
       },
       "schedule": "every_2h",
-      "keep_events_for": 172800,
-      "propagate_immediately": false
-    },
-    {
-      "type": "Agents::WebsiteAgent",
-      "name": "Grab badass",
-      "disabled": false,
-      "guid": "bbab944268ea7fec10de089fd8a99b4d",
-      "options": {
-        "expected_update_period_in_days": "2",
-        "url": "{{url}}",
-        "type": "html",
-        "mode": "merge",
-        "extract": {
-          "content": {
-            "css": "div[style^=\"display\"], [bordercolor] td[valign]"
-          }
-        }
-      },
-      "schedule": "every_1d",
       "keep_events_for": 172800,
       "propagate_immediately": false
     },
@@ -924,26 +857,6 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab OOTS",
-      "disabled": false,
-      "guid": "f0cdeb1d7b1dce02c3ee8f09d598fd6a",
-      "options": {
-        "expected_update_period_in_days": "2",
-        "url": "{{url}}",
-        "type": "html",
-        "mode": "merge",
-        "extract": {
-          "content": {
-            "css": "img[src^=\"/comics/images/\"]"
-          }
-        }
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800,
-      "propagate_immediately": false
-    },
-    {
-      "type": "Agents::WebsiteAgent",
       "name": "Grab #main",
       "disabled": false,
       "guid": "f74298bd0f9f5eaa68431b7cf31221ca",
@@ -990,7 +903,8 @@
           "http://theawkwardyeti.com/feed/",
           "http://www.loadingartist.com/feed/",
           "http://nopornplan.com/feed/",
-          "http://itsthetie.com/feed/"
+          "http://itsthetie.com/feed/",
+          "http://toonhole.com/feed/"
         ],
         "max_events_per_run": "300"
       },
@@ -1001,143 +915,143 @@
   "links": [
     {
       "source": 0,
-      "receiver": 22
+      "receiver": 19
     },
     {
       "source": 1,
-      "receiver": 49
-    },
-    {
-      "source": 2,
       "receiver": 0
     },
     {
+      "source": 2,
+      "receiver": 12
+    },
+    {
       "source": 3,
-      "receiver": 14
+      "receiver": 19
     },
     {
       "source": 4,
-      "receiver": 39
+      "receiver": 37
     },
     {
       "source": 5,
-      "receiver": 22
+      "receiver": 9
     },
     {
       "source": 6,
-      "receiver": 42
+      "receiver": 11
     },
     {
       "source": 7,
-      "receiver": 11
-    },
-    {
-      "source": 8,
-      "receiver": 13
-    },
-    {
-      "source": 9,
-      "receiver": 21
-    },
-    {
-      "source": 10,
-      "receiver": 29
-    },
-    {
-      "source": 11,
-      "receiver": 36
-    },
-    {
-      "source": 12,
-      "receiver": 45
-    },
-    {
-      "source": 13,
-      "receiver": 22
-    },
-    {
-      "source": 14,
-      "receiver": 53
-    },
-    {
-      "source": 15,
       "receiver": 18
     },
     {
+      "source": 8,
+      "receiver": 26
+    },
+    {
+      "source": 9,
+      "receiver": 32
+    },
+    {
+      "source": 10,
+      "receiver": 40
+    },
+    {
+      "source": 11,
+      "receiver": 19
+    },
+    {
+      "source": 12,
+      "receiver": 48
+    },
+    {
+      "source": 13,
+      "receiver": 16
+    },
+    {
+      "source": 14,
+      "receiver": 34
+    },
+    {
+      "source": 15,
+      "receiver": 19
+    },
+    {
       "source": 16,
-      "receiver": 38
+      "receiver": 19
     },
     {
       "source": 17,
-      "receiver": 22
+      "receiver": 9
     },
     {
       "source": 18,
-      "receiver": 22
-    },
-    {
-      "source": 19,
-      "receiver": 22
+      "receiver": 32
     },
     {
       "source": 20,
-      "receiver": 11
-    },
-    {
-      "source": 21,
-      "receiver": 36
-    },
-    {
-      "source": 23,
-      "receiver": 51
-    },
-    {
-      "source": 24,
-      "receiver": 35
-    },
-    {
-      "source": 25,
-      "receiver": 22
-    },
-    {
-      "source": 26,
-      "receiver": 36
-    },
-    {
-      "source": 27,
-      "receiver": 22
-    },
-    {
-      "source": 28,
       "receiver": 46
     },
     {
+      "source": 21,
+      "receiver": 31
+    },
+    {
+      "source": 22,
+      "receiver": 19
+    },
+    {
+      "source": 23,
+      "receiver": 32
+    },
+    {
+      "source": 24,
+      "receiver": 19
+    },
+    {
+      "source": 25,
+      "receiver": 41
+    },
+    {
+      "source": 26,
+      "receiver": 19
+    },
+    {
+      "source": 27,
+      "receiver": 3
+    },
+    {
+      "source": 28,
+      "receiver": 29
+    },
+    {
       "source": 29,
-      "receiver": 22
+      "receiver": 19
     },
     {
       "source": 30,
-      "receiver": 5
+      "receiver": 32
     },
     {
       "source": 31,
-      "receiver": 55
+      "receiver": 19
     },
     {
       "source": 32,
-      "receiver": 33
+      "receiver": 19
     },
     {
       "source": 33,
-      "receiver": 22
+      "receiver": 50
     },
     {
       "source": 34,
-      "receiver": 36
+      "receiver": 19
     },
     {
       "source": 35,
-      "receiver": 22
+      "receiver": 9
     },
     {
       "source": 36,
@@ -1145,91 +1059,67 @@
     },
     {
       "source": 37,
-      "receiver": 56
-    },
-    {
-      "source": 38,
-      "receiver": 22
-    },
-    {
-      "source": 39,
-      "receiver": 22
-    },
-    {
-      "source": 40,
-      "receiver": 11
-    },
-    {
-      "source": 41,
-      "receiver": 25
-    },
-    {
-      "source": 42,
-      "receiver": 22
-    },
-    {
-      "source": 43,
-      "receiver": 54
-    },
-    {
-      "source": 44,
-      "receiver": 22
-    },
-    {
-      "source": 45,
-      "receiver": 17
-    },
-    {
-      "source": 46,
-      "receiver": 22
-    },
-    {
-      "source": 47,
-      "receiver": 14
-    },
-    {
-      "source": 48,
-      "receiver": 27
-    },
-    {
-      "source": 49,
-      "receiver": 22
-    },
-    {
-      "source": 50,
-      "receiver": 25
-    },
-    {
-      "source": 51,
-      "receiver": 22
-    },
-    {
-      "source": 52,
-      "receiver": 44
-    },
-    {
-      "source": 53,
-      "receiver": 22
-    },
-    {
-      "source": 54,
-      "receiver": 22
-    },
-    {
-      "source": 55,
       "receiver": 19
     },
     {
-      "source": 56,
+      "source": 38,
+      "receiver": 49
+    },
+    {
+      "source": 39,
+      "receiver": 19
+    },
+    {
+      "source": 40,
+      "receiver": 15
+    },
+    {
+      "source": 41,
+      "receiver": 19
+    },
+    {
+      "source": 42,
+      "receiver": 12
+    },
+    {
+      "source": 43,
+      "receiver": 24
+    },
+    {
+      "source": 44,
+      "receiver": 19
+    },
+    {
+      "source": 45,
       "receiver": 22
     },
     {
-      "source": 57,
-      "receiver": 26
+      "source": 46,
+      "receiver": 19
     },
     {
-      "source": 58,
-      "receiver": 22
+      "source": 47,
+      "receiver": 39
+    },
+    {
+      "source": 48,
+      "receiver": 19
+    },
+    {
+      "source": 49,
+      "receiver": 19
+    },
+    {
+      "source": 50,
+      "receiver": 19
+    },
+    {
+      "source": 51,
+      "receiver": 23
+    },
+    {
+      "source": 52,
+      "receiver": 19
     }
   ],
   "control_links": [
