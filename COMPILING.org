@@ -1,1 +1,0 @@
-See [[https://github.com/japaric/rust-cross][rust-cross]] for help with cross-compilation to ARM.
