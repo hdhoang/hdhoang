@@ -2429,6 +2429,7 @@
           tramp-default-method "ssh"
           undo-tree-mode-lighter ""
           visible-bell t
+          save-interprogram-paste-before-kill t
           frame-title-format "%b")
     (set-language-environment "UTF-8")
     (setq-default buffer-file-coding-system 'utf-8-unix)
