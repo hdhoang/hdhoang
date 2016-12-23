@@ -2669,7 +2669,6 @@
      alias j journalctl -afb $*
      alias sc <<system_ctl>> $*
      alias uc <<user_ctl>> $*
-     alias ytdl <<ytdl>> -a /home/<<username>>/q.txt
      alias fr free -h
    #+END_SRC
 
@@ -2946,14 +2945,16 @@
 
   #+BEGIN_SRC sh :tangle ~/.bash_login
     function videos() {
+        pacaur -Sy --noconfirm --needed youtube-dl
         wget -O- \
-             'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
+               'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
              --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
              --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
             | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
             | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|nippon.com|escapistmag|muspy' \
-            | <<ytdl>> -a- --no-mtime --ignore-errors 2>/dev/null \
-            | grep -B1 100%
+            | <<ytdl>> -a- --no-mtime --ignore-errors \
+            |& grep -vE 'generic|Unsupported'
+        sudo -u http /usr/share/webapps/owncloud/occ files:scan --path /hdhoang/files/Public/Videos
     }
   #+END_SRC
 
