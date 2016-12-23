@@ -1877,8 +1877,8 @@
           return 301 https://$host$request_uri;
         }
 
-        ssl_certificate /etc/letsencrypt/live/kub.<<domain>>/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/kub.<<domain>>/privkey.pem;
+        ssl_certificate /var/lib/acme/live/kub.<<domain>>/fullchain;
+        ssl_certificate_key /var/lib/acme/live/kub.<<domain>>/privkey;
         ssl_protocols TLSv1.2;
         ssl_ciphers EECDH+CHACHA20:EECDH+AES128;
         ssl_prefer_server_ciphers on;
@@ -1926,13 +1926,13 @@
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/ipsec.conf
       ca letsencrypt
           auto=add
-          cacert=/etc/letsencrypt/live/kub.<<domain>>/chain.pem
+          cacert=/var/lib/acme/live/kub.<<domain>>/chain
 
       conn kub
           auto=add
           left=<<prefix>>185
           leftid=kub.<<domain>>
-          leftcert=/etc/letsencrypt/live/kub.<<domain>>/cert.pem
+          leftcert=/var/lib/acme/live/kub.<<domain>>/cert
           leftsubnet=<<prefix>>0/24
           leftfirewall=yes
           leftdns=<<prefix>>1
