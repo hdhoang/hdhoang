@@ -1840,17 +1840,9 @@
       }
     #+END_SRC
 
-    #+BEGIN_SRC doctex :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
+    #+BEGIN_SRC c :tangle /sudo:10.117.14.185:/etc/nginx/nginx.conf
       load_module /usr/lib/nginx-mainline/modules/ngx_http_fancyindex_module.so;
       events {}
-      stream {
-        server {
-          listen 8443;
-          listen [::]:8443;
-          proxy_pass [::1]:4242;
-          error_log /var/log/nginx/quassel.log debug;
-        }
-      }
       http {
         include mime.types;
         charset utf-8;
