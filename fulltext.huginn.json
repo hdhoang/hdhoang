@@ -7,40 +7,8 @@
   "tag_fg_color": "#ffffff",
   "tag_bg_color": "#5bc0de",
   "icon": "gear",
-  "exported_at": "2017-01-21T03:03:00Z",
+  "exported_at": "2017-04-17T03:00:05Z",
   "agents": [
-    {
-      "type": "Agents::WebsiteAgent",
-      "name": "Grab .feature_item",
-      "disabled": false,
-      "guid": "111b169f1bb6d5b76b7ca00eee0db1a4",
-      "options": {
-        "expected_update_period_in_days": "2",
-        "url": "{{url}}",
-        "type": "html",
-        "mode": "merge",
-        "extract": {
-          "content": {
-            "css": ".feature_item"
-          }
-        }
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800,
-      "propagate_immediately": false
-    },
-    {
-      "type": "Agents::RssAgent",
-      "name": "Pearls Before Swine",
-      "disabled": false,
-      "guid": "15cc467f217cf1b9c16ebe466fec4a7f",
-      "options": {
-        "expected_update_period_in_days": "1",
-        "url": "https://feeds.feedburner.com/uclick/pearlsbeforeswine"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 172800
-    },
     {
       "type": "Agents::RssAgent",
       "name": "channelate, invisible bread",
@@ -76,7 +44,7 @@
       "disabled": false,
       "guid": "228e85061185d0f57599afc8f63950a9",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "15",
         "url": [
           "https://www.stephanboyer.com/rss",
           "http://www.pixelbeat.org/feed/rss2.xml",
@@ -90,12 +58,16 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "rg3",
+      "name": "rg3, puppet, rust vietnam",
       "disabled": false,
       "guid": "2932b81e7ee347cf1a05188048bb6e2a",
       "options": {
         "expected_update_period_in_days": "14",
-        "url": "http://rg3.name/index.rss"
+        "url": [
+          "http://rg3.name/index.rss",
+          "https://puppet.com/blog/rss.xml",
+          "https://blog.rust-lang.vn/feed.xml"
+        ]
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -165,7 +137,7 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .blogpost",
+      "name": "Grab .blogpost, .blog-body",
       "disabled": false,
       "guid": "4002f73438041dc2a03e8b8d77cae049",
       "options": {
@@ -175,7 +147,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": ".blogpost"
+            "css": ".blogpost, .blog-body"
           }
         }
       },
@@ -206,7 +178,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, etherealmind, perfectchipperman",
+      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, endler, etherealmind, perfectchipperman, pablojuan, khoi vinh",
       "disabled": false,
       "guid": "486bcf512b50c544827097033458646d",
       "options": {
@@ -218,7 +190,10 @@
           "http://www.joshbarczak.com/blog/?feed=rss2",
           "https://feeds.feedburner.com/ShadyCharacters",
           "http://feeds.etherealmind.com/etherealmind",
-          "http://en.perfectchipperman.com/feeds/posts/default"
+          "http://en.perfectchipperman.com/feeds/posts/default",
+          "http://pablojuan.com/feed/atom/",
+          "https://feeds2.feedburner.com/subtraction",
+          "http://matthias-endler.de/rss.xml"
         ]
       },
       "schedule": "every_2h",
@@ -252,7 +227,7 @@
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab main .entry-content, #main .entry-content",
+      "name": "Grab main .entry-content, #main .entry-content, main .content",
       "disabled": false,
       "guid": "606130e1534ddade20db57f6961ea5c3",
       "options": {
@@ -262,7 +237,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": "main .entry-content, #main .entry-content"
+            "css": "main .entry-content, #main .entry-content, main .content"
           }
         }
       },
@@ -317,7 +292,7 @@
           "link": "https://mysterious-lake-12328.herokuapp.com/scenarios/2",
           "description": "full text feeds"
         },
-        "events_to_show": "200"
+        "events_to_show": "2009"
       },
       "propagate_immediately": true
     },
@@ -392,16 +367,14 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "malwaretech, peteris.rocks, michaelwoerister, beekums, neikos",
+      "name": "peteris.rocks, michaelwoerister, neikos",
       "disabled": false,
       "guid": "89da0f78e765ca110e65160d66fae666",
       "options": {
-        "expected_update_period_in_days": "14",
+        "expected_update_period_in_days": "50",
         "url": [
-          "https://www.malwaretech.com/feed/",
           "https://peteris.rocks/rss.xml",
           "https://michaelwoerister.github.io/feed.xml",
-          "http://blog.professorbeekums.com/feeds/posts/default",
           "http://neikos.me/feed.xml"
         ]
       },
@@ -483,14 +456,16 @@
       "disabled": false,
       "guid": "9a64841bc5c0a9c360ac3ca7c5149d46",
       "options": {
-        "expected_update_period_in_days": "5",
+        "expected_update_period_in_days": "1",
         "url": [
           "https://feeds.feedburner.com/Optipess",
           "http://qwantz.com/rssfeed.php",
           "http://drawingboardcomic.com/rss.php",
           "http://nedroid.com/feed/",
           "http://imogenquest.net/?feed=rss2",
-          "http://sentfromthemoon.com/feed"
+          "http://sentfromthemoon.com/feed",
+          "https://xkcd.com/atom.xml",
+          "http://www.treelobsters.com/feeds/posts/default"
         ]
       },
       "schedule": "every_2h",
@@ -525,7 +500,7 @@
       "disabled": false,
       "guid": "a0f4cdd0156cb7392ed0ce1dea0151db",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "7",
         "data_from_event": "{{ content }}",
         "type": "html",
         "mode": "merge",
@@ -542,15 +517,17 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "foolish manifesto, rsc, lukasa",
+      "name": "foolish manifesto, rsc, lukasa, drhagen, transitiontech",
       "disabled": false,
       "guid": "b4a10f7a67769a03a09a9158626f3b65",
       "options": {
-        "expected_update_period_in_days": "7",
+        "expected_update_period_in_days": "14",
         "url": [
           "https://blog.afoolishmanifesto.com/index.xml",
           "https://research.swtch.com/feed.atom",
-          "https://lukasa.co.uk/rss.xml"
+          "https://lukasa.co.uk/rss.xml",
+          "http://drhagen.com/feed/",
+          "https://transitiontech.ca/feed.xml"
         ]
       },
       "schedule": "every_2h",
@@ -614,20 +591,19 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "tofugu, medium, flak, marek, urdhr",
+      "name": "tofugu, medium, flak, marek, urdhr, anderzon, misdreavus, giangnh",
       "disabled": false,
       "guid": "ca37d583a48782a8a26e0d7c479c33e1",
       "options": {
         "expected_update_period_in_days": "7",
         "url": [
           "https://medium.com/feed/@RiotChat",
+          "http://scattered-thoughts.net/feed.xml",
           "https://medium.com/feed/snips-ai",
           "https://medium.com/feed/@sgrif",
           "http://www.gabriel.urdhr.fr/feed.xml",
           "https://medium.com/feed/@cshirky",
-          "https://medium.com/feed/mozilla-tech",
           "https://medium.com/feed/@eugeniyoz",
-          "https://medium.com/feed/@paulcolomiets",
           "https://www.tofugu.com/feed.xml",
           "https://medium.com/feed/sensible-marks-of-ideas",
           "https://medium.com/feed/@davidherman",
@@ -642,7 +618,17 @@
           "https://medium.com/feed/@caulagi",
           "https://idea.popcount.org/rss.xml",
           "https://medium.com/feed/learning-rust",
-          "https://medium.com/feed/@octskyward"
+          "https://medium.com/feed/@octskyward",
+          "https://medium.com/feed/@veedrac",
+          "https://medium.com/feed/@ZachWeiner",
+          "http://fredrik.anderzon.se/rss/",
+          "http://quietmisdreavus.net/feed.xml",
+          "https://blog.professorbeekums.com/index.xml",
+          "https://medium.com/feed/@rillian",
+          "https://medium.com/feed/@raphlinus",
+          "https://www.giangnh.me/feed",
+          "https://medium.com/feed/@jordan_98525",
+          "http://asquera.de/blog/atom.xml"
         ]
       },
       "schedule": "every_2h",
@@ -674,7 +660,7 @@
       "disabled": false,
       "guid": "cf44392952e05180b9ebddc8f005cc9d",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "14",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -702,7 +688,7 @@
       "disabled": false,
       "guid": "d0e3ed25ea72fa4b7509c06d7e5c917d",
       "options": {
-        "expected_update_period_in_days": "14",
+        "expected_update_period_in_days": "53",
         "url": "{{url | replace: '//michael', 'https://michael' }}",
         "type": "html",
         "mode": "merge",
@@ -736,7 +722,7 @@
       "disabled": false,
       "guid": "d8636d990a7f187596b2f4310476d14d",
       "options": {
-        "expected_update_period_in_days": "1",
+        "expected_update_period_in_days": "7",
         "url": [
           "http://www.fowllanguagecomics.com/feed/"
         ]
@@ -828,7 +814,7 @@
       "disabled": false,
       "guid": "f74298bd0f9f5eaa68431b7cf31221ca",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "23",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -857,8 +843,7 @@
           "http://extrafabulouscomics.com/feed/",
           "http://theawkwardyeti.com/feed/",
           "http://www.loadingartist.com/feed/",
-          "http://nopornplan.com/feed/",
-          "http://itsthetie.com/feed/"
+          "http://nopornplan.com/feed/"
         ],
         "max_events_per_run": "300"
       },
@@ -869,51 +854,51 @@
   "links": [
     {
       "source": 0,
-      "receiver": 17
+      "receiver": 9
     },
     {
       "source": 1,
-      "receiver": 0
+      "receiver": 27
     },
     {
       "source": 2,
-      "receiver": 11
+      "receiver": 31
     },
     {
       "source": 3,
-      "receiver": 17
+      "receiver": 8
     },
     {
       "source": 4,
-      "receiver": 33
+      "receiver": 14
     },
     {
       "source": 5,
-      "receiver": 10
+      "receiver": 21
     },
     {
       "source": 6,
-      "receiver": 16
+      "receiver": 15
     },
     {
       "source": 7,
-      "receiver": 23
+      "receiver": 34
     },
     {
       "source": 8,
-      "receiver": 29
+      "receiver": 15
     },
     {
       "source": 9,
-      "receiver": 36
+      "receiver": 40
     },
     {
       "source": 10,
-      "receiver": 17
+      "receiver": 13
     },
     {
       "source": 11,
-      "receiver": 42
+      "receiver": 29
     },
     {
       "source": 12,
@@ -921,131 +906,123 @@
     },
     {
       "source": 13,
-      "receiver": 31
+      "receiver": 15
     },
     {
       "source": 14,
-      "receiver": 17
-    },
-    {
-      "source": 15,
-      "receiver": 17
+      "receiver": 27
     },
     {
       "source": 16,
-      "receiver": 29
+      "receiver": 38
     },
     {
-      "source": 18,
-      "receiver": 40
-    },
-    {
-      "source": 19,
-      "receiver": 28
-    },
-    {
-      "source": 20,
-      "receiver": 17
-    },
-    {
-      "source": 21,
-      "receiver": 17
-    },
-    {
-      "source": 22,
-      "receiver": 37
-    },
-    {
-      "source": 23,
-      "receiver": 17
-    },
-    {
-      "source": 24,
-      "receiver": 3
-    },
-    {
-      "source": 25,
+      "source": 17,
       "receiver": 26
     },
     {
-      "source": 26,
-      "receiver": 17
+      "source": 18,
+      "receiver": 15
     },
     {
-      "source": 27,
-      "receiver": 29
+      "source": 19,
+      "receiver": 15
     },
     {
-      "source": 28,
-      "receiver": 17
-    },
-    {
-      "source": 29,
-      "receiver": 17
-    },
-    {
-      "source": 30,
-      "receiver": 44
-    },
-    {
-      "source": 31,
-      "receiver": 17
-    },
-    {
-      "source": 32,
-      "receiver": 8
-    },
-    {
-      "source": 33,
-      "receiver": 17
-    },
-    {
-      "source": 34,
-      "receiver": 43
-    },
-    {
-      "source": 35,
-      "receiver": 17
-    },
-    {
-      "source": 36,
-      "receiver": 14
-    },
-    {
-      "source": 37,
-      "receiver": 17
-    },
-    {
-      "source": 38,
-      "receiver": 21
-    },
-    {
-      "source": 39,
-      "receiver": 20
-    },
-    {
-      "source": 40,
-      "receiver": 17
-    },
-    {
-      "source": 41,
+      "source": 20,
       "receiver": 35
     },
     {
+      "source": 21,
+      "receiver": 15
+    },
+    {
+      "source": 22,
+      "receiver": 1
+    },
+    {
+      "source": 23,
+      "receiver": 24
+    },
+    {
+      "source": 24,
+      "receiver": 15
+    },
+    {
+      "source": 25,
+      "receiver": 27
+    },
+    {
+      "source": 26,
+      "receiver": 15
+    },
+    {
+      "source": 27,
+      "receiver": 15
+    },
+    {
+      "source": 28,
+      "receiver": 42
+    },
+    {
+      "source": 29,
+      "receiver": 15
+    },
+    {
+      "source": 30,
+      "receiver": 6
+    },
+    {
+      "source": 31,
+      "receiver": 15
+    },
+    {
+      "source": 32,
+      "receiver": 41
+    },
+    {
+      "source": 33,
+      "receiver": 15
+    },
+    {
+      "source": 34,
+      "receiver": 12
+    },
+    {
+      "source": 35,
+      "receiver": 15
+    },
+    {
+      "source": 36,
+      "receiver": 19
+    },
+    {
+      "source": 37,
+      "receiver": 18
+    },
+    {
+      "source": 38,
+      "receiver": 15
+    },
+    {
+      "source": 39,
+      "receiver": 33
+    },
+    {
+      "source": 40,
+      "receiver": 15
+    },
+    {
+      "source": 41,
+      "receiver": 15
+    },
+    {
       "source": 42,
-      "receiver": 17
+      "receiver": 15
     },
     {
       "source": 43,
-      "receiver": 17
-    },
-    {
-      "source": 44,
-      "receiver": 17
-    },
-    {
-      "source": 45,
-      "receiver": 17
+      "receiver": 15
     }
   ],
   "control_links": [
