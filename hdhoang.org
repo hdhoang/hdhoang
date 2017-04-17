@@ -2086,7 +2086,7 @@
 
 *** Fonts
     #+BEGIN_SRC sh :dir
-      <<pacman>> -S adobe-source-serif-pro-fonts adobe-source-han-sans-otc-fonts ttf-go-git
+      <<pacman>> -S noto-fonts noto-fonts-cjk noto-fonts-emoji
     #+END_SRC
 
     #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no :comments no
@@ -2125,19 +2125,19 @@
         <alias>
           <family>sans-serif</family>
           <prefer>
-            <family>Go</family>
+            <family>Noto Sans CJK JP</family>
           </prefer>
         </alias>
         <alias>
           <family>serif</family>
           <prefer>
-            <family>Source Serif Pro</family>
+            <family>Noto Serif CJK JP</family>
           </prefer>
         </alias>
         <alias>
           <family>monospace</family>
           <prefer>
-            <family>Go Mono</family>
+            <family>Noto Sans Mono CJK JP</family>
           </prefer>
         </alias>
         <selectfont>
