@@ -1848,7 +1848,6 @@
         charset utf-8;
         gzip off;
         client_max_body_size 10G;
-        fastcgi_buffers 64 4K;
         root /home/hdhoang/Public;
         fancyindex on;
         fancyindex_default_sort date_desc;
@@ -1859,11 +1858,6 @@
 
         access_log off;
         log_not_found off;
-
-        upstream php-fpm {
-          server unix:/run/php-fpm/php-fpm.sock;
-          server frambesi:8989;
-        }
 
         server {
           return 301 https://$host$request_uri;
@@ -1897,12 +1891,8 @@
             rewrite ^/.well-known/carddav /owncloud/remote.php/carddav/ redirect;
             try_files $uri $uri/ =404;
           }
-          <<php>>
         }
       }
-     #+END_SRC
-    #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/sudoers.d/occ-scan :tangle-mode 0
-      <<username>> ALL=(http) NOPASSWD: /usr/share/webapps/owncloud/occ files\:scan --path /<<username>>/files/Public/Videos
     #+END_SRC
 
 *** DLNA
@@ -2949,12 +2939,8 @@
         sudo -u http /usr/share/webapps/owncloud/occ files:scan --path /hdhoang/files/Public/Videos
     }
   #+END_SRC
-
-  ownCloud News
-
-  #+BEGIN_SRC vimrc
-    set passkeys+=kub.<<domain>>/index.php/apps/news/:jkrolfA
-    js services.permissions.add(services.io.newURI("https:kub.<<domain>>",null,null), 'popup', services.permissions.ALLOW_ACTION)
+  #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/sudoers.d/videos :tangle-mode 0
+    <<username>> ALL=(root) NOPASSWD: /usr/bin/pacman -S -y --noconfirm --needed youtube-dl
   #+END_SRC
 
   Site keyboard shortcuts:
