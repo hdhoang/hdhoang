@@ -1860,6 +1860,9 @@
         log_not_found off;
 
         server {
+          location ~ "^/.well-known/acme-challenge/([-_a-zA-Z0-9]+)$" {
+            return 200 "$1.cktlFWWgTL_idErOLT5swJTT2er1znIr9kUX1FkClDk";
+          }
           return 301 https://$host$request_uri;
         }
 
