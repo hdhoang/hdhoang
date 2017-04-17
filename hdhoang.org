@@ -1751,7 +1751,7 @@
     #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/systemd/system/leds.service
       [Service]
       Type=oneshot
-      ExecStart=/usr/local/bin/leds
+      ExecStart=/bin/sh /usr/local/bin/leds
       RemainAfterExit=true
 
       [Install]
