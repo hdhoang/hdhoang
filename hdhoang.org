@@ -2715,6 +2715,26 @@
       '(use-package vimrc-mode))
   #+END_SRC
 
+  Match open buffers:
+  #+BEGIN_SRC vimrc
+    js <<EOF
+    overlay.overlayObject(dactyl, {
+	open: function open(urls, params, force) {
+	    if (typeof urls === "string") {
+		let matches = urls.match(/^(\d+): /);
+		if (matches) {
+		    tabs.switchTo(urls, true);
+		    return;
+		}
+	    }
+	    open.superapply(this, arguments);
+	}
+    });
+    completion.addUrlCompleter("buffer", "Open Tabs", completion.buffer);
+    options["complete"].splice(0, 0, "buffer");
+    EOF
+  #+END_SRC
+
   Use DuckDuckGo:
 
   #+BEGIN_SRC vimrc
