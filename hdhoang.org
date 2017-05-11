@@ -1636,12 +1636,12 @@
     <<pacman>> -S emacs-pkgbuild-mode
   #+END_SRC
 
-  #+BEGIN_SRC conf :tangle ~/.config/systemd/user/emacs.service
+  #+BEGIN_SRC conf :tangle ~/.config/systemd/user/remacs.service
     [Unit]
-    Description=Emacs
+    Description=REmacs
 
     [Service]
-    ExecStart=/bin/emacs
+    ExecStart=%h/remacs/src/remacs
     Restart=always
     RestartSec=1sec
 
