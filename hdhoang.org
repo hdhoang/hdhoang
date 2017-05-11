@@ -2937,6 +2937,7 @@
     map <A-w> -js dactyl.open("https://www.inoreader.com/bookmarklet/save_web_page/" + encodeURIComponent(content.location))
     js services.permissions.add(services.io.newURI("http:inoreader.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
     set passkeys+=inoreader.com:jkgafswhq<left><right>
+    style inoreader.com code, pre { background-color: inherit !important }
   #+END_SRC
 
   Get videos from starred items
