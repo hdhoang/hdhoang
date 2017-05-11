@@ -2942,22 +2942,19 @@
 
   Get videos from starred items
 
-  #+BEGIN_SRC sh :tangle ~/.bash_login
-    function videos() {
-        pacaur -Sy --noconfirm --needed youtube-dl
-        wget -O- \
-               'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
-             --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
-             --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
-            | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
-            | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|nippon.com|escapistmag|muspy' \
-            | <<ytdl>> -a- --no-mtime --ignore-errors \
-            |& grep -vE 'generic|Unsupported'
-        sudo -u http /usr/share/webapps/owncloud/occ files:scan --path /hdhoang/files/Public/Videos
-    }
+  #+BEGIN_SRC sh :tangle ~/bin/videos :tangle-mode 448 :shebang #!/bin/bash
+    sudo /bin/pacman -Sy --noconfirm --needed youtube-dl;
+    wget -O- \
+           'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2Fstarred?n=1000&r=o' \
+         --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
+         --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
+        | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
+        | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|nippon.com|escapistmag|muspy' \
+        | <<ytdl>> $@ -a- --no-mtime --ignore-errors --youtube-skip-dash-manifest --download-archive ~/videos-history --geo-bypass
+    find ~/Public -type f | grep -vE '(x|epub)$' | sed 's,^.*Public/,,' | shuf > ~/Public/play.m3u8
   #+END_SRC
   #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/sudoers.d/videos :tangle-mode 0
-    <<username>> ALL=(root) NOPASSWD: /usr/bin/pacman -S -y --noconfirm --needed youtube-dl
+    <<username>> ALL=(root) NOPASSWD: /bin/pacman -Sy --noconfirm --needed youtube-dl
   #+END_SRC
 
   Site keyboard shortcuts:
