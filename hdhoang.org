@@ -2792,6 +2792,15 @@
     map -m normal,insert <F1> -js tabs.selectAlternateTab()
     map -m insert <C-p> -ex tabprevious
     map -m insert <C-n> -ex tabnext
+    map <C-1> 1<C-^>
+    map <C-2> 2<C-^>
+    map <C-3> 3<C-^>
+    map <C-4> 4<C-^>
+    map <C-5> 5<C-^>
+    map <C-6> 6<C-^>
+    map <C-7> 7<C-^>
+    map <C-8> 8<C-^>
+    map <C-9> 9<C-^>
   #+END_SRC
 
   Don't raise these openings:
