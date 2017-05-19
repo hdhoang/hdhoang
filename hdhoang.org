@@ -2072,7 +2072,7 @@
 
 *** Fonts
     #+BEGIN_SRC sh :dir
-      <<pacman>> -S noto-fonts noto-fonts-cjk noto-fonts-emoji
+      <<pacman>> -S noto-fonts noto-fonts-emoji
     #+END_SRC
 
     #+BEGIN_SRC xml :tangle ~/.config/fontconfig/fonts.conf :padline no :comments no
@@ -2111,19 +2111,19 @@
         <alias>
           <family>sans-serif</family>
           <prefer>
-            <family>Noto Sans CJK JP</family>
+            <family>Source Han Sans</family>
           </prefer>
         </alias>
         <alias>
           <family>serif</family>
           <prefer>
-            <family>Noto Serif CJK JP</family>
+            <family>Source Han Serif</family>
           </prefer>
         </alias>
         <alias>
           <family>monospace</family>
           <prefer>
-            <family>Noto Sans Mono CJK JP</family>
+            <family>Source Code Sans JP</family>
           </prefer>
         </alias>
         <selectfont>
