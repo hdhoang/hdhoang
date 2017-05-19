@@ -2099,7 +2099,6 @@
             <bool>true</bool>
           </edit>
         </match>
-        <dir>~/.fonts</dir>
         <match target="pattern">
           <test qual="any" name="family"><string>Arial</string></test>
           <edit name="family" mode="assign" binding="same"><string>sans-serif</string></edit>
