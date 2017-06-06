@@ -25,7 +25,7 @@
 #+LATEX_HEADER: \preauthor{\begin{flushright}}
 #+LATEX_HEADER: \postauthor{\end{flushright}}
 #+LATEX_HEADER: \pagenumbering{gobble}
-** Education								 :en:
+** Education                                                             :en:
    - 2014 - now :: Studying System Administration and software testing
                    at Bachkhoa-Aptech (graduating 2016H2)
    - 2013 - 2014 :: Finished K12 and completed accounting course at
@@ -41,11 +41,11 @@
                     Distinction in most subjects)
    - 2003 - 2006 :: Chu Van An Highschool, majoring in English
 #+LATEX: \newpage
-** Tiểu sử								 :vi:
+** Tiểu sử                                                               :vi:
    - 2014 - nay :: học quản trị mạng và kiểm thử phần mềm tại
                    Bachkhoa-APTECH (dự kiến tốt nghiệp năm 2016)
 #+LATEX: \newpage
-** Qualifications and skills						 :en:
+** Qualifications and skills                                             :en:
 *** IT skills
    - In-depth GNU/Linux usage and administration, experienced in
      self-hosting web sites (ownCloud on Debian Apache, ArchLinux nginx)
@@ -59,7 +59,7 @@
 *** Others
    - Self-teaching discipline
    - Strong interest in learning new topics
-** Kĩ năng								 :vi:
+** Kĩ năng                                                               :vi:
 *** Kĩ năng IT
      - Sử dụng và quản trị các hệ thống GNU/Linux chuyên sâu, tự quản
        trị dịch vụ web (owncloud, Debian Apache, ArchLinux nginx)
@@ -70,12 +70,12 @@
 *** Kĩ năng ngôn ngữ
      - Tiếng Anh thuần thục (TOEIC 990, 2015)
      - Tiếng Nhật cơ bản (tương đương N4)
-** Interests								 :en:
+** Interests                                                             :en:
    - Exploring science, history, and natural subjects
    - Science-fiction novels, rational fanfictions
    - Electric guitar riffs
    - Frequent blood donor until no longer eligible
-** Sở thích								 :vi:
+** Sở thích                                                              :vi:
     - Khám phá các chủ đề khoa học, lịch sử, tự nhiên
     - Tiểu thuyết khoa học viễn tưởng, ???
     - Nghe solo guitar điện
@@ -2791,15 +2791,15 @@
     map -m normal,insert <F1> -js tabs.selectAlternateTab()
     map -m insert <C-p> -ex tabprevious
     map -m insert <C-n> -ex tabnext
-    map <C-1> 1<C-^>
-    map <C-2> 2<C-^>
-    map <C-3> 3<C-^>
-    map <C-4> 4<C-^>
-    map <C-5> 5<C-^>
-    map <C-6> 6<C-^>
-    map <C-7> 7<C-^>
-    map <C-8> 8<C-^>
-    map <C-9> 9<C-^>
+    map -m normal,insert <C-1> -ex buffer 1
+    map -m normal,insert <C-2> -ex buffer 2
+    map -m normal,insert <C-3> -ex buffer 3
+    map -m normal,insert <C-4> -ex buffer 4
+    map -m normal,insert <C-5> -ex buffer 5
+    map -m normal,insert <C-6> -ex buffer 6
+    map -m normal,insert <C-7> -ex buffer 7
+    map -m normal,insert <C-8> -ex buffer 8
+    map -m normal,insert <C-9> -ex buffer 9
   #+END_SRC
 
   Don't raise these openings:
@@ -3028,7 +3028,7 @@
      elevate openvpn --config hdhoang.ovpn
    #+END_SRC
 
-* Secrets							      :crypt:
+* Secrets                                                             :crypt:
 -----BEGIN PGP MESSAGE-----
 
 hQEMA0GprIW1olW5AQgAlVp7WY8nyGZcWBdD2k94Aw+YKRhkJvfiRmdE9Iyk4Lpw
