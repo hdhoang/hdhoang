@@ -1221,7 +1221,7 @@
     TERMINAL=alacritty
     ALTERNATE_EDITOR=remacs
 
-    PATH=/home/<<username>>/.cargo/bin:$PATH
+    PATH DEFAULT=@{HOME}/bin:@{HOME}/.cargo/bin:/bin
     RUST_BACKTRACE=1
   #+END_SRC
 
