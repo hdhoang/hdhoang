@@ -1602,7 +1602,7 @@
         procps-ng inetutils ltrace sysdig atop iotop
   #+END_SRC
 
-  #+BEGIN_SRC sh :tangle ~/Copy/bin/strace :shebang #!/bin/sh :no-expand
+  #+BEGIN_SRC sh :tangle ~/bin/strace :shebang #!/bin/sh :no-expand
     exec /usr/bin/ltrace -CSn2 $@
   #+END_SRC
 
