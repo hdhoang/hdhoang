@@ -2420,7 +2420,7 @@
 
   #+BEGIN_SRC elisp
     (use-package color-theme-sanityinc-solarized
-      :config (load-theme 'sanityinc-solarized-light t))
+      :config (load-theme 'sanityinc-solarized-dark t))
   #+END_SRC
 
   Font on Windows
