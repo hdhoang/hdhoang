@@ -2613,12 +2613,6 @@
           (add-to-list 'eshell-visual-options '("ssh" "-t"))))
    #+END_SRC
 
-   Profile:
-
-   #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/profile :no-expand
-     addpath ~/Copy/bin
-   #+END_SRC
-
    Aliases:
 
    #+BEGIN_SRC sh :tangle ~/.emacs.d/eshell/alias
