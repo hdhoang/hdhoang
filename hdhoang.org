@@ -2330,9 +2330,13 @@
 *** mpv
 
     #+BEGIN_SRC conf :tangle ~/.config/mpv/mpv.conf
-      sub-auto=fuzzy
-      hwdec=auto
       hwdec-codecs=all
+      hwdec=auto
+      no-audio-display
+      ontop
+      shuffle
+      sub-auto=fuzzy
+      window-scale=0.5
     #+END_SRC
 
     #+BEGIN_SRC conf :tangle ~/.config/mpv/input.conf
