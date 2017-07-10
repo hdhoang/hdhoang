@@ -98,7 +98,7 @@
 
   #+NAME: storage
   #+BEGIN_SRC text
-    /home/<<username>>/sync
+    /home/<<username>>/Sync
   #+END_SRC
 
   #+NAME: videos
