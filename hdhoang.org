@@ -1218,6 +1218,8 @@
 
     CUPS_SERVER=kub:631
     BROWSER=firefox
+    TERMINAL=alacritty
+    ALTERNATE_EDITOR=remacs
 
     PATH=/home/<<username>>/.cargo/bin:$PATH
     RUST_BACKTRACE=1
