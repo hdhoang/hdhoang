@@ -93,7 +93,7 @@
   #+END_SRC
 
   #+BEGIN_SRC emacs-lisp :tangle ~/.emacs
-    (setq user-mail-address "<<username>>@<<domain>>")
+    (setq user-mail-address "i@<<domain>>")
   #+END_SRC
 
   #+NAME: storage
