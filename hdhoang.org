@@ -1591,7 +1591,8 @@
   Dev-env:
 
   #+BEGIN_SRC sh :dir /sudo::
-    <<pacman>> -S base-devel rust android-tools
+    <<pacman>> -S base-devel tmux fish android-tools
+    chsh <<username>> -s /usr/bin/fish
   #+END_SRC
 
   Monitoring:
