@@ -1577,37 +1577,10 @@
     <<pacman>> -S -y
   #+END_SRC
 
-  AUR helper
-
-  #+BEGIN_SRC yaml :tangle ~/Copy/bin/aur :shebang #!/bin/ansible-playbook
-    - hosts: arch
-      gather_facts: no
-      vars:
-        store: /tmp/aur
-      vars_prompt:
-        - name: package
-          private: no
-      tasks:
-        - file: state=directory path={{store}}
-        - get_url: url=https://aur4.archlinux.org/cgit/aur.git/snapshot/{{package}}.tar.gz dest={{store}}/
-        - unarchive: copy=no src={{store}}/{{package}}.tar.gz dest={{store}}
-        - command: nice makepkg --noconfirm --install --force --syncdeps chdir={{store}}/{{package}}
-  #+END_SRC
-
-  Yaourt config
-
-  #+BEGIN_SRC conf :tangle ~/.yaourtrc
-    AURUPGRADE=1
-    EXPORT=1
-    EXPORTDIR=~
-    BUILD_NOCONFIRM=1
-    EDITFILES=0
-  #+END_SRC
-
   Base utils
 
   #+BEGIN_SRC sh :dir /sudo::
-    <<pacman>> -S haveged p7zip parallel pkgfile yaourt
+    <<pacman>> -S haveged p7zip parallel pkgfile
     <<system_ctl>> enable --now haveged
   #+END_SRC
 
