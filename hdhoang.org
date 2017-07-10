@@ -2623,6 +2623,18 @@
      alias fr free -h
    #+END_SRC
 
+** Rust
+   #+BEGIN_SRC elisp
+     (use-package rust-mode :ensure)
+     (use-package cargo :ensure)
+     (use-package lsp-rust
+       :ensure
+       :config
+       (require 'lsp-mode)
+       (require 'lsp-flycheck)
+       (add-hook 'rust-mode-hook #'lsp-mode))
+   #+END_SRC
+
 * Ansible
 
   #+BEGIN_SRC sh :dir /sudo::
