@@ -2932,7 +2932,7 @@
   #+BEGIN_SRC vimrc
     map <A-f> -js dactyl.open("https://www.inoreader.com/?add_feed=" + content.location)
     map <A-w> -js dactyl.open("https://www.inoreader.com/bookmarklet/save_web_page/" + encodeURIComponent(content.location))
-    autocmd DOMLoad https://www.inoreader.com/bookmarklet/save_web_page/* -javascript doc.querySelector("form").submit()
+    autocmd DOMLoad https://www.inoreader.com/bookmarklet/save_web_page/* -javascript if (doc.title != "Inoreader - Done") { doc.querySelector("form").submit() } else { win.close() }
     js services.permissions.add(services.io.newURI("http:inoreader.com",null,null), 'popup', services.permissions.ALLOW_ACTION)
     set passkeys+=inoreader.com:jkgafswhq<left><right>
     style inoreader.com code, pre { background-color: inherit !important }
