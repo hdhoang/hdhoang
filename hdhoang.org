@@ -2973,7 +2973,7 @@
   Search hanzi:
   
   #+BEGIN_SRC vimrc
-    map K -js <<EOS
+    map <C-k> -js <<EOS
     if (buffer.selection.rangeCount == 0) {
         string = dactyl.clipboardRead("global");
     } else {
