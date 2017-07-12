@@ -2947,7 +2947,7 @@
          --header 'AppId: 1000001238' --header 'AppKey: <<inoreader_key>>' \
          --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
         | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
-        | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|nippon.com|escapistmag|muspy' \
+        | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|muspy' \
         | <<ytdl>> $@ -a- --no-mtime --ignore-errors --youtube-skip-dash-manifest --download-archive ~/Public/Videos/download-archive --geo-bypass
     find ~/Public -type f | grep -vE '(x|epub)$' | sed 's,^.*Public/,,' | shuf > ~/Public/play.m3u8
   #+END_SRC
