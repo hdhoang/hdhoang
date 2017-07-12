@@ -2948,7 +2948,7 @@
          --header 'Authorization: GoogleLogin auth=<<inoreader_auth>>' \
         | grep -o 'href":"[^"]*' | uniq | sed 's/href":"//' | tr -d '\\' \
         | grep -vE 'reader/api|rapidgator|js|avatar|clicku|identico|png|jpg|gif|nippon.com|escapistmag|muspy' \
-        | <<ytdl>> $@ -a- --no-mtime --ignore-errors --youtube-skip-dash-manifest --download-archive ~/videos-history --geo-bypass
+        | <<ytdl>> $@ -a- --no-mtime --ignore-errors --youtube-skip-dash-manifest --download-archive ~/Public/Videos/download-archive --geo-bypass
     find ~/Public -type f | grep -vE '(x|epub)$' | sed 's,^.*Public/,,' | shuf > ~/Public/play.m3u8
   #+END_SRC
   #+BEGIN_SRC conf :tangle /sudo:10.117.14.185:/etc/sudoers.d/videos :tangle-mode 0
