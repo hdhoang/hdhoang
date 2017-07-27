@@ -2525,7 +2525,7 @@
                   (add-hook 'before-save-hook 'org-align-all-tags
                             :local t)))
      (org-babel-do-load-languages 'org-babel-load-languages
-                                  '((sh . t)))
+				  '((shell . t)))
      (setq org-src-fontify-natively t)
      (use-package htmlize :ensure)
      (setq org-export-initial-scope 'subtree
