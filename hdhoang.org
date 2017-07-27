@@ -1594,8 +1594,9 @@
   Dev-env:
 
   #+BEGIN_SRC sh :dir /sudo::
-    <<pacman>> -S base-devel tmux fish android-tools
+    <<pacman>> -S base-devel tmux fish android-tools android-udev
     chsh <<username>> -s /usr/bin/fish
+    gpasswd -a <<username>> adbusers
   #+END_SRC
 
   Monitoring:
