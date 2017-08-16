@@ -2852,7 +2852,6 @@
   #+BEGIN_SRC vimrc
     if !getBoolPref("<<username>>.customized")
     set! <<username>>.customized=true
-    extadd https://addons.mozilla.org/firefox/downloads/latest/607454/addon-607454-latest.xpi
     extadd https://www.eff.org/files/https-everywhere-latest.xpi
     bmark -keyword ac -t config about:config
     bmark -keyword bgp -t BGP http://bgp.he.net/search?search[search]=%s
