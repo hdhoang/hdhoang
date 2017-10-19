@@ -1,0 +1,34 @@
+---
+- name: media packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - minidlna
+- name: minidlna ports
+  firewalld:
+    state: enabled
+    zone: internal
+    port: "{{ item }}"
+  with_items:
+    - 1900/udp
+    - 8200/tcp
+- name: minidlna.conf
+  file:
+    path: /etc/minidlna.conf
+    content: |
+      friendly_name={{ ansible_hostname }}
+      port=8200
+      user=minidlna
+      media_dir={{ public }}
+      media_dir={{ home }}/phim
+      media_dir={{ home }}/Sync
+      merge_media_dirs=yes
+      force_sort_criteria=+dc:date
+- name: allow minidlna to read home
+  file:
+    path: /etc/systemd/system/minidlna.service.d/override.conf
+    content: |
+      [Service]
+      ProtectHome=no
+- systemd: name=minidlna state=started enabled=yes
+...

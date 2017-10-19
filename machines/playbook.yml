@@ -1,0 +1,24 @@
+---
+- hosts: all
+  tasks:
+    - include_role:
+        name: base-system
+      become: yes
+    - include_role:
+        name: vmware-guest
+      when: ansible_virtualization_type == "VMware"
+      become: yes
+    - include_role:
+        name: cmd
+- hosts: kub zif
+  tasks:
+    - include_role: name=ppp
+    - include_role: name=dns
+    - include_role: name=dhcp
+    - include_role: name=sslh
+    - include_role: name=http
+    - include_role: name=cert
+    - include_role: name=dlna
+      become: yes
+    - include_role: name=download-videos
+...

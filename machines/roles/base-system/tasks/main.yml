@@ -1,0 +1,46 @@
+---
+- name: system packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - base-devel
+    - atop
+    - xorg-server-xwayland
+    - xf86-input-libinput
+    - pulseaudio-alsa
+    - sddm
+    - darkstat
+    - sysdig
+    - mlocate
+    - f2fs-tools
+    - ntfs-3g
+    - sshfs
+    - firewalld
+- name: system services
+  service:
+    enabled: yes
+    state: started
+    name: "{{ item }}"
+  with_items:
+    - firewalld
+    - atop
+    - atopacct
+    - sddm
+    - darkstat
+    - sshd.socket
+    - systemd-timesyncd
+- name: BBR
+  sysctl:
+    sysctl_file: /etc/sysctl.d/bbr.conf
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+  with_items:
+    - { name: net.ipv4.tcp_congestion_control, value: bbr }
+    # needed for linux < 4.13
+    - { name: net.core.default_qdisc, value: fq }
+- name: wheel privilege
+  copy:
+    mode: 0600
+    dest: /etc/sudoers.d/wheel
+    content: "%wheel ALL=(ALL) NOPASSWD: ALL"
+...

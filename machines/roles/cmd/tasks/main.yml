@@ -1,0 +1,119 @@
+---
+- name: commandline packages
+  become: yes
+  package:
+    name: "{{ item }}"
+  with_items:
+    - android-tools
+    - android-udev
+    - ansible
+    - emacs
+    - fish
+    - git
+    - jq
+    - lsof
+    - phantomjs
+    - pkgfile
+    - python2-systemd
+    - sysdig
+    - tmux
+    - tree
+    - vim
+    - wget
+    - youtube-dl
+- name: user hdhoang
+  become: yes
+  user:
+    name: hdhoang
+    uid: 1000
+    group: users
+    groups: [ wheel, systemd-journal, video, audio, uucp, adbusers ]
+    shell: /usr/bin/fish
+    ssh_key_type: ed25519
+    generate_ssh_key: yes
+
+- systemd: user=true state=started enabled=yes name="{{ item }}"
+  with_items:
+    - gpg-agent.socket
+    - gpg-agent-ssh.socket
+    - pulseaudio.socket
+
+- name: environment
+  copy:
+    dest: "{{ home }}/.pam_environment"
+    content: |
+      PATH DEFAULT=@{HOME}/bin:@{HOME}/.cargo/bin:/bin
+      LD_LIBRARY_PATH DEFAULT=@{HOME}/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib:@{HOME}/.rustup/toolchains/nightly-armv7-unknown-linux-gnueabihf/lib
+      SSH_AUTH_SOCK=@{HOME}/.gnupg/S.gpg-agent.ssh
+      ALTERNATE_EDITOR DEFAULT=remacs
+      BROWSER DEFAULT=firefox
+      TERMINAL=alacritty
+      RUST_BACKTRACE DEFAULT=full
+
+- name: directories
+  file:
+    state: directory
+    path: "{{ item }}"
+  with_items:
+    - "{{ home }}/bin"
+    - "{{ home }}/Downloads"
+    - "{{ config_dir }}/systemd/user"
+    - "{{ config_dir }}/youtube-dl/"
+- name: ansible.cfg
+  ini_file:
+    path: "{{ home }}/.ansible.cfg"
+    section: defaults
+    option: inventory
+    value: "{{ home }}/Sync/machines/inventory.ini"
+
+- name: youtube-dl config
+  copy:
+    dest: "{{ config_dir }}/youtube-dl/config"
+    content: |
+      --format "[height <=? 480]"
+      --youtube-skip-dash-manifest
+      --download-archive "{{ public }}/Videos/download-archive"
+      --output "{{ public }}/Videos/%(uploader)s %(upload_date)s %(title)s@%(id)s.%(ext)s"
+
+- name: tmux.conf
+  copy:
+    dest: "{{ home }}/.tmux.conf"
+    content: |
+      set -g base-index 1
+      set -g pane-base-index 1
+      set -g history-limit 10000
+      set-window-option -g mode-keys vi
+      set-window-option -g aggressive-resize on
+      new-session
+- name: tmux.service
+  copy:
+    dest: "{{ config_dir }}/systemd/user/tmux.service"
+    content: |
+      [Install]
+      WantedBy=default.target
+      [Unit]
+      Description=tmux default session (detached)
+      Documentation=man:tmux(1)
+
+      [Service]
+      Type=forking
+      Restart=always
+      ExecStart=/usr/bin/tmux new-session -d
+      ExecStop=/usr/bin/tmux kill-server
+      Environment=DISPLAY=:0
+      KillMode=none
+- systemd: user=yes name=tmux enabled=yes state=started
+
+- name: check for rustup
+  stat: path="{{ home }}/.cargo/bin/rustup"
+  register: rustup
+- name: download rustup
+  when: rustup.stat.exists == False
+  get_url:
+    url: https://sh.rustup.rs
+    dest: "{{ home }}/bin/rustup.sh"
+    mode: u+rwx,g=r,o=r
+- name: install nightly rust
+  when: rustup.stat.exists == False
+  command: "{{ home }}/bin/rustup.sh -y --default-toolchain nightly"
+...

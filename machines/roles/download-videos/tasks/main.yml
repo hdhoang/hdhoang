@@ -1,0 +1,78 @@
+---
+- name: inoreader-auth
+  copy:
+    mode: 0400
+    dest: "{{ config_dir }}/inoreader-auth"
+    content: |
+      AppId: {{ inoreader_appid }}
+      AppKey: {{ inoreader_appkey }}
+      Authorization: GoogleLogin auth={{ inoreader_auth }}
+
+- name: get_starred
+  template:
+    mode: 0744
+    src: get_inoreader.fish.j2
+    dest: "{{ bin }}/get_{{ type }}"
+  vars:
+    type: starred
+
+- name: get_saved
+  template:
+    mode: 0744
+    src: get_inoreader.fish.j2
+    dest: "{{ bin }}/get_{{ type }}"
+  vars:
+    type: saved-web-pages
+
+- name: videos
+  copy:
+    mode: 0744
+    dest: "{{ bin }}/videos"
+    content: |
+      #!/usr/bin/fish
+      /bin/systemctl is-active ppp@vnpt; or exit
+      {{ bin }}/get_saved-web-pages | /bin/youtube-dl --batch-file - --no-mtime --ignore-errors --no-progress
+      {{ bin }}/get_starred | /bin/youtube-dl --batch-file - --no-mtime --ignore-errors --no-progress
+      cd {{ public }}
+      find -L -type f | grep -vE '(x|epub)$' | shuf > play.m3u8
+- name: videos.timer
+  copy:
+    dest: "{{ config_dir }}/systemd/user/videos.timer"
+    content: |
+      [Install]
+      WantedBy=default.target
+      [Timer]
+      OnCalendar=*-*-* 10:0:0
+- name: videos.service
+  copy:
+    dest: "{{ config_dir }}/systemd/user/videos.service"
+    content: |
+      [Unit]
+      Requisite=ppp@vnpt.service
+      [Service]
+      Type=simple
+      ExecStart={{ bin }}/videos
+- systemd: user=yes name=videos.timer state=started enabled=yes
+
+- name: distribute.path
+  copy:
+    dest: "{{ config_dir }}/systemd/user/distribute.path"
+    content: |
+      [Install]
+      WantedBy=default.target
+      [Path]
+      PathExistsGlob={{ public }}/Videos/NA NA*mp4
+      PathExistsGlob={{ public }}/Videos/*m4a
+      PathExistsGlob={{ public }}/Videos/*opus
+      PathExistsGlob={{ public }}/Videos/*mp3
+      PathExistsGlob={{ public }}/Videos/*ogg
+- name: distribute.service
+  copy:
+    dest: "{{ config_dir }}/systemd/user/distribute.service"
+    content: |
+      [Service]
+      Type=oneshot
+      ExecStart=-/bin/sh -c "mv -t {{ public }}/Music/_new/ {{ public }}/Videos/*{m4a,mp3,ogg,opus}"
+      ExecStart=-/bin/sh -c "mv -t {{ home }}/Downloads/ {{ public }}/Videos/NA?NA*mp4"
+- systemd: daemon_reload=yes user=yes name=distribute.path state=started enabled=yes
+...
