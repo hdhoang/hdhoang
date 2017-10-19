@@ -7,19 +7,33 @@
   "tag_fg_color": "#ffffff",
   "tag_bg_color": "#5bc0de",
   "icon": "gear",
-  "exported_at": "2017-04-17T03:00:05Z",
+  "exported_at": "2017-10-18T11:41:04Z",
   "agents": [
     {
       "type": "Agents::RssAgent",
-      "name": "channelate, invisible bread",
+      "name": "leftoversalad",
+      "disabled": false,
+      "guid": "029fbfb843026d5e0bba251cad7109b4",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "http://www.leftoversalad.com/rss.php",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "channelate",
       "disabled": false,
       "guid": "17b5e335890014c573a555f1fc865649",
       "options": {
         "expected_update_period_in_days": "14",
         "url": [
-          "https://feeds2.feedburner.com/channelATE",
-          "https://feeds.feedburner.com/InvisibleBread"
-        ]
+          "https://feeds2.feedburner.com/channelATE"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -40,7 +54,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "Bartosz Milewski, stephan boyer, pixelbeat, things of interest, evanmiller",
+      "name": "Bartosz Milewski, stephan boyer, pixelbeat, things of interest, evanmiller, codecapsule, ticki, jfo",
       "disabled": false,
       "guid": "228e85061185d0f57599afc8f63950a9",
       "options": {
@@ -50,24 +64,27 @@
           "http://www.pixelbeat.org/feed/rss2.xml",
           "https://qntm.org/rss.php",
           "http://www.evanmiller.org/news.xml",
-          "https://bartoszmilewski.com/feed/"
-        ]
+          "https://bartoszmilewski.com/feed/",
+          "http://codecapsule.com/feed/",
+          "https://ticki.github.io/index.xml",
+          "http://blog.jfo.click/feed.xml"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
     },
     {
       "type": "Agents::RssAgent",
-      "name": "rg3, puppet, rust vietnam",
+      "name": "rg3",
       "disabled": false,
       "guid": "2932b81e7ee347cf1a05188048bb6e2a",
       "options": {
-        "expected_update_period_in_days": "14",
+        "expected_update_period_in_days": "21",
         "url": [
-          "http://rg3.name/index.rss",
-          "https://puppet.com/blog/rss.xml",
-          "https://blog.rust-lang.vn/feed.xml"
-        ]
+          "http://rg3.name/index.rss"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -79,22 +96,23 @@
       "guid": "3283010f76c9ff933079eba7b389f07c",
       "options": {
         "expected_update_period_in_days": "7",
-        "url": "http://www.exocomics.com/feed"
+        "url": "http://www.exocomics.com/feed",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
     },
     {
       "type": "Agents::RssAgent",
-      "name": "practical dev, OddThinking",
+      "name": "OddThinking",
       "disabled": false,
       "guid": "3439a8b55dfc2fac343bada956de2b61",
       "options": {
         "expected_update_period_in_days": "7",
         "url": [
-          "https://dev.to/feed",
           "http://www.somethinkodd.com/oddthinking/feed/atom/"
-        ]
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -130,7 +148,8 @@
       "options": {
         "expected_update_period_in_days": "14",
         "url": "http://oglaf.com/feeds/rss/",
-        "max_events_per_run": "5"
+        "max_events_per_run": "5",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -141,7 +160,7 @@
       "disabled": false,
       "guid": "4002f73438041dc2a03e8b8d77cae049",
       "options": {
-        "expected_update_period_in_days": "14",
+        "expected_update_period_in_days": "21",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -178,7 +197,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, endler, etherealmind, perfectchipperman, pablojuan, khoi vinh",
+      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, endler, perfectchipperman, pablojuan, khoi vinh",
       "disabled": false,
       "guid": "486bcf512b50c544827097033458646d",
       "options": {
@@ -189,12 +208,12 @@
           "http://brandonio21.com/feed/",
           "http://www.joshbarczak.com/blog/?feed=rss2",
           "https://feeds.feedburner.com/ShadyCharacters",
-          "http://feeds.etherealmind.com/etherealmind",
           "http://en.perfectchipperman.com/feeds/posts/default",
           "http://pablojuan.com/feed/atom/",
           "https://feeds2.feedburner.com/subtraction",
           "http://matthias-endler.de/rss.xml"
-        ]
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -206,7 +225,8 @@
       "guid": "56bb85d3e2862812931d20b6fde406a5",
       "options": {
         "expected_update_period_in_days": "14",
-        "url": "http://deathbulge.com/rss.xml"
+        "url": "http://deathbulge.com/rss.xml",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -232,7 +252,7 @@
       "guid": "606130e1534ddade20db57f6961ea5c3",
       "options": {
         "expected_update_period_in_days": "7",
-        "url": "{{url}}",
+        "url": "{{url | regex_replace: '^/(.+)', 'http://dawn.cs.stanford.edu/blog/\\1.html'}}",
         "type": "html",
         "mode": "merge",
         "extract": {
@@ -244,6 +264,19 @@
       "schedule": "every_2h",
       "keep_events_for": 172800,
       "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "fy",
+      "disabled": false,
+      "guid": "6562f1b27522f8e8da10933500b43dec",
+      "options": {
+        "expected_update_period_in_days": "1",
+        "url": "https://fy.blackhats.net.au/blog/html/rss.html",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
     },
     {
       "type": "Agents::WebsiteAgent",
@@ -282,7 +315,7 @@
         "template": {
           "title": "Full Text feeds",
           "item": {
-            "title": "{{title}}",
+            "title": "{{feed.title}}: {{title}}",
             "description": "{{ content | remove: '\"mouseover\" src=' | remove: 'data-over' | remove: 'height=' | remove: 'width=' | remove: 'resize=' | remove: '-150x150'   | remove: '-170x170' }} {% if title_text != '' %} <p> {{ title_text }} {% endif %} <p> {{ extra }}",
             "link": "{{url}}",
             "guid": "{{url}}",
@@ -292,9 +325,28 @@
           "link": "https://mysterious-lake-12328.herokuapp.com/scenarios/2",
           "description": "full text feeds"
         },
-        "events_to_show": "2009"
+        "events_to_show": "9009",
+        "rss_content_type": "application/rss+xml",
+        "push_hubs": [
+          "https://inoreader.superfeedr.com/",
+          "https://pubsubhubbub.appspot.com/"
+        ]
       },
       "propagate_immediately": true
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "danluu",
+      "disabled": false,
+      "guid": "6c203fa72a6cdb54e45ffd156652af7f",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "https://danluu.com/atom.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
     },
     {
       "type": "Agents::RssAgent",
@@ -303,7 +355,8 @@
       "guid": "6e174c4da7ecd756938809751538f220",
       "options": {
         "expected_update_period_in_days": "14",
-        "url": "http://www.threepanelsoul.com/rss.php"
+        "url": "http://www.threepanelsoul.com/rss.php",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -317,7 +370,8 @@
         "expected_update_period_in_days": "7",
         "url": [
           "https://feeds.feedburner.com/satwcomic"
-        ]
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -376,7 +430,23 @@
           "https://peteris.rocks/rss.xml",
           "https://michaelwoerister.github.io/feed.xml",
           "http://neikos.me/feed.xml"
-        ]
+        ],
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "invisible bread",
+      "disabled": false,
+      "guid": "8deece75ed82d3fc32b85a1477ebd99b",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": [
+          "https://feeds.feedburner.com/InvisibleBread"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -387,7 +457,7 @@
       "disabled": false,
       "guid": "94d51cb15c8692cce5c1d469cb5da01a",
       "options": {
-        "expected_update_period_in_days": "2",
+        "expected_update_period_in_days": "21",
         "url": "{{url}}",
         "type": "html",
         "mode": "merge",
@@ -409,30 +479,34 @@
       "options": {
         "expected_update_period_in_days": "5",
         "clean": "false",
-        "url": "http://www.mrlovenstein.com/rss.xml"
+        "url": "http://www.mrlovenstein.com/rss.xml",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
     },
     {
       "type": "Agents::RssAgent",
-      "name": "fluentu, twenty sided, tokyo damage",
+      "name": "twenty sided, tokyo damage, aead, ajkavanagh, worthe",
       "disabled": false,
       "guid": "988988a2c9b3578d69e649362412df55",
       "options": {
-        "expected_update_period_in_days": "1",
+        "expected_update_period_in_days": "3",
         "url": [
           "http://www.shamusyoung.com/twentysidedtale/?feed=rss2",
           "http://www.hellodamage.com/top/feed/",
-          "http://www.fluentu.com/japanese/blog/feed/"
-        ]
+          "https://aead.github.io/index.xml",
+          "http://blog.ajkavanagh.me/index.xml",
+          "https://www.worthe-it.co.za/rss.xml"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
     },
     {
       "type": "Agents::WebsiteAgent",
-      "name": "Grab .entry, .section-content",
+      "name": "Grab .entry, .section-content, .content",
       "disabled": false,
       "guid": "9952e9e33647d092a07c43dfa1284782",
       "options": {
@@ -442,7 +516,7 @@
         "mode": "merge",
         "extract": {
           "content": {
-            "css": ".entry, .section-content"
+            "css": ".entry, .section-content, .content"
           }
         }
       },
@@ -465,8 +539,10 @@
           "http://imogenquest.net/?feed=rss2",
           "http://sentfromthemoon.com/feed",
           "https://xkcd.com/atom.xml",
-          "http://www.treelobsters.com/feeds/posts/default"
-        ]
+          "http://www.treelobsters.com/feeds/posts/default",
+          "https://feeds.feedburner.com/ThingsInSquares"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -517,7 +593,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "foolish manifesto, rsc, lukasa, drhagen, transitiontech",
+      "name": "foolish manifesto, rsc, lukasa, drhagen, transitiontech, dpc",
       "disabled": false,
       "guid": "b4a10f7a67769a03a09a9158626f3b65",
       "options": {
@@ -527,8 +603,10 @@
           "https://research.swtch.com/feed.atom",
           "https://lukasa.co.uk/rss.xml",
           "http://drhagen.com/feed/",
-          "https://transitiontech.ca/feed.xml"
-        ]
+          "https://transitiontech.ca/feed.xml",
+          "http://dpc.pw/index.xml"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -554,16 +632,36 @@
       "propagate_immediately": false
     },
     {
+      "type": "Agents::WebsiteAgent",
+      "name": "grab body",
+      "disabled": false,
+      "guid": "b8a84e89f594c80d56444ce21a4fd4e1",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "{{ url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "body",
+            "value": "./node()"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
       "type": "Agents::RssAgent",
-      "name": "buttersafe, happle tea, hejibits",
+      "name": "buttersafe, happle tea",
       "disabled": false,
       "guid": "be0804e026b3a7bb9285ca1645d5400c",
       "options": {
         "expected_update_period_in_days": "7",
         "url": [
           "https://feeds.feedburner.com/buttersafe",
-          "http://www.happletea.com/feed/",
-          "http://www.hejibits.com/feed/"
+          "http://www.happletea.com/feed/"
         ]
       },
       "schedule": "every_2h",
@@ -591,45 +689,46 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "tofugu, medium, flak, marek, urdhr, anderzon, misdreavus, giangnh",
+      "name": "medium, flak, marek, urdhr, anderzon, misdreavus, giangnh, camlorn, ralfj, fnordig, tofugu",
       "disabled": false,
       "guid": "ca37d583a48782a8a26e0d7c479c33e1",
       "options": {
         "expected_update_period_in_days": "7",
         "url": [
-          "https://medium.com/feed/@RiotChat",
           "http://scattered-thoughts.net/feed.xml",
           "https://medium.com/feed/snips-ai",
           "https://medium.com/feed/@sgrif",
           "http://www.gabriel.urdhr.fr/feed.xml",
-          "https://medium.com/feed/@cshirky",
           "https://medium.com/feed/@eugeniyoz",
-          "https://www.tofugu.com/feed.xml",
+          "https://faiface.github.io/index.xml",
           "https://medium.com/feed/sensible-marks-of-ideas",
+          "http://www.tofugu.com/feed.xml",
           "https://medium.com/feed/@davidherman",
-          "https://medium.com/feed/engineering-at-ifttt",
-          "https://medium.com/feed/from-the-internet-archive",
+          "https://www.ralfj.de/blog/feed.xml",
           "https://medium.com/feed/@jordan_98525",
-          "http://www.tedunangst.com/flak/rss",
-          "https://medium.com/feed/@kelseyhightower/",
+          "https://www.tedunangst.com/flak/rss",
           "https://medium.com/feed/@thisissethsblog/",
+          "http://camlorn.net/rss.xml",
           "https://medium.com/feed/@opensourcegeekz",
+          "http://www.tofugu.com/feed.xml",
           "https://medium.com/feed/@covabishop",
           "https://medium.com/feed/@caulagi",
           "https://idea.popcount.org/rss.xml",
-          "https://medium.com/feed/learning-rust",
           "https://medium.com/feed/@octskyward",
+          "https://fnordig.de/feed.xml",
           "https://medium.com/feed/@veedrac",
-          "https://medium.com/feed/@ZachWeiner",
           "http://fredrik.anderzon.se/rss/",
+          "https://medium.com/feed/@daniellockyer",
           "http://quietmisdreavus.net/feed.xml",
           "https://blog.professorbeekums.com/index.xml",
           "https://medium.com/feed/@rillian",
           "https://medium.com/feed/@raphlinus",
-          "https://www.giangnh.me/feed",
           "https://medium.com/feed/@jordan_98525",
           "http://asquera.de/blog/atom.xml"
-        ]
+        ],
+        "include_feed_info": "true",
+        "max_events_per_run": "6",
+        "disable_ssl_verification": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -711,7 +810,8 @@
         "expected_update_period_in_days": "14",
         "url": [
           "https://feeds.feedburner.com/StupidFox"
-        ]
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -725,7 +825,9 @@
         "expected_update_period_in_days": "7",
         "url": [
           "http://www.fowllanguagecomics.com/feed/"
-        ]
+        ],
+        "include_feed_info": "true",
+        "max_events_per_run": "1"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -754,16 +856,44 @@
       "propagate_immediately": false
     },
     {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Show bonus panel",
+      "disabled": false,
+      "guid": "e312d27bb569915b931c7681b5e973f1",
+      "options": {
+        "instructions": {
+          "content": "{{ content | regex_replace: '(<img src=\\x22http://909sickle[^\\d]*)(\\d+.*)', '\\1\\2 \\1bonus.png\\x22 />' }}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
       "type": "Agents::RssAgent",
-      "name": "smbc, leftoversalad",
+      "name": "909sickle",
+      "disabled": false,
+      "guid": "e55f07a70579e85cb4219eb502b02fd4",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "clean": "false",
+        "url": "http://909sickle.net/rss",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "smbc",
       "disabled": false,
       "guid": "e68b36b76d7765fb1d65557742e726cb",
       "options": {
         "expected_update_period_in_days": "5",
         "url": [
-          "http://www.smbc-comics.com/rss.php",
-          "http://www.leftoversalad.com/rss.php"
-        ]
+          "http://www.smbc-comics.com/rss.php"
+        ],
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -815,7 +945,7 @@
       "guid": "f74298bd0f9f5eaa68431b7cf31221ca",
       "options": {
         "expected_update_period_in_days": "23",
-        "url": "{{url}}",
+        "url_from_event": "{{ url | regex_replace: '^/blog/', 'http://dpc.pw/blog/' }}",
         "type": "html",
         "mode": "merge",
         "extract": {
@@ -830,22 +960,36 @@
     },
     {
       "type": "Agents::RssAgent",
+      "name": "japaric",
+      "disabled": false,
+      "guid": "ff04ff7e0179841f442815fcf457e5b3",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "http://blog.japaric.io//index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
+      "type": "Agents::RssAgent",
       "name": "Thumbnail comics",
       "disabled": false,
       "guid": "ffe2a2565f21990f79bb5c6b7c6a2c04",
       "options": {
-        "expected_update_period_in_days": "1",
+        "expected_update_period_in_days": "2",
         "clean": "false",
         "url": [
           "http://mythdirection.com/feed/",
           "http://theodd1sout.com/feed/",
           "http://businesscat.happyjar.com/feed/",
-          "http://extrafabulouscomics.com/feed/",
           "http://theawkwardyeti.com/feed/",
           "http://www.loadingartist.com/feed/",
           "http://nopornplan.com/feed/"
         ],
-        "max_events_per_run": "300"
+        "max_events_per_run": "300",
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
@@ -854,11 +998,11 @@
   "links": [
     {
       "source": 0,
-      "receiver": 9
+      "receiver": 34
     },
     {
       "source": 1,
-      "receiver": 27
+      "receiver": 10
     },
     {
       "source": 2,
@@ -866,163 +1010,195 @@
     },
     {
       "source": 3,
-      "receiver": 8
+      "receiver": 36
     },
     {
       "source": 4,
-      "receiver": 14
+      "receiver": 9
     },
     {
       "source": 5,
-      "receiver": 21
+      "receiver": 16
     },
     {
       "source": 6,
-      "receiver": 15
+      "receiver": 25
     },
     {
       "source": 7,
-      "receiver": 34
+      "receiver": 17
     },
     {
       "source": 8,
-      "receiver": 15
+      "receiver": 39
     },
     {
       "source": 9,
-      "receiver": 40
+      "receiver": 17
     },
     {
       "source": 10,
-      "receiver": 13
+      "receiver": 47
     },
     {
       "source": 11,
-      "receiver": 29
+      "receiver": 14
     },
     {
       "source": 12,
-      "receiver": 15
-    },
-    {
-      "source": 13,
-      "receiver": 15
-    },
-    {
-      "source": 14,
-      "receiver": 27
-    },
-    {
-      "source": 16,
-      "receiver": 38
-    },
-    {
-      "source": 17,
-      "receiver": 26
-    },
-    {
-      "source": 18,
-      "receiver": 15
-    },
-    {
-      "source": 19,
-      "receiver": 15
-    },
-    {
-      "source": 20,
-      "receiver": 35
-    },
-    {
-      "source": 21,
-      "receiver": 15
-    },
-    {
-      "source": 22,
-      "receiver": 1
-    },
-    {
-      "source": 23,
-      "receiver": 24
-    },
-    {
-      "source": 24,
-      "receiver": 15
-    },
-    {
-      "source": 25,
-      "receiver": 27
-    },
-    {
-      "source": 26,
-      "receiver": 15
-    },
-    {
-      "source": 27,
-      "receiver": 15
-    },
-    {
-      "source": 28,
-      "receiver": 42
-    },
-    {
-      "source": 29,
-      "receiver": 15
-    },
-    {
-      "source": 30,
-      "receiver": 6
-    },
-    {
-      "source": 31,
-      "receiver": 15
-    },
-    {
-      "source": 32,
-      "receiver": 41
-    },
-    {
-      "source": 33,
-      "receiver": 15
-    },
-    {
-      "source": 34,
-      "receiver": 12
-    },
-    {
-      "source": 35,
-      "receiver": 15
-    },
-    {
-      "source": 36,
-      "receiver": 19
-    },
-    {
-      "source": 37,
-      "receiver": 18
-    },
-    {
-      "source": 38,
-      "receiver": 15
-    },
-    {
-      "source": 39,
       "receiver": 33
     },
     {
+      "source": 13,
+      "receiver": 17
+    },
+    {
+      "source": 14,
+      "receiver": 17
+    },
+    {
+      "source": 15,
+      "receiver": 31
+    },
+    {
+      "source": 16,
+      "receiver": 31
+    },
+    {
+      "source": 18,
+      "receiver": 34
+    },
+    {
+      "source": 19,
+      "receiver": 43
+    },
+    {
+      "source": 20,
+      "receiver": 30
+    },
+    {
+      "source": 21,
+      "receiver": 17
+    },
+    {
+      "source": 22,
+      "receiver": 17
+    },
+    {
+      "source": 23,
+      "receiver": 40
+    },
+    {
+      "source": 24,
+      "receiver": 10
+    },
+    {
+      "source": 25,
+      "receiver": 17
+    },
+    {
+      "source": 26,
+      "receiver": 2
+    },
+    {
+      "source": 27,
+      "receiver": 28
+    },
+    {
+      "source": 28,
+      "receiver": 17
+    },
+    {
+      "source": 29,
+      "receiver": 31
+    },
+    {
+      "source": 30,
+      "receiver": 17
+    },
+    {
+      "source": 31,
+      "receiver": 17
+    },
+    {
+      "source": 32,
+      "receiver": 49
+    },
+    {
+      "source": 33,
+      "receiver": 17
+    },
+    {
+      "source": 34,
+      "receiver": 17
+    },
+    {
+      "source": 35,
+      "receiver": 7
+    },
+    {
+      "source": 36,
+      "receiver": 17
+    },
+    {
+      "source": 37,
+      "receiver": 48
+    },
+    {
+      "source": 38,
+      "receiver": 17
+    },
+    {
+      "source": 39,
+      "receiver": 13
+    },
+    {
       "source": 40,
-      "receiver": 15
+      "receiver": 17
     },
     {
       "source": 41,
-      "receiver": 15
+      "receiver": 22
     },
     {
       "source": 42,
-      "receiver": 15
+      "receiver": 21
     },
     {
       "source": 43,
-      "receiver": 15
+      "receiver": 17
+    },
+    {
+      "source": 44,
+      "receiver": 17
+    },
+    {
+      "source": 45,
+      "receiver": 44
+    },
+    {
+      "source": 46,
+      "receiver": 38
+    },
+    {
+      "source": 47,
+      "receiver": 17
+    },
+    {
+      "source": 48,
+      "receiver": 17
+    },
+    {
+      "source": 49,
+      "receiver": 17
+    },
+    {
+      "source": 50,
+      "receiver": 34
+    },
+    {
+      "source": 51,
+      "receiver": 17
     }
   ],
   "control_links": [
