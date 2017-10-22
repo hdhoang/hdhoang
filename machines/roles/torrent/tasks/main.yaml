@@ -1,0 +1,23 @@
+---
+- name: transmission
+  package: name=transmission-cli
+- name: transmission firewall
+  firewalld:
+    permanent: yes
+    immediate: yes
+    state: enabled
+    zone: "{{ item }}"
+    service: transmission-client
+  with_items:
+    - [ 'internal', 'external' ]
+- file:
+    state: directory
+    path: /var/lib/transmission/Downloads
+    mode: g+w
+- name: add self to transmission group
+  user:
+    name: hdhoang
+    append: yes
+    groups: [ transmission ]
+- systemd: name=transmission enabled=yes state=started
+...

@@ -1,0 +1,23 @@
+---
+- name: syncthing
+  package: name=syncthing
+  become: yes
+- name: syncthing firewall
+  become: yes
+  firewalld:
+    permanent: yes
+    immediate: yes
+    state: enabled
+    zone: internal
+    port: "{{ item }}"
+  with_items:
+    - [ "8384/tcp", "22000/tcp", "22020/udp" ]
+- name: syncthing external
+  become: yes
+  firewalld:
+    permanent: yes
+    immediate: yes
+    state: enabled
+    zone: external
+    port: "22020/udp"
+...

@@ -1,5 +1,5 @@
 #!/usr/bin/fish
 /bin/curl --silent --show-error \
     --header @{{ config_dir }}/inoreader-auth \
-    'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2F{{ type }}?n=1000&r=o&ot=1' \
-    | /bin/jq --raw-output '.items|.[]|.canonical|.[0]|.href'
+    'https://www.inoreader.com/reader/api/0/stream/contents/user%2F-%2Fstate%2Fcom.google%2F{{ type }}?n=1000&ot='(date +%s -d '2 weeks ago') \
+    | /bin/jq --raw-output '.items | .[] | .canonical | .[0] | .href' | tac

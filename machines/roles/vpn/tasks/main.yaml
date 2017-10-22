@@ -1,0 +1,8 @@
+---
+- name: wireguard
+  package:
+    name: "{{ item }}"
+  with_items:
+    - wireguard-dkms
+    - wireguard-tools
+...

@@ -6,15 +6,14 @@
     - minidlna
 - name: minidlna ports
   firewalld:
+    permanent: yes
+    immediate: yes
     state: enabled
     zone: internal
-    port: "{{ item }}"
-  with_items:
-    - 1900/udp
-    - 8200/tcp
+    service: minidlna
 - name: minidlna.conf
-  file:
-    path: /etc/minidlna.conf
+  copy:
+    dest: /etc/minidlna.conf
     content: |
       friendly_name={{ ansible_hostname }}
       port=8200
@@ -26,9 +25,12 @@
       force_sort_criteria=+dc:date
 - name: allow minidlna to read home
   file:
-    path: /etc/systemd/system/minidlna.service.d/override.conf
+    state: directory
+    path: /etc/systemd/system/minidlna.service.d/
+- copy:
+    dest: /etc/systemd/system/minidlna.service.d/override.conf
     content: |
       [Service]
-      ProtectHome=no
-- systemd: name=minidlna state=started enabled=yes
+      ProtectHome=read-only
+- systemd: daemon_reload=yes name=minidlna state=started enabled=yes
 ...

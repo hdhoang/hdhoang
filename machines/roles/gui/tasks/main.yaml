@@ -1,0 +1,21 @@
+---
+- package: name="{{ item }}"
+  with_items:
+    - mpv
+    - pulseaudio-alsa
+    - sddm
+    - i3-wm
+    - dmenu
+    - xclip
+- name: autologin
+  become: yes
+  ini_file:
+    dest: /etc/sddm.conf
+    section: Autologin
+    option: "{{ item.name }}"
+    value: "{{ item.value }}"
+  with_items:
+    - { name: "Session", value: "i3" }
+    - { name: "User", value: "hdhoang" }
+- service: state=started enabled=yes name=sddm
+...

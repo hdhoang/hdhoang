@@ -30,11 +30,10 @@
     dest: "{{ bin }}/videos"
     content: |
       #!/usr/bin/fish
-      /bin/systemctl is-active ppp@vnpt; or exit
-      {{ bin }}/get_saved-web-pages | /bin/youtube-dl --batch-file - --no-mtime --ignore-errors --no-progress
+      {{ bin }}/get_saved-web-pages | /bin/youtube-dl --cookies "{{ home }}/tumblr.cookies" --batch-file - --ignore-errors --no-progress --output "{{ home }}/Downloads/%(title)s %(id)s.%(ext)s"
       {{ bin }}/get_starred | /bin/youtube-dl --batch-file - --no-mtime --ignore-errors --no-progress
       cd {{ public }}
-      find -L -type f | grep -vE '(x|epub)$' | shuf > play.m3u8
+      find -L -type f -regextype egrep -iregex '.*(mp.|webm|opus|ogg|m4a|flac|wma)$' | sed 's,#,%23,g' | shuf > play.m3u8
 - name: videos.timer
   copy:
     dest: "{{ config_dir }}/systemd/user/videos.timer"
@@ -42,17 +41,14 @@
       [Install]
       WantedBy=default.target
       [Timer]
-      OnCalendar=*-*-* 10:0:0
+      OnCalendar=daily
 - name: videos.service
   copy:
     dest: "{{ config_dir }}/systemd/user/videos.service"
     content: |
-      [Unit]
-      Requisite=ppp@vnpt.service
       [Service]
-      Type=simple
       ExecStart={{ bin }}/videos
-- systemd: user=yes name=videos.timer state=started enabled=yes
+- systemd: daemon_reload=yes user=yes name=videos.timer state=started enabled=yes
 
 - name: distribute.path
   copy:
@@ -61,7 +57,7 @@
       [Install]
       WantedBy=default.target
       [Path]
-      PathExistsGlob={{ public }}/Videos/NA NA*mp4
+      PathExistsGlob={{ home }}/Downloads/Scott?Adams*mp4
       PathExistsGlob={{ public }}/Videos/*m4a
       PathExistsGlob={{ public }}/Videos/*opus
       PathExistsGlob={{ public }}/Videos/*mp3
@@ -72,7 +68,6 @@
     content: |
       [Service]
       Type=oneshot
-      ExecStart=-/bin/sh -c "mv -t {{ public }}/Music/_new/ {{ public }}/Videos/*{m4a,mp3,ogg,opus}"
-      ExecStart=-/bin/sh -c "mv -t {{ home }}/Downloads/ {{ public }}/Videos/NA?NA*mp4"
+      ExecStart=-/bin/sh -c "mv -t {{ public }}/Music/_new/ {{ home }}/Downloads/Scott?Adams*mp4 {{ public }}/Videos/*{m4a,mp3,ogg,opus}"
 - systemd: daemon_reload=yes user=yes name=distribute.path state=started enabled=yes
 ...

@@ -1,0 +1,57 @@
+---
+- name: locale
+  lineinfile:
+    path: /etc/locale.gen
+    line: en_US.UTF-8 UTF-8
+- copy:
+    dest: /etc/locale.conf
+    content: LANG=en_US.UTF-8
+- name: keymap
+  copy:
+    dest: /etc/vconsole.conf
+    content: KEYMAP=dvorak
+- name: system packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - atop
+    - base-devel
+    - btrfs-progs
+    - darkstat
+    - f2fs-tools
+    - firewalld
+    - haveged
+    - mlocate
+    - ntfs-3g
+    - sshfs
+    - sysdig
+- name: system services
+  service:
+    enabled: yes
+    state: started
+    name: "{{ item }}"
+  with_items:
+    - atop
+    - atopacct
+    - darkstat
+    - firewalld
+    - fstrim.timer
+    - haveged
+    - sshd
+    - systemd-timesyncd
+- name: BBR
+  sysctl:
+    sysctl_file: /etc/sysctl.d/bbr.conf
+    name: net.ipv4.tcp_congestion_control
+    value: bbr
+- when: ansible_kernel | version_compare('4.13', 'lt')
+  sysctl:
+    sysctl_file: /etc/sysctl.d/bbr.conf
+    name: net.core.default_qdisc
+    value: fq
+- name: wheel privilege
+  copy:
+    mode: 0400
+    dest: /etc/sudoers.d/wheel
+    content: "%wheel ALL=(ALL) NOPASSWD: ALL"
+...

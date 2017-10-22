@@ -10,44 +10,59 @@
     - emacs
     - fish
     - git
+    - inotify-tools
     - jq
     - lsof
-    - phantomjs
+    - p7zip
     - pkgfile
     - python2-systemd
+    - smartmontools
+    - sshpass
+    - strace
+    - ltrace
+    - rsync
+    - rustup
     - sysdig
+    - time
     - tmux
     - tree
     - vim
     - wget
     - youtube-dl
+    - phantomjs
+    - expac
+    - yajl
 - name: user hdhoang
   become: yes
   user:
     name: hdhoang
     uid: 1000
     group: users
-    groups: [ wheel, systemd-journal, video, audio, uucp, adbusers ]
+    groups: [ wheel, systemd-journal, log, video, audio, uucp, adbusers ]
+    append: yes
     shell: /usr/bin/fish
     ssh_key_type: ed25519
     generate_ssh_key: yes
 
-- systemd: user=true state=started enabled=yes name="{{ item }}"
+- systemd: daemon_reload=yes user=yes state=started enabled=yes name="{{ item }}"
   with_items:
     - gpg-agent.socket
     - gpg-agent-ssh.socket
-    - pulseaudio.socket
 
 - name: environment
   copy:
     dest: "{{ home }}/.pam_environment"
     content: |
+      DBUS_SESSION_BUS_ADDRESS DEFAULT=unix:path=/run/user/1000/bus
+      SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
+      ANSIBLE_VAULT_PASSWORD_FILE DEFAULT=@{HOME}/.ansible/vault_password
       PATH DEFAULT=@{HOME}/bin:@{HOME}/.cargo/bin:/bin
       LD_LIBRARY_PATH DEFAULT=@{HOME}/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib:@{HOME}/.rustup/toolchains/nightly-armv7-unknown-linux-gnueabihf/lib
-      SSH_AUTH_SOCK=@{HOME}/.gnupg/S.gpg-agent.ssh
-      ALTERNATE_EDITOR DEFAULT=remacs
-      BROWSER DEFAULT=firefox
-      TERMINAL=alacritty
+      ALTERNATE_EDITOR DEFAULT=emacs
+      VISUAL DEFAULT=emacsclient
+      EDITOR DEFAULT=emacsclient
+      BROWSER DEFAULT=firefox-nightly
+      TERMINAL DEFAULT=alacritty
       RUST_BACKTRACE DEFAULT=full
 
 - name: directories
@@ -55,16 +70,28 @@
     state: directory
     path: "{{ item }}"
   with_items:
-    - "{{ home }}/bin"
-    - "{{ home }}/Downloads"
-    - "{{ config_dir }}/systemd/user"
+    - "{{ home }}/bin/"
+    - "{{ home }}/Downloads/"
+    - "{{ config_dir }}/fish/conf.d/"
+    - "{{ config_dir }}/fish/functions/"
+    - "{{ config_dir }}/systemd/user/"
+    - "{{ config_dir }}/mpv/"
     - "{{ config_dir }}/youtube-dl/"
+- get_url:
+    url: https://github.com/jichu4n/fish-command-timer/raw/master/conf.d/fish_command_timer.fish
+    dest: "{{ config_dir }}/fish/conf.d/"
+
 - name: ansible.cfg
   ini_file:
     path: "{{ home }}/.ansible.cfg"
     section: defaults
     option: inventory
     value: "{{ home }}/Sync/machines/inventory.ini"
+
+- name: vimrc
+  copy:
+    dest: "{{ home }}/.vimrc"
+    content: set mouse=r
 
 - name: youtube-dl config
   copy:
@@ -84,7 +111,6 @@
       set -g history-limit 10000
       set-window-option -g mode-keys vi
       set-window-option -g aggressive-resize on
-      new-session
 - name: tmux.service
   copy:
     dest: "{{ config_dir }}/systemd/user/tmux.service"
@@ -98,22 +124,31 @@
       [Service]
       Type=forking
       Restart=always
-      ExecStart=/usr/bin/tmux new-session -d
+      ExecStart=/usr/bin/tmux new-session -ADd -n journal journalctl -f
       ExecStop=/usr/bin/tmux kill-server
       Environment=DISPLAY=:0
       KillMode=none
-- systemd: user=yes name=tmux enabled=yes state=started
+- systemd: daemon_reload=yes user=yes name=tmux enabled=yes state=started
 
-- name: check for rustup
-  stat: path="{{ home }}/.cargo/bin/rustup"
-  register: rustup
-- name: download rustup
-  when: rustup.stat.exists == False
-  get_url:
-    url: https://sh.rustup.rs
-    dest: "{{ home }}/bin/rustup.sh"
-    mode: u+rwx,g=r,o=r
-- name: install nightly rust
-  when: rustup.stat.exists == False
-  command: "{{ home }}/bin/rustup.sh -y --default-toolchain nightly"
+- name: install rust
+  shell: "rustup toolchain add stable && rustup component add rust-src rust-analysis rls-preview --toolchain stable"
+
+- name: AUR
+  file:
+    state: directory
+    path: "{{ pacaur }}/"
+- name: AUR keys
+  command: gpg --recv-keys 1eb2638ff56c0c53 bbbebdbb24c6f355 b0f4253373f8f6f510d42178520a9993a1c052f8
+- name: AUR packages
+  git:
+    repo: https://aur.archlinux.org/{{ item }}.git
+    dest: "{{ pacaur }}/{{ item }}"
+    # armv7h machines often patch PKGBUILD
+    force: yes
+  with_items:
+    - cower
+    - pacaur
+    - firefox-nightly
+    - heroku-cli
+    - netatop-dkms
 ...

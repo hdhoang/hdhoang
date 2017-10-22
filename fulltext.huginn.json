@@ -7,22 +7,8 @@
   "tag_fg_color": "#ffffff",
   "tag_bg_color": "#5bc0de",
   "icon": "gear",
-  "exported_at": "2017-10-18T11:41:04Z",
+  "exported_at": "2017-12-26T07:18:23Z",
   "agents": [
-    {
-      "type": "Agents::RssAgent",
-      "name": "leftoversalad",
-      "disabled": false,
-      "guid": "029fbfb843026d5e0bba251cad7109b4",
-      "options": {
-        "expected_update_period_in_days": "16",
-        "clean": "false",
-        "url": "http://www.leftoversalad.com/rss.php",
-        "include_feed_info": "true"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 259200
-    },
     {
       "type": "Agents::RssAgent",
       "name": "channelate",
@@ -197,7 +183,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, endler, perfectchipperman, pablojuan, khoi vinh",
+      "name": "Pedro Alves, Petr Zemek, brandonio21, the burning basis vector, shady characters, perfectchipperman, pablojuan, khoi vinh",
       "disabled": false,
       "guid": "486bcf512b50c544827097033458646d",
       "options": {
@@ -210,8 +196,7 @@
           "https://feeds.feedburner.com/ShadyCharacters",
           "http://en.perfectchipperman.com/feeds/posts/default",
           "http://pablojuan.com/feed/atom/",
-          "https://feeds2.feedburner.com/subtraction",
-          "http://matthias-endler.de/rss.xml"
+          "https://feeds2.feedburner.com/subtraction"
         ],
         "include_feed_info": "true"
       },
@@ -268,7 +253,7 @@
     {
       "type": "Agents::RssAgent",
       "name": "fy",
-      "disabled": false,
+      "disabled": true,
       "guid": "6562f1b27522f8e8da10933500b43dec",
       "options": {
         "expected_update_period_in_days": "1",
@@ -302,6 +287,20 @@
       "propagate_immediately": false
     },
     {
+      "type": "Agents::RssAgent",
+      "name": "neikos",
+      "disabled": false,
+      "guid": "67f2f83cd33647b6a827cb72a023138f",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "http://neikos.me/post/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
       "type": "Agents::DataOutputAgent",
       "name": "Full Text",
       "disabled": false,
@@ -328,7 +327,6 @@
         "events_to_show": "9009",
         "rss_content_type": "application/rss+xml",
         "push_hubs": [
-          "https://inoreader.superfeedr.com/",
           "https://pubsubhubbub.appspot.com/"
         ]
       },
@@ -347,19 +345,6 @@
       },
       "schedule": "every_2h",
       "keep_events_for": 259200
-    },
-    {
-      "type": "Agents::RssAgent",
-      "name": "thee panel soul",
-      "disabled": false,
-      "guid": "6e174c4da7ecd756938809751538f220",
-      "options": {
-        "expected_update_period_in_days": "14",
-        "url": "http://www.threepanelsoul.com/rss.php",
-        "include_feed_info": "true"
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 86400
     },
     {
       "type": "Agents::RssAgent",
@@ -421,15 +406,14 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "peteris.rocks, michaelwoerister, neikos",
+      "name": "peteris.rocks, michaelwoerister",
       "disabled": false,
       "guid": "89da0f78e765ca110e65160d66fae666",
       "options": {
         "expected_update_period_in_days": "50",
         "url": [
           "https://peteris.rocks/rss.xml",
-          "https://michaelwoerister.github.io/feed.xml",
-          "http://neikos.me/feed.xml"
+          "https://michaelwoerister.github.io/feed.xml"
         ],
         "include_feed_info": "true"
       },
@@ -487,17 +471,16 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "twenty sided, tokyo damage, aead, ajkavanagh, worthe",
+      "name": "twenty sided, tokyo damage, aead, ajkavanagh",
       "disabled": false,
       "guid": "988988a2c9b3578d69e649362412df55",
       "options": {
         "expected_update_period_in_days": "3",
         "url": [
-          "http://www.shamusyoung.com/twentysidedtale/?feed=rss2",
+          "https://www.shamusyoung.com/twentysidedtale/?feed=rss2",
           "http://www.hellodamage.com/top/feed/",
           "https://aead.github.io/index.xml",
-          "http://blog.ajkavanagh.me/index.xml",
-          "https://www.worthe-it.co.za/rss.xml"
+          "http://blog.ajkavanagh.me/index.xml"
         ],
         "include_feed_info": "true"
       },
@@ -689,7 +672,7 @@
     },
     {
       "type": "Agents::RssAgent",
-      "name": "medium, flak, marek, urdhr, anderzon, misdreavus, giangnh, camlorn, ralfj, fnordig, tofugu",
+      "name": "medium, flak, urdhr, misdreavus, giangnh, camlorn, ralfj, fnordig, worthe, vazquez",
       "disabled": false,
       "guid": "ca37d583a48782a8a26e0d7c479c33e1",
       "options": {
@@ -702,33 +685,28 @@
           "https://medium.com/feed/@eugeniyoz",
           "https://faiface.github.io/index.xml",
           "https://medium.com/feed/sensible-marks-of-ideas",
-          "http://www.tofugu.com/feed.xml",
           "https://medium.com/feed/@davidherman",
           "https://www.ralfj.de/blog/feed.xml",
           "https://medium.com/feed/@jordan_98525",
-          "https://www.tedunangst.com/flak/rss",
           "https://medium.com/feed/@thisissethsblog/",
           "http://camlorn.net/rss.xml",
           "https://medium.com/feed/@opensourcegeekz",
-          "http://www.tofugu.com/feed.xml",
           "https://medium.com/feed/@covabishop",
+          "https://nikolaivazquez.com/feed.xml",
           "https://medium.com/feed/@caulagi",
-          "https://idea.popcount.org/rss.xml",
           "https://medium.com/feed/@octskyward",
           "https://fnordig.de/feed.xml",
           "https://medium.com/feed/@veedrac",
-          "http://fredrik.anderzon.se/rss/",
           "https://medium.com/feed/@daniellockyer",
           "http://quietmisdreavus.net/feed.xml",
           "https://blog.professorbeekums.com/index.xml",
           "https://medium.com/feed/@rillian",
           "https://medium.com/feed/@raphlinus",
+          "https://www.worthe-it.co.za/rss.xml",
           "https://medium.com/feed/@jordan_98525",
           "http://asquera.de/blog/atom.xml"
         ],
-        "include_feed_info": "true",
-        "max_events_per_run": "6",
-        "disable_ssl_verification": "true"
+        "include_feed_info": "true"
       },
       "schedule": "every_2h",
       "keep_events_for": 86400
@@ -819,7 +797,7 @@
     {
       "type": "Agents::RssAgent",
       "name": "fowllanguagecomics",
-      "disabled": false,
+      "disabled": true,
       "guid": "d8636d990a7f187596b2f4310476d14d",
       "options": {
         "expected_update_period_in_days": "7",
@@ -831,29 +809,6 @@
       },
       "schedule": "every_2h",
       "keep_events_for": 172800
-    },
-    {
-      "type": "Agents::WebsiteAgent",
-      "name": "Grab three panel soul",
-      "disabled": false,
-      "guid": "df215cd04084abe5ed016d4e7f69ce76",
-      "options": {
-        "expected_update_period_in_days": "14",
-        "url": "{{url}}",
-        "type": "html",
-        "mode": "merge",
-        "extract": {
-          "content": {
-            "css": "#cc-comic"
-          },
-          "extra": {
-            "css": ".cc-blogwrap:first-child"
-          }
-        }
-      },
-      "schedule": "every_2h",
-      "keep_events_for": 86400,
-      "propagate_immediately": false
     },
     {
       "type": "Agents::EventFormattingAgent",
@@ -982,11 +937,9 @@
         "clean": "false",
         "url": [
           "http://mythdirection.com/feed/",
-          "http://theodd1sout.com/feed/",
           "http://businesscat.happyjar.com/feed/",
           "http://theawkwardyeti.com/feed/",
-          "http://www.loadingartist.com/feed/",
-          "http://nopornplan.com/feed/"
+          "http://www.loadingartist.com/feed/"
         ],
         "max_events_per_run": "300",
         "include_feed_info": "true"
@@ -998,55 +951,55 @@
   "links": [
     {
       "source": 0,
-      "receiver": 34
-    },
-    {
-      "source": 1,
-      "receiver": 10
-    },
-    {
-      "source": 2,
-      "receiver": 31
-    },
-    {
-      "source": 3,
-      "receiver": 36
-    },
-    {
-      "source": 4,
       "receiver": 9
     },
     {
+      "source": 1,
+      "receiver": 30
+    },
+    {
+      "source": 2,
+      "receiver": 35
+    },
+    {
+      "source": 3,
+      "receiver": 8
+    },
+    {
+      "source": 4,
+      "receiver": 15
+    },
+    {
       "source": 5,
-      "receiver": 16
+      "receiver": 24
     },
     {
       "source": 6,
-      "receiver": 25
+      "receiver": 17
     },
     {
       "source": 7,
-      "receiver": 17
+      "receiver": 38
     },
     {
       "source": 8,
-      "receiver": 39
-    },
-    {
-      "source": 9,
       "receiver": 17
     },
     {
+      "source": 9,
+      "receiver": 45
+    },
+    {
       "source": 10,
-      "receiver": 47
+      "receiver": 13
     },
     {
       "source": 11,
-      "receiver": 14
+      "receiver": 32
     },
     {
       "source": 12,
-      "receiver": 33
+      "receiver": 17
     },
     {
       "source": 13,
@@ -1054,27 +1007,27 @@
     },
     {
       "source": 14,
-      "receiver": 17
+      "receiver": 30
     },
     {
       "source": 15,
-      "receiver": 31
+      "receiver": 30
     },
     {
       "source": 16,
-      "receiver": 31
+      "receiver": 33
     },
     {
       "source": 18,
-      "receiver": 34
+      "receiver": 33
     },
     {
       "source": 19,
-      "receiver": 43
+      "receiver": 29
     },
     {
       "source": 20,
-      "receiver": 30
+      "receiver": 17
     },
     {
       "source": 21,
@@ -1082,35 +1035,35 @@
     },
     {
       "source": 22,
-      "receiver": 17
+      "receiver": 39
     },
     {
       "source": 23,
-      "receiver": 40
+      "receiver": 9
     },
     {
       "source": 24,
-      "receiver": 10
+      "receiver": 17
     },
     {
       "source": 25,
-      "receiver": 17
+      "receiver": 1
     },
     {
       "source": 26,
-      "receiver": 2
+      "receiver": 27
     },
     {
       "source": 27,
-      "receiver": 28
-    },
-    {
-      "source": 28,
       "receiver": 17
     },
     {
+      "source": 28,
+      "receiver": 30
+    },
+    {
       "source": 29,
-      "receiver": 31
+      "receiver": 17
     },
     {
       "source": 30,
@@ -1118,11 +1071,11 @@
     },
     {
       "source": 31,
-      "receiver": 17
+      "receiver": 47
     },
     {
       "source": 32,
-      "receiver": 49
+      "receiver": 17
     },
     {
       "source": 33,
@@ -1130,55 +1083,55 @@
     },
     {
       "source": 34,
-      "receiver": 17
+      "receiver": 6
     },
     {
       "source": 35,
-      "receiver": 7
+      "receiver": 17
     },
     {
       "source": 36,
-      "receiver": 17
+      "receiver": 46
     },
     {
       "source": 37,
-      "receiver": 48
+      "receiver": 17
     },
     {
       "source": 38,
-      "receiver": 17
+      "receiver": 12
     },
     {
       "source": 39,
-      "receiver": 13
+      "receiver": 17
     },
     {
       "source": 40,
-      "receiver": 17
-    },
-    {
-      "source": 41,
-      "receiver": 22
-    },
-    {
-      "source": 42,
       "receiver": 21
     },
     {
-      "source": 43,
+      "source": 41,
+      "receiver": 20
+    },
+    {
+      "source": 42,
       "receiver": 17
+    },
+    {
+      "source": 43,
+      "receiver": 42
     },
     {
       "source": 44,
-      "receiver": 17
+      "receiver": 37
     },
     {
       "source": 45,
-      "receiver": 44
+      "receiver": 17
     },
     {
       "source": 46,
-      "receiver": 38
+      "receiver": 17
     },
     {
       "source": 47,
@@ -1186,18 +1139,10 @@
     },
     {
       "source": 48,
-      "receiver": 17
+      "receiver": 33
     },
     {
       "source": 49,
-      "receiver": 17
-    },
-    {
-      "source": 50,
-      "receiver": 34
-    },
-    {
-      "source": 51,
       "receiver": 17
     }
   ],

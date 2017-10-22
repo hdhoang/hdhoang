@@ -1,0 +1,57 @@
+---
+- package: name=dnsmasq
+- name: hosts
+  copy:
+    dest: /etc/hosts
+    content: |
+      {{ subnet }}.1 kub vor.{{ domain }}
+      {{ subnet }}.2 zif
+      {{ subnet }}.5 gpon
+      {{ subnet }}.7 zel
+      {{ subnet }}.10 rtn10
+      {{ subnet }}.33 prim
+      {{ subnet }}.35 ken
+      {{ subnet }}.37 pa
+      {{ subnet }}.39 ton
+      {{ subnet }}.41 lab
+      {{ subnet }}.43 nokia5
+      {{ subnet }}.45 riho
+      {{ subnet }}.52 ex52
+- name: ethers
+  copy:
+    dest: /etc/ethers
+    content: |
+      02:ce:02:81:cb:f7 kub
+      b8:27:eb:0f:e4:24 zif
+      a0:65:18:0f:2d:2e gpon
+      b0:48:7a:e0:a6:cd zel
+      10:bf:48:c3:75:d8 rtn10
+      dc:66:72:37:a6:47 prim
+      74:23:44:47:5d:be ken
+      a4:d1:d2:2c:1b:88 pa
+      60:6c:66:bc:ef:62 ton
+      20:a9:9b:a7:27:dc lab
+      cc:9f:7a:da:49:ee nokia5
+      14:9a:10:c5:7c:3c riho
+      f0:bf:97:33:cb:79 ex52
+- name: dnsmasq DHCP
+  blockinfile:
+    marker: "# {mark} DHCP"
+    dest: /etc/dnsmasq.conf
+    validate: /bin/dnsmasq --test --conf-file=%s
+    content: |
+      interface=eth0
+      dhcp-authoritative
+      dhcp-option=option:dns-server,{{ subnet }}.1
+      dhcp-option=option:router,{{ gateway }}
+      dhcp-range=set:home,{{ subnet }}.100,{{ subnet }}.200,255.255.255.0
+      read-ethers
+      leasefile-ro
+- firewalld:
+    permanent: yes
+    immediate: yes
+    zone: internal
+    service: dhcp
+    state: enabled
+- systemd: name=dnsmasq state=started enabled=yes
+...

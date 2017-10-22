@@ -1,0 +1,68 @@
+---
+- name: internal interface
+  firewalld:
+    immediate: yes
+    permanent: yes
+    state: enabled
+    interface: eth0
+    zone: internal
+- name: external interface
+  firewalld:
+    immediate: yes
+    permanent: yes
+    state: enabled
+    interface: ppp0
+    zone: external
+- name: ppp packages
+  package: name="{{ item }}"
+  with_items: [ 'ppp', 'rp-pppoe' ]
+- name: VNPT PPPoE
+  copy:
+    dest: /etc/ppp/peers/vnpt
+    content: |
+      plugin rp-pppoe.so
+      eth0
+      name "01662419526"
+      hide-password
+      noauth
+      noipdefault
+      ipparam vnpt
+- name: VNPT auth
+  copy:
+    dest: /etc/ppp/pap-secrets
+    content: !vault |
+      $ANSIBLE_VAULT;1.1;AES256
+      64663031646539343133353364363965656434663334623732623137376562366339616366346134
+      3666346439653832316636363234356264646432343336310a653638646132386635333432366238
+      37653839613737343161633862643461373230633361613237653939663031626366363935373737
+      3163643237386337610a623438333931663933656561633736333132396164623339653539316330
+      34363834373865346665313762306538613333626566376531356365336561316265
+- name: ppp autorestart
+  file:
+    state: directory
+    dest: /etc/systemd/system/ppp@.service.d/
+- copy:
+    dest: /etc/systemd/system/ppp@.service.d/override.conf
+    content: |
+      [Service]
+      Restart=always
+      RestartSec=120
+      ExecStopPost=/bin/ip route replace default via {{ subnet }}.254
+      ExecStopPost=-/bin/ip address delete {{ subnet }}.254/24 dev eth0
+- name: ppp routing
+  copy:
+    mode: 0744
+    dest: /etc/ppp/ip-up.d/00-gateway.sh
+    content: |
+      ip address add {{ subnet }}.254/24 dev $2
+      ip route replace default dev $1
+- name: force TCP MSS by firewalld
+  copy:
+    dest: /etc/firewalld/direct.xml
+    content: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <direct>
+        <rule ipv="ipv4" table="mangle" chain="POSTROUTING" priority="0">-p tcp --tcp-flags SYN,RST SYN -o ppp0 -j TCPMSS --set-mss 1452</rule>
+      </direct>
+- systemd: name=ppp@vnpt.service enabled=no state=stopped
+...

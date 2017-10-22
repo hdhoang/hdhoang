@@ -1,0 +1,33 @@
+---
+- package: name=dnsmasq
+- name: steven hosts
+  get_url:
+    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+    dest: /var/cache/steven
+- name: use own\'s resolver
+  copy:
+    dest: /etc/resolv.conf
+    content: |
+      nameserver 127.0.0.1
+- name: dnsmasq DNS
+  blockinfile:
+    marker: "# {mark} DNS"
+    dest: /etc/dnsmasq.conf
+    validate: /bin/dnsmasq --test --conf-file=%s
+    content: |
+      interface=eth0
+      no-resolv
+      server=8.8.8.8
+      domain-needed
+      bogus-priv
+      addn-hosts=/var/cache/steven
+      domain={{ domain }}
+      expand-hosts
+- firewalld:
+    permanent: yes
+    immediate: yes
+    zone: internal
+    service: dns
+    state: enabled
+- systemd: name=dnsmasq enabled=yes state=started
+...
