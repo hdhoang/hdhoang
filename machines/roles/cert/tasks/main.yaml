@@ -1,2 +1,6 @@
 ---
+- name: certbot
+  package: name=certbot
+- name: obtain certificate
+  command: certbot --agree-tos certonly --keep-until-expiring --domains {{ domain }},vor.{{ domain }},zahe.me --webroot --webroot-path {{ public }}
 ...
