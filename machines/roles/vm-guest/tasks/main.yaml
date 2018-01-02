@@ -1,0 +1,19 @@
+---
+- name: VMware guest
+  when: ansible_virtualization_type == "VMware"
+  package: name=open-vm-tools
+- service: name=vmtoolsd state=started enabled=yes
+  when: ansible_virtualization_type == "VMware"
+  become: yes
+- name: VirtualBox guest
+  when: ansible_virtualization_type == "virtualbox"
+  package: name=virtualbox-guest-dkms
+- when: ansible_virtualization_type == "virtualbox"
+  package: name=virtualbox-guest-utils
+- name: vboxsf mount
+  when: ansible_virtualization_type == "virtualbox"
+  lineinfile:
+    create: yes
+    dest: /etc/fstab
+    line: Downloads {{ home }}/Downloads vboxsf uid=hdhoang,gid=users,rw,dmode=700,fmode=600,noauto,x-systemd.automount 
+...

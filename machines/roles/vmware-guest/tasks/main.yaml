@@ -1,4 +1,0 @@
-- name: VMware guest
-  package: name=open-vm-tools
-- service: name=vmtoolsd state=started enabled=yes
-  become: yes

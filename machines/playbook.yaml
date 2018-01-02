@@ -4,8 +4,8 @@
   tasks:
     - import_role: name=base-system
       become: yes
-    - import_role: name=vmware-guest
-      when: ansible_virtualization_type == "VMware"
+    - import_role: name=vm-guest
+      when: ansible_virtualization_role == "guest"
       become: yes
     - import_role: name=cmd
     - import_role: name=sync
