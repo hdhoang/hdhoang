@@ -6,6 +6,9 @@
 - copy:
     dest: /etc/locale.conf
     content: LANG=en_US.UTF-8
+- command: locale-gen
+  args:
+    creates: /usr/lib/locale/locale-archive
 - name: keymap
   copy:
     dest: /etc/vconsole.conf
