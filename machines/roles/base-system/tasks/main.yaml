@@ -19,6 +19,8 @@
   with_items:
     - atop
     - base-devel
+    - cmake
+    - clang
     - btrfs-progs
     - darkstat
     - f2fs-tools
