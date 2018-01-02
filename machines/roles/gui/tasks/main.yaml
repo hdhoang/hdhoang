@@ -7,15 +7,45 @@
     - i3-wm
     - dmenu
     - xclip
-- name: autologin
-  become: yes
-  ini_file:
-    dest: /etc/sddm.conf
-    section: Autologin
-    option: "{{ item.name }}"
-    value: "{{ item.value }}"
+- file:
+    state: directory
+    path: "{{ item }}"
   with_items:
-    - { name: "Session", value: "i3" }
-    - { name: "User", value: "hdhoang" }
+    - "{{ config_dir }}/mpv/"
+    - "{{ config_dir }}/alacritty/"
+- name: mpv.conf
+  copy:
+    dest: "{{ config_dir }}/mpv/mpv.conf"
+    content: |
+      save-position-on-quit
+      replaygain=track
+      vo=gpu,rpi,vaapi
+      hwdec=auto
+      fs
+
+- name: X11 keymap
+  copy:
+    dest: /etc/X11/xorg.conf.d/00-keyboard.conf
+    content: |
+      # Read and parsed by systemd-localed. It's probably wise not to edit this file
+      # manually too freely.
+      Section "InputClass"
+        Identifier "system-keyboard"
+        MatchIsKeyboard "on"
+        Option "XkbLayout" "us"
+        Option "XkbModel" "pc105"
+        Option "XkbVariant" "dvorak"
+        Option "XkbOptions" "ctrl:nocaps"
+      EndSection
+- file:
+    path: /etc/sddm.conf.d/
+    state: directory
+- name: autologin
+  copy:
+    dest: /etc/sddm.conf.d/autologin.conf
+    content: |
+      [Autologin]
+      User=hdhoang
+      Session=i3
 - service: state=started enabled=yes name=sddm
 ...

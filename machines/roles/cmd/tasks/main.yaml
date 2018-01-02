@@ -75,7 +75,6 @@
     - "{{ config_dir }}/fish/conf.d/"
     - "{{ config_dir }}/fish/functions/"
     - "{{ config_dir }}/systemd/user/"
-    - "{{ config_dir }}/mpv/"
     - "{{ config_dir }}/youtube-dl/"
 - get_url:
     url: https://github.com/jichu4n/fish-command-timer/raw/master/conf.d/fish_command_timer.fish
