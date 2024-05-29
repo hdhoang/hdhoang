@@ -129,10 +129,11 @@ owner = "rui314"
 repo = "mold"
 asset_name.linux = "x86_64-linux"
 
-[probe-rs]
-owner = "probe-rs"
-repo = "probe-rs"
-asset_name.linux = "probe-rs-x86_64-unknown"
+# no xz support
+# [probe-rs]
+# owner = "probe-rs"
+# repo = "probe-rs"
+# asset_name.linux = "probe-rs-x86_64-unknown"
 
 [rclone]
 owner = "rclone"
@@ -145,6 +146,13 @@ owner = "pvolok"
 repo = "mprocs"
 asset_name.windows = "win"
 asset_name.linux = "linux"
+
+[rink]
+owner = "tiffany352"
+repo = "rink-rs"
+exe_name = "rink"
+asset_name.windows = "Win"
+asset_name.linux = "Linux"
 
 [fend]
 owner = "printfn"
@@ -164,13 +172,20 @@ repo = "MicroPad-Electron"
 exe_name = "micropad"
 asset_name.linux = "x86_64.AppImage"
 
-[k2tf]
-owner = "sl1pm4t"
-repo = "k2tf"
-asset_name.linux = "Linux_x86_64"
-
 [hurl]
 owner = "Orange-OpenSource"
 repo = "hurl"
 asset_name.linux = "x86_64-unknown-linux"
 asset_name.windows = "msvc.zip"
+
+[hexyl]
+owner = "sharkdp"
+repo = "hexyl"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "x86_64-pc-windows-msvc.zip"
+
+[lychee]
+owner = "lycheeverse"
+repo = "lychee"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "exe"
