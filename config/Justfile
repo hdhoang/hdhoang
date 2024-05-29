@@ -27,4 +27,4 @@ t *params:
 
 [no-cd]
 d *paths:
-    try { pijul diff --patience {{paths}} err> /dev/null } catch { git diff -- {{paths}} err> /dev/null }
+    try { jj diff {{paths}} err> /dev/null } catch { git diff -- {{paths}} err> /dev/null }

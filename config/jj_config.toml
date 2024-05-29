@@ -3,4 +3,6 @@ name = "hdhoang"
 email = "code@hdhoang.space"
 
 [ui]
+default-command = "log"
+diff.tool = ["difft", "--color=always", "$left", "$right"]
 editor = "emacsclient -c"
