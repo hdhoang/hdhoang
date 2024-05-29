@@ -1,0 +1,2232 @@
+{
+  "schema_version": 1,
+  "name": "Fulltext",
+  "description": "No description provided",
+  "source_url": "https://mysterious-lake-12328.herokuapp.com/scenarios/2/export",
+  "guid": "f3ec62b0e5c36a0e94240319c4e27827",
+  "tag_fg_color": "#ffffff",
+  "tag_bg_color": "#5bc0de",
+  "icon": "gear",
+  "exported_at": "2022-09-03T12:17:54Z",
+  "agents": [
+    {
+      "type": "Agents::RssAgent",
+      "name": "prolificpen",
+      "disabled": false,
+      "guid": "024cf542a78d0d94926fbbe1628b2a9f",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "clean": "false",
+        "url": "https://prolificpencomics.net/feed/"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "rust embedded WG",
+      "disabled": false,
+      "guid": "024ee4c2438f581b9eb57795de8b6eb8",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "https://rust-embedded.github.io/blog/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "rsc",
+      "disabled": false,
+      "guid": "026d8cc15e378f4d68acff313ad538f6",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://research.swtch.com/feed.atom",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "rust-analyzer",
+      "disabled": false,
+      "guid": "0490b0cd869a66ddbaed4e882d2b1fd3",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://rust-analyzer.github.io/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "lukasa",
+      "disabled": false,
+      "guid": "09b2c318d7e7b8bb415f077d18100781",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://lukasa.co.uk/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1814400
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "oxide",
+      "disabled": false,
+      "guid": "0aca6efa86c066c9355633ca9e48d120",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "https://oxide.computer/blog/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://stonetoss.com/index.php/comic/feed/",
+      "disabled": false,
+      "guid": "10b3f8f4b47a4f07fd447dac6ecff4cc",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://stonetoss.com/index.php/comic/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://theunderfold.com/feed/",
+      "disabled": false,
+      "guid": "164159a926e80ddf0c95be83a630caaf",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://theunderfold.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://ithinuel.me/feed.xml",
+      "disabled": false,
+      "guid": "177c7264a5ad0980edc7319376d9cbb5",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://ithinuel.me/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "channelate",
+      "disabled": false,
+      "guid": "17b5e335890014c573a555f1fc865649",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://feeds2.feedburner.com/channelATE",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #comic-image",
+      "disabled": false,
+      "guid": "188b613f52988a1680d2f4ea51024a60",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "#comic-image"
+          }
+        }
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "Gerbil With a Jetpack",
+      "disabled": false,
+      "guid": "1d879cceeab2adc2669ae4d074eba922",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://gerbilwithajetpack.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Show lovenstein rollover comic",
+      "disabled": false,
+      "guid": "1e2359703d558197681ac952e96f6bd5",
+      "options": {
+        "instructions": {
+          "content": "{{ content | replace: '.png', '_rollover.png' | replace: '.gif', '_rollover.gif' }}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "optipess",
+      "disabled": false,
+      "guid": "210f1963a6603c800310d2afee09c14c",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://feeds.feedburner.com/Optipess",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "stephan boyer, pixelbeat, codecapsule",
+      "disabled": false,
+      "guid": "228e85061185d0f57599afc8f63950a9",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": [
+          "https://www.stephanboyer.com/rss",
+          "https://www.pixelbeat.org/feed/rss2.xml",
+          "http://codecapsule.com/feed/"
+        ],
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://blog.drogue.io/rss.xml",
+      "disabled": false,
+      "guid": "2c6c72f68e06cdd9604256ca73d4215f",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "url": "https://blog.drogue.io/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "swords",
+      "disabled": false,
+      "guid": "2dd0ae5c937dac34ca8d2a6de8b3cf5b",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "clean": "false",
+        "url": "https://swordscomic.com/comic/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "theifworks",
+      "disabled": false,
+      "guid": "3196effd662e61553ffd459da04ea549",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "url": "https://feeds.feedburner.com/theifworks",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "exocomics",
+      "disabled": false,
+      "guid": "3283010f76c9ff933079eba7b389f07c",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://www.exocomics.com/feed",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "OddThinking",
+      "disabled": false,
+      "guid": "3439a8b55dfc2fac343bada956de2b61",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://www.somethinkodd.com/oddthinking/feed/atom/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "myrrlyn",
+      "disabled": false,
+      "guid": "34d96061b83c6bff2bcc916ab7007c8b",
+      "options": {
+        "expected_update_period_in_days": "66",
+        "clean": "false",
+        "url": "https://myrrlyn.net/blog/feed.rss",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Show fowllanguagecomics bonus panel",
+      "disabled": false,
+      "guid": "357b4346e507085182dc39d5541ad032",
+      "options": {
+        "instructions": {
+          "content": "{{ content | regex_replace: '<img .+src=.(https[^?]+)[.]([a-z]{2,4})[?].+/>', '<img src=\\1.\\2 /> <img src=\\1-bonus-panel.\\2 /> <img src=\\1-bonus.\\2 />' }}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://www.kohney.com/feed/",
+      "disabled": false,
+      "guid": "35f70b6ca4ebe5d5821401f11d402b73",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://www.kohney.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://morestina.net/blog/feed",
+      "disabled": false,
+      "guid": "364ff8280dd9fad018bafa8c5e378feb",
+      "options": {
+        "expected_update_period_in_days": "180",
+        "include_feed_info": "true",
+        "url": "https://morestina.net/blog/feed"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #comic & .entry",
+      "disabled": false,
+      "guid": "3b860ac36f021075dbb59628d7942020",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "#comic"
+          },
+          "extra": {
+            "css": ".entry"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "oglaf",
+      "disabled": false,
+      "guid": "3cdce11fd66242b23b064126901dfe53",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://oglaf.com/feeds/rss/",
+        "include_feed_info": "true",
+        "remembered_id_count": "900",
+        "events_order": [
+          [
+            "{{date_published}}",
+            "time",
+            "true"
+          ],
+          [
+            "{{last_updated}}",
+            "time"
+          ]
+        ],
+        "max_events_per_run": "15"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .post, .blogpost, .blog-body, .blog-text",
+      "disabled": false,
+      "guid": "4002f73438041dc2a03e8b8d77cae049",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".post, .blogpost, .blog-body, .blog-text"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab bonus link",
+      "disabled": false,
+      "guid": "44d565d2e73d433b6cbacc7eb85296a7",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "data_from_event": "{{content}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "bonus_url": {
+            "css": "strong a, a[style]",
+            "value": "@href"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "Pedro Alves, Petr Zemek, the burning basis vector, shady characters",
+      "disabled": false,
+      "guid": "486bcf512b50c544827097033458646d",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": [
+          "https://blog.petrzemek.net/feed/",
+          "http://www.joshbarczak.com/blog/?feed=rss2",
+          "https://feeds.feedburner.com/ShadyCharacters"
+        ],
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://heybuddycomics.com/feed/",
+      "disabled": false,
+      "guid": "4d28b8ce7f05c360baa304bfc87714e3",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://heybuddycomics.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "deathbulge",
+      "disabled": false,
+      "guid": "56bb85d3e2862812931d20b6fde406a5",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "http://deathbulge.com/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "tokio",
+      "disabled": false,
+      "guid": "5868137989fb828da6af62a56409a7f2",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://tokio.rs/blog/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Fix oglaf",
+      "disabled": false,
+      "guid": "5916789c727118bdf8a48ef02d9de8e0",
+      "options": {
+        "instructions": {
+          "content": "{{description}} {{content}}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 259200,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "jmmv",
+      "disabled": false,
+      "guid": "5e229dbaf824a57836676358c71ef15a",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://jmmv.dev/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .entry-text",
+      "disabled": false,
+      "guid": "5f45ddafe5240ab7900601e6c9801d25",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url_from_event": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".entry-text"
+          }
+        },
+        "template": {
+          "content": "{{ content | replace: 'href=\"?', 'href=\"https://shamusyoung.com/twentysidedtale/?' | replace: 'src=\"images', 'src=\"https://shamusyoung.com/twentysidedtale/images' }}"
+        }
+      },
+      "schedule": "every_12h",
+      "keep_events_for": 1209600,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .main .entry-text, main .entry-content, #main .entry-content, main .content",
+      "disabled": false,
+      "guid": "606130e1534ddade20db57f6961ea5c3",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url_from_event": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".main .entry-text, main .entry-content, #main .entry-content, main .content"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "eatmypaint",
+      "disabled": false,
+      "guid": "6297137ca07d776917a8f7016abfa5a0",
+      "options": {
+        "expected_update_period_in_days": "180",
+        "include_feed_info": "true",
+        "url": "https://www.eatmypaint.co.uk/feed/"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "abstrusegoose",
+      "disabled": false,
+      "guid": "62c5fad0217034cd1e7284eb35a3bf53",
+      "options": {
+        "expected_update_period_in_days": "300",
+        "url": "https://abstrusegoose.com/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1814400
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab exocomics",
+      "disabled": false,
+      "guid": "65d4577a009657a2d11b28511d0520da",
+      "options": {
+        "expected_update_period_in_days": "30",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".comic img"
+          },
+          "extra": {
+            "css": "li:first-child .body"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .size-full",
+      "disabled": false,
+      "guid": "665313baf4881eb35f64256e88575927",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url_from_event": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".size-full"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::DataOutputAgent",
+      "name": "Full Text",
+      "disabled": false,
+      "guid": "69025b80be3c52acebb529d3a7b09fa8",
+      "options": {
+        "secrets": [
+          "ino"
+        ],
+        "expected_receive_period_in_days": "1",
+        "template": {
+          "title": "Full Text feeds",
+          "item": {
+            "title": "{{feed.title}}: {{title}}",
+            "description": "{{ content |remove: '\"mouseover\" src=' |remove: 'data-over' |remove: 'height=' |remove: 'width=' |remove: 'resize=' |remove: 'srcset=' |regex_replace: '-[0-9]+x[0-9]+[.]jpg', '.jpg' |regex_replace: '-[0-9]+x[0-9]+[.]png', '.png' |regex_replace: '-[0-9]+x[0-9]+[.]gif', '.gif' |replace: '.png?fit=', '.png?t=' |replace: '.jpg?fit=', '.jpg?t=' }} <p> {{ title_text }} <p> {{ extra }}",
+            "link": "{{url}}",
+            "guid": "{{url}}",
+            "pubDate": "{{last_updated}}",
+            "author": "{{authors}}"
+          },
+          "link": "https://mysterious-lake-12328.herokuapp.com/scenarios/2",
+          "description": "full text feeds"
+        },
+        "events_to_show": "9009",
+        "rss_content_type": "application/rss+xml"
+      },
+      "propagate_immediately": true
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "danbydraws",
+      "disabled": false,
+      "guid": "697e6238630ca9acffb3903841cca305",
+      "options": {
+        "expected_update_period_in_days": "35",
+        "clean": "false",
+        "url": "https://danbydraws.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "quietmisdreavus",
+      "disabled": false,
+      "guid": "6a986edb9735a2430343121a5f55935f",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "url": "https://quietmisdreavus.net/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "danluu",
+      "disabled": false,
+      "guid": "6c203fa72a6cdb54e45ffd156652af7f",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "https://danluu.com/atom.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "satw",
+      "disabled": false,
+      "guid": "6e5d7db7c96c9b0dc240b1b24a674033",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": [
+          "https://feeds.feedburner.com/satwcomic"
+        ],
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "cor3ntin",
+      "disabled": false,
+      "guid": "6eed243bb2463afc0bd627d643da1db1",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "https://cor3ntin.github.io/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "jamesmunns",
+      "disabled": false,
+      "guid": "72af3f1160361c4126a23273fa6cc2a2",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "https://jamesmunns.com/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .main-image-container img & .body",
+      "disabled": false,
+      "guid": "74475f3550e685037b71eac6ed3b6430",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".main-image-container picture img"
+          },
+          "extra": {
+            "css": ".body"
+          }
+        }
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "ryanlevick",
+      "disabled": false,
+      "guid": "7516b29fa62de473c7c197ca9793414d",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": "https://blog.ryanlevick.com/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "thingsinsquare",
+      "disabled": false,
+      "guid": "757e20f4cb070b5a46fe23310280e5a7",
+      "options": {
+        "expected_update_period_in_days": "60",
+        "url": "https://feeds.feedburner.com/ThingsInSquares",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "http://cliffle.com/rss.xml",
+      "disabled": false,
+      "guid": "760a55bd0d52e4afbccf5a85d98dde20",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "https://cliffle.com/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://www.hillelwayne.com/post/index.xml",
+      "disabled": false,
+      "guid": "7765387b7cb4ff5adb98922471b147bb",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://www.hillelwayne.com/post/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://www.awkwardzombie.com/awkward-zombie/rss",
+      "disabled": false,
+      "guid": "78f767f179a2688b1511ce2b400b19ba",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://www.awkwardzombie.com/awkward-zombie/rss",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_7d",
+      "keep_events_for": 1814400
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "happletea",
+      "disabled": false,
+      "guid": "8188811601f964e05d939c256f765dec",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://www.happletea.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "michaelwoerister",
+      "disabled": false,
+      "guid": "8235ba8ce1cf405f700895db6521bec2",
+      "options": {
+        "expected_update_period_in_days": "50",
+        "url": "https://michaelwoerister.github.io/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://joeprevite.com/rss.xml",
+      "disabled": false,
+      "guid": "87769c9dffe177483eaf173dabb046b8",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://joeprevite.com/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_7d",
+      "keep_events_for": 2592000
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab stupidfox",
+      "disabled": false,
+      "guid": "89b2a28929657ee15bc0d5cec63e5600",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".comicmid"
+          },
+          "extra": {
+            "css": ".stand_high"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "peteris.rocks",
+      "disabled": false,
+      "guid": "89da0f78e765ca110e65160d66fae666",
+      "options": {
+        "expected_update_period_in_days": "50",
+        "url": "https://peteris.rocks/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "withoutboats https://without.boats/index.xml",
+      "disabled": false,
+      "guid": "8a60319e8e3443acdf7b62856c844efe",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://without.boats/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "Bartosz Milewski",
+      "disabled": false,
+      "guid": "8af3535abdf069356f9f2d5774f7e2e7",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": "https://bartoszmilewski.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://goodbearcomics.com/feed/",
+      "disabled": false,
+      "guid": "8de61d77b0ae1b5bef8f8061a30b0cea",
+      "options": {
+        "expected_update_period_in_days": "180",
+        "include_feed_info": "true",
+        "url": "https://goodbearcomics.com/feed/"
+      },
+      "schedule": "every_7d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "invisible bread",
+      "disabled": false,
+      "guid": "8deece75ed82d3fc32b85a1477ebd99b",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://feeds.feedburner.com/InvisibleBread",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "port sherry",
+      "disabled": false,
+      "guid": "8f6092c36e1d0b2f0b30187154619fd7",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://portsherry.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .article__body",
+      "disabled": false,
+      "guid": "8fae43301f3f1823ce2787beb6966773",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".article__body"
+          }
+        }
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "fowllanguage",
+      "disabled": false,
+      "guid": "8fbefbf3969d01a239a170a1984a2cc1",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://www.fowllanguagecomics.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "afistfulofbabies",
+      "disabled": false,
+      "guid": "8fd32dede11dc10d12657654ec75333a",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "http://afistfulofbabies.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .article .body, .article .text",
+      "disabled": false,
+      "guid": "94d51cb15c8692cce5c1d469cb5da01a",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".article .body, .article .text"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "Mr. Lovenstein",
+      "disabled": false,
+      "guid": "94db49b227b33f569e841d46befce4aa",
+      "options": {
+        "expected_update_period_in_days": "5",
+        "clean": "false",
+        "url": "https://www.mrlovenstein.com/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .entry, .section-content, .content, .content-block",
+      "disabled": false,
+      "guid": "9952e9e33647d092a07c43dfa1284782",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".entry, .section-content, .content, .content-block"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "treelobsters",
+      "disabled": false,
+      "guid": "9a64841bc5c0a9c360ac3ca7c5149d46",
+      "options": {
+        "expected_update_period_in_days": "3",
+        "url": "http://www.treelobsters.com/feeds/posts/default",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab satw",
+      "disabled": false,
+      "guid": "9a88480d92b979d7b2da24b5eccb24bb",
+      "options": {
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "img[itemprop]"
+          },
+          "extra": {
+            "css": "[itemprop=\"articleBody\"]"
+          }
+        },
+        "expected_update_period_in_days": "7"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://www.evanmiller.org/news.xml",
+      "disabled": false,
+      "guid": "9b599e480d272205eab2894f646dea7e",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": "https://www.evanmiller.org/news.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "inky rick shaw https://inkyrickshaw.com/feed/",
+      "disabled": false,
+      "guid": "a0bec735eadb714ca5778826805b7493",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://inkyrickshaw.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Show title text",
+      "disabled": false,
+      "guid": "a0f4cdd0156cb7392ed0ce1dea0151db",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "data_from_event": "{{ content }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "title_text": {
+            "css": "img[title]",
+            "value": "@title"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://samsieber.tech/posts/index.xml",
+      "disabled": false,
+      "guid": "a9b7051439a8ea60e1d1eeaeced52932",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://samsieber.tech/posts/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "stevedonovan",
+      "disabled": false,
+      "guid": "ad270b687bf3f3ab0139656eb255fb81",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "url": "https://stevedonovan.github.io/rustifications/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "imogen",
+      "disabled": false,
+      "guid": "af5f6abb188695e7727b8e2dcb2f6ad8",
+      "options": {
+        "expected_update_period_in_days": "3",
+        "url": "http://imogenquest.net/?feed=rss2",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "ferrous systems",
+      "disabled": false,
+      "guid": "b08fdebae790960b2c3b8073ded36222",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "https://ferrous-systems.com/blog/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "foolish manifesto",
+      "disabled": false,
+      "guid": "b4a10f7a67769a03a09a9158626f3b65",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://blog.afoolishmanifesto.com/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1814400
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab deathbulge",
+      "disabled": false,
+      "guid": "b6804eb9c54b94a60c7bf1671a6fa0d8",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{ url | replace: \"#\", \"api\" }}",
+        "type": "json",
+        "mode": "merge",
+        "extract": {
+          "title_text": {
+            "path": "comic.alt_text"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "grab body",
+      "disabled": false,
+      "guid": "b8a84e89f594c80d56444ce21a4fd4e1",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "url": "{{ url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "body",
+            "value": "./node()"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "amos fasterthanli.me",
+      "disabled": false,
+      "guid": "b99e8014e993159fc6858c27e3cf53c3",
+      "options": {
+        "expected_update_period_in_days": "3",
+        "url": "https://fasterthanli.me/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "loadingartist",
+      "disabled": false,
+      "guid": "b9e68234e52425b526d89f98708a0958",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "clean": "false",
+        "url": "https://loadingartist.com/comic/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "marek popcount",
+      "disabled": false,
+      "guid": "bb419518bfe493ceedc4ae91aa904aa5",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://idea.popcount.org/rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "buttersafe",
+      "disabled": false,
+      "guid": "be0804e026b3a7bb9285ca1645d5400c",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://feeds.feedburner.com/buttersafe",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .post-content, .blog-content, #content, #contents",
+      "disabled": false,
+      "guid": "c5e34c10dc68629a5a43e84e8e9fb0fe",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".post-content, .blog-content, #content, #contents"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "iximiuz",
+      "disabled": false,
+      "guid": "c73601a0864dee42d0c0372a94d0a8b2",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://iximiuz.com/feed.atom",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Show eatmypaint bonus panel",
+      "disabled": false,
+      "guid": "c97cbc3a8fa86355e989cd29815904f4",
+      "options": {
+        "instructions": {
+          "content": "{{ content | regex_replace: '<a [^ ]+/comic/([0-9]+)-.+src=.(https://www.eatmypaint.co.uk/wp-content/uploads/20../../)([a-zA-Z-]+)-150x150.png.+</a>', '<img src=\\2\\3.png /> <img src=\\2\\1.png />' }}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "medium, flak, urdhr, misdreavus, giangnh, camlorn, vazquez",
+      "disabled": false,
+      "guid": "ca37d583a48782a8a26e0d7c479c33e1",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": [
+          "http://www.gabriel.urdhr.fr/feed.xml",
+          "https://faiface.github.io/index.xml",
+          "https://medium.com/feed/@davidherman",
+          "http://camlorn.net/rss.xml",
+          "https://medium.com/feed/@veedrac",
+          "https://medium.com/feed/@daniellockyer",
+          "http://quietmisdreavus.net/feed.xml",
+          "https://blog.professorbeekums.com/index.xml",
+          "https://medium.com/feed/@rillian",
+          "https://medium.com/feed/@raphlinus"
+        ],
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab heybuddycomics",
+      "disabled": false,
+      "guid": "cad57bb76ffa86dbe1e7ac302f7f19f8",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "{{url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".elementor-image > [srcset]"
+          }
+        }
+      },
+      "schedule": "every_12h",
+      "keep_events_for": 604800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #aftercomic img, #navibar img",
+      "disabled": false,
+      "guid": "ce718b60a5fab86efcea1ab656699146",
+      "options": {
+        "expected_update_period_in_days": "2",
+        "url": "{{url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "extra": {
+            "css": "#aftercomic img, #navibar img"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "matthewkmayer",
+      "disabled": false,
+      "guid": "ceee894a7e3476e6be959072cba585c2",
+      "options": {
+        "expected_update_period_in_days": "21",
+        "include_feed_info": "true",
+        "url": "https://matthewkmayer.github.io/blag/public/post/index.xml"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #strip",
+      "disabled": false,
+      "guid": "cf44392952e05180b9ebddc8f005cc9d",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "#strip"
+          },
+          "title_text": {
+            "css": "#strip",
+            "value": "@title"
+          },
+          "extra": {
+            "css": "#strip",
+            "value": "@alt"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .article-body, [itemprop=\"articleBody\"], header+section",
+      "disabled": false,
+      "guid": "d0e3ed25ea72fa4b7509c06d7e5c917d",
+      "options": {
+        "expected_update_period_in_days": "53",
+        "url": "{{url | replace: '//michael', 'https://michael' }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": ".article-body, [itemprop=\"articleBody\"], header+section"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "stupidfox",
+      "disabled": false,
+      "guid": "d3d1f232e4f81de70ae752934fe0a607",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://feeds.feedburner.com/StupidFox",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "dinosaur",
+      "disabled": false,
+      "guid": "d6e7d3223e10440e932973fa13347169",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://qwantz.com/rssfeed.php",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://www.halcyon.hr/index.xml",
+      "disabled": false,
+      "guid": "d9421cc61aa1b3b9e32b097b9b40b201",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://www.halcyon.hr/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "shamusyoung twenty sided",
+      "disabled": false,
+      "guid": "d96d7995390eb63cc95544e5df141b0d",
+      "options": {
+        "expected_update_period_in_days": "5",
+        "url": "https://shamusyoung.com/twentysidedtale/?feed=atom",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_1d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "https://timetrabble.com/feed/",
+      "disabled": false,
+      "guid": "dc4d7978c653099f61255e22a9179223",
+      "options": {
+        "expected_update_period_in_days": "7",
+        "url": "https://timetrabble.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::EventFormattingAgent",
+      "name": "Show bonus panel",
+      "disabled": false,
+      "guid": "e312d27bb569915b931c7681b5e973f1",
+      "options": {
+        "instructions": {
+          "content": "{{ content | regex_replace: '(<img src=\\x22http://909sickle[^\\d]*)(\\d+.*)', '\\1\\2 \\1bonus.png\\x22 />' }}"
+        },
+        "mode": "merge"
+      },
+      "keep_events_for": 172800,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "909sickle",
+      "disabled": false,
+      "guid": "e55f07a70579e85cb4219eb502b02fd4",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "clean": "false",
+        "url": "http://909sickle.net/rss",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_7d",
+      "keep_events_for": 1814400
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "smbc",
+      "disabled": false,
+      "guid": "e68b36b76d7765fb1d65557742e726cb",
+      "options": {
+        "expected_update_period_in_days": "1",
+        "url": "https://www.smbc-comics.com/comic/rss",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_12h",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "ma.ttias.be",
+      "disabled": false,
+      "guid": "e902c8b9a1f6973f9872cefe49c229be",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": "https://ma.ttias.be/blog/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab .extrapanelimage",
+      "disabled": false,
+      "guid": "edd1da70808891fab430478b71e3bd9e",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url_from_event": "https:{{ bonus_url }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "extra": {
+            "css": ".extrapanelimage"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "felt tip feelings",
+      "disabled": false,
+      "guid": "eeec03568843aab664c01161a7751d9f",
+      "options": {
+        "expected_update_period_in_days": "160",
+        "url": "https://felttipfeelings.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab article",
+      "disabled": false,
+      "guid": "ef4e9a8acb7d24e50ccedcebd5c0f2bd",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url | strip }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "article"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "xorl",
+      "disabled": false,
+      "guid": "ef93f08d577ffdf2adf77f6e062b58fb",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "https://xorl.wordpress.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #cc-comic & .cc-newsbody",
+      "disabled": false,
+      "guid": "f2bd7554d76707bd9a9ea442963f320c",
+      "options": {
+        "expected_update_period_in_days": "14",
+        "url": "{{url}}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "#cc-comic"
+          },
+          "extra": {
+            "css": ".cc-newsbody"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "therealprof",
+      "disabled": false,
+      "guid": "f4c0365fae81f22f555d5c06f8fce397",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "https://therealprof.github.io//rss.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "xkcd",
+      "disabled": false,
+      "guid": "f528b31f3a780eec14f6262627a428ea",
+      "options": {
+        "expected_update_period_in_days": "4",
+        "url": "https://xkcd.com/atom.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 604800
+    },
+    {
+      "type": "Agents::WebsiteAgent",
+      "name": "Grab #main, .main, main",
+      "disabled": false,
+      "guid": "f74298bd0f9f5eaa68431b7cf31221ca",
+      "options": {
+        "expected_update_period_in_days": "23",
+        "url_from_event": "{{ url | regex_replace: '^/blog/', 'http://dpc.pw/blog/' }}",
+        "type": "html",
+        "mode": "merge",
+        "extract": {
+          "content": {
+            "css": "#main, .main, main"
+          }
+        }
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 86400,
+      "propagate_immediately": false
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "japaric",
+      "disabled": false,
+      "guid": "ff04ff7e0179841f442815fcf457e5b3",
+      "options": {
+        "expected_update_period_in_days": "16",
+        "clean": "false",
+        "url": "http://blog.japaric.io/index.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 259200
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "janestreet",
+      "disabled": false,
+      "guid": "ff6ff3c75de04a6ea4f581907729a972",
+      "options": {
+        "expected_update_period_in_days": "15",
+        "url": "https://blog.janestreet.com/feed.xml",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2h",
+      "keep_events_for": 172800
+    },
+    {
+      "type": "Agents::RssAgent",
+      "name": "the awkward yeti",
+      "disabled": false,
+      "guid": "ffe2a2565f21990f79bb5c6b7c6a2c04",
+      "options": {
+        "expected_update_period_in_days": "35",
+        "clean": "false",
+        "url": "https://theawkwardyeti.com/feed/",
+        "include_feed_info": "true"
+      },
+      "schedule": "every_2d",
+      "keep_events_for": 1209600
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "receiver": 40
+    },
+    {
+      "source": 1,
+      "receiver": 26
+    },
+    {
+      "source": 2,
+      "receiver": 110
+    },
+    {
+      "source": 3,
+      "receiver": 105
+    },
+    {
+      "source": 4,
+      "receiver": 110
+    },
+    {
+      "source": 5,
+      "receiver": 26
+    },
+    {
+      "source": 6,
+      "receiver": 24
+    },
+    {
+      "source": 7,
+      "receiver": 105
+    },
+    {
+      "source": 8,
+      "receiver": 105
+    },
+    {
+      "source": 9,
+      "receiver": 27
+    },
+    {
+      "source": 10,
+      "receiver": 73
+    },
+    {
+      "source": 11,
+      "receiver": 24
+    },
+    {
+      "source": 12,
+      "receiver": 73
+    },
+    {
+      "source": 13,
+      "receiver": 24
+    },
+    {
+      "source": 14,
+      "receiver": 85
+    },
+    {
+      "source": 15,
+      "receiver": 105
+    },
+    {
+      "source": 16,
+      "receiver": 10
+    },
+    {
+      "source": 17,
+      "receiver": 105
+    },
+    {
+      "source": 18,
+      "receiver": 38
+    },
+    {
+      "source": 19,
+      "receiver": 66
+    },
+    {
+      "source": 20,
+      "receiver": 105
+    },
+    {
+      "source": 21,
+      "receiver": 40
+    },
+    {
+      "source": 22,
+      "receiver": 24
+    },
+    {
+      "source": 23,
+      "receiver": 35
+    },
+    {
+      "source": 24,
+      "receiver": 73
+    },
+    {
+      "source": 25,
+      "receiver": 92
+    },
+    {
+      "source": 26,
+      "receiver": 40
+    },
+    {
+      "source": 27,
+      "receiver": 103
+    },
+    {
+      "source": 28,
+      "receiver": 35
+    },
+    {
+      "source": 29,
+      "receiver": 89
+    },
+    {
+      "source": 30,
+      "receiver": 79
+    },
+    {
+      "source": 31,
+      "receiver": 110
+    },
+    {
+      "source": 32,
+      "receiver": 40
+    },
+    {
+      "source": 33,
+      "receiver": 105
+    },
+    {
+      "source": 34,
+      "receiver": 40
+    },
+    {
+      "source": 35,
+      "receiver": 40
+    },
+    {
+      "source": 36,
+      "receiver": 87
+    },
+    {
+      "source": 37,
+      "receiver": 73
+    },
+    {
+      "source": 38,
+      "receiver": 73
+    },
+    {
+      "source": 39,
+      "receiver": 40
+    },
+    {
+      "source": 41,
+      "receiver": 40
+    },
+    {
+      "source": 42,
+      "receiver": 105
+    },
+    {
+      "source": 43,
+      "receiver": 80
+    },
+    {
+      "source": 44,
+      "receiver": 70
+    },
+    {
+      "source": 45,
+      "receiver": 105
+    },
+    {
+      "source": 46,
+      "receiver": 26
+    },
+    {
+      "source": 47,
+      "receiver": 40
+    },
+    {
+      "source": 48,
+      "receiver": 85
+    },
+    {
+      "source": 49,
+      "receiver": 73
+    },
+    {
+      "source": 50,
+      "receiver": 26
+    },
+    {
+      "source": 51,
+      "receiver": 105
+    },
+    {
+      "source": 52,
+      "receiver": 107
+    },
+    {
+      "source": 53,
+      "receiver": 24
+    },
+    {
+      "source": 54,
+      "receiver": 93
+    },
+    {
+      "source": 55,
+      "receiver": 105
+    },
+    {
+      "source": 56,
+      "receiver": 40
+    },
+    {
+      "source": 57,
+      "receiver": 93
+    },
+    {
+      "source": 58,
+      "receiver": 105
+    },
+    {
+      "source": 59,
+      "receiver": 85
+    },
+    {
+      "source": 60,
+      "receiver": 35
+    },
+    {
+      "source": 61,
+      "receiver": 27
+    },
+    {
+      "source": 62,
+      "receiver": 24
+    },
+    {
+      "source": 63,
+      "receiver": 40
+    },
+    {
+      "source": 64,
+      "receiver": 21
+    },
+    {
+      "source": 65,
+      "receiver": 39
+    },
+    {
+      "source": 66,
+      "receiver": 40
+    },
+    {
+      "source": 67,
+      "receiver": 12
+    },
+    {
+      "source": 68,
+      "receiver": 40
+    },
+    {
+      "source": 69,
+      "receiver": 73
+    },
+    {
+      "source": 70,
+      "receiver": 40
+    },
+    {
+      "source": 71,
+      "receiver": 85
+    },
+    {
+      "source": 72,
+      "receiver": 24
+    },
+    {
+      "source": 73,
+      "receiver": 40
+    },
+    {
+      "source": 74,
+      "receiver": 105
+    },
+    {
+      "source": 75,
+      "receiver": 105
+    },
+    {
+      "source": 76,
+      "receiver": 73
+    },
+    {
+      "source": 77,
+      "receiver": 63
+    },
+    {
+      "source": 78,
+      "receiver": 110
+    },
+    {
+      "source": 79,
+      "receiver": 40
+    },
+    {
+      "source": 80,
+      "receiver": 40
+    },
+    {
+      "source": 81,
+      "receiver": 68
+    },
+    {
+      "source": 82,
+      "receiver": 47
+    },
+    {
+      "source": 83,
+      "receiver": 105
+    },
+    {
+      "source": 84,
+      "receiver": 24
+    },
+    {
+      "source": 85,
+      "receiver": 40
+    },
+    {
+      "source": 86,
+      "receiver": 105
+    },
+    {
+      "source": 87,
+      "receiver": 40
+    },
+    {
+      "source": 88,
+      "receiver": 105
+    },
+    {
+      "source": 89,
+      "receiver": 40
+    },
+    {
+      "source": 90,
+      "receiver": 40
+    },
+    {
+      "source": 91,
+      "receiver": 26
+    },
+    {
+      "source": 92,
+      "receiver": 32
+    },
+    {
+      "source": 93,
+      "receiver": 40
+    },
+    {
+      "source": 94,
+      "receiver": 56
+    },
+    {
+      "source": 95,
+      "receiver": 73
+    },
+    {
+      "source": 96,
+      "receiver": 105
+    },
+    {
+      "source": 97,
+      "receiver": 34
+    },
+    {
+      "source": 98,
+      "receiver": 24
+    },
+    {
+      "source": 99,
+      "receiver": 40
+    },
+    {
+      "source": 100,
+      "receiver": 99
+    },
+    {
+      "source": 101,
+      "receiver": 90
+    },
+    {
+      "source": 102,
+      "receiver": 85
+    },
+    {
+      "source": 103,
+      "receiver": 40
+    },
+    {
+      "source": 104,
+      "receiver": 105
+    },
+    {
+      "source": 105,
+      "receiver": 40
+    },
+    {
+      "source": 106,
+      "receiver": 110
+    },
+    {
+      "source": 107,
+      "receiver": 40
+    },
+    {
+      "source": 108,
+      "receiver": 105
+    },
+    {
+      "source": 109,
+      "receiver": 73
+    },
+    {
+      "source": 110,
+      "receiver": 40
+    },
+    {
+      "source": 111,
+      "receiver": 80
+    },
+    {
+      "source": 112,
+      "receiver": 85
+    },
+    {
+      "source": 113,
+      "receiver": 40
+    }
+  ],
+  "control_links": [
+
+  ]
+}

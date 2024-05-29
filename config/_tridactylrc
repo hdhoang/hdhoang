@@ -1,0 +1,26 @@
+" " vim: set filetype=vim
+" " example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
+
+set theme auto
+set hintautoselect false
+set tabclosepinned false
+
+blacklistadd www.fastmail.com
+blacklistadd jp.inoreader.com
+blacklistadd https://outlook.office.com/mail/
+
+" " for jira
+unbind w
+unbind .
+unbind a
+unbind m
+
+unbind <C-e>
+
+bind <C-Space> scrollpage -0.5
+bind <Space> scrollpage 0.5
+
+bind ` tabsort --containers
+
+autocmd DocStart .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})
+autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})

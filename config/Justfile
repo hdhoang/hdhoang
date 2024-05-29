@@ -1,0 +1,30 @@
+set shell := ["nu", "-m", "light", "-c"]
+
+default:
+    just --list
+start:
+    bash -x ~/homes/config/start.sh
+up:
+    # tool sync
+    flatpak -u update -y
+    sudo-rs dnf --setopt=install_weak_deps=False upgrade -y
+    cargo iu
+
+sway_tree PATTERN:
+    swaymsg -t get_tree -r|rg -i {{PATTERN}}
+mu PATH:
+    mpv --no-resume-playback --vo=null --no-video --no-ytdl --replaygain=track --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{PATH}} --volume=44
+yt:
+    cd ~/rclone-cache/ ; yt-dlp -f ba -S ext --download-archive ~/yt.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
+
+[no-cd]
+cl repo:
+    jj git clone --colocate {{repo}}
+
+[no-cd]
+t *params:
+    cargo nextest run {{params}}
+
+[no-cd]
+d *paths:
+    try { pijul diff --patience {{paths}} err> /dev/null } catch { git diff -- {{paths}} err> /dev/null }

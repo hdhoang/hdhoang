@@ -1,0 +1,1296 @@
+// -*- electric-pair-mode: t -*-
+
+/* These are the artists
+  Whose lives are on a brink.
+ And wherever they are,
+We won't forget.
+
+ But if they have unborn themselves
+  We would try to support erasing the old
+   identities
+
+If you want to add/redact some connections, please ping us at
+any and all of these:
+*/
+
+hdhoang "https://hdhoang.space/" link-list=null {
+  styles "vi" "ja" "jbo"
+  cohost "hdhoang"
+  fb vanity="hdh0000"
+  fedi "https://blob.cat/" vanity="hdhoang"
+  github vanity="hdhoang" serial="12537" per-month=0
+  ig "old.zeratul"
+  kofi vanity="hdhoang" per-month=0
+  pat vanity="hdhoang" per-month=0
+  twt vanity="21723_63114" serial="2172363114" {
+    lists
+  }
+}
+
+/* Humans can have multiple aliases, and multiple projects.
+Projects can have multiple personalities, aka aliases.
+*/
+
+/* Site-specific feeds can have multiple (level?) of quality:
+- is the comic thumbnailed?
+- is the bonus title text included?
+- is there extra joke on the page?
+
+*/
+
+
+/* Comics who are gone */
+
+"909sickle" "https://909sickle.net/about" {
+  twt vanity="909sickle"
+  fb vanity="909sickle" serial="100066857361008"
+  aliases "swb"
+  // (date)ended "2018-02-11"
+}
+
+a-softer-world "https://www.asofterworld.com/" /-(date)"2018" {
+  tumblr "softerworld"
+  pat vanity="joeycomeau"
+  fb vanity="A-Softer-World" serial="12022565177"
+}
+
+dive-into-mark "https://diveintomark.com/" {
+  aliases "diveintohtml5" "diveintopython3" "apple ][ booting sound tchk ccchhhh...."
+}
+
+george-carlin "https://georgecarlin.com/"
+
+tom-lehrer "http://tomlehrersongs.com/" {
+  // gonna die soon
+}
+
+bill-hicks
+
+shamus-young {
+  styles "gamer"
+  aliases "Twenty-Sided Tale" "DM of the Rings" "Witch Watch" "Free Radical"
+  pat per-month=1 vanity="shamusyoung"
+  feed "https://www.shamusyoung.com/twentysidedtale/?feed=rss2" readable=8 \
+reason="The children don't make use of footnotes or title next"
+  huginn 55
+}
+
+
+/* Cosplayers */
+幼愛 link-list="https://linktr.ee/yume__chuu" {
+  styles "nws"
+  aliases "Yume__ovo"
+  pat vanity="yume__chuu"
+  ig "yume__chuu"
+  twt vanity="yume__chuu"
+}
+
+serinide {
+  styles "nws"
+  ig "serinideirl"
+}
+
+ryuune {
+  styles "nws"
+  ig "ryuuneart"
+}
+
+p_u_p_i link-list="https://pupipage.carrd.co/" {
+  styles "nws"
+}
+
+thuyemi {
+  styles "nws"
+  ig "thuyemi"
+}
+
+alisa-pika {
+  styles "nws"
+  ig "alisapika.pika"
+  twt vanity="AlisaPikaPika"
+}
+
+DELTA-MAGNA {
+  styles "gun" "nws"
+  twt vanity="DELTAMAGNA"
+  pat vanity="DELTAMAGNA"
+}
+
+twonk {
+  aliases "snelse"
+  twt vanity="twonkcomics"
+}
+HeroZoid {
+  twt vanity="HeroZoid"
+}
+meganwangart {
+  twt vanity="meganwangart"
+}
+Daily-Obstruct {
+  twt vanity="DailyObstruct"
+}
+Vanilla-Astartes {
+  fb vanity="TBD"
+  twt vanity="VanillaAstartes"
+}
+PChunsi {
+  twt vanity="PChunsi"
+}
+depths-of-wiki {
+  ig "depthsofwiki"
+  twt vanity="depthsofwiki"
+}
+Alec-Smith-Draws {
+  twt vanity="AlecSmithDraws"
+}
+After-Comics {
+  twt vanity="AfterComics"
+}
+eldercactus {
+  twt vanity="eldercactus"
+}
+OstwindProjekt {
+  twt vanity="OstwindProjekt"
+}
+they-can-talk {
+  styles "dog"
+  twt vanity="theycantalk"
+}
+jisoupy {
+  twt vanity="jisoupy"
+}
+Wonni__ {
+  twt vanity="Wonni__"
+}
+dogmodog {
+  twt vanity="dogmodog"
+}
+Red-Dot {
+  pat vanity="the__reddot"
+  twt vanity="The__RedDot"
+  ig "TBD"
+}
+
+marengo {
+  twt vanity="marengocomics"
+}
+
+Raph {
+  twt vanity="RaphComic"
+}
+
+little-hiker-bird {
+  twt vanity="littlehikerbird"
+}
+Dogsonthe4th {
+  twt vanity="Dogsonthe4th"
+}
+jake-likes-onions {
+  twt vanity="jakelikesonions"
+}
+alex-krokus {
+  twt vanity="alexkrokus"
+}
+lingvistov {
+  twt vanity="lingvistov"
+  pat vanity="lingvistov"
+}
+ryan-harby {
+  twt vanity="ryanharby"
+}
+Noob-the-Loser {
+  twt vanity="NoobtheLoser"
+}
+LOL-NEIN {
+  twt vanity="LOLNEIN"
+}
+Loose-Parts-Guy {
+  twt vanity="LoosePartsGuy"
+}
+Hannah-Hillam {
+  twt vanity="HannahHillam"
+}
+wolf-pupy {
+  twt vanity="wolfpupy"
+  pat vanity="wolfpupy"
+}
+
+kniivila {
+  twt vanity="kniivila"
+}
+
+forrest-brazeal link-list="https://bio.link/forrestbrazeal" {
+  aliases "https://www.goodtechthings.com/"
+  twt vanity="forrestbrazeal"
+}
+
+kem-bo {
+  styles "vi"
+}
+clay-jonathan {
+  styles "depressed"
+  aliases "sexy-losers" "deprossion-comix"
+  /-pat vanity="jonathan-clay" per-work=0
+  pat vanity="clayjonathan" per-month=1
+}
+
+chris-hallbeck {
+  aliases "mumbletimes"
+  tumblr "chrishallbeck"
+  pat vanity="chrishallbeck"
+}
+
+goofy-gods {
+  ig "goofygodscomics"
+  pat vanity="goofygodscomics"
+}
+
+monkey-user "https://monkeyuser.com/" {
+  aliases "https://www.linkedin.com/company/monkey-user"
+  feed "https://monkeyuser.com/index.xml" reason="empty items" readable=2
+  ig "themonkeyuser"
+  twt vanity="ismonkeyuser"
+  pat vanity="monkeyuser"
+  github vanity="cstefanache"
+  fb vanity="ismonkeyuser"
+}
+
+en {
+  styles "vi"
+  fb vanity="encomics"
+}
+
+hot-paper-comics {
+  aliases "martin rosner"
+  pat vanity="martin_rosner"
+  twt vanity="HotPaperComics"
+}
+
+"2chieu" {
+  styles "vi"
+  fb vanity="2chieu" serial="246384732965019"
+}
+
+pearls-before-swine {
+  styles "depressed"
+  aliases "Stephan Pastis"
+  go "pearlsbeforeswine"
+}
+
+winston-rowntree {
+  aliases "wr" "sphinx"
+  pat vanity="subnormality"
+}
+
+my-dad-is-dracula {
+  aliases     "Jason Poland"
+  tumblr "mydadisdracula"
+  pat vanity="myDadisDracula" per-month=1
+}
+
+robby-and-bobby "https://robbyandbobby.com/" {
+  aliases     "Jason Poland"
+}
+
+Philosophalopod {
+  styles "microfiction"
+  twt vanity="Philosophalopod"
+}
+
+"WOWSTUFF!" link-list="http://linktr.ee/wowstuff" {
+  pat vanity=null serial="77510853"
+  /-twt
+  fedi "https://baraag.net/" vanity="wowstuff"
+}
+
+aranee "https://aranee.art/" link-list="https://linktr.ee/aranee.sama" {
+  styles "nws"
+  da "araneesama"
+  ig "ara.instag"
+  pat vanity="Aranee"
+  twt vanity="Ara_twr"
+  yt "@araaneesama8670"
+}
+
+claricetudor {
+  ig "claricetudor"
+}
+
+explosm "https://explosm.net/" {
+  styles "depressed" "nws"
+  aliases "RobBendyker" "DaveMcElfatrick" "Rapture Rejects"
+  feed "https://explosm.net/rss.xml" readable=9 reason="except for videos"
+  fb vanity="explosm"
+  twt vanity="explosm"
+  ig "explosmofficial"
+  yt "user/ExplosmEntertainment"
+  pat vanity="cyanide_and_happiness"
+}
+
+optipess "https://optipess.com/" {
+  feed "https://feeds.feedburner.com/Optipess" readable=4
+  pat vanity="optipess" serial="88233"  per-month=1
+  kofi vanity="optipess"
+  twt
+  aliases "Kristian Nygård"
+}
+
+buddy-gator {
+  aliases "chow hon-lam"
+  tumblr "TBD"
+}
+
+chichiemem2ce {
+  styles "vi"
+  ig "chichiemem2ce"
+}
+
+othatsraspberry {
+  styles "ja" "gamer"
+}
+
+oglaf "https://oglaf.com" {
+  feed "https://www.oglaf.com/feeds/rss/" readable=2 \
+          reason="only intro, sometimes has multiple pages, and comics always have both TITLE and ALT!!"
+  styles "nws"
+  fb vanity="oglaf"
+  huginn 24
+  twt vanity="oglaf"
+}
+
+lizclimo "https://thelittleworldofliz.com/"
+
+buttersafe "https://buttersafe.com/" {
+  feed "https://www.buttersafe.com/feed/atom/" readable=3
+  tumblr "buttersafe"
+  twt vanity="buttersafe"
+  fb vanity="Buttersafe-Comics" serial="460224557328382"
+  /-huginn
+}
+
+sinfest {
+  substack "sinfest"
+}
+qwantz "https://qwantz.com" {
+  styles "constant"
+  aliases "Ryan North" "dinosaur-comics" "https://chewbac.ca/" "how to take over the world"
+  feed "http://www.qwantz.com/rssfeed.php" readable=3
+  pat vanity="qwantz"
+  go "dinosaur-comics"
+  huginn 54
+  twt vanity="ryanqnorth"
+}
+
+drewtoothpaste {
+  fb vanity="drewtoothpaste"
+  bsky "drewtoothpaste"
+}
+opdroid1234 {
+  twt vanity="opdroid1234"
+}
+ctrlcreep {
+  styles "microfiction"
+  aliases "neoltitude"
+  twt vanity="ctrlcreep"
+  pat vanity="ctrlcreep"
+  substack "ctrlcreep"
+}
+micro-sff {
+  styles "microfiction"
+  tumblr "microsff"
+  pat vanity="MicroSFF"
+  aliases "O. Westin"
+}
+
+
+A-Small-Fiction {
+  styles "microfiction"
+  twt vanity="ASmallFiction"
+  pat vanity="ASmallFiction"
+  ig "ASmallFiction"
+}
+
+yahtzee "https://fullyramblomatic-yahtzee.blogspot.com/" {
+  styles "gamer"
+  aliases "consuming shadow" "jam" "mogworld" "jacque mackeown"
+  feed "https://fullyramblomatic-yahtzee.blogspot.com/feeds/posts/default" readable=8
+  yt "@SecondWindGroup"
+  pat per-month=1 vanity="SecondWindGroup"
+  twt vanity="YahtzeeCroshaw"
+}
+
+zach {
+  aliases "zmj"
+}
+
+mr-lovenstein {
+  pat vanity="mrlovenstein"
+  aliases "J. L. Westover"
+
+}
+
+smbc "https://smbc-comics.com/" {
+  aliases "A City on Mars"
+  fb vanity="smbccomics"
+  fedi "https://mastodon.social/" vanity="ZachWeinersmith"
+  feed "https://www.smbc-comics.com/comic/rss" readable=3 reason="red-button bonus comic"
+  go "saturday-morning-breakfast-cereal"
+  huginn 57
+  pat vanity="ZachWeinersmith"
+  tumblr "smbc-comics"
+  twt vanity="ZachWeiner"
+}
+
+teabag {
+  ig "teabag.cartoon"
+}
+
+beetle-moses {
+  twt vanity="beetlemoses"
+  ig "beetlemoses"
+}
+
+channel-ate {
+  aliases "Ryan K. Hudson"
+  pat vanity="ryankhudson"
+  yt "@RyanKHudson"
+}
+foxes-in-love {
+  tumblr "foxes-in-love"
+}
+
+goblins-goblins "https://www.goblinsgoblins.com/" {
+  aliases "Alex Bullett"
+  twt vanity="abullett"
+  pat vanity="goblinsgoblins"
+  ig "goblinsgoblinsgoblins"
+  tumblr "goblinsgoblinsgoblins"
+}
+
+sarah's-scribbles "https://sarahcandersen.com/" {
+  aliases "Sarah Andersen"
+  twt vanity="SarahCAndersen"
+  fb vanity="DoodleTimeSarah"
+  tumblr "sarahs-scribbles"
+  pat vanity="SarahsScribbles"
+}
+
+exo "https://exocomics.com/" {
+  aliases "cat detective" "li chen"  "Extra Ordinary Comics"
+  ig "exocomics"
+  feed "https://exocomics.com/feed" readable=3
+  huginn 21
+  pat vanity="exocomics"
+}
+
+loose-parts {
+  ig "loosepartsguy"
+}
+
+lunar-baboon {
+  ig "lunarbaboon"
+  tiny "lunarbaboon"
+}
+xkcd "https://xkcd.com/" {
+  feed "https://xkcd.com/atom.xml" readable=3
+  huginn 63
+}
+after-death {
+  pat vanity="afterdeathcomics"
+  aliases "After Death Comics"
+
+}
+
+poorly-drawn-cats {
+  ig "poorlycatdraw"
+  twt
+}
+
+three-panel-soul {
+  pat vanity="threepanelsoul"
+}
+
+perry-bible-fellowship
+
+stupid-fox {
+  huginn 53
+}
+
+marengo
+
+dino-couch {}
+
+the-odd-1s-out "https://theodd1sout.com/" {
+  aliases "oddballs"
+  twt vanity="theodd1sout"
+  yt "c/theodd1sout"
+  ig "theodd1sout"
+}
+
+toon-hole {
+  styles "nws"
+  aliases "ryan" "chris"
+}
+
+sephko "https://sephko.com/" {
+  styles "es" "cc-by-nc-nd"
+  aliases "Gojko Franulic"
+  pat vanity="Sephko"
+  twt vanity="Sephko"
+  ig "sephko"
+  fb serial="274647319216359" vanity="SephkoComics"
+}
+
+existential "https://existentialcomics.com/" {
+  pat vanity="ExistentialComics"
+}
+
+loading-artist "https://loadingartist.com/" {
+  aliases "Gregor" "pluckedup"
+  feed "https://loadingartist.com/index.xml" readable=3
+  ig "loadingartist"
+  pat vanity="LoadingArtist"
+  fb  vanity="LoadingArtist"
+  twt vanity="loadingartist"
+  tumblr "loadingartist"
+}
+
+
+
+/* Coders */
+redactle "https://test.redactle.net/en" {
+  kofi per-month=1 vanity="benbob"
+}
+
+myrrlyn "https://myrrlyn.net/"
+
+val-packett "https://val.packett.cool/" {
+  github vanity="valpackett" serial="208340"
+  pat
+}
+
+ArtskydJ "https://josephdykstra.com/" {
+  aliases "comicsrss.com"
+  github vanity="ArtskydJ"
+  pat per-month=1 serial="6855838" vanity="josephdykstra"
+}
+
+Vixano "https://guide.itsvixano.me/flashing/#preparation" {
+  kofi vanity="ItsVixano"
+  github vanity="ItsVixano"
+  aliases "lineageos daisy" "giovanni"
+}
+
+snarfed "https://snarfed.org/" {
+  aliases "bridgy" "granary" "ig-to-atom" "Ryan Barnett"
+}
+
+orhun "https://orhun.dev/" {
+  twt vanity="orhunp_"
+  feed "https://blog.orhun.dev/rss.xml" readable=3 reason="snippet only"
+  fedi "https://fosstodon.org/" vanity="orhun"
+  github vanity="orhun"
+}
+
+
+xe-iaso "https://xeiaso.net" {
+  styles "jbo"
+  aliases "cadey" "Christine Dodrill" "Cadey~#1337" "xeiaso.eth" "bc1qw0pa3zdus94nyehmys6g8td2xfaqtl9pmuv564"
+  github vanity="Xe"
+  bsky "xeiaso.net"
+  fedi "https://pony.social/" vanity="cadey"
+  pat vanity="cadey"
+  twt vanity="theprincessxena"
+}
+
+monadliker {
+  styles "rust"
+}
+
+invisible-bread {
+  go "invisiblebread"
+}
+
+steve-klabnik {
+  styles "rust"
+}
+
+Gankra_ {
+  styles "rust"
+}
+
+web-comic-name
+
+mcc {
+  fedi "https://mastodon.social/" vanity="mcc"
+}
+
+
+/* Jokers */
+dilbert "https://scottadams.locals.com/" link-list="https://linktr.ee/scottadams" {
+  aliases "robot-reads-news" "loserthink" "reframe" "nws"
+  twt vanity="ScottAdamsSays" {
+    lists "*t-ship"
+  }
+  huginn 42
+}
+
+manish {
+  styles "rust"
+  bsky "manishearth.bsky.social"
+  twt vanity="manishearth"
+}
+
+blob.cat {
+  pat vanity="blobcat" per-month=1
+}
+
+errant-signal {
+  styles "gamer"
+  pat vanity="errantsignal"
+  aliases "Christopher Franklin"
+}
+
+Ordo-Mediare link-list="https://linktr.ee/ironlily" {
+  styles "gun"
+  pat vanity="OrdoMediare"
+  fb vanity="ironlilyart"
+  ig "vanishlily"
+  tumblr "TBD"
+  aliases "Ironlily's scriptorium"
+}
+
+Kurzgesagt {
+  styles "science"
+  pat vanity="Kurzgesagt"
+  aliases "In a Nutshell"
+}
+Port-Sherry {
+  pat vanity="portsherry"
+  aliases "Port Sherry"
+}
+dinosaur-couch {
+  pat vanity="dinosandcomics"
+  aliases "dinosaur couch"
+}
+
+ze-frank  {
+  pat vanity="truefacts"
+  aliases "True Facts by Ze Frank"
+}
+Cute-sexy-robutts {
+  pat vanity="cutesexyrobutts"
+  tumblr "cutesexyrobutts"
+  aliases "Cutesexyrobutts"
+}
+
+Deogie {
+  styles "dog" "cat"
+  pat vanity="deogie"
+  aliases "Deogie"
+}
+Loading-Artist {
+  pat vanity="LoadingArtist"
+  aliases "Loading Artist"
+  tumblr "LoadingArtist"
+}
+Jimmy-Craig "https://theycantalk.com/" {
+  pat vanity="theycantalk"
+  tumblr "theycantalk"
+}
+Rich-Burlew {
+  pat vanity="oots"
+  aliases "Order of the Stick"
+}
+Danby-Draws {
+  pat vanity="DanbyDraws"
+  aliases "Danby Draws"
+}
+Scandinavia-and-the-World {
+  pat vanity="SatW"
+  aliases "Scandinavia and the World"
+  /-huginn
+}
+TwentySided {
+  pat vanity="shamusyoung"
+  aliases "TwentySided"
+}
+Comic-Sans-Frontières {
+  pat vanity="othatsraspberry"
+  aliases "Comic Sans Frontières"
+}
+
+Foxing-Around {
+  pat vanity="FoxingAround"
+  twt vanity="foxing_around"
+}
+
+War-and-Peas {
+  pat vanity="warandpeas"
+  aliases "War and Peas"
+}
+
+Zed {
+  pat vanity="nitter" per-month=1
+}
+
+
+safely-endangered {
+  pat per-month=1 vanity="safelyendangered"
+  aliases "Chris"
+}
+
+super-bunny-hop {
+  pat vanity="superbunnyhop"
+  aliases "George Weidman"
+}
+Buni {
+  pat vanity="bunicomic"
+  go "buni"
+}
+Neil-Kohney {
+  pat vanity="TheOtherEnd"
+  aliases "Neil Kohney"
+}
+Vanilla-Astartes {
+  pat vanity="VanillaAstartes"
+  ig "vanilla_astartes"
+}
+Alvin {
+  pat vanity="thesquarecomics"
+  fb vanity="thesquarecomics"
+  ig "thesquarecomics"
+}
+Zach-Weinersmith {
+  pat vanity="ZachWeinersmith"
+  aliases "Zach Weinersmith"
+}
+Latest-Kate {
+  pat vanity="thelatestkate"
+  aliases "TheLatestKate"
+}
+The-Awkward-Yeti {
+  pat vanity="theawkwardyeti"
+  aliases "Nick Seluk (The Awkward Yeti)"
+}
+
+Periodic-Videos {
+  aliases "haran"
+  pat vanity="periodicvideos"
+  yt "@PeriodicVideos"
+}
+
+Objectivity {
+  aliases "haran"
+  /-pat vanity="periodicvideos"
+  yt "@Objectivity"
+}
+
+CGP-Grey {
+  pat vanity="cgpgrey"
+  aliases "CGP Grey"
+}
+Smarter-Every-Day {
+  pat vanity="smartereveryday"
+  aliases "Smarter Every Day"
+}
+Veritasium {
+  pat vanity="veritasium"
+  aliases "Veritasium"
+}
+Henry-Reich {
+  pat vanity="minutephysics"
+  aliases "Henry Reich"
+}
+MinuteEarth {
+  pat vanity="minuteearth"
+  aliases "MinuteEarth"
+}
+Sarah-Andersen {
+  pat vanity="SarahsScribbles"
+  aliases "Sarah Andersen"
+}
+Adam-Ellis {
+  pat vanity="adamtots"
+  aliases "Adam Ellis"
+}
+Kittew {
+  aliases "kittew_only" "Kittew_art"
+  twt vanity="KittewO"
+  pat vanity="kittew"
+}
+topjohnwu {
+  pat vanity="topjohnwu"
+  aliases "magisk"
+}
+Shexyo {
+  pat vanity="shexyo"
+  aliases "Shexyo"
+}
+Numberphile {
+  pat vanity="numberphile"
+  aliases "Numberphile"
+}
+Shen {
+  pat vanity="shencomix"
+  aliases "Shen"
+}
+Mimi-N {
+  pat vanity="mimi_n"
+  aliases "Mimi N"
+}
+Ely  {
+  pat vanity="eeelyeee"
+  aliases "Ely "
+}
+Anthony-Clark {
+  pat vanity="nedroid"
+  aliases "Anthony Clark"
+}
+centurii-chan {
+  twt vanity="CenturiiC"
+  pat vanity="centuriichan"
+  aliases "CenturiiC"
+}
+Abby-Howard-and-Black-Tabby-Games {
+  pat vanity="abbyhoward"
+  aliases "Abby Howard and Black Tabby Games"
+}
+NANA {
+  pat vanity="expulse"
+  aliases "NANA"
+}
+Hollyporn-Studio {
+  pat vanity="HollypornStudio"
+  aliases "Hollyporn Studio"
+}
+False-Knees {
+  pat vanity="falseknees"
+  aliases "False Knees"
+}
+Harry-Partridge {
+  pat vanity="harrypartridge"
+  aliases "Harry Partridge"
+}
+
+Megan-Wang {
+  pat vanity="meganwang"
+}
+
+clover {
+  pat vanity="gogetaroomie"
+}
+
+Chesca-Hause {
+  pat vanity="litterboxcomics"
+}
+
+Part-Time-Dragons {
+  pat vanity="PartTimeDragons"
+}
+
+Be-Smart {
+  aliases "pbs"
+  pat vanity="itsokaytobesmart"
+}
+
+Megan-McKay {
+  pat vanity="doodleforfood"
+}
+
+Deep-Look {
+  aliases "pbs"
+  pat vanity="deeplook"
+  yt "@deeplook"
+}
+
+Lucas-Turnbloom {
+  pat vanity="HowToCat"
+}
+
+Beanie {
+  pat vanity="whatsupbeanie"
+  aliases "Beanie"
+}
+
+Titsay {
+  pat vanity="titsay"
+}
+
+SUO {
+  pat vanity="suoexe"
+}
+
+Rosemary-Mosco "https://birdandmoon.com" {
+  pat vanity="birdandmoon"
+  tumblr "birdandmoon"
+}
+
+Tomislav {
+  pat vanity="tomislav"
+  ig "Tomislav_art"
+}
+
+NHOJ {
+  pat vanity="nhoj"
+  aliases "NHOJ"
+}
+
+Clarice-Tudor {
+  pat vanity="claricetudor"
+  aliases "Clarice Tudor"
+}
+
+Dogen {
+  styles "ja"
+  yt "@Dogen"
+}
+
+Sixty-Symbols {
+  aliases "haran"
+  pat vanity="sixtysymbols"
+  yt "@SixtySymbols"
+}
+Pupi {
+  pat vanity="Pupi"
+  aliases "Pupi"
+}
+AC-Stuart {
+  pat vanity="awoocomic"
+  aliases "AC Stuart"
+}
+goofy-gods-comics {
+  pat vanity="goofygodscomics"
+  aliases "goofygodscomics"
+}
+Felisamos {
+  pat vanity="felisamosdraws"
+  aliases "Felisamos"
+}
+Ignite {
+  pat vanity="igniteart"
+  aliases "Ignite"
+}
+George-Rottkamp {
+  pat vanity="GeoTheHero"
+  aliases "George Rottkamp"
+}
+Sephko {
+  pat vanity="Sephko"
+  aliases "Sephko"
+}
+Brian-Russell {
+  pat vanity="theunderfold"
+  aliases "Brian Russell"
+}
+ToonHoleRyan {
+  pat vanity="toonholeryan"
+  aliases "ToonHoleRyan"
+}
+James {
+  pat vanity="goodbearcomics"
+  aliases "James"
+}
+Ben-Zaehringer {
+  pat vanity="berkeleymews"
+  aliases "Ben Zaehringer"
+}
+toonholechris {
+  pat vanity="toonholechris"
+  aliases "toonholechris"
+}
+
+Redox-OS {
+  pat vanity="redox_os"
+  aliases "Redox OS"
+}
+RealtimeWWII {
+  pat vanity="RealTimeWWII"
+}
+Marengo-Lambert {
+  pat vanity="marengocomics"
+  aliases "Marengo Lambert"
+}
+A-Small-Fiction {
+  pat vanity="asmallfiction"
+  aliases "A Small Fiction"
+}
+Owen-Cyclops {
+  pat vanity="owencyclops"
+  aliases "Owen Cyclops"
+}
+Denis-Pushkarev {
+  pat vanity="zloirock"
+  aliases "Denis Pushkarev"
+}
+Setzeri {
+  pat vanity="setzeri"
+  aliases "Setzeri"
+}
+Herta-Burbė "https://hertaburbe.com/" {
+  pat vanity="HertaBurbe"
+  fb vanity="Herta.Burbe"
+}
+
+Ricky-Hawkins {
+  pat vanity="rickyhawkins"
+  aliases "Ricky Hawkins"
+}
+amos {
+  pat vanity="fasterthanlime"
+  aliases "amos"
+}
+Greb-Comics {
+  pat vanity="greb"
+  aliases "Greb Comics"
+}
+
+
+Pierre-Mortel {
+  pat vanity="pierremortel"
+  aliases "Pierre Mortel"
+}
+Alex-Krokus {
+  pat vanity="alexkrokus"
+  aliases "Alex Krokus"
+}
+Queen-Jenny-XoXo {
+  pat vanity="queenjennyxoxo"
+  aliases "Queen Jenny XoXo"
+}
+eurothug4000 {
+  pat vanity="eurothug4000"
+  aliases "eurothug4000"
+}
+Hero_of_groznyi {
+  pat vanity="heroofgroznyi"
+  aliases "Hero_of_groznyi"
+}
+Kamil-Galeev {
+  pat vanity="kamilkazani922"
+  aliases "Kamil Galeev"
+}
+Nicholas-Rehm {
+  pat vanity="NicholasRehm"
+  aliases "Nicholas Rehm"
+}
+guda {
+  pat vanity="gudanco"
+  aliases "Guda🧀"
+}
+
+Minute-Food {
+  styles "science"
+  pat vanity="minutefood"
+  aliases "MinuteFood"
+}
+
+Kuro-Ren-New {
+  pat vanity="user?u=77488249"
+  aliases "Kuro-Ren-New"
+}
+Brad-T.-Jonas {
+  pat vanity="bradtjonas"
+  aliases "Brad T. Jonas"
+}
+Deliberately-Buried  {
+  pat vanity="deliberatelyburied"
+  aliases "Deliberately Buried "
+}
+Starkey {
+  pat vanity="starkeycomics"
+  aliases "Starkey Comics"
+}
+skull-pizza  {
+  pat vanity="skullpizza"
+}
+Hillel-Wayne {
+  pat vanity="hillelwayne"
+}
+Zacky {
+  pat vanity="Zaku19"
+}
+Octopuns {
+  pat vanity="Octopuns"
+}
+crustacean-singles {
+  tumblr "crustaceansingles"
+}
+pur-in-ink "https://purrin.ink/" {
+  styles "cat"
+  tumblr "purr-in-ink"
+}
+trisarahtops {
+  pat vanity="trisarahtops"
+  aliases "Chad White (the artist) and Sarah Jakubowski (the dinosaur)"
+}
+WickCity™-RP {
+  pat vanity="WickCityRP"
+  aliases "WickCity™ RP"
+}
+Libra-Thuy-Tranq {
+  styles "nws" "vi"
+  pat vanity="LibraThuyTranq"
+  aliases "Libra Thuy Tranq"
+}
+KurumintyArt {
+  pat vanity="KurumintyArt"
+  aliases "KurumintyArt"
+}
+
+Reine {
+  pat vanity="FoxyReine"
+  aliases "Reine"
+}
+Wawawiwa {
+  pat vanity="Wawawiwa"
+  aliases "Wawawiwa"
+}
+Kent-Overstreet {
+  pat vanity="bcachefs"
+  aliases "Kent Overstreet"
+}
+Rds.-to-Nowhere {
+  pat vanity="Rdstonowhere"
+  aliases "Rds. to Nowhere"
+}
+Tyler-Hendrix {
+  pat vanity="TylerHendrix"
+  aliases "Tyler Hendrix"
+}
+Tridactyl {
+  pat vanity="tridactyl"
+  aliases "Tridactyl"
+}
+LOLNEIN {
+  pat vanity="lolnein"
+  aliases "LOLNEIN"
+}
+Mo.Mayati {
+  pat vanity="MoMayati"
+  aliases "Mo.Mayati"
+}
+Big-Insane-Happy {
+  pat vanity="biginsanehappy"
+  aliases "The Big Insane Happy"
+}
+Ryan-Harby {
+  pat vanity="ryanharby"
+  aliases "Ryan Harby"
+}
+Dirty-Monkey {
+  pat vanity="TheDirtyMonkey"
+  aliases "TheDirtyMonkey"
+}
+
+Kyle-Hill {
+  pat vanity="kylehill"
+  aliases "Kyle Hill"
+}
+JAV-Subtitles {
+  styles "nws"
+  pat vanity="JAVSubtitles"
+}
+Will-Santino {
+  pat vanity="willsantino"
+  aliases "Will Santino"
+}
+Jen-Sorensen {
+  pat vanity="jensorensen"
+  aliases "Jen Sorensen"
+}
+Dorothy {
+  pat vanity="catandgirl"
+  aliases "Dorothy"
+}
+AC-Stuart {
+  pat vanity="yourdndstories"
+  aliases "AC Stuart"
+}
+Ara {
+  pat vanity="Aranee"
+  aliases "Ara"
+}
+orhun {
+  pat vanity="orhunp"
+  aliases "ratatui"
+}
+elder-cactus {
+  pat vanity="eldercactuscomics"
+  ig "eldercactus"
+}
+
+chowbie {
+  ig "chowbie_art"
+  styles "nws"
+}
+
+Hey-Hey-Momo {
+  pat vanity="heyheymomo"
+}
+tommy-siegel {
+  fb serial="209302845752058" vanity="TommySiegel"
+}
+Sciamano240 {
+  pat vanity="sciamano240"
+  aliases "Sciamano240"
+}
+Susie-Yi {
+  pat vanity="catandcatcomics"
+  aliases "Susie Yi (Cat and Cat Comics)"
+}
+Bichi-Mao {
+  styles "cat"
+  pat vanity="bichimao"
+}
+Mahoukarp  {
+  pat vanity="Mahoukarp"
+  aliases "Mahoukarp "
+}
+Supper-Mario-Broth {
+  pat vanity="suppermariobroth"
+  aliases "Supper Mario Broth"
+}
+Ryuune-art {
+  pat vanity="ryuuneart"
+  aliases "Ryuuneart"
+}
+RYUSEI-R {
+  pat vanity="cnmbwjx"
+  aliases "RYUSEI-R"
+}
+Monkey-User {
+  pat vanity="monkeyuser"
+  aliases "Monkey User"
+}
+Toothy-Bj {
+  pat vanity="toothybj"
+  aliases "ToothyBj"
+}
+Scott-Metzger  {
+  pat vanity="ScottMetzgerCartoons"
+  aliases "Scott Metzger "
+}
+jisoupy {
+  pat vanity="jisoupy"
+  aliases "jisoupy"
+}
+Mark-Parisi {
+  pat vanity="MarkParisi"
+  aliases "Mark Parisi"
+}
+sad-potato {
+  pat vanity="sadpotatoclub"
+  ig "sadpotatoclub"
+}
+
+Karlo-Ferdon {
+  pat vanity="KarloFerdon"
+  aliases "Karlo Ferdon"
+}
+Bacchus {
+  pat vanity="ErosBlog"
+  aliases "Bacchus"
+}
+
+groundhog-hill

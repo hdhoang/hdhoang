@@ -1,0 +1,13 @@
+Dockerfile
+.dockerignore
+
+target/
+
+fly.toml
+
+*~
+*.json
+*.md
+*.xml
+tests/output.json
+!tests/

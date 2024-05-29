@@ -1,0 +1,176 @@
+# Installation directory for all the tools:
+store_directory = "$HOME/run"
+
+[bat]
+[difftastic]
+[fd]
+[k9s]
+[procs]
+[ripgrep]
+[starship]
+
+[kdash]
+owner = "kdash-rs"
+repo = "kdash"
+asset_name.linux = "linux.tar"
+
+[sg]
+owner = "ast-grep"
+repo = "ast-grep"
+exe_name = "sg"
+asset_name.linux = "x86_64-unknown-linux"
+asset_name.windows = "x86_64-pc-windows"
+
+[srgn]
+owner = "alexpovel"
+repo = "srgn"
+asset_name.linux = "linux"
+asset_name.windows = "windows"
+
+[jaq]
+owner = "01mf02"
+repo = "jaq"
+exe_name = "jq"
+#asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "x86_64-pc-windows"
+
+[just]
+owner = "casey"
+repo = "just"
+asset_name.linux = "x86_64-unknown-linux-musl"
+
+[jj]
+owner = "martinvonz"
+repo = "jj"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[tspin]
+owner = "bensadeh"
+repo = "tailspin"
+exe_name = "tspin"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[delta]
+owner = "dandavison"
+repo = "delta"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[dprint]
+owner = "dprint"
+repo = "dprint"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[treefmt]
+owner = "numtide"
+repo = "treefmt"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[uv]
+owner = "astral-sh"
+repo = "uv"
+asset_name.linux = "x86_64-unknown-linux-gnu"
+
+[wezterm]
+owner = "wez"
+repo = "wezterm"
+asset_name.linux = "-Ubuntu20.04.AppImage"
+
+[dua]
+owner = "Byron"
+repo = "dua-cli"
+exe_name = "dua"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[netscanner]
+owner = "Chleba"
+repo = "netscanner"
+asset_name.linux = "x86_64"
+
+[nextest]
+owner = "nextest-rs"
+repo = "nextest"
+exe_name = "cargo-nextest"
+asset_name.linux = "x86_64-unknown-linux"
+asset_name.windows = "x86_64-pc-windows-msvc.zip"
+
+[typst]
+owner = "typst"
+repo = "typst"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc.zip"
+
+[nu]
+owner = "nushell"
+repo = "nushell"
+exe_name = "nu"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc.zip"
+
+[bandwhich]
+owner = "imsnif"
+repo = "bandwhich"
+asset_name.linux = "musl"
+
+[bottom]
+owner = "ClementTsang"
+repo = "bottom"
+exe_name = "btm"
+asset_name.linux = "x86_64-unknown-linux-musl"
+asset_name.windows = "x86_64-pc-windows-msvc"
+
+[mold]
+owner = "rui314"
+repo = "mold"
+asset_name.linux = "x86_64-linux"
+
+[probe-rs]
+owner = "probe-rs"
+repo = "probe-rs"
+asset_name.linux = "probe-rs-x86_64-unknown"
+
+[rclone]
+owner = "rclone"
+repo = "rclone"
+asset_name.linux = "linux-amd64.zip"
+asset_name.windows = "windows-amd64"
+
+[mprocs]
+owner = "pvolok"
+repo = "mprocs"
+asset_name.windows = "win"
+asset_name.linux = "linux"
+
+[fend]
+owner = "printfn"
+repo = "fend"
+asset_name.windows = "windows-x64-exe"
+asset_name.linux = "linux-x86_64"
+
+[rustdesk]
+owner = "rustdesk"
+repo = "rustdesk"
+asset_name.linux = "x86_64.AppImage"
+asset_name.windows = "x86_64.exe"
+
+[micropad]
+owner = "micropad"
+repo = "MicroPad-Electron"
+exe_name = "micropad"
+asset_name.linux = "x86_64.AppImage"
+
+[k2tf]
+owner = "sl1pm4t"
+repo = "k2tf"
+asset_name.linux = "Linux_x86_64"
+
+[hurl]
+owner = "Orange-OpenSource"
+repo = "hurl"
+asset_name.linux = "x86_64-unknown-linux"
+asset_name.windows = "msvc.zip"

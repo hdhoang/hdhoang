@@ -1,0 +1,92 @@
+[feeds.smbc]
+url = "https://www.smbc-comics.com/comic/rss"
+sink.arguments = ["#cc-comicbody", "#aftercomic img"]
+sink.command = "/app/grab"
+interval = "24h"
+sink.type = "custom"
+
+[feeds.dinosaur]
+url = "https://qwantz.com/rssfeed.php"
+# sink.arguments = ["-x","-c","tee -a /tmp/qwantz.ndjson"]
+sink.command = "/app/laker-taker"
+interval = "24h"
+sink.type = "custom"
+
+## ComicsPress
+# [feeds.comicpress]
+# url = ""
+# interval = "1d"
+# sink.command = "/app/grab"
+# sink.arguments = ["#comic img", ".post-content"]
+# sink.type = "custom"
+
+[feeds.theotherend]
+url = "https://www.kohney.com/feed/"
+sink.arguments = ["-x", "-c", "/app/grab '#comic img' '.post-content'"]
+interval = "24h"
+sink.command = "/bin/bash"
+sink.type = "custom"
+
+[feeds.exocomics]
+url = "https://www.exocomics.com/index.xml"
+sink.arguments = ["-x", "-c", "/app/grab '#main-comic img' '.body'"]
+interval = "24h"
+sink.command = "/bin/bash"
+sink.type = "custom"
+
+[feeds.afistfulofbabies]
+url = "https://afistfulofbabies.com/feed/"
+sink.arguments = ["-x", "-c", "/app/grab 'article img'"]
+interval = "24h"
+sink.command = "/bin/bash"
+sink.type = "custom"
+
+[feeds.buttersafe]
+url = "https://feeds.feedburner.com/buttersafe"
+sink.arguments = ["#comic", "#column"]
+interval = "24h"
+sink.command = "/app/grab"
+sink.type = "custom"
+
+[tbd]
+url = "https://danbydraws.com/feed/"
+url = "https://feeds.feedburner.com/InvisibleBread"
+url = "https://feeds.feedburner.com/Optipess"
+url = "https://feeds.feedburner.com/StupidFox"
+url = "https://feeds.feedburner.com/ThingsInSquares"
+url = "https://feeds.feedburner.com/satwcomic"
+url = "https://felttipfeelings.com/feed/"
+url = "https://gerbilwithajetpack.com/feed/"
+url = "https://goodbearcomics.com/feed/"
+url = "https://heybuddycomics.com/feed/"
+url = "https://imogenquest.net/?feed=rss2"
+url = "https://inkyrickshaw.com/feed/"
+url = "https://ithinuel.me/feed.xml"
+url = "https://loadingartist.com/comic/index.xml"
+url = "https://lukasa.co.uk/rss.xml"
+url = "https://ma.ttias.be/blog/index.xml"
+url = "https://matthewkmayer.github.io/blag/public/post/index.xml"
+url = "https://oglaf.com/feeds/rss/"
+url = "https://portsherry.com/feed/"
+url = "https://prolificpencomics.net/feed/"
+url = "https://quietmisdreavus.net/feed.xml"
+url = "https://shamusyoung.com/twentysidedtale/?feed=atom"
+url = "https://stonetoss.com/index.php/comic/feed/"
+url = "https://swordscomic.com/comic/feed/"
+url = "https://theawkwardyeti.com/feed/"
+url = "https://theunderfold.com/feed/"
+url = "https://timetrabble.com/feed/"
+url = "https://www.awkwardzombie.com/awkward-zombie/rss"
+url = "https://www.eatmypaint.co.uk/feed/"
+url = "https://www.fowllanguagecomics.com/feed/"
+url = "https://www.gabriel.urdhr.fr/feed.xml"
+url = "https://www.halcyon.hr/index.xml"
+
+[goners]
+url = "https://909sickle.net/rss"
+url = "https://abstrusegoose.com/feed.xml"
+url = "https://deathbulge.com/rss.xml"
+url = "https://feeds2.feedburner.com/channelATE"
+url = "https://www.happletea.com/feed/"
+url = "https://www.mrlovenstein.com/rss.xml"
+url = "https://www.treelobsters.com/feeds/posts/default"

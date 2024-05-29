@@ -1,0 +1,4 @@
+[toolchain]
+toolchain = "beta"
+components = ["clippy", "rustfmt"]
+profile = "minimal"

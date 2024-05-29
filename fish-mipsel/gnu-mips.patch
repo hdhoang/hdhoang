@@ -1,0 +1,134 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 6bddf52..2b2d8c1 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -38,6 +38,7 @@ once_cell = "1.17.0"
+ rand = { version = "0.8.5", features = ["small_rng"] }
+ widestring = "1.0.2"
+ terminfo = { git = "https://github.com/meh/rust-terminfo", rev = "7259f5aa5786a9d396162da0d993e268f6163fb2" }
++portable-atomic = { version = "1.6.0", features = ["fallback"] }
+
+ [dev-dependencies]
+ rand_pcg = "0.3.1"
+
+diff --git a/src/env/environment_impl.rs b/src/env/environment_impl.rs
+index fcb6368..420a886 100644
+--- a/src/env/environment_impl.rs
++++ b/src/env/environment_impl.rs
+@@ -22,7 +22,8 @@ use std::marker::PhantomData;
+ use std::mem;
+ use std::ops::{Deref, DerefMut};
+
+-use std::sync::{atomic::AtomicU64, atomic::Ordering, Arc, Mutex, MutexGuard};
++use portable_atomic::AtomicU64;
++use std::sync::{ atomic::Ordering, Arc, Mutex, MutexGuard};
+
+ // Universal variables instance.
+ lazy_static! {
+diff --git a/src/fd_monitor.rs b/src/fd_monitor.rs
+index 2bfac02..f0974dc 100644
+--- a/src/fd_monitor.rs
++++ b/src/fd_monitor.rs
+@@ -1,5 +1,6 @@
+ use std::os::unix::prelude::*;
+-use std::sync::atomic::{AtomicU64, Ordering};
++use portable_atomic::AtomicU64;
++use std::sync::atomic::{ Ordering};
+ use std::sync::{Arc, Mutex, Weak};
+ use std::time::{Duration, Instant};
+
+diff --git a/src/io.rs b/src/io.rs
+index bb68c00..93e5ada 100644
+--- a/src/io.rs
++++ b/src/io.rs
+@@ -24,7 +24,8 @@ use std::cell::{RefCell, UnsafeCell};
+ use std::fs::File;
+ use std::io;
+ use std::os::fd::{AsRawFd, IntoRawFd, OwnedFd, RawFd};
+-use std::sync::atomic::{AtomicU64, Ordering};
++use portable_atomic::AtomicU64;
++use std::sync::atomic::{ Ordering};
+ use std::sync::{Arc, Condvar, Mutex, MutexGuard};
+
+ /// separated_buffer_t represents a buffer of output from commands, prepared to be turned into a
+diff --git a/src/parser.rs b/src/parser.rs
+index 9e1aefd..619f678 100644
+--- a/src/parser.rs
++++ b/src/parser.rs
+@@ -43,8 +43,9 @@ use std::os::fd::{AsRawFd, OwnedFd, RawFd};
+ use std::os::unix::prelude::OsStrExt;
+ use std::pin::Pin;
+ use std::rc::{Rc, Weak};
++use portable_atomic::AtomicU64;
+ use std::sync::{
+-    atomic::{AtomicIsize, AtomicU64, Ordering},
++    atomic::{AtomicIsize,  Ordering},
+     Arc,
+ };
+
+diff --git a/src/proc.rs b/src/proc.rs
+index 5bdf008..6e36ae9 100644
+--- a/src/proc.rs
++++ b/src/proc.rs
+@@ -37,7 +37,8 @@ use std::fs;
+ use std::io::{Read, Write};
+ use std::os::fd::RawFd;
+ use std::rc::Rc;
+-use std::sync::atomic::{AtomicBool, AtomicI32, AtomicU64, AtomicU8, Ordering};
++use portable_atomic::AtomicU64;
++use std::sync::atomic::{AtomicBool, AtomicI32,  AtomicU8, Ordering};
+ use std::sync::{Arc, Mutex};
+
+ /// Types of processes.
+diff --git a/src/reader.rs b/src/reader.rs
+index 7d0bbcc..6f3a6a8 100644
+--- a/src/reader.rs
++++ b/src/reader.rs
+@@ -31,7 +31,8 @@ use std::os::fd::RawFd;
+ use std::pin::Pin;
+ use std::rc::Rc;
+ use std::sync::atomic::Ordering;
+-use std::sync::atomic::{AtomicI32, AtomicU32, AtomicU64, AtomicU8};
++use portable_atomic::AtomicU64;
++use std::sync::atomic::{AtomicI32, AtomicU32,  AtomicU8};
+ use std::sync::{Arc, Mutex, MutexGuard};
+ use std::time::{Duration, Instant};
+
+diff --git a/src/signal.rs b/src/signal.rs
+index 0cbeb1d..5ca5827 100644
+--- a/src/signal.rs
++++ b/src/signal.rs
+@@ -399,15 +399,15 @@ const SIGNAL_TABLE : &[LookupEntry] = &[
+     #[cfg(any(bsd, target_os = "macos"))]
+     LookupEntry::new(libc::SIGINFO,   L!("SIGINFO"), L!("Information request")),
+
+-    #[cfg(target_os = "linux")]
+-    LookupEntry::new(libc::SIGSTKFLT, L!("SISTKFLT"), L!("Stack fault")),
++    //#[cfg(target_os = "linux")]
++    //LookupEntry::new(libc::SIGSTKFLT, L!("SISTKFLT"), L!("Stack fault")),
+
+     #[cfg(target_os = "linux")]
+     LookupEntry::new(libc::SIGIOT,   L!("SIGIOT"), L!("Abort (Alias for SIGABRT)")),
+
+-    #[cfg(target_os = "linux")]
+-    #[allow(deprecated)]
+-    LookupEntry::new(libc::SIGUNUSED, L!("SIGUNUSED"), L!("Unused signal")),
++    //#[cfg(target_os = "linux")]
++    //#[allow(deprecated)]
++    //LookupEntry::new(libc::SIGUNUSED, L!("SIGUNUSED"), L!("Unused signal")),
+
+     #[cfg(target_os = "linux")]
+     LookupEntry::new(libc::SIGPWR,    L!("SIGPWR"), L!("Power failure")),
+diff --git a/src/wutil/mod.rs b/src/wutil/mod.rs
+index 631a41d..3fcbab5 100644
+--- a/src/wutil/mod.rs
++++ b/src/wutil/mod.rs
+@@ -531,7 +531,7 @@ impl FileId {
+     }
+     pub fn from_stat(buf: &libc::stat) -> FileId {
+         let mut result = FileId::new();
+-        result.device = buf.st_dev;
++        result.device = buf.st_dev as u64;
+         result.inode = buf.st_ino;
+         result.size = buf.st_size as u64;
+         result.change_seconds = buf.st_ctime;

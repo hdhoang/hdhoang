@@ -1,0 +1,65 @@
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+app = "myst"
+primary_region = "nrt"
+
+[processes]
+web = "/scripts/init"
+jobs = "timeout --signal=QUIT --verbose 7890 /scripts/init bin/threaded.rb"
+
+# jobs = "sh -c 'bundle exec script/delayed_job run & bundle exec rails runner bin/schedule.rb'"
+# jobs = "bundle exec rails runner bin/schedule.rb"
+# jobs = "bundle exec script/delayed_job run"
+
+# [checks]
+# [checks.unicorn]
+#   type = "tcp"
+#   port = 3000
+#   grace_period = "40s"
+#   interval = "900s"
+#   timeout = "10s"
+
+#   type = "http"
+#   method = "get"
+#   path = "/favicon.ico"
+
+[[statics]]
+guest_path = "/app/public"
+url_prefix = "/public"
+
+[http_service]
+processes = ["web"]
+internal_port = 3000
+force_https = true
+
+auto_stop_machines = true
+auto_start_machines = true
+min_machines_running = 0
+
+[env]
+DOMAIN = "myst.fly.dev"
+FORCE_SSL = "true"
+DATABASE_ADAPTER = "postgresql"
+
+DO_NOT_SEED = "true"
+IMPORT_DEFAULT_SCENARIO_FOR_ALL_USERS = "false"
+RACK_ENV = "production"
+RAILS_LOG_TO_STDOUT = "enabled"
+RAILS_SERVE_STATIC_FILES = "disabled"
+
+TIMEZONE = "Hanoi"
+TZ = "Asia/Phnom_Penh"
+
+SCHEDULER_FREQUENCY = "5" # s, no higher
+DELAYED_JOB_MAX_RUNTIME = "30" # minutes
+DELAYED_JOB_SLEEP_DELAY = "900" # s
+
+AGENT_LOG_LENGTH = "50"
+EVENT_EXPIRATION_CHECK = "2h"
+USE_GRAPHVIZ_DOT = "dot"
+DIAGRAM_DEFAULT_LAYOUT = "neato"
+
+# secrets:
+# INVITATION_CODE
+# DATABASE_URL (flyctl postgres)
+# APP_SECRET_TOKEN (rake secret)
+# SENTRY_DSN (sentry or glitchtip)

@@ -1,0 +1,68 @@
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+# > flyctl image show -a myst-db                                                                                                                                                                                                                     06/11/2023 05:23:22 PM
+# MACHINE ID      REGISTRY                REPOSITORY              TAG     VERSION DIGEST
+# 32874545a63948  registry-1.docker.io    flyio/postgres-flex     15.3    v0.0.42 sha256:c380a6108f9f49609d64e5e83a3117397ca3b5c3202d0bf0996883ec3dbb80c8
+
+# flyctl deploy -c myst-db.toml -i flyio/postgres-flex:15.3
+app = "myst-db"
+primary_region = "nrt"
+
+[env]
+FLY_SCALE_TO_ZERO = "13m"
+PRIMARY_REGION = "nrt"
+
+[[mounts]]
+source = "pg_data"
+destination = "/data"
+
+[[services]]
+protocol = "tcp"
+internal_port = 5432
+auto_start_machines = true
+
+[[services.ports]]
+port = 5432
+handlers = ["pg_tls"]
+[services.concurrency]
+type = "connections"
+hard_limit = 1000
+soft_limit = 1000
+
+[[services]]
+protocol = "tcp"
+internal_port = 5433
+auto_start_machines = true
+
+[[services.ports]]
+port = 5433
+handlers = ["pg_tls"]
+[services.concurrency]
+type = "connections"
+hard_limit = 1000
+soft_limit = 1000
+
+[checks]
+[checks.pg]
+port = 5500
+type = "http"
+interval = "15s"
+timeout = "10s"
+path = "/flycheck/pg"
+[checks.role]
+port = 5500
+type = "http"
+interval = "15s"
+timeout = "10s"
+path = "/flycheck/role"
+[checks.vm]
+port = 5500
+type = "http"
+interval = "15s"
+timeout = "10s"
+path = "/flycheck/vm"
+
+[metrics]
+port = 9187
+path = "/metrics"

@@ -1,0 +1,75 @@
+[includeIf "gitdir:~/gh/"]
+path = ~/homes/config/jj_config.toml
+
+[includeIf "gitdir:~/repos/"]
+path = ~/repos/whoami
+
+[core]
+abbrev = 12
+attributesfile = ~/homes/config/gitattr
+excludesfile = ~/homes/config/ignore_global
+autocrlf = false
+editor = "emacsclient -c"
+
+[protocol]
+version = 2
+[init]
+defaultBranch = "v0"
+
+[branch]
+sort = -committerdate
+
+[fetch]
+showForcedUpdates = true
+prune = true
+fsckobjects = true
+
+[transfer]
+fsckobjects = true
+[receive]
+fsckobjects = true
+
+[pull]
+rebase = true
+twohead = ort
+
+[checkout]
+workers = 12
+
+[rerere]
+enabled = true
+
+[rebase]
+autoStash = true
+updateRefs = true
+
+[merge]
+autoStash = true
+conflictStyle = zdiff3
+keepbackup = false
+
+[log]
+date = iso
+
+[diff "elisp"]
+xfuncname="^\\((((def\\S+)|use-package)\\s+\\S+)"
+
+[diff]
+algorithm = histogram
+
+external = difft
+colorMoved = dimmed-zebra
+colorMovedws = allow-indentation-change
+
+tool = diffsitter
+[difftool]
+prompt = false
+[difftool "diffsitter"]
+cmd = diffsitter "$LOCAL" "$REMOTE"
+
+[pager]
+diff = delta
+reflog = delta
+show = delta
+[delta]
+features = decorations

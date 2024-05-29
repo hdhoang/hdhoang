@@ -1,0 +1,9 @@
+**/*~
+**/*.bk
+**/target
+
+__pycache__
+.ruff_cache
+.pijul
+.git
+.DS_Store

@@ -1,0 +1,24 @@
+# syntax=docker/dockerfile:1.4
+FROM ghcr.io/rust-lang/rust@sha256:29060f616f46fcc718a967dfd56cfdbdf24dfddc242fc9160729cd3dac4ae8fa
+# rust of the eclipse
+RUN rustup component add rust-src
+
+RUN apt update
+RUN true && \
+    apt install -y --no-install-recommends gcc-mipsel-linux-gnu libc6-dev-mipsel-cross \
+    qemu-user-binfmt qemu-user \
+    git ripgrep patch
+
+RUN git clone --depth 1 https://github.com/fish-shell/fish-shell /var/cache/fish-shell && \
+    cd /var/cache/fish-shell && cargo add portable-atomic@1.6.0 --no-default-features --features fallback && \
+    mkdir /var/cache/fish-shell/.cargo/
+WORKDIR /var/cache/fish-shell
+COPY cargo_config.toml .cargo/config.toml
+
+RUN cargo -Zbuild-std fetch --target mipsel-unknown-linux-gnu
+
+ENV PREFIX=/usr
+RUN cargo -Zbuild-std build --offline --target mipsel-unknown-linux-gnu || true
+
+COPY gnu-mips.patch .
+RUN patch -p1 <gnu-mips.patch || true

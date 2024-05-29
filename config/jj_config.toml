@@ -1,0 +1,6 @@
+[user]
+name = "hdhoang"
+email = "code@hdhoang.space"
+
+[ui]
+editor = "emacsclient -c"

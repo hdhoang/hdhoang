@@ -1,0 +1,5 @@
+[target.mipsel-unknown-linux-gnu]
+linker = "mipsel-linux-gnu-ld.gold"
+rustflags=[  "-C",
+  "link-arg=-L/usr/mipsel-linux-gnu/lib",
+]
