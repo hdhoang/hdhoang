@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 domain = { version = "0.7.0", default-features = false, features = ["resolv"] }
 lexopt = { version = "0.2.1", default-features = false }
-tokio = { version = "1.21.1", default-features = false, features = ["rt"] }
+tokio = { version = "1.24.2", default-features = false, features = ["rt"] }
