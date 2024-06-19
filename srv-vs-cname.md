@@ -54,7 +54,7 @@ directory = "./"
 ```
 
 ```zone
-; ./srv-vs-cname/example.zone
+; ./example.zone
 example. IN SOA localhost. localwriter.localhost. (
   7
   60
@@ -65,10 +65,10 @@ example. IN SOA localhost. localwriter.localhost. (
 
 _xmpp-client._tcp 30 IN SRV 10 10 5222 ejabberd24
 _ceph-mon._tcp    30 IN SRV 10 20 3300 ejabberd24
-_ldap._tcp       30 IN SRV 10 30   389 ejabberd24
+_ldap._tcp        30 IN SRV 10 30  389 ejabberd24
 
 ejabberd24 30 IN CNAME vm1234
-vm1234 30 IN A 10.0.12.34
+vm1234     30 IN A    1.2.3.4
 ```
 
 Response looks good:
@@ -83,7 +83,7 @@ _xmpp-client._tcp.example. 30   IN      SRV     10 10 5222 ejabberd24.example.
 
 ;; ADDITIONAL SECTION:
 ejabberd24.example.     30      IN      CNAME   vm1234.example.
-vm1234.example.         30      IN      A       10.0.12.34
+vm1234.example.         30      IN      A       1.2.3.4
 
 ;; Query time: 0 msec
 ;; SERVER: 127.0.0.1#4321(127.0.0.1) (UDP)
@@ -110,7 +110,7 @@ _ceph-mon._tcp.example. 30      IN      SRV     10 20 3300 ejabberd24.example.
 
 ;; ADDITIONAL SECTION:
 ejabberd24.example.     30      IN      CNAME   vm1234.example.
-vm1234.example.         30      IN      A       10.0.12.34
+vm1234.example.         30      IN      A       1.2.3.4
 
 ;; Query time: 4 msec
 ;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
@@ -120,27 +120,18 @@ LDAP connects to the right address
 
 ```rust
 ❯ strace -yy ldapsearch -H 'ldap:///dc=example' &| rg connect.+389
-connect(3<TCP:[1789186]>, {sa_family=AF_INET, sin_port=htons(389), sin_addr=inet_addr("10.0.12.34")}, 16)
+connect(3<TCP:[1789186]>, {sa_family=AF_INET, sin_port=htons(389), sin_addr=inet_addr("1.2.3.4")}, 16)
 ```
 
 Now on to ceph:
 
 ```rust
-❯ timeout 2s strace -fyy -e recvmsg,connect ceph-fuse -c /dev/null /none &| rg -v etc/ceph
-strace: Process 163714 attached
-strace: Process 163715 attached
-[pid 163713] connect(3<UDP:[1684540]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
-[pid 163713] connect(3<UDP:[1683641]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
-[pid 163713] connect(3<UDP:[1682190]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
-[pid 163713] connect(3<UDP:[1684542]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
-strace: Process 163716 attached
-strace: Process 163717 attached
-strace: Process 163718 attached
-strace: Process 163719 attached
-strace: Process 163720 attached
-strace: Process 163721 attached
-[pid 163717] connect(12<TCP:[1682192]>, {sa_family=AF_INET, sin_port=htons(3300), sin_addr=inet_addr("6.118.109.49")}, 16) = -1 EINPROGRESS (Operation now in progress)
-[pid 163717] connect(12<TCP:[10.0.6.193:58712->6.118.109.49:3300]>, {sa_family=AF_INET, sin_port=htons(3300), sin_addr=inet_addr("6.118.109.49")}, 16) = -1 EALREADY (Operation already in progress)
+❯ timeout 2s strace -fyy -e connect ceph-fuse -c /dev/null /none &| rg -v 'etc/ceph|attached'
+[pid 175097] connect(3<UDP:[1799840]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+[pid 175097] connect(3<UDP:[1802849]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+[pid 175097] connect(3<UDP:[1801817]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+[pid 175097] connect(3<UDP:[1801164]>, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("127.0.0.53")}, 16) = 0
+[pid 175101] connect(12<TCP:[1801818]>, {sa_family=AF_INET, sin_port=htons(3300), sin_addr=inet_addr("6.118.109.49")}, 16) =
 ```
 
 How does `6.118.109.49` appear in here?
