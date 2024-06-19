@@ -1,5 +1,6 @@
+# named.toml for hickory-dns 0.24 https://lib.rs/crates/hickory-dns/versions
 listen_port = 4321
-directory = "./srv-vs-cname/"
+directory = "./"
 
 [[zones]]
   zone = "example"

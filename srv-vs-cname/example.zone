@@ -1,5 +1,6 @@
+; ./srv-vs-cname/example.zone
 example. IN SOA localhost. localwriter.localhost. (
-  14
+  7
   60
   60
   604800
@@ -8,7 +9,7 @@ example. IN SOA localhost. localwriter.localhost. (
 
 _xmpp-client._tcp 30 IN SRV 10 10 5222 ejabberd24
 _ceph-mon._tcp    30 IN SRV 10 20 3300 ejabberd24
-_ldaps._tcp       30 IN SRV 10 30  636 ejabberd24
+_ldap._tcp       30 IN SRV 10 30   389 ejabberd24
 
 ejabberd24 30 IN CNAME vm1234
 vm1234 30 IN A 10.0.12.34
