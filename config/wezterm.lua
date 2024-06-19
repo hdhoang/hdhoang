@@ -4,7 +4,6 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.default_prog = {"nu"}
-config.default_cwd = "~"
 
 config.term = "wezterm"
 config.color_scheme = "CLRS"
@@ -20,9 +19,11 @@ config.font = wezterm.font_with_fallback {
  "Consolas",
 }
 config.font_size = 9.0
+config.freetype_load_target = "Light"
+config.freetype_render_target = "HorizontalLcd"
 
 config.enable_scroll_bar = true
-config.window_decorations = 'RESIZE'
+config.window_decorations = "RESIZE"
 
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 -- regex": "\\b\\w+@
@@ -36,7 +37,7 @@ if wezterm.home_dir == "/home/hieuhg" then
   })
   table.insert(launch_menu, {
     label = "v",
-    cwd = "/home/hieuhg/cc/staff-vpn-2025",
+    cwd = "/home/hieuhg/cc/",
     args = { "sh", "-c", "sudo-rs openvpn --config staff_ca_2033.ovpn --config dns.ovpn" },
   })
   table.insert(launch_menu, {
@@ -64,5 +65,8 @@ config.keys = {
 
   { key = "phys:H", mods = "CTRL|SHIFT", action = "ShowLauncher" },
 }
+
+config.animation_fps = 1
+config.front_end = "WebGpu"
 
 return config

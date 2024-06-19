@@ -53,7 +53,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(kdl-ts-mode terraform-mode hcl-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode jinja2-mode magit-delta markdown-mode rainbow-delimiters use-package))
+   '(terraform-doc treesit-ispell kdl-ts-mode terraform-mode hcl-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode jinja2-mode magit-delta markdown-mode rainbow-delimiters use-package))
  '(python-indent-offset 4)
  '(repeat-mode t)
  '(require-final-newline 't)
@@ -167,6 +167,10 @@
   :ensure
   :hook ((markdown-mode . visual-line-mode)))
 
+(use-package treesit-ispell
+  :ensure
+  :bind ("C-x s" . #'treesit-ispell-run-at-point))
+
 (global-set-key (kbd "C-x f") #'apheleia-format-buffer) ; enable apheleia on-demand
 (use-package apheleia
   :ensure
@@ -195,6 +199,8 @@
 (use-package jinja2-mode
   :ensure)
 (use-package terraform-mode
+  :ensure)
+(use-package terraform-doc
   :ensure)
 (use-package hcl-mode
   :ensure)

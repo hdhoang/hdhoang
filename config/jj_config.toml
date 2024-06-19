@@ -6,5 +6,7 @@ email = "code@hdhoang.space"
 default-command = "log"
 default-description = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
 
-diff.tool = ["difft", "--color=always", "$left", "$right"]
 editor = "emacsclient -c"
+
+[ui.diff]
+tool = ["difft", "--color=always", "$left", "$right"]

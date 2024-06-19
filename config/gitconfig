@@ -1,5 +1,7 @@
 [includeIf "gitdir:~/gh/"]
 path = ~/homes/config/jj_config.toml
+[includeIf "gitdir:~/homes/"]
+path = ~/homes/config/jj_config.toml
 
 [includeIf "gitdir:~/repos/"]
 path = ~/repos/whoami

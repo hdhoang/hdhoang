@@ -29,6 +29,7 @@ ln -rsvf $PWD/waybar.config ~/.config/waybar/config
 
 ln -rsvf $PWD/$HOSTNAME.conf ~/.config/sway/environment
 ln -rsvf $PWD/$HOSTNAME.conf ~/.config/environment.d/
+ln -rsvf $PWD/env.conf ~/.config/environment.d/00-env.conf
 
 mkdir -vp ~/.config/plasma-workspace/env/
 ln -rsvf $PWD/env.sh  ~/.config/plasma-workspace/env/

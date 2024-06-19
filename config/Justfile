@@ -14,8 +14,8 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{PATTERN}}
 mu PATH:
     mpv --no-resume-playback --vo=null --no-video --no-ytdl --replaygain=track --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{PATH}} --volume=44
-yt:
-    cd ~/rclone-cache/ ; yt-dlp -f ba -S ext --download-archive ~/yt.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
+yt *SUB:
+    mkdir -v ~/rclone-cache/{{SUB}}; cd ~/rclone-cache/{{SUB}} ; yt-dlp --format ba --format-sort acodec:opus,ext --prefer-free-formats --download-archive ~/yt.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
 
 [no-cd]
 cl repo:
