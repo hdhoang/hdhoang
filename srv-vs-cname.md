@@ -135,3 +135,56 @@ Now on to ceph:
 ```
 
 How does `6.118.109.49` appear in here?
+
+On the wire
+---
+
+Let's capture some packets with tcpdump/wireshark for
+`dns.srv.port==3300 or tcp.port==3300`. Here is the DNS answer's
+additional records section
+
+```hexdump
+0000   0a 65 6a 61 62 62 65 72 64 32 34 c0 1b 00 05 00   .ejabberd24.....
+0010   01 00 00 00 1e 00 09 06 76 6d 31 32 33 34 c0 1b   ........vm1234..
+0020   c0 65 00 01 00 01 00 00 00 1e 00 04 01 02 03 04   .e..............
+0030   00 00 29 ff d6 00 00 00 00 00 00                  ..)........
+```
+
+With
+[name-compression](https://dotat.at/@/2022-07-01-dns-compress.html),
+`.example.` was back-referenced to earlier data, hence we see only the
+`ejabberd24` and `vm1234` as text, preceeded by the own lengths (0x0a
+= 10, 0x06 = 6). `ceph-fuse` looked for 32 bits of ipv4 address in
+there, interpreted `06 76 6d 31` in [decimal
+format](https://manned.org/ascii.7) as `06.118.109.49`, and
+[mis-dialed
+DOD](https://scribe.rip/have-you-seen-dns-type0-class256-896b10af92fc).
+
+Why would it do that when the rrtype is `CNAME` (`0005`)? Why doesn't
+it assume ipv6 and scraped out 16 bytes as
+`[0676:6d31:3233:34c0:1bc0:6500:0100:0100]`? I have no desire to look
+into current implementation.
+
+Yet, is it in the right? Yes, [RFC
+7287](https://datatracker.ietf.org/doc/html/rfc2782) page 4 requires
+that
+
+> the name MUST NOT be an alias
+
+Or as [cloudflare
+illustrates](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/):
+
+> SRV records must point to an A record (in IPv4) or an AAAA record
+> (in IPv6). The server name they list cannot be a CNAME. So
+> "server.example.com" must lead directly to an A or AAAA record under
+> that name.
+
+The correct zone data must be:
+
+```zone
+_xmpp-client._tcp 30 IN SRV 10 10 5222 vm1234 ; current node for ejabberd24
+_ceph-mon._tcp    30 IN SRV 10 20 3300 vm1234 ; current node for ceph-mon
+_ldap._tcp        30 IN SRV 10 30  389 vm1234 ; current node for openldap
+```
+
+And we will curse ourselves for not updating comments down the years.
