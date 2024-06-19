@@ -1,0 +1,7 @@
+listen_port = 4321
+directory = "./srv-vs-cname/"
+
+[[zones]]
+  zone = "example"
+  zone_type = "Primary"
+  file = "example.zone"
