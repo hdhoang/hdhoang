@@ -8,10 +8,7 @@ ejabberd24.example. 30 IN CNAME vm1234
 vm1234 30 IN A 10.00.12.34
 ```
 
-You can connect to its xmpp port as `ejabberd24.example:5222` as
-usual. Then you learned about SRV-based discovery, and set this so
-that your users have nice handles instead of showing `ejabberd24`
-anywhere:
+You can connect to its xmpp port as `ejabberd24.example:5222` as usual. Then you learned about SRV-based discovery, and set this so that your users have nice handles instead of showing `ejabberd24` anywhere:
 
 ```zone
 _xmpp-client._tcp.example 30 IN SRV 0 1 5222 ejabberd24.example.
@@ -23,16 +20,10 @@ It works for [profanity](https://xmpp.org/software/profanity/):
 profanity --account user@example
 ```
 
-Time changes, and the node grows more roles:
-[LDAP/kerberos](https://ldap.com/dns-srv-records-for-ldap/), and a
-[Ceph
-monitor](https://docs.ceph.com/en/reef/rados/configuration/mon-lookup-dns/).
-Now your machines are port-knocking [US DoD graveyard
-netspace](https://bgp.he.net/ip/6.118.109.49#_whois) when they want to
-talk with ceph:
+Time changes, and the node grows more roles: [LDAP/kerberos](https://ldap.com/dns-srv-records-for-ldap/), and a [Ceph monitor](https://docs.ceph.com/en/reef/rados/configuration/mon-lookup-dns/). Now your machines are port-knocking [US DoD graveyard netspace](https://bgp.he.net/ip/6.118.109.49#_whois) when they want to talk with ceph:
 
 ```tcpdump
-10.0.1.93	6.118.109.49	TCP	76	54342 → 3300 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM
+11.0.1.93	6.118.109.49	TCP	76	54342 → 3300 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM
 ```
 
 What gives?
@@ -89,8 +80,7 @@ vm1234.example.         30      IN      A       1.2.3.4
 ;; SERVER: 127.0.0.1#4321(127.0.0.1) (UDP)
 ```
 
-Insert our temporary server & domain into default interface, you can
-do it however your environment fits together:
+Insert our temporary server & domain into default interface, you can do it however your environment fits together:
 
 ```bash
 sudo-rs resolvectl dns wlp3s0 127.0.0.1:4321
@@ -116,14 +106,14 @@ vm1234.example.         30      IN      A       1.2.3.4
 ;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
 ```
 
-LDAP connects to the right address
+LDAP connects to the right address:
 
 ```rust
 ❯ strace -yy ldapsearch -H 'ldap:///dc=example' &| rg connect.+389
 connect(3<TCP:[1789186]>, {sa_family=AF_INET, sin_port=htons(389), sin_addr=inet_addr("1.2.3.4")}, 16)
 ```
 
-Now on to ceph:
+Now on to ceph-fuse:
 
 ```rust
 ❯ timeout 2s strace -fyy -e connect ceph-fuse -c /dev/null /none &| rg -v 'etc/ceph|attached'
@@ -139,9 +129,7 @@ How does `6.118.109.49` appear in here?
 On the wire
 ---
 
-Let's capture some packets with tcpdump/wireshark for
-`dns.srv.port==3300 or tcp.port==3300`. Here is the DNS answer's
-additional records section
+Let's capture some packets with tcpdump/wireshark for `dns.srv.port==3300 or tcp.port==3300`. Here is the DNS answer's additional records section:
 
 ```hexdump
 0000   0a 65 6a 61 62 62 65 72 64 32 34 c0 1b 00 05 00   .ejabberd24.....
@@ -150,29 +138,15 @@ additional records section
 0030   00 00 29 ff d6 00 00 00 00 00 00                  ..)........
 ```
 
-With
-[name-compression](https://dotat.at/@/2022-07-01-dns-compress.html),
-`.example.` was back-referenced to earlier data, hence we see only the
-`ejabberd24` and `vm1234` as text, preceeded by the own lengths (0x0a
-= 10, 0x06 = 6). `ceph-fuse` looked for 32 bits of ipv4 address in
-there, interpreted `06 76 6d 31` in [decimal
-format](https://manned.org/ascii.7) as `06.118.109.49`, and
-[mis-dialed
-DOD](https://scribe.rip/have-you-seen-dns-type0-class256-896b10af92fc).
+With [name-compression](https://dotat.at/@/2022-07-01-dns-compress.html), `.example.` was back-referenced to earlier data, hence we see only the `ejabberd24` and `vm1234` as text, preceeded by the own lengths (0x0a = 10, 0x06 = 6). `ceph-fuse` looked for 32 bits of ipv4 address in there, interpreted `06 76 6d 31` in [decimal format](https://manned.org/ascii.7) as `06.118.109.49`, and [mis-dialed DOD](https://scribe.rip/have-you-seen-dns-type0-class256-896b10af92fc).
 
-Why would it do that when the rrtype is `CNAME` (`0005`)? Why doesn't
-it assume ipv6 and scraped out 16 bytes as
-`[0676:6d31:3233:34c0:1bc0:6500:0100:0100]`? I have no desire to look
-into current implementation.
+Why would it do that when the rrtype is `CNAME` (`0005`)? Why doesn't it assume ipv6 and scraped out 16 bytes as `[0676:6d31:3233:34c0:1bc0:6500:0100:0100]`? I have no desire to look into current implementation.
 
-Yet, is it in the right? Yes, [RFC
-7287](https://datatracker.ietf.org/doc/html/rfc2782) page 4 requires
-that
+Yet, is it in the right? Yes, [RFC 7287](https://datatracker.ietf.org/doc/html/rfc2782) page 4 requires that
 
 > the name MUST NOT be an alias
 
-Or as [cloudflare
-illustrates](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/):
+Or as [cloudflare illustrates](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/):
 
 > SRV records must point to an A record (in IPv4) or an AAAA record
 > (in IPv6). The server name they list cannot be a CNAME. So
