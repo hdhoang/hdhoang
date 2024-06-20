@@ -20,7 +20,7 @@ It works for [profanity](https://xmpp.org/software/profanity/):
 profanity --account user@example
 ```
 
-Time changes, and the node grows more roles: [LDAP/kerberos](https://ldap.com/dns-srv-records-for-ldap/), and a [Ceph monitor](https://docs.ceph.com/en/reef/rados/configuration/mon-lookup-dns/). Now your machines are port-knocking [US DoD graveyard netspace](https://bgp.he.net/ip/6.118.109.49#_whois) when they want to talk with ceph:
+Time changes, and the node grows more roles: [LDAP/kerberos](https://ldap.com/dns-srv-records-for-ldap/), and a [Ceph monitor](https://docs.ceph.com/en/reef/rados/configuration/mon-lookup-dns/). Now your machines are port-knocking [US DoD graveyard netspace](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks#List_of_assigned_/8_blocks_to_the_United_States_Department_of_Defense) when they want to talk with ceph:
 
 ```tcpdump
 11.0.1.93	6.118.109.49	TCP	76	54342 → 3300 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM
@@ -28,13 +28,13 @@ Time changes, and the node grows more roles: [LDAP/kerberos](https://ldap.com/dn
 
 What gives?
 
-Hickory-DNS server reproduction
+[Hickory-DNS server](https://github.com/hickory-dns/hickory-dns#running) reproduction
 ---
 
-Here are some files to get a repro going:
+Here are some files to get a repro going with [hickory-dns](https://github.com/hickory-dns/hickory-dns#running):
 
 ```toml
-# named.toml for hickory-dns 0.24 https://lib.rs/crates/hickory-dns/versions
+# named.toml for hickory-dns 0.24
 listen_port = 4321
 directory = "./"
 
@@ -62,7 +62,7 @@ ejabberd24 30 IN CNAME vm1234
 vm1234     30 IN A    1.2.3.4
 ```
 
-Response looks good:
+You can configure some other authoritative software (bind/coredns/nsd) similarly. Response looks good:
 
 ```zone
 ❯ dig @127.0.0.1 -p 4321 -t srv _xmpp-client._tcp.example
@@ -138,11 +138,13 @@ Let's capture some packets with tcpdump/wireshark for `dns.srv.port==3300 or tcp
 0030   00 00 29 ff d6 00 00 00 00 00 00                  ..)........
 ```
 
-With [name-compression](https://dotat.at/@/2022-07-01-dns-compress.html), `.example.` was back-referenced to earlier data, hence we see only the `ejabberd24` and `vm1234` as text, preceeded by the own lengths (0x0a = 10, 0x06 = 6). `ceph-fuse` looked for 32 bits of ipv4 address in there, interpreted `06 76 6d 31` in [decimal format](https://manned.org/ascii.7) as `06.118.109.49`, and [mis-dialed DOD](https://scribe.rip/have-you-seen-dns-type0-class256-896b10af92fc).
+With [name-compression](https://dotat.at/@/2022-07-01-dns-compress.html), `.example.` was back-referenced to earlier data.
+
+Hence we see only the `ejabberd24` and `vm1234` as text, preceeded by the own lengths (0x0a = 10, 0x06 = 6). `ceph-fuse` looked for 32 bits of ipv4 address in there, interpreted `06 76 6d 31` in [decimal format](https://manned.org/ascii.7) as `06.118.109.49`, and [mis-dialed DOD](https://scribe.rip/have-you-seen-dns-type0-class256-896b10af92fc).
 
 Why would it do that when the rrtype is `CNAME` (`0005`)? Why doesn't it assume ipv6 and scraped out 16 bytes as `[0676:6d31:3233:34c0:1bc0:6500:0100:0100]`? I have no desire to look into current implementation.
 
-Yet, is it in the right? Yes, [RFC 7287](https://datatracker.ietf.org/doc/html/rfc2782) page 4 requires that
+Yet, is it in the right? Yes, [RFC 2782 Service Location](https://datatracker.ietf.org/doc/html/rfc2782) page 4 requires that
 
 > the name MUST NOT be an alias
 
@@ -162,3 +164,17 @@ _ldap._tcp        30 IN SRV 10 30  389 vm1234 ; current node for openldap
 ```
 
 And we will curse ourselves for not updating comments down the years.
+
+Colophon
+---
+
+Besides hickory-dns@0.24 already mentioned, the other software I used were:
+
+- openldap-clients 2.6.7
+- ceph-fuse Reef (18)
+- GNU coreutils `timeout`
+- `❯` is [//starship.rs]
+- GNU emacs 29.3
+- profanity 0.14
+- [//strace.io] 6.9
+- `&|` is [potable fish](https://github.com/fish-shell/fish-shell/pull/10367)
