@@ -76,7 +76,6 @@ _xmpp-client._tcp.example. 30   IN      SRV     10 10 5222 ejabberd24.example.
 ejabberd24.example.     30      IN      CNAME   vm1234.example.
 vm1234.example.         30      IN      A       1.2.3.4
 
-;; Query time: 0 msec
 ;; SERVER: 127.0.0.1#4321(127.0.0.1) (UDP)
 ```
 
@@ -102,7 +101,6 @@ _ceph-mon._tcp.example. 30      IN      SRV     10 20 3300 ejabberd24.example.
 ejabberd24.example.     30      IN      CNAME   vm1234.example.
 vm1234.example.         30      IN      A       1.2.3.4
 
-;; Query time: 4 msec
 ;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
 ```
 
@@ -173,9 +171,10 @@ Besides hickory-dns@0.24 already mentioned, the other software I used were:
 - openldap-clients 2.6.7
 - ceph-fuse Reef (18)
 - GNU coreutils `timeout`
-- `❯` is [//starship.rs]
+- `❯` is [https://starship.rs/]
+- [sudo-rs](https://github.com/memorysafety/sudo-rs) 0.2.2
 - GNU emacs 29.3
 - ripgrep 14.1
 - profanity 0.14
-- [//strace.io] 6.9
+- [https://strace.io/] 6.9
 - `&|` is [potable fish](https://github.com/fish-shell/fish-shell/pull/10367)

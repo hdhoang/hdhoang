@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM ghcr.io/huginn/huginn-single-process:ac59e7ad8135cdfc962a8a5ec7cef137469a31ed
+FROM ghcr.io/huginn/huginn-single-process:5a1509b51188e0d16868be893c983d6fcfd232a5
 
 USER 0
 RUN apt update -qq && \
