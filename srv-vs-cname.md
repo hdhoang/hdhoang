@@ -175,6 +175,7 @@ Besides hickory-dns@0.24 already mentioned, the other software I used were:
 - GNU coreutils `timeout`
 - `❯` is [//starship.rs]
 - GNU emacs 29.3
+- ripgrep 14.1
 - profanity 0.14
 - [//strace.io] 6.9
 - `&|` is [potable fish](https://github.com/fish-shell/fish-shell/pull/10367)
