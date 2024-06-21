@@ -129,7 +129,7 @@ On the wire
 
 Let's capture some packets with tcpdump/wireshark for `dns.srv.port==3300 or tcp.port==3300`. Here is the DNS answer's additional records section:
 
-```hexdump
+```C#
 0000   0a 65 6a 61 62 62 65 72 64 32 34 c0 1b 00 05 00   .ejabberd24.....
 0010   01 00 00 00 1e 00 09 06 76 6d 31 32 33 34 c0 1b   ........vm1234..
 0020   c0 65 00 01 00 01 00 00 00 1e 00 04 01 02 03 04   .e..............
