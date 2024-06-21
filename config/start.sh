@@ -23,7 +23,7 @@ ln -rsvf $PWD/config.fish ~/.config/fish/
 ln -rsvf $PWD/config.nu ~/.config/nushell/
 ln -rsvf $PWD/env.nu ~/.config/nushell/
 
-ln -rsvf $PWD/unikey.bash ~/run/
+ln -rsvf $PWD/,unikey ~/run/
 ln -rsvf $PWD/sway.conf ~/.config/sway/config.d/i3.conf
 ln -rsvf $PWD/waybar.config ~/.config/waybar/config
 
