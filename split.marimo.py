@@ -6,26 +6,26 @@ app = marimo.App()
 
 @app.cell
 def __():
-    prev_water_photo = 811.0
+    prev_water_photo = 824.0
     return prev_water_photo,
 
 
 @app.cell
 def __():
-    this_water_photo = 824.0
+    this_water_photo = 0.0
     return this_water_photo,
 
 
 @app.cell
 def __():
-    hawater_consumed = 39.0
-    paid = 675050
+    hawater_consumed = 0.0
+    paid = 0
     return hawater_consumed, paid
 
 
 @app.cell
 def __(back_water):
-    back_elec_sha30461 = 1577127
+    back_elec_sha30461 = 1_777_909
 
     back_total = back_water + back_elec_sha30461
     return back_elec_sha30461, back_total
@@ -33,13 +33,13 @@ def __(back_water):
 
 @app.cell
 def __(back_total):
-    print(back_total)
+    print(back_total - 128_000)
     return
 
 
 @app.cell
 def __(left_water):
-    left_elec_sha30462 = 1641786
+    left_elec_sha30462 = 1_931_048
 
     left_total = left_water + left_elec_sha30462
     return left_elec_sha30462, left_total
