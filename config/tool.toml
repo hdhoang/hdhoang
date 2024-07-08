@@ -26,6 +26,11 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
+[uutils]
+owner = "uutils"
+repo = "coreutils"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "_64-pc-windows-gnu.zip"
 [nu]
 owner = "nushell"
 repo = "nushell"
@@ -49,6 +54,10 @@ asset_name.windows = "_64.exe"
 
 # dashboards
 [procs]
+[btdu]
+owner = "CyberShadow"
+repo = "btdu"
+asset_name.linux = "_64"
 [dua]
 owner = "Byron"
 repo = "dua-cli"
@@ -93,6 +102,15 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+# [helm]
+# has checksums only
+# owner = "helm"
+# repo = "helm"
+# asset_name.linux = "linux-amd64.tar"
+[pwru]
+owner = "cilium"
+repo = "pwru"
+asset_name.linux = "d64"
 
 # search & destroy
 [fd]
@@ -113,9 +131,9 @@ owner = "01mf02"
 repo = "jaq"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "windows-gnu"
-[drivel]
-owner = "hgrsd"
-repo = "drivel"
+# [drivel]
+# owner = "hgrsd"
+# repo = "drivel"
 # xz asset_name.linux = "_64-unknown-linux-gnu"
 
 # formatters
@@ -145,8 +163,8 @@ asset_name.linux = "_64-unknown-linux-gnu"
 owner = "rui314"
 repo = "mold"
 asset_name.linux = "_64-linux"
-# no xz support
 # [probe-rs]
+# no xz support
 # owner = "probe-rs"
 # repo = "probe-rs"
 # asset_name.linux = "probe-rs-_64-unknown"
