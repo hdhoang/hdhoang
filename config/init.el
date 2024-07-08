@@ -53,7 +53,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(terraform-doc treesit-ispell kdl-ts-mode terraform-mode hcl-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode jinja2-mode magit-delta markdown-mode rainbow-delimiters use-package))
+   '(terraform-doc terraform-mode hcl-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(repeat-mode t)
  '(require-final-newline 't)
@@ -163,10 +163,6 @@
 (add-hook 'occur-mode-hook #'next-error-follow-minor-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
 
-(use-package markdown-mode
-  :ensure
-  :hook ((markdown-mode . visual-line-mode)))
-
 (use-package treesit-ispell
   :ensure
   :bind ("C-x s" . #'treesit-ispell-run-at-point))
@@ -191,19 +187,74 @@
   (add-to-list 'apheleia-mode-alist '(python-mode . ruff))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . ruff)))
 
+(use-package terraform-mode
+  :ensure
+  :config
+  (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform)))
+(use-package terraform-doc
+  :ensure)
+(use-package hcl-mode
+  :ensure)
+
+(use-package polymode
+  :ensure
+  :config
+  ;; (defun poly-apheleia-format-chunk (beg end msg)
+  ;;   (apheleia-format
+
+  (define-hostmode poly-terraform-hostmode :mode #'terraform-mode)
+  (define-innermode poly-yaml-terraform-innermode :mode #'yaml-mode
+    :head-matcher "<<EO\\(YAML\\|T\\)\n"
+    :tail-matcher " +EO\\(YAML\\|T\\)"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-polymode poly-terraform-yaml-mode
+    :hostmode #'poly-terraform-hostmode
+    :innermodes '(poly-yaml-terraform-innermode))
+  (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
+
+  (define-hostmode poly-yaml-hostmode :mode 'yaml-mode)
+  (define-innermode poly-yaml-sh-innermode :mode #'bash-mode
+    :head-matcher (rx "- [|>][+-]?")
+    :tail-matcher (rx "\n\n")
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-jinja2-innermode :mode #'jinja2-mode
+    :head-matcher (rx ".+[.]templates: [|>][+-]?\n")
+    :tail-matcher (rx "\n\n")
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-mode
+    :head-matcher (rx ".+[.]ya?ml: [|>][+-]?\n")
+    :tail-matcher (rx "\n\n")
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-polymode poly-yaml-mode
+    :hostmode #'poly-yaml-hostmode
+    :innermodes '(poly-yaml-yaml-innermode poly-yaml-jinja2-innermode poly-yaml-sh-innermode))
+
+  :mode
+  ("/k8s-manifest/.*\\.ya?ml\\'" . poly-yaml-mode)
+  ("\\.tf\\'" . poly-terraform-yaml-mode)
+)
+(use-package poly-org
+  :ensure)
+(use-package poly-markdown
+  :ensure
+  :hook ((poly-markdown-mode . visual-line-mode)))
+
 (use-package groovy-mode
   :ensure)
 
 (use-package pcre2el
   :ensure)
-(use-package jinja2-mode
-  :ensure)
-(use-package terraform-mode
-  :ensure)
-(use-package terraform-doc
-  :ensure)
-(use-package hcl-mode
-  :ensure)
+(use-package poly-ansible
+  :ensure
+  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
 ;; (use-package ansible-doc)
 ;; (use-package company-ansible)
 
