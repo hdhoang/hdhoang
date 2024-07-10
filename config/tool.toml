@@ -58,12 +58,23 @@ asset_name.windows = "_64.exe"
 owner = "CyberShadow"
 repo = "btdu"
 asset_name.linux = "_64"
+[broot]
+owner = "Canop"
+repo = "broot"
+# asset_name.linux = "zip" # x86_64-linux/broot
+asset_name.windows = "zip" # x86_64-pc-windows-gnu/broot.exe
 [dua]
 owner = "Byron"
 repo = "dua-cli"
 exe_name = "dua"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
+[rustscan]
+owner = "RustScan"
+repo = "RustScan"
+exe_name = "rustscan"
+asset_name.linux = "_64-linux.zip"
+asset_name.windows = "exe"
 [netscanner]
 owner = "Chleba"
 repo = "netscanner"
