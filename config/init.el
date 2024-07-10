@@ -199,11 +199,12 @@
 (use-package polymode
   :ensure
   :config
+  (pm-around-advice '(apheleia-format-buffer) #'polymode-with-current-base-buffer)
   ;; (defun poly-apheleia-format-chunk (beg end msg)
   ;;   (apheleia-format
 
   (define-hostmode poly-terraform-hostmode :mode #'terraform-mode)
-  (define-innermode poly-yaml-terraform-innermode :mode #'yaml-mode
+  (define-innermode poly-yaml-terraform-innermode :mode #'yaml-ts-mode
     :head-matcher "<<EO\\(YAML\\|T\\)\n"
     :tail-matcher " +EO\\(YAML\\|T\\)"
     :head-mode 'host
@@ -214,9 +215,9 @@
     :innermodes '(poly-yaml-terraform-innermode))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
 
-  (define-hostmode poly-yaml-hostmode :mode 'yaml-mode)
+  (define-hostmode poly-yaml-hostmode :mode 'yaml-ts-mode)
   (define-innermode poly-yaml-sh-innermode :mode #'bash-mode
-    :head-matcher (rx "- [|>][+-]?")
+    :head-matcher (rx "- [|>][+-]?\n")
     :tail-matcher (rx "\n\n")
     :head-mode 'host
     :tail-mode 'host
@@ -227,20 +228,36 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-mode
-    :head-matcher (rx ".+[.]ya?ml: [|>][+-]?\n")
-    :tail-matcher (rx "\n\n")
+  (define-innermode poly-yaml-conf-innermode :mode #'conf-space-mode
+    :head-matcher "^    nginx[.]ingress[.]kubernetes[.]io/\\(server\\|configuration\\)-snippet: |\n"
+    :tail-matcher "^ \\{0,4\\}[a-z#]"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-http-snippet-innermode :mode #'conf-space-mode
+    :head-matcher "^  http-snippet: |\n"
+    :tail-matcher "^ \\{0,2\\}[a-z#]"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
+    :head-matcher ".+[.]ya?ml: [|>][+-]?\n"
+    :tail-matcher "\n\n"
     :head-mode 'host
     :tail-mode 'host
     )
   (define-polymode poly-yaml-mode
     :hostmode #'poly-yaml-hostmode
-    :innermodes '(poly-yaml-yaml-innermode poly-yaml-jinja2-innermode poly-yaml-sh-innermode))
+    :innermodes '(poly-yaml-yaml-innermode
+                  poly-yaml-conf-innermode
+                  poly-yaml-http-snippet-innermode
+                  poly-yaml-jinja2-innermode
+                  poly-yaml-sh-innermode))
 
   :mode
   ("/k8s-manifest/.*\\.ya?ml\\'" . poly-yaml-mode)
   ("\\.tf\\'" . poly-terraform-yaml-mode)
-)
+  )
 (use-package poly-org
   :ensure)
 (use-package poly-markdown
