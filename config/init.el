@@ -257,6 +257,9 @@
   :mode
   ("/k8s-manifest/.*\\.ya?ml\\'" . poly-yaml-mode)
   ("\\.tf\\'" . poly-terraform-yaml-mode)
+                                        ; colon-y files
+  ("\\.list\\'" . yaml-ts-mode)
+  ("control\\'" . yaml-ts-mode)
   )
 (use-package poly-org
   :ensure)
