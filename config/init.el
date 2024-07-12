@@ -1,4 +1,4 @@
-                                        ; bedrock early-init.el
+;; bedrock early-init.el
 ;; Startup speed, annoyance suppression
 (setq gc-cons-threshold 10000000)
 (setq byte-compile-warnings '(not obsolete))
@@ -84,6 +84,7 @@
    '(face trailing tabs missing-newline-at-eof indentation::space))
  '(x-underline-at-descent-line nil))
 
+(global-unset-key (kbd "C-x m"))
 (global-auto-revert-mode)
 
 (require 'package)
@@ -91,7 +92,7 @@
 
 (use-package fira-code-mode
   :ensure
-  :hook fundamental-mode)
+  :hook ((fundamental-mode . fira-code-mode)))
 (set-face-attribute 'default nil :height 100)
 
 (use-package which-key
@@ -118,8 +119,8 @@
          (css-ts-mode . combobulate-mode)
          (yaml-ts-mode . combobulate-mode)
          (json-ts-mode . combobulate-mode)))
-                                        ; refresh grammars
-                                        ; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
+;; refresh grammars
+;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
 
 (defun my-increment-number-decimal-at-point (&optional arg)
   "Increment the number forward from point by 'arg'."
@@ -174,7 +175,7 @@
   (apheleia-mode-lighter nil)
   :hook
   ((rust-ts-mode . apheleia-mode)
-                                        ; (yaml-ts-mode . apheleia-mode) ; it's rude to trample manifests
+   ;; (yaml-ts-mode . apheleia-mode) ; it's rude to trample manifests
    (elisp-mode . apheleia-mode)
    (python-ts-mode . apheleia-mode))
   :config
@@ -183,6 +184,7 @@
   (add-to-list 'apheleia-mode-alist '(dockerfile-ts-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . prettier-yaml))
+  (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
 
   (add-to-list 'apheleia-mode-alist '(python-mode . ruff))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . ruff)))
@@ -213,12 +215,11 @@
   (define-polymode poly-terraform-yaml-mode
     :hostmode #'poly-terraform-hostmode
     :innermodes '(poly-yaml-terraform-innermode))
-  (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
 
   (define-hostmode poly-yaml-hostmode :mode 'yaml-ts-mode)
-  (define-innermode poly-yaml-sh-innermode :mode #'bash-mode
-    :head-matcher (rx "- [|>][+-]?\n")
-    :tail-matcher (rx "\n\n")
+  (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
+    :head-matcher "- |\n"
+    :tail-matcher "\n\n"
     :head-mode 'host
     :tail-mode 'host
     )
@@ -240,7 +241,8 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
+  (define-innermode poly-yaml-yaml-innermode :mode 'host
+    :can-nest t
     :head-matcher ".+[.]ya?ml: [|>][+-]?\n"
     :tail-matcher "\n\n"
     :head-mode 'host
@@ -255,10 +257,10 @@
                   poly-yaml-sh-innermode))
 
   :mode
-  ("/k8s-manifest/.*\\.ya?ml\\'" . poly-yaml-mode)
-  ("\\.tf\\'" . poly-terraform-yaml-mode)
-                                        ; colon-y files
-  ("\\.list\\'" . yaml-ts-mode)
+  ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
+  ("[.]tf\\'" . poly-terraform-yaml-mode)
+  ;; colon-y files
+  ("[.]list\\'" . yaml-ts-mode)
   ("control\\'" . yaml-ts-mode)
   )
 (use-package poly-org
@@ -274,6 +276,8 @@
   :ensure)
 (use-package poly-ansible
   :ensure
+  :mode
+  ("[.]ya?ml[.]j2\\'" . poly-ansible-mode)
   :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
 ;; (use-package ansible-doc)
 ;; (use-package company-ansible)
