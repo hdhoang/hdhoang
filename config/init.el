@@ -140,6 +140,7 @@
 (global-set-key (kbd "C-x C-a") #'my-increment-number-decimal-at-point)
 (global-set-key (kbd "C-x C-d") #'duplicate-dwim)
 (global-set-key (kbd "C-x C-l") #'copy-from-above-command)
+(global-set-key (kbd "C-x C-z") #'bury-buffer)
 
 (if (string-equal (getenv "USER") "hdhoang")
     (load-theme 'tango-dark t)
@@ -182,6 +183,7 @@
   (add-to-list 'apheleia-mode-alist '(toml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(rust-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(dockerfile-ts-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(markdown-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . prettier-yaml))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
@@ -218,7 +220,7 @@
 
   (define-hostmode poly-yaml-hostmode :mode 'yaml-ts-mode)
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
-    :head-matcher "- |\n"
+    :head-matcher "- |[+-]?\n"
     :tail-matcher "\n\n"
     :head-mode 'host
     :tail-mode 'host
@@ -254,14 +256,12 @@
                   poly-yaml-conf-innermode
                   poly-yaml-http-snippet-innermode
                   poly-yaml-jinja2-innermode
-                  poly-yaml-sh-innermode))
+                  poly-yaml-sh-innermode)
+    )
 
   :mode
   ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-yaml-mode)
-  ;; colon-y files
-  ("[.]list\\'" . yaml-ts-mode)
-  ("control\\'" . yaml-ts-mode)
   )
 (use-package poly-org
   :ensure)
@@ -276,11 +276,27 @@
   :ensure)
 (use-package poly-ansible
   :ensure
+  :config
+  ;; there's no #'define-auto-hostmode for this pattern
+  (define-hostmode poly-json-hostmode :mode 'json-ts-mode)
+  (define-polymode poly-json-j2-mode :hostmode #'poly-json-hostmode :innermodes '(pm-inner/jinja2))
+  (define-hostmode poly-conf-hostmode :mode 'conf-mode)
+  (define-polymode poly-conf-j2-mode :hostmode #'poly-conf-hostmode :innermodes '(pm-inner/jinja2))
+  (define-hostmode poly-xml-hostmode :mode 'nxml-mode)
+  (define-polymode poly-xml-j2-mode :hostmode #'poly-xml-hostmode :innermodes '(pm-inner/jinja2))
+
   :mode
+  ("[.]\\(env\\|service\\|conf\\|properties\\)[.]j2\\'" . poly-conf-j2-mode)
+  ("[.]json[.]j2\\'" . poly-json-j2-mode)
+  ("[.]xml[.]j2\\'" . poly-xml-j2-mode)
+
   ("[.]ya?ml[.]j2\\'" . poly-ansible-mode)
+  ;; colon-y files
+  ("[.]list\\'" . yaml-ts-mode)
+  ("control\\'" . yaml-ts-mode)
+  ("info\\'" . yaml-ts-mode)
   :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
-;; (use-package ansible-doc)
-;; (use-package company-ansible)
+(use-package company-ansible)
 
 (use-package orderless
   :ensure

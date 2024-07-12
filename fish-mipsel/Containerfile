@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.4
+# syntax=docker/dockerfile:1.8
 FROM ghcr.io/rust-lang/rust@sha256:29060f616f46fcc718a967dfd56cfdbdf24dfddc242fc9160729cd3dac4ae8fa
 # rust of the eclipse
 RUN rustup component add rust-src
