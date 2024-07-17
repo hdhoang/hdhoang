@@ -53,7 +53,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(terraform-doc terraform-mode hcl-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(company-ansible terraform-doc terraform-mode hcl-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(repeat-mode t)
  '(require-final-newline 't)
@@ -71,18 +71,22 @@
      (cpp "https://github.com/tree-sitter/tree-sitter-cpp")
      (dockerfile "https://github.com/camdencheek/tree-sitter-dockerfile")
      (go "https://github.com/tree-sitter/tree-sitter-go")
+     (gosum "https://github.com/tree-sitter-grammars/tree-sitter-go-sum")
+     (hcl "https://github.com/tree-sitter-grammars/tree-sitter-hcl")
      (html "https://github.com/tree-sitter/tree-sitter-html")
      (javascript "https://github.com/tree-sitter/tree-sitter-javascript" "master" "src")
      (json "https://github.com/tree-sitter/tree-sitter-json")
-     (kdl "https://github.com/amaanq/tree-sitter-kdl")
+     (kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")
      (python "https://github.com/tree-sitter/tree-sitter-python")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
-     (yaml "https://github.com/ikatyang/tree-sitter-yaml")) t)
+     (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
  '(warning-suppress-types '((use-package)))
  '(whitespace-style
    '(face trailing tabs missing-newline-at-eof indentation::space))
  '(x-underline-at-descent-line nil))
+;; refresh grammars
+;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
 
 (global-unset-key (kbd "C-x m"))
 (global-auto-revert-mode)
@@ -105,11 +109,10 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
-(add-to-list 'load-path (expand-file-name "~/gh/combobulate/"))
 (add-to-list 'load-path (expand-file-name "~/gh/kdl-ts-mode/")) ; https://github.com/dataphract/kdl-ts-mode
-
 (use-package kdl-ts-mode)
 
+(add-to-list 'load-path (expand-file-name "~/gh/combobulate/"))
 ;; `M-x combobulate' (default: `C-c o o') to start using Combobulate
 (use-package combobulate
   :preface (setq combobulate-key-prefix "C-c o")
@@ -119,8 +122,6 @@
          (css-ts-mode . combobulate-mode)
          (yaml-ts-mode . combobulate-mode)
          (json-ts-mode . combobulate-mode)))
-;; refresh grammars
-;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
 
 (defun my-increment-number-decimal-at-point (&optional arg)
   "Increment the number forward from point by 'arg'."
@@ -200,6 +201,8 @@
 (use-package hcl-mode
   :ensure)
 
+(use-package yaml-ts-mode
+  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
 (use-package polymode
   :ensure
   :config
@@ -209,16 +212,15 @@
 
   (define-hostmode poly-terraform-hostmode :mode #'terraform-mode)
   (define-innermode poly-yaml-terraform-innermode :mode #'yaml-ts-mode
+    :adjust-face 5
     :head-matcher "<<EO\\(YAML\\|T\\)\n"
     :tail-matcher " +EO\\(YAML\\|T\\)"
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-polymode poly-terraform-yaml-mode
-    :hostmode #'poly-terraform-hostmode
+  (define-polymode poly-terraform-yaml-mode :hostmode #'poly-terraform-hostmode
     :innermodes '(poly-yaml-terraform-innermode))
 
-  (define-hostmode poly-yaml-hostmode :mode 'yaml-ts-mode)
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :head-matcher "- |[+-]?\n"
     :tail-matcher "\n\n"
@@ -243,15 +245,17 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-yaml-yaml-innermode :mode 'host
+  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
+    ;; TBD: the whole chunk is still string-ly face
+    :adjust-face 5
+    :keep-in-mode 'yaml-ts-mode
     :can-nest t
-    :head-matcher ".+[.]ya?ml: [|>][+-]?\n"
-    :tail-matcher "\n\n"
-    :head-mode 'host
+    :head-matcher "^  .+[.]yaml: |\n"
+    :tail-matcher "^ \\{0,2\\}[a-z#]"
+    :head-mode 'body
     :tail-mode 'host
     )
-  (define-polymode poly-yaml-mode
-    :hostmode #'poly-yaml-hostmode
+  (define-polymode poly-yaml-mode :hostmode #'poly-yaml-hostmode
     :innermodes '(poly-yaml-yaml-innermode
                   poly-yaml-conf-innermode
                   poly-yaml-http-snippet-innermode
@@ -278,11 +282,11 @@
   :ensure
   :config
   ;; there's no #'define-auto-hostmode for this pattern
-  (define-hostmode poly-json-hostmode :mode 'json-ts-mode)
+  (define-hostmode poly-json-hostmode :mode #'json-ts-mode)
   (define-polymode poly-json-j2-mode :hostmode #'poly-json-hostmode :innermodes '(pm-inner/jinja2))
-  (define-hostmode poly-conf-hostmode :mode 'conf-mode)
+  (define-hostmode poly-conf-hostmode :mode #'conf-mode)
   (define-polymode poly-conf-j2-mode :hostmode #'poly-conf-hostmode :innermodes '(pm-inner/jinja2))
-  (define-hostmode poly-xml-hostmode :mode 'nxml-mode)
+  (define-hostmode poly-xml-hostmode :mode #'nxml-mode)
   (define-polymode poly-xml-j2-mode :hostmode #'poly-xml-hostmode :innermodes '(pm-inner/jinja2))
 
   :mode
@@ -295,8 +299,9 @@
   ("[.]list\\'" . yaml-ts-mode)
   ("control\\'" . yaml-ts-mode)
   ("info\\'" . yaml-ts-mode)
-  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
-(use-package company-ansible)
+  )
+(use-package company-ansible
+  :ensure)
 
 (use-package orderless
   :ensure
