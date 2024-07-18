@@ -54,7 +54,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(repeat-mode t)
  '(require-final-newline 't)
@@ -110,12 +110,12 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
-;; https://github.com/dataphract/kdl-ts-mode
 (use-package kdl-ts-mode
-  :load-path ,(expand-file-name "~/gh/kdl-ts-mode/"))
+  ;; https://github.com/dataphract/kdl-ts-mode
+  :load-path "../../gh/kdl-ts-mode/")
 
 (use-package combobulate
-  :load-path ,(expand-file-name "~/gh/combobulate/")
+  :load-path "../../gh/combobulate/"
   :preface (setq combobulate-key-prefix "C-c o")
   :hook ((python-ts-mode . combobulate-mode)
          (js-ts-mode . combobulate-mode)
@@ -193,9 +193,8 @@
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . ruff)))
 
 (use-package hcl-ts-mode
-  :ensure
   ;; https://github.com/arkbriar/hcl-ts-mode
-  :load-path ,(expand-file-name "~/gh/hcl-ts-mode/")
+  :load-path "../../gh/hcl-ts-mode/"
   )
 (use-package terraform-mode
   :ensure
@@ -223,25 +222,22 @@
     :innermodes '(poly-yaml-terraform-innermode))
 
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
+    :adjust-face 5
     :head-matcher "- |[+-]?\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-jinja2-innermode :mode #'jinja2-mode
+    :adjust-face 5
     :head-matcher "^ .+[.]templates: [|>][1-9+-]*\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-conf-innermode :mode #'conf-space-mode
-    :head-matcher "^    nginx[.]ingress[.]kubernetes[.]io/\\(server\\|configuration\\)-snippet: |\n"
-    :tail-matcher #'pm-same-indent-tail-matcher
-    :head-mode 'host
-    :tail-mode 'host
-    )
-  (define-innermode poly-yaml-http-snippet-innermode :mode #'conf-space-mode
-    :head-matcher "^  http-snippet: |\n"
+    :adjust-face 5
+    :head-matcher "^ +\\(http\\|nginx[.]ingress[.]kubernetes[.]io/\\(server\\|configuration\\)\\)-snippet: |\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
@@ -250,17 +246,15 @@
   (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
-    :keep-in-mode 'yaml-ts-mode
-    :can-nest t
+    :can-nest nil
     :head-matcher "^  .+[.]yaml: |\n"
     :tail-matcher #'pm-same-indent-tail-matcher
-    :head-mode 'body
+    :head-mode 'host
     :tail-mode 'host
     )
   (define-polymode poly-yaml-mode :hostmode #'poly-yaml-hostmode
     :innermodes '(poly-yaml-yaml-innermode
                   poly-yaml-conf-innermode
-                  poly-yaml-http-snippet-innermode
                   poly-yaml-jinja2-innermode
                   poly-yaml-sh-innermode)
     )
@@ -273,8 +267,8 @@
   :mode
   ("[.]list\\'" . yaml-ts-mode)
   ("control\\'" . yaml-ts-mode)
-  ("info\\'" . yaml-ts-mode)
-  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
+  ("info\\'" . yaml-ts-mode))
+(delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist)
 (use-package poly-org
   :ensure)
 (use-package poly-markdown
