@@ -46,6 +46,7 @@
  '(major-mode-remap-alist
    '((conf-toml-mode . toml-ts-mode)
      (go-mode . go-ts-mode)
+     (hcl-mode . hcl-ts-mode)
      (js-json-mode . json-ts-mode)
      (python-mode . python-ts-mode)
      (rust-mode . rust-ts-mode)
@@ -53,7 +54,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(company-ansible terraform-doc terraform-mode hcl-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(repeat-mode t)
  '(require-final-newline 't)
@@ -109,14 +110,13 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
-(add-to-list 'load-path (expand-file-name "~/gh/kdl-ts-mode/")) ; https://github.com/dataphract/kdl-ts-mode
-(use-package kdl-ts-mode)
+;; https://github.com/dataphract/kdl-ts-mode
+(use-package kdl-ts-mode
+  :load-path ,(expand-file-name "~/gh/kdl-ts-mode/"))
 
-(add-to-list 'load-path (expand-file-name "~/gh/combobulate/"))
-;; `M-x combobulate' (default: `C-c o o') to start using Combobulate
 (use-package combobulate
+  :load-path ,(expand-file-name "~/gh/combobulate/")
   :preface (setq combobulate-key-prefix "C-c o")
-
   :hook ((python-ts-mode . combobulate-mode)
          (js-ts-mode . combobulate-mode)
          (css-ts-mode . combobulate-mode)
@@ -192,17 +192,18 @@
   (add-to-list 'apheleia-mode-alist '(python-mode . ruff))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . ruff)))
 
+(use-package hcl-ts-mode
+  :ensure
+  ;; https://github.com/arkbriar/hcl-ts-mode
+  :load-path ,(expand-file-name "~/gh/hcl-ts-mode/")
+  )
 (use-package terraform-mode
   :ensure
   :config
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform)))
 (use-package terraform-doc
   :ensure)
-(use-package hcl-mode
-  :ensure)
 
-(use-package yaml-ts-mode
-  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
 (use-package polymode
   :ensure
   :config
@@ -223,35 +224,36 @@
 
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :head-matcher "- |[+-]?\n"
-    :tail-matcher "\n\n"
+    :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-jinja2-innermode :mode #'jinja2-mode
-    :head-matcher (rx ".+[.]templates: [|>][+-]?\n")
-    :tail-matcher (rx "\n\n")
+    :head-matcher "^ .+[.]templates: [|>][1-9+-]*\n"
+    :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-conf-innermode :mode #'conf-space-mode
     :head-matcher "^    nginx[.]ingress[.]kubernetes[.]io/\\(server\\|configuration\\)-snippet: |\n"
-    :tail-matcher "^ \\{0,4\\}[a-z#]"
+    :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-http-snippet-innermode :mode #'conf-space-mode
     :head-matcher "^  http-snippet: |\n"
-    :tail-matcher "^ \\{0,2\\}[a-z#]"
+    :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
+  (define-hostmode poly-yaml-hostmode :mode #'yaml-ts-mode)
   (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
     :keep-in-mode 'yaml-ts-mode
     :can-nest t
     :head-matcher "^  .+[.]yaml: |\n"
-    :tail-matcher "^ \\{0,2\\}[a-z#]"
+    :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'body
     :tail-mode 'host
     )
@@ -267,6 +269,12 @@
   ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-yaml-mode)
   )
+(use-package yaml-ts-mode
+  :mode
+  ("[.]list\\'" . yaml-ts-mode)
+  ("control\\'" . yaml-ts-mode)
+  ("info\\'" . yaml-ts-mode)
+  :config (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist))
 (use-package poly-org
   :ensure)
 (use-package poly-markdown
@@ -294,12 +302,7 @@
   ("[.]json[.]j2\\'" . poly-json-j2-mode)
   ("[.]xml[.]j2\\'" . poly-xml-j2-mode)
 
-  ("[.]ya?ml[.]j2\\'" . poly-ansible-mode)
-  ;; colon-y files
-  ("[.]list\\'" . yaml-ts-mode)
-  ("control\\'" . yaml-ts-mode)
-  ("info\\'" . yaml-ts-mode)
-  )
+  ("[.]ya?ml[.]j2\\'" . poly-ansible-mode))
 (use-package company-ansible
   :ensure)
 

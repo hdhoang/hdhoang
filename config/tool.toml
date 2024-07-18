@@ -207,7 +207,7 @@ repo = "fend"
 asset_name.windows = "windows-x64-exe"
 asset_name.linux = "linux-x86_64"
 
-# recoders
+# recorders
 [micropad]
 owner = "micropad"
 repo = "MicroPad-Electron"
@@ -218,3 +218,8 @@ owner = "typst"
 repo = "typst"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc.zip"
+[yt-dlp]
+owner = "yt-dlp"
+repo = "yt-dlp"
+# asset_name.linux = "p$"
+asset_name.windows = "p.exe"

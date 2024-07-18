@@ -1289,6 +1289,7 @@ Karlo-Ferdon {
   aliases "Karlo Ferdon"
 }
 Bacchus {
+  styles "nws"
   pat vanity="ErosBlog"
   aliases "Bacchus"
 }
