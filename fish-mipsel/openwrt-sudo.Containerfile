@@ -11,20 +11,16 @@ RUN true && \
     make defconfig &&\
     true
 RUN true && \
-    ./scripts/feeds install bottom &&\
+    ./scripts/feeds install rust &&\
     true
 RUN true && \
-    make package/bottom/clean package/bottom/compile -j$(nproc) &&\
+    make package/rust/clean package/rust/compile -j$(nproc) &&\
     true
 
 RUN true &&\
-#    git clone --depth 1 https://github.com/fish-shell/fish-shell /var/cache/fish-shell &&\
-    cd /var/cache/fish-shell && cargo add portable-atomic@1.6.0 --no-default-features --features fallback &&\
+    git clone --depth 1 https://github.com/trifectatechfoundation/sudo-rs /var/cache/sudo-rs &&\
     true
-WORKDIR /var/cache/fish-shell
+WORKDIR /var/cache/sudo-rs
 
 RUN cargo fetch
 RUN cargo build --offline || true
-
-COPY gnu-mips.patch .
-RUN patch -p1 <gnu-mips.patch || true

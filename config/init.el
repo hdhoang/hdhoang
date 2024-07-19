@@ -187,6 +187,7 @@
   (add-to-list 'apheleia-mode-alist '(markdown-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . prettier-yaml))
+  (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
 
   (add-to-list 'apheleia-mode-alist '(python-mode . ruff))
@@ -197,9 +198,7 @@
   :load-path "../../gh/hcl-ts-mode/"
   )
 (use-package terraform-mode
-  :ensure
-  :config
-  (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform)))
+  :ensure)
 (use-package terraform-doc
   :ensure)
 
@@ -246,7 +245,7 @@
   (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
-    :can-nest nil
+    :can-nest t
     :head-matcher "^  .+[.]yaml: |\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
