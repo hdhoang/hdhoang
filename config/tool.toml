@@ -113,6 +113,11 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+[cilium-cli]
+owner = "cilium"
+repo = "cilium-cli"
+exe_name = "cilium"
+asset_name.linux = "linux-amd64"
 # [helm]
 # has checksums only
 # owner = "helm"
@@ -223,3 +228,9 @@ owner = "yt-dlp"
 repo = "yt-dlp"
 # asset_name.linux = "p$"
 asset_name.windows = "p.exe"
+
+[monolith]
+owner = "Y2Z"
+repo = "monolith"
+asset_name.linux = "_64"
+asset_name.windows = "exe"

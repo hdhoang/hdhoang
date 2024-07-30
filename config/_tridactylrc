@@ -20,7 +20,7 @@ unbind <C-e>
 bind <C-Space> scrollpage -0.5
 bind <Space> scrollpage 0.5
 
-bind ` tabsort --containers
+bind ` tabsort --url
 
 autocmd DocStart .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})
 autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})
