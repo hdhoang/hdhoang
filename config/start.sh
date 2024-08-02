@@ -17,7 +17,7 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'Fira Code'
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 
-mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,environment.d,sway/config.d,nushell,rclone,tridactyl,fontconfig,tmux}/ ~/run/
+mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,tridactyl,fontconfig,tmux}/ ~/run/
 
 ln -rsvf $PWD/config.fish ~/.config/fish/
 ln -rsvf $PWD/config.nu ~/.config/nushell/
@@ -43,6 +43,7 @@ ln -rsvf $PWD/_tridactylrc ~/.config/tridactyl/tridactylrc
 ln -rsvf $PWD/gitconfig ~/.gitconfig
 ln -rsvf $PWD/pijul_config.toml ~/.config/pijul/config.toml
 ln -rsvf $PWD/jj_config.toml ~/.config/jj/config.toml
+ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
 
 ln -rsvf $PWD/fonts.conf ~/.config/fontconfig/
 ln -rsvf $PWD/wezterm.lua ~/.config/wezterm/

@@ -103,9 +103,11 @@
 
 (use-package devil
   :custom
-  (devil-lighter ""))
-(global-devil-mode)
-(global-set-key (kbd "C-,") #'global-devil-mode)
+  (devil-lighter "")
+  :config
+  (global-devil-mode)
+  :bind
+  ("C-," . #'global-devil-mode))
 
 (use-package fira-code-mode
   :hook ((fundamental-mode . fira-code-mode)))
@@ -259,7 +261,7 @@
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
     :can-nest t
-    :head-matcher "^  .+[.]yaml: |\n"
+    :head-matcher "^  .+[.]ya?ml: |\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
@@ -286,7 +288,9 @@
 (use-package yaml-ts-mode
   :demand t
   :config
-  (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist)  
+  (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist)
+  (add-to-list 'auto-mode-alist '("\\.ya?ml\\'" . yaml-ts-mode) t)
+  (delete '("\\.\\(e?ya?\\|ra\\)ml\\'" . yaml-mode) auto-mode-alist)
   :mode
   ("[.]list\\'" . yaml-ts-mode)
   ("control\\'" . yaml-ts-mode)

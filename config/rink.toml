@@ -1,0 +1,6 @@
+# https://rinkcalc.app/configuration
+[rink]
+long_output = true
+
+[currency]
+cache_duration = "1week"

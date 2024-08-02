@@ -131,7 +131,7 @@ asset_name.linux = "d64"
 # search & destroy
 [fd]
 [ripgrep]
-[sg]
+[ast-grep]
 owner = "ast-grep"
 repo = "ast-grep"
 exe_name = "sg"
