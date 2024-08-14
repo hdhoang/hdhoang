@@ -1,12 +1,23 @@
 [alias]
 i = "auditable install --profile dist"
-iu = "auditable install-update -g -a -d -i"
+iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update"
 
 [build]
 # fedora: from cargo, to install do env RUSTC_WRAPPER= cargo...
 rustc-wrapper = "sccache"
-jobs = -1
+jobs = -2
 rustflags = ["-C", "target-cpu=native"]
+
+[target.x86_64-unknown-linux-musl]
+# cc = { "musl-clang"}
+linker = "musl-clang"
+rustflags = [
+  # verify with `readelf -p .comment`
+  "-C",
+  "link-arg=--ld-path=mold",
+  "-C",
+  "target-cpu=native",
+]
 
 [target.x86_64-unknown-linux-gnu]
 linker = "clang"

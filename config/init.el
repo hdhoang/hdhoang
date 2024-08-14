@@ -23,18 +23,26 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auth-source-save-behavior nil)
+
+ '(global-auto-revert-mode t)
  '(auto-revert-avoid-polling t)
  '(auto-revert-check-vc-info t)
  '(auto-revert-interval 5)
  '(auto-revert-mode-text "")
+
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(completion-detailed t)
  '(completion-group t)
  '(desktop-load-locked-desktop t)
  '(desktop-save-mode t)
+
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-vc-rename-file t)
+ '(dired-listing-switches "-alAFt")
+ '(insert-directory-program "fls")
+
+ '(display-battery-mode t)
  '(display-line-numbers-width 3)
  '(display-time-default-load-average nil)
  '(eldoc-minor-mode-string "")
@@ -55,9 +63,13 @@
      (rust-mode . rust-ts-mode)
      (sh-mode . bash-ts-mode)
      (yaml-mode . yaml-ts-mode)))
+
  '(menu-bar-mode t)
+ '(tool-bar-mode nil)
+ '(global-tab-line-mode t)
+
  '(package-selected-packages
-   '(diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -68,7 +80,6 @@
      (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
- '(tool-bar-mode nil)
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
    '((bash "https://github.com/tree-sitter/tree-sitter-bash")
@@ -96,7 +107,6 @@
 ;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
 
 (global-unset-key (kbd "C-x m"))
-(global-auto-revert-mode)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -108,6 +118,14 @@
   (global-devil-mode)
   :bind
   ("C-," . #'global-devil-mode))
+
+(use-package standard-themes
+  :ensure t
+  :demand t
+  :config
+  (if (string-equal (getenv "USER") "hdhoang")
+      (load-theme 'standard-dark t)
+    (load-theme 'standard-light t)))
 
 (use-package fira-code-mode
   :hook ((fundamental-mode . fira-code-mode)))
@@ -155,10 +173,6 @@
 (global-set-key (kbd "C-x C-d") #'duplicate-dwim)
 (global-set-key (kbd "C-x C-l") #'copy-from-above-command)
 (global-set-key (kbd "C-x C-z") #'bury-buffer)
-
-(if (string-equal (getenv "USER") "hdhoang")
-    (load-theme 'tango-dark t)
-  (load-theme 'tango t))
 
 (use-package diff-hl
   :config (global-diff-hl-mode t))

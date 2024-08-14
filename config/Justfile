@@ -1,9 +1,12 @@
+set unstable # for --fmt
 set shell := ["nu", "-m", "light", "-c"]
 
 default:
     just --list
+
 start:
     bash -x ~/homes/config/start.sh
+
 up:
     # tool sync
     flatpak -u update -y
@@ -11,20 +14,23 @@ up:
     cargo iu
 
 sway_tree PATTERN:
-    swaymsg -t get_tree -r|rg -i {{PATTERN}}
+    swaymsg -t get_tree -r|rg -i {{ PATTERN }}
+
 mu PATH:
-    mpv --no-resume-playback --vo=null --no-video --no-ytdl --replaygain=track --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{PATH}} --volume=44
+    mpv --no-resume-playback --vo=null --no-video --no-ytdl --replaygain=track --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{ PATH }} --volume=44
+
 yt *SUB:
-    mkdir -v ~/rclone-cache/{{SUB}}; cd ~/rclone-cache/{{SUB}} ; yt-dlp --output "%(title)s [%(id)s].%(acodec,ext)s" --format 250/hls-400/bestaudio --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
+    mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --output "%(title)s [%(id)s].%(acodec,ext)s" --format 250/hls-400/bestaudio --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
+    cd ~/rclone-cache/{{ SUB }} ; ^rename --verbose 'mp4a.?0.5' 'm4a' *.5 ; ^rename --verbose 'mp4a.?0.2' 'm4a' *.2
 
 [no-cd]
 cl repo:
-    jj git clone --colocate {{repo}}
+    jj git clone --colocate {{ repo }}
 
 [no-cd]
 t *params:
-    cargo nextest run {{params}}
+    cargo nextest run {{ params }}
 
 [no-cd]
 d *paths:
-    try { jj diff {{paths}} err> /dev/null } catch { git diff -- {{paths}} err> /dev/null }
+    try { jj diff {{ paths }} err> /dev/null } catch { git diff -- {{ paths }} err> /dev/null }

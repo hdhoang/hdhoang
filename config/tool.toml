@@ -69,6 +69,12 @@ repo = "dua-cli"
 exe_name = "dua"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
+[trippy]
+owner = "fujiapple852"
+repo = "trippy"
+exe_name = "trip"
+asset_name.linux = "_64-unknown-linux-musl.tar"
+asset_name.windows = "_64-pc-windows-msvc"
 [rustscan]
 owner = "RustScan"
 repo = "RustScan"
@@ -109,6 +115,10 @@ asset_name.windows = "_64-pc-windows-msvc"
 
 # k8s
 [k9s]
+[kubetui]
+owner = "sarub0b0"
+repo = "kubetui"
+asset_name.linux = "_64-unknown-linux-musl"
 [kdash]
 owner = "kdash-rs"
 repo = "kdash"
@@ -131,6 +141,11 @@ asset_name.linux = "d64"
 # search & destroy
 [fd]
 [ripgrep]
+[comby]
+owner = "comby-tools"
+repo = "comby"
+exe_name = "comby"
+asset_name.linux = "tar"
 [ast-grep]
 owner = "ast-grep"
 repo = "ast-grep"
@@ -228,7 +243,11 @@ owner = "yt-dlp"
 repo = "yt-dlp"
 # asset_name.linux = "p$"
 asset_name.windows = "p.exe"
-
+[ruffle]
+owner = "ruffle-rs"
+repo = "ruffle"
+asset_name.linux = "_64.tar"
+asset_name.windows = "_64.zip"
 [monolith]
 owner = "Y2Z"
 repo = "monolith"
