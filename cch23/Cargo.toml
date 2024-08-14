@@ -16,7 +16,7 @@ tower-http = { version = "0.4.0", features = ["fs"] }
 
 # day 8
 reqwest = { version = "0.11.22", default-features = false, features = ["blocking", "json", "rustls-tls"] }
-tokio = { version = "1.28.2", default-features = false, features = ["rt-multi-thread"] }
+tokio = { version = "1.38.0", default-features = false, features = ["rt-multi-thread"] }
 
 keshvar = { version = "0.3.0", default-features = false, features = ["geo", "americas", "oceania", "region-africa", "region-antarctica", "region-asia", "region-europe"] }
 s2 = { version = "0.0.12", default-features = false }
