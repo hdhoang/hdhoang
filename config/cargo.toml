@@ -6,27 +6,22 @@ iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update
 # fedora: from cargo, to install do env RUSTC_WRAPPER= cargo...
 rustc-wrapper = "sccache"
 jobs = -2
-rustflags = ["-C", "target-cpu=native"]
+rustflags = ["-Ctarget-cpu=native"]
 
 [target.x86_64-unknown-linux-musl]
 # cc = { "musl-clang"}
-linker = "musl-clang"
 rustflags = [
   # verify with `readelf -p .comment`
-  "-C",
-  "link-arg=--ld-path=mold",
-  "-C",
-  "target-cpu=native",
+  "-Clinker=rust-lld",
+  "-Ctarget-cpu=native",
 ]
 
 [target.x86_64-unknown-linux-gnu]
-linker = "clang"
 rustflags = [
   # verify with `readelf -p .comment`
-  "-C",
-  "link-arg=--ld-path=mold",
-  "-C",
-  "target-cpu=native",
+  "-Clinker=clang",
+  "-Clink-arg=--ld-path=mold",
+  "-Ctarget-cpu=native",
 ]
 
 [profile.dist]

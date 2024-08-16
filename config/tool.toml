@@ -51,6 +51,10 @@ owner = "rustdesk"
 repo = "rustdesk"
 asset_name.linux = "_64.AppImage"
 asset_name.windows = "_64.exe"
+[rainfrog]
+owner = "achristmascarl"
+repo = "rainfrog"
+asset_name.linux = "linux-x8"
 
 # dashboards
 [procs]
@@ -238,6 +242,10 @@ owner = "typst"
 repo = "typst"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc.zip"
+[teams]
+owner = "IsmaelMartinez"
+repo = "teams-for-linux"
+asset_name.linux = "1.9.2.AppImage"
 [yt-dlp]
 owner = "yt-dlp"
 repo = "yt-dlp"

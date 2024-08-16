@@ -1,4 +1,4 @@
--- -*- mode: prog; tab-width: 2 -*-
+-- -*- mode: prog; tab-width: 2; comment-start: "-- " -*-
 
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
@@ -11,23 +11,33 @@ config.color_scheme = "CLRS"
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_cwd = "B:"
   config.color_scheme = "Tomorrow Night Burns"
+else
+  -- blank window on amd
+  config.front_end = "WebGpu"
 end
 
+config.animation_fps = 1
+
+config.font_dirs = { "../assets", "homes/assets" }
+-- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
+ "FiraCode Nerd Font",
  "Fira Code",
  "monospace",
  "Consolas",
 }
 config.font_size = 9.0
-config.freetype_load_target = "Light"
+-- config.freetype_load_target = "Light"
 config.freetype_render_target = "HorizontalLcd"
 
 config.enable_scroll_bar = true
 config.window_decorations = "RESIZE"
 
+config.quick_select_patterns = {
+ "[a-zA-Z._]{12,}", -- package names
+}
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
--- regex": "\\b\\w+@
-config.hyperlink_rules[5] = nil
+config.hyperlink_rules[5] = nil -- regex": "\\b\\w+@
 
 local launch_menu = {}
 if wezterm.home_dir == "/home/hieuhg" then
@@ -66,7 +76,14 @@ config.keys = {
   { key = "phys:H", mods = "CTRL|SHIFT", action = "ShowLauncher" },
 }
 
-config.animation_fps = 1
-config.front_end = "WebGpu"
+wezterm.on("update-status", function(window)
+  for _, b in ipairs(wezterm.battery_info()) do
+    if b.state == "Discharging" then
+     if b.time_to_empty < 900 then
+       window:toast_notification("low battery", "plug it in")
+     end
+    end
+  end
+end)
 
 return config

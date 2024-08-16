@@ -22,6 +22,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown markdown-ts-mode poly-org))
+
  '(auth-source-save-behavior nil)
 
  '(global-auto-revert-mode t)
@@ -35,7 +38,6 @@
  '(completion-detailed t)
  '(completion-group t)
  '(desktop-load-locked-desktop t)
- '(desktop-save-mode t)
 
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-vc-rename-file t)
@@ -54,32 +56,36 @@
  '(initial-scratch-message nil)
  '(isearch-lazy-count t)
  '(line-number-mode t)
- '(major-mode-remap-alist
-   '((conf-toml-mode . toml-ts-mode)
-     (go-mode . go-ts-mode)
-     (hcl-mode . hcl-ts-mode)
-     (js-json-mode . json-ts-mode)
-     (python-mode . python-ts-mode)
-     (rust-mode . rust-ts-mode)
-     (sh-mode . bash-ts-mode)
-     (yaml-mode . yaml-ts-mode)))
 
  '(menu-bar-mode t)
  '(tool-bar-mode nil)
  '(global-tab-line-mode t)
 
- '(package-selected-packages
-   '(standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+ '(require-final-newline 't)
+ '(whitespace-style
+   '(face trailing tabs missing-newline-at-eof indentation::space))
+ '(x-underline-at-descent-line nil)
+
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
- '(require-final-newline 't)
  '(rust-format-on-save t)
  '(safe-local-variable-values
    '((electric-pair-mode . t)
      (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
+
+ '(major-mode-remap-alist
+   '((conf-toml-mode . toml-ts-mode)
+     (go-mode . go-ts-mode)
+     (hcl-mode . hcl-ts-mode)
+     (js-json-mode . json-ts-mode)
+     (python-mode . python-ts-mode)
+     (markdown-mode . markdown-ts-mode)
+     (rust-mode . rust-ts-mode)
+     (sh-mode . bash-ts-mode)
+     (yaml-mode . yaml-ts-mode)))
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
    '((bash "https://github.com/tree-sitter/tree-sitter-bash")
@@ -93,19 +99,18 @@
      (javascript "https://github.com/tree-sitter/tree-sitter-javascript" "master" "src")
      (json "https://github.com/tree-sitter/tree-sitter-json")
      (kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")
+     (markdown "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown/src")
+     (markdown-inline "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown-inline/src")
      (python "https://github.com/tree-sitter/tree-sitter-python")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
+
  '(use-package-always-defer 3)
  '(use-package-always-ensure t)
- '(warning-suppress-types '((use-package)))
- '(whitespace-style
-   '(face trailing tabs missing-newline-at-eof indentation::space))
- '(x-underline-at-descent-line nil))
-;; refresh grammars
-;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
+ '(warning-suppress-types '((use-package))))
 
+(put 'narrow-to-region 'disabled nil)
 (global-unset-key (kbd "C-x m"))
 
 (require 'package)
@@ -211,7 +216,7 @@
   (add-to-list 'apheleia-mode-alist '(toml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(rust-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(dockerfile-ts-mode . dprint))
-  (add-to-list 'apheleia-mode-alist '(markdown-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(markdown-ts-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . prettier-yaml))
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
@@ -312,9 +317,15 @@
 
 (use-package poly-org
   :defer 10)
+
+(use-package markdown-ts-mode
+  :defer nil)
 (use-package poly-markdown
   :defer 10
-  :hook ((poly-markdown-mode . visual-line-mode)))
+  :hook ((poly-markdown-mode . visual-line-mode))
+  :config
+  (define-hostmode poly-markdown-hostmode
+    :mode 'markdown-ts-mode))
 
 (use-package groovy-mode
   :defer t)
@@ -388,5 +399,9 @@
 (add-to-list 'magic-mode-alist '("^$ORIGIN" . zone-mode))
 (add-to-list 'magic-mode-alist '("^# syntax=docker" . dockerfile-ts-mode))
 
+;; after modes are ready
+(desktop-save-mode t)
 (server-start)
-(put 'narrow-to-region 'disabled nil)
+
+;; refresh grammars
+;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))

@@ -12,7 +12,7 @@ for file in ../assets/*.?tf; do
 done
 gsettings set org.gnome.desktop.interface document-font-name 'FiraGO'
 gsettings set org.gnome.desktop.interface font-name 'FiraGO'
-gsettings set org.gnome.desktop.interface monospace-font-name 'Fira Code'
+gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font'
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile

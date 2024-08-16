@@ -10,8 +10,8 @@ start:
 up:
     # tool sync
     flatpak -u update -y
-    sudo-rs dnf --setopt=install_weak_deps=False upgrade -y
     cargo iu
+    sudo-rs dnf --setopt=install_weak_deps=False upgrade -y
 
 sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
@@ -20,8 +20,8 @@ mu PATH:
     mpv --no-resume-playback --vo=null --no-video --no-ytdl --replaygain=track --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{ PATH }} --volume=44
 
 yt *SUB:
-    mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --output "%(title)s [%(id)s].%(acodec,ext)s" --format 250/hls-400/bestaudio --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --compat-options filename-sanitization
-    cd ~/rclone-cache/{{ SUB }} ; ^rename --verbose 'mp4a.?0.5' 'm4a' *.5 ; ^rename --verbose 'mp4a.?0.2' 'm4a' *.2
+    -mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --format 250/251/140/hls-400/vorbis/bestaudio --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --embed-metadata --playlist-random --compat-options filename-sanitization
+    cd ~/rclone-cache/{{ SUB }} ; /bin/rename --verbose webm opus *.webm
 
 [no-cd]
 cl repo:
