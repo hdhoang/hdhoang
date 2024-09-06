@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eux
 echo #`# <#`
 
 cd ${BASH_SOURCE%/*}
@@ -17,8 +17,9 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Fon
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 
-mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,tridactyl,fontconfig,tmux}/ ~/run/
+mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig,tmux}/ ~/run/
 
+ln -rsvf $PWD/no_album.ini ~/.config/rsgain/presets/
 ln -rsvf $PWD/config.fish ~/.config/fish/
 ln -rsvf $PWD/config.nu ~/.config/nushell/
 ln -rsvf $PWD/env.nu ~/.config/nushell/

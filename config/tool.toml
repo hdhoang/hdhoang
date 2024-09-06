@@ -55,6 +55,11 @@ asset_name.windows = "_64.exe"
 owner = "achristmascarl"
 repo = "rainfrog"
 asset_name.linux = "linux-x8"
+[crawl]
+owner = "crawl"
+repo = "crawl"
+exe_name = "crawl-tiles"
+asset_name.linux = "tiles.x"
 
 # dashboards
 [procs]
@@ -93,6 +98,10 @@ asset_name.linux = "_64"
 owner = "imsnif"
 repo = "bandwhich"
 asset_name.linux = "musl"
+[oryx]
+owner = "pythops"
+repo = "oryx"
+asset_name.linux = "_64"
 [bottom]
 owner = "ClementTsang"
 repo = "bottom"
@@ -150,7 +159,7 @@ owner = "comby-tools"
 repo = "comby"
 exe_name = "comby"
 asset_name.linux = "tar"
-[ast-grep]
+[sg]
 owner = "ast-grep"
 repo = "ast-grep"
 exe_name = "sg"
@@ -166,10 +175,10 @@ owner = "01mf02"
 repo = "jaq"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "windows-gnu"
-# [drivel]
-# owner = "hgrsd"
-# repo = "drivel"
-# xz asset_name.linux = "_64-unknown-linux-gnu"
+[drivel]
+owner = "hgrsd"
+repo = "drivel"
+asset_name.linux = "_64-unknown-linux-gnu"
 
 # formatters
 [dprint]
@@ -182,6 +191,11 @@ owner = "numtide"
 repo = "treefmt"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-pc-windows-msvc"
+[rsgain]
+owner = "complexlogic"
+repo = "rsgain"
+asset_name.linux = "nux.tar.xz"
+asset_name.windows = "win"
 
 # builders
 [nextest]
@@ -198,11 +212,11 @@ asset_name.linux = "_64-unknown-linux-gnu"
 owner = "rui314"
 repo = "mold"
 asset_name.linux = "_64-linux"
-# [probe-rs]
-# no xz support
-# owner = "probe-rs"
-# repo = "probe-rs"
-# asset_name.linux = "probe-rs-_64-unknown"
+[probe-rs]
+owner = "probe-rs"
+repo = "probe-rs"
+asset_name.linux = "probe-rs-x86_64-unknown"
+
 [lychee]
 owner = "lycheeverse"
 repo = "lychee"

@@ -1,4 +1,4 @@
-set unstable # for --fmt
+set unstable := true
 set shell := ["nu", "-m", "light", "-c"]
 
 default:
@@ -21,7 +21,9 @@ mu PATH:
 
 yt *SUB:
     -mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --format 250/251/140/hls-400/vorbis/bestaudio --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --embed-metadata --playlist-random --compat-options filename-sanitization
-    cd ~/rclone-cache/{{ SUB }} ; /bin/rename --verbose webm opus *.webm
+    -cd ~/rclone-cache/{{ SUB }} ; rm -v *KARAOKE*
+    -cd ~/rclone-cache/{{ SUB }} ; /bin/rename --verbose webm opus *.webm
+    -rsgain easy --preset=no_album --skip-existing -m 3 ~/rclone-cache/{{ SUB }}
 
 [no-cd]
 cl repo:
