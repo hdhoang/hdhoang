@@ -2,6 +2,7 @@
 
 ;; bedrock early-init.el
 ;; Startup speed, annoyance suppression
+(setq bedrock--initial-gc-threshold gc-cons-threshold)
 (setq gc-cons-threshold 10000000)
 (setq byte-compile-warnings '(not obsolete))
 (setq warning-suppress-log-types '((comp) (bytecomp)))
@@ -403,5 +404,6 @@
 (desktop-save-mode t)
 (server-start)
 
+(setq gc-cons-threshold (or bedrock--initial-gc-threshold 800000))
 ;; refresh grammars
 ;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
