@@ -26,9 +26,19 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
-[uutils]
+[coreutils]
 owner = "uutils"
 repo = "coreutils"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "_64-pc-windows-gnu.zip"
+[findutils]
+owner = "uutils"
+repo = "findutils"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "_64-pc-windows-gnu.zip"
+[diffutils]
+owner = "uutils"
+repo = "diffutils"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-pc-windows-gnu.zip"
 [nu]
@@ -111,8 +121,13 @@ asset_name.windows = "_64-pc-windows-msvc"
 [mprocs]
 owner = "pvolok"
 repo = "mprocs"
-asset_name.windows = "win"
+asset_name.windows = "windows"
 asset_name.linux = "linux"
+[cyme]
+owner = "tuna-f1sh"
+repo = "cyme"
+asset_name.windows = "dows"
+asset_name.linux = "_64-unknown"
 
 # history wrangling
 [just]
@@ -259,7 +274,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "1.9.2.AppImage"
+asset_name.linux = "10.2.AppImage"
 [yt-dlp]
 owner = "yt-dlp"
 repo = "yt-dlp"

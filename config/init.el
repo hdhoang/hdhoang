@@ -42,8 +42,8 @@
 
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-vc-rename-file t)
- '(dired-listing-switches "-alAFt")
- '(insert-directory-program "fls")
+ '(dired-listing-switches "ls -alAFt")
+ '(insert-directory-program "coreutils")
 
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
@@ -103,6 +103,7 @@
      (markdown "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown/src")
      (markdown-inline "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown-inline/src")
      (python "https://github.com/tree-sitter/tree-sitter-python")
+     (sql "https://github.com/DerekStride/tree-sitter-sql")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
