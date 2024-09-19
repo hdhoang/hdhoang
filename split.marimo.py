@@ -1,6 +1,11 @@
+#!/bin/env -S uv tool run -- marimo edit --sandbox
+# /// script
+# dependencies = ["marimo"]
+# /// script
+
 import marimo
 
-__generated_with = "0.8.15"
+__generated_with = "0.8.17"
 app = marimo.App()
 
 
@@ -61,7 +66,7 @@ def __(left_consumed, left_water):
 
 @app.cell
 def __(FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, left_consumed):
-    left_by_meter = 10 * PRICE_00_TO_10 + (left_consumed-10.0) * PRICE_10_TO_20
+    left_by_meter = 10 * PRICE_00_TO_10 + (left_consumed - 10.0) * PRICE_10_TO_20
     left_water = left_by_meter * FINAL_FEES_RATIO
     return left_by_meter, left_water
 
