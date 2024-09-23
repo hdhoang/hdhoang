@@ -31,7 +31,7 @@ processes = ["web"]
 internal_port = 3000
 force_https = true
 
-auto_stop_machines = true
+auto_stop_machines = "suspend"
 auto_start_machines = true
 min_machines_running = 0
 
@@ -48,6 +48,8 @@ RAILS_SERVE_STATIC_FILES = "disabled"
 
 TIMEZONE = "Hanoi"
 TZ = "Asia/Phnom_Penh"
+
+WEB_CONCURRENCY = "1"
 
 SCHEDULER_FREQUENCY = "5" # s, no higher
 DELAYED_JOB_MAX_RUNTIME = "30" # minutes
