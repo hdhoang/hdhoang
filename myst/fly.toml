@@ -6,6 +6,10 @@ primary_region = "nrt"
 web = "/scripts/init"
 jobs = "timeout --signal=QUIT --verbose 7890 /scripts/init bin/threaded.rb"
 
+[[vm]]
+memory = 512
+processes = ["jobs"]
+
 # jobs = "sh -c 'bundle exec script/delayed_job run & bundle exec rails runner bin/schedule.rb'"
 # jobs = "bundle exec rails runner bin/schedule.rb"
 # jobs = "bundle exec script/delayed_job run"
@@ -31,9 +35,13 @@ processes = ["web"]
 internal_port = 3000
 force_https = true
 
-auto_stop_machines = true
+auto_stop_machines = "suspend"
 auto_start_machines = true
 min_machines_running = 0
+
+[[vm]]
+memory = 512
+processes = ["web"]
 
 [env]
 DOMAIN = "myst.fly.dev"
@@ -45,6 +53,8 @@ IMPORT_DEFAULT_SCENARIO_FOR_ALL_USERS = "false"
 RACK_ENV = "production"
 RAILS_LOG_TO_STDOUT = "enabled"
 RAILS_SERVE_STATIC_FILES = "disabled"
+
+WEB_CONCURRENCY = "1"
 
 TIMEZONE = "Hanoi"
 TZ = "Asia/Phnom_Penh"
