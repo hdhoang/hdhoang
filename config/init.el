@@ -42,7 +42,7 @@
 
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-vc-rename-file t)
- '(dired-listing-switches "ls -alAFt")
+ '(dired-listing-switches "ls -alAFth")
  '(insert-directory-program "coreutils")
 
  '(display-battery-mode t)
