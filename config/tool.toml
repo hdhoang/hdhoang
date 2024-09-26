@@ -274,6 +274,11 @@ asset_name.windows = "windows-x64-exe"
 asset_name.linux = "linux-x86_64"
 
 # recorders
+[satty]
+owner = "gabm"
+repo = "Satty"
+exe_name = "satty"
+asset_name.linux = "gz"
 [micropad]
 owner = "micropad"
 repo = "MicroPad-Electron"
