@@ -60,6 +60,11 @@ asset_name.linux = "hextazy"
 owner = "WerWolv"
 repo = "ImHex"
 asset_name.linux = "AppImage"
+[binsider]
+owner = "orhun"
+repo = "binsider"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "windows"
 [rustdesk]
 owner = "rustdesk"
 repo = "rustdesk"
@@ -68,7 +73,9 @@ asset_name.windows = "_64.exe"
 [rainfrog]
 owner = "achristmascarl"
 repo = "rainfrog"
-asset_name.linux = "linux-x8"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "_64-pc-windows-msvc.zip"
+
 [crawl]
 owner = "crawl"
 repo = "crawl"
@@ -198,6 +205,10 @@ asset_name.windows = "windows-gnu"
 owner = "hgrsd"
 repo = "drivel"
 asset_name.linux = "_64-unknown-linux-gnu"
+[quickwit]
+owner = "quickwit-oss"
+repo = "quickwit"
+asset_name.linux = "_64-unknown-linux-gnu"
 
 # formatters
 [dprint]
@@ -219,6 +230,15 @@ asset_name.windows = "win"
 owner = "astral-sh"
 repo = "ruff"
 asset_name.linux = "_64-unknown-linux-gnu"
+[shellcheck]
+owner = "koalaman"
+repo = "shellcheck"
+asset_name.windows = "zip"
+[shfmt]
+owner = "patrickvane"
+repo = "shfmt"
+asset_name.linux = "linux_amd64"
+asset_name.windows = "64.exe"
 
 # builders
 [nextest]
@@ -292,7 +312,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "10.2.AppImage"
+asset_name.linux = "11.0.AppImage"
 [yt-dlp]
 owner = "yt-dlp"
 repo = "yt-dlp"
