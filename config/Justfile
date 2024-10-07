@@ -20,7 +20,7 @@ mu PATH:
     mpv --no-resume-playback --vo=null --no-video --no-ytdl --osd-level=3 --scripts=gh/mpv-mpris/mpris.so --shuffle --playlist=rclone-cache --playlist={{ PATH }} --volume=64 --replaygain=track
 
 yt *SUB:
-    -mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --format 250/251/140/hls-400/vorbis/bestaudio --remux-video 'mkv>opus/webm>opus' --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --parse-metadata '%(format)s %(format_id)s:%(meta_format)s' --embed-metadata --playlist-random --compat-options filename-sanitization
+    -mkdir -v ~/rclone-cache/{{ SUB }}; cd ~/rclone-cache/{{ SUB }} ; yt-dlp --format 250/251/140/hls-400/vorbis/aac-hi/bestaudio --remux-video 'mkv>opus/webm>opus' --prefer-free-formats --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org --no-mtime --parse-metadata '%(format)s %(format_id)s:%(meta_format)s' --embed-metadata --playlist-random --compat-options filename-sanitization
     -cd ~/rclone-cache/{{ SUB }} ; rm -v *KARAOKE*
     -rsgain easy --preset=ebur128 --skip-existing -m 3 ~/rclone-cache/{{ SUB }}
 

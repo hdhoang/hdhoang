@@ -180,6 +180,10 @@ asset_name.linux = "d64"
 # search & destroy
 [fd]
 [ripgrep]
+[gitleaks]
+owner = "gitleaks"
+repo = "gitleaks"
+asset_name.linux = "x_x64"
 [comby]
 owner = "comby-tools"
 repo = "comby"
@@ -209,6 +213,12 @@ asset_name.linux = "_64-unknown-linux-gnu"
 owner = "quickwit-oss"
 repo = "quickwit"
 asset_name.linux = "_64-unknown-linux-gnu"
+[krokiet]
+owner = "qarmin"
+repo = "czkawka"
+exe_name = "krokiet"
+asset_name.linux = "t_l"
+asset_name.windows = "t.e"
 
 # formatters
 [dprint]

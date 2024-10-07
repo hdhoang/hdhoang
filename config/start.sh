@@ -10,14 +10,14 @@ mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*.?tf; do
     ln -rsvf $file ~/.local/share/fonts/
 done
-gsettings set org.gnome.desktop.interface document-font-name 'FiraGO'
-gsettings set org.gnome.desktop.interface font-name 'FiraGO'
-gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font'
+gsettings set org.gnome.desktop.interface document-font-name "${GTK_FONT_NAME}"
+gsettings set org.gnome.desktop.interface font-name "${GTK_FONT_NAME}"
+gsettings set org.gnome.desktop.interface monospace-font-name "FiraCode Nerd Font"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 
-mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig,tmux}/ ~/run/
+mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 
 ln -rsvf $PWD/ebur128.ini ~/.config/rsgain/presets/
 ln -rsvf $PWD/config.fish ~/.config/fish/
@@ -46,6 +46,7 @@ ln -rsvf $PWD/pijul_config.toml ~/.config/pijul/config.toml
 ln -rsvf $PWD/jj_config.toml ~/.config/jj/config.toml
 ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
 
+ln -rsvf $PWD/46-twemoji-color.conf ~/.config/fontconfig/conf.d/
 ln -rsvf $PWD/fonts.conf ~/.config/fontconfig/
 ln -rsvf $PWD/wezterm.lua ~/.config/wezterm/
 

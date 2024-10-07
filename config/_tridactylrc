@@ -14,6 +14,7 @@ unbind w
 unbind .
 unbind a
 unbind m
+autocmd DocStart .*[.]atlassian[.]net/browse/.* js tri.browserBg.tabs.insertCSS({ code: "section[data-testid^=\"issue-view-activity.section-message\"] {display: none !important;}", cssOrigin: "user"})
 
 unbind <C-e>
 

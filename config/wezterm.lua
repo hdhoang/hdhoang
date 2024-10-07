@@ -74,6 +74,17 @@ config.keys = {
   { key = ".", mods = "CTRL|SHIFT", action = wezterm.action{PasteFrom="Clipboard"} },
 
   { key = "phys:H", mods = "CTRL|SHIFT", action = "ShowLauncher" },
+
+  -- https://github.com/acomagu/fish-osc133
+  { key = 'UpArrow', mods = 'SHIFT', action = wezterm.action.ScrollToPrompt(-1) },
+  { key = 'DownArrow', mods = 'SHIFT', action = wezterm.action.ScrollToPrompt(1) },
+}
+config.mouse_bindings = {
+  {
+    event = { Down = { streak = 3, button = 'Left' } },
+    action = wezterm.action.SelectTextAtMouseCursor 'SemanticZone',
+    mods = 'NONE',
+  },
 }
 
 wezterm.on("update-status", function(window)
