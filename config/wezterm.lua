@@ -65,6 +65,7 @@ end
 config.launch_menu = launch_menu
 
 config.use_ime = false
+config.enable_kitty_keyboard = true
 config.key_map_preference = "Physical"
 config.keys = {
   { key = "phys:K", mods = "CTRL|SHIFT", action = wezterm.action{SpawnTab="CurrentPaneDomain"} },
@@ -76,14 +77,14 @@ config.keys = {
   { key = "phys:H", mods = "CTRL|SHIFT", action = "ShowLauncher" },
 
   -- https://github.com/acomagu/fish-osc133
-  { key = 'UpArrow', mods = 'SHIFT', action = wezterm.action.ScrollToPrompt(-1) },
-  { key = 'DownArrow', mods = 'SHIFT', action = wezterm.action.ScrollToPrompt(1) },
+  { key = "UpArrow", mods = "SHIFT", action = wezterm.action.ScrollToPrompt(-1) },
+  { key = "DownArrow", mods = "SHIFT", action = wezterm.action.ScrollToPrompt(1) },
 }
 config.mouse_bindings = {
   {
-    event = { Down = { streak = 3, button = 'Left' } },
-    action = wezterm.action.SelectTextAtMouseCursor 'SemanticZone',
-    mods = 'NONE',
+    event = { Down = { streak = 4, button = "Left" } },
+    action = wezterm.action.SelectTextAtMouseCursor "SemanticZone",
+    mods = "NONE",
   },
 }
 

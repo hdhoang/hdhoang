@@ -1,5 +1,6 @@
-" " vim: set filetype=vim
-" " example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
+"" vim: set filetype=vim
+"" -*- mode: js-ts -*-
+"" example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
 
 set theme auto
 set hintautoselect false
@@ -7,14 +8,16 @@ set tabclosepinned false
 
 blacklistadd www.fastmail.com
 blacklistadd jp.inoreader.com
-blacklistadd https://outlook.office.com/mail/
+
+blacklistadd https:[/]/outlook.office.com/mail/
+autocmd DocStart https:[/]/outlook.office.com/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar {display: none !important;}", cssOrigin: "user"})
 
 " " for jira
 unbind w
 unbind .
 unbind a
 unbind m
-autocmd DocStart .*[.]atlassian[.]net/browse/.* js tri.browserBg.tabs.insertCSS({ code: "section[data-testid^=\"issue-view-activity.section-message\"] {display: none !important;}", cssOrigin: "user"})
+autocmd DocStart https:[/]/.*[.]atlassian[.]net/.* js tri.browserBg.tabs.insertCSS({ code: "#ak-jira-navigation {display: none !important;}", cssOrigin: "user"})
 
 unbind <C-e>
 
@@ -23,5 +26,5 @@ bind <Space> scrollpage 0.5
 
 bind ` tabsort --url
 
-autocmd DocStart .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})
-autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;}", allFrames: true, cssOrigin: "user"})
+autocmd DocStart .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;} iframe[src*='google.com/gsi'] { display: none !important }", allFrames: true, cssOrigin: "user"})
+autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;} iframe[src*='google.com/gsi'] { display: none !important }", allFrames: true, cssOrigin: "user"})

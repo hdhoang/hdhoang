@@ -1,6 +1,10 @@
-[includeIf "gitdir:~/gh/"]
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:*"]
 path = ~/homes/config/jj_config.toml
-[includeIf "gitdir:~/homes/"]
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/*"]
+path = ~/homes/config/jj_config.toml
+[includeIf "hasconfig:remote.*.url:git@github.com:*"]
+path = ~/homes/config/jj_config.toml
+[includeIf "hasconfig:remote.*.url:https://github.com/*"]
 path = ~/homes/config/jj_config.toml
 
 [includeIf "gitdir:~/repos/"]
@@ -58,20 +62,14 @@ xfuncname="^\\((((def\\S+)|use-package)\\s+\\S+)"
 
 [diff]
 algorithm = histogram
+indentHeuristic = true
+mnemonicPrefix = true
+renames = copies
 
 external = difft
 colorMoved = dimmed-zebra
 colorMovedws = allow-indentation-change
 
-tool = diffsitter
+tool = diff
 [difftool]
 prompt = false
-[difftool "diffsitter"]
-cmd = diffsitter "$LOCAL" "$REMOTE"
-
-[pager]
-diff = delta
-reflog = delta
-show = delta
-[delta]
-features = decorations
