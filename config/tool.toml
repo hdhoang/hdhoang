@@ -63,7 +63,7 @@ asset_name.linux = "AppImage"
 [binsider]
 owner = "orhun"
 repo = "binsider"
-asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.linux = "_64-unknown-linux-gnu" # binsider-{tag}/binsider
 asset_name.windows = "windows"
 [rustdesk]
 owner = "rustdesk"
@@ -176,6 +176,10 @@ asset_name.linux = "linux-amd64"
 owner = "cilium"
 repo = "pwru"
 asset_name.linux = "d64"
+[umoci]
+owner = "opencontainers"
+repo = "umoci"
+asset_name.linux = "d64"
 
 # search & destroy
 [fd]
@@ -217,8 +221,12 @@ asset_name.linux = "_64-unknown-linux-gnu"
 owner = "qarmin"
 repo = "czkawka"
 exe_name = "krokiet"
-asset_name.linux = "t_l"
-asset_name.windows = "t.e"
+asset_name.linux = "t_gui_h"
+asset_name.windows = "i_w"
+[cargo-machete]
+owner = "bnjbvr"
+repo = "cargo-machete"
+asset_name.linux = "musl"
 
 # formatters
 [dprint]
@@ -301,7 +309,7 @@ asset_name.linux = "Linux"
 owner = "printfn"
 repo = "fend"
 asset_name.windows = "windows-x64-exe"
-asset_name.linux = "linux-x86_64"
+asset_name.linux = "_64-g"
 
 # recorders
 [satty]

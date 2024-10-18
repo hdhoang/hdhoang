@@ -65,6 +65,7 @@ end
 config.launch_menu = launch_menu
 
 config.use_ime = false
+config.enable_kitty_keyboard = true
 config.key_map_preference = "Physical"
 config.keys = {
   { key = "phys:K", mods = "CTRL|SHIFT", action = wezterm.action{SpawnTab="CurrentPaneDomain"} },
