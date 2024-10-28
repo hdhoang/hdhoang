@@ -4,14 +4,14 @@ use url::Url;
 use super::*;
 
 /// First-party syndication feed
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Feed {
-    #[knuffel(argument, str)]
+    #[knus(argument, str)]
     url: Url,
-    #[knuffel(property, default)]
+    #[knus(property, default)]
     readable: u8,
-    #[knuffel(property)]
+    #[knus(property)]
     /// justification for the readable score
     reason: Option<String>,
 }

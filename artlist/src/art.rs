@@ -5,79 +5,79 @@ use url::Url;
 pub type Name = String;
 pub type Id = String;
 
-#[derive(Debug, Default, knuffel::Decode)]
+#[derive(Debug, Default, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
-pub struct Words(#[knuffel(arguments)] Vec<String>);
+pub struct Words(#[knus(arguments)] Vec<String>);
 
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(Default, PartialEq))]
 pub struct Art {
     /// prominent web handle
-    #[knuffel(node_name)]
+    #[knus(node_name)]
     handle: Name,
-    #[knuffel(child, default)]
+    #[knus(child, default)]
     aliases: Words,
-    #[knuffel(child, default)]
+    #[knus(child, default)]
     styles: Words,
 
     /// official website
-    #[knuffel(argument, default, str)]
+    #[knus(argument, default, str)]
     web: Option<Url>,
     /// its feed, and readablility score
-    #[knuffel(child)]
+    #[knus(child)]
     feed: Option<feed::Feed>,
 
     /// linktr.ee, carrd.co, ... and the like
-    #[knuffel(property, str)]
+    #[knus(property, str)]
     link_list: Option<Url>,
 
     // capital pipes
-    #[knuffel(child)]
+    #[knus(child)]
     pat: Option<Patreon>,
-    #[knuffel(child)]
+    #[knus(child)]
     kofi: Option<Kofi>,
-    #[knuffel(child)]
+    #[knus(child)]
     github: Option<Github>,
 
     // 1-way feed
-    #[knuffel(child)]
+    #[knus(child)]
     tiny: Option<Tinyview>,
-    #[knuffel(child)]
+    #[knus(child)]
     fb: Option<Facebook>,
-    #[knuffel(child)]
+    #[knus(child)]
     go: Option<Gocomics>,
-    #[knuffel(child)]
+    #[knus(child)]
     tumblr: Option<Tumblr>,
-    #[knuffel(child)]
+    #[knus(child)]
     substack: Option<Substack>,
-    #[knuffel(child)]
+    #[knus(child)]
     bsky: Option<Bsky>,
-    #[knuffel(child)]
+    #[knus(child)]
     cohost: Option<Cohost>,
-    #[knuffel(child)]
+    #[knus(child)]
     da: Option<DeviantArt>,
-    #[knuffel(child)]
+    #[knus(child)]
     yt: Option<Youtube>,
-    #[knuffel(child)]
+    #[knus(child)]
     ig: Option<Insta>,
 
     /// Huginn agent id
-    #[knuffel(child)]
+    #[knus(child)]
     huginn: Option<HuginnId>,
 
     // interactive flows
-    #[knuffel(child)]
+    #[knus(child)]
     fedi: Option<Fedi>,
-    #[knuffel(child)]
+    #[knus(child)]
     twt: Option<Twitter>,
 }
 
 macro_rules! simple_account {
     ($site: ident, $url_template: expr, $feed_template: expr ) => {
-        #[derive(Debug, knuffel::Decode)]
+        #[derive(Debug, knus::Decode)]
         #[cfg_attr(test, derive(PartialEq))]
         pub struct $site {
-            #[knuffel(argument)]
+            #[knus(argument)]
             vanity: String,
         }
 
@@ -124,55 +124,55 @@ simple_account!(
     "https://{}.tumblr.com/rss"
 );
 
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 // TODO: some hostname type
-pub struct Bsky(#[knuffel(argument, str)] String);
+pub struct Bsky(#[knus(argument, str)] String);
 
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Fedi {
-    #[knuffel(argument, str)]
+    #[knus(argument, str)]
     instance: Url,
 
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
 }
 
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 // TODO: channel ID & rss feed
-pub struct Youtube(#[knuffel(argument)] String);
+pub struct Youtube(#[knus(argument)] String);
 
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
-pub struct HuginnId(#[knuffel(argument)] u16);
+pub struct HuginnId(#[knus(argument)] u16);
 
 /// patreon profile, and monthly support amount
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Patreon {
-    #[knuffel(property, default)]
+    #[knus(property, default)]
     per_month: u8,
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
 }
 /// ko-fi profile, and monthly support amount
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Kofi {
-    #[knuffel(property, default)]
+    #[knus(property, default)]
     per_month: u8,
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
 }
 /// github profile, and monthly support amount
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Github {
-    #[knuffel(property, default)]
+    #[knus(property, default)]
     per_month: u8,
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
 }
 
@@ -192,33 +192,33 @@ TODO: hydrate name from (grand)parent node_name
 TODO: these fields are `Option` because of `flatten`'s requirement.
 
 */
-#[derive(Debug, Default, knuffel::Decode)]
+#[derive(Debug, Default, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Account {
     /// Mutable vain handle
-    #[knuffel(property, default)]
+    #[knus(property, default)]
     vanity: Option<Name>,
     /// Immutable humble, per-system internal identity
-    #[knuffel(property)]
+    #[knus(property)]
     serial: Option<Id>,
 }
 
 /// fb profile
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Facebook {
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
 }
 
 /// twt/X profile
-#[derive(Debug, knuffel::Decode)]
+#[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 pub struct Twitter {
-    #[knuffel(flatten(property))]
+    #[knus(flatten(property))]
     account: Account,
     /// list memberships
-    #[knuffel(child, default)]
+    #[knus(child, default)]
     lists: Words,
 }
 
@@ -241,7 +241,7 @@ mod tests {
                 aliases: Words(vec!["artist1".to_string(), "artist2".into()]),
                 ..Default::default()
             }],
-            knuffel::parse::<Vec<Art>>("", input)?
+            knus::parse::<Vec<Art>>("", input)?
         );
         Ok(())
     }
@@ -262,7 +262,7 @@ mod tests {
                 }),
                 ..Default::default()
             }],
-            knuffel::parse::<Vec<Art>>("", input)?
+            knus::parse::<Vec<Art>>("", input)?
         );
         Ok(())
     }
@@ -288,7 +288,7 @@ facebook vanity=null serial="1234"
                     }
                 }
             ],
-            knuffel::parse::<Vec<Facebook>>("", input)?
+            knus::parse::<Vec<Facebook>>("", input)?
         );
         Ok(())
     }
@@ -305,7 +305,7 @@ cohost "hdhoang"
 } "#;
 
         assert_eq!(
-            knuffel::parse::<Vec<Art>>("", input)?,
+            knus::parse::<Vec<Art>>("", input)?,
             vec![Art {
                 handle: "hdhoang".to_string(),
                 web: Some(
