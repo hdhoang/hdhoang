@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 knus = { version = "3", default-features = false, features = ["derive"] }
 miette = { version = "5", default-features = false, features = ["fancy"] }
-url = { version = "2.5.0", default-features = false }
+url = { version = "2", default-features = false }
