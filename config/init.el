@@ -23,60 +23,34 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown markdown-ts-mode poly-org))
-
  '(auth-source-save-behavior nil)
-
- '(global-auto-revert-mode t)
  '(auto-revert-avoid-polling t)
  '(auto-revert-check-vc-info t)
  '(auto-revert-interval 5)
  '(auto-revert-mode-text "")
-
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(completion-detailed t)
  '(completion-group t)
  '(desktop-load-locked-desktop t)
-
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-vc-rename-file t)
  '(dired-listing-switches "ls -alAFth")
- '(insert-directory-program "coreutils")
-
+ '(dired-vc-rename-file t)
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
  '(display-time-default-load-average nil)
  '(eldoc-minor-mode-string "")
  '(font-use-system-font t)
+ '(global-auto-revert-mode t)
+ '(global-tab-line-mode t)
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
  '(inhibit-startup-screen t)
  '(initial-major-mode #'sql-mode)
  '(initial-scratch-message nil)
+ '(insert-directory-program "coreutils" t)
  '(isearch-lazy-count t)
  '(line-number-mode t)
-
- '(menu-bar-mode t)
- '(tool-bar-mode nil)
- '(global-tab-line-mode t)
-
- '(require-final-newline 't)
- '(whitespace-style
-   '(face trailing tabs missing-newline-at-eof indentation::space))
- '(x-underline-at-descent-line nil)
-
- '(python-indent-offset 4)
- '(reb-re-syntax 'string)
- '(repeat-mode t)
- '(rust-format-on-save t)
- '(safe-local-variable-values
-   '((electric-pair-mode . t)
-     (vc-prepare-patches-separately)
-     (diff-add-log-use-relative-names . t)
-     (vc-git-annotate-switches . "-w")))
-
  '(major-mode-remap-alist
    '((conf-toml-mode . toml-ts-mode)
      (go-mode . go-ts-mode)
@@ -87,6 +61,20 @@
      (rust-mode . rust-ts-mode)
      (sh-mode . bash-ts-mode)
      (yaml-mode . yaml-ts-mode)))
+ '(menu-bar-mode t)
+ '(package-selected-packages
+   '(markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+ '(python-indent-offset 4)
+ '(reb-re-syntax 'string)
+ '(repeat-mode t)
+ '(require-final-newline 't)
+ '(rust-format-on-save t)
+ '(safe-local-variable-values
+   '((electric-pair-mode . t)
+     (vc-prepare-patches-separately)
+     (diff-add-log-use-relative-names . t)
+     (vc-git-annotate-switches . "-w")))
+ '(tool-bar-mode nil)
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
    '((bash "https://github.com/tree-sitter/tree-sitter-bash")
@@ -103,14 +91,16 @@
      (markdown "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown/src")
      (markdown-inline "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown-inline/src")
      (python "https://github.com/tree-sitter/tree-sitter-python")
-     (sql "https://github.com/DerekStride/tree-sitter-sql")
+     (sql "https://github.com/DerekStride/tree-sitter-sql" "gh-pages")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
-
  '(use-package-always-defer 3)
  '(use-package-always-ensure t)
- '(warning-suppress-types '((use-package))))
+ '(warning-suppress-types '((use-package)))
+ '(whitespace-style
+   '(face trailing tabs missing-newline-at-eof indentation::space))
+ '(x-underline-at-descent-line nil))
 
 (put 'narrow-to-region 'disabled nil)
 (global-unset-key (kbd "C-x m"))
@@ -127,8 +117,7 @@
   ("C-," . #'global-devil-mode))
 
 (use-package standard-themes
-  :ensure t
-  :demand t
+  :demand 't
   :config
   (if (string-equal (getenv "USER") "hdhoang")
       (load-theme 'standard-dark t)
@@ -219,13 +208,13 @@
   (add-to-list 'apheleia-mode-alist '(rust-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(dockerfile-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(markdown-ts-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(python-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(python-ts-mode . dprint))
 
-  (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . prettier-yaml))
+  (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
-
-  (add-to-list 'apheleia-mode-alist '(python-mode . ruff))
-  (add-to-list 'apheleia-mode-alist '(python-ts-mode . ruff)))
+)
 
 (use-package nov
   :defer 60)
@@ -235,9 +224,9 @@
   :load-path "../../gh/hcl-ts-mode/"
   )
 (use-package terraform-mode
-  :defer t)
+  :defer 't)
 (use-package terraform-doc
-  :defer t)
+  :defer 't)
 
 (use-package polymode
   :config
@@ -307,7 +296,7 @@
   ("[.]tf\\'" . poly-terraform-yaml-mode)
   )
 (use-package yaml-ts-mode
-  :demand t
+  :demand 't
   :config
   (delete '("\\.ya?ml\\'" . yaml-ts-mode) auto-mode-alist)
   (add-to-list 'auto-mode-alist '("\\.ya?ml\\'" . yaml-ts-mode) t)
@@ -321,7 +310,8 @@
   :defer 10)
 
 (use-package markdown-ts-mode
-  :defer nil)
+   :mode ("\\.md\\'" . markdown-ts-mode)
+  :defer 't)
 (use-package poly-markdown
   :defer 10
   :hook ((poly-markdown-mode . visual-line-mode))
@@ -330,7 +320,7 @@
     :mode 'markdown-ts-mode))
 
 (use-package groovy-mode
-  :defer t)
+  :defer 't)
 
 (use-package pcre2el)
 (use-package poly-ansible

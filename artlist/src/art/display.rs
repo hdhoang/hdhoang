@@ -31,3 +31,17 @@ impl fmt::Display for HuginnId {
         write!(f, "https://fly.dev/agents/{}", self.0)
     }
 }
+
+impl fmt::Display for Bsky {
+    fn fmt(
+        &self,
+        f: &mut fmt::Formatter,
+    ) -> fmt::Result {
+        let slug = self.account.vanity.clone().unwrap_or_default();
+        write!(f, "https://bsky.app/profile/{slug}")?;
+        if !slug.contains('.') {
+            write!(f, ".bsky.social")?
+        }
+        Ok(())
+    }
+}

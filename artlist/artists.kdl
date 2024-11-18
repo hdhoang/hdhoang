@@ -15,9 +15,10 @@ any and all of these:
 
 hdhoang "https://hdhoang.space/" link-list=null {
   styles "vi" "ja" "jbo"
-  cohost "hdhoang"
+  /-cohost "hdhoang"
   fb vanity="hdh0000"
   fedi "https://blob.cat/" vanity="hdhoang"
+  bsky vanity="hdhoang.space" serial="3cf6fxsbno7v7n24h2du4wye"
   github vanity="hdhoang" serial="12537" per-month=0
   ig "old.zeratul"
   kofi vanity="hdhoang" per-month=0
@@ -75,7 +76,6 @@ reason="The children don't make use of footnotes or title next"
   huginn 55
 }
 
-
 /* Cosplayers */
 幼愛 link-list="https://linktr.ee/yume__chuu" {
   styles "nws"
@@ -88,15 +88,18 @@ reason="The children don't make use of footnotes or title next"
 serinide {
   styles "nws"
   ig "serinideirl"
+  bsky vanity="serinide"
 }
 
 ryuune {
   styles "nws"
   ig "ryuuneart"
+  bsky vanity="ryuuneart"
 }
 
 p_u_p_i link-list="https://pupipage.carrd.co/" {
   styles "nws"
+  bsky vanity="pupilio"
 }
 
 thuyemi {
@@ -108,17 +111,20 @@ alisa-pika {
   styles "nws"
   ig "alisapika.pika"
   twt vanity="AlisaPikaPika"
+  bsky vanity="AlisaPikaPika"
 }
 
 DELTA-MAGNA {
   styles "gun" "nws"
   twt vanity="DELTAMAGNA"
   pat vanity="DELTAMAGNA"
+  bsky vanity="deltamagna"
 }
 
 twonk {
   aliases "snelse"
   twt vanity="twonkcomics"
+  fb vanity="twonkcomics"
 }
 HeroZoid {
   twt vanity="HeroZoid"
@@ -128,6 +134,7 @@ meganwangart {
 }
 Daily-Obstruct {
   twt vanity="DailyObstruct"
+  bsky vanity="DailyObstruction"
 }
 Vanilla-Astartes {
   fb vanity="TBD"
@@ -138,9 +145,11 @@ PChunsi {
 }
 depths-of-wiki {
   ig "depthsofwiki"
+  bsky vanity="depthsofwikipedia"
   twt vanity="depthsofwiki"
 }
 Alec-Smith-Draws {
+  bsky vanity="AlecSmithDraws"
   twt vanity="AlecSmithDraws"
 }
 After-Comics {
@@ -148,6 +157,7 @@ After-Comics {
 }
 eldercactus {
   twt vanity="eldercactus"
+  bsky vanity="eldercactuc"
 }
 OstwindProjekt {
   twt vanity="OstwindProjekt"
@@ -161,6 +171,7 @@ jisoupy {
 }
 Wonni__ {
   twt vanity="Wonni__"
+  bsky vanity="wonni"
 }
 dogmodog {
   twt vanity="dogmodog"
@@ -168,7 +179,7 @@ dogmodog {
 Red-Dot {
   pat vanity="the__reddot"
   twt vanity="The__RedDot"
-  ig "TBD"
+  bsky vanity="thereddot"
 }
 
 marengo {
@@ -189,6 +200,7 @@ jake-likes-onions {
   twt vanity="jakelikesonions"
 }
 alex-krokus {
+  bsky vanity="alexkrokus"
   twt vanity="alexkrokus"
 }
 lingvistov {
@@ -383,17 +395,21 @@ qwantz "https://qwantz.com" {
 
 drewtoothpaste {
   fb vanity="drewtoothpaste"
-  bsky "drewtoothpaste"
+  bsky vanity="drewtoothpaste"
 }
+
 opdroid1234 {
   twt vanity="opdroid1234"
+  bsky vanity="opdroid1234"
 }
+
 ctrlcreep {
   styles "microfiction"
-  aliases "neoltitude"
+  aliases "neoltitude" "neotl"
   twt vanity="ctrlcreep"
   pat vanity="ctrlcreep"
   substack "ctrlcreep"
+  bsky vanity="ctrlcreep"
 }
 micro-sff {
   styles "microfiction"
@@ -417,16 +433,23 @@ yahtzee "https://fullyramblomatic-yahtzee.blogspot.com/" {
   yt "@SecondWindGroup"
   pat per-month=1 vanity="SecondWindGroup"
   twt vanity="YahtzeeCroshaw"
+  bsky vanity="YahtzeeCroshaw"
 }
 
 zach {
-  aliases "zmj"
+  aliases "zmj" "extrafabulous"
+  bsky vanity="extrafabulous"
+}
+
+lastplacecomics link-list="https://lnk.bio/SORu" {
+  aliases "zach cranor"
+  bsky vanity="lastplacecomics"
 }
 
 mr-lovenstein {
   pat vanity="mrlovenstein"
+  bsky vanity="mrlovenstein"
   aliases "J. L. Westover"
-
 }
 
 smbc "https://smbc-comics.com/" {
@@ -597,7 +620,7 @@ xe-iaso "https://xeiaso.net" {
   styles "jbo"
   aliases "cadey" "Christine Dodrill" "Cadey~#1337" "xeiaso.eth" "bc1qw0pa3zdus94nyehmys6g8td2xfaqtl9pmuv564"
   github vanity="Xe"
-  bsky "xeiaso.net"
+  bsky vanity="xeiaso.net"
   fedi "https://pony.social/" vanity="cadey"
   pat vanity="cadey"
   twt vanity="theprincessxena"
@@ -637,12 +660,12 @@ dilbert "https://scottadams.locals.com/" link-list="https://linktr.ee/scottadams
 
 manish {
   styles "rust"
-  bsky "manishearth.bsky.social"
+  bsky vanity="manishearth"
   twt vanity="manishearth"
 }
 
 blob.cat {
-  pat vanity="blobcat" per-month=1
+  pat vanity="blobcat" per-month=0
 }
 
 errant-signal {
@@ -656,6 +679,7 @@ Ordo-Mediare link-list="https://linktr.ee/ironlily" {
   pat vanity="OrdoMediare"
   fb vanity="ironlilyart"
   ig "vanishlily"
+  bsky vanity="ironlily"
   tumblr "TBD"
   aliases "Ironlily's scriptorium"
 }

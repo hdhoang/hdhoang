@@ -27,7 +27,7 @@ pub struct Art {
     #[knus(child)]
     feed: Option<feed::Feed>,
 
-    /// linktr.ee, carrd.co, ... and the like
+    /// linktr.ee, carrd.co, lnk.bio, and the like
     #[knus(property, str)]
     link_list: Option<Url>,
 
@@ -52,8 +52,6 @@ pub struct Art {
     substack: Option<Substack>,
     #[knus(child)]
     bsky: Option<Bsky>,
-    #[knus(child)]
-    cohost: Option<Cohost>,
     #[knus(child)]
     da: Option<DeviantArt>,
     #[knus(child)]
@@ -100,7 +98,6 @@ macro_rules! simple_account {
     };
 }
 
-simple_account!(Cohost, "https://cohost.org/{}", "https://cohost.org/{}.rss");
 simple_account!(
     DeviantArt,
     "https://deviantart.com/user/{}",
@@ -123,11 +120,6 @@ simple_account!(
     "https://{}.tumblr.com/",
     "https://{}.tumblr.com/rss"
 );
-
-#[derive(Debug, knus::Decode)]
-#[cfg_attr(test, derive(PartialEq))]
-// TODO: some hostname type
-pub struct Bsky(#[knus(argument, str)] String);
 
 #[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
@@ -201,6 +193,17 @@ pub struct Account {
     /// Immutable humble, per-system internal identity
     #[knus(property)]
     serial: Option<Id>,
+}
+
+#[derive(Debug, knus::Decode)]
+#[cfg_attr(test, derive(PartialEq))]
+// TODO: some hostname type
+pub struct Bsky{
+    #[knus(flatten(property))]
+    account: Account,
+    /// list memberships
+    #[knus(child, default)]
+    lists: Words,
 }
 
 /// fb profile
@@ -297,7 +300,7 @@ facebook vanity=null serial="1234"
     fn where_am_i() -> miette::Result<()> {
         let input = r#"
 hdhoang "https://hdhoang.space/" {
-cohost "hdhoang"
+/-cohost "hdhoang"
     pat vanity="hdhoang"
     fb vanity="hdh0000"
  fedi "https://blob.cat/" vanity="hdhoang"
@@ -313,10 +316,6 @@ cohost "hdhoang"
                         .parse::<url::Url>()
                         .into_diagnostic()?
                 ),
-                cohost: Cohost {
-                    vanity: "hdhoang".to_string()
-                }
-                .into(),
                 fedi: Fedi {
                     instance: "https://blob.cat".parse::<url::Url>().into_diagnostic()?,
                     account: Account {

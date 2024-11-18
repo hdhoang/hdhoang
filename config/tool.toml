@@ -123,6 +123,10 @@ asset_name.linux = "musl"
 owner = "pythops"
 repo = "oryx"
 asset_name.linux = "_64"
+[processwatch]
+owner = "intel"
+repo = "processwatch"
+asset_name.linux = "w"
 [bottom]
 owner = "ClementTsang"
 repo = "bottom"
@@ -143,7 +147,11 @@ asset_name.linux = "_64-unknown"
 owner = "equinix-labs"
 repo = "otel-cli"
 asset_name.linux = "x_amd64.t"
-
+[Dorion]
+owner = "SpikeHD"
+repo = "Dorion"
+asset_name.linux = "d64_portable"
+asset_name.windows = "n64_portable"
 # history wrangling
 [just]
 owner = "casey"
@@ -233,7 +241,7 @@ repo = "cargo-machete"
 asset_name.linux = "musl"
 
 # formatters
-[dprint]
+[dprint] # upgrade
 owner = "dprint"
 repo = "dprint"
 asset_name.linux = "_64-unknown-linux-gnu"
@@ -261,9 +269,13 @@ owner = "patrickvane"
 repo = "shfmt"
 asset_name.linux = "linux_amd64"
 asset_name.windows = "64.exe"
+[xxhsum]
+owner = "Cyan4973"
+repo = "xxHash"
+asset_name.windows = "zip"
 
 # builders
-[nextest]
+[nextest] # self update
 owner = "nextest-rs"
 repo = "nextest"
 exe_name = "cargo-nextest"
@@ -335,7 +347,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
 asset_name.linux = "11.0.AppImage"
-[yt-dlp]
+[yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"
 # asset_name.linux = "p$"

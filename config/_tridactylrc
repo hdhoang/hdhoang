@@ -7,10 +7,15 @@ set hintautoselect false
 set tabclosepinned false
 
 blacklistadd www.fastmail.com
+blacklistadd betaapp.fastmail.com
 blacklistadd jp.inoreader.com
+blacklistadd www.inoreader.com
 
 blacklistadd https:[/]/outlook.office.com/mail/
-autocmd DocStart https:[/]/outlook.office.com/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar {display: none !important;}", cssOrigin: "user"})
+autocmd DocStart https:[/]/outlook.office.com/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar, #SearchAnswerTop+div {display: none !important;} #TopBar { float:left!important; }", cssOrigin: "user"})
+
+autocmd DocStart https://www[.]linkedin[.]com/.* js tri.browserBg.tabs.insertCSS({ code: "aside {display:none!important;}" , cssOrigin: "user"})
+
 
 " " for jira
 unbind w
