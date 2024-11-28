@@ -1,7 +1,7 @@
 # Installation directory for all the tools:
 store_directory = "$HOME/run"
 
-[rclone]
+[rclone] # selfupdate
 owner = "rclone"
 repo = "rclone"
 asset_name.linux = "linux-amd64.zip"
@@ -16,7 +16,11 @@ owner = "bensadeh"
 repo = "tailspin"
 exe_name = "tspin"
 asset_name.linux = "_64-unknown-linux-musl"
-asset_name.windows = "_64-pc-windows-msvc"
+[hl]
+owner = "pamburus"
+repo = "hl"
+asset_name.linux = "_64-musl"
+asset_name.windows = "zip"
 [delta]
 owner = "dandavison"
 repo = "delta"
@@ -254,7 +258,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 [rsgain]
 owner = "complexlogic"
 repo = "rsgain"
-asset_name.linux = "nux.tar.xz"
+# asset_name.linux = "nux.tar.xz"
 asset_name.windows = "win"
 [ruff]
 owner = "astral-sh"
@@ -341,7 +345,7 @@ asset_name.linux = "_64.AppImage"
 [typst]
 owner = "typst"
 repo = "typst"
-asset_name.linux = "_64-unknown-linux-musl"
+# asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"

@@ -63,7 +63,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia justl just-mode marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -87,6 +87,7 @@
      (html "https://github.com/tree-sitter/tree-sitter-html")
      (javascript "https://github.com/tree-sitter/tree-sitter-javascript" "master" "src")
      (json "https://github.com/tree-sitter/tree-sitter-json")
+     (just "https://github.com/IndianBoy42/tree-sitter-just")
      (kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")
      (markdown "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown/src")
      (markdown-inline "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown-inline/src")
@@ -213,7 +214,9 @@
 
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
-  (add-to-list 'apheleia-mode-alist '(poly-terraform-yaml-mode . terraform))
+  (add-to-list 'apheleia-mode-alist '(hcl-ts-mode . terraform))
+  (add-to-list 'apheleia-mode-alist '(hcl-mode . terraform))
+  (add-to-list 'apheleia-mode-alist '(poly-terraform-mode . terraform))
 )
 
 (use-package nov
@@ -242,8 +245,15 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-polymode poly-terraform-yaml-mode :hostmode #'poly-terraform-hostmode
-    :innermodes '(poly-yaml-terraform-innermode))
+  (define-innermode poly-hcl-terraform-innermode :mode #'hcl-ts-mode
+    :adjust-face 5
+    :head-matcher "<<EOHCL\n"
+    :tail-matcher "^EOHCL"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-polymode poly-terraform-mode :hostmode #'poly-terraform-hostmode
+    :innermodes '(poly-yaml-terraform-innermode poly-hcl-terraform-innermode))
 
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :adjust-face 5
@@ -266,12 +276,20 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-hostmode poly-yaml-hostmode :mode #'yaml-ts-mode)
   (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
     :can-nest t
     :head-matcher "^  .+[.]ya?ml: |\n"
+    :tail-matcher #'pm-same-indent-tail-matcher
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-jsonpatch-innermode :mode #'yaml-ts-mode
+    ;; TBD: the whole chunk is still string-ly face
+    :adjust-face 5
+    :can-nest t
+    :head-matcher "^ +patchesJson6902: [|]-\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
@@ -283,8 +301,9 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-polymode poly-yaml-mode :hostmode #'poly-yaml-hostmode
+  (define-polymode poly-yaml-mode :hostmode #'poly-yaml-ts-hostmode
     :innermodes '(poly-yaml-yaml-innermode
+                  poly-yaml-jsonpatch-innermode
                   poly-yaml-conf-innermode
                   poly-yaml-toml-innermode
                   poly-yaml-jinja2-innermode
@@ -293,7 +312,7 @@
 
   :mode
   ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
-  ("[.]tf\\'" . poly-terraform-yaml-mode)
+  ("[.]tf\\'" . poly-terraform-mode)
   )
 (use-package yaml-ts-mode
   :demand 't
@@ -306,6 +325,7 @@
   ("control\\'" . yaml-ts-mode)
   ("info\\'" . yaml-ts-mode))
 
+(use-package ox-typst)
 (use-package poly-org
   :defer 10)
 
@@ -384,8 +404,7 @@
               ("C-c C-c Q" . lsp-workspace-shutdown)
               ("C-c C-c s" . lsp-rust-analyzer-status)
               ))
-(use-package just-mode)
-(use-package justl)
+(use-package just-ts-mode)
 
 (add-to-list 'magic-mode-alist '("^$TTL" . zone-mode))
 (add-to-list 'magic-mode-alist '("^$ORIGIN" . zone-mode))

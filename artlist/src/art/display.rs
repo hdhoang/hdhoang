@@ -23,6 +23,19 @@ impl fmt::Display for Facebook {
     }
 }
 
+impl fmt::Display for Patreon {
+    fn fmt(
+        &self,
+        f: &mut fmt::Formatter,
+    ) -> fmt::Result {
+        write!(
+            f,
+            "https://patreon.com/c/{}/about",
+            self.account.vanity.clone().unwrap_or_default()
+        )
+    }
+}
+
 impl fmt::Display for HuginnId {
     fn fmt(
         &self,
@@ -37,10 +50,18 @@ impl fmt::Display for Bsky {
         &self,
         f: &mut fmt::Formatter,
     ) -> fmt::Result {
-        let slug = self.account.vanity.clone().unwrap_or_default();
-        write!(f, "https://bsky.app/profile/{slug}")?;
-        if !slug.contains('.') {
-            write!(f, ".bsky.social")?
+        if let Some(ref handle) = self.account.vanity {
+            write!(f, "https://bsky.app/profile/{handle}")?;
+            if !handle.contains('.') {
+                write!(f, ".bsky.social")?
+            }
+        } else {
+            let did = self
+                .account
+                .serial
+                .clone()
+                .unwrap_or_else(|| "handle.invalid".into());
+            write!(f, "https://bsky.app/profile/did:plc:{did}")?
         }
         Ok(())
     }

@@ -634,8 +634,9 @@ invisible-bread {
   go "invisiblebread"
 }
 
-steve-klabnik {
+steve-klabnik "https://steveklabnik.com" {
   styles "rust"
+  bsky vanity="steveklabnik.com" serial="3danwc67lo7obz2fmdg6jxcr"
 }
 
 Gankra_ {
