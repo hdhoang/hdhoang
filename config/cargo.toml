@@ -7,7 +7,7 @@ iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update
 rustc-wrapper = "sccache"
 jobs = -2
 rustflags = ["-Ctarget-cpu=native", "-Cforce-frame-pointers=yes"]
-target-dir = "~/build"
+target-dir = "build"
 
 [target.x86_64-unknown-linux-musl]
 # cc = { "musl-clang"}
