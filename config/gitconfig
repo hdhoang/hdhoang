@@ -54,6 +54,10 @@ autoStash = true
 conflictStyle = zdiff3
 keepbackup = false
 
+[merge "mergiraf"]
+name = mergiraf
+driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
+
 [log]
 date = iso
 

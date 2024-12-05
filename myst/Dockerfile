@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.10
+# syntax=docker/dockerfile:1.12
 FROM ghcr.io/huginn/huginn-single-process:087bcdd8f21ead2dd4e587b554e8248e5ffd4b99
 
 USER 0

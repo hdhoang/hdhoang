@@ -1,4 +1,4 @@
-#!/bin/env -S uv tool run -- marimo edit --sandbox
+#!/bin/env -S uv tool run -- marimo edit
 # /// script
 # dependencies = ["marimo"]
 # /// script
@@ -11,7 +11,7 @@ app = marimo.App()
 
 @app.cell
 def __():
-    prev_water_photo = 879
+    prev_water_photo = 891
     return (prev_water_photo,)
 
 
@@ -30,7 +30,7 @@ def __():
 
 @app.cell
 def __(back_water):
-    back_elec_sha30461 = 0
+    back_elec_sha30461 = 38_844
 
     back_total = back_water + back_elec_sha30461
     return back_elec_sha30461, back_total
@@ -44,7 +44,7 @@ def __(back_total):
 
 @app.cell
 def __():
-    left_elec_sha30462 = 1_009_255
+    left_elec_sha30462 = 799_974
 
     left_total = 109_135 + left_elec_sha30462
     return left_elec_sha30462, left_total

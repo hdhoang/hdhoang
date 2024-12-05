@@ -42,6 +42,7 @@
  '(eldoc-minor-mode-string "")
  '(font-use-system-font t)
  '(global-auto-revert-mode t)
+ '(global-hl-line-mode t)
  '(global-tab-line-mode t)
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
@@ -63,7 +64,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode treesit-ispell kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key orderless fira-code-mode combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -95,9 +96,8 @@
      (sql "https://github.com/DerekStride/tree-sitter-sql" "gh-pages")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
-     (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
- '(use-package-always-defer 3)
- '(use-package-always-ensure t)
+     (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")))
+ '(use-package-always-ensure 't)
  '(warning-suppress-types '((use-package)))
  '(whitespace-style
    '(face trailing tabs missing-newline-at-eof indentation::space))
@@ -107,25 +107,24 @@
 (global-unset-key (kbd "C-x m"))
 
 (require 'package)
+(add-to-list 'display-buffer-alist
+             '("\\`\\*\\(Warnings\\|Compile-Log\\)\\*\\'"
+               (display-buffer-no-window)
+               (allow-no-window . t)))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (use-package devil
-  :custom
-  (devil-lighter "")
-  :config
-  (global-devil-mode)
-  :bind
-  ("C-," . #'global-devil-mode))
+  :custom (devil-lighter "")
+  :config (global-devil-mode)
+  :bind ("C-," . #'global-devil-mode))
 
 (use-package standard-themes
   :demand 't
   :config
   (if (string-equal (getenv "USER") "hdhoang")
-      (load-theme 'standard-dark t)
-    (load-theme 'standard-light t)))
+      (load-theme 'standard-dark :no-confirm-loading)
+    (load-theme 'standard-light :no-confirm-loading)))
 
-(use-package fira-code-mode
-  :hook ((fundamental-mode . fira-code-mode)))
 (set-face-attribute 'default nil :height 100)
 
 (use-package which-key
@@ -182,7 +181,7 @@
 (setq transient-levels '((magit-pull (transient:magit-pull:--autostash . 1))))
 
 (use-package rainbow-delimiters
-  :hook ((prog-mode . rainbow-delimiters-mode)))
+  :hook ((fundamental-mode . rainbow-delimiters-mode)))
 (use-package expand-region
   :bind ("C-=" . #'er/expand-region))
 
@@ -191,19 +190,12 @@
 (add-hook 'occur-mode-hook #'next-error-follow-minor-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
 
-(use-package treesit-ispell
-  :defer 600
-  :bind ("C-x s" . #'treesit-ispell-run-at-point))
-
 (global-set-key (kbd "C-x f") #'apheleia-format-buffer) ; enable apheleia on-demand
 (use-package apheleia
-  :custom
-  (apheleia-mode-lighter nil)
-  :hook
-  ((rust-ts-mode . apheleia-mode)
-   ;; (yaml-ts-mode . apheleia-mode) ; it's rude to trample manifests
-   (elisp-mode . apheleia-mode)
-   (python-ts-mode . apheleia-mode))
+  :custom (apheleia-mode-lighter nil)
+  :hook ((rust-ts-mode . apheleia-mode)
+         (elisp-mode . apheleia-mode)
+         (python-ts-mode . apheleia-mode))
   :config
   (add-to-list 'apheleia-mode-alist '(toml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(rust-ts-mode . dprint))
@@ -217,7 +209,7 @@
   (add-to-list 'apheleia-mode-alist '(hcl-ts-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-mode . terraform))
-)
+  )
 
 (use-package nov
   :defer 60)
@@ -330,7 +322,7 @@
   :defer 10)
 
 (use-package markdown-ts-mode
-   :mode ("\\.md\\'" . markdown-ts-mode)
+  :mode ("\\.md\\'" . markdown-ts-mode)
   :defer 't)
 (use-package poly-markdown
   :defer 10
@@ -361,8 +353,6 @@
   ("[.]ya?ml[.]j2\\'" . poly-ansible-mode))
 (use-package company-ansible)
 
-(use-package orderless
-  :custom (completion-styles '(basic partial-completion emacs22)))
 (use-package avy
   :custom
   (avy-all-windows 'all-frames)
@@ -373,8 +363,7 @@
 
 ;; Marginalia: annotations for minibuffer
 (use-package marginalia
-  :config
-  (marginalia-mode))
+  :config (marginalia-mode))
 
 (use-package eglot
   :config
@@ -382,18 +371,15 @@
   (add-to-list 'eglot-server-programs
                '((rust-ts-mode) .
                  ("rust-analyzer" :initializationOptions (:check (:command "clippy")))))
-  :hook
-  ((rust-ts-mode . eglot-ensure))
+  :hook ((rust-ts-mode . eglot-ensure))
   :custom
   (eglot-send-changes-idle-time 0.1)
   (eglot-extend-to-xref t)
   )
 
 (use-package rustic
-  :custom
-  (rustic-lsp-client 'eglot)
-  :hook
-  ((eglot-managed-mode . (lambda () (flymake-mode -1))))
+  :custom (rustic-lsp-client 'eglot)
+  :hook ((eglot-managed-mode . (lambda () (flymake-mode -1))))
   :bind (:map rustic-mode-map
               ("M-j" . lsp-ui-imenu)
               ("M-?" . lsp-find-references)

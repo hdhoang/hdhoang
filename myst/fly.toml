@@ -4,7 +4,7 @@ primary_region = "nrt"
 
 [processes]
 web = "/scripts/init"
-jobs = "timeout --signal=QUIT --verbose 7890 /scripts/init bin/threaded.rb"
+jobs = "timeout --signal=QUIT --verbose 3456 /scripts/init bin/threaded.rb"
 
 [[vm]]
 memory = 512

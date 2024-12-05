@@ -250,19 +250,11 @@ owner = "dprint"
 repo = "dprint"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-pc-windows-msvc"
-[treefmt]
-owner = "numtide"
-repo = "treefmt"
-asset_name.linux = "_64-unknown-linux-gnu"
-asset_name.windows = "_64-pc-windows-msvc"
 [rsgain]
 owner = "complexlogic"
 repo = "rsgain"
 # asset_name.linux = "nux.tar.xz"
 asset_name.windows = "win"
-[ruff]
-owner = "astral-sh"
-repo = "ruff"
 asset_name.linux = "_64-unknown-linux-gnu"
 [shellcheck]
 owner = "koalaman"
@@ -296,7 +288,7 @@ asset_name.linux = "_64-linux"
 [probe-rs]
 owner = "probe-rs"
 repo = "probe-rs"
-asset_name.linux = "probe-rs-x86_64-unknown"
+# asset_name.linux = "probe-rs-x86_64-unknown"
 
 [lychee]
 owner = "lycheeverse"
@@ -308,6 +300,10 @@ owner = "superfly"
 repo = "flyctl"
 asset_name.linux = "x_x"
 asset_name.windows = "dows_x"
+[shuttle]
+owner = "shuttle-hq"
+repo = "shuttle"
+# asset_name.linux = "_64-unknown-linux-gnu"
 [earthly]
 owner = "earthly"
 repo = "earthly"

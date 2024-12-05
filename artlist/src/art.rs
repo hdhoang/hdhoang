@@ -198,7 +198,7 @@ pub struct Account {
 #[derive(Debug, knus::Decode)]
 #[cfg_attr(test, derive(PartialEq))]
 // TODO: some hostname type
-pub struct Bsky{
+pub struct Bsky {
     #[knus(flatten(property))]
     account: Account,
     /// list memberships
@@ -307,46 +307,43 @@ hdhoang "https://hdhoang.space/" {
     twt vanity="21_25" serial="2125"
 } "#;
 
-        assert_eq!(
-            knus::parse::<Vec<Art>>("", input)?,
-            vec![Art {
-                handle: "hdhoang".to_string(),
-                web: Some(
-                    "https://hdhoang.space/"
-                        .parse::<url::Url>()
-                        .into_diagnostic()?
-                ),
-                fedi: Fedi {
-                    instance: "https://blob.cat".parse::<url::Url>().into_diagnostic()?,
-                    account: Account {
-                        vanity: Some("hdhoang".to_string()),
-                        serial: None
-                    },
+        assert_eq!(knus::parse::<Vec<Art>>("", input)?, vec![Art {
+            handle: "hdhoang".to_string(),
+            web: Some(
+                "https://hdhoang.space/"
+                    .parse::<url::Url>()
+                    .into_diagnostic()?
+            ),
+            fedi: Fedi {
+                instance: "https://blob.cat".parse::<url::Url>().into_diagnostic()?,
+                account: Account {
+                    vanity: Some("hdhoang".to_string()),
+                    serial: None
+                },
+            }
+            .into(),
+            pat: Some(Patreon {
+                per_month: 0,
+                account: Account {
+                    vanity: Some("hdhoang".to_string()),
+                    serial: None
                 }
-                .into(),
-                pat: Some(Patreon {
-                    per_month: 0,
-                    account: Account {
-                        vanity: Some("hdhoang".to_string()),
-                        serial: None
-                    }
-                }),
-                fb: Some(Facebook {
-                    account: Account {
-                        vanity: Some("hdh0000".to_string()),
-                        serial: None
-                    }
-                }),
-                twt: Some(Twitter {
-                    account: Account {
-                        vanity: Some("21_25".to_string()),
-                        serial: Some(2125.to_string())
-                    },
-                    lists: Words(vec![]),
-                }),
-                ..Default::default()
-            }]
-        );
+            }),
+            fb: Some(Facebook {
+                account: Account {
+                    vanity: Some("hdh0000".to_string()),
+                    serial: None
+                }
+            }),
+            twt: Some(Twitter {
+                account: Account {
+                    vanity: Some("21_25".to_string()),
+                    serial: Some(2125.to_string())
+                },
+                lists: Words(vec![]),
+            }),
+            ..Default::default()
+        }]);
         Ok(())
     }
 }
