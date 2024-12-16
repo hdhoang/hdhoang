@@ -169,6 +169,11 @@
 (global-set-key (kbd "C-x C-d") #'duplicate-dwim)
 (global-set-key (kbd "C-x C-l") #'copy-from-above-command)
 (global-set-key (kbd "C-x C-z") #'bury-buffer)
+(add-to-list 'save-some-buffers-action-alist
+             (list "d"
+                   ;; https://protesilaos.com/codelog/2024-12-11-emacs-diff-save-some-buffers/
+                   (lambda (buffer) (diff-buffer-with-file (buffer-file-name buffer)))
+                   "show diff between the buffer and its file"))
 
 (use-package diff-hl
   :config (global-diff-hl-mode t))

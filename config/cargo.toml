@@ -1,6 +1,6 @@
 [alias]
 i = "auditable install --locked --profile dist"
-iu = "auditable install-update --locked --git --all --jobs 1 --downdate --allow-no-update"
+iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update"
 
 [build]
 # fedora: from cargo, to install do env RUSTC_WRAPPER= cargo...
@@ -25,7 +25,6 @@ rustflags = [
   "-Clink-arg=--ld-path=mold",
   "-Ctarget-cpu=native",
   "-Cforce-frame-pointers=yes",
-  "-Znext-solver=coherence",
 ]
 
 [profile.dist]

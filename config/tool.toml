@@ -346,7 +346,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "11.0.AppImage"
+asset_name.linux = "11.5.AppImage"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"
