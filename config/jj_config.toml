@@ -10,3 +10,8 @@ editor = "emacsclient -c"
 
 [ui.diff]
 tool = ["difft", "--color=always", "$left", "$right"]
+
+[revset-aliases]
+# https://v5.chriskrycho.com/notes/jj-tip-ignore-gh-pages-by-default/
+ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
+# git-whoops "immutable_heads()" = "builtin_immutable_heads() | ghp"

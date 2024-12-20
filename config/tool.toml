@@ -30,6 +30,11 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
+[fish]
+owner = "fish-shell"
+repo = "fish-shell"
+exe_name = "fish"
+# xz
 [coreutils]
 owner = "uutils"
 repo = "coreutils"
@@ -308,6 +313,11 @@ repo = "shuttle"
 owner = "earthly"
 repo = "earthly"
 asset_name.linux = "linux-amd64"
+[curl]
+owner = "stunnel"
+repo = "static-curl"
+asset_name.linux = "x-x86_64-g"
+asset_name.windows = "s-x86_64-8"
 [hurl]
 owner = "Orange-OpenSource"
 repo = "hurl"

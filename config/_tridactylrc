@@ -12,10 +12,9 @@ blacklistadd jp.inoreader.com
 blacklistadd www.inoreader.com
 
 blacklistadd outlook.office.com
-autocmd DocLoad https:[/]/outlook.office.com/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar, #SearchAnswerTop+div {display: none !important;} #TopBar { float:left!important; } .sD_4q { flex-direction: row-reverse !important; }", cssOrigin: "user"})
+autocmd DocLoad https:[/]/outlook.office.com/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar, #SearchAnswerTop+div {display: none !important;} #TopBar { float: left !important; } #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }", cssOrigin: "user"})
 
 autocmd DocLoad https://www[.]linkedin[.]com/.* js tri.browserBg.tabs.insertCSS({ code: "aside {display:none!important;}" , cssOrigin: "user"})
-
 
 " " for jira
 unbind w
