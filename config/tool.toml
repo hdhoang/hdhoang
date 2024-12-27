@@ -11,6 +11,9 @@ asset_name.windows = "windows-amd64"
 [bat]
 [difftastic]
 [starship]
+owner = "starship"
+repo = "starship"
+asset_name.windows = "_64-pc-windows-msvc.zip"
 [tspin]
 owner = "bensadeh"
 repo = "tailspin"
@@ -20,7 +23,7 @@ asset_name.linux = "_64-unknown-linux-musl"
 owner = "pamburus"
 repo = "hl"
 asset_name.linux = "_64-musl"
-asset_name.windows = "zip"
+asset_name.windows = "s.zip"
 [delta]
 owner = "dandavison"
 repo = "delta"
@@ -254,7 +257,7 @@ asset_name.linux = "musl"
 owner = "dprint"
 repo = "dprint"
 asset_name.linux = "_64-unknown-linux-gnu"
-asset_name.windows = "_64-pc-windows-msvc"
+asset_name.windows = "c.zip"
 [rsgain]
 owner = "complexlogic"
 repo = "rsgain"

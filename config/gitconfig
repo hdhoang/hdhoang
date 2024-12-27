@@ -1,3 +1,5 @@
+# -*- mode: toml-ts -*-
+
 [includeIf "hasconfig:remote.*.url:git@gitlab.com:*"]
 path = ~/homes/config/jj_config.toml
 [includeIf "hasconfig:remote.*.url:https://gitlab.com/*"]
@@ -9,6 +11,9 @@ path = ~/homes/config/jj_config.toml
 
 [includeIf "gitdir:~/repos/"]
 path = ~/repos/whoami
+
+[advice]
+detachedHead = false
 
 [core]
 abbrev = 12

@@ -3,7 +3,7 @@ name = "hdhoang"
 email = "code@hdhoang.space"
 
 [ui]
-default-command = "log"
+default-command = "diff"
 default-description = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
 
 editor = "emacsclient -c"
