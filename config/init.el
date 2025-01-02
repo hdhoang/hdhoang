@@ -122,8 +122,8 @@
   :demand 't
   :config
   (if (string-equal (getenv "USER") "hdhoang")
-      (load-theme 'standard-dark :no-confirm-loading)
-    (load-theme 'standard-light :no-confirm-loading)))
+      (load-theme 'standard-dark-tinted :no-confirm-loading)
+    (load-theme 'standard-light-tinted :no-confirm-loading)))
 
 (set-face-attribute 'default nil :height 100)
 

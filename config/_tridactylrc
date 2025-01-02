@@ -1,4 +1,3 @@
-"" vim: set filetype=vim
 "" -*- mode: js-ts -*-
 "" example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
 
@@ -30,5 +29,4 @@ bind <Space> scrollpage 0.5
 
 bind ` tabsort --url
 
-"" autocmd DocStart .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;} iframe[src*='google.com/gsi'] { display: none !important }", allFrames: true, cssOrigin: "user"})
 autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;} iframe[src*='google.com/gsi'] { display: none !important }", allFrames: true, cssOrigin: "user"})
