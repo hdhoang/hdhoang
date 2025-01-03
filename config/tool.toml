@@ -87,7 +87,11 @@ owner = "achristmascarl"
 repo = "rainfrog"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-pc-windows-msvc.zip"
-
+[glance]
+owner = "glanceapp"
+repo = "glance"
+asset_name.linux = "x-am"
+asset_name.windows = "s-am"
 [crawl]
 owner = "crawl"
 repo = "crawl"
@@ -251,6 +255,11 @@ asset_name.windows = "i_w"
 owner = "bnjbvr"
 repo = "cargo-machete"
 asset_name.linux = "musl"
+[duckdb]
+owner = "duckdb"
+repo = "duckdb"
+asset_name.linux = "i-linux-am"
+asset_name.windows = "i-windows-am"
 
 # formatters
 [dprint] # upgrade
@@ -284,6 +293,11 @@ asset_name.linux = "_64-u"
 asset_name.windows = "_64-p"
 
 # builders
+[sccache]
+owner = "mozilla"
+repo = "sccache"
+asset_name.linux = "e-v0.9.1-x86_64-u"
+asset_name.windows = "e-v0.9.1-x86_64-p"
 [nextest] # self update
 owner = "nextest-rs"
 repo = "nextest"

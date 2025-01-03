@@ -7,6 +7,7 @@ default-command = "diff"
 default-description = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
 
 editor = "emacsclient -c"
+merge-editor = "mergiraf"
 
 [ui.diff]
 tool = ["difft", "--color=always", "$left", "$right"]

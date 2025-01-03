@@ -17,8 +17,9 @@ gsettings set org.gnome.desktop.interface monospace-font-name "FiraCode Nerd Fon
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 
-mkdir -vp ~/.config/{emacs,pijul,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
+mkdir -vp ~/.config/{emacs,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 
+ln -rsvf $PWD/,ctia ~/run/
 ln -rsvf $PWD/ebur128.ini ~/.config/rsgain/presets/
 ln -rsvf $PWD/config.fish ~/.config/fish/
 ln -rsvf $PWD/config.nu ~/.config/nushell/
@@ -42,7 +43,6 @@ ln -rsvf $PWD/tmux.conf ~/.config/tmux/
 ln -rsvf $PWD/_tridactylrc ~/.config/tridactyl/tridactylrc
 
 ln -rsvf $PWD/gitconfig ~/.gitconfig
-ln -rsvf $PWD/pijul_config.toml ~/.config/pijul/config.toml
 ln -rsvf $PWD/jj_config.toml ~/.config/jj/config.toml
 ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
 

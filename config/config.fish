@@ -1,4 +1,5 @@
 command -q starship && source (starship init fish --print-full-init | psub)
+command -q jj && jj util completion fish | source
 
 set -Ua fish_features remove-percent-self test-require-arg
 

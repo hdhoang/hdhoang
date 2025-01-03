@@ -13,7 +13,7 @@ If you want to add/redact some connections, please ping us at
 any and all of these:
 */
 
-hdhoang "https://hdhoang.space/" link-list=null {
+hdhoang "https://hdhoang.space/" {
   aliases "r8rooy" "r*rooy" "rooy" "hdh"
   styles "vi" "ja" "jbo"
   /-cohost "hdhoang"
@@ -40,7 +40,6 @@ Projects can have multiple personalities, aka aliases.
 
 */
 
-
 /* Comics who are gone */
 
 "909sickle" "https://909sickle.net/about" {
@@ -311,8 +310,7 @@ Philosophalopod {
 }
 
 "WOWSTUFF!" link-list="http://linktr.ee/wowstuff" {
-  pat vanity=null serial="77510853"
-  /-twt
+  pat serial="77510853"
   fedi "https://baraag.net/" vanity="wowstuff"
 }
 
@@ -378,7 +376,6 @@ buttersafe "https://buttersafe.com/" {
   tumblr "buttersafe"
   twt vanity="buttersafe"
   fb vanity="Buttersafe-Comics" serial="460224557328382"
-  /-huginn
 }
 
 sinfest {
@@ -735,7 +732,6 @@ Danby-Draws {
 Scandinavia-and-the-World {
   pat vanity="SatW"
   aliases "Scandinavia and the World"
-  /-huginn
 }
 TwentySided {
   pat vanity="shamusyoung"

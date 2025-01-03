@@ -30,7 +30,7 @@ def _():
 
 @app.cell
 def _(back_water):
-    back_elec_sha30461 = 38_844
+    back_elec_sha30461 = 176_159
 
     back_total = back_water + back_elec_sha30461
     return back_elec_sha30461, back_total
@@ -44,7 +44,7 @@ def _(back_total):
 
 @app.cell
 def _(left_water):
-    left_elec_sha30462 = 799_974
+    left_elec_sha30462 = 775_805
 
     left_total = left_water + left_elec_sha30462
     return left_elec_sha30462, left_total

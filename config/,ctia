@@ -1,0 +1,10 @@
+#!/bin/env fish
+# -*- mode: sh; apheleia-formatter: fish-indent -*-
+# this helps with iphone CTIA TRRS arrangement, where Left+Right channels cancel each other out
+# https://apple.stackexchange.com/a/135972
+# minidp?
+# other apps?
+pw-link --passive --wait mpv:output_FL alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FR &
+pw-link --passive --wait mpv:output_FL alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FL --disconnect &
+pw-link --id --links t_FL
+wait
