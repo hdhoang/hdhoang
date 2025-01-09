@@ -1,7 +1,11 @@
 "" -*- mode: js-ts -*-
 "" example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
 
-autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited {color: VisitedText !important;} iframe[src*='google.com/gsi'] { display: none !important }", allFrames: true, cssOrigin: "user"})
+"" review `:viewconfig autocmds` from time to time & autocmddelete unused entries
+autocmddelete DocLoad
+autocmddelete DocStart
+
+autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited { color: VisitedText !important; } #credential_picker_container { display: none !important; }", allFrames: true, cssOrigin: "user"})
 set theme auto
 set hintautoselect false
 set tabclosepinned false

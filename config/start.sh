@@ -1,25 +1,28 @@
-#!/bin/bash -eux
+#!/bin/env fish
 echo #`# <#`
-
-cd ${BASH_SOURCE%/*}
+set fish_trace 1
+cd (path dirname (status current-filename))
 
 # https://wezfurlong.org/wezterm/config/lua/config/term.html
 tic -x $PWD/wezterm.terminfo
 
 mkdir -vp ~/.local/share/fonts/
-for file in ../assets/*.?tf; do
+for file in ../assets/*.?tf
     ln -rsvf $file ~/.local/share/fonts/
-done
-gsettings set org.gnome.desktop.interface document-font-name "${GTK_FONT_NAME}"
-gsettings set org.gnome.desktop.interface font-name "${GTK_FONT_NAME}"
+end
+gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
+gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface monospace-font-name "FiraCode Nerd Font"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 
-mkdir -vp ~/.config/{emacs,jj,wezterm,fish,rink,environment.d,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
+mkdir -vp ~/.config/{emacs,jj,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 
 ln -rsvf $PWD/,ctia ~/run/
+ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.timer
+ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.service
+
 ln -rsvf $PWD/ebur128.ini ~/.config/rsgain/presets/
 ln -rsvf $PWD/config.fish ~/.config/fish/
 ln -rsvf $PWD/config.nu ~/.config/nushell/
@@ -34,7 +37,7 @@ ln -rsvf $PWD/$HOSTNAME.conf ~/.config/environment.d/
 ln -rsvf $PWD/env.conf ~/.config/environment.d/00-env.conf
 
 mkdir -vp ~/.config/plasma-workspace/env/
-ln -rsvf $PWD/env.sh  ~/.config/plasma-workspace/env/
+ln -rsvf $PWD/env.sh ~/.config/plasma-workspace/env/
 
 ln -rsvf $PWD/init.el ~/.config/emacs/
 ln -rsvf ~/run ~/.config/emacs/tree-sitter

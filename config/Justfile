@@ -17,8 +17,6 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
 mu PATH:
-    #!/bin/env fish
-    ,ctia &
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --osd-level=3 --scripts=gh/mpv-mpris/mpris.so \

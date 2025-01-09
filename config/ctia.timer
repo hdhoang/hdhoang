@@ -1,0 +1,9 @@
+[Timer]
+OnStartupSec=23s
+OnUnitActiveSec=179s
+
+[Service]
+ExecStart=%h/run/,ctia
+
+[Install]
+WantedBy=default.target

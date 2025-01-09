@@ -1,10 +1,22 @@
 #!/bin/env fish
-# -*- mode: sh; apheleia-formatter: fish-indent -*-
+set fish_trace 1
+
 # this helps with iphone CTIA TRRS arrangement, where Left+Right channels cancel each other out
 # https://apple.stackexchange.com/a/135972
-# minidp?
-# other apps?
-pw-link --passive --wait mpv:output_FL alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FR &
-pw-link --passive --wait mpv:output_FL alsa_output.pci-0000_00_1b.0.analog-stereo:playback_FL --disconnect &
-pw-link --id --links t_FL
+
+# changing output/stream balance in pavucontrol is another hack, but
+# balance restored when using vol+/- keys. And by this way the sound
+# is richer
+
+#other apps?
+
+for channel in $(pw-link --input . playback_FL)
+
+    pw-link --disconnect mpv:output_FL $channel
+end
+for channel in $(pw-link --input . playback_FR)
+
+    pw-link --passive --wait mpv:output_FL $channel
+end
 wait
+pw-link --id --links mpv
