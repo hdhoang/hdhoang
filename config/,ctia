@@ -16,7 +16,7 @@ for channel in $(pw-link --input . playback_FL)
 end
 for channel in $(pw-link --input . playback_FR)
 
-    pw-link --passive --wait mpv:output_FL $channel
+    pw-link --passive --wait mpv:output_FL $channel &
 end
 wait
 pw-link --id --links mpv

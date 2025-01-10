@@ -35,3 +35,46 @@ bind <Space> scrollpage 0.5
 bind ` tabsort --url
 
 autocmd DocStart .+utoronto[.]ca.~cks.space.blog.+ js document.querySelector(".commenttools a").click()
+
+setpref browser.aboutConfig.showWarning false
+setpref browser.warnOnQuitShortcut false
+
+setpref toolkit.legacyUserProfileCustomizations.stylesheets true
+setpref ui.key.menuAccessKey 0
+setpref browser.compactmode.show true
+setpref browser.toolbars.bookmarks.visibility "never"
+setpref browser.uidensity 1
+setpref browser.tabs.inTitlebar 0
+setpref browser.tabs.insertAfterCurrent true
+setpref browser.tabs.loadDivertedInBackground true
+setpref browser.tabs.hoverPreview.showThumbnails false
+setpref findbar.hightlightAll true
+setpref intl.regional_prefs.use_os_locales true
+
+setpref browser.download.autohideButton false
+setpref browser.newtabpage.activity-stream.showSearch false
+setpref browser.sessionstore.restore_pinned_tabs_on_demand true
+setpref browser.startup.page 3
+
+setpref layout.spellcheckDefault 0
+setpref layout.css.always_underline_links true
+setpref browser.display.use_document_fonts 0
+setpref browser.visited_color mediumorchid
+setpref browser.visited_color.dark mediumorchid
+setpref reader.color_scheme "dark"
+setpref view_source.wrap_long_lines true
+setpref font.language.group "x-unicode"
+setpref font.default.x-unicode "sans-serif"
+setpref font.default.x-western "sans-serif"
+
+setpref network.cookie.CHIPS.enabled true
+setpref devtools.defaultColorUnit "hsl"
+setpref devtools.theme "dark"
+setpref network.http.network_error_logging.enabled true
+setpref browser.crashReports.unsubmittedCheck.autoSubmit2 true
+setpref dom.security.https_only_mode true
+setpref dom.webgpu.enabled true
+setpref webgl.dxgl.enabled true
+setpref image.jxl.enabled true
+setpref security.OCSP.enabled false
+setpref signon.rememberSignons false

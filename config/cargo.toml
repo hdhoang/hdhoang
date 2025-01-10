@@ -2,6 +2,9 @@
 i = "auditable install --locked --profile dist"
 iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update"
 
+[resolver]
+incompatible-rust-versions = "fallback"
+
 [build]
 # fedora: from cargo, to install do env RUSTC_WRAPPER= cargo...
 rustc-wrapper = "sccache"

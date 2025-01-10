@@ -11,9 +11,6 @@ asset_name.windows = "windows-amd64"
 [bat]
 [difftastic]
 [starship]
-owner = "starship"
-repo = "starship"
-asset_name.windows = "_64-pc-windows-msvc.zip"
 [tspin]
 owner = "bensadeh"
 repo = "tailspin"
@@ -37,7 +34,7 @@ asset_name.linux = "-Ubuntu20.04.AppImage"
 owner = "fish-shell"
 repo = "fish-shell"
 exe_name = "fish"
-# xz
+asset_name.linux = "x-x"
 [coreutils]
 owner = "uutils"
 repo = "coreutils"
@@ -97,6 +94,10 @@ owner = "crawl"
 repo = "crawl"
 exe_name = "crawl-tiles"
 asset_name.linux = "tiles.x"
+[httm]
+owner = "kimono-koans"
+repo = "httm"
+asset_name.linux = "stripped"
 
 # dashboards
 [procs]
@@ -168,6 +169,7 @@ owner = "SpikeHD"
 repo = "Dorion"
 asset_name.linux = "d64_portable"
 asset_name.windows = "n64_portable"
+
 # history wrangling
 [just]
 owner = "casey"
@@ -270,12 +272,16 @@ asset_name.windows = "c.zip"
 [rsgain]
 owner = "complexlogic"
 repo = "rsgain"
-# asset_name.linux = "nux.tar.xz"
 asset_name.windows = "win"
 asset_name.linux = "_64-unknown-linux-gnu"
+[picard]
+owner = "metabrainz"
+repo = "picard"
+asset_name.windows = "d-2.12.3"
 [shellcheck]
 owner = "koalaman"
 repo = "shellcheck"
+asset_name.linux = "x.x"
 asset_name.windows = "zip"
 [shfmt]
 owner = "patrickvane"
@@ -315,7 +321,7 @@ asset_name.linux = "_64-linux"
 [probe-rs]
 owner = "probe-rs"
 repo = "probe-rs"
-# asset_name.linux = "probe-rs-x86_64-unknown"
+asset_name.linux = "probe-rs-tools-x86_64-unknown"
 
 [lychee]
 owner = "lycheeverse"

@@ -105,6 +105,7 @@
 
 (put 'narrow-to-region 'disabled nil)
 (global-unset-key (kbd "C-x m"))
+(global-set-key (kbd "C-x C-b") #'ibuffer-list-buffers)
 
 (require 'package)
 (add-to-list 'display-buffer-alist
@@ -115,8 +116,7 @@
 
 (use-package devil
   :custom (devil-lighter "")
-  :config (global-devil-mode)
-  :bind ("C-," . #'global-devil-mode))
+  :config (global-devil-mode))
 
 (use-package standard-themes
   :demand 't
