@@ -34,7 +34,7 @@
  '(completion-group t)
  '(desktop-load-locked-desktop t)
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-listing-switches "ls -alAFth")
+ '(dired-listing-switches "ls -l -aAFh --sort=size")
  '(dired-vc-rename-file t)
  '(display-battery-mode t)
  '(display-line-numbers-width 3)

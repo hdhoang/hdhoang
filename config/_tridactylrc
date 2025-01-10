@@ -2,10 +2,10 @@
 "" example file https://raw.githubusercontent.com/tridactyl/tridactyl/master/.tridactylrc
 
 "" review `:viewconfig autocmds` from time to time & autocmddelete unused entries
-autocmddelete DocLoad
+autocmddelete DocLoad .*
 autocmddelete DocStart
 
-autocmd DocLoad  .* js tri.browserBg.tabs.insertCSS({ code: "a:visited { color: VisitedText !important; } #credential_picker_container { display: none !important; }", allFrames: true, cssOrigin: "user"})
+autocmd DocLoad .* js tri.browserBg.tabs.insertCSS({ code: "a:visited { color: VisitedText !important; } body>#credential_picker_container { display: none !important; }", allFrames: true, cssOrigin: "user"})
 set theme auto
 set hintautoselect false
 set tabclosepinned false
@@ -32,9 +32,9 @@ unbind <C-e>
 bind <C-Space> scrollpage -0.5
 bind <Space> scrollpage 0.5
 
-bind ` tabsort --url
+bind ` tabsort --containers
 
-autocmd DocStart .+utoronto[.]ca.~cks.space.blog.+ js document.querySelector(".commenttools a").click()
+autocmd DocStart .+utoronto[.]ca.~cks.space.blog.+ js document.querySelector(".commenttools a")?.click()
 
 setpref browser.aboutConfig.showWarning false
 setpref browser.warnOnQuitShortcut false
@@ -59,8 +59,8 @@ setpref browser.startup.page 3
 setpref layout.spellcheckDefault 0
 setpref layout.css.always_underline_links true
 setpref browser.display.use_document_fonts 0
-setpref browser.visited_color mediumorchid
-setpref browser.visited_color.dark mediumorchid
+setpref browser.visited_color "mediumorchid"
+setpref browser.visited_color.dark "palegoldenrod"
 setpref reader.color_scheme "dark"
 setpref view_source.wrap_long_lines true
 setpref font.language.group "x-unicode"

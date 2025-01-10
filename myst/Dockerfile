@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.12
-FROM ghcr.io/huginn/huginn-single-process:3ecf8a7f0c4bb39976724e1b021a807da51d971e
+FROM ghcr.io/huginn/huginn-single-process:c3c2a627eb5ee6ea06be11c89af9b122c2c338f4
 
 USER 0
 RUN apt update -qq && \
@@ -12,7 +12,7 @@ RUN sed -i.bak -e "s,1m' do,30m' do," -e "/[125]m'/d" lib/huginn_scheduler.rb &&
                -e "/bsd|BSD/d" Gemfile && \
     rm -v app/models/agents/hipchat* app/models/agents/dropbox* app/models/agents/tumblr* app/models/agents/twilio* app/models/agents/telegram* app/models/agents/slack* app/models/agents/s3* app/models/agents/twitter* app/models/agents/google* app/models/agents/pdf* app/models/agents/jabber* app/models/agents/jira* app/models/agents/imap* app/models/agents/ftp* \
     app/concerns/twitter*
-RUN gem install bundler:2.6.2
+RUN gem install bundler:$(tac Gemfile.lock | grep -o -m1 '[1-9].*')
 
 USER default
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2

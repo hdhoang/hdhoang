@@ -6,6 +6,7 @@ AccuracySec=249s
 
 [Service]
 ExecStart=%h/run/,ctia
+TimeoutStartSec=30s
 
 [Install]
 WantedBy=default.target

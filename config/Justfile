@@ -17,9 +17,12 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
 mu PATH:
+    #!/bin/env fish
+    rg true ~/.local/share/mpris-scrobbler/credentials || set res ( mpris-scrobbler-signon token lastfm && sleep 3m && mpris-scrobbler-signon session lastfm); echo $res &
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
-        --osd-level=3 --scripts=gh/mpv-mpris/mpris.so \
+        --load-osd-console=no --load-select=no \
+        --scripts=gh/mpv-mpris/mpris.so \
         --shuffle --playlist=rclone-cache --playlist={{ PATH }} \
         --volume=90 --replaygain=track \
         --cache=yes --cache-pause-wait=30 --cache-pause-initial=yes
@@ -32,10 +35,11 @@ yt:
         --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org \
         --no-mtime --parse-metadata='%(format)s %(format_id)s:%(meta_format)s' --embed-metadata \
         --playlist-random --compat-options=filename-sanitization --output="%(uploader)s/%(title)s [%(id)s].%(ext)s" \
-        --exec=after_video:'sleep %(upload_date>%m%y|2)q' \
+        --exec=after_video:'sleep %(upload_date>%d|2)q' \
         --color=stderr:always 2>| tee /dev/fd/2 | rg -m1 --color=always 'PO.Token|not.a.bot|again.later'
     rsgain easy --preset=ebur128 --skip-existing -m 3 .
-    rclone copy -P --transfers=1 --skip-links --exclude='*.part' ./// cp:
+    org.musicbrainz.Picard .//
+    # rclone copy --fast-list -P --transfers=1 --skip-links --exclude='*.part' ./// cp:
 
 [no-cd]
 cl repo:

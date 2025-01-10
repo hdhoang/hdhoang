@@ -6,6 +6,11 @@ owner = "rclone"
 repo = "rclone"
 asset_name.linux = "linux-amd64.zip"
 asset_name.windows = "windows-amd64"
+[gphotosdl] # selfupdate
+owner = "rclone"
+repo = "gphotosdl"
+asset_name.linux = "x_x"
+asset_name.windows = "s_x"
 
 # pagers
 [bat]
@@ -72,7 +77,7 @@ asset_name.linux = "AppImage"
 [binsider]
 owner = "orhun"
 repo = "binsider"
-asset_name.linux = "_64-unknown-linux-gnu" # binsider-{tag}/binsider
+asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "windows"
 [rustdesk]
 owner = "rustdesk"
@@ -177,7 +182,7 @@ repo = "just"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
 [jj]
-owner = "martinvonz"
+owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
@@ -234,6 +239,11 @@ owner = "alexpovel"
 repo = "srgn"
 asset_name.linux = "linux"
 asset_name.windows = "windows"
+[mdq]
+owner = "yshavit"
+repo = "mdq"
+asset_name.linux = "u"
+asset_name.windows = "i"
 [jaq]
 owner = "01mf02"
 repo = "jaq"
@@ -273,7 +283,12 @@ asset_name.windows = "c.zip"
 owner = "complexlogic"
 repo = "rsgain"
 asset_name.windows = "win"
-asset_name.linux = "_64-unknown-linux-gnu"
+[fpcalc]
+owner = "acoustid"
+repo = "chromaprint"
+exe_name = "fpcalc"
+asset_name.windows = "s-x"
+asset_name.linux = "x-x"
 [picard]
 owner = "metabrainz"
 repo = "picard"
@@ -310,6 +325,12 @@ repo = "nextest"
 exe_name = "cargo-nextest"
 asset_name.linux = "_64-unknown-linux"
 asset_name.windows = "_64-pc-windows-msvc.zip"
+[cargo-dist]
+owner = "axodotdev"
+repo = "cargo-dist"
+exe_name = "dist"
+asset_name.linux = "_64-unknown-linux-musl"
+asset_name.windows = "_64-p"
 [uv]
 owner = "astral-sh"
 repo = "uv"
@@ -322,7 +343,12 @@ asset_name.linux = "_64-linux"
 owner = "probe-rs"
 repo = "probe-rs"
 asset_name.linux = "probe-rs-tools-x86_64-unknown"
-
+[minijinja-cli]
+owner = "mitsuhiko"
+repo = "minijinja"
+exe_name = "minijinja-cli"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "zip"
 [lychee]
 owner = "lycheeverse"
 repo = "lychee"
@@ -336,14 +362,15 @@ asset_name.windows = "dows_x"
 [shuttle]
 owner = "shuttle-hq"
 repo = "shuttle"
-# asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.linux = "_64-unknown-linux-gnu"
 [earthly]
 owner = "earthly"
 repo = "earthly"
 asset_name.linux = "linux-amd64"
-[curl]
+[static-curl]
 owner = "stunnel"
 repo = "static-curl"
+exe_name = "curl"
 asset_name.linux = "x-x86_64-g"
 asset_name.windows = "s-x86_64-8"
 [hurl]
@@ -379,7 +406,7 @@ asset_name.linux = "_64.AppImage"
 [typst]
 owner = "typst"
 repo = "typst"
-# asset_name.linux = "_64-unknown-linux-musl"
+asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"

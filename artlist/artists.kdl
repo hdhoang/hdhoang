@@ -14,7 +14,7 @@ any and all of these:
 */
 
 hdhoang "https://hdhoang.space/" {
-  aliases "r8rooy" "r*rooy" "rooy" "hdh"
+  aliases "r8rooy" "r*rooy" "rooy" "hdh" "r64y"
   styles "vi" "ja" "jbo"
   /-cohost "hdhoang"
   fb vanity="hdh0000"
@@ -237,6 +237,7 @@ forrest-brazeal link-list="https://bio.link/forrestbrazeal" {
 }
 
 kem-bo {
+  aliases "ken bo"
   styles "vi"
 }
 clay-jonathan {
