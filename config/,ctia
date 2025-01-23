@@ -8,15 +8,18 @@ set fish_trace 1
 # balance restored when using vol+/- keys. And by this way the sound
 # is richer
 
-#other apps?
+set apps 'mpv|Firefox'
 
 for channel in $(pw-link --input . playback_FL)
+    for app in (string split '|' $apps)
+        pw-link --disconnect $app:output_FL $channel
+    end
 
-    pw-link --disconnect mpv:output_FL $channel
 end
 for channel in $(pw-link --input . playback_FR)
-
-    pw-link --passive --wait mpv:output_FL $channel &
+    for app in (string split '|' $apps)
+        pw-link $app:output_FL $channel &
+    end
 end
 wait
-pw-link --id --links mpv
+pw-link --verbose --links . playback_FR

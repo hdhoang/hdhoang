@@ -10,7 +10,6 @@ config.color_scheme = "CLRS"
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_cwd = "B:"
-  config.color_scheme = "Tomorrow Night Burns"
 else
   -- blank window on amd
   config.front_end = "WebGpu"

@@ -97,7 +97,6 @@
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")))
- '(use-package-always-ensure 't)
  '(warning-suppress-types '((use-package)))
  '(whitespace-style
    '(face trailing tabs missing-newline-at-eof indentation::space))
@@ -107,6 +106,7 @@
 (global-unset-key (kbd "C-x m"))
 (global-set-key (kbd "C-x C-b") #'ibuffer-list-buffers)
 
+(setq use-package-always-ensure t)
 (require 'package)
 (add-to-list 'display-buffer-alist
              '("\\`\\*\\(Warnings\\|Compile-Log\\)\\*\\'"
@@ -121,9 +121,7 @@
 (use-package standard-themes
   :demand 't
   :config
-  (if (string-equal (getenv "USER") "hdhoang")
-      (load-theme 'standard-dark-tinted :no-confirm-loading)
-    (load-theme 'standard-light-tinted :no-confirm-loading)))
+  (load-theme 'standard-light-tinted :no-confirm-loading))
 
 (set-face-attribute 'default nil :height 100)
 

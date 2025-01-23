@@ -174,6 +174,16 @@ owner = "SpikeHD"
 repo = "Dorion"
 asset_name.linux = "d64_portable"
 asset_name.windows = "n64_portable"
+[chdig]
+owner = "azat"
+repo = "chdig"
+asset_name.linux = "t-x86_64.tar.g"
+asset_name.windows = "zip"
+[flamelens]
+owner = "YS-L"
+repo = "flamelens"
+asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.windows = "zip"
 
 # history wrangling
 [just]
@@ -287,7 +297,7 @@ asset_name.windows = "win"
 owner = "acoustid"
 repo = "chromaprint"
 exe_name = "fpcalc"
-asset_name.windows = "s-x"
+asset_name.windows = "ws-x"
 asset_name.linux = "x-x"
 [picard]
 owner = "metabrainz"
@@ -372,7 +382,7 @@ owner = "stunnel"
 repo = "static-curl"
 exe_name = "curl"
 asset_name.linux = "x-x86_64-g"
-asset_name.windows = "s-x86_64-8"
+asset_name.windows = "ws-x86_64-8"
 [hurl]
 owner = "Orange-OpenSource"
 repo = "hurl"
@@ -389,7 +399,7 @@ asset_name.linux = "Linux"
 [fend]
 owner = "printfn"
 repo = "fend"
-asset_name.windows = "windows-x64-exe"
+asset_name.windows = "ws-x64-exe"
 asset_name.linux = "_64-g"
 
 # recorders

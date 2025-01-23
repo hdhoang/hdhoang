@@ -1,8 +1,8 @@
 [Timer]
 OnStartupSec=23s
-OnUnitActiveSec=179s
+OnUnitActiveSec=79s
 RandomizedDelaySec=49s
-AccuracySec=249s
+AccuracySec=59s
 
 [Service]
 ExecStart=%h/run/,ctia
