@@ -238,10 +238,9 @@ owner = "comby-tools"
 repo = "comby"
 exe_name = "comby"
 asset_name.linux = "tar"
-[sg]
+[ast-grep]
 owner = "ast-grep"
 repo = "ast-grep"
-exe_name = "sg"
 asset_name.linux = "_64-unknown-linux"
 asset_name.windows = "_64-p"
 [srgn]
@@ -284,7 +283,7 @@ asset_name.linux = "i-linux-am"
 asset_name.windows = "i-windows-am"
 
 # formatters
-[dprint] # upgrade
+[dprint] # upgrade then config update
 owner = "dprint"
 repo = "dprint"
 asset_name.linux = "_64-unknown-linux-gnu"
@@ -317,6 +316,10 @@ asset_name.windows = "64.exe"
 owner = "Cyan4973"
 repo = "xxHash"
 asset_name.windows = "zip"
+[minidump-stackwalk]
+owner = "rust-minidump"
+repo = "rust-minidump"
+exe_name = "minidump-stackwalk"
 [recast]
 owner = "Altair-Bueno"
 repo = "recast"
@@ -345,6 +348,16 @@ asset_name.windows = "_64-p"
 owner = "astral-sh"
 repo = "uv"
 asset_name.linux = "_64-unknown-linux-gnu"
+[watchexec]
+owner = "watchexec"
+repo = "watchexec"
+asset_name.linux = "_64-unknown-linux-musl.t"
+asset_name.windows = "zip"
+[systemfd]
+owner = "mitsuhiko"
+repo = "systemfd"
+asset_name.windows = "zip"
+asset_name.linux = "musl"
 [mold]
 owner = "rui314"
 repo = "mold"

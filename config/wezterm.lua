@@ -20,6 +20,7 @@ config.animation_fps = 1
 config.font_dirs = { "../assets", "homes/assets" }
 -- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
+ "B612 Mono",
  "FiraCode Nerd Font",
  "Fira Code",
  "monospace",

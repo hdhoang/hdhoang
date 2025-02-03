@@ -1,6 +1,9 @@
 set unstable := true
 set shell := ["nu", "-m", "light", "-c"]
 
+set dotenv-required
+set dotenv-path := "homes/config/env.conf"
+
 default:
     just --list
 
@@ -39,7 +42,7 @@ yt:
         --exec=after_video:'sleep %(upload_date>%d|2)q' \
         --color=stderr:always 2>| tee /dev/fd/2 | rg -m1 --color=always 'PO.Token|not.a.bot|again.later'
     org.musicbrainz.Picard .//
-    # rsgain easy --preset=ebur128 --skip-existing -m 3 .
+    rsgain easy --preset=ebur128 --skip-existing -m 3 .
     # rclone copy --fast-list -P --transfers=1 --skip-links --exclude='*.part' ./// cp:
 
 [no-cd]

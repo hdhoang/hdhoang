@@ -7,12 +7,12 @@ cd (path dirname (status current-filename))
 tic -x $PWD/wezterm.terminfo
 
 mkdir -vp ~/.local/share/fonts/
-for file in ../assets/*.?tf
+for file in ../assets/*tf
     ln -rsvf $file ~/.local/share/fonts/
 end
-gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "FiraCode Nerd Font"
+gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
+gsettings set org.gnome.desktop.interface monospace-font-name "B612 Mono"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
