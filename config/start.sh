@@ -12,7 +12,7 @@ for file in ../assets/*tf
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "B612 Mono"
+gsettings set org.gnome.desktop.interface monospace-font-name "Atkinson Hyperlegible Mono"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile

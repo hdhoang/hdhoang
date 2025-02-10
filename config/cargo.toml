@@ -1,3 +1,18 @@
+[unstable]
+script = true
+native-completions = true
+
+avoid-dev-deps = true
+gc = true
+
+codegen-backend = true
+trim-paths = true
+
+gitoxide = true
+[unstable.git]
+shallow-index = true
+shallow-deps = true
+
 [alias]
 i = "auditable install --locked --profile dist"
 iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update"
@@ -6,8 +21,6 @@ iu = "auditable install-update --git --all --jobs 1 --downdate --allow-no-update
 incompatible-rust-versions = "fallback"
 
 [build]
-# fedora: from cargo, to install do env RUSTC_WRAPPER= cargo...
-rustc-wrapper = "sccache"
 jobs = -2
 rustflags = ["-Clinker=clang", "-Clink-arg=-Wl,--no-rosegment", "-Cforce-frame-pointers=yes", "-Ctarget-cpu=native"]
 target-dir = "build"
@@ -28,7 +41,17 @@ inherits = "release"
 lto = "thin"
 # https://nnethercote.github.io/perf-book/build-configuration.html
 strip = "debuginfo"
+trim-paths = ["diagnostics", "object"]
 
 [profile.profiling]
 inherits = "release"
 debug = true
+trim-paths = ["diagnostics", "object"]
+
+[profile.dev]
+codegen-backend = "cranelift"
+trim-paths = ["diagnostics", "object"]
+
+[profile.test]
+codegen-backend = "cranelift"
+trim-paths = ["diagnostics", "object"]

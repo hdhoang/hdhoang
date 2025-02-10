@@ -196,6 +196,11 @@ owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
+[gg]
+owner = "gulbanana"
+repo = "gg"
+asset_name.linux = "App"
+asset_name.windows = "exe"
 
 # k8s
 [k9s]
@@ -229,6 +234,12 @@ asset_name.linux = "d64"
 # search & destroy
 [fd]
 [ripgrep]
+[ripgrep-all]
+owner = "phiresky"
+repo = "ripgrep-all"
+exe_name = "rga"
+asset_name.linux = "musl"
+asset_name.windows = "msvc"
 [gitleaks]
 owner = "gitleaks"
 repo = "gitleaks"
@@ -279,7 +290,7 @@ asset_name.linux = "musl"
 [duckdb]
 owner = "duckdb"
 repo = "duckdb"
-asset_name.linux = "i-linux-am"
+asset_name.linux = "i-linux-amd64.z"
 asset_name.windows = "i-windows-am"
 
 # formatters
@@ -291,6 +302,7 @@ asset_name.windows = "c.zip"
 [rsgain]
 owner = "complexlogic"
 repo = "rsgain"
+asset_name.linux = "L"
 asset_name.windows = "win"
 [fpcalc]
 owner = "acoustid"
@@ -301,7 +313,7 @@ asset_name.linux = "x-x"
 [picard]
 owner = "metabrainz"
 repo = "picard"
-asset_name.windows = "d-2.12.3"
+asset_name.windows = "d-2.13.2.e"
 [shellcheck]
 owner = "koalaman"
 repo = "shellcheck"
@@ -394,7 +406,7 @@ asset_name.linux = "linux-amd64"
 owner = "stunnel"
 repo = "static-curl"
 exe_name = "curl"
-asset_name.linux = "x-x86_64-g"
+asset_name.linux = "x-x86_64-m"
 asset_name.windows = "ws-x86_64-8"
 [hurl]
 owner = "Orange-OpenSource"

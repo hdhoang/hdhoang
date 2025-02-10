@@ -10,19 +10,17 @@ config.color_scheme = "CLRS"
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_cwd = "B:"
-else
-  -- blank window on amd
-  config.front_end = "WebGpu"
 end
 
+config.front_end = "WebGpu"
 config.animation_fps = 1
 
 config.font_dirs = { "../assets", "homes/assets" }
 -- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
+ "Atkinson Hyperlegible Mono",
  "B612 Mono",
  "FiraCode Nerd Font",
- "Fira Code",
  "monospace",
  "Consolas",
 }

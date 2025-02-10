@@ -14,7 +14,7 @@ up:
     # tool sync
     flatpak -u update -y
     cargo iu
-    run0 --description=upgrade --nice=12 dnf --setopt=install_weak_deps=False upgrade -y
+    sudo-rs dnf --setopt=install_weak_deps=False upgrade -y
 
 sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
@@ -25,7 +25,9 @@ mu PATH:
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --load-osd-console=no --load-select=no \
-        --script-opts=stats-redraw_delay=5 \
+        --display-tags-append='REPLAYGAIN_TRACK_GAIN' \
+        --display-tags-append='purl' \
+        --script-opts=stats-redraw_delay=13 \
         --scripts=gh/mpv-mpris/mpris.so \
         --shuffle --playlist=rclone-cache --playlist={{ PATH }} \
         --volume=90 --replaygain=track \

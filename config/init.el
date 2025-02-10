@@ -34,7 +34,7 @@
  '(completion-group t)
  '(desktop-load-locked-desktop t)
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-listing-switches "ls -l -aAFh --sort=size")
+ '(dired-listing-switches "ls -l -aAh --sort=size") ; -F breaks symlink display
  '(dired-vc-rename-file t)
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
@@ -134,6 +134,11 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
+(use-package jujutsu
+  :defer 600
+  ;; https://github.com/bennyandresen/jujutsu.el
+  :load-path "../../gh/jujutsu.el/")
+
 (use-package kdl-ts-mode
   :defer 600
   ;; https://github.com/dataphract/kdl-ts-mode
@@ -182,8 +187,8 @@
   :custom
   (magit-define-global-key-bindings 'recommended)
   (magit-diff-refine-hunk t)
-  ;; :bind
-  ;; ("C-c M-g l" . #'magit-log-buffer-file)
+  :bind
+  ("C-c M-g l" . #'magit-log-buffer-file)
   :hook ((magit-mode . magit-delta-mode)))
 
 (use-package rainbow-delimiters
@@ -325,6 +330,8 @@
 
 (use-package ox-typst)
 (use-package poly-org
+  :custom
+  (org-use-sub-superscripts nil)
   :defer 10)
 
 (use-package markdown-ts-mode
