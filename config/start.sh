@@ -6,13 +6,14 @@ cd (path dirname (status current-filename))
 # https://wezfurlong.org/wezterm/config/lua/config/term.html
 tic -x $PWD/wezterm.terminfo
 
+flatpak -u override --filesystem=xdg-config/fontconfig:ro
 mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*tf
-    ln -rsvf $file ~/.local/share/fonts/
+    ln -vf $file ~/.local/share/fonts/
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "Atkinson Hyperlegible Mono"
+gsettings set org.gnome.desktop.interface monospace-font-name "Atkinson Hyperlegible Mono Medium"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile

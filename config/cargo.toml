@@ -1,6 +1,6 @@
 [unstable]
 script = true
-native-completions = true
+# unknown native-completions = true
 
 avoid-dev-deps = true
 gc = true
@@ -28,8 +28,7 @@ target-dir = "build"
 [target.x86_64-unknown-linux-gnu]
 rustflags = [
   # verify with `readelf -p .comment`
-  "-Clinker=clang",
-  "-Clink-arg=--ld-path=mold",
+  # "-Clink-arg=-fuse-ld=mold",
   "-Clink-arg=-Wl,--no-rosegment",
   "-Cforce-frame-pointers=yes",
   "-Ctarget-cpu=native",

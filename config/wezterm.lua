@@ -18,7 +18,7 @@ config.animation_fps = 1
 config.font_dirs = { "../assets", "homes/assets" }
 -- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
- "Atkinson Hyperlegible Mono",
+ { family = "Atkinson Hyperlegible Mono", weight = "Medium", scale = 1.05, },
  "B612 Mono",
  "FiraCode Nerd Font",
  "monospace",
@@ -53,7 +53,7 @@ if wezterm.home_dir == "/home/hieuhg" then
     cwd = "/home/hieuhg/cc/",
     args = { "bash", "./ipmiview.bash" },
   })
-  config.default_prog = { "rfish" }
+  config.default_prog = { "fish" }
 else
   table.insert(launch_menu, {
     label = "map",

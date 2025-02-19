@@ -73,7 +73,7 @@ asset_name.linux = "hextazy"
 [imhex]
 owner = "WerWolv"
 repo = "ImHex"
-asset_name.linux = "AppImage"
+asset_name.linux = "_64.A"
 [binsider]
 owner = "orhun"
 repo = "binsider"
@@ -421,6 +421,11 @@ repo = "rink-rs"
 exe_name = "rink"
 asset_name.windows = "Win"
 asset_name.linux = "Linux"
+[numbat]
+owner = "sharkdp"
+repo = "numbat"
+asset_name.linux = "_64-unknown-linux-g"
+asset_name.windows = "_64-p"
 [fend]
 owner = "printfn"
 repo = "fend"
@@ -446,7 +451,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "11.5.AppImage"
+asset_name.linux = "7.AppImage"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"
