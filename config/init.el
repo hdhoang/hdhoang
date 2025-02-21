@@ -34,7 +34,7 @@
  '(completion-group t)
  '(desktop-load-locked-desktop t)
  '(dired-hide-details-hide-symlink-targets nil)
- '(dired-listing-switches "ls -l -aAh --sort=size") ; -F breaks symlink display
+ '(dired-listing-switches "ls -l -aAh --sort=size")
  '(dired-vc-rename-file t)
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
@@ -64,7 +64,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(symbol-overlay ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -96,7 +96,8 @@
      (sql "https://github.com/DerekStride/tree-sitter-sql" "gh-pages")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
-     (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")))
+     (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
+ '(use-package-always-demand t)
  '(warning-suppress-types '((use-package)))
  '(whitespace-style
    '(face trailing tabs missing-newline-at-eof indentation::space))
@@ -200,6 +201,14 @@
 (add-hook 'fundamental-mode-hook #'follow-mode)
 (add-hook 'occur-mode-hook #'next-error-follow-minor-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+
+(use-package symbol-overlay
+  :bind
+  ("M-i" . #'symbol-overlay-put)
+  ("M-n" . #'symbol-overlay-switch-forward)
+  ("M-p" . #'symbol-overlay-switch-backward)
+  ("<f8>" . #'symbol-overlay-remove-all)
+  )
 
 (global-set-key (kbd "C-x f") #'apheleia-format-buffer) ; enable apheleia on-demand
 (use-package apheleia

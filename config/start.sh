@@ -17,6 +17,7 @@ gsettings set org.gnome.desktop.interface monospace-font-name "Atkinson Hyperleg
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
+ln -rsvf $PWD/dprint.json ~/dprint.json
 
 mkdir -vp ~/.config/{emacs,jj,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 

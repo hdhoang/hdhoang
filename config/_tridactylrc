@@ -3,7 +3,7 @@
 
 "clean up" review `:viewconfig autocmds` from time to time & autocmddelete unused entries
 autocmddelete DocLoad .*
-autocmddelete DocStart
+autocmddelete DocStart .*
 
 autocmd DocLoad .* js tri.browserBg.tabs.insertCSS({ code: "a:visited { color: VisitedText !important; } #credential_picker_container:has(iframe[src*=\"accounts.google.com\"]) { display: none !important; }", allFrames: true, cssOrigin: "user"})
 set theme auto
@@ -16,7 +16,7 @@ blacklistadd jp.inoreader.com
 blacklistadd www.inoreader.com
 
 blacklistadd outlook.office.com
-autocmd DocLoad https:[/]/outlook.office.com/mail/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar, #SearchAnswerTop+div, [aria-label=\"Forward\"] {display: none !important;} #TopBar { float: left !important; } #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }", cssOrigin: "user"})
+autocmd DocLoad https:[/]/outlook.office.com/mail/.* js tri.browserBg.tabs.insertCSS({ code: "#LeftRail, #OwaTitleBar, #SearchAnswerTop+div, [aria-label=\"Forward\"], [aria-label*=\"Viva\"] {display: none !important;} #TopBar { float: left !important; } #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }", cssOrigin: "user"})
 
 autocmd DocLoad https:[/]/www[.]linkedin[.]com/.* js tri.browserBg.tabs.insertCSS({ code: "aside {display:none!important;}" , cssOrigin: "user"})
 

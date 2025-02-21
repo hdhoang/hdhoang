@@ -86,14 +86,4 @@ config.mouse_bindings = {
   },
 }
 
-wezterm.on("update-status", function(window)
-  for _, b in ipairs(wezterm.battery_info()) do
-    if b.state == "Discharging" then
-     if b.time_to_empty < 900 then
-       window:toast_notification("low battery", "plug it in")
-     end
-    end
-  end
-end)
-
 return config
