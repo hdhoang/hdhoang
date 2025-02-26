@@ -127,6 +127,7 @@
 (set-face-attribute 'default nil :height 100)
 
 (use-package which-key
+  ; gone by 30
   :custom
   (which-key-lighter nil)
   :config

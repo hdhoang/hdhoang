@@ -42,8 +42,8 @@ yt:
         --playlist-random --compat-options=filename-sanitization --output="%(uploader)s/%(title)s [%(id)s].%(ext)s" \
         --exec=after_video:'sleep %(upload_date>%d|2)q' \
         --color=stderr:always 2>| tee /dev/fd/2 | rg -m1 --color=always 'PO.Token|not.a.bot|again.later'
-    org.musicbrainz.Picard .//
     rsgain easy --preset=ebur128 --skip-existing -m 3 .
+    org.musicbrainz.Picard .//
     # rclone copy --fast-list -P --transfers=1 --skip-links --exclude='*.part' ./// cp:
 
 [no-cd]

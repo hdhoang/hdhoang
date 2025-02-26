@@ -1,0 +1,18 @@
+/* firefox profile chrome/userContent.css */
+
+/* everywhere */
+a:visited { color: VisitedText !important; }
+#credential_picker_container:has(iframe[src*=\"accounts.google.com\"]) { display: none !important; }
+
+@-moz-document url-prefix(https://outlook.office.com/mail/) {
+    #LeftRail, #OwaTitleBar, #SearchAnswerTop+div, [aria-label=\"Apps\"], [aria-label=\"Forward\"], [aria-label*=\"Viva\"] {display: none !important;}
+    #TopBar { float: left !important; }
+    #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }
+}
+
+/* jira */
+#ak-jira-navigation { display: none !important; }
+
+@-moz-document domain(linkedin.com) {
+    aside { display: none !important; }
+}
