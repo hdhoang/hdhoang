@@ -3,7 +3,7 @@ command -q jj && jj util completion fish | source
 
 set -Ua fish_features remove-percent-self test-require-arg
 
-bind alt-s 'fish_commandline_prepend run0'
+bind alt-s 'fish_commandline_prepend sudo-rs'
 
 #10213
 bind ctrl-c __fish_cancel_commandline
@@ -48,4 +48,3 @@ set -U fish_pager_color_background
 set -U fish_pager_color_selected_description
 set -U fish_pager_color_secondary_prefix
 set -U fish_pager_color_selected_prefix
-

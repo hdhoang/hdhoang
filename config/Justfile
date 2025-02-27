@@ -11,8 +11,8 @@ start:
     ~/homes/config/start.sh
 
 up:
-    # tool sync
-    flatpak -u update -y
+    ublue-update --wait
+    topgrade --config homes/config/topgrade.toml
     cargo iu
 
 sway_tree PATTERN:
@@ -29,7 +29,7 @@ mu PATH:
         --script-opts=stats-redraw_delay=13 \
         --scripts=gh/mpv-mpris/mpris.so \
         --shuffle --playlist=rclone-cache --playlist={{ PATH }} \
-        --volume=90 --replaygain=track \
+        --volume=100 --replaygain=track \
         --cache=yes --cache-pause-wait=30 --cache-pause-initial=yes
 
 [working-directory('rclone-cache/cp')]
