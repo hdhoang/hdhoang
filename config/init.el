@@ -224,8 +224,9 @@
   (add-to-list 'apheleia-mode-alist '(markdown-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . dprint))
-
+  (add-to-list 'apheleia-mode-alist '(json-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
+
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-ts-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-mode . terraform))

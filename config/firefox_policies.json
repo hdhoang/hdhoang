@@ -1,0 +1,47 @@
+{
+  "//windows": "fxp/distribution/policies.json",
+  "//flatpak": "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/x86_64/stable/policies/policies.json",
+  "policies": {
+    "RequestedLocales": "en-SE,en-UK",
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": false,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "Exceptions": []
+    },
+    "GoToIntranetSiteForSingleWordEntryInAddressBar": false,
+    "Homepage": {
+      "StartPage": "previous-session"
+    },
+    "SearchSuggestEnabled": false,
+    "AutofillAddressEnabled": false,
+    "AutofillCreditCardEnabled": false,
+    "OfferToSaveLogins": false,
+    "PasswordManagerEnabled": false,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "DisplayBookmarksToolbar": "never",
+    "DisplayMenuBar": "never",
+    "DisableFeedbackCommands": true,
+    "DisableForgetButton": true,
+    "DisableMasterPasswordCreation": true,
+    "DisablePasswordReveal": true,
+    "DisablePocket": true,
+    "DisableProfileImport": true,
+    "DisableProfileRefresh": true,
+    "DisableSetDesktopBackground": true,
+    "DisableSystemAddonUpdate": true,
+    "DontCheckDefaultBrowser": true,
+    "HttpAllowlist": [],
+    "HttpsOnlyMode": "enabled",
+    "Permissions": {
+      "Notifications": {
+        "BlockNewRequests": true,
+        "Allow": [
+          "https://outlook.office.com"
+        ]
+      }
+    }
+  }
+}

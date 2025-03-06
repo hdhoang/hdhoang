@@ -35,6 +35,7 @@ setpref ui.key.menuAccessKey 0
 setpref browser.compactmode.show true
 setpref browser.toolbars.bookmarks.visibility "never"
 setpref browser.uidensity 1
+setpref browser.tabs.groups.enabled true
 setpref browser.tabs.inTitlebar 0
 setpref browser.tabs.insertAfterCurrent true
 setpref browser.tabs.loadDivertedInBackground true
@@ -42,6 +43,7 @@ setpref browser.tabs.hoverPreview.showThumbnails false
 setpref findbar.hightlightAll true
 setpref intl.regional_prefs.use_os_locales true
 setpref layout.testing.overlay-scrollbars.always-visible true
+setpref widget.gtk.overlay-scrollbars.enabled false
 
 setpref browser.download.autohideButton false
 setpref browser.newtabpage.activity-stream.showSearch false

@@ -15,6 +15,7 @@ disable = [
   "pip3",
   "rustup",
   "shell",
+  "system",
   "toolbx",
   "uv",
   "waydroid",
@@ -23,6 +24,7 @@ ignore_failures = ["distrobox", "flatpak", "home_manager"]
 
 [linux]
 rpm_ostree = true
+bootc = true
 
 [firmware]
 upgrade = false
