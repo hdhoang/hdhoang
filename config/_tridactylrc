@@ -53,13 +53,14 @@ setpref browser.startup.page 3
 setpref layout.spellcheckDefault 0
 setpref layout.css.always_underline_links true
 setpref browser.display.use_document_fonts 0
-setpref browser.visited_color "mediumorchid"
-setpref browser.visited_color.dark "palegoldenrod"
+setpref browser.visited_color "oklch(from mediumorchid l 0.7 h)"
+setpref browser.visited_color.dark "oklch(from palegoldenrod 0.7 c h)"
 setpref reader.color_scheme "dark"
 setpref view_source.wrap_long_lines true
 setpref font.language.group "x-unicode"
 "x" setpref font.default.x-unicode "sans-serif"
 "x" setpref font.default.x-western "sans-serif"
+setpref font.name-list.emoji "Twitter Color Emoji,Noto Color Emoji, Twemoji Mozilla"
 
 setpref network.cookie.CHIPS.enabled true
 setpref devtools.defaultColorUnit "hsl"

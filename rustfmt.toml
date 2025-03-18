@@ -1,4 +1,5 @@
 edition = "2024"
+style_edition = "2024"
 fn_params_layout = "Vertical"
 newline_style = "unix"
 reorder_imports = true
@@ -6,7 +7,7 @@ use_field_init_shorthand = true
 use_try_shorthand = true
 
 # unstable:
-# version = "Two"
+version = "Two"
 # format_code_in_doc_comments = true
 # format_macro_bodies = true
 # format_macro_matchers = true
@@ -17,4 +18,4 @@ use_try_shorthand = true
 # normalize_doc_attributes = true
 # overflow_delimited_expr = true
 # trailing_comma = "Vertical"
-# wrap_comments = true
+wrap_comments = true

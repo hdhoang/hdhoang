@@ -5,7 +5,16 @@ a:visited { color: VisitedText !important; }
 #credential_picker_container:has(iframe[src*="accounts.google.com"]) { display: none !important; }
 
 @-moz-document url-prefix(https://outlook.office.com/mail/) {
-    #LeftRail, #OwaTitleBar, #SearchAnswerTop+div, [aria-label="Apps"], [aria-label="Forward"], [aria-label*="Viva"] {display: none !important;}
+    #LeftRail,
+    #OwaTitleBar,
+    #SearchAnswerTop+div,
+    [aria-label="Message actions"] [tabindex="0"],
+    [aria-label="Reply"],
+    [aria-label="Reply all"],
+    [aria-label="Apps"],
+    [aria-label="Forward"],
+    [aria-label*="Viva"]
+    {display: none !important;}
     #TopBar { float: left !important; }
     #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }
 }

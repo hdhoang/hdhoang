@@ -24,7 +24,7 @@ ignore_failures = ["distrobox", "flatpak", "home_manager"]
 
 [linux]
 rpm_ostree = true
-bootc = true
+# bootc = true
 
 [firmware]
 upgrade = false

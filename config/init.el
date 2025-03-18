@@ -70,6 +70,8 @@
  '(repeat-mode t)
  '(require-final-newline 't)
  '(rust-format-on-save t)
+ '(rust-mode-treesitter-derive t)
+ '(rustic-analyzer-command '("~/.cargo/bin/rust-analyzer" "rust-analyzer"))
  '(safe-local-variable-values
    '((electric-pair-mode . t)
      (vc-prepare-patches-separately)
