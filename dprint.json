@@ -20,6 +20,8 @@
     "https://plugins.dprint.dev/toml-0.7.0.wasm",
     "https://plugins.dprint.dev/dockerfile-0.3.2.wasm",
     "https://plugins.dprint.dev/ruff-0.3.9.wasm",
-    "https://plugins.dprint.dev/jupyter-0.2.0.wasm"
+    "https://plugins.dprint.dev/jupyter-0.2.0.wasm",
+    "https://plugins.dprint.dev/typescript-0.94.0.wasm",
+    "https://plugins.dprint.dev/biome-0.7.1.wasm"
   ]
 }
