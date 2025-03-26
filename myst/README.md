@@ -6,7 +6,7 @@ here i am being a freeloader nerd for the 2nd decade. ingredients:
 - [huginn/huginn image](https://ghcr.io/huginn/huginn) (sponsor [co-author & maintainer knu](https://github.com/sponsors/knu))
 - [sentry DSN](https://sentry.io/pricing/) and/or [GlitchTip](https://glitchtip.com/pricing) ([donation page](https://liberapay.com/GlitchTip/donate))
 - [fly.io dashboard](https://fly.io/docs/about/pricing/)
-- [inoreader](https://jp.inoreader.com/pricing) and/or [feedly](https://feedly.com/i/pro) and/or [feedbin](https://feedbin.com/)
+- [inoreader](https://www.inoreader.com/pricing) and/or [feedly](https://feedly.com/i/pro) and/or [feedbin](https://feedbin.com/)
 
 i use its agent to crawl comic/blogs' syndication feeds, then reformat & augment them to read easily in [feedme](https://github.com/seazon/feedme). The comics update at most daily ([SMBC](https://www.smbc-comics.com/comic/archive) has been running since 2002), or thrice-weekly (Ryan North's [dinosaurs](https://qwantz.com/index.php?comic=1) have been talkin' since 2003 (lovingly crafted in [XP's MS Paint](https://www.qwantz.com/index.php?comic=4005)). and the blogs update less frequently than that. there's no need to keep huginn web-part running 24/7, and we can also reduce the scheduler wake-up frequency.
 

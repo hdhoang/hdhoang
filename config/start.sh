@@ -19,7 +19,7 @@ ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/dprint.json ~/dprint.json
 
-mkdir -vp ~/.config/{emacs,jj,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
+mkdir -vp ~/.config/{containers,emacs,jj,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 
 ln -rsvf $PWD/,ctia ~/run/
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.timer
@@ -50,6 +50,7 @@ ln -rsvf $PWD/_tridactylrc ~/.config/tridactyl/tridactylrc
 ln -rsvf $PWD/gitconfig ~/.gitconfig
 ln -rsvf $PWD/jj_config.toml ~/.config/jj/config.toml
 ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
+ln -rsvf $PWD/containers_storage.conf ~/.config/containers/storage.conf
 
 ln -rsvf $PWD/46-twemoji-color.conf ~/.config/fontconfig/conf.d/
 ln -rsvf $PWD/fonts.conf ~/.config/fontconfig/

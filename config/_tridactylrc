@@ -8,7 +8,6 @@ set tabclosepinned false
 
 blacklistadd www.fastmail.com
 blacklistadd betaapp.fastmail.com
-blacklistadd jp.inoreader.com
 blacklistadd www.inoreader.com
 
 blacklistadd outlook.office.com
@@ -17,6 +16,7 @@ blacklistadd outlook.office.com
 unbind w
 unbind a
 unbind m
+autocmd DocStart .+atlassian[.]net/.+linkSource=.+ urlmodify -Q linkSource
 
 unbind <C-e>
 
@@ -40,7 +40,7 @@ setpref browser.tabs.inTitlebar 0
 setpref browser.tabs.insertAfterCurrent true
 setpref browser.tabs.loadDivertedInBackground true
 setpref browser.tabs.hoverPreview.showThumbnails false
-setpref findbar.hightlightAll true
+setpref findbar.highlightAll true
 setpref intl.regional_prefs.use_os_locales true
 setpref layout.testing.overlay-scrollbars.always-visible true
 setpref widget.gtk.overlay-scrollbars.enabled false
@@ -60,10 +60,19 @@ setpref view_source.wrap_long_lines true
 setpref font.language.group "x-unicode"
 "x" setpref font.default.x-unicode "sans-serif"
 "x" setpref font.default.x-western "sans-serif"
-setpref font.name-list.emoji "Twitter Color Emoji,Noto Color Emoji, Twemoji Mozilla"
+setpref font.name-list.emoji "Twitter Color Emoji,Twemoji Mozilla"
+setpref browser.translations.neverTranslateLanguages "vi,fi"
+setpref browser.translations.mostRecentTargetLanguages "en"
+setpref browser.urlbar.quicksuggest.scenario	"history"	
+setpref browser.urlbar.shortcuts.bookmarks	false	
+setpref browser.urlbar.shortcuts.history	false	
+setpref browser.urlbar.shortcuts.tabs	false	
+setpref browser.urlbar.suggest.engines	false	
+setpref browser.urlbar.suggest.pocket	false	
+setpref browser.urlbar.suggest.topsites	false
 
-setpref network.cookie.CHIPS.enabled true
-setpref devtools.defaultColorUnit "hsl"
+"x" setpref network.cookie.CHIPS.enabled true
+setpref devtools.defaultColorUnit "oklch"
 setpref devtools.theme "dark"
 setpref network.http.network_error_logging.enabled true
 setpref browser.crashReports.unsubmittedCheck.autoSubmit2 true
