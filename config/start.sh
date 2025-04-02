@@ -41,6 +41,7 @@ ln -rsvf $PWD/env.conf ~/.config/environment.d/00-env.conf
 mkdir -vp ~/.config/plasma-workspace/env/
 ln -rsvf $PWD/env.sh ~/.config/plasma-workspace/env/
 
+ln -rsvf $PWD/early-init.el ~/.config/emacs/
 ln -rsvf $PWD/init.el ~/.config/emacs/
 ln -rsvf ~/run ~/.config/emacs/tree-sitter
 

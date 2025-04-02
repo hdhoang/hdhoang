@@ -24,6 +24,7 @@ mu PATH:
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --load-osd-console=no --load-select=no \
+        --display-tags-append='SYNOPSIS' \
         --display-tags-append='REPLAYGAIN_REFERENCE_LOUDNESS' \
         --display-tags-append='purl' \
         --script-opts=stats-redraw_delay=13 \

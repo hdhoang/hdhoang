@@ -1,17 +1,5 @@
 ;;; -*- lexical-binding: t -*-
 
-;; bedrock early-init.el
-;; Startup speed, annoyance suppression
-(setq bedrock--initial-gc-threshold gc-cons-threshold)
-(setq gc-cons-threshold 10000000)
-(setq byte-compile-warnings '(not obsolete))
-(setq warning-suppress-log-types '((comp) (bytecomp)))
-(setq native-comp-async-report-warnings-errors 'silent)
-
-;; Silence stupid startup message
-(setq inhibit-startup-echo-area-message (user-login-name))
-;;;
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,7 +52,7 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(symbol-overlay ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(gcmh symbol-overlay ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -100,6 +88,7 @@
      (toml "https://github.com/tree-sitter/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
  '(use-package-always-demand t)
+ '(use-package-always-ensure t)
  '(warning-suppress-types '((use-package)))
  '(whitespace-style
    '(face trailing tabs missing-newline-at-eof indentation::space))
@@ -109,13 +98,14 @@
 (global-unset-key (kbd "C-x m"))
 (global-set-key (kbd "C-x C-b") #'ibuffer-list-buffers)
 
-(setq use-package-always-ensure t)
 (require 'package)
 (add-to-list 'display-buffer-alist
              '("\\`\\*\\(Warnings\\|Compile-Log\\)\\*\\'"
                (display-buffer-no-window)
                (allow-no-window . t)))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+(use-package gcmh)
 
 (use-package devil
   :custom (devil-lighter "")
@@ -426,6 +416,5 @@
 (desktop-save-mode t)
 (server-start)
 
-(setq gc-cons-threshold (or bedrock--initial-gc-threshold 800000))
 ;; refresh grammars
 ;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))

@@ -17,6 +17,8 @@ unbind w
 unbind a
 unbind m
 autocmd DocStart .+atlassian[.]net/.+linkSource=.+ urlmodify -Q linkSource
+autocmd HistoryState https://outlook.+ js document.querySelectorAll("a[href*=\"atlOrigin\"], a[href*=\"icft\"]")?.forEach(a => {a.search=""; a.hash=""; a.title=""})
+autocmd DocLoad https://git.+ js document.querySelectorAll("a[href*=\"atlOrigin\"]")?.forEach(a => {a.search=""; a.title=""})
 
 unbind <C-e>
 
@@ -35,6 +37,7 @@ setpref ui.key.menuAccessKey 0
 setpref browser.compactmode.show true
 setpref browser.toolbars.bookmarks.visibility "never"
 setpref browser.uidensity 1
+setpref sidebar.verticalTabs true
 setpref browser.tabs.groups.enabled true
 setpref browser.tabs.inTitlebar 0
 setpref browser.tabs.insertAfterCurrent true
@@ -71,7 +74,7 @@ setpref browser.urlbar.suggest.engines	false
 setpref browser.urlbar.suggest.pocket	false	
 setpref browser.urlbar.suggest.topsites	false
 
-"x" setpref network.cookie.CHIPS.enabled true
+setpref network.cookie.CHIPS.enabled true
 setpref devtools.defaultColorUnit "oklch"
 setpref devtools.theme "dark"
 setpref network.http.network_error_logging.enabled true
