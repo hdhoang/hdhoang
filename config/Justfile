@@ -19,6 +19,7 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
 mu PATH:
+    coreutils mkdir -p rclone-cache
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --load-osd-console=no --load-select=no \
@@ -27,8 +28,9 @@ mu PATH:
         --display-tags-append='purl' \
         --script-opts=stats-redraw_delay=13 \
         --scripts=run/mpv-mpris2.so \
-        --shuffle rclone-cache --playlist={{ PATH }} \
+        --shuffle ./rclone-cache/ --playlist={{ PATH }} \
         --volume=100 --replaygain=track \
+        --prefetch-playlist=yes \
         --cache=yes --cache-pause-wait=30 --cache-pause-initial=yes
 
 [working-directory('rclone-cache/cp')]

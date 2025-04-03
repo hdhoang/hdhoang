@@ -292,6 +292,11 @@ asset_name.windows = "i_w"
 owner = "bnjbvr"
 repo = "cargo-machete"
 asset_name.linux = "musl"
+[cargo-audit]
+owner = "rustsec"
+repo = "rustsec"
+exe_name = "cargo-audit"
+asset_name.linux = "x-m"
 [duckdb]
 owner = "duckdb"
 repo = "duckdb"

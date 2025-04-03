@@ -1,11 +1,8 @@
-#!/bin/env -S uv tool run -- marimo edit
-# /// script
-# dependencies = ["marimo"]
-# /// script
+#!/bin/env -S uv tool run --with marimo -- marimo edit
 
 import marimo
 
-__generated_with = "0.11.21"
+__generated_with = "0.12.4"
 app = marimo.App()
 
 
@@ -30,7 +27,7 @@ def _():
 
 @app.cell
 def _(back_water):
-    back_elec_sha30461 = 171_934
+    back_elec_sha30461 = 256_900
 
     back_total = back_water + back_elec_sha30461
     return back_elec_sha30461, back_total
@@ -44,7 +41,7 @@ def _(back_total):
 
 @app.cell
 def _(left_water):
-    left_elec_sha30462 = 656_975
+    left_elec_sha30462 = 1_014_045
 
     left_total = left_water + left_elec_sha30462
     return left_elec_sha30462, left_total

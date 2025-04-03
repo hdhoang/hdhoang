@@ -101,7 +101,7 @@
 
 (require 'package)
 (add-to-list 'display-buffer-alist
-             '("\\`\\*\\(Warnings\\|Compile-Log\\)\\*\\'"
+             '("\\`\\*\\(Warnings\\|Async-native-compile-log\\|Compile-Log\\)\\*\\'"
                (display-buffer-no-window)
                (allow-no-window . t)))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)

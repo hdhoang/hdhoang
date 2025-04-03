@@ -25,8 +25,9 @@ jobs = -2
 rustflags = [
   # verify with `readelf -p .comment`
   "-Clinker=clang",
-  "-Clink-arg=--ld-path=wild",
-  # "-Clink-arg=-Wl,--no-rosegment",
+  "-Clink-arg=--ld-path=mold",
+  # incompatible with auditable and no-rosegment "-Clink-arg=--ld-path=wild",
+  "-Clink-arg=-Wl,--no-rosegment",
   "-Cforce-frame-pointers=yes",
   "-Ctarget-cpu=native",
 ]
