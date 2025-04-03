@@ -19,8 +19,6 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
 mu PATH:
-    #!/bin/env fish
-    rg true ~/.local/share/mpris-scrobbler/credentials || set res ( mpris-scrobbler-signon token lastfm && sleep 3m && mpris-scrobbler-signon session lastfm); echo $res &
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --load-osd-console=no --load-select=no \
@@ -28,8 +26,8 @@ mu PATH:
         --display-tags-append='REPLAYGAIN_REFERENCE_LOUDNESS' \
         --display-tags-append='purl' \
         --script-opts=stats-redraw_delay=13 \
-        --scripts=gh/mpv-mpris/mpris.so \
-        --shuffle --playlist=rclone-cache --playlist={{ PATH }} \
+        --scripts=run/mpv-mpris2.so \
+        --shuffle rclone-cache --playlist={{ PATH }} \
         --volume=100 --replaygain=track \
         --cache=yes --cache-pause-wait=30 --cache-pause-initial=yes
 

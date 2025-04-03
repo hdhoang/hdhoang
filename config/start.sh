@@ -1,7 +1,7 @@
 #!/bin/env fish
 echo #`# <#`
 set fish_trace 1
-cd (path dirname (status current-filename))
+cd $(dirname $(status current-filename)$BASH_SOURCE)
 
 # https://wezfurlong.org/wezterm/config/lua/config/term.html
 tic -x $PWD/wezterm.terminfo
@@ -9,7 +9,9 @@ tic -x $PWD/wezterm.terminfo
 flatpak -u override --filesystem=xdg-config/fontconfig:ro
 mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*tf
+do
     ln -vf $file ~/.local/share/fonts/
+done
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
@@ -19,8 +21,9 @@ ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/../dprint.json ~/dprint.json
 
-mkdir -vp ~/.config/{containers,emacs,jj,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
+mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
 
+ln -rsvf $PWD/,scrobble-filter ~/run/
 ln -rsvf $PWD/,ctia ~/run/
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.timer
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.service
@@ -50,6 +53,7 @@ ln -rsvf $PWD/_tridactylrc ~/.config/tridactyl/tridactylrc
 
 ln -rsvf $PWD/gitconfig ~/.gitconfig
 ln -rsvf $PWD/jj_config.toml ~/.config/jj/config.toml
+ln -rsvf $PWD/jj_specific.toml ~/.config/jj/conf.d/non-git.toml
 ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
 ln -rsvf $PWD/containers_storage.conf ~/.config/containers/storage.conf
 

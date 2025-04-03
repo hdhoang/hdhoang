@@ -1,7 +1,7 @@
 ;; Startup speed, annoyance suppression
 (setq gc-cons-threshold most-positive-fixnum)
 (add-hook 'emacs-startup-hook
-          (lambda () (setq gc-cons-threshold (* 500 1024 1024))))
+          (lambda () (setq gc-cons-threshold (* 50 1024 1024))))
 
 (setq byte-compile-warnings '(not obsolete))
 (setq warning-suppress-log-types '((comp) (bytecomp)))

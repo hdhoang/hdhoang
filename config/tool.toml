@@ -342,6 +342,19 @@ owner = "Altair-Bueno"
 repo = "recast"
 asset_name.linux = "_64-u"
 asset_name.windows = "_64-p"
+[offline-scrobbler]
+owner = "theirix"
+repo = "offline-scrobbler"
+asset_name.linux = "x-m"
+[mpv-mpris2]
+owner = "eNV25"
+repo = "mpv-mpris2"
+exe_name = "mpv-mpris2.so"
+asset_name.linux = "s"
+[rescrobbled]
+owner = "InputUserName"
+repo = "rescrobbled"
+asset_name.linux = "s"
 
 # builders
 [sccache]

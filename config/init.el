@@ -1,4 +1,5 @@
 ;;; -*- lexical-binding: t -*-
+(require 'use-package)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

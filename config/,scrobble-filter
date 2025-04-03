@@ -1,0 +1,37 @@
+#!/bin/env python3
+import sys
+
+# protocol: https://github.com/inputusername/rescrobbled?tab=readme-ov-file#configuration
+# player-whitelist = ["mpv"]
+# filter-script = ",scrobble-filter"
+
+artist, title, album, _genres = (l.rstrip() for l in sys.stdin.readlines())
+submit = True
+
+ARTISTS = ["Buckethead", "Bach"]
+COMPILERS = ["Francisco Callahan", "Netherlands Bach Society", "Vietnam War Song Project", "VTV - Bài Ca Đi Cùng Năm Tháng"]
+REPLACE_RULES = {
+    "": [" OFFICIAL"],
+    "Buckethead": ["Bucketheadland"],
+    "Frédéric Chopin": ["Fryderyk Chopin"],
+    "MegaDriver": ["megadriver"],
+    "Mỹ Tâm": ["My Tam"],
+}
+
+if artist in COMPILERS:
+    title, artist = title.rsplit(" - ", 1)
+    if title in ARTISTS:
+        artist, title = title, artist
+
+for replacement, matches in REPLACE_RULES.items():
+    for s in matches:
+        artist = artist.replace(s, replacement, 1)
+
+print(f"""
+
+artist: {artist}
+title : {title}
+""", end="\n\n", flush=True, file=sys.stderr)
+
+if submit:
+    print(artist, title, album, sep="\n")
