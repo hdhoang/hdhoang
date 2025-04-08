@@ -1,30 +1,26 @@
 [misc]
+sudo_command = "run0"
 assume_yes = true
 no_retry = false
 no_self_update = false
 disable = [
   "brew_cask",
   "brew_formula",
-  "cargo",
   "containers",
-  "emacs",
   "firmware",
-  "git_repos",
   "helm",
   "nix",
   "pip3",
   "rustup",
   "shell",
-  "system",
   "toolbx",
   "uv",
   "waydroid",
 ]
-ignore_failures = ["distrobox", "flatpak", "home_manager"]
+ignore_failures = []
 
 [linux]
 rpm_ostree = true
-# bootc = true
 
 [firmware]
 upgrade = false

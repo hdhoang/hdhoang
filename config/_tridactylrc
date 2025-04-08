@@ -25,7 +25,7 @@ unbind <C-e>
 bind <C-Space> scrollpage -0.5
 bind <Space> scrollpage 0.5
 
-bind ` tabsort --containers
+bind ` tabsort --url
 
 autocmd DocStart .+utoronto[.]ca.~cks.space.blog.+ js document.querySelector(".commenttools a")?.click()
 

@@ -9,7 +9,17 @@ import sys
 submit = True
 artist, title, album, _genres = (l.rstrip() for l in sys.stdin.readlines())
 
-EXTENSIONS = [".alac", ".flac", ".m3u8", ".m4a", ".mp3", ".mp4", ".ogg", ".opus"]
+EXTENSIONS = [
+    ".alac",
+    ".flac",
+    ".m3u8",
+    ".m4a",
+    ".mp3",
+    ".mp4",
+    ".ogg",
+    ".opus",
+    ".smk",
+]
 if (artist == "" and album == "" and title == "") or any(
     title.lower().endswith(e) for e in EXTENSIONS
 ):
@@ -32,11 +42,12 @@ FLIP_COMPILERS = [
 ]
 ARTIST_REPLACE_RULES = {
     "": [" OFFICIAL", " Official"],
+    "Bích Liên": ["NSƯT Bích Liên"],
     "Buckethead": ["Bucketheadland"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
     "Johann Sebastian Bach": ["Netherlands Bach Society"],
     "Khánh Ly": ["Ca Sĩ KHÁNH LY"],
-    "MegaDriver": ["megadriver"],
+    "Megadriver": ["megadriver"],
     "Microwave": ["Microwave band", "MICROWAVE"],
     "Minh Thu": ["MINH THU"],
     "Mỹ Tâm": ["My Tam"],
@@ -44,7 +55,12 @@ ARTIST_REPLACE_RULES = {
 ARTISTS = ARTIST_REPLACE_RULES.keys()
 
 TITLE_REPLACE_RULES = {
-    "": [" OFFICIAL MuSIC VIDEO", " Official Lyrics Video", " (OFFICIAL AUDIO)"],
+    "": [
+        " OFFICIAL MUSIC VIDEO",
+        " Official Lyrics Video",
+        " OFFICIAL LYRICS VIDEO",
+        " (OFFICIAL AUDIO)",
+    ],
 }
 
 if album in COMPILATIONS:

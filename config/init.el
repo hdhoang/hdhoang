@@ -141,7 +141,7 @@
 
 (use-package combobulate
   :load-path "../../gh/combobulate/"
-  :preface (setq combobulate-key-prefix "C-c o")
+  :preface (setopt combobulate-key-prefix "C-c o")
   :hook ((python-ts-mode . combobulate-mode)
          (js-ts-mode . combobulate-mode)
          (css-ts-mode . combobulate-mode)
@@ -178,7 +178,7 @@
   :config (global-diff-hl-mode t))
 (use-package magit-delta
   :config
-  (setq transient-levels '((magit-pull (transient:magit-pull:--autostash . 1))))
+  (setopt transient-levels '((magit-pull (transient:magit-pull:--autostash . 1))))
   :custom
   (magit-define-global-key-bindings 'recommended)
   (magit-diff-refine-hunk t)

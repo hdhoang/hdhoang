@@ -48,7 +48,8 @@ asset_name.windows = "_64-pc-windows-gnu.zip"
 [findutils]
 owner = "uutils"
 repo = "findutils"
-asset_name.linux = "_64-unknown-linux-gnu"
+exe_name = "find"
+asset_name.linux = "x-g"
 asset_name.windows = "_64-pc-windows-gnu.zip"
 [diffutils]
 owner = "uutils"
