@@ -1,7 +1,11 @@
 #!/bin/env fish
 echo #`# <#`
 set fish_trace 1
-cd $(dirname $(status current-filename)$BASH_SOURCE)
+
+alias do=true
+alias done=true
+set BASH_SOURCE $(status current-filename 2>/dev/null)
+cd $(dirname $BASH_SOURCE)
 
 # https://wezfurlong.org/wezterm/config/lua/config/term.html
 tic -x $PWD/wezterm.terminfo
@@ -10,19 +14,20 @@ flatpak -u override --filesystem=xdg-config/fontconfig:ro
 mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*tf
 do
+    # use hardlinks to avoid app crashing when files disappear
     ln -vf $file ~/.local/share/fonts/
 done
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "Atkinson Hyperlegible Mono Medium"
+gsettings set org.gnome.desktop.interface monospace-font-name "JuliaMono Medium"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/topgrade.toml ~/.config/topgrade.toml
 ln -rsvf $PWD/../dprint.json ~/dprint.json
 
-mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux}/ ~/run/
+mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/run/
 
 ln -rsvf $PWD/,scrobble-filter ~/run/
 ln -rsvf $PWD/rescrobbled.service ~/.config/systemd/user/
@@ -51,6 +56,8 @@ ln -rsvf $PWD/init.el ~/.config/emacs/
 ln -rsvf ~/run ~/.config/emacs/tree-sitter
 
 ln -rsvf $PWD/tmux.conf ~/.config/tmux/
+ln -rsvf $PWD/zellij.kdl ~/.config/zellij/config.kdl
+ln -rsvf $PWD/play.kdl ~/.config/zellij/layouts/
 ln -rsvf $PWD/_tridactylrc ~/.config/tridactyl/tridactylrc
 
 ln -rsvf $PWD/gitconfig ~/.gitconfig

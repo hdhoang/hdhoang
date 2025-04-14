@@ -35,6 +35,10 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
+[zellij]
+owner = "zellij-org"
+repo = "zellij"
+asset_name.linux = "_64-u"
 [fish]
 owner = "fish-shell"
 repo = "fish-shell"
@@ -107,6 +111,10 @@ asset_name.linux = "stripped"
 
 # dashboards
 [procs]
+[eza]
+owner = "eza-community"
+repo = "eza"
+asset_name.linux = "_64-unknown-linux-musl.t"
 [btdu]
 owner = "CyberShadow"
 repo = "btdu"
@@ -121,7 +129,7 @@ owner = "Byron"
 repo = "dua-cli"
 exe_name = "dua"
 asset_name.linux = "_64-unknown-linux-musl"
-asset_name.windows = "_64-pc-windows-msvc"
+asset_name.windows = "ws"
 [trippy]
 owner = "fujiapple852"
 repo = "trippy"
@@ -141,7 +149,8 @@ asset_name.linux = "_64"
 [bandwhich]
 owner = "imsnif"
 repo = "bandwhich"
-asset_name.linux = "musl"
+asset_name.linux = "_64-unknown-linux-m"
+asset_name.windows = "ws"
 [oryx]
 owner = "pythops"
 repo = "oryx"
@@ -164,8 +173,8 @@ asset_name.linux = "linux"
 [cyme]
 owner = "tuna-f1sh"
 repo = "cyme"
-asset_name.windows = "dows"
 asset_name.linux = "_64-unknown"
+asset_name.windows = "ws"
 [otel-cli]
 owner = "equinix-labs"
 repo = "otel-cli"
@@ -270,6 +279,11 @@ owner = "yshavit"
 repo = "mdq"
 asset_name.linux = "u"
 asset_name.windows = "i"
+[fq]
+owner = "wader"
+repo = "fq"
+asset_name.linux = "x_amd"
+asset_name.windows = "ws"
 [jaq]
 owner = "01mf02"
 repo = "jaq"
@@ -288,7 +302,7 @@ owner = "qarmin"
 repo = "czkawka"
 exe_name = "krokiet"
 asset_name.linux = "t_gui_heif_libraw"
-asset_name.windows = "i_w"
+asset_name.windows = "t.e"
 [cargo-machete]
 owner = "bnjbvr"
 repo = "cargo-machete"
@@ -335,6 +349,7 @@ owner = "patrickvane"
 repo = "shfmt"
 asset_name.linux = "linux_amd64"
 asset_name.windows = "64.exe"
+# b3sum: use `coreutils b3sum`
 [xxhsum]
 owner = "Cyan4973"
 repo = "xxHash"
@@ -479,7 +494,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "7.AppImage"
+asset_name.linux = ".8.A"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"

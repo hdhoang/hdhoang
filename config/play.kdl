@@ -1,0 +1,8 @@
+layout {
+  pane split_direction="horizontal" {
+    pane command="journalctl" {
+      args "--user" "-ocat" "-fu" "rescrobbled.service"
+    }
+    pane
+  }
+}

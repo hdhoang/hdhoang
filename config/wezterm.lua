@@ -18,6 +18,7 @@ config.animation_fps = 1
 config.font_dirs = { "../assets", "homes/assets" }
 -- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
+ { family = "JuliaMono", weight = "Medium", },
  { family = "Atkinson Hyperlegible Mono", weight = "Medium", scale = 1.05, },
  "B612 Mono",
  "FiraCode Nerd Font",
@@ -44,16 +45,15 @@ if wezterm.home_dir == "/home/hieuhg" then
     args = { "sh", "-c", "ssh -At j 'tmux -u a -d || exec tmux -u'" },
   })
   table.insert(launch_menu, {
-    label = "v",
-    cwd = "/home/hieuhg/cc/",
-    args = { "sh", "-c", "sudo-rs openvpn --config staff_ca_2033.ovpn --config dns.ovpn" },
+    label = "z",
+    args = { "ssh", "-At", "j", "zellij", "attach", "--create" },
   })
   table.insert(launch_menu, {
     label = "i",
     cwd = "/home/hieuhg/cc/",
     args = { "bash", "./ipmiview.bash" },
   })
-  config.default_prog = { "fish" }
+  config.default_prog = { "zellij" }
 else
   table.insert(launch_menu, {
     label = "map",

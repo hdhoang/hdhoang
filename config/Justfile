@@ -10,11 +10,6 @@ default:
 start:
     ~/homes/config/start.sh
 
-up:
-    ublue-update --wait
-    topgrade --config homes/config/topgrade.toml
-    cargo iu
-
 sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 

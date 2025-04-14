@@ -1,3 +1,6 @@
+[commands]
+"cargo" = "cargo iu"
+
 [misc]
 sudo_command = "run0"
 assume_yes = true
@@ -12,6 +15,7 @@ disable = [
   "nix",
   "pip3",
   "rustup",
+  "cargo",
   "shell",
   "toolbx",
   "uv",

@@ -1,0 +1,4 @@
+default_mode "locked"
+default_shell "fish"
+copy_clipboard "primary"
+show_release_notes false

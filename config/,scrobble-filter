@@ -20,7 +20,7 @@ EXTENSIONS = [
     ".opus",
     ".smk",
 ]
-if (artist == "" and album == "" and title == "") or any(
+if (artist == "" and album == "" and len(title) in (0, 8)) or any(
     title.lower().endswith(e) for e in EXTENSIONS
 ):
     # if "-" in title:
@@ -29,19 +29,25 @@ if (artist == "" and album == "" and title == "") or any(
     submit = False
     sys.exit(0)
 
-COMPILATIONS = ["buddy.vn", ".", "Music"]
+COMPILATIONS = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
 COMPILERS = [
+    "Danh ca hải ngoại",
     "Francisco Callahan",
+    "khanhnguyen03",
     "Hà Nội Vi Vu",
     "VTV - Bài Ca Đi Cùng Năm Tháng",
+    "VTV Go",
     "VTV SHOWS",
+    "VTV3",
 ]
 FLIP_COMPILERS = [
+    "",
     "ogafroman",
     "Vietnam War Song Project",
 ]
 ARTIST_REPLACE_RULES = {
-    "": [" OFFICIAL", " Official"],
+    "": ["OFFICIAL", "Official"],
+    "Anh Thơ": ["Anh Tho"],
     "Bích Liên": ["NSƯT Bích Liên"],
     "Buckethead": ["Bucketheadland"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
@@ -51,27 +57,28 @@ ARTIST_REPLACE_RULES = {
     "Microwave": ["Microwave band", "MICROWAVE"],
     "Minh Thu": ["MINH THU"],
     "Mỹ Tâm": ["My Tam"],
+    "Yên Hà": ["YÊN HÀ I- CÔ GIÁO HÁT NHẠC NGA"],
 }
 ARTISTS = ARTIST_REPLACE_RULES.keys()
 
 TITLE_REPLACE_RULES = {
     "": [
-        " OFFICIAL MUSIC VIDEO",
-        " Official Lyrics Video",
-        " OFFICIAL LYRICS VIDEO",
-        " (OFFICIAL AUDIO)",
+        " - Lyrics & Engsub",
+        " | Netherlands Bach Society",
+        " | Official Lyric Video by Hà Nội Vi Vu",
+        "(OFFICIAL AUDIO)",
+        "(Official Lyric Video)",
+        "- YÊN HÀ [OFFICIAL]",
+        "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
+        "Garrick Ohlsson / Chopin:",
+        "OFFICIAL LYRICS VIDEO",
+        "OFFICIAL MUSIC VIDEO",
+        "Official Lyrics Video",
     ],
 }
 
 if album in COMPILATIONS:
     album = ""
-
-if artist in FLIP_COMPILERS and " - " in title:
-    artist, title = title.rsplit(" - ", maxsplit=1)
-if artist in COMPILERS and " - " in title:
-    title, artist = title.rsplit(" - ", maxsplit=1)
-    if title in ARTISTS:
-        artist, title = title, artist
 
 for replacement, matches in ARTIST_REPLACE_RULES.items():
     for s in matches:
@@ -80,6 +87,15 @@ for replacement, matches in ARTIST_REPLACE_RULES.items():
 for replacement, matches in TITLE_REPLACE_RULES.items():
     for s in matches:
         title = title.replace(s, replacement, count=1)
+
+if artist in FLIP_COMPILERS and " - " in title:
+    artist, title = title.rsplit(" - ", maxsplit=1)
+if artist in COMPILERS and " | " in title:
+    title, artist = title.rsplit(" | ", maxsplit=1)
+if artist in COMPILERS and " - " in title:
+    title, artist = title.rsplit(" - ", maxsplit=1)
+    if title in ARTISTS:
+        artist, title = title, artist
 
 artist = artist.strip()
 album = album.strip()
