@@ -1,23 +1,31 @@
-# syntax=docker/dockerfile:1.14
+# syntax=docker/dockerfile:1.15
 FROM ghcr.io/huginn/huginn-single-process:8cb967866fff469fef1b87f8492edb2079666b55
 
 USER 0
-RUN apt update -qq && \
-    apt install -y libjemalloc2
+RUN <<EORUN
+set -xeu
+apt install --update -y libjemalloc2
+EORUN
 
-RUN sed -i.bak -e "s,1m' do,30m' do," -e "/[125]m'/d" lib/huginn_scheduler.rb && \
-    sed -i.bak -e "/twitter/d" -e "/jabber/d" /app/lib/agent_runner.rb && \
-    sed -i.bak -e "/twilio|-ftp|eather|mqtt|xmpp|slack|pdf|hipchat|weibo/d" \
-               -e "/Optional lib/,/google-oauth2/d" \
-               -e "/bsd|BSD/d" Gemfile && \
-    rm -v app/models/agents/hipchat* app/models/agents/dropbox* app/models/agents/tumblr* app/models/agents/twilio* app/models/agents/telegram* app/models/agents/slack* app/models/agents/s3* app/models/agents/twitter* app/models/agents/google* app/models/agents/pdf* app/models/agents/jabber* app/models/agents/jira* app/models/agents/imap* app/models/agents/ftp* \
-    app/concerns/twitter*
-RUN gem install bundler:$(tac Gemfile.lock | grep -o -m1 '[1-9].*')
+RUN <<EORUN
+set -xeu
+sed -i.bak -e "s,1m' do,30m' do," -e "/[125]m'/d" lib/huginn_scheduler.rb
+sed -i.bak -e "/twitter/d" -e "/jabber/d" /app/lib/agent_runner.rb
+sed -i.bak -e "/twilio|-ftp|eather|mqtt|xmpp|slack|pdf|hipchat|weibo/d" \
+    -e "/Optional lib/,/google-oauth2/d" \
+    -e "/bsd|BSD/d" \
+    Gemfile
+rm -v app/models/agents/hipchat* app/models/agents/dropbox* app/models/agents/tumblr* app/models/agents/twilio* app/models/agents/telegram* app/models/agents/slack* app/models/agents/s3* app/models/agents/twitter* app/models/agents/google* app/models/agents/pdf* app/models/agents/jabber* app/models/agents/jira* app/models/agents/imap* app/models/agents/ftp* app/concerns/twitter*
+EORUN
+
+RUN <<EORUN
+set -xeu
+gem install bundler:$(tac Gemfile.lock | grep -o -m1 '[1-9].*')
+EORUN
 
 USER default
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
-# ENV ADDITIONAL_GEMS="stackprof,sentry-ruby,sentry-rails,mini_racer"
 ENV ADDITIONAL_GEMS=mini_racer,faraday-multipart
 RUN APP_SECRET_TOKEN=secret DATABASE_ADAPTER=postgresql bundler install -j 4
 # COPY --link sentry.rb /app/config/initializers/sentry.rb

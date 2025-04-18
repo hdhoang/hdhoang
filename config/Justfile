@@ -17,7 +17,7 @@ mu PATH:
     coreutils mkdir -p rclone-cache
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
-        --load-osd-console=no --load-select=no \
+        --load-console=no --load-select=no \
         --display-tags-append='SYNOPSIS' \
         --display-tags-append='REPLAYGAIN_REFERENCE_LOUDNESS' \
         --display-tags-append='purl' \

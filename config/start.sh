@@ -14,13 +14,14 @@ flatpak -u override --filesystem=xdg-config/fontconfig:ro
 mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*tf
 do
-    # use hardlinks to avoid app crashing when files disappear
+    # use hardlinks to avoid app crashing when files disappear,
+    # and also easier for flatpak apps to get access
     ln -vf $file ~/.local/share/fonts/
 done
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "JuliaMono Medium"
+gsettings set org.gnome.desktop.interface monospace-font-name "JuliaMono Nerd Font Medium"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
@@ -31,6 +32,7 @@ mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,
 
 ln -rsvf $PWD/,scrobble-filter ~/run/
 ln -rsvf $PWD/rescrobbled.service ~/.config/systemd/user/
+systemctl --user enable --now rescrobbled.service
 ln -rsvf $PWD/,ctia ~/run/
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.timer
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.service

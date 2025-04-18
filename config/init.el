@@ -243,6 +243,17 @@
   ;; (defun poly-apheleia-format-chunk (beg end msg)
   ;;   (apheleia-format
 
+  (define-hostmode poly-dockerfile-hostmode :mode #'dockerfile-ts-mode)
+  (define-innermode poly-bash-dockerfile-innermode :mode #'bash-ts-mode
+    :adjust-face 5
+    :head-matcher "<<EORUN\n"
+    :tail-matcher "^EORUN"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-polymode poly-dockerfile-mode :hostmode #'poly-dockerfile-hostmode
+    :innermodes '(poly-bash-dockerfile-innermode))
+
   (define-hostmode poly-terraform-hostmode :mode #'terraform-mode)
   (define-innermode poly-yaml-terraform-innermode :mode #'yaml-ts-mode
     :adjust-face 5
@@ -319,6 +330,8 @@
   :mode
   ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-mode)
+  ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
+  ("Containerfile\\'" . poly-dockerfile-mode)
   )
 (use-package yaml-ts-mode
   :demand 't

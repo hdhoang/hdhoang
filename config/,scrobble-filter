@@ -52,7 +52,7 @@ ARTIST_REPLACE_RULES = {
     "Buckethead": ["Bucketheadland"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
     "Johann Sebastian Bach": ["Netherlands Bach Society"],
-    "Khánh Ly": ["Ca Sĩ KHÁNH LY"],
+    "Khánh Ly": ["Ca Sĩ KHÁNH LY", "Ca Sĩ KHÁNH LY"],
     "Megadriver": ["megadriver"],
     "Microwave": ["Microwave band", "MICROWAVE"],
     "Minh Thu": ["MINH THU"],
@@ -63,7 +63,9 @@ ARTISTS = ARTIST_REPLACE_RULES.keys()
 
 TITLE_REPLACE_RULES = {
     "": [
+	"Mộc San - Trịnh Ca || ",
         " - Lyrics & Engsub",
+        " | Audio",
         " | Netherlands Bach Society",
         " | Official Lyric Video by Hà Nội Vi Vu",
         "(OFFICIAL AUDIO)",
@@ -96,6 +98,9 @@ if artist in COMPILERS and " - " in title:
     title, artist = title.rsplit(" - ", maxsplit=1)
     if title in ARTISTS:
         artist, title = title, artist
+if artist.startswith("Pike "):
+    title = f"{artist} {title}"
+    artist = "Buckethead"
 
 artist = artist.strip()
 album = album.strip()

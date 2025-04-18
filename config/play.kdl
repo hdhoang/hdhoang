@@ -1,8 +1,12 @@
 layout {
   pane split_direction="horizontal" {
+    pane size="30%" borderless=true
     pane command="journalctl" {
       args "--user" "-ocat" "-fu" "rescrobbled.service"
     }
-    pane
+  }
+
+  pane size=2 borderless=true {
+    plugin location="zellij:status-bar"
   }
 }

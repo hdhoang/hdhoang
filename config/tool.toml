@@ -108,6 +108,10 @@ asset_name.linux = "tiles.x"
 owner = "kimono-koans"
 repo = "httm"
 asset_name.linux = "stripped"
+[rama]
+owner = "plabayo"
+repo = "rama"
+asset_name.linux = "_64-u"
 
 # dashboards
 [procs]
@@ -274,6 +278,17 @@ owner = "alexpovel"
 repo = "srgn"
 asset_name.linux = "linux"
 asset_name.windows = "windows"
+[kdl-lsp]
+owner = "kdl-org"
+repo = "kdl-rs"
+exe_name = "kdl-lsp"
+asset_name.linux = "_64-u"
+asset_name.windows = "_64-p"
+[hyperfine]
+owner = "sharkdp"
+repo = "hyperfine"
+asset_name.linux = "_64-unknown-linux-g"
+asset_name.windows = "_64-p"
 [mdq]
 owner = "yshavit"
 repo = "mdq"
@@ -307,6 +322,11 @@ asset_name.windows = "t.e"
 owner = "bnjbvr"
 repo = "cargo-machete"
 asset_name.linux = "musl"
+[cargo-insta]
+owner = "mitsuhiko"
+repo = "insta"
+exe_name = "cargo-insta"
+asset_name.linux = "x-g"
 [cargo-audit]
 owner = "rustsec"
 repo = "rustsec"

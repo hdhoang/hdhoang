@@ -18,7 +18,7 @@ config.animation_fps = 1
 config.font_dirs = { "../assets", "homes/assets" }
 -- config.font_locator = "ConfigDirsOnly"
 config.font = wezterm.font_with_fallback {
- { family = "JuliaMono", weight = "Medium", },
+ { family = "JuliaMono Nerd Font", weight = "Medium", },
  { family = "Atkinson Hyperlegible Mono", weight = "Medium", scale = 1.05, },
  "B612 Mono",
  "FiraCode Nerd Font",
