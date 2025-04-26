@@ -8,5 +8,5 @@ RELEASE_TAG="fedora-kinoite-42"
 URL="https://github.com/travier/fedora-sysexts/releases/download/${RELEASE_TAG}/${SYSEXT}.conf"
 static-curl --silent --location "${URL}" | sed s,%o-%W,fedora-kinoite, | sudo-rs tee "/etc/sysupdate.d/${SYSEXT}.conf"
 sudo-rs /usr/lib/systemd/systemd-sysupdate update
-sudo-rs systemd-sysext merge --force
+sudo-rs systemctl restart systemd-sysext
 systemd-sysext

@@ -337,6 +337,10 @@ owner = "duckdb"
 repo = "duckdb"
 asset_name.linux = "i-linux-amd64.z"
 asset_name.windows = "i-windows-am"
+[litefs]
+owner = "superfly"
+repo = "litefs"
+asset_name.linux = "am"
 
 # formatters
 [dprint] # upgrade then config update
@@ -378,6 +382,10 @@ asset_name.windows = "zip"
 owner = "rust-minidump"
 repo = "rust-minidump"
 exe_name = "minidump-stackwalk"
+[atuin]
+owner = "atuinsh"
+repo = "atuin"
+asset_name.linux = "_64-unknown-linux-gnu.t"
 [recast]
 owner = "Altair-Bueno"
 repo = "recast"
