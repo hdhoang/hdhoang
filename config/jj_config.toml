@@ -4,18 +4,12 @@ email = "code@hdhoang.space"
 
 [ui]
 default-command = "diff"
-default-description = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
 
 editor = "emacsclient -c"
 merge-editor = "mergiraf"
 
 [ui.diff]
 tool = ["difft", "--color=always", "$left", "$right"]
-
-[revset-aliases]
-# https://v5.chriskrycho.com/notes/jj-tip-ignore-gh-pages-by-default/
-ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
-# git-whoops "immutable_heads()" = "builtin_immutable_heads() | ghp"
 
 [git]
 # https://jj-vcs.github.io/jj/latest/config/#set-of-private-commits

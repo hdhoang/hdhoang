@@ -2,3 +2,6 @@
 # https://v5.chriskrycho.com/notes/jj-tip-ignore-gh-pages-by-default/
 ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
 "immutable_heads()" = "builtin_immutable_heads() | ghp"
+
+[template-aliases]
+default_commit_trailer = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"

@@ -31,8 +31,6 @@ ln -rsvf $PWD/../dprint.json ~/dprint.json
 mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/run/
 
 ln -rsvf $PWD/,scrobble-filter ~/run/
-ln -rsvf $PWD/rescrobbled.service ~/.config/systemd/user/
-systemctl --user enable --now rescrobbled.service
 ln -rsvf $PWD/,ctia ~/run/
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.timer
 ln -rsvf $PWD/ctia.timer ~/.config/systemd/user/ctia.service

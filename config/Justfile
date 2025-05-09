@@ -14,7 +14,7 @@ sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
 mu PATH:
-    coreutils mkdir -p rclone-cache
+    mkdir rclone-cache
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
         --load-console=no --load-select=no \
@@ -23,7 +23,7 @@ mu PATH:
         --display-tags-append='purl' \
         --script-opts=stats-redraw_delay=13 \
         --scripts=run/mpv-mpris2.so \
-        --shuffle ./rclone-cache/ --playlist={{ PATH }} \
+        --shuffle ($env.HOME + /rclone-cache/) --playlist={{ PATH }} \
         --volume=100 --replaygain=track \
         --prefetch-playlist=yes \
         --cache=yes --cache-pause-wait=30 --cache-pause-initial=yes
@@ -36,7 +36,7 @@ yt:
         --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org \
         --no-mtime --parse-metadata='%(format)s %(format_id)s:%(meta_format)s' --embed-metadata \
         --playlist-random --compat-options=filename-sanitization --output="%(uploader)s/%(title)s [%(id)s].%(ext)s" \
-        --exec=after_video:'sleep %(upload_date>%d|2)q' \
+        --exec=after_video:'sleep %(upload_date>%d|2)q' --preset-alias sleep \
         --color=stderr:always 2>| tee /dev/fd/2 | rg -m1 --color=always 'PO.Token|not.a.bot|again.later'
     rsgain easy --preset=ebur128 --skip-existing -m 3 .
     org.musicbrainz.Picard .//

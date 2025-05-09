@@ -292,8 +292,13 @@ asset_name.windows = "_64-p"
 [mdq]
 owner = "yshavit"
 repo = "mdq"
-asset_name.linux = "u"
-asset_name.windows = "i"
+asset_name.linux = "x-x64."
+asset_name.windows = "ws"
+[qsv]
+owner = "dathere"
+repo = "qsv"
+exe_name = "qsvp"
+asset_name.linux = "x-g"
 [fq]
 owner = "wader"
 repo = "fq"
@@ -362,7 +367,7 @@ asset_name.linux = "x-x"
 [picard]
 owner = "metabrainz"
 repo = "picard"
-asset_name.windows = "d-2.13.2.e"
+asset_name.windows = "d-2.13.3.e"
 [shellcheck]
 owner = "koalaman"
 repo = "shellcheck"

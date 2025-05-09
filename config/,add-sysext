@@ -1,12 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-# sudo-rs install -d -m 0755 -o 0 -g 0 /var/lib/extensions /var/lib/extensions.d /etc/sysupdate.d
-# sudo-rs restorecon -RFv /var/lib/extensions /var/lib/extensions.d /etc/sysupdate.d
-SYSEXT="${1?which ext}"
-RELEASE_TAG="fedora-kinoite-42"
-URL="https://github.com/travier/fedora-sysexts/releases/download/${RELEASE_TAG}/${SYSEXT}.conf"
-static-curl --silent --location "${URL}" | sed s,%o-%W,fedora-kinoite, | sudo-rs tee "/etc/sysupdate.d/${SYSEXT}.conf"
-sudo-rs /usr/lib/systemd/systemd-sysupdate update
-sudo-rs systemctl restart systemd-sysext
-systemd-sysext
+SYSEXT="${1}"
+URL="https://extensions.fcos.fr/extensions"
+sudo-rs install -d -m 0755 -o 0 -g 0 /etc/sysupdate.${SYSEXT}.d
+sudo-rs restorecon -RFv /etc/sysupdate.${SYSEXT}.d
+static-curl --silent --fail --location "${URL}/${SYSEXT}.conf" \
+  | sudo-rs tee "/etc/sysupdate.${SYSEXT}.d/${SYSEXT}.transfer"
+sudo-rs /usr/lib/systemd/systemd-sysupdate update --component "${SYSEXT}"

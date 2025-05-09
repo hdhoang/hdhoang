@@ -67,7 +67,8 @@ driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P
 date = iso
 
 [diff "elisp"]
-xfuncname="^\\((((def\\S+)|use-package)\\s+\\S+)"
+# https://www.jamescherti.com/better-git-diff-emacs-lisp-elisp/
+xfuncname = ^\\([^[:space:]]*def[^[:space:]]+[[:space:]]+([^()[:space:]]+)
 
 [diff]
 algorithm = histogram

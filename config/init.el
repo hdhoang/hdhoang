@@ -24,6 +24,7 @@
  '(desktop-load-locked-desktop t)
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "ls -l -aAh --sort=size")
+ '(dired-use-ls-dired nil)
  '(dired-vc-rename-file t)
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
@@ -38,22 +39,24 @@
  '(inhibit-startup-screen t)
  '(initial-major-mode #'sql-mode)
  '(initial-scratch-message nil)
- '(insert-directory-program "coreutils" t)
+ '(insert-directory-program "coreutils")
  '(isearch-lazy-count t)
  '(line-number-mode t)
  '(major-mode-remap-alist
-   '((conf-toml-mode . toml-ts-mode)
-     (go-mode . go-ts-mode)
-     (hcl-mode . hcl-ts-mode)
-     (js-json-mode . json-ts-mode)
-     (python-mode . python-ts-mode)
-     (markdown-mode . markdown-ts-mode)
-     (rust-mode . rust-ts-mode)
-     (sh-mode . bash-ts-mode)
+   '((conf-toml-mode . toml-ts-mode) (go-mode . go-ts-mode)
+     (hcl-mode . hcl-ts-mode) (js-json-mode . json-ts-mode)
+     (python-mode . python-ts-mode) (markdown-mode . markdown-ts-mode)
+     (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(gcmh symbol-overlay ox-typst just-ts-mode markdown-ts-mode standard-themes diff-hl nov devil polymode hcl-ts-mode company-ansible terraform-doc terraform-mode kdl-ts-mode pcre2el apheleia marginalia avy rustic which-key combobulate treesit expand-region groovy-mode magit-delta rainbow-delimiters use-package poly-ansible poly-markdown poly-org))
+   '(gcmh symbol-overlay ox-typst just-ts-mode markdown-ts-mode
+          standard-themes diff-hl nov devil polymode hcl-ts-mode
+          company-ansible terraform-doc terraform-mode kdl-ts-mode
+          pcre2el apheleia marginalia avy rustic which-key combobulate
+          treesit expand-region groovy-mode magit-delta
+          rainbow-delimiters use-package poly-ansible poly-markdown
+          poly-org))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -61,8 +64,7 @@
  '(rust-format-on-save t)
  '(rust-mode-treesitter-derive t)
  '(safe-local-variable-values
-   '((electric-pair-mode . t)
-     (vc-prepare-patches-separately)
+   '((electric-pair-mode . t) (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
  '(tool-bar-mode nil)
@@ -71,17 +73,25 @@
    '((bash "https://github.com/tree-sitter/tree-sitter-bash")
      (c "https://github.com/tree-sitter/tree-sitter-c")
      (cpp "https://github.com/tree-sitter/tree-sitter-cpp")
-     (dockerfile "https://github.com/camdencheek/tree-sitter-dockerfile")
+     (dockerfile
+      "https://github.com/camdencheek/tree-sitter-dockerfile")
      (go "https://github.com/tree-sitter/tree-sitter-go")
-     (gosum "https://github.com/tree-sitter-grammars/tree-sitter-go-sum")
+     (gosum
+      "https://github.com/tree-sitter-grammars/tree-sitter-go-sum")
      (hcl "https://github.com/tree-sitter-grammars/tree-sitter-hcl")
      (html "https://github.com/tree-sitter/tree-sitter-html")
-     (javascript "https://github.com/tree-sitter/tree-sitter-javascript" "master" "src")
+     (javascript
+      "https://github.com/tree-sitter/tree-sitter-javascript" "master"
+      "src")
      (json "https://github.com/tree-sitter/tree-sitter-json")
      (just "https://github.com/IndianBoy42/tree-sitter-just")
      (kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")
-     (markdown "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown/src")
-     (markdown-inline "https://github.com/tree-sitter-grammars/tree-sitter-markdown" "split_parser" "tree-sitter-markdown-inline/src")
+     (markdown
+      "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+      "split_parser" "tree-sitter-markdown/src")
+     (markdown-inline
+      "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
+      "split_parser" "tree-sitter-markdown-inline/src")
      (python "https://github.com/tree-sitter/tree-sitter-python")
      (sql "https://github.com/DerekStride/tree-sitter-sql" "gh-pages")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
@@ -119,7 +129,7 @@
 (set-face-attribute 'default nil :height 100)
 
 (use-package which-key
-  ; gone by 30
+                                        ; gone by 30
   :custom
   (which-key-lighter nil)
   :config

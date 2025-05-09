@@ -56,9 +56,11 @@ setpref browser.startup.page 3
 setpref layout.spellcheckDefault 0
 setpref layout.css.always_underline_links true
 setpref browser.display.use_document_fonts 0
+setpref devtools.defaultColorUnit "hsl"
 setpref browser.visited_color "oklch(from mediumorchid l 0.7 h)"
 setpref browser.visited_color.dark "oklch(from palegoldenrod 0.7 c h)"
 setpref reader.color_scheme "dark"
+setpref devtools.theme "dark"
 setpref view_source.wrap_long_lines true
 setpref font.language.group "x-unicode"
 setpref font.default.x-unicode "sans-serif"
@@ -78,8 +80,6 @@ setpref browser.urlbar.suggest.pocket	false
 setpref browser.urlbar.suggest.topsites	false
 
 setpref network.cookie.CHIPS.enabled true
-setpref devtools.defaultColorUnit "oklch"
-setpref devtools.theme "dark"
 setpref network.http.network_error_logging.enabled true
 setpref browser.crashReports.unsubmittedCheck.autoSubmit2 true
 setpref dom.security.https_only_mode false

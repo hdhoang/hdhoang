@@ -68,18 +68,23 @@ TITLE_REPLACE_RULES = {
 	"Mộc San - Trịnh Ca || ",
         " - Lyrics & Engsub",
         " | Audio",
+        " | MINH THU | TRỊNH XƯA",
         " | Netherlands Bach Society",
         " | OFFICIAL MUSIC VIDEO 4K | ",
         " | Official Lyric Video by Hà Nội Vi Vu",
+        " || MANH PIANO Official",
         "(OFFICIAL AUDIO)",
         "(Official Lyric Video)",
+        "- KHÁNH LY | OFFICIAL",
         "- YÊN HÀ [OFFICIAL]",
         "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
         "Garrick Ohlsson / Chopin:",
         "OFFICIAL LYRICS VIDEO",
         "OFFICIAL MUSIC VIDEO",
         "Official Lyrics Video",
-    ], reverse=True, key=lambda s: len(s)),
+        "THU ÂM TRƯỚC 1975 | ",
+        "🎵Mạnh Piano | ",
+    ], reverse=True, key=len),
 }
 
 if album in COMPILATIONS:
@@ -104,6 +109,8 @@ if artist in COMPILERS and " - " in title:
 if artist.startswith("Pike "):
     title = f"{artist} {title}"
     artist = "Buckethead"
+if artist == "" and "Micro Lesson" in title:
+    artist = "Scott Adams"
 
 artist = artist.strip()
 album = album.strip()

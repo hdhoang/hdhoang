@@ -2,21 +2,21 @@
 
 import marimo
 
-__generated_with = "0.12.9"
+__generated_with = "0.13.6"
 app = marimo.App()
 
 
 @app.cell
 def _():
-    prev_water_photo = 933
+    prev_water_photo = 945
     return (prev_water_photo,)
 
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 945
+    this_water_photo = 958
     left_consumed = this_water_photo - prev_water_photo
-    return left_consumed, this_water_photo
+    return (left_consumed,)
 
 
 @app.cell
@@ -33,10 +33,10 @@ def _(hawater_consumed, left_consumed):
 
 @app.cell
 def _(back_water):
-    back_elec_sha30461 = 256_900
+    back_elec_sha30461 = 125_459
 
     back_total = back_water + back_elec_sha30461
-    return back_elec_sha30461, back_total
+    return (back_total,)
 
 
 @app.cell
@@ -50,10 +50,10 @@ def _(back_consumed, back_total, back_water):
 
 @app.cell
 def _(left_water):
-    left_elec_sha30462 = 1_014_045
+    left_elec_sha30462 = 1_339_070
 
     left_total = left_water + left_elec_sha30462
-    return left_elec_sha30462, left_total
+    return (left_total,)
 
 
 @app.cell
@@ -74,7 +74,7 @@ def _(left_consumed, left_water):
 def _(FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, left_consumed):
     left_by_meter = 10 * PRICE_00_TO_10 + max(0, left_consumed - 10.0) * PRICE_10_TO_20
     left_water = left_by_meter * FINAL_FEES_RATIO
-    return left_by_meter, left_water
+    return (left_water,)
 
 
 @app.cell
@@ -82,7 +82,7 @@ def _(FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, back_consumed):
     back_by_meter = back_consumed * PRICE_00_TO_10 + 0 * PRICE_10_TO_20 # + 0 * PRICE_20_TO_30
     back_water = back_by_meter * FINAL_FEES_RATIO
 
-    return back_by_meter, back_water
+    return (back_water,)
 
 
 @app.cell
@@ -92,7 +92,7 @@ def _():
     PRICE_00_TO_10 = 8500
     PRICE_10_TO_20 = 9900
     PRICE_20_TO_30 = 16000
-    return FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, PRICE_20_TO_30
+    return FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20
 
 
 if __name__ == "__main__":
