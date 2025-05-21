@@ -65,7 +65,9 @@ ARTISTS = ARTIST_REPLACE_RULES.keys()
 
 TITLE_REPLACE_RULES = {
     "": sorted([
+        " || Tình Khúc San và Trịnh HAY NỨC NỞ",
 	"Mộc San - Trịnh Ca || ",
+        "(Audio)",
         " - Lyrics & Engsub",
         " | Audio",
         " | MINH THU | TRỊNH XƯA",
@@ -118,9 +120,9 @@ title = title.strip()
 
 print(
     f"""
-  artist           : {artist}
-    album          : {album}
      title         : {title}
+  artist           : {artist}
+     album         : {album}
 """,
     end="\n\n",
     flush=True,

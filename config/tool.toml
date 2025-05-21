@@ -12,6 +12,20 @@ repo = "gphotosdl"
 asset_name.linux = "x_x"
 asset_name.windows = "s_x"
 
+# glyphs
+[babelstone]
+owner = "babelstone"
+repo = "babelstonehan-ufo"
+exe_name = "BabelStoneHan-Basic.ttf"
+asset_name.linux = "Basic"
+asset_name.windows = "Basic"
+[babelstone-extra]
+owner = "babelstone"
+repo = "babelstonehan-ufo"
+exe_name = "BabelStoneHan-Extra.ttf"
+asset_name.linux = "Extra"
+asset_name.windows = "Extra"
+
 # pagers
 [bat]
 [difftastic]
@@ -304,6 +318,11 @@ owner = "wader"
 repo = "fq"
 asset_name.linux = "x_amd"
 asset_name.windows = "ws"
+[yq]
+owner = "mikefarah"
+repo = "yq"
+asset_name.linux = "x_amd64.t"
+asset_name.windows = "d64.e"
 [jaq]
 owner = "01mf02"
 repo = "jaq"
@@ -348,6 +367,16 @@ repo = "litefs"
 asset_name.linux = "am"
 
 # formatters
+[biff]
+owner = "BurntSushi"
+repo = "biff"
+asset_name.linux = "_64-u"
+asset_name.windows = "_64-p"
+[jxl-oxide]
+owner = "tirr-c"
+repo = "jxl-oxide"
+asset_name.linux = "_64-u"
+asset_name.windows = "_64-p"
 [dprint] # upgrade then config update
 owner = "dprint"
 repo = "dprint"
@@ -432,6 +461,10 @@ asset_name.windows = "_64-p"
 owner = "astral-sh"
 repo = "uv"
 asset_name.linux = "_64-unknown-linux-gnu"
+[ty]
+owner = "astral-sh"
+repo = "ty"
+asset_name.linux = "_64-unknown-linux-gnu"
 [watchexec]
 owner = "watchexec"
 repo = "watchexec"
@@ -470,14 +503,6 @@ owner = "superfly"
 repo = "flyctl"
 asset_name.linux = "x_x"
 asset_name.windows = "dows_x"
-[shuttle]
-owner = "shuttle-hq"
-repo = "shuttle"
-asset_name.linux = "_64-unknown-linux-gnu"
-[earthly]
-owner = "earthly"
-repo = "earthly"
-asset_name.linux = "linux-amd64"
 [static-curl]
 owner = "stunnel"
 repo = "static-curl"

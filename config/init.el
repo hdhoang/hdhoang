@@ -1,6 +1,9 @@
 ;;; -*- lexical-binding: t -*-
 (require 'use-package)
 
+(defvar scratch-dir "~/build")
+(make-directory scratch-dir t)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -17,6 +20,8 @@
  '(auto-revert-check-vc-info t)
  '(auto-revert-interval 5)
  '(auto-revert-mode-text "")
+ '(auto-save-file-name-transforms '((".*" ",scratch-dir" t)))
+ '(backup-directory-alist '((".*" . ",scratch-dir")))
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(completion-detailed t)
@@ -42,6 +47,7 @@
  '(insert-directory-program "coreutils")
  '(isearch-lazy-count t)
  '(line-number-mode t)
+ '(list-matching-lines-default-context-lines 4)
  '(major-mode-remap-alist
    '((conf-toml-mode . toml-ts-mode) (go-mode . go-ts-mode)
      (hcl-mode . hcl-ts-mode) (js-json-mode . json-ts-mode)
@@ -50,17 +56,19 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(gcmh symbol-overlay ox-typst just-ts-mode markdown-ts-mode
-          standard-themes diff-hl nov devil polymode hcl-ts-mode
-          company-ansible terraform-doc terraform-mode kdl-ts-mode
-          pcre2el apheleia marginalia avy rustic which-key combobulate
-          treesit expand-region groovy-mode magit-delta
-          rainbow-delimiters use-package poly-ansible poly-markdown
-          poly-org))
+   '(aggressive-indent apheleia avy combobulate company-ansible
+                       consult-eglot corfu devil diff-hl expand-region
+                       gcmh groovy-mode hcl-ts-mode just-ts-mode
+                       kdl-ts-mode magit-delta marginalia
+                       markdown-ts-mode nov ox-typst pcre2el
+                       poly-ansible poly-markdown poly-org polymode
+                       rainbow-delimiters rustic standard-themes
+                       symbol-overlay terraform-doc terraform-mode
+                       treesit use-package which-key))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
- '(require-final-newline 't)
+ '(require-final-newline t)
  '(rust-format-on-save t)
  '(rust-mode-treesitter-derive t)
  '(safe-local-variable-values
@@ -204,6 +212,9 @@
 (add-hook 'fundamental-mode-hook #'follow-mode)
 (add-hook 'occur-mode-hook #'next-error-follow-minor-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+
+(use-package aggressive-indent
+  :config (global-aggressive-indent-mode t))
 
 (use-package symbol-overlay
   :bind
@@ -390,7 +401,11 @@
   ("[.]xml[.]j2\\'" . poly-xml-j2-mode)
 
   ("[.]ya?ml[.]j2\\'" . poly-ansible-mode))
-(use-package company-ansible)
+
+(use-package corfu
+  :custom (corfu-auto t)
+  :init (global-corfu-mode))
+;; (global-set-key [remap dabbrev-expand] #'hippie-expand)
 
 (use-package avy
   :custom
@@ -398,23 +413,26 @@
   :bind (("C-c j" . avy-goto-line)
          ("C-c z" . avy-goto-word-1)
          ("s-j"   . avy-goto-char-timer)))
-(global-set-key [remap dabbrev-expand] #'hippie-expand)
 
 ;; Marginalia: annotations for minibuffer
 (use-package marginalia
-  :config (marginalia-mode))
+  :init (marginalia-mode))
 
 (use-package eglot
   :config
   (fset #'jsonrpc--log-event #'ignore)
   (add-to-list 'eglot-server-programs
+               '((python-mode python-ts-mode) . ("ty" "server")))
+  (add-to-list 'eglot-server-programs
                '((rust-ts-mode) .
                  ("rust-analyzer" :initializationOptions (:check (:command "clippy")))))
-  :hook ((rust-ts-mode . eglot-ensure))
+  :hook ((rust-ts-mode . eglot-ensure) (python-ts-mode . eglot-ensure))
   :custom
   (eglot-send-changes-idle-time 0.1)
   (eglot-extend-to-xref t)
   )
+(use-package consult-eglot
+  :bind (("C-c s" . #'consult-eglot-symbols)))
 
 (use-package rustic
   :custom (rustic-lsp-client 'eglot)

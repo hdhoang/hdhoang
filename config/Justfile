@@ -13,7 +13,7 @@ start:
 sway_tree PATTERN:
     swaymsg -t get_tree -r|rg -i {{ PATTERN }}
 
-mu PATH:
+mu *PATH:
     mkdir rclone-cache
     mpv --no-resume-playback --no-ytdl \
         --vo=null --no-video \
