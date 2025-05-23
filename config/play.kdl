@@ -1,10 +1,12 @@
 layout {
-  pane split_direction="horizontal" {
+  pane split_direction="vertical" {
     pane size="70%" borderless=true
-    pane command="rescrobbled"    
-  }
+    pane command="journalctl" {
+      args "--user" "-ocat" "-fu" "rescrobbled.service"
+    }
 
-  pane size=2 borderless=true {
-    plugin location="zellij:status-bar"
+    pane size=2 borderless=true {
+      plugin location="zellij:status-bar"
+    }
   }
 }

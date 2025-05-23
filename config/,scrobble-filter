@@ -18,8 +18,10 @@ EXTENSIONS = [
     ".mp4",
     ".ogg",
     ".opus",
+    ".pcx",
     ".smk",
     ".vgz",
+    ".wav",
 ]
 if (artist == "" and album == "" and len(title) in (0, 8)) or any(
     title.lower().endswith(e) for e in EXTENSIONS
@@ -65,9 +67,8 @@ ARTISTS = ARTIST_REPLACE_RULES.keys()
 
 TITLE_REPLACE_RULES = {
     "": sorted([
-        " || Tình Khúc San và Trịnh HAY NỨC NỞ",
+        "- Mộc San",
 	"Mộc San - Trịnh Ca || ",
-        "(Audio)",
         " - Lyrics & Engsub",
         " | Audio",
         " | MINH THU | TRỊNH XƯA",
@@ -75,16 +76,21 @@ TITLE_REPLACE_RULES = {
         " | OFFICIAL MUSIC VIDEO 4K | ",
         " | Official Lyric Video by Hà Nội Vi Vu",
         " || MANH PIANO Official",
+        " || Tình Khúc San và Trịnh HAY NỨC NỞ",
+        "(Audio)",
         "(OFFICIAL AUDIO)",
         "(Official Lyric Video)",
+        "(St Trịnh Công Sơn)",
         "- KHÁNH LY | OFFICIAL",
         "- YÊN HÀ [OFFICIAL]",
         "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
         "Garrick Ohlsson / Chopin:",
+        "NHẠC TRỊNH HAY ||",
         "OFFICIAL LYRICS VIDEO",
         "OFFICIAL MUSIC VIDEO",
         "Official Lyrics Video",
         "THU ÂM TRƯỚC 1975 | ",
+        "|| Official MV 4k",
         "🎵Mạnh Piano | ",
     ], reverse=True, key=len),
 }

@@ -20,8 +20,8 @@
  '(auto-revert-check-vc-info t)
  '(auto-revert-interval 5)
  '(auto-revert-mode-text "")
- '(auto-save-file-name-transforms '((".*" ",scratch-dir" t)))
- '(backup-directory-alist '((".*" . ",scratch-dir")))
+ '(auto-save-file-name-transforms `((".*" ,scratch-dir t)))
+ '(backup-directory-alist `((".*" \, scratch-dir)))
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(completion-detailed t)
@@ -56,15 +56,14 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(aggressive-indent apheleia avy combobulate company-ansible
-                       consult-eglot corfu devil diff-hl expand-region
-                       gcmh groovy-mode hcl-ts-mode just-ts-mode
-                       kdl-ts-mode magit-delta marginalia
-                       markdown-ts-mode nov ox-typst pcre2el
-                       poly-ansible poly-markdown poly-org polymode
-                       rainbow-delimiters rustic standard-themes
-                       symbol-overlay terraform-doc terraform-mode
-                       treesit use-package which-key))
+   '(ace-window aggressive-indent apheleia avy combobulate
+                company-ansible consult-eglot corfu devil diff-hl
+                expand-region gcmh groovy-mode hcl-ts-mode
+                just-ts-mode kdl-ts-mode magit-delta marginalia
+                markdown-ts-mode nov ox-typst pcre2el poly-ansible
+                poly-markdown poly-org polymode rainbow-delimiters
+                rustic standard-themes symbol-overlay terraform-doc
+                terraform-mode treesit use-package which-key))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -413,6 +412,11 @@
   :bind (("C-c j" . avy-goto-line)
          ("C-c z" . avy-goto-word-1)
          ("s-j"   . avy-goto-char-timer)))
+(use-package ace-window
+  :bind (("C-x o" . #'ace-window))
+  :config (custom-set-faces 
+           '(aw-leading-char-face 
+             ((t (:inherit ace-jump-face-foreground :height 3.0))))))
 
 ;; Marginalia: annotations for minibuffer
 (use-package marginalia
