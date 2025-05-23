@@ -2,6 +2,7 @@ autopickup_exceptions += <dart
 autopickup_exceptions += <javelin
 autopickup_exceptions += <boomerang
 autopickup_exceptions += <misc
+autopickup_exceptions += <talisman
 autopickup_exceptions += <immo
 autopickup_exceptions += <vuln
 autopickup_exceptions += <magical
