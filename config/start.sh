@@ -21,7 +21,7 @@ done
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "JuliaMono Nerd Font Mono Medium"
+gsettings set org.gnome.desktop.interface monospace-font-name "Kelmscott Mono Medium"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile

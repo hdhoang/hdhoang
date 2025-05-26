@@ -4,7 +4,7 @@ email = "code@hdhoang.space"
 
 [ui]
 default-command = "diff"
-
+pager = "delta"
 editor = "emacsclient -c"
 merge-editor = "mergiraf"
 
@@ -14,4 +14,4 @@ tool = ["difft", "--color=always", "$left", "$right"]
 [git]
 # https://jj-vcs.github.io/jj/latest/config/#set-of-private-commits
 private-commits = "description(glob:'wip:*') | description(glob:'private:*')"
-subprocess = false
+write-change-id-header = true

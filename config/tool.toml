@@ -312,7 +312,7 @@ owner = "yshavit"
 repo = "mdq"
 asset_name.linux = "x-x64."
 asset_name.windows = "ws"
-[qsv]
+[qsv] # --update
 owner = "dathere"
 repo = "qsv"
 exe_name = "qsvp"
@@ -561,7 +561,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = ".8.A"
+asset_name.linux = "4.A"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"

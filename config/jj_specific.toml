@@ -1,7 +1,24 @@
+[aliases]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
+
 [revset-aliases]
 # https://v5.chriskrycho.com/notes/jj-tip-ignore-gh-pages-by-default/
 ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
 "immutable_heads()" = "builtin_immutable_heads() | ghp"
+ahead-behind = "trunk()..@ | @..trunk() | trunk() | @:: | fork_point(trunk() | @)"
 
 [template-aliases]
-default_commit_trailer = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
+commit_trailers = "\n\nSigned-off-by: Hoang Duc Hieu <code@hdhoang.space>\n"
+
+# https://oppi.li/posts/configuring_jujutsu/
+draft_commit_description ='''
+    concat(
+      coalesce(description, default_commit_description, "\n"),
+      surround(
+        "\nJJ: This commit contains the following changes:\n", "",
+        indent("JJ:     ", diff.stat(72)),
+      ),
+      "\nJJ: ignore-rest\n",
+      diff.git(),
+    )
+'''
