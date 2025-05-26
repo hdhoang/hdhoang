@@ -1,17 +1,30 @@
+# https://gist.github.com/thoughtpolice/8f2fd36ae17cd11b8e7bd93a70e31ad6#file-jjconfig-toml
+
 [user]
 name = "hdhoang"
 email = "code@hdhoang.space"
 
 [ui]
+graph-style = "curved"
 default-command = "diff"
 pager = "delta"
 editor = "emacsclient -c"
 merge-editor = "mergiraf"
+should-sign-off = true
 
 [ui.diff]
 tool = ["difft", "--color=always", "$left", "$right"]
 
+[merge-tools.mergiraf]
+program = "mergiraf"
+merge-args = ["merge", "$base", "$left", "$right", "-o", "$output", "--fast"]
+merge-conflict-exit-codes = [1]
+conflict-marker-style = "git"
+
 [git]
-# https://jj-vcs.github.io/jj/latest/config/#set-of-private-commits
 private-commits = "description(glob:'wip:*') | description(glob:'private:*')"
 write-change-id-header = true
+colocate = true
+
+[snapshot]
+auto-update-stale = true

@@ -270,6 +270,11 @@ asset_name.linux = "d64"
 
 # search & destroy
 [fd]
+[f2]
+owner = "ayoisaiah"
+repo = "f2"
+asset_name.linux = "x_amd64.t"
+asset_name.windows = "4.z"
 [ripgrep]
 [ripgrep-all]
 owner = "phiresky"
