@@ -18,7 +18,6 @@ ahead-behind = "trunk()..@ | @..trunk() | trunk() | @:: | fork_point(trunk() | @
 commit_trailers = "format_signed_off_by_trailer(self)"
 draft_commit_description = '''
   concat(
-    "JJ: -*- mode: diff -*-\n\n",
     coalesce(description, default_commit_description, ""),
     surround(
       "\nJJ: This commit contains the following changes:\n", "",
