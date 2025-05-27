@@ -34,6 +34,7 @@
  '(display-battery-mode t)
  '(display-line-numbers-width 3)
  '(display-time-default-load-average nil)
+ '(editorconfig-mode t)
  '(eldoc-minor-mode-string "")
  '(font-use-system-font t)
  '(global-auto-revert-mode t)
@@ -454,6 +455,7 @@
               ))
 (use-package just-ts-mode)
 
+(add-to-list 'auto-mode-alist '("\\.jjdescription\\'" . diff-mode))
 (add-to-list 'magic-mode-alist '("^$TTL" . zone-mode))
 (add-to-list 'magic-mode-alist '("^$ORIGIN" . zone-mode))
 (add-to-list 'magic-mode-alist '("^# syntax=docker" . dockerfile-ts-mode))
