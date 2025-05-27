@@ -207,6 +207,11 @@ owner = "azat"
 repo = "chdig"
 asset_name.linux = "t-x86_64.tar.g"
 asset_name.windows = "zip"
+[samply]
+owner = "mstange"
+repo = "samply"
+asset_name.linux = "x-m"
+asset_name.windows = "zip"
 [flamelens]
 owner = "YS-L"
 repo = "flamelens"
