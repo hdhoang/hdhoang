@@ -33,7 +33,7 @@ mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,
 ln -rsvf $PWD/crawl-init.txt ~/.crawl/init.txt
 
 ln -rsvf $PWD/,add-sysext ~/run/
-ln -rsvf $PWD/,scrobble-filter ~/run/
+ln -rsvf $PWD/,scrobble-filter.py ~/run/,scrobble-filter
 ln -rsvf $PWD/rescrobbled.service ~/.config/systemd/user/
 systemctl --user enable --now rescrobbled.service
 ln -rsvf $PWD/,ctia ~/run/

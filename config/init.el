@@ -36,6 +36,7 @@
  '(display-time-default-load-average nil)
  '(editorconfig-mode t)
  '(eldoc-minor-mode-string "")
+ '(fido-vertical-mode t)
  '(font-use-system-font t)
  '(global-auto-revert-mode t)
  '(global-hl-line-mode t)
@@ -61,10 +62,10 @@
    '(ace-window aggressive-indent apheleia avy combobulate
                 company-ansible consult-eglot corfu devil diff-hl
                 expand-region gcmh groovy-mode hcl-ts-mode
-                just-ts-mode kdl-ts-mode magit-delta marginalia
-                markdown-ts-mode nov ox-typst pcre2el poly-ansible
-                poly-markdown poly-org polymode rainbow-delimiters
-                rustic standard-themes symbol-overlay terraform-doc
+                just-ts-mode kdl-ts-mode magit-delta markdown-ts-mode
+                nov ox-typst pcre2el poly-ansible poly-markdown
+                poly-org polymode rainbow-delimiters rustic
+                standard-themes symbol-overlay terraform-doc
                 terraform-mode treesit use-package which-key))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
@@ -416,13 +417,13 @@
          ("s-j"   . avy-goto-char-timer)))
 (use-package ace-window
   :bind (("C-x o" . #'ace-window))
-  :config (custom-set-faces 
-           '(aw-leading-char-face 
+  :config (custom-set-faces
+           '(aw-leading-char-face
              ((t (:inherit ace-jump-face-foreground :height 3.0))))))
 
 ;; Marginalia: annotations for minibuffer
-(use-package marginalia
-  :init (marginalia-mode))
+;; (use-package marginalia
+;;   :init (marginalia-mode))
 
 (use-package eglot
   :config

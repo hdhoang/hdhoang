@@ -6,10 +6,13 @@ import sys
 # player-whitelist = ["mpv"]
 # filter-script = ",scrobble-filter"
 
-submit = True
+submit: bool = True
+artist: str
+title: str
+album: str
 artist, title, album, *_rest = (l.rstrip() for l in sys.stdin.readlines())
 
-EXTENSIONS = [
+EXTENSIONS: list[str] = [
     ".alac",
     ".flac",
     ".m3u8",
@@ -32,8 +35,8 @@ if (artist == "" and album == "" and len(title) in (0, 8)) or any(
     submit = False
     sys.exit(0)
 
-COMPILATIONS = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
-COMPILERS = [
+COMPILATIONS: list[str] = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
+COMPILERS: list[str] = [
     "Danh ca hải ngoại",
     "Francisco Callahan",
     "khanhnguyen03",
@@ -43,12 +46,12 @@ COMPILERS = [
     "VTV SHOWS",
     "VTV3",
 ]
-FLIP_COMPILERS = [
+FLIP_COMPILERS: list[str] = [
     "",
     "ogafroman",
     "Vietnam War Song Project",
 ]
-ARTIST_REPLACE_RULES = {
+ARTIST_REPLACE_RULES: dict[str, str] = {
     "": ["OFFICIAL", "Official"],
     "Afroman": ["ogafroman"],
     "Anh Thơ": ["Anh Tho"],
@@ -65,35 +68,39 @@ ARTIST_REPLACE_RULES = {
 }
 ARTISTS = ARTIST_REPLACE_RULES.keys()
 
-TITLE_REPLACE_RULES = {
-    "": sorted([
-        "- Mộc San",
-	"Mộc San - Trịnh Ca || ",
-        " - Lyrics & Engsub",
-        " | Audio",
-        " | MINH THU",
-        " | MINH THU | TRỊNH XƯA",
-        " | Netherlands Bach Society",
-        " | OFFICIAL MUSIC VIDEO 4K | ",
-        " | Official Lyric Video by Hà Nội Vi Vu",
-        " || MANH PIANO Official",
-        " || Tình Khúc San và Trịnh HAY NỨC NỞ",
-        "(Audio)",
-        "(OFFICIAL AUDIO)",
-        "(Official Lyric Video)",
-        "(St Trịnh Công Sơn)",
-        "- KHÁNH LY | OFFICIAL",
-        "- YÊN HÀ [OFFICIAL]",
-        "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
-        "Garrick Ohlsson / Chopin:",
-        "NHẠC TRỊNH HAY ||",
-        "OFFICIAL LYRICS VIDEO",
-        "OFFICIAL MUSIC VIDEO",
-        "Official Lyrics Video",
-        "THU ÂM TRƯỚC 1975 | ",
-        "|| Official MV 4k",
-        "🎵Mạnh Piano | ",
-    ], reverse=True, key=len),
+TITLE_REPLACE_RULES: dict[str, str] = {
+    "": sorted(
+        [
+            "- Mộc San",
+            "Mộc San - Trịnh Ca || ",
+            " - Lyrics & Engsub",
+            " | Audio",
+            " | MINH THU",
+            " | MINH THU | TRỊNH XƯA",
+            " | Netherlands Bach Society",
+            " | OFFICIAL MUSIC VIDEO 4K | ",
+            " | Official Lyric Video by Hà Nội Vi Vu",
+            " || MANH PIANO Official",
+            " || Tình Khúc San và Trịnh HAY NỨC NỞ",
+            "(Audio)",
+            "(OFFICIAL AUDIO)",
+            "(Official Lyric Video)",
+            "(St Trịnh Công Sơn)",
+            "- KHÁNH LY | OFFICIAL",
+            "- YÊN HÀ [OFFICIAL]",
+            "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
+            "Garrick Ohlsson / Chopin:",
+            "NHẠC TRỊNH HAY ||",
+            "OFFICIAL LYRICS VIDEO",
+            "OFFICIAL MUSIC VIDEO",
+            "Official Lyrics Video",
+            "THU ÂM TRƯỚC 1975 | ",
+            "|| Official MV 4k",
+            "🎵Mạnh Piano | ",
+        ],
+        reverse=True,
+        key=len,
+    ),
 }
 
 if album in COMPILATIONS:
@@ -135,6 +142,9 @@ print(
     flush=True,
     file=sys.stderr,
 )
+
+if artist == "":
+    submit = False
 
 if submit:
     print(artist, title, album, sep="\n")
