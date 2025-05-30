@@ -1,10 +1,11 @@
-# syntax=docker/dockerfile:1.15
-FROM ghcr.io/huginn/huginn-single-process:8cb967866fff469fef1b87f8492edb2079666b55
+# syntax=docker/dockerfile:1.16
+FROM ghcr.io/huginn/huginn-single-process:1e0c359a46b1e84eb8c658404212eaf693b30e61
 
 USER 0
 RUN <<EORUN
 set -xeu
-apt install --update -y libjemalloc2
+apt update -qq
+apt install -y libjemalloc2
 EORUN
 
 RUN <<EORUN
