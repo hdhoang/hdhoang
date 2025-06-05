@@ -4,6 +4,7 @@ script = true
 
 avoid-dev-deps = true
 gc = true
+no-embed-metadata = true
 
 codegen-backend = true
 trim-paths = true
@@ -42,10 +43,11 @@ trim-paths = ["diagnostics", "object"]
 
 [profile.profiling]
 inherits = "release"
-debug = true
+debug = "full"
 trim-paths = ["diagnostics", "object"]
 
 [profile.dev]
+debug = "none"
 codegen-backend = "cranelift"
 trim-paths = ["diagnostics", "object"]
 

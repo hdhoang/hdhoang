@@ -1,6 +1,6 @@
 [commands]
 "cargo" = "cargo iu"
-"sysext" = "run0 systemd-sysext refresh --force"
+"sysext" = "run0 /usr/lib/systemd/systemd-sysupdate update -C emacs"
 
 [misc]
 sudo_command = "run0"

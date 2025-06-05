@@ -221,6 +221,10 @@ asset_name.windows = "zip"
 owner = "keepassxreboot"
 repo = "keepassxc"
 asset_name.linux = "A"
+[tsui]
+owner = "neuralinkcorp"
+repo = "tsui"
+asset_name.linux = "x-x"
 
 # history wrangling
 [topgrade]
@@ -237,7 +241,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
-asset_name.windows = "_64-pc-windows-msvc"
+# ended at 0.29 asset_name.windows = "_64-pc-windows-msvc"
 [gg]
 owner = "gulbanana"
 repo = "gg"
@@ -254,6 +258,11 @@ asset_name.linux = "_64-unknown-linux-musl"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+[regctl]
+owner = "regclient"
+repo = "regclient"
+exe_name = "regctl"
+asset_name.linux = "regctl-linux-amd64"
 [cilium-cli]
 owner = "cilium"
 repo = "cilium-cli"

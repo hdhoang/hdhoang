@@ -36,7 +36,6 @@
  '(display-time-default-load-average nil)
  '(editorconfig-mode t)
  '(eldoc-minor-mode-string "")
- '(fido-vertical-mode t)
  '(font-use-system-font t)
  '(global-auto-revert-mode t)
  '(global-hl-line-mode t)
@@ -59,14 +58,13 @@
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(ace-window aggressive-indent apheleia avy combobulate
-                company-ansible consult-eglot corfu devil diff-hl
-                expand-region gcmh groovy-mode hcl-ts-mode
-                just-ts-mode kdl-ts-mode magit-delta markdown-ts-mode
-                nov ox-typst pcre2el poly-ansible poly-markdown
-                poly-org polymode rainbow-delimiters rustic
+   '(ace-window aggressive-indent apheleia consult-eglot corfu devil
+                diff-hl expand-region gcmh groovy-mode just-ts-mode
+                magit magit-delta magit-section marginalia
+                markdown-ts-mode nov ox-typst pcre2el poly-ansible
+                poly-markdown poly-org rainbow-delimiters rustic
                 standard-themes symbol-overlay terraform-doc
-                terraform-mode treesit use-package which-key))
+                terraform-mode with-editor))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -74,7 +72,9 @@
  '(rust-format-on-save t)
  '(rust-mode-treesitter-derive t)
  '(safe-local-variable-values
-   '((electric-pair-mode . t) (vc-prepare-patches-separately)
+   '((aggressive-indent-mode) (electric-indent-mode)
+     (indent-tab-mode . t) (electric-pair-mode . t)
+     (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
  '(tool-bar-mode nil)
@@ -166,6 +166,9 @@
          (css-ts-mode . combobulate-mode)
          (yaml-ts-mode . combobulate-mode)
          (json-ts-mode . combobulate-mode)))
+;; (use-package json-ts-mode
+(add-to-list 'auto-mode-alist '("\\.hujson\\'" . json-ts-mode))
+(add-hook 'json-ts-mode-hook  '(lambda () (progn (electric-indent-mode -1) (aggressive-indent-mode -1))))
 
 (defun my-increment-number-decimal-at-point (&optional arg)
   "Increment the number forward from point by 'arg'."
@@ -195,7 +198,8 @@
 (global-set-key (kbd "M-s +") #'ediff-regions-wordwise)
 (use-package diff-hl
   :config (global-diff-hl-mode t))
-(use-package magit-delta
+(use-package magit
+  :demand t
   :config
   (setopt transient-levels '((magit-pull (transient:magit-pull:--autostash . 1))))
   :custom
@@ -203,7 +207,7 @@
   (magit-diff-refine-hunk t)
   :bind
   ("C-c M-g l" . #'magit-log-buffer-file)
-  :hook ((magit-mode . magit-delta-mode)))
+  )
 
 (use-package rainbow-delimiters
   :hook ((fundamental-mode . rainbow-delimiters-mode)))
@@ -239,13 +243,15 @@
   (add-to-list 'apheleia-mode-alist '(markdown-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . dprint))
-  (add-to-list 'apheleia-mode-alist '(json-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-ts-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(poly-terraform-mode . terraform))
+
+  (add-to-list 'apheleia-formatters '(hujsonfmt "hujsonfmt"))
+  (add-to-list 'apheleia-mode-alist '(json-ts-mode . hujsonfmt))
   )
 
 (use-package nov
@@ -269,8 +275,8 @@
   (define-hostmode poly-dockerfile-hostmode :mode #'dockerfile-ts-mode)
   (define-innermode poly-bash-dockerfile-innermode :mode #'bash-ts-mode
     :adjust-face 5
-    :head-matcher "<<EORUN\n"
-    :tail-matcher "^EORUN"
+    :head-matcher "RUN <<EORUN\n"
+    :tail-matcher "^EORUN$"
     :head-mode 'host
     :tail-mode 'host
     )
@@ -416,14 +422,11 @@
          ("C-c z" . avy-goto-word-1)
          ("s-j"   . avy-goto-char-timer)))
 (use-package ace-window
-  :bind (("C-x o" . #'ace-window))
-  :config (custom-set-faces
-           '(aw-leading-char-face
-             ((t (:inherit ace-jump-face-foreground :height 3.0))))))
+  :bind (("C-x o" . #'ace-window)))
 
 ;; Marginalia: annotations for minibuffer
-;; (use-package marginalia
-;;   :init (marginalia-mode))
+(use-package marginalia
+  :init (marginalia-mode))
 
 (use-package eglot
   :config

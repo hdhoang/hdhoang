@@ -12,8 +12,7 @@ editor = "emacsclient -c"
 merge-editor = "mergiraf"
 should-sign-off = true
 
-[ui.diff]
-tool = ["difft", "--color=always", "$left", "$right"]
+diff-formatter = ["difft", "--color=always", "$left", "$right"]
 
 [merge-tools.mergiraf]
 program = "mergiraf"
