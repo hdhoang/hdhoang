@@ -72,12 +72,12 @@ setpref font.name.serif.x-unicode "Atkinson Hyperlegible Next"
 setpref font.name-list.emoji "Twitter Color Emoji,Twemoji Mozilla"
 setpref browser.translations.neverTranslateLanguages "vi,fi"
 setpref browser.translations.mostRecentTargetLanguages "en"
-setpref browser.urlbar.quicksuggest.scenario	"history"	
-setpref browser.urlbar.shortcuts.bookmarks	false	
-setpref browser.urlbar.shortcuts.history	false	
-setpref browser.urlbar.shortcuts.tabs	false	
-setpref browser.urlbar.suggest.engines	false	
-setpref browser.urlbar.suggest.pocket	false	
+setpref browser.urlbar.quicksuggest.scenario	"history"
+setpref browser.urlbar.shortcuts.bookmarks	false
+setpref browser.urlbar.shortcuts.history	false
+setpref browser.urlbar.shortcuts.tabs	false
+setpref browser.urlbar.suggest.engines	false
+setpref browser.urlbar.suggest.pocket	false
 setpref browser.urlbar.suggest.topsites	false
 
 setpref network.cookie.CHIPS.enabled true
