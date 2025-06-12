@@ -284,6 +284,11 @@ asset_name.linux = "d64"
 
 # search & destroy
 [fd]
+[sd]
+owner = "chmln"
+repo = "sd"
+asset_name.linux = "_64-unknown-linux-musl"
+asset_name.windows = "_64-pc-windows-msvc"
 [f2]
 owner = "ayoisaiah"
 repo = "f2"
