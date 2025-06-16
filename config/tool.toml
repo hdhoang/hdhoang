@@ -341,6 +341,11 @@ owner = "dathere"
 repo = "qsv"
 exe_name = "qsvp"
 asset_name.linux = "_64-unknown-linux-g"
+[fx]
+owner = "antonmedv"
+repo = "fx"
+asset_name.linux = "x_am"
+asset_name.windows = "s_am"
 [fq]
 owner = "wader"
 repo = "fq"
