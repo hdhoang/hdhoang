@@ -3,14 +3,14 @@
 import sys
 
 # protocol: https://github.com/inputusername/rescrobbled?tab=readme-ov-file#configuration
-# player-whitelist = ["mpv"]
-# filter-script = ",scrobble-filter"
-
 submit: bool = True
-artist: str
-title: str
-album: str
-artist, title, album, *_rest = (l.rstrip() for l in sys.stdin.readlines())
+
+ORIG_ARTIST, ORIG_TITLE, ORIG_ALBUM, *_rest = (
+    l.rstrip() for l in sys.stdin.readlines()
+)
+artist: str = ORIG_ARTIST
+title: str = ORIG_TITLE
+album: str = ORIG_ALBUM
 
 EXTENSIONS: list[str] = [
     ".alac",
@@ -39,12 +39,12 @@ COMPILATIONS: list[str] = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
 COMPILERS: list[str] = [
     "Danh ca hải ngoại",
     "Francisco Callahan",
-    "khanhnguyen03",
     "Hà Nội Vi Vu",
     "VTV - Bài Ca Đi Cùng Năm Tháng",
     "VTV Go",
     "VTV SHOWS",
     "VTV3",
+    "khanhnguyen03",
 ]
 FLIP_COMPILERS: list[str] = [
     "",
@@ -55,8 +55,8 @@ ARTIST_REPLACE_RULES: dict[str, str] = {
     "": ["OFFICIAL", "Official"],
     "Afroman": ["ogafroman"],
     "Anh Thơ": ["Anh Tho"],
-    "Bích Liên": ["NSƯT Bích Liên"],
     "Buckethead": ["Bucketheadland"],
+    "Bích Liên": ["NSƯT Bích Liên"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
     "Johann Sebastian Bach": ["Netherlands Bach Society"],
     "Khánh Ly": ["Ca Sĩ KHÁNH LY", "Ca Sĩ KHÁNH LY"],
@@ -71,12 +71,21 @@ ARTISTS = ARTIST_REPLACE_RULES.keys()
 TITLE_REPLACE_RULES: dict[str, str] = {
     "": sorted(
         [
-            "- Mộc San",
+            "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
+            "Chị đẹp",
+            "Garrick Ohlsson / Chopin:",
             "Mộc San - Trịnh Ca || ",
+            "NHẠC TRỊNH HAY ||",
+            "OFFICIAL LYRICS VIDEO",
+            "OFFICIAL MUSIC VIDEO",
+            "Official Lyrics Video",
+            "THU ÂM TRƯỚC 1975 | ",
+            "hát theo",
+            "khiến cả hôi trường",
             " - Lyrics & Engsub",
             " | Audio",
-            " | MINH THU",
             " | MINH THU | TRỊNH XƯA",
+            " | MINH THU",
             " | Netherlands Bach Society",
             " | OFFICIAL MUSIC VIDEO 4K | ",
             " | Official Lyric Video by Hà Nội Vi Vu",
@@ -87,16 +96,13 @@ TITLE_REPLACE_RULES: dict[str, str] = {
             "(Official Lyric Video)",
             "(St Trịnh Công Sơn)",
             "- KHÁNH LY | OFFICIAL",
+            "- Mộc San",
             "- YÊN HÀ [OFFICIAL]",
-            "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
-            "Garrick Ohlsson / Chopin:",
-            "NHẠC TRỊNH HAY ||",
-            "OFFICIAL LYRICS VIDEO",
-            "OFFICIAL MUSIC VIDEO",
-            "Official Lyrics Video",
-            "THU ÂM TRƯỚC 1975 | ",
             "|| Official MV 4k",
+            "đứng ngồi không yên",
+            "⭐",
             "🎵Mạnh Piano | ",
+            "💎",
         ],
         reverse=True,
         key=len,
@@ -134,6 +140,9 @@ title = title.strip()
 
 print(
     f"""
+      {ORIG_ARTIST}
+
+       {ORIG_TITLE}
      title         : {title}
   artist           : {artist}
      album         : {album}

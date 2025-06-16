@@ -6,6 +6,9 @@ After=network-online.target
 
 [Service]
 ExecStart=%h/run/rescrobbled
+# Environment=player-whitelist = ["mpv"]
+Environment=FILTER_SCRIPT=,scrobble-filter
+Environment=USE_TRACK_START_TIMESTAMP=true
 
 [Install]
 WantedBy=default.target
