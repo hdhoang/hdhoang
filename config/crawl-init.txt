@@ -1,13 +1,18 @@
+autopickup_exceptions += <boomerang
 autopickup_exceptions += <dart
 autopickup_exceptions += <javelin
-autopickup_exceptions += <boomerang
-autopickup_exceptions += <misc
-autopickup_exceptions += <talisman
+
 autopickup_exceptions += <immo
+autopickup_exceptions += <torment
 autopickup_exceptions += <vuln
 autopickup_exceptions += <magical
-autopickup_exceptions += <torment
+autopickup_exceptions += <misc
+
 autopickup_exceptions += <mutation
+
+autopickup_exceptions += <orb
+autopickup_exceptions += <talisman
+
 # autopickup_exceptions += <
 
 explore_stop  = artefacts,glowing_items,greedy_pickup_smart,shops,portals,branches,runed_doors
