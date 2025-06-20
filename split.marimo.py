@@ -14,14 +14,14 @@ def _():
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 958
+    this_water_photo = 970
     left_consumed = this_water_photo - prev_water_photo
     return (left_consumed,)
 
 
 @app.cell
 def _():
-    hawater_consumed = 13
+    hawater_consumed = 17
     return (hawater_consumed,)
 
 
