@@ -64,7 +64,7 @@
                 markdown-ts-mode nov ox-typst pcre2el poly-ansible
                 poly-markdown poly-org rainbow-delimiters rustic
                 standard-themes symbol-overlay terraform-doc
-                terraform-mode with-editor))
+                terraform-mode transient with-editor))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -198,10 +198,12 @@
 (global-set-key (kbd "M-s +") #'ediff-regions-wordwise)
 (use-package diff-hl
   :config (global-diff-hl-mode t))
+
+(use-package transient
+  :config
+  (setopt transient-levels '((magit-pull (transient:magit-pull:--autostash . 1)))))
 (use-package magit
   :demand t
-  :config
-  (setopt transient-levels '((magit-pull (transient:magit-pull:--autostash . 1))))
   :custom
   (magit-define-global-key-bindings 'recommended)
   (magit-diff-refine-hunk t)

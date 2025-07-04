@@ -26,6 +26,7 @@ EXTENSIONS: list[str] = [
     ".smk",
     ".vgz",
     ".wav",
+    ".wma",
 ]
 if (artist == "" and album == "" and len(title) in (0, 8)) or any(
     title.lower().endswith(e) for e in EXTENSIONS
@@ -47,6 +48,7 @@ COMPILERS: list[str] = [
     "VTV3",
     "khanhnguyen03",
     "khánh đi sưu tầm",
+    "",
 ]
 ARTIST_REPLACE_RULES: dict[str, str] = {
     "": ["OFFICIAL", "Official"],
@@ -55,6 +57,7 @@ ARTIST_REPLACE_RULES: dict[str, str] = {
     "Bích Liên": ["NSƯT Bích Liên"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
     "Khánh Ly": ["Ca Sĩ KHÁNH LY", "Ca Sĩ Khánh Ly"],
+    "Lệ Quyên": ["Le Quyen"],
     "Megadriver": ["megadriver"],
     "Microwave": ["Microwave band", "MICROWAVE"],
     "Minh Thu": ["MINH THU"],
@@ -82,10 +85,13 @@ TITLE_REPLACE_RULES: dict[str, str] = {
             " | MINH THU | TRỊNH XƯA",
             " | MINH THU",
             " | OFFICIAL MUSIC VIDEO 4K | ",
+            " | OFFICIAL MV",
             " | OFFICIAL MV || Nhạc Xuân Trữ Tình Acoustic",
+            " | TOP bài hát hay",
             " | Official Lyric Video by Hà Nội Vi Vu",
             " || MANH PIANO Official",
             " || Tình Khúc San và Trịnh HAY NỨC NỞ",
+            " || THUỲ DUNG",
             "(Audio)",
             "(OFFICIAL AUDIO)",
             "(Official Lyric Video)",
@@ -94,6 +100,7 @@ TITLE_REPLACE_RULES: dict[str, str] = {
             "- Mộc San",
             "- YÊN HÀ [OFFICIAL]",
             "|| Official MV 4k",
+            "khiến khán giả vỗ tay không ngớt",
             "đứng ngồi không yên",
             "⭐",
             "🎵",
@@ -109,22 +116,20 @@ TITLE_REPLACE_RULES: dict[str, str] = {
 if album in COMPILATIONS:
     album = ""
 
-for replacement, matches in ARTIST_REPLACE_RULES.items():
-    for s in matches:
-        artist = artist.replace(s, replacement, count=1)
-
 for replacement, matches in TITLE_REPLACE_RULES.items():
     for s in matches:
         title = title.replace(s, replacement, count=1)
 
-if artist == "" and " - " in title:
-    artist, title = title.rsplit(" - ", maxsplit=1)
 if artist in COMPILERS and " | " in title:
     title, artist = title.rsplit(" | ", maxsplit=1)
 if artist in COMPILERS and " - " in title:
     title, artist = title.rsplit(" - ", maxsplit=1)
     if title in ARTISTS:
         artist, title = title, artist
+
+for replacement, matches in ARTIST_REPLACE_RULES.items():
+    for s in matches:
+        artist = artist.replace(s, replacement, count=1)
 
 if ORIG_ARTIST == "Vietnam War Song Project":
     if " - " in title:
@@ -146,9 +151,10 @@ if ORIG_ARTIST == "Netherlands Bach Society":
     title: str = title.replace(" | Netherlands Bach Society", "")
     artist = "Johann Sebastian Bach"
 
-if artist.startswith("Pike "):
-    title: str = f"{artist} {title}"
+if ORIG_ARTIST.startswith("Pike ") and " - " in ORIG_ARTIST:
+    title: str = ORIG_ARTIST.split(" - ")[1]
     artist = "Buckethead"
+
 if artist == "" and "Micro Lesson" in title:
     artist = "Scott Adams"
 
@@ -158,9 +164,9 @@ title: str = title.strip()
 
 print(
     f"""
-      {ORIG_ARTIST}
+OA:      {ORIG_ARTIST}
 
-       {ORIG_TITLE}
+OT:       {ORIG_TITLE}
      title         : {title}
   artist           : {artist}
      album         : {album}

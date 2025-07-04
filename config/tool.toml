@@ -160,6 +160,10 @@ repo = "RustScan"
 exe_name = "rustscan"
 asset_name.linux = "_64-linux.zip"
 asset_name.windows = "exe"
+[threat-dragon]
+owner = "OWASP"
+repo = "threat-dragon"
+asset_name.linux = "AppImage"
 [netscanner]
 owner = "Chleba"
 repo = "netscanner"
@@ -268,6 +272,11 @@ owner = "cilium"
 repo = "cilium-cli"
 exe_name = "cilium"
 asset_name.linux = "linux-amd64"
+[tofu]
+owner = "opentofu"
+repo = "opentofu"
+exe_name = "tofu"
+asset_name.linux = "x_amd64.z"
 # [helm]
 # has checksums only
 # owner = "helm"
@@ -405,6 +414,11 @@ repo = "litefs"
 asset_name.linux = "am"
 
 # formatters
+[sudo-rs]
+owner = "trifectatechfoundation"
+repo = "sudo-rs"
+exe_name = "sudo"
+asset_name.linux = "sudo"
 [biff]
 owner = "BurntSushi"
 repo = "biff"
@@ -450,10 +464,15 @@ asset_name.windows = "64.exe"
 owner = "Cyan4973"
 repo = "xxHash"
 asset_name.windows = "zip"
+[dump_syms]
+owner = "mozilla"
+repo = "dump_syms"
+asset_name.linux = "x-g"
 [minidump-stackwalk]
 owner = "rust-minidump"
 repo = "rust-minidump"
 exe_name = "minidump-stackwalk"
+asset_name.linux = "x-g"
 [atuin]
 owner = "atuinsh"
 repo = "atuin"
@@ -590,7 +609,7 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "4.A"
+asset_name.linux = "7.A"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"

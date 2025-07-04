@@ -10,6 +10,7 @@ autopickup_exceptions += <misc
 
 autopickup_exceptions += <mutation
 
+autopickup_exceptions += <bauble
 autopickup_exceptions += <orb
 autopickup_exceptions += <talisman
 
