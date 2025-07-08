@@ -51,17 +51,17 @@ COMPILERS: list[str] = [
     "",
 ]
 ARTIST_REPLACE_RULES: dict[str, str] = {
-    "": ["OFFICIAL", "Official"],
+    "": ["OFFICIAL", "Official", "NSƯT", "Ca Sĩ"],
     "Anh Thơ": ["Anh Tho"],
     "Buckethead": ["Bucketheadland"],
-    "Bích Liên": ["NSƯT Bích Liên"],
     "Frédéric Chopin": ["Fryderyk Chopin"],
-    "Khánh Ly": ["Ca Sĩ KHÁNH LY", "Ca Sĩ Khánh Ly"],
+    "Khánh Ly": ["Ca Sĩ KHÁNH LY"],
     "Lệ Quyên": ["Le Quyen"],
     "Megadriver": ["megadriver"],
     "Microwave": ["Microwave band", "MICROWAVE"],
     "Minh Thu": ["MINH THU"],
     "Mỹ Tâm": ["My Tam"],
+    "Nightwish": ["NIGHTWISH"],
     "Yên Hà": ["YÊN HÀ I- CÔ GIÁO HÁT NHẠC NGA"],
 }
 ARTISTS = ARTIST_REPLACE_RULES.keys()

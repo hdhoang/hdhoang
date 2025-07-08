@@ -14,7 +14,7 @@ def _():
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 970
+    this_water_photo = 979
     left_consumed = this_water_photo - prev_water_photo
     return (left_consumed,)
 

@@ -1,7 +1,6 @@
 set unstable := true
 set shell := ["nu", "-m", "light", "-c"]
-
-set dotenv-required
+set dotenv-required := true
 set dotenv-path := "homes/config/env.conf"
 
 default:
@@ -45,6 +44,12 @@ yt:
 [no-cd]
 cl repo:
     jj git clone --colocate {{ repo }}
+
+[no-cd]
+up:
+    jj git fetch
+    jj new -r 'trunk()'
+    jj abandon -r 'empty()~immutable()'
 
 [no-cd]
 t *params:

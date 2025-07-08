@@ -495,6 +495,11 @@ asset_name.linux = "s"
 owner = "InputUserName"
 repo = "rescrobbled"
 asset_name.linux = "s"
+[pano-scrobbler]
+owner = "kawaiiDango"
+repo = "pano-scrobbler"
+asset_name.linux = "A"
+asset_name.windows = "ws"
 
 # builders
 [sccache]
@@ -508,12 +513,6 @@ repo = "nextest"
 exe_name = "cargo-nextest"
 asset_name.linux = "_64-unknown-linux"
 asset_name.windows = "_64-pc-windows-msvc.zip"
-[cargo-dist]
-owner = "axodotdev"
-repo = "cargo-dist"
-exe_name = "dist"
-asset_name.linux = "_64-unknown-linux-musl"
-asset_name.windows = "_64-p"
 [uv]
 owner = "astral-sh"
 repo = "uv"
