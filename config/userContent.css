@@ -18,9 +18,6 @@ a:visited { color: VisitedText !important; }
     #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }
 }
 
-/* jira */
-#ak-jira-navigation { display: none !important; }
-
 @-moz-document domain(linkedin.com) {
     aside { display: none !important; }
 }
