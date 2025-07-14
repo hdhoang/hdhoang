@@ -16,6 +16,7 @@ blacklistadd outlook.office.com
 unbind w
 unbind a
 unbind m
+autocmd DocStart .+atlassian[.]net/.+jql=ORDER.+ urlmodify -Q jql
 autocmd DocStart .+atlassian[.]net/.+linkSource=.+ urlmodify -Q linkSource
 autocmd DocStart .+atlassian[.]net/.+sourceType=.+ urlmodify -Q sourceType
   autocmd HistoryState https://outlook.+ js document.querySelectorAll("a[href*=\"atlOrigin\"], a[href*=\"icft\"]")?.forEach(a => {a.search=""; a.hash=""; a.title=""})

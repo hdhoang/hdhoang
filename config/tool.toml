@@ -133,6 +133,7 @@ asset_name.linux = "_64-u"
 owner = "eza-community"
 repo = "eza"
 asset_name.linux = "_64-unknown-linux-musl.t"
+asset_name.windows = "z"
 [btdu]
 owner = "CyberShadow"
 repo = "btdu"
@@ -160,6 +161,12 @@ repo = "RustScan"
 exe_name = "rustscan"
 asset_name.linux = "_64-linux.zip"
 asset_name.windows = "exe"
+[naabu] # -up
+# needs libpcap.so.0.8, use a toolbox with libpcap.so.1
+owner = "projectdiscovery"
+repo = "naabu"
+asset_name.linux = "x_a"
+asset_name.windows = "s_am"
 [threat-dragon]
 owner = "OWASP"
 repo = "threat-dragon"
@@ -190,8 +197,8 @@ asset_name.windows = "_64-pc-windows-msvc"
 [mprocs]
 owner = "pvolok"
 repo = "mprocs"
-asset_name.windows = "windows"
-asset_name.linux = "linux"
+asset_name.linux = "_64-m"
+asset_name.windows = "ws"
 [cyme]
 owner = "tuna-f1sh"
 repo = "cyme"
@@ -429,6 +436,11 @@ owner = "tirr-c"
 repo = "jxl-oxide"
 asset_name.linux = "_64-u"
 asset_name.windows = "_64-p"
+[tombi]
+owner = "tombi-toml"
+repo = "tombi"
+# asset_name.linux = "_64-u" weird gzip exe
+asset_name.windows = "_64-p"
 [dprint] # upgrade then config update
 owner = "dprint"
 repo = "dprint"
@@ -443,8 +455,8 @@ asset_name.windows = "win"
 owner = "acoustid"
 repo = "chromaprint"
 exe_name = "fpcalc"
-asset_name.windows = "ws-x"
 asset_name.linux = "x-x"
+asset_name.windows = "ws-x"
 [picard]
 owner = "metabrainz"
 repo = "picard"
@@ -529,8 +541,8 @@ asset_name.windows = "zip"
 [systemfd]
 owner = "mitsuhiko"
 repo = "systemfd"
-asset_name.windows = "zip"
 asset_name.linux = "musl"
+asset_name.windows = "zip"
 [wild]
 owner = "davidlattimore"
 repo = "wild"
@@ -576,8 +588,8 @@ asset_name.windows = "msvc.zip"
 owner = "tiffany352"
 repo = "rink-rs"
 exe_name = "rink"
-asset_name.windows = "Win"
 asset_name.linux = "Linux"
+asset_name.windows = "Win"
 [numbat]
 owner = "sharkdp"
 repo = "numbat"
@@ -586,8 +598,8 @@ asset_name.windows = "_64-p"
 [fend]
 owner = "printfn"
 repo = "fend"
-asset_name.windows = "ws-x64-exe"
 asset_name.linux = "_64-g"
+asset_name.windows = "ws-x64-exe"
 
 # recorders
 [satty]

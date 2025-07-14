@@ -1,5 +1,5 @@
 # https://www.jamescherti.com/better-git-diff-emacs-lisp-elisp/
-*.el diff=elisp merge=mergiraf
+*.el eol=lf diff=elisp merge=mergiraf
 
-* merge=mergiraf
+* text=auto eol=lf merge=mergiraf
 # or mergiraf languages --gitattributes

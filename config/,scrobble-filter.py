@@ -39,22 +39,23 @@ if (artist == "" and album == "" and len(title) in (0, 8)) or any(
 
 COMPILATIONS: list[str] = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
 COMPILERS: list[str] = [
+    "",
     "Danh ca hải ngoại",
     "Francisco Callahan",
     "Hà Nội Vi Vu",
+    "khanhnguyen03",
+    "khánh đi sưu tầm",
     "VTV - Bài Ca Đi Cùng Năm Tháng",
     "VTV Go",
     "VTV SHOWS",
     "VTV3",
-    "khanhnguyen03",
-    "khánh đi sưu tầm",
-    "",
+    "CASSETTE HOÀI NIỆM",
 ]
 ARTIST_REPLACE_RULES: dict[str, str] = {
     "": ["OFFICIAL", "Official", "NSƯT", "Ca Sĩ"],
     "Anh Thơ": ["Anh Tho"],
     "Buckethead": ["Bucketheadland"],
-    "Frédéric Chopin": ["Fryderyk Chopin"],
+    "Frédéric Chopin": ["Fryderyk Chopin", "Garrick Ohlsson"],
     "Khánh Ly": ["Ca Sĩ KHÁNH LY"],
     "Lệ Quyên": ["Le Quyen"],
     "Megadriver": ["megadriver"],
@@ -69,29 +70,18 @@ ARTISTS = ARTIST_REPLACE_RULES.keys()
 TITLE_REPLACE_RULES: dict[str, str] = {
     "": sorted(
         [
-            "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
-            "Chị đẹp",
-            "Garrick Ohlsson / Chopin:",
-            "Mộc San - Trịnh Ca || ",
-            "NHẠC TRỊNH HAY ||",
-            "OFFICIAL LYRICS VIDEO",
-            "OFFICIAL MUSIC VIDEO",
-            "Official Lyrics Video",
-            "THU ÂM TRƯỚC 1975 | ",
-            "hát theo",
-            "khiến cả hôi trường",
             " - Lyrics & Engsub",
             " | Audio",
             " | MINH THU | TRỊNH XƯA",
             " | MINH THU",
-            " | OFFICIAL MUSIC VIDEO 4K | ",
-            " | OFFICIAL MV",
-            " | OFFICIAL MV || Nhạc Xuân Trữ Tình Acoustic",
-            " | TOP bài hát hay",
             " | Official Lyric Video by Hà Nội Vi Vu",
+            " | OFFICIAL MUSIC VIDEO 4K | ",
+            " | OFFICIAL MV || Nhạc Xuân Trữ Tình Acoustic",
+            " | OFFICIAL MV",
+            " | TOP bài hát hay",
             " || MANH PIANO Official",
-            " || Tình Khúc San và Trịnh HAY NỨC NỞ",
             " || THUỲ DUNG",
+            " || Tình Khúc San và Trịnh HAY NỨC NỞ",
             "(Audio)",
             "(OFFICIAL AUDIO)",
             "(Official Lyric Video)",
@@ -99,14 +89,27 @@ TITLE_REPLACE_RULES: dict[str, str] = {
             "- KHÁNH LY | OFFICIAL",
             "- Mộc San",
             "- YÊN HÀ [OFFICIAL]",
-            "|| Official MV 4k",
+            "BẢN THU ÂM TRƯỚC 1975 | KHÁNH LY |",
+            "Chị đẹp",
+            "Garrick Ohlsson / Chopin:",
+            "hát theo",
+            "khiến cả hôi trường",
             "khiến khán giả vỗ tay không ngớt",
+            "Mộc San - Trịnh Ca || ",
+            "NHẠC TRỊNH HAY ||",
+            "OFFICIAL LYRICS VIDEO",
+            "Official Lyrics Video",
+            "OFFICIAL MUSIC VIDEO",
+            "THU ÂM TRƯỚC 1975 | ",
+            "|| Official MV 4k",
             "đứng ngồi không yên",
             "⭐",
             "🎵",
-            "🎵Mạnh Piano | ",
             "🎵Mạnh Piano - ",
+            "🎵Mạnh Piano | ",
             "💎",
+            "🔥",
+            "🎶",
         ],
         reverse=True,
         key=len,
@@ -135,14 +138,14 @@ if ORIG_ARTIST == "Vietnam War Song Project":
     if " - " in title:
         artist, title = title.rsplit(" - ", maxsplit=1)
     elif "(" in title:
-        artist: str = re.sub("""^.+[(](.+)[)]$""", "$1", ORIG_TITLE)
+        artist: str = re.sub("""^.+[(](.+)[)]$""", "\\1", ORIG_TITLE)
         title: str = ORIG_TITLE.split("(")[0]
 
 if ORIG_ARTIST == "khánh đi sưu tầm" and " | " in title:
     title, artist, *_comment = title.rsplit(" | ", maxsplit=2)
 
 if ORIG_ARTIST == "ogafroman":
-    title: str = re.sub("""^Afroman, "(.+)"$""", "$1", ORIG_TITLE)
+    title: str = re.sub("""^Afroman, "(.+)"$""", "\\1", ORIG_TITLE)
     artist = "Afroman"
 
 if ORIG_ARTIST == "Netherlands Bach Society":

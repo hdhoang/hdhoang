@@ -77,6 +77,8 @@
      (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
+ '(show-trailing-whitespace t)
+ '(sort-fold-case t)
  '(tool-bar-mode nil)
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
@@ -383,6 +385,7 @@
 
 (use-package markdown-ts-mode
   :mode ("\\.md\\'" . markdown-ts-mode)
+  :hook ((markdown-ts-mode . auto-fill-mode))
   :defer 't)
 (use-package poly-markdown
   :defer 10
@@ -472,3 +475,5 @@
 
 ;; refresh grammars
 ;; (dolist (grammar treesit-language-source-alist) (treesit-install-language-grammar (car grammar)))
+
+;; (byte-recompile-directory package-user-dir nil 'force)
