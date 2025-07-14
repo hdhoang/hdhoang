@@ -1,0 +1,10 @@
+[package]
+name = "buckethead-releases"
+version = "0.0.0"
+edition = "2024"
+license = "BlueOakModelLicense-1.0"
+
+[dependencies]
+musicbrainz_rs = { version = "0.12", default-features = false, features = ["rustls", "rate_limit", "async"] }
+serde_json = { version = "1.0.140", default-features = false }
+tokio = { version = "1", default-features = false, features = ["rt"] }
