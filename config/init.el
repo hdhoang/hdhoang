@@ -220,6 +220,7 @@
 
 (add-hook 'fundamental-mode-hook #'whitespace-mode)
 (add-hook 'fundamental-mode-hook #'follow-mode)
+(add-hook 'text-mode-hook #'visual-wrap-prefix-mode)
 (add-hook 'occur-mode-hook #'next-error-follow-minor-mode)
 (add-hook 'prog-mode-hook #'display-line-numbers-mode)
 

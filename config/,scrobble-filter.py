@@ -37,7 +37,14 @@ if (artist == "" and album == "" and len(title) in (0, 8)) or any(
     submit = False
     sys.exit(0)
 
-COMPILATIONS: list[str] = ["buddy.vn", ".", "Music", "mp3.zing.vn"]
+COMPILATIONS: list[str] = [
+    ".",
+    "buddy.vn",
+    "mp3.zing.vn",
+    "Music",
+    "www.hienld.tk/www.Nhac.vui.vn",
+    "www.hienld.tk/Www.Nhac.Vui.Vn Download Music Mp3 Free Nhanh Nhat Viet Nam",
+]
 COMPILERS: list[str] = [
     "",
     "Danh ca hải ngoại",
@@ -133,6 +140,10 @@ if artist in COMPILERS and " - " in title:
 for replacement, matches in ARTIST_REPLACE_RULES.items():
     for s in matches:
         artist = artist.replace(s, replacement, count=1)
+
+if ORIG_ARTIST == "Chopin":
+    # avoid "fred fred chopin" from naive loop
+    artist = "Frédéric Chopin"
 
 if ORIG_ARTIST == "Vietnam War Song Project":
     if " - " in title:

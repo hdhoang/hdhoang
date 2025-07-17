@@ -636,3 +636,13 @@ owner = "Y2Z"
 repo = "monolith"
 asset_name.linux = "_64"
 asset_name.windows = "exe"
+[dummyhttp]
+owner = "svenstaro"
+repo = "dummyhttp"
+asset_name.linux = "_64-unknown-linux-g"
+asset_name.windows = "4-p"
+[firedbg]
+owner = "SeaQL"
+repo = "FireDBG.for.Rust"
+exe_name = "firedbg"
+asset_name.linux = "a39"

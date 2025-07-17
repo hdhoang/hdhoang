@@ -22,6 +22,9 @@ excludesfile = ~/homes/config/ignore_global
 autocrlf = false
 editor = "emacsclient -c"
 
+[alias]
+pmc = "push --push-option=merge_request.create --push-option=merge_request.squash --push-option=merge_request.remove_source_branch --push-option=merge_request.auto_merge origin"
+
 [protocol]
 version = 2
 [init]
