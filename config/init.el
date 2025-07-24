@@ -211,6 +211,12 @@
   (magit-diff-refine-hunk t)
   :bind
   ("C-c M-g l" . #'magit-log-buffer-file)
+  :config
+  ;; https://github.com/magit/magit/issues/3717#issuecomment-955576301
+  (transient-append-suffix 'magit-push "-u"
+    '(1 "=s" "Automerge MR" "--push-option=merge_request.auto_merge"))
+  (transient-append-suffix 'magit-push "=s"
+    '(1 "=m" "Create MR" "--push-option=merge_request.create"))
   )
 
 (use-package rainbow-delimiters
