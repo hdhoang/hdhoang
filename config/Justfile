@@ -33,7 +33,7 @@ yt:
     yt-dlp --format=250/251/140/hls-400/vorbis/aac-hi/bestaudio \
         --remux-video='mkv>opus/webm>opus' --prefer-free-formats \
         --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org \
-        --no-mtime --parse-metadata='%(format)s %(format_id)s:%(meta_format)s' --embed-metadata \
+        --parse-metadata='%(format)s %(format_id)s:%(meta_format)s' --embed-metadata \
         --playlist-random --compat-options=filename-sanitization --output="%(uploader)s/%(title)s [%(id)s].%(ext)s" \
         --exec=after_video:'sleep %(upload_date>%d|2)q' --preset-alias sleep \
         --color=stderr:always 2>| tee /dev/fd/2 | rg -m1 --color=always 'PO.Token|not.a.bot|again.later'
