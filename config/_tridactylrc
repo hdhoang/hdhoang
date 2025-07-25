@@ -54,6 +54,7 @@ setpref browser.download.autohideButton false
 setpref browser.newtabpage.activity-stream.showSearch false
 setpref browser.sessionstore.restore_pinned_tabs_on_demand true
 setpref browser.startup.page 3
+setpref browser.ml.chat.enabled false
 
 setpref layout.spellcheckDefault 0
 setpref layout.css.always_underline_links true
