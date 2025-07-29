@@ -149,6 +149,11 @@ repo = "dua-cli"
 exe_name = "dua"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "ws"
+[duf]
+owner = "muesli"
+repo = "duf"
+asset_name.linux = "x_x"
+asset_name.windows = "s_x"
 [trippy]
 owner = "fujiapple852"
 repo = "trippy"
@@ -476,6 +481,11 @@ asset_name.windows = "64.exe"
 owner = "Cyan4973"
 repo = "xxHash"
 asset_name.windows = "zip"
+[zizmor]
+owner = "zizmorcore"
+repo = "zizmor"
+asset_name.linux = "_64-u"
+asset_name.windows = "_64-p"
 [dump_syms]
 owner = "mozilla"
 repo = "dump_syms"
@@ -582,6 +592,11 @@ owner = "Orange-OpenSource"
 repo = "hurl"
 asset_name.linux = "_64-unknown-linux"
 asset_name.windows = "msvc.zip"
+[xh]
+owner = "ducaale"
+repo = "xh"
+asset_name.linux = "_64-u"
+asset_name.windows = "zip"
 
 # calculators
 [rink]
@@ -620,7 +635,8 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 [teams]
 owner = "IsmaelMartinez"
 repo = "teams-for-linux"
-asset_name.linux = "7.A"
+exe_name = "teams"
+asset_name.linux = "0.A"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"
