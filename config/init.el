@@ -312,9 +312,25 @@
   (define-polymode poly-terraform-mode :hostmode #'poly-terraform-hostmode
     :innermodes '(poly-yaml-terraform-innermode poly-hcl-terraform-innermode))
 
+  (define-auto-innermode poly-yaml-auto-innermode
+    ;; https://github.com/ruschaaf/extended-embedded-languages?tab=readme-ov-file#host-language---yaml
+    :mode-matcher (cons ".+ # *\\(.+\\)" 1)
+    :adjust-face 5
+    :head-matcher "[:-] [|>][+-]? #.+\n"
+    :tail-matcher #'pm-same-indent-tail-matcher
+    :head-mode 'host
+    :tail-mode 'host
+    )
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :adjust-face 5
-    :head-matcher "- |[+-]?\n"
+    :head-matcher "- [|>][+-]?\n"
+    :tail-matcher #'pm-same-indent-tail-matcher
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-yaml-sh1-innermode :mode #'bash-ts-mode
+    :adjust-face 5
+    :head-matcher "sh: [|>][+-]?\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
@@ -364,10 +380,14 @@
                   poly-yaml-conf-innermode
                   poly-yaml-toml-innermode
                   poly-yaml-jinja2-innermode
-                  poly-yaml-sh-innermode)
+                  poly-yaml-sh1-innermode
+                  poly-yaml-sh-innermode
+                  poly-yaml-auto-innermode
+                  )
     )
 
   :mode
+  ("/common-.+/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-mode)
   ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
