@@ -48,9 +48,9 @@ trim-paths = ["diagnostics", "object"]
 
 [profile.dev]
 debug = "none"
-codegen-backend = "cranelift"
-trim-paths = ["diagnostics", "object"]
+# codegen-backend = "cranelift"
+# trim-paths = ["diagnostics", "object"]
 
 [profile.test]
-codegen-backend = "cranelift"
-trim-paths = ["diagnostics", "object"]
+# codegen-backend = "cranelift"
+# trim-paths = ["diagnostics", "object"]
