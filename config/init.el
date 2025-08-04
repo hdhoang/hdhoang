@@ -54,7 +54,7 @@
    '((conf-toml-mode . toml-ts-mode) (go-mode . go-ts-mode)
      (hcl-mode . hcl-ts-mode) (js-json-mode . json-ts-mode)
      (python-mode . python-ts-mode) (markdown-mode . markdown-ts-mode)
-     (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
+     (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode) (bash-mode . bash-ts-mode)
      (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
@@ -312,25 +312,27 @@
   (define-polymode poly-terraform-mode :hostmode #'poly-terraform-hostmode
     :innermodes '(poly-yaml-terraform-innermode poly-hcl-terraform-innermode))
 
-  (define-auto-innermode poly-yaml-auto-innermode
-    ;; https://github.com/ruschaaf/extended-embedded-languages?tab=readme-ov-file#host-language---yaml
-    :mode-matcher (cons ".+ # *\\(.+\\)" 1)
+  (define-auto-innermode poly-yaml-commented-innermode
     :adjust-face 5
-    :head-matcher "[:-] [|>][+-]? #.+\n"
+    ;; https://github.com/ruschaaf/extended-embedded-languages?tab=readme-ov-file#host-language---yaml
+    ;; but not https://github.com/harrydowning/vscode-yaml-embedded-languages?tab=readme-ov-file#usage
+    :head-matcher "[:-] [|>][+-]? # *.+\n"
+    :mode-matcher (cons ".+# *\\(.+\\)" 1)
+    :tail-matcher #'pm-same-indent-tail-matcher
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-auto-innermode poly-yaml-keyed-innermode
+    :adjust-face 5
+    :head-matcher ".+: [|>][+-]?\n"
+    :mode-matcher (cons ".+[.]\\(.+\\):.+" 1)
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :adjust-face 5
-    :head-matcher "- [|>][+-]?\n"
-    :tail-matcher #'pm-same-indent-tail-matcher
-    :head-mode 'host
-    :tail-mode 'host
-    )
-  (define-innermode poly-yaml-sh1-innermode :mode #'bash-ts-mode
-    :adjust-face 5
-    :head-matcher "sh: [|>][+-]?\n"
+    :head-matcher "- [|>][1-9+-]?\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
@@ -349,15 +351,6 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-yaml-yaml-innermode :mode #'yaml-ts-mode
-    ;; TBD: the whole chunk is still string-ly face
-    :adjust-face 5
-    :can-nest t
-    :head-matcher "^  .+[.]ya?ml: |\n"
-    :tail-matcher #'pm-same-indent-tail-matcher
-    :head-mode 'host
-    :tail-mode 'host
-    )
   (define-innermode poly-yaml-jsonpatch-innermode :mode #'yaml-ts-mode
     ;; TBD: the whole chunk is still string-ly face
     :adjust-face 5
@@ -367,28 +360,17 @@
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-yaml-toml-innermode :mode #'toml-ts-mode
-    :adjust-face 5
-    :head-matcher "^ +.+[.]toml: |\n"
-    :tail-matcher #'pm-same-indent-tail-matcher
-    :head-mode 'host
-    :tail-mode 'host
-    )
   (define-polymode poly-yaml-mode :hostmode #'poly-yaml-ts-hostmode
-    :innermodes '(poly-yaml-yaml-innermode
+    :innermodes '(poly-yaml-commented-innermode
+                  poly-yaml-keyed-innermode
                   poly-yaml-jsonpatch-innermode
                   poly-yaml-conf-innermode
-                  poly-yaml-toml-innermode
                   poly-yaml-jinja2-innermode
-                  poly-yaml-sh1-innermode
                   poly-yaml-sh-innermode
-                  poly-yaml-auto-innermode
-                  )
-    )
+                  ))
 
   :mode
-  ("/common-.+/.+[.]ya?ml\\'" . poly-yaml-mode)
-  ("/k8s-manifest/.+[.]ya?ml\\'" . poly-yaml-mode)
+  ("/repos/.+[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-mode)
   ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
   ("Containerfile\\'" . poly-dockerfile-mode)
