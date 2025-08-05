@@ -52,7 +52,7 @@ asset_name.linux = "-Ubuntu20.04.AppImage"
 [zellij]
 owner = "zellij-org"
 repo = "zellij"
-asset_name.linux = "_64-u"
+asset_name.linux = "j-x86_64-u"
 [fish]
 owner = "fish-shell"
 repo = "fish-shell"
