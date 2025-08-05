@@ -54,16 +54,16 @@
    '((conf-toml-mode . toml-ts-mode) (go-mode . go-ts-mode)
      (hcl-mode . hcl-ts-mode) (js-json-mode . json-ts-mode)
      (python-mode . python-ts-mode) (markdown-mode . markdown-ts-mode)
-     (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode) (bash-mode . bash-ts-mode)
-     (yaml-mode . yaml-ts-mode)))
+     (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
+     (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
  '(package-selected-packages
-   '(ace-window aggressive-indent apheleia consult-eglot corfu devil
-                diff-hl expand-region gcmh groovy-mode just-ts-mode
-                magit magit-delta magit-section marginalia
-                markdown-ts-mode nov ox-typst pcre2el poly-ansible
-                poly-markdown poly-org rainbow-delimiters rustic
-                standard-themes symbol-overlay terraform-doc
+   '(ace-window aggressive-indent apheleia ast-grep consult-eglot corfu
+                devil diff-hl expand-region gcmh groovy-mode
+                just-ts-mode magit magit-delta magit-section
+                marginalia markdown-ts-mode nov ox-typst pcre2el
+                poly-ansible poly-markdown poly-org rainbow-delimiters
+                rustic standard-themes symbol-overlay terraform-doc
                 terraform-mode transient with-editor))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
@@ -233,6 +233,7 @@
 (use-package aggressive-indent
   :config (global-aggressive-indent-mode t))
 
+(use-package ast-grep)
 (use-package symbol-overlay
   :bind
   ("M-i" . #'symbol-overlay-put)
@@ -316,7 +317,7 @@
     :adjust-face 5
     ;; https://github.com/ruschaaf/extended-embedded-languages?tab=readme-ov-file#host-language---yaml
     ;; but not https://github.com/harrydowning/vscode-yaml-embedded-languages?tab=readme-ov-file#usage
-    :head-matcher "[:-] [|>][+-]? # *.+\n"
+    :head-matcher "^[^#]+[:-] [|>][+-]? # *.+\n"
     :mode-matcher (cons ".+# *\\(.+\\)" 1)
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
@@ -324,12 +325,13 @@
     )
   (define-auto-innermode poly-yaml-keyed-innermode
     :adjust-face 5
-    :head-matcher ".+: [|>][+-]?\n"
+    :head-matcher "^[^#]+: [|>][+-]?\n"
     :mode-matcher (cons ".+[.]\\(.+\\):.+" 1)
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
+  (add-to-list 'major-mode-remap-alist '(config-mode . yaml-ts-mode))
   (define-innermode poly-yaml-sh-innermode :mode #'bash-ts-mode
     :adjust-face 5
     :head-matcher "- [|>][1-9+-]?\n"
@@ -370,7 +372,7 @@
                   ))
 
   :mode
-  ("/repos/.+[.]ya?ml\\'" . poly-yaml-mode)
+  ("[.]ya?ml\\'" . poly-yaml-mode)
   ("[.]tf\\'" . poly-terraform-mode)
   ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
   ("Containerfile\\'" . poly-dockerfile-mode)
