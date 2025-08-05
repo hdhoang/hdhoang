@@ -662,3 +662,8 @@ owner = "SeaQL"
 repo = "FireDBG.for.Rust"
 exe_name = "firedbg"
 asset_name.linux = "a39"
+[copyparty]
+owner = "9001"
+repo = "copyparty"
+asset_name.linux = "sfx"
+asset_name.windows = "y.e"

@@ -59,7 +59,7 @@ COMPILERS: list[str] = [
     "CASSETTE HOÀI NIỆM",
 ]
 ARTIST_REPLACE_RULES: dict[str, str] = {
-    "": ["OFFICIAL", "Official", "NSƯT", "Ca Sĩ"],
+    "": ["OFFICIAL", "Official", "NSƯT", "Ca Sĩ", "NSND"],
     "Anh Thơ": ["Anh Tho"],
     "Buckethead": ["Bucketheadland"],
     "Frédéric Chopin": ["Fryderyk Chopin", "Garrick Ohlsson"],
