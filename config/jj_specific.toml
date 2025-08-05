@@ -6,6 +6,9 @@
 # servers to autocomplete and show documentation for the entries below.
 "$schema" = "https://jj-vcs.github.io/jj/prerelease/config-schema.json"
 
+[working-copy]
+eol-conversion = "input-output"
+
 [aliases]
 tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
 
