@@ -21,14 +21,14 @@ done
 end
 gsettings set org.gnome.desktop.interface font-name "$GTK_FONT_NAME"
 gsettings set org.gnome.desktop.interface document-font-name "$GTK_FONT_NAME"
-gsettings set org.gnome.desktop.interface monospace-font-name "JuliaMono Nerd Font Mono Medium"
+gsettings set org.gnome.desktop.interface monospace-font-name "AtkynsonMono Nerd Font Mono Medium"
 
 ln -rsvf $PWD/tool.toml ~/.tool.toml
 ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/topgrade.toml ~/.config/topgrade.toml
 ln -rsvf $PWD/../dprint.json ~/dprint.json
 
-mkdir -vp ~/.config/{containers,emacs,jj/conf.d,wezterm,fish,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/run/ ~/.crawl/
+mkdir -vp ~/run/ ~/.crawl/ ~/.config/{containers,emacs,jj/conf.d,wezterm,fish/completions/,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/
 
 ln -rsvf $PWD/crawl-init.txt ~/.crawl/init.txt
 

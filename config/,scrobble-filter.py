@@ -47,16 +47,16 @@ COMPILATIONS: list[str] = [
 ]
 COMPILERS: list[str] = [
     "",
+    "CASSETTE HOÀI NIỆM",
     "Danh ca hải ngoại",
     "Francisco Callahan",
     "Hà Nội Vi Vu",
-    "khanhnguyen03",
-    "khánh đi sưu tầm",
-    "VTV - Bài Ca Đi Cùng Năm Tháng",
+    "VTV3",
     "VTV Go",
     "VTV SHOWS",
-    "VTV3",
-    "CASSETTE HOÀI NIỆM",
+    "VTV - Bài Ca Đi Cùng Năm Tháng",
+    "khanhnguyen03",
+    "khánh đi sưu tầm",
 ]
 ARTIST_REPLACE_RULES: dict[str, str] = {
     "": ["OFFICIAL", "Official", "NSƯT", "Ca Sĩ", "NSND"],
