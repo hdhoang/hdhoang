@@ -462,6 +462,7 @@
 
 (use-package rustic
   :custom (rustic-lsp-client 'eglot)
+  (rustic-cargo-check-exec-command "clippy")
   :hook ((eglot-managed-mode . (lambda () (flymake-mode -1))))
   :bind (:map rustic-mode-map
               ("M-j" . lsp-ui-imenu)
