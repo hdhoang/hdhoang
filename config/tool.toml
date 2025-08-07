@@ -50,6 +50,7 @@ owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
 [zellij]
+# zellij setup --generate-completion $STARSHIP_SHELL
 owner = "zellij-org"
 repo = "zellij"
 asset_name.linux = "j-x86_64-u"
@@ -210,6 +211,7 @@ repo = "cyme"
 asset_name.linux = "_64-unknown"
 asset_name.windows = "ws"
 [otel-cli]
+# otel-cli completion $SHELL
 owner = "equinix-labs"
 repo = "otel-cli"
 asset_name.linux = "x_amd64.t"
@@ -249,11 +251,13 @@ repo = "topgrade"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
 [just]
+# just --completions $SHELL
 owner = "casey"
 repo = "just"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
 [jj]
+# jj util completion $SHELL
 owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
@@ -266,6 +270,7 @@ asset_name.windows = "exe"
 
 # k8s
 [k9s]
+# k9s completion $STARSHIP_SHELL
 [kubetui]
 owner = "sarub0b0"
 repo = "kubetui"
@@ -332,6 +337,7 @@ repo = "comby"
 exe_name = "comby"
 asset_name.linux = "tar"
 [ast-grep]
+# ast-grep completions $STARSHIP_SHELL
 owner = "ast-grep"
 repo = "ast-grep"
 asset_name.linux = "_64-unknown-linux"
@@ -373,6 +379,7 @@ repo = "fq"
 asset_name.linux = "x_amd"
 asset_name.windows = "ws"
 [yq]
+# yq completion $STARSHIP_SHELL
 owner = "mikefarah"
 repo = "yq"
 asset_name.linux = "x_amd64.t"
@@ -424,6 +431,12 @@ asset_name.windows = "i-windows-am"
 owner = "superfly"
 repo = "litefs"
 asset_name.linux = "am"
+[sedutil]
+owner = "ChubbyAnt"
+repo = "sedutil"
+exe_name = "sedutil-cli"
+asset_name.linux = "i-"
+asset_name.windows = "exe"
 
 # formatters
 [sudo-rs]
@@ -577,6 +590,7 @@ repo = "lychee"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "exe"
 [flyctl]
+# flyctl completion $STARSHIP_SHELL
 owner = "superfly"
 repo = "flyctl"
 asset_name.linux = "x_x"
