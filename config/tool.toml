@@ -1,7 +1,10 @@
 # Installation directory for all the tools:
 store_directory = "$HOME/run"
 
+# tailscale completion $STARSHIP_SHELL
+
 [rclone] # selfupdate
+# rclone completion $STARSHIP_SHELL -
 owner = "rclone"
 repo = "rclone"
 asset_name.linux = "linux-amd64.zip"
@@ -30,6 +33,7 @@ asset_name.windows = "Extra"
 [bat]
 [difftastic]
 [starship]
+# starship completions $STARSHIP_SHELL
 [tspin]
 owner = "bensadeh"
 repo = "tailspin"
@@ -211,7 +215,7 @@ repo = "cyme"
 asset_name.linux = "_64-unknown"
 asset_name.windows = "ws"
 [otel-cli]
-# otel-cli completion $SHELL
+# otel-cli completion $STARSHIP_SHELL
 owner = "equinix-labs"
 repo = "otel-cli"
 asset_name.linux = "x_amd64.t"
@@ -251,13 +255,13 @@ repo = "topgrade"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
 [just]
-# just --completions $SHELL
+# just --completions $STARSHIP_SHELL
 owner = "casey"
 repo = "just"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc"
 [jj]
-# jj util completion $SHELL
+# jj util completion $STARSHIP_SHELL
 owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
@@ -321,6 +325,7 @@ repo = "f2"
 asset_name.linux = "x_amd64.t"
 asset_name.windows = "4.z"
 [ripgrep]
+# rg --generate complete-$STARSHIP_SHELL
 [ripgrep-all]
 owner = "phiresky"
 repo = "ripgrep-all"
@@ -369,6 +374,7 @@ repo = "qsv"
 exe_name = "qsvp"
 asset_name.linux = "_64-unknown-linux-g"
 [fx]
+# fx --comp $STARSHIP_SHELL
 owner = "antonmedv"
 repo = "fx"
 asset_name.linux = "x_am"
@@ -607,6 +613,7 @@ repo = "hurl"
 asset_name.linux = "_64-unknown-linux"
 asset_name.windows = "msvc.zip"
 [xh]
+# xh --generate complete-$STARSHIP_SHELL
 owner = "ducaale"
 repo = "xh"
 asset_name.linux = "_64-u"

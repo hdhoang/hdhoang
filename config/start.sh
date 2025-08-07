@@ -1,4 +1,5 @@
 #!/bin/env fish
+# -*- apheleia-formatter: fish-indent -*-
 echo #`# <#`
 set fish_trace 1
 
@@ -13,7 +14,7 @@ tic -x $PWD/wezterm.terminfo
 flatpak -u override --filesystem=xdg-config/fontconfig:ro
 mkdir -vp ~/.local/share/fonts/
 for file in ../assets/*tf
-do
+    do
     # use hardlinks to avoid app crashing when files disappear,
     # and also easier for flatpak apps to get access
     ln -vf $file ~/.local/share/fonts/
@@ -78,6 +79,10 @@ ln -rsvf $PWD/wezterm.lua ~/.config/wezterm/
 mkdir -p ~/.cargo/
 ln -rsvf $PWD/cargo.toml ~/.cargo/config.toml
 ln -rsvf $PWD/../rustfmt.toml ~/rustfmt.toml
+
+rg '# ([^ ]+)(.+)[$]STARSHIP_SHELL(.*)' $PWD/tool.toml \
+    --replace 'command -v $1 && $1 $2\fish $3 > $$HOME/.config/fish/completions/$1.fish' |
+    sh -x -
 
 exit #> > $null
 
