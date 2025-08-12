@@ -7,6 +7,8 @@ a:visited { color: VisitedText !important; }
 @-moz-document url-prefix(https://outlook.office.com/mail/) {
     #LeftRail,
     /* #OwaTitleBar, */
+    #TopBar,
+    #CopilotCommandCenterButton,
     [aria-label="Message actions"] [tabindex="0"],
     [aria-label="Reply"],
     [aria-label="Reply all"],
@@ -14,7 +16,7 @@ a:visited { color: VisitedText !important; }
     [aria-label="Forward"],
     [aria-label*="Viva"]
     {display: none !important;}
-    #TopBar { float: left !important; }
+    #BottomBar { float: right !important; }
     #innerRibbonContainer, .sD_4q { flex-direction: row-reverse !important; }
 }
 
