@@ -50,6 +50,7 @@ repo = "delta"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-pc-windows-msvc"
 [wezterm]
+# wezterm shell-completion --shell $STARSHIP_SHELL
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
