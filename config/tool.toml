@@ -266,7 +266,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
-# ended at 0.29 asset_name.windows = "_64-pc-windows-msvc"
+asset_name.windows = "_64-pc-windows-msvc"
 [gg]
 owner = "gulbanana"
 repo = "gg"
@@ -334,6 +334,7 @@ exe_name = "rga"
 asset_name.linux = "musl"
 asset_name.windows = "msvc"
 [gitleaks]
+# gitleaks completion $STARSHIP_SHELL
 owner = "gitleaks"
 repo = "gitleaks"
 asset_name.linux = "x_x64"

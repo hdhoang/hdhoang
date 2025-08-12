@@ -2,7 +2,7 @@
 
 import marimo
 
-__generated_with = "0.14.16"
+__generated_with = "0.14.17"
 app = marimo.App()
 
 
@@ -14,20 +14,26 @@ def _():
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 979
+    this_water_photo = 992
     left_consumed = this_water_photo - prev_water_photo
+
+    if left_consumed < 0:
+        raise ValueError
     return (left_consumed,)
 
 
 @app.cell
 def _():
-    hawater_consumed = 10
+    hawater_consumed = 0
     return (hawater_consumed,)
 
 
 @app.cell
 def _(hawater_consumed, left_consumed):
     back_consumed = hawater_consumed - left_consumed
+
+    if back_consumed < 0:
+        raise ValueError
     return (back_consumed,)
 
 
@@ -79,7 +85,9 @@ def _(FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, left_consumed):
 
 @app.cell
 def _(FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, back_consumed):
-    back_by_meter = back_consumed * PRICE_00_TO_10 + max(0, back_consumed - 10.0) * PRICE_10_TO_20 # + 0 * PRICE_20_TO_30
+    back_by_meter = (
+        back_consumed * PRICE_00_TO_10 + max(0, back_consumed - 10.0) * PRICE_10_TO_20
+    )  # + 0 * PRICE_20_TO_30
     back_water = back_by_meter * FINAL_FEES_RATIO
 
     return (back_water,)
