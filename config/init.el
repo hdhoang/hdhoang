@@ -1,4 +1,4 @@
-;;; -*- lexical-binding: t -*-
+;;; -*- lexical-binding: t; apheleia-formatter: lisp-indent -*-
 (require 'use-package)
 
 (defvar scratch-dir "~/build")
@@ -119,6 +119,7 @@
 (put 'narrow-to-region 'disabled nil)
 (global-unset-key (kbd "C-x m"))
 (global-set-key (kbd "C-x C-b") #'ibuffer-list-buffers)
+(global-set-key (kbd "C-M-y") #'mouse-yank-primary)
 
 (require 'package)
 (add-to-list 'display-buffer-alist
@@ -287,7 +288,7 @@
   (define-hostmode poly-dockerfile-hostmode :mode #'dockerfile-ts-mode)
   (define-innermode poly-bash-dockerfile-innermode :mode #'bash-ts-mode
     :adjust-face 5
-    :head-matcher "RUN <<EORUN\n"
+    :head-matcher "^RUN <<EORUN\n"
     :tail-matcher "^EORUN$"
     :head-mode 'host
     :tail-mode 'host
@@ -296,22 +297,32 @@
     :innermodes '(poly-bash-dockerfile-innermode))
 
   (define-hostmode poly-terraform-hostmode :mode #'terraform-mode)
-  (define-innermode poly-yaml-terraform-innermode :mode #'yaml-ts-mode
+  (define-auto-innermode poly-terraform-keyed-innermode
+    :adjust-face 5
+    :head-matcher "^[^#]+\" = <<EOF\n"
+    :mode-matcher (cons ".+[.]\\(.+\\)\" = .+" 1)
+    :tail-matcher "^EOF$"
+    :head-mode 'host
+    :tail-mode 'host
+    )
+  (define-innermode poly-terraform-yaml-innermode :mode #'yaml-ts-mode
     :adjust-face 5
     :head-matcher "<<EO\\(YAML\\|T\\)\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
     )
-  (define-innermode poly-hcl-terraform-innermode :mode #'hcl-ts-mode
+  (define-innermode poly-terraform-hcl-innermode :mode #'hcl-ts-mode
     :adjust-face 5
     :head-matcher "<<EOHCL\n"
-    :tail-matcher "^EOHCL"
+    :tail-matcher "^EOHCL$"
     :head-mode 'host
     :tail-mode 'host
     )
   (define-polymode poly-terraform-mode :hostmode #'poly-terraform-hostmode
-    :innermodes '(poly-yaml-terraform-innermode poly-hcl-terraform-innermode))
+    :innermodes '(poly-terraform-keyed-innermode
+                  poly-terraform-yaml-innermode
+                  poly-terraform-hcl-innermode))
 
   (define-auto-innermode poly-yaml-commented-innermode
     :adjust-face 5

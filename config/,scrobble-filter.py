@@ -49,6 +49,7 @@ COMPILERS: list[str] = [
     "",
     "CASSETTE HOÀI NIỆM",
     "Danh ca hải ngoại",
+    "EnPi - Yêu Nhạc Truyền Thống",
     "Francisco Callahan",
     "Hà Nội Vi Vu",
     "VTV3",
