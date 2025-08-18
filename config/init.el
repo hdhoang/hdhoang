@@ -79,6 +79,7 @@
      (vc-git-annotate-switches . "-w")))
  '(show-trailing-whitespace t)
  '(sort-fold-case t)
+ '(terraform-format-on-save-mode t)
  '(tool-bar-mode nil)
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
@@ -253,10 +254,14 @@
   (add-to-list 'apheleia-mode-alist '(toml-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(rust-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(dockerfile-ts-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(poly-dockerfile-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(markdown-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . dprint))
+  (delete '(yaml-ts-mode . prettier-yaml) apheleia-mode-alist)
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(poly-yaml-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(poly-ansible-mode . dprint))
 
   (add-to-list 'apheleia-mode-alist '(terraform-mode . terraform))
   (add-to-list 'apheleia-mode-alist '(hcl-ts-mode . terraform))
@@ -384,6 +389,7 @@
 
   :mode
   ("[.]ya?ml\\'" . poly-yaml-mode)
+  ("/ansible/.+[.]ya?ml\\'" . poly-ansible-mode)
   ("[.]tf\\'" . poly-terraform-mode)
   ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
   ("Containerfile\\'" . poly-dockerfile-mode)
@@ -435,7 +441,7 @@
   ("[.]json[.]j2\\'" . poly-json-j2-mode)
   ("[.]xml[.]j2\\'" . poly-xml-j2-mode)
 
-  ("[.]ya?ml[.]j2\\'" . poly-ansible-mode))
+  ("/ansible/.+[.]ya?ml[.]j2\\'" . poly-ansible-mode))
 
 (use-package corfu
   :custom (corfu-auto t)
