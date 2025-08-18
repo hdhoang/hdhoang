@@ -24,7 +24,7 @@ def _(prev_water_photo):
 
 @app.cell
 def _():
-    hawater_consumed = 0
+    hawater_consumed = 18
     return (hawater_consumed,)
 
 
@@ -50,7 +50,7 @@ def _(back_consumed, back_total, back_water):
     print(back_consumed)
 
     print(back_water)
-    print(int(back_total / 1000))
+    print(f"back total: {int(back_total / 1000)}")
     return
 
 
@@ -64,7 +64,7 @@ def _(left_water):
 
 @app.cell
 def _(left_total):
-    print(int(left_total / 1000))
+    print(f"left total: {int(left_total / 1000)}")
     return
 
 
