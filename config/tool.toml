@@ -40,6 +40,7 @@ repo = "tailspin"
 exe_name = "tspin"
 asset_name.linux = "_64-unknown-linux-musl"
 [hl]
+# hl --shell-completions $STARSHIP_SHELL
 owner = "pamburus"
 repo = "hl"
 asset_name.linux = "_64-musl"
@@ -284,6 +285,12 @@ asset_name.linux = "_64-unknown-linux-musl"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+[kustomize]
+# kubectl completion $STARSHIP_SHELL
+# kustomize completion $STARSHIP_SHELL
+owner = "kubernetes-sigs"
+repo = "kustomize"
+asset_name.linux = "x_am"
 [regctl]
 owner = "regclient"
 repo = "regclient"
@@ -299,6 +306,11 @@ owner = "opentofu"
 repo = "opentofu"
 exe_name = "tofu"
 asset_name.linux = "x_amd64.z"
+[terraform-docs]
+# terraform-docs completion $STARSHIP_SHELL
+owner = "terraform-docs"
+repo = "terraform-docs"
+asset_name.linux = "x-am"
 # [helm]
 # has checksums only
 # owner = "helm"
