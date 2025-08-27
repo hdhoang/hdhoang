@@ -285,6 +285,12 @@ asset_name.linux = "_64-unknown-linux-musl"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+[kubectl-cnpg]
+# kubectl-cnpg completion $STARSHIP_SHELL
+owner = "cloudnative-pg"
+repo = "cloudnative-pg"
+exe_name="kubectl-cnpg"
+asset_name.linux = "x_x86_64.t"
 [kustomize]
 # kubectl completion $STARSHIP_SHELL
 # kustomize completion $STARSHIP_SHELL
