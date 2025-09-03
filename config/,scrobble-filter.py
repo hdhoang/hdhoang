@@ -80,6 +80,7 @@ TITLE_REPLACE_RULES: dict[str, str] = {
         [
             " - Lyrics & Engsub",
             " | Audio",
+            " | Hà Nội Vi Vu",
             " | MINH THU | TRỊNH XƯA",
             " | MINH THU",
             " | Official Lyric Video by Hà Nội Vi Vu",
