@@ -341,7 +341,7 @@
     )
   (define-auto-innermode poly-yaml-keyed-innermode
     :adjust-face 5
-    :head-matcher "^[^#]+: [|>][+-]?\n"
+    :head-matcher "^[^#]+: [|>][1-9+-]?\n"
     :mode-matcher (cons ".+[.]\\(.+\\):.+" 1)
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
@@ -357,7 +357,7 @@
     )
   (define-innermode poly-yaml-jinja2-innermode :mode #'jinja2-mode
     :adjust-face 5
-    :head-matcher "^ .+[.]templates: [|>][1-9+-]*\n"
+    :head-matcher "^ .+[.]templates: [|>][1-9+-]?\n"
     :tail-matcher #'pm-same-indent-tail-matcher
     :head-mode 'host
     :tail-mode 'host
