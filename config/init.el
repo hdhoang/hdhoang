@@ -57,14 +57,12 @@
      (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
- '(package-selected-packages
-   '(ace-window aggressive-indent apheleia ast-grep consult-eglot corfu
-                devil diff-hl expand-region gcmh groovy-mode
-                just-ts-mode magit magit-delta magit-section
-                marginalia markdown-ts-mode nov ox-typst pcre2el
-                poly-ansible poly-markdown poly-org rainbow-delimiters
-                rustic standard-themes symbol-overlay terraform-doc
-                terraform-mode transient with-editor))
+ '(package-selected-packages '(jujutsu))
+ '(package-vc-selected-packages
+   '((jujutsu :url "https://github.com/bennyandresen/jujutsu.el")
+     (hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
+     (combobulate :url "https://github.com/mickeynp/combobulate")
+     (kdl-ts-mode :url "https://github.com/dataphract/kdl-ts-mode")))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -79,7 +77,7 @@
      (vc-git-annotate-switches . "-w")))
  '(show-trailing-whitespace t)
  '(sort-fold-case t)
- '(terraform-format-on-save-mode t)
+ '(terraform-format-on-save-mode t t)
  '(tool-bar-mode nil)
  '(treesit-font-lock-level 4)
  '(treesit-language-source-alist
@@ -152,18 +150,17 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
+(use-package ht)
 (use-package jujutsu
-  :defer 600
-  ;; https://github.com/bennyandresen/jujutsu.el
-  :load-path "../../gh/jujutsu.el/")
+  :vc (:url "https://github.com/bennyandresen/jujutsu.el"
+            :rev "6d518e3c3497")
+  :bind ("C-x j" . #'jujutsu-status)
+  )
 
 (use-package kdl-ts-mode
-  :defer 600
-  ;; https://github.com/dataphract/kdl-ts-mode
-  :load-path "../../gh/kdl-ts-mode/")
-
+  :vc (:url "https://github.com/dataphract/kdl-ts-mode"))
 (use-package combobulate
-  :load-path "../../gh/combobulate/"
+  :vc (:url "https://github.com/mickeynp/combobulate")
   :preface (setopt combobulate-key-prefix "C-c o")
   :hook ((python-ts-mode . combobulate-mode)
          (js-ts-mode . combobulate-mode)
@@ -276,9 +273,7 @@
   :defer 60)
 
 (use-package hcl-ts-mode
-  ;; https://github.com/arkbriar/hcl-ts-mode
-  :load-path "../../gh/hcl-ts-mode/"
-  )
+  :vc (:url "https://github.com/arkbriar/hcl-ts-mode"))
 (use-package terraform-mode
   :defer 't)
 (use-package terraform-doc
