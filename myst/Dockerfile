@@ -1,5 +1,5 @@
-# syntax=docker/dockerfile:1.16
-FROM ghcr.io/huginn/huginn-single-process:1e0c359a46b1e84eb8c658404212eaf693b30e61
+# syntax=docker/dockerfile:1.18
+FROM ghcr.io/huginn/huginn-single-process:14db2db194a5da7c5626656bb9824931338e016e
 
 USER 0
 RUN <<EORUN
@@ -21,12 +21,14 @@ EORUN
 
 RUN <<EORUN
 set -xeu
-gem install bundler:$(tac Gemfile.lock | grep -o -m1 '[1-9].*')
+# gem install bundler:$(tac Gemfile.lock | grep -o -m1 '[1-9].*')
+# unnecessary anymore?
+gem install bundler:2.7.2
 EORUN
 
 USER default
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
 ENV ADDITIONAL_GEMS=mini_racer,faraday-multipart
-RUN APP_SECRET_TOKEN=secret DATABASE_ADAPTER=postgresql bundler install -j 4
+RUN APP_SECRET_TOKEN=secret DATABASE_ADAPTER=postgresql bundler install
 # COPY --link sentry.rb /app/config/initializers/sentry.rb
