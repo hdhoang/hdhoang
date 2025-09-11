@@ -19,13 +19,13 @@ unbind m
 autocmd DocStart .+atlassian[.]net/.+jql=ORDER.+ urlmodify -Q jql
 autocmd DocStart .+atlassian[.]net/.+linkSource=.+ urlmodify -Q linkSource
 autocmd DocStart .+atlassian[.]net/.+sourceType=.+ urlmodify -Q sourceType
-  autocmd HistoryState https://outlook.+ js document.querySelectorAll("a[href*=\"atlOrigin\"], a[href*=\"icft\"]")?.forEach(a => {a.search=""; a.hash=""; a.title=""})
+autocmd HistoryState https://outlook.+ js document.querySelectorAll("a[href*=\"atlOrigin\"], a[href*=\"icft\"]")?.forEach(a => {a.search=""; a.hash=""; a.title=""})
 autocmd DocLoad https://git.+ js document.querySelectorAll("a[href*=\"atlOrigin\"]")?.forEach(a => {a.search=""; a.title=""})
 
-  unbind <C-e>
+unbind <C-e>
 
-  bind <C-Space> scrollpage -0.5
-    bind <Space> scrollpage 0.5
+bind <C-Space> scrollpage -0.5
+bind <Space> scrollpage 0.5
 
 bind ` tabsort --url
 
