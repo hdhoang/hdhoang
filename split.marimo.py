@@ -2,7 +2,7 @@
 
 import marimo
 
-__generated_with = "0.15.2"
+__generated_with = "0.15.3"
 app = marimo.App()
 
 
@@ -24,7 +24,7 @@ def _(prev_water_photo):
 
 @app.cell
 def _():
-    hawater_consumed = 0
+    hawater_consumed = 17
     return (hawater_consumed,)
 
 
