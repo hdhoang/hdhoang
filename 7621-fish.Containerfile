@@ -9,18 +9,14 @@ make defconfig
 ./scripts/feeds install bottom
 EOS
 
-ENV PREFIX=/usr PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
-
-ADD --link=true --chown=builder https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
-ADD --link=true --chown=builder https://github.com/fish-shell/fish-shell/releases/download/4.0.6/fish-4.0.6.tar.xz /builder/
-
 # 1.87 https://github.com/openwrt/packages/commit/95eef0fd580a411bd487ccf61a8d4bd25beab5c2
 # 1.89 with xz https://github.com/openwrt/packages/commit/10862df850ae012b34ec9c57a9005b1f7e1e2aca
 RUN <<EOS
 set -xeu
 sed -i s,1.85,1.89, feeds/packages/lang/rust/Makefile
+sed -i s,src.tar.gz,src.tar.xz, feeds/packages/lang/rust/Makefile
 sed -i /config[.]toml/d feeds/packages/lang/rust/Makefile
-sed -i s,2f4f3142ffb7c8402139cfa0796e24baaac8b9fd3f96b2deec3b94b4045c6a8a,2576f9f440dd99b0151bd28f59aa0ac6102d5c4f3ed4ef8a810c8dd05057250d, feeds/packages/lang/rust/Makefile
+sed -i s,2f4f3142ffb7c8402139cfa0796e24baaac8b9fd3f96b2deec3b94b4045c6a8a,0b9d55610d8270e06c44f459d1e2b7918a5e673809c592abed9b9c600e33d95a, feeds/packages/lang/rust/Makefile
 rm -vf feeds/packages/lang/rust/patches/0003-bump-libc-deps-to-0.2.146.patch
 cat >feeds/packages/lang/rust/patches/0001-Update-xz2-and-use-it-static.patch <<EOD
 From d3000458501d339ea2043006924d431ead18769e Mon Sep 17 00:00:00 2001
@@ -46,7 +42,18 @@ Subject: [PATCH] Update xz2 and use it static
 EOD
 EOS
 
+ENV FISH_BUILD_DOCS=0 PREFIX=/usr PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
+
+ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
+ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/4.0.6/fish-4.0.6.tar.xz /builder/
+
 RUN <<EOS
 set -xeu
 make package/bottom/clean package/bottom/compile -j1 V=sc
+EOS
+
+RUN <<EOS
+set -xeu
+tar -xvf 0.2.2.tar.gz
+tar -xvf fish-4.0.6.tar.xz
 EOS
