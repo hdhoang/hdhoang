@@ -42,18 +42,18 @@ Subject: [PATCH] Update xz2 and use it static
 EOD
 EOS
 
-ENV FISH_BUILD_DOCS=0 PREFIX=/usr PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
-
-ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
-ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/4.0.6/fish-4.0.6.tar.xz /builder/
-
 RUN <<EOS
 set -xeu
 make package/bottom/clean package/bottom/compile -j1 V=sc
 EOS
 
+ENV FISH_BUILD_DOCS=0 PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
+
+ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
+ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/4.0.8/fish-4.0.8.tar.xz /builder/
+
 RUN <<EOS
 set -xeu
 tar -xvf 0.2.2.tar.gz
-tar -xvf fish-4.0.6.tar.xz
+tar -xvf fish-4.0.8.tar.xz
 EOS
