@@ -332,10 +332,18 @@ owner = "terraform-docs"
 repo = "terraform-docs"
 asset_name.linux = "x-am"
 # [helm]
+# helm completion $STARSHIP_SHELL
+# helm plugin install https://github.com/databus23/helm-diff
 # has checksums only
 # owner = "helm"
 # repo = "helm"
 # asset_name.linux = "linux-amd64.tar"
+[helmfile]
+# helmfile completion $STARSHIP_SHELL
+owner = "helmfile"
+repo = "helmfile"
+asset_name.linux = "x_amd64"
+asset_name.windows = "s_amd64"
 [pwru]
 owner = "cilium"
 repo = "pwru"
@@ -448,6 +456,11 @@ repo = "czkawka"
 exe_name = "krokiet"
 asset_name.linux = "t_gui_heif_libraw"
 asset_name.windows = "t.e"
+[cargo-binstall]
+owner = "cargo-bins"
+repo = "cargo-binstall"
+asset_name.linux = "_64-unknown-linux-gnu.full.tgz"
+asset_name.windows = "c.full.tgz"
 [cargo-machete]
 owner = "bnjbvr"
 repo = "cargo-machete"
