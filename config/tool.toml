@@ -64,7 +64,7 @@ asset_name.linux = "j-x86_64-u"
 owner = "fish-shell"
 repo = "fish-shell"
 exe_name = "fish"
-asset_name.linux = "d64"
+asset_name.linux = "_64.tar"
 [coreutils]
 owner = "uutils"
 repo = "coreutils"
@@ -289,6 +289,12 @@ asset_name.linux = "App"
 asset_name.windows = "exe"
 
 # k8s
+[minikube]
+# minikube completion $STARSHIP_SHELL
+owner = "kubernetes"
+repo = "minikube"
+asset_name.linux = "x-amd64.t"
+asset_name.windows = "s-amd64.e"
 [k9s]
 # k9s completion $STARSHIP_SHELL
 [kubetui]
