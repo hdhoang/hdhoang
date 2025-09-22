@@ -459,8 +459,8 @@ asset_name.windows = "t.e"
 [cargo-binstall]
 owner = "cargo-bins"
 repo = "cargo-binstall"
-asset_name.linux = "_64-unknown-linux-gnu.full.tgz"
-asset_name.windows = "c.full.tgz"
+asset_name.linux = "_64-unknown-linux-gnu.tgz"
+asset_name.windows = "_64-pc-windows-msvc.zip"
 [cargo-machete]
 owner = "bnjbvr"
 repo = "cargo-machete"
