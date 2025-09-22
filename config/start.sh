@@ -29,7 +29,7 @@ ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/topgrade.toml ~/.config/topgrade.toml
 ln -rsvf $PWD/../dprint.json ~/dprint.json
 
-mkdir -vp ~/run/ ~/.crawl/ ~/.config/{containers,emacs,jj/conf.d,wezterm,fish/completions/,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/
+mkdir -vp ~/run/ ~/.crawl/ ~/.config/{containers,emacs,jj/conf.d,wezterm,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/.local/share/fish/generated_completions/
 
 printf 'XCURSOR_THEME=Wii-Pointer-P%s\n' $(random 1 4) | tee ~/.config/environment.d/cursor.conf
 
@@ -83,7 +83,7 @@ ln -rsvf $PWD/ebur128.ini ~/.config/rsgain/presets/
     ln -rsvf $PWD/../rustfmt.toml ~/rustfmt.toml
 
     rg '# ([^ ]+)(.+)[$]STARSHIP_SHELL(.*)' $PWD/tool.toml \
-       --replace 'command -v $1 && $1 $2\fish $3 > $$HOME/.config/fish/completions/$1.fish' |
+       --replace 'command -v $1 && $1 $2\fish $3 > $$HOME/.local/share/fish/generated_completions/$1.fish' |
         sh -x -
 
     exit #> > $null
