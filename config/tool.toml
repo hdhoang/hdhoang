@@ -628,7 +628,7 @@ asset_name.windows = "zip"
 [wild]
 owner = "davidlattimore"
 repo = "wild"
-asset_name.linux = "r-x"
+asset_name.linux = "_64-u"
 [mold]
 owner = "rui314"
 repo = "mold"
