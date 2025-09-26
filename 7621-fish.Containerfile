@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1.18
-FROM ghcr.io/openwrt/sdk:ramips-mt7621-24.10.2
+FROM ghcr.io/openwrt/sdk:ramips-mt7621-24.10.3
 
 RUN <<EOS
-set -xeu
+set -xeuo pipefail
 sed -i s,.openwrt.org/feed/,hub.com/openwrt/, feeds.conf.default
 ./scripts/feeds update packages
 make defconfig
@@ -12,7 +12,7 @@ EOS
 # 1.87 https://github.com/openwrt/packages/commit/95eef0fd580a411bd487ccf61a8d4bd25beab5c2
 # 1.89 with xz https://github.com/openwrt/packages/commit/10862df850ae012b34ec9c57a9005b1f7e1e2aca
 RUN <<EOS
-set -xeu
+set -xeuo pipefail
 sed -i s,1.85,1.89, feeds/packages/lang/rust/Makefile
 sed -i s,src.tar.gz,src.tar.xz, feeds/packages/lang/rust/Makefile
 sed -i /config[.]toml/d feeds/packages/lang/rust/Makefile
@@ -43,7 +43,7 @@ EOD
 EOS
 
 RUN <<EOS
-set -xeu
+set -xeuo pipefail
 make package/bottom/clean package/bottom/compile -j1 V=sc
 EOS
 
@@ -53,7 +53,7 @@ ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/ta
 ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/4.0.8/fish-4.0.8.tar.xz /builder/
 
 RUN <<EOS
-set -xeu
-tar -xvf 0.2.2.tar.gz
-tar -xvf fish-4.0.8.tar.xz
+set -xeuo pipefail
+tar -xf 0.2.2.tar.gz
+tar -xf fish-4.0.8.tar.xz
 EOS
