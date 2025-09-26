@@ -10,8 +10,6 @@ blacklistadd www.fastmail.com
 blacklistadd betaapp.fastmail.com
 blacklistadd www.inoreader.com
 
-blacklistadd outlook.office.com
-
 "for jira"
 unbind w
 unbind a
@@ -19,7 +17,7 @@ unbind m
 autocmd DocStart .+atlassian[.]net/.+jql=ORDER.+ urlmodify -Q jql
 autocmd DocStart .+atlassian[.]net/.+linkSource=.+ urlmodify -Q linkSource
 autocmd DocStart .+atlassian[.]net/.+sourceType=.+ urlmodify -Q sourceType
-autocmd HistoryState https://outlook.+ js document.querySelectorAll("a[href*=\"atlOrigin\"], a[href*=\"icft\"]")?.forEach(a => {a.search=""; a.hash=""; a.title=""})
+
 autocmd DocLoad https://git.+ js document.querySelectorAll("a[href*=\"atlOrigin\"]")?.forEach(a => {a.search=""; a.title=""})
 
 unbind <C-e>

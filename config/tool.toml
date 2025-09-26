@@ -706,11 +706,6 @@ owner = "typst"
 repo = "typst"
 asset_name.linux = "_64-unknown-linux-musl"
 asset_name.windows = "_64-pc-windows-msvc.zip"
-[teams]
-owner = "IsmaelMartinez"
-repo = "teams-for-linux"
-exe_name = "teams"
-asset_name.linux = "0.A"
 [yt-dlp] # -U
 owner = "yt-dlp"
 repo = "yt-dlp"
