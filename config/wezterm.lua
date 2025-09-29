@@ -3,13 +3,13 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.default_prog = {"nu"}
-
 config.term = "wezterm"
 config.color_scheme = "CLRS"
 
+config.default_prog = { "zellij" }
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
   config.default_cwd = "B:"
+  config.default_prog = { "nu" }
 end
 
 config.front_end = "WebGpu"
@@ -38,30 +38,6 @@ config.quick_select_patterns = {
 }
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 config.hyperlink_rules[5] = nil -- regex": "\\b\\w+@
-
-local launch_menu = {}
-if wezterm.home_dir == "/home/hieuhg" then
-  table.insert(launch_menu, {
-    label = "j",
-    args = { "sh", "-c", "ssh -At j 'tmux -u a -d || exec tmux -u'" },
-  })
-  table.insert(launch_menu, {
-    label = "z",
-    args = { "ssh", "-At", "j", "zellij", "attach", "--create" },
-  })
-  table.insert(launch_menu, {
-    label = "i",
-    cwd = "/home/hieuhg/cc/",
-    args = { "bash", "./ipmiview.bash" },
-  })
-  config.default_prog = { "zellij" }
-else
-  table.insert(launch_menu, {
-    label = "map",
-    args = { "ssh", "hdhoang@map", "tmux", "-u", "a", "-d" },
-  })
-end
-config.launch_menu = launch_menu
 
 config.use_ime = false
 config.enable_kitty_keyboard = true
