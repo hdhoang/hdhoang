@@ -18,7 +18,7 @@ ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
 ahead-behind = "trunk()..@ | @..trunk() | trunk() | @:: | fork_point(trunk() | @)"
 
 [templates]
-commit_trailers = "format_signed_off_by_trailer(self)"
+commit_trailers = ""
 draft_commit_description = '''
   concat(
     coalesce(description, default_commit_description, ""),

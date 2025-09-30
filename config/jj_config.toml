@@ -10,7 +10,7 @@ default-command = "diff"
 pager = "delta"
 editor = "emacsclient -c"
 merge-editor = "mergiraf"
-should-sign-off = true
+should-sign-off = false
 
 diff-formatter = ["difft", "--color=always", "$left", "$right"]
 

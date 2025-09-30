@@ -1,6 +1,6 @@
 [commands]
 "cargo" = "cargo iu"
-"sysext" = "systemd-sysext --json=short | jaq '.[-1].extensions|@sh' -r | xargs -n1 sudo /usr/lib/systemd/systemd-sysupdate update -C"
+"sysext" = "systemd-sysext --json=short | jaq '.[-1].extensions|@sh' -r | xargs -n1 run0 /usr/lib/systemd/systemd-sysupdate update -C"
 
 [misc]
 assume_yes = true

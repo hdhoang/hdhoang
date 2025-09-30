@@ -305,6 +305,11 @@ asset_name.linux = "_64-unknown-linux-musl"
 owner = "kdash-rs"
 repo = "kdash"
 asset_name.linux = "linux.tar"
+[argocd]
+owner = "argoproj"
+repo = "argo-cd"
+exe_name = "argocd"
+asset_name.linux = "x-am"
 [kubectl-cnpg]
 # kubectl-cnpg completion $STARSHIP_SHELL
 owner = "cloudnative-pg"

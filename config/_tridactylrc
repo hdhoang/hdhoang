@@ -58,7 +58,7 @@ setpref extensions.ml.enabled false
 
 setpref layout.spellcheckDefault 0
 setpref layout.css.always_underline_links true
-setpref browser.display.use_document_fonts 0
+"x" setpref browser.display.use_document_fonts 0
 setpref devtools.defaultColorUnit "hsl"
 setpref browser.visited_color "oklch(from mediumorchid l 0.7 h)"
 setpref browser.visited_color.dark "oklch(from palegoldenrod 0.7 c h)"
