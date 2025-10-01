@@ -10,7 +10,7 @@ path = ~/homes/config/jj_config.toml
 path = ~/homes/config/jj_config.toml
 
 [includeIf "gitdir:~/repos/"]
-path = ~/repos/whoami
+path = ~/repos/whoami.toml
 
 [advice]
 detachedHead = false
