@@ -35,6 +35,10 @@ printf 'XCURSOR_THEME=Wii-Pointer-P%s\n' $(random 1 4) | tee ~/.config/environme
 
 ln -rsvf $PWD/crawl-init.txt ~/.crawl/init.txt
 
+ln -svf fish ~/run/fish_indent
+ln -svf fish ~/run/fish_key_reader
+ln -svf static-curl ~/run/curl
+
 ln -rsvf $PWD/,add-sysext ~/run/
 ln -rsvf $PWD/,scrobble-filter.py ~/run/,scrobble-filter
 ln -rsvf $PWD/rescrobbled.service ~/.config/systemd/user/
