@@ -1,6 +1,6 @@
 {
   "yaml": {
-    "indentBlockSequenceInMap": false
+    "indentBlockSequenceInMap": true
   },
   "json": {
   },
