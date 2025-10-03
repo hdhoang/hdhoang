@@ -4,6 +4,10 @@
 a:visited { color: VisitedText !important; }
 #credential_picker_container:has(iframe[src*="accounts.google.com"]) { display: none !important; }
 
+@-moz-document domain(mail.google.com) {
+    [role="navigation"] { display: none !important; }
+}
+
 @-moz-document domain(linkedin.com) {
     aside { display: none !important; }
 }
