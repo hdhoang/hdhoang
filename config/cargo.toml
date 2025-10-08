@@ -9,7 +9,7 @@ no-embed-metadata = true
 codegen-backend = true
 trim-paths = true
 
-gitoxide = true
+# gitoxide = true
 [unstable.git]
 shallow-index = true
 shallow-deps = true
@@ -39,7 +39,7 @@ inherits = "release"
 lto = "thin"
 # https://nnethercote.github.io/perf-book/build-configuration.html
 strip = "debuginfo"
-trim-paths = ["diagnostics", "object"]
+# trim-paths = ["diagnostics", "object"]
 
 [profile.profiling]
 inherits = "release"
