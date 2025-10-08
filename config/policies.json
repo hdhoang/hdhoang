@@ -1,5 +1,6 @@
 {
   "//windows": "fxp/distribution/policies.json",
+  "//fedora": "/etc/firefox/policies/policies.json",
   "//flatpak": "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/x86_64/stable/policies/policies.json",
   "policies": {
     "RequestedLocales": "en-SE,en-UK",
@@ -14,6 +15,7 @@
     "Homepage": {
       "StartPage": "previous-session"
     },
+
     "SearchSuggestEnabled": false,
     "AutofillAddressEnabled": false,
     "AutofillCreditCardEnabled": false,
@@ -21,8 +23,10 @@
     "PasswordManagerEnabled": false,
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": "",
+
     "DisplayBookmarksToolbar": "never",
     "DisplayMenuBar": "never",
+
     "DisableFeedbackCommands": true,
     "DisableForgetButton": true,
     "DisableMasterPasswordCreation": true,
@@ -33,8 +37,10 @@
     "DisableSetDesktopBackground": true,
     "DisableSystemAddonUpdate": true,
     "DontCheckDefaultBrowser": true,
+
     "HttpAllowlist": [],
     "HttpsOnlyMode_not": "enabled",
+
     "Permissions": {
       "Notifications": {
         "BlockNewRequests": true,
@@ -42,6 +48,14 @@
           "https://meet.google.com"
         ]
       }
+    },
+
+    "Preferences": {
+      "security.csp.reporting.enabled": {
+        "Value": 1,
+        "Status": "user"
+      }
     }
+
   }
 }
