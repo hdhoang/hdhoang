@@ -57,12 +57,12 @@
      (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
- '(package-selected-packages '(jujutsu))
+ '(package-selected-packages nil)
  '(package-vc-selected-packages
-   '((jujutsu :url "https://github.com/bennyandresen/jujutsu.el")
-     (hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
+   '((hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
      (combobulate :url "https://github.com/mickeynp/combobulate")
-     (kdl-ts-mode :url "https://github.com/dataphract/kdl-ts-mode")))
+     (kdl-ts-mode :url "https://github.com/dataphract/kdl-ts-mode")
+     (jujutsu :url "https://github.com/bennyandresen/jujutsu.el")))
  '(python-indent-offset 4)
  '(reb-re-syntax 'string)
  '(repeat-mode t)
@@ -271,6 +271,9 @@
 
 (use-package nov
   :defer 60)
+
+(use-package elfeed
+  :bind ("C-c w" . #'elfeed))
 
 (use-package hcl-ts-mode
   :vc (:url "https://github.com/arkbriar/hcl-ts-mode"))
