@@ -94,6 +94,8 @@ rg '# ([^ ]+)(.+)[$]STARSHIP_SHELL(.*)' $PWD/tool.toml \
    --replace 'command -v $1 && $1 $2\fish $3 > $$HOME/.local/share/fish/generated_completions/$1.fish' |
     sh -x -
 
+jq . "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/x86_64/stable/policies/policies.json"
+
 exit #> > $null
 
 iwr https://fly.io/install.ps1 -useb | iex

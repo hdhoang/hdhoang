@@ -34,12 +34,12 @@
     "DisableSystemAddonUpdate": true,
     "DontCheckDefaultBrowser": true,
     "HttpAllowlist": [],
-    "HttpsOnlyMode": "enabled",
+    "HttpsOnlyMode_not": "enabled",
     "Permissions": {
       "Notifications": {
         "BlockNewRequests": true,
         "Allow": [
-          "https://outlook.office.com"
+          "https://meet.google.com"
         ]
       }
     }
