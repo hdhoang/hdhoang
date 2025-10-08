@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.18
+# syntax=docker/dockerfile:1.19
 FROM ghcr.io/openwrt/sdk:ramips-mt7621-24.10.3
 
 RUN <<EOS
@@ -49,8 +49,8 @@ EOS
 
 ENV FISH_BUILD_DOCS=0 PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
 
-ARGS fish_ver=4.1.2
 ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
+ARG fish_ver=4.1.2
 ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/${fish_ver}/fish-${fish_ver}.tar.xz /builder/
 
 RUN <<EOS
@@ -59,4 +59,9 @@ tar -xf 0.2.2.tar.gz
 tar -xf fish-${fish_ver}.tar.xz
 EOS
 
-# CARGO_BUILD_TARGET=mipsel-unknown-linux-musl CARGO_HOME=/builder/dl/cargo CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1 CARGO_PROFILE_RELEASE_DEBUG=false CARGO_PROFILE_RELEASE_DEBUG_ASSERTIONS=false CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_OPT_LEVEL=z CARGO_PROFILE_RELEASE_OVERFLOW_CHECKS=true CARGO_PROFILE_RELEASE_PANIC=unwind CARGO_PROFILE_RELEASE_RPATH=false CARGO_TARGET_MIPSEL_UNKNOWN_LINUX_MUSL_LINKER=mipsel-openwrt-linux-musl-gcc RUSTFLAGS="-Ctarget-feature=-crt-static -lssp_nonshared" TARGET_CC=mipsel-openwrt-linux-musl-gcc TARGET_CFLAGS="-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -ffile-prefix-map=/builder/build_dir/target-mipsel_24kc_musl/fish-${fish_ver}=fish-${fish_ver} -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CC=gcc MAKEFLAGS="-j4" cargo b --profile release --bin fish
+WORKDIR /builder/fish-${fish_ver}
+
+RUN <<EOS
+set -xeu
+env CARGO_BUILD_TARGET=mipsel-unknown-linux-musl CARGO_HOME=/builder/dl/cargo CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1 CARGO_PROFILE_RELEASE_DEBUG=false CARGO_PROFILE_RELEASE_DEBUG_ASSERTIONS=false CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_OPT_LEVEL=z CARGO_PROFILE_RELEASE_OVERFLOW_CHECKS=true CARGO_PROFILE_RELEASE_PANIC=unwind CARGO_PROFILE_RELEASE_RPATH=false CARGO_TARGET_MIPSEL_UNKNOWN_LINUX_MUSL_LINKER=mipsel-openwrt-linux-musl-gcc RUSTFLAGS="-Ctarget-feature=-crt-static -lssp_nonshared" TARGET_CC=mipsel-openwrt-linux-musl-gcc TARGET_CFLAGS="-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc -fno-caller-saves -fno-plt -fhonour-copts -msoft-float -ffile-prefix-map=/builder/build_dir/target-mipsel_24kc_musl/fish-${fish_ver}=fish-${fish_ver} -mips16 -minterlink-mips16 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro " CC=gcc MAKEFLAGS="-j4" cargo b --profile release --bin fish
+EOS
