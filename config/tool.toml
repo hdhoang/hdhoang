@@ -287,7 +287,11 @@ owner = "gulbanana"
 repo = "gg"
 asset_name.linux = "App"
 asset_name.windows = "exe"
-
+[gh]
+owner = "cli"
+repo = "cli"
+exe_name = "gh"
+asset_name.linux = "x_amd64.t"
 # k8s
 [minikube]
 # minikube completion $STARSHIP_SHELL
@@ -617,7 +621,7 @@ asset_name.windows = "e-v0.9.1-x86_64-p"
 owner = "nextest-rs"
 repo = "nextest"
 exe_name = "cargo-nextest"
-asset_name.linux = "_64-unknown-linux"
+asset_name.linux = "_64-unknown-linux-g"
 asset_name.windows = "_64-pc-windows-msvc.zip"
 [uv]
 owner = "astral-sh"
