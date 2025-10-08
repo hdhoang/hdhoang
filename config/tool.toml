@@ -316,6 +316,13 @@ owner = "cloudnative-pg"
 repo = "cloudnative-pg"
 exe_name = "kubectl-cnpg"
 asset_name.linux = "x_x86_64.t"
+[ketall]
+# kubectl-get_all completion $STARSHIP_SHELL
+owner = "corneliusweig"
+repo = "ketall"
+# https://github.com/corneliusweig/ketall/blob/master/doc/USAGE.md#as-kubectl-plugin
+exe_name = "kubectl-get_all"
+asset_name.linux = "ketall-amd64-linux"
 [kustomize]
 # kubectl completion $STARSHIP_SHELL
 # kustomize completion $STARSHIP_SHELL
