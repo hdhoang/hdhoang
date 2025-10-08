@@ -19,7 +19,8 @@ detachedHead = false
 abbrev = 12
 attributesfile = ~/homes/.gitattributes
 excludesfile = ~/homes/config/ignore_global
-autocrlf = true
+autocrlf = "input"
+eol = "native"
 editor = "emacsclient -c"
 
 [alias]

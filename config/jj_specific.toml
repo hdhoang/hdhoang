@@ -7,7 +7,7 @@
 "$schema" = "https://jj-vcs.github.io/jj/prerelease/config-schema.json"
 
 [working-copy]
-eol-conversion = "input-output"
+eol-conversion = "input"
 
 [aliases]
 tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
