@@ -70,9 +70,9 @@
  '(rust-format-on-save t)
  '(rust-mode-treesitter-derive t)
  '(safe-local-variable-values
-   '((aggressive-indent-mode) (electric-indent-mode)
-     (indent-tab-mode . t) (electric-pair-mode . t)
-     (vc-prepare-patches-separately)
+   '((aphelia-formatter . fish-indent) (aggressive-indent-mode)
+     (electric-indent-mode) (indent-tab-mode . t)
+     (electric-pair-mode . t) (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
  '(show-trailing-whitespace t)
