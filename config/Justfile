@@ -43,7 +43,7 @@ yt:
 
 [no-cd]
 cl repo:
-    jj git clone --colocate {{ repo }}
+    jj git clone {{ repo }}
 
 [no-cd]
 up:
