@@ -1,7 +1,7 @@
 ;;; -*- lexical-binding: t; apheleia-formatter: lisp-indent -*-
 (require 'use-package)
 
-(defvar scratch-dir "~/build")
+(defvar scratch-dir "~/build/")
 (make-directory scratch-dir t)
 
 (custom-set-faces
