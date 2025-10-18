@@ -30,7 +30,7 @@ mu *PATH:
 [working-directory('rclone-cache/cp')]
 yt:
     #!/bin/env fish
-    yt-dlp --format=250/251/140/hls-400/vorbis/aac-hi/bestaudio \
+    yt-dlp --format=250/251/140/hls-400/vorbis/aac-hi/bestaudio/0 \
         --remux-video='mkv>opus/webm>opus' --prefer-free-formats \
         --download-archive ~/yta.txt --cookies ~/ytc.txt -a ~/q.org \
         --parse-metadata='%(format)s %(format_id)s:%(meta_format)s' --embed-metadata \
