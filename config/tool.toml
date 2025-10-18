@@ -366,6 +366,12 @@ owner = "helmfile"
 repo = "helmfile"
 asset_name.linux = "x_amd64"
 asset_name.windows = "s_amd64"
+[helm-docs]
+# helm-docs completion $STARSHIP_SHELL
+owner = "norwoodj"
+repo = "helm-docs"
+asset_name.linux = "x_x86_64.t"
+asset_name.windows = "s_x"
 [pwru]
 owner = "cilium"
 repo = "pwru"
