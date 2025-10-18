@@ -28,6 +28,9 @@ pmc = "push --push-option=merge_request.create --push-option=merge_request.squas
 
 [protocol]
 version = 2
+[protocol.ssh]
+# https://dgl.cx/2025/10/bash-a-newline-ssh-proxycommand-cve-2025-61984
+allow = "user"
 [init]
 defaultBranch = "v0"
 
