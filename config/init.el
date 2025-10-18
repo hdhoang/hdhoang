@@ -1,5 +1,6 @@
 ;;; -*- lexical-binding: t; apheleia-formatter: lisp-indent -*-
 (require 'use-package)
+(setopt use-package-compute-statistics t)
 
 (defvar scratch-dir "~/build/")
 (make-directory scratch-dir t)
@@ -43,7 +44,7 @@
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
  '(inhibit-startup-screen t)
- '(initial-major-mode #'sql-mode)
+ '(initial-major-mode #'fundamental-mode)
  '(initial-scratch-message nil)
  '(insert-directory-program "coreutils")
  '(isearch-lazy-count t)

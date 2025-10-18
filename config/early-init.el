@@ -5,7 +5,7 @@
 
 (setopt warning-suppress-log-types '((comp) (bytecomp))
         native-comp-async-report-warnings-errors 'silent
-        native-comp-speed 2)
+        native-comp-speed 3)
 
 (setopt inhibit-startup-screen t
         inhibit-startup-echo-area-message (user-login-name)
@@ -18,3 +18,6 @@
         ring-bell-function 'ignore
         visible-bell t
         tool-bar-mode nil)
+
+(setopt read-process-output-max (* 1024 1024)
+        lsp-use-plists t)
