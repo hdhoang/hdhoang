@@ -3,7 +3,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.term = "wezterm"
 config.color_scheme = "CLRS"
 
 config.default_prog = { "zellij" }
