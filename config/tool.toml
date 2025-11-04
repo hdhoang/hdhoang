@@ -3,6 +3,11 @@ store_directory = "$HOME/run"
 
 # tailscale completion $STARSHIP_SHELL
 
+[ubi] # --self-upgrade
+owner = "houseabsolute"
+repo = "ubi"
+asset_name.linux = "l-x"
+asset_name.windows = "c-x"
 [rclone] # selfupdate
 # rclone completion $STARSHIP_SHELL -
 owner = "rclone"
@@ -214,6 +219,11 @@ asset_name.linux = "_64"
 owner = "intel"
 repo = "processwatch"
 asset_name.linux = "w"
+[xcapture-oldkernel]
+owner = "tanelpoder"
+repo = "0xtools"
+exe_name = "xcapture-oldkernel"
+asset_name.linux = "e-o" # distinct name
 [bottom]
 owner = "ClementTsang"
 repo = "bottom"
@@ -263,6 +273,11 @@ asset_name.linux = "A"
 owner = "neuralinkcorp"
 repo = "tsui"
 asset_name.linux = "x-x"
+[miro]
+owner = "vincent-uden"
+repo = "miro"
+# asset_name.linux="pdf" # matches windows too
+asset_name.windows = "exe"
 
 # history wrangling
 [topgrade]
@@ -443,6 +458,11 @@ owner = "dathere"
 repo = "qsv"
 exe_name = "qsvp"
 asset_name.linux = "_64-unknown-linux-g"
+[miller]
+owner = "johnkerl"
+repo = "miller"
+exe_name = "mlr"
+asset_name.linux = "x-amd64.t"
 [fx]
 # fx --comp $STARSHIP_SHELL
 owner = "antonmedv"
@@ -470,6 +490,11 @@ owner = "vectordotdev"
 repo = "vector"
 asset_name.linux = "_64-unknown-linux-gnu"
 asset_name.windows = "_64-p"
+[vlogscli]
+owner = "VictoriaMetrics"
+repo = "VictoriaLogs"
+exe_name = "vlogscli-prod"
+asset_name.linux = "utils-linux-amd64-v1.36.1.t"
 [drivel]
 owner = "hgrsd"
 repo = "drivel"
@@ -589,6 +614,11 @@ owner = "rust-minidump"
 repo = "rust-minidump"
 exe_name = "minidump-stackwalk"
 asset_name.linux = "x-g"
+[yaak]
+owner = "mountain-loop"
+repo = "yaak"
+asset_name.linux = "A"
+asset_name.windows = "exe"
 [atuin]
 owner = "atuinsh"
 repo = "atuin"
@@ -621,8 +651,8 @@ asset_name.windows = "ws"
 [sccache]
 owner = "mozilla"
 repo = "sccache"
-asset_name.linux = "e-v0.9.1-x86_64-u"
-asset_name.windows = "e-v0.9.1-x86_64-p"
+asset_name.linux = "e-v0.12.0-x86_64-u"
+asset_name.windows = "e-v0.12.0-x86_64-p"
 [nextest] # self update
 owner = "nextest-rs"
 repo = "nextest"
@@ -650,7 +680,7 @@ asset_name.windows = "zip"
 [wild]
 owner = "davidlattimore"
 repo = "wild"
-asset_name.linux = "_64-u"
+asset_name.linux = "_64-unknown-linux-gnu"
 [mold]
 owner = "rui314"
 repo = "mold"

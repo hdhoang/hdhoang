@@ -35,7 +35,7 @@
         fancyindex_name_length 1000;
         fancyindex_localtime on;
         fancyindex_time_format "%Y-%m-%d %H:%M";
-      
+
         location ~ ^/(Music|Videos) {
           auth_basic "hello";
           auth_basic_user_file dmca;

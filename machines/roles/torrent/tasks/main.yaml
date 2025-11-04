@@ -9,7 +9,7 @@
     zone: "{{ item }}"
     service: transmission-client
   with_items:
-    - [ 'internal', 'external' ]
+  - ["internal", "external"]
 - file:
     state: directory
     path: /var/lib/transmission/Downloads
@@ -18,6 +18,6 @@
   user:
     name: hdhoang
     append: yes
-    groups: [ transmission ]
+    groups: [transmission]
 - systemd: name=transmission enabled=yes state=started
 ...

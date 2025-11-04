@@ -2,26 +2,26 @@
 # We use static `import_role` so that `--start-at-task` works
 - hosts: all
   tasks:
-    - import_role: name=base-system
-      become: yes
-    - import_role: name=vm-guest
-      when: ansible_virtualization_role == "guest"
-      become: yes
-    - import_role: name=cmd
-    - import_role: name=sync
-    - import_role: name=gui
-      become: yes
+  - import_role: name=base-system
+    become: yes
+  - import_role: name=vm-guest
+    when: ansible_virtualization_role == "guest"
+    become: yes
+  - import_role: name=cmd
+  - import_role: name=sync
+  - import_role: name=gui
+    become: yes
 - hosts: vorme
   become: yes
   tasks:
-    - import_role: name=ppp
-    - import_role: name=dns
-    - import_role: name=dhcp
-    - import_role: name=sslh
-    - import_role: name=http
-    - import_role: name=cert
-    - import_role: name=torrent
-    - import_role: name=dlna
-    - import_role: name=download-videos
-      become: no
+  - import_role: name=ppp
+  - import_role: name=dns
+  - import_role: name=dhcp
+  - import_role: name=sslh
+  - import_role: name=http
+  - import_role: name=cert
+  - import_role: name=torrent
+  - import_role: name=dlna
+  - import_role: name=download-videos
+    become: no
 ...

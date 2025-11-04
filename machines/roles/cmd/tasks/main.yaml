@@ -4,41 +4,41 @@
   package:
     name: "{{ item }}"
   with_items:
-    - android-tools
-    - android-udev
-    - ansible
-    - emacs
-    - fish
-    - git
-    - inotify-tools
-    - jq
-    - lsof
-    - p7zip
-    - pkgfile
-    - python2-systemd
-    - smartmontools
-    - sshpass
-    - strace
-    - ltrace
-    - rsync
-    - rustup
-    - sysdig
-    - time
-    - tmux
-    - tree
-    - vim
-    - wget
-    - youtube-dl
-    - phantomjs
-    - expac
-    - yajl
+  - android-tools
+  - android-udev
+  - ansible
+  - emacs
+  - fish
+  - git
+  - inotify-tools
+  - jq
+  - lsof
+  - p7zip
+  - pkgfile
+  - python2-systemd
+  - smartmontools
+  - sshpass
+  - strace
+  - ltrace
+  - rsync
+  - rustup
+  - sysdig
+  - time
+  - tmux
+  - tree
+  - vim
+  - wget
+  - youtube-dl
+  - phantomjs
+  - expac
+  - yajl
 - name: user hdhoang
   become: yes
   user:
     name: hdhoang
     uid: 1000
     group: users
-    groups: [ wheel, systemd-journal, log, video, audio, uucp, adbusers ]
+    groups: [wheel, systemd-journal, log, video, audio, uucp, adbusers]
     append: yes
     shell: /usr/bin/fish
     ssh_key_type: ed25519
@@ -46,8 +46,8 @@
 
 - systemd: daemon_reload=yes user=yes state=started enabled=yes name="{{ item }}"
   with_items:
-    - gpg-agent.socket
-    - gpg-agent-ssh.socket
+  - gpg-agent.socket
+  - gpg-agent-ssh.socket
 
 - name: environment
   copy:
@@ -70,12 +70,12 @@
     state: directory
     path: "{{ item }}"
   with_items:
-    - "{{ home }}/bin/"
-    - "{{ home }}/Downloads/"
-    - "{{ config_dir }}/fish/conf.d/"
-    - "{{ config_dir }}/fish/functions/"
-    - "{{ config_dir }}/systemd/user/"
-    - "{{ config_dir }}/youtube-dl/"
+  - "{{ home }}/bin/"
+  - "{{ home }}/Downloads/"
+  - "{{ config_dir }}/fish/conf.d/"
+  - "{{ config_dir }}/fish/functions/"
+  - "{{ config_dir }}/systemd/user/"
+  - "{{ config_dir }}/youtube-dl/"
 - get_url:
     url: https://github.com/jichu4n/fish-command-timer/raw/master/conf.d/fish_command_timer.fish
     dest: "{{ config_dir }}/fish/conf.d/"
@@ -145,9 +145,9 @@
     # armv7h machines often patch PKGBUILD
     force: yes
   with_items:
-    - cower
-    - pacaur
-    - firefox-nightly
-    - heroku-cli
-    - netatop-dkms
+  - cower
+  - pacaur
+  - firefox-nightly
+  - heroku-cli
+  - netatop-dkms
 ...

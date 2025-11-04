@@ -3,7 +3,7 @@
   package:
     name: "{{ item }}"
   with_items:
-    - minidlna
+  - minidlna
 - name: minidlna ports
   firewalld:
     permanent: yes

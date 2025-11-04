@@ -17,33 +17,33 @@
   package:
     name: "{{ item }}"
   with_items:
-    - atop
-    - base-devel
-    - cmake
-    - clang
-    - btrfs-progs
-    - darkstat
-    - f2fs-tools
-    - firewalld
-    - haveged
-    - mlocate
-    - ntfs-3g
-    - sshfs
-    - sysdig
+  - atop
+  - base-devel
+  - cmake
+  - clang
+  - btrfs-progs
+  - darkstat
+  - f2fs-tools
+  - firewalld
+  - haveged
+  - mlocate
+  - ntfs-3g
+  - sshfs
+  - sysdig
 - name: system services
   service:
     enabled: yes
     state: started
     name: "{{ item }}"
   with_items:
-    - atop
-    - atopacct
-    - darkstat
-    - firewalld
-    - fstrim.timer
-    - haveged
-    - sshd
-    - systemd-timesyncd
+  - atop
+  - atopacct
+  - darkstat
+  - firewalld
+  - fstrim.timer
+  - haveged
+  - sshd
+  - systemd-timesyncd
 - name: BBR
   sysctl:
     sysctl_file: /etc/sysctl.d/bbr.conf

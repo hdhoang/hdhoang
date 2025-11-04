@@ -3,6 +3,6 @@
   package:
     name: "{{ item }}"
   with_items:
-    - wireguard-dkms
-    - wireguard-tools
+  - wireguard-dkms
+  - wireguard-tools
 ...

@@ -15,5 +15,5 @@
   lineinfile:
     create: yes
     dest: /etc/fstab
-    line: Downloads {{ home }}/Downloads vboxsf uid=hdhoang,gid=users,rw,dmode=700,fmode=600,noauto,x-systemd.automount 
+    line: Downloads {{ home }}/Downloads vboxsf uid=hdhoang,gid=users,rw,dmode=700,fmode=600,noauto,x-systemd.automount
 ...

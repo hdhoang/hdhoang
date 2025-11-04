@@ -15,7 +15,7 @@
     zone: external
 - name: ppp packages
   package: name="{{ item }}"
-  with_items: [ 'ppp', 'rp-pppoe' ]
+  with_items: ["ppp", "rp-pppoe"]
 - name: VNPT PPPoE
   copy:
     dest: /etc/ppp/peers/vnpt

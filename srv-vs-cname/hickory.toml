@@ -3,6 +3,6 @@ listen_port = 4321
 directory = "./"
 
 [[zones]]
-  zone = "example"
-  zone_type = "Primary"
-  file = "example.zone"
+zone = "example"
+zone_type = "Primary"
+file = "example.zone"

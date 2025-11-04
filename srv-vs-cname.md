@@ -1,5 +1,4 @@
-Too many indirections and AS749
-===
+# Too many indirections and AS749
 
 Let's say your infrastructure uses CNAMEs to alias role to concrete nodes:
 
@@ -28,8 +27,7 @@ Time changes, and the node grows more roles: [LDAP/kerberos](https://ldap.com/dn
 
 What gives?
 
-[Hickory-DNS server](https://github.com/hickory-dns/hickory-dns#running) reproduction
----
+## [Hickory-DNS server](https://github.com/hickory-dns/hickory-dns#running) reproduction
 
 Here are some files to get a repro going with [hickory-dns](https://github.com/hickory-dns/hickory-dns#running):
 
@@ -39,9 +37,9 @@ listen_port = 4321
 directory = "./"
 
 [[zones]]
-  zone = "example"
-  zone_type = "Primary"
-  file = "example.zone"
+zone = "example"
+zone_type = "Primary"
+file = "example.zone"
 ```
 
 ```zone
@@ -124,8 +122,7 @@ Now on to ceph-fuse:
 
 How does `6.118.109.49` appear in here?
 
-On the wire
----
+## On the wire
 
 Let's capture some packets with tcpdump/wireshark for `dns.srv.port==3300 or tcp.port==3300`. Here is the DNS answer's additional records section:
 
@@ -163,8 +160,7 @@ _ldap._tcp        30 IN SRV 10 30  389 vm1234 ; current node for openldap
 
 And we will curse ourselves for not updating comments down the years.
 
-Colophon
----
+## Colophon
 
 Besides hickory-dns@0.24 already mentioned, the other software I used were:
 

@@ -1,18 +1,18 @@
 ---
 - package: name="{{ item }}"
   with_items:
-    - mpv
-    - pulseaudio-alsa
-    - sddm
-    - i3-wm
-    - dmenu
-    - xclip
+  - mpv
+  - pulseaudio-alsa
+  - sddm
+  - i3-wm
+  - dmenu
+  - xclip
 - file:
     state: directory
     path: "{{ item }}"
   with_items:
-    - "{{ config_dir }}/mpv/"
-    - "{{ config_dir }}/alacritty/"
+  - "{{ config_dir }}/mpv/"
+  - "{{ config_dir }}/alacritty/"
 - name: mpv.conf
   copy:
     dest: "{{ config_dir }}/mpv/mpv.conf"
