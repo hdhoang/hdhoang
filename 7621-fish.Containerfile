@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.19
-FROM ghcr.io/openwrt/sdk:ramips-mt7621-24.10.3
+FROM ghcr.io/openwrt/sdk:ramips-mt7621-24.10.4
 
 RUN <<EOS
 set -xeu
@@ -50,7 +50,7 @@ EOS
 ENV FISH_BUILD_DOCS=0 PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
 
 ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
-ARG fish_ver=4.1.2
+ARG fish_ver=4.2.0
 ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/${fish_ver}/fish-${fish_ver}.tar.xz /builder/
 
 RUN <<EOS
