@@ -49,13 +49,13 @@ EOS
 
 ENV FISH_BUILD_DOCS=0 PATH=${PATH}:/builder/staging_dir/target-mipsel_24kc_musl/host/bin/:/builder/staging_dir/toolchain-mipsel_24kc_gcc-13.3.0_musl/bin/
 
-ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.2.2.tar.gz /builder/
+ADD --link=true --chown=1000 https://github.com/uutils/coreutils/archive/refs/tags/0.4.0.tar.gz /builder/
 ARG fish_ver=4.2.0
 ADD --link=true --chown=1000 https://github.com/fish-shell/fish-shell/releases/download/${fish_ver}/fish-${fish_ver}.tar.xz /builder/
 
 RUN <<EOS
 set -xeu
-tar -xf 0.2.2.tar.gz
+tar -xf 0.4.0.tar.gz
 tar -xf fish-${fish_ver}.tar.xz
 EOS
 
