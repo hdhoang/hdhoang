@@ -1,9 +1,9 @@
-#!/bin/env -S uv tool run --with marimo -- marimo edit
+#!/bin/env -S uv tool run --with ruff --with ty --with marimo -- marimo edit
 
 import marimo
 
-__generated_with = "0.17.6"
-app = marimo.App()
+__generated_with = "0.17.7"
+app = marimo.App(width="columns")
 
 
 @app.cell
@@ -14,7 +14,7 @@ def _():
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 0
+    this_water_photo = 1029
     left_consumed = this_water_photo - prev_water_photo
 
     if left_consumed < 0:
@@ -24,7 +24,7 @@ def _(prev_water_photo):
 
 @app.cell
 def _():
-    hawater_consumed = 22
+    hawater_consumed = 25
     return (hawater_consumed,)
 
 
@@ -85,7 +85,7 @@ def _(
     left_consumed,
 ):
     left_by_meter = (
-        10 * PRICE_00_TO_10
+        min(10, left_consumed) * PRICE_00_TO_10
         + max(0, left_consumed - 10.0) * PRICE_10_TO_20
         + 0 * PRICE_20_TO_30
     )
@@ -113,9 +113,9 @@ def _(
 def _():
     # water price ladder
     FINAL_FEES_RATIO = 1.15
-    PRICE_00_TO_10 = 8500
-    PRICE_10_TO_20 = 9900
-    PRICE_20_TO_30 = 16000
+    PRICE_00_TO_10 = 8_500
+    PRICE_10_TO_20 = 9_900
+    PRICE_20_TO_30 = 16_000
     return FINAL_FEES_RATIO, PRICE_00_TO_10, PRICE_10_TO_20, PRICE_20_TO_30
 
 

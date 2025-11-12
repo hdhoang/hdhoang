@@ -27,6 +27,7 @@
  '(column-number-mode t)
  '(completion-detailed t)
  '(completion-group t)
+ '(delete-pair-blink-delay 0.1)
  '(desktop-load-locked-desktop t)
  '(dired-hide-details-hide-symlink-targets nil)
  '(dired-listing-switches "ls -l -aAh --sort=size")
@@ -58,7 +59,15 @@
      (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
- '(package-selected-packages nil)
+ '(package-selected-packages
+   '(ace-window aggressive-indent apheleia ast-grep combobulate
+                consult-eglot corfu devil diff-hl difftastic elfeed
+                expand-region gcmh groovy-mode hcl-ts-mode ht jujutsu
+                just-ts-mode kdl-ts-mode magit marginalia
+                markdown-ts-mode nov ox-typst pcre2el poly-ansible
+                poly-markdown poly-org rainbow-delimiters rustic
+                standard-themes symbol-overlay terraform-doc
+                terraform-mode))
  '(package-vc-selected-packages
    '((hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
      (combobulate :url "https://github.com/mickeynp/combobulate")
@@ -120,6 +129,7 @@
 (global-unset-key (kbd "C-x m"))
 (global-set-key (kbd "C-x C-b") #'ibuffer-list-buffers)
 (global-set-key (kbd "C-M-y") #'mouse-yank-primary)
+(global-set-key (kbd "C-M-z") #'delete-pair)
 
 (require 'package)
 (add-to-list 'display-buffer-alist
@@ -218,6 +228,9 @@
   (transient-append-suffix 'magit-push "=s"
     '(1 "=m" "Create MR" "--push-option=merge_request.create"))
   )
+(use-package difftastic-bindings
+  :ensure difftastic
+  :config (difftastic-bindings-mode))
 
 (use-package rainbow-delimiters
   :hook ((fundamental-mode . rainbow-delimiters-mode)))
@@ -277,6 +290,7 @@
   :bind ("C-c w" . #'elfeed))
 
 (use-package hcl-ts-mode
+  :hook ((hcl-ts-mode . (lambda () (setq comment-start "# "))))
   :vc (:url "https://github.com/arkbriar/hcl-ts-mode"))
 (use-package terraform-mode
   :defer 't)

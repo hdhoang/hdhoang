@@ -14,6 +14,7 @@
 **/*.bk
 **/target
 
+__marimo__/
 __pycache__
 .ruff_cache
 .pijul

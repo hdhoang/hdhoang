@@ -33,7 +33,7 @@ config.enable_scroll_bar = true
 config.window_decorations = "RESIZE"
 
 config.quick_select_patterns = {
- "[a-zA-Z._]{12,}", -- package names
+ "[a-zA-Z._-]{12,}", -- package, branch names
 }
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
 config.hyperlink_rules[5] = nil -- regex": "\\b\\w+@
