@@ -1,0 +1,23 @@
+{
+  "subject": "acct:hdhoang@blob.cat",
+  "aliases": [
+    "https://blob.cat/hdhoang",
+    "https://blob.cat/users/hdhoang"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://blob.cat/hdhoang"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://blob.cat/users/hdhoang"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://blob.cat/authorize_interaction?uri={uri}"
+    }
+  ]
+}
