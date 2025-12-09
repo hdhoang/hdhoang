@@ -1,1 +1,3 @@
-# TBD
+# Mastodon WebFinger
+/.well-known/webfinger /masto.json 200
+# /.well-known/webfinger /blob.json 200

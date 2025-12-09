@@ -1,13 +1,14 @@
 {
   "subject": "acct:hdhoang@mas.to",
   "aliases": [
+    "https://mas.to/users/hdhoang",
     "https://mas.to/@hdhoang"
   ],
   "links": [
     {
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
-      "href": "https://mas.to/hdhoang"
+      "href": "https://mas.to/@hdhoang"
     },
     {
       "rel": "self",
