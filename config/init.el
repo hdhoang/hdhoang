@@ -59,15 +59,7 @@
      (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
- '(package-selected-packages
-   '(ace-window aggressive-indent apheleia ast-grep combobulate
-                consult-eglot corfu devil diff-hl difftastic elfeed
-                expand-region gcmh groovy-mode hcl-ts-mode ht jujutsu
-                just-ts-mode kdl-ts-mode magit marginalia
-                markdown-ts-mode nov ox-typst pcre2el poly-ansible
-                poly-markdown poly-org rainbow-delimiters rustic
-                standard-themes symbol-overlay terraform-doc
-                terraform-mode))
+ '(package-selected-packages nil)
  '(package-vc-selected-packages
    '((hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
      (combobulate :url "https://github.com/mickeynp/combobulate")
@@ -85,6 +77,7 @@
      (electric-pair-mode . t) (vc-prepare-patches-separately)
      (diff-add-log-use-relative-names . t)
      (vc-git-annotate-switches . "-w")))
+ '(save-interprogram-paste-before-kill t)
  '(show-trailing-whitespace t)
  '(sort-fold-case t)
  '(terraform-format-on-save-mode t t)
@@ -149,7 +142,7 @@
   :config
   (load-theme 'standard-light-tinted :no-confirm-loading))
 
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 80)
 
 (use-package which-key
                                         ; gone by 30
@@ -230,6 +223,7 @@
   )
 (use-package difftastic-bindings
   :ensure difftastic
+  :bind ("C-c d" . #'difftastic-file-buffer)
   :config (difftastic-bindings-mode))
 
 (use-package rainbow-delimiters
@@ -459,7 +453,12 @@
 (use-package corfu
   :custom (corfu-auto t)
   :init (global-corfu-mode))
-;; (global-set-key [remap dabbrev-expand] #'hippie-expand)
+(global-set-key [remap dabbrev-expand] #'hippie-expand)
+
+(use-package abbrev
+  :custom (save-abbrevs nil)
+  :config (define-abbrev-table 'global-abbrev-table
+            ))
 
 (use-package avy
   :custom

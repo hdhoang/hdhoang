@@ -4,13 +4,22 @@
 
 # Schema published automatically on the website. This allows TOML language
 # servers to autocomplete and show documentation for the entries below.
-"$schema" = "https://jj-vcs.github.io/jj/prerelease/config-schema.json"
+"$schema" = "https://docs.jj-vcs.dev/latest/config-schema.json"
 
 [working-copy]
 eol-conversion = "input"
 
+[ui]
+revsets-use-glob-by-default = true
+
+[remotes.own]
+auto-track-bookmarks = "glob:*"
+[remotes.origin]
+auto-track-bookmarks = "glob:*"
+
 [aliases]
 tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@-"]
+gp = ["git", "push"]
 
 [revset-aliases]
 ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
@@ -18,6 +27,7 @@ ghp = 'ancestors(bookmarks(gh-pages) | remote_bookmarks(gh-pages))'
 ahead-behind = "trunk()..@ | @..trunk() | trunk() | @:: | fork_point(trunk() | @)"
 
 [templates]
+git_push_bookmark = 'config("user.name").as_string() ++ "/" ++ change_id.short()'
 commit_trailers = ""
 draft_commit_description = '''
   concat(
@@ -32,12 +42,3 @@ draft_commit_description = '''
 '''
 
 [template-aliases]
-"format_short_id(i)" = "i.shortest()"
-
-'hyperlink(url, text)' = '''
-  concat(
-    raw_escape_sequence("\e]8;;" ++ url ++ "\e\\"),
-    label("text link", text),
-    raw_escape_sequence("\e]8;;\e\\"),
-  )
-'''

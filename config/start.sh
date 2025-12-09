@@ -29,7 +29,7 @@ ln -rsvf $PWD/Justfile ~/Justfile
 ln -rsvf $PWD/topgrade.toml ~/.config/topgrade.toml
 ln -rsvf $PWD/../dprint.json ~/dprint.json
 
-mkdir -vp ~/run/ ~/.crawl/ ~/.config/{containers,emacs,jj/conf.d,wezterm,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/.local/share/fish/generated_completions/
+mkdir -vp ~/run/ ~/.crawl/ ~/.config/{containers,k9s,emacs,jj/conf.d,wezterm,rink,environment.d,systemd/user,sway/config.d,nushell,rclone,rsgain/presets,tridactyl,fontconfig/conf.d,tmux,zellij/layouts}/ ~/.local/share/fish/generated_completions/
 
 ln -svf fish ~/run/fish_indent
 ln -svf fish ~/run/fish_key_reader
@@ -81,6 +81,7 @@ ln -rsvf $PWD/jj_config.toml ~/.jjconfig.toml
 ln -rsvf $PWD/jj_specific.toml ~/.config/jj/conf.d/non-git.toml
 ln -rsvf $PWD/rink.toml ~/.config/rink/config.toml
 ln -rsvf $PWD/containers_storage.conf ~/.config/containers/storage.conf
+ln -rsvf $PWD/k9s_views.yaml ~/.config/k9s/views.yaml
 
 ln -rsvf $PWD/46-twemoji-color.conf ~/.config/fontconfig/conf.d/
 ln -rsvf $PWD/fonts.conf ~/.config/fontconfig/
@@ -93,6 +94,8 @@ ln -rsvf $PWD/../rustfmt.toml ~/rustfmt.toml
 rg '# ([^ ]+)(.+)[$]STARSHIP_SHELL(.*)' $PWD/tool.toml \
    --replace 'command -v $1 && $1 $2\fish $3 > $$HOME/.local/share/fish/generated_completions/$1.fish' |
     sh -x -
+
+rustup completions fish > $HOME/.local/share/fish/generated_completions/rustup.fish
 
 jq . "/var/lib/flatpak/extension/org.mozilla.firefox.systemconfig/x86_64/stable/policies/policies.json"
 

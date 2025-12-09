@@ -1,6 +1,7 @@
 [unstable]
 script = true
 # unknown native-completions = true
+rustc-unicode = true
 
 avoid-dev-deps = true
 gc = true
@@ -23,15 +24,24 @@ incompatible-rust-versions = "fallback"
 
 [build]
 jobs = -2
+target-dir = "build"
 rustflags = [
-  # verify with `readelf -p .comment`
-  "-Clinker=clang",
-  "-Clink-arg=--ld-path=wild",
-  # "-Clink-arg=-Wl,--no-rosegment",
+  "-Csymbol-mangling-version=v0",
   "-Cforce-frame-pointers=yes",
   "-Ctarget-cpu=native",
 ]
-target-dir = "build"
+
+[build.x86_64-unknown-linux-gnu]
+rustflags = [
+  "-Csymbol-mangling-version=v0",
+  # verify with `readelf -p .comment`
+  "-Clinker=clang",
+  "-Clink-arg=--ld-path=wild",
+  "-Clink-arg=-Wl,--no-rosegment",
+  "-Cforce-frame-pointers=yes",
+  "-Ctarget-cpu=native",
+]
+
 
 [profile.dist]
 # from cargo-dist

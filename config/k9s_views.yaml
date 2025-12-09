@@ -1,0 +1,5 @@
+views:
+  v1/pods:
+    sortColumn: AGE:asc
+  v1/nodes:
+    sortColumn: AGE:asc

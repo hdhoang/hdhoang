@@ -1,20 +1,20 @@
-#!/bin/env -S uv tool run --with ruff --with ty --with marimo -- marimo edit
+#!/bin/env -S uv tool run --with ruff --with marimo -- marimo edit
 
 import marimo
 
-__generated_with = "0.17.7"
+__generated_with = "0.18.3"
 app = marimo.App(width="columns")
 
 
 @app.cell
 def _():
-    prev_water_photo = 1016
+    prev_water_photo = 1029
     return (prev_water_photo,)
 
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 1029
+    this_water_photo = 1041
     left_consumed = this_water_photo - prev_water_photo
 
     if left_consumed < 0:
@@ -24,7 +24,7 @@ def _(prev_water_photo):
 
 @app.cell
 def _():
-    hawater_consumed = 25
+    hawater_consumed = 0
     return (hawater_consumed,)
 
 
@@ -39,7 +39,7 @@ def _(hawater_consumed, left_consumed):
 
 @app.cell
 def _(back_water):
-    back_elec_sha30461 = 1102_572
+    back_elec_sha30461 = 1205_302
 
     back_total = back_water + back_elec_sha30461
     return (back_total,)
@@ -56,7 +56,7 @@ def _(back_consumed, back_total, back_water):
 
 @app.cell
 def _(left_water):
-    left_elec_sha30462 = 1732_190
+    left_elec_sha30462 = 1138_752
 
     left_total = left_water + left_elec_sha30462
     return (left_total,)

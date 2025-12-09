@@ -1,5 +1,5 @@
 layout {
-  pane split_direction="vertical" {
+  pane split_direction="horizontal" {
     pane size="60%" borderless=true
     pane command="journalctl" {
       args "--user" "-ocat" "-fu" "rescrobbled.service"

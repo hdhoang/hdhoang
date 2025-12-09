@@ -60,6 +60,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "wez"
 repo = "wezterm"
 asset_name.linux = "-Ubuntu20.04.AppImage"
+asset_name.macos = "m-m"
 [zellij]
 # zellij setup --generate-completion $STARSHIP_SHELL
 owner = "zellij-org"
@@ -296,6 +297,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "jj-vcs"
 repo = "jj"
 asset_name.linux = "_64-unknown-linux-musl"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-pc-windows-msvc"
 [gg]
 owner = "gulbanana"
@@ -393,6 +395,7 @@ asset_name.linux = "x-am"
 owner = "helmfile"
 repo = "helmfile"
 asset_name.linux = "x_amd64"
+asset_name.macos = "n_ar"
 asset_name.windows = "s_amd64"
 [helm-docs]
 # helm-docs completion $STARSHIP_SHELL
@@ -522,6 +525,12 @@ repo = "czkawka"
 exe_name = "krokiet"
 asset_name.linux = "t_gui_heif_libraw"
 asset_name.windows = "t.e"
+[dotslash]
+owner = "facebook"
+repo = "dotslash"
+asset_name.linux = "l.x86_64.v"
+asset_name.macos = "os.v"
+asset_name.windows = "ws.v"
 [cargo-binstall]
 owner = "cargo-bins"
 repo = "cargo-binstall"
@@ -683,7 +692,8 @@ asset_name.windows = "_64-pc-windows-msvc.zip"
 owner = "astral-sh"
 repo = "uv"
 asset_name.linux = "_64-unknown-linux-gnu"
-[ty]
+asset_name.macos = "h64-a"
+[ty] # uv tool install ty@latest
 owner = "astral-sh"
 repo = "ty"
 asset_name.linux = "_64-unknown-linux-gnu"
