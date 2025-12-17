@@ -31,13 +31,13 @@ rustflags = [
   "-Ctarget-cpu=native",
 ]
 
-[build.x86_64-unknown-linux-gnu]
+[target.x86_64-unknown-linux-gnu]
 rustflags = [
   "-Csymbol-mangling-version=v0",
   # verify with `readelf -p .comment`
   "-Clinker=clang",
   "-Clink-arg=--ld-path=wild",
-  "-Clink-arg=-Wl,--no-rosegment",
+  # "-Clink-arg=-Wl,--no-rosegment",
   "-Cforce-frame-pointers=yes",
   "-Ctarget-cpu=native",
 ]

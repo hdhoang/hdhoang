@@ -10,7 +10,7 @@
 
 @-moz-document domain(mail.google.com) {
     [aria-label="Print all"],
-    [role="navigation"] { display: none !important; }
+    div>[role="navigation"] { display: none !important; }
 }
 
 /* everywhere */

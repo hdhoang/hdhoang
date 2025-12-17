@@ -59,7 +59,14 @@
      (rust-mode . rust-ts-mode) (sh-mode . bash-ts-mode)
      (bash-mode . bash-ts-mode) (yaml-mode . yaml-ts-mode)))
  '(menu-bar-mode t)
- '(package-selected-packages nil)
+ '(package-selected-packages
+   '(abbrev ace-window aggressive-indent apheleia ast-grep combobulate
+            consult-eglot corfu devil diff-hl difftastic elfeed
+            expand-region gcmh groovy-mode hcl-ts-mode ht jujutsu
+            just-ts-mode kdl-ts-mode marginalia markdown-ts-mode nov
+            ox-typst pcre2el poly-ansible poly-markdown poly-org
+            rainbow-delimiters rustic standard-themes symbol-overlay
+            terraform-doc terraform-mode))
  '(package-vc-selected-packages
    '((hcl-ts-mode :url "https://github.com/arkbriar/hcl-ts-mode")
      (combobulate :url "https://github.com/mickeynp/combobulate")
@@ -97,6 +104,7 @@
      (javascript
       "https://github.com/tree-sitter/tree-sitter-javascript" "master"
       "src")
+     (jinja2 "https://github.com/dbt-labs/tree-sitter-jinja2")
      (json "https://github.com/tree-sitter/tree-sitter-json")
      (just "https://github.com/IndianBoy42/tree-sitter-just")
      (kdl "https://github.com/tree-sitter-grammars/tree-sitter-kdl")
@@ -106,10 +114,11 @@
      (markdown-inline
       "https://github.com/tree-sitter-grammars/tree-sitter-markdown"
       "split_parser" "tree-sitter-markdown-inline/src")
+     (nginx "https://gitlab.com/joncoole/tree-sitter-nginx")
      (python "https://github.com/tree-sitter/tree-sitter-python")
      (sql "https://github.com/DerekStride/tree-sitter-sql" "gh-pages")
      (rust "https://github.com/tree-sitter/tree-sitter-rust")
-     (toml "https://github.com/tree-sitter/tree-sitter-toml")
+     (toml "https://github.com/tree-sitter-grammars/tree-sitter-toml")
      (yaml "https://github.com/tree-sitter-grammars/tree-sitter-yaml")) t)
  '(use-package-always-demand t)
  '(use-package-always-ensure t)
@@ -396,7 +405,7 @@
 
   :mode
   ("[.]ya?ml\\'" . poly-yaml-mode)
-  ("/ansible/.+[.]ya?ml\\'" . poly-ansible-mode)
+  ("/ansible.+[.]ya?ml\\'" . poly-ansible-mode)
   ("[.]tf\\'" . poly-terraform-mode)
   ("\\(?:Dockerfile\\(?:\\..*\\)?\\|\\.[Dd]ockerfile\\)\\'" . poly-dockerfile-mode)
   ("Containerfile\\'" . poly-dockerfile-mode)

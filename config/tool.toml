@@ -291,6 +291,7 @@ asset_name.windows = "_64-pc-windows-msvc"
 owner = "casey"
 repo = "just"
 asset_name.linux = "_64-unknown-linux-musl"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-pc-windows-msvc"
 [jj]
 # jj util completion $STARSHIP_SHELL
