@@ -39,6 +39,7 @@ asset_name.windows = "Extra"
 [difftastic]
 [starship]
 # starship completions $STARSHIP_SHELL
+asset_name.macos = "h64-a"
 [tspin]
 owner = "bensadeh"
 repo = "tailspin"
@@ -54,6 +55,7 @@ asset_name.windows = "s.zip"
 owner = "dandavison"
 repo = "delta"
 asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-pc-windows-msvc"
 [wezterm]
 # wezterm shell-completion --shell $STARSHIP_SHELL
@@ -66,6 +68,7 @@ asset_name.macos = "m-m"
 owner = "zellij-org"
 repo = "zellij"
 asset_name.linux = "j-x86_64-u"
+asset_name.macos = "j-aarch64-a"
 [fish]
 owner = "fish-shell"
 repo = "fish-shell"
@@ -350,7 +353,8 @@ owner = "corneliusweig"
 repo = "ketall"
 # https://github.com/corneliusweig/ketall/blob/master/doc/USAGE.md#as-kubectl-plugin
 exe_name = "kubectl-get_all"
-asset_name.linux = "ketall-amd64-linux"
+asset_name.linux = "ketall-amd64-l"
+asset_name.macos = "ketall-arm64-d"
 [kustomize]
 # kubectl completion $STARSHIP_SHELL
 # kustomize completion $STARSHIP_SHELL
@@ -427,6 +431,7 @@ asset_name.linux = "x_amd64.t"
 asset_name.windows = "4.z"
 [ripgrep]
 # rg --generate complete-$STARSHIP_SHELL
+asset_name.macos = "h64-a"
 [ripgrep-all]
 owner = "phiresky"
 repo = "ripgrep-all"
@@ -496,6 +501,7 @@ asset_name.windows = "ws"
 owner = "mikefarah"
 repo = "yq"
 asset_name.linux = "x_amd64.t"
+asset_name.macos = "n_arm64.t"
 asset_name.windows = "d64.e"
 [jaq]
 owner = "01mf02"
@@ -536,6 +542,7 @@ asset_name.windows = "ws.v"
 owner = "cargo-bins"
 repo = "cargo-binstall"
 asset_name.linux = "_64-unknown-linux-gnu.tgz"
+asset_name.macos = "h64-apple-darwin.z"
 asset_name.windows = "_64-pc-windows-msvc.zip"
 [cargo-auditable]
 owner = "rust-secure-code"
@@ -598,6 +605,7 @@ asset_name.windows = "_64-p"
 owner = "dprint"
 repo = "dprint"
 asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.macos = "h64-a"
 asset_name.windows = "c.zip"
 [rsgain]
 owner = "complexlogic"

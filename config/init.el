@@ -100,6 +100,7 @@
      (gosum
       "https://github.com/tree-sitter-grammars/tree-sitter-go-sum")
      (hcl "https://github.com/tree-sitter-grammars/tree-sitter-hcl")
+     (ini "https://github.com/justinmk/tree-sitter-ini")
      (html "https://github.com/tree-sitter/tree-sitter-html")
      (javascript
       "https://github.com/tree-sitter/tree-sitter-javascript" "master"
@@ -464,10 +465,10 @@
   :init (global-corfu-mode))
 (global-set-key [remap dabbrev-expand] #'hippie-expand)
 
-(use-package abbrev
-  :custom (save-abbrevs nil)
-  :config (define-abbrev-table 'global-abbrev-table
-            ))
+;; (use-package abbrev
+;;   :custom (save-abbrevs nil)
+;;   :config (define-abbrev-table 'global-abbrev-table
+;;             ))
 
 (use-package avy
   :custom

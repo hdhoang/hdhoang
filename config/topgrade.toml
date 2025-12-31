@@ -31,3 +31,7 @@ upgrade = false
 
 [git]
 fetch_only = true
+repos = [
+  "~/world/*",
+  "~/repos/*/*",
+]
