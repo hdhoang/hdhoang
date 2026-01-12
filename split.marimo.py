@@ -2,19 +2,19 @@
 
 import marimo
 
-__generated_with = "0.18.4"
+__generated_with = "0.19.2"
 app = marimo.App(width="columns")
 
 
 @app.cell
 def _():
-    prev_water_photo = 1029
+    prev_water_photo = 1041
     return (prev_water_photo,)
 
 
 @app.cell
 def _(prev_water_photo):
-    this_water_photo = 1041
+    this_water_photo = 1053
     left_consumed = this_water_photo - prev_water_photo
 
     if left_consumed < 0:
@@ -24,7 +24,7 @@ def _(prev_water_photo):
 
 @app.cell
 def _():
-    hawater_consumed = 28
+    hawater_consumed = 32
     return (hawater_consumed,)
 
 
@@ -39,7 +39,7 @@ def _(hawater_consumed, left_consumed):
 
 @app.cell
 def _(back_water):
-    back_elec_sha30461 = 1205_302
+    back_elec_sha30461 = 1051_920
 
     back_total = back_water + back_elec_sha30461
     return (back_total,)
@@ -56,7 +56,7 @@ def _(back_consumed, back_total, back_water):
 
 @app.cell
 def _(left_water):
-    left_elec_sha30462 = 1138_752
+    left_elec_sha30462 = 1088_100
 
     left_total = left_water + left_elec_sha30462
     return (left_total,)

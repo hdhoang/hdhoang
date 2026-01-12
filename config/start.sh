@@ -5,6 +5,7 @@ set fish_trace 1
 
 alias do=true
 alias done=true
+alias ln="coreutils ln"
 set BASH_SOURCE $(status current-filename 2>/dev/null)
 cd $(dirname $BASH_SOURCE)
 
