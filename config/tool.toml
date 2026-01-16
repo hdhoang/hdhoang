@@ -631,11 +631,14 @@ asset_name.windows = "d-2.13.3.e"
 owner = "koalaman"
 repo = "shellcheck"
 asset_name.linux = "x.x"
+asset_name.macos = "n.arm64"
 asset_name.windows = "zip"
 [shfmt]
-owner = "patrickvane"
-repo = "shfmt"
+owner = "mvdan"
+repo = "sh"
+exe_name = "shfmt"
 asset_name.linux = "linux_amd64"
+asset_name.macos = "n_ar"
 asset_name.windows = "64.exe"
 # b3sum: use `coreutils b3sum`
 [xxhsum]
