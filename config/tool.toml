@@ -79,6 +79,7 @@ asset_name.linux = "_64.tar"
 owner = "uutils"
 repo = "coreutils"
 asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-pc-windows-gnu.zip"
 [findutils]
 owner = "uutils"
@@ -90,7 +91,8 @@ asset_name.windows = "_64-pc-windows-gnu.zip"
 owner = "uutils"
 repo = "diffutils"
 asset_name.linux = "_64-unknown-linux-gnu"
-asset_name.windows = "_64-pc-windows-gnu.zip"
+asseasset_name.macos = "h64-a"
+t_name.windows = "_64-pc-windows-gnu.zip"
 [nu]
 owner = "nushell"
 repo = "nushell"
@@ -264,6 +266,7 @@ asset_name.windows = "zip"
 owner = "mstange"
 repo = "samply"
 asset_name.linux = "x-m"
+asset_name.macos = "h64-a"
 asset_name.windows = "zip"
 [flamelens]
 owner = "YS-L"
@@ -289,6 +292,7 @@ asset_name.windows = "exe"
 owner = "topgrade-rs"
 repo = "topgrade"
 asset_name.linux = "_64-unknown-linux-musl"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-pc-windows-msvc"
 [just]
 # just --completions $STARSHIP_SHELL
@@ -343,6 +347,7 @@ owner = "argoproj"
 repo = "argo-cd"
 exe_name = "argocd"
 asset_name.linux = "x-am"
+asset_name.macos = "h64-a"
 [kubectl-cnpg]
 # kubectl-cnpg completion $STARSHIP_SHELL
 owner = "cloudnative-pg"
@@ -422,6 +427,7 @@ asset_name.linux = "d64"
 
 # search & destroy
 [fd]
+asset_name.macos = "h64-a"
 [sd]
 owner = "chmln"
 repo = "sd"
@@ -446,6 +452,7 @@ asset_name.windows = "msvc"
 owner = "gitleaks"
 repo = "gitleaks"
 asset_name.linux = "x_x64"
+asset_name.macos = "h64-a"
 [comby]
 owner = "comby-tools"
 repo = "comby"
@@ -512,6 +519,7 @@ asset_name.windows = "d64.e"
 owner = "01mf02"
 repo = "jaq"
 asset_name.linux = "_64-unknown-linux-gnu"
+asset_name.macos = "h64-a"
 asset_name.windows = "_64-p"
 [vector]
 owner = "vectordotdev"
