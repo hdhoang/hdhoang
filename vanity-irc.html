@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vanity plate on IRC</title>
+<!-- 2016-03-11 Fri 10:45 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Hieu Hg">
+<link rel=stylesheet type=text/css href=blog.css>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Vanity plate on IRC</h1>
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Ingredients:</a></li>
+<li><a href="#sec-2">2. Recipes:</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Ingredients:</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>An IPv6 block whose PTR you can delegate (I use Hurricane Electric's <a href="https://tunnelbroker.net">tunnelbroker service</a>)
+</li>
+<li>A hostname whose AAAA you can change (I'm using a full domain, hosted on <a href="https://cloudflare.com">CloudFlare</a>, but it should works <a href="https://freedns.afraid.org">with subdomains</a>)
+</li>
+<li>I'm using a Debian machine to connect to Freenode
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Recipes:</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>Request an IPv6 tunnel with HE
+</li>
+<li>Delegate its rDNS to <a href="https://dns.he.net">dns.he.net</a>
+</li>
+<li>Match forward and reverse DNS between an address and your hostname:
+<div class="org-src-container">
+
+<pre class="src src-sh">bash -c <span style="color: #2aa198;">'diff <(nslookup test-plate.hdhoang.space.) <(nslookup 2001:470:36:62a::cccc)'</span>
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Choose an address, point it to your hostname
+</li>
+<li>Add the address to the hostname's AAAA records
+</li>
+</ul>
+</li>
+<li>Connect to Freenode with that address as the source, for example:
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #859900;">for</span> fn<span style="color: #859900;"> in</span> $(<span style="color: #d33682;">dig</span> +short -t aaaa chat.freenode.net); <span style="color: #859900;">do</span>
+    ip -6 route add $<span style="color: #6c71c4;">fn</span> src $<span style="color: #6c71c4;">address</span> dev $<span style="color: #6c71c4;">tunnel_interface</span>;
+<span style="color: #859900;">done</span>;
+</pre>
+</div>
+<p>
+or
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">ip -6 route add default src $<span style="color: #6c71c4;">address</span> dev $<span style="color: #6c71c4;">tunnel_interface</span>
+</pre>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

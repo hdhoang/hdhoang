@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Borrow-checking with friends</title>
+<!-- 2016-03-11 Fri 10:45 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Hieu Hg">
+<link rel=stylesheet type=text/css href=blog.css>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Borrow-checking with friends</h1>
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #d33682;">#[derive(Debug)]</span>
+<span style="color: #859900;">enum</span> <span style="color: #268bd2;">D3</span> { <span style="color: #268bd2;">One</span>, <span style="color: #268bd2;">Two</span>, <span style="color: #268bd2;">Three</span> }
+<span style="color: #859900;">impl</span> <span style="color: #268bd2;">D3</span> {
+    <span style="color: #859900;">fn</span> <span style="color: #b58900;">peek</span>(<span style="color: #859900;">self</span>: &<span style="color: #268bd2;">D3</span>, <span style="color: #6c71c4;">name</span>: &<span style="color: #268bd2;">str</span>) {
+        <span style="color: #d33682;">println!</span>(<span style="color: #2aa198;">"{} sees that it's {:?}."</span>, name, <span style="color: #859900;">self</span>);
+    }
+}
+</pre>
+</div>
+<p>
+Our main character, named Max, has a d3.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">fn</span> <span style="color: #b58900;">main</span>() {
+    <span style="color: #d33682;">print!</span>(<span style="color: #2aa198;">"Hi, I'm Max. "</span>);
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> die = <span style="color: #268bd2;">D3</span>::<span style="color: #268bd2;">Two</span>;
+    die.peek(<span style="color: #2aa198;">"Max"</span>);
+</pre>
+</div>
+<p>
+Max can rolls his die:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-rust">die = <span style="color: #268bd2;">D3</span>::<span style="color: #268bd2;">One</span>;
+die.peek(<span style="color: #2aa198;">"Max"</span>);
+</pre>
+</div>
+<p>
+Max invites Alice and Bob over for a game of dice. The die is on the table and everyone can see what it's showing.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-rust">'<span style="color: #6c71c4;">table</span>: <span style="color: #859900;">loop</span> {
+    <span style="color: #859900;">let</span> bob = &die;
+    bob.peek(<span style="color: #2aa198;">"Bob"</span>);
+    die.peek(<span style="color: #2aa198;">"Everyone"</span>); <span style="color: #93a1a1; font-style: italic;">// </span><span style="color: #93a1a1; font-style: italic;">same thing</span>
+    <span style="color: #859900;">break</span> '<span style="color: #6c71c4;">table</span>; <span style="color: #93a1a1; font-style: italic;">// </span><span style="color: #93a1a1; font-style: italic;">that's enough peeking for now</span>
+}
+</pre>
+</div>
+<p>
+It's Alice's turn, she picks up the die and rolls.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-rust">'<span style="color: #6c71c4;">alices_turn</span>: <span style="color: #859900;">loop</span> {
+    <span style="color: #859900;">let</span> alice = &<span style="color: #859900;">mut</span> die;
+    *alice = <span style="color: #268bd2;">D3</span>::<span style="color: #268bd2;">Three</span>;
+    alice.peek(<span style="color: #2aa198;">"Alice"</span>);
+    <span style="color: #859900;">break</span> '<span style="color: #6c71c4;">alices_turn</span>;
+}
+</pre>
+</div>
+<p>
+It lands on the table and now everyone sees what Alice rolled.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-rust">    die.peek(<span style="color: #2aa198;">"Max"</span>);
+}
+</pre>
+</div>
+<p>
+<a href="borrow-die.rs">Full code.</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+/* Blog */
+/*   :PROPERTIES: */
+/*   :EXPORT_OPTIONS: toc:nil num:nil */
+/*   :END: */
+
+body {
+    background: #fdf6e3; color: #657b83;
+    margin: 0 25%;
+    line-height: 1.5;
+}
+pre {
+    padding: 1em;
+    border: dotted 1px #657b83;
+    border-right: none;
+}
+.src-rust::before,
+.src-python::before {
+    content: attr(class);
+    display: block;
+    float: right;
+}

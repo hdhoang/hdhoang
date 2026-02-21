@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IRC bot</title>
+<!-- 2016-04-14 Thu 10:44 -->
+<meta  charset="utf-8">
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Hieu Hg">
+<link rel=stylesheet type=text/css href=blog.css>
+</head>
+<body>
+<div id="content">
+<h1 class="title">IRC bot</h1>
+<p>
+<a href="chat.freenode.net/#vnluser">#vnluser</a> used to have a bot to grab link titles and search google.
+It didn't work very well with Vietnamese characters, so it was
+retired. Here's a replacement in rust and python. Its name is
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-text" id="botname">luser
+</pre>
+</div>
+
+<p>
+There are several things it could improve on:
+</p>
+<ul class="org-ul">
+<li><code>[X]</code> Handle gzip responses (news.zing.vn and baomoi.com): These
+sites always return gzip-encoded HTML, even when Accept-Encoding
+doesn't list it. You can check by comparing <code>curl</code> vs <code>curl
+      --compressed</code>.
+</li>
+<li><code>[ ]</code> Configurable multiple channels support, possibly as
+commandline arguments, should also set owners.
+</li>
+<li><code>[ ]</code> Reading secrets from files: API keys, identify passwords,
+channel passwords.
+</li>
+<li><code>[ ]</code> Tests: It would be difficult to interface with IRC servers,
+but at least the handling functions should be tested.
+</li>
+<li><code>[ ]</code> CLI interface: Like chatbot's, this will speed up testing.
+</li>
+<li><code>[X]</code> NYtimes access: The cookie needs to be periodically rebaked.
+Theoretically cloaking as googlebot should work.
+</li>
+<li><code>[ ]</code> Pod titles in rust: Quick-xml doesn't return the attributes
+iterator currently.
+</li>
+<li><code>[ ]</code> Reconnection on ping timeout: <a href="https://github.com/aatxe/irc/blob/46f9136c93063e8abb01b063df53897615007791/src/client/server/mod.rs#L208">IrcServer should already
+reconnect automatically</a>, but possibly ipv6 tunneling is
+interfering.
+</li>
+</ul>
+
+<p>
+Compilation to ARMv7 is a bit tricky:
+</p>
+
+<ol class="org-ol">
+<li>Set up <a href="https://github.com/japaric/rust-cross">cross-compilation toolchain</a>
+</li>
+<li>Copy the target's <code>/usr/include/openssl</code>, <code>lib{crypto,ssl,z}.so</code> to $PWD
+</li>
+<li>Run cargo with:
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #6c71c4;">TARGET_CFLAGS</span>=<span style="color: #2aa198;">"-I $PWD"</span> cargo rustc --release --target armv7-unknown-linux-gnueabihf -- -C <span style="color: #6c71c4;">linker</span>=arm-linux-gnueabihf-gcc -lz -L $<span style="color: #6c71c4;">PWD</span>
+</pre>
+</div>
+</li>
+<li>Copy <code>target/armv7-unknown-linux-gnueabihf/release/luser</code> to the target
+</li>
+</ol>
+
+<p>
+You can run tests for the python version:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh" id="doctest_luser">python -m doctest ~/Public/luser.py
+</pre>
+</div>
+
+<p>
+Now on to the code. Unfortunately, tangling from this Org source
+loses indentations, so the python code can't be commented on line
+by line. Here are the API keys and rust build setup:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-text" id="wolframalpha_key">3JEW42-4XXE264A93
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-text" id="yandex_key">trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-conf">[<span style="color: #268bd2;">package</span>]
+<span style="color: #6c71c4;">name</span> = <span style="color: #2aa198;">"luser"</span>
+<span style="color: #6c71c4;">version</span> = <span style="color: #2aa198;">"0.1.0"</span>
+<span style="color: #6c71c4;">authors</span> = [<span style="color: #2aa198;">"Hoàng Đức Hiếu hdhoang@hdhoang.space"</span>]
+
+[<span style="color: #268bd2;">dependencies</span>]
+<span style="color: #6c71c4;">irc</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">scraper</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">hyper</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">regex</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">quick-xml</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">rustc-serialize</span> = <span style="color: #2aa198;">"*"</span>
+<span style="color: #6c71c4;">url</span> = <span style="color: #2aa198;">"*"</span>
+</pre>
+</div>
+
+<p>
+Importing dependencies. Python really comes with batteries.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> regex;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> irc;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> scraper;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> hyper;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> quick_xml;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> rustc_serialize;
+<span style="color: #859900;">extern</span> <span style="color: #859900;">crate</span> url;
+
+<span style="color: #859900;">use</span> <span style="color: #268bd2;">regex</span>::<span style="color: #268bd2;">Regex</span>;
+<span style="color: #859900;">use</span> <span style="color: #268bd2;">irc</span>::<span style="color: #268bd2;">client</span>::<span style="color: #268bd2;">prelude</span>::{<span style="color: #268bd2;">IrcServer</span>, <span style="color: #268bd2;">Server</span>, <span style="color: #268bd2;">ServerExt</span>, <span style="color: #268bd2;">Config</span>, <span style="color: #268bd2;">Command</span>, <span style="color: #268bd2;">Response</span>};
+<span style="color: #859900;">use</span> <span style="color: #268bd2;">hyper</span>::<span style="color: #268bd2;">client</span>::<span style="color: #268bd2;">Client</span>;
+<span style="color: #859900;">use</span> <span style="color: #268bd2;">std</span>::<span style="color: #268bd2;">io</span>::<span style="color: #268bd2;">Read</span>;
+<span style="color: #859900;">use</span> <span style="color: #268bd2;">std</span>::<span style="color: #268bd2;">collections</span>::<span style="color: #268bd2;">HashMap</span>;
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">-*- coding: utf-8 -*-</span>
+<span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">external batteries</span>
+<span style="color: #859900;">from</span> bs4 <span style="color: #859900;">import</span> BeautifulSoup
+<span style="color: #859900;">from</span> irc <span style="color: #859900;">import</span> bot, connection
+
+<span style="color: #859900;">from</span> collections <span style="color: #859900;">import</span> defaultdict
+<span style="color: #859900;">from</span> random <span style="color: #859900;">import</span> randint
+<span style="color: #859900;">from</span> gzip <span style="color: #859900;">import</span> GzipFile
+<span style="color: #859900;">import</span> xml.etree.ElementTree <span style="color: #859900;">as</span> ET
+<span style="color: #859900;">import</span> json
+<span style="color: #859900;">import</span> sys
+<span style="color: #859900;">import</span> os
+
+<span style="color: #859900;">if</span> sys.version_info.major == 3:
+    <span style="color: #859900;">from</span> urllib.request <span style="color: #859900;">import</span> urlopen, build_opener, HTTPCookieProcessor
+    <span style="color: #859900;">from</span> urllib.parse <span style="color: #859900;">import</span> quote
+    <span style="color: #859900;">from</span> http.client <span style="color: #859900;">import</span> HTTPConnection
+    <span style="color: #859900;">import</span> html
+<span style="color: #859900;">else</span>:
+    <span style="color: #859900;">from</span> urllib2 <span style="color: #859900;">import</span> urlopen, quote, build_opener, HTTPCookieProcessor
+    <span style="color: #859900;">from</span> httplib <span style="color: #859900;">import</span> HTTPConnection
+    <span style="color: #859900;">from</span> StringIO <span style="color: #859900;">import</span> StringIO
+    <span style="color: #859900;">from</span> htmlparser <span style="color: #859900;">import</span> HTMLParser
+    <span style="color: #6c71c4;">html</span> = HTMLParser()
+    <span style="color: #6c71c4;">reload</span>(sys)
+    sys.setdefaultencoding(<span style="color: #2aa198;">'utf8'</span>)
+</pre>
+</div>
+
+<p>
+Set up logging.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">import</span> logging
+<span style="color: #859900;">import</span> logging.handlers
+<span style="color: #6c71c4;">logger</span> = logging.getLogger(__file__)
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">setup_logging</span>(filename, path=<span style="color: #268bd2;">None</span>, verbose=<span style="color: #268bd2;">False</span>):
+    <span style="color: #859900;">if</span> <span style="color: #859900;">not</span> path:
+        <span style="color: #6c71c4;">path</span> = os.path.dirname(os.path.realpath(__file__))
+    <span style="color: #6c71c4;">file_log</span> = logging.handlers.TimedRotatingFileHandler(
+        os.path.join(path, filename),
+        when=<span style="color: #2aa198;">"midnight"</span>,
+        backupCount=31)
+    file_log.setLevel(logging.DEBUG <span style="color: #859900;">if</span> verbose <span style="color: #859900;">else</span> logging.INFO)
+    file_log.setFormatter(logging.Formatter(
+        <span style="color: #2aa198;">'%(asctime)-15s (%(name)s) %(message)s'</span>))
+    logger.addHandler(file_log)
+</pre>
+</div>
+
+<p>
+Set up connection details. People should claim their names here.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">const</span> <span style="color: #6c71c4;">NAME</span>: &'<span style="color: #859900;">static</span> <span style="color: #268bd2;">str</span> = <span style="color: #2aa198;">"luser"</span>;
+<span style="color: #859900;">fn</span> <span style="color: #b58900;">main</span>() {
+    <span style="color: #859900;">let</span> freenode = <span style="color: #268bd2;">IrcServer</span>::from_config(<span style="color: #268bd2;">Config</span> {
+                       <span style="color: #6c71c4;">owners</span>: <span style="color: #268bd2;">Some</span>(<span style="color: #d33682;">vec!</span>[<span style="color: #d33682;">env!</span>(<span style="color: #2aa198;">"USER"</span>).into()]),
+                       <span style="color: #6c71c4;">nickname</span>: <span style="color: #268bd2;">Some</span>(<span style="color: #268bd2;">NAME</span>.into()),
+                       <span style="color: #6c71c4;">alt_nicks</span>: <span style="color: #268bd2;">Some</span>((0..10).map(|n| <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"{}-{}"</span>, <span style="color: #268bd2;">NAME</span>, n)).collect()),
+                       <span style="color: #6c71c4;">server</span>: <span style="color: #268bd2;">Some</span>(<span style="color: #2aa198;">"chat.freenode.net"</span>.into()),
+                       <span style="color: #6c71c4;">port</span>: <span style="color: #268bd2;">Some</span>(8000),
+                       <span style="color: #6c71c4;">channels</span>: <span style="color: #268bd2;">Some</span>(<span style="color: #d33682;">vec!</span>[<span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"#vn{}"</span>, <span style="color: #268bd2;">NAME</span>), <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"#{}-test"</span>, <span style="color: #268bd2;">NAME</span>)]),
+                       ..<span style="color: #268bd2;">Default</span>::default()
+                   })
+                       .unwrap();
+    freenode.identify().unwrap();
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #6c71c4;">NAME</span> = <span style="color: #2aa198;">"luser"</span>
+<span style="color: #6c71c4;">luser</span> = bot.SingleServerIRCBot([(<span style="color: #2aa198;">"chat.freenode.net"</span>, 8000)], NAME, NAME,
+                                     connect_factory=connection.Factory(ipv6=<span style="color: #268bd2;">True</span>))
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">main</span>():
+    setup_logging(<span style="color: #2aa198;">"luser.log"</span>)
+    luser.start()
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">change_nick</span>(c, e):
+    <span style="color: #6c71c4;">new_nick</span> = <span style="color: #2aa198;">'{}-{}'</span>.<span style="color: #6c71c4;">format</span>(NAME, <span style="color: #6c71c4;">str</span>(randint(0, 9)))
+    <span style="color: #859900;">print</span>(<span style="color: #2aa198;">"Changing nick to"</span>, new_nick)
+    c.nick(new_nick)
+<span style="color: #6c71c4;">luser.on_nicknameinuse</span> = change_nick
+
+<span style="color: #6c71c4;">luser.on_nickcollision</span> = <span style="color: #859900;">lambda</span> c, _: c.reconnect()
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">join_channels</span>(c, e):
+    c.join(<span style="color: #2aa198;">"#{}-test"</span>.<span style="color: #6c71c4;">format</span>(NAME))
+    c.join(<span style="color: #2aa198;">"#vn"</span> + NAME)
+<span style="color: #6c71c4;">luser.on_welcome</span> = join_channels
+</pre>
+</div>
+
+<p>
+Handling scaffolding
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">let</span> get_title = &get_title;
+<span style="color: #859900;">let</span> wolframalpha = &wolframalpha;
+<span style="color: #859900;">let</span> google = &google;
+<span style="color: #859900;">let</span> translate = &translate;
+<span style="color: #859900;">let</span> handlers = [<span style="color: #268bd2;">Handler</span>(<span style="color: #268bd2;">Regex</span>::new(<span style="color: #268bd2;">TITLE_REGEX</span>).unwrap(), get_title),
+                <span style="color: #268bd2;">Handler</span>(<span style="color: #268bd2;">Regex</span>::new(<span style="color: #268bd2;">WA_REGEX</span>).unwrap(), wolframalpha),
+                <span style="color: #268bd2;">Handler</span>(<span style="color: #268bd2;">Regex</span>::new(<span style="color: #268bd2;">GOOGLE_REGEX</span>).unwrap(), google),
+                <span style="color: #268bd2;">Handler</span>(<span style="color: #268bd2;">Regex</span>::new(<span style="color: #268bd2;">TRANSLATE_REGEX</span>).unwrap(), translate)];
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">handling</span>(c, e):
+    <span style="color: #859900;">return</span> lusers[<span style="color: #6c71c4;">len</span>(e.source) % <span style="color: #6c71c4;">len</span>(lusers)] == c.get_nickname()
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">handle</span>(c, e, msg):
+    <span style="color: #859900;">try</span>:
+        <span style="color: #6c71c4;">titles</span> = title(msg)
+        <span style="color: #859900;">if</span> titles <span style="color: #859900;">and</span> handling(c, e):
+            c.privmsg(e.target, titles)
+        <span style="color: #859900;">if</span> msg[0] <span style="color: #859900;">not</span> <span style="color: #859900;">in</span> (<span style="color: #2aa198;">'.'</span>, <span style="color: #2aa198;">'!'</span>, <span style="color: #2aa198;">':'</span>): <span style="color: #859900;">return</span>
+        <span style="color: #859900;">if</span> msg[1:6] == <span style="color: #2aa198;">'tell '</span>:
+            <span style="color: #6c71c4;">source</span> = e.source.nick
+            (target, _, line) = msg[6:].partition(<span style="color: #2aa198;">' '</span>)
+            <span style="color: #859900;">return</span> relay_msg[target].append((source, line))
+        <span style="color: #6c71c4;">reply</span> = <span style="color: #2aa198;">''</span>
+        <span style="color: #859900;">if</span> msg[1:3] == <span style="color: #2aa198;">'g '</span>:
+            <span style="color: #6c71c4;">reply</span> = google(msg[3:])
+        <span style="color: #859900;">if</span> msg[1:4] == <span style="color: #2aa198;">'wa '</span>:
+            <span style="color: #6c71c4;">reply</span> = wolframalpha(msg[4:])
+        <span style="color: #859900;">if</span> msg[1:4] == <span style="color: #2aa198;">'tr '</span>:
+            (lang, _, text) = msg[4:].partition(<span style="color: #2aa198;">' '</span>)
+            <span style="color: #6c71c4;">reply</span> = translate(lang, text)
+        <span style="color: #859900;">if</span> reply:
+            <span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">Keep PRIVMSG under 512bytes</span>
+            c.privmsg(e.target, reply[:512 - <span style="color: #6c71c4;">len</span>(e.target) - 50])
+    <span style="color: #859900;">except</span> <span style="color: #268bd2;">Exception</span> <span style="color: #859900;">as</span> e:
+        logger.error(<span style="color: #2aa198;">'"%s" causes: %s'</span> % (msg, <span style="color: #6c71c4;">str</span>(e)))
+</pre>
+</div>
+
+<p>
+List other lusers, and update that list when one joins or quits.
+This list is used by the lusers to decide whether to handle
+unaddressed messages. If the length of the IRC prefix
+'nick!user@host' for a message indexes to its name, that luser
+responses.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #6c71c4;">lusers</span> = []
+<span style="color: #859900;">def</span> <span style="color: #b58900;">list_lusers</span>(c, e):
+    <span style="color: #859900;">for</span> luser <span style="color: #859900;">in</span> <span style="color: #6c71c4;">filter</span>(<span style="color: #859900;">lambda</span> n: n.startswith(NAME),
+                              e.arguments[-1].split(<span style="color: #2aa198;">' '</span>)):
+        <span style="color: #859900;">if</span> luser <span style="color: #859900;">not</span> <span style="color: #859900;">in</span> lusers:
+            lusers.append(luser)
+    lusers.sort()
+<span style="color: #6c71c4;">luser.on_namreply</span> = list_lusers
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> last_lines = <span style="color: #268bd2;">HashMap</span>::new();
+<span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> lusers = <span style="color: #d33682;">vec!</span>[];
+'<span style="color: #6c71c4;">messages</span>: <span style="color: #859900;">for</span> message <span style="color: #859900;">in</span> freenode.iter() {
+    <span style="color: #859900;">let</span> msg = message.unwrap();
+    <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">Response</span>(<span style="color: #268bd2;">Response</span>::<span style="color: #268bd2;">RPL_NAMREPLY</span>, _, <span style="color: #268bd2;">Some</span>(<span style="color: #859900;">ref</span> names)) = msg.command {
+        lusers.extend(names.split(<span style="color: #2aa198;">' '</span>)
+                           .filter(|n| n.starts_with(<span style="color: #268bd2;">NAME</span>))
+                           .map(<span style="color: #268bd2;">String</span>::from));
+        lusers.sort();
+        lusers.dedup();
+        <span style="color: #859900;">if</span> !lusers.contains(&freenode.current_nickname().into()) {
+            <span style="color: #859900;">let</span> _ = freenode.reconnect();
+        }
+        <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+    }
+    <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Some</span>(nick) = msg.source_nickname() {
+</pre>
+</div>
+
+<p>
+Ignore bots and freenode
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">if</span> nick.contains(<span style="color: #2aa198;">"bot"</span>) || nick.contains(<span style="color: #2aa198;">"freenode"</span>) {
+    <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+}
+</pre>
+</div>
+
+<p>
+Update <a id="botname" name="botname"></a>s list
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">if</span> nick.starts_with(<span style="color: #268bd2;">NAME</span>) {
+    <span style="color: #859900;">let</span> nick = <span style="color: #268bd2;">String</span>::from(nick);
+    <span style="color: #859900;">match</span> msg.command {
+</pre>
+</div>
+
+<p>
+Do not merge the following arms. Otherwise a join #c1 -> insert ->
+join #c2 -> remove sequence might happen.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">JOIN</span>(..) => {
+    <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Err</span>(idx) = lusers.binary_search(&nick) {
+        lusers.insert(idx, nick)
+    }
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #6c71c4;">relay_msg</span> = defaultdict(<span style="color: #6c71c4;">list</span>) <span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">dict<nick, [(source, line)]></span>
+<span style="color: #859900;">def</span> <span style="color: #b58900;">relay</span>(c, target, nick):
+    <span style="color: #859900;">for</span> (source, line) <span style="color: #859900;">in</span> relay_msg[nick]:
+        c.privmsg(target, <span style="color: #2aa198;">"{}: <{}> {}"</span>.<span style="color: #6c71c4;">format</span>(nick, source, line))
+    <span style="color: #859900;">del</span> relay_msg[nick]
+<span style="color: #6c71c4;">luser.on_nick</span> = <span style="color: #859900;">lambda</span> c, e: relay(c, <span style="color: #2aa198;">"#vnluser"</span>, e.target)
+</pre>
+</div>
+
+<p>
+The next lambdas are abusing python logical operator, but they read
+like English.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">luser_joins</span>(e):
+    <span style="color: #859900;">if</span> e.source.nick <span style="color: #859900;">not</span> <span style="color: #859900;">in</span> lusers:
+        lusers.append(e.source.nick)
+        lusers.sort()
+
+<span style="color: #859900;">def</span> <span style="color: #b58900;">on_join</span>(c, e):
+    <span style="color: #6c71c4;">nick</span> = e.source.nick
+    <span style="color: #859900;">if</span> nick.startswith(NAME):
+        <span style="color: #859900;">return</span> luser_joins(e)
+    relay(c, e.target, nick)
+<span style="color: #6c71c4;">luser.on_join</span> = on_join
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-rust">    <span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">QUIT</span>(..) => {
+        <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Ok</span>(idx) = lusers.binary_search(&nick) {
+            lusers.remove(idx);
+        }
+    }
+    _ => (),
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #6c71c4;">luser.on_quit</span> = <span style="color: #859900;">lambda</span> c, e: e.source.startswith(NAME) <span style="color: #859900;">and</span> lusers.remove(e.source.nick)
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-rust">        <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+    }
+}
+</pre>
+</div>
+
+<p>
+Actual message processing. Ignore the other lusers.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #6c71c4;">last_lines</span> = defaultdict(<span style="color: #6c71c4;">list</span>) <span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">dict<nick, line></span>
+<span style="color: #859900;">def</span> <span style="color: #b58900;">on_pubmsg</span>(c, e):
+    <span style="color: #6c71c4;">nick</span> = e.source.nick
+    <span style="color: #859900;">if</span> nick.startswith(NAME): <span style="color: #859900;">return</span>
+    <span style="color: #6c71c4;">my_nick</span> = c.get_nickname()
+    <span style="color: #6c71c4;">msg</span> = e.arguments[0]
+    <span style="color: #859900;">if</span> msg == <span style="color: #2aa198;">"report!"</span>:
+        <span style="color: #859900;">return</span> c.privmsg(e.target, report())
+    <span style="color: #859900;">if</span> msg.startswith(<span style="color: #2aa198;">'s/'</span>):
+        <span style="color: #6c71c4;">parts</span> = msg.split(<span style="color: #2aa198;">'/'</span>)
+        <span style="color: #859900;">if</span> (<span style="color: #6c71c4;">len</span>(parts) >= 3 <span style="color: #859900;">and</span> handling(c, e)
+            <span style="color: #859900;">and</span> parts[1] <span style="color: #859900;">in</span> last_lines[nick]):
+            <span style="color: #859900;">return</span> c.privmsg(e.target, <span style="color: #2aa198;">"{} meant: {}"</span>.<span style="color: #6c71c4;">format</span>(
+                nick, last_lines[nick].replace(parts[1], parts[2])))
+    <span style="color: #859900;">else</span>:
+        <span style="color: #6c71c4;">last_lines</span>[nick] = msg
+    <span style="color: #6c71c4;">addressed</span> = msg.startswith(my_nick)
+    <span style="color: #859900;">if</span> addressed <span style="color: #859900;">or</span> handling(c, e) <span style="color: #859900;">or</span> <span style="color: #2aa198;">'http'</span> <span style="color: #859900;">in</span> msg:
+        <span style="color: #859900;">if</span> addressed:
+            <span style="color: #6c71c4;">msg</span> = msg[<span style="color: #6c71c4;">len</span>(my_nick) + 2:]  <span style="color: #93a1a1; font-style: italic;"># </span><span style="color: #93a1a1; font-style: italic;">remove addressing</span>
+            <span style="color: #859900;">if</span> msg.startswith(<span style="color: #2aa198;">'quit'</span>): sys.<span style="color: #268bd2;">exit</span>()
+            <span style="color: #859900;">if</span> msg.startswith(<span style="color: #2aa198;">'reload'</span>):
+                os.execl(sys.executable, sys.executable, __file__)
+        handle(c, e, msg)
+<span style="color: #6c71c4;">luser.on_pubmsg</span> = on_pubmsg
+</pre>
+</div>
+
+<p>
+<code>trimmed_line</code> is here to hoist the trimmed line out of its
+assignment block. Rust: the compiler knows better than you do.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust">        <span style="color: #859900;">let</span> channel;
+        <span style="color: #859900;">let</span> trimmed_line;
+        <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> line;
+
+        <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">PRIVMSG</span>(<span style="color: #859900;">ref</span> target, <span style="color: #859900;">ref</span> message) = msg.command {
+            channel = target;
+            line = message
+        } <span style="color: #859900;">else</span> {
+            <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+        }
+
+        <span style="color: #859900;">if</span> line == <span style="color: #2aa198;">"report!"</span> {
+            freenode.send(<span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">PRIVMSG</span>(channel.clone(),
+                                           <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"operated by {} with source code {}"</span>,
+                                                   freenode.config()
+                                                           .owners
+                                                           .as_ref()
+                                                           .map(|v| v.join(<span style="color: #2aa198;">", "</span>))
+                                                           .unwrap_or(<span style="color: #2aa198;">"someone anonymous"</span>
+                                                                          .into()),
+                                                   post_source_code())))
+                    .unwrap();
+            <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+        }
+        <span style="color: #859900;">if</span> line.starts_with(<span style="color: #2aa198;">"s/"</span>) {
+            <span style="color: #859900;">let</span> parts = line.split(<span style="color: #2aa198;">'/'</span>).collect::<<span style="color: #268bd2;">Vec</span><_>>();
+            <span style="color: #859900;">if</span> parts.len() < 3 {
+                <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+            }
+            <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Some</span>(old_line) = last_lines.get(&msg.source_nickname().map(<span style="color: #268bd2;">String</span>::from)) {
+                <span style="color: #859900;">if</span> lusers[msg.prefix.clone().unwrap().len() % lusers.len()] ==
+                   freenode.current_nickname() {
+                    freenode.send(<span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">PRIVMSG</span>(channel.clone(),
+                                                   <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"{} meant to say \"{}\""</span>,
+                                                           msg.source_nickname().unwrap(),
+                                                           (old_line <span style="color: #859900;">as</span> &<span style="color: #268bd2;">str</span>)
+                                                               .replace(parts[1], parts[2]))))
+                            .unwrap();
+                }
+            }
+        } <span style="color: #859900;">else</span> {
+            last_lines.insert(msg.source_nickname().map(<span style="color: #268bd2;">String</span>::from), line.clone());
+        }
+
+        <span style="color: #859900;">let</span> addressed = line.starts_with(freenode.current_nickname());
+        <span style="color: #859900;">if</span> addressed ||
+           lusers[msg.prefix.unwrap().len() % lusers.len()] == freenode.current_nickname() {
+            <span style="color: #859900;">if</span> addressed {
+                trimmed_line = line[freenode.current_nickname().len() + 2..].into();
+                line = &trimmed_line;
+            }
+            '<span style="color: #6c71c4;">handling</span>: <span style="color: #859900;">for</span> h <span style="color: #859900;">in</span> &handlers {
+                <span style="color: #859900;">if</span> h.can_handle(line) {
+                    <span style="color: #859900;">match</span> h.run(line) {
+                        <span style="color: #268bd2;">Err</span>(e) => <span style="color: #d33682;">println!</span>(<span style="color: #2aa198;">"{:?} causes {:?}"</span>, line, e),
+                        <span style="color: #268bd2;">Ok</span>(reply) => {
+                            <span style="color: #859900;">if</span> !reply.is_empty() {
+                                freenode.send(<span style="color: #268bd2;">Command</span>::<span style="color: #268bd2;">PRIVMSG</span>(channel.clone(), reply)).unwrap();
+                                <span style="color: #859900;">continue</span> '<span style="color: #6c71c4;">messages</span>;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+Rust handler scaffolding: casting into a common <code>Error</code> type and
+associating regexes with their handling function. Rust is
+surprisingly more object-happy than python.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #d33682;">#[derive(Debug)]</span>
+<span style="color: #859900;">enum</span> <span style="color: #268bd2;">Error</span> {
+    <span style="color: #268bd2;">Data</span>(<span style="color: #268bd2;">String</span>),
+    <span style="color: #268bd2;">Io</span>(<span style="color: #268bd2;">std</span>::<span style="color: #268bd2;">io</span>::<span style="color: #268bd2;">Error</span>),
+    <span style="color: #268bd2;">Hyper</span>(<span style="color: #268bd2;">hyper</span>::<span style="color: #268bd2;">error</span>::<span style="color: #268bd2;">Error</span>),
+    <span style="color: #268bd2;">Xml</span>(<span style="color: #268bd2;">quick_xml</span>::<span style="color: #268bd2;">error</span>::<span style="color: #268bd2;">Error</span>),
+    <span style="color: #268bd2;">Json</span>(<span style="color: #268bd2;">rustc_serialize</span>::<span style="color: #268bd2;">json</span>::<span style="color: #268bd2;">ParserError</span>),
+}
+
+<span style="color: #859900;">struct</span> <span style="color: #268bd2;">Handler</span><'<span style="color: #6c71c4;">a</span>>(<span style="color: #268bd2;">Regex</span>, &'<span style="color: #6c71c4;">a</span> (<span style="color: #268bd2;">Fn</span>(&<span style="color: #268bd2;">Regex</span>, &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>>));
+<span style="color: #859900;">impl</span><'<span style="color: #6c71c4;">a</span>> <span style="color: #268bd2;">Handler</span><'<span style="color: #6c71c4;">a</span>> {
+    <span style="color: #859900;">fn</span> <span style="color: #b58900;">can_handle</span>(&<span style="color: #859900;">self</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">bool</span> {
+        <span style="color: #859900;">self</span>.0.is_match(&line)
+    }
+    <span style="color: #859900;">fn</span> <span style="color: #b58900;">run</span>(&<span style="color: #859900;">self</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>> {
+        <span style="color: #859900;">self</span>.1(&<span style="color: #859900;">self</span>.0, &line)
+    }
+}
+</pre>
+</div>
+
+<p>
+Get title from URLs. The rust version only grabs the first URL in
+each message. Some domains with uninteresting titles are ignored:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-text" id="uninteresting">"smbc-comics.com/", "libgen.io/", "xkcdb.com/"
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-text" id="uninteresting_titles">"XKCDB: The: The #xkcd Quote Database", "Saturday Morning Breakfast Cereal", "Library Genesis"
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">const</span> <span style="color: #6c71c4;">TITLE_REGEX</span>: &'<span style="color: #859900;">static</span> <span style="color: #268bd2;">str</span> = <span style="color: #2aa198;">r"https?:[^\s]+"</span>;
+<span style="color: #859900;">fn</span> <span style="color: #b58900;">get_title</span>(<span style="color: #6c71c4;">regex</span>: &<span style="color: #268bd2;">Regex</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>> {
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">hyper</span>::<span style="color: #268bd2;">header</span>::{<span style="color: #268bd2;">UserAgent</span>, <span style="color: #268bd2;">Cookie</span>, <span style="color: #268bd2;">CookiePair</span>};
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">scraper</span>::{<span style="color: #268bd2;">Html</span>, <span style="color: #268bd2;">Selector</span>};
+
+    <span style="color: #859900;">let</span> url = regex.captures(&line).unwrap().expand(<span style="color: #2aa198;">"$0"</span>);
+    <span style="color: #859900;">if</span> [<span style="color: #2aa198;">"smbc-comics.com/"</span>, <span style="color: #2aa198;">"libgen.io/"</span>, <span style="color: #2aa198;">"xkcdb.com/"</span>].iter().any(|domain| url.contains(domain)) {
+        <span style="color: #859900;">return</span> <span style="color: #268bd2;">Ok</span>(<span style="color: #268bd2;">String</span>::new());
+    }
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> response = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Client</span>::new()
+                            .get(&url)
+                            .header(<span style="color: #268bd2;">UserAgent</span>(<span style="color: #2aa198;">"Firefox"</span>.into()))
+                            .header(<span style="color: #268bd2;">Cookie</span>(<span style="color: #d33682;">vec!</span>[<span style="color: #268bd2;">CookiePair</span>::new(<span style="color: #93a1a1; font-style: italic;">// </span><span style="color: #93a1a1; font-style: italic;">cookie to access NYtimes articles</span>
+                                <span style="color: #2aa198;">"NYT-S"</span>.into(),
+                                <span style="color: #2aa198;">"0MOTYRtE4oUSHDXrmvxADeHEluv5kUWdpUdeFz9\</span>
+<span style="color: #2aa198;">                                 JchiAKuaKkdl/6loIV.Ynx4rkFI"</span>
+                                    .into())]))
+                            .send()
+                            .map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Hyper</span>));
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> body = [0; 50_000];
+    response.read_exact(&<span style="color: #859900;">mut</span> body).ok();
+    <span style="color: #859900;">if</span> <span style="color: #859900;">let</span> <span style="color: #268bd2;">Some</span>(title_elem) = <span style="color: #268bd2;">Html</span>::parse_fragment(&<span style="color: #268bd2;">String</span>::from_utf8_lossy(&body))
+                                  .select(&<span style="color: #268bd2;">Selector</span>::parse(<span style="color: #2aa198;">"title"</span>).unwrap())
+                                  .next() {
+        <span style="color: #268bd2;">Ok</span>(title_elem.first_child()
+                     .unwrap()
+                     .value()
+                     .as_text()
+                     .unwrap()
+                     .replace(<span style="color: #2aa198;">"\n"</span>, <span style="color: #2aa198;">" "</span>)
+                     .trim()
+                     .into())
+    } <span style="color: #859900;">else</span> {
+        <span style="color: #268bd2;">Err</span>(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Data</span>(<span style="color: #2aa198;">"Response has no title"</span>.into()))
+    }
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">title</span>(text):
+    <span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">    Retrieve titles from URL in text.</span>
+
+<span style="color: #2aa198;">    >>> len(title('no url here'))</span>
+<span style="color: #2aa198;">    0</span>
+
+<span style="color: #2aa198;">    TODO This case should ignore the 404.</span>
+<span style="color: #2aa198;">    >>> print(title('https://hdhoang.space/404 https://hdhoang.space/')) # doctest: +IGNORE_EXCEPTION_DETAIL</span>
+<span style="color: #2aa198;">    Traceback (most recent call last):</span>
+<span style="color: #2aa198;">      ...</span>
+<span style="color: #2aa198;">    urllib.error.HTTPError: HTTP Error 404: Not Found</span>
+
+<span style="color: #2aa198;">    >>> print(title('https://hdhoang.space/luser.html https://hdhoang.space/luser.html'))</span>
+<span style="color: #2aa198;">    IRC bot / IRC bot</span>
+
+<span style="color: #2aa198;">    >>> print(title('http://www.nytimes.com/2016/01/26/business/marvin-minsky-pioneer-in-artificial-intelligence-dies-at-88.html'))</span>
+<span style="color: #2aa198;">    Marvin Minsky, Pioneer in Artificial Intelligence, Dies at 88 - The New York Times</span>
+
+<span style="color: #2aa198;">    >>> print(title('http://www.baomoi.com/bao-nhieu-tan-bot-trung-quoc-da-duoc-nhap-ve-lam-tra-o-long-tea-plus/c/18486151.epi'))</span>
+<span style="color: #2aa198;">    Bao nhiêu tấn bột Trung Quốc đã được nhập về làm trà Ô long TEA Plus? - GĐ&XH;</span>
+
+<span style="color: #2aa198;">    >>> print(title('http://news.zing.vn/chi-tiet-ban-do-cam-duong-dip-29-o-ha-noi-post574142.html'))</span>
+<span style="color: #2aa198;">    Chi tiết bản đồ cấm đường dịp 2/9 ở Hà Nội - Thời sự - Zing.vn</span>
+
+<span style="color: #2aa198;">    >>> print(title('https://www.facebook.com/photo.php?fbid=261863914155282&set=a.261860180822322.1073742015.100009950253866&type=3&theater'))</span>
+<span style="color: #2aa198;">    Vo Thanh Thuy - Vo Thanh Thuy added 8 new photos to the... | Facebook</span>
+
+<span style="color: #2aa198;">    >>> print(title('https://imgur.com/M18GYfw?r https://imgur.com/GUFyoUa?r'))</span>
+<span style="color: #2aa198;">    Glorious new key cap set for my work keyboard! - Imgur</span>
+<span style="color: #2aa198;">    """</span>
+    <span style="color: #6c71c4;">uninteresting</span> = [<span style="color: #2aa198;">"XKCDB: The: The #xkcd Quote Database"</span>, <span style="color: #2aa198;">"Saturday Morning Breakfast Cereal"</span>, <span style="color: #2aa198;">"Library Genesis"</span>]
+    <span style="color: #6c71c4;">titles</span> = []
+    <span style="color: #6c71c4;">urls</span> = <span style="color: #6c71c4;">filter</span>(<span style="color: #859900;">lambda</span> w: w.startswith(<span style="color: #2aa198;">'http'</span>), text.split())
+    <span style="color: #859900;">for</span> u <span style="color: #859900;">in</span> urls:
+        <span style="color: #6c71c4;">request</span> = build_opener(HTTPCookieProcessor())
+        <span style="color: #6c71c4;">request.addheaders</span> = [(<span style="color: #2aa198;">'Accept-Encoding'</span>, <span style="color: #2aa198;">'gzip'</span>), (<span style="color: #2aa198;">'User-Agent'</span>, <span style="color: #2aa198;">'Mozilla/5.0'</span>)]
+        <span style="color: #6c71c4;">response</span> = request.<span style="color: #6c71c4;">open</span>(u)
+        <span style="color: #859900;">if</span> response.info().get(<span style="color: #2aa198;">'Content-Encoding'</span>) == <span style="color: #2aa198;">'gzip'</span>:
+            <span style="color: #859900;">if</span> sys.version_info.major == 3:
+                <span style="color: #6c71c4;">response</span> = GzipFile(fileobj=response)
+            <span style="color: #859900;">else</span>:
+                <span style="color: #6c71c4;">response</span> = GzipFile(fileobj=StringIO(response.read()))
+        <span style="color: #6c71c4;">title</span> = BeautifulSoup(response.read(50000), <span style="color: #2aa198;">'html.parser'</span>).title
+        response.close()
+        <span style="color: #859900;">if</span> (title
+            <span style="color: #859900;">and</span> <span style="color: #2aa198;">'Imgur:'</span> <span style="color: #859900;">not</span> <span style="color: #859900;">in</span> title.string
+            <span style="color: #859900;">and</span> title.string <span style="color: #859900;">not</span> <span style="color: #859900;">in</span> uninteresting):
+            titles.append(title.string.replace(<span style="color: #2aa198;">'\n'</span>, <span style="color: #2aa198;">''</span>).strip())
+    <span style="color: #859900;">return</span> <span style="color: #2aa198;">' / '</span>.join(titles)
+</pre>
+</div>
+
+<p>
+Ask Wolfram|Alpha, the knowledge engine.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">const</span> <span style="color: #6c71c4;">WA_REGEX</span>: &'<span style="color: #859900;">static</span> <span style="color: #268bd2;">str</span> = <span style="color: #d33682;">concat!</span>(<span style="color: #2aa198;">r"^(\.|!|:)"</span>, <span style="color: #2aa198;">"wa (?P<query>.+)"</span>);
+<span style="color: #859900;">fn</span> <span style="color: #b58900;">wolframalpha</span>(<span style="color: #6c71c4;">regex</span>: &<span style="color: #268bd2;">Regex</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>> {
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">hyper</span>::<span style="color: #268bd2;">header</span>::<span style="color: #268bd2;">ContentLength</span>;
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">quick_xml</span>::{<span style="color: #268bd2;">XmlReader</span>, <span style="color: #268bd2;">Event</span>};
+
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> response = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Client</span>::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand(<span style="color: #2aa198;">"http://api.wolframalpha.\</span>
+<span style="color: #2aa198;">                                                    com/v2/query?format=plaintext&appid=\</span>
+<span style="color: #2aa198;">                                                    3JEW42-4XXE264A93&input=$query"</span>))
+                                .send()
+                                .map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Hyper</span>));
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> xml =
+        <span style="color: #268bd2;">String</span>::with_capacity(**response.headers.get::<<span style="color: #268bd2;">ContentLength</span>>().unwrap() <span style="color: #859900;">as</span> <span style="color: #268bd2;">usize</span>);
+    <span style="color: #d33682;">try!</span>(response.read_to_string(&<span style="color: #859900;">mut</span> xml).map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Io</span>));
+    <span style="color: #859900;">let</span> tree = <span style="color: #268bd2;">XmlReader</span>::from_str(&xml).trim_text(<span style="color: #859900;">true</span>);
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> answers = <span style="color: #d33682;">vec!</span>[];
+    <span style="color: #859900;">for</span> event <span style="color: #859900;">in</span> tree {
+        <span style="color: #859900;">match</span> event {
+            <span style="color: #268bd2;">Ok</span>(<span style="color: #268bd2;">Event</span>::<span style="color: #268bd2;">Start</span>(<span style="color: #859900;">ref</span> elem)) <span style="color: #859900;">if</span> elem.name() == b<span style="color: #2aa198;">"pod"</span> => {
+                answers.push(<span style="color: #268bd2;">String</span>::from_utf8(<span style="color: #d33682;">try!</span>(elem.attributes()
+                                                        .next()
+                                                        .unwrap()
+                                                        .map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Xml</span>))
+                                                   .1
+                                                   .into())
+                                 .unwrap() + <span style="color: #2aa198;">": "</span>)
+            }
+            <span style="color: #268bd2;">Ok</span>(<span style="color: #268bd2;">Event</span>::<span style="color: #268bd2;">Text</span>(elem)) =>{
+                answers.push(<span style="color: #d33682;">try!</span>(elem.into_string().map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Xml</span>)) + <span style="color: #2aa198;">" /"</span>)
+            }
+            _ => (),
+        }
+    }
+    <span style="color: #268bd2;">Ok</span>(answers.join(<span style="color: #2aa198;">" "</span>))
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">wolframalpha</span>(text):
+    <span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">    Query WolframAlpha about text.</span>
+
+<span style="color: #2aa198;">    >>> print(wolframalpha('mass of sol'))</span>
+<span style="color: #2aa198;">    Input interpretation: Sun | mass / Result: 1.988435×10^30 kg  (kilograms) / Unit conversions: 4.383749×10^30 lb  (pounds) / 2.191874×10^27 sh tn  (short tons) / 1.988435×10^33 grams / 1 M_☉  (solar ma http://wolframalpha.com/?input=mass%20of%20sol</span>
+
+<span style="color: #2aa198;">    Check URL encoding:</span>
+<span style="color: #2aa198;">    >>> print(wolframalpha('4+6'))</span>
+<span style="color: #2aa198;">    Input: 4+6 / Result: 10 / Number name: ten / Number line: Manipulatives illustration:  | + |  |  |  4 |  | 6 |  | 10 / Typical human computation times: age 6:  5.3 seconds  |  age 8:  2.6 seconds  |  age 10:  1.7 seconds  |   age 18:  0.93 seconds (ignoring concentration, repetition, variations in education, etc.) / </span>
+
+<span style="color: #2aa198;">    >>> print(wolframalpha('é'))</span>
+<span style="color: #2aa198;">    Input interpretation: é  (character) / Visual form: Name: Latin small letter e with acute / Positions in alphabets: Czech | 9th letter (33rd letter from the end) Slovak | 12th letter (35th letter from http://wolframalpha.com/?input=%C3%A9</span>
+<span style="color: #2aa198;">    """</span>
+    <span style="color: #6c71c4;">r</span> = urlopen(
+        <span style="color: #2aa198;">'http://api.wolframalpha.com/v2/query?format=plaintext&appid=3JEW42-4XXE264A93&input='</span>
+        + quote(text))
+    <span style="color: #6c71c4;">tree</span> = ET.parse(r)
+    <span style="color: #6c71c4;">reply</span> = <span style="color: #2aa198;">''</span>
+    <span style="color: #859900;">for</span> n <span style="color: #859900;">in</span> tree.<span style="color: #6c71c4;">iter</span>():
+        <span style="color: #859900;">if</span> n.tag == <span style="color: #2aa198;">'pod'</span>:
+            <span style="color: #6c71c4;">reply</span> += n.attrib[<span style="color: #2aa198;">'title'</span>] + <span style="color: #2aa198;">': '</span>
+        <span style="color: #859900;">if</span> n.tag == <span style="color: #2aa198;">'plaintext'</span> <span style="color: #859900;">and</span> n.text <span style="color: #859900;">and</span> <span style="color: #6c71c4;">len</span>(n.text.strip()):
+            <span style="color: #6c71c4;">reply</span> += n.text + <span style="color: #2aa198;">' / '</span>
+    <span style="color: #859900;">if</span> <span style="color: #6c71c4;">len</span>(reply) > 512:
+        <span style="color: #6c71c4;">reply</span> = reply[:200] + <span style="color: #2aa198;">" http://wolframalpha.com/?input="</span> + quote(text)
+    r.close()
+    <span style="color: #859900;">return</span> reply.replace(<span style="color: #2aa198;">'\n'</span>, <span style="color: #2aa198;">' '</span>)
+</pre>
+</div>
+
+<p>
+Returns the first Google result.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">const</span> <span style="color: #6c71c4;">GOOGLE_REGEX</span>: &'<span style="color: #859900;">static</span> <span style="color: #268bd2;">str</span> = <span style="color: #d33682;">concat!</span>(<span style="color: #2aa198;">r"^(\.|!|:)"</span>, <span style="color: #2aa198;">"g (?P<query>.+)"</span>);
+<span style="color: #859900;">fn</span> <span style="color: #b58900;">google</span>(<span style="color: #6c71c4;">regex</span>: &<span style="color: #268bd2;">Regex</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>> {
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">rustc_serialize</span>::<span style="color: #268bd2;">json</span>::<span style="color: #268bd2;">Json</span>;
+    <span style="color: #93a1a1; font-style: italic;">// </span><span style="color: #93a1a1; font-style: italic;">API: https://developers.google.com/web-search/docs/#code-snippets</span>
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> response = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Client</span>::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand(<span style="color: #2aa198;">"https://ajax.googleapis.\</span>
+<span style="color: #2aa198;">                                                    com/ajax/services/search/web?v=1.\</span>
+<span style="color: #2aa198;">                                                    0&rsz=1&q=$query"</span>))
+                                .send()
+                                .map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Hyper</span>));
+    <span style="color: #859900;">let</span> json = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Json</span>::from_reader(&<span style="color: #859900;">mut</span> response).map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Json</span>));
+    <span style="color: #859900;">let</span> results = <span style="color: #d33682;">try!</span>(json.search(<span style="color: #2aa198;">"results"</span>).ok_or(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Data</span>(<span style="color: #2aa198;">"No results"</span>.into())));
+    <span style="color: #859900;">if</span> results.as_array().unwrap().is_empty() {
+        <span style="color: #859900;">return</span> <span style="color: #268bd2;">Ok</span>(<span style="color: #2aa198;">"No results"</span>.into());
+    }
+    <span style="color: #859900;">let</span> url = <span style="color: #d33682;">try!</span>(results[0]
+                       .find(<span style="color: #2aa198;">"unescapedUrl"</span>)
+                       .ok_or(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Data</span>(<span style="color: #2aa198;">"No url"</span>.into()))
+                       .map(|j| j.as_string().unwrap()));
+    <span style="color: #859900;">let</span> title = <span style="color: #d33682;">try!</span>(results[0]
+                         .find(<span style="color: #2aa198;">"titleNoFormatting"</span>)
+                         .ok_or(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Data</span>(<span style="color: #2aa198;">"No title"</span>.into()))
+                         .map(|j| j.as_string().unwrap()));
+    <span style="color: #268bd2;">Ok</span>(<span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"{} {}"</span>, title, url))
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">google</span>(text):
+    <span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">    Retrieve the first result from a google for text.</span>
+
+<span style="color: #2aa198;">    >>> print(google('á'))</span>
+<span style="color: #2aa198;">    Á - Wikipedia, the free encyclopedia https://en.wikipedia.org/wiki/%C3%81</span>
+
+<span style="color: #2aa198;">    >>> print(google('trump south-china sea'))</span>
+<span style="color: #2aa198;">    Donald Trump weighs in on China's island-building in the South ... http://www.politifact.com/truth-o-meter/statements/2016/apr/04/donald-trump/donald-trump-weighs-chinas-island-building-south-c/</span>
+
+<span style="color: #2aa198;">    >>> print(google('naesuth no result here'))</span>
+<span style="color: #2aa198;">    0 result</span>
+<span style="color: #2aa198;">    """</span>
+    <span style="color: #6c71c4;">r</span> = urlopen(
+        <span style="color: #2aa198;">'https://ajax.googleapis.com/ajax/services/search/web?v=1.0&rsz=1&q='</span> +
+        quote(text))
+    <span style="color: #6c71c4;">data</span> = json.loads(r.read().decode())[<span style="color: #2aa198;">'responseData'</span>]
+    r.close()
+    <span style="color: #859900;">if</span> <span style="color: #859900;">not</span> data[<span style="color: #2aa198;">'results'</span>]:
+        <span style="color: #859900;">return</span> <span style="color: #2aa198;">'0 result'</span>
+    <span style="color: #859900;">return</span> html.unescape(data[<span style="color: #2aa198;">'results'</span>][0][<span style="color: #2aa198;">'titleNoFormatting'</span>]) + \
+    <span style="color: #2aa198;">' '</span> +  data[<span style="color: #2aa198;">'results'</span>][0][<span style="color: #2aa198;">'unescapedUrl'</span>]
+</pre>
+</div>
+
+<p>
+Translates using <a href="https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/">Yandex</a>:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">const</span> <span style="color: #6c71c4;">TRANSLATE_REGEX</span>: &'<span style="color: #859900;">static</span> <span style="color: #268bd2;">str</span> = <span style="color: #d33682;">concat!</span>(<span style="color: #2aa198;">r"^(\.|!|:)"</span>, <span style="color: #2aa198;">"tr (?P<lang>[^ ]+) (?P<text>.+)"</span>);
+<span style="color: #859900;">fn</span> <span style="color: #b58900;">translate</span>(<span style="color: #6c71c4;">regex</span>: &<span style="color: #268bd2;">Regex</span>, <span style="color: #6c71c4;">line</span>: &<span style="color: #268bd2;">str</span>) -> <span style="color: #268bd2;">Result</span><<span style="color: #268bd2;">String</span>, <span style="color: #268bd2;">Error</span>> {
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">rustc_serialize</span>::<span style="color: #268bd2;">json</span>::<span style="color: #268bd2;">Json</span>;
+    <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> response = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Client</span>::new()
+                                .get(&regex.captures(&line)
+                                           .unwrap()
+                                           .expand(<span style="color: #2aa198;">"https://translate.yandex.\</span>
+<span style="color: #2aa198;">                                                             net/api/v1.5/tr.\</span>
+<span style="color: #2aa198;">                                                             json/translate?key=trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810&text=$text&\</span>
+<span style="color: #2aa198;">                                                             lang=$lang"</span>))
+                                .send()
+                                .map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Hyper</span>));
+    <span style="color: #859900;">let</span> json = <span style="color: #d33682;">try!</span>(<span style="color: #268bd2;">Json</span>::from_reader(&<span style="color: #859900;">mut</span> response).map_err(<span style="color: #268bd2;">Error</span>::<span style="color: #268bd2;">Json</span>));
+    <span style="color: #859900;">let</span> reply = <span style="color: #859900;">match</span> json.find(<span style="color: #2aa198;">"code"</span>).unwrap().as_u64().unwrap() {
+        200 => {
+            <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"{}: {}"</span>,
+                    json.find(<span style="color: #2aa198;">"lang"</span>).unwrap().as_string().unwrap(),
+                    json.find(<span style="color: #2aa198;">"text"</span>).unwrap()[0].as_string().unwrap())
+        }
+        501 => json.find(<span style="color: #2aa198;">"message"</span>).unwrap().as_string().unwrap().into(),
+        _ => <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"{:?}"</span>, json.as_string()),
+    };
+    <span style="color: #268bd2;">Ok</span>(reply)
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">translate</span>(direction, text):
+    <span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">    Translate text according to direction.</span>
+
+<span style="color: #2aa198;">    >>> print(translate('la-en', 'ad astra per aspera'))</span>
+<span style="color: #2aa198;">    la-en: to the stars through rough</span>
+
+<span style="color: #2aa198;">    >>> print(translate('vi', "you think you're good?"))</span>
+<span style="color: #2aa198;">    en-vi: ngươi nghĩ ngươi giỏi không?</span>
+
+<span style="color: #2aa198;">    >>> print(translate('en', 'mày nghĩ mày ngon?'))</span>
+<span style="color: #2aa198;">    vi-en: you think you're so tough?</span>
+
+<span style="color: #2aa198;">    >>> print(translate('jbo', 'hello')) # doctest: +IGNORE_EXCEPTION_DETAIL</span>
+<span style="color: #2aa198;">    Traceback (most recent call last):</span>
+<span style="color: #2aa198;">      ...</span>
+<span style="color: #2aa198;">    urllib.error.HTTPError: HTTP Error 400: BAD REQUEST</span>
+<span style="color: #2aa198;">    """</span>
+    <span style="color: #859900;">if</span> <span style="color: #859900;">not</span> text:
+        <span style="color: #859900;">return</span> <span style="color: #2aa198;">'Missing text'</span>
+    <span style="color: #6c71c4;">r</span> = urlopen(
+        <span style="color: #2aa198;">'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20160210T093900Z.c6eacf09bbb65cfb.cc28de2ba798bc3bc118e9f8201b6e6cea697810&text={}&lang={}'</span>
+        .<span style="color: #6c71c4;">format</span>(
+            quote(text), direction))
+    <span style="color: #6c71c4;">data</span> = json.loads(r.read().decode())
+    r.close()
+    <span style="color: #859900;">return</span> data[<span style="color: #2aa198;">'lang'</span>] + <span style="color: #2aa198;">": "</span> + data[<span style="color: #2aa198;">'text'</span>][0]
+</pre>
+</div>
+
+<p>
+Posts its own source code:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #859900;">fn</span> <span style="color: #b58900;">post_source_code</span>() -> <span style="color: #268bd2;">String</span> {
+    <span style="color: #859900;">use</span> <span style="color: #268bd2;">url</span>::form_urlencoded;
+    <span style="color: #859900;">let</span> form = [(<span style="color: #2aa198;">"read:1"</span>, <span style="color: #2aa198;">"3"</span>),
+                (<span style="color: #2aa198;">"name:1"</span>, <span style="color: #2aa198;">"main.rs"</span>),
+                (<span style="color: #2aa198;">"f:1"</span>, <span style="color: #d33682;">include_str!</span>(<span style="color: #2aa198;">"main.rs"</span>)),
+                (<span style="color: #2aa198;">"read:2"</span>, <span style="color: #2aa198;">"3"</span>),
+                (<span style="color: #2aa198;">"name:2"</span>, <span style="color: #2aa198;">"Cargo.toml"</span>),
+                (<span style="color: #2aa198;">"f:2"</span>, <span style="color: #d33682;">include_str!</span>(<span style="color: #2aa198;">"../Cargo.toml"</span>))];
+    <span style="color: #859900;">let</span> result = <span style="color: #268bd2;">Client</span>::new()
+                     .post(<span style="color: #2aa198;">"http://ix.io"</span>)
+                     .body(&<span style="color: #268bd2;">form_urlencoded</span>::serialize(form.iter()))
+                     .send();
+    <span style="color: #859900;">match</span> result {
+        <span style="color: #268bd2;">Ok</span>(<span style="color: #859900;">mut</span> response) => {
+            <span style="color: #859900;">let</span> <span style="color: #859900;">mut</span> reply = <span style="color: #268bd2;">String</span>::new();
+            <span style="color: #859900;">let</span> _ = response.read_to_string(&<span style="color: #859900;">mut</span> reply);
+            reply.replace(<span style="color: #2aa198;">'\n'</span>, <span style="color: #2aa198;">" "</span>)
+        }
+        <span style="color: #268bd2;">Err</span>(e) => <span style="color: #d33682;">format!</span>(<span style="color: #2aa198;">"unable to post: {:?}"</span>, e),
+    }
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">def</span> <span style="color: #b58900;">report</span>():
+    <span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">    Return owner and source code</span>
+
+<span style="color: #2aa198;">    >>> print(report()) # doctest: +ELLIPSIS</span>
+<span style="color: #2aa198;">    operated by ... with source code http://ix.io/...</span>
+<span style="color: #2aa198;">    """</span>
+    <span style="color: #6c71c4;">conn</span> = HTTPConnection(<span style="color: #2aa198;">'ix.io'</span>)
+    conn.request(
+        <span style="color: #2aa198;">'POST'</span>, <span style="color: #2aa198;">'/'</span>,
+        <span style="color: #2aa198;">'read:1=3&name:1=luser.py&f:1='</span> + quote(<span style="color: #6c71c4;">open</span>(__file__).read()))
+    <span style="color: #859900;">return</span> <span style="color: #2aa198;">"operated by {} with source code {}"</span>.<span style="color: #6c71c4;">format</span>(
+            os.getenv(<span style="color: #2aa198;">'USER'</span>), conn.getresponse().read().decode().strip())
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">if</span> <span style="color: #6c71c4;">__name__</span> == <span style="color: #2aa198;">'__main__'</span>:
+    main()
+</pre>
+</div>
+</div>
+</body>
+</html>
