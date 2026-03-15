@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.19
-FROM ghcr.io/huginn/huginn-single-process:ac933cf5263b05499c3297b483a29483dfd4c803
+FROM ghcr.io/huginn/huginn-single-process:43c0d42db4dfc28f795369410fc34a2b00ad655a
 
 USER 0
 RUN <<EORUN
