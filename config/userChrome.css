@@ -1,0 +1,40 @@
+#context-selectall,
+
+/* Print Selection... */
+#context-print-selection,
+
+/* Take Screenshot */
+#context-take-screenshot,
+
+/* Copy Link to Highlight */
+#context-copy-link-to-highlight,
+
+/* Inspect Accessibility Properties */
+#context-inspect-a11y,
+
+/* Email Video... */
+#context-sendvideo,
+
+/* Bookmark Link... */
+#context-bookmarklink,
+
+/* Email Image... */
+#context-sendimage,
+
+/* Set Image as Desktop Background... */
+#context-setDesktopBackground, #context-sep-setbackground,
+
+/* Bookmark Page... */
+#context-bookmarkpage,
+
+/* Separator for spelling-related items */
+#spell-separator,
+/* Check Spelling */
+#spell-check-enabled,
+
+/* Take Snapshot... */
+#context-video-saveimage,
+
+/* Languages submenu in the spelling section */
+#spell-dictionaries
+{ display: none !important; }

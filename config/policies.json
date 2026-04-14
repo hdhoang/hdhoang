@@ -54,6 +54,14 @@
       "security.csp.reporting.enabled": {
         "Value": 1,
         "Status": "user"
+      },
+      "widget.macos.native-context-menus": {
+        "Value": 1,
+        "Status": "user"
+      },
+      "devtools.accessibility.enabled": {
+        "Value": 1,
+        "Status": "user"
       }
     }
   }

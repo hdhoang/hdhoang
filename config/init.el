@@ -164,15 +164,15 @@
 (when (display-graphic-p)
   (context-menu-mode))
 
-(use-package ht)
-(use-package jujutsu
-  :vc (:url "https://github.com/bennyandresen/jujutsu.el"
-            :rev "6d518e3c3497")
-  :bind ("C-x j" . #'jujutsu-status)
-  )
+;; (use-package ht)
+;; (use-package jujutsu
+;;   :vc (:url "https://github.com/bennyandresen/jujutsu.el"
+;;             :rev "6d518e3c3497")
+;;   :bind ("C-x j" . #'jujutsu-status)
+;;   )
 
-(use-package kdl-ts-mode
-  :vc (:url "https://github.com/dataphract/kdl-ts-mode"))
+;; (use-package kdl-ts-mode
+;;   :vc (:url "https://github.com/dataphract/kdl-ts-mode"))
 (use-package combobulate
   :vc (:url "https://github.com/mickeynp/combobulate")
   :preface (setopt combobulate-key-prefix "C-c o")
@@ -422,11 +422,11 @@
   ("control\\'" . yaml-ts-mode)
   ("info\\'" . yaml-ts-mode))
 
-(use-package ox-typst)
-(use-package poly-org
-  :custom
-  (org-use-sub-superscripts nil)
-  :defer 10)
+;; (use-package ox-typst)
+;; (use-package poly-org
+;;   :custom
+;;   (org-use-sub-superscripts nil)
+;;   :defer 10)
 
 (use-package markdown-ts-mode
   :mode ("\\.md\\'" . markdown-ts-mode)
@@ -439,10 +439,11 @@
   (define-hostmode poly-markdown-hostmode
     :mode 'markdown-ts-mode))
 
-(use-package groovy-mode
-  :defer 't)
+;; (use-package groovy-mode
+;;   :defer 't)
 
-(use-package pcre2el)
+(use-package pcre2el
+  :config (pcre-mode t))
 (use-package poly-ansible
   :config
   ;; there's no #'define-auto-hostmode for this pattern
@@ -513,7 +514,7 @@
               ("C-c C-c Q" . lsp-workspace-shutdown)
               ("C-c C-c s" . lsp-rust-analyzer-status)
               ))
-(use-package just-ts-mode)
+;; (use-package just-ts-mode)
 
 (add-to-list 'auto-mode-alist '("\\.jjdescription\\'" . diff-mode))
 (add-to-list 'magic-mode-alist '("^$TTL" . zone-mode))
