@@ -3,7 +3,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.color_scheme = "CLRS"
+config.color_scheme = ""
 
 config.default_prog = { "zellij" }
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then

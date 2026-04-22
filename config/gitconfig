@@ -54,6 +54,11 @@ twohead = ort
 [checkout]
 workers = 12
 
+[submodule]
+recurse = true
+[status]
+submoduleSummary = true
+
 [rerere]
 enabled = true
 
@@ -78,6 +83,7 @@ date = iso
 xfuncname = ^\\([^[:space:]]*def[^[:space:]]+[[:space:]]+([^()[:space:]]+)
 
 [diff]
+submodule = log
 algorithm = histogram
 indentHeuristic = true
 mnemonicPrefix = true

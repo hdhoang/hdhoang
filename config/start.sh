@@ -61,7 +61,6 @@ ln -rsvf $PWD/,unikey ~/run/
 ln -rsvf $PWD/sway.conf ~/.config/sway/config.d/i3.conf
 ln -rsvf $PWD/waybar.config ~/.config/waybar/config
 
-ln -rsvf $PWD/$HOSTNAME.conf ~/.config/sway/environment
 ln -rsvf $PWD/$HOSTNAME.conf ~/.config/environment.d/
 ln -rsvf $PWD/env.conf ~/.config/environment.d/00-env.conf
 

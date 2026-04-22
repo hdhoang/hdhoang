@@ -42,6 +42,7 @@
  '(global-auto-revert-mode t)
  '(global-hl-line-mode t)
  '(global-tab-line-mode t)
+ '(help-window-select t)
  '(indent-tabs-mode nil)
  '(indicate-buffer-boundaries 'left)
  '(inhibit-startup-screen t)
@@ -50,6 +51,7 @@
  '(insert-directory-program "coreutils")
  '(isearch-lazy-count t)
  '(js-indent-level 2)
+ '(kill-do-not-save-duplicates t)
  '(line-number-mode t)
  '(list-matching-lines-default-context-lines 4)
  '(major-mode-remap-alist
@@ -134,6 +136,9 @@
 (global-set-key (kbd "C-M-y") #'mouse-yank-primary)
 (global-set-key (kbd "C-M-z") #'delete-pair)
 
+(add-hook 'after-save-hook
+          #'executable-make-buffer-file-executable-if-script-p)
+
 (require 'package)
 (add-to-list 'display-buffer-alist
              '("\\`\\*\\(Warnings\\|Async-native-compile-log\\|Compile-Log\\)\\*\\'"
@@ -154,12 +159,6 @@
 
 (set-face-attribute 'default nil :height 80)
 
-(use-package which-key
-                                        ; gone by 30
-  :custom
-  (which-key-lighter nil)
-  :config
-  (which-key-mode))
 (windmove-default-keybindings 'control)
 (when (display-graphic-p)
   (context-menu-mode))
@@ -238,8 +237,9 @@
 
 (use-package rainbow-delimiters
   :hook ((fundamental-mode . rainbow-delimiters-mode)))
-(use-package expand-region
-  :bind ("C-=" . #'er/expand-region))
+(use-package expreg
+  :bind (("C-=" . #'expreg-expand)
+         ("C--" . #'expreg-contract)))
 
 (add-hook 'fundamental-mode-hook #'whitespace-mode)
 (add-hook 'fundamental-mode-hook #'follow-mode)
@@ -250,6 +250,7 @@
 (use-package aggressive-indent
   :config (global-aggressive-indent-mode t))
 
+(use-package dump-jump)
 (use-package ast-grep)
 (use-package symbol-overlay
   :bind
@@ -275,6 +276,7 @@
   (add-to-list 'apheleia-mode-alist '(python-ts-mode . dprint))
   (delete '(yaml-ts-mode . prettier-yaml) apheleia-mode-alist)
   (add-to-list 'apheleia-mode-alist '(yaml-ts-mode . dprint))
+  (add-to-list 'apheleia-mode-alist '(json-ts-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(poly-yaml-mode . dprint))
   (add-to-list 'apheleia-mode-alist '(poly-ansible-mode . dprint))
 
@@ -284,14 +286,14 @@
   (add-to-list 'apheleia-mode-alist '(poly-terraform-mode . terraform))
 
   (add-to-list 'apheleia-formatters '(hujsonfmt "hujsonfmt"))
-  (add-to-list 'apheleia-mode-alist '(json-ts-mode . hujsonfmt))
+  ;; (add-to-list 'apheleia-mode-alist '(json-ts-mode . hujsonfmt))
   )
 
-(use-package nov
-  :defer 60)
+;; (use-package nov
+;;   :defer 60)
 
-(use-package elfeed
-  :bind ("C-c w" . #'elfeed))
+;; (use-package elfeed
+;;   :bind ("C-c w" . #'elfeed))
 
 (use-package hcl-ts-mode
   :hook ((hcl-ts-mode . (lambda () (setq comment-start "# "))))
@@ -500,20 +502,20 @@
 (use-package consult-eglot
   :bind (("C-c s" . #'consult-eglot-symbols)))
 
-(use-package rustic
-  :custom (rustic-lsp-client 'eglot)
-  (rustic-cargo-check-exec-command "clippy")
-  :hook ((eglot-managed-mode . (lambda () (flymake-mode -1))))
-  :bind (:map rustic-mode-map
-              ("M-j" . lsp-ui-imenu)
-              ("M-?" . lsp-find-references)
-              ("C-c C-c l" . flycheck-list-errors)
-              ("C-c C-c a" . lsp-execute-code-action)
-              ("C-c C-c r" . lsp-rename)
-              ("C-c C-c q" . lsp-workspace-restart)
-              ("C-c C-c Q" . lsp-workspace-shutdown)
-              ("C-c C-c s" . lsp-rust-analyzer-status)
-              ))
+;; (use-package rustic
+;;   :custom (rustic-lsp-client 'eglot)
+;;   (rustic-cargo-check-exec-command "clippy")
+;;   :hook ((eglot-managed-mode . (lambda () (flymake-mode -1))))
+;;   :bind (:map rustic-mode-map
+;;               ("M-j" . lsp-ui-imenu)
+;;               ("M-?" . lsp-find-references)
+;;               ("C-c C-c l" . flycheck-list-errors)
+;;               ("C-c C-c a" . lsp-execute-code-action)
+;;               ("C-c C-c r" . lsp-rename)
+;;               ("C-c C-c q" . lsp-workspace-restart)
+;;               ("C-c C-c Q" . lsp-workspace-shutdown)
+;;               ("C-c C-c s" . lsp-rust-analyzer-status)
+;;               ))
 ;; (use-package just-ts-mode)
 
 (add-to-list 'auto-mode-alist '("\\.jjdescription\\'" . diff-mode))

@@ -1,13 +1,12 @@
+/* firefox profile chrome/userChrome.css
+/*
+
+*/
+
 #context-selectall,
 
 /* Print Selection... */
 #context-print-selection,
-
-/* Take Screenshot */
-#context-take-screenshot,
-
-/* Copy Link to Highlight */
-#context-copy-link-to-highlight,
 
 /* Inspect Accessibility Properties */
 #context-inspect-a11y,

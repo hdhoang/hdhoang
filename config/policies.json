@@ -56,7 +56,7 @@
         "Status": "user"
       },
       "widget.macos.native-context-menus": {
-        "Value": 1,
+        "Value": false,
         "Status": "user"
       },
       "devtools.accessibility.enabled": {

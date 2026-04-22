@@ -17,3 +17,6 @@ target/
 
 *.bak
 *.bak.1
+
+# emacs unsaved buffers
+.#*
